@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="ResMimeType">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="Version">
+    <value>1.0.0.0</value>
+  </resheader>
+  <resheader name="Reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="Writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MetaData_IncorrectPath">
+    <value>Eigenschap pad '{1}' is onjuist voor het '{0}' type.</value>
+  </data>
+  <data name="MetaData_IncorrectPathMemberNotExists">
+    <value>Eigenschap pad '{1}' is onjuist voor type '{0}', omdat de eigenschap '{2}.{3}' niet bestaat.</value>
+  </data>
+  <data name="MetaData_IncorrectPathNonPersistentMember">
+    <value>Eigenschap pad '{1}' is onjuist voor type '{0}', omdat de eigenschap '{2}.{3}' niet persistent is.</value>
+  </data>
+  <data name="MetaData_IncorrectPathNonReferenceMember">
+    <value>Eigenschap pad '{1}' is onjuist voor type '{0}', omdat de eigenschap '{2}.{3}' geen referentie eigenschap is.</value>
+  </data>
+  <data name="Session_TypeNotFound">
+    <value>Kan type met id = '{0}' niet vinden.</value>
+  </data>
+  <data name="Session_TypeFieldIsEmpty">
+    <value>Veld '{0}' is null (basis klasse '{1}').</value>
+  </data>
+  <data name="ConnectionProvider_UnableToFillRefType">
+    <value>Kan databaseschema niet valideren voor eigenschap '{1}' van het '{0}' type. Fout: {2}.</value>
+  </data>
+  <data name="MetaData_KeyPropertyAbsent">
+    <value>Sleutel eigenschap voor type '{0}' mist.</value>
+  </data>
+  <data name="MetaData_DuplicateKeyProperty">
+    <value>Dubbele sleutel gevonden voor type '{0}'.</value>
+  </data>
+  <data name="MetaData_XMLLoadError">
+    <value>XML dictionary laad fout: {0}.</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotFindClassinfoType">
+    <value>Foute XML: Kan het klasse type niet vinden.</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotFindConstructor">
+    <value>Foute XML: Kan de constructor voor type '{0}' niet vinden.</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorModelTagAbsent">
+    <value>Foute XML: De &lt;Model&gt; tag is niet gevonden of onjuiste naamruimte.</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotResolveClassinfoInstanceType">
+    <value>Foute XML: Kan het KlasseInfo type niet bepalen.</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotLoadMember">
+    <value>Foute XML: Kan eigenschap [{0}]{1}.{2} niet laden.</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorUnknownAttribute">
+    <value>Foute XML: Onbekend attribuut '{0}'.</value>
+  </data>
+  <data name="MetaData_PropertyTypeMismatch">
+    <value>De relatie '{1}' tussen de klassen '{3}' en '{4}' is ongeldig. De klasse '{3}' bevat de eigenschap '{2}', die verwijst naar de klasse '{4}'. De klasse '{4}'  bevat de eigenschap '{0}', die onterecht verwijst naar de klasse '{5}', hij zou moeten verwijzen naar de klasse '{3}'.</value>
+  </data>
+  <data name="MetaData_PropertyMissing">
+    <value>Eigenschap '{0}' bestaat niet in type '{1}'.</value>
+  </data>
+  <data name="MetaData_AssociationElementTypeMissing">
+    <value>Eigenschap '{0}' specificeert niet de 'ElementType' eigenschap binnen het 'Association' attribuut.</value>
+  </data>
+  <data name="MetaData_RequiredAttributeMissing">
+    <value>Eigenschap '{0}' definieert het '{1}' attribuut niet.</value>
+  </data>
+  <data name="MetaData_NonPersistentReferenceFound">
+    <value>Een referentie naar niet persistent type '{0}' gevonden.</value>
+  </data>
+  <data name="Session_ObjectCannotBePurged">
+    <value>Het object '{0}' met id = '{1}' kan niet verwijderd worden - er zijn objecten die er aan refereren.</value>
+  </data>
+  <data name="Session_WrongConnectionString">
+    <value>Ongeldige connectie string ingesteld: '{0}'.</value>
+  </data>
+  <data name="Session_CannotReloadPurgedObject">
+    <value>Opgevraagde objecten kunnen niet geladen worden, omdat ze afwezig zijn in de gegevensbron. Deze objecten kunnen reeds verwijderd zijn. Als u deze fout weer krijgt met dezelfde objecten in de lijst, kan de referentiële integriteit van de gegevensbron geschonden zijn. In dat geval, neem contact op met uw beheerder. Opgevraagde objecten: {0}.</value>
+  </data>
+  <data name="Session_SessionMixing">
+    <value>Het object '{0}' behoort tot een andere sessie.</value>
+  </data>
+  <data name="Session_CannotAddObjectToObjectCache">
+    <value>Kan het object '{0}' met de sleutel = '{1}' niet toevoegen aan het object identiteit map, omdat een ander object '{2}' met dezelfde sleutel reeds is toegevoegd.</value>
+  </data>
+  <data name="MetaData_SessionCtorAbsent">
+    <value>Type {0} heeft geen sessie-specifieke constructor.</value>
+  </data>
+  <data name="Paging_PageSizeShouldBeGreaterThanZero">
+    <value>De PageSize moet groter zijn dan nul.</value>
+  </data>
+  <data name="Paging_CurrentPageShouldBeGreaterOrEqualZero">
+    <value>De CurrentPage moet groter dan of gelijk zijn aan 0.</value>
+  </data>
+  <data name="Paging_CurrentPageShouldBeLessThanPageCount">
+    <value>De CurrentPage moet minder zijn dan PageCount.</value>
+  </data>
+  <data name="Session_TranSequenceBegin">
+    <value>Kan niet meer dan één transactie starten binnen een sessie.</value>
+  </data>
+  <data name="Session_TranSequenceCommit">
+    <value>Kan commit niet uitvoeren omdat er geen transactie actief is.</value>
+  </data>
+  <data name="Session_TranSequenceRollback">
+    <value>Kan roll back niet uitvoeren omdat er geen transactie actief is.</value>
+  </data>
+  <data name="Collections_InvalidCastOnAdd">
+    <value>Kan het item niet toevoegen aan verzameling. Het '{0}' object is geen instantie van type '{1}'.</value>
+  </data>
+  <data name="Generator_OneOfBinaryOperatorsOperandsIsNull">
+    <value>Een van BinaryOperator's de operanden is null.</value>
+  </data>
+  <data name="ConnectionProvider_KeysAutogenerationNonSupportedTypeException">
+    <value>Sleutelwaarden automatisch genereren wordt niet ondersteund voor klasse type '{0}'. Het wordt alleen ondersteund voor Int32 en Guid datatypes.</value>
+  </data>
+  <data name="Session_CannotLoadInvalidType">
+    <value>Kan het ongeldige type '{0}' niet laden.</value>
+  </data>
+  <data name="Paging_EnumeratorPositioning">
+    <value>De teller staat voor het eerste element van de verzameling of na de laatste element.</value>
+  </data>
+  <data name="Paging_EnumeratorObjectModifiedOrDeleted">
+    <value>Één of meer objecten uit het gevraagde bereik zijn gewijzigd of verwijderd. U moet de identiteit waarde lijst verversen.</value>
+  </data>
+  <data name="Session_CannotChangePropertyWhenSessionIsConnected">
+    <value>Kan '{0}' niet wijzigen als de sessie is verbonden.</value>
+  </data>
+  <data name="Session_DifferentObjectsWithSameKey">
+    <value>Verschillende objecten met dezelfde toetsen</value>
+  </data>
+  <data name="MetaData_CannotResolveClassInfo">
+    <value>Kan de KlasseInfo niet vinden voor het type '[{0}]{1}'.</value>
+  </data>
+  <data name="Session_IncompatibleIdType">
+    <value>Doorgegeven id type '{0}' is niet compatible met type '{3}' van sleutel '{1}.{2}'.</value>
+  </data>
+  <data name="MetaData_ReferenceTooComplex">
+    <value>Referentie eigenschap '{0}.{1}' is te complex.</value>
+  </data>
+  <data name="Metadata_SameTableName">
+    <value>Klassen {0} en {1} verwijzen naar dezelfde tabel.</value>
+  </data>
+  <data name="Metadata_CustomProperties_PersistentAndNonStorableType">
+    <value>Custom eigenschap '{0}.{1}' van het type '{2}'  kan niet persistent zijn</value>
+  </data>
+  <data name="Metadata_CustomProperties_ReferenceOrCollectionInSessionStore">
+    <value>Kan geen aangepaste eigenschap '{1}' aanmaken van het referentie- of verzamelingtype omdat klasse '{0}' de interface '{2}' niet implementeert.</value>
+  </data>
+  <data name="XpoDefault_CannotAssignPropertyWhileAnotherIsNotNull">
+    <value>Kan niet toewijzen aan XpoDefault.{0}, wanneer XpoDefault.{1} is gespecificeerd.</value>
+  </data>
+  <data name="ThreadSafeDataLayer_DictionaryModified">
+    <value>Dictionary kan niet gewijzigd worden terwijl deze in gebruik is door een ThreadSafeDataLayer. Om deze exceptie te voorkomen, roep de Session.CreateObjectTypeRecords methode aan voordat u een ThreadSafeDataLayer gebruikt. KlasseInfo gewijzigd of aangemaakt: '{0}'.</value>
+  </data>
+  <data name="Metadata_DictionaryMixing">
+    <value>KlasseInfo '{0}' behoort tot een andere dictionary.</value>
+  </data>
+  <data name="Metadata_CantPersistGenericType">
+    <value>Kan generiek type niet persisteren. Verwijder het PersistentAttribute van de type-definitie '{0}'  maak in plaats daarvan een persistente, niet generieke, afstammeling aan.</value>
+  </data>
+  <data name="PersistentAliasExpander_ReferenceOrCollectionExpectedInTheMiddleOfThePath">
+    <value>Onjuiste eigenschap '{0}' in een pad. Een referentie eigenschap of verzameling's relatie wordt verwacht.</value>
+  </data>
+  <data name="XPWeakReference_SavedObjectExpected">
+    <value>U kunt losse referenties alleen naar opgeslagen objecten gebruiken.</value>
+  </data>
+  <data name="PersistentAliasExpander_NonPersistentCriteria">
+    <value>Kan geen query uitvoeren op de gegevensbron met het "{0}" criteria, welke de niet persistente eigenschap '{1}' bevat.</value>
+  </data>
+  <data name="View_PropertyNotFetched">
+    <value>Eigenschap '{0}' is niet opgehaald.</value>
+  </data>
+  <data name="Session_AlreadyConnected">
+    <value>Sessie is al verbonden.</value>
+  </data>
+  <data name="Session_AssociationCollectionWithDisabledLoading">
+    <value>Relatie verzameling status is fout: LoadingEnabled zou True moeten zijn.</value>
+  </data>
+  <data name="Metadata_SeveralClassesWithSameName">
+    <value>Dictionary bevat reeds KlasseInfo '{1}'. Mogelijke reden: de assembly [{0}] is twee keer geladen.</value>
+  </data>
+  <data name="Metadata_PersistentAliasCircular">
+    <value>Eigenschap '{1}' van klasse '{0}' is aangemerkt met een PersistentAlias attribuut welke de expressie '{2}' gebruikt. Dit resulteert in een circulaire referentie.</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_AssociationAttributeOnlyForListOrReference">
+    <value>Het relatie attribuut kan niet worden gebruikt voor de eigenschap '{1}.{2}'. Een verwijzing of lijst wordt verwacht.</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_MoreThenOneAssociatedMemberFound">
+    <value>De relatie '{0}' is dubbelzinnig tussen de eigenschappen '{2}' en '{3}' van de '{1}' klasse.</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_NoAssociationListInAssociation">
+    <value>Foute relatie '{0}' tussen '{1}.{2}' en '{3}.{4}'. Een lijst of verzameling wordt verwacht aan één kant van de relatie.</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_TwoAssociationListsInAssociation">
+    <value>Foute relatie '{0}' tussen de '{1}.{2}' en '{3}.{4}' lijsten/verzamelingen. Gebruik het ManyToManyAlias attribuut of XPCollection type lijsten/verzamelingen voor veel-op-veel relaties.</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_UseAssociationNameAsIntermediateTableNameMismatch">
+    <value>De UseAssociationNameAsIntermediateTableName waarde moet gelijk zijn aan beide zijden van de '{0}' relatie tussen '{1}.{2}' en '{3}.{4}'.</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_PropertyTypeMismatch">
+    <value>Relatie '{0}' tussen de klassen '{1}' en '{3}' is ongeldig. De klasse '{1}' bevat de eigenschap '{2}', die verwijst naar de klasse '{3}'. De klasse '{3}' bevat de eigenschap '{4}', die onterecht verwijst naar de klasse '{5}'; hij zou moeten verwijzen naar de klasse '{1}'.</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_NotFound">
+    <value>Foute relatie '{0}'. Kan de bijbehorende eigenschap voor '{1}.{2}' in de klasse '{3}' niet vinden.</value>
+  </data>
+  <data name="">
+    <value />
+  </data>
+  <data name="">
+    <value />
+  </data>
+  <data name="">
+    <value />
+  </data>
+  <data name="">
+    <value />
+  </data>
+  <data name="InMemoryFull_TableNotFound" xml:space="preserve">
+    <value>Tabel '{0}' niet gevonden.</value>
+  </data>
+  <data name="InMemorySet_XMLException_InconsistentForeignKeyCount" xml:space="preserve">
+    <value>XML lader: PKey en FKey kolom aantal komt niet overeen.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XSrestrictionExpected" xml:space="preserve">
+    <value>XML lader: xs:restriction wordt verwacht.</value>
+  </data>
+  <data name="Metadata_ClassAttributeExclusive" xml:space="preserve">
+    <value>PersistentAttribute, NonPersistentAttribute en MapToAttribute zijn uitsluitend. Slechts een van hen kan worden toegepast op klasse '{0}'.</value>
+  </data>
+  <data name="Security_SavingAnObjectWasProhibitedByTheRulesOfVal" xml:space="preserve">
+    <value>Opslaan van een object is verhinderd door validatie regels.</value>
+  </data>
+  <data name="Security_ICommandChannel_TransferringRequestsIsProhibited" xml:space="preserve">
+    <value>De overdracht van aanvragen via ICommandChannel is verboden binnen de beveiliging engine.</value>
+  </data>
+  <data name="InMemorySet_XMLException_TableNotDeclared" xml:space="preserve">
+    <value>XML lader: Tabel '{0}' is niet opgegeven.</value>
+  </data>
+  <data name="Metadata_SuppressSuspiciousMemberInheritanceCheckError" xml:space="preserve">
+    <value>Eigenschap '{0}.{1}' en zijn attribuut '{2}' worden genegeerd. Een eigenschap met dezelfde naamis reeds aanwezig in de basis klasse '{3}'. Om deze fout te onderdrukken zet DevExpress.Xpo.Metadata.ReflectionClassInfo.SuppressSuspiciousMemberInheritanceCheck op True.</value>
+  </data>
+  <data name="CriteriaAnalizer_ClassesAreNotAssignable" xml:space="preserve">
+    <value>Klassen '{0}' en '{1}' zijn niet onderling toewijsbaar.</value>
+  </data>
+  <data name="Metadata_NotCollection" xml:space="preserve">
+    <value>'{0}.{1}' is geen verzameling.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XSsimpleTypeExpected" xml:space="preserve">
+    <value>XML lader: xs:simpleType wordt verwacht.</value>
+  </data>
+  <data name="InMemorySet_XMLException_CantRestoreObjectFromXML" xml:space="preserve">
+    <value>XML lader: Kan object niet deserializeren.</value>
+  </data>
+  <data name="Session_MostProbablyYouAreTryingToInitiateAnObjectEx" xml:space="preserve">
+    <value>Waarschijnlijk probeert u een object laden operatie te starten terwijl de vorige object opslaan operatie nog niet gereed is.
+Stel uw operatie uit totdat Session.ObjectsSaved of IXPObject.OnSaved event afgevuurd wordt (zolang Sessin.IsObjectsSaving de waarde True heeft). Een andere oorzaak van deze fout is dat u gelijktijdig vanuit verschillende threads met dezelfde sessie probeert te werken.</value>
+  </data>
+  <data name="Helpers_ResolveDataForCollection" xml:space="preserve">
+    <value>De eigenschap is geen verzameling.</value>
+  </data>
+  <data name="InMemorySet_AddRelation" xml:space="preserve">
+    <value>Kan geen dubbele relatie toevoegen.</value>
+  </data>
+  <data name="Metadata_AssociationListExpected" xml:space="preserve">
+    <value>Associatie lijst of verzameling wordt verwacht: '{0}.{1}'.</value>
+  </data>
+  <data name="Session_ObjectModificationIsNotAllowed" xml:space="preserve">
+    <value>Objecten kunnen niet gewijzigd worden zolang de sessie in CommitChangesToDataLayerInner status is.</value>
+  </data>
+  <data name="Security_TheCommitOperationWasProhibitedByTheRules" xml:space="preserve">
+    <value>De commit operatie is verhinderd door validatie regels</value>
+  </data>
+  <data name="DirectSQL_CollectionMembersAreNotSupported" xml:space="preserve">
+    <value>Verzameling eigenschappen worden niet ondersteund.</value>
+  </data>
+  <data name="InMemorySet_CantUpdateRelationColumn" xml:space="preserve">
+    <value>Kolommen met relaties kunnen niet bijgewerkt worden.</value>
+  </data>
+  <data name="InMemoryFull_DifferentColumnListLengths" xml:space="preserve">
+    <value>Interne fout: PKey en FKey kolom aantal komt niet overeen.</value>
+  </data>
+  <data name="InMemory_CannotFindParentRelationForNode" xml:space="preserve">
+    <value>Kan geen ouder relatie vinden voor node '{0}'. Foute query of interne XPO fout.</value>
+  </data>
+  <data name="InMemorySet_UniqueIndex" xml:space="preserve">
+    <value>Unieke index '{0}' is geschonden.</value>
+  </data>
+  <data name="Helpers_SameDictionaryExpected" xml:space="preserve">
+    <value>Dictionary komt niet overeen.</value>
+  </data>
+  <data name="InMemorySet_WrongInitData" xml:space="preserve">
+    <value>Het aantal kolommen in de bron rij en doel tabel komt niet overeen.</value>
+  </data>
+  <data name="CriteriaAnalizer_EmptyJoinOperandId" xml:space="preserve">
+    <value>JoinOperandId is leeg.</value>
+  </data>
+  <data name="View_IsInLoading" xml:space="preserve">
+    <value>Kan de view niet herladen terwijl deze bezig is met het asynchroon laden van data.</value>
+  </data>
+  <data name="CriteriaAnalizer_NullJoinClassInfo" xml:space="preserve">
+    <value>JoinClassInfo is niets.</value>
+  </data>
+  <data name="SerializableObjectLayer_OptimisticLockFieldInDLNotExists" xml:space="preserve">
+    <value>KlasseInfo '{0}' heeft geen OptimisticLockFieldInDataLayer gedefinieerd.</value>
+  </data>
+  <data name="InMemorySet_WrongRollbackInfo" xml:space="preserve">
+    <value>Interne fout: Foutieve rollback informatie.</value>
+  </data>
+  <data name="Session_InternalXPOError" xml:space="preserve">
+    <value>Interne XPO fout.</value>
+  </data>
+  <data name="Helpers_CloningObjectModified" xml:space="preserve">
+    <value>Het object met niet opgeslagen wijzigen kan niet gekloond worden.</value>
+  </data>
+  <data name="Collections_CannotResolvePropertyTypeComparer" xml:space="preserve">
+    <value>Kan de vergelijker niet vinden voor eigenschap '{0}' van type '{1}'.</value>
+  </data>
+  <data name="InMemorySet_AliasNotFound" xml:space="preserve">
+    <value>Tabel met alias '{0}' niet gevonden.</value>
+  </data>
+  <data name="ObjectLayer_XPClassInfoNotFound" xml:space="preserve">
+    <value>KlasseInfo '{0}' niet gevonden.</value>
+  </data>
+  <data name="InMemory_MalformedAggregate" xml:space="preserve">
+    <value>Foute aggregatie of interne XPO fout.</value>
+  </data>
+  <data name="SerializableObjectLayer_OptimisticLockFieldNotExists" xml:space="preserve">
+    <value>KlasseInfo '{0}' heeft geen OptimisticLockField gedefinieerd.</value>
+  </data>
+  <data name="InMemorySet_XMLException_ReferNotFound" xml:space="preserve">
+    <value>XML lader: Kan '{0}' waar naar wordt verwezen niet vinden.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XSsequenceExpected" xml:space="preserve">
+    <value>XML lader: xs:sequence wordt verwacht.</value>
+  </data>
+  <data name="InMemorySet_DifferentTypes" xml:space="preserve">
+    <value>PKey en FKey kolom type komt niet overeen.</value>
+  </data>
+  <data name="Collections_NotCollectionProperty" xml:space="preserve">
+    <value>{0}.{1} is geen verzameling eigenschap. Deze zou aangemerkt moeten worden met de AssociationAttribute en zou van het XPBaseCollection moeten erven.
+Waarschijnlijk gebruikt u GetCollection waar u GetList zou moeten gebruiken.</value>
+  </data>
+  <data name="InMemorySet_DifferentComplexSet" xml:space="preserve">
+    <value>Interne fout: Kan geen rij toevoegen uit een andere complexe set.</value>
+  </data>
+  <data name="Object_DelayedPropertyContainerCannotBeAssigned" xml:space="preserve">
+    <value>Houder van een uitgestelde, aangepaste, eigenschap '{0}.{1}' kan niet toegekend worden.</value>
+  </data>
+  <data name="Session_EnteringTheX0StateFromTheX1StateIsProhibit" xml:space="preserve">
+    <value>Overgang naar status '{0}' vanuit status '{2}' is verhinderd door status '{1}'.</value>
+  </data>
+  <data name="SerializableObjectLayer_OLDoesNotImplementptISerializableObjectLayerEx" xml:space="preserve">
+    <value>Object laag implementeert niet ISerializableObjectLayerEx</value>
+  </data>
+  <data name="Metadata_DuplicateMappingField" xml:space="preserve">
+    <value>Dubbele mapping naar kolom '{0}' in klasse '{1}'.</value>
+  </data>
+  <data name="Metadata_NonpesistentKey" xml:space="preserve">
+    <value>Niet persistente sleutel  '{0}.{1}' gevonden.</value>
+  </data>
+  <data name="CriteriaAnalizer_TopLevelAggregateNotSupported" xml:space="preserve">
+    <value>Hoogste niveau aggregaties kunnen niet gebruikt worden in condities.</value>
+  </data>
+  <data name="SerOLHelpers_NestedParentMapIsNull" xml:space="preserve">
+    <value>Interne fout: NestedParentMap en ParentNestedMap zijn null.</value>
+  </data>
+  <data name="Async_CanChangeProperties" xml:space="preserve">
+    <value>Reeds in gebruik!</value>
+  </data>
+  <data name="InTransactionLoader_ProcessReturnResultError" xml:space="preserve">
+    <value>Interne fout: Operatie niet toegestaan in SelectData mode.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XSselectorNodeExpected" xml:space="preserve">
+    <value>XML lader: Node 'xs:selector' wordt verwacht.</value>
+  </data>
+  <data name="Object_NullInstance" xml:space="preserve">
+    <value>Implementor is niet gevonden voor interface virtueel object '{0}'.</value>
+  </data>
+  <data name="InMemoryFull_CannotPrepareQueryPlan" xml:space="preserve">
+    <value>Kan geen query plan maken.</value>
+  </data>
+  <data name="ObjectLayer_MemberNotFound" xml:space="preserve">
+    <value>Eigenschap '{0}.{1}' niet gevonden.</value>
+  </data>
+  <data name="InMemorySet_InvalidTypeString" xml:space="preserve">
+    <value>XML lader: Foutieve type naam.</value>
+  </data>
+  <data name="InMemorySet_XMLException_SchemaNodeNotFound" xml:space="preserve">
+    <value>XML lader: Node 'schema' niet gevonden.</value>
+  </data>
+  <data name="InMemorySet_XMLException_ElementNodeNotFound" xml:space="preserve">
+    <value>XML lader: Node 'element' niet gevonden.</value>
+  </data>
+  <data name="InMemorySet_XMLException_NameAttributeExpected" xml:space="preserve">
+    <value>XML lader: Attribuut 'name' wordt verwacht.</value>
+  </data>
+  <data name="InMemorySet_XMLException_NullPrimaryColumns" xml:space="preserve">
+    <value>XML lader: Kan primaire sleutel '{0}' niet vinden.</value>
+  </data>
+  <data name="CriteriaAnalizer_PathNotFound" xml:space="preserve">
+    <value>Kan het pad {0}-&gt;{1} niet vinden.</value>
+  </data>
+  <data name="Object_PersistentOrThis" xml:space="preserve">
+    <value>Eigenschap '{0}.{1}' zou persistent moeten zijn of 'this' teruggeven.</value>
+  </data>
+  <data name="InMemorySet_XMLException_TableNameIsNotSpecified" xml:space="preserve">
+    <value>XML lader: Tabel naam niet opgegeven.</value>
+  </data>
+  <data name="InMemorySet_OperationNotAllowed" xml:space="preserve">
+    <value>De opgegeven operatie is niet toegestaan.</value>
+  </data>
+  <data name="Helpers_DifferentObjectsKeys" xml:space="preserve">
+    <value>Kan de wijzigingen voor het object met aangepaste sleutel niet samenvoegen.</value>
+  </data>
+  <data name="ServerModeGridSource_SummaryItemTypeNotSupported" xml:space="preserve">
+    <value>Interne fout: Het opgegeven SummaryItemType.{0} wordt niet ondersteund.</value>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidValueAttributeValue" xml:space="preserve">
+    <value>XML lader: Foutieve 'value' attribuut waarde.</value>
+  </data>
+  <data name="InMemorySet_ConstraintConflict" xml:space="preserve">
+    <value>Beperking is geschonden in tabel '{0}' voor FKey op kolommen '{1}'.</value>
+  </data>
+  <data name="InMemorySet_NullDefaultValueNotAllowed" xml:space="preserve">
+    <value>Null waardes zijn niet toegestaan als standaard waardes voor kolom '{0}'.</value>
+  </data>
+  <data name="Collections_CannotAssignProperty" xml:space="preserve">
+    <value>Kan eigenschap '{0}' niet wijzigen als de XPCollection niet in ontwerp of initialisatie modus is.</value>
+  </data>
+  <data name="Metadata_WrongObjectType" xml:space="preserve">
+    <value>Object {0} aangemaakt met ClassInfo {2} geeft foute ClassInfo {1} terug.</value>
+  </data>
+  <data name="InMemorySet_NotLoadingMode" xml:space="preserve">
+    <value>Kan geen waarde toekennen aan reeks kolom '{0}' indien niet in laad mode.</value>
+  </data>
+  <data name="InMemorySet_InsertingDataIntoAutoincrementColumn" xml:space="preserve">
+    <value>Geen geen waarde toekennen aan reeks kolom '{0}'.</value>
+  </data>
+  <data name="InMemorySet_InEditMode" xml:space="preserve">
+    <value>De rij staat al in bewerk mode.</value>
+  </data>
+  <data name="Object_DelayedPropertyDoesNotContainProperObject" xml:space="preserve">
+    <value>Eigenschap '{0}.{1}' bevat geen XPDelayedProperty object.</value>
+  </data>
+  <data name="InMemorySet_WrongDictionaryIndex" xml:space="preserve">
+    <value>Interne fout: Foutieve dictionary gegevens in index '{0}'.</value>
+  </data>
+  <data name="ServerModeGridSource_GroupAndAddOrRemoveIsNotAllwed" xml:space="preserve">
+    <value>Het is niet toegestaan om gelijktijdig te groeperen en items te verwijderen of toe te voegen.</value>
+  </data>
+  <data name="Metadata_NullSessionProvider" xml:space="preserve">
+    <value>Interne fout: Kan geen toegang krijgen tot de sessie.</value>
+  </data>
+  <data name="ServerModeGridSource_WrongTopLevelAggregate" xml:space="preserve">
+    <value>Server of interne XPO fout: Meer dan één groepering in een bovenste niveau aggregatie.</value>
+  </data>
+  <data name="InMemoryFull_UseDataSetDataStoreOrCtor" xml:space="preserve">
+    <value>Gebruik de DataSetStore klassen of .ctor zonder DataSet in plaats van de .ctor met DataSet.</value>
+  </data>
+  <data name="Metadata_MemberAttributeExclusive" xml:space="preserve">
+    <value>PersistentAttribute, NonPersistentAttribute en MapToAttribute zijn uitsluitend. Slechts een van hen kan worden toegepast op eigenschap '{0}.{1}'.</value>
+  </data>
+  <data name="Object_CorrectPIinUOW" xml:space="preserve">
+    <value>Persistente interfaces worden niet geheel ondersteund in sessies. Gebruik in plaats van sessies, units of work.</value>
+  </data>
+  <data name="Session_UnexpectedPersistentCriteriaEvaluationBehavior" xml:space="preserve">
+    <value>Interne fout: De opgegeven PersistentCriteriaEvaluationBehavior.{0} wordt niet ondersteund.</value>
+  </data>
+  <data name="InMemory_SingleRowExpected" xml:space="preserve">
+    <value>Enkele rij wordt verwacht via '{0}', gevonden rijen: {1}.</value>
+  </data>
+  <data name="InMemory_NotACollection" xml:space="preserve">
+    <value>Foute query of interne XPO fout: '{0}'  is geen verzameling.</value>
+  </data>
+  <data name="InMemorySet_XMLException_NotDataSetNode" xml:space="preserve">
+    <value>XML lader: Node is niet aangemerkt als dataset.</value>
+  </data>
+  <data name="NestedSession_NotClonable" xml:space="preserve">
+    <value>Object hiërarchie kan niet gekloond worden omdat eigenschap '{0}.{1}' gewijzigd werd tijdens de operatie</value>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidColumnTypeDeclaration" xml:space="preserve">
+    <value>XML lader: Foutieve kolom type naam.</value>
+  </data>
+  <data name="Session_LengthsOfTheCollectionsAreDifferentInArgs" xml:space="preserve">
+    <value>De lengtes van de verzamelingen zijn verschillend in het argument.</value>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidBaseAttributeValue" xml:space="preserve">
+    <value>XML lader: Foutieve 'base' attribuut waarde.</value>
+  </data>
+  <data name="InMemorySet_XMLException_CantGetColumnType" xml:space="preserve">
+    <value>XML lader: Kan kolom type niet herleiden.</value>
+  </data>
+  <data name="InMemorySet_XMLException_choiceNodeNotFound" xml:space="preserve">
+    <value>XML lader: Node 'choice' niet gevonden.</value>
+  </data>
+  <data name="Common_MethodOrOperationNotImplemented" xml:space="preserve">
+    <value>De methode of operatie is niet geimplementeerd.</value>
+  </data>
+  <data name="View_AtLeastOneFetchProperptyShouldBeDefined" xml:space="preserve">
+    <value>Minimaal één eigenschap moet opgegeven worden om op te halen.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XScomplexTypeExpected" xml:space="preserve">
+    <value>XML lader: xs:complexType wordt verwacht.</value>
+  </data>
+  <data name="MsSql_RootIsNotInsertStatement" xml:space="preserve">
+    <value>Interne fout: Root is geen InsertStatement.</value>
+  </data>
+  <data name="InMemorySet_XMLException_ColumnNameIsNotSpecified" xml:space="preserve">
+    <value>XML lader: Kolom naam is niet opgegeven.</value>
+  </data>
+  <data name="DirectSQL_WrongColumnCount" xml:space="preserve">
+    <value>Het aantal kolommen in een resultaat rij en de doel rij komen niet overeen.</value>
+  </data>
+  <data name="InTransactionLoader_NotInSelectDataMode" xml:space="preserve">
+    <value>Interne fout: Niet in SelectData mode.</value>
+  </data>
+  <data name="Async_OperationCannotBePerformedBecauseNoSyncContext" xml:space="preserve">
+    <value>Deze actie kan niet uitgevoerd worden, omdat de uitvoerings thread geen actieve synchronisatie context heeft.</value>
+  </data>
+  <data name="Security_DeletingAnObjectWasProhibitedByTheRules" xml:space="preserve">
+    <value>Verwijderen van een object is verhinderd door validatie regels.</value>
+  </data>
+  <data name="Collections_CriteriaEvaluationBehaviorIsNotSupported" xml:space="preserve">
+    <value>Interne fout: De opgegeven CriteriaEvalutionBehaviour {0} wordt niet ondersteund door deze overloaded contructor.</value>
+  </data>
+  <data name="Object_EmptyMemberInstance" xml:space="preserve">
+    <value>InstanceType eigenschap bevat geen enkele waarde. Het is niet mogelijk om GetInstanceObject te gebruiken met een object dat nog niet goed geïnitialiseerd is.</value>
+  </data>
+  <data name="Collections_RecurringObjectAdd" xml:space="preserve">
+    <value>Terugkerende toevoeging.</value>
+  </data>
+  <data name="Object_ReferencePropertyViaCollectionAccessor" xml:space="preserve">
+    <value>Een poging is gedaan om een referentie eigenschap te zetten via een verzameling accessor.</value>
+  </data>
+  <data name="InMemory_DataSetUncommited" xml:space="preserve">
+    <value>De 'data' parameter bevat een DataSet met niet opgeslagen wijzgingen. Roep de DataSet.AcceptChange methode aan voordat u een nieuwe instanctie van de DataSetDataStore klasse aanmaakt.</value>
+  </data>
+  <data name="Session_UnexpectedState" xml:space="preserve">
+    <value>Opgegeven SessionState.{0} wordt niet ondersteund.</value>
+  </data>
+  <data name="InMemorySet_XMLException_ComplexTypeNodeNotFound" xml:space="preserve">
+    <value>XML lader: Node 'complexType' niet gevonden.</value>
+  </data>
+  <data name="Session_NotClassMember" xml:space="preserve">
+    <value>'{0}' is geen eigenschap van klasse '{1}'.</value>
+  </data>
+  <data name="Metadata_TypeNotFound" xml:space="preserve">
+    <value>Type '{0}' niet gevonden.</value>
+  </data>
+  <data name="Session_AssociationListExpected" xml:space="preserve">
+    <value>Verzameling of assocatie lijst wordt verwacht.</value>
+  </data>
+  <data name="Loader_InternalErrorOrUnsupportedReferenceStructure" xml:space="preserve">
+    <value>Interne XPO fout of niet-ondersteunde referentie structuur: Samengestelde sleutel moet geen type refereren welke kinderen heeft. Object type '{0}', gerefereerd type '{1}'.</value>
+  </data>
+  <data name="InMemoryFull_WrongIndexInfo" xml:space="preserve">
+    <value>Interne fout: Foute index informatie.</value>
+  </data>
+  <data name="InMemorySet_ColumnNotFound" xml:space="preserve">
+    <value>Kolom '{0}' niet gevonden.</value>
+  </data>
+  <data name="InMemorySet_XMLException_ReferAttributeExpected" xml:space="preserve">
+    <value>XML lader: Attribuut 'refer' wordt verwacht.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XpathAttributeExpected" xml:space="preserve">
+    <value>XML lader: Attribuut 'xpath' wordt verwacht.</value>
+  </data>
+  <data name="InMemorySet_WrongCommitInfo" xml:space="preserve">
+    <value>Interne fout: Foutieve commit informatie.</value>
+  </data>
+  <data name="DataView_ReferenceMembersWithCompoundKeyAreNotSupported" xml:space="preserve">
+    <value>Klassen met struct eigenschappen worden niet ondersteund.</value>
+  </data>
+  <data name="InMemorySet_XMLException_DataTypeAttributeNotFound" xml:space="preserve">
+    <value>XML lader: Attribuut 'DataType' niet gevonden.</value>
+  </data>
+  <data name="Session_MostProbablyYouAreTryingToInitiateAnObject" xml:space="preserve">
+    <value>Waarschijnlijk probeert u een object laden operatie te starten terwijl de vorige object opslaan operatie nog niet gereed is.
+Stel uw operatie uit totdat Session.ObjectsSaved of IXPObject.OnSaved event afgevuurd wordt (zolang Sessin.IsObjectsSaving de waarde True heeft).</value>
+  </data>
+  <data name="Loader_ReloadError" xml:space="preserve">
+    <value>Interne fout: De opgegeven '{0}.{1}' wordt niet ondersteund.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XSlengthExpected" xml:space="preserve">
+    <value>XML lader: xl:length wordt verwacht.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XpathAttributeWrongFormat" xml:space="preserve">
+    <value>XML lader: Het 'xpath' attribuut waarde formaat is fout.</value>
+  </data>
+  <data name="CriteriaAnalizer_NullTransitionMemberInfo" xml:space="preserve">
+    <value>Overgangs MemberInfo is null.</value>
+  </data>
+  <data name="Session_CrossThreadFailureDetected" xml:space="preserve">
+    <value>Cross-thread operatie gedetecteerd. '{0}' is geen thread-safe object, gebruikt dit object niet tegelijkertijd vanuit verschillende threads.</value>
+  </data>
+  <data name="LinqToXpo_SequenceContainsNoMatchingElement" xml:space="preserve">
+    <value>Reeks bevat geen overeenkomend element.</value>
+  </data>
+</root>

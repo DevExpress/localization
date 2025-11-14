@@ -1,0 +1,826 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Paging_EnumeratorObjectModifiedOrDeleted" xml:space="preserve">
+    <value>Uno o più oggetti è stato modificato o eliminato dall'intervallo richiesto. È necessario aggiornare l'elenco degli Id.</value>
+  </data>
+  <data name="Metadata_SeveralClassesWithSameName" xml:space="preserve">
+    <value>Il dizionario contiene già le informazioni di classe '{1}'. Possibili motivi: l'assembly '{0}' è stato caricato due volte.</value>
+  </data>
+  <data name="Helpers_ResolveDataForCollection" xml:space="preserve">
+    <value>Il membro non è una Collection.</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotResolveClassinfoInstanceType" xml:space="preserve">
+    <value>XML non valido: Impossibile risolvere il tipo di istanza Classinfo.</value>
+  </data>
+  <data name="Session_TranSequenceCommit" xml:space="preserve">
+    <value>Impossibile eseguire il commit perchè nessuna transazione attiva..</value>
+  </data>
+  <data name="PersistentAliasExpander_NonPersistentCriteria" xml:space="preserve">
+    <value>Impossibile eseguire la query di un archivio di dati utilizzando il criterio "{0}", perché utilizza la proprietà di non persistente '{1}'.</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_MoreThenOneAssociatedMemberFound" xml:space="preserve">
+    <value>L'associazione '{0}' è ambigua tra i membri '{2}' e '{3}' della classe '{1}'.</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorUnknownAttribute" xml:space="preserve">
+    <value>XML non valido: Attributo sconosciuto '{0}'.</value>
+  </data>
+  <data name="MetaData_NonPersistentReferenceFound" xml:space="preserve">
+    <value>E' stato trovato un riferimento al tipo non persistito '{0}'.</value>
+  </data>
+  <data name="InMemorySet_XMLException_SchemaNodeNotFound" xml:space="preserve">
+    <value>XML loader: Nodo 'schema' non trovato.</value>
+  </data>
+  <data name="Session_CannotLoadInvalidType" xml:space="preserve">
+    <value>Impossibile caricare il tipo non valido '{0}'.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XSsequenceExpected" xml:space="preserve">
+    <value>XML loader: xs:sequence mancante.</value>
+  </data>
+  <data name="MetaData_CannotResolveClassInfo" xml:space="preserve">
+    <value>Impossibile risolvere ClassInfo per il tipo di '[{0}] {1}' ".</value>
+  </data>
+  <data name="Session_CannotReloadPurgedObject" xml:space="preserve">
+    <value>Gli oggetti richiesti non possono essere caricati, perché non presenti nell'archivio dati. Questi oggetti potrebbero essere stati già eliminati.  Se vedete questa eccezione ancora una volta con gli stessi oggetti nell'elenco, potrebbe essere danneggiata l'integrità referenziale dell'archivio dati. In questo caso, si prega di contattare l'amministratore di sistema. ({0}).</value>
+  </data>
+  <data name="Metadata_AssociationListExpected" xml:space="preserve">
+    <value>Attesa una Collection o una List di associazione: '{0}.{1}'.</value>
+  </data>
+  <data name="InMemorySet_XMLException_ReferAttributeExpected" xml:space="preserve">
+    <value>XML loader: Attributo 'refer' mancante.</value>
+  </data>
+  <data name="Session_DifferentObjectsWithSameKey" xml:space="preserve">
+    <value>Oggetti diversi con le stesse chiavi.</value>
+  </data>
+  <data name="InMemorySet_XMLException_ComplexTypeNodeNotFound" xml:space="preserve">
+    <value>XML loader: Nodo 'complexType' non trovato.</value>
+  </data>
+  <data name="Loader_InternalErrorOrUnsupportedReferenceStructure" xml:space="preserve">
+    <value>Metodo di riferimento non supportato o errore interno XPO: una chiave composta non deve fare riferimento a un tipo che ha discendenti. Tipo di oggetto '{0}', tipi risolti '{1}'.</value>
+  </data>
+  <data name="InMemory_CannotFindParentRelationForNode" xml:space="preserve">
+    <value>Impossibile trovare una relazione padre per il nodo '{0}'. Query non validoa o errore interno di XPO.</value>
+  </data>
+  <data name="PersistentAliasExpander_ReferenceOrCollectionExpectedInTheMiddleOfThePath" xml:space="preserve">
+    <value>Membro errato '{0}' in un percorso. È previsto un un'associazione ad una Collection o un riferimento ad una proprietà.</value>
+  </data>
+  <data name="InTransactionLoader_NotInSelectDataMode" xml:space="preserve">
+    <value>Errore interno: non in modalità SelectData.</value>
+  </data>
+  <data name="Paging_EnumeratorPositioning" xml:space="preserve">
+    <value>L'enumeratore è posizionato prima del primo elemento o dopo l'ultimo elemento della Collection.</value>
+  </data>
+  <data name="MetaData_ReferenceTooComplex" xml:space="preserve">
+    <value>Il riferimento ' {0}.{1}' è troppo complesso.</value>
+  </data>
+  <data name="Session_SessionMixing" xml:space="preserve">
+    <value>L'oggetto '{0}' appartiene a un'altra sessione.</value>
+  </data>
+  <data name="ServerModeGridSource_WrongTopLevelAggregate" xml:space="preserve">
+    <value>Errore del Server o errore interno XPO:Trovati più di un gruppo in una aggregazione di primo livello.</value>
+  </data>
+  <data name="ConnectionProvider_KeysAutogenerationNonSupportedTypeException" xml:space="preserve">
+    <value>L'autogenerazione delle chiavi è supportata solo per i tipi Int32 e Guid. Tipo della classe: '{0}'.</value>
+  </data>
+  <data name="InMemorySet_XMLException_TableNotDeclared" xml:space="preserve">
+    <value>XML loader: La tabella '{0}' non è dichiarata.</value>
+  </data>
+  <data name="Metadata_CustomProperties_PersistentAndNonStorableType" xml:space="preserve">
+    <value>Impossibile persistere il membro personalizzato ' {0}.{1}' di tipo '{2}'.</value>
+  </data>
+  <data name="MetaData_IncorrectPath" xml:space="preserve">
+    <value>Il percorso della proprietà '{1}' non è corretto per il tipo '{0}'.</value>
+  </data>
+  <data name="CriteriaAnalizer_PathNotFound" xml:space="preserve">
+    <value>Impossibile trovare il percorso {0}-&gt;{1}.</value>
+  </data>
+  <data name="InMemorySet_XMLException_ReferNotFound" xml:space="preserve">
+    <value>XML loader: Impossibile trovare il riferimento a '{0}'.</value>
+  </data>
+  <data name="Session_CannotAddObjectToObjectCache" xml:space="preserve">
+    <value>Impossibile aggiungere l'oggetto '{0}' con chiave = '{1}' to the object identity map because another object '{2}' with the same key has already been added to it.</value>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidBaseAttributeValue" xml:space="preserve">
+    <value>XML loader: Valore dell'attributo 'base' non corretto.</value>
+  </data>
+  <data name="Session_AssociationListExpected" xml:space="preserve">
+    <value>Attesa una Collection o una List di associazione.</value>
+  </data>
+  <data name="Session_CannotChangePropertyWhenSessionIsConnected" xml:space="preserve">
+    <value>Impossibile modificare {0} quando la sessione è connessa.</value>
+  </data>
+  <data name="Metadata_CustomProperties_ReferenceOrCollectionInSessionStore" xml:space="preserve">
+    <value>Impossibile creare il membro personalizzato '{1}' del riferimento o della Collection perché la classe '{0}' non implementa l'interfaccia '{2}'.</value>
+  </data>
+  <data name="View_AtLeastOneFetchProperptyShouldBeDefined" xml:space="preserve">
+    <value>Almeno una proprietà deve essere definita per il recupero dei dati.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XSrestrictionExpected" xml:space="preserve">
+    <value>XML loader: xs:restriction mancante.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XSsimpleTypeExpected" xml:space="preserve">
+    <value>XML loader: xs:simpleType mancante.</value>
+  </data>
+  <data name="SerializableObjectLayer_OLDoesNotImplementptISerializableObjectLayerEx" xml:space="preserve">
+    <value>L' object layer non implementa ISerializableObjectLayerEx.</value>
+  </data>
+  <data name="InMemory_DataSetUncommited" xml:space="preserve">
+    <value>Il parametro 'data' contiene un DataSet con modifiche non salvate. Prima di creare una nuova istanza della classe DataSetDataStore, chiamare il metodo DataSet.AcceptChanges.</value>
+  </data>
+  <data name="Security_DeletingAnObjectWasProhibitedByTheRules" xml:space="preserve">
+    <value>Eliminazione proibita da una regola di convalida.</value>
+  </data>
+  <data name="SerOLHelpers_NestedParentMapIsNull" xml:space="preserve">
+    <value>Errore interno: NestedParentMap and ParentNestedMap sono nulli.</value>
+  </data>
+  <data name="Collections_CannotResolvePropertyTypeComparer" xml:space="preserve">
+    <value>Impossibile individuare l'operatore di confronto per la proprietà '{0}' di tipo '{1}'.</value>
+  </data>
+  <data name="Async_CanChangeProperties" xml:space="preserve">
+    <value>Già in uso!</value>
+  </data>
+  <data name="InMemorySet_NullDefaultValueNotAllowed" xml:space="preserve">
+    <value>I valori nulli non sono consentiti come valori di default per la colonna '{0}'.</value>
+  </data>
+  <data name="InMemory_NotACollection" xml:space="preserve">
+    <value>Query non valida o errore interno XPO: '{0}' non è una Collection.</value>
+  </data>
+  <data name="InMemorySet_ConstraintConflict" xml:space="preserve">
+    <value>Vincolo violato nella tabella '{0}' per la FKey presente sulle colonne '{1}'.</value>
+  </data>
+  <data name="InMemorySet_XMLException_NotDataSetNode" xml:space="preserve">
+    <value>XML loader: Il nodo non è segnato come dataset.</value>
+  </data>
+  <data name="Session_ObjectCannotBePurged" xml:space="preserve">
+    <value>L'oggetto '{0}' con id = '{1}' non può essere eliminato. Ci sono oggetti che lo riferiscono.</value>
+  </data>
+  <data name="CriteriaAnalizer_EmptyJoinOperandId" xml:space="preserve">
+    <value>JoinOperandId è vuoto.</value>
+  </data>
+  <data name="Session_IncompatibleIdType" xml:space="preserve">
+    <value>Il tipo di id '{0}' passato è incompatibile con ' {1}.{2}' avente chiave di tipo '{3}'.</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_AssociationAttributeOnlyForListOrReference" xml:space="preserve">
+    <value>L'attributo di associazione non può essere utilizzato per il membro ' {1}.{2}'. È previsto un riferimento o un elenco.</value>
+  </data>
+  <data name="Security_ICommandChannel_TransferringRequestsIsProhibited" xml:space="preserve">
+    <value>Il trasferimento delle richieste attraverso ICommandChannel è vietata dal motore di sicurezza.</value>
+  </data>
+  <data name="Session_AlreadyConnected" xml:space="preserve">
+    <value>La sessione è già connessa.</value>
+  </data>
+  <data name="InMemoryFull_DifferentColumnListLengths" xml:space="preserve">
+    <value>Errore interno: mancata corrispondenza di numero di colonne PKey e FKey.</value>
+  </data>
+  <data name="MetaData_KeyPropertyAbsent" xml:space="preserve">
+    <value>Chiave del tipo '{0}' mancante.</value>
+  </data>
+  <data name="InMemorySet_WrongInitData" xml:space="preserve">
+    <value>Il numero di colonne in una riga sorgente e la riga della tabella di destinazione non corrispondono.</value>
+  </data>
+  <data name="Session_ObjectModificationIsNotAllowed" xml:space="preserve">
+    <value>Gli oggetti non possono essere modificati se la sessione è nello stato CommitChangesToDataLayerInner.</value>
+  </data>
+  <data name="Metadata_DuplicateMappingField" xml:space="preserve">
+    <value>Mappping alla colonna '{0}' della classe '{1}' duplicata.</value>
+  </data>
+  <data name="Object_CorrectPIinUOW" xml:space="preserve">
+    <value>La persistenza di interfacce non è pienamente supportata nelle sessioni (Session). Utilizzare invece le unità di lavoro (Unit Of Work).</value>
+  </data>
+  <data name="Object_ReferencePropertyViaCollectionAccessor" xml:space="preserve">
+    <value>Tentativo di impostare una proprietà di riferimento tramite la funzione di accesso della Collection. </value>
+  </data>
+  <data name="InMemorySet_XMLException_choiceNodeNotFound" xml:space="preserve">
+    <value>XML loader: Nodo 'choice' non trovato.</value>
+  </data>
+  <data name="Session_MostProbablyYouAreTryingToInitiateAnObjectEx" xml:space="preserve">
+    <value>Molto probabilmente, si sta tentando di avviare un caa operazione di caricamento oggetti, mentre l'operazione di caricamento precedente non è ancora completata. Rinviare l'operazione fino a quando viene generato l'evento di Session.ObjectsLoaded o IXPObject.OnLoaded (mentre Session.IsObjectsLoading è true). Un'altra causa di questa eccezione è che si sta tentando di lavorare contemporaneamente con la stessa sessione da thread diversi.</value>
+  </data>
+  <data name="InMemory_MalformedAggregate" xml:space="preserve">
+    <value>Aggregazione non valida o errore interno XPO.</value>
+  </data>
+  <data name="InMemorySet_XMLException_TableNameIsNotSpecified" xml:space="preserve">
+    <value>XML loader: Nome tabella non specificato.</value>
+  </data>
+  <data name="MetaData_IncorrectPathMemberNotExists" xml:space="preserve">
+    <value>Il percorso della proprietà '{1}' non è corretto per il tipo '{0}' perché il membro '{2}.{3}' non esiste.</value>
+  </data>
+  <data name="SerializableObjectLayer_OptimisticLockFieldInDLNotExists" xml:space="preserve">
+    <value>ClassInfo '{0}' privo della definizione di OptimisticLockFieldInDataLayer.</value>
+  </data>
+  <data name="InMemorySet_DifferentTypes" xml:space="preserve">
+    <value>Mancata corrispondenza di tipo di colonna PKey e FKey.</value>
+  </data>
+  <data name="InMemorySet_CantUpdateRelationColumn" xml:space="preserve">
+    <value>Le colonne in relazione non possono essere modificate.</value>
+  </data>
+  <data name="Session_TranSequenceBegin" xml:space="preserve">
+    <value>Impossibile avviare più transazioni in questa sessione.</value>
+  </data>
+  <data name="InMemorySet_AliasNotFound" xml:space="preserve">
+    <value>Tabella con alias '{0}' non trovata.</value>
+  </data>
+  <data name="Session_InternalXPOError" xml:space="preserve">
+    <value>Errore interno XPO.</value>
+  </data>
+  <data name="InMemoryFull_UseDataSetDataStoreOrCtor" xml:space="preserve">
+    <value>Anziché utilizzare il costruttore con DataSet, utilizzare la classe DataSetDataStore o il costruttore senza DataSet.</value>
+  </data>
+  <data name="Helpers_SameDictionaryExpected" xml:space="preserve">
+    <value>Mancata corrispondenza di dizionario.</value>
+  </data>
+  <data name="Session_UnexpectedPersistentCriteriaEvaluationBehavior" xml:space="preserve">
+    <value>Errore interno: Il PersistentCriteriaEvaluationBehavior.{0} specificato non è supportato.</value>
+  </data>
+  <data name="ObjectLayer_MemberNotFound" xml:space="preserve">
+    <value>Membro '{0}.{1}' non trovato.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XScomplexTypeExpected" xml:space="preserve">
+    <value>XML loader: xs:complexType mancante.</value>
+  </data>
+  <data name="Metadata_SuppressSuspiciousMemberInheritanceCheckError" xml:space="preserve">
+    <value>Il membro ' {0}.{1}' ed il suo attributo '{2}' saranno ignorati. Il membro con lo stesso nome è già dichiarato nella classe base '{3}'. Per eliminare questa eccezione impostare DevExpress.Xpo.Metadata.ReflectionClassInfo.SuppressSuspiciousMemberInheritanceCheck a 'True'.</value>
+  </data>
+  <data name="MetaData_PropertyMissing" xml:space="preserve">
+    <value>La proprietà '{0}' non esiste all'interno del tipo '{1}'.</value>
+  </data>
+  <data name="MetaData_SessionCtorAbsent" xml:space="preserve">
+    <value>Il tipo {0} non ha un costruttore di sessione specifico.</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotFindClassinfoType" xml:space="preserve">
+    <value>XML non valido: Impossibile trovare il tipo di classinfo.</value>
+  </data>
+  <data name="Object_NullInstance" xml:space="preserve">
+    <value>Impossibile trovare un implementarore per l'interfaccia virtuale '{0}'.</value>
+  </data>
+  <data name="Session_UnexpectedState" xml:space="preserve">
+    <value>Il SessionState.{0} non è supportato.</value>
+  </data>
+  <data name="MetaData_PropertyTypeMismatch" xml:space="preserve">
+    <value>L'associazione '{1}' tra le classi '{3}' e '{4}' non è valida. La classe '{3}' contiene la proprietà '{2}' che si riferisce alla classe '{4}'. La classe '{4}' contiene la proprietà '{0}' che impropriamente si riferisce alla classe '{5}', anche se deve fare riferimento alla classe '{3}'.</value>
+  </data>
+  <data name="InMemorySet_NotLoadingMode" xml:space="preserve">
+    <value>Impossibile assegnare il valore alla colonna ad incremento automatico '{0}' mentre non è nella fase di caricamento.</value>
+  </data>
+  <data name="Session_TranSequenceRollback" xml:space="preserve">
+    <value>Impossibile eseguire il rollback perchè nessuna transazione attiva..</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorModelTagAbsent" xml:space="preserve">
+    <value>XML non valido: Tag &lt;model&gt; non trovato o spazio dei nomi non corretto.</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_UseAssociationNameAsIntermediateTableNameMismatch" xml:space="preserve">
+    <value>Il valore di UseAssociationNameAsIntermediateTableName deve essere lo stesso su entrambi i lati dell'associazione '{0}' tra ' {1}.{2}' e ' {3}.{4}'.</value>
+  </data>
+  <data name="Loader_ReloadError" xml:space="preserve">
+    <value>Errore interno: Il metodo specificato '{0}.{1}' non è supportato.</value>
+  </data>
+  <data name="Security_SavingAnObjectWasProhibitedByTheRulesOfVal" xml:space="preserve">
+    <value>Salvataggio proibito da una regola di convalida.</value>
+  </data>
+  <data name="Async_OperationCannotBePerformedBecauseNoSyncContext" xml:space="preserve">
+    <value>Questa operazione può essere eseguita, perché il Thread in esecuzione non ha alcun contesto di sincronizzazione corrente.</value>
+  </data>
+  <data name="View_PropertyNotFetched" xml:space="preserve">
+    <value>La proprietà '{0}' non è stata recuperata (fetched).</value>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidColumnTypeDeclaration" xml:space="preserve">
+    <value>XML loader: Nome del tipo di colonna non valido.</value>
+  </data>
+  <data name="Collections_NotCollectionProperty" xml:space="preserve">
+    <value>{0}.{1} non è una proprietà della Collection. Dovrebbe essere applicato l'attributo AssociationAttribute ed essere di un tipo discendente da XPBaseCollection. Probabilmente, si sta utilizzando GetCollection in una situazione in cui dovrebbe essere utilizzato GetList.</value>
+  </data>
+  <data name="InMemorySet_XMLException_ElementNodeNotFound" xml:space="preserve">
+    <value>XML loader: Nodo 'element' non trovato.</value>
+  </data>
+  <data name="MetaData_XMLLoadError" xml:space="preserve">
+    <value>Errore di caricamento del dizionario XML: {0}.</value>
+  </data>
+  <data name="DataView_ReferenceMembersWithCompoundKeyAreNotSupported" xml:space="preserve">
+    <value>I riferimenti a membri con chiavi composte non sono supportati.</value>
+  </data>
+  <data name="InTransactionLoader_ProcessReturnResultError" xml:space="preserve">
+    <value>Errore interno: operazione non consentita in modalità SelectData.</value>
+  </data>
+  <data name="InMemorySet_WrongCommitInfo" xml:space="preserve">
+    <value>Error Interno: Informazioni di commit non valide.</value>
+  </data>
+  <data name="View_IsInLoading" xml:space="preserve">
+    <value>Non è possibile ricaricare la View mentre carica i dati in modo asincrono.</value>
+  </data>
+  <data name="InMemorySet_ColumnNotFound" xml:space="preserve">
+    <value>Colonna '{0}' non trovata.</value>
+  </data>
+  <data name="InMemorySet_WrongDictionaryIndex" xml:space="preserve">
+    <value>Error Interno: dati errati del dizionario nell'indice '{0}'.</value>
+  </data>
+  <data name="InMemorySet_UniqueIndex" xml:space="preserve">
+    <value>Violato l'indice univoco '{0}'.</value>
+  </data>
+  <data name="InMemoryFull_WrongIndexInfo" xml:space="preserve">
+    <value>Errore interno: informazioni sull'indice non valido.</value>
+  </data>
+  <data name="Object_EmptyMemberInstance" xml:space="preserve">
+    <value>Il membro InstanceType non contiene alcun valore. È Impossibile utilizzare GetInstanceObject con un oggetto che non è correttamente inizializzato.</value>
+  </data>
+  <data name="Metadata_SameTableName" xml:space="preserve">
+    <value>La classe {0} è mappata alla stessa tabella di {1}.</value>
+  </data>
+  <data name="Metadata_PersistentAliasCircular" xml:space="preserve">
+    <value>La proprietà '{1}' della classe '{0}' è contrassegnata dall'attributo PersistentAlias con un'espressione non corretta '{2}'. Questo causa un riferimento ciclico.</value>
+  </data>
+  <data name="Session_WrongConnectionString" xml:space="preserve">
+    <value>Stringa di connessione non valida: '{0}'.</value>
+  </data>
+  <data name="InMemorySet_DifferentComplexSet" xml:space="preserve">
+    <value>Errore interno: impossibile aggiungere una riga da un altro insieme complesso.</value>
+  </data>
+  <data name="Metadata_NotCollection" xml:space="preserve">
+    <value>'{0}.{1}' non è una Collection.</value>
+  </data>
+  <data name="Object_PersistentOrThis" xml:space="preserve">
+    <value>Il membro '{0}.{1}' dovrebbe essere persistente o restituire 'this'.</value>
+  </data>
+  <data name="InMemorySet_XMLException_CantGetColumnType" xml:space="preserve">
+    <value>XML loader: Impossibile definire il tipo di colonna.</value>
+  </data>
+  <data name="CriteriaAnalizer_NullJoinClassInfo" xml:space="preserve">
+    <value>JoinClassInfo è NULL.</value>
+  </data>
+  <data name="Collections_RecurringObjectAdd" xml:space="preserve">
+    <value>Aggiunta ricorrente.</value>
+  </data>
+  <data name="Generator_OneOfBinaryOperatorsOperandsIsNull" xml:space="preserve">
+    <value>Uno dei operandi del BinaryOperator è NULL.</value>
+  </data>
+  <data name="ThreadSafeDataLayer_DictionaryModified" xml:space="preserve">
+    <value>Spiacenti, non è possibile modificare il dizionario mentre viene utilizzato dalla ThreadSafeDataLayer. Si prega di chiamare il metodo Session.CreateObjectTypeRecords dell'applicazione di installazione/amministrazione prima di utilizzare ThreadSafeDataLayer. ClassInfo modificata o creata: '{0}'.</value>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidValueAttributeValue" xml:space="preserve">
+    <value>XML loader: Valore dell'attributo 'value' non corretto.</value>
+  </data>
+  <data name="Metadata_NullSessionProvider" xml:space="preserve">
+    <value>Errore interno: Impossibile accedere alla sessione.</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotFindConstructor" xml:space="preserve">
+    <value>XML non valido: Impossibile trovare il costruttore per il tipo '{0}'.</value>
+  </data>
+  <data name="Metadata_CantPersistGenericType" xml:space="preserve">
+    <value>Impossibile salvare un tipo generico. Rimuovere l'attributo PersistentAttribute dalla definizione del tipo '{0}' e creare una classe derivata non generica.</value>
+  </data>
+  <data name="ServerModeGridSource_SummaryItemTypeNotSupported" xml:space="preserve">
+    <value>Errore interno: Il SummaryItemType.{0} specificato non è supportato.</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_NoAssociationListInAssociation" xml:space="preserve">
+    <value>L'associazione '{0}' tra ' {1}.{2}' e ' {3}.{4}' non è valida. È previsto un  una Collection o una List di associazione.</value>
+  </data>
+  <data name="InMemorySet_XMLException_NameAttributeExpected" xml:space="preserve">
+    <value>XML loader: Attributo 'name' mancante.</value>
+  </data>
+  <data name="InMemory_SingleRowExpected" xml:space="preserve">
+    <value>Atteso il ritorno di una singola riga tramite "{0}", trovate righe: {1}.</value>
+  </data>
+  <data name="InMemorySet_InsertingDataIntoAutoincrementColumn" xml:space="preserve">
+    <value>Impossibile assegnare un valore alla colonna ad incremento automatico '{0}'.</value>
+  </data>
+  <data name="InMemorySet_InEditMode" xml:space="preserve">
+    <value>La riga si trova già in modalità di modifica.</value>
+  </data>
+  <data name="Security_TheCommitOperationWasProhibitedByTheRules" xml:space="preserve">
+    <value>Commit proibito da una regola di convalida.</value>
+  </data>
+  <data name="Session_NotClassMember" xml:space="preserve">
+    <value>'{0}' non è un membro della classe '{1}'.</value>
+  </data>
+  <data name="InMemoryFull_CannotPrepareQueryPlan" xml:space="preserve">
+    <value>Impossibile creare un piano di esecuzione per la query.</value>
+  </data>
+  <data name="ObjectLayer_XPClassInfoNotFound" xml:space="preserve">
+    <value>ClassInfo '{0}' non trovato.</value>
+  </data>
+  <data name="InMemorySet_OperationNotAllowed" xml:space="preserve">
+    <value>L'operazione specificata non è consentita.</value>
+  </data>
+  <data name="Metadata_ClassAttributeExclusive" xml:space="preserve">
+    <value>Gli attributi PersistentAttribute, NonPersistentAttribute e MapToAttribute sono esclusivi. Solo uno di questi può essere applicato alla classe '{0}'.</value>
+  </data>
+  <data name="Helpers_CloningObjectModified" xml:space="preserve">
+    <value>Un oggetto con modifiche non salvate non può essere clonato.</value>
+  </data>
+  <data name="MsSql_RootIsNotInsertStatement" xml:space="preserve">
+    <value>Errore interno: Root non è un InsertStatement.</value>
+  </data>
+  <data name="Session_MostProbablyYouAreTryingToInitiateAnObject" xml:space="preserve">
+    <value>Molto probabilmente, si sta tentando di avviare un caa operazione di caricamento oggetti, mentre l'operazione di salvataggio precedente non è ancora completata. Rinviare l'operazione fino a quando viene generato l'evento di Session.ObjectsSaved o IXPObject.OnSaved (mentre Session.IsObjectsSaving è true).</value>
+  </data>
+  <data name="SerializableObjectLayer_OptimisticLockFieldNotExists" xml:space="preserve">
+    <value>ClassInfo '{0}' privo della definizione di  OptimisticLockField.</value>
+  </data>
+  <data name="Session_TypeFieldIsEmpty" xml:space="preserve">
+    <value>Il campo '{0}' è NULL (classe base '{1}').</value>
+  </data>
+  <data name="MetaData_IncorrectPathNonReferenceMember" xml:space="preserve">
+    <value>Il percorso della proprietà '{1}' non è corretto per il tipo '{0}' perché il il membro '{2}.{3}' non è un membro di riferimento.</value>
+  </data>
+  <data name="Paging_CurrentPageShouldBeLessThanPageCount" xml:space="preserve">
+    <value>CurrentPage deve essere inferiore a PageCount.</value>
+  </data>
+  <data name="InMemorySet_InvalidTypeString" xml:space="preserve">
+    <value>XML loader: nome del tipo non valido.</value>
+  </data>
+  <data name="Metadata_NonpesistentKey" xml:space="preserve">
+    <value>Trovata chiave non persistita '{0}.{1}'.</value>
+  </data>
+  <data name="InMemoryFull_TableNotFound" xml:space="preserve">
+    <value>Tabella '{0}' non trovata.</value>
+  </data>
+  <data name="Session_EnteringTheX0StateFromTheX1StateIsProhibit" xml:space="preserve">
+    <value>L'ingresso nello stato '{0}' dallo stato '{2}' è vietato a causa dello stato '{1}'.</value>
+  </data>
+  <data name="Metadata_MemberAttributeExclusive" xml:space="preserve">
+    <value>Gli attributi PersistentAttribute, NonPersistentAttribute e PersistentAliasAttribute sono esclusivi. Solo uno di questi può essere applicato al membro '{0}.{1}'.</value>
+  </data>
+  <data name="Metadata_DictionaryMixing" xml:space="preserve">
+    <value>Le informazioni di classe '{0}' appartengono ad un dizionario diverso.</value>
+  </data>
+  <data name="InMemorySet_AddRelation" xml:space="preserve">
+    <value>Impossibile aggiungere una relazione duplicata.</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_PropertyTypeMismatch" xml:space="preserve">
+    <value>L'associazione '{0}' tra le classi '{1}' e '{3}' non è valida. La classe '{1}' contiene la proprietà '{2}' che si riferisce alla classe '{3}'. La classe '{3}' contiene la proprietà '{4}', che erroneamente si riferisce alla classe '{5}'; è previsto che facesse riferimento alla classe '{1}'.</value>
+  </data>
+  <data name="MetaData_IncorrectPathNonPersistentMember" xml:space="preserve">
+    <value>Il percorso della proprietà '{1}' non è corretto per il tipo '{0}' perché il membro '{2}.{3}' non è un membro persistito.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XpathAttributeExpected" xml:space="preserve">
+    <value>XML loader: Attributo 'xpath' mancante.</value>
+  </data>
+  <data name="XPWeakReference_SavedObjectExpected" xml:space="preserve">
+    <value>È possibile utilizzare i riferimenti deboli solo ad oggetti salvati.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XSselectorNodeExpected" xml:space="preserve">
+    <value>XML loader: Nodo 'xs:selector' mancante.</value>
+  </data>
+  <data name="Collections_CriteriaEvaluationBehaviorIsNotSupported" xml:space="preserve">
+    <value>Errore interno: il CriteriaEvaluationBehavior.{0} specificato non è supportato da questo costruttore sottoposto a overload.</value>
+  </data>
+  <data name="MetaData_DuplicateKeyProperty" xml:space="preserve">
+    <value>Chiave duplicata trovata per il tipo '{0}'.</value>
+  </data>
+  <data name="Object_DelayedPropertyContainerCannotBeAssigned" xml:space="preserve">
+    <value>Impossibile assegnare il contenitore della proprietà personalizzata ad eliminazione ritardata '{0}.{1}'.</value>
+  </data>
+  <data name="CriteriaAnalizer_NullTransitionMemberInfo" xml:space="preserve">
+    <value>Il MemberInfo transitorio è NULL.</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_TwoAssociationListsInAssociation" xml:space="preserve">
+    <value>L'associazione '{0}' tra le Lists/Collections '{1}.{2}' e ' {3}.{4}' non è valida. Utilizzare l'attributo ManyToManyAlias o collezioni di tipo XPCollection per le relazioni molti-a-molti.</value>
+  </data>
+  <data name="Metadata_TypeNotFound" xml:space="preserve">
+    <value>Tipo '{0}' non trovato.</value>
+  </data>
+  <data name="ConnectionProvider_UnableToFillRefType" xml:space="preserve">
+    <value>Impossibile convalidare lo schema del database per il membro '{1}' del tipo '{0}'. Errore: '{2}'.</value>
+  </data>
+  <data name="Collections_CannotAssignProperty" xml:space="preserve">
+    <value>Impossibile modificare la proprietà {0}, quando XPCollection non è in modalità di progettazione o di inizializzazione.</value>
+  </data>
+  <data name="XpoDefault_CannotAssignPropertyWhileAnotherIsNotNull" xml:space="preserve">
+    <value>Impossibile assegnare XpoDefault.{0} mentre XpoDefault.{1} non è null.</value>
+  </data>
+  <data name="InMemorySet_WrongRollbackInfo" xml:space="preserve">
+    <value>Error Interno: Informazioni di rollback non valide.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XSlengthExpected" xml:space="preserve">
+    <value>XML loader: xs:length mancante.</value>
+  </data>
+  <data name="ServerModeGridSource_GroupAndAddOrRemoveIsNotAllwed" xml:space="preserve">
+    <value>Non è consentito il raggruppamento e l'aggiunta/eliminazione di elementi simultanea.</value>
+  </data>
+  <data name="InMemorySet_XMLException_DataTypeAttributeNotFound" xml:space="preserve">
+    <value>XML loader: Attributo 'DataType'  non trovato.</value>
+  </data>
+  <data name="CriteriaAnalizer_ClassesAreNotAssignable" xml:space="preserve">
+    <value>Le classi '{0}' e '{1}' non sono assegnabili reciprocamente.</value>
+  </data>
+  <data name="Paging_CurrentPageShouldBeGreaterOrEqualZero" xml:space="preserve">
+    <value>CurrentPage deve essere maggiore o uguale a 0.</value>
+  </data>
+  <data name="InMemorySet_XMLException_InconsistentForeignKeyCount" xml:space="preserve">
+    <value>XML loader: Mancata corrispondenza nel numero colonne di PKey e FKey.</value>
+  </data>
+  <data name="Session_LengthsOfTheCollectionsAreDifferentInArgs" xml:space="preserve">
+    <value>La lunghezza delle Collection sono differenti nell'argomento.</value>
+  </data>
+  <data name="InMemorySet_XMLException_CantRestoreObjectFromXML" xml:space="preserve">
+    <value>XML loader: Impossibile deserializzare l'oggetto.</value>
+  </data>
+  <data name="Paging_PageSizeShouldBeGreaterThanZero" xml:space="preserve">
+    <value>PageSize deve essere maggiore di zero.</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotLoadMember" xml:space="preserve">
+    <value>XML non valido: Impossibile caricare il membro [{0}] {1}.{2}.</value>
+  </data>
+  <data name="Metadata_WrongObjectType" xml:space="preserve">
+    <value>L'oggetto {0} creato usando ClassInfo {2} ha restituito un ClassInfo {1} non valido.</value>
+  </data>
+  <data name="DirectSQL_WrongColumnCount" xml:space="preserve">
+    <value>Il numero di colonne della riga di risultato e della riga di destinazione non corrispondono.</value>
+  </data>
+  <data name="Collections_InvalidCastOnAdd" xml:space="preserve">
+    <value>Impossibile aggiungere elementi alla Collection. L'oggetto '{0}' non è un'istanza del tipo '{1}'.</value>
+  </data>
+  <data name="Object_DelayedPropertyDoesNotContainProperObject" xml:space="preserve">
+    <value>Proprietà ' {0}.{1}' non contiene un oggetto XPDelayedProperty.</value>
+  </data>
+  <data name="InMemorySet_XMLException_ColumnNameIsNotSpecified" xml:space="preserve">
+    <value>XML loader: Nome Colonna non specificato.</value>
+  </data>
+  <data name="Session_AssociationCollectionWithDisabledLoading" xml:space="preserve">
+    <value>Lo stato dell'associazione alla Collection non è valido (LoadingEnabled non è vero).</value>
+  </data>
+  <data name="MetaData_RequiredAttributeMissing" xml:space="preserve">
+    <value>La proprietà '{0}' non definisce l'attributo '{1}'.</value>
+  </data>
+  <data name="DirectSQL_CollectionMembersAreNotSupported" xml:space="preserve">
+    <value>I membri delle Collection non sono supportati.</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_NotFound" xml:space="preserve">
+    <value>L'associazione '{0}' non è valida. Impossibile trovare il membro associato per ' {1}.{2}' nella classe '{3}'.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XpathAttributeWrongFormat" xml:space="preserve">
+    <value>XML loader: Formato del valore dell'attributo 'xpath' non corretto.</value>
+  </data>
+  <data name="Session_TypeNotFound" xml:space="preserve">
+    <value>Impossibile trovare il tipo con id = '{0}'.</value>
+  </data>
+  <data name="Helpers_DifferentObjectsKeys" xml:space="preserve">
+    <value>Non è possibile unire le modifiche di un oggetto con chiave modificata.</value>
+  </data>
+  <data name="MetaData_AssociationElementTypeMissing" xml:space="preserve">
+    <value>La proprietà '{0}' non specifica la proprietà 'ElementType' all'interno dell'attributo 'Association'.</value>
+  </data>
+  <data name="CriteriaAnalizer_TopLevelAggregateNotSupported" xml:space="preserve">
+    <value>Gli aggregati di primo livello non possono essere usati nelle condizioni.</value>
+  </data>
+  <data name="NestedSession_NotClonable" xml:space="preserve">
+    <value>La gerarchia degli oggetti non può essere duplicata perché il membro ' {0}.{1}' è stato modificato durante l'operazione.</value>
+  </data>
+  <data name="Common_MethodOrOperationNotImplemented" xml:space="preserve">
+    <value>Il metodo o l'operazione non sono implementate.</value>
+  </data>
+  <data name="InMemorySet_XMLException_NullPrimaryColumns" xml:space="preserve">
+    <value>XML loader: Impossibile trovare la chiave primaria '{0}'.</value>
+  </data>
+  <data name="Session_CrossThreadFailureDetected" xml:space="preserve">
+    <value>Rilevata operazione cross-thread. '{0}' non è un oggetto thread-safe, si prega di evitare il suo utilizzo contemporaneo in thread diversi.</value>
+  </data>
+  <data name="Collections_GeneralPurposeCollectionInsteadOfRefCollection" xml:space="preserve">
+    <value>E' stata rilevata una implementazione non valida della proprietà collection associata ' {0}.{1}'. La collection deve essere creata tramite il metodo GetCollection o il costruttore di XPCollection (Session session, Object theOwner, XPMemberInfo refProperty).</value>
+  </data>
+  <data name="MetaData_PropertyIsDuplicatedInIndexDeclaration" xml:space="preserve">
+    <value>La proprietà '{0}' è duplicata nella dichiarazione di indice '{1} {2} {3}' {4}.</value>
+  </data>
+  <data name="Metadata_ConverterOnKeyOrReference" xml:space="preserve">
+    <value>Impossibile applicare l'attributo BooleanToFlowDirectionConverter alla proprietà '{0}.{1}' che rappresenta una chiave o il riferimento a un altro oggetto.</value>
+  </data>
+  <data name="InMemory_IsReadOnly" xml:space="preserve">
+    <value>La modifica non è supportata.</value>
+  </data>
+  <data name="Session_DictConstractor" xml:space="preserve">
+    <value>Quando si utilizza il costruttore di Sessione (XPDictionary dictionary), è necessario specificare un valore valido per Session.ConnectionString prima di chiamare il metodo Session.Connect.</value>
+  </data>
+  <data name="Collections_WantNotDeleteFilteredAggregateCollection" xml:space="preserve">
+    <value>L'assegnazione di criteri ad un insieme definito come aggregato, può rende orfani dei record nel database. Ripulire la proprietà '{1}.Criteria' prima di eliminare il proprietario di un oggetto "{0}".</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_NonPersistentClassInTheAssociation" xml:space="preserve">
+    <value>L'attributo di associazione non può essere utilizzato per il membro ' {0}.{1}' perché la classe '{2}' non è persistente.</value>
+  </data>
+  <data name="Filtering_TheIifFunctionOperatorRequiresThree" xml:space="preserve">
+    <value>L'operatore di funzione 'Iif' richiede tre o più argomenti. Il numero degli argomenti deve essere dispari.</value>
+  </data>
+  <data name="Generator_TheUseOfATopLevelSingleAggregateIsProhibit" xml:space="preserve">
+    <value>È vietato l'uso di un aggregato 'Singolo' di alto livello.</value>
+  </data>
+  <data name="Generator_TheUseOfNestedSingleAggregatesIsProhibited" xml:space="preserve">
+    <value>è vietato l'impiego di aggregati 'Singoli' annidati.</value>
+  </data>
+  <data name="ConnectionProvider_TheAutoIncrementedKeyWithX0TypeIsNotSuppor" xml:space="preserve">
+    <value>AutoIncremented la chiave con ' {0} ' tipo non supportato per ' {1} '</value>
+  </data>
+  <data name="Filtering_TheTypeNameArgumentOfTheX0FunctionIsNotFound" xml:space="preserve">
+    <value>'Nometipo' argomento della funzione '{0}' non si trova.</value>
+  </data>
+  <data name="LinqToXpo_DuplicateJoinOperatorFound" xml:space="preserve">
+    <value>Duplicare l'operatore join trovato.</value>
+  </data>
+  <data name="MetaData_PersistentReferenceFound" xml:space="preserve">
+    <value>Aspecifico-persistente operazione viene eseguita con una classe persistente ' {0} '</value>
+  </data>
+  <data name="PersistentAliasExpander_NonPersistentCriteriaThisValueMember" xml:space="preserve">
+    <value>Non può interrogare un archivio di dati utilizzando il criterio "{0}" che utilizza una proprietà non persistenti '{1}'. Se usavi '{0}' come un ValueMember per una ricerca, utilizzare un vuoto ValueMember invece.</value>
+  </data>
+  <data name="Security_SavingAnObjectWasProhibitedByTheRulesWProp" xml:space="preserve">
+    <value>Risparmio la ' {0}.{1}' proprietà è vietato dalle regole di convalida.</value>
+  </data>
+  <data name="Metadata_AmbiguousClassName" xml:space="preserve">
+    <value>È impossibile risolvere ClassInfo per nome ambiguo tipo ' {0} ' tra tipo ' {1} ' e tipo ' {2}'</value>
+  </data>
+  <data name="DroneDataStore_CommitNotSupported" xml:space="preserve">
+    <value>Non è possibile eseguire il commit modifiche perché la connessione al database non è configurata (il provider di database di stub è attualmente utilizzato). Si prega di collegare all'archivio dati come descritto in http://help.devexpress.com/#CoreLibraries/CustomDocument2123</value>
+  </data>
+  <data name="LinqToXpo_ComplexDataSelectionIsNotSupportedPerhapsY" xml:space="preserve">
+    <value>Selezione di dati complessi non è supportata. Forse si sta utilizzando una sottoquery complessa nel selettore.</value>
+  </data>
+  <data name="LinqToXpo_CurrentExpressionWithX0IsNotSupported" xml:space="preserve">
+    <value>Espressione corrente con {0} non è supportata.</value>
+  </data>
+  <data name="LinqToXpo_DoesnTSupportNestedJoinsWithLevel" xml:space="preserve">
+    <value>LinqToXpo non supporta più di due join nidificati. Non impatto al conteggio del comune di join nella query.</value>
+  </data>
+  <data name="LinqToXpo_ExpressionX0IsNotSupported" xml:space="preserve">
+    <value>L'espressione non è supportata: {0}</value>
+  </data>
+  <data name="LinqToXpo_ExpressionX0IsNotSupportedInX1" xml:space="preserve">
+    <value>L'espressione non è supportato in {1}: {0}</value>
+  </data>
+  <data name="LinqToXpo_GroupingWithACustomComparerIsNotSupported" xml:space="preserve">
+    <value>Raggruppamento con un operatore di confronto personalizzato non è supportato.</value>
+  </data>
+  <data name="LinqToXpo_IncorrectDeclaringTypeX0InTheMethodCallQue" xml:space="preserve">
+    <value>Errato '{0}' Dichiarazione di tipo nella chiamata al metodo. È previsto il tipo 'System.Linq.Queryable' o 'System.Linq.Enumerable'.</value>
+  </data>
+  <data name="LinqToXpo_LambdaExpressionIsExpectedX0" xml:space="preserve">
+    <value>Espressione lambda è previsto: {0}</value>
+  </data>
+  <data name="LinqToXpo_MethodX0ForX1IsNotSupported" xml:space="preserve">
+    <value>Il metodo '{0}' non è supportato per {1}.</value>
+  </data>
+  <data name="LinqToXpo_QueryWithAppliedTheSkipOrTheTakeOperations" xml:space="preserve">
+    <value>Query con Skip o il prendere operazioni applicate non possono essere utilizzate per join.</value>
+  </data>
+  <data name="LinqToXpo_SequenceContainsMoreThanOneElement" xml:space="preserve">
+    <value>Sequenza contiene più di un elemento.</value>
+  </data>
+  <data name="LinqToXpo_SequenceContainsNoMatchingElement" xml:space="preserve">
+    <value>Sequenza non contiene elementi corrispondenti.</value>
+  </data>
+  <data name="LinqToXpo_SessionIsNull" xml:space="preserve">
+    <value>Sessione è null.</value>
+  </data>
+  <data name="LinqToXpo_SkipOperationIsNotSupportedWithoutSorting" xml:space="preserve">
+    <value>Salta l'operazione non è supportata senza ordinamento.</value>
+  </data>
+  <data name="LinqToXpo_SortingIsNotSupportedForSelectManyOperatio" xml:space="preserve">
+    <value>Ordinamento non è supportato per il funzionamento di SelectMany sulle raccolte di molti-a-molti.</value>
+  </data>
+  <data name="LinqToXpo_SpecifiedJoinKeySelectorsNotCompatibleX0X1" xml:space="preserve">
+    <value>'{0}' e selettori a chiave '{1}' join non sono compatibili.</value>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionGenericReturnTypeX0" xml:space="preserve">
+    <value>The Call espressione deve avere un tipo restituito generico: {0}</value>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionIsExpectedX0" xml:space="preserve">
+    <value>è prevista la chiamata espressione: {0}</value>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionReturnTypeX0" xml:space="preserve">
+    <value>The Call espressione deve avere un tipo restituito: {0}</value>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionXPQueryX0" xml:space="preserve">
+    <value>An XPQuery è previsto come primo argomento per l'espressione di chiamata: {0}</value>
+  </data>
+  <data name="LinqToXpo_TheDeclaringTypeAssemblyNamePropertyIsEmpt" xml:space="preserve">
+    <value>DeclaringTypeAssemblyName la proprietà è vuota.</value>
+  </data>
+  <data name="LinqToXpo_TheDeclaringTypeNamePropertyIsEmpty" xml:space="preserve">
+    <value>DeclaringTypeName la proprietà è vuota.</value>
+  </data>
+  <data name="LinqToXpo_TheJoinWithManyTablesSimultaneouslyInASing" xml:space="preserve">
+    <value>L'operazione di join più tabelle in un singolo operatore non è supportato.</value>
+  </data>
+  <data name="LinqToXpo_TheLambdaExpressionWithSuchParametersIsNot" xml:space="preserve">
+    <value>L'espressione lambda con tali parametri non è supportata: {0}</value>
+  </data>
+  <data name="LinqToXpo_TheX0MethodIsNotSupported" xml:space="preserve">
+    <value>Il metodo {0} non è supportato.</value>
+  </data>
+  <data name="LinqToXpo_X0OperatorAfterSkipOrTakeIsNotSupported" xml:space="preserve">
+    <value>{0} dopo Skip o prendere non è supportata.</value>
+  </data>
+  <data name="LinqToXpo_X0OverGroupingIsNotSupported" xml:space="preserve">
+    <value>{0} sopra raggruppamento non è supportata.</value>
+  </data>
+  <data name="LinqToXpo_X0WithSkipOrTakeOrGroupingIsNotSupported" xml:space="preserve">
+    <value>{0} con Skip o prendere o raggruppamento non è supportata.</value>
+  </data>
+  <data name="LinqToXpo_X0WithSoManyParametersIsNotSupported" xml:space="preserve">
+    <value>{0} con così tanti parametri non è supportato.</value>
+  </data>
+  <data name="VistaDB_UpdatingSchemaIsForbiddenWhileExplicitTran" xml:space="preserve">
+    <value>Aggiornamento schema è vietato mentre è aperta la transazione esplicita.</value>
+  </data>
+  <data name="Async_InternalErrorAsyncActionIsAlreadyDisposed" xml:space="preserve">
+    <value>Errore interno: un'azione asincrona è già smaltita. Esso può essere causato da un problema in XPO. Si prega di contattare il team di supporto di DevExpress.</value>
+  </data>
+  <data name="Metadata_YouCannotApplyTheMapInheritanceParentTable" xml:space="preserve">
+    <value>Non è possibile applicare l'attributo di MapInheritance con il valore del parametro ParentTable a una classe che non dispone di nessun padre persistente.</value>
+  </data>
+  <data name="ASE_CommandNotAllowedWithinMultiStatementTransaction" xml:space="preserve">
+    <value>Il database non supporta la creazione o la modifica dello schema con transazione. Per eseguire questa operazione, è necessario configurare il database per supportare la modifica dello schema con transazione, o disabilitare le transazioni al momento che viene aggiornato lo schema. Per effettuare questa operazione, impostare il campo ExecuteUpdateSchemaInTransaction = false (per l'istanza corrente del provider), o il campo GlobalExecuteUpdateSchemaInTransaction = false (per tutte le istanze del provider).</value>
+  </data>
+  <data name="LinqToXpo_ElemAtOperationIsNotSupportedWithoutSorting" xml:space="preserve">
+    <value>ElementAt l'operazione non è supportata senza ordinamento.</value>
+  </data>
+  <data name="Metadata_NullableAttributeNotApplicable" xml:space="preserve">
+    <value>Attributo nullable non può applicarsi ai membri {0} di {1} classe perché membro non è persistente, viene utilizzato un alias, è molti a molti alias o ha riferimento tipo a oggetto.</value>
+  </data>
+  <data name="Postgresql_LegacyGuidDetected" xml:space="preserve">
+    <value>Per evitare questa eccezione, impostare la proprietà PostgreSqlConnectionProvider.UseLegacyGuidSupport o PostgreSqlConnectionProvider.GlobalUseLegacyGuidSupport a 'true'</value>
+  </data>
+  <data name="ServiceCollectionExtensions_ConnectionPoolCannotBeUsed" xml:space="preserve">
+    <value>Pool di connessioni non può essere utilizzato con il semplice livello di dati</value>
+  </data>
+  <data name="ServiceCollectionExtensions_ConnectionStringEmpty" xml:space="preserve">
+    <value>Stringa di connessione non può essere vuoto quando utilizzato non-inmemory archivio dati e archivio dati non personalizzato</value>
+  </data>
+  <data name="ServiceCollectionExtensions_EntityTypesEmpty" xml:space="preserve">
+    <value>EntityType devono essere non null e contiene mininum 1 elemento</value>
+  </data>
+  <data name="ServiceCollectionExtensions_NoConstructor" xml:space="preserve">
+    <value>Tipo {0} non ha costruttore con parametri {1}.</value>
+  </data>
+  <data name="SqlConnectionProvider_CannotCreateAColumnForTheX0FieldWithTheX1D" xml:space="preserve">
+    <value>Non è possibile creare una colonna per il campo '{0}' con valore '{1}' predefinito. Si prega di specificare un altro valore predefinito per questo campo</value>
+  </data>
+  <data name="Async_ObjectLayerDoesNotImplementIObjectLayerAsync" xml:space="preserve">
+    <value>Il tuo livello di oggetto non supporta l'interfaccia 'DevExpress.Xpo.IObjectLayerAsync'. Si prega di implementare questa interfaccia nella classe '{0}' o utilizzare un altro livello di oggetti compatibili.</value>
+  </data>
+  <data name="LinqToXpo_CachedExpressionIsIncompatible" xml:space="preserve">
+    <value>Espressione incompatibile. Dovrebbe essere generato dal compilatore e contengono solo gli argomenti statici. È possibile utilizzare parametri a1, a2 e a3 del metodo CachedExpression per passare gli argomenti non static.</value>
+  </data>
+  <data name="Metadata_FetchOnlyAttributeNotApplicable" xml:space="preserve">
+    <value>FetchOnly l'attributo non può essere applicato a {0}. {1}, perché il membro di destinazione non è persistente, viene utilizzato un alias, è molti-a-molti con alias, è una chiave o è una parte della struttura nidificata.</value>
+  </data>
+  <data name="Metadata_FetchOnlyAttributeNotApplicableToReference" xml:space="preserve">
+    <value>The FetchOnly non può essere applicato a {0}. {1}, perché il membro di destinazione è di tipo riferimento.</value>
+  </data>
+  <data name="XpoDefault_CustomGuidGenerationHandlerCannotBeNull" xml:space="preserve">
+    <value>XpoDefault.CustomGuidGenerationHandler il valore del campo è null. È necessario assegnare un delegato personalizzato per questo campo se si imposta il campo di XpoDefault.GuidGenerationMode a 'Custom'.</value>
+  </data>
+</root>

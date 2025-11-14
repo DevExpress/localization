@@ -1,0 +1,949 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ChartStringId.AllHolidays" xml:space="preserve">
+    <value>모든 공휴일</value>
+  </data>
+  <data name="ChartStringId.AlternateTextSeriesPlaceholder" xml:space="preserve">
+    <value>{0} 보기</value>
+  </data>
+  <data name="ChartStringId.AnnotationFreePosition" xml:space="preserve">
+    <value>자유 위치</value>
+  </data>
+  <data name="ChartStringId.AnnotationPaneAnchorPoint" xml:space="preserve">
+    <value>창 기준점</value>
+  </data>
+  <data name="ChartStringId.AnnotationPrefix" xml:space="preserve">
+    <value>주석</value>
+  </data>
+  <data name="ChartStringId.AnnotationRelativePosition" xml:space="preserve">
+    <value>상대 위치</value>
+  </data>
+  <data name="ChartStringId.AppDefault" xml:space="preserve">
+    <value>기본</value>
+  </data>
+  <data name="ChartStringId.ArgumentMember" xml:space="preserve">
+    <value>인수</value>
+  </data>
+  <data name="ChartStringId.ArgumentPatternDescription" xml:space="preserve">
+    <value>인수</value>
+  </data>
+  <data name="ChartStringId.AxisXDefaultTitle" xml:space="preserve">
+    <value>인수 축</value>
+  </data>
+  <data name="ChartStringId.AxisYDefaultTitle" xml:space="preserve">
+    <value>값 축</value>
+  </data>
+  <data name="ChartStringId.ChartControlDockTarget" xml:space="preserve">
+    <value>차트 컨트롤</value>
+  </data>
+  <data name="ChartStringId.CloseValueMember" xml:space="preserve">
+    <value>닫기</value>
+  </data>
+  <data name="ChartStringId.CmdArea2DGroupPlaceHolderMenuCaption" xml:space="preserve">
+    <value>2 차원 영역</value>
+  </data>
+  <data name="ChartStringId.CmdBar2DGroupPlaceHolderMenuCaption" xml:space="preserve">
+    <value>2 차원 바</value>
+  </data>
+  <data name="ChartStringId.CmdChangeAppearancePlaceHolderMenuCaption" xml:space="preserve">
+    <value>외관</value>
+  </data>
+  <data name="ChartStringId.CmdChangePalettePlaceHolderMenuCaption" xml:space="preserve">
+    <value>팔레트</value>
+  </data>
+  <data name="ChartStringId.CmdColumn2DGroupPlaceHolderMenuCaption" xml:space="preserve">
+    <value>2차원 열</value>
+  </data>
+  <data name="ChartStringId.CmdCreateAreaChartDescription" xml:space="preserve">
+    <value>시간 또는 범주 값의 추세를 표시 합니다.</value>
+  </data>
+  <data name="ChartStringId.CmdCreateBarChartPlaceHolderMenuCaption" xml:space="preserve">
+    <value>열</value>
+  </data>
+  <data name="ChartStringId.CmdCreateConeManhattanBarChartMenuCaption" xml:space="preserve">
+    <value>3 차원 원뿔</value>
+  </data>
+  <data name="ChartStringId.CmdCreateCylinderManhattanBarChartMenuCaption" xml:space="preserve">
+    <value>3 차원 실린더</value>
+  </data>
+  <data name="ChartStringId.CmdCreateOtherSeriesTypesChartPlaceHolderMenuCaption" xml:space="preserve">
+    <value>다른 차트</value>
+  </data>
+  <data name="ChartStringId.CmdCreateRotatedBarChartMenuCaption" xml:space="preserve">
+    <value>바</value>
+  </data>
+  <data name="ChartStringId.CmdCreateRotatedBarChartPlaceHolderMenuCaption" xml:space="preserve">
+    <value>바</value>
+  </data>
+  <data name="ChartStringId.CmdExportToHTMLDescription" xml:space="preserve">
+    <value>웹 페이지</value>
+  </data>
+  <data name="ChartStringId.CmdExportToHTMLMenuCaption" xml:space="preserve">
+    <value>HTML로 내보내기</value>
+  </data>
+  <data name="ChartStringId.CmdExportToImagePlaceHolderMenuCaption" xml:space="preserve">
+    <value>이미지 내보내기</value>
+  </data>
+  <data name="ChartStringId.CmdExportToMHTDescription" xml:space="preserve">
+    <value>단일 파일 웹 페이지</value>
+  </data>
+  <data name="ChartStringId.CmdExportToMHTMenuCaption" xml:space="preserve">
+    <value>MHT로 내보내기</value>
+  </data>
+  <data name="ChartStringId.CmdExportToPDFMenuCaption" xml:space="preserve">
+    <value>PDF로 내보내기</value>
+  </data>
+  <data name="ChartStringId.CmdExportToRTFMenuCaption" xml:space="preserve">
+    <value>RTF로 내보내기</value>
+  </data>
+  <data name="ChartStringId.CmdExportToXLSMenuCaption" xml:space="preserve">
+    <value>XLS로 내보내기</value>
+  </data>
+  <data name="ChartStringId.CmdExportToXLSXMenuCaption" xml:space="preserve">
+    <value>XLSX로 내보내기</value>
+  </data>
+  <data name="ChartStringId.CmdFinancialGroupPlaceHolderMenuCaption" xml:space="preserve">
+    <value>금융</value>
+  </data>
+  <data name="ChartStringId.CmdPrintDescription" xml:space="preserve">
+    <value>프린터, 사본의 수 및 인쇄 하기 전에 다른 인쇄 옵션을 선택 합니다.</value>
+  </data>
+  <data name="ChartStringId.CmdPrintMenuCaption" xml:space="preserve">
+    <value>인쇄</value>
+  </data>
+  <data name="ChartStringId.CmdPrintPreviewDescription" xml:space="preserve">
+    <value>인쇄 하기 전에 페이지의 변경 내용을 미리 보기 하 고 확인 합니다.</value>
+  </data>
+  <data name="ChartStringId.CmdPrintPreviewMenuCaption" xml:space="preserve">
+    <value>인쇄 미리 보기</value>
+  </data>
+  <data name="ChartStringId.ColumnColor" xml:space="preserve">
+    <value>색</value>
+  </data>
+  <data name="ChartStringId.DefaultMaxValue" xml:space="preserve">
+    <value>최대값</value>
+  </data>
+  <data name="ChartStringId.DefaultMinValue" xml:space="preserve">
+    <value>최소값</value>
+  </data>
+  <data name="ChartStringId.DefaultWizardPageLabel" xml:space="preserve">
+    <value>마법사 페이지</value>
+  </data>
+  <data name="ChartStringId.ErrorTitle" xml:space="preserve">
+    <value>오류</value>
+  </data>
+  <data name="ChartStringId.FunctionArgumentName" xml:space="preserve">
+    <value>인수</value>
+  </data>
+  <data name="ChartStringId.HighValueMember" xml:space="preserve">
+    <value>높은</value>
+  </data>
+  <data name="ChartStringId.IndStandardDeviation" xml:space="preserve">
+    <value>표준 편차</value>
+  </data>
+  <data name="ChartStringId.MenuItemAdd" xml:space="preserve">
+    <value>추가</value>
+  </data>
+  <data name="ChartStringId.MenuItemClear" xml:space="preserve">
+    <value>지우기</value>
+  </data>
+  <data name="ChartStringId.MenuItemDelete" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="ChartStringId.MenuItemInsert" xml:space="preserve">
+    <value>삽입</value>
+  </data>
+  <data name="ChartStringId.MenuItemMoveDown" xml:space="preserve">
+    <value>아래로 이동</value>
+  </data>
+  <data name="ChartStringId.MenuItemMoveUp" xml:space="preserve">
+    <value>위로 이동</value>
+  </data>
+  <data name="ChartStringId.OpenValueMember" xml:space="preserve">
+    <value>열기</value>
+  </data>
+  <data name="ChartStringId.PanesVisibilityDialogVisibleColumn" xml:space="preserve">
+    <value>표시</value>
+  </data>
+  <data name="ChartStringId.PltDefault" xml:space="preserve">
+    <value>기본</value>
+  </data>
+  <data name="ChartStringId.PltIndDefault" xml:space="preserve">
+    <value>기본</value>
+  </data>
+  <data name="ChartStringId.PltPaper" xml:space="preserve">
+    <value>종이</value>
+  </data>
+  <data name="ChartStringId.PrintSizeModeZoom" xml:space="preserve">
+    <value>줌 (차트 크기가 비례적으로 (클리핑) 없이
+그것은 최고의 인쇄 되는 페이지에 맞도록)</value>
+  </data>
+  <data name="ChartStringId.RibbonAppearanceGroupCaption" xml:space="preserve">
+    <value>외관</value>
+  </data>
+  <data name="ChartStringId.RibbonDesignPageCaption" xml:space="preserve">
+    <value>디자인</value>
+  </data>
+  <data name="ChartStringId.RibbonPageCategoryCaption" xml:space="preserve">
+    <value>차트 도구</value>
+  </data>
+  <data name="ChartStringId.ScaleTypeNumerical" xml:space="preserve">
+    <value>숫자</value>
+  </data>
+  <data name="ChartStringId.ScaleTypeQualitative" xml:space="preserve">
+    <value>질적</value>
+  </data>
+  <data name="ChartStringId.StackedGroupPrefix" xml:space="preserve">
+    <value>그룹</value>
+  </data>
+  <data name="ChartStringId.SvnSideBySideBar" xml:space="preserve">
+    <value>바</value>
+  </data>
+  <data name="ChartStringId.TitleSummaryFunction" xml:space="preserve">
+    <value>요약 함수</value>
+  </data>
+  <data name="ChartStringId.ToolTipRelativePosition" xml:space="preserve">
+    <value>상대 위치</value>
+  </data>
+  <data name="ChartStringId.ValueMember" xml:space="preserve">
+    <value>값</value>
+  </data>
+  <data name="ChartStringId.ValuePatternDescription" xml:space="preserve">
+    <value>값</value>
+  </data>
+  <data name="ChartStringId.VerbAnnotationsDescription" xml:space="preserve">
+    <value>주석 컬렉션 편집기를 엽니다.</value>
+  </data>
+  <data name="ChartStringId.WizAggregateFunctionAverage" xml:space="preserve">
+    <value>평균</value>
+  </data>
+  <data name="ChartStringId.WizAggregateFunctionCount" xml:space="preserve">
+    <value>카운트</value>
+  </data>
+  <data name="ChartStringId.WizAggregateFunctionNone" xml:space="preserve">
+    <value>없음</value>
+  </data>
+  <data name="ChartStringId.WizAggregateFunctionSum" xml:space="preserve">
+    <value>합계</value>
+  </data>
+  <data name="ChartStringId.WizAnchorPointChart" xml:space="preserve">
+    <value>차트</value>
+  </data>
+  <data name="ChartStringId.WizAnnotationConnectorStyleNone" xml:space="preserve">
+    <value>없음</value>
+  </data>
+  <data name="ChartStringId.WizAnnotationsPageName" xml:space="preserve">
+    <value>주석</value>
+  </data>
+  <data name="ChartStringId.WizAppearancePageName" xml:space="preserve">
+    <value>외관</value>
+  </data>
+  <data name="ChartStringId.WizAxesAlignmentFar" xml:space="preserve">
+    <value>멀리</value>
+  </data>
+  <data name="ChartStringId.WizAxesAlignmentNear" xml:space="preserve">
+    <value>근처</value>
+  </data>
+  <data name="ChartStringId.WizAxesPageName" xml:space="preserve">
+    <value>축</value>
+  </data>
+  <data name="ChartStringId.WizAxisLabelResolveOverlappingModeNone" xml:space="preserve">
+    <value>없음</value>
+  </data>
+  <data name="ChartStringId.WizBarSeriesLabelPositionAuto" xml:space="preserve">
+    <value>자동</value>
+  </data>
+  <data name="ChartStringId.WizBarSeriesLabelPositionCenter" xml:space="preserve">
+    <value>가운데</value>
+  </data>
+  <data name="ChartStringId.WizBarSeriesLabelPositionTop" xml:space="preserve">
+    <value>상단</value>
+  </data>
+  <data name="ChartStringId.WizBubbleLabelPositionCenter" xml:space="preserve">
+    <value>가운데</value>
+  </data>
+  <data name="ChartStringId.WizBubbleLabelValueToDisplayValue" xml:space="preserve">
+    <value>값</value>
+  </data>
+  <data name="ChartStringId.WizChartImageSizeModeZoom" xml:space="preserve">
+    <value>확대/축소</value>
+  </data>
+  <data name="ChartStringId.WizChartPageName" xml:space="preserve">
+    <value>차트</value>
+  </data>
+  <data name="ChartStringId.WizChartTitlesPageName" xml:space="preserve">
+    <value>차트 제목</value>
+  </data>
+  <data name="ChartStringId.WizDataFiltersDisabled" xml:space="preserve">
+    <value>(없음)</value>
+  </data>
+  <data name="ChartStringId.WizDataMemberNoneString" xml:space="preserve">
+    <value>(없음)</value>
+  </data>
+  <data name="ChartStringId.WizDataPageName" xml:space="preserve">
+    <value>데이터</value>
+  </data>
+  <data name="ChartStringId.WizDateTimeGridAlignmentAuto" xml:space="preserve">
+    <value>자동</value>
+  </data>
+  <data name="ChartStringId.WizDateTimeMeasureUnitDay" xml:space="preserve">
+    <value>일</value>
+  </data>
+  <data name="ChartStringId.WizDateTimeMeasureUnitHour" xml:space="preserve">
+    <value>시간</value>
+  </data>
+  <data name="ChartStringId.WizDateTimeMeasureUnitMonth" xml:space="preserve">
+    <value>달</value>
+  </data>
+  <data name="ChartStringId.WizDateTimeMeasureUnitQuarter" xml:space="preserve">
+    <value>분기</value>
+  </data>
+  <data name="ChartStringId.WizDateTimeMeasureUnitWeek" xml:space="preserve">
+    <value>주</value>
+  </data>
+  <data name="ChartStringId.WizDateTimeMeasureUnitYear" xml:space="preserve">
+    <value>년</value>
+  </data>
+  <data name="ChartStringId.WizDateTimeScaleModeAutomaticAverage" xml:space="preserve">
+    <value>자동: 평균</value>
+  </data>
+  <data name="ChartStringId.WizDateTimeScaleModeAutomaticIntegral" xml:space="preserve">
+    <value>자동: 정수</value>
+  </data>
+  <data name="ChartStringId.WizDiagramPageName" xml:space="preserve">
+    <value>다이어그램</value>
+  </data>
+  <data name="ChartStringId.WizFunnelSeriesLabelPositionCenter" xml:space="preserve">
+    <value>가운데</value>
+  </data>
+  <data name="ChartStringId.WizFunnelSeriesLabelPositionLeft" xml:space="preserve">
+    <value>왼쪽</value>
+  </data>
+  <data name="ChartStringId.WizFunnelSeriesLabelPositionLeftColumn" xml:space="preserve">
+    <value>왼쪽 열</value>
+  </data>
+  <data name="ChartStringId.WizFunnelSeriesLabelPositionRight" xml:space="preserve">
+    <value>오른쪽</value>
+  </data>
+  <data name="ChartStringId.WizFunnelSeriesLabelPositionRightColumn" xml:space="preserve">
+    <value>오른쪽 열</value>
+  </data>
+  <data name="ChartStringId.WizHatchHorizontal" xml:space="preserve">
+    <value>가로</value>
+  </data>
+  <data name="ChartStringId.WizHatchMax" xml:space="preserve">
+    <value>최대값</value>
+  </data>
+  <data name="ChartStringId.WizHatchMin" xml:space="preserve">
+    <value>최소값</value>
+  </data>
+  <data name="ChartStringId.WizHatchVertical" xml:space="preserve">
+    <value>수직</value>
+  </data>
+  <data name="ChartStringId.WizIndentDefault" xml:space="preserve">
+    <value>기본</value>
+  </data>
+  <data name="ChartStringId.WizNoBackImage" xml:space="preserve">
+    <value>(없음)</value>
+  </data>
+  <data name="ChartStringId.WizNumericGridAlignmentAuto" xml:space="preserve">
+    <value>자동</value>
+  </data>
+  <data name="ChartStringId.WizNumericMeasureUnitCustom" xml:space="preserve">
+    <value>사용자 지정</value>
+  </data>
+  <data name="ChartStringId.WizPanesPageName" xml:space="preserve">
+    <value>창</value>
+  </data>
+  <data name="ChartStringId.WizPivotGridDataSourcePageName" xml:space="preserve">
+    <value>피벗 그리드 데이터 소스</value>
+  </data>
+  <data name="ChartStringId.WizPositionCenter" xml:space="preserve">
+    <value>가운데</value>
+  </data>
+  <data name="ChartStringId.WizPositionLeft" xml:space="preserve">
+    <value>왼쪽</value>
+  </data>
+  <data name="ChartStringId.WizPositionRight" xml:space="preserve">
+    <value>오른쪽</value>
+  </data>
+  <data name="ChartStringId.WizResolveOverlappingModeDefault" xml:space="preserve">
+    <value>기본</value>
+  </data>
+  <data name="ChartStringId.WizResolveOverlappingModeNone" xml:space="preserve">
+    <value>없음</value>
+  </data>
+  <data name="ChartStringId.WizScaleModeAutomatic" xml:space="preserve">
+    <value>자동</value>
+  </data>
+  <data name="ChartStringId.WizScrollBarAlignmentFar" xml:space="preserve">
+    <value>멀리</value>
+  </data>
+  <data name="ChartStringId.WizScrollBarAlignmentNear" xml:space="preserve">
+    <value>근처</value>
+  </data>
+  <data name="ChartStringId.WizSeriesLabelTextOrientationHorizontal" xml:space="preserve">
+    <value>가로</value>
+  </data>
+  <data name="ChartStringId.WizSeriesPageName" xml:space="preserve">
+    <value>시리즈</value>
+  </data>
+  <data name="ChartStringId.WizSeriesPointPageName" xml:space="preserve">
+    <value>포인트</value>
+  </data>
+  <data name="ChartStringId.WizShapeKindEllipse" xml:space="preserve">
+    <value>타원</value>
+  </data>
+  <data name="ChartStringId.WizStringAlignmentCenter" xml:space="preserve">
+    <value>가운데</value>
+  </data>
+  <data name="ChartStringId.WizStringAlignmentFar" xml:space="preserve">
+    <value>멀리</value>
+  </data>
+  <data name="ChartStringId.WizStringAlignmentNear" xml:space="preserve">
+    <value>근처</value>
+  </data>
+  <data name="ChartStringId.WizValueLevelClose" xml:space="preserve">
+    <value>닫기</value>
+  </data>
+  <data name="ChartStringId.WizValueLevelHigh" xml:space="preserve">
+    <value>높은</value>
+  </data>
+  <data name="ChartStringId.WizValueLevelOpen" xml:space="preserve">
+    <value>열기</value>
+  </data>
+  <data name="ChartStringId.WizValueLevelValue" xml:space="preserve">
+    <value>값</value>
+  </data>
+  <data name="ChartStringId.AlternateTextSeriesText" xml:space="preserve">
+    <value>{0} 시리즈</value>
+  </data>
+  <data name="ChartStringId.AnnotationChartAnchorPoint" xml:space="preserve">
+    <value>차트 앵커 포인트</value>
+  </data>
+  <data name="ChartStringId.AnnotationSeriesPointAnchorPoint" xml:space="preserve">
+    <value>시리즈 앵커 포인트</value>
+  </data>
+  <data name="ChartStringId.AutocreatedSeriesName" xml:space="preserve">
+    <value>자동 생성 시리즈</value>
+  </data>
+  <data name="ChartStringId.CmdCreateLineChartMenuCaption" xml:space="preserve">
+    <value>라인</value>
+  </data>
+  <data name="ChartStringId.CmdCreateLineChartPlaceHolderMenuCaption" xml:space="preserve">
+    <value>라인</value>
+  </data>
+  <data name="ChartStringId.SvnLine" xml:space="preserve">
+    <value>라인</value>
+  </data>
+  <data name="ChartStringId.WizAnnotationConnectorStyleLine" xml:space="preserve">
+    <value>라인</value>
+  </data>
+  <data name="ChartStringId.WeightMember" xml:space="preserve">
+    <value>무게</value>
+  </data>
+  <data name="ChartStringId.WeightPatternDescription" xml:space="preserve">
+    <value>무게</value>
+  </data>
+  <data name="ChartStringId.WizBubbleLabelValueToDisplayWeight" xml:space="preserve">
+    <value>무게</value>
+  </data>
+  <data name="ChartStringId.CmdExportPlaceHolderMenuCaption" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="ChartStringId.VerbAbout" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="ChartStringId.WizChartImageSizeModeStretch" xml:space="preserve">
+    <value>스트레치</value>
+  </data>
+  <data name="ChartStringId.RibbonPrintExportGroupCaption" xml:space="preserve">
+    <value>인쇄 및 내보내기</value>
+  </data>
+  <data name="ChartStringId.AppNorthernLights" xml:space="preserve">
+    <value>오로라</value>
+  </data>
+  <data name="ChartStringId.AppPastelKit" xml:space="preserve">
+    <value>파스텔 키트</value>
+  </data>
+  <data name="ChartStringId.AppChameleon" xml:space="preserve">
+    <value>카멜레온</value>
+  </data>
+  <data name="ChartStringId.AppDark" xml:space="preserve">
+    <value>어두운</value>
+  </data>
+  <data name="ChartStringId.AppDarkFlat" xml:space="preserve">
+    <value>다크 플랫</value>
+  </data>
+  <data name="ChartStringId.AppGray" xml:space="preserve">
+    <value>회색</value>
+  </data>
+  <data name="ChartStringId.AppLight" xml:space="preserve">
+    <value>빛</value>
+  </data>
+  <data name="ChartStringId.CmdExportToGIFDescription" xml:space="preserve">
+    <value>그래픽 교환 형식</value>
+  </data>
+  <data name="ChartStringId.WizPieSeriesLabelPositionInside" xml:space="preserve">
+    <value>내부</value>
+  </data>
+  <data name="ChartStringId.WizPieSeriesLabelPositionOutside" xml:space="preserve">
+    <value>외부</value>
+  </data>
+  <data name="ChartStringId.WizSeriesViewPageName" xml:space="preserve">
+    <value>시리즈 보기</value>
+  </data>
+  <data name="ChartStringId.TextAnnotation" xml:space="preserve">
+    <value>텍스트 주석</value>
+  </data>
+  <data name="ChartStringId.TextAnnotationPrefix" xml:space="preserve">
+    <value>텍스트 주석</value>
+  </data>
+  <data name="ChartStringId.TrnSummaryFunctionChanged" xml:space="preserve">
+    <value>요약 함수 변경</value>
+  </data>
+  <data name="ChartStringId.VerbEditPalettes" xml:space="preserve">
+    <value>팔레트...</value>
+  </data>
+  <data name="ChartStringId.VerbSaveLayout" xml:space="preserve">
+    <value>저장...</value>
+  </data>
+  <data name="ChartStringId.VerbSeriesDescription" xml:space="preserve">
+    <value>시리즈 컬렉션 편집기를 엽니다.</value>
+  </data>
+  <data name="ChartStringId.WizAnchorPointPane" xml:space="preserve">
+    <value>창</value>
+  </data>
+  <data name="ChartStringId.WizBubbleLabelPositionOutside" xml:space="preserve">
+    <value>외부</value>
+  </data>
+  <data name="ChartStringId.WizChartPageDescription" xml:space="preserve">
+    <value>차트의 속성을 사용자 지정 합니다.</value>
+  </data>
+  <data name="ChartStringId.WizChartTypePageName" xml:space="preserve">
+    <value>차트 종류</value>
+  </data>
+  <data name="ChartStringId.WizDateTimeScaleModeManual" xml:space="preserve">
+    <value>수동</value>
+  </data>
+  <data name="ChartStringId.WizErrorMessageTitle" xml:space="preserve">
+    <value>차트 마법사</value>
+  </data>
+  <data name="ChartStringId.WizFormTitle" xml:space="preserve">
+    <value>차트 마법사</value>
+  </data>
+  <data name="ChartStringId.ColumnAnnotations" xml:space="preserve">
+    <value>주석</value>
+  </data>
+  <data name="ChartStringId.ColumnLinks" xml:space="preserve">
+    <value>링크</value>
+  </data>
+  <data name="ChartStringId.CrosshairLabelMousePosition" xml:space="preserve">
+    <value>마우스 위치</value>
+  </data>
+  <data name="ChartStringId.CustomAxisLabelPrefix" xml:space="preserve">
+    <value>레이블</value>
+  </data>
+  <data name="ChartStringId.DefaultAnnotation" xml:space="preserve">
+    <value>주석</value>
+  </data>
+  <data name="ChartStringId.DefaultChartTitle" xml:space="preserve">
+    <value>차트 제목</value>
+  </data>
+  <data name="ChartStringId.DefaultPaneName" xml:space="preserve">
+    <value>기본 창</value>
+  </data>
+  <data name="ChartStringId.PalettePrefix" xml:space="preserve">
+    <value>팔레트</value>
+  </data>
+  <data name="ChartStringId.PanesVisibilityDialogPanesColumn" xml:space="preserve">
+    <value>창</value>
+  </data>
+  <data name="ChartStringId.PrimaryAxisXName" xml:space="preserve">
+    <value>기본 X 축</value>
+  </data>
+  <data name="ChartStringId.PrimaryAxisYName" xml:space="preserve">
+    <value>기본 Y 축</value>
+  </data>
+  <data name="ChartStringId.RibbonTypesGroupCaption" xml:space="preserve">
+    <value>차트 종류</value>
+  </data>
+  <data name="ChartStringId.RibbonWizardGroupCaption" xml:space="preserve">
+    <value>마법사</value>
+  </data>
+  <data name="ChartStringId.SeriesPrefix" xml:space="preserve">
+    <value>시리즈</value>
+  </data>
+  <data name="ChartStringId.StripPrefix" xml:space="preserve">
+    <value>스트립</value>
+  </data>
+  <data name="ChartStringId.WizChartImageSizeModeTile" xml:space="preserve">
+    <value>타일</value>
+  </data>
+  <data name="ChartStringId.WizPositionLeftColumn" xml:space="preserve">
+    <value>왼쪽 열</value>
+  </data>
+  <data name="ChartStringId.WizPositionRightColumn" xml:space="preserve">
+    <value>오른쪽 열</value>
+  </data>
+  <data name="ChartStringId.WizSeriesDataBindingPageName" xml:space="preserve">
+    <value>시리즈 바인딩</value>
+  </data>
+  <data name="ChartStringId.WizSeriesLabelsPageName" xml:space="preserve">
+    <value>요소 레이블</value>
+  </data>
+  <data name="ChartStringId.MsgIncompatibleByViewType" xml:space="preserve">
+    <value>보기 형식</value>
+  </data>
+  <data name="ChartStringId.RibbonTemplatesGroupCaption" xml:space="preserve">
+    <value>서식 파일</value>
+  </data>
+  <data name="ChartStringId.RibbonOtherPageCaption" xml:space="preserve">
+    <value>다른</value>
+  </data>
+  <data name="ChartStringId.WizBar3DModelBox" xml:space="preserve">
+    <value>상자</value>
+  </data>
+  <data name="ChartStringId.WizBar3DModelCone" xml:space="preserve">
+    <value>콘</value>
+  </data>
+  <data name="ChartStringId.ToolTipMousePosition" xml:space="preserve">
+    <value>마우스 위치</value>
+  </data>
+  <data name="ChartStringId.WizBar3DModelPyramid" xml:space="preserve">
+    <value>피라미드</value>
+  </data>
+  <data name="ChartStringId.WizBarSeriesLabelPositionBottomInside" xml:space="preserve">
+    <value>하단 내부</value>
+  </data>
+  <data name="ChartStringId.CmdExportToBMPDescription" xml:space="preserve">
+    <value>비트맵 그림</value>
+  </data>
+  <data name="ChartStringId.RibbonDesignerGroupCaption" xml:space="preserve">
+    <value>디자이너</value>
+  </data>
+  <data name="ChartStringId.HolidaysImportFilter" xml:space="preserve">
+    <value>DevExpress 스케줄러 공휴일 파일 (*.xml) | *. xml|Microsoft Office Outlook 공휴일 파일 (*.hol) | *. hol|텍스트 파일 (*.txt) | *. txt|모든 파일 (*. *) | *. *</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectToolTipPosition" xml:space="preserve">
+    <value>도구 팁 위치는 null 일 수 없습니다.</value>
+  </data>
+  <data name="ChartStringId.IndSimpleMovingAverage" xml:space="preserve">
+    <value>단순 이동 평균</value>
+  </data>
+  <data name="ChartStringId.CmdCreateManhattanBarChartMenuCaption" xml:space="preserve">
+    <value>3 차원 열</value>
+  </data>
+  <data name="ChartStringId.CmdCreatePyramidManhattanBarChartMenuCaption" xml:space="preserve">
+    <value>3 차원 피라미드</value>
+  </data>
+  <data name="ChartStringId.CmdCreateRangeBarChartMenuCaption" xml:space="preserve">
+    <value>범위 열</value>
+  </data>
+  <data name="ChartStringId.CmdCreateBarChartMenuCaption" xml:space="preserve">
+    <value>클러스터 열</value>
+  </data>
+  <data name="ChartStringId.CmdCreateConeBar3DChartDescription" xml:space="preserve">
+    <value>범주 값을 비교 합니다.</value>
+  </data>
+  <data name="ChartStringId.CmdCreateConeFullStackedBar3DChartDescription" xml:space="preserve">
+    <value>비율 부문에 걸쳐 총에 기여 하는 각 값을 비교 합니다.</value>
+  </data>
+  <data name="ChartStringId.CmdCreateConeManhattanBarChartDescription" xml:space="preserve">
+    <value>범주 및 시리즈에 걸쳐 값을 비교 하 고 3 개의 축에 콘 차트를 표시 합니다.</value>
+  </data>
+  <data name="ChartStringId.CmdCreateCylinderBar3DChartDescription" xml:space="preserve">
+    <value>범주 값을 비교 합니다.</value>
+  </data>
+  <data name="ChartStringId.CmdCreateCylinderBar3DChartMenuCaption" xml:space="preserve">
+    <value>클러스터 실린더</value>
+  </data>
+  <data name="ChartStringId.CmdCreateConeStackedBar3DChartDescription" xml:space="preserve">
+    <value>부문에 걸쳐 총 각 값의 기여도 비교 합니다.</value>
+  </data>
+  <data name="ChartStringId.CmdSaveAsTemplateMenuCaption" xml:space="preserve">
+    <value>템플릿으로 저장</value>
+  </data>
+  <data name="ChartStringId.LegendEmptyText" xml:space="preserve">
+    <value>빈 범례</value>
+  </data>
+  <data name="ChartStringId.LegendPrefix" xml:space="preserve">
+    <value>범례</value>
+  </data>
+  <data name="ChartStringId.VerbLoadLayout" xml:space="preserve">
+    <value>불러오기...</value>
+  </data>
+  <data name="ChartStringId.WizDateTimeMeasureUnitSecond" xml:space="preserve">
+    <value>초</value>
+  </data>
+  <data name="ChartStringId.WizValueLevelLow" xml:space="preserve">
+    <value>낮은</value>
+  </data>
+  <data name="ChartStringId.WizPresentationGroupName" xml:space="preserve">
+    <value>프레젠테이션</value>
+  </data>
+  <data name="ChartStringId.CmdCreateCandleStickChartMenuCaption" xml:space="preserve">
+    <value>캔들 스틱</value>
+  </data>
+  <data name="ChartStringId.FunctionNameMax" xml:space="preserve">
+    <value>최대</value>
+  </data>
+  <data name="ChartStringId.CmdCreateRangeAreaChartMenuCaption" xml:space="preserve">
+    <value>범위 지역</value>
+  </data>
+  <data name="ChartStringId.CmdCreateGanttChartDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ChartStringId.WizHatchWeave" xml:space="preserve">
+    <value>짜 다</value>
+  </data>
+  <data name="ChartStringId.WizEnableScrollingFalse" xml:space="preserve">
+    <value>스크롤 활성화(false)</value>
+  </data>
+  <data name="ChartStringId.WizEnableScrollingTrue" xml:space="preserve">
+    <value>스크롤 활성화(true)</value>
+  </data>
+  <data name="ChartStringId.CmdColumnCylinderGroupPlaceHolderMenuCaption" xml:space="preserve">
+    <value>실린더</value>
+  </data>
+  <data name="ChartStringId.CmdCreatePieChartPlaceHolderMenuCaption" xml:space="preserve">
+    <value>파이</value>
+  </data>
+  <data name="ChartStringId.CmdCreateAreaChartPlaceHolderMenuCaption" xml:space="preserve">
+    <value>지역</value>
+  </data>
+  <data name="ChartStringId.PropertyGridCategory_Behavior" xml:space="preserve">
+    <value>동작</value>
+  </data>
+  <data name="ChartStringId.CmdColumnConeGroupPlaceHolderMenuCaption" xml:space="preserve">
+    <value>콘</value>
+  </data>
+  <data name="ChartStringId.CmdCreateAreaChartPlaceHolderDescription" xml:space="preserve">
+    <value>시간 또는 범주 값의 추세를 표시 합니다.</value>
+  </data>
+  <data name="ChartStringId.PropertyGridCategory_Appearance" xml:space="preserve">
+    <value>외관</value>
+  </data>
+  <data name="ChartStringId.PropertyGridCategory_Layout" xml:space="preserve">
+    <value>레이아웃</value>
+  </data>
+  <data name="ChartStringId.PropertyGridCategory_Data" xml:space="preserve">
+    <value>데이터</value>
+  </data>
+  <data name="ChartStringId.AppNatureColors" xml:space="preserve">
+    <value>자연 색상</value>
+  </data>
+  <data name="ChartStringId.SvnArea" xml:space="preserve">
+    <value>지역</value>
+  </data>
+  <data name="ChartStringId.CmdColumnPyramidGroupPlaceHolderMenuCaption" xml:space="preserve">
+    <value>피라미드</value>
+  </data>
+  <data name="ChartStringId.CmdChangePalettePlaceHolderDescription" xml:space="preserve">
+    <value>현재 차트 색상표를 변경 합니다.</value>
+  </data>
+  <data name="ChartStringId.WizValueLevelWeight" xml:space="preserve">
+    <value>무게</value>
+  </data>
+  <data name="ChartStringId.CmdCreateDoughnutChartMenuCaption" xml:space="preserve">
+    <value>도넛형</value>
+  </data>
+  <data name="ChartStringId.CmdCreateAreaChartMenuCaption" xml:space="preserve">
+    <value>지역</value>
+  </data>
+  <data name="ChartStringId.WizAppearancePageDescription" xml:space="preserve">
+    <value>선택 팔레트 컬러 시리즈 또는 그들의 데이터를 포인트 합니다. 또한 현재 색상표에 따라 차트의 모양 지정 스타일을 선택 하십시오.</value>
+  </data>
+  <data name="ChartStringId.PropertyGridCategory_Misc" xml:space="preserve">
+    <value>기타</value>
+  </data>
+  <data name="ChartStringId.WizAggregateFunctionMinimum" xml:space="preserve">
+    <value>최소</value>
+  </data>
+  <data name="ChartStringId.StyleAllColors" xml:space="preserve">
+    <value>모든 색상</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectFont" xml:space="preserve">
+    <value>글꼴은 null 일 수 없습니다</value>
+  </data>
+  <data name="ChartStringId.WizAggregateFunctionMaximum" xml:space="preserve">
+    <value>최대</value>
+  </data>
+  <data name="ChartStringId.WizLegendPageName" xml:space="preserve">
+    <value>범례</value>
+  </data>
+  <data name="ChartStringId.CmdColumn3DGroupPlaceHolderMenuCaption" xml:space="preserve">
+    <value>3차원 열</value>
+  </data>
+  <data name="ChartStringId.WizAggregateFunctionDefault" xml:space="preserve">
+    <value>기본</value>
+  </data>
+  <data name="ChartStringId.PropertyGridCategory_Elements" xml:space="preserve">
+    <value>요소</value>
+  </data>
+  <data name="ChartStringId.LowValueMember" xml:space="preserve">
+    <value>저</value>
+  </data>
+  <data name="ChartStringId.WizAggregateFunctionCustom" xml:space="preserve">
+    <value>사용자 지정</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectShowCrosshairUsage" xml:space="preserve">
+    <value>이 메서드는 WinForms 플랫폼 에서만 사용할 수 있습니다. 프로그래밍 방식으로 ASP.NET 컨트롤에 대 한 십자선 표시, 클라이언트-사이드 ASPxClientXYDiagram2D.ShowCrosshair 메서드를 사용 합니다.</value>
+  </data>
+  <data name="ChartStringId.WizAxesAlignmentCenter" xml:space="preserve">
+    <value>가운데</value>
+  </data>
+  <data name="ChartStringId.CmdSelectSeriesPlaceHolderMenuCaption" xml:space="preserve">
+    <value>시리즈</value>
+  </data>
+  <data name="ChartStringId.RibbonFinancialSeriesGroupCaption" xml:space="preserve">
+    <value>시리즈</value>
+  </data>
+  <data name="ChartStringId.BoxPlotMaxValueMember" xml:space="preserve">
+    <value>최대값</value>
+  </data>
+  <data name="ChartStringId.BoxPlotMinValueMember" xml:space="preserve">
+    <value>최소값</value>
+  </data>
+  <data name="ChartStringId.AnnotationFromToolbar1stLine" xml:space="preserve">
+    <value>텍스트</value>
+  </data>
+  <data name="ChartStringId.RibbonAnnotationsGroupCaption" xml:space="preserve">
+    <value>주석</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectCalculatedFieldExpression" xml:space="preserve">
+    <value>지정된 식은 잘못된 기호를 포함합니다. (line {0} character {1}).</value>
+  </data>
+  <data name="ChartStringId.OpenFileDialogAllFiles" xml:space="preserve">
+    <value>모든 파일</value>
+  </data>
+  <data name="ChartStringId.CmdFunnelGroupPlaceHolderMenuCaption" xml:space="preserve">
+    <value>퍼널</value>
+  </data>
+  <data name="ChartStringId.WizIndentUndefined" xml:space="preserve">
+    <value>정의되지 않음</value>
+  </data>
+  <data name="ChartStringId.VerbClearDataSource" xml:space="preserve">
+    <value>데이터 소스 지우기</value>
+  </data>
+  <data name="ChartStringId.VerbLoadLayoutDescription" xml:space="preserve">
+    <value>XML 파일에서 차트를 로드합니다.</value>
+  </data>
+</root>

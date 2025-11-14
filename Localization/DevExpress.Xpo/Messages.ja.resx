@@ -1,0 +1,688 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Generator_OneOfBinaryOperatorsOperandsIsNull" xml:space="preserve">
+    <value>BinaryOperator のオペランドの一つは Null です。</value>
+  </data>
+  <data name="ConnectionProvider_UnableToFillRefType" xml:space="preserve">
+    <value>'{1}' メンバーの '{0}' タイプのデータベース スキーマを確認できませんでした。エラー: {2}</value>
+  </data>
+  <data name="Collections_InvalidCastOnAdd" xml:space="preserve">
+    <value>アイテムをコレクションに追加できません。 '{0}' オブジェクト は、'{1}' のインスタンスではありません。</value>
+  </data>
+  <data name="ConnectionProvider_KeysAutogenerationNonSupportedTypeException" xml:space="preserve">
+    <value>キーの自動生成は、 Int32 および Guid データ タイプのみにサポートされています。クラス タイプ: '{0}'</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_NoAssociationListInAssociation" xml:space="preserve">
+    <value>'{1}.{2}' と '{3}.{4}'との間で不正形式の関連付け '{0}' があります。関連付けの片側でリストが必要です。</value>
+  </data>
+  <data name="Metadata_PersistentAliasCircular" xml:space="preserve">
+    <value>'{0}' クラスの '{1}' プロパティは正しくない '{2}' 式を持つ PersistentAlias の特徴があります。それ自身を参照しているため、循環参照になっています。</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorModelTagAbsent" xml:space="preserve">
+    <value>無効なXML: &lt;Model&gt; タグが見つからないか名前空間が正しくありません。</value>
+  </data>
+  <data name="Metadata_DictionaryMixing" xml:space="preserve">
+    <value>'{0}' クラス情報は別の辞書に帰属します。</value>
+  </data>
+  <data name="ThreadSafeDataLayer_DictionaryModified" xml:space="preserve">
+    <value>辞書が ThreadSafeDataLayer に使用されている間は変更できません。インストール / 管理アプリケーションを ThreadSafeDataLayer で使用する前に、Session.CreateObjectTypeRecords メソッドを呼び出してください。
+変更 / 作成されたクラス情報は '{0}' です。</value>
+  </data>
+  <data name="MetaData_ReferenceTooComplex" xml:space="preserve">
+    <value>参照 '{0}.{1}' はあまりに複雑です。</value>
+  </data>
+  <data name="Session_TranSequenceBegin" xml:space="preserve">
+    <value>1セッションで2つ以上のトランザクションを開始できません。</value>
+  </data>
+  <data name="MetaData_NonPersistentReferenceFound" xml:space="preserve">
+    <value>非永続タイプ '{0}' への参照が見つかりました。</value>
+  </data>
+  <data name="MetaData_PropertyMissing" xml:space="preserve">
+    <value>'{1}' タイプ内に '{0}' プロパティが存在しません。</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotResolveClassinfoInstanceType" xml:space="preserve">
+    <value>無効なXML: クラス情報タイプを解決できません。</value>
+  </data>
+  <data name="Session_DifferentObjectsWithSameKey" xml:space="preserve">
+    <value>同じキーを持つ別々のオブジェクト</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotFindClassinfoType" xml:space="preserve">
+    <value>無効なXML: クラス タイプが見つかりません。</value>
+  </data>
+  <data name="MetaData_IncorrectPathNonPersistentMember" xml:space="preserve">
+    <value>'{2}.{3}' メンバーが永続的なメンバーでないため、'{0}' タイプの '{1}' プロパティ パスが正しくありません。</value>
+  </data>
+  <data name="Metadata_CustomProperties_ReferenceOrCollectionInSessionStore" xml:space="preserve">
+    <value>'{0}' クラスが '{2}' インターフェースを実装しないため、参照または収集タイプのカスタム メンバー '{1}' を作成できません。 </value>
+  </data>
+  <data name="Session_TypeNotFound" xml:space="preserve">
+    <value> ID = '{0}' のタイプが見つかりません</value>
+  </data>
+  <data name="Session_CannotReloadPurgedObject" xml:space="preserve">
+    <value>データストアにオブジェクトがないため、オブジェクトを読み込みできません。このオブジェクトが既に削除 / パージされている可能性があります。同じオブジェクトを含むリストでこの例外が再度発見された場合、データストアの参照整合性が失われている可能性があります。この場合はシステム管理者に連絡ください。 ({0})</value>
+  </data>
+  <data name="Session_AssociationCollectionWithDisabledLoading" xml:space="preserve">
+    <value>関連コレクションが壊れている状態です。（LoadingEnabled が true でなければなりません。）</value>
+  </data>
+  <data name="MetaData_PropertyTypeMismatch" xml:space="preserve">
+    <value> '{3}' と '{4}' の関連付け '{1}' が無効です。クラス '{3}' は、'{4}'を参照するプロパティ '{2}' を含み、クラス '{4}' はプロパティ '{0}' を含みます。プロパティ '{0}' はクラス '{3}' を参照すべきですが、不適切にクラス '{5}' を参照しています。</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_NotFound" xml:space="preserve">
+    <value>不正形式の関連付け '{0}' があります。クラス '{3}' 内で '{1}.{2}' の関連するメンバーが見つかりません。</value>
+  </data>
+  <data name="MetaData_SessionCtorAbsent" xml:space="preserve">
+    <value>{0} タイプはセッション特有のコンストラクタがありません。</value>
+  </data>
+  <data name="Session_CannotAddObjectToObjectCache" xml:space="preserve">
+    <value>キー= '{1}' を持つ '{0}' オブジェクトをオブジェクト識別マップに追加できません。別のオブジェクト '{2}' に同じキーがすでに追加されています。</value>
+  </data>
+  <data name="Session_AlreadyConnected" xml:space="preserve">
+    <value>セッションは既は既に接続しています。</value>
+  </data>
+  <data name="XPWeakReference_SavedObjectExpected" xml:space="preserve">
+    <value>保存されたオブジェクトにのみ弱い参照を使用できます。</value>
+  </data>
+  <data name="PersistentAliasExpander_ReferenceOrCollectionExpectedInTheMiddleOfThePath" xml:space="preserve">
+    <value>パス内のメンバー '{0}' が正しくありません。参照プロパティまたはコレクションの関連付けを想定しています。</value>
+  </data>
+  <data name="Session_CannotChangePropertyWhenSessionIsConnected" xml:space="preserve">
+    <value>セッションの接続中は {0} を変更できません。</value>
+  </data>
+  <data name="Paging_CurrentPageShouldBeLessThanPageCount" xml:space="preserve">
+    <value>CurrentPage が PageCount 未満でなければなりません。</value>
+  </data>
+  <data name="Metadata_CustomProperties_PersistentAndNonStorableType" xml:space="preserve">
+    <value>タイプ '{2}' のカスタム メンバー '{0}.{1}' は永続的ではありません。</value>
+  </data>
+  <data name="Paging_PageSizeShouldBeGreaterThanZero" xml:space="preserve">
+    <value>PageSize は0より大きくなければなりません。</value>
+  </data>
+  <data name="Metadata_SeveralClassesWithSameName" xml:space="preserve">
+    <value>辞書にクラス情報 '{1}' が既に含まれます。アセンブリ '{0}' が2回読み込まれた可能性があります。</value>
+  </data>
+  <data name="Session_SessionMixing" xml:space="preserve">
+    <value>'{0}' オブジェクトは別のセッションに帰属します。</value>
+  </data>
+  <data name="Session_TypeFieldIsEmpty" xml:space="preserve">
+    <value>'{0}' のフィールドは Null です（ベース クラス '{1}'）。</value>
+  </data>
+  <data name="Metadata_CantPersistGenericType" xml:space="preserve">
+    <value>ジェネリック型を永続できません。タイプ '{0}' の定義から PersistentAttribute を削除し、永続的で非ジェネリックな子孫を作成してください。</value>
+  </data>
+  <data name="MetaData_IncorrectPath" xml:space="preserve">
+    <value>'{0}' タイプの '{1}' プロパティ パスが正しくありません。</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_UseAssociationNameAsIntermediateTableNameMismatch" xml:space="preserve">
+    <value>UseAssociationNameAsIntermediateTableName の値は、'{1}.{2}' と '{3}.{4}'との間で '{0}' 関連付けの両側で同じでなければなりません。</value>
+  </data>
+  <data name="Paging_EnumeratorObjectModifiedOrDeleted" xml:space="preserve">
+    <value>選択した範囲で一つ以上のオブジェクトが変更または削除されました。ID 値のリストを更新してください。</value>
+  </data>
+  <data name="MetaData_DuplicateKeyProperty" xml:space="preserve">
+    <value>タイプ '{0}' の重複キーが見つかりました。</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotFindConstructor" xml:space="preserve">
+    <value>無効なXML: タイプ '{0}' のコンストラクタが見つかりません。</value>
+  </data>
+  <data name="Metadata_SameTableName" xml:space="preserve">
+    <value>クラス {0} は {1} と同じテーブルにマップします。</value>
+  </data>
+  <data name="Session_TranSequenceCommit" xml:space="preserve">
+    <value>有効なトランザクションがありません</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorUnknownAttribute" xml:space="preserve">
+    <value>無効なXML: 不明な属性 '{0}'。</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_MoreThenOneAssociatedMemberFound" xml:space="preserve">
+    <value>'{1}' クラスの '{2}' と '{3}' メンバーとの間の関連付け '{0}' が曖昧です。</value>
+  </data>
+  <data name="Session_ObjectCannotBePurged" xml:space="preserve">
+    <value>ID = '{1}' を含む  '{0}' オブジェクトをパージできません。参照しているオブジェクトがあります。</value>
+  </data>
+  <data name="MetaData_IncorrectPathMemberNotExists" xml:space="preserve">
+    <value>'{2}.{3}' メンバーが存在しないため、'{0}' タイプの'{1}' プロパティ パスが正しくありません。</value>
+  </data>
+  <data name="Session_TranSequenceRollback" xml:space="preserve">
+    <value>有効なトランザクションがありません</value>
+  </data>
+  <data name="MetaData_RequiredAttributeMissing" xml:space="preserve">
+    <value>'{0}' プロパティは '{1}' 属性を定義していません。</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotLoadMember" xml:space="preserve">
+    <value>無効なXML: メンバー [{0}]{1}.{2} を読み込みできません。</value>
+  </data>
+  <data name="MetaData_KeyPropertyAbsent" xml:space="preserve">
+    <value>'{0}' タイプのキープロパティがありません。</value>
+  </data>
+  <data name="MetaData_XMLLoadError" xml:space="preserve">
+    <value>XML 辞書の読み込みエラー: {0}</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_AssociationAttributeOnlyForListOrReference" xml:space="preserve">
+    <value>'{1}.{2}' メンバーには関連付け属性を使用できません。参照またはリストを予想しています。</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_PropertyTypeMismatch" xml:space="preserve">
+    <value>クラス '{1}' と '{3}' の間の関連付け '{0}' が無効です。クラス'{1}' は'{3}' を参照するプロパティ '{2}' を含み、クラス '{3}' はプロパティ '{4}' を含みます。プロパティ '{4}' はクラス '{1}' を参照すべきですが、不適切にクラス '{5}' を参照しています。</value>
+  </data>
+  <data name="Session_IncompatibleIdType" xml:space="preserve">
+    <value>パスした ID タイプ '{0}' は '{1}.{2}' key type '{3}' と互換性がありません。</value>
+  </data>
+  <data name="Paging_CurrentPageShouldBeGreaterOrEqualZero" xml:space="preserve">
+    <value>CurrentPage は0以上でなければなりません。</value>
+  </data>
+  <data name="View_PropertyNotFetched" xml:space="preserve">
+    <value>'{0}' プロパティを取得していません</value>
+  </data>
+  <data name="Session_WrongConnectionString" xml:space="preserve">
+    <value>無効な接続文字列を指定: '{0}'</value>
+  </data>
+  <data name="PersistentAliasExpander_NonPersistentCriteria" xml:space="preserve">
+    <value>"{0}" 基準が非永続プロパティ '{1}' を使用しているため、データ ストアをクエリーできません。</value>
+  </data>
+  <data name="MetaData_CannotResolveClassInfo" xml:space="preserve">
+    <value>タイプ '[{0}]{1}' のクラス情報を解決できません。</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_TwoAssociationListsInAssociation" xml:space="preserve">
+    <value>'{1}.{2}' と '{3}.{4}' のリスト / コレクション間で不正形式の関連付け '{0}' があります。多対多リレーションシップには ManyToManyAlias 属性または XPCollection タイプ リスト / コレクションを使用してください。</value>
+  </data>
+  <data name="Paging_EnumeratorPositioning" xml:space="preserve">
+    <value>列挙定数が要素集の最初の要素の前か最後の要素の後に設置されています。</value>
+  </data>
+  <data name="MetaData_AssociationElementTypeMissing" xml:space="preserve">
+    <value>'Association' の属性内で '{0}' プロパティが 'ElementType' を指定していません。</value>
+  </data>
+  <data name="XpoDefault_CannotAssignPropertyWhileAnotherIsNotNull" xml:space="preserve">
+    <value>XpoDefault.{1} が指定されている際は、XpoDefault.{0}を割り当てられません。</value>
+  </data>
+  <data name="MetaData_IncorrectPathNonReferenceMember" xml:space="preserve">
+    <value>'{2}.{3}' メンバーが参照メンバーでないため、 '{0}' タイプの '{1}' プロパティ パスが正しくありません。</value>
+  </data>
+  <data name="Session_CannotLoadInvalidType" xml:space="preserve">
+    <value>無効のタイプ '{0}' を読み込みできません。</value>
+  </data>
+  <data name="InMemorySet_XMLException_NotDataSetNode" xml:space="preserve">
+    <value>XML ローダー: ノードがデータ‘‘セットとしてマークされていません。</value>
+  </data>
+  <data name="CriteriaAnalizer_EmptyJoinOperandId" xml:space="preserve">
+    <value>JoinOperandId は空です。</value>
+  </data>
+  <data name="SerOLHelpers_NestedParentMapIsNull" xml:space="preserve">
+    <value>内部エラー: NestedParentMap および ParentNestedMap は Null です。</value>
+  </data>
+  <data name="InMemorySet_WrongCommitInfo" xml:space="preserve">
+    <value>内部エラー: 不正形式のコミット情報</value>
+  </data>
+  <data name="Session_AssociationListExpected" xml:space="preserve">
+    <value>コレクションまたは関連付け リストを想定しています。</value>
+  </data>
+  <data name="Metadata_NullSessionProvider" xml:space="preserve">
+    <value>内部エラー: セッションにアクセスできません。</value>
+  </data>
+  <data name="InMemorySet_NullDefaultValueNotAllowed" xml:space="preserve">
+    <value>Null 値は列 '{0}' のデフォルト値として許されません。</value>
+  </data>
+  <data name="Metadata_MemberAttributeExclusive" xml:space="preserve">
+    <value>PersistentAttribute、NonPersistentAttribute および PersistentAliasAttribute は排他的です。 このうちの一つだけをメンバー  '{0}.{1} に適用できます。</value>
+  </data>
+  <data name="InMemory_NotACollection" xml:space="preserve">
+    <value>不正形式のクエリまたは内部 XPO エラー: '{0}' はコレクションではありません。</value>
+  </data>
+  <data name="InMemorySet_XMLException_TableNotDeclared" xml:space="preserve">
+    <value>XML ローダー: テーブル '{0}' が宣言されていません。</value>
+  </data>
+  <data name="InMemorySet_XMLException_ReferNotFound" xml:space="preserve">
+    <value>XML ローダー: 参照された '{0}' が見つかりません。</value>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidColumnTypeDeclaration" xml:space="preserve">
+    <value>XML ローダー: 列のタイプ名が無効です。</value>
+  </data>
+  <data name="Metadata_NonpesistentKey" xml:space="preserve">
+    <value>非永続的なキー '{0}.{1}' が見つかりました。</value>
+  </data>
+  <data name="Session_LengthsOfTheCollectionsAreDifferentInArgs" xml:space="preserve">
+    <value>コレクションの長さは引数内で異なります。</value>
+  </data>
+  <data name="DataView_ReferenceMembersWithCompoundKeyAreNotSupported" xml:space="preserve">
+    <value>構造体メンバーのクラスはサポートしていません。</value>
+  </data>
+  <data name="Object_DelayedPropertyDoesNotContainProperObject" xml:space="preserve">
+    <value>プロパティ '{0}.{1}' は XPDelayedProperty オブジェクトを含みません。</value>
+  </data>
+  <data name="InMemorySet_AliasNotFound" xml:space="preserve">
+    <value>エイリアス '{0}' を持つテーブルが 見つかりません。</value>
+  </data>
+  <data name="Object_EmptyMemberInstance" xml:space="preserve">
+    <value>InstanceType メンバーは値を含みません。正しく初期化されていないオブジェクトと一緒に GetInstanceObject を使用できません。</value>
+  </data>
+  <data name="InMemorySet_InsertingDataIntoAutoincrementColumn" xml:space="preserve">
+    <value>自動インクリメント列 '{0}' に値を指定できません。</value>
+  </data>
+  <data name="Collections_NotCollectionProperty" xml:space="preserve">
+    <value>{0}.{1} はコレクション プロパティではありません。AssociationAttribute に分類し、 XPBaseCollection の子孫タイプでなければなりません。GetList の代わりに GetCollection を使用している可能性があります。</value>
+  </data>
+  <data name="InMemoryFull_DifferentColumnListLengths" xml:space="preserve">
+    <value>内部エラー: PKey と FKey の列数が一致しません。</value>
+  </data>
+  <data name="DirectSQL_WrongColumnCount" xml:space="preserve">
+    <value>結果セットの列数とターゲット行が一致しません。</value>
+  </data>
+  <data name="InMemorySet_XMLException_XpathAttributeExpected" xml:space="preserve">
+    <value>XML ローダー: 'xpath' 属性を想定しています。</value>
+  </data>
+  <data name="Helpers_DifferentObjectsKeys" xml:space="preserve">
+    <value>修正されたキーを持つオブジェクトの変更を結合できません。</value>
+  </data>
+  <data name="InMemoryFull_WrongIndexInfo" xml:space="preserve">
+    <value>内部エラー: 不正形式のインデックス情報</value>
+  </data>
+  <data name="InMemorySet_NotLoadingMode" xml:space="preserve">
+    <value>読み込みモードでない場合、自動インクリメントの列 '{0}' に値を割り当てできません。</value>
+  </data>
+  <data name="CriteriaAnalizer_TopLevelAggregateNotSupported" xml:space="preserve">
+    <value>トップレベル アグリゲートを条件に使用できません。</value>
+  </data>
+  <data name="ServerModeGridSource_SummaryItemTypeNotSupported" xml:space="preserve">
+    <value>内部エラー: 指定された SummaryItemType.{0} はサポートされていません。</value>
+  </data>
+  <data name="CriteriaAnalizer_PathNotFound" xml:space="preserve">
+    <value>パス {0}-&gt;{1} が見つかりません。</value>
+  </data>
+  <data name="InMemorySet_OperationNotAllowed" xml:space="preserve">
+    <value>指定の操作は禁止されています。</value>
+  </data>
+  <data name="Collections_CannotAssignProperty" xml:space="preserve">
+    <value>XPCollection がデザイン モードまたは初期化モードでない場合、プロパティ '{0}' を変更できません。</value>
+  </data>
+  <data name="Helpers_CloningObjectModified" xml:space="preserve">
+    <value>変更が未保存のオブジェクトはクローンできません。</value>
+  </data>
+  <data name="Collections_CannotResolvePropertyTypeComparer" xml:space="preserve">
+    <value>タイプ '{1}' のプロパティ '{0}' に対する Comparer を解消できません。</value>
+  </data>
+  <data name="Async_OperationCannotBePerformedBecauseNoSyncContext" xml:space="preserve">
+    <value>この操作は実行できません。実行スレッドは現在同期できるコンテキストがないため、操作を実行できません。</value>
+  </data>
+  <data name="InMemorySet_DifferentComplexSet" xml:space="preserve">
+    <value>内部エラー: 他の複雑なセットから行を追加できません。</value>
+  </data>
+  <data name="Helpers_ResolveDataForCollection" xml:space="preserve">
+    <value>当メンバーはコレクションではありません。</value>
+  </data>
+  <data name="Session_UnexpectedPersistentCriteriaEvaluationBehavior" xml:space="preserve">
+    <value>内部エラー: 指定された PersistentCriteriaEvaluationBehavior.{0} はサポートされていません。</value>
+  </data>
+  <data name="Collections_RecurringObjectAdd" xml:space="preserve">
+    <value>定期的な追加</value>
+  </data>
+  <data name="InMemorySet_XMLException_NameAttributeExpected" xml:space="preserve">
+    <value>XML ローダー:  'name' の属性を想定しています。</value>
+  </data>
+  <data name="InMemoryFull_UseDataSetDataStoreOrCtor" xml:space="preserve">
+    <value>DataSet とともに .ctor を使用するよりかは、DataSet なしの .ctor または DataSetDataStore クラスを使用してください。</value>
+  </data>
+  <data name="InMemorySet_XMLException_XSrestrictionExpected" xml:space="preserve">
+    <value>XML ローダー: xs:restriction を想定しています。</value>
+  </data>
+  <data name="ServerModeGridSource_WrongTopLevelAggregate" xml:space="preserve">
+    <value>サーバーまたは内部 XPO のエラー: トップ レベル アグリゲートに2つ以上のグループがあります。</value>
+  </data>
+  <data name="InMemory_SingleRowExpected" xml:space="preserve">
+    <value>単一の行が  '{0}' で想定されています, 行が見つかりました: {1}。</value>
+  </data>
+  <data name="InMemorySet_WrongRollbackInfo" xml:space="preserve">
+    <value>内部エラー: 不正形式のロールバック情報。</value>
+  </data>
+  <data name="InMemory_MalformedAggregate" xml:space="preserve">
+    <value>不正形式の総計または内部 XPO エラー</value>
+  </data>
+  <data name="InMemorySet_XMLException_XSsimpleTypeExpected" xml:space="preserve">
+    <value>XML ローダー: xs:simpleType を想定しています。</value>
+  </data>
+  <data name="InMemorySet_UniqueIndex" xml:space="preserve">
+    <value>固有インデックス '{0}' が違反されています。</value>
+  </data>
+  <data name="InTransactionLoader_NotInSelectDataMode" xml:space="preserve">
+    <value>内部エラー: SelectData モードではありません。</value>
+  </data>
+  <data name="Object_PersistentOrThis" xml:space="preserve">
+    <value>メンバー '{0}.{1}' は永続的であるか 'this' を返さなければなりません。
+</value>
+  </data>
+  <data name="InMemorySet_XMLException_XpathAttributeWrongFormat" xml:space="preserve">
+    <value>XML ローダー: 'xpath' 属性値の形式が正しくありません。</value>
+  </data>
+  <data name="Collections_CriteriaEvaluationBehaviorIsNotSupported" xml:space="preserve">
+    <value>内部エラー: 指定した CriteriaEvaluationBehavior.{0} はオーバーロードされたコンストラクタに対応されていません。。</value>
+  </data>
+  <data name="InMemorySet_InvalidTypeString" xml:space="preserve">
+    <value>XML ローダー: タイプ名が無効です。</value>
+  </data>
+  <data name="Metadata_WrongObjectType" xml:space="preserve">
+    <value>クラス情報 {2} を使用して作成されたオブジェクト {0} は正しくないクラス情報 {1} を返します。</value>
+  </data>
+  <data name="InMemorySet_XMLException_XScomplexTypeExpected" xml:space="preserve">
+    <value>XML ローダー: xs:complexType を想定しています。</value>
+  </data>
+  <data name="ObjectLayer_XPClassInfoNotFound" xml:space="preserve">
+    <value>クラス情報 '{0}' が見つかりません。</value>
+  </data>
+  <data name="InMemorySet_AddRelation" xml:space="preserve">
+    <value>重複リレーションシップを追加’できません。</value>
+  </data>
+  <data name="Security_DeletingAnObjectWasProhibitedByTheRules" xml:space="preserve">
+    <value>オブジェクトの削除は検証ルールにより禁止されています。</value>
+  </data>
+  <data name="InMemorySet_XMLException_TableNameIsNotSpecified" xml:space="preserve">
+    <value>XML ローダー: テーブル名が指定されていません。</value>
+  </data>
+  <data name="Security_TheCommitOperationWasProhibitedByTheRules" xml:space="preserve">
+    <value>コミット操作は検証ルールにより禁止されています。</value>
+  </data>
+  <data name="InMemorySet_XMLException_ComplexTypeNodeNotFound" xml:space="preserve">
+    <value>XML ローダー:  'complexType' のノードが見つかりません。</value>
+  </data>
+  <data name="InMemoryFull_CannotPrepareQueryPlan" xml:space="preserve">
+    <value>クエリ プランを作成できません。</value>
+  </data>
+  <data name="InMemorySet_XMLException_CantGetColumnType" xml:space="preserve">
+    <value>XML ローダー: 列タイプを解決できません。</value>
+  </data>
+  <data name="Object_ReferencePropertyViaCollectionAccessor" xml:space="preserve">
+    <value>コレクションのアクセサで参照プロパティを設定しようとしています。</value>
+  </data>
+  <data name="InMemorySet_ConstraintConflict" xml:space="preserve">
+    <value>列 '{1}' に対する  FKey のテーブル '{0}' の制約が無効です。</value>
+  </data>
+  <data name="CriteriaAnalizer_ClassesAreNotAssignable" xml:space="preserve">
+    <value>クラス '{0}' と '{1}' は相互に指定できます。</value>
+  </data>
+  <data name="View_IsInLoading" xml:space="preserve">
+    <value>データを非同期的に更新している際、ビューの再読み込みができません。</value>
+  </data>
+  <data name="MsSql_RootIsNotInsertStatement" xml:space="preserve">
+    <value>内部エラー: Root は InsertStatement ではありません。</value>
+  </data>
+  <data name="InMemorySet_XMLException_XSsequenceExpected" xml:space="preserve">
+    <value>XML ローダー: xs:sequence を想定しています。</value>
+  </data>
+  <data name="InMemorySet_WrongInitData" xml:space="preserve">
+    <value>ソース行の列数とターゲット テーブル行が一致しません。</value>
+  </data>
+  <data name="InMemorySet_XMLException_choiceNodeNotFound" xml:space="preserve">
+    <value>XML ローダー: 'choice' のノードが見つかりません。</value>
+  </data>
+  <data name="InMemorySet_XMLException_NullPrimaryColumns" xml:space="preserve">
+    <value>XML ローダー: 主キー '{0}'  が見つかりません。.</value>
+  </data>
+  <data name="Object_CorrectPIinUOW" xml:space="preserve">
+    <value>永続的 インターフェースはセッション内で完全にサポートされていません。代わりにワーク単位を使用してください。</value>
+  </data>
+  <data name="CriteriaAnalizer_NullJoinClassInfo" xml:space="preserve">
+    <value>クラス情報 は Null です。</value>
+  </data>
+  <data name="InMemorySet_XMLException_InconsistentForeignKeyCount" xml:space="preserve">
+    <value>XML ローダー: PKey と FKey の列数が一致しません。</value>
+  </data>
+  <data name="InMemory_DataSetUncommited" xml:space="preserve">
+    <value>「Data」パラメーターはコミットされていない変更を持つ DataSet を含みます。DataSetDataStore クラスの新規インスタンスを作成する前にDataSet.AcceptChanges メソッドを呼び出してください。</value>
+  </data>
+  <data name="Async_CanChangeProperties" xml:space="preserve">
+    <value>既に使用されています！</value>
+  </data>
+  <data name="InMemory_CannotFindParentRelationForNode" xml:space="preserve">
+    <value>ノード '{0}' の親リレーションシップが見つかりません。不正形式のクエリまはた内部 XPO エラーです。</value>
+  </data>
+  <data name="Metadata_ClassAttributeExclusive" xml:space="preserve">
+    <value>PersistentAttribute、NonPersistentAttribute および MapToAttribute は排他的です。このうちの一つだけをクラス '{0}' に適用できます。</value>
+  </data>
+  <data name="Helpers_SameDictionaryExpected" xml:space="preserve">
+    <value>辞書と一致しません。</value>
+  </data>
+  <data name="InMemorySet_InEditMode" xml:space="preserve">
+    <value>行は既に編集モードに入っています。</value>
+  </data>
+  <data name="InMemorySet_CantUpdateRelationColumn" xml:space="preserve">
+    <value>リレーションシップを持つ行は更新できません。</value>
+  </data>
+  <data name="InMemorySet_XMLException_DataTypeAttributeNotFound" xml:space="preserve">
+    <value>XML ローダー: アトリビュート 'DataType' が見つかりません。</value>
+  </data>
+  <data name="Metadata_TypeNotFound" xml:space="preserve">
+    <value>タイプ '{0}' が見つかりません。</value>
+  </data>
+  <data name="InMemorySet_WrongDictionaryIndex" xml:space="preserve">
+    <value>内部エラー: インデックス '{0}' の辞書データが正しくありません。</value>
+  </data>
+  <data name="Metadata_NotCollection" xml:space="preserve">
+    <value>'{0}.{1}' はコレクションではありません。</value>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidBaseAttributeValue" xml:space="preserve">
+    <value>XML ローダー: 'base' の属性値が正しくありません。</value>
+  </data>
+  <data name="Session_InternalXPOError" xml:space="preserve">
+    <value>内部 XPO エラー</value>
+  </data>
+  <data name="DirectSQL_CollectionMembersAreNotSupported" xml:space="preserve">
+    <value>コレクション メンバーはサポートされていません。</value>
+  </data>
+  <data name="InMemorySet_XMLException_XSselectorNodeExpected" xml:space="preserve">
+    <value>XML ローダー: 'xs:selector' ノードを想定しています。</value>
+  </data>
+  <data name="InMemorySet_ColumnNotFound" xml:space="preserve">
+    <value>列 '{0}' が見つかりません。</value>
+  </data>
+  <data name="InTransactionLoader_ProcessReturnResultError" xml:space="preserve">
+    <value>内部エラー: SelectData モードでは操作できません。</value>
+  </data>
+  <data name="Loader_InternalErrorOrUnsupportedReferenceStructure" xml:space="preserve">
+    <value>内部 XPO エラーまたはサポートされていない参照構造: 複合キーは子孫を持つタイプを参照してはいけません。オブジェクト タイプ '{0}'、タイプ '{1}' を解決。</value>
+  </data>
+  <data name="Security_ICommandChannel_TransferringRequestsIsProhibited" xml:space="preserve">
+    <value>ICommandChannel を通したリクエストの転送は、セキュリティ エンジン内で禁止されています。</value>
+  </data>
+  <data name="View_AtLeastOneFetchProperptyShouldBeDefined" xml:space="preserve">
+    <value>取得するには、少なくとも1つのプロパティの定義が必要です。</value>
+  </data>
+  <data name="Security_SavingAnObjectWasProhibitedByTheRulesOfVal" xml:space="preserve">
+    <value>オブジェクトの保存は検証ルールにより禁止されています。</value>
+  </data>
+  <data name="Session_NotClassMember" xml:space="preserve">
+    <value>'{0}' はクラス '{1}' のメンバーではありません。</value>
+  </data>
+  <data name="Loader_ReloadError" xml:space="preserve">
+    <value>内部エラー: 指定した '{0}.{1}' はサポートされていません。</value>
+  </data>
+  <data name="ObjectLayer_MemberNotFound" xml:space="preserve">
+    <value>メンバー '{0}.{1}' が見つかりません。</value>
+  </data>
+  <data name="InMemorySet_XMLException_ElementNodeNotFound" xml:space="preserve">
+    <value>XML ローダー: 'element' のノードが見つかりません。</value>
+  </data>
+  <data name="InMemorySet_XMLException_XSlengthExpected" xml:space="preserve">
+    <value>XML ローダー: xs:length を想定しています。</value>
+  </data>
+  <data name="CriteriaAnalizer_NullTransitionMemberInfo" xml:space="preserve">
+    <value>経過的 MemberInfo は Null です。</value>
+  </data>
+  <data name="Session_ObjectModificationIsNotAllowed" xml:space="preserve">
+    <value>セッションが CommitChangesToDataLayerInner 状態になっている場合、
+オブジェクトを修正できません。</value>
+  </data>
+  <data name="Session_MostProbablyYouAreTryingToInitiateAnObject" xml:space="preserve">
+    <value>前回のオブジェクト保存操作が完了しないうちに、オブジェクトの読み込み操作を開始しようとしている可能性があります。Session.ObjectsSaved か IXPObject.OnSaved イベントが終了するまで（Session.IsObjectsSaving が true　の間）操作を延期してください。</value>
+  </data>
+  <data name="SerializableObjectLayer_OptimisticLockFieldNotExists" xml:space="preserve">
+    <value>クラス情報 '{0}' は定義済みの OptimisticLockField を含みません。</value>
+  </data>
+  <data name="SerializableObjectLayer_OptimisticLockFieldInDLNotExists" xml:space="preserve">
+    <value>クラス情報 '{0}' は定義済みの OptimisticLockFieldInDataLayer を含みません。</value>
+  </data>
+  <data name="Common_MethodOrOperationNotImplemented" xml:space="preserve">
+    <value>当メソッドあるいは操作は実装されません。</value>
+  </data>
+  <data name="InMemorySet_XMLException_ReferAttributeExpected" xml:space="preserve">
+    <value>XML ローダー: 'refer' 属性を想定しています。</value>
+  </data>
+  <data name="Metadata_AssociationListExpected" xml:space="preserve">
+    <value>関連付け リストまたはコレクションを想定しています: '{0}.{1}'。</value>
+  </data>
+  <data name="Session_MostProbablyYouAreTryingToInitiateAnObjectEx" xml:space="preserve">
+    <value>前のオブジェクト保存操作が完了しないうちに、オブジェクトの読み込み操作を開始しようとしている可能性があります。Session.ObjectsSaved または IXPObject.OnSaved イベントが終了するまで（Session.IsObjectsSaving が true　の間）操作を延期してください。別の理由として、異なるスレッドから同じセッションで同時に作業しようとしていることが考えられます。</value>
+  </data>
+  <data name="Object_NullInstance" xml:space="preserve">
+    <value> インターフェース仮想オブジェクトのインプリメンタが見つかりません。</value>
+  </data>
+  <data name="NestedSession_NotClonable" xml:space="preserve">
+    <value>メンバー '{0}.{1}' が操作中に変更されたため、オブジェクト階層をクローンできません。</value>
+  </data>
+  <data name="ServerModeGridSource_GroupAndAddOrRemoveIsNotAllwed" xml:space="preserve">
+    <value>アイテムのグループ化と追加 / 削除は同時にできません。</value>
+  </data>
+  <data name="InMemorySet_DifferentTypes" xml:space="preserve">
+    <value>PKey と FKey の列タイプが一致しません。</value>
+  </data>
+  <data name="Session_UnexpectedState" xml:space="preserve">
+    <value>指定の SessionState.{0} はサポートされていません。</value>
+  </data>
+  <data name="SerializableObjectLayer_OLDoesNotImplementptISerializableObjectLayerEx" xml:space="preserve">
+    <value>オブジェクト レイヤーは、ISerializableObjectLayerEx を実行しません。</value>
+  </data>
+  <data name="Object_DelayedPropertyContainerCannotBeAssigned" xml:space="preserve">
+    <value>遅延されたカスタム プロパティ '{0}.{1}' のコンテナは指定できません。</value>
+  </data>
+  <data name="InMemorySet_XMLException_ColumnNameIsNotSpecified" xml:space="preserve">
+    <value>XML ローダー: 列名が指定されていません。</value>
+  </data>
+  <data name="InMemorySet_XMLException_CantRestoreObjectFromXML" xml:space="preserve">
+    <value>XML ローダー: オブジェクトを逆シリアル化できません。</value>
+  </data>
+  <data name="Metadata_SuppressSuspiciousMemberInheritanceCheckError" xml:space="preserve">
+    <value>メンバー '{0}.{1}' とそのアトリビュート '{2}' が無視されます。同じ名前のメンバーが既にベース クラス '{3} 'で宣言されています。この例外を止めるには、DevExpress.Xpo.Metadata.ReflectionClassInfo.SuppressSuspiciousMemberInheritanceCheck を True に設定してください。</value>
+  </data>
+  <data name="InMemorySet_XMLException_SchemaNodeNotFound" xml:space="preserve">
+    <value>XML ローダー: 'schema' のノードが見つかりません。</value>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidValueAttributeValue" xml:space="preserve">
+    <value>XML ローダー: 'value' の属性値が正しくありません。</value>
+  </data>
+  <data name="Session_EnteringTheX0StateFromTheX1StateIsProhibit" xml:space="preserve">
+    <value>状態 '{2}' から状態 '{0}' への入力は状態 '{1}' のため禁止されています。</value>
+  </data>
+  <data name="Metadata_DuplicateMappingField" xml:space="preserve">
+    <value>クラス '{1}' の列 '{0}' でマッピングが重複しています。</value>
+  </data>
+  <data name="Session_CrossThreadFailureDetected" xml:space="preserve">
+    <value>Cross-thread operation detected. '{0}' is not a thread-safe object, please avoid using it simultaneously from different threads</value>
+  </data>
+  <data name="Collections_GeneralPurposeCollectionInsteadOfRefCollection" xml:space="preserve">
+    <value>の関連するコレクション プロパティの無効な実装 ' {0}。{1}' が検出されました。戻す方法 GetCollection メソッドまたはコンス トラクター XPCollection セッション、オブジェクトの持ち主 （XPMemberInfo refProperty） 経由で、コレクションを作成する必要があります</value>
+  </data>
+  <data name="Collections_WantNotDeleteFilteredAggregateCollection" xml:space="preserve">
+    <value>通常、データベースに孤立化したレコードになります。クリア ' {1}。条件 ' '{0}' オブジェクトの所有者を削除する前にプロパティ</value>
+  </data>
+  <data name="ConnectionProvider_TheAutoIncrementedKeyWithX0TypeIsNotSuppor" xml:space="preserve">
+    <value>'{0}' 型はサポートされていません '{1}' を持つ、オートインクリメント ・ キー</value>
+  </data>
+  <data name="DroneDataStore_CommitNotSupported" xml:space="preserve">
+    <value>データベース接続が構成されていないために、変更をコミットできない (スタブ データベース プロバイダーは現在使用される)。Http://help.devexpress.com/#CoreLibraries/CustomDocument2123 で記述されているデータ ストアに接続してください。</value>
+  </data>
+  <data name="Filtering_TheIifFunctionOperatorRequiresThree" xml:space="preserve">
+    <value>'Iif' 関数演算子は 3 つ以上の引数が必要です。引数の数を奇数にする必要があります</value>
+  </data>
+  <data name="Filtering_TheTypeNameArgumentOfTheX0FunctionIsNotFound" xml:space="preserve">
+    <value>'{0}' 関数の 'typeName' 引数が見つかりません</value>
+  </data>
+  <data name="Generator_TheUseOfATopLevelSingleAggregateIsProhibit" xml:space="preserve">
+    <value>トップ レベル '単一' 集計の使用は禁止されています</value>
+  </data>
+  <data name="Generator_TheUseOfNestedSingleAggregatesIsProhibited" xml:space="preserve">
+    <value>の入れ子になった '単一' 集計の使用は禁止されています</value>
+  </data>
+  <data name="InMemory_IsReadOnly" xml:space="preserve">
+    <value>書き込みはサポートされていません</value>
+  </data>
+  <data name="LinqToXpo_DuplicateJoinOperatorFound" xml:space="preserve">
+    <value>重複結合演算子が見つかりません</value>
+  </data>
+  <data name="Metadata_AmbiguousClassName" xml:space="preserve">
+    <value>あいまいな型名 '{0}' 型 '{1}' と型 '{2}' の間の ClassInfo を解決不可能します。</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_NonPersistentClassInTheAssociation" xml:space="preserve">
+    <value>関連属性のメンバーを使用できません ' {0}。{1}' クラス '{2}' は永続的ではないためです</value>
+  </data>
+  <data name="Metadata_ConverterOnKeyOrReference" xml:space="preserve">
+    <value>、ValueConverter 属性に適用することはできません、' {0}。{1}' オブジェクトのキーまたは別のオブジェクトへの参照を表すプロパティ</value>
+  </data>
+  <data name="MetaData_PersistentReferenceFound" xml:space="preserve">
+    <value>永続的なクラス '{0}' を持つ永続的な非固有の操作が実行されます。</value>
+  </data>
+  <data name="MetaData_PropertyIsDuplicatedInIndexDeclaration" xml:space="preserve">
+    <value>'{0}' プロパティに複製されて、' {1} {2} {3}' {4} インデックス宣言</value>
+  </data>
+  <data name="PersistentAliasExpander_NonPersistentCriteriaThisValueMember" xml:space="preserve">
+    <value>は、非永続的なプロパティ '{1}' を使用している基準"{0}"を使用してデータ ストアを照会できません。ください、使用していた '{0}'、ValueMember として参照場合、空の ValueMember 代わりに使用します</value>
+  </data>
+  <data name="Security_SavingAnObjectWasProhibitedByTheRulesWProp" xml:space="preserve">
+    <value>省、' {0}。{1}' プロパティの入力規則で禁止されています</value>
+  </data>
+  <data name="Session_DictConstractor" xml:space="preserve">
+    <value>セッション (XPDictionary ディクショナリ) コンス トラクターを使用する場合、Session.Connect メソッドを呼び出す前に有効な Session.ConnectionString を指定する必要があります</value>
+  </data>
+</root>

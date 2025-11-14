@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DA52534F-2CF7-436E-823B-BD031FAD9AE9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevExpress.Xpf.Core</RootNamespace>
+    <AssemblyName>DevExpress.Xpf.Core.v25.2</AssemblyName>
+<SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DXWhidbey</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.XML">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Bars\LocalizationRes.et.resx" />
+    <EmbeddedResource Include="Bars\LocalizationRes.hi.resx" />
+    <EmbeddedResource Include="Bars\LocalizationRes.id.resx" />
+    <EmbeddedResource Include="Bars\LocalizationRes.sq.resx" />
+    <EmbeddedResource Include="Bars\LocalizationRes.th.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.ar.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.bg.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.ca.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.cs.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.da.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.de-CH.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.de.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.el.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.es.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.et.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.fa.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.fi.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.fr.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.he.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.hr.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.hu.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.hy.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.is.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.it.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.ja.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.ko.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.lt.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.lv.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.mk.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.nl.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.no.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.pl.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.pt-BR.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.pt.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.ro.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.ru.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.sk.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.sl.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.sr-Cyrl-RS.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.sr-Latn-RS.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.sv.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.ta.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.tr.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.uk.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.vi.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.zh-CN.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.zh-Hans.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.zh-Hant.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.zh-TW.resx" />
+    <EmbeddedResource Include="Core\SearchPanelRes.el.resx" />
+    <EmbeddedResource Include="Core\SearchPanelRes.et.resx" />
+    <EmbeddedResource Include="Core\SearchPanelRes.th.resx" />
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.et.resx" />
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.hi.resx" />
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.th.resx" />
+    <EmbeddedResource Include="Editors\LocalizationRes.et.resx" />
+    <EmbeddedResource Include="Editors\LocalizationRes.hi.resx" />
+    <EmbeddedResource Include="Editors\LocalizationRes.id.resx" />
+    <EmbeddedResource Include="Editors\LocalizationRes.kk.resx" />
+    <EmbeddedResource Include="Editors\LocalizationRes.ms.resx" />
+    <EmbeddedResource Include="Editors\LocalizationRes.th.resx" />
+    <EmbeddedResource Include="Editors\LocalizationRes.zh-TW.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.vi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.uk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.ta.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.sk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.mk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.lv.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.lt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.ko.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.is.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.fi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.zh-TW.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.zh-Hant.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.vi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.uk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.tr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.ta.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.sk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.mk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.lv.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.lt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.ko.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.is.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.fi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.cs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.bg.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.zh-TW.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.zh-Hant.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.vi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.uk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.tr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.ta.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.sk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.mk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.lv.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.lt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.ko.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.is.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.hu.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.he.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.fi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.cs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.bg.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.zh-TW.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.zh-Hant.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.vi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.uk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.ta.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.sk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.mk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.lv.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.lt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.ko.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.is.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.hu.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.he.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.fi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.cs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.bg.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.ar.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.sl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.cs.resx" />
+    <EmbeddedResource Include="Editors\LocalizationRes.sl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.sl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.sl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.nl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.nl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.tr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.no.resx" />
+    <EmbeddedResource Include="Editors\LocalizationRes.ar.resx" />
+    <EmbeddedResource Include="Editors\LocalizationRes.tr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.zh-Hans.resx" />
+    <EmbeddedResource Include="Core\SearchPanelRes.pt-BR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.zh-Hans.resx" />
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.pt-BR.resx" />
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.sr-Latn-BA.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.da.resx" />
+    <EmbeddedResource Include="Bars\LocalizationRes.de-CH.resx" />
+    <EmbeddedResource Include="Bars\LocalizationRes.el.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.pt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="Core\SearchPanelRes.da.resx" />
+    <EmbeddedResource Include="Core\SearchPanelRes.de-CH.resx" />
+    <EmbeddedResource Include="Core\SearchPanelRes.pt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.ro.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.da.resx" />
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.de-CH.resx" />
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.el.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.pt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.ro.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.ro.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.zh-Hans.resx" />
+    <EmbeddedResource Include="Editors\LocalizationRes.ca.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.ca.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.ca.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.ca.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.hr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.hr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.it.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.it.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.hy.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.pt-BR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.hy.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.hy.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.da.resx" />
+    <EmbeddedResource Include="Editors\LocalizationRes.de-CH.resx" />
+    <EmbeddedResource Include="Editors\LocalizationRes.el.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.hy.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.pt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="Editors\LocalizationRes.zh-Hans.resx" />
+    <EmbeddedResource Include="Core\SearchPanelRes.fa.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.fa.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.fa.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.ar.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.ar.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.no.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.no.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.no.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.pl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.pl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.sv.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.sv.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.es.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bars\LocalizationRes.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.es.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SearchPanelRes.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.es.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.pl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.hr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.sv.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.sv.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.nl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.hu.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.it.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.it.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.he.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.ro.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.bg.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.es.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.fa.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.hr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.hu.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.nl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.pl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.pt-BR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\LocalizationRes.zh-Hant.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.he.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GridColumnExists" xml:space="preserve">
+    <value>Kolona '{0}' već postoji u tabeli</value>
+  </data>
+  <data name="CannotAccessCollectionCollectionSourceIsBeingIntialized" xml:space="preserve">
+    <value>Ne možete pristupiti osobini Collection jer se izvor za Collection tek inicijalizira. Ova greška će se pojaviti, npr. kada pokušate pristupiti osobini Collection u metodi OnActivated klase ViewController. Da bi izbjegli ovu grešku, morate pristupiti osobini Collection u kasnijoj fazi, kada je izvor za Collection već inicijaliziran. Najbolji način je obraditi događaj CollectionChanged. Molimo pogledajte korisničke upute proizvoda za detaljnije informacije o ovim klasama i metodama. Ukoliko Vam to ne pomogne, obratite se našoj korisničkoj podršci na https://supportcenter.devexpress.com/</value>
+  </data>
+  <data name="ErrorOccursWhileAddingTheCustomProperty" xml:space="preserve">
+    <value>Greška kod dodavanja korisničke osobine '{2}' ('{0}' tip osobine) u '{1}' tipa: '{3}'</value>
+  </data>
+  <data name="GridColumnDoesNotExist" xml:space="preserve">
+    <value>Kolona '{0}' ne postoji u tabeli</value>
+  </data>
+  <data name="UnableToSetReadOnlyProperty" xml:space="preserve">
+    <value>Ne mogu postaviti nepromjenjivu osobinu '{0}'</value>
+  </data>
+  <data name="GridControlIsAlreadyCreated" xml:space="preserve">
+    <value>Ne mogu postaviti osobinu EditMode. Kontola GridControl je već kreirana. </value>
+  </data>
+  <data name="NameAndValueCollectionsShouldHaveEqualLengths" xml:space="preserve">
+    <value>Kolekcija naziva i vrijednosti mora biti jednake dužine</value>
+  </data>
+  <data name="UnableToFindPropertyInType" xml:space="preserve">
+    <value>Ne mogu pronaći osobinu '{0}' tipa '{1}'</value>
+  </data>
+  <data name="CannotAddDuplicateProperty" xml:space="preserve">
+    <value>Ne mogu dodati dupli uređivač osobine: '{0}'</value>
+  </data>
+  <data name="TheValueWasLocked" xml:space="preserve">
+    <value>Vrijednost je zaključana</value>
+  </data>
+  <data name="PassedObjectBelongsToAnotherObjectSpace" xml:space="preserve">
+    <value>Poslani objekt pripada drugom ObjectSpace-u. Ova greška se pojavljuje u slučaju kad manipulirate svojim objektima preko ObjectSpace-a kojem ti objekti ne pripadaju. Na primjer, ovu grešku ćete dobiti kod korištenja metode XafApplication.CreateDetailView u slučaju da ste poslali objekt koji je dobiven iz drugog ObjectSpace-a od ObjectSpace-a koji je korišten kao parametar u ovoj metodi. Da bi ispravili ovu grešku, pobrinite se da svi objekti kojima manipulirate pripadaju jednom ObjectSpace-u.\r\nU većini slučajeva, za izbjegavanje ove greške dovoljno je pozvati metode ObjectSpace.GetObject/GetObjectByKey da bi dobili poslani objekt u ciljnom ObjectSpace-u.\r\nUkoliko Vam to ne pomogne, molimo kontaktirajte našu korisničku podršku na https://supportcenter.devexpress.com/</value>
+  </data>
+  <data name="ItsImpossibleToFindPathForNode" xml:space="preserve">
+    <value>Nije moguće pronaći putanju='{0}' za čvor '{1}'</value>
+  </data>
+  <data name="XPDictionaryIsNull" xml:space="preserve">
+    <value>XPDictionary je null</value>
+  </data>
+  <data name="TheExpressionShouldConsistOf" xml:space="preserve">
+    <value>Izraz treba biti sačinjen od izraza pretrage i naziva atributa izvora odvojenih sa znakom ';': '{0}'</value>
+  </data>
+  <data name="ObjectFormatterFormatStringIsInvalid" xml:space="preserve">
+    <value>Objekt se ne može formatirati jer zadani format nije ispravan: '{0}'</value>
+  </data>
+  <data name="ListEditorShouldImplement" xml:space="preserve">
+    <value>ListEditor mora implementirati sučelje IDXPopupMenuHolder</value>
+  </data>
+  <data name="TheCreateApplicationModulesManagerReturnsNull" xml:space="preserve">
+    <value>Metoda CreateApplicationModulesManager vraća null</value>
+  </data>
+  <data name="ThePassedFileIsNotADllOrConfig" xml:space="preserve">
+    <value>Prosljeđena datoteka '{0}' nije *.dll ili *.config datoteka</value>
+  </data>
+  <data name="UnableToFindADetailViewForType" xml:space="preserve">
+    <value>Ne mogu pronaći detaljni pogled za tip objekta '{0}'</value>
+  </data>
+  <data name="ParameterConflictsWithPropertyException" xml:space="preserve">
+    <value>Kriterij sadrži nepromjenjiv parametar '{0}' koji je u konfliktu sa svojstvom '{0}' u klasi '{1}'. Ako želite referencirati nepromjenjivo svojstvo, koristite sintaksu '@@{0}', a ako želite referencirati svojstvo u klasi, koristite sintaksu '@this.{0}'.</value>
+  </data>
+  <data name="ApplicationUpdaterAssemblyDoesNotExist" xml:space="preserve">
+    <value>Aplikacija se ne može ažurirati jer assembly '{1}' ne postoji u mapi '{0}' folder.</value>
+  </data>
+  <data name="TheAspectIsNotPresentInAspectsCollection" xml:space="preserve">
+    <value>Aspekt '{0}' nije prisutan u kolekciji aspekata</value>
+  </data>
+  <data name="IncorrectConfigFile" xml:space="preserve">
+    <value>Prosljeđena konfiguracijska datoteka '{0}' ne sadrži čvor '&lt;add key="Modules"'</value>
+  </data>
+  <data name="ApplicationIsNotStarted" xml:space="preserve">
+    <value>Aplikacija nije pokrenuta</value>
+  </data>
+  <data name="ActionMethodShouldBeNonGeneric" xml:space="preserve">
+    <value>Nije moguće kreirati akciju za metodu {0} klase {1}. Metoda akcije bi trebala biti ne-generička. </value>
+  </data>
+  <data name="CurrentObjectIsNotSet" xml:space="preserve">
+    <value>Ne mogu postaviti svojstvo '{0}'. Nije postavljen trenutni objekt. </value>
+  </data>
+  <data name="CannotAddCollectionProperty" xml:space="preserve">
+    <value>Ne mogu dodati '{0}' kolekciju</value>
+  </data>
+  <data name="NotRegisteredReadOnlyParameterException" xml:space="preserve">
+    <value>Nepromjenjiv parametar '{0}' nije registriran u ParametersFactory.</value>
+  </data>
+  <data name="CompatibilityApplicationIsOldError" xml:space="preserve">
+    <value>Verzija baze podataka veća je od verzije aplikacije. Potrebno je nadograditi aplikaciju. Molimo kontaktirajte administratora ili preuzmite novu verziju.\r\nDodatne informacije: lokalna verzija {0} modula {1} je manja od verzije {2} u bazi podataka. </value>
+  </data>
+  <data name="ValueCannotBeStoredIntoTheProperty" xml:space="preserve">
+    <value>Vrijednost '{0}' se ne može spremiti u svojstvo '{1}'</value>
+  </data>
+  <data name="CannotSetEditValueAvailableValues" xml:space="preserve">
+    <value>Ne mogu postaviti EditValue iz teksta '{0}', dostupne vrijednosti:\r\n{1}</value>
+  </data>
+  <data name="AnErrorHasOccurredWithContext" xml:space="preserve">
+    <value>Pojavila se greška, kontekst: {0}</value>
+  </data>
+  <data name="MethodShouldBeUsed" xml:space="preserve">
+    <value>Potrebno je koristiti metodu '{0}'</value>
+  </data>
+  <data name="ClassDoesntImplementInterface" xml:space="preserve">
+    <value>Klasa '{0}' ne implementira sučelje '{1}'</value>
+  </data>
+  <data name="WindowWasNotFound" xml:space="preserve">
+    <value>Nije pronađen prozor s id '{0}'. Prijavljeni prozori: '{1}'</value>
+  </data>
+  <data name="DictionaryPathItemParsingFailed" xml:space="preserve">
+    <value>Parsiranje putanje stavke rječnika nije uspjelo. Postoji sintaksna greška u izrazu '{0}'</value>
+  </data>
+  <data name="UnableToAssignDisabledActionItem" xml:space="preserve">
+    <value>Ne mogu pridružiti onemogućenu stavku. Akcija: {0}. Stavka: {1} Razlog: {2}</value>
+  </data>
+  <data name="ValidationCannotFindThePropertyWithinTheClass" xml:space="preserve">
+    <value>Ne mogu provjeriti pravilo za provjeru ispravnosti '{0}' koje koristi svojstvo '{1}' jer to svojstvo ne postoji u ciljnoj klasi '{2}'</value>
+  </data>
+  <data name="ItsImpossibleToFindSourceNode" xml:space="preserve">
+    <value>Nije moguće pronaći SourceNode='{0}\\{1}'</value>
+  </data>
+  <data name="CannotObtainTheEditingObject" xml:space="preserve">
+    <value>Ne mogu dobiti objekt za izmjenu</value>
+  </data>
+  <data name="TheTypeIsNotDescendantOf" xml:space="preserve">
+    <value>Tip '{0}' nije nasljeđen od '{1}'</value>
+  </data>
+  <data name="RuleSetClearingIsDenied" xml:space="preserve">
+    <value>Brisanje RuleSet-a nije dozvoljeno</value>
+  </data>
+  <data name="UnableToInitializeFileDataProperty" xml:space="preserve">
+    <value>Ne mogu inicijalizirati svojstvo {0} u objektu {1} jer je svojstvo nepromjenjivo ili tip {2} nema zadanog stvaratelja (default constructor) ili nemate dovoljna prava za kreiranje</value>
+  </data>
+  <data name="TheClassIsNotFoundInBOModel" xml:space="preserve">
+    <value>Klasa '{0}' nije pronađena u BOModel-u</value>
+  </data>
+  <data name="CannotGenerateContent" xml:space="preserve">
+    <value>Ne mogu generirati sadržaj: atribut 'ClassName' je prazan</value>
+  </data>
+  <data name="UnableToCreateUpdateSessionAutoCreateOption" xml:space="preserve">
+    <value>Ne mogu kreirati UpdatingSession. dataLayer.AutoCreateOptions je {0}</value>
+  </data>
+  <data name="YouCannotChangeCurrentAspect" xml:space="preserve">
+    <value>Ne možete promijeniti trenutni aspekt. Ovisan je o regionalnim postavkama trenutne izvršne niti</value>
+  </data>
+  <data name="AttributeShouldStartWithSymbol" xml:space="preserve">
+    <value>Atribut '{0}' mora početi sa znakom '@': '{1}'</value>
+  </data>
+  <data name="UnableToExecuteDisabledOrInactiveAction" xml:space="preserve">
+    <value>Ne mogu izvršiti onemogućenu ili neaktivnu akciju {2}. Razlog onemogućenosti: {0}, razlog neaktivnosti {1}</value>
+  </data>
+  <data name="TheAssemblyDoesntReferAssembly" xml:space="preserve">
+    <value>Assembly '{0}' ne referencira assembly-e {1} ({2})</value>
+  </data>
+  <data name="UnableToFindType" xml:space="preserve">
+    <value>Ne mogu pronaći tip '{0}'</value>
+  </data>
+  <data name="TypeDoesNotContainTheMember" xml:space="preserve">
+    <value>Tip '{0}' ne sadrži člana '{1}'</value>
+  </data>
+  <data name="ValidationMessageTemplateHasInvalidFormat" xml:space="preserve">
+    <value>Predložak poruke za provjeru ispravnosti ima neispravan format: '{0}'</value>
+  </data>
+  <data name="TemplateTypeInfoMissed" xml:space="preserve">
+    <value>Ne mogu pronaći TypeInfo za tip '{0}'. Svoj predložak trebate staviti u XAF modul ili ga ručno prijavite koristeći metodu XafTypesInfo.Instance.FindTypeInfo(typeof({0})).</value>
+  </data>
+  <data name="CompatibilityDatabaseIsOldError" xml:space="preserve">
+    <value>Verzija baze podataka je manja od verzije aplikacije. Potrebno je nadograditi bazu podataka. </value>
+  </data>
+  <data name="TheExpressionStringContainsANumberOfExpressions" xml:space="preserve">
+    <value>Niz 'expressionString' sadrži {0} izraza</value>
+  </data>
+  <data name="ExceptionDialogLabel" xml:space="preserve">
+    <value>Dogodila se sljedeća greška:</value>
+  </data>
+  <data name="UnableToCreateObjectSpace" xml:space="preserve">
+    <value>Ne mogu kreirati ObjectSpace. dataLayer je null ili je connectionString prazan</value>
+  </data>
+  <data name="CannotProcessTheRequestedUrl" xml:space="preserve">
+    <value>Ne mogu obraditi traženi url</value>
+  </data>
+  <data name="AnErrorHasOccurredWhileProcessingAShortcut" xml:space="preserve">
+    <value>Pojavila se greška kod obrade prečaca: {0}</value>
+  </data>
+  <data name="UnableToAssignInvisibleActionItem" xml:space="preserve">
+    <value>Ne mogu pridružiti nevidljivu stavku. Akcija {0}. Stavka {1}. Razlog: {2}</value>
+  </data>
+  <data name="IsNotValidNamespacePrefixDescription" xml:space="preserve">
+    <value>{0}' nije ispravan prefiks opisa prostora imena (namespace)</value>
+  </data>
+  <data name="UnableToCreateUpdateSessionDataLayerIsNull" xml:space="preserve">
+    <value>Ne mogu kreirati UpdatingSession. dataLayer je null ili je connectionString prazan</value>
+  </data>
+  <data name="SourceNodeExpressionShouldStartWith" xml:space="preserve">
+    <value>Izraz za SourceNode mora početi s '{0}': '{1}'</value>
+  </data>
+  <data name="CannotProcessTheRequestedUrlActionItemWasNotFound" xml:space="preserve">
+    <value>Ne mogu obraditi traženi url, akcija '{0}' nije pronađena</value>
+  </data>
+  <data name="CustomizePopupWindowParamsEventArgsViewIsNull" xml:space="preserve">
+    <value>Da bi izbjegli ovu grešku, potrebno je postaviti svojstvo CustomizePopupWindowParamsEventArgs.View kada obrađujete događaj CustomizePopupWindowParams. Da bi to uspjeli, kreirajte Pogled koristeći metodu XafApplication.CreateDetailView/CreateListView. Pogledajte dokumentaciju proizvoda za detaljnije informacije o ovim klasama i metodama. Ukoliko Vam to ne pomogne, kontaktirajte našu korisničku podršku na https://supportcenter.devexpress.com/</value>
+  </data>
+  <data name="UnknownException" xml:space="preserve">
+    <value>Dogodila se nepoznata greška. Ne mogu pronaći detalje greške. </value>
+  </data>
+  <data name="InvalidParametrizedActionValueType" xml:space="preserve">
+    <value>Parametriziranoj akciji '{0}' dodijeljen je neispravan tip vrijednosti. Postavite tip Int, String ili DateTime. </value>
+  </data>
+  <data name="InvalidValueOfEnumProperty" xml:space="preserve">
+    <value>Svojstvo {1} objekta {0} ima neispravnu vrijednost {2}. Postavite svojstvu ispravnu {3} pobrojanu vrijednost u AfterConstruction metodi klase {4}.</value>
+  </data>
+  <data name="CannotFindDescendantOfXafApplicationClass" xml:space="preserve">
+    <value>Ne mogu pronaći nasljeđenu klasu od XafApplication za čitanje postavki Vaše aplikacije u sljedećim mapama: 
+{0}
+Za Windows Forms aplikaciju, te mape moraju sadržavati izvršnu datoteku vaše aplikacije.
+Za ASP.NET aplikaciju, te mape moraju sadržavati assembly koji sadrži vašu klasu nasljeđenu od WebApplication.this folder(s) must contain the assembly continaing your WebApplication descendant.</value>
+  </data>
+  <data name="AnUnsavedObjectCannotBeShown" xml:space="preserve">
+    <value>Objekt koji nije snimljen ne može se prikazati</value>
+  </data>
+  <data name="ModulesHasAlreadyBeenLoaded" xml:space="preserve">
+    <value>Modul je već učitan</value>
+  </data>
+  <data name="CannotSetEditValueListIsEmpty" xml:space="preserve">
+    <value>Ne mogu postaviti EditValue iz teksta '{0}', lista je prazna</value>
+  </data>
+  <data name="LayoutControlInvalidCount" xml:space="preserve">
+    <value>Neispravna količina: '{0}'</value>
+  </data>
+  <data name="DataLayerAlreadyExists" xml:space="preserve">
+    <value>DataLayer već postoji: '{0}'</value>
+  </data>
+  <data name="UnableToChangeConnectionString" xml:space="preserve">
+    <value>Ne mogu promijeniti tekst za spajanje. Veza je već uspostavljena.</value>
+  </data>
+  <data name="DuplicateComponentIdentifier" xml:space="preserve">
+    <value>Dupli identifikator komponente '{0}'</value>
+  </data>
+  <data name="ApplicationUpdaterDatabaseVersionIsNewer" xml:space="preserve">
+    <value>Ne mogu pokrenuti aplikaciju. Verzija baze podataka je novija od verzije aplikacije, ali server s novom verzijom aplikacije nije pronađen. Zamolite administratora neka provjeri je li u konfiguracijskoj datoteci upisana ispravna putanja do nove verzije aplikacije. </value>
+  </data>
+  <data name="PermissionIsDenied" xml:space="preserve">
+    <value>Pristup je odbijen</value>
+  </data>
+  <data name="AttributeModifyingFailed" xml:space="preserve">
+    <value>Promijena atributa nije uspjela</value>
+  </data>
+  <data name="CannotFindListViewWithId" xml:space="preserve">
+    <value>Ne mogu pronaći ListView s ID='{0}'</value>
+  </data>
+  <data name="UnableToFindAListViewForType" xml:space="preserve">
+    <value>Ne mogu pronaći tablični pogled za objekt tipa '{0}'</value>
+  </data>
+  <data name="TheTypeAttributeCannotBeEmpty" xml:space="preserve">
+    <value>Atribut 'Type' ne može biti prazan</value>
+  </data>
+  <data name="UnableToChangeValueOfAttributeDueItIsLocked" xml:space="preserve">
+    <value>Ne mogu promijeniti vrijednost atributa '{0}' jer je zaključan</value>
+  </data>
+  <data name="SourceAttributeExpressionShouldStartWith" xml:space="preserve">
+    <value>Izraz atributa Source mora početi s '{0}':'{1}'</value>
+  </data>
+  <data name="NodeWasNotFound" xml:space="preserve">
+    <value>Čvor '{0}' nije pronađen</value>
+  </data>
+  <data name="UnableToChangeChildrenOfNodeDueItIsLocked" xml:space="preserve">
+    <value>Ne mogu mijenjati djecu čvora '{0}' jer je zaključan</value>
+  </data>
+  <data name="IncompatibleParametersCombinationOnViewChanged" xml:space="preserve">
+    <value>Nekompatibilna kombinacija parametara. PopupWindow ima isti ObjectSpace kao i glavni Pogled, no postavljeno je svojstvo SaveOnAccept u DialogController od PopupWindow. Koristite novi ObjectSpace za pozvani PopupWindows ili isključite svojstvo DialogController.SaveOnAccept. </value>
+  </data>
+  <data name="ConfigFileDoesNotExists" xml:space="preserve">
+    <value>Konfiguracijska datoteka '{0}' ne postoji</value>
+  </data>
+  <data name="UnknownViewNodeName" xml:space="preserve">
+    <value>Nepoznati naziv čvora pogleda: '{0}'\r\nDopušteni nazivi: '{1}','{2}'</value>
+  </data>
+  <data name="InfiniteRecursionDetected" xml:space="preserve">
+    <value>Otkrivena beskonačna rekurzija: detaljni pogled '{0}' je kreiran {1} puta</value>
+  </data>
+  <data name="PageCanOnlyContainOneInstanceOfControl" xml:space="preserve">
+    <value>Stranica može sadržavati samo jednu instancu kontrole '{0}'</value>
+  </data>
+  <data name="SourceAttributePathShouldConsistOf" xml:space="preserve">
+    <value>Putanju atributa Source mora sačinjavati jedan ili više naziva čvorova i na kraju naziv atributa, odvojenih sa simbolom '\\': '{0}'</value>
+  </data>
+  <data name="CannotCreateSchemaForAttribute" xml:space="preserve">
+    <value>Ne mogu promijeniti shemu za atribut</value>
+  </data>
+  <data name="RequiresCurrentObjectException" xml:space="preserve">
+    <value>Ne mogu ažurirati CriteriaWrapper jer kriterij koristi dinamičke parametre, ali trenutni objekt nije određen. Za ažuriranje CriteriaWrapper-a, pozovite metodu UpdateParametersValues(Object currentObject) i prosljedite trenutni objekt kao parametar. </value>
+  </data>
+  <data name="CannotFindThePropertyWithinTheClass" xml:space="preserve">
+    <value>Ne mogu pronaći svojstvo '{0}' unutar klase '{1}'</value>
+  </data>
+  <data name="CannotCreateAppropriatePropertyEditorForTheProperty" xml:space="preserve">
+    <value>Ne mogu kreirati odgovarajući uređivač za svojstvo '{0}.{1}'</value>
+  </data>
+  <data name="UnableToCast" xml:space="preserve">
+    <value>Ne mogu pretvoriti objekt tipa '{0}' u tip '{1}'</value>
+  </data>
+  <data name="UnknownValue" xml:space="preserve">
+    <value>Nepoznata vrijednost: '{0}'</value>
+  </data>
+  <data name="ProcessWasAborted" xml:space="preserve">
+    <value>Proces je prekinut</value>
+  </data>
+  <data name="AlreadyUsedObjectSpace" xml:space="preserve">
+    <value>ObjectSpace je već pridružen drugom korijenskom pogledu: '{0}'. Ova greška se javlja kada ObjectSpace, koji je već pridružen korijenskom pogledu, pokušate pridružiti drugom korijenskom pogledu. Primjerice, ova greška će se pojaviti kada koristite XafApplication.CreateDetailView/CreateListView metode i ViewController i prosljeđujete ObjectSpace kao parametar tim metodama, a postavljeno je View.IsRoot svojstvo.\r\nKako bi izbjegli ovu grešku, dovoljno je proslijediti novu ObjectSpace instancu kreirano pomoću XafApplication.CreateObjectSpace metode u navedenim metodama ili kreirajte ne-korijenski Pogled prosljeđujući odgovarajući parametar u te metode.\r\nAko to ne pomogne, molimo kontaktirajte našu korisničku podršku na https://supportcenter.devexpress.com/</value>
+  </data>
+  <data name="AutoCreateOptionIs" xml:space="preserve">
+    <value>Svojstvo updatingReadOnlyDataStore.AutoCreateOption je {0}</value>
+  </data>
+  <data name="CannotCreateAppropriateDetailItem" xml:space="preserve">
+    <value>Ne mogu kreirati odgovorajuću detaljnu stavku od '{0}'</value>
+  </data>
+  <data name="CannotShowViewUnknownTarget" xml:space="preserve">
+    <value>Ne mogu prikazati pogled, nepoznati cilj: '{0}'</value>
+  </data>
+  <data name="DictionaryPathParsingFailed" xml:space="preserve">
+    <value>Parsiranje putanje rječnika nije uspjelo. Postoji sintaksna greška u izrazu '{0}'</value>
+  </data>
+  <data name="ActionMethodShouldBeParameterless" xml:space="preserve">
+    <value>Nije moguće kreirati akciju za metodu {0} klase {1}. Metoda akcije bi trebala biti bez parametara.</value>
+  </data>
+  <data name="TypeIsNotAEnum" xml:space="preserve">
+    <value>Tip '{0} nije tipa enum</value>
+  </data>
+  <data name="NodeContainsDuplicatedChildNodes" xml:space="preserve">
+    <value>Čvor '{0}' sadrži dva dijete čvora sa vrijednošću '{1}' u atributu ključa. \r\n  Čvor 1: '{2}'\r\n  Čvor 2: '{3}'</value>
+  </data>
+  <data name="ConfigFileHasNoModuleNames" xml:space="preserve">
+    <value>Čvor 'add\[@key="Modules"]' bi morao sadržavati listu modula, konfiguracijska datoteka '{0}'</value>
+  </data>
+  <data name="ThereIsAlreadyRegisteredCreatorForFormat" xml:space="preserve">
+    <value>Za format '{0}' već postoji prijavljen stvaratelj</value>
+  </data>
+  <data name="TheClassNameAttributeIsEmpty" xml:space="preserve">
+    <value>Atribut ClassName referenciranog čvora pogleda je prazan:</value>
+  </data>
+  <data name="CannotShowViewUnknownContext" xml:space="preserve">
+    <value>Ne mogu prikazati pogled, nepoznati kontekst: '{0}'</value>
+  </data>
+  <data name="AnErrorHasOccurredWhileLoadingTheModel" xml:space="preserve">
+    <value>Pojavila se greška kod učitavanja modela. Izvor: '{0}'</value>
+  </data>
+  <data name="InvalidApplicationVersion" xml:space="preserve">
+    <value>Neispravna verzija aplikacije na '{0}'</value>
+  </data>
+  <data name="UnableToCreateUpdatingReadonlySessionAutoCreateOption" xml:space="preserve">
+    <value>Ne mogu kreirati UpdatingReadOnlySession. dataLayer.AutoCreateOption je {0}</value>
+  </data>
+  <data name="CannotAddToEmptySingleton" xml:space="preserve">
+    <value>Ne mogu dodati prazni singleton. Kreirajte novu instancu kolekcije. </value>
+  </data>
+  <data name="TheClassNameAttributeRefersToADifferentType" xml:space="preserve">
+    <value>Atribut ClassName referenciranog čvora pogleda pokazuje na drukčiji tip.\r\nTip objekta prečaca: {0}\r\nTip objekta čvora pogleda: {1}</value>
+  </data>
+  <data name="CannotReadDictionaryFromResource" xml:space="preserve">
+    <value>Ne mogu pročitati rječnik iz '{0}' resursa u assembly-u '{1}'</value>
+  </data>
+  <data name="ResourceItemWithNameIsNotFound" xml:space="preserve">
+    <value>Stavka resursa naziva '{0}' nije pronađena</value>
+  </data>
+</root>

@@ -1,0 +1,981 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DataAccessStringId.ConnectingToDatabaseCaption" xml:space="preserve">
+    <value>Bitte warten</value>
+  </data>
+  <data name="DataAccessStringId.DefaultNameDataSource" xml:space="preserve">
+    <value>Datenquelle</value>
+  </data>
+  <data name="DataAccessStringId.LoadingDataSourcePanelCounter" xml:space="preserve">
+    <value>{0} von {1}...</value>
+  </data>
+  <data name="DataAccessStringId.MessageNullItem" xml:space="preserve">
+    <value>Ein Null-Wert kann der Auflistung nicht hinzugefügt werden</value>
+  </data>
+  <data name="DataAccessStringId.PropertyGridBehaviorCategoryName" xml:space="preserve">
+    <value>Verhalten</value>
+  </data>
+  <data name="DataAccessStringId.PropertyGridDataCategoryName" xml:space="preserve">
+    <value>Daten</value>
+  </data>
+  <data name="DataAccessStringId.QueryDesignerJoinExpressionPattern" xml:space="preserve">
+    <value>{0} auf {1}</value>
+  </data>
+  <data name="DataAccessStringId.RelationEditorRelationTypeMasterDetail" xml:space="preserve">
+    <value>Master-Detail-Beziehung</value>
+  </data>
+  <data name="DataAccessStringId.EmptyColumnAliasPattern" xml:space="preserve">
+    <value>Spalte {0}</value>
+  </data>
+  <data name="DataAccessStringId.QueryDesignerJoinExpressionElementSeparator" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="DataAccessStringId.ColumnNullValidationException" xml:space="preserve">
+    <value>Eine Spalte kann nicht null sein.</value>
+  </data>
+  <data name="DataAccessStringId.ConnectingToDatabaseMessage" xml:space="preserve">
+    <value>Herstellen einer Verbindung mit der Datenbank...</value>
+  </data>
+  <data name="DataAccessStringId.DuplicatingColumnNamesValidationException" xml:space="preserve">
+    <value>Eine Spalte mit folgendem Namen bereits vorhanden ist: "{0}". "{1}".</value>
+  </data>
+  <data name="DataAccessStringId.DuplicatingTableNamesValidationException" xml:space="preserve">
+    <value>Eine Tabelle mit dem folgenden Namen bereits vorhanden ist: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.GatheringTypesPanelText" xml:space="preserve">
+    <value>Sammeln von Typen Informationen...</value>
+  </data>
+  <data name="DataAccessStringId.IncompleteRelationValidationException" xml:space="preserve">
+    <value>Die angegebene Beziehung ist unvollständig: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.LoadingDataPanelText" xml:space="preserve">
+    <value>Laden von Daten...</value>
+  </data>
+  <data name="DataAccessStringId.LoadingDataSourcePanelText" xml:space="preserve">
+    <value>Datenquelle wird geladen</value>
+  </data>
+  <data name="DataAccessStringId.NoTablesValidationException" xml:space="preserve">
+    <value>Die Auflistung der Tabellen darf nicht leer sein.</value>
+  </data>
+  <data name="DataAccessStringId.ParameterListEmpty" xml:space="preserve">
+    <value>keine</value>
+  </data>
+  <data name="DataAccessStringId.SqlStringEmptyValidationException" xml:space="preserve">
+    <value>Die SQL-Zeichenfolge ist null oder leer.</value>
+  </data>
+  <data name="DataAccessStringId.WizardEmptyConnectionNameMessage" xml:space="preserve">
+    <value>Der Name darf nicht null, leer oder nur Leerzeichen enthalten.</value>
+  </data>
+  <data name="DataAccessStringId.RelationNullValidationException" xml:space="preserve">
+    <value>Eine Beziehung kann nicht null sein.</value>
+  </data>
+  <data name="DataAccessStringId.StoredProcNameNullValidationException" xml:space="preserve">
+    <value>Der Namen einer gespeicherten Prozedur darf nicht null sein.</value>
+  </data>
+  <data name="DataAccessStringId.StoredProcParamNullValidationException" xml:space="preserve">
+    <value>Parameter darf nicht null sein.</value>
+  </data>
+  <data name="DataAccessStringId.TableNullValidationException" xml:space="preserve">
+    <value>Eine Tabelle kann nicht null sein.</value>
+  </data>
+  <data name="DataAccessStringId.UnnamedColumnValidationException" xml:space="preserve">
+    <value>Der Spaltenname ist nicht angegeben.</value>
+  </data>
+  <data name="DataAccessStringId.UnnamedTableValidationException" xml:space="preserve">
+    <value>Der Tabellenname ist nicht angegeben.</value>
+  </data>
+  <data name="DataAccessStringId.ConnectionStringPostfixAppConfig" xml:space="preserve">
+    <value> (in der Config-Datei)</value>
+  </data>
+  <data name="DataAccessStringId.ConnectionStringPostfixServerExplorer" xml:space="preserve">
+    <value> (aus dem Server-Explorer)</value>
+  </data>
+  <data name="DataAccessStringId.DatabaseConnectionExceptionStringId" xml:space="preserve">
+    <value>Fehler beim Herstellen einer Verbindung mit der Datenbank. Um mehr zu erfahren, sehen Sie die Ausnahmedetails. 
+
+Ausnahmedetails:
+ {0}</value>
+  </data>
+  <data name="DataAccessStringId.DatabaseConnectionExceptionMessage" xml:space="preserve">
+    <value>Verbindung Name: {0}
+Fehlermeldung: {1}
+</value>
+  </data>
+  <data name="DataAccessStringId.ColumnNotInSchemaValidationException" xml:space="preserve">
+    <value>Das Schema enthält nicht die folgende Spalte: "{0}". "{1}".</value>
+  </data>
+  <data name="DataAccessStringId.MessageWrongCharacterItemName" xml:space="preserve">
+    <value>Name des Elements "{0}" enthält falsche Zeichen</value>
+  </data>
+  <data name="DataAccessStringId.NoRelationColumnsValidationException" xml:space="preserve">
+    <value>Die angegebene Beziehung enthält keine Schlüsselspalten: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.ParameterListNull" xml:space="preserve">
+    <value>null</value>
+  </data>
+  <data name="DataAccessStringId.PropertyGridConnectionCategoryName" xml:space="preserve">
+    <value>Verbindung</value>
+  </data>
+  <data name="DataAccessStringId.QueryPropertyGridStoredProcCategoryName" xml:space="preserve">
+    <value>Gespeicherte Prozedur</value>
+  </data>
+  <data name="DataAccessStringId.ParameterlessConstructor" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="DataAccessStringId.RelationEditorRelationTypeInnerJoin" xml:space="preserve">
+    <value>Inner join</value>
+  </data>
+  <data name="DataAccessStringId.QueryPropertyGridCommonCategoryName" xml:space="preserve">
+    <value>Gemeinsame</value>
+  </data>
+  <data name="DataAccessStringId.CircularRelationsValidationException" xml:space="preserve">
+    <value>Zirkuläre Beziehungen wurden erkannt.</value>
+  </data>
+  <data name="DataAccessStringId.TablesNotRelatedValidationException" xml:space="preserve">
+    <value>Die folgenden Tabellen haben keine Beziehungen: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.TableNotInSchemaValidationException" xml:space="preserve">
+    <value>Das Schema enthält die angegebene Tabelle nicht: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.RelationTableNotSelectedValidationException" xml:space="preserve">
+    <value>Die Verweistabelle wurde nicht ausgewählt: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.WizardCustomConnectionString" xml:space="preserve">
+    <value>Eigene Verbindungszeichenfolge</value>
+  </data>
+  <data name="DataAccessStringId.WizardDataConnectionNameExistsMessage" xml:space="preserve">
+    <value>Eine Datenverbindung mit dem angegebenen Namen ist bereits vorhanden. Bitte geben Sie einen anderen Verbindungsnamen an.</value>
+  </data>
+  <data name="DataAccessStringId.ProviderNotSupportedException" xml:space="preserve">
+    <value>Der folgende Datenbankprovider wird nicht unterstützt: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderAliasAlreadyExists" xml:space="preserve">
+    <value>Der angegebene Alias ist bereits vorhanden.</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderNothingSelected" xml:space="preserve">
+    <value>Es wurde keine Spalte ausgewählt. Bitte wählen Sie mindestens eine Spalte um fortzufahren.</value>
+  </data>
+  <data name="DataAccessStringId.MessageNonexistentQuery" xml:space="preserve">
+    <value>Abfrage "{0}" ist nicht vorhanden.</value>
+  </data>
+  <data name="DataAccessStringId.CustomSqlQueryValidationException" xml:space="preserve">
+    <value>Eine benutzerdefinierte SQL-Abfrage sollte nur SELECT-Anweisungen enthalten.</value>
+  </data>
+  <data name="DataAccessStringId.ExcelDataSource_FileNotFoundMessage" xml:space="preserve">
+    <value>{0}
+Datei nicht gefunden.
+Überprüfen Sie den Dateinamen und wiederholen Sie den Vorgang.</value>
+  </data>
+  <data name="DataAccessStringId.ExcelDataSource_SchemaLoadingText" xml:space="preserve">
+    <value>Schema wird geladen...</value>
+  </data>
+  <data name="DataAccessStringId.ExcelEncryptedFileException_EncryptionTypeNotSupported" xml:space="preserve">
+    <value>Die geschützte Datei kann nicht geöffnet werden.</value>
+  </data>
+  <data name="DataAccessStringId.ExcelEncryptedFileException_PasswordRequired" xml:space="preserve">
+    <value>Ein Kennwort wird benötigt, um diese Arbeitsmappe zu öffnen.</value>
+  </data>
+  <data name="DataAccessStringId.ExcelEncryptedFileException_WrongPassword" xml:space="preserve">
+    <value>Das Kennwort ist nicht korrekt. Bitte versuchen Sie es erneut.</value>
+  </data>
+  <data name="DataAccessStringId.FileNameFilter_AllFormats" xml:space="preserve">
+    <value>Alle unterstützten Formate</value>
+  </data>
+  <data name="DataAccessStringId.FileNameFilter_CSV" xml:space="preserve">
+    <value>CSV-Dateien</value>
+  </data>
+  <data name="DataAccessStringId.FileNameFilter_Excel" xml:space="preserve">
+    <value>Excel-Arbeitsmappen</value>
+  </data>
+  <data name="DataAccessStringId.AggregationWithoutAliasValidationException" xml:space="preserve">
+    <value>Eine Aggregatspalte sollte einen Alias haben.</value>
+  </data>
+  <data name="DataAccessStringId.ResultRelation_ColumnNotFoundError" xml:space="preserve">
+    <value>Spalte nicht gefunden: '{0}'.' {1}'.</value>
+  </data>
+  <data name="DataAccessStringId.XmlFileStrategy_FileNameFilter" xml:space="preserve">
+    <value>XML-Dateien</value>
+  </data>
+  <data name="DataAccessStringId.RebuildResultSchemaWaitFormText" xml:space="preserve">
+    <value>Wiederaufbau des Ergebnis-Schemas...</value>
+  </data>
+  <data name="DataAccessStringId.QueryPropertyGridCustomSqlCategoryName" xml:space="preserve">
+    <value>Benutzerdefinierte SQL</value>
+  </data>
+  <data name="DataAccessStringId.RelationColumnNotInSchemaValidationException" xml:space="preserve">
+    <value>Das Schema enthält nicht die folgende Beziehung-Spalte: "{0}". "{1}".</value>
+  </data>
+  <data name="DataAccessStringId.RelationColumnNullValidationException" xml:space="preserve">
+    <value>Die Beziehung-Spalte kann nicht null sein.</value>
+  </data>
+  <data name="DataAccessStringId.ExcelInvalidFileException_CorruptedFile" xml:space="preserve">
+    <value>Die Datei ist beschädigt.</value>
+  </data>
+  <data name="DataAccessStringId.ExcelInvalidFileException_WrongFormat" xml:space="preserve">
+    <value>Falsches Dateiformat</value>
+  </data>
+  <data name="DataAccessStringId.MessageNonexistentColumn" xml:space="preserve">
+    <value>Spalte "{0}"."{1}" ist nicht vorhanden.</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilder_AllColumns" xml:space="preserve">
+    <value>* (Alle Spalten)</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Columns" xml:space="preserve">
+    <value>Spalten</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Operators" xml:space="preserve">
+    <value>Operatoren</value>
+  </data>
+  <data name="DataAccessStringId.ConfigureMultiQueryPage_TableCategory" xml:space="preserve">
+    <value>Tabellen</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_FunctionCategory_Math" xml:space="preserve">
+    <value>Math</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_FunctionCategory_Aggregate" xml:space="preserve">
+    <value>Aggregat</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Parameters" xml:space="preserve">
+    <value>Parameter</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_FunctionCategory_DateTime" xml:space="preserve">
+    <value>DatumZeit</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Constants" xml:space="preserve">
+    <value>Konstanten</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_FunctionCategory_Logical" xml:space="preserve">
+    <value>Logisch</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Functions" xml:space="preserve">
+    <value>Funktionen</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_FunctionCategory_Text" xml:space="preserve">
+    <value>String</value>
+  </data>
+  <data name="DataAccessStringId.Type_Object" xml:space="preserve">
+    <value>Objekt</value>
+  </data>
+  <data name="DataAccessStringId.ConnectionNotSpecified_ExceptionMessage" xml:space="preserve">
+    <value>Es wurde keine Verbindung angegeben.</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Custom" xml:space="preserve">
+    <value>Benutzerdefiniert</value>
+  </data>
+  <data name="DataAccessStringId.DefaultNameParameter" xml:space="preserve">
+    <value>Parameter</value>
+  </data>
+  <data name="DataAccessStringId.EFFilterControl_EmptyFilterString" xml:space="preserve">
+    <value>Eine Filterzeichenfolge darf nicht null sein.</value>
+  </data>
+  <data name="DataAccessStringId.ProviderNotSupportedLabel" xml:space="preserve">
+    <value>Bestimmte Abfragefeatures werden für den aktuellen Anbieter nicht unterstützt.</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_Caption" xml:space="preserve">
+    <value>Ausdruck bearbeiten</value>
+  </data>
+  <data name="DataAccessStringId.Federation_SourceNullValidationErrorMessage" xml:space="preserve">
+    <value>Die Quellenreferenz ist nicht initialisiert: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.ProviderNotSupportedFeatureExceptionHeader" xml:space="preserve">
+    <value>Die folgenden Abfragefeatures werden für den aktuellen Anbieter nicht unterstützt:</value>
+  </data>
+  <data name="DataAccessStringId.LoadingPanelText" xml:space="preserve">
+    <value>Lädt...</value>
+  </data>
+  <data name="DataAccessStringId.PropertyGridDesignCategoryName" xml:space="preserve">
+    <value>Design</value>
+  </data>
+  <data name="DataAccessStringId.ExcelWizard_ValueSeparator_Space" xml:space="preserve">
+    <value>Abstand</value>
+  </data>
+  <data name="DataAccessStringId.FilterEditor_TreeCreationError" xml:space="preserve">
+    <value>Einen Baum für diesen Ausdruck kann nicht erstellt werden</value>
+  </data>
+  <data name="DataAccessStringId.ExcelWizard_ValueSeparator_Comma" xml:space="preserve">
+    <value>Komma</value>
+  </data>
+  <data name="DataAccessStringId.Type_Char" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Columns_Tooltip" xml:space="preserve">
+    <value>Spalte</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Functions_Tooltip" xml:space="preserve">
+    <value>Funktion</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Operators_Tooltip" xml:space="preserve">
+    <value>Operator</value>
+  </data>
+  <data name="DataAccessStringId.ConfigureMultiQueryPage_ViewCategory" xml:space="preserve">
+    <value>Ansichten</value>
+  </data>
+  <data name="DataAccessStringId.ExcelWizard_ValueSeparator_Tab" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="DataAccessStringId.ConfigureMultiQueryPage_SpCategory" xml:space="preserve">
+    <value>Gespeicherte Prozeduren</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilder_AllTables" xml:space="preserve">
+    <value>(Alle Tabellen)</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilder_RowCount" xml:space="preserve">
+    <value>(Zeilenanzahl)</value>
+  </data>
+  <data name="DataAccessStringId.QueryDesignerJoinTooltipPattern" xml:space="preserve">
+    <value>[{0}] {1} tritt [{2}] am {3} bei</value>
+  </data>
+  <data name="DataAccessStringId.ExcelDataSource_WorksheetNotFoundMessage" xml:space="preserve">
+    <value>{0}
+Arbeitsblatt nicht gefunden.
+Überprüfen Sie den Arbeitsblattnamen und versuchen Sie es erneut.</value>
+  </data>
+  <data name="DataAccessStringId.XPObjectSource_InvalidEntityTypeString" xml:space="preserve">
+    <value>„{0}“ ist eine ungültige Entitätstypzeichenfolge. Weisen Sie der Eigenschaft „EntityTypeString“ den durch Kommas getrennten vollständigen Typnamen und Assemblynamen zu.</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceProvider_XMLFile" xml:space="preserve">
+    <value>XML-Datei</value>
+  </data>
+  <data name="DataAccessStringId.RelationEditorRelationTypeFullOuterJoin" xml:space="preserve">
+    <value>Vollständiger Outer Join</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderJoinedOn" xml:space="preserve">
+    <value>Verknüpft über {0}</value>
+  </data>
+  <data name="DataAccessStringId.ExcelDataSource_WorksheetIndexNotFoundMessage" xml:space="preserve">
+    <value>Arbeitsblatt {0} nicht gefunden.
+Überprüfen Sie den Arbeitsblattindex und versuchen Sie es erneut.</value>
+  </data>
+  <data name="DataAccessStringId.MessageCannotLoadCustomAssembly" xml:space="preserve">
+    <value>Die Assembly {0} für den Kontext {1} konnte nicht geladen werden. Bitte wählen Sie eine vorhandene externe Assembly und/oder einen vorhandenen Kontext.</value>
+  </data>
+  <data name="DataAccessStringId.SqlExecutionException_WithParameters" xml:space="preserve">
+    <value> mit Parametern: {0} {1}</value>
+  </data>
+  <data name="DataAccessStringId.UnknownType" xml:space="preserve">
+    <value>Unbekannt</value>
+  </data>
+  <data name="DataAccessStringId.MessageCannotOpenDatabase" xml:space="preserve">
+    <value>Eine Datenbank kann nicht geöffnet werden.</value>
+  </data>
+  <data name="DataAccessStringId.WizardPageChooseJsonSource_UnknownFormat" xml:space="preserve">
+    <value>Daten können nicht geladen werden, da das Format der angegebenen URI nicht bestimmt werden kann.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_NestedFederatedDataSourceErrorMessage" xml:space="preserve">
+    <value>Eine verbundene Datenquelle kann nicht als Datenquelle für eine andere verbundene Datenquelle verwendet werden.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_UnionWithNoElementsValidationErrorMessage" xml:space="preserve">
+    <value>Vereinigungsknoten enthält keine Elemente: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_UnionWithDifferentNumberOfColumnsErrorMessage" xml:space="preserve">
+    <value>Vereinigungsknoten {0}: Elemente müssen die gleiche Anzahl an Spalten haben: {1}, {2}.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_UnionWithDifferentColumnTypesErrorMessage" xml:space="preserve">
+    <value>Union-Knoten {0}: Die verwandten Spalten müssen ähnliche Typen haben: {1}.{2} und {3}.{4}.</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceFillExceptionMessage" xml:space="preserve">
+    <value>Daten konnten nicht geladen werden. Weitere Informationen finden Sie in den Ausnahmedetails.
+
+Ausnahmedetails:
+{0}</value>
+  </data>
+  <data name="DataAccessStringId.ManageQueries_QueryIsNotValid_Postfix" xml:space="preserve">
+    <value>Beheben Sie den Fehler oder entfernen Sie die Abfrage, um fortzufahren.</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceProvider_Firebird" xml:space="preserve">
+    <value>Firebird</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceProvider_VistaDB" xml:space="preserve">
+    <value>VistaDB</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceProvider_VistaDB5" xml:space="preserve">
+    <value>VistaDB5</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceProvider_VistaDB6" xml:space="preserve">
+    <value>VistaDB6</value>
+  </data>
+  <data name="DataAccessStringId.QueryPropertyGridTableSelectionCategoryName" xml:space="preserve">
+    <value>Tabellenauswahl</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_ColumnDescriptionFormat" xml:space="preserve">
+    <value>Typ: {0}</value>
+  </data>
+  <data name="DataAccessStringId.Federation_ColumnNotExistInTableValidationErrorMessage" xml:space="preserve">
+    <value>Tabelle [{0}] enthält die Spalte [{1}] nicht.</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceProvider_Teradata" xml:space="preserve">
+    <value>Teradata</value>
+  </data>
+  <data name="DataAccessStringId.GroupByAggregateColumnValidationException" xml:space="preserve">
+    <value>Gruppieren nach einer Aggregatspalte ist nicht möglich: "{0}"." {1}".</value>
+  </data>
+  <data name="DataAccessStringId.StoredProcNotInSchemaValidationException" xml:space="preserve">
+    <value>Die angegebene Spalte "{0}" kann nicht gefunden werden. Geben Sie einen vorhandenen Spaltennamen an.</value>
+  </data>
+  <data name="DataAccessStringId.RelationException" xml:space="preserve">
+    <value>Die Beziehung zwischen den Spalten '{0}' kann nicht festgelegt werden. {1}" vom Typ {2} und '{3}'." {4}" des Typs {5}.</value>
+  </data>
+  <data name="DataAccessStringId.SortByAggregateColumnValidationException" xml:space="preserve">
+    <value>Sortierung nach einer Aggregatspalte nicht möglich: {0}({1}), da die Abfrage nicht aggregiert wird.</value>
+  </data>
+  <data name="DataAccessStringId.InvalidExpressionStringValidationException" xml:space="preserve">
+    <value>Die folgende Ausdruckszeichenfolge kann nicht analysiert werden: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.ObjectDataSourceWizard_CannotGetTypeProperties" xml:space="preserve">
+    <value>Eigenschaften für diesen Typ können nicht abgerufen werden.</value>
+  </data>
+  <data name="DataAccessStringId.ObjectDataSourceWizard_CannotGetPropertiesForThisMethodReturnType" xml:space="preserve">
+    <value>Eigenschaften für den von dieser Methode zurückgegebenen Typ können nicht abgerufen werden.</value>
+  </data>
+  <data name="DataAccessStringId.ODSWizardErrorNoDefaultCtor" xml:space="preserve">
+    <value>Elementeigenschaften von IListSource können ohne Standardkonstruktor nicht abgerufen werden.</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderCanJoin" xml:space="preserve">
+    <value>Kann {0} beitreten</value>
+  </data>
+  <data name="DataAccessStringId.WizardAssemblyLoadingDisallowed" xml:space="preserve">
+    <value>Diese Assembly kann aus Sicherheitsgründen nicht geladen werden.</value>
+  </data>
+  <data name="DataAccessStringId.PartialAggregationValidationException" xml:space="preserve">
+    <value>Bestimmte Spalten in der Auswahlliste sind ungültig, da sie weder in einer Aggregatfunktion noch in der Group By-Klausel enthalten sind. Wenden Sie die Aggregation/Gruppierung entweder auf alle Spalten oder auf keine von ihnen an.</value>
+  </data>
+  <data name="DataAccessStringId.FilterByMissingInSchemaColumnValidationException" xml:space="preserve">
+    <value>Spalte [{0}]. [{1}] wird in der Filterzeichenfolge verwendet, fehlt aber in DBSchema.</value>
+  </data>
+  <data name="DataAccessStringId.CustomExpressionWithMissingInSchemaColumnValidationException" xml:space="preserve">
+    <value>Spalte [{0}]. [{1}] wird im benutzerdefinierten Ausdruck verwendet, fehlt aber in DBSchema.</value>
+  </data>
+  <data name="DataAccessStringId.ConnectionPropertiesPage_ProviderNotSupported" xml:space="preserve">
+    <value>Verbindungsparameter wurden verworfen, da der {0}Anbieter nicht unterstützt wird. 
+Wählen Sie einen der verfügbaren Data Provider aus, und geben Sie Verbindungsparameter an, oder schließen Sie den Assistenten. 
+mit der Schaltfläche Schließen, um diese Änderung rückgängig zu machen.</value>
+  </data>
+  <data name="DataAccessStringId.XmlProviderNotSupportedLabel" xml:space="preserve">
+    <value>Bestimmte Abfragefunktionen werden für XML-Dateien nicht unterstützt.</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Constants_Tooltip" xml:space="preserve">
+    <value>Konstante</value>
+  </data>
+  <data name="DataAccessStringId.Federation_ConditionColumnNotExistValidationErrorMessage" xml:space="preserve">
+    <value>Spalte [{0}] ist in Datenquellen nicht vorhanden. Zustand: [{1}].</value>
+  </data>
+  <data name="DataAccessStringId.Federation_ConditionColumnMissingInTableValidationErrorMessage" xml:space="preserve">
+    <value>Spalte [{0}]. [{1}] ist in Tabelle [{0}] nicht vorhanden. Zustand: [{2}].</value>
+  </data>
+  <data name="DataAccessStringId.Federation_ConditionAmbiguousColumnNameValidationErrorMessage" xml:space="preserve">
+    <value>Der Spaltenname [{0}] ist nicht eindeutig. In den Tabellen ist derselbe Spaltenname vorhanden: {1}. Bedingung: [{2}].</value>
+  </data>
+  <data name="DataAccessStringId.Federation_ExpressionColumnNotExistValidationErrorMessage" xml:space="preserve">
+    <value>Spalte [{0}] ist in Datenquellen nicht vorhanden. Ausdruck: [{1}].</value>
+  </data>
+  <data name="DataAccessStringId.Federation_ExpressionColumnMissingInTableValidationErrorMessage" xml:space="preserve">
+    <value>Spalte [{0}]. [{1}] ist in Tabelle [{0}] nicht vorhanden. Ausdruck: [{2}].</value>
+  </data>
+  <data name="DataAccessStringId.Federation_ExpressionAmbiguousColumnNameValidationErrorMessage" xml:space="preserve">
+    <value>Der Spaltenname [{0}] ist nicht eindeutig. Derselbe Spaltenname ist in den Tabellen vorhanden: {1}. Ausdruck: [{2}].</value>
+  </data>
+  <data name="DataAccessStringId.Federation_FilterColumnNotExistValidationErrorMessage" xml:space="preserve">
+    <value>Spalte [{0}] ist in Datenquellen nicht vorhanden. Filterzeichenfolge: [{1}].</value>
+  </data>
+  <data name="DataAccessStringId.Federation_FilterColumnMissingInTableValidationErrorMessage" xml:space="preserve">
+    <value>Spalte [{0}]. [{1}] ist in Tabelle [{0}] nicht vorhanden. Filterzeichenfolge: [{2}].</value>
+  </data>
+  <data name="DataAccessStringId.Federation_FilterAmbiguousColumnNameValidationErrorMessage" xml:space="preserve">
+    <value>Der Spaltenname [{0}] ist nicht eindeutig. In den Tabellen ist derselbe Spaltenname vorhanden: {1}. Filterzeichenfolge: [{2}].</value>
+  </data>
+  <data name="DataAccessStringId.Federation_ColumnTableNotExistValidationErrorMessage" xml:space="preserve">
+    <value>Spalte [{0}]. [{1}] ist in Datenquellen nicht vorhanden.</value>
+  </data>
+  <data name="DataAccessStringId.XPObjectSource_ConnectionStringIsEmpty" xml:space="preserve">
+    <value>Die Verbindungszeichenfolge ist leer. Führen Sie einen der folgenden Schritte aus, um die Verbindung anzugeben: Geben Sie den Wert der ConnectionString-Eigenschaft an. Fügen Sie der Anwendungskonfigurationsdatei die Verbindungszeichenfolge hinzu, und geben Sie den Wert der ConnectionStringName-Eigenschaft an. Behandeln des ResolveSession-Ereignisses; Richten Sie den Standard-DataLayer ein.</value>
+  </data>
+  <data name="DataAccessStringId.SkipWithoutSortingPropertyGridError" xml:space="preserve">
+    <value>Die SKIP-Einstellung wird gesetzt, während die Datensätze nicht sortiert werden. Bitte wenden Sie die Sortierung an, um die ersten N Datensätze überspringen zu können.</value>
+  </data>
+  <data name="DataAccessStringId.MessageDuplicateItem" xml:space="preserve">
+    <value>Die Sammlung enthält bereits das Element "{0}"</value>
+  </data>
+  <data name="DataAccessStringId.MessageDuplicateItemName" xml:space="preserve">
+    <value>Diese Auflistung enthält bereits ein Element mit dem Namen "{0}"</value>
+  </data>
+  <data name="DataAccessStringId.MessageEmptyQueryName" xml:space="preserve">
+    <value>Der Abfragename darf nicht leer sein.</value>
+  </data>
+  <data name="DataAccessStringId.NoXpoProviderStringId" xml:space="preserve">
+    <value>Die Verbindungszeichenfolge enthält keinen XpoProvider-Schlüssel, oder der angegebene Schlüssel ist ungültig. 
+
+Details zur Ausnahme:
+ {0}</value>
+  </data>
+  <data name="DataAccessStringId.SortingBySameColumnTwiceValidationException" xml:space="preserve">
+    <value>Die folgende Spalte wird mehrfach als Sortierkriterium verwendet: "{0}"." {1}". </value>
+  </data>
+  <data name="DataAccessStringId.FilterByColumnOfMissingTableValidationException" xml:space="preserve">
+    <value>Es gibt keine Tabellen, die die Spalte [{0}] enthalten, die in der Filterzeichenfolge verwendet wird.</value>
+  </data>
+  <data name="DataAccessStringId.FilterByAmbiguousColumnValidationException" xml:space="preserve">
+    <value>Der Spaltenname [{0}], der in der Filterzeichenfolge verwendet wird, ist nicht eindeutig. Spalten mit diesem Namen sind in den folgenden Tabellen vorhanden: {1}.</value>
+  </data>
+  <data name="DataAccessStringId.CustomExpressionWithColumnOfMissingTableValidationException" xml:space="preserve">
+    <value>Es gibt keine Tabellen, die die Spalte [{0}] enthalten, die im benutzerdefinierten Ausdruck verwendet wird.</value>
+  </data>
+  <data name="DataAccessStringId.CustomExpressionWithAmbiguousColumnValidationException" xml:space="preserve">
+    <value>Der Spaltenname [{0}], der im benutzerdefinierten Ausdruck verwendet wird, ist nicht eindeutig. Spalten mit diesem Namen sind in den folgenden Tabellen vorhanden: {1}.</value>
+  </data>
+  <data name="DataAccessStringId.SkipWithoutSortingValidationException" xml:space="preserve">
+    <value>Die SKIP-Einstellung wird gesetzt, während die Datensätze nicht sortiert werden. Bitte wenden Sie die Sortierung an, um die ersten N Datensätze überspringen zu können, oder setzen Sie die SKIP-Einstellung im Filter-Editor-Dialog zurück.</value>
+  </data>
+  <data name="DataAccessStringId.SkipWithoutSortingWebValidationException" xml:space="preserve">
+    <value>Die Einstellung "Versatz" wird gesetzt, wenn Datensätze nicht sortiert werden. Bitte wenden Sie die Sortierung an, um die ersten N Datensätze überspringen zu können.</value>
+  </data>
+  <data name="DataAccessStringId.TableNotSelectedValidationException" xml:space="preserve">
+    <value>Die folgende Tabelle befindet sich nicht in der Tabellenliste, aber ihre Spalte wird verwendet: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.NegativeTopSkipValidationException" xml:space="preserve">
+    <value>Die Eigenschaften Top und Skip sollten nicht negative ganze Zahlen sein.</value>
+  </data>
+  <data name="DataAccessStringId.ODSWizardErrorExceptionInCtor" xml:space="preserve">
+    <value>Der Standardkonstruktor einer ITypedList-Implementierung hat eine Ausnahme ausgelöst.</value>
+  </data>
+  <data name="DataAccessStringId.ODSWizardErrorExceptionInGetItemProperties" xml:space="preserve">
+    <value>Die GetItemProperties-Methode einer ITypedList hat eine Ausnahme ausgelöst.</value>
+  </data>
+  <data name="DataAccessStringId.ODSWizardErrorStaticValue" xml:space="preserve">
+    <value>Der Typ ist statisch und verfügt über keine Member, die IEnumerable zurückgeben.</value>
+  </data>
+  <data name="DataAccessStringId.WizardNoEFDataContextsMessage" xml:space="preserve">
+    <value>Die ausgewählte Assembly enthält keine Entity Framework-Datenkontexte.</value>
+  </data>
+  <data name="DataAccessStringId.ExcelInvalidFileException_BIFF5Format" xml:space="preserve">
+    <value>Das XLS-Dateiformat BIFF5 (Excel 5.0/95) wird nicht unterstützt.</value>
+  </data>
+  <data name="DataAccessStringId.Type_TimeSpan" xml:space="preserve">
+    <value>Zeitintervall</value>
+  </data>
+  <data name="DataAccessStringId.Type_ByteArray" xml:space="preserve">
+    <value>Byte-Array</value>
+  </data>
+  <data name="DataAccessStringId.XmlProviderNotSupportedFeatureException" xml:space="preserve">
+    <value>Der XML-Datenanbieter kann keine Aktionen ausführen, die SQL-Abfragen erfordern. 
+Die folgenden SelectQuery-Eigenschaften und -Methoden werden nicht unterstützt: SelectExpression, SelectAll, SelectRecordsCount, Distinct. 
+Verwenden Sie sie nicht in der Abfrage, oder konvertieren Sie die XML-Daten in ein anderes Datenformat, und verwenden Sie eine geeignete Datenquelle.</value>
+  </data>
+  <data name="DataAccessStringId.SqlQueryExecutionException" xml:space="preserve">
+    <value>Die Ausführung der Abfrage {0} ist fehlgeschlagen.</value>
+  </data>
+  <data name="DataAccessStringId.SqlExecutionException" xml:space="preserve">
+    <value>Fehler beim Ausführen einer SQL-Abfrage{0}{1}. {2}Fehler: {3}</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_NotSupportedAggregateFunction" xml:space="preserve">
+    <value>Die folgende Aggregatfunktion wird nicht unterstützt: '{0}'.</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_EmptyExpression" xml:space="preserve">
+    <value>Die Ausdruckszeichenfolge darf nicht leer sein.</value>
+  </data>
+  <data name="DataAccessStringId.ConnectionAborted_ExceptionMessage" xml:space="preserve">
+    <value>Die Verbindung wurde abgebrochen.</value>
+  </data>
+  <data name="DataAccessStringId.WizardPageChooseJsonSource_DataLocationMismatch" xml:space="preserve">
+    <value>Der angegebene JSON-Datenspeicherort entspricht nicht der ausgewählten JSON-Quelle.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_EmptySourceNameErrorMessage" xml:space="preserve">
+    <value>Der Quellname darf nicht leer sein.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_TransformationNodeWithoutRuleValidationErrorMessage" xml:space="preserve">
+    <value>Transformationsknoten ohne Regel: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_TransformationDuplicatedColumnNamesValidationErrorMessage" xml:space="preserve">
+    <value>Der {0} Knoten enthält Spalten mit doppelten Namen: {1}.</value>
+  </data>
+  <data name="DataAccessStringId.SchemaDiscoveryMaxItemCountExceptionMessage" xml:space="preserve">
+    <value>Der Wert sollte größer oder gleich Null sein.</value>
+  </data>
+  <data name="DataAccessStringId.MongoDB_QueryExecutionException" xml:space="preserve">
+    <value>Die Ausführung der Abfrage {0} ist fehlgeschlagen.</value>
+  </data>
+  <data name="DataAccessStringId.ManageQueries_QueryIsNotValid" xml:space="preserve">
+    <value>Die Abfrage "{0}" ist ungültig. {1}</value>
+  </data>
+  <data name="DataAccessStringId.XPObjectSource_PropertiesCollectionDoesNotContainFetch" xml:space="preserve">
+    <value>Die Properties-Auflistung enthält kein Element mit der aktivierten Fetch-Option.</value>
+  </data>
+  <data name="DataAccessStringId.XPObjectSource_IncorrectXmlRootElement" xml:space="preserve">
+    <value>Das &lt;{0}&gt; XML-Stammelement ist falsch. Das Element &lt;{1}&gt; wird erwartet.</value>
+  </data>
+  <data name="DataAccessStringId.XPObjectSource_PropertyCannotBeFetched" xml:space="preserve">
+    <value>Der Typ '{1}' der '{0}'-Eigenschaft wird nicht unterstützt, wenn die Properties-Auflistung explizit angegeben wird.</value>
+  </data>
+  <data name="DataAccessStringId.XPObjectSource_ConnectionStringMissing" xml:space="preserve">
+    <value>Die Verbindungszeichenfolge "{0}" fehlt in der Anwendungskonfigurationsdatei.</value>
+  </data>
+  <data name="DataAccessStringId.OdbcDriverDoesNotSupportOAuthErrorMessage" xml:space="preserve">
+    <value>Der ODBC-Treiber unterstützt den OAuth-Authentifizierungstyp nicht. Verwenden Sie die Schlüsseldateiauthentifizierung oder Installieren Sie den DevExpress BigQueryProvider, um OAuth zu verwenden.</value>
+  </data>
+  <data name="DataAccessStringId.ManageQueries_CustomSqlIsNotAllowed" xml:space="preserve">
+    <value>Das Ausführen einer benutzerdefinierten SQL-Abfrage ist nicht zulässig.</value>
+  </data>
+  <data name="DataAccessStringId.ODSErrorInvalidMember" xml:space="preserve">
+    <value>Das Datenelement '{0}' gibt keinen Wert zurück.</value>
+  </data>
+  <data name="DataAccessStringId.PositiveIntegerError" xml:space="preserve">
+    <value>Es sind nur nicht-negative numerische Werte zulässig.</value>
+  </data>
+  <data name="DataAccessStringId.MessageInvalidItemName" xml:space="preserve">
+    <value>Der Elementname darf nicht null oder eine leere Zeichenfolge sein</value>
+  </data>
+  <data name="DataAccessStringId.MessageDuplicateQueryName" xml:space="preserve">
+    <value>Eine Abfrage mit dem angegebenen Namen ist bereits vorhanden: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.RelationEditorRelationTypeLeftOuterJoin" xml:space="preserve">
+    <value>Linke äußere Verbindung</value>
+  </data>
+  <data name="DataAccessStringId.RelationEditorRelationTypeRightOuterJoin" xml:space="preserve">
+    <value>Rechte äußere Verbindung</value>
+  </data>
+  <data name="DataAccessStringId.MessageWrongCharacterParameterName" xml:space="preserve">
+    <value>Der Parametername '{0}' enthält falsche Zeichen</value>
+  </data>
+  <data name="DataAccessStringId.NoColumnsValidationException" xml:space="preserve">
+    <value>Keine der Tabellen enthält Spalten.</value>
+  </data>
+  <data name="DataAccessStringId.AggregateQueryInvalidSortingValidationException" xml:space="preserve">
+    <value>Ungültige Sortierspalte "{0}"." {1}". Die Ergebnisse einer TableQuery, die Aggregatfunktionen enthält, können nur nach Spalten sortiert werden, die als Gruppierungskriterien verwendet werden.</value>
+  </data>
+  <data name="DataAccessStringId.StoredProcParamCountValidationException" xml:space="preserve">
+    <value>Nicht übereinstimmende Parameteranzahl: &lt;{0}&gt; wird &lt;{1}&gt; erwartet.</value>
+  </data>
+  <data name="DataAccessStringId.StoredProcParamNameValidationException" xml:space="preserve">
+    <value>Nicht übereinstimmende Parameternamen: &lt;{0}&gt; wird &lt;{1}&gt; erwartet.</value>
+  </data>
+  <data name="DataAccessStringId.StoredProcParamTypeValidationException" xml:space="preserve">
+    <value>Nichtübereinstimmung des Parametertyps: &lt;{0}&gt; wird &lt;{1}&gt; erwartet.</value>
+  </data>
+  <data name="DataAccessStringId.StoredProcedureParameterTypeValidationException" xml:space="preserve">
+    <value>Nicht übereinstimmender Typ des Parameters '{2}': &lt;{0}&gt; wird &lt;{1}&gt; erwartet.</value>
+  </data>
+  <data name="DataAccessStringId.FilterByMissingParameterValidationException" xml:space="preserve">
+    <value>Der Parameter [{0}] wird in der Filterzeichenfolge verwendet, fehlt jedoch in der Abfrage.</value>
+  </data>
+  <data name="DataAccessStringId.CustomExpressionWithMissingParameterValidationException" xml:space="preserve">
+    <value>Der Parameter [{0}] wird im benutzerdefinierten Ausdruck verwendet, fehlt jedoch in der Abfrage.</value>
+  </data>
+  <data name="DataAccessStringId.HavingWithoutGroupByValidationException" xml:space="preserve">
+    <value>Gruppenfilterkriterien werden definiert, während die Daten nicht gruppiert werden. Wenden Sie die Datengruppierung an oder entfernen Sie die Filterkriterien für Gruppen auf der Registerkarte Gruppenfilter des Dialogfelds Filtereditor.</value>
+  </data>
+  <data name="DataAccessStringId.GroupByWithoutAggregateValidationException" xml:space="preserve">
+    <value>Für die Gruppierung ist mindestens eine aggregierte Spalte erforderlich.</value>
+  </data>
+  <data name="DataAccessStringId.SortingNullValidationException" xml:space="preserve">
+    <value>Ein Sortierkriterium kann nicht null sein.</value>
+  </data>
+  <data name="DataAccessStringId.GroupNullValidationException" xml:space="preserve">
+    <value>Ein Gruppierungskriterium kann nicht NULL sein.</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionNullValidationException" xml:space="preserve">
+    <value>Ein Ausdruck darf weder eine Spalte noch ein benutzerdefinierter Ausdruck NULL sein.</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionStringNullValidationException" xml:space="preserve">
+    <value>Eine Ausdruckszeichenfolge darf nicht NULL sein</value>
+  </data>
+  <data name="DataAccessStringId.ODSErrorMissingMember" xml:space="preserve">
+    <value>Ein Datenmember '{0}' ist nicht vorhanden.</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderNoTablesSelected" xml:space="preserve">
+    <value>Es wurde keine Tabelle ausgewählt. Bitte wählen Sie mindestens eine Tabelle aus, um fortzufahren.</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderNoRules" xml:space="preserve">
+    <value>Es wurde keine Regel hinzugefügt. Bitte fügen Sie mindestens eine Regel hinzu, um fortzufahren.</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderJoinEditorMissingData" xml:space="preserve">
+    <value>Es werden nicht alle Teile des Ausdrucks angegeben.</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderInvalidFilter" xml:space="preserve">
+    <value>Bitte klicken Sie auf "Filter..." , um die Filterzeichenfolge zu korrigieren.</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderNoTablesAndViews" xml:space="preserve">
+    <value>Eine Datenbank enthält keine Tabellen oder Ansichten und unterstützt keine SQL-Bearbeitung. Um den Abfrage-Generator ausführen zu können, stellen Sie sicher, dass Ihre Datenbank mindestens eine Tabelle enthält oder die SQL-Bearbeitung unterstützt.</value>
+  </data>
+  <data name="DataAccessStringId.ExcelWizard_ValueSeparator_Semicolon" xml:space="preserve">
+    <value>Semikolon</value>
+  </data>
+  <data name="DataAccessStringId.ConfigureQueryPage_CustomSqlWillBeLost" xml:space="preserve">
+    <value>Die manuelle Bearbeitung von benutzerdefiniertem SQL ist nicht zulässig. Die aktuelle Abfrage wird durch eine benutzerdefinierte SQL-Abfragezeichenfolge dargestellt. 
+die verloren gehen, wenn Sie mit der Bearbeitung der Abfrage über das Dialogfeld Abfrage-Generator fortfahren. 
+
+Möchten Sie die benutzerdefinierte SQL verwerfen und mit dem Abfrage-Generator fortfahren?</value>
+  </data>
+  <data name="DataAccessStringId.InvalidPortErrorMessage" xml:space="preserve">
+    <value>Ungültige Portnummer. Eine Portnummer sollte zwischen 0 und 65535 liegen.</value>
+  </data>
+  <data name="DataAccessStringId.Type_Byte" xml:space="preserve">
+    <value>Nicht-negative Zahl (8-Bit-Ganzzahl)</value>
+  </data>
+  <data name="DataAccessStringId.Type_SByte" xml:space="preserve">
+    <value>Zahl (8-Bit-Ganzzahl)</value>
+  </data>
+  <data name="DataAccessStringId.Type_UInt" xml:space="preserve">
+    <value>Nicht-negative Zahl (32-Bit-Ganzzahl)</value>
+  </data>
+  <data name="DataAccessStringId.Type_UShort" xml:space="preserve">
+    <value>Nicht-negative Zahl (16-Bit-Ganzzahl)</value>
+  </data>
+  <data name="DataAccessStringId.Type_ULong" xml:space="preserve">
+    <value>Nicht-negative Zahl (64-Bit-Ganzzahl)</value>
+  </data>
+  <data name="DataAccessStringId.ProviderNotSupportedFeatureParametersInSelect" xml:space="preserve">
+    <value>Parameter in Spaltenausdrücken</value>
+  </data>
+  <data name="DataAccessStringId.QueriesFailedToExecute_ExceptionMessage" xml:space="preserve">
+    <value>Eine oder mehrere Abfragen konnten nicht ausgeführt werden.</value>
+  </data>
+  <data name="DataAccessStringId.QueriesFailedToValidate_ExceptionMessage" xml:space="preserve">
+    <value>Eine oder mehrere Abfragen konnten nicht überprüft werden.</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_InvalidCustomFunction" xml:space="preserve">
+    <value>Ungültige Funktion: '{0}'.</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_InvalidColumn" xml:space="preserve">
+    <value>Ungültige Spalte: '{0}'.</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_InvalidParameter" xml:space="preserve">
+    <value>Ungültiger Parameter: '{0}'.</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_InvalidExpression" xml:space="preserve">
+    <value>Ungültiger Ausdruck.</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Parameters_Tooltip" xml:space="preserve">
+    <value>Parameter</value>
+  </data>
+  <data name="DataAccessStringId.ConfigureMultiQueryPage_ValidateRelationError" xml:space="preserve">
+    <value>"Eine oder mehrere Beziehungen sind ungültig. 
+Um mehr über die Fehlerdetails zu erfahren, klicken Sie auf Beziehungen verwalten."</value>
+  </data>
+  <data name="DataAccessStringId.GroupFilterStringEditorNoGroups" xml:space="preserve">
+    <value>Die Gruppenfilterung kann nicht auf Daten angewendet werden, die nicht gruppiert sind. Bitte wenden Sie zuerst die Datengruppierung an.</value>
+  </data>
+  <data name="DataAccessStringId.ObjectDataSourceLoadingWarningMessage" xml:space="preserve">
+    <value>"Das Laden der Datenquellen, auf die in dieser Datei verwiesen wird, kann Ihrem Computer schaden. Wurde diese Datei von einer vertrauenswürdigen Quelle bezogen?
+
+Klicken Sie auf ""Ja"", um den Inhalt der Datenquelle so zu laden, wie er ist.
+ Klicken Sie auf "Nein", um nur vertrauenswürdige Datenquelleninhalte zu laden.</value>
+  </data>
+  <data name="DataAccessStringId.MessageCannotCreateSelectStatement" xml:space="preserve">
+    <value>Fehler bei der Erstellung der Select-Anweisung.</value>
+  </data>
+  <data name="DataAccessStringId.MessageCannotRebuildSchema" xml:space="preserve">
+    <value>Beim Neuerstellen eines Datenquellenschemas ist ein Fehler aufgetreten.</value>
+  </data>
+  <data name="DataAccessStringId.WizardPageChooseJsonSchema_EmptySelection" xml:space="preserve">
+    <value>Wählen Sie mindestens ein Datenfeld aus.</value>
+  </data>
+  <data name="DataAccessStringId.WizardPageChooseMongoDBSchema_EmptySelection" xml:space="preserve">
+    <value>Wählen Sie mindestens ein Datenfeld für die folgenden Abfragen aus: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_RootNullValidationErrorMessage" xml:space="preserve">
+    <value>Die Stammreferenz ist nicht initialisiert: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_NodeIsNotUniqueValidationErrorMessage" xml:space="preserve">
+    <value>Knoten erlaubt keine Duplikate: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_NodeWithoutExpressionValidationErrorMessage" xml:space="preserve">
+    <value>Knoten ohne Ausdruck: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_NodeExpressionNameNullValidationErrorMessage" xml:space="preserve">
+    <value>Node enthält einen unbenannten Ausdruck: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_ExpressionNodeNullValidationErrorMessage" xml:space="preserve">
+    <value>Knoten enthält einen Ausdruck, der nicht mit einem Knoten verknüpft ist: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_DuplicatedExpressionNamesValidationErrorMessage" xml:space="preserve">
+    <value>Knoten {0} enthält Ausdrücke mit duplizierten tatsächlichen Namen: {1}.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_DuplicateSourceNameErrorMessage" xml:space="preserve">
+    <value>Eine Quelle mit dem angegebenen Namen ist bereits vorhanden: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_ObjectCycleValidationErrorMessage" xml:space="preserve">
+    <value>Ein möglicher Objektzyklus wurde erkannt. Die Datenquelle '{0}' verweist auf die Datenquelle '{1}'.</value>
+  </data>
+  <data name="DataAccessStringId.MongoDB_NoQueriesMessage" xml:space="preserve">
+    <value>Keine Rückfragen.</value>
+  </data>
+  <data name="DataAccessStringId.MongoDB_DuplicateQueryNameMessage" xml:space="preserve">
+    <value>Eine Abfrage mit dem angegebenen Namen ist bereits vorhanden: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.IntegerDivisionValidationMessage" xml:space="preserve">
+    <value>Bitte beachten Sie: Dieses Ausdrucksmodul verwirft Brüche während ganzzahliger Divisionsoperationen. Um Dezimalwerte (Gleitkommadivision) zurückzugeben, verwenden Sie ToDecimal(), ToDouble() oder ToFloat() für Ihren Ausdruck. Zum Beispiel gibt ToDecimal(10)/4 2,5 zurück, während 10/4 2 zurückgibt.</value>
+  </data>
+  <data name="DataAccessStringId.MongoDB_InvalidDatabaseName" xml:space="preserve">
+    <value>Ungültiger Datenbankname: '{0}'.</value>
+  </data>
+  <data name="DataAccessStringId.MongoDB_InvalidCollectionName" xml:space="preserve">
+    <value>Ungültiger Sammlungsname: '{0}'.</value>
+  </data>
+  <data name="DataAccessStringId.Wizard_NoDataSourcesForDataFederationMessage" xml:space="preserve">
+    <value>Geben Sie mindestens eine Datenquelle an, die zum Erstellen einer Verbunddatenquelle verwendet werden soll.</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceProvider_MSSqlServer" xml:space="preserve">
+    <value>Microsoft SQL Server</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceProvider_Access97" xml:space="preserve">
+    <value>Microsoft Access 97</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceProvider_Access2007" xml:space="preserve">
+    <value>Microsoft Access 2007</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceProvider_MSSqlServerCE" xml:space="preserve">
+    <value>Microsoft SQL Server CE</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceProvider_Oracle" xml:space="preserve">
+    <value>Orakel</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceProvider_AmazonRedshift" xml:space="preserve">
+    <value>Amazon-Redverschiebung</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceProvider_BigQuery" xml:space="preserve">
+    <value>Google BigQuery</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceProvider_DB2" xml:space="preserve">
+    <value>IBM DB2</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceProvider_MySql" xml:space="preserve">
+    <value>MySQL</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceProvider_Pervasive" xml:space="preserve">
+    <value>Allgegenwärtiges PSQL</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceProvider_Postgres" xml:space="preserve">
+    <value>PostgreSQL</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceProvider_Hana" xml:space="preserve">
+    <value>SAP HANA</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceProvider_Advantage" xml:space="preserve">
+    <value>Vorteile von SAP Sybase</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceProvider_Ase" xml:space="preserve">
+    <value>SAP Sybase ASE</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceProvider_Asa" xml:space="preserve">
+    <value>SAP Sybase SQL Anywhere</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceProvider_SQLite" xml:space="preserve">
+    <value>SQLite</value>
+  </data>
+</root>

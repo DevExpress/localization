@@ -1,0 +1,1755 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F170A60A-CC59-49FE-A103-818ECF43235F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>DevExpress.Utils.v25.2.UI</AssemblyName>
+<DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DevExpress.Utils.UI</RootNamespace>
+    <SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG;DXWhidbey</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DXWhidbey</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionEditorContentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CollectionEditorFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DXFontEditor\DXFontEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DXFontEditor\DXFontEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DXImageEditor\DXImageEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilterStringEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormatStringEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StringArrayEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SummaryEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SummaryEditorFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XmlSchemaEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XmlSchemaEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CollectionEditorContentControl.ar.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.bg.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.ca.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.cs.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.da.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.de-CH.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.de.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.el.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.es.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.fa.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.fi.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.fr.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.he.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.hr.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.hu.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.it.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.ja.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.ko.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.nl.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.no.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.pl.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.pt-BR.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.pt.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.ro.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.ru.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.sk.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.sl.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.sr-Latn-BA.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.sv.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.ta.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.tr.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.vi.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.zh-CN.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.zh-Hans.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.zh-Hant.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.zh-TW.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.ar.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.bg.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.ca.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.cs.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.da.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.de-CH.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.de.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.el.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.es.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.fa.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.fi.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.fr.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.he.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.hr.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.hu.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.hy.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.is.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.it.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.ja.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.ko.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.lt.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.lv.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.mk.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.nl.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.no.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.pl.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.pt-BR.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.pt.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.ro.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.ru.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.sk.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.sl.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.sr-Cyrl-RS.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.sr-Latn-BA.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.sr-Latn-RS.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.sv.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.ta.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.tr.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.uk.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.vi.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.zh-CN.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.zh-Hans.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.zh-Hant.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.zh-TW.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.de.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.de.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.ar.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.bg.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.ca.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.cs.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.da.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.de-CH.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.de.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.el.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.es.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.et.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.fa.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.fi.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.fr.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.he.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.hi.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.hr.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.hu.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.hy.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.is.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.it.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.ja.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.ko.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.lt.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.lv.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.mk.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.nl.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.no.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.pl.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.pt-BR.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.pt.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.ro.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.ru.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.sk.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.sl.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.sr-Cyrl-RS.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.sr-Latn-BA.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.sr-Latn-RS.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.sv.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.ta.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.th.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.tr.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.uk.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.vi.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.zh-CN.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.zh-Hans.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.zh-Hant.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.zh-TW.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.et.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.hi.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.th.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.ar.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.bg.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.ca.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.cs.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.da.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.de-CH.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.de.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.el.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.es.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.et.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.fa.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.fi.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.fr.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.he.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.hi.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.hr.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.hu.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.hy.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.is.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.it.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.ja.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.ko.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.lt.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.lv.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.mk.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.nl.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.no.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.pl.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.pt-BR.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.pt.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.ro.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.ru.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.sk.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.sl.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.sr-Cyrl-RS.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.sr-Latn-BA.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.sr-Latn-RS.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.sv.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.ta.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.th.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.tr.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.uk.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.vi.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.zh-CN.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.zh-Hans.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.zh-Hant.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.zh-TW.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.et.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.hi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.th.resx" />
+    <EmbeddedResource Include="StringArrayEditorForm.ar.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.bg.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.ca.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.cs.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.da.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.de-CH.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.de.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.el.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.es.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.et.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.fa.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.fi.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.fr.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.he.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.hi.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.hr.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.hu.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.hy.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.is.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.it.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.ja.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.ko.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.lt.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.lv.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.mk.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.nl.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.no.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.pl.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.pt-BR.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.pt.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.ro.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.ru.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.sk.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.sl.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.sr-Cyrl-RS.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.sr-Latn-BA.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.sr-Latn-RS.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.sv.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.ta.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.th.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.tr.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.uk.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.vi.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.zh-CN.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.zh-Hans.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.zh-Hant.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.zh-TW.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.et.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.hi.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.th.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.sk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.ro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.ta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.zh-TW.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.uk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sr-Latn-BA.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.mk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.lv.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.lt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ko.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.hy.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.de-CH.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ar.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.sr-Latn-BA.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.sk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.de-CH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.bg.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.ca.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.cs.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.da.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.de.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.es.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.fi.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.fr.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.he.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.hr.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.hu.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.it.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.ja.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.nl.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.no.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.pl.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.pt-BR.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.ro.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.ru.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.sl.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.sv.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.ta.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.tr.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.vi.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.zh-Hans.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.zh-Hant.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ca.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.it.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ta.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.vi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.fa.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.he.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sv.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.zh-Hans.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.zh-Hant.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.bg.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.hr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.hu.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.tr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.cs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.da.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.el.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.es.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.fi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.is.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.nl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.no.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.pl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.pt-BR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.pt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ro.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.bg.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.ca.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.cs.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.da.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.de-CH.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.de.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.el.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.es.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.fi.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.fr.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.hr.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.hu.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.it.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.ja.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.nl.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.no.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.pl.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.pt-BR.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.ro.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.ru.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.sk.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.sl.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.sr-Latn-BA.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.sv.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.tr.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.vi.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.zh-Hans.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.zh-Hant.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.ca.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.cs.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.da.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.de-CH.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.de.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.es.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.fi.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.fr.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.he.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.hr.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.hu.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.it.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.ja.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.nl.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.no.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.pl.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.pt-BR.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.ru.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.sl.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.sr-Latn-BA.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.sv.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.ta.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.tr.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.vi.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.zh-Hans.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.ar.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.bg.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.ca.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.cs.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.da.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.de-CH.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.de.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.el.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.es.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.fa.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.fi.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.fr.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.he.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.hr.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.hu.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.hy.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.is.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.it.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.ja.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.ko.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.lt.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.lv.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.mk.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.nl.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.no.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.pl.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.pt-BR.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.pt.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.ro.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.ru.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.sk.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.sl.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.sr-Cyrl-RS.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.sr-Latn-BA.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.sr-Latn-RS.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.sv.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.ta.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.tr.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.uk.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.vi.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.zh-CN.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.zh-Hans.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.zh-Hant.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.zh-TW.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.ar.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.bg.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.ca.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.cs.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.da.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.de-CH.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.de.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.el.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.es.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.et.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.fa.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.fi.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.fr.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.he.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.hi.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.hr.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.hu.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.hy.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.is.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.it.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.ja.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.ko.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.lt.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.lv.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.mk.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.nl.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.no.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.pl.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.pt-BR.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.pt.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.ro.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.ru.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.sk.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.sl.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.sr-Cyrl-RS.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.sr-Latn-BA.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.sr-Latn-RS.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.sv.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.ta.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.th.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.tr.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.uk.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.vi.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.zh-CN.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.zh-Hans.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.zh-Hant.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.zh-TW.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ASPxperienceStringId.FileManager_Ok" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorFileNotFound" xml:space="preserve">
+    <value>파일을 찾을 수 없습니다</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorFolderNotFound" xml:space="preserve">
+    <value>폴더를 찾을 수 없습니다</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorIO" xml:space="preserve">
+    <value>불특정 IO 오류. 작업을 완료할 수 없습니다</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorNameCannotBeEmpty" xml:space="preserve">
+    <value>파일/폴더 이름은 비어 있을 수 없습니다.</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorOther" xml:space="preserve">
+    <value>지정 되지 않은 오류</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorThumbnail" xml:space="preserve">
+    <value>축소판 그림 폴더에 액세스할 수 없습니다</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_GridViewFilter_DateToday" xml:space="preserve">
+    <value>오늘</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_GridViewFilter_DateWeek" xml:space="preserve">
+    <value>지난 7 일</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_GridViewFilter_DateYear" xml:space="preserve">
+    <value>지난 365 일</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_GridViewFilter_SizeEmpty" xml:space="preserve">
+    <value>빈 ({0})</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_TbDelete" xml:space="preserve">
+    <value>삭제 (Del)</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_TbDownload" xml:space="preserve">
+    <value>다운로드</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_TbMove" xml:space="preserve">
+    <value>이동 (F6)</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_TbRefresh" xml:space="preserve">
+    <value>새로 고침</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_TbRename" xml:space="preserve">
+    <value>이름 바꾸기 (F2)</value>
+  </data>
+  <data name="ASPxperienceStringId.NewsControl_Page" xml:space="preserve">
+    <value>페이지:</value>
+  </data>
+  <data name="ASPxperienceStringId.Pager_All" xml:space="preserve">
+    <value>모든</value>
+  </data>
+  <data name="ASPxperienceStringId.Pager_First" xml:space="preserve">
+    <value>첫 번째</value>
+  </data>
+  <data name="ASPxperienceStringId.PopupControl_CollapseButton" xml:space="preserve">
+    <value>[축소/확장]</value>
+  </data>
+  <data name="ASPxperienceStringId.PopupControl_MaximizeButton" xml:space="preserve">
+    <value>[최대화/복원]</value>
+  </data>
+  <data name="ASPxperienceStringId.PopupControl_PinButton" xml:space="preserve">
+    <value>[핀/고정 해제]</value>
+  </data>
+  <data name="ASPxperienceStringId.PopupControl_RefreshButton" xml:space="preserve">
+    <value>[새로 고침]</value>
+  </data>
+  <data name="ASPxperienceStringId.PopupControl_SizeGrip" xml:space="preserve">
+    <value>[크기 조정]</value>
+  </data>
+  <data name="ASPxperienceStringId.DataView_PagerPageSize" xml:space="preserve">
+    <value>페이지 크기:</value>
+  </data>
+  <data name="ASPxperienceStringId.DataView_PagerRowPerPage" xml:space="preserve">
+    <value>페이지 당 행:</value>
+  </data>
+  <data name="ASPxperienceStringId.DataView_PagerSummaryAllPages" xml:space="preserve">
+    <value>모든 페이지</value>
+  </data>
+  <data name="ASPxperienceStringId.DataViewBase_EmptyDataText" xml:space="preserve">
+    <value>표시할 데이터가 없습니다</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_Cancel" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorAccessProhibited" xml:space="preserve">
+    <value>액세스 금지. 작업을 완료할 수 없습니다</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_FileInfoTypeCaption_FileName" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_FileInfoTypeCaption_LastWriteTime" xml:space="preserve">
+    <value>수정한 날짜</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_FileInfoTypeCaption_Size" xml:space="preserve">
+    <value>크기</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_Filter" xml:space="preserve">
+    <value>필터:</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_Folder" xml:space="preserve">
+    <value>폴더</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_GridViewFilter_SizeSmall" xml:space="preserve">
+    <value>작은 ({0})</value>
+  </data>
+  <data name="ASPxperienceStringId.Pager_Last" xml:space="preserve">
+    <value>마지막</value>
+  </data>
+  <data name="ASPxperienceStringId.Pager_Next" xml:space="preserve">
+    <value>다음</value>
+  </data>
+  <data name="ASPxperienceStringId.Pager_PageSizeAllItem" xml:space="preserve">
+    <value>모든</value>
+  </data>
+  <data name="ASPxperienceStringId.Pager_Prev" xml:space="preserve">
+    <value>이전</value>
+  </data>
+  <data name="ASPxperienceStringId.PopupControl_CloseButton" xml:space="preserve">
+    <value>[닫기]</value>
+  </data>
+  <data name="ASPxperienceStringId.TreeView_AltExpand" xml:space="preserve">
+    <value>확장</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_AddButton" xml:space="preserve">
+    <value>추가</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_BrowseButton" xml:space="preserve">
+    <value>찾아보기...</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_CancelButton" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_RemoveButton" xml:space="preserve">
+    <value>제거</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_UploadButton" xml:space="preserve">
+    <value>업로드</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_UploadModeNotSupported" xml:space="preserve">
+    <value>귀하의 브라우저는이 파일 업로드 모드를 지원 하지 않습니다.</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_UploadWasCanceledError" xml:space="preserve">
+    <value>파일 업로드가 취소 되었습니다.</value>
+  </data>
+  <data name="ASPxperienceStringId.TreeView_AltLoading" xml:space="preserve">
+    <value>로딩 중</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_FileDoesNotExistError" xml:space="preserve">
+    <value>업로드 할 파일이 존재하지 않습니다</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_GeneralError" xml:space="preserve">
+    <value>외부 오류가 발생하여 파일을 업로드 할 수 없습니다</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_NotAllowedFileExtension" xml:space="preserve">
+    <value>이 파일 확장자는 사용할 수 없습니다</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_SelectedSeveralFiles" xml:space="preserve">
+    <value>{0} 개의 파일이 업로드 용으로 선택되어 있습니다.</value>
+  </data>
+  <data name="ASPxperienceStringId.TitleIndex_BackToTop" xml:space="preserve">
+    <value>[위로]</value>
+  </data>
+  <data name="ASPxperienceStringId.TitleIndex_NoData" xml:space="preserve">
+    <value>이 필터 기준 데이터가 없습니다</value>
+  </data>
+  <data name="ASPxperienceStringId.TreeView_AltCollapse" xml:space="preserve">
+    <value>축소</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_Path" xml:space="preserve">
+    <value>경로:</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_TbCreate" xml:space="preserve">
+    <value>만들기 (F7)</value>
+  </data>
+  <data name="ASPxperienceStringId.Pager_SummaryAllPagesFormat" xml:space="preserve">
+    <value>페이지 : {0} - {1} ({2} 아이템)</value>
+  </data>
+  <data name="ASPxperienceStringId.Pager_SummaryFormat" xml:space="preserve">
+    <value>페이지 {0} / {1} ({2} 아이템)</value>
+  </data>
+  <data name="ASPxperienceStringId.Pager_PageSize" xml:space="preserve">
+    <value>페이지 당 레코드 수 :</value>
+  </data>
+  <data name="ASPxperienceStringId.NewsControl_BackToTop" xml:space="preserve">
+    <value>맨위로</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_GridViewFilter_SizeTiny" xml:space="preserve">
+    <value>아주 작은 ({0})</value>
+  </data>
+  <data name="ASPxperienceStringId.DataView_PagerSummaryFormat" xml:space="preserve">
+    <value>페이지 {0} / {1}</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_GridViewFilter_SizeGigantic" xml:space="preserve">
+    <value>거대한 ({0})</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_GridViewFilter_SizeHuge" xml:space="preserve">
+    <value>매우 큰 ({0})</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_GridViewFilter_SizeLarge" xml:space="preserve">
+    <value>큰 ({0})</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_GridViewFilter_SizeMedium" xml:space="preserve">
+    <value>중 ({0})</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_FolderLocked" xml:space="preserve">
+    <value>업로드를 위해 잠겨 있습니다</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorUploadSeveralFiles" xml:space="preserve">
+    <value>{1} 개의 파일 중 {0} 파일을 업로드 할 수 없습니다.</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorWrongExtension" xml:space="preserve">
+    <value>이 파일 확장자를 사용할 수 없습니다. 이 작업을 완료 할 수 없습니다.</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_TbCopy" xml:space="preserve">
+    <value>복사</value>
+  </data>
+  <data name="ASPxperienceStringId.Ribbon_FileTabText" xml:space="preserve">
+    <value>파일</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_InformationUnitSymbol" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_GridViewFilter_DateMonth" xml:space="preserve">
+    <value>지난 30 일</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorRootFolderNotSpecified" xml:space="preserve">
+    <value>루트 폴더가 지정되지 않았거나 존재하지 않습니다</value>
+  </data>
+  <data name="ASPxperienceStringId.ImageZoom_HintText" xml:space="preserve">
+    <value>확대/축소</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_FolderBrowserPopupHeader" xml:space="preserve">
+    <value>대상 폴더 선택</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_NewFolderName" xml:space="preserve">
+    <value>새 폴더</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_DeleteConfirm" xml:space="preserve">
+    <value>'{0}'를 삭제 하시겠습니까?</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorAlreadyExists" xml:space="preserve">
+    <value>지정 된 파일/폴더가 이미 존재합니다</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorUsedByAnotherProcess" xml:space="preserve">
+    <value>파일/폴더가 다른 프로세스에 의해 사용 되 고 있기 때문에 작업을 완료할 수 없습니다</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorInvalidSymbols" xml:space="preserve">
+    <value>이름에 잘못 된 문자가 포함 되어 있습니다. 작업을 완료할 수 없습니다</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorNoAccess" xml:space="preserve">
+    <value>액세스가 거부 되었습니다.파일/폴더 이름은 비어 있을 수 없습니다. 작업을 완료할 수 없습니다</value>
+  </data>
+  <data name="ASPxperienceStringId.RoundPanel_CollapseButton" xml:space="preserve">
+    <value>[축소/확장]</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_TreeListExpand" xml:space="preserve">
+    <value>확장</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_AscendingSortOrder" xml:space="preserve">
+    <value>오름차순 정렬</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_DescendingSortOrder" xml:space="preserve">
+    <value>내림차순 정렬</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_UploadProgressPopupText" xml:space="preserve">
+    <value>업로드중...</value>
+  </data>
+  <data name="ASPxperienceStringId.TitleIndex_FilterCaption" xml:space="preserve">
+    <value>필터:&amp;nbsp;&amp;nbsp;&amp;nbsp;</value>
+  </data>
+  <data name="ASPxperienceStringId.TitleIndex_FilterHint" xml:space="preserve">
+    <value>&lt;b&gt;?&lt;/b&gt; = 모든 단일 문자
+&lt;b&gt;*&lt;/b&gt; = 모든 문자</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_TreeListCollapse" xml:space="preserve">
+    <value>축소</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_MenuHorizontal" xml:space="preserve">
+    <value>가로</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_MenuVertical" xml:space="preserve">
+    <value>수직</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_TreeListDeselectAllCheckBox" xml:space="preserve">
+    <value>모든 노드 선택 해제</value>
+  </data>
+  <data name="ASPxperienceStringId.Documents_CantSaveToAlreadyOpenedFileMessage" xml:space="preserve">
+    <value>는 이미 열려 있는 파일에 저장할 수는 없습니다.</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorCloudAccessFailed" xml:space="preserve">
+    <value>원격 클라우드 서비스에 액세스 하는 실패</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorWrongIdPathLength" xml:space="preserve">
+    <value>IdPath 배열 길이가 같아야 relativeName 디렉터리의 수.</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_ComboBoxCurrentTextFormat" xml:space="preserve">
+    <value>현재 텍스트는 {2}</value>
+  </data>
+  <data name="ASPxperienceStringId.Pager_SummaryEmptyText" xml:space="preserve">
+    <value>가져오나 데이터가 없습니다</value>
+  </data>
+  <data name="ASPxperienceStringId.InsertTableControl_InsertTable" xml:space="preserve">
+    <value>표 삽입</value>
+  </data>
+  <data name="ASPxperienceStringId.Loading" xml:space="preserve">
+    <value>로드 &amp;hellip;</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorPathToLong" xml:space="preserve">
+    <value>지정된 된 경로, 파일 이름 또는 둘 다에 너무 오래</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_DropZone" xml:space="preserve">
+    <value>여기 파일을 드롭</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_OperationTimeoutError" xml:space="preserve">
+    <value>작업 시간 제한으로 인해 파일 업로드를 완료할 수 없습니다. 웹 페이지를 다시 로드 하 고 다시 한번 당신의 파일을 업로드 합니다.</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_PlatformErrorText" xml:space="preserve">
+    <value>제발 브라우저를 사용 하 여 HTML5 지원; 또는 설치 &lt; a href = "{0}" &gt; Microsoft Silverlight v3 또는이 콘텐츠를 볼 하 여 파일을 업로드 하는 능력을가지고 나중 &lt; /a &gt;.</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_TooManyFilesError" xml:space="preserve">
+    <value>너무 많은 파일을 선택 합니다. 선택한 파일의 수를 감소 하 고 다시 시도 하십시오.</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_UnspecifiedError" xml:space="preserve">
+    <value>서버 내부 지정 되지 않은 오류가 발생 했습니다 요청을 수행 하지 못하게 합니다.</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_ComboBoxFilteringResultFormat" xml:space="preserve">
+    <value>찾은 항목 개수는 {0}입니다. 선택한 항목의 텍스트는 {1}.</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_MenuShowSubMenu" xml:space="preserve">
+    <value>하위 메뉴를 표시</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_FileInfoTypeCaption_Location" xml:space="preserve">
+    <value>위치</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_ShowGridFilterBuilderDialog" xml:space="preserve">
+    <value>필터 작성기 대화 상자 표시</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_GridStatusBarDescription" xml:space="preserve">
+    <value>그리드 상태 표시줄</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_SelectAll" xml:space="preserve">
+    <value>모두 선택</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_VerticalGridHeaderFilterButtonFormat" xml:space="preserve">
+    <value>오픈 필터 옵션입니다. {1}</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_GridHeaderFilterPopupDescription" xml:space="preserve">
+    <value>필터 옵션입니다. 사용 키를 즉시 적용 하거나 취소 하려면 탈출</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_GridHeaderFilterButtonFormat" xml:space="preserve">
+    <value>오픈 필터 옵션입니다. {1}</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_GridHeaderFilterButtonInactive" xml:space="preserve">
+    <value>필터링 하지</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_DefaultCallback" xml:space="preserve">
+    <value>과정에서 콜백.</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_GridFilterBarDescription" xml:space="preserve">
+    <value>그리드 데이터를 필터링 하는 데 사용 하는 바</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_TreeListLevelFormat" xml:space="preserve">
+    <value>수준 {0}.</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_GridFilterBarCheckBoxDescription" xml:space="preserve">
+    <value>적용 필터 상태</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_MenuAdaptivityEllipsisItem" xml:space="preserve">
+    <value>숨겨진된 항목 표시</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_GridSearchPanelDescription" xml:space="preserve">
+    <value>격자의 검색 패널입니다.</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_GridToolbarDescription" xml:space="preserve">
+    <value>가로 도구 모음 부모 그리드와 관련 된 명령을 실행 하는 데 사용.</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_ListBoxHideFilter" xml:space="preserve">
+    <value>필터 숨기기</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_ListBoxShowFilter" xml:space="preserve">
+    <value>필터 표시</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_DropDownApplyButton" xml:space="preserve">
+    <value>적용</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_DropDownCloseButton" xml:space="preserve">
+    <value>닫기</value>
+  </data>
+</root>

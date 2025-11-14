@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C88B7E71-3A01-4FB3-B853-0E4086649156}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevExpress.XtraPivotGrid</RootNamespace>
+    <AssemblyName>DevExpress.XtraPivotGrid.v25.2</AssemblyName>
+<SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DXWhidbey</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Design\OLAPConnectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prefilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.pl.resx">
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.tr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.ta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.sv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.sr-Latn-BA.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.sl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.sk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.ro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.hu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.hr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.fi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.da.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.ca.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.et.resx">
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.hi.resx">
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.th.resx">
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.tr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.ta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.sv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.sr-Latn-BA.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.sl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.sk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.ro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.pl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.hu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.hr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.fi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.da.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.ca.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.de-CH.resx">
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.es.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\OLAPConnectionEditorForm.vi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OLAPConnectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.de-CH.resx">
+      <DependentUpon>Prefilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.de.resx">
+      <DependentUpon>Prefilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.es.resx">
+      <DependentUpon>Prefilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.fr.resx">
+      <DependentUpon>Prefilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.ja.resx">
+      <DependentUpon>Prefilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.pt-BR.resx">
+      <DependentUpon>Prefilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.resx">
+      <DependentUpon>Prefilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.ru.resx">
+      <DependentUpon>Prefilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prefilter.vi.resx">
+      <DependentUpon>Prefilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+  </PropertyGroup>
+</Project>

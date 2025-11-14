@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActionMethodShouldBeNonGeneric" xml:space="preserve">
+    <value>Není možné vytvořit akci pro metodu {0} třídy {1}. Akce musí být negenerická.</value>
+  </data>
+  <data name="ActionMethodShouldBeParameterless" xml:space="preserve">
+    <value>Není možné vytvořit akci pro metodu {0} třídy {1}. Akce musí být bez parametrů.</value>
+  </data>
+  <data name="AlreadyUsedObjectSpace" xml:space="preserve">
+    <value>ObjectSpace již bylo přiděleno jinému kořenovému pohledu: '{0} ". K této chybě dochází pouze tehdy, když se pokusíte přiřadit ObjectSpace, který již používá kořenový pohled do jiného pohledu. Například, můžete obdržet tuto chybu při použití XafApplication.CreateDetailView / CreateListView metody ViewController a předávání View.ObjectSpace objekt jako parametr těchto metod při View.IsRoot vlastnost je pravda. \ R \ nChcete-li se vyhnout této chybě je stačí uzavřít novou ObjectSpace instance vytvořené pomocí metody XafApplication.CreateObjectSpace v těchto metodách, nebo vytvořit nekořeový pohled složením odpovídá parametr těchto metod. \ r \ nPokud to nepomůže, obraťte se prosím na naši podporu na https://supportcenter.devexpress.com/</value>
+  </data>
+  <data name="AnErrorHasOccurredWhileLoadingTheModel" xml:space="preserve">
+    <value>Při načítání modelu se vyskytla chyba . Zdroj: '{0}'</value>
+  </data>
+  <data name="AnErrorHasOccurredWhileProcessingAShortcut" xml:space="preserve">
+    <value>Při zpracování zástupce se vyskytla chyba: {0}</value>
+  </data>
+  <data name="AnErrorHasOccurredWithContext" xml:space="preserve">
+    <value>Vyskytla se chyba, kontext: {0}</value>
+  </data>
+  <data name="AnUnsavedObjectCannotBeShown" xml:space="preserve">
+    <value>Neuložený objekt nemůže být zobrazen.</value>
+  </data>
+  <data name="ApplicationIsNotStarted" xml:space="preserve">
+    <value>Aplikace není zahájena.</value>
+  </data>
+  <data name="ApplicationUpdaterAssemblyDoesNotExist" xml:space="preserve">
+    <value>Aplication nemůže být aktualizována, protože sestavení  '{1}' neexistuje ve složce '{0}'.</value>
+  </data>
+  <data name="ApplicationUpdaterDatabaseVersionIsNewer" xml:space="preserve">
+    <value>Aplikace nemůže být spuštěna. Verze databáze je novější než verze aplikace, ale server s novou aplikací nelze nalézt. Požádejte administrátora o zkontrolování, že konfigurační soubor obsahuje správnou cestu k nové verzi aplikace.</value>
+  </data>
+  <data name="AttributeModifyingFailed" xml:space="preserve">
+    <value>Změna atributu se nezdařila.</value>
+  </data>
+  <data name="AttributeShouldStartWithSymbol" xml:space="preserve">
+    <value>Atribut '{0}' by měl začínat '@' a symbolem: '{1}'</value>
+  </data>
+  <data name="AutoCreateOptionIs" xml:space="preserve">
+    <value>UpdatingReadOnlyDataStore.AutoCreateOption je {0}</value>
+  </data>
+  <data name="CannotAccessCollectionCollectionSourceIsBeingIntialized" xml:space="preserve">
+    <value>Nelze získat přístup kolekce majetek, protože kolekce zdroj je inicializovat nyní. K této chybě může dojít například při pokusu o přístup k majetku v kolekce OnActivated způsobu ViewController. Aby k této chybě je nutné pro přístup k nemovitosti kolekce později, kdy je sbírka zdroj již inicializován. Nejlepší způsob, jak to udělat, je zacházet s CollectionChanged událost. Další informace naleznete v dokumentaci k výrobku Podrobnější informace o těchto tříd a metod. Pokud toto nepomůže, obraťte se prosím na naši podporu na https://supportcenter.devexpress.com/</value>
+  </data>
+  <data name="CannotAddCollectionProperty" xml:space="preserve">
+    <value>Nemůže být přidána '{0}' kolekce</value>
+  </data>
+  <data name="CannotAddDuplicateProperty" xml:space="preserve">
+    <value>Nemůže být přidán duplikovaný editor vlastnosti: '{0}'</value>
+  </data>
+  <data name="CannotAddToEmptySingleton" xml:space="preserve">
+    <value>Nemůže být přidán prázdný singleton.  Vytvořte novou instanci kolekce.</value>
+  </data>
+  <data name="CannotCreateAppropriateDetailItem" xml:space="preserve">
+    <value>Nemůže být vytvořen příslušný detail položky pro '{0}'</value>
+  </data>
+  <data name="CannotCreateAppropriatePropertyEditorForTheProperty" xml:space="preserve">
+    <value>Nemůže být vytvořen příslušný editor vlastností pro '{0}.{1}' vlastnost</value>
+  </data>
+  <data name="CannotCreateSchemaForAttribute" xml:space="preserve">
+    <value>Nemůže být změněno schéma pro atribut</value>
+  </data>
+  <data name="CannotCreateTemplateByName" xml:space="preserve">
+    <value>Nemůže být vytvořena šablona podle názvu: '{0}'</value>
+  </data>
+  <data name="CannotFindDescendantOfXafApplicationClass" xml:space="preserve">
+    <value>Cannot find a descendant of the XafApplication class to detect settings of your application in the following folder(s):
+{0}
+For a Windows Forms application, this folder(s) must contain your application executable file.
+For an ASP.NET application, this folder(s) must contain the assembly continaing your WebApplication descendant.</value>
+  </data>
+  <data name="CannotFindListViewWithId" xml:space="preserve">
+    <value>Nemůže být nalezen ListView s ID='{0}'</value>
+  </data>
+  <data name="CannotFindThePropertyWithinTheClass" xml:space="preserve">
+    <value>Nemůže být nalezena vlastnost '{0}' v rámci třídy '{1}'</value>
+  </data>
+  <data name="CannotGenerateContent" xml:space="preserve">
+    <value>Nemůže být generován obsah: atribut 'název třídy' je prázdný</value>
+  </data>
+  <data name="CannotObtainTheEditingObject" xml:space="preserve">
+    <value>Není možné získat upravený objekt</value>
+  </data>
+  <data name="CannotProcessTheRequestedUrl" xml:space="preserve">
+    <value>Není možné zpracovat požadované url</value>
+  </data>
+  <data name="CannotProcessTheRequestedUrlActionItemWasNotFound" xml:space="preserve">
+    <value>Není možné zpracovat požadované url, položka akce '{0}' nebyla nalezena</value>
+  </data>
+  <data name="CannotReadDictionaryFromResource" xml:space="preserve">
+    <value>Není možné načíst slovník od zdroje '{0}' sestavení '{1}' </value>
+  </data>
+  <data name="CannotSetEditValueAvailableValues" xml:space="preserve">
+    <value>Není možné nastavit EditValue textem '{0}', nejsou k dispozici hodnoty: \r\n{1}</value>
+  </data>
+  <data name="CannotSetEditValueListIsEmpty" xml:space="preserve">
+    <value>Není možné nastavit EditValue textem '{0}', seznam je prázdný</value>
+  </data>
+  <data name="CannotShowViewUnknownContext" xml:space="preserve">
+    <value>Není možné ukázat náhled, neznámý obsah: '{0}'</value>
+  </data>
+  <data name="CannotShowViewUnknownTarget" xml:space="preserve">
+    <value>Není možné ukázat náhled, neznámý cíl: '{0}'</value>
+  </data>
+  <data name="ClassDoesntImplementInterface" xml:space="preserve">
+    <value>Třída '{0}' nemůže implementovat rozhranní '{1}'</value>
+  </data>
+  <data name="CompatibilityApplicationIsOldError" xml:space="preserve">
+    <value>Verze databáze je větší než verze aplikace. Aplikaci je třeba aktualizovat. Obraťte se na administrátora systému nebo stáhněte novou verzi.\r\nDalší informace: lokální verze {0} modulu '{1}' je menší než verze {2} v databázi.</value>
+  </data>
+  <data name="CompatibilityDatabaseIsOldError" xml:space="preserve">
+    <value>Databáze je starší verze než aplikace. Databázi je třeba aktualizovat.</value>
+  </data>
+  <data name="ConfigFileDoesNotExists" xml:space="preserve">
+    <value>Konfig soubor '{0}' neexistuje</value>
+  </data>
+  <data name="ConfigFileHasNoModuleNames" xml:space="preserve">
+    <value>The 'add\[@key="Modules"]' node should contain module list, config file '{0}'</value>
+  </data>
+  <data name="CurrentObjectIsNotSet" xml:space="preserve">
+    <value>Není možné nastavit vlastnost  '{0}'. Aktuální objekt není nastaven</value>
+  </data>
+  <data name="CustomizePopupWindowParamsEventArgsViewIsNull" xml:space="preserve">
+    <value>Aby k této chybě je nutné přiřadit CustomizePopupWindowParamsEventArgs.View vlastnosti při manipulaci události CustomizePopupWindowParams. K dosažení tohoto cíle, vytvořit zobrazení pomocí XafApplication.CreateDetailView / CreateListView metody. Další informace naleznete v dokumentaci o těchto třídách a metodách. Pokud toto nepomůže, obraťte se prosím na naši podporu na https://supportcenter.devexpress.com/</value>
+  </data>
+  <data name="DataLayerAlreadyExists" xml:space="preserve">
+    <value>DataLayer již existuje: '{0}'</value>
+  </data>
+  <data name="DictionaryPathItemParsingFailed" xml:space="preserve">
+    <value>Analýza položky v cestě slovníku se nezdařila. Ve výrazu '{0}' je chyba v syntaxi. </value>
+  </data>
+  <data name="DictionaryPathParsingFailed" xml:space="preserve">
+    <value>Analýza položky v cestě slovníku se nezdařila. Ve výrazu '{0}' je chyba v syntaxi. </value>
+  </data>
+  <data name="DuplicateComponentIdentifier" xml:space="preserve">
+    <value>Identifikátor duplicitní komponenty '{0}'</value>
+  </data>
+  <data name="ErrorOccursWhileAddingTheCustomProperty" xml:space="preserve">
+    <value>Vyskytla se chyba  při přidávání vlastní vlastnosti '{2}' ('{0}' typ vlastnost) do '{1}' typ: '{3}'</value>
+  </data>
+  <data name="ExceptionDialogLabel" xml:space="preserve">
+    <value>Vyskytla se následující chyba:</value>
+  </data>
+  <data name="GridColumnDoesNotExist" xml:space="preserve">
+    <value>Sloupec '{0}' v mřížce neexistuje</value>
+  </data>
+  <data name="GridColumnExists" xml:space="preserve">
+    <value>Sloupec '{0}' v mřížce již existuje</value>
+  </data>
+  <data name="GridControlIsAlreadyCreated" xml:space="preserve">
+    <value>Není možné nastavit vlastnost EditMode. GridControl již byl vytvořen</value>
+  </data>
+  <data name="IncompatibleParametersCombinationOnViewChanged" xml:space="preserve">
+    <value>Nekompatibilní kombinace parametrů. PopupWindow má stejné ObjectSpace jako hlavní zobrazení. Nicméně, valstnost SaveOnAccept Pop-up okna DialogController je nastavena na hodnotu true. Použijte nový ObjectSpace pro vyvolání popup okna nebo nastavte DialogController. valstnost SaveOnAccept na hodnotu false.</value>
+  </data>
+  <data name="IncorrectConfigFile" xml:space="preserve">
+    <value>Předaná konfigurace souboru '{0}' neobsahuje '&lt;add key="Modules"' uzel</value>
+  </data>
+  <data name="InfiniteRecursionDetected" xml:space="preserve">
+    <value>Byla zjištěna nekonečná rekurze: byl vytvořen jeden náhled '{0}' detailu</value>
+  </data>
+  <data name="InvalidApplicationVersion" xml:space="preserve">
+    <value>Neplatná verze aplikace na '{0}'</value>
+  </data>
+  <data name="InvalidParametrizedActionValueType" xml:space="preserve">
+    <value>Neshodný typ hodnoty je přiřazen k parametrizované akci '{0}'. Proto je třeba nastavit Int, řetězec nebo datum a čas.</value>
+  </data>
+  <data name="InvalidValueOfEnumProperty" xml:space="preserve">
+    <value>Vlastnost {1} objektu {0} má nesprávnou hodnotu {2}. Je třeba inicializovat vlastnost se správnou výčtovou hodnotou {3}  in the {4} business class' AfterConstruction method.</value>
+  </data>
+  <data name="IsNotValidNamespacePrefixDescription" xml:space="preserve">
+    <value>'{0}' is not valid namespace prefix description</value>
+  </data>
+  <data name="ItsImpossibleToFindPathForNode" xml:space="preserve">
+    <value>Není možné nalézt cestu='{0}' pro uzel '{1}'</value>
+  </data>
+  <data name="ItsImpossibleToFindSourceNode" xml:space="preserve">
+    <value>Není možné nalézt SourceNode='{0}\\{1}'</value>
+  </data>
+  <data name="LayoutControlInvalidCount" xml:space="preserve">
+    <value>Nesprávný počet: '{0}'</value>
+  </data>
+  <data name="ListEditorShouldImplement" xml:space="preserve">
+    <value>ListEditor should implement IDXPopupMenuHolder interface</value>
+  </data>
+  <data name="MethodShouldBeUsed" xml:space="preserve">
+    <value>Měla by se použít metoda '{0}'</value>
+  </data>
+  <data name="ModulesHasAlreadyBeenLoaded" xml:space="preserve">
+    <value>Moduly už jsou nahrané.</value>
+  </data>
+  <data name="NameAndValueCollectionsShouldHaveEqualLengths" xml:space="preserve">
+    <value>Názvy a hodnoty kolekcí musí mít shodnou délku</value>
+  </data>
+  <data name="NodeContainsDuplicatedChildNodes" xml:space="preserve">
+    <value>Uzel '{0}' obsahuje podřízené uzly s hodnotu '{1}' v klíčovém atributu. \r\n Uzel1: '{2}'\r\n  Uzel2: '{3}'</value>
+  </data>
+  <data name="NodeWasNotFound" xml:space="preserve">
+    <value>Uzel '{0}' nebyl nalezen</value>
+  </data>
+  <data name="NotRegisteredReadOnlyParameterException" xml:space="preserve">
+    <value>Parametr '{0}', který je pouze pro čtení, není registrován v ParametersFactory.</value>
+  </data>
+  <data name="ObjectFormatterFormatStringIsInvalid" xml:space="preserve">
+    <value>Objekt nemůže být formátován, protožespecifický formát řetězce je neplatný: '{0}'</value>
+  </data>
+  <data name="PageCanOnlyContainOneInstanceOfControl" xml:space="preserve">
+    <value>Stránka může obsahovat pouze jednu instanci kontroly '{0}'</value>
+  </data>
+  <data name="ParameterConflictsWithPropertyException" xml:space="preserve">
+    <value>The criterion contains the '{0}' read-only parameter which conflicts with the '{0}' property of the '{1}' class. To refer to the read-only parameter, use the '@@{0}' syntax. To refer to the property, use the '@this.{0}' syntax.</value>
+  </data>
+  <data name="PassedObjectBelongsToAnotherObjectSpace" xml:space="preserve">
+    <value>Objekt, který byl předán patří do jiné ObjectSpace. K této chybě může dojít při manipulaci s objekty pomocí ObjectSpace, která tyto předměty nepatří. Například, můžete obdržet tuto chybu při použití metody XafApplication.CreateDetailView v případě, že jste prošel objekt, který byl získán z jiného, než ObjectSpace ObjectSpace použit jako parametr této metody. Pro opravu této chyby, měli byste zajistit, aby všechny objekty, které manipulují patří k jednomu ObjectSpace. \ R \ nV většině případů se vyhnout této chybě je stačí zavolat ObjectSpace.GetObject / GetObjectByKey metody dostat prošel objekt v cílovém ObjectSpace . \ r \ nPokud to nepomůže, obraťte se prosím na naši podporu na https://supportcenter.devexpress.com/</value>
+  </data>
+  <data name="PermissionIsDenied" xml:space="preserve">
+    <value>Povolení je zamítnuto</value>
+  </data>
+  <data name="ProcessWasAborted" xml:space="preserve">
+    <value>Proces byl přerušen</value>
+  </data>
+  <data name="RequiresCurrentObjectException" xml:space="preserve">
+    <value>Cannot update the CriteriaWrapper because the criterion uses dynamic parameters, but the current object isn't specified. To update the CriteriaWrapper, call the UpdateParametersValues(Object currentObject) method and pass the current object as the parameter.</value>
+  </data>
+  <data name="ResourceItemWithNameIsNotFound" xml:space="preserve">
+    <value>Zdrojová položka s názvem '{0}' není nalezena</value>
+  </data>
+  <data name="RuleSetClearingIsDenied" xml:space="preserve">
+    <value>Vymazání RuleSet je zamítnuto</value>
+  </data>
+  <data name="SourceAttributeExpressionShouldStartWith" xml:space="preserve">
+    <value>Výraz zdrojového atributu by měl začínat '{0}': '{1}'</value>
+  </data>
+  <data name="SourceAttributePathShouldConsistOf" xml:space="preserve">
+    <value>Cesta zdrojového atributu by se měla skládat jednoho nebo více jmen uzlů a nakonec jména atributu, které jsou odděleny '\\' symbolem: '{0}'</value>
+  </data>
+  <data name="SourceNodeExpressionShouldStartWith" xml:space="preserve">
+    <value>Výraz zdrojového uzlu by měl začínat '{0}': '{1}'</value>
+  </data>
+  <data name="TemplateTypeInfoMissed" xml:space="preserve">
+    <value>Nelze nalézt TypeInfo pro typ '{0}'. Musíte vložit vaši šablonu do XAF modulu nebo se ručně zaregistrovat pomocí XafTypesInfo.Instance.FindTypeInfo(typeof({0})) metody.</value>
+  </data>
+  <data name="TheAspectIsNotPresentInAspectsCollection" xml:space="preserve">
+    <value>Aspekt '{0}' není přítomen v kolekci aspektů</value>
+  </data>
+  <data name="TheAssemblyDoesntReferAssembly" xml:space="preserve">
+    <value>Sestavení  '{0}' se nevztahuje k sestavení {1} ({2})</value>
+  </data>
+  <data name="TheClassIsNotFoundInBOModel" xml:space="preserve">
+    <value>Třída '{0}' není nalezena v BOM modelu</value>
+  </data>
+  <data name="TheClassNameAttributeIsEmpty" xml:space="preserve">
+    <value>ClassName atribut odkazující na zobrazení uzlu je prázdný:</value>
+  </data>
+  <data name="TheClassNameAttributeRefersToADifferentType" xml:space="preserve">
+    <value>Uzel ClassName referenčního atributu ukazuje na jiný typ. \r\nRychlá volba: {0}\r\nObjektový typ uzlu pohledu: {1}</value>
+  </data>
+  <data name="TheCreateApplicationModulesManagerReturnsNull" xml:space="preserve">
+    <value>CreateApplicationModulesManager metoda vrací null</value>
+  </data>
+  <data name="TheExpressionShouldConsistOf" xml:space="preserve">
+    <value>Výraz by měla spočívat v hledání výrazu, kde zdroj a název atributu jsou odděleny ";" symbolem "{0} '</value>
+  </data>
+  <data name="TheExpressionStringContainsANumberOfExpressions" xml:space="preserve">
+    <value>Řetězec 'expressionString' obsahuje {0} výrazů</value>
+  </data>
+  <data name="ThePassedFileIsNotADllOrConfig" xml:space="preserve">
+    <value>Předaný '{0}' soubor není *.dll nebo *.config file</value>
+  </data>
+  <data name="ThereIsAlreadyRegisteredCreatorForFormat" xml:space="preserve">
+    <value>Konstruktor pro format '{0}' je již registrován</value>
+  </data>
+  <data name="TheSourceNodeCannotAddressToSeveralNodes" xml:space="preserve">
+    <value>SourceNode='{0}\\{1}' nemůže adresovar několik '{1}' uzlů (více než 1)</value>
+  </data>
+  <data name="TheTypeAttributeCannotBeEmpty" xml:space="preserve">
+    <value>Atribut 'Type' není prázdný</value>
+  </data>
+  <data name="TheTypeIsNotDescendantOf" xml:space="preserve">
+    <value>Typ '{0}' není následnickým typem typu '{1}'</value>
+  </data>
+  <data name="TheValueWasLocked" xml:space="preserve">
+    <value>Hodnota byla zamčena</value>
+  </data>
+  <data name="TypeDoesNotContainTheMember" xml:space="preserve">
+    <value>Typ '{0}' neobsahuje člen '{1}'</value>
+  </data>
+  <data name="TypeIsNotAEnum" xml:space="preserve">
+    <value>Typ '{0}' není výčtového typu</value>
+  </data>
+  <data name="UnableToAssignDisabledActionItem" xml:space="preserve">
+    <value>Není možné zobrazit zakázanou položku. Akce: {0}. Položka: {1}. Skryté důvody: {2}</value>
+  </data>
+  <data name="UnableToAssignInvisibleActionItem" xml:space="preserve">
+    <value>Není možné zobrazit skrytou položku. Akce: {0}. Položka: {1}. Skryté důvody: {2}</value>
+  </data>
+  <data name="UnableToCast" xml:space="preserve">
+    <value>Není možné přetypovat objekt typu '{0}' do typu '{1}'</value>
+  </data>
+  <data name="UnableToChangeChildrenOfNodeDueItIsLocked" xml:space="preserve">
+    <value>Není možné změnit podřízený uzel '{0}', protože je zamčený </value>
+  </data>
+  <data name="UnableToChangeConnectionString" xml:space="preserve">
+    <value>Není možné změnit řetězec připojení. Již byl připojen.</value>
+  </data>
+  <data name="UnableToChangeValueOfAttributeDueItIsLocked" xml:space="preserve">
+    <value>Není možné změnit hodnotu atributu '{0}', protože je zamčený</value>
+  </data>
+  <data name="UnableToCreateObjectSpace" xml:space="preserve">
+    <value>Není možné vytvořit UpdatingSession. DataLayer není zadaný nebo connectionString je prázdný</value>
+  </data>
+  <data name="UnableToCreateUpdateSessionAutoCreateOption" xml:space="preserve">
+    <value>Není možné vytvořit UpdatingReadOnlySession. The dataLayer.AutoCreateOption je {0}</value>
+  </data>
+  <data name="UnableToCreateUpdateSessionDataLayerIsNull" xml:space="preserve">
+    <value>Není možné vytvořit UpdatingSession. DataLayer není zadaný nebo connectionString je prázdný</value>
+  </data>
+  <data name="UnableToCreateUpdatingReadonlySessionAutoCreateOption" xml:space="preserve">
+    <value>Není možné vytvořit UpdatingReadOnlySession. The dataLayer.AutoCreateOption je {0}</value>
+  </data>
+  <data name="UnableToExecuteDisabledOrInactiveAction" xml:space="preserve">
+    <value>Není možné provést zakázanou nebo neaktivní akci {2}. Zakázané důvody: {0}, neaktivní důvody: {1}</value>
+  </data>
+  <data name="UnableToFindADetailViewForType" xml:space="preserve">
+    <value>Není možné nalézt detailní zobrazení  pro objekt typu '{0}'</value>
+  </data>
+  <data name="UnableToFindAListViewForType" xml:space="preserve">
+    <value>Není možné nalézt seznam zobrazení pro objekt typu '{0}' </value>
+  </data>
+  <data name="UnableToFindPropertyInType" xml:space="preserve">
+    <value>Není možné nalézt vlastnost '{0}' v typu '{1}'</value>
+  </data>
+  <data name="UnableToFindType" xml:space="preserve">
+    <value>Není možné nalézt typ '{0}'</value>
+  </data>
+  <data name="UnableToInitializeFileDataProperty" xml:space="preserve">
+    <value>Není možné inicializovat vlastnost {0} v objektu {1}, protože tato vlastnost je pouze pro čtení nebo typ {2} nemá výchozí konstruktor nebo nemáte povolení ji vytvořit</value>
+  </data>
+  <data name="UnableToSetReadOnlyProperty" xml:space="preserve">
+    <value>Vlastnost '{0}' není možné nastavit pouze pro čtení '{0}'</value>
+  </data>
+  <data name="UnknownException" xml:space="preserve">
+    <value>Vyskytla se neznámá výjimka. Nepodařilo se zjistit detaily výjimky.</value>
+  </data>
+  <data name="UnknownValue" xml:space="preserve">
+    <value>Neznámá hodnota: '{0}'</value>
+  </data>
+  <data name="UnknownViewNodeName" xml:space="preserve">
+    <value>Neznámé zobrazení jména uzlu: '{0}'\r\npovolená jména: '{1}', '{2}'</value>
+  </data>
+  <data name="ValidationCannotFindThePropertyWithinTheClass" xml:space="preserve">
+    <value>Není možné zkontrolovat pravidlo ověřování '{0}' používané ve vlastnosti '{1}', protože tato vlastnost neexistuje v cílové třídě  '{2}' </value>
+  </data>
+  <data name="ValidationMessageTemplateHasInvalidFormat" xml:space="preserve">
+    <value>Šablona ověřovací zprávy má neplatný formát: '{0}'</value>
+  </data>
+  <data name="ValueCannotBeStoredIntoTheProperty" xml:space="preserve">
+    <value>Hodnota '{0}' nemůže být  uložena do vlastnosti '{1}'</value>
+  </data>
+  <data name="WindowWasNotFound" xml:space="preserve">
+    <value>Pomocí id '{0}' nebylo okno nalezeno. Registrovaná okna: '{1}'</value>
+  </data>
+  <data name="XPDictionaryIsNull" xml:space="preserve">
+    <value>XPDictionary je null</value>
+  </data>
+  <data name="YouCannotChangeCurrentAspect" xml:space="preserve">
+    <value>Nemůžete změnit aktuální aspekt. Závisí na jazykové verzi aktuálního podprocesu.</value>
+  </data>
+</root>

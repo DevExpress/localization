@@ -1,0 +1,1532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2681BDAF-5AB2-4D08-BBE5-4A4D6837D72E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>DevExpress.XtraEditors.v25.2</AssemblyName>
+<DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DevExpress.XtraEditors</RootNamespace>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>1107296256</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DXWhidbey;DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>1107296256</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DXWhidbey;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <Name>Accessibility</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Popups\ColorPickEdit\Picker\FrmColorPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Designer\AppearancesDesigner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Designer\ColumnDesigner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Designer\EditMaskEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Designer\ExpressionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Designer\FormatCondition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Designer\Layouts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Designer\AppearancesDesigner.it-IT.resx">
+      <DependentUpon>AppearancesDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\AppearancesDesigner.it.resx">
+      <DependentUpon>AppearancesDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.et.resx">
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.th.resx">
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.ar.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.bg.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.ca.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.cs.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.da.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.de-CH.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.de.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.el.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.es.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.fa.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.fi.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.fr.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.he.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.hr.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.hu.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.hy.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.is.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.it-IT.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.it.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.ko.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.lt.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.lv.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.mk.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.no.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.pl.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.pt-BR.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.pt.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.ro.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.ru.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.sk.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.sl.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.sr-Cyrl-RS.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.sr-Latn-BA.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.sr-Latn-RS.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.sv.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.ta.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.uk.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.vi.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.zh-CN.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.zh-Hant.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.zh-TW.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.et.resx">
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.hi.resx">
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.th.resx">
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\FormatCondition.it-IT.resx">
+      <DependentUpon>FormatCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\FormatCondition.it.resx">
+      <DependentUpon>FormatCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.ar.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.bg.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.cs.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.de.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.el.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.es.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.fa.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.fr.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.hr.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.hu.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.it.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.ja.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.nl.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.no.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.pl.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.pt-BR.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.pt.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.ro.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.ru.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.sl.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.sv.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.tr.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.vi.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.zh-CN.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.zh-Hans.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.zh-TW.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.ar.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.bg.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.ca.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.cs.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.da.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.de-CH.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.de.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.el.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.es.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.et.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.fa.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.fi.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.fr.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.he.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.hi.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.hr.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.hu.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.hy.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.is.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.it.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.ja.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.ko.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.lt.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.lv.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.mk.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.nl.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.no.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.pl.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.pt-BR.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.pt.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.ro.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.ru.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.sk.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.sl.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.sr-Cyrl-RS.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.sr-Latn-RS.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.sv.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.ta.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.th.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.tr.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.uk.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.vi.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.zh-CN.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.zh-Hans.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.zh-Hant.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.zh-TW.resx" />
+    <EmbeddedResource Include="LocalizationRes.et.resx" />
+    <EmbeddedResource Include="LocalizationRes.hi.resx" />
+    <EmbeddedResource Include="LocalizationRes.th.resx" />
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.ar.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.bg.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.ca.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.cs.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.da.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.de-CH.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.de.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.el.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.es.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.et.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.fa.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.fi.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.fr.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.he.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.hi.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.hr.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.hu.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.hy.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.is.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.it.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.ja.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.ko.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.lt.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.lv.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.mk.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.nl.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.no.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.pl.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.pt-BR.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.pt.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.ro.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.ru.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.sk.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.sl.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.sr-Cyrl-RS.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.sr-Latn-BA.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.sr-Latn-RS.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.sv.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.ta.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.th.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.tr.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.uk.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.vi.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.zh-CN.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.zh-Hans.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.zh-Hant.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.zh-TW.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.ar.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.bg.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.ca.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.cs.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.da.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.de-CH.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.de.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.el.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.es.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.fa.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.fi.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.fr.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.he.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.hr.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.hu.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.hy.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.is.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.it.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.ja.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.ko.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.lt.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.lv.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.mk.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.nl.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.no.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.pl.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.pt-BR.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.pt.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.ro.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.ru.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.sk.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.sl.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.sr-Cyrl-RS.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.sr-Latn-BA.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.sr-Latn-RS.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.sv.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.ta.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.tr.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.uk.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.vi.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.zh-CN.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.zh-Hans.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.zh-Hant.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.zh-TW.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.ar.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.bg.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.ca.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.cs.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.da.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.de-CH.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.de.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.el.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.es.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.fa.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.fi.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.fr.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.he.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.hr.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.hu.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.hy.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.is.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.it.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.ja.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.ko.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.lt.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.lv.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.mk.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.nl.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.no.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.pl.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.pt-BR.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.pt.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.ro.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.ru.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.sk.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.sl.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.sr-Cyrl-RS.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.sr-Latn-BA.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.sr-Latn-RS.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.sv.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.ta.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.tr.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.uk.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.vi.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.zh-CN.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.zh-Hans.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.zh-Hant.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.zh-TW.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\AppearancesDesigner.zh-Hans.resx">
+      <DependentUpon>AppearancesDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.zh-Hans.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\FormatCondition.zh-Hans.resx">
+      <DependentUpon>FormatCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.vi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.sv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.sk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.fi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.de-CH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.ca.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.ro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.fi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.fi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.zh-TW.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.uk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.lt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.hy.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.fa.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\FormatCondition.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormatCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\AppearancesDesigner.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AppearancesDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\FormatCondition.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormatCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\FormatCondition.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormatCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\AppearancesDesigner.tr.resx">
+      <DependentUpon>AppearancesDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.tr.resx">
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.tr.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\FormatCondition.tr.resx">
+      <DependentUpon>FormatCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.tr.resx">
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.lv.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\AppearancesDesigner.ja.resx">
+      <DependentUpon>AppearancesDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.de-CH.resx">
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.sr-Latn-BA.resx">
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.ja.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.de-CH.resx">
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.sr-Latn-BA.resx">
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\FormatCondition.ja.resx">
+      <DependentUpon>FormatCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.pl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.sl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.ta.resx">
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.ta.resx">
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.ro.resx">
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.sl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.hr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.hu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.sr-Latn-BA.resx">
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.ta.resx">
+      <DependentUpon>Layouts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ar.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.es.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.sl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.da.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.da.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.da.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.vi.resx">
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.vi.resx">
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.ca.resx">
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.ca.resx">
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.sv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.sk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.sk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.no.resx">
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.no.resx">
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.tr.resx">
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.resx">
+      <DependentUpon>Layouts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.ru.resx">
+      <DependentUpon>Layouts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.de-CH.resx" />
+    <EmbeddedResource Include="LocalizationRes.he.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ko.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="LocalizationRes.ta.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.vi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.zh-Hans.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.bg.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.sr-Cyrl-RS.resx">
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.sr-Latn-RS.resx">
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.pl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.pl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.hr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.ru.resx">
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.tr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.sv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.es.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.hu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.es.resx">
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.hu.resx">
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.pt-BR.resx">
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.ru.resx">
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.hu.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.hr.resx">
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.resx">
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.ro.resx">
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.resx">
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ca.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.cs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.da.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.el.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.es.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.fi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.hr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.is.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.it.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.mk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.nl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.no.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.pl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.pt-BR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.pt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ro.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sv.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.zh-Hant.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.ar.resx" />
+    <EmbeddedResource Include="Properties\Resources.bg.resx" />
+    <EmbeddedResource Include="Properties\Resources.ca.resx" />
+    <EmbeddedResource Include="Properties\Resources.cs.resx" />
+    <EmbeddedResource Include="Properties\Resources.da.resx" />
+    <EmbeddedResource Include="Properties\Resources.de-CH.resx" />
+    <EmbeddedResource Include="Properties\Resources.de.resx" />
+    <EmbeddedResource Include="Properties\Resources.el.resx" />
+    <EmbeddedResource Include="Properties\Resources.es.resx" />
+    <EmbeddedResource Include="Properties\Resources.et.resx" />
+    <EmbeddedResource Include="Properties\Resources.fa.resx" />
+    <EmbeddedResource Include="Properties\Resources.fi.resx" />
+    <EmbeddedResource Include="Properties\Resources.fr.resx" />
+    <EmbeddedResource Include="Properties\Resources.he.resx" />
+    <EmbeddedResource Include="Properties\Resources.hr.resx" />
+    <EmbeddedResource Include="Properties\Resources.hu.resx" />
+    <EmbeddedResource Include="Properties\Resources.hy.resx" />
+    <EmbeddedResource Include="Properties\Resources.is.resx" />
+    <EmbeddedResource Include="Properties\Resources.it.resx" />
+    <EmbeddedResource Include="Properties\Resources.ja.resx" />
+    <EmbeddedResource Include="Properties\Resources.ko.resx" />
+    <EmbeddedResource Include="Properties\Resources.lt.resx" />
+    <EmbeddedResource Include="Properties\Resources.lv.resx" />
+    <EmbeddedResource Include="Properties\Resources.mk.resx" />
+    <EmbeddedResource Include="Properties\Resources.nl.resx" />
+    <EmbeddedResource Include="Properties\Resources.no.resx" />
+    <EmbeddedResource Include="Properties\Resources.pl.resx" />
+    <EmbeddedResource Include="Properties\Resources.pt-BR.resx" />
+    <EmbeddedResource Include="Properties\Resources.pt.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="Properties\Resources.ro.resx" />
+    <EmbeddedResource Include="Properties\Resources.ru.resx" />
+    <EmbeddedResource Include="Properties\Resources.sk.resx" />
+    <EmbeddedResource Include="Properties\Resources.sl.resx" />
+    <EmbeddedResource Include="Properties\Resources.sr-Cyrl-RS.resx" />
+    <EmbeddedResource Include="Properties\Resources.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="Properties\Resources.sr-Latn-RS.resx" />
+    <EmbeddedResource Include="Properties\Resources.sv.resx" />
+    <EmbeddedResource Include="Properties\Resources.ta.resx" />
+    <EmbeddedResource Include="Properties\Resources.th.resx" />
+    <EmbeddedResource Include="Properties\Resources.tr.resx" />
+    <EmbeddedResource Include="Properties\Resources.uk.resx" />
+    <EmbeddedResource Include="Properties\Resources.vi.resx" />
+    <EmbeddedResource Include="Properties\Resources.zh-CN.resx" />
+    <EmbeddedResource Include="Properties\Resources.zh-Hans.resx" />
+    <EmbeddedResource Include="Properties\Resources.zh-Hant.resx" />
+    <EmbeddedResource Include="Properties\Resources.zh-TW.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+  </PropertyGroup>
+</Project>

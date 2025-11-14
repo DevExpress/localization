@@ -1,0 +1,2368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8602A568-9A42-46BD-B7CA-57D7C15B8ECE}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>DevExpress.XtraPrinting.v25.2</AssemblyName>
+<DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DevExpress.XtraPrinting</RootNamespace>
+    <SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG;DXWhidbey</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DXWhidbey</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing.Design">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CertificateSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ComponentEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeaderFooterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Native\Lines\LinesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Native\Navigation\GoToPageDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\FindControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PasswordConfirmationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PdfPasswordSecurityEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PdfSignatureEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\PageSetupEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\PrintEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\ReportServerCredentialsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\PageSetupUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WatermarkEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CertificateSelector.ar.resx">
+      <DependentUpon>CertificateSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CertificateSelector.fa.resx">
+      <DependentUpon>CertificateSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CertificateSelector.he.resx">
+      <DependentUpon>CertificateSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.et.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.hi.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.th.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.et.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.hi.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.th.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.et.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.hi.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.th.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.ar.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.bg.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.ca.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.cs.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.da.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.de-CH.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.de.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.el.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.es.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.et.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.fa.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.fi.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.fr.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.he.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.hi.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.hr.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.hu.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.hy.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.is.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.it.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.ja.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.ko.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.lt.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.lv.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.mk.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.nl.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.no.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.pl.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.pt-BR.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.pt.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.ro.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.ru.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.sk.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.sl.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.sr-Cyrl-RS.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.sr-Latn-BA.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.sr-Latn-RS.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.sv.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.ta.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.th.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.tr.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.uk.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.vi.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.zh-CN.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.zh-Hans.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.zh-Hant.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.zh-TW.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.et.resx">
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.hi.resx">
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.th.resx">
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.et.resx">
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.hi.resx">
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.th.resx">
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.et.resx">
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.hi.resx">
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.th.resx">
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.et.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.th.resx" />
+    <EmbeddedResource Include="Preview\FindControl.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LinesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.sl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LinesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LinesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LinesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LinesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LinesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LinesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LinesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LinesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.ar.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.bg.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.ca.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.cs.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.da.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.de-CH.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.de.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.el.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.es.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.et.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.fa.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.fi.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.fr.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.he.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.hi.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.hr.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.hu.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.hy.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.is.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.it.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.ja.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.ko.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.lt.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.lv.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.mk.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.nl.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.no.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.pl.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.pt-BR.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.pt.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.ro.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.ru.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.sk.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.sl.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.sr-Cyrl-RS.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.sr-Latn-BA.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.sr-Latn-RS.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.sv.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.ta.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.th.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.tr.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.uk.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.vi.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.zh-CN.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.zh-Hans.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.zh-Hant.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.zh-TW.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.ar.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.bg.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.ca.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.cs.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.da.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.de-CH.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.de.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.el.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.es.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.et.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.fa.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.fi.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.fr.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.he.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.hi.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.hr.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.hu.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.hy.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.is.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.it.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.ja.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.ko.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.lt.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.lv.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.mk.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.nl.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.no.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.pl.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.pt-BR.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.pt.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.ro.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.ru.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.sk.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.sl.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.sr-Cyrl-RS.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.sr-Latn-BA.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.sr-Latn-RS.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.sv.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.ta.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.th.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.tr.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.uk.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.vi.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.zh-CN.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.zh-Hans.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.zh-Hant.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.zh-TW.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.ar.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.bg.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.ca.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.cs.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.da.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.de-CH.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.de.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.el.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.es.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.et.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.fa.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.fi.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.fr.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.he.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.hi.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.hr.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.hu.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.hy.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.is.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.it.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.ja.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.ko.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.lt.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.lv.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.mk.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.nl.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.no.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.pl.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.pt-BR.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.pt.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.ro.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.ru.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.sk.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.sl.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.sr-Cyrl-RS.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.sr-Latn-BA.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.sr-Latn-RS.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.sv.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.ta.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.th.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.tr.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.uk.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.vi.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.zh-CN.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.zh-Hans.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.zh-Hant.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.zh-TW.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.et.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.hi.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.th.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.vi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.tr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.sv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.sr-Latn-BA.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.sl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.sk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.ro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.pl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.hu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.hr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.fi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.de-CH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.da.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.ca.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.sk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.sl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.sk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.es.resx">
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.sr-Latn-BA.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.ja.resx">
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.resx">
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.ru.resx">
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.ta.resx">
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.sr-Latn-BA.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.sr-Latn-BA.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LinesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.de-CH.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.fa.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.sr-Latn-BA.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.ta.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.de-CH.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.fa.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.ta.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.de-CH.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.ta.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.de-CH.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.sr-Latn-BA.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.ta.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.de-CH.resx">
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.fa.resx">
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.sr-Latn-BA.resx">
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.ta.resx">
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.de-CH.resx">
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.fa.resx">
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.sl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.ro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.hy.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.hy.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.hy.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.hy.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.hy.resx">
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LinesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.hy.resx">
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.sr-Latn-BA.resx">
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.ta.resx">
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.de-CH.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.fa.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.hy.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.tr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.tr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.sv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.fi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.fi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.da.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.da.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.vi.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.vi.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.vi.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.vi.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.ru.resx">
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.vi.resx">
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.ca.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.ca.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.ca.resx">
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.ca.resx">
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.ru.resx">
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.sv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.vi.resx">
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.no.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.no.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.zh-TW.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.no.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.no.resx">
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.it.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.it.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.it.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.pl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.he.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.he.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.ro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.es.resx">
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.es.resx">
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.hr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.hr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.hu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.hu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.zh-Hans.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.zh-Hans.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.pt-BR.resx">
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.pl.resx">
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.pt-BR.resx">
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.ta.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.vi.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.zh-CN.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.zh-CN.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.sr-Cyrl-RS.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.sr-Latn-RS.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.da.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.sr-Cyrl-RS.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.sr-Latn-RS.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.da.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.sr-Cyrl-RS.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.sr-Latn-RS.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.zh-Hant.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.da.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.sr-Cyrl-RS.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.sr-Latn-RS.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.resx">
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.resx">
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.bg.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.bg.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.pt-BR.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.ko.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.da.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.ko.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.hr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.hr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.hr.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.hr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.hr.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.sr-Cyrl-RS.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.sr-Latn-RS.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.tr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.tr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.tr.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.tr.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.tr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.hu.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.hu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.hu.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.ca.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.cs.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.da.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.de.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.el.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.es.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.fi.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.fr.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.ja.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.nl.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.no.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.pl.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.pt-BR.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.pt.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.ro.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.ru.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.sk.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.sl.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.sv.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.zh-Hant.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.ca.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.cs.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.de.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.el.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.es.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.fi.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.fr.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.ja.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.nl.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.pl.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.pt-BR.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.ro.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.ru.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.sk.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.sl.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.sv.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.zh-Hant.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.cs.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.de.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.es.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.fi.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.fr.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.ja.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.nl.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.pl.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.ro.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.ru.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.sk.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.sv.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.cs.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.de.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.el.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.es.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.fi.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.fr.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.hu.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.ja.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.nl.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.pl.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.pt-BR.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.ro.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.ru.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.sk.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.sl.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.sv.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.ar.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.bg.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.ca.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.cs.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.da.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.de.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.de-CH.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.el.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.es.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.et.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.fa.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.fi.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.fr.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.he.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.hi.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.hr.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.hu.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.hy.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.is.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.it.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.ja.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.ko.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.lt.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.lv.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.mk.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.nl.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.no.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.pl.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.pt.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.pt-BR.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.ro.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.ru.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.sk.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.sl.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.sr-Cyrl-RS.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.sr-Latn-BA.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.sr-Latn-RS.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.sv.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.ta.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.th.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.tr.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.uk.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.vi.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.zh-CN.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.zh-Hans.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.zh-Hant.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.zh-TW.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.ca.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.cs.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.de.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.el.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.es.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.fi.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.fr.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.hu.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.nl.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.pl.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.pt-BR.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.ro.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.ru.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.sk.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.sl.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.sv.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.zh-Hant.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

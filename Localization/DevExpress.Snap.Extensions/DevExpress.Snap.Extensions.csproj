@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FA2A995F-E57B-460F-85B5-7D92877C19D2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevExpress.Snap.Extensions</RootNamespace>
+    <AssemblyName>DevExpress.Snap.v25.2.Extensions</AssemblyName>
+<SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DXWhidbey</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.XML">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Native\OkCancelUserControl.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LocalizationRes.ar.resx" />
+    <EmbeddedResource Include="LocalizationRes.bg.resx" />
+    <EmbeddedResource Include="LocalizationRes.ca.resx" />
+    <EmbeddedResource Include="LocalizationRes.cs.resx" />
+    <EmbeddedResource Include="LocalizationRes.da.resx" />
+    <EmbeddedResource Include="LocalizationRes.de-CH.resx" />
+    <EmbeddedResource Include="LocalizationRes.de.resx" />
+    <EmbeddedResource Include="LocalizationRes.el.resx" />
+    <EmbeddedResource Include="LocalizationRes.es.resx" />
+    <EmbeddedResource Include="LocalizationRes.et.resx" />
+    <EmbeddedResource Include="LocalizationRes.fa.resx" />
+    <EmbeddedResource Include="LocalizationRes.fi.resx" />
+    <EmbeddedResource Include="LocalizationRes.fr.resx" />
+    <EmbeddedResource Include="LocalizationRes.he.resx" />
+    <EmbeddedResource Include="LocalizationRes.hr.resx" />
+    <EmbeddedResource Include="LocalizationRes.hu.resx" />
+    <EmbeddedResource Include="LocalizationRes.hy.resx" />
+    <EmbeddedResource Include="LocalizationRes.is.resx" />
+    <EmbeddedResource Include="LocalizationRes.it.resx" />
+    <EmbeddedResource Include="LocalizationRes.ja.resx" />
+    <EmbeddedResource Include="LocalizationRes.ko.resx" />
+    <EmbeddedResource Include="LocalizationRes.lt.resx" />
+    <EmbeddedResource Include="LocalizationRes.lv.resx" />
+    <EmbeddedResource Include="LocalizationRes.mk.resx" />
+    <EmbeddedResource Include="LocalizationRes.nl.resx" />
+    <EmbeddedResource Include="LocalizationRes.no.resx" />
+    <EmbeddedResource Include="LocalizationRes.pl.resx" />
+    <EmbeddedResource Include="LocalizationRes.pt-BR.resx" />
+    <EmbeddedResource Include="LocalizationRes.pt.resx" />
+    <EmbeddedResource Include="LocalizationRes.resx" />
+    <EmbeddedResource Include="LocalizationRes.ro.resx" />
+    <EmbeddedResource Include="LocalizationRes.ru.resx" />
+    <EmbeddedResource Include="LocalizationRes.sk.resx" />
+    <EmbeddedResource Include="LocalizationRes.sl.resx" />
+    <EmbeddedResource Include="LocalizationRes.sr-Cyrl-RS.resx" />
+    <EmbeddedResource Include="LocalizationRes.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="LocalizationRes.sr-Latn-RS.resx" />
+    <EmbeddedResource Include="LocalizationRes.sv.resx" />
+    <EmbeddedResource Include="LocalizationRes.ta.resx" />
+    <EmbeddedResource Include="LocalizationRes.tr.resx" />
+    <EmbeddedResource Include="LocalizationRes.uk.resx" />
+    <EmbeddedResource Include="LocalizationRes.vi.resx" />
+    <EmbeddedResource Include="LocalizationRes.zh-CN.resx" />
+    <EmbeddedResource Include="LocalizationRes.zh-Hans.resx" />
+    <EmbeddedResource Include="LocalizationRes.zh-Hant.resx" />
+    <EmbeddedResource Include="LocalizationRes.zh-TW.resx" />
+    <EmbeddedResource Include="Native\OkCancelUserControl.ar.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.bg.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.ca.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.cs.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.da.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.de-CH.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.de.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.el.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.es.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.fa.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.fi.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.fr.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.he.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.hr.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.hu.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.hy.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.is.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.it.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.ja.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.ko.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.lt.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.lv.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.mk.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.nl.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.no.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.pl.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.pt-BR.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.pt.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.ro.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.ru.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.sk.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.sl.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.sr-Cyrl-RS.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.sr-Latn-BA.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.sr-Latn-RS.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.sv.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.ta.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.tr.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.uk.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.vi.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.zh-CN.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.zh-Hans.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.zh-Hant.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\OkCancelUserControl.zh-TW.resx">
+      <DependentUpon>OkCancelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+  </PropertyGroup>
+</Project>

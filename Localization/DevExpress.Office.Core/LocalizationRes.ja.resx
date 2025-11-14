@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="OfficeStringId.Msg_IsNotValid" xml:space="preserve">
+    <value>'{0}' は '{1}' の有効な値ではありません</value>
+  </data>
+  <data name="OfficeStringId.Msg_InternalError" xml:space="preserve">
+    <value>内部エラー!</value>
+  </data>
+  <data name="OfficeStringId.Msg_InvalidBeginUpdate" xml:space="preserve">
+    <value>エラー: BeginInit 内の BeginUpdate への呼び出し</value>
+  </data>
+  <data name="OfficeStringId.Msg_InvalidEndUpdate" xml:space="preserve">
+    <value>エラー: EndUpdate または BeginUpdate を持たない CancelUpate か BeginInit 内の CancelUpate への呼び出し</value>
+  </data>
+  <data name="OfficeStringId.Msg_InvalidBeginInit" xml:space="preserve">
+    <value>エラー： BeginUpdate 内の BeginInit への呼び出し</value>
+  </data>
+  <data name="OfficeStringId.Msg_InvalidEndInit" xml:space="preserve">
+    <value>エラー: EndInit または BeginInit を持たない CancelInit か BeginUpdate 内の CancelInit への呼び出し</value>
+  </data>
+  <data name="OfficeStringId.Msg_InvalidCopyFromDocumentModel" xml:space="preserve">
+    <value>エラー: ソースと埋め込み先のドキュメント モデルが異なります。</value>
+  </data>
+  <data name="OfficeStringId.Msg_Loading" xml:space="preserve">
+    <value>読み込み中…</value>
+  </data>
+  <data name="OfficeStringId.Msg_MagicNumberNotFound" xml:space="preserve">
+    <value>開こうとしているファイルは、ファイル拡張子が示す形式と異なります。</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_AllFiles" xml:space="preserve">
+    <value>すべてのファイル</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_AllSupportedFiles" xml:space="preserve">
+    <value>すべての対応ファイル</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontBold" xml:space="preserve">
+    <value>太字</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_CopySelection" xml:space="preserve">
+    <value>コピー</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_CutSelection" xml:space="preserve">
+    <value>切り取り</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontItalic" xml:space="preserve">
+    <value>斜体</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_AlignmentJustify" xml:space="preserve">
+    <value>両端揃え</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_Paste" xml:space="preserve">
+    <value>貼り付け</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_Redo" xml:space="preserve">
+    <value>やり直し</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_RedoDescription" xml:space="preserve">
+    <value>やり直し</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontUnderline" xml:space="preserve">
+    <value>下線</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_Undo" xml:space="preserve">
+    <value>元に戻す</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_UndoDescription" xml:space="preserve">
+    <value>元に戻す</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ChangeFontSize" xml:space="preserve">
+    <value>フォント サイズ</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_AlignmentCenter" xml:space="preserve">
+    <value>中央</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ChangeFontName" xml:space="preserve">
+    <value>フォント</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_SaveDocument" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_LoadDocument" xml:space="preserve">
+    <value>開く</value>
+  </data>
+  <data name="OfficeStringId.Caption_EditHyperlinkFormDescription" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="OfficeStringId.Caption_InsertHyperlinkFormDescription" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageMarginsModerateDescription" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageMarginsNarrowDescription" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageMarginsNormalDescription" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageMarginsWideDescription" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageOrientationLandscapeDescription" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageOrientationPortraitDescription" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageOrientationLandscape" xml:space="preserve">
+    <value>横方向</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageOrientationPortrait" xml:space="preserve">
+    <value>縦方向</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_FloatingObjectBringToFront" xml:space="preserve">
+    <value>前面へ移動</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_FloatingObjectSendToBack" xml:space="preserve">
+    <value>最背面へ移動</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ZoomIn" xml:space="preserve">
+    <value>拡大</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ZoomInDescription" xml:space="preserve">
+    <value>拡大</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ZoomOut" xml:space="preserve">
+    <value>縮小</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ZoomOutDescription" xml:space="preserve">
+    <value>縮小</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_NewEmptyDocument" xml:space="preserve">
+    <value>新規</value>
+  </data>
+  <data name="OfficeStringId.Caption_UnitPoints" xml:space="preserve">
+    <value>ポイント</value>
+  </data>
+  <data name="OfficeStringId.UnitAbbreviation_Percent" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="OfficeStringId.Caption_UnitPercent" xml:space="preserve">
+    <value>パーセント</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontStrikeout" xml:space="preserve">
+    <value>取り消し線</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageOrientationCommandGroup" xml:space="preserve">
+    <value>方向</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_Print" xml:space="preserve">
+    <value>印刷(&amp;P)</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ShowPasteSpecialForm" xml:space="preserve">
+    <value>形式を選択して貼り付け</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_SaveDocumentAs" xml:space="preserve">
+    <value>名前を付けて保存</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_InsertSymbol" xml:space="preserve">
+    <value>記号</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_Hyperlink" xml:space="preserve">
+    <value>ハイパーリンク</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_DeleteComment" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="OfficeStringId.Caption_EditHyperlinkForm" xml:space="preserve">
+    <value>ハイパーリンクの編集</value>
+  </data>
+  <data name="OfficeStringId.Caption_InsertHyperlinkForm" xml:space="preserve">
+    <value>ハイパーリンクの挿入</value>
+  </data>
+  <data name="OfficeStringId.Caption_UnitCentimeters" xml:space="preserve">
+    <value>センチメートル</value>
+  </data>
+  <data name="OfficeStringId.Caption_UnitInches" xml:space="preserve">
+    <value>インチ</value>
+  </data>
+  <data name="OfficeStringId.Caption_UnitMillimeters" xml:space="preserve">
+    <value>ミリメートル</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_BitmapFiles" xml:space="preserve">
+    <value>Windows ビットマップ</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_EmfFiles" xml:space="preserve">
+    <value>Microsoft 拡張メタファイル</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_GifFiles" xml:space="preserve">
+    <value>グラフィックス交換形式</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_JPEGFiles" xml:space="preserve">
+    <value>JPEG ファイル インターチェンジ形式</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_PNGFiles" xml:space="preserve">
+    <value>ポータブル ネットワーク グラフィックス</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_TiffFiles" xml:space="preserve">
+    <value>タグ画像ファイルフォーマット</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_WmfFiles" xml:space="preserve">
+    <value>Windows メタファイル</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_AlignmentCenterDescription" xml:space="preserve">
+    <value>テキストを中央揃えします</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_AlignmentJustifyDescription" xml:space="preserve">
+    <value>テキストを必要に応じて単語間の余分なスペースを追加する左と右余白に揃える。これは、ページの右側、左側に沿ってきれいな外観を作成します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_AlignmentLeft" xml:space="preserve">
+    <value>テキストを左揃え</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_AlignmentLeftDescription" xml:space="preserve">
+    <value>テキストを左揃えにします</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_AlignmentRight" xml:space="preserve">
+    <value>テキストを右揃え</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_AlignmentRightDescription" xml:space="preserve">
+    <value>右にテキストを配置します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ChangeFontColor" xml:space="preserve">
+    <value>フォントの色</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ChangeFontColorDescription" xml:space="preserve">
+    <value>テキストの色を変更します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ChangeFontNameDescription" xml:space="preserve">
+    <value>フォント フェイスを変更します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ChangeFontSizeDescription" xml:space="preserve">
+    <value>フォント サイズを変更します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ClearUndoDescription" xml:space="preserve">
+    <value>バッファーをクリア元に戻す</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_CopySelectionDescription" xml:space="preserve">
+    <value>選択範囲をコピーし、クリップボードに格納します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_CutSelectionDescription" xml:space="preserve">
+    <value>文書から選択範囲を切り取り、クリップボードに格納します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_DecreaseFontSize" xml:space="preserve">
+    <value>フォントの縮小</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_DecreaseFontSizeDescription" xml:space="preserve">
+    <value>フォント サイズを小さきます</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_DeleteCommentDescription" xml:space="preserve">
+    <value>選択したコメントを削除します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_EditComment" xml:space="preserve">
+    <value>コメントの編集</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_EditCommentDescription" xml:space="preserve">
+    <value>ドキュメントのこの部分に関するメモを追加します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_EditHyperlink" xml:space="preserve">
+    <value>. ハイパーリンクの編集</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_EditHyperlinkDescription" xml:space="preserve">
+    <value>. ハイパーリンクの編集</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_FloatingObjectBringForward" xml:space="preserve">
+    <value>前面へ移動</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_FloatingObjectBringForwardCommandGroup" xml:space="preserve">
+    <value>前面へ移動</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_FloatingObjectBringForwardCommandGroupDescription" xml:space="preserve">
+    <value>選択したオブジェクトを 1 レベルをもたらす、または他のすべてのオブジェクトの前面へ移動します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_FloatingObjectBringForwardDescription" xml:space="preserve">
+    <value>それの前にあるが少数のオブジェクトによって隠されてように前方に選択したオブジェクトを表示</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_FloatingObjectBringToFrontDescription" xml:space="preserve">
+    <value>それの一部が他のオブジェクトの背後に隠されてないように他のすべてのオブジェクトの前に選択したオブジェクトを表示します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_FloatingObjectSendBackward" xml:space="preserve">
+    <value>背面へ移動</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_FloatingObjectSendBackwardCommandGroup" xml:space="preserve">
+    <value>背面へ移動</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_FloatingObjectSendBackwardCommandGroupDescription" xml:space="preserve">
+    <value>選択したオブジェクトのバック 1 つのレベルを送信またはその他のすべてのオブジェクトの背後に送信します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_FloatingObjectSendBackwardDescription" xml:space="preserve">
+    <value>選択したオブジェクトの下位をそれの前にあるオブジェクトを非表示</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_FloatingObjectSendToBackDescription" xml:space="preserve">
+    <value>他のすべてのオブジェクトの背後にある選択したオブジェクトを送信します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_HyperlinkDescription" xml:space="preserve">
+    <value>Web ページ、画像、電子メール アドレス、またはプログラムへのリンクを作成します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_IncreaseFontSize" xml:space="preserve">
+    <value>フォントの拡大</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_IncreaseFontSizeDescription" xml:space="preserve">
+    <value>フォント サイズを大ききます</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_InsertComment" xml:space="preserve">
+    <value>新しいコメント</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_InsertCommentDescription" xml:space="preserve">
+    <value>ドキュメントのこの部分に関するメモを追加します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_InsertFloatingObjectPicture" xml:space="preserve">
+    <value>画像</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_InsertFloatingObjectPictureDescription" xml:space="preserve">
+    <value>ファイルから図を挿入します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_InsertHyperlink" xml:space="preserve">
+    <value>ハイパーリンク.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_InsertHyperlinkDescription" xml:space="preserve">
+    <value>新しいハイパーリンクを追加します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_InsertSymbolDescription" xml:space="preserve">
+    <value>の記号は著作権シンボル、商標記号などのキーボードではなく段落記号などの Unicode 文字を挿入します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_LoadDocumentDescription" xml:space="preserve">
+    <value>ドキュメントを開きます</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_NewEmptyDocumentDescription" xml:space="preserve">
+    <value>新しいドキュメントを作成します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_OpenHyperlink" xml:space="preserve">
+    <value>ハイパーリンクを開く</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_OpenHyperlinkDescription" xml:space="preserve">
+    <value>ハイパーリンクを開く</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageMarginsModerate" xml:space="preserve">
+    <value>中等度トップ： {1, 10} 下部: {3, 10}左： {0, 10} 右： 2,10 {0}</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageMarginsNarrow" xml:space="preserve">
+    <value>狭トップ： {1, 10} 下部: {3, 10}左： {0, 10} 右： 2,10 {0}</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageMarginsNormal" xml:space="preserve">
+    <value>ノーマルトップ： {1, 10} 下部: {3, 10}左： 右 {0, 10}: {2,10}</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageMarginsWide" xml:space="preserve">
+    <value>ワイドトップ： {1, 10} 下部: {3, 10}左： {0, 10} 右： 2,10 {0}</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageOrientationCommandGroupDescription" xml:space="preserve">
+    <value>縦向きと横向きのレイアウトとページを切り替える</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PasteDescription" xml:space="preserve">
+    <value>、クリップボードの内容を貼り付けます</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PrintDescription" xml:space="preserve">
+    <value>、プリンター、部数、印刷する前に他の印刷オプションを選択します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PrintPreview" xml:space="preserve">
+    <value>印刷プリ ＆ ビュー</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PrintPreviewDescription" xml:space="preserve">
+    <value>印刷前にページをプレビューします</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_QuickPrint" xml:space="preserve">
+    <value>＆ クイック印刷</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_QuickPrintDescription" xml:space="preserve">
+    <value>変更を加えずに既定のプリンターに直接ドキュメントを送信します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_RemoveHyperlink" xml:space="preserve">
+    <value>ハイパーリンクを削除します。</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_RemoveHyperlinkDescription" xml:space="preserve">
+    <value>ハイパーリンクを削除します。</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_RemoveHyperlinks" xml:space="preserve">
+    <value>ハイパーリンクを削除します。</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_RemoveHyperlinksDescription" xml:space="preserve">
+    <value>ハイパーリンクを削除します。</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_SaveDocumentAsDescription" xml:space="preserve">
+    <value>ファイル形式を選択し、新しい場所にドキュメントを保存する [名前を付けて保存] ダイアログ ボックスを開きます</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_SaveDocumentDescription" xml:space="preserve">
+    <value>文書を保存します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ShowPasteSpecialFormDescription" xml:space="preserve">
+    <value>特殊貼り付けダイアログ ボックスを表示します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontBoldDescription" xml:space="preserve">
+    <value>選択したテキストを太字にします</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontDoubleUnderline" xml:space="preserve">
+    <value>二重下線</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontDoubleUnderlineDescription" xml:space="preserve">
+    <value>二重下線</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontItalicDescription" xml:space="preserve">
+    <value>選択したテキストを斜体にします</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontStrikeoutDescription" xml:space="preserve">
+    <value>選択したテキストの中央を通る線を描画します</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontUnderlineDescription" xml:space="preserve">
+    <value>選択したテキストに下線を引くです</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_Zoom100PercentDescription" xml:space="preserve">
+    <value>ドキュメントを通常のサイズの 100% にズームします</value>
+  </data>
+  <data name="OfficeStringId.Msg_InvalidFontSize" xml:space="preserve">
+    <value>数は {0} と {1} の間でなければなりません</value>
+  </data>
+  <data name="OfficeStringId.Msg_InvalidNumber" xml:space="preserve">
+    <value>これは有効な数値ではありません</value>
+  </data>
+  <data name="OfficeStringId.Msg_InvalidNumberConverterValue" xml:space="preserve">
+    <value>値は {0} と {1} の間でなければなりません</value>
+  </data>
+  <data name="OfficeStringId.Msg_InvalidRemoveDataSource" xml:space="preserve">
+    <value>データ ソースは、差し込み印刷プロセス中に削除できません。</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ClearUndo" xml:space="preserve">
+    <value>ClearUndo</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_Encrypt" xml:space="preserve">
+    <value>パスワードを使用して暗号化</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_EncryptDescription" xml:space="preserve">
+    <value>このブックを開く際 に、パスワードを要求するようにします。</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_Zoom100Percent" xml:space="preserve">
+    <value>100 ％</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_StatusBarPopupMenuHeader" xml:space="preserve">
+    <value>ステータス バーのユーザー設定</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_StatusBarPopupMenuZoom" xml:space="preserve">
+    <value>ズーム</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_StatusBarPopupMenuZoomSlider" xml:space="preserve">
+    <value>ズーム スライダー</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_StatusBarZoomDescription" xml:space="preserve">
+    <value>表示倍率を変更します。クリックすると [ズーム] ダイアログ ボックスが開きます。</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_StatusBarZoomSliderDescription" xml:space="preserve">
+    <value>ズーム</value>
+  </data>
+</root>

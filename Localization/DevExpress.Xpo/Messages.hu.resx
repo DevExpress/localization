@@ -1,0 +1,706 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Collections_InvalidCastOnAdd" xml:space="preserve">
+    <value>Nem lehet az elemet a gyűjteményhez adni. A(z) '{0}' objektum nem a(z) '{1}' típus példánya.</value>
+  </data>
+  <data name="PersistentAliasExpander_NonPersistentCriteria" xml:space="preserve">
+    <value>Az adattárat nem lehet a(z) "{0}" kritériummal lekérdezni, mivel a nem-perzisztens '{1}' tulajdonságot használja.</value>
+  </data>
+  <data name="Paging_CurrentPageShouldBeLessThanPageCount" xml:space="preserve">
+    <value>Az AktuálisLap legyen kisebb mint a LapokSzáma.</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_MoreThenOneAssociatedMemberFound" xml:space="preserve">
+    <value>A(z) '{0}' asszociáció félreérthető a(z) '{1}' osztály '{2}' és '{3}' tagjai között.</value>
+  </data>
+  <data name="Session_TranSequenceBegin" xml:space="preserve">
+    <value>Nem lehet több tranzakciót indítani ebben a munkafázisban.</value>
+  </data>
+  <data name="ConnectionProvider_UnableToFillRefType" xml:space="preserve">
+    <value>Nem biztosítható az adatbázis séma a(z) '{0}' típus '{1}' tagjának. Hiba: {2}</value>
+  </data>
+  <data name="Session_DifferentObjectsWithSameKey" xml:space="preserve">
+    <value>Eltérő objektumok azonos kulcsokkal.</value>
+  </data>
+  <data name="MetaData_NonPersistentReferenceFound" xml:space="preserve">
+    <value>A valós objektum típus feloldása közben a nem-perzisztens '{0}' típus egy referenciájára bukkantunk</value>
+  </data>
+  <data name="Metadata_DictionaryMixing" xml:space="preserve">
+    <value>A(z) '{0}' osztály információ eltérő szótárhoz tartozik.</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_NotFound" xml:space="preserve">
+    <value>Az asszociáció sérült: '{0}'. Nem található a(z) '{3}' osztályban az alábbihoz rendelt tag: '{1}.{2}'.</value>
+  </data>
+  <data name="Session_SessionMixing" xml:space="preserve">
+    <value>A(z) '{0}' objektum másik munkafázishoz tartozik.</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_PropertyTypeMismatch" xml:space="preserve">
+    <value>A(z) '{0}' asszociáció érvénytelen a(z) '{1}' és '{3}' osztályok között. A(z) '{1}' osztály tartalmazza a(z) '{2}' tulajdonságot, ami a(z) '{3}' osztályra hivatkozik. A(z) '{3}' osztály tartalmazza a(z) '{4}' tulajdonságot, ami helytelenül a(z) '{5}' osztályra hivatkozik; a(z) '{1}' osztályra kell hivatkoznia.</value>
+  </data>
+  <data name="Session_TranSequenceCommit" xml:space="preserve">
+    <value>Nincs aktív tranzakció.</value>
+  </data>
+  <data name="ConnectionProvider_KeysAutogenerationNonSupportedTypeException" xml:space="preserve">
+    <value>A kulcsok automatikus generálása csak Int32 és Guid adattípusoknál támogatott. Osztály típusa: '{0}'.</value>
+  </data>
+  <data name="Session_CannotChangePropertyWhenSessionIsConnected" xml:space="preserve">
+    <value>A(z) {0} nem változtatható meg, amíg a munkamenet kapcsolódva van.</value>
+  </data>
+  <data name="MetaData_IncorrectPathNonPersistentMember" xml:space="preserve">
+    <value>A(z) '{1}' tulajdonság útvonal érvénytelen a(z) '{0}' típushoz, mivel a(z) '{2}.{3}' tag nem perzisztens tag.</value>
+  </data>
+  <data name="Paging_EnumeratorPositioning" xml:space="preserve">
+    <value>A számláló a gyűjtemény első eleme elé vagy utolsó eleme mögé lett pozícionálva.</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_NoAssociationListInAssociation" xml:space="preserve">
+    <value>A(z) '{1}.{2}' és '{3}.{4}' közötti asszociáció sérült: '{0}'. Az asszociáció egyik oldalán listának kell lenni.</value>
+  </data>
+  <data name="ThreadSafeDataLayer_DictionaryModified" xml:space="preserve">
+    <value>Nem lehet módosítani a szótárat, amíg a ThreadSafeDataLayer használja. Hívja meg a Session.CreateObjectTypeRecords metódust a telepítő/adminisztrátor alkalmazásban a ThreadSafeDataLayer használata előtt.</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_AssociationAttributeOnlyForListOrReference" xml:space="preserve">
+    <value>Az asszociációs attribútum nem használható a(z) '{1}.{2}' taghoz. Referencia vagy típus szükséges.</value>
+  </data>
+  <data name="MetaData_ReferenceTooComplex" xml:space="preserve">
+    <value>A(z) '{0}.{1}' referencia túl összetett.</value>
+  </data>
+  <data name="Session_AlreadyConnected" xml:space="preserve">
+    <value>A munkamenet már kapcsolódva van.</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_UseAssociationNameAsIntermediateTableNameMismatch" xml:space="preserve">
+    <value>A UseAssociationNameAsIntermediateTableName értékének azonosnak kell lennie a(z) '{0}' asszociáció mindkét oldalán a(z) '{1}.{2}' és '{3}.{4}' között.</value>
+  </data>
+  <data name="XPWeakReference_SavedObjectExpected" xml:space="preserve">
+    <value>Mentett objektum szükséges.</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorUnknownAttribute" xml:space="preserve">
+    <value>Ismeretlen attribútum: '{0}'.</value>
+  </data>
+  <data name="MetaData_XMLLoadError" xml:space="preserve">
+    <value>XML szótár betöltési hiba: {0}</value>
+  </data>
+  <data name="Session_CannotReloadPurgedObject" xml:space="preserve">
+    <value>A kért objektumokat nem lehet betölteni, mivel nem léteznek az adattárban. Ezek az objektumok valószínűleg már törölve lettek. Ha újra látja ezt a hibaüzenetet ugyanezekkel az objektumokkal, akkor az adattároló hivatkozási integritása valószínűleg sérült. Ebben az esetben forduljon a rendszergazdához. ({0})</value>
+  </data>
+  <data name="MetaData_IncorrectPathNonReferenceMember" xml:space="preserve">
+    <value>A(z) '{1}' tulajdonság útvonal érvénytelen a(z) '{0}' típushoz, mivel a(z) '{2}.{3}' tag nem referencia tag.</value>
+  </data>
+  <data name="MetaData_KeyPropertyAbsent" xml:space="preserve">
+    <value>A(z) '{0}' típus kulcs tulajdonsága hiányzik.</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotResolveClassinfoInstanceType" xml:space="preserve">
+    <value>Nem lehet feloldani a ClassInfo példány típust</value>
+  </data>
+  <data name="Paging_EnumeratorObjectModifiedOrDeleted" xml:space="preserve">
+    <value>A kért tartomány egy vagy több objektuma módosítva vagy törölve lett. Frissítse az értéklistát.</value>
+  </data>
+  <data name="Session_CannotLoadInvalidType" xml:space="preserve">
+    <value>Nem lehet betölteni az érvénytelen '{0}' típust.</value>
+  </data>
+  <data name="MetaData_CannotResolveClassInfo" xml:space="preserve">
+    <value>Nem lehet feloldani a ClassInfo-t az alábbi típushoz: '[{0}]{1}'.</value>
+  </data>
+  <data name="MetaData_DuplicateKeyProperty" xml:space="preserve">
+    <value>A(z) '{0}' típushoz duplikált kulcs tartozik.</value>
+  </data>
+  <data name="Session_TypeFieldIsEmpty" xml:space="preserve">
+    <value>A(z) '{0}' mező NULL (bázis osztály '{1}').</value>
+  </data>
+  <data name="XpoDefault_CannotAssignPropertyWhileAnotherIsNotNull" xml:space="preserve">
+    <value>Nem lehet átadni: XpoDefault.{0} amíg XpoDefault.{1} nem NULL.</value>
+  </data>
+  <data name="MetaData_AssociationElementTypeMissing" xml:space="preserve">
+    <value>A(z) '{0}' tulajdonság nem határozza meg az 'ElementType' tulajdonságot az 'Association' attribútumon belül.</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotFindConstructor" xml:space="preserve">
+    <value>A konstruktor nem található.</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_TwoAssociationListsInAssociation" xml:space="preserve">
+    <value>Az asszociáció sérült a(z) '{0}' és '{1}.{2}' és '{3}.{4}' listák között. Használja a ManyToManyAlias attribútumot vagy XPCollection típusú listákat a many-to-many kapcsolatokhoz.</value>
+  </data>
+  <data name="Session_WrongConnectionString" xml:space="preserve">
+    <value>Érvénytelen kapcsolati string: '{0}'.</value>
+  </data>
+  <data name="Metadata_CustomProperties_PersistentAndNonStorableType" xml:space="preserve">
+    <value>A(z) '{2}' típus '{0}.{1}' egyedi tagja nem lehet perzisztens.</value>
+  </data>
+  <data name="Session_AssociationCollectionWithDisabledLoading" xml:space="preserve">
+    <value>Az asszociáció gyűjtemény állapota sérült (a LoadingEnabled nem igaz).</value>
+  </data>
+  <data name="Session_TypeNotFound" xml:space="preserve">
+    <value>Nem található a típus, ahol id = '{0}'.</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotLoadMember" xml:space="preserve">
+    <value>A(z) [{0}]{1}.{2} tag nem található.</value>
+  </data>
+  <data name="Paging_CurrentPageShouldBeGreaterOrEqualZero" xml:space="preserve">
+    <value>Az AktuálisLap legyen nagyobb vagy egyenlő 0.</value>
+  </data>
+  <data name="PersistentAliasExpander_ReferenceOrCollectionExpectedInTheMiddleOfThePath" xml:space="preserve">
+    <value>Érvénytelen '{0}' tag az egyik útvonalon. Egy referencia tulajdonság vagy gyűjtemény szükséges.</value>
+  </data>
+  <data name="MetaData_SessionCtorAbsent" xml:space="preserve">
+    <value>A(z) '{0}' típusnak nincs munkamenet-specifikus konstruktora.</value>
+  </data>
+  <data name="Session_ObjectCannotBePurged" xml:space="preserve">
+    <value>Nem lehet törölni a(z) '{0}' objektumot, ahol id = '{1}'. Vannak olyan objektumok, amik hivatkoznak rá.</value>
+  </data>
+  <data name="Metadata_SeveralClassesWithSameName" xml:space="preserve">
+    <value>A szótár már tartalmazza a(z) '{1}' osztály információt. Lehetséges ok: a '{0}' szerelvény kétszer van betöltve.</value>
+  </data>
+  <data name="MetaData_PropertyTypeMismatch" xml:space="preserve">
+    <value>A(z) '{1}' asszociáció érvénytelen a(z) '{3}' és '{4}' osztályok között. A(z) '{3}' osztály tartalmazza a(z) '{2}' tulajdonságot, ami a(z) '{4}' osztályra hivatkozik. A(z) '{4}' osztály tartalmazza a(z) '{0}' tulajdonságot, ami helytelenül a(z) '{5}' osztályra hivatkozik; a(z) '{3}' osztályra kell hivatkoznia.</value>
+  </data>
+  <data name="MetaData_PropertyMissing" xml:space="preserve">
+    <value>A(z) '{0}' tulajdonság nem létezik a(z) '{1}' típuson belül.</value>
+  </data>
+  <data name="Metadata_CustomProperties_ReferenceOrCollectionInSessionStore" xml:space="preserve">
+    <value>Nem hozható létre a referencia vagy gyűjtemény típus '{1}' egyedi tagja, mivel a(z) '{0}' osztályban nincs implementálva a(z) '{2}' interfész.</value>
+  </data>
+  <data name="Session_CannotAddObjectToObjectCache" xml:space="preserve">
+    <value>Nem lehet a(z) '{0}' objektumot a(z) '{1}' kulccsal az objektum cache-hez adni, mivel a(z) '{2}' objektum azonos kulccsal már hozzá lett adva.</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotFindClassinfoType" xml:space="preserve">
+    <value>Az osztály információ típus nem található.</value>
+  </data>
+  <data name="Metadata_SameTableName" xml:space="preserve">
+    <value>A(z) '{0}' osztály ugyanazt a táblát képezi le mint a(z) '{1}' osztály.</value>
+  </data>
+  <data name="Metadata_PersistentAliasCircular" xml:space="preserve">
+    <value>A(z) '{0}' osztály '{1}' tulajdonsága PersistentAlias-ként van megjelölve egy érvénytelen '{2}' kifejezéssel. Ez körkörös referenciát eredményez.</value>
+  </data>
+  <data name="Paging_PageSizeShouldBeGreaterThanZero" xml:space="preserve">
+    <value>A lapméretnek 0-nál nagyobbnak kell lennie.</value>
+  </data>
+  <data name="MetaData_XMLLoadErrorModelTagAbsent" xml:space="preserve">
+    <value>Rosszul formázott XML (A &lt;Model&gt; címke nem található vagy érvénytelen a névtér).</value>
+  </data>
+  <data name="Session_IncompatibleIdType" xml:space="preserve">
+    <value>Az átadott id típusa ('{0}') nem kompatibilis a(z) '{1}.{2}' kulcs típussal ('{3}').</value>
+  </data>
+  <data name="MetaData_IncorrectPath" xml:space="preserve">
+    <value>A(z) '{1}' tulajdonság útvonal érvénytelen a(z) '{0}' típushoz.</value>
+  </data>
+  <data name="MetaData_RequiredAttributeMissing" xml:space="preserve">
+    <value>A(z) '{0}' tulajdonság nem definiálja a(z) '{1}' attribútumot.</value>
+  </data>
+  <data name="Session_TranSequenceRollback" xml:space="preserve">
+    <value>Nincs aktív tranzakció.</value>
+  </data>
+  <data name="View_PropertyNotFetched" xml:space="preserve">
+    <value>A(z) '{0}' tulajdonság nem érkezett meg.</value>
+  </data>
+  <data name="Generator_OneOfBinaryOperatorsOperandsIsNull" xml:space="preserve">
+    <value>A BinaryOperator egyik operandusa NULL.</value>
+  </data>
+  <data name="Metadata_CantPersistGenericType" xml:space="preserve">
+    <value>Általános típus nem perzisztálható. Törölje a PersistentAttribute-ot a(z) '{0}' típus definícióból és hozzon létre helyette egy perzisztens nem-általános származtatott típust.</value>
+  </data>
+  <data name="MetaData_IncorrectPathMemberNotExists" xml:space="preserve">
+    <value>A(z) '{1}' tulajdonság útvonal érvénytelen a(z) '{0}' típushoz, mivel a(z) '{2}.{3}' tag nem létezik.</value>
+  </data>
+  <data name="Metadata_DuplicateMappingField" xml:space="preserve">
+    <value>Duplikált leképezés a(z) '{1}' osztály '{0}' oszlopánál.</value>
+  </data>
+  <data name="Collections_CannotAssignProperty" xml:space="preserve">
+    <value>A(z) '{0}' tulajdonságot nem lehet módosítani, amikor az XPCollection nincs tervező vagy inicializációs módban.</value>
+  </data>
+  <data name="Helpers_DifferentObjectsKeys" xml:space="preserve">
+    <value>Nem lehet összefűzni a módosításokat módosított kulccsal rendelkező objektumhoz.</value>
+  </data>
+  <data name="Security_ICommandChannel_TransferringRequestsIsProhibited" xml:space="preserve">
+    <value>Kérés továbbítása ICommandChannel-en keresztül tilos a biztonsági motorban.</value>
+  </data>
+  <data name="InMemorySet_XMLException_ReferAttributeExpected" xml:space="preserve">
+    <value>XML beolvasó: A 'refer' attribútum szükséges.</value>
+  </data>
+  <data name="InMemorySet_WrongCommitInfo" xml:space="preserve">
+    <value>Belső hiba: Sérült Commit információ.</value>
+  </data>
+  <data name="SerOLHelpers_NestedParentMapIsNull" xml:space="preserve">
+    <value>Belső hiba: A NestedParentMap és ParentNestedMap NULL.</value>
+  </data>
+  <data name="Helpers_CloningObjectModified" xml:space="preserve">
+    <value>Nem mentett adatot tartalmazó objektum nem klónozható.</value>
+  </data>
+  <data name="InMemoryFull_CannotPrepareQueryPlan" xml:space="preserve">
+    <value>A lekérdezés tervet nem lehet felépíteni.</value>
+  </data>
+  <data name="InMemoryFull_TableNotFound" xml:space="preserve">
+    <value>A tábla '{0}' nem található.</value>
+  </data>
+  <data name="Object_PersistentOrThis" xml:space="preserve">
+    <value>A(z) '{0}.{1}' tagnak perzisztensnek kell lennie vagy 'this'-t visszaadni.</value>
+  </data>
+  <data name="Security_DeletingAnObjectWasProhibitedByTheRules" xml:space="preserve">
+    <value>Objektum törlése tilos ellenőrző szabályokkal.</value>
+  </data>
+  <data name="SerializableObjectLayer_OptimisticLockFieldInDLNotExists" xml:space="preserve">
+    <value>A(z) '{0}' ClassInfo-nak nincs OptimisticLockFieldInDataLayer-e definiálva.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XSrestrictionExpected" xml:space="preserve">
+    <value>XML beolvasó: Az xs:restriction szükséges.</value>
+  </data>
+  <data name="InMemory_DataSetUncommited" xml:space="preserve">
+    <value>A 'data' paraméter olyan DataSet-et tartalmaz, amiben elfogadatlan változások vannak. Hívja meg a DataSet.AcceptChanges metódust a DataSetDataStore osztály új példányának létrehozása előtt.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XSsequenceExpected" xml:space="preserve">
+    <value>XML beolvasó: Az xs:sequence szükséges.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XpathAttributeWrongFormat" xml:space="preserve">
+    <value>XML beolvasó: Az 'xpath' attribútum érték formátuma érvénytelen.</value>
+  </data>
+  <data name="InMemorySet_CantUpdateRelationColumn" xml:space="preserve">
+    <value>Kapcsolattal rendelkező oszlopokat nem lehet frissíteni.</value>
+  </data>
+  <data name="Security_TheCommitOperationWasProhibitedByTheRules" xml:space="preserve">
+    <value>Objektum érvényesítése tilos ellenőrző szabályokkal.</value>
+  </data>
+  <data name="InMemory_NotACollection" xml:space="preserve">
+    <value>Rosszul formázott lekérdezés vagy belső XPO hiba: a(z) '{0}' nem gyűjtemény.</value>
+  </data>
+  <data name="Session_LengthsOfTheCollectionsAreDifferentInArgs" xml:space="preserve">
+    <value>A gyűjtemények hossza eltér az argumentumban.</value>
+  </data>
+  <data name="Session_ObjectModificationIsNotAllowed" xml:space="preserve">
+    <value>Az objektumok nem módosíthatók, amíg a munkamenet CommitChangesToDataLayerInner állapotban van.</value>
+  </data>
+  <data name="Helpers_SameDictionaryExpected" xml:space="preserve">
+    <value>Nem megfelelő szótár.</value>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidValueAttributeValue" xml:space="preserve">
+    <value>XML beolvasó: Érvénytelen 'value' attribútum érték.</value>
+  </data>
+  <data name="Object_CorrectPIinUOW" xml:space="preserve">
+    <value>A perzisztens interfészek nincsenek teljes mértékben támogatva a munkamenetekben. Inkább a 'units of work' használata javasolt.</value>
+  </data>
+  <data name="InTransactionLoader_ProcessReturnResultError" xml:space="preserve">
+    <value>Belső hiba: A művelet nem engedélyezett SelectData módban.</value>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidColumnTypeDeclaration" xml:space="preserve">
+    <value>XML beolvasó: Érvénytelen oszlop típusnév.</value>
+  </data>
+  <data name="InMemorySet_InvalidTypeString" xml:space="preserve">
+    <value>XML beolvasó: Érvénytelen típusnév.</value>
+  </data>
+  <data name="InMemoryFull_WrongIndexInfo" xml:space="preserve">
+    <value>Belső hiba: Sérült index információ.</value>
+  </data>
+  <data name="Metadata_TypeNotFound" xml:space="preserve">
+    <value>A(z) '{0}' típus nem található.</value>
+  </data>
+  <data name="Metadata_NonpesistentKey" xml:space="preserve">
+    <value>Nem-perzisztens kulcs: '{0}.{1}'.</value>
+  </data>
+  <data name="Common_MethodOrOperationNotImplemented" xml:space="preserve">
+    <value>A metódus vagy művelet nincs megvalósítva.</value>
+  </data>
+  <data name="InMemorySet_DifferentComplexSet" xml:space="preserve">
+    <value>Belső hiba: Nem lehet sort hozzáadni másik komplex készletből.</value>
+  </data>
+  <data name="SerializableObjectLayer_OLDoesNotImplementptISerializableObjectLayerEx" xml:space="preserve">
+    <value>Az objektum layer nem valósítja meg a ISerializableObjectLayerEx interfészt.</value>
+  </data>
+  <data name="DirectSQL_WrongColumnCount" xml:space="preserve">
+    <value>Az eredmény készlet sor és a cél sor oszlopainak száma nem egyezik.</value>
+  </data>
+  <data name="Session_NotClassMember" xml:space="preserve">
+    <value>A(z) '{0}' nem tagja a(z) '{1}' osztálynak.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XSselectorNodeExpected" xml:space="preserve">
+    <value>XML beolvasó: Az 'xs:selector' csomópont szükséges.</value>
+  </data>
+  <data name="InMemorySet_XMLException_CantRestoreObjectFromXML" xml:space="preserve">
+    <value>XML beolvasó: Az objektumot nem lehet deszerializálni.</value>
+  </data>
+  <data name="InMemorySet_AddRelation" xml:space="preserve">
+    <value>Duplikált kapcsolatot nem lehet hozzáadni.</value>
+  </data>
+  <data name="Object_ReferencePropertyViaCollectionAccessor" xml:space="preserve">
+    <value>Kísérlet a hozzárendelt tulajdonság beállítására a gyűjtemény accessor-on keresztül.</value>
+  </data>
+  <data name="InMemorySet_UniqueIndex" xml:space="preserve">
+    <value>A(z) '{0}' elsődleges index megsértve.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XSsimpleTypeExpected" xml:space="preserve">
+    <value>XML beolvasó: Az xs:simpleType szükséges.</value>
+  </data>
+  <data name="CriteriaAnalizer_PathNotFound" xml:space="preserve">
+    <value>A(z) {0}-&gt;{1} útvonal nem található.</value>
+  </data>
+  <data name="Async_CanChangeProperties" xml:space="preserve">
+    <value>Már használatban van!</value>
+  </data>
+  <data name="InMemorySet_InEditMode" xml:space="preserve">
+    <value>A sor már szerkesztő módban van.</value>
+  </data>
+  <data name="Metadata_SuppressSuspiciousMemberInheritanceCheckError" xml:space="preserve">
+    <value>A(z) '{0}.{1}' tag és annak '{2}' attribútuma mellőzve lett. A(z) '{3}' bázis osztályban már szerepel egy ilyen nevű tag. A hibaüzenet mellőzéséhez állítsa a DevExpress.Xpo.Metadata.ReflectionClassInfo.SuppressSuspiciousMemberInheritanceCheck értékét True-ra.</value>
+  </data>
+  <data name="Session_MostProbablyYouAreTryingToInitiateAnObject" xml:space="preserve">
+    <value>Valószínűleg egy objektum inicializálási műveletet próbál meg kezdeményezni, míg az előző objektum mentési művelet még nem fejeződött be. Halassza el a műveletet a Session.ObjectsSaved vagy IXPObject.OnSaved eseményig (amíg a Session.IsObjectsSaving értéke True).</value>
+  </data>
+  <data name="InMemorySet_XMLException_ColumnNameIsNotSpecified" xml:space="preserve">
+    <value>XML beolvasó: Az oszlop neve nincs megadva.</value>
+  </data>
+  <data name="InMemorySet_WrongInitData" xml:space="preserve">
+    <value>Az forrás sor és a cél tábla sor oszlopainak száma nem egyezik.</value>
+  </data>
+  <data name="DirectSQL_CollectionMembersAreNotSupported" xml:space="preserve">
+    <value>Gyűjtemény tagok nincsenek támogatva.</value>
+  </data>
+  <data name="View_AtLeastOneFetchProperptyShouldBeDefined" xml:space="preserve">
+    <value>Legalább egy tulajdonságot meg kell határozni a letöltéshez.</value>
+  </data>
+  <data name="ObjectLayer_MemberNotFound" xml:space="preserve">
+    <value>A(z) '{0}.{1}' tag nem található.</value>
+  </data>
+  <data name="Object_DelayedPropertyDoesNotContainProperObject" xml:space="preserve">
+    <value>A(z) '{0}.{1}' tulajdonság nem tartalmaz XPDelayedProperty objektumot.</value>
+  </data>
+  <data name="Object_DelayedPropertyContainerCannotBeAssigned" xml:space="preserve">
+    <value>A(z) '{0}.{1}' késleltetett egyedi tulajdonság konténere nem hozzárendelhető.</value>
+  </data>
+  <data name="InMemorySet_XMLException_SchemaNodeNotFound" xml:space="preserve">
+    <value>XML beolvasó: A 'schema' csomópont nem található.</value>
+  </data>
+  <data name="CriteriaAnalizer_NullTransitionMemberInfo" xml:space="preserve">
+    <value>Az átmeneti MemberInfo NULL.</value>
+  </data>
+  <data name="MsSql_RootIsNotInsertStatement" xml:space="preserve">
+    <value>Belső hiba: A Root nem InsertStatement.</value>
+  </data>
+  <data name="View_IsInLoading" xml:space="preserve">
+    <value>Nem lehet újratölteni a nézetet, amíg az aszinkron módon adatot tölt be.</value>
+  </data>
+  <data name="InMemorySet_XMLException_TableNotDeclared" xml:space="preserve">
+    <value>XML beolvasó: A(z) '{0}' tábla nincs deklarálva.</value>
+  </data>
+  <data name="Object_NullInstance" xml:space="preserve">
+    <value>Nem található implementor a(z) '{0}' interfész virtuális objektumhoz.</value>
+  </data>
+  <data name="Collections_CannotResolvePropertyTypeComparer" xml:space="preserve">
+    <value>Nem lehet feloldani comparer-t a(z) '{1}' típus '{0}' tulajdonságához.</value>
+  </data>
+  <data name="InMemorySet_AliasNotFound" xml:space="preserve">
+    <value>'{0}' alias-szal rendelkező tábla nem található.</value>
+  </data>
+  <data name="Loader_ReloadError" xml:space="preserve">
+    <value>Belső hiba: A megadott '{0}.{1}' nincs támogatva.</value>
+  </data>
+  <data name="ServerModeGridSource_GroupAndAddOrRemoveIsNotAllwed" xml:space="preserve">
+    <value>Az elemek egyidejű csoportosítása és hozzáadása/törlése nem engedélyezett.</value>
+  </data>
+  <data name="Object_EmptyMemberInstance" xml:space="preserve">
+    <value>Az InstanceType nem tartalmaz egyetlen értéket sem. Nem lehetséges a GetInstanceObject használata olyan objektummal, ami még nincs megfelelően inicializálva.</value>
+  </data>
+  <data name="Collections_CriteriaEvaluationBehaviorIsNotSupported" xml:space="preserve">
+    <value>Belső hiba: Ez a túlterhelt konstruktor nem támogatja a megadott CriteriaEvaluationBehavior.{0}-t.</value>
+  </data>
+  <data name="ServerModeGridSource_WrongTopLevelAggregate" xml:space="preserve">
+    <value>Szerver vagy belső XPO hiba: Egynél több csoport egy felső szintű összegben.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XSlengthExpected" xml:space="preserve">
+    <value>XML beolvasó: Az xs:length szükséges.</value>
+  </data>
+  <data name="CriteriaAnalizer_NullJoinClassInfo" xml:space="preserve">
+    <value>A JoinClassInfo NULL.</value>
+  </data>
+  <data name="Session_UnexpectedState" xml:space="preserve">
+    <value>A megadott SessionState.{0} nincs támogatva.</value>
+  </data>
+  <data name="ServerModeGridSource_SummaryItemTypeNotSupported" xml:space="preserve">
+    <value>Belső hiba: A megadott SummaryItemType.{0} nincs támogatva.</value>
+  </data>
+  <data name="Metadata_MemberAttributeExclusive" xml:space="preserve">
+    <value>A PersistentAttribute, NonPersistentAttribute és PersistentAliasAttribute exkluzív. Ezek közül csak egyet lehet használni a(z) '{0}.{1}' tagban.</value>
+  </data>
+  <data name="InMemorySet_NotLoadingMode" xml:space="preserve">
+    <value>Az auto-inkrementált '{0}' oszlophoz nem lehet értéket rendelni, amíg nincs betöltési módban.</value>
+  </data>
+  <data name="DataView_ReferenceMembersWithCompoundKeyAreNotSupported" xml:space="preserve">
+    <value>Struktúra tagokkal rendelkező osztályok nincsenek támogatva.</value>
+  </data>
+  <data name="InMemorySet_InsertingDataIntoAutoincrementColumn" xml:space="preserve">
+    <value>Az auto-inkrementált '{0}' oszlophoz nem lehet értéket rendelni.</value>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidBaseAttributeValue" xml:space="preserve">
+    <value>XML beolvasó: Érvénytelen 'base' attribútum érték.</value>
+  </data>
+  <data name="Security_SavingAnObjectWasProhibitedByTheRulesOfVal" xml:space="preserve">
+    <value>Objektum mentése tilos ellenőrző szabályokkal.</value>
+  </data>
+  <data name="InMemorySet_ColumnNotFound" xml:space="preserve">
+    <value>A(z) '{0}' oszlop nem található.</value>
+  </data>
+  <data name="InMemory_SingleRowExpected" xml:space="preserve">
+    <value>A(z) '{0}'-tól csak egy sor várható, a talált sorok: {1}.</value>
+  </data>
+  <data name="InMemorySet_OperationNotAllowed" xml:space="preserve">
+    <value>A megadott művelet nincs engedélyezve.</value>
+  </data>
+  <data name="Session_AssociationListExpected" xml:space="preserve">
+    <value>Asszociáció lista vagy gyűjtemény szükséges.</value>
+  </data>
+  <data name="InMemorySet_XMLException_NullPrimaryColumns" xml:space="preserve">
+    <value>XML beolvasó: A(z) '{0}' elsődleges kulcs nem található.</value>
+  </data>
+  <data name="NestedSession_NotClonable" xml:space="preserve">
+    <value>Az objektum hierarchia nem klónozható, mert a(z) '{0}.{1}' tag módosult a művelet során.</value>
+  </data>
+  <data name="Collections_RecurringObjectAdd" xml:space="preserve">
+    <value>Ismétlődő hozzáadás.</value>
+  </data>
+  <data name="CriteriaAnalizer_ClassesAreNotAssignable" xml:space="preserve">
+    <value>A(z) '{0}' és '{1}' osztályok nem kölcsönösen hozzárendelhetők.</value>
+  </data>
+  <data name="InMemorySet_WrongRollbackInfo" xml:space="preserve">
+    <value>Belső hiba: Sérült Rollback információ.</value>
+  </data>
+  <data name="Session_UnexpectedPersistentCriteriaEvaluationBehavior" xml:space="preserve">
+    <value>Belső hiba: A megadott PersistentCriteriaEvaluationBehavior.{0} nincs támogatva.</value>
+  </data>
+  <data name="InMemoryFull_UseDataSetDataStoreOrCtor" xml:space="preserve">
+    <value>A .ctor DataSet-tel való használata helyett, használja a DataSetDataStore osztályt vagy a .ctor-t DataSet nélkül.</value>
+  </data>
+  <data name="InMemory_CannotFindParentRelationForNode" xml:space="preserve">
+    <value>Nem található szülő kapcsolat a(z) '{0}' csomóponthoz. Rosszul formázott lekérdezés vagy belső XPO hiba.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XScomplexTypeExpected" xml:space="preserve">
+    <value>XML beolvasó: Az xs:complexType szükséges.</value>
+  </data>
+  <data name="InMemorySet_XMLException_TableNameIsNotSpecified" xml:space="preserve">
+    <value>XML beolvasó: A tábla neve nincs megadva.</value>
+  </data>
+  <data name="InMemorySet_XMLException_InconsistentForeignKeyCount" xml:space="preserve">
+    <value>XML beolvasó: Eltérés a PKey és FKey oszlopok darabszámában.</value>
+  </data>
+  <data name="InMemorySet_DifferentTypes" xml:space="preserve">
+    <value>Eltérés a PKey és FKey oszlopok típusában.</value>
+  </data>
+  <data name="Metadata_WrongObjectType" xml:space="preserve">
+    <value>A(z) {2} ClassInfo használatával létrehozott {0} objektum érvénytelen {1} ClassInfo-t ad vissza.</value>
+  </data>
+  <data name="InMemorySet_XMLException_CantGetColumnType" xml:space="preserve">
+    <value>XML beolvasó: Az oszlop típusa nem meghatározható.</value>
+  </data>
+  <data name="Async_OperationCannotBePerformedBecauseNoSyncContext" xml:space="preserve">
+    <value>A műveletet nem lehet végrehajtani, mert a végrehajtó szálnak nincs aktuális szinkronizációs környezete.</value>
+  </data>
+  <data name="Metadata_AssociationListExpected" xml:space="preserve">
+    <value>Asszociáció lista vagy gyűjtemény szükséges: '{0}.{1}'.</value>
+  </data>
+  <data name="InTransactionLoader_NotInSelectDataMode" xml:space="preserve">
+    <value>Belső hiba: Nincs SelectData módban.</value>
+  </data>
+  <data name="Session_EnteringTheX0StateFromTheX1StateIsProhibit" xml:space="preserve">
+    <value>A(z) '{2}' állapotból a(z) '{0}' állapotba való belépés megtagadva a(z) '{1}' miatt.</value>
+  </data>
+  <data name="InMemorySet_XMLException_NameAttributeExpected" xml:space="preserve">
+    <value>XML beolvasó: A 'name' attribútum szükséges.</value>
+  </data>
+  <data name="InMemorySet_XMLException_ReferNotFound" xml:space="preserve">
+    <value>XML beolvasó: A hivatkozott '{0}' nem található.</value>
+  </data>
+  <data name="CriteriaAnalizer_TopLevelAggregateNotSupported" xml:space="preserve">
+    <value>Felső szintű összegek nem használhatók feltételekben.</value>
+  </data>
+  <data name="InMemorySet_XMLException_DataTypeAttributeNotFound" xml:space="preserve">
+    <value>XML beolvasó: A 'DataType' attribútum nem található.</value>
+  </data>
+  <data name="InMemorySet_WrongDictionaryIndex" xml:space="preserve">
+    <value>Belső hiba: Érvénytelen szótár adat a(z) '{0}' indexben.</value>
+  </data>
+  <data name="InMemorySet_XMLException_NotDataSetNode" xml:space="preserve">
+    <value>XML beolvasó: A csomópont nem dataset-ként van megjelölve.</value>
+  </data>
+  <data name="CriteriaAnalizer_EmptyJoinOperandId" xml:space="preserve">
+    <value>A JoinOperandId üres.</value>
+  </data>
+  <data name="Metadata_ClassAttributeExclusive" xml:space="preserve">
+    <value>A PersistentAttribute, NonPersistentAttribute és MapToAttribute exkluzív. Ezek közül csak egyet lehet használni a(z) '{0}' osztályban.</value>
+  </data>
+  <data name="InMemorySet_XMLException_XpathAttributeExpected" xml:space="preserve">
+    <value>XML beolvasó: Az 'xpath' attribútum szükséges.</value>
+  </data>
+  <data name="Metadata_NullSessionProvider" xml:space="preserve">
+    <value>Belső hiba: A munkamenet nem elérhető.</value>
+  </data>
+  <data name="InMemoryFull_DifferentColumnListLengths" xml:space="preserve">
+    <value>Belső hiba: eltérés a PKey és FKey oszlopok darabszámában.</value>
+  </data>
+  <data name="Loader_InternalErrorOrUnsupportedReferenceStructure" xml:space="preserve">
+    <value>Belső XPO hiba nem támogatott referencia struktúra: Idegen kulcs nem hivatkozhat olyan típusra, amelynek vannak leszármazottai. Objektum típus: '{0}', várt típus: '{1}'.</value>
+  </data>
+  <data name="Helpers_ResolveDataForCollection" xml:space="preserve">
+    <value>A tag nem gyűjtemény.</value>
+  </data>
+  <data name="InMemorySet_XMLException_ElementNodeNotFound" xml:space="preserve">
+    <value>XML beolvasó: Az 'element' csomópont nem található.</value>
+  </data>
+  <data name="SerializableObjectLayer_OptimisticLockFieldNotExists" xml:space="preserve">
+    <value>A(z) '{0}' ClassInfo-nak nincs OptimisticLockField definiálva.</value>
+  </data>
+  <data name="Metadata_NotCollection" xml:space="preserve">
+    <value>A(z) '{0}.{1}' nem gyűjtemény.</value>
+  </data>
+  <data name="InMemorySet_XMLException_ComplexTypeNodeNotFound" xml:space="preserve">
+    <value>XML beolvasó: A 'complexType' csomópont nem található.</value>
+  </data>
+  <data name="InMemorySet_XMLException_choiceNodeNotFound" xml:space="preserve">
+    <value>XML beolvasó: A 'choice' csomópont nem található.</value>
+  </data>
+  <data name="Collections_NotCollectionProperty" xml:space="preserve">
+    <value>{0}.{1} nem egy gyűjtemény tulajdonság. Az AssociationAttribute-tal kell címezni és az XPBaseCollection leszármazott típusának kell lennie. Valószínűleg a GetCollection-t használja akkor, amikor a GetList-et kellene.</value>
+  </data>
+  <data name="InMemorySet_ConstraintConflict" xml:space="preserve">
+    <value>A(z) '{0}' tábla '{1}' oszlopának FKey korlátozása megsértve.</value>
+  </data>
+  <data name="InMemory_MalformedAggregate" xml:space="preserve">
+    <value>Rosszul formázott összeg vagy belső XPO hiba.</value>
+  </data>
+  <data name="InMemorySet_NullDefaultValueNotAllowed" xml:space="preserve">
+    <value>A(z) '{0}' oszlop alapértelmezett étékei nem lehetnek NULL értékek.</value>
+  </data>
+  <data name="Session_MostProbablyYouAreTryingToInitiateAnObjectEx" xml:space="preserve">
+    <value>Valószínűleg egy objektum inicializálási műveletet próbál meg kezdeményezni, míg az előző objektum beolvasási művelet még nem fejeződött be. Halassza el a műveletet a Session.ObjectsLoaded vagy IXPObject.OnLoaded eseményig (amíg a Session.IsObjectsLoading értéke True). A hiba másik oka az lehet, hogy ugyanazon a munkameneten próbál meg szinkronban dolgozni különböző programszálakból.</value>
+  </data>
+  <data name="ObjectLayer_XPClassInfoNotFound" xml:space="preserve">
+    <value>A(z) '{0}' ClassInfo nem található.</value>
+  </data>
+  <data name="Session_InternalXPOError" xml:space="preserve">
+    <value>Belső XPO hiba.</value>
+  </data>
+  <data name="InMemory_IsReadOnly" xml:space="preserve">
+    <value>Az írás nem támogatott.</value>
+  </data>
+  <data name="Session_CrossThreadFailureDetected" xml:space="preserve">
+    <value>Szálak közti művelet történt. A(z) '{0}' nem thread-safe objektum, ne használja egyszerre külön szálakon</value>
+  </data>
+  <data name="PersistentAliasExpander_NonPersistentCriteriaThisValueMember" xml:space="preserve">
+    <value>Nem tud adatokat kérdezhet le kritérium "{0}" "{1}" nem állandó tulajdonságot használó segítségével. Ha a(z) "{0}" mint egy ValueMember az használja a keresés, kérjük használja egy üres ValueMember.</value>
+  </data>
+  <data name="Collections_GeneralPurposeCollectionInsteadOfRefCollection" xml:space="preserve">
+    <value>a kapcsolódó gyűjtemény tulajdonság érvénytelen végrehajtásának "{0}.{1}' van kinyomoz. Létre kell hozni a gyűjtemény keresztül a GetCollection metódus vagy konstruktor XPCollection (Session session objektum theOwner, XPMemberInfo refProperty).</value>
+  </data>
+  <data name="Collections_WantNotDeleteFilteredAggregateCollection" xml:space="preserve">
+    <value>Hozzárendelése kritériumok egy összesített gyűjtemény általában teszi a ritka rekordokat az adatbázisban. Egyértelmű "{1}.Kritériumok "tulajdonság törlése egy tulajdonos előtt objektum '{0}'.</value>
+  </data>
+  <data name="ConnectionProvider_TheAutoIncrementedKeyWithX0TypeIsNotSuppor" xml:space="preserve">
+    <value>A AutoIncremented kulcs-val "{0}" típus nem támogatott "{1}"</value>
+  </data>
+  <data name="Filtering_TheIifFunctionOperatorRequiresThree" xml:space="preserve">
+    <value>"Iif" funkció szereplő három vagy több argumentumot igényel. Argumentumok számát kell páratlan.</value>
+  </data>
+  <data name="Filtering_TheTypeNameArgumentOfTheX0FunctionIsNotFound" xml:space="preserve">
+    <value>A "typeName" érv "{0}" függvény nem található.</value>
+  </data>
+  <data name="Generator_TheUseOfATopLevelSingleAggregateIsProhibit" xml:space="preserve">
+    <value>a legfelső szintű "Egységes" összesített felhasználása tilos.</value>
+  </data>
+  <data name="Generator_TheUseOfNestedSingleAggregatesIsProhibited" xml:space="preserve">
+    <value>Beágyazott "Egyedülálló" aggregátumok alkalmazását tilos.</value>
+  </data>
+  <data name="LinqToXpo_DuplicateJoinOperatorFound" xml:space="preserve">
+    <value>Összekapcsoló operátor találtam duplikált.</value>
+  </data>
+  <data name="Metadata_AssociationInvalid_NonPersistentClassInTheAssociation" xml:space="preserve">
+    <value>az Egyesület attribútum nem használható "{0}.{1} "osztály"{2}"ugyanis nem tartós.</value>
+  </data>
+  <data name="Metadata_ConverterOnKeyOrReference" xml:space="preserve">
+    <value>A ValueConverter attribútum nem alkalmazható az "{0}.{1}' tulajdonság egy objektum kulcs vagy egy másik objektumra hivatkozást jelképező.</value>
+  </data>
+  <data name="MetaData_PersistentReferenceFound" xml:space="preserve">
+    <value>Nem állandó specifikus operáció van előad egy állandó osztály "{0}"</value>
+  </data>
+  <data name="MetaData_PropertyIsDuplicatedInIndexDeclaration" xml:space="preserve">
+    <value>a kettőzött "{0}" tulajdonság a ' {1} {2} {3} "{4} index nyilatkozatot.</value>
+  </data>
+  <data name="Security_SavingAnObjectWasProhibitedByTheRulesWProp" xml:space="preserve">
+    <value>Mentése a "{0}.{1}' tulajdonság érvényesítési szabályok tiltják.</value>
+  </data>
+  <data name="Session_DictConstractor" xml:space="preserve">
+    <value>Használata a munkamenet (XPDictionary szótár) kivitelező esetén meg kell adnia egy érvényes Session.ConnectionString a Session.Connect metódus meghívása előtt.</value>
+  </data>
+  <data name="LinqToXpo_SessionIsNull" xml:space="preserve">
+    <value>Munkamenet értéke null.</value>
+  </data>
+  <data name="LinqToXpo_TheX0MethodIsNotSupported" xml:space="preserve">
+    <value>A(z) {0} metódus nem támogatott.</value>
+  </data>
+  <data name="LinqToXpo_DoesnTSupportNestedJoinsWithLevel" xml:space="preserve">
+    <value>LinqToXpo nem támogatja a több mint két beágyazott csatlakozik. Ez nem befolyásolja a közös gróf illesztéseket a.</value>
+  </data>
+  <data name="LinqToXpo_SequenceContainsMoreThanOneElement" xml:space="preserve">
+    <value>Egynél több elemet tartalmaz.</value>
+  </data>
+  <data name="DroneDataStore_CommitNotSupported" xml:space="preserve">
+    <value>Nem tud elkövet megváltozik, mert az adatbázis-kapcsolat nincs konfigurálva (a helyettes adatbázis-szolgáltató jelenleg használatos). Csatlakozzon az adattároló leírtak szerint a http://help.devexpress.com/#CoreLibraries/CustomDocument2123</value>
+  </data>
+  <data name="LinqToXpo_GroupingWithACustomComparerIsNotSupported" xml:space="preserve">
+    <value>Nem támogatja a Csoportosítás és az egyéni összehasonlít.</value>
+  </data>
+  <data name="LinqToXpo_SkipOperationIsNotSupportedWithoutSorting" xml:space="preserve">
+    <value>Válogatás nélkül nem támogatott művelet a Skip.</value>
+  </data>
+  <data name="LinqToXpo_SortingIsNotSupportedForSelectManyOperatio" xml:space="preserve">
+    <value>Rendezés esetében nem támogatott a SelectMany művelet során sok-sok gyűjtemények.</value>
+  </data>
+</root>

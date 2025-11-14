@@ -1,0 +1,963 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ASPxSpreadsheetStringId.InsertImage" xml:space="preserve">
+    <value>Вставить изображение</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertImage_FromWeb" xml:space="preserve">
+    <value>Из интернета (URL)</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertImage_FromLocal" xml:space="preserve">
+    <value>С компьютера</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertImage_EnterUrl" xml:space="preserve">
+    <value>Введите веб-адрес изображения</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertImage_UploadInstructions" xml:space="preserve">
+    <value>Обзор Вашего компьютера для загрузки изображения</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertImage_ImagePreview" xml:space="preserve">
+    <value>Просмотр изображения</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertImage_ImageManager_Header" xml:space="preserve">
+    <value>Выбор изображения</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertLink" xml:space="preserve">
+    <value>Вставить ссылку</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ChangeLink" xml:space="preserve">
+    <value>Изменить ссылку</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertLink_URL" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertLink_WebPage" xml:space="preserve">
+    <value>Web-страница</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertLink_Email" xml:space="preserve">
+    <value>Адрес электронной почты</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertLink_EmailTo" xml:space="preserve">
+    <value>Адресат</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertLink_Subject" xml:space="preserve">
+    <value>Тема</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertLink_Text" xml:space="preserve">
+    <value>Текст</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertLink_ToolTip" xml:space="preserve">
+    <value>Подсказка</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.OpenFile" xml:space="preserve">
+    <value>Открыть файл электронной таблицы</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.OpenFile_FromServer" xml:space="preserve">
+    <value>С сервера</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.OpenFile_FromComputer" xml:space="preserve">
+    <value>С компьютера</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.OpenFile_ChooseInstruction" xml:space="preserve">
+    <value>Выбрать файл электронной таблицы с сервера</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.OpenFile_UploadInstruction" xml:space="preserve">
+    <value>Обзор Вашего компьютера для загрузки файла электронной таблицы</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.OpenFile_FileManager_Header" xml:space="preserve">
+    <value>Выбрать файл электронной таблицы</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.RenameSheet" xml:space="preserve">
+    <value>Переименовать лист</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.RenameSheet_SheetName" xml:space="preserve">
+    <value>Имя листа</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SaveFile" xml:space="preserve">
+    <value>Сохранить файл электронной таблицы как</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SaveFile_FileAlreadyExists" xml:space="preserve">
+    <value>уже существует. Заменить?</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SaveFile_SaveFileToServer" xml:space="preserve">
+    <value>Сохранить файл на этом сервере</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SaveFile_DownloadCopy" xml:space="preserve">
+    <value>Скачать копию</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SaveFile_FolderPath" xml:space="preserve">
+    <value>Путь к папке</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SaveFile_FileName" xml:space="preserve">
+    <value>Имя файла</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SaveFile_FileType" xml:space="preserve">
+    <value>Тип файла</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SaveFile_DownloadInstruction" xml:space="preserve">
+    <value>Выберите тип скачиваемого файла</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SaveFile_FolderManager_Header" xml:space="preserve">
+    <value>Выберите каталог назначения или существующий файл</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.RowHeight" xml:space="preserve">
+    <value>Высота строки</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.RowHeight_Caption" xml:space="preserve">
+    <value>Высота строки</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ColumnWidth" xml:space="preserve">
+    <value>Ширина столбца</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ColumnWidth_Caption" xml:space="preserve">
+    <value>Ширина столбца</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DefaultColumnWidth" xml:space="preserve">
+    <value>Стандартная ширина</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DefaultColumnWidth_Caption" xml:space="preserve">
+    <value>Стандартная ширина столбца</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.UnhideSheet" xml:space="preserve">
+    <value>Показать</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.UnhideSheet_Caption" xml:space="preserve">
+    <value>Скрыть лист</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ChangeChartType" xml:space="preserve">
+    <value>Изменить тип графика</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ChartSelectData" xml:space="preserve">
+    <value>Выбрать источник данных</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ChartSelectData_Caption" xml:space="preserve">
+    <value>Диапазон данных графика</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ModifyChartLayout" xml:space="preserve">
+    <value>Расположение графика</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ChartChangeTitle" xml:space="preserve">
+    <value>Изменить заголовок графика</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ChartChangeTitle_Caption" xml:space="preserve">
+    <value>Заголовок графика</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ChartChangeHorizontalAxisTitle" xml:space="preserve">
+    <value>Изменить заголовок горизонтальной оси</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ChartChangeHorizontalAxisTitle_Caption" xml:space="preserve">
+    <value>Заголовок горизонтальной оси</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ChartChangeVerticalAxisTitle" xml:space="preserve">
+    <value>Изменить заголовок вертикальной оси</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ChartChangeVerticalAxisTitle_Caption" xml:space="preserve">
+    <value>Заголовок вертикальной оси</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ModifyChartStyle" xml:space="preserve">
+    <value>Стили графика</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_FindTab_Caption" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_FindWhat" xml:space="preserve">
+    <value>Найти</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_MatchCase" xml:space="preserve">
+    <value>Учитывать регистр</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_Search" xml:space="preserve">
+    <value>Просматривать</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_Search_ByRows" xml:space="preserve">
+    <value>По строкам</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_Search_ByColumns" xml:space="preserve">
+    <value>По столбцам</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_LookIn" xml:space="preserve">
+    <value>Область поиска</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_LookIn_Formulas" xml:space="preserve">
+    <value>Формулы</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_LookIn_Values" xml:space="preserve">
+    <value>Значения</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_MatchCellContent" xml:space="preserve">
+    <value>Ячейка целиком</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_SearchResults" xml:space="preserve">
+    <value>Результаты поиска</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_SearchResults_CellHeader" xml:space="preserve">
+    <value>Ячейка</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_SearchResults_ValueHeader" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ButtonInsert" xml:space="preserve">
+    <value>Вставить</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ButtonChange" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ButtonCancel" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ButtonOK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ButtonOpen" xml:space="preserve">
+    <value>Открыть</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ButtonSaveAs" xml:space="preserve">
+    <value>Сохранить как</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ButtonSelect" xml:space="preserve">
+    <value>Выбрать</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ButtonDownload" xml:space="preserve">
+    <value>Скачать</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ButtonFindAll" xml:space="preserve">
+    <value>Найти все</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.Invalid_FileName" xml:space="preserve">
+    <value>Некорректное имя файла</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.Invalid_EMail" xml:space="preserve">
+    <value>Некорректный адрес электронной почты</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.Invalid_URL" xml:space="preserve">
+    <value>Некорректный адрес ссылки</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.BorderLineStyle_Thin" xml:space="preserve">
+    <value>Тонкий</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.BorderLineStyle_Dashed" xml:space="preserve">
+    <value>Штрих</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.BorderLineStyle_Dotted" xml:space="preserve">
+    <value>Пунктир</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.BorderLineStyle_Double" xml:space="preserve">
+    <value>Двойной</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.BorderLineStyle_Medium" xml:space="preserve">
+    <value>Средний</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.BorderLineStyle_MediumDashed" xml:space="preserve">
+    <value>Средний штрих</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.BorderLineStyle_MediumDotted" xml:space="preserve">
+    <value>Средний пунктир</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.BorderLineStyle_Thick" xml:space="preserve">
+    <value>Толстый</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ViewGroup_Title" xml:space="preserve">
+    <value>Вид</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FullScreenCommand_Text" xml:space="preserve">
+    <value>На весь экран</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FullScreenCommand_Description" xml:space="preserve">
+    <value>Просмотреть документ в полноэкранном режиме.</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.RequiredFieldError" xml:space="preserve">
+    <value>Это поле обязательно</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ExternalRibbonControl_NotFound" xml:space="preserve">
+    <value>Внешний риббон контрол '{0}' не найден.</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ConfirmOnLosingChanges" xml:space="preserve">
+    <value>Вы уверены, что хотите выполнить это действие? Все несохраненные данные будут потеряны.</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation" xml:space="preserve">
+    <value>Проверка вводимых значений</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_RetryButton" xml:space="preserve">
+    <value>Повторить</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_YesButton" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_NoButton" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.Caption_DarkTableStyleCategory" xml:space="preserve">
+    <value>Тёмный</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.Caption_DarkTableStyleNamePart" xml:space="preserve">
+    <value>Тёмный</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.Caption_LightTableStyleCategory" xml:space="preserve">
+    <value>Светлый</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.Caption_LightTableStyleNamePart" xml:space="preserve">
+    <value>Светлый</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.Caption_MediumTableStyleCategory" xml:space="preserve">
+    <value>Средний</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.Caption_MediumTableStyleNamePart" xml:space="preserve">
+    <value>Средний</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.Caption_PrefixTableStyleNamePart" xml:space="preserve">
+    <value>Стиль таблицы:</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomFilter_OperatorAnd" xml:space="preserve">
+    <value>И</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomFilter_OperatorOr" xml:space="preserve">
+    <value>ИЛИ</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomFilter_QuestionSignDescription" xml:space="preserve">
+    <value>Знак вопроса "?" обозначает любой знак</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomFilter_ShowRows" xml:space="preserve">
+    <value>Показать только те строки, значения которых</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomFilter_StarSignDescription" xml:space="preserve">
+    <value>Знак "*" обозначает последовательность любых знаков</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataFilterSimple" xml:space="preserve">
+    <value>Автофильтр</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FilterTop10_Show" xml:space="preserve">
+    <value>Показать</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormulaBar_CancelButtonTooltip" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormulaBar_EnterButtonTooltip" xml:space="preserve">
+    <value>Ввод</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ModifyTableStyle" xml:space="preserve">
+    <value>Стили таблицы</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.MoveOrCopySheet" xml:space="preserve">
+    <value>Переместить или скопировать</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.MoveOrCopySheet_CreateCopy" xml:space="preserve">
+    <value>Создать копию</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.MoveOrCopySheet_MoveSheetsCaption" xml:space="preserve">
+    <value>Переместить выбранные листы перед листом</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup" xml:space="preserve">
+    <value>Параметры страницы</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_HeaderFooterTab_AlignWithMargins" xml:space="preserve">
+    <value>Выровнять относительно полей страницы</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_HeaderFooterTab_Caption" xml:space="preserve">
+    <value>Колонтитулы</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_HeaderFooterTab_DifferentFirst" xml:space="preserve">
+    <value>Особый колонтитул для первой страницы</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_HeaderFooterTab_DifferentOddEven" xml:space="preserve">
+    <value>Разные колонтитулы для четных и нечетных страниц</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_HeaderFooterTab_Footer" xml:space="preserve">
+    <value>Нижний колонтитул</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_HeaderFooterTab_Header" xml:space="preserve">
+    <value>Верхний колонтитул</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_HeaderFooterTab_ScaleWithDoc" xml:space="preserve">
+    <value>Изменять масштаб вместе с документом</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_MarginsTab_Bottom" xml:space="preserve">
+    <value>нижнее</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_MarginsTab_Caption" xml:space="preserve">
+    <value>Поля</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_MarginsTab_CenterHorizontally" xml:space="preserve">
+    <value>горизонтально</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_MarginsTab_CenterOnPageGroup" xml:space="preserve">
+    <value>Центрировать на странице</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_MarginsTab_CenterVertically" xml:space="preserve">
+    <value>вертикально</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_MarginsTab_Footer" xml:space="preserve">
+    <value>нижнего колонтитула</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_MarginsTab_Header" xml:space="preserve">
+    <value>верхнего колонтитула</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_MarginsTab_Left" xml:space="preserve">
+    <value>левое</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_MarginsTab_Right" xml:space="preserve">
+    <value>правое</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_MarginsTab_Top" xml:space="preserve">
+    <value>верхнее</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_AdjustTo" xml:space="preserve">
+    <value>установить:</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_Caption" xml:space="preserve">
+    <value>Страница</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_FirstPageNumber" xml:space="preserve">
+    <value>Номер первой страницы:</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_FitTo" xml:space="preserve">
+    <value>разместить не более чем на:</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_FitToHeight" xml:space="preserve">
+    <value>стр. в высоту</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_FitToWidth" xml:space="preserve">
+    <value>стр. в ширину и</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_OrientationGroup" xml:space="preserve">
+    <value>Ориентация</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_OrientationLandscape" xml:space="preserve">
+    <value>альбомная</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_OrientationPortrait" xml:space="preserve">
+    <value>книжная</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_PaperSize" xml:space="preserve">
+    <value>Размер бумаги:</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_PrintQuality" xml:space="preserve">
+    <value>Качество печати:</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_Scale" xml:space="preserve">
+    <value>% от натуральной величины</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_ScalingGroup" xml:space="preserve">
+    <value>Масштаб</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_Print" xml:space="preserve">
+    <value>Печать...</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_Caption" xml:space="preserve">
+    <value>Лист</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_CellErrorAs" xml:space="preserve">
+    <value>ошибки ячеек как</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_Comments" xml:space="preserve">
+    <value>примечания</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_Draft" xml:space="preserve">
+    <value>черновая</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_Gridlines" xml:space="preserve">
+    <value>сетка</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_PageOrderGroup" xml:space="preserve">
+    <value>Последовательность вывода страниц</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_PageOrder_DownThenOver" xml:space="preserve">
+    <value>вниз, затем вправо</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_PageOrder_OverThenDown" xml:space="preserve">
+    <value>вправо, затем вниз</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_PrintArea" xml:space="preserve">
+    <value>Выводить на печать диапазон</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_PrintAreaErrorText" xml:space="preserve">
+    <value>Мы обнаружили проблему в этой формуле. Нам не удается найти ссылку на диапазон или определенное имя.</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_PrintGroup" xml:space="preserve">
+    <value>Печать</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_PrintHeadings" xml:space="preserve">
+    <value>заголовки строк и столбцов</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.TableSelectData" xml:space="preserve">
+    <value>Создание таблицы</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.TableSelectData_Caption" xml:space="preserve">
+    <value>Укажите расположение данных таблицы:</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.TableSelectData_TableHasHeaders" xml:space="preserve">
+    <value>Таблица с заголовками</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FileManager_OpenedFileDeleteErrorText" xml:space="preserve">
+    <value>Не удалось удалить файл. Он уже открыт другим пользователем.</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_CenterFooter" xml:space="preserve">
+    <value>Нижний колонтитул в центре</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_CenterHeader" xml:space="preserve">
+    <value>Верхний колонтитул в центре</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_HelpText" xml:space="preserve">
+    <value>Чтобы поместить номер страницы, дату, время, имя файла, путь к файлу или имя листа, установите курсор на место вставки и нажмите нужную кнопку</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_InsertDate" xml:space="preserve">
+    <value>Вставить дату</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_InsertFileName" xml:space="preserve">
+    <value>Вставить имя файла</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_InsertFilePath" xml:space="preserve">
+    <value>Вставить путь к файлу</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_InsertPageNumber" xml:space="preserve">
+    <value>Вставить номер страницы</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_InsertPageTotal" xml:space="preserve">
+    <value>Вставить число страниц</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_InsertSheetName" xml:space="preserve">
+    <value>Вставить имя листа</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_InsertTime" xml:space="preserve">
+    <value>Вставить время</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_LeftFooter" xml:space="preserve">
+    <value>Нижний колонтитул слева</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_LeftHeader" xml:space="preserve">
+    <value>Верхний колонтитул слева</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_RightFooter" xml:space="preserve">
+    <value>Нижний колонтитул справа</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_RightHeader" xml:space="preserve">
+    <value>Верхний колонтитул справа</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomAutoFilter" xml:space="preserve">
+    <value>Настраиваемый автофильтр</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormatAsTable" xml:space="preserve">
+    <value>Форматирование таблицы</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormatCells" xml:space="preserve">
+    <value>Формат ячеек</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormatCells_NumberTab_Caption" xml:space="preserve">
+    <value>Число</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormatCells_NumberTab_Category" xml:space="preserve">
+    <value>Категория</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormatCells_NumberTab_CurrencySymbol" xml:space="preserve">
+    <value>Символ</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormatCells_NumberTab_DecimalPlaces" xml:space="preserve">
+    <value>Число десятичных знаков</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormatCells_NumberTab_DecimalPlacesErrorText" xml:space="preserve">
+    <value>Введено недопустимое значение. Следует ввести число.</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormatCells_NumberTab_Locate" xml:space="preserve">
+    <value>Язык (местоположение)</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormatCells_NumberTab_Sample" xml:space="preserve">
+    <value>Образец</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormatCells_NumberTab_Type" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InvalidFontSize" xml:space="preserve">
+    <value>Размер шрифта должен быть в интервале от 1 до 409 пунктов</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.MessageBox_ErrorTitle" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.MessageBox_InformationTitle" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.MessageBox_QuestionTitle" xml:space="preserve">
+    <value>Вопрос</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.MessageBox_WarningTitle" xml:space="preserve">
+    <value>Предупреждение</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.OpeningAndOverstoreImpossibleError" xml:space="preserve">
+    <value>Открытие и сохранение документа невозможно, так как не задана рабочая папка</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SelectTableStyle" xml:space="preserve">
+    <value>Выбрать стиль таблицы</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormatCells_CustomFormatDescription" xml:space="preserve">
+    <value>Выберите один из существующих в документе форматов</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Failed_Caption" xml:space="preserve">
+    <value>Введенное значение неверно</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FileManager_OpenedFileMoveErrorText" xml:space="preserve">
+    <value>Не удалось переместить файл. Он уже открыт другим пользователем.</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FileManager_OpenedFileRenameErrorText" xml:space="preserve">
+    <value>Не удалось переименовать файл. Он уже открыт другим пользователем.</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormulaValidation_Failed_Caption" xml:space="preserve">
+    <value>Введенная формула неверна</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.MessageBox_SessionExpired" xml:space="preserve">
+    <value>Время сессии истекло. Пожалуйста, обновите страницу чтобы продолжить.</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Settings_Data" xml:space="preserve">
+    <value>Данные</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Alert_ErrorMessageTitle" xml:space="preserve">
+    <value>Заголовок</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Message_InputMessageTitle" xml:space="preserve">
+    <value>Заголовок</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_ClearAll" xml:space="preserve">
+    <value>Очистить все</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Settings_Caption" xml:space="preserve">
+    <value>Параметры</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Alert_Style" xml:space="preserve">
+    <value>Вид</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Settings_Allow" xml:space="preserve">
+    <value>Разрешить</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DocumentViewsGroup_Title" xml:space="preserve">
+    <value>Представления документа</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.EditingViewCommand_Text" xml:space="preserve">
+    <value>Режим редактирования</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ReadingViewCommand_Text" xml:space="preserve">
+    <value>Режим чтения</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SaveFile_PathDoesNotExist" xml:space="preserve">
+    <value>
+      Этот путь не существует.
+      Проверьте правильность указанаия пути и повторите попытку.
+    </value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SaveFile_WrongDocumentPath" xml:space="preserve">
+    <value>Невозможно сохранить документ по указанному пути.</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SaveFile_WrongDocumentExtension" xml:space="preserve">
+    <value>Невозможно сохранить документ указанного формата.</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ButtonUpdate" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ReadingViewTab_Title" xml:space="preserve">
+    <value>Режим чтения</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ReadingViewGroup_Title" xml:space="preserve">
+    <value>Режим чтения</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DownloadCopy_Text" xml:space="preserve">
+    <value>Скачать</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DownloadCopy_Description" xml:space="preserve">
+    <value>Скачать копию документа.</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Settings_GroupCaption" xml:space="preserve">
+    <value>Условие проверки</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Settings_IgnoreBlank" xml:space="preserve">
+    <value>Игнорировать пустые ячейки</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Settings_InCellDropDown" xml:space="preserve">
+    <value>Список допустимых значений</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Settings_ApplyChanges" xml:space="preserve">
+    <value>Распространить изменения на другие ячейки с тем же уловием</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Message_Caption" xml:space="preserve">
+    <value>Сообщение для ввода</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Message_ShowMessage" xml:space="preserve">
+    <value>Отображать подсказку, если ячейка является текущей</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Message_ShowDescription" xml:space="preserve">
+    <value>При выборе ячейки вывести следующее сообщение</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Message_InputMessage" xml:space="preserve">
+    <value>Сообщение</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Alert_Caption" xml:space="preserve">
+    <value>Сообщение об ошибке</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Alert_ShowAlert" xml:space="preserve">
+    <value>Выводить сообщение об ошибке</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Alert_ShowDescription" xml:space="preserve">
+    <value>При попытке ввода неверных данных отображать сообщение</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SheetTabs_NewSheet_Tooltip" xml:space="preserve">
+    <value>Новый лист</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTable">
+    <value>Создание сводной таблицы</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTable_DataRangeDescription" xml:space="preserve">
+    <value>Выберете данные для анализа</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTable_DataRangeCaption" xml:space="preserve">
+    <value>Выбрать таблицу или диапазон</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTable_ReportPlacedDescription" xml:space="preserve">
+    <value>Укажите, куда следует поместить отчет сводной таблицы</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTable_ReportPlacedNewWorksheetCaption" xml:space="preserve">
+    <value>На новый лист</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTable_ReportPlacedExistingWorksheetCaption" xml:space="preserve">
+    <value>На существующий лист</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTable_ReportPlacedLocationCaption" xml:space="preserve">
+    <value>Диапазон</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ChangeDataSourcePivotTable" xml:space="preserve">
+    <value>Изменить источник данных свободной таблицы</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.MovePivotTable" xml:space="preserve">
+    <value>Переместить сводную таблицу</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableFieldList" xml:space="preserve">
+    <value>Поля сводной таблицы</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableFieldList_SourceList_Caption" xml:space="preserve">
+    <value>Выберите поля для добавления в отчет</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableFieldList_Destination_Description" xml:space="preserve">
+    <value>Перетащите поля в нужную область</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableFieldList_Filters" xml:space="preserve">
+    <value>ФИЛЬТРЫ</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableFieldList_Columns" xml:space="preserve">
+    <value>КОЛОННЫ</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableFieldList_Rows" xml:space="preserve">
+    <value>СТРОКИ</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableFieldList_Values" xml:space="preserve">
+    <value>ЗНАЧЕНИЯ</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableFieldList_LayoutUpdateCaption" xml:space="preserve">
+    <value>Отложить обновление макета</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableDateFilter" xml:space="preserve">
+    <value>Фильтр по дате</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableDateFilter_Description" xml:space="preserve">
+    <value>Показывать даты, для которых выполняется следующее условие</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableDateFilter_BetweenSeparator" xml:space="preserve">
+    <value>и</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableValueFilter" xml:space="preserve">
+    <value>Фильтр по значению</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableValueFilter_Description" xml:space="preserve">
+    <value>Показывать элементы, для которых выполняется следующее условие</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableTop10Filter" xml:space="preserve">
+    <value>Фильтр «Первые 10»</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableTop10Filter_Description" xml:space="preserve">
+    <value>Показать</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableTop10Filter_BetweenSeparator" xml:space="preserve">
+    <value>по</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableLabelFilter" xml:space="preserve">
+    <value>Фильтр по подписи</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableLabelFilter_Description" xml:space="preserve">
+    <value>Показывать элементы, для подписей которых выполняется следующее условие</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableLabelFilter_BetweenSeparator" xml:space="preserve">
+    <value>и</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableItemFilter" xml:space="preserve">
+    <value>Фильтр по полю</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableItemFilter_SelectMultipleItems" xml:space="preserve">
+    <value>Выбрать несколько элементов</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Alert_ErrorMessage" xml:space="preserve">
+    <value>Сообщение</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_HeaderFooterTab_CustomHeader" xml:space="preserve">
+    <value>Создать верхний колонтитул...</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_HeaderFooterTab_CustomFooter" xml:space="preserve">
+    <value>Создать нижний колонтитул...</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomFooter" xml:space="preserve">
+    <value>Нижний колонтитул</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeader" xml:space="preserve">
+    <value>Верхний колонтитул</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_AllPagesTab_Header_Caption" xml:space="preserve">
+    <value>Верхний колонтитул</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_FirstPageTab_Header_Caption" xml:space="preserve">
+    <value>Верхний клонтитул первой страницы</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_OddPageTab_Header_Caption" xml:space="preserve">
+    <value>Верхний колонтитул нечетной страницы</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_EvenPageTab_Header_Caption" xml:space="preserve">
+    <value>Верхний колонтитул четной страницы</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_AllPagesTab_Footer_Caption" xml:space="preserve">
+    <value>Нижний колонтитул</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_FirstPageTab_Footer_Caption" xml:space="preserve">
+    <value>Нижний колонтитул первой страницы</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_OddPageTab_Footer_Caption" xml:space="preserve">
+    <value>Нижний колонтитул нечетной страницы</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_EvenPageTab_Footer_Caption" xml:space="preserve">
+    <value>Нижний колонтитул четной страницы</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ModifyTableStyle_Command_Caption" xml:space="preserve">
+    <value>Изменить стиль</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.MenuCmd_SelectCustomDate" xml:space="preserve">
+    <value>Выбрать пользовательскую дату</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertImage_Browse" xml:space="preserve">
+    <value>Обзор</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FilterSimple_SelectAll" xml:space="preserve">
+    <value>Выбрать все</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertLink_PlaceInThisDocument" xml:space="preserve">
+    <value>Место в этом документе</value>
+  </data>
+</root>

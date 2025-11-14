@@ -1,0 +1,636 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GridStringId.FileIsNotFoundError" xml:space="preserve">
+    <value>Tiedostoa {0} ei löydy</value>
+  </data>
+  <data name="GridStringId.ColumnViewExceptionMessage" xml:space="preserve">
+    <value>Haluatko korjata arvon?</value>
+  </data>
+  <data name="GridStringId.CustomizationCaption" xml:space="preserve">
+    <value>Muokkaus</value>
+  </data>
+  <data name="GridStringId.CustomizationColumns" xml:space="preserve">
+    <value>Sarakkeet</value>
+  </data>
+  <data name="GridStringId.CustomizationBands" xml:space="preserve">
+    <value>Lohko</value>
+  </data>
+  <data name="GridStringId.PopupFilterAll" xml:space="preserve">
+    <value>(Kaikkil)</value>
+  </data>
+  <data name="GridStringId.PopupFilterCustom" xml:space="preserve">
+    <value>(Mukauta)</value>
+  </data>
+  <data name="GridStringId.PopupFilterBlanks" xml:space="preserve">
+    <value>(Tyhjät)</value>
+  </data>
+  <data name="GridStringId.PopupFilterNonBlanks" xml:space="preserve">
+    <value>(Ei tyhjiä)</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogFormCaption" xml:space="preserve">
+    <value>Suodatus</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogCaption" xml:space="preserve">
+    <value>Näytä rivit jossa:</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogRadioAnd" xml:space="preserve">
+    <value>&amp;Ja</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogRadioOr" xml:space="preserve">
+    <value>&amp;Tai</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogOkButton" xml:space="preserve">
+    <value>&amp;Ok</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogClearFilter" xml:space="preserve">
+    <value>&amp;Poista suodatus</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogCancelButton" xml:space="preserve">
+    <value>&amp;Peruuta</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialog2FieldCheck" xml:space="preserve">
+    <value>Kenttä</value>
+  </data>
+  <data name="GridStringId.MenuFooterSum" xml:space="preserve">
+    <value>Summa</value>
+  </data>
+  <data name="GridStringId.MenuFooterMin" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="GridStringId.MenuFooterMax" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="GridStringId.MenuFooterCount" xml:space="preserve">
+    <value>Määrä</value>
+  </data>
+  <data name="GridStringId.MenuFooterAverage" xml:space="preserve">
+    <value>Keskiarvo</value>
+  </data>
+  <data name="GridStringId.MenuFooterNone" xml:space="preserve">
+    <value>Tyhjä</value>
+  </data>
+  <data name="GridStringId.MenuFooterSumFormat" xml:space="preserve">
+    <value>SUMMA={0:#.##}</value>
+  </data>
+  <data name="GridStringId.MenuFooterMinFormat" xml:space="preserve">
+    <value>MIN={0}</value>
+  </data>
+  <data name="GridStringId.MenuFooterMaxFormat" xml:space="preserve">
+    <value>MAX={0}</value>
+  </data>
+  <data name="GridStringId.MenuFooterCountFormat" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="GridStringId.MenuFooterCountGroupFormat" xml:space="preserve">
+    <value>Määrä={0}</value>
+  </data>
+  <data name="GridStringId.MenuFooterAverageFormat" xml:space="preserve">
+    <value>KA={0:#.##}</value>
+  </data>
+  <data name="GridStringId.MenuFooterCustomFormat" xml:space="preserve">
+    <value>Tapa={0}</value>
+  </data>
+  <data name="GridStringId.MenuColumnSortAscending" xml:space="preserve">
+    <value>Lajittele nousevasti</value>
+  </data>
+  <data name="GridStringId.MenuColumnSortDescending" xml:space="preserve">
+    <value>Lajittele laskevasti</value>
+  </data>
+  <data name="GridStringId.MenuColumnClearSorting" xml:space="preserve">
+    <value>Poista lajittelu</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroup" xml:space="preserve">
+    <value>Ryhmittele tämän sarakkeen mukaan</value>
+  </data>
+  <data name="GridStringId.MenuColumnUnGroup" xml:space="preserve">
+    <value>Poista ryhmittely</value>
+  </data>
+  <data name="GridStringId.MenuColumnColumnCustomization" xml:space="preserve">
+    <value>Sarake valitsin</value>
+  </data>
+  <data name="GridStringId.MenuColumnBestFit" xml:space="preserve">
+    <value>Sovita</value>
+  </data>
+  <data name="GridStringId.MenuColumnFilter" xml:space="preserve">
+    <value>Voi suodattaa</value>
+  </data>
+  <data name="GridStringId.MenuColumnClearFilter" xml:space="preserve">
+    <value>Poista suodatus</value>
+  </data>
+  <data name="GridStringId.MenuColumnBestFitAllColumns" xml:space="preserve">
+    <value>Sovita (kaikki sarakkeet)</value>
+  </data>
+  <data name="GridStringId.MenuGroupPanelFullExpand" xml:space="preserve">
+    <value>Näytä kaikki</value>
+  </data>
+  <data name="GridStringId.MenuGroupPanelFullCollapse" xml:space="preserve">
+    <value>Piilota kaikki</value>
+  </data>
+  <data name="GridStringId.MenuGroupPanelClearGrouping" xml:space="preserve">
+    <value>Poista ryhmittely</value>
+  </data>
+  <data name="GridStringId.PrintDesignerBandedView" xml:space="preserve">
+    <value>Tulostin asetukset (Lohko-näkymä)</value>
+  </data>
+  <data name="GridStringId.PrintDesignerGridView" xml:space="preserve">
+    <value>Tulostinasetukset (Taulukko-näkymä)</value>
+  </data>
+  <data name="GridStringId.PrintDesignerCardView" xml:space="preserve">
+    <value>Tulostinasetukset (Kortti-näkymä)</value>
+  </data>
+  <data name="GridStringId.PrintDesignerBandHeader" xml:space="preserve">
+    <value>Lohkon otsikko</value>
+  </data>
+  <data name="GridStringId.PrintDesignerDescription" xml:space="preserve">
+    <value>Aseta tulostusasetuksia näkymälle</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupBox" xml:space="preserve">
+    <value>Näytä ryhmittelyalue</value>
+  </data>
+  <data name="GridStringId.CardViewNewCard" xml:space="preserve">
+    <value>Uusi tietue</value>
+  </data>
+  <data name="GridStringId.CardViewQuickCustomizationButton" xml:space="preserve">
+    <value>Mukauta</value>
+  </data>
+  <data name="GridStringId.CardViewQuickCustomizationButtonFilter" xml:space="preserve">
+    <value>Suodata</value>
+  </data>
+  <data name="GridStringId.CardViewQuickCustomizationButtonSort" xml:space="preserve">
+    <value>Lajittele:</value>
+  </data>
+  <data name="GridStringId.GridGroupPanelText" xml:space="preserve">
+    <value>Raahaa sarakkeen otsikko ryhmittelyyn</value>
+  </data>
+  <data name="GridStringId.GridNewRowText" xml:space="preserve">
+    <value>Lisää uusi rivi napsauttamalla tätä...</value>
+  </data>
+  <data name="GridStringId.GridOutlookIntervals" xml:space="preserve">
+    <value>Vanhemmat;Viime kuukausi;Kolme viikkoa sitten;Kaksi viikkoa sitten;viime viikko;;;;;;;;Eilen;Tänään;Huomenna;;;;;;;;Ensi viikko;Kahden viikon päästä;Kolmen viikon päästä;Ensi kuussa;Ensi kuun jälkeen;Aikaisemmin tässä kuussa;Myöhemmin tässä kuussa;</value>
+  </data>
+  <data name="GridStringId.FilterBuilderApplyButton" xml:space="preserve">
+    <value>&amp;Hyväksy</value>
+  </data>
+  <data name="GridStringId.FilterBuilderCancelButton" xml:space="preserve">
+    <value>&amp;Peruuta</value>
+  </data>
+  <data name="GridStringId.FilterBuilderCaption" xml:space="preserve">
+    <value>Mukauta suodatusta</value>
+  </data>
+  <data name="GridStringId.FilterBuilderOkButton" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="GridStringId.FilterPanelCustomizeButton" xml:space="preserve">
+    <value>Muokkaa suodatusta</value>
+  </data>
+  <data name="GridStringId.MenuColumnFilterEditor" xml:space="preserve">
+    <value>Suodatus</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelPadding" xml:space="preserve">
+    <value>Täyte</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupLayout" xml:space="preserve">
+    <value>Asettelu</value>
+  </data>
+  <data name="GridStringId.EditFormCancelButton" xml:space="preserve">
+    <value>Peruuta</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorFormCancelButton" xml:space="preserve">
+    <value>Peruuta</value>
+  </data>
+  <data name="GridStringId.LayoutViewCustomizeBtnHint" xml:space="preserve">
+    <value>Muokkaus</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupCustomization" xml:space="preserve">
+    <value>Muokkaus</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorFormOkButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="GridStringId.MenuColumnCustomSummaryTypeDescription" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupIntervalNone" xml:space="preserve">
+    <value>Tyhjä</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonCancel" xml:space="preserve">
+    <value>&amp;Peruuta</value>
+  </data>
+  <data name="GridStringId.FindControlFindButton" xml:space="preserve">
+    <value>Etsi</value>
+  </data>
+  <data name="GridStringId.WindowErrorCaption" xml:space="preserve">
+    <value>Virhe</value>
+  </data>
+  <data name="GridStringId.MenuColumnFilterModeValue" xml:space="preserve">
+    <value>Arvo</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupIntervalDay" xml:space="preserve">
+    <value>Päivä</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonApply" xml:space="preserve">
+    <value>&amp;Hyväksy</value>
+  </data>
+  <data name="GridStringId.FindControlClearButton" xml:space="preserve">
+    <value>Tyhjennä</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorSummaryMax" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="GridStringId.MenuColumnMaxSummaryTypeDescription" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorSummaryMin" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="GridStringId.MenuColumnMinSummaryTypeDescription" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorSummaryAverage" xml:space="preserve">
+    <value>Keskiarvo</value>
+  </data>
+  <data name="GridStringId.MenuColumnAverageSummaryTypeDescription" xml:space="preserve">
+    <value>Keskiarvo</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorSummaryCount" xml:space="preserve">
+    <value>Määrä</value>
+  </data>
+  <data name="GridStringId.MenuColumnCountSummaryTypeDescription" xml:space="preserve">
+    <value>Määrä</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorSummarySum" xml:space="preserve">
+    <value>Summa</value>
+  </data>
+  <data name="GridStringId.MenuColumnSumSummaryTypeDescription" xml:space="preserve">
+    <value>Summa</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupIntervalMonth" xml:space="preserve">
+    <value>Kuukausi</value>
+  </data>
+  <data name="GridStringId.MenuColumnFilterMode" xml:space="preserve">
+    <value>Suodatustila</value>
+  </data>
+  <data name="GridStringId.MenuColumnFindFilterHide" xml:space="preserve">
+    <value>Piilota hakupaneeli</value>
+  </data>
+  <data name="GridStringId.MenuColumnFindFilterShow" xml:space="preserve">
+    <value>Näytä hakupaneeli</value>
+  </data>
+  <data name="GridStringId.MenuColumnRemoveColumn" xml:space="preserve">
+    <value>Poista tämä sarake</value>
+  </data>
+  <data name="GridStringId.CardViewCaptionFormat" xml:space="preserve">
+    <value>Tietue nro {0}</value>
+  </data>
+  <data name="GridStringId.CheckboxSelectorColumnCaption" xml:space="preserve">
+    <value>Valinta</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogEmptyOperator" xml:space="preserve">
+    <value>(Valitse operaattori)</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogEmptyValue" xml:space="preserve">
+    <value>(Kirjoita arvo)</value>
+  </data>
+  <data name="GridStringId.EditFormSaveMessage" xml:space="preserve">
+    <value>Tietoja on muutettu. Haluatko tallentaa muutokset?</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorFormItemsTabCaption" xml:space="preserve">
+    <value>Kohteita</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorFormOrderTabCaption" xml:space="preserve">
+    <value>Järjestys</value>
+  </data>
+  <data name="GridStringId.LayoutViewCarouselModeBtnHint" xml:space="preserve">
+    <value>Karusellitila</value>
+  </data>
+  <data name="GridStringId.LayoutViewColumnModeBtnHint" xml:space="preserve">
+    <value>Yksi sarake</value>
+  </data>
+  <data name="GridStringId.LayoutViewFieldCaptionFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="GridStringId.LayoutViewFormLoadLayoutCaption" xml:space="preserve">
+    <value>Lataa asettelu</value>
+  </data>
+  <data name="GridStringId.LayoutViewFormSaveLayoutCaption" xml:space="preserve">
+    <value>Tallenna asettelu</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupCards" xml:space="preserve">
+    <value>Kortit</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupFields" xml:space="preserve">
+    <value>Kentät</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupView" xml:space="preserve">
+    <value>Näkymä</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelCaptionLocation" xml:space="preserve">
+    <value>Kentän otsikon sijainti:</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelCardEdgeAlignment" xml:space="preserve">
+    <value>Kortin reunan tasaus:</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelGroupCaptionLocation" xml:space="preserve">
+    <value>Ryhmän otsikon sijainti:</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelHorizontal" xml:space="preserve">
+    <value>Vaakasuora väli</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowCardExpandButton" xml:space="preserve">
+    <value>Näytä Laajenna-painike</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowFieldHint" xml:space="preserve">
+    <value>Näytä Vihje</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowFilterPanel" xml:space="preserve">
+    <value>Näytä suodatinpaneeli:</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowHeaderPanel" xml:space="preserve">
+    <value>Näytä otsikkopaneeli</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowLines" xml:space="preserve">
+    <value>Näytä rivit</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelVertical" xml:space="preserve">
+    <value>Pystysuora väli</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelViewMode" xml:space="preserve">
+    <value>Katselutila:</value>
+  </data>
+  <data name="GridStringId.LayoutViewMultiColumnModeBtnHint" xml:space="preserve">
+    <value>Useita sarakkeita</value>
+  </data>
+  <data name="GridStringId.LayoutViewMultiRowModeBtnHint" xml:space="preserve">
+    <value>Useita rivejä</value>
+  </data>
+  <data name="GridStringId.LayoutViewPanBtnHint" xml:space="preserve">
+    <value>Vieritys</value>
+  </data>
+  <data name="GridStringId.LayoutViewRowModeBtnHint" xml:space="preserve">
+    <value>Yksi rivi</value>
+  </data>
+  <data name="GridStringId.LayoutViewSingleModeBtnHint" xml:space="preserve">
+    <value>Yksi kortti</value>
+  </data>
+  <data name="GridStringId.MenuColumnExpressionEditor" xml:space="preserve">
+    <value>Lauseke-editori...</value>
+  </data>
+  <data name="GridStringId.MenuColumnFilterModeDisplayText" xml:space="preserve">
+    <value>Näyttöteksti</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupIntervalMenu" xml:space="preserve">
+    <value>Ryhmän väli</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupIntervalYear" xml:space="preserve">
+    <value>Vuosi</value>
+  </data>
+  <data name="GridStringId.MenuColumnShowColumn" xml:space="preserve">
+    <value>Näytä tämä sarake</value>
+  </data>
+  <data name="GridStringId.MenuColumnSortGroupBySummaryMenu" xml:space="preserve">
+    <value>Lajittele yhteenvedon mukaan</value>
+  </data>
+  <data name="GridStringId.MenuFooterAddSummaryItem" xml:space="preserve">
+    <value>Lisää uusi yhteenveto</value>
+  </data>
+  <data name="GridStringId.MenuHideSplitItem" xml:space="preserve">
+    <value>Poista jako</value>
+  </data>
+  <data name="GridStringId.MenuShowSplitItem" xml:space="preserve">
+    <value>Jaa</value>
+  </data>
+  <data name="GridStringId.PrintDesignerLayoutView" xml:space="preserve">
+    <value>Tulostusasetukset (asettelunäkymässä)</value>
+  </data>
+  <data name="GridStringId.SearchLookUpAddNewButton" xml:space="preserve">
+    <value>Lisää uusi</value>
+  </data>
+  <data name="GridStringId.WindowWarningCaption" xml:space="preserve">
+    <value>Varoitus</value>
+  </data>
+  <data name="GridStringId.FindNullPrompt" xml:space="preserve">
+    <value>Syötä etsittävä teksti...</value>
+  </data>
+  <data name="GridStringId.LayoutModifiedWarning" xml:space="preserve">
+    <value>Asettelu on muuttunut. Haluatko tallentaa muutokset?</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonOk" xml:space="preserve">
+    <value>&amp;Ok</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupCaptions" xml:space="preserve">
+    <value>Otsikot</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupPropertyGrid" xml:space="preserve">
+    <value>Ominaisuustaulukko</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupIntervalSmart" xml:space="preserve">
+    <value>Älykäs</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonLoadLayout" xml:space="preserve">
+    <value>&amp;Lataa asettelu</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupIntervals" xml:space="preserve">
+    <value>Välit</value>
+  </data>
+  <data name="GridStringId.MenuColumnConditionalFormatting" xml:space="preserve">
+    <value>Ehdollinen muotoilu</value>
+  </data>
+  <data name="GridStringId.MenuColumnResetGroupSummarySort" xml:space="preserve">
+    <value>Tyhjennä yhteenvetolajittelu</value>
+  </data>
+  <data name="GridStringId.MenuGroupPanelHide" xml:space="preserve">
+    <value>Piilota Ryhmitä ruuduttain</value>
+  </data>
+  <data name="GridStringId.MenuGroupPanelShow" xml:space="preserve">
+    <value>Näytä Ryhmitä ruuduttain</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonPreview" xml:space="preserve">
+    <value>Näytä &amp; lisää kortteja</value>
+  </data>
+  <data name="GridStringId.LayoutViewCardCaptionFormat" xml:space="preserve">
+    <value>Tietue [{0} / {1}]</value>
+  </data>
+  <data name="GridStringId.MenuColumnAutoFilterRowHide" xml:space="preserve">
+    <value>Piilota suodatusrivi</value>
+  </data>
+  <data name="GridStringId.MenuColumnAutoFilterRowShow" xml:space="preserve">
+    <value>Näytä suodatusrivi</value>
+  </data>
+  <data name="GridStringId.LayoutViewCloseZoomBtnHintZoom" xml:space="preserve">
+    <value>Suurenna yksityiskohdat</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowCardBorder" xml:space="preserve">
+    <value>Näytä reuna</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowCardCaption" xml:space="preserve">
+    <value>Näytä kuvateksti</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowFieldBorder" xml:space="preserve">
+    <value>Näytä reuna</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelSpacing" xml:space="preserve">
+    <value>Väli</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelTextIndent" xml:space="preserve">
+    <value>Tekstin sisennykset</value>
+  </data>
+  <data name="GridStringId.LayoutViewPageTemplateCard" xml:space="preserve">
+    <value>Mallikortti</value>
+  </data>
+  <data name="GridStringId.ServerRequestError" xml:space="preserve">
+    <value>Virhe palvelimen pyyntöä käsiteltäessä ({0}...)</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonSaveLayout" xml:space="preserve">
+    <value>&amp;Tallenna asettelu...</value>
+  </data>
+  <data name="GridStringId.MenuFooterClearSummaryItems" xml:space="preserve">
+    <value>Poista yhteenvedot</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonCustomizeHide" xml:space="preserve">
+    <value>Piilota mukauttaminen</value>
+  </data>
+  <data name="GridStringId.LayoutViewCustomizationFormCaption" xml:space="preserve">
+    <value>Asettelun mukauttaminen</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelCardArrangeRule" xml:space="preserve">
+    <value>Järjestämisen sääntö:</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelTextAlignment" xml:space="preserve">
+    <value>Kentän otsikon tasaus:</value>
+  </data>
+  <data name="GridStringId.FindControlNextButton" xml:space="preserve">
+    <value>Seuraava</value>
+  </data>
+  <data name="GridStringId.FindControlPrevButton" xml:space="preserve">
+    <value>Edellinen</value>
+  </data>
+  <data name="GridStringId.MenuGroupRowCollapse" xml:space="preserve">
+    <value>Piilota kaikki</value>
+  </data>
+  <data name="GridStringId.MenuGroupRowExpand" xml:space="preserve">
+    <value>Näytä kaikki</value>
+  </data>
+  <data name="GridStringId.MenuFooterSelection" xml:space="preserve">
+    <value>Valinta</value>
+  </data>
+  <data name="GridStringId.CardViewQuickCustomizationButtonVisibility" xml:space="preserve">
+    <value>Näkyvyys</value>
+  </data>
+</root>

@@ -1,0 +1,1952 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AB45EDC8-E6BC-4378-99E9-5659DF707D80}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DevExpress.XtraPdfViewer</RootNamespace>
+    <AssemblyName>DevExpress.XtraPdfViewer.v25.2</AssemblyName>
+<SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DXWhidbey</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Controls\CommentTree\PdfCommentEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PdfAttachmentsViewerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PdfColorPickerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PdfCommentTreeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PdfOutlineViewerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PdfThumbnailsViewerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FindControl\PdfFindControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\PdfAnnotationPropertiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PdfDocumentPropertiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PdfPageSetupDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PdfPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PdfProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PdfSearchProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.ar.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.bg.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.ca.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.cs.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.da.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.de.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.el.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.es.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.fa.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.fi.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.fr.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.he.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.hr.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.hu.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.hy.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.is.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.it.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.ja.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.ko.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.lt.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.lv.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.mk.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.nl.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.no.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.pl.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.pt-BR.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.pt.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.ro.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.ru.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.sk.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.sl.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.sr-Cyrl-RS.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.sr-Latn-BA.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.sr-Latn-RS.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.sv.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.ta.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.tr.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.uk.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.vi.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.zh-CN.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.zh-Hans.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.zh-Hant.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.zh-TW.resx">
+      <DependentUpon>PdfAttachmentsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.ar.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.bg.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.ca.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.cs.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.da.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.de-CH.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.de.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.el.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.es.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.et.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.fa.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.fi.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.fr.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.he.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.hr.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.hu.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.it.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.ja.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.ko.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.nl.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.no.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.pl.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.pt-BR.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.pt.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.ro.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.ru.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.sk.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.sr-Latn-BA.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.sv.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.tr.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.uk.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.vi.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.zh-CN.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.zh-Hans.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.zh-Hant.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.zh-TW.resx">
+      <DependentUpon>PdfColorPickerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.ar.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.bg.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.ca.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.cs.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.da.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.de-CH.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.de.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.el.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.es.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.et.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.fa.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.fi.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.fr.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.he.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.hr.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.hu.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.hy.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.is.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.it.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.ja.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.ko.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.lt.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.lv.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.mk.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.nl.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.no.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.pl.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.pt-BR.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.pt.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.ro.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.ru.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.sk.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.sl.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.sr-Cyrl-RS.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.sr-Latn-BA.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.sr-Latn-RS.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.sv.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.ta.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.tr.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.uk.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.vi.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.zh-CN.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.zh-Hans.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.zh-Hant.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.zh-TW.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.ar.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.bg.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.ca.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.cs.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.da.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.de-CH.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.de.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.el.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.es.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.et.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.fa.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.fi.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.fr.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.he.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.hr.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.hu.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.hy.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.is.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.it.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.ja.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.ko.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.lt.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.lv.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.mk.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.nl.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.no.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.pl.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.pt-BR.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.pt.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.ro.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.ru.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.sk.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.sl.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.sr-Cyrl-RS.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.sr-Latn-BA.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.sr-Latn-RS.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.sv.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.ta.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.tr.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.uk.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.vi.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.zh-CN.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.zh-Hans.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.zh-Hant.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.zh-TW.resx">
+      <DependentUpon>PdfCommentTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.ar.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.bg.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.ca.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.cs.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.da.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.de-CH.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.de.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.el.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.es.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.et.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.fa.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.fi.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.fr.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.he.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.hr.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.hu.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.hy.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.is.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.it.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.ja.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.ko.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.lt.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.lv.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.mk.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.nl.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.no.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.pl.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.pt-BR.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.pt.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.ro.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.ru.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.sk.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.sl.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.sr-Cyrl-RS.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.sr-Latn-BA.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.sr-Latn-RS.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.sv.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.ta.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.tr.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.uk.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.vi.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.zh-CN.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.zh-Hans.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.zh-Hant.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.zh-TW.resx">
+      <DependentUpon>PdfOutlineViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.ar.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.bg.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.ca.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.cs.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.da.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.de-CH.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.de.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.el.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.es.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.et.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.fa.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.fi.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.fr.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.he.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.hr.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.hu.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.hy.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.is.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.it.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.ja.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.ko.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.lt.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.lv.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.mk.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.nl.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.no.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.pl.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.pt-BR.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.pt.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.ro.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.ru.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.sk.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.sl.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.sr-Cyrl-RS.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.sr-Latn-BA.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.sr-Latn-RS.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.sv.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.ta.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.tr.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.uk.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.vi.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.zh-CN.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.zh-Hans.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.zh-Hant.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.zh-TW.resx">
+      <DependentUpon>PdfThumbnailsViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.ar.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.bg.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.ca.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.cs.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.da.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.de-CH.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.de.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.el.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.es.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.et.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.fa.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.fi.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.fr.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.he.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.hr.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.hu.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.hy.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.is.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.it.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.ja.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.ko.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.lt.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.lv.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.mk.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.nl.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.no.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.pl.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.pt-BR.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.pt.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.ro.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.ru.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.sk.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.sl.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.sr-Cyrl-RS.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.sr-Latn-BA.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.sr-Latn-RS.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.sv.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.ta.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.th.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.tr.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.uk.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.vi.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.zh-CN.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.zh-Hans.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.zh-Hant.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindControl\PdfFindControl.zh-TW.resx">
+      <DependentUpon>PdfFindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.ar.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.bg.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.ca.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.cs.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.da.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.de-CH.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.de.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.el.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.es.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.et.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.fa.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.fi.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.fr.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.he.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.hi.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.hr.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.hu.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.hy.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.is.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.it.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.ja.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.ko.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.lt.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.lv.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.mk.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.nl.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.no.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.pl.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.pt-BR.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.pt.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.ro.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.ru.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.sk.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.sl.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.sr-Cyrl-RS.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.sr-Latn-BA.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.sr-Latn-RS.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.sv.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.ta.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.th.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.tr.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.uk.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.vi.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.zh-CN.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.zh-Hans.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.zh-Hant.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.zh-TW.resx">
+      <DependentUpon>PdfAnnotationPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.ar.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.bg.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.ca.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.cs.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.da.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.de-CH.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.de.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.el.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.es.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.et.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.fa.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.fi.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.fr.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.he.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.hr.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.hu.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.hy.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.is.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.it.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.ja.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.ko.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.lt.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.lv.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.mk.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.nl.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.no.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.pl.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.pt-BR.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.pt.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.ro.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.ru.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.sk.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.sl.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.sr-Cyrl-RS.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.sr-Latn-BA.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.sr-Latn-RS.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.sv.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.ta.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.th.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.tr.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.uk.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.vi.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.zh-CN.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.zh-Hans.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.zh-Hant.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.zh-TW.resx">
+      <DependentUpon>PdfDocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.et.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.hi.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.th.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.ar.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.bg.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.ca.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.cs.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.da.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.de-CH.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.de.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.el.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.es.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.et.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.fa.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.fi.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.fr.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.he.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.hi.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.hr.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.hu.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.hy.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.is.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.it.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.ja.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.ko.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.lt.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.lv.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.mk.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.nl.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.no.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.pl.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.pt-BR.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.pt.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.ro.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.ru.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.sk.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.sl.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.sr-Cyrl-RS.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.sr-Latn-BA.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.sr-Latn-RS.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.sv.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.ta.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.th.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.tr.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.uk.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.vi.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.zh-CN.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.zh-Hans.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.zh-Hant.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPasswordForm.zh-TW.resx">
+      <DependentUpon>PdfPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.ar.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.bg.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.ca.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.cs.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.da.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.de-CH.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.de.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.el.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.es.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.fa.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.fi.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.fr.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.he.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.hr.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.hu.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.hy.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.is.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.it.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.ja.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.ko.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.lt.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.lv.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.mk.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.nl.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.no.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.pl.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.pt-BR.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.pt.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.ro.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.ru.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.sk.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.sl.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.sr-Cyrl-RS.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.sr-Latn-BA.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.sr-Latn-RS.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.sv.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.ta.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.tr.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.uk.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.vi.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.zh-CN.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.zh-Hans.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.zh-Hant.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.zh-TW.resx">
+      <DependentUpon>PdfPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.ar.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.bg.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.ca.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.cs.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.da.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.de-CH.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.de.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.el.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.es.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.et.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.fa.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.fi.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.fr.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.he.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.hi.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.hr.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.hu.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.hy.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.is.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.it.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.ja.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.ko.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.lt.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.lv.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.mk.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.nl.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.no.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.pl.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.pt-BR.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.pt.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.ro.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.ru.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.sk.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.sl.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.sr-Cyrl-RS.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.sr-Latn-BA.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.sr-Latn-RS.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.sv.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.ta.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.th.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.tr.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.uk.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.vi.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.zh-CN.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.zh-Hans.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.zh-Hant.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfProgressForm.zh-TW.resx">
+      <DependentUpon>PdfProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.ar.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.bg.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.ca.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.cs.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.da.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.de-CH.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.de.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.el.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.es.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.et.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.fa.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.fi.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.fr.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.he.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.hi.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.hr.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.hu.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.hy.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.is.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.it.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.ja.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.ko.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.lt.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.lv.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.mk.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.nl.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.no.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.pl.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.pt-BR.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.pt.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.ro.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.ru.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.sk.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.sl.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.sr-Cyrl-RS.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.sr-Latn-BA.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.sr-Latn-RS.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.sv.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.ta.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.th.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.tr.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.uk.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.vi.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.zh-CN.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.zh-Hans.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.zh-Hant.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.zh-TW.resx">
+      <DependentUpon>PdfSearchProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ar.resx" />
+    <EmbeddedResource Include="LocalizationRes.bg.resx" />
+    <EmbeddedResource Include="LocalizationRes.ca.resx" />
+    <EmbeddedResource Include="LocalizationRes.cs.resx" />
+    <EmbeddedResource Include="LocalizationRes.da.resx" />
+    <EmbeddedResource Include="LocalizationRes.de-CH.resx" />
+    <EmbeddedResource Include="LocalizationRes.de.resx" />
+    <EmbeddedResource Include="LocalizationRes.el.resx" />
+    <EmbeddedResource Include="LocalizationRes.es.resx" />
+    <EmbeddedResource Include="LocalizationRes.et.resx" />
+    <EmbeddedResource Include="LocalizationRes.fa.resx" />
+    <EmbeddedResource Include="LocalizationRes.fi.resx" />
+    <EmbeddedResource Include="LocalizationRes.fr.resx" />
+    <EmbeddedResource Include="LocalizationRes.he.resx" />
+    <EmbeddedResource Include="LocalizationRes.hr.resx" />
+    <EmbeddedResource Include="LocalizationRes.hu.resx" />
+    <EmbeddedResource Include="LocalizationRes.hy.resx" />
+    <EmbeddedResource Include="LocalizationRes.is.resx" />
+    <EmbeddedResource Include="LocalizationRes.it.resx" />
+    <EmbeddedResource Include="LocalizationRes.ja.resx" />
+    <EmbeddedResource Include="LocalizationRes.ko.resx" />
+    <EmbeddedResource Include="LocalizationRes.lt.resx" />
+    <EmbeddedResource Include="LocalizationRes.lv.resx" />
+    <EmbeddedResource Include="LocalizationRes.mk.resx" />
+    <EmbeddedResource Include="LocalizationRes.nl.resx" />
+    <EmbeddedResource Include="LocalizationRes.no.resx" />
+    <EmbeddedResource Include="LocalizationRes.pl.resx" />
+    <EmbeddedResource Include="LocalizationRes.pt-BR.resx" />
+    <EmbeddedResource Include="LocalizationRes.pt.resx" />
+    <EmbeddedResource Include="LocalizationRes.resx" />
+    <EmbeddedResource Include="LocalizationRes.ro.resx" />
+    <EmbeddedResource Include="LocalizationRes.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sk.resx" />
+    <EmbeddedResource Include="LocalizationRes.sl.resx" />
+    <EmbeddedResource Include="LocalizationRes.sr-Cyrl-RS.resx" />
+    <EmbeddedResource Include="LocalizationRes.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="LocalizationRes.sr-Latn-RS.resx" />
+    <EmbeddedResource Include="LocalizationRes.sv.resx" />
+    <EmbeddedResource Include="LocalizationRes.ta.resx" />
+    <EmbeddedResource Include="LocalizationRes.th.resx" />
+    <EmbeddedResource Include="LocalizationRes.tr.resx" />
+    <EmbeddedResource Include="LocalizationRes.uk.resx" />
+    <EmbeddedResource Include="LocalizationRes.vi.resx" />
+    <EmbeddedResource Include="LocalizationRes.zh-CN.resx" />
+    <EmbeddedResource Include="LocalizationRes.zh-Hans.resx" />
+    <EmbeddedResource Include="LocalizationRes.zh-Hant.resx" />
+    <EmbeddedResource Include="LocalizationRes.zh-TW.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+  </PropertyGroup>
+</Project>

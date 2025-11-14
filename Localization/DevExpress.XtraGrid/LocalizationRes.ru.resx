@@ -1,0 +1,716 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GridStringId.FileIsNotFoundError" xml:space="preserve">
+    <value>Файл {0} не найден</value>
+  </data>
+  <data name="GridStringId.ColumnViewExceptionMessage" xml:space="preserve">
+    <value> Хотите исправить значение?</value>
+  </data>
+  <data name="GridStringId.CustomizationCaption" xml:space="preserve">
+    <value>Выбор колонок</value>
+  </data>
+  <data name="GridStringId.CustomizationColumns" xml:space="preserve">
+    <value>Колонки</value>
+  </data>
+  <data name="GridStringId.CustomizationBands" xml:space="preserve">
+    <value>Категории</value>
+  </data>
+  <data name="GridStringId.PopupFilterAll" xml:space="preserve">
+    <value>(Все)</value>
+  </data>
+  <data name="GridStringId.PopupFilterCustom" xml:space="preserve">
+    <value>(Условие...)</value>
+  </data>
+  <data name="GridStringId.PopupFilterBlanks" xml:space="preserve">
+    <value>(Пустые)</value>
+  </data>
+  <data name="GridStringId.PopupFilterNonBlanks" xml:space="preserve">
+    <value>(Непустые)</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogFormCaption" xml:space="preserve">
+    <value>Пользовательский автофильтр</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogCaption" xml:space="preserve">
+    <value>Показать только те строки, значения которых:</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogRadioAnd" xml:space="preserve">
+    <value>&amp;И</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogRadioOr" xml:space="preserve">
+    <value>И&amp;ЛИ</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogOkButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogClearFilter" xml:space="preserve">
+    <value>О&amp;чистить фильтр</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogCancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialog2FieldCheck" xml:space="preserve">
+    <value>Колонка</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogEmptyValue" xml:space="preserve">
+    <value>(Введите значение)</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogEmptyOperator" xml:space="preserve">
+    <value>(Выберите оператор)</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogHint" xml:space="preserve">
+    <value>Используйте _ для представления любого одиночного символа#Используйте % для представления любой последовательности символов</value>
+  </data>
+  <data name="GridStringId.MenuFooterSum" xml:space="preserve">
+    <value>Су&amp;мма</value>
+  </data>
+  <data name="GridStringId.MenuFooterMin" xml:space="preserve">
+    <value>М&amp;инимум</value>
+  </data>
+  <data name="GridStringId.MenuFooterMax" xml:space="preserve">
+    <value>М&amp;аксимум</value>
+  </data>
+  <data name="GridStringId.MenuFooterCount" xml:space="preserve">
+    <value>&amp;Количество</value>
+  </data>
+  <data name="GridStringId.MenuFooterAverage" xml:space="preserve">
+    <value>Ср&amp;еднее</value>
+  </data>
+  <data name="GridStringId.MenuFooterNone" xml:space="preserve">
+    <value>&amp;Нет</value>
+  </data>
+  <data name="GridStringId.MenuFooterSumFormat" xml:space="preserve">
+    <value>Сумма={0:#.##}</value>
+  </data>
+  <data name="GridStringId.MenuFooterMinFormat" xml:space="preserve">
+    <value>Минимум={0}</value>
+  </data>
+  <data name="GridStringId.MenuFooterMaxFormat" xml:space="preserve">
+    <value>Максимум={0}</value>
+  </data>
+  <data name="GridStringId.MenuFooterCountFormat" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="GridStringId.MenuFooterCountGroupFormat" xml:space="preserve">
+    <value>Кол-во={0}</value>
+  </data>
+  <data name="GridStringId.MenuFooterAverageFormat" xml:space="preserve">
+    <value>Среднее={0:#.##}</value>
+  </data>
+  <data name="GridStringId.MenuFooterCustomFormat" xml:space="preserve">
+    <value>Условие={0}</value>
+  </data>
+  <data name="GridStringId.MenuColumnSortAscending" xml:space="preserve">
+    <value>Сортировка по возраста&amp;нию</value>
+  </data>
+  <data name="GridStringId.MenuColumnSortDescending" xml:space="preserve">
+    <value>Сортировка по убывани&amp;ю</value>
+  </data>
+  <data name="GridStringId.MenuColumnRemoveColumn" xml:space="preserve">
+    <value>Скрыть колонку</value>
+  </data>
+  <data name="GridStringId.MenuColumnShowColumn" xml:space="preserve">
+    <value>Показать колонку</value>
+  </data>
+  <data name="GridStringId.MenuColumnClearSorting" xml:space="preserve">
+    <value>Очистить сортировку</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroup" xml:space="preserve">
+    <value>&amp;Группировать по этой колонке</value>
+  </data>
+  <data name="GridStringId.FilterPanelCustomizeButton" xml:space="preserve">
+    <value>Конструктор фильтра...</value>
+  </data>
+  <data name="GridStringId.MenuColumnUnGroup" xml:space="preserve">
+    <value>&amp;Разгруппировать</value>
+  </data>
+  <data name="GridStringId.MenuColumnColumnCustomization" xml:space="preserve">
+    <value>Выбор &amp;колонок</value>
+  </data>
+  <data name="GridStringId.MenuColumnBestFit" xml:space="preserve">
+    <value>Подбор &amp;ширины</value>
+  </data>
+  <data name="GridStringId.MenuColumnFilter" xml:space="preserve">
+    <value>Фи&amp;льтр</value>
+  </data>
+  <data name="GridStringId.MenuColumnFilterEditor" xml:space="preserve">
+    <value>Конструктор ф&amp;ильтра...</value>
+  </data>
+  <data name="GridStringId.MenuColumnClearFilter" xml:space="preserve">
+    <value>&amp;Очистить фильтр</value>
+  </data>
+  <data name="GridStringId.MenuColumnBestFitAllColumns" xml:space="preserve">
+    <value>Подбор ширины (все &amp;колонки)</value>
+  </data>
+  <data name="GridStringId.MenuColumnResetGroupSummarySort" xml:space="preserve">
+    <value>Очистить сортировку по итогам</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupSummarySortFormat" xml:space="preserve">
+    <value>{1} - '{0}' - {2}</value>
+  </data>
+  <data name="GridStringId.MenuColumnSortGroupBySummaryMenu" xml:space="preserve">
+    <value>Сортировка по итогам</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupIntervalMenu" xml:space="preserve">
+    <value>Интервал группы</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupIntervalNone" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupIntervalDay" xml:space="preserve">
+    <value>День</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupIntervalMonth" xml:space="preserve">
+    <value>Месяц</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupIntervalYear" xml:space="preserve">
+    <value>Год</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupIntervalSmart" xml:space="preserve">
+    <value>Умный</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupSummaryEditor" xml:space="preserve">
+    <value>Редактор итога группы...</value>
+  </data>
+  <data name="GridStringId.MenuColumnExpressionEditor" xml:space="preserve">
+    <value>Редактор выражения...</value>
+  </data>
+  <data name="GridStringId.MenuGroupPanelFullExpand" xml:space="preserve">
+    <value>Р&amp;аскрыть группы</value>
+  </data>
+  <data name="GridStringId.MenuGroupPanelFullCollapse" xml:space="preserve">
+    <value>&amp;Свернуть группы</value>
+  </data>
+  <data name="GridStringId.MenuGroupRowExpand" xml:space="preserve">
+    <value>Раскрыть</value>
+  </data>
+  <data name="GridStringId.MenuGroupRowCollapse" xml:space="preserve">
+    <value>Свернуть</value>
+  </data>
+  <data name="GridStringId.MenuGroupPanelClearGrouping" xml:space="preserve">
+    <value>&amp;Разгруппировать</value>
+  </data>
+  <data name="GridStringId.PrintDesignerBandedView" xml:space="preserve">
+    <value>Настройка печати (Таблица с категориями)</value>
+  </data>
+  <data name="GridStringId.PrintDesignerGridView" xml:space="preserve">
+    <value>Настройка печати (Таблица)</value>
+  </data>
+  <data name="GridStringId.PrintDesignerCardView" xml:space="preserve">
+    <value>Настройка печати (Карточки)</value>
+  </data>
+  <data name="GridStringId.PrintDesignerBandHeader" xml:space="preserve">
+    <value>Категория</value>
+  </data>
+  <data name="GridStringId.PrintDesignerDescription" xml:space="preserve">
+    <value>Настроить опции печати для текущего представления.</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupBox" xml:space="preserve">
+    <value>Область группировки</value>
+  </data>
+  <data name="GridStringId.CardViewNewCard" xml:space="preserve">
+    <value>Новая карточка</value>
+  </data>
+  <data name="GridStringId.CardViewQuickCustomizationButton" xml:space="preserve">
+    <value>Настроить</value>
+  </data>
+  <data name="GridStringId.CardViewQuickCustomizationButtonFilter" xml:space="preserve">
+    <value>Фильтр</value>
+  </data>
+  <data name="GridStringId.CardViewQuickCustomizationButtonSort" xml:space="preserve">
+    <value>Сортировать:</value>
+  </data>
+  <data name="GridStringId.CardViewCaptionFormat" xml:space="preserve">
+    <value>Карточка № {0}</value>
+  </data>
+  <data name="GridStringId.GridGroupPanelText" xml:space="preserve">
+    <value>Поместите сюда заголовок колонки для группировки по этой колонке</value>
+  </data>
+  <data name="GridStringId.GridNewRowText" xml:space="preserve">
+    <value>Нажмите сюда, чтобы добавить новую строку</value>
+  </data>
+  <data name="GridStringId.FilterBuilderOkButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="GridStringId.FilterBuilderCancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="GridStringId.FilterBuilderApplyButton" xml:space="preserve">
+    <value>&amp;Применить</value>
+  </data>
+  <data name="GridStringId.FilterBuilderCaption" xml:space="preserve">
+    <value>Конструктор фильтра</value>
+  </data>
+  <data name="GridStringId.GridOutlookIntervals" xml:space="preserve">
+    <value>Раньше;В прошлом месяце;Ранее в этом месяце;Три недели назад;Две недели назад;На прошлой неделе;;;;;;;;Вчера;Сегодня;Завтра;;;;;;;;На следующей неделе;Через две недели;Через три недели;Позднее в этом месяце;В следующем месяце;Позже,чем через месяц;</value>
+  </data>
+  <data name="GridStringId.CustomizationFormColumnHint" xml:space="preserve">
+    <value>Перетащите колонки для настройки расположения </value>
+  </data>
+  <data name="GridStringId.CustomizationFormBandHint" xml:space="preserve">
+    <value>Перетащите полосы для настройки расположения </value>
+  </data>
+  <data name="GridStringId.LayoutViewCloseZoomBtnHintClose" xml:space="preserve">
+    <value>Восстановить изображение</value>
+  </data>
+  <data name="GridStringId.LayoutViewCloseZoomBtnHintZoom" xml:space="preserve">
+    <value>Детализировать</value>
+  </data>
+  <data name="GridStringId.LayoutViewColumnModeBtnHint" xml:space="preserve">
+    <value>Один столбец</value>
+  </data>
+  <data name="GridStringId.LayoutViewMultiColumnModeBtnHint" xml:space="preserve">
+    <value>Много столбцов</value>
+  </data>
+  <data name="GridStringId.LayoutViewMultiRowModeBtnHint" xml:space="preserve">
+    <value>Много строк</value>
+  </data>
+  <data name="GridStringId.LayoutViewPanBtnHint" xml:space="preserve">
+    <value>Панорамирование</value>
+  </data>
+  <data name="GridStringId.LayoutViewRowModeBtnHint" xml:space="preserve">
+    <value>Одна строка</value>
+  </data>
+  <data name="GridStringId.LayoutViewSingleModeBtnHint" xml:space="preserve">
+    <value>Одна карточка</value>
+  </data>
+  <data name="GridStringId.LayoutViewCarouselModeBtnHint" xml:space="preserve">
+    <value>Карусельный режим</value>
+  </data>
+  <data name="GridStringId.LayoutViewCustomizeBtnHint" xml:space="preserve">
+    <value>Настройка</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonApply" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonCustomizeHide" xml:space="preserve">
+    <value>Скрыть настройку</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonCustomizeShow" xml:space="preserve">
+    <value>Показать настройку</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonLoadLayout" xml:space="preserve">
+    <value>Загрузить размещение...</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonPreview" xml:space="preserve">
+    <value>Показать &amp;больше карточек</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonReset" xml:space="preserve">
+    <value>Загрузить карточку-шаблон</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonSaveLayout" xml:space="preserve">
+    <value>Сохранить размещение</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonShrinkToMinimum" xml:space="preserve">
+    <value>Сжать карточку-шаблон</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupCards" xml:space="preserve">
+    <value>Карточки</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupFields" xml:space="preserve">
+    <value>Поля</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupCaptions" xml:space="preserve">
+    <value>Заголовки</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupCustomization" xml:space="preserve">
+    <value>Настройка</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupHiddenItems" xml:space="preserve">
+    <value>Скрыть элементы</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupIndents" xml:space="preserve">
+    <value>Отступ</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupTreeStructure" xml:space="preserve">
+    <value>Расположение дерева</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupIntervals" xml:space="preserve">
+    <value>Интервалы</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelAllowFieldHotTracking" xml:space="preserve">
+    <value>Отслеживание в реальном времени</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelCaptionLocation" xml:space="preserve">
+    <value>Размещение заголовка:</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelCardArrangeRule" xml:space="preserve">
+    <value>Упорядочить правила:</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelCardEdgeAlignment" xml:space="preserve">
+    <value>Выравнивание границы карточки:</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelGroupCaptionLocation" xml:space="preserve">
+    <value>Размещение заголовка группы:</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelHorizontal" xml:space="preserve">
+    <value>Горизонтальный интервал</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelPadding" xml:space="preserve">
+    <value>Заполнение</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelScrollVisibility" xml:space="preserve">
+    <value>Видимость полосы прокрутки:</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowCardBorder" xml:space="preserve">
+    <value>Показать границу</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowCardCaption" xml:space="preserve">
+    <value>Показать заголовок</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowCardExpandButton" xml:space="preserve">
+    <value>Показать кнопку расширения</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowFieldBorder" xml:space="preserve">
+    <value>Показать границу</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowFieldHint" xml:space="preserve">
+    <value>Показать подсказку</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowFilterPanel" xml:space="preserve">
+    <value>Показать панель фильтра</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowHeaderPanel" xml:space="preserve">
+    <value>Показать панель заголовка</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowLines" xml:space="preserve">
+    <value>Показать линии</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelSpacing" xml:space="preserve">
+    <value>Расстановка</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelTextAlignment" xml:space="preserve">
+    <value>Выравнивание текста заголовка поля:</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelTextIndent" xml:space="preserve">
+    <value>Замещение текста</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelVertical" xml:space="preserve">
+    <value>Вертикальный интервал</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelViewMode" xml:space="preserve">
+    <value>Режим просмотра:</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupLayout" xml:space="preserve">
+    <value>Расположение</value>
+  </data>
+  <data name="GridStringId.LayoutViewPageTemplateCard" xml:space="preserve">
+    <value>Шаблон карточки</value>
+  </data>
+  <data name="GridStringId.LayoutViewPageViewLayout" xml:space="preserve">
+    <value>Вид расположения</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupView" xml:space="preserve">
+    <value>Вид</value>
+  </data>
+  <data name="GridStringId.PrintDesignerLayoutView" xml:space="preserve">
+    <value>Настройки печати( Вид расположения)</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupPropertyGrid" xml:space="preserve">
+    <value>Редактор свойств</value>
+  </data>
+  <data name="GridStringId.LayoutViewCustomizationFormCaption" xml:space="preserve">
+    <value>Настройка вида расположения</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonCancel" xml:space="preserve">
+    <value>О&amp;тмена</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonOk" xml:space="preserve">
+    <value>&amp;ОК</value>
+  </data>
+  <data name="GridStringId.LayoutViewCustomizationFormDescription" xml:space="preserve">
+    <value>Настройка расположения карточки путем перетаскивания и меню настройки, и просмотр данных в окне настройке расположения</value>
+  </data>
+  <data name="GridStringId.LayoutModifiedWarning" xml:space="preserve">
+    <value>Расположение было изменено.
+Хотите сохранить изменения?</value>
+  </data>
+  <data name="GridStringId.LayoutViewCardCaptionFormat" xml:space="preserve">
+    <value>Карточка [{0} из {1}]</value>
+  </data>
+  <data name="GridStringId.LayoutViewFieldCaptionFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="GridStringId.MenuColumnSumSummaryTypeDescription" xml:space="preserve">
+    <value>Сумма</value>
+  </data>
+  <data name="GridStringId.MenuColumnMinSummaryTypeDescription" xml:space="preserve">
+    <value>Минимум</value>
+  </data>
+  <data name="GridStringId.MenuColumnMaxSummaryTypeDescription" xml:space="preserve">
+    <value>Максимум</value>
+  </data>
+  <data name="GridStringId.MenuColumnCountSummaryTypeDescription" xml:space="preserve">
+    <value>Количество</value>
+  </data>
+  <data name="GridStringId.MenuColumnAverageSummaryTypeDescription" xml:space="preserve">
+    <value>Среднее</value>
+  </data>
+  <data name="GridStringId.MenuGroupPanelShow" xml:space="preserve">
+    <value>Показать область группировки</value>
+  </data>
+  <data name="GridStringId.MenuGroupPanelHide" xml:space="preserve">
+    <value>Скрыть область группировки</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorFormCaption" xml:space="preserve">
+    <value>Редактор итога группы</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorFormOkButton" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorFormCancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorFormItemsTabCaption" xml:space="preserve">
+    <value>Элементы</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorFormOrderTabCaption" xml:space="preserve">
+    <value>Порядок</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorSummaryMin" xml:space="preserve">
+    <value>Минимум</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorSummaryMax" xml:space="preserve">
+    <value>Максимум</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorSummaryAverage" xml:space="preserve">
+    <value>Среднее</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorSummarySum" xml:space="preserve">
+    <value>Сумма</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorSummaryCount" xml:space="preserve">
+    <value>Количество</value>
+  </data>
+  <data name="GridStringId.WindowErrorCaption" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="GridStringId.SearchLookUpMissingRows" xml:space="preserve">
+    <value>Нажмите ENTER или Поиск, чтобы отобразить все строки.
+Введите текст и нажмите ENTER для поиска по строкам.</value>
+  </data>
+  <data name="GridStringId.MenuColumnFilterModeDisplayText" xml:space="preserve">
+    <value>Отображаемый текст</value>
+  </data>
+  <data name="GridStringId.FindControlFindButton" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="GridStringId.MenuColumnFindFilterHide" xml:space="preserve">
+    <value>Скрыть панель поиска</value>
+  </data>
+  <data name="GridStringId.MenuColumnFilterModeValue" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="GridStringId.MenuColumnAutoFilterRowHide" xml:space="preserve">
+    <value>Скрыть строку авто-фильтра</value>
+  </data>
+  <data name="GridStringId.MenuColumnFindFilterShow" xml:space="preserve">
+    <value>Показать панель поиска</value>
+  </data>
+  <data name="GridStringId.MenuColumnAutoFilterRowShow" xml:space="preserve">
+    <value>Показать строку авто-фильтра</value>
+  </data>
+  <data name="GridStringId.MenuColumnFilterMode" xml:space="preserve">
+    <value>Режим фильтра</value>
+  </data>
+  <data name="GridStringId.FindControlClearButton" xml:space="preserve">
+    <value>Очистить</value>
+  </data>
+  <data name="GridStringId.SearchLookUpAddNewButton" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="GridStringId.FindControlNextButton" xml:space="preserve">
+    <value>Далее</value>
+  </data>
+  <data name="GridStringId.FindControlPrevButton" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="GridStringId.MenuColumnBandCustomization" xml:space="preserve">
+    <value>Выбор колонок и категорий</value>
+  </data>
+  <data name="GridStringId.MenuColumnCustomSummaryTypeDescription" xml:space="preserve">
+    <value>Пользовательское</value>
+  </data>
+  <data name="GridStringId.MenuFooterAddSummaryItem" xml:space="preserve">
+    <value>Добавить новую сумму</value>
+  </data>
+  <data name="GridStringId.MenuFooterClearSummaryItems" xml:space="preserve">
+    <value>Очистить элементы</value>
+  </data>
+  <data name="GridStringId.MenuHideSplitItem" xml:space="preserve">
+    <value>Убрать сплиттер</value>
+  </data>
+  <data name="GridStringId.MenuShowSplitItem" xml:space="preserve">
+    <value>Показать сплиттер</value>
+  </data>
+  <data name="GridStringId.LayoutViewFormLoadLayoutCaption" xml:space="preserve">
+    <value>Загрузить расположение из XML файла</value>
+  </data>
+  <data name="GridStringId.LayoutViewFormSaveLayoutCaption" xml:space="preserve">
+    <value>Сохранить расположение в XML файл</value>
+  </data>
+  <data name="GridStringId.EditFormCancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="GridStringId.EditFormCancelMessage" xml:space="preserve">
+    <value>Вы хотите отменить редактирование?</value>
+  </data>
+  <data name="GridStringId.EditFormUpdateButton" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="GridStringId.WindowWarningCaption" xml:space="preserve">
+    <value>Предупреждение</value>
+  </data>
+  <data name="GridStringId.CheckboxSelectorColumnCaption" xml:space="preserve">
+    <value>Выбор</value>
+  </data>
+  <data name="GridStringId.FindNullPrompt" xml:space="preserve">
+    <value>Введите текст для поиска...</value>
+  </data>
+  <data name="GridStringId.MenuColumnClearAllSorting" xml:space="preserve">
+    <value>Очистить все сортировки</value>
+  </data>
+  <data name="GridStringId.MenuColumnConditionalFormatting" xml:space="preserve">
+    <value>Условное форматирование</value>
+  </data>
+  <data name="GridStringId.EditFormSaveMessage" xml:space="preserve">
+    <value>Изменения ваших данных. Вы хотите сохранить изменения?</value>
+  </data>
+  <data name="GridStringId.SearchForBand" xml:space="preserve">
+    <value>Поиск категории...</value>
+  </data>
+  <data name="GridStringId.MenuFooterShow" xml:space="preserve">
+    <value>Показать нижний колонтитул</value>
+  </data>
+  <data name="GridStringId.MenuFooterHide" xml:space="preserve">
+    <value>Скрыть нижний колонтитул</value>
+  </data>
+  <data name="GridStringId.ServerRequestError" xml:space="preserve">
+    <value>Произошла ошибка во время обработки запроса ({0}...)</value>
+  </data>
+  <data name="GridStringId.MenuFooterMode" xml:space="preserve">
+    <value>Режим</value>
+  </data>
+  <data name="GridStringId.MenuColumnShowAutoFilter" xml:space="preserve">
+    <value>Показать фильтр колонок</value>
+  </data>
+  <data name="GridStringId.CardViewQuickCustomizationButtonVisibility" xml:space="preserve">
+    <value>Видимость</value>
+  </data>
+</root>

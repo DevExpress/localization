@@ -1,0 +1,1347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DE09DA9D-37B6-406F-A42D-0EC56EC294CD}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>DevExpress.XtraSpellChecker.v25.2</AssemblyName>
+<DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DevExpress.XtraSpellChecker</RootNamespace>
+    <SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomDictionariesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SpellCheckFormBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\SpellingFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SpellingOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SpellingOutlookStyleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SpellingWordStyleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.et.resx">
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.et.resx">
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.hi.resx">
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.th.resx">
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.et.resx">
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.hi.resx">
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.th.resx">
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.tr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.sl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.sl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.tr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.sl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.tr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.sv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.sr-Latn-BA.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.sl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.ro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.ca.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.tr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.sv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.sr-Latn-BA.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.sl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.ro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.ca.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.tr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.sl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.zh-TW.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.uk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.pt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.mk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.lv.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.lt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ko.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.is.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.hy.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.fa.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.bg.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ar.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sr-Latn-BA.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.sr-Latn-BA.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.sr-Latn-BA.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.de-CH.resx">
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.ta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.de-CH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.ta.resx">
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.de-CH.resx">
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.ta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.de-CH.resx">
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.sr-Latn-BA.resx">
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.ta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.de-CH.resx">
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.sr-Latn-BA.resx">
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.ta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.tr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.sv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.de-CH.resx">
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.sv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.ca.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.vi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.vi.resx">
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.vi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.ca.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.vi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.ca.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.sv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.sv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.vi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.ca.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.ta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.vi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ca.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.de-CH.resx" />
+    <EmbeddedResource Include="LocalizationRes.it.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.he.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.hu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.hu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.no.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sv.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ta.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.vi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.zh-Hans.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.zh-Hant.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.pt-BR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.ru.resx">
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.tr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.hu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.hu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.hu.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.hu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.hu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.da.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.es.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.fi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.hr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.pl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.ro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomDictionariesForm.sk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDictionariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.cs.resx">
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.da.resx">
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.de.resx">
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.el.resx">
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.es.resx">
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.fi.resx">
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.fr.resx">
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.hr.resx">
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.nl.resx">
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.pl.resx">
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.resx">
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellCheckFormBase.sk.resx">
+      <DependentUpon>SpellCheckFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.da.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.es.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.fi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.hr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.pl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingFormBase.sk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.da.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.es.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.fi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.hr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.pl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.ro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOptionsForm.sk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.da.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.es.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.fi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.hr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.pl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.ro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingOutlookStyleForm.sk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingOutlookStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.da.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.es.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.fi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.hr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.pl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.ro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpellingWordStyleForm.sk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpellingWordStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.cs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.da.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.el.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.es.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.fi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.hr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.nl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.pl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ro.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.resx">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+  </PropertyGroup>
+</Project>

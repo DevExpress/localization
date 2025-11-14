@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB6282A8-D8CB-4FC3-92CB-64194D57284D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevExpress.DataAccess</RootNamespace>
+    <AssemblyName>DevExpress.DataAccess.v25.2</AssemblyName>
+<TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\DevExpress.DLL\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\DevExpress.DLL\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DescriptionsRes.de.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.ar.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.bg.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.ca.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.cs.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.da.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.de-CH.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.de.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.el.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.es.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.et.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.fa.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.fi.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.fr.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.he.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.hr.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.hu.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.hy.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.it.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.ja.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.ko.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.nl.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.no.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.pl.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.pt-BR.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.pt.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.ro.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.ru.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.sk.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.sr-Latn-RS.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.sv.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.ta.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.th.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.tr.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.vi.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.zh-CN.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.zh-Hans.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.zh-Hant.resx" />
+    <EmbeddedResource Include="ExpressionEditor\LocalizationRes.zh-TW.resx" />
+    <EmbeddedResource Include="LocalizationRes.ar.resx" />
+    <EmbeddedResource Include="LocalizationRes.bg.resx" />
+    <EmbeddedResource Include="LocalizationRes.ca.resx" />
+    <EmbeddedResource Include="LocalizationRes.cs.resx" />
+    <EmbeddedResource Include="LocalizationRes.da.resx" />
+    <EmbeddedResource Include="LocalizationRes.de-CH.resx" />
+    <EmbeddedResource Include="LocalizationRes.de.resx" />
+    <EmbeddedResource Include="LocalizationRes.el.resx" />
+    <EmbeddedResource Include="LocalizationRes.es.resx" />
+    <EmbeddedResource Include="LocalizationRes.et.resx" />
+    <EmbeddedResource Include="LocalizationRes.fa.resx" />
+    <EmbeddedResource Include="LocalizationRes.fi.resx" />
+    <EmbeddedResource Include="LocalizationRes.fr.resx" />
+    <EmbeddedResource Include="LocalizationRes.he.resx" />
+    <EmbeddedResource Include="LocalizationRes.hr.resx" />
+    <EmbeddedResource Include="LocalizationRes.hu.resx" />
+    <EmbeddedResource Include="LocalizationRes.hy.resx" />
+    <EmbeddedResource Include="LocalizationRes.it.resx" />
+    <EmbeddedResource Include="LocalizationRes.ja.resx" />
+    <EmbeddedResource Include="LocalizationRes.ko.resx" />
+    <EmbeddedResource Include="LocalizationRes.lv.resx" />
+    <EmbeddedResource Include="LocalizationRes.nl.resx" />
+    <EmbeddedResource Include="LocalizationRes.no.resx" />
+    <EmbeddedResource Include="LocalizationRes.pl.resx" />
+    <EmbeddedResource Include="LocalizationRes.pt-BR.resx" />
+    <EmbeddedResource Include="LocalizationRes.pt.resx" />
+    <EmbeddedResource Include="LocalizationRes.resx" />
+    <EmbeddedResource Include="LocalizationRes.ro.resx" />
+    <EmbeddedResource Include="LocalizationRes.ru.resx" />
+    <EmbeddedResource Include="LocalizationRes.sk.resx" />
+    <EmbeddedResource Include="LocalizationRes.sl.resx" />
+    <EmbeddedResource Include="LocalizationRes.sr-Cyrl-RS.resx" />
+    <EmbeddedResource Include="LocalizationRes.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="LocalizationRes.sr-Latn-RS.resx" />
+    <EmbeddedResource Include="LocalizationRes.sv.resx" />
+    <EmbeddedResource Include="LocalizationRes.ta.resx" />
+    <EmbeddedResource Include="LocalizationRes.th.resx" />
+    <EmbeddedResource Include="LocalizationRes.tr.resx" />
+    <EmbeddedResource Include="LocalizationRes.uk.resx" />
+    <EmbeddedResource Include="LocalizationRes.vi.resx" />
+    <EmbeddedResource Include="LocalizationRes.zh-CN.resx" />
+    <EmbeddedResource Include="LocalizationRes.zh-Hans.resx" />
+    <EmbeddedResource Include="LocalizationRes.zh-Hant.resx" />
+    <EmbeddedResource Include="LocalizationRes.zh-TW.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.ar.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.bg.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.ca.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.cs.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.da.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.de-CH.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.de.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.el.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.es.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.et.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.fa.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.fi.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.fr.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.he.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.hr.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.hu.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.hy.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.is.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.it.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.ja.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.ko.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.lt.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.lv.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.mk.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.nl.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.no.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.pl.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.pt-BR.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.pt.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.ro.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.ru.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.sk.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.sl.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.sr-Cyrl-RS.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.sr-Latn-RS.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.sv.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.ta.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.th.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.tr.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.uk.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.vi.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.zh-CN.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.zh-Hans.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.zh-Hant.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.zh-TW.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.ar.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.bg.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.ca.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.cs.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.da.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.de-CH.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.de.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.el.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.es.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.et.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.fa.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.fi.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.fr.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.he.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.hi.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.hr.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.hu.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.hy.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.is.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.it.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.ja.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.ko.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.lt.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.lv.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.mk.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.nl.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.no.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.pl.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.pt-BR.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.pt.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.ro.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.ru.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.sk.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.sl.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.sr-Cyrl-RS.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.sr-Latn-RS.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.sv.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.ta.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.th.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.tr.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.uk.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.vi.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.zh-CN.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.zh-Hans.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.zh-Hant.resx" />
+    <EmbeddedResource Include="UI\LocalizationRes.zh-TW.resx" />
+    <EmbeddedResource Include="DescriptionsRes.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

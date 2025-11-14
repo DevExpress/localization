@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActionMethodShouldBeNonGeneric" xml:space="preserve">
+    <value>クラス {1} のメソッド {0} の操作を作成できません。操作メソッドは非ジェネリックでなければなりません。</value>
+  </data>
+  <data name="ActionMethodShouldBeParameterless" xml:space="preserve">
+    <value>クラス {1} のメソッド {0} の操作を作成できません。操作メソッドはパラメーターを指定することはできません。</value>
+  </data>
+  <data name="AlreadyUsedObjectSpace" xml:space="preserve">
+    <value>
+ObjectSpace は既に別のルート ビューに割り当てられています:  '{0}'。ルート ビューで既に使用されている ObjectSpace を別のルート ビュー に割り当てようとする際に発生するエラーです。
+例えば、View.IsRoot が True に設定されており、ViewController で XafApplication.CreateDetailView/CreateListView メソッドを使って View.ObjectSpace オブジェクトをパラメーターとして受け渡す時にエラーが発生する場合があります。\r\nこのエラーを避けるには、これらのメソッド内の XafApplication.CreateObjectSpace メソッドで作成された ObjectSpace インスタンスを受け渡すか、関連するパラメーターをこれらのメソッドに受け渡して非ルートのビューを作成します。\r\nそれでもこのエラーが解決されない場合は、DevExpress サポート チームへご連絡ください: https://supportcenter.devexpress.com/</value>
+  </data>
+  <data name="AnErrorHasOccurredWhileLoadingTheModel" xml:space="preserve">
+    <value>モデルの読み込み中にエラーが発生しました。ソース: '{0}'</value>
+  </data>
+  <data name="AnErrorHasOccurredWhileProcessingAShortcut" xml:space="preserve">
+    <value>ショートカットの処理中にエラーが発生しました: {0}</value>
+  </data>
+  <data name="AnErrorHasOccurredWithContext" xml:space="preserve">
+    <value>エラーが発生しました。コンテキスト: {0}</value>
+  </data>
+  <data name="AnUnsavedObjectCannotBeShown" xml:space="preserve">
+    <value>保存されていないオブジェクトを表示できません。</value>
+  </data>
+  <data name="ApplicationIsNotStarted" xml:space="preserve">
+    <value>アプリケーションが開始されていません。</value>
+  </data>
+  <data name="ApplicationUpdaterAssemblyDoesNotExist" xml:space="preserve">
+    <value>{0}' フォルダー内に '{1}' アセンブリが存在しないため、アプリケーションを更新できません。</value>
+  </data>
+  <data name="ApplicationUpdaterDatabaseVersionIsNewer" xml:space="preserve">
+    <value>アプリケーションを実行できません。データベースのバージョンはアプリケーションのバージョンより新しいか、新しいアプリケーション バージョンのサーバーが見つかりません。設定ファイルに新アプリケーション バージョンへの正しいパスが含まれているのかを、システム管理者に確認してください。</value>
+  </data>
+  <data name="AttributeModifyingFailed" xml:space="preserve">
+    <value>属性を変更できませんでした。</value>
+  </data>
+  <data name="AttributeShouldStartWithSymbol" xml:space="preserve">
+    <value>
+属性 '{0}' は '@' 記号で始まる必要があります: '{1}'</value>
+  </data>
+  <data name="AutoCreateOptionIs" xml:space="preserve">
+    <value>updatingReadOnlyDataStore.AutoCreateOption は {0} です。</value>
+  </data>
+  <data name="CannotAccessCollectionCollectionSourceIsBeingIntialized" xml:space="preserve">
+    <value>Collection ソースが初期化されているため Collection プロパティへアクセスできません。例えば、ViewController の OnActivated メソッドでCollection プロパティへアクセスしようとする場合、このエラーが発生する場合があります。このエラーを回避するには、Collection ソースの初期化が完了するまで時間をおいて再度 Collection プロパティへアクセスしてください。そのためには、CollectionChanged イベントを処理することをお勧めします。これらのクラスやメソッドの詳細については製品のドキュメンテーションを参照するか、 DevExpress サポート チームへご連絡ください。https://supportcenter.devexpress.com/</value>
+  </data>
+  <data name="CannotAddCollectionProperty" xml:space="preserve">
+    <value>{0}' コレクションを追加できません。</value>
+  </data>
+  <data name="CannotAddDuplicateProperty" xml:space="preserve">
+    <value>重複プロパティ エディタを追加できません: '{0}'</value>
+  </data>
+  <data name="CannotAddToEmptySingleton" xml:space="preserve">
+    <value>空のシングルトンを追加できません。コレクションの新しいインスタンスを作成してください。</value>
+  </data>
+  <data name="CannotCreateAppropriateDetailItem" xml:space="preserve">
+    <value>{0}' の適切な詳細アイテムを作成できません。</value>
+  </data>
+  <data name="CannotCreateAppropriatePropertyEditorForTheProperty" xml:space="preserve">
+    <value>{0}.{1}' プロパティの適切なプロパティ エディタを作成できません。</value>
+  </data>
+  <data name="CannotCreateSchemaForAttribute" xml:space="preserve">
+    <value>属性のスキーマを変更できません。</value>
+  </data>
+  <data name="CannotCreateTemplateByName" xml:space="preserve">
+    <value>名前でテンプレートを作成できません: '{0}'</value>
+  </data>
+  <data name="CannotFindDescendantOfXafApplicationClass" xml:space="preserve">
+    <value>以下のフォルダー内にアプリケーションの設定を検出する XafApplication クラスの子孫が見つかりません:
+{0}
+Windows Forms アプリケーションの場合、このフォルダーがアプリケーション実行ファイルを含む必要があります。ASP.NET アプリケーションの場合、WebApplication の子孫が入っているアセンブリを含む必要があります。</value>
+  </data>
+  <data name="CannotFindListViewWithId" xml:space="preserve">
+    <value>ID='{0}' を持つ ListView が見つかりません。</value>
+  </data>
+  <data name="CannotFindTheMemberWithinTheClass" xml:space="preserve">
+    <value>{1}' クラス内に '{0}' メンバーが見つかりません。</value>
+  </data>
+  <data name="CannotFindThePropertyWithinTheClass" xml:space="preserve">
+    <value>{1}' クラス内に '{0}' プロパティが見つかりません。</value>
+  </data>
+  <data name="CannotGenerateContent" xml:space="preserve">
+    <value>内容を生成できません： 'ClassName' 属性が空です。</value>
+  </data>
+  <data name="CannotObtainTheEditingObject" xml:space="preserve">
+    <value>編集オブジェクトを取得できません。</value>
+  </data>
+  <data name="CannotProcessTheRequestedUrl" xml:space="preserve">
+    <value>要求されたURLを処理できません。</value>
+  </data>
+  <data name="CannotProcessTheRequestedUrlActionItemWasNotFound" xml:space="preserve">
+    <value>要求されたURLを処理できません。'{0}' 操作アイテムは見つかりませんでした。</value>
+  </data>
+  <data name="CannotReadDictionaryFromResource" xml:space="preserve">
+    <value>{1}' アセンブリの '{0}' リソースから辞書を読み込めません。</value>
+  </data>
+  <data name="CannotSetEditValueAvailableValues" xml:space="preserve">
+    <value>{0}' テキストで EditValue を設定できません。可能な値:\r\n{1}</value>
+  </data>
+  <data name="CannotSetEditValueListIsEmpty" xml:space="preserve">
+    <value>{0}' テキストで EditValue を設定できません。リストは空です。</value>
+  </data>
+  <data name="CannotShowViewUnknownContext" xml:space="preserve">
+    <value>コンテキストが不明のため、ビューを表示できません: '{0}'</value>
+  </data>
+  <data name="CannotShowViewUnknownTarget" xml:space="preserve">
+    <value>ターゲットが不明のため、ビューを表示できません: '{0}'</value>
+  </data>
+  <data name="ClassDoesntImplementInterface" xml:space="preserve">
+    <value>クラス '{0}' はインターフェース '{1}' を実装しません。</value>
+  </data>
+  <data name="CompatibilityApplicationIsOldError" xml:space="preserve">
+    <value>データベースのバージョンがアプリケーションのバージョンより新しいため、データベースのバージョンを更新する必要があります。システム管理者に連絡するか、新しいバージョンをダウンロードしてください。\r\n追記: モジュール '{1}' のローカル バージョン {0} は、データベースのバージョン {2} より古いバージョンです。</value>
+  </data>
+  <data name="CompatibilityDatabaseIsOldError" xml:space="preserve">
+    <value>データベースのバージョンはアプリケーションのバージョンより古いです。データベースを更新する必要があります。</value>
+  </data>
+  <data name="ConfigFileDoesNotExists" xml:space="preserve">
+    <value>Config ファイル '{0}' が存在しません。</value>
+  </data>
+  <data name="ConfigFileHasNoModuleNames" xml:space="preserve">
+    <value>add\[@key="Modules"]' ノードはモジュール リスト、Config ファイル '{0}' を含む必要があります。</value>
+  </data>
+  <data name="CurrentObjectIsNotSet" xml:space="preserve">
+    <value>{0}' プロパティを設定できません。現在のオブジェクトは設定されていません。</value>
+  </data>
+  <data name="CustomizePopupWindowParamsEventArgsViewIsNull" xml:space="preserve">
+    <value>このエラーを回避するには、まずは XafApplication.CreateDetailView/CreateListView メソッドを使ってビューを作成し、CustomizePopupWindowParams イベントを処理する際に CustomizePopupWindowParamsEventArgs.View プロパティを割り当てる必要があります。これらのクラスやメソッドの詳細については製品のドキュメンテーションを参照してください。または DevExpress サポート チームへご連絡ください：https://supportcenter.devexpress.com/</value>
+  </data>
+  <data name="DataLayerAlreadyExists" xml:space="preserve">
+    <value>dataLayer は既に存在します: '{0}'</value>
+  </data>
+  <data name="DictionaryPathItemParsingFailed" xml:space="preserve">
+    <value>辞書パス アイテムを解析できませんでした。式 '{0}' に構文エラーがあります。</value>
+  </data>
+  <data name="DictionaryPathParsingFailed" xml:space="preserve">
+    <value>辞書パスを解析できませんでした。式 '{0}' に構文エラーがあります。</value>
+  </data>
+  <data name="DuplicateComponentIdentifier" xml:space="preserve">
+    <value>コンポーネント識別子 '{0}' が重複しています。</value>
+  </data>
+  <data name="ErrorOccursWhileAddingTheCustomProperty" xml:space="preserve">
+    <value>{1}' タイプに '{2}' カスタム プロパティ（'{0}' プロパティ タイプ）を追加する際にエラーが発生しました: '{3}'</value>
+  </data>
+  <data name="ExceptionDialogLabel" xml:space="preserve">
+    <value>次のエラーが発生しました:</value>
+  </data>
+  <data name="GridColumnDoesNotExist" xml:space="preserve">
+    <value>列 '{0}' はグリッドに存在しません。</value>
+  </data>
+  <data name="GridColumnExists" xml:space="preserve">
+    <value>列 '{0}' はグリッドに既に存在します。</value>
+  </data>
+  <data name="GridControlIsAlreadyCreated" xml:space="preserve">
+    <value>EditMode プロパティを設定できません。GridControl が既に作成されています。</value>
+  </data>
+  <data name="IncompatibleParametersCombinationOnViewChanged" xml:space="preserve">
+    <value>互換性のないパラメーターの組み合わせ – ポップアップ ウィンドウはメイン ビューと同じ ObjectSpace を持っていますが、ポップアップ ウィンドウの DialogController のSaveOnAccept プロパティが True に設定されています。起動されたポップアップ ウィンドウには新しい ObjectSpace を使用するか、DialogController. SaveOnAccept プロパティを False に設定してください。</value>
+  </data>
+  <data name="IncorrectConfigFile" xml:space="preserve">
+    <value>受け渡された Config ファイル '{0}' は '&lt;add key="Modules"' ノードを含みません。</value>
+  </data>
+  <data name="InfiniteRecursionDetected" xml:space="preserve">
+    <value>無限再帰が検出されました: '{0}' 詳細ビューは {1} 回作成されました。 https://www.devexpress.com/kb=B181657からのソリューションのいずれかを使用し、このエラーを回避するために、</value>
+  </data>
+  <data name="InvalidApplicationVersion" xml:space="preserve">
+    <value>{0}' で無効なアプリケーション バージョンです。</value>
+  </data>
+  <data name="InvalidParametrizedActionValueType" xml:space="preserve">
+    <value>{0}' パラメーター化された操作に割り当てられた値タイプは正しくありません。代わりに Int、String または DateTime タイプを設定してください。</value>
+  </data>
+  <data name="InvalidValueOfEnumProperty" xml:space="preserve">
+    <value>{0} オブジェクトの {1} プロパティの {2} 値は正しくありません。{4} ビジネス クラスの AfterConstruction メソッド内で正しい {3} 列挙値でプロパティを初期化してください。</value>
+  </data>
+  <data name="IsNotValidNamespacePrefixDescription" xml:space="preserve">
+    <value>{0}' は正しい名前空間プレフィックス記述ではありません。</value>
+  </data>
+  <data name="ItsImpossibleToFindPathForNode" xml:space="preserve">
+    <value>ノード '{1}' のパス='{0}' が見つかりません。</value>
+  </data>
+  <data name="ItsImpossibleToFindSourceNode" xml:space="preserve">
+    <value>SourceNode='{0}\\{1}' が見つかりません。</value>
+  </data>
+  <data name="LayoutControlInvalidCount" xml:space="preserve">
+    <value>無効な数: '{0}'</value>
+  </data>
+  <data name="ListEditorShouldImplement" xml:space="preserve">
+    <value>ListEditor は IDXPopupMenuHolder インターフェースを実装しなければなりません。</value>
+  </data>
+  <data name="MethodShouldBeUsed" xml:space="preserve">
+    <value>{0}' メソッドを使用する必要があります。</value>
+  </data>
+  <data name="ModulesHasAlreadyBeenLoaded" xml:space="preserve">
+    <value>モジュールは既に読み込まれています。</value>
+  </data>
+  <data name="NameAndValueCollectionsShouldHaveEqualLengths" xml:space="preserve">
+    <value>名前と値のコレクションの長さは同等でなければなりません。</value>
+  </data>
+  <data name="NodeContainsDuplicatedChildNodes" xml:space="preserve">
+    <value>{0}' ノードはキー属性に '{1}' 値を持つ2つのノードが含まれています。\r\n  Node1: '{2}'\r\n  Node2: '{3}'</value>
+  </data>
+  <data name="NodeWasNotFound" xml:space="preserve">
+    <value>{0}' ノードが見つかりませんでした。</value>
+  </data>
+  <data name="NotRegisteredReadOnlyParameterException" xml:space="preserve">
+    <value>{0}' 読み取り専用パラメーターは ParametersFactory に登録されていません。</value>
+  </data>
+  <data name="ObjectFormatterFormatStringIsInvalid" xml:space="preserve">
+    <value>指定された書式設定の文字列が無効なため、オブジェクトを書式設定できません: '{0}'</value>
+  </data>
+  <data name="PageCanOnlyContainOneInstanceOfControl" xml:space="preserve">
+    <value>ページには '{0}' コントロールの1インスタンスのみを含むことができます。</value>
+  </data>
+  <data name="ParameterConflictsWithPropertyException" xml:space="preserve">
+    <value>この基準は '{1}' クラスの '{0}' プロパティとコンフリクトしている '{0}' 読み取り専用パラメーターを含みます。この読み取り専用パラメーターを参照するには '@@{0}' 構文を使用してください。このプロパティを参照するには '@this.{0}' 構文を使用してください。</value>
+  </data>
+  <data name="PassedObjectBelongsToAnotherObjectSpace" xml:space="preserve">
+    <value>受け渡されたオブジェクトは別のObjectSpace に帰属しています。これらのオブジェクトが帰属していない ObjectSpace でオブジェクトを操作するとこのエラーが発生する場合があります。
+例えば、XafApplication.CreateDetailView メソッドを使用している際に、このメソッドでパラメーターとして使用されている ObjectSpace とは別の ObjectSpace からのオブジェクトを受け渡すとエラーが発生することがあります。
+このエラーを修正するには、操作する全オブジェクトが1つの ObjectSpace に属していることを確認してください。\r\n通常のケースでは、ObjectSpace.GetObject/GetObjectByKey メソッドを呼び出しターゲット ObjectSpace に受け渡されたオブジェクトを取得すると、このエラーを回避することができます。\r\nこのエラーが解決されない場合、DevExpress サポート チームへご連絡ください：https://supportcenter.devexpress.com/</value>
+  </data>
+  <data name="PermissionIsDenied" xml:space="preserve">
+    <value>アクセス許可は拒否されました。</value>
+  </data>
+  <data name="ProcessWasAborted" xml:space="preserve">
+    <value>処理が中断されました。</value>
+  </data>
+  <data name="RequiresCurrentObjectException" xml:space="preserve">
+    <value>基準はダイナミック パラメーターを使用していますが、現在のオブジェクトが指定されていないため CriteriaWrapper を更新できません。CriteriaWrapper を更新するにはUpdateParametersValues（オブジェクト currentObject）を呼び出し現在のオブジェクトをパラメーターとして受け渡します。</value>
+  </data>
+  <data name="ResourceItemWithNameIsNotFound" xml:space="preserve">
+    <value>名前 '{0}' を持つリソース アイテムが見つかりません。</value>
+  </data>
+  <data name="RuleSetClearingIsDenied" xml:space="preserve">
+    <value>RuleSet のクリアができません。</value>
+  </data>
+  <data name="SourceAttributeExpressionShouldStartWith" xml:space="preserve">
+    <value>ソース属性の式は '{0}' で始まる必要があります: '{1}'</value>
+  </data>
+  <data name="SourceAttributePathShouldConsistOf" xml:space="preserve">
+    <value>ソース属性のパスは1つ以上のノード名と、最後に属性名を含む必要があります。また、 '\\' 記号で区切る必要があります: '{0}'</value>
+  </data>
+  <data name="SourceNodeExpressionShouldStartWith" xml:space="preserve">
+    <value>SourceNode 式は '{0}' で始まらなければならない: '{1}'</value>
+  </data>
+  <data name="TemplateTypeInfoMissed" xml:space="preserve">
+    <value>タイプ '{0}' の TypeInfo が見つかりません。テンプレートを XAF モジュールに入れるか、XafTypesInfo.Instance.FindTypeInfo(typeof({0})) メソッドを使って手動で登録してください。</value>
+  </data>
+  <data name="TheAspectIsNotPresentInAspectsCollection" xml:space="preserve">
+    <value>アスペクト コレクションにアスペクト '{0}' がありません。</value>
+  </data>
+  <data name="TheAssemblyDoesntReferAssembly" xml:space="preserve">
+    <value>{0}' アセンブリはアセンブリ {1} ({2})を参照していません。</value>
+  </data>
+  <data name="TheClassIsNotFoundInBOModel" xml:space="preserve">
+    <value>BOModel で '{0}' クラスが見つかりません。</value>
+  </data>
+  <data name="TheClassNameAttributeIsEmpty" xml:space="preserve">
+    <value>参照されているビュー ノードの ClassName 属性は空です。</value>
+  </data>
+  <data name="TheClassNameAttributeRefersToADifferentType" xml:space="preserve">
+    <value>参照されているビュー ノードの ClassName 属性は別のタイプを参照しています。\r\nショートカット オブジェクト タイプ: {0}\r\nビュー ノード オブジェクト タイプ: {1}</value>
+  </data>
+  <data name="TheCreateApplicationModulesManagerReturnsNull" xml:space="preserve">
+    <value>CreateApplicationModulesManager メソッドは Null を返します。</value>
+  </data>
+  <data name="TheExpressionShouldConsistOf" xml:space="preserve">
+    <value>式は ';' 記号で区切られた検索式とソース属性名を含む必要があります: '{0}'</value>
+  </data>
+  <data name="TheExpressionStringContainsANumberOfExpressions" xml:space="preserve">
+    <value>expressionString' 文字列は {0} の式を含みます。</value>
+  </data>
+  <data name="ThePassedFileIsNotADllOrConfig" xml:space="preserve">
+    <value>受け渡された '{0}' ファイルは *.dll ファイルまたは *.config ファイルではありません。</value>
+  </data>
+  <data name="ThereIsAlreadyRegisteredCreatorForFormat" xml:space="preserve">
+    <value>形式 '{0}' には作成者が既に登録されています。</value>
+  </data>
+  <data name="TheSourceNodeCannotAddressToSeveralNodes" xml:space="preserve">
+    <value>SourceNode='{0}\\{1}' は複数の '{1}' ノード（2つ以上）を扱うことができます。</value>
+  </data>
+  <data name="TheTypeAttributeCannotBeEmpty" xml:space="preserve">
+    <value>Type' 属性は空にはできません。</value>
+  </data>
+  <data name="TheTypeIsNotDescendantOf" xml:space="preserve">
+    <value>{0}' タイプは '{1}' の子孫ではありません。</value>
+  </data>
+  <data name="TheValueWasLocked" xml:space="preserve">
+    <value>値はロックされました。</value>
+  </data>
+  <data name="TypeDoesNotContainTheMember" xml:space="preserve">
+    <value> '{0}' タイプは '{1}' メンバーを含みません。</value>
+  </data>
+  <data name="TypeIsNotAEnum" xml:space="preserve">
+    <value>{0}' タイプは列挙型タイプではありません。</value>
+  </data>
+  <data name="UnableToAssignDisabledActionItem" xml:space="preserve">
+    <value>使用不可のアイテムを割り当てできません。操作: {0}\r\nアイテム: {1}\r\n使用不可の原因: {2}</value>
+  </data>
+  <data name="UnableToAssignInvisibleActionItem" xml:space="preserve">
+    <value>非表示アイテムを割り当てできません。\r\n操作: {0}\r\nアイテム: {1}\r\n非表示の原因: {2}</value>
+  </data>
+  <data name="UnableToCast" xml:space="preserve">
+    <value>タイプ '{0}' のオブジェクトをタイプ '{1}' にキャストできません。</value>
+  </data>
+  <data name="UnableToChangeChildrenOfNodeDueItIsLocked" xml:space="preserve">
+    <value>{0}' ノードがロックされているため、その子を変更できません。</value>
+  </data>
+  <data name="UnableToChangeConnectionString" xml:space="preserve">
+    <value>接続文字列が既に接続されているため変更できません。</value>
+  </data>
+  <data name="UnableToChangeValueOfAttributeDueItIsLocked" xml:space="preserve">
+    <value>{0}' 属性がロックされているためその値を変更できません。</value>
+  </data>
+  <data name="UnableToCreateObjectSpace" xml:space="preserve">
+    <value>ObjectSpace を作成できません。dataLayer は Null であるか、connectionString は空です。</value>
+  </data>
+  <data name="UnableToCreateUpdateSessionAutoCreateOption" xml:space="preserve">
+    <value>UpdatingSession を作成できません。dataLayer.AutoCreateOption は {0} です。</value>
+  </data>
+  <data name="UnableToCreateUpdateSessionDataLayerIsNull" xml:space="preserve">
+    <value>UpdatingSession を作成できません。dataLayer は Null である、または connectionString は空です。</value>
+  </data>
+  <data name="UnableToCreateUpdatingReadonlySessionAutoCreateOption" xml:space="preserve">
+    <value>UpdatingReadOnlySession を作成できません。dataLayer.AutoCreateOption は {0} です。</value>
+  </data>
+  <data name="UnableToExecuteDisabledOrInactiveAction" xml:space="preserve">
+    <value>使用不可または非アクティブの操作 {2} を実行できません。使用不可にした理由は {0} で、無効になった理由は {1} です。</value>
+  </data>
+  <data name="UnableToFindADetailViewForType" xml:space="preserve">
+    <value>{0}' オブジェクト タイプの詳細ビューが見つかりません。</value>
+  </data>
+  <data name="UnableToFindAListViewForType" xml:space="preserve">
+    <value>{0}' オブジェクト タイプのリスト ビューが見つかりません。</value>
+  </data>
+  <data name="UnableToFindPropertyInType" xml:space="preserve">
+    <value>タイプ '{1}' 内のプロパティ '{0}' が見つかりません。</value>
+  </data>
+  <data name="UnableToFindType" xml:space="preserve">
+    <value>タイプ '{0}' が見つかりません。</value>
+  </data>
+  <data name="UnableToInitializeFileDataProperty" xml:space="preserve">
+    <value>プロパティが読み取り専用であるか {2} タイプにデフォルトのコンストラクタがないか、作成する権限がないため、{1} オブジェクト内の {0} プロパティを初期化できません。</value>
+  </data>
+  <data name="UnableToSetReadOnlyProperty" xml:space="preserve">
+    <value>読み取り専用プロパティ '{0}' を設定できません。</value>
+  </data>
+  <data name="UnknownException" xml:space="preserve">
+    <value>不明な例外が発生しています。例外の詳細を取得できません。</value>
+  </data>
+  <data name="UnknownValue" xml:space="preserve">
+    <value>不明な値: '{0}'</value>
+  </data>
+  <data name="UnknownViewNodeName" xml:space="preserve">
+    <value>不明なビュー ノード名: '{0}'\r\n許可された名前: '{1}', '{2}'</value>
+  </data>
+  <data name="ValidationCannotFindTheAssociatedMemberInTargetClassForCollectionProperty" xml:space="preserve">
+    <value>{1} クラスの {0} コレクション プロパティは、ターゲット オブジェクト クラス {2} 内に関連するメンバーを持ちません。</value>
+  </data>
+  <data name="ValidationCannotFindThePropertyWithinTheClass" xml:space="preserve">
+    <value>{1}' プロパティがターゲット '{2}' クラスに存在しないため、'{1}' プロパティを使用している '{0}' 検証ルールを確認できません。</value>
+  </data>
+  <data name="ValidationMessageTemplateHasInvalidFormat" xml:space="preserve">
+    <value>検証メッセージ テンプレートの形式が無効です: '{0}'</value>
+  </data>
+  <data name="ValueCannotBeStoredIntoTheProperty" xml:space="preserve">
+    <value>{0}' 値を '{1}' プロパティに蓄積できません。</value>
+  </data>
+  <data name="WindowWasNotFound" xml:space="preserve">
+    <value>id '{0}' でウィンドウが見つかりません。登録されているウィンドウ: '{1}'</value>
+  </data>
+  <data name="XPDictionaryIsNull" xml:space="preserve">
+    <value>XPDictionary は Null です。</value>
+  </data>
+  <data name="YouCannotChangeCurrentAspect" xml:space="preserve">
+    <value>現在の言語は現在のスレッドのカルチャに依存しているため、変更できません。</value>
+  </data>
+  <data name="InfiniteRecursionDetectedInGenerateColumns" xml:space="preserve">
+    <value>I無限の再帰が検出されました。'{0}' クラスのコール 'GenerateColumns' で {1} 回検出</value>
+  </data>
+  <data name="InvalidStreamDataException" xml:space="preserve">
+    <value>例外キャッシュを読み込み中。詳細については、アドミニストレータに連絡してください。</value>
+  </data>
+  <data name="CustomPersistentPropertiesAreNotSupported" xml:space="preserve">
+    <value>(アプリケーション モデルまたは TypesInfo システムで直接定義された) カスタム永続プロパティは、'{0}' タイプでサポートされていません。</value>
+  </data>
+</root>

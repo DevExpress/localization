@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConnectionProvider_TypeMappingMissing" xml:space="preserve">
+    <value>Provider-ul bazei de date nu poate procesa tipul de date '{0}' pentru că nu poate fi mapat peste tipurile acceptate de baza de date. Selectaţi un alt tip de date.</value>
+    <comment>Database provider cannot process the '{0}' type because it is not mapped to the types of an underlayed database. Please use another type.</comment>
+  </data>
+  <data name="ConnectionProvider_UnableToCreateDBObject" xml:space="preserve">
+    <value> '{0}' '{1}' nu poate fi creat. Părinte: '{2}'. Eroare: {3}</value>
+    <comment>Unable to create '{0}' '{1}'. Parent: '{2}'. Error: {3}</comment>
+  </data>
+  <data name="ConnectionProvider_SqlExecutionError" xml:space="preserve">
+    <value>Executie sql '{0}' cu parametrii '{1}' excepţia '{2}'</value>
+    <comment>Executing Sql '{0}' with parameters '{1}' exception '{2}'</comment>
+  </data>
+  <data name="ConnectionProvider_SchemaCorrectionNeeded" xml:space="preserve">
+    <value>Schema trebuie reînnoită. Contactaţi administratorul dumneavoastră de sistem. Text sql: {0}</value>
+    <comment>Schema needs to be updated. Contact your system administrator. Sql text: {0}</comment>
+  </data>
+  <data name="ConnectionProvider_TableNameTooLong" xml:space="preserve">
+    <value>Tabela  '{0}' nu poate fi creată. Numele tabelei este prea lung (depăşeşte 64 de caractere)</value>
+    <comment>Unable to create database table '{0}'. The name of the table is too long (exceed 64 characters)</comment>
+  </data>
+  <data name="ConnectionProvider_ColumnNameTooLong" xml:space="preserve">
+    <value>Coloana '{1}' a tabelei '{0}' nu poate fi creată. Numele coloanei este prea lung (depăşeşte 64 de caractere)</value>
+    <comment>Unable to create table column '{1}' of table '{0}'. The name of the column is too long (exceed 64 characters)</comment>
+  </data>
+  <data name="ConnectionProvider_AtLeastOneColumnExpected" xml:space="preserve">
+    <value>Este necesară existenţa a cel puţin o coloană</value>
+    <comment>At least one column expected</comment>
+  </data>
+  <data name="ConnectionProvider_Locking" xml:space="preserve">
+    <value>Obiectul nu poate fi făcut persistent. Acesta a fost modificat sau şters de către o altă aplicaţie.</value>
+    <comment>Cannot persist the object. It was modified or deleted (purged) by another application.</comment>
+  </data>
+  <data name="ConnectionProvider_UnableToOpenDatabase" xml:space="preserve">
+    <value>Nu pot sa deschid baza de date. Conexiune: '{0}'; Eroare: '{1}'</value>
+  </data>
+</root>

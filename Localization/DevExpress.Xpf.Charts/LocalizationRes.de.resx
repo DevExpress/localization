@@ -1,0 +1,541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ChartStringId.EmptyLegendText" xml:space="preserve">
+    <value>Anzeige-Namen definieren</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectPropertyUsage" xml:space="preserve">
+    <value>Die '{0}'-Eigenschaft wird von der '{1}' Klasse nicht unterstützt.</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectPointsCreation" xml:space="preserve">
+    <value>Die Serienpunkte Collection sollte entweder aus einer Datenquelle oder manuell befüllt werden, aber nicht beides auf einmal.</value>
+  </data>
+  <data name="ChartStringId.MsgInvalidLogarithmicBase" xml:space="preserve">
+    <value>Die Basis des Logarithmus muss größer als 1 sein.</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectLabelAngle" xml:space="preserve">
+    <value>Der Winkel der Beschriftung sollte größer oder gleich -360 und kleiner oder gleich 360 Grad sein.</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectSeriesRemoving" xml:space="preserve">
+    <value>Es ist unmöglich, automatisch erstellte Serien zu entfernen.</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectSeriesReplacement" xml:space="preserve">
+    <value>Die automatisch erstellten Serien können nicht zugewiesen werden.</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectSeriesReordering" xml:space="preserve">
+    <value>Bei Neusortierung von Serien innerhalb der Collection können automatisch erstellte Serien nicht die manuell erstellten ersetzen - und umgekehrt.</value>
+  </data>
+  <data name="ChartStringId.MsgDiagramToPointIncorrectValue" xml:space="preserve">
+    <value>Der angegebene {0} Parametertyp stimmt nicht mit dem entsprechenden Maßstabstyp überein, der für diese Achse {1} ist.</value>
+  </data>
+  <data name="ChartStringId.ChartControlLocalizedControlType" xml:space="preserve">
+    <value>Chart</value>
+  </data>
+  <data name="ChartStringId.ChartControlAutomationPeerHelpText" xml:space="preserve">
+    <value>Ein Chart Steuerelement.</value>
+  </data>
+  <data name="ChartStringId.MsgSeriesPointIncorrectValue" xml:space="preserve">
+    <value>Der Wert des Punktes kann nicht gleich unendlich sein.</value>
+  </data>
+  <data name="ChartStringId.ValuePatternDescription" xml:space="preserve">
+    <value>Wert</value>
+  </data>
+  <data name="ChartStringId.SeriesNamePatternDescription" xml:space="preserve">
+    <value>Name der Reihe</value>
+  </data>
+  <data name="ChartStringId.StackedGroupPatternDescription" xml:space="preserve">
+    <value>Seriengruppe</value>
+  </data>
+  <data name="ChartStringId.Value1PatternDescription" xml:space="preserve">
+    <value>Wert1</value>
+  </data>
+  <data name="ChartStringId.Value2PatternDescription" xml:space="preserve">
+    <value>Wert2</value>
+  </data>
+  <data name="ChartStringId.WeightPatternDescription" xml:space="preserve">
+    <value>Gewicht</value>
+  </data>
+  <data name="ChartStringId.HighValuePatternDescription" xml:space="preserve">
+    <value>Hoher Wert</value>
+  </data>
+  <data name="ChartStringId.LowValuePatternDescription" xml:space="preserve">
+    <value>Niedriger Wert</value>
+  </data>
+  <data name="ChartStringId.CloseValuePatternDescription" xml:space="preserve">
+    <value>Schließender Wert</value>
+  </data>
+  <data name="ChartStringId.PercentValuePatternDescription" xml:space="preserve">
+    <value>Prozent-Wert</value>
+  </data>
+  <data name="ChartStringId.PointHintPatternDescription" xml:space="preserve">
+    <value>Punkt-Hinweis</value>
+  </data>
+  <data name="ChartStringId.ValueDurationPatternDescription" xml:space="preserve">
+    <value>Wert-Dauer</value>
+  </data>
+  <data name="ChartStringId.PatternEditorPreviewCaption" xml:space="preserve">
+    <value>Wählen Sie einen Platzhalter, um die Vorschau zu sehen</value>
+  </data>
+  <data name="ChartStringId.ErrorTitle" xml:space="preserve">
+    <value>Fehler</value>
+  </data>
+  <data name="ChartStringId.AnnotationDefaultContent" xml:space="preserve">
+    <value>Anmerkung</value>
+  </data>
+  <data name="ChartStringId.ArgumentPatternDescription" xml:space="preserve">
+    <value>Argument</value>
+  </data>
+  <data name="ChartStringId.CustomLegendItemDefaultText" xml:space="preserve">
+    <value>Benutzerdefinierter Legendeneintrag</value>
+  </data>
+  <data name="ChartStringId.MsgCantImportHolidays" xml:space="preserve">
+    <value>Fehler beim Importieren der Feiertage aus der Datei "{0}".</value>
+  </data>
+  <data name="ChartStringId.TitleDefaultContent" xml:space="preserve">
+    <value>Titel</value>
+  </data>
+  <data name="ChartStringId.LegendTitleDefaultContent" xml:space="preserve">
+    <value>Legendentitel</value>
+  </data>
+  <data name="ChartStringId.MsgFileNotFound" xml:space="preserve">
+    <value>Datei "{0}" nicht gefunden.</value>
+  </data>
+  <data name="ChartStringId.TotalLabelHeader" xml:space="preserve">
+    <value>Ergebnis</value>
+  </data>
+  <data name="ChartStringId.OthersArgument" xml:space="preserve">
+    <value>Andere</value>
+  </data>
+  <data name="ChartStringId.TotalValuePatternDescription" xml:space="preserve">
+    <value>Gesamtwert</value>
+  </data>
+  <data name="ChartStringId.Chart3DControlAutomationPeerHelpText" xml:space="preserve">
+    <value>Ein Diagrammsteuerelement 3D.</value>
+  </data>
+  <data name="ChartStringId.ToolbarPrintItemCaption" xml:space="preserve">
+    <value>Drucken</value>
+  </data>
+  <data name="ChartStringId.ToolbarPrintPreviewItemCaption" xml:space="preserve">
+    <value>Druckvorschau</value>
+  </data>
+  <data name="ChartStringId.ToolbarChartToolsCategoryCaption" xml:space="preserve">
+    <value>Diagrammtools</value>
+  </data>
+  <data name="ChartStringId.MsgEmptyArgument" xml:space="preserve">
+    <value>Ein Argument darf nicht leer sein.</value>
+  </data>
+  <data name="ChartStringId.ToolbarSeriesSelectorItemCaption" xml:space="preserve">
+    <value>Serie</value>
+  </data>
+  <data name="ChartStringId.ToolbarDefaultConstantLineTitle" xml:space="preserve">
+    <value>Konstante Linie</value>
+  </data>
+  <data name="ChartStringId.ToolbarAppearanceGroupCaption" xml:space="preserve">
+    <value>Aussehen</value>
+  </data>
+  <data name="ChartStringId.ToolbarAnnotationsGroupCaption" xml:space="preserve">
+    <value>Anmerkungen</value>
+  </data>
+  <data name="ChartStringId.ToolbarConstantLinesGroupCaption" xml:space="preserve">
+    <value>Konstante Linien</value>
+  </data>
+  <data name="ChartStringId.ToolbarFinancialIndicatorsGroupCaption" xml:space="preserve">
+    <value>Indikatoren</value>
+  </data>
+  <data name="ChartStringId.ToolbarCommonPageCaption" xml:space="preserve">
+    <value>Gemeinsame</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportItemCaption" xml:space="preserve">
+    <value>Exportieren</value>
+  </data>
+  <data name="ChartStringId.ToolbarPaletteItemCaption" xml:space="preserve">
+    <value>Palette</value>
+  </data>
+  <data name="ChartStringId.ToolbarDrawFibonacciFansIndicatorItemCaption" xml:space="preserve">
+    <value>Fibonacci Fächer</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToRtfItemDescription" xml:space="preserve">
+    <value>Rich Text Format</value>
+  </data>
+  <data name="ChartStringId.OpenFileDialogAllFiles" xml:space="preserve">
+    <value>Alle Dateien</value>
+  </data>
+  <data name="ChartStringId.WaterfallTotalBarLabel" xml:space="preserve">
+    <value>Ergebnis</value>
+  </data>
+  <data name="ChartStringId.WaterfallTotalBarLegendItem" xml:space="preserve">
+    <value>Ergebnis</value>
+  </data>
+  <data name="ChartStringId.ToolbarRunDesignerGroupCaption" xml:space="preserve">
+    <value>Designer</value>
+  </data>
+  <data name="ChartStringId.ToolbarDrawFibonacciArcsIndicatorItemCaption" xml:space="preserve">
+    <value>Fibonacci Bögen</value>
+  </data>
+  <data name="ChartStringId.ToolbarDrawTrendLineIndicatorItemCaption" xml:space="preserve">
+    <value>Trendlinie</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToGifItemDescription" xml:space="preserve">
+    <value>Graphics Interchange Format</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToHtmlItemCaption" xml:space="preserve">
+    <value>Export als HTML</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToHtmlItemDescription" xml:space="preserve">
+    <value>Webseite</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToMhtItemCaption" xml:space="preserve">
+    <value>Export als MHT</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToPdfItemCaption" xml:space="preserve">
+    <value>Export als PDF</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToPngItemDescription" xml:space="preserve">
+    <value>Portable Netzwerk-Grafiken</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToXlsItemCaption" xml:space="preserve">
+    <value>Export als XLS</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToXlsxItemCaption" xml:space="preserve">
+    <value>Export als XLSX</value>
+  </data>
+  <data name="ChartStringId.ToolbarHorizontalConstantLineItemCaption" xml:space="preserve">
+    <value>Horizontale Konstantenlinie hinzufügen</value>
+  </data>
+  <data name="ChartStringId.ToolbarVerticalConstantLineItemCaption" xml:space="preserve">
+    <value>Vertikale Konstantenlinie hinzufügen</value>
+  </data>
+  <data name="ChartStringId.IntervalArgumentMaxPatternDescription" xml:space="preserve">
+    <value>Argument 2</value>
+  </data>
+  <data name="ChartStringId.IntervalArgumentMinPatternDescription" xml:space="preserve">
+    <value>Argument 1</value>
+  </data>
+  <data name="ChartStringId.ToolbarSaveAsTemplateItemDescription" xml:space="preserve">
+    <value>Erstellen Sie eine Vorlage, mit der gleichen Einstellung wie das aktuelle Diagramm.</value>
+  </data>
+  <data name="ChartStringId.OpenValuePatternDescription" xml:space="preserve">
+    <value>Offener Wert</value>
+  </data>
+  <data name="ChartStringId.ToolbarAddIndicatorItemDescription" xml:space="preserve">
+    <value>zeichnen, wählen Sie den gewünschten Indikator aus der Dropdown-Liste aus.</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToDocxItemCaption" xml:space="preserve">
+    <value>Export als Word Dokument</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToXlsItemDescription" xml:space="preserve">
+    <value>Microsoft Excel 2000-2003 Arbeitsmappe</value>
+  </data>
+  <data name="ChartStringId.ToolbarLoadTemplateItemCaption" xml:space="preserve">
+    <value>Vorlage 
+laden</value>
+  </data>
+  <data name="ChartStringId.ToolbarLoadTemplateItemDescription" xml:space="preserve">
+    <value>Diagramm aus Vorlage laden</value>
+  </data>
+  <data name="ChartStringId.ToolbarPrintAndExportGroupCaption" xml:space="preserve">
+    <value>Drucken und exportieren</value>
+  </data>
+  <data name="ChartStringId.ToolbarPrintPreviewItemDescription" xml:space="preserve">
+    <value>Vorschau und Änderungen an Seiten vornehmen vor dem Drucken.</value>
+  </data>
+  <data name="ChartStringId.ToolbarRunDesignerItemCaption" xml:space="preserve">
+    <value>Führen Sie den Diagrammassistenten...</value>
+  </data>
+  <data name="ChartStringId.MsgIncompatibleSummaryFunctionScale" xml:space="preserve">
+    <value>Die  Zusammenfassung '{0}' ist inkompatibel mit der Achse {1} .</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectLegendMaxCrosshairContentWidth" xml:space="preserve">
+    <value>Die Legende MaxCrosshairContentWidth Eigenschaftswert muss größer als 0 und weniger als 1000 sein.</value>
+  </data>
+  <data name="ChartStringId.MsgInvalidZeroAxisAlignment" xml:space="preserve">
+    <value>Die Ausrichtung kann für die Sekundärachse nicht auf Alignment.Zero gesetzt werden.</value>
+  </data>
+  <data name="ChartStringId.ToolbarDrawFibonacciArcsIndicatorItemDescription" xml:space="preserve">
+    <value>Um einen Fibonacci-Bogenindikator für die aktuelle Serie hinzuzufügen, klicken Sie auf einen Serienpunkt, und ziehen Sie die Maus zum gewünschten Serienpunkt.</value>
+  </data>
+  <data name="ChartStringId.ToolbarDrawFibonacciFansIndicatorItemDescription" xml:space="preserve">
+    <value>Um eine Fibonacci-Lüfteranzeige für die aktuelle Serie hinzuzufügen, klicken Sie auf einen Serienpunkt und ziehen Sie die Maus zum gewünschten Serienpunkt.</value>
+  </data>
+  <data name="ChartStringId.ToolbarDrawTrendLineIndicatorItemDescription" xml:space="preserve">
+    <value>Um einen Trend Line-Indikator für die aktuelle Serie hinzuzufügen, klicken Sie auf einen Serienpunkt und ziehen Sie die Maus zum gewünschten Serienpunkt.</value>
+  </data>
+  <data name="ChartStringId.ToolbarFinancialAxisUnitItemDescription" xml:space="preserve">
+    <value>Wählen Sie eine gewünschte Maßeinheit für die Argumentationsachse des Diagramms aus.</value>
+  </data>
+  <data name="ChartStringId.ToolbarRunDesignerItemDescription" xml:space="preserve">
+    <value>Der Diagramm-Assistent wird aufgerufen, um Ihnen die Haupt-Chart-Einstellungen an einem Ort anpassen helfen.</value>
+  </data>
+  <data name="ChartStringId.ToolbarSaveAsTemplateItemCaption" xml:space="preserve">
+    <value>Als Vorlage speichern</value>
+  </data>
+  <data name="ChartStringId.ToolbarTemplatesGroupCaption" xml:space="preserve">
+    <value>Vorlagen</value>
+  </data>
+  <data name="ChartStringId.MsgCantOpenImageMessage" xml:space="preserve">
+    <value>Nicht unterstütztes oder ungültiges Bildformat.</value>
+  </data>
+  <data name="ChartStringId.ToolbarDrawFibonacciRetracementIndicatorItemCaption" xml:space="preserve">
+    <value>Fibonacci-Trendkorrektur</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToJpegItemDescription" xml:space="preserve">
+    <value>JPEG-Bild</value>
+  </data>
+  <data name="ChartStringId.ToolbarFinancialOptionsPageCaption" xml:space="preserve">
+    <value>Finanzoptionen</value>
+  </data>
+  <data name="ChartStringId.UnderflowSymbolPatternDescription" xml:space="preserve">
+    <value>Unterlauf-Symbol</value>
+  </data>
+  <data name="ChartStringId.ValueDurationDaysPatternDescription" xml:space="preserve">
+    <value>Wertdauer (Tage)</value>
+  </data>
+  <data name="ChartStringId.ValueDurationHoursPatternDescription" xml:space="preserve">
+    <value>Wert Dauer (Stunden)</value>
+  </data>
+  <data name="ChartStringId.ValueDurationMillisecondsPatternDescription" xml:space="preserve">
+    <value>Wert Dauer (ms)</value>
+  </data>
+  <data name="ChartStringId.ValueDurationMinutesPatternDescription" xml:space="preserve">
+    <value>Wert Dauer (Min.)</value>
+  </data>
+  <data name="ChartStringId.ValueDurationSecondsPatternDescription" xml:space="preserve">
+    <value>Wert Dauer (Sek.)</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToTiffItemDescription" xml:space="preserve">
+    <value>Markiertes Bilddateiformat</value>
+  </data>
+  <data name="ChartStringId.MsgCantOpenImageMessageBoxHeader" xml:space="preserve">
+    <value>Bild kann nicht geöffnet werden</value>
+  </data>
+  <data name="ChartStringId.Chart3DControlLocalizedControlType" xml:space="preserve">
+    <value>Diagramm 3D</value>
+  </data>
+  <data name="ChartStringId.ClosingBracketPatternDescription" xml:space="preserve">
+    <value>Schließende Halterung</value>
+  </data>
+  <data name="ChartStringId.MsgUsingColorItemsSourceWhenColorNotEmpty" xml:space="preserve">
+    <value>Die Farbkollektion muss leer sein, bevor die ColorItemsSource verwendet werden kann.</value>
+  </data>
+  <data name="ChartStringId.ToolbarPaletteItemDescription" xml:space="preserve">
+    <value>Ändern Sie die Palette für das aktuelle Diagramm.</value>
+  </data>
+  <data name="ChartStringId.EmptySankeyDefaultText" xml:space="preserve">
+    <value>Das Diagramm enthält keine Daten.
+Um dieses Diagramm zu füllen, wählen Sie eine Datenquelle aus,
+ und stellen Sie sicher, dass Quell- und Zieldatenmember angegeben sind.</value>
+  </data>
+  <data name="ChartStringId.MsgFunnelInvalidValues" xml:space="preserve">
+    <value>Dieser Trichter enthält einen falschen Satz von Werten. Trichter können aus allen positiven Werten, positiven und Nullwerten und allen negativen Werten bestehen.</value>
+  </data>
+  <data name="ChartStringId.MsgIncompatibleSummaryFunctionDimension" xml:space="preserve">
+    <value>Die Dimension der Zusammenfassungsfunktion "{0}" ist nicht mit der {1} kompatibel ({2}, sollte aber {3} werden).</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectDoubleValue" xml:space="preserve">
+    <value>Der Wert darf nicht gleich Double.NaN, Double.PositiveInfinity oder Double.NegativeInfinity sein.</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectLegendMaxCrosshairContentHeight" xml:space="preserve">
+    <value>Der Wert der MaxCrosshairContentHeight-Eigenschaft der Legende muss größer als 0, kleiner als 1000 oder gleich Double.NaN sein.</value>
+  </data>
+  <data name="ChartStringId.MsgInvalidCenterAxisAlignment" xml:space="preserve">
+    <value>Die Achse kann für die Sekundärachse nicht auf Alignment.Center festgelegt werden.</value>
+  </data>
+  <data name="ChartStringId.MsgUsingSeriesTemplateAndItemTemplate" xml:space="preserve">
+    <value>Die Eigenschaften SeriesTemplate und SeriesItemTemplate können nicht gleichzeitig angegeben werden.</value>
+  </data>
+  <data name="ChartStringId.ToolbarAddImageAnnotationItemDescription" xml:space="preserve">
+    <value>Um eine Bildanmerkung hinzuzufügen, klicken Sie auf einen Punkt im Diagramm und wählen Sie dann ein Bild im aufgerufenen Dialogfeld aus.</value>
+  </data>
+  <data name="ChartStringId.ToolbarAddTextAnnotationItemDescription" xml:space="preserve">
+    <value>Um eine Textanmerkung hinzuzufügen, klicken Sie auf das Diagramm und geben Sie den Text ein.</value>
+  </data>
+  <data name="ChartStringId.ToolbarDrawFibonacciRetracementIndicatorItemDescription" xml:space="preserve">
+    <value>Um einen Fibonacci-Retracement-Indikator für die aktuelle Serie hinzuzufügen, klicken Sie auf einen Serienpunkt und ziehen Sie die Maus auf den gewünschten Serienpunkt.</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportItemDescription" xml:space="preserve">
+    <value>Exportieren Sie das aktuelle Dokument in einem der verfügbaren Formate und speichern Sie es als Datei auf einem Datenträger.</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToBmpItemDescription" xml:space="preserve">
+    <value>Bitmap-Bild</value>
+  </data>
+  <data name="ChartStringId.ToolbarHorizontalConstantLineItemDescription" xml:space="preserve">
+    <value>Um eine horizontale konstante Linie hinzuzufügen, klicken Sie auf einen Punkt im Diagramm und geben Sie den Text ein.</value>
+  </data>
+  <data name="ChartStringId.ToolbarVerticalConstantLineItemDescription" xml:space="preserve">
+    <value>Um eine vertikale konstante Linie hinzuzufügen, klicken Sie auf einen Punkt im Diagramm und geben Sie den Text ein.</value>
+  </data>
+  <data name="ChartStringId.AbsoluteValue" xml:space="preserve">
+    <value>Absolutwert</value>
+  </data>
+  <data name="ChartStringId.MsgUsingColorWhenColorItemsSourceNotEmptyCustomIndicatorsPalette" xml:space="preserve">
+    <value>Der Vorgang ist ungültig, während ColorItemsSource verwendet wird. Greifen Sie stattdessen mit CustomIndicatorsPalette.ColorItemsSource auf Elemente zu, und ändern Sie sie.</value>
+  </data>
+  <data name="ChartStringId.MsgUsingColorWhenColorItemsSourceNotEmptyCustomPalette" xml:space="preserve">
+    <value>Der Vorgang ist ungültig, während ColorItemsSource verwendet wird. Greifen Sie stattdessen mit CustomPalette.ColorItemsSource auf Elemente zu, und ändern Sie sie.</value>
+  </data>
+  <data name="ChartStringId.OpenFileDialogImageFiles" xml:space="preserve">
+    <value>Bilddateien</value>
+  </data>
+  <data name="ChartStringId.OpeningBracketPatternDescription" xml:space="preserve">
+    <value>Halterung zum Öffnen</value>
+  </data>
+  <data name="ChartStringId.OverflowSymbolPatternDescription" xml:space="preserve">
+    <value>Überlauf-Symbol</value>
+  </data>
+  <data name="ChartStringId.SmallSankeyDefaultText" xml:space="preserve">
+    <value>Vergrößern Sie das Diagramm,
+, um das Layout anzuzeigen.</value>
+  </data>
+  <data name="ChartStringId.ToolbarAddIndicatorItemCaption" xml:space="preserve">
+    <value>Indikatoren hinzufügen</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToDocxItemDescription" xml:space="preserve">
+    <value>Microsoft Word Open XML-Format</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToXlsxItemDescription" xml:space="preserve">
+    <value>Microsoft Excel 2007 – Arbeitsbuch</value>
+  </data>
+  <data name="ChartStringId.ToolbarFinancialAxisPeriodItemDescription" xml:space="preserve">
+    <value>Wählen Sie einen gewünschten Zeitraum aus.</value>
+  </data>
+  <data name="ChartStringId.ToolbarFinancialAxisUnitItemCaption" xml:space="preserve">
+    <value>Achsen-Einheit</value>
+  </data>
+  <data name="ChartStringId.ToolbarFinancialSeriesAndAxisGroupCaption" xml:space="preserve">
+    <value>Serie und Achse</value>
+  </data>
+  <data name="ChartStringId.ToolbarPrintItemDescription" xml:space="preserve">
+    <value>Wählen Sie vor dem Drucken einen Drucker, die Anzahl der Kopien und andere Druckoptionen aus.</value>
+  </data>
+  <data name="ChartStringId.ToolbarRemoveIndicatorItemCaption" xml:space="preserve">
+    <value>Indikator entfernen</value>
+  </data>
+  <data name="ChartStringId.ToolbarRemoveIndicatorItemDescription" xml:space="preserve">
+    <value>Wählen Sie einen Indikator auf dem Chart aus, um ihn zu entfernen.</value>
+  </data>
+  <data name="ChartStringId.ToolbarSeriesSelectorItemDescription" xml:space="preserve">
+    <value>Wählen Sie eine Serie aus der Dropdown-Liste aus.</value>
+  </data>
+  <data name="ChartStringId.WaterfallFallingBarLegendItem" xml:space="preserve">
+    <value>Verringern</value>
+  </data>
+  <data name="ChartStringId.WaterfallRisingBarLegendItem" xml:space="preserve">
+    <value>Zunahme</value>
+  </data>
+</root>

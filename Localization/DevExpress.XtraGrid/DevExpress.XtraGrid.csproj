@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F355827D-3C33-425F-AB52-2C766611B44E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>DevExpress.XtraGrid.v25.2</AssemblyName>
+<DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Flow</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE32Nav30</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DevExpress.XtraGrid</RootNamespace>
+    <SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>1140850688</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DXWhidbey;DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>1140850688</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DXWhidbey;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <Name>Accessibility</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>SYSTEM.WINDOWS.FORMS</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\ErrorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Printing\CardViewPrinting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LayoutView\Designer\PrintDesigner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Printing\GridViewPrinting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Base\ErrorPanel.ar.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.bg.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.ca.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.cs.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.da.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.de-CH.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.de.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.el.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.es.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.et.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.fa.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.fi.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.fr.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.he.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.hr.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.hu.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.hy.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.is.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.it.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.ja.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.ko.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.lt.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.lv.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.mk.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.nl.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.no.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.pl.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.pt-BR.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.pt.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.ro.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.ru.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.sk.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.sl.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.sr-Cyrl-RS.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.sr-Latn-BA.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.sr-Latn-RS.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.sv.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.ta.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.th.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.tr.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.uk.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.vi.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.zh-CN.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.zh-Hans.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.zh-Hant.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.zh-TW.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.et.resx" />
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.hr.resx" />
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.th.resx" />
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.et.resx">
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.th.resx" />
+    <EmbeddedResource Include="LocalizationRes.et.resx" />
+    <EmbeddedResource Include="LocalizationRes.hi.resx" />
+    <EmbeddedResource Include="LocalizationRes.th.resx" />
+    <EmbeddedResource Include="Printing\CardViewPrinting.et.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.th.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.et.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.th.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.tr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.sl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.sk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.ro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.da.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.ca.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.zh-TW.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.zh-Hant.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.zh-Hans.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.vi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.uk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.tr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.ta.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.sv.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.sl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.sk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.ro.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.pt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.pl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.no.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.nl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.mk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.lv.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.lt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.ko.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.is.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.hy.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.hu.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.he.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.fi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.fa.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.el.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.de-CH.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.da.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.cs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.ca.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.bg.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.ar.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.zh-TW.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.uk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.mk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.lv.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.lt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ko.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.hy.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.fa.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.es.resx" />
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.it.resx" />
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.pt-BR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.ja.resx" />
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.de-CH.resx">
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.fi.resx">
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.pl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.hr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.hu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.sr-Latn-BA.resx">
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.sv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.de.resx">
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.es.resx">
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.fr.resx">
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.ja.resx">
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.ta.resx">
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.vi.resx">
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.zh-Hans.resx">
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.de-CH.resx" />
+    <EmbeddedResource Include="LocalizationRes.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="LocalizationRes.ta.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.vi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.ca.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.de-CH.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.resx">
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.ru.resx">
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.sr-Latn-BA.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.ta.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.vi.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.de-CH.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.zh-Hans.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.bg.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.tr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.hu.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ar.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ca.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.cs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.da.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.el.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.es.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.fi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.he.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.hr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.is.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.it.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.nl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.no.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.pl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.pt-BR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.pt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ro.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sv.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.zh-Hant.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.ar.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.bg.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.cs.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.da.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.de.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.el.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.es.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.fi.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.fr.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.hr.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.hu.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.it.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.nl.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.no.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.pl.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.pt-BR.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.pt.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.ro.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.ru.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.sk.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.sl.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.sr-Cyrl-RS.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.sr-Latn-RS.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.sv.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.tr.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.zh-Hans.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.zh-CN.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.zh-Hant.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.ar.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.bg.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.ca.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.cs.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.da.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.de.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.el.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.es.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.fi.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.fr.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.hr.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.hu.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.it.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.ja.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.nl.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.no.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.pl.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.pt-BR.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.pt.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.ro.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.ru.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.sk.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.sl.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.sr-Cyrl-RS.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.sr-Latn-BA.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.sr-Latn-RS.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.sv.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.ta.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.tr.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.vi.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.zh-Hans.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.zh-CN.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.zh-Hant.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.ja.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+  </PropertyGroup>
+</Project>

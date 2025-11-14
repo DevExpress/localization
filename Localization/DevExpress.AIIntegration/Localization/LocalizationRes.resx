@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AIIntegrationStringId.AutoCompleteDefaultRole" xml:space="preserve">
+    <value>an average user</value>
+  </data>
+  <data name="AIIntegrationStringId.ChangeToneSystemPrompt" xml:space="preserve">
+    <value>Rewrite the following text to keep its original meaning but change its tone to {0}. Provide only the rewritten text as plain text without any comments or formatting.</value>
+  </data>
+  <data name="AIIntegrationStringId.AbstractiveSummarySystemPrompt" xml:space="preserve">
+    <value>First, identify the key points of the provided text. Then, generate an abstractive summary by paraphrasing these points, ensuring the summary captures the core ideas and is approximately 20% of the text's length. Return answer with no markdown formatting.</value>
+  </data>
+  <data name="AIIntegrationStringId.ExplainSystemPrompt" xml:space="preserve">
+    <value>Please explain the following text in a simple and clear way, making it easy to understand for anyone. Focus on clarifying the main points and use examples if needed. Return answer with no markdown formatting.</value>
+  </data>
+  <data name="AIIntegrationStringId.ExtractiveSummarySystemPrompt" xml:space="preserve">
+    <value>Please read the text provided and generate an extractive summary using only key phrases or sentences from the original content. Focus on capturing the main ideas and crucial points, and present the summary in bullet points. Keep the summary concise, not exceeding 5 bullet points. Return answer with no markdown formatting.</value>
+  </data>
+  <data name="AIIntegrationStringId.ProofreadSystemPrompt" xml:space="preserve">
+    <value>Proofread the following text for grammar, punctuation, and style errors. Make corrections to ensure clarity and conciseness while preserving the original meaning. Use a formal writing style unless otherwise specified. Return only the revised text without any formatting or explanations.</value>
+  </data>
+  <data name="AIIntegrationStringId.ChangeStyleSystemPrompt" xml:space="preserve">
+    <value>Rewrite the text provided to match the {0} writing style. Ensure the rewritten text follows the grammatical rules and stylistic conventions of the specified style. Preserve the original meaning and context. Use complete sentences and a professional tone. Return answer with no markdown formatting.</value>
+  </data>
+  <data name="AIIntegrationStringId.ShortenSystemPrompt" xml:space="preserve">
+    <value>Please shorten the text provided by summarizing its content while retaining the main point and essential details. Aim to reduce the text to approximately 50% of its original length. Ensure that the key message remains clear and intact. Return answer with no markdown formatting.</value>
+  </data>
+  <data name="AIIntegrationStringId.TranslateSystemPrompt" xml:space="preserve">
+    <value>Translate the text provided into {0}. Ensure the translation retains the original meaning and tone. Provide only the translated text in your response, without any additional formatting or commentary.</value>
+  </data>
+  <data name="AIIntegrationStringId.LocalizeSystemPrompt" xml:space="preserve">
+    <value>Translate the following list of texts into {0} culture. Do NOT translate email addresses, URLs, programming code, file paths, date fields enclosed in square brackets (e.g., [CompanyName]), or physical addresses. Do NOT change the currency or convert between currencies (e.g., do not convert 350 $ to € 350), preserve the original currency symbol and amount, unless the same currency has a different symbol or formatting in the target culture (e.g., $ may become $US, or spacing may change), in such cases, only adjust formatting to match local conventions — do not alter the monetary value or its meaning. If possible, translate abbreviations and acronyms to their culturally appropriate equivalents. Ensure that each translation accurately conveys the original meaning, tone, and context while considering cultural nuances. If a string appears multiple times in the array, its translation must be exactly the same in all occurrences. Maintain consistent translations for identical source strings. Return the translations as a JSON array, preserving the order of the original texts, without any additional text, formatting or markdown.</value>
+  </data>
+  <data name="AIIntegrationStringId.ContextSystemPrompt" xml:space="preserve">
+    <value>The info in this post is the context for a more accurate answer: {0}</value>
+  </data>
+  <data name="AIIntegrationStringId.ExpandSystemPrompt" xml:space="preserve">
+    <value>Expand the following text by adding relevant details, examples, and context while keeping the main point intact. Ensure the expanded text is coherent and logically structured. Return answer with no markdown formatting.</value>
+  </data>
+  <data name="AIIntegrationStringId.GenerateDescriptionSystemPrompt" xml:space="preserve">
+    <value>Analyze the provided base64 image data and generate a concise description focusing on key elements. Limit your response to 10 words or fewer, emphasizing unique or notable aspects of the image. Return answer with no markdown formatting.</value>
+  </data>
+  <data name="AIIntegrationStringId.SmartPasteSystemPrompt" xml:space="preserve">
+    <value>Current date: {0}
+Each response line matches the following format:
+FIELD identifier{1}value
+
+Give a response with the following lines only, with values inferred from USER_DATA:
+{2}
+{3}
+
+Do not explain how the values were determined.
+For fields without any corresponding information in USER_DATA, use value {4}.</value>
+  </data>
+  <data name="AIIntegrationStringId.SmartSearchSystemPrompt" xml:space="preserve">
+    <value>Each response line matches the following format:
+identifier{0}value
+You are a smart search service. Your task is to select items from the provided list that closely match the overall meaning and context of the search query. Prioritize relevance and ensure that the selections are directly related to the user's intent. The user can make a spelling mistake. Do not explain how the values were determined.
+The search data is: {1}
+The search string comes from user message.</value>
+  </data>
+  <data name="AIIntegrationStringId.PromptToExpressionSystemPrompt" xml:space="preserve">
+    <value>Generate expression string based on the user prompt. Use DevExpress Criteria Language Syntax. Write only expression string, no text comments are allowed. Example: `Log([Length Cm]) + 2`. The following columns are available: {0}; The following functions are available: {1}; The following constants are available: {2}; The following parameters are available: {3}; The current expression is `{4}`; You can either create a new expression or modify the current one;</value>
+  </data>
+  <data name="AIIntegrationStringId.PromptToExpressionRetryPrompt" xml:space="preserve">
+    <value>The generated expression was invalid. Errors: {0} --- Try again.</value>
+  </data>
+  <data name="AIIntegrationStringId.PromptToFilterSystemPrompt" xml:space="preserve">
+    <value>Generate filter string based on the user prompt. Use DevExpress Criteria Language Syntax. Write only filter string, no text comments are allowed. Example: `Log([Length Cm]) Between (10, 20) And [Hirsch Index] &gt;= 30`. The following columns are available: {0}; The following functions are available: {1}; The following constants are available: {2}; The following parameters are available: {3}; The current filter string is `{4}`; You can either create a new expression or modify the current one;</value>
+  </data>
+  <data name="AIIntegrationStringId.ErrorFailedExpressionGeneration" xml:space="preserve">
+    <value>AI failed to generate a valid expression.</value>
+  </data>
+  <data name="AIIntegrationStringId.ExplainFormulaPrompt" xml:space="preserve">
+    <value>Please explain the following Excel formula in plain language suitable for someone with basic Excel knowledge. Focus on the purpose of the formula and what it does. Avoid technical jargon, and if possible, include a simple example to illustrate the explanation. Answer in plain text. Do not include any introductory phrases. Return only the direct explanation without any added commentary or prefaces.</value>
+  </data>
+  <data name="AIIntegrationStringId.MenuItemAIAssistant" xml:space="preserve">
+    <value>AI Assistant</value>
+  </data>
+  <data name="AIIntegrationStringId.MenuItemExpand" xml:space="preserve">
+    <value>Expand</value>
+  </data>
+  <data name="AIIntegrationStringId.MenuItemShorten" xml:space="preserve">
+    <value>Shorten</value>
+  </data>
+  <data name="AIIntegrationStringId.MenuItemSummarize" xml:space="preserve">
+    <value>Summarize</value>
+  </data>
+  <data name="AIIntegrationStringId.MenuItemExplain" xml:space="preserve">
+    <value>Explain</value>
+  </data>
+  <data name="AIIntegrationStringId.MenuItemChangeTone" xml:space="preserve">
+    <value>Change Tone</value>
+  </data>
+  <data name="AIIntegrationStringId.MenuItemProofread" xml:space="preserve">
+    <value>Proofread</value>
+  </data>
+  <data name="AIIntegrationStringId.MenuItemChangeStyle" xml:space="preserve">
+    <value>Change Style</value>
+  </data>
+  <data name="AIIntegrationStringId.MenuItemTranslate" xml:space="preserve">
+    <value>Translate</value>
+  </data>
+  <data name="AIIntegrationStringId.MenuItemCustomRequest" xml:space="preserve">
+    <value>Ask AI Assistant</value>
+  </data>
+  <data name="AIIntegrationStringId.MenuItemGenerateDescription" xml:space="preserve">
+    <value>Describe Picture</value>
+  </data>
+  <data name="AIIntegrationStringId.MenuItemSmartPaste" xml:space="preserve">
+    <value>Smart Paste</value>
+  </data>
+  <data name="AIIntegrationStringId.MenuItemExplainFormula" xml:space="preserve">
+    <value>Explain Formula</value>
+  </data>
+  <data name="AIIntegrationStringId.SmartPasteBoolFormattingPrompt" xml:space="preserve">
+    <value>Boolean value. Use "{0}" for positive and "{1}" for negative values.</value>
+  </data>
+  <data name="AIIntegrationStringId.SmartPasteSchedulerPromptAugmentation" xml:space="preserve">
+    <value>Your task is to extract details about a calendar appointment/meeting from the provided data (text or image) and format them in a structured way.</value>
+  </data>
+  <data name="AIIntegrationStringId.SmartPasteChoiceFormattingPrompt" xml:space="preserve">
+    <value>Choose one of the following options: {0}. Provide only the number of the chosen option. If the value cannot be assigned to any of the options, output it unchanged.</value>
+  </data>
+  <data name="AIIntegrationStringId.SmartPasteDateOnlyFormattingPrompt" xml:space="preserve">
+    <value>Date value. Use the "{0}" pattern.</value>
+  </data>
+  <data name="AIIntegrationStringId.SmartPasteDateTimeFormattingPrompt" xml:space="preserve">
+    <value>DateTime value. Use the pattern "{0}" for date and "{1}" or "{2}" for time. If only date is provided, output only the date. If only time is provided, output only the time. If both are provided, separate them with a single space.</value>
+  </data>
+  <data name="AIIntegrationStringId.SmartPasteIntegerFormattingPrompt" xml:space="preserve">
+    <value>Integer value. Use digits only, without any additional symbols.</value>
+  </data>
+  <data name="AIIntegrationStringId.SmartPasteRealFormattingPrompt" xml:space="preserve">
+    <value>Real value. Use digits only, with a "{0}" as the decimal separator.</value>
+  </data>
+  <data name="AIIntegrationStringId.SmartPasteTimeOnlyFormattingPrompt" xml:space="preserve">
+    <value>Time value. Use the "{0}" or "{1}" pattern.</value>
+  </data>
+  <data name="AIIntegrationStringId.CustomDialogInputNullText" xml:space="preserve">
+    <value>Ask AI to modify or enhance the selected content.</value>
+  </data>
+  <data name="AIIntegrationStringId.CustomNoMarkdownSystemPrompt" xml:space="preserve">
+    <value>Return answer with no markdown formatting.</value>
+  </data>
+  <data name="AIIntegrationStringId.CustomDialogInputNullTextWithoutContext" xml:space="preserve">
+    <value>Ask AI to assist with a task or provide information.</value>
+  </data>
+  <data name="AIIntegrationStringId.CustomDialogResponseNullText" xml:space="preserve">
+    <value>The AI response will appear here.</value>
+  </data>
+  <data name="AIIntegrationStringId.CustomDialogStopButtonCaption" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="AIIntegrationStringId.CustomDialogInsertAboveButtonCaption" xml:space="preserve">
+    <value>Insert Above</value>
+  </data>
+  <data name="AIIntegrationStringId.CustomDialogInsertBelowButtonCaption" xml:space="preserve">
+    <value>Insert Below</value>
+  </data>
+  <data name="AIIntegrationStringId.CustomDialogInsertButtonCaption" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="AIIntegrationStringId.CustomDialogReplaceButtonCaption" xml:space="preserve">
+    <value>Replace</value>
+  </data>
+  <data name="AIIntegrationStringId.CustomDialogCopyToClipboardButtonCaption" xml:space="preserve">
+    <value>Copy and Close</value>
+  </data>
+  <data name="AIIntegrationStringId.CustomDialogCopyToClipboardTooltipCaption" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="AIIntegrationStringId.CustomDialogGenerateButtonCaption" xml:space="preserve">
+    <value>Generate</value>
+  </data>
+  <data name="AIIntegrationStringId.CustomDialogProceedButtonCaption" xml:space="preserve">
+    <value>Proceed</value>
+  </data>
+  <data name="AIIntegrationStringId.ErrorMaxTokenLimitExceeded" xml:space="preserve">
+    <value>Your input exceeds the token limit.</value>
+  </data>
+  <data name="AIIntegrationStringId.ErrorInputSizeLimitExceeded" xml:space="preserve">
+    <value>The input length exceeds the allowed limit.</value>
+  </data>
+  <data name="AIIntegrationStringId.ErrorContentFiltered" xml:space="preserve">
+    <value>Sensitive content detected. Please revise your input.</value>
+  </data>
+  <data name="AIIntegrationStringId.WarningChunksQueued" xml:space="preserve">
+    <value>Text is too long to process within a single request. Text will be split into sections and processed in {0} steps. Proceed?</value>
+  </data>
+  <data name="AIIntegrationStringId.UIWarningCaption" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="AIIntegrationStringId.UIProceedAllAtOnce" xml:space="preserve">
+    <value>I agree to process all requests in succession/sequentially.</value>
+  </data>
+  <data name="AIIntegrationStringId.LoadingCaption" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="AIIntegrationStringId.SmartSearchUserPrompt" xml:space="preserve">
+    <value>Search string: "{0}"</value>
+  </data>
+  <data name="AIIntegrationStringId.AutoCompleteSystemPrompt" xml:space="preserve">
+    <value>You are an autocomplete service. Predict what text the user in the given ROLE would insert at the end of the given text. Complete the text to the end of the sentence. Always begin with a space if your prediction begins with a new word. Do not begin with a space if you are continuing the last word.
+Do not make up new information. If there isn't enough information to predict any words that the user would type next, reply with only {0}.
+Return answer with no markdown formatting. 
+User's ROLE: {1}</value>
+  </data>
+  <data name="AIIntegrationStringId.DocumentDialogSelectSourceLabelText" xml:space="preserve">
+    <value>Text to process</value>
+  </data>
+  <data name="AIIntegrationStringId.DocumentDialogSelectSourceDocument" xml:space="preserve">
+    <value>Entire Document</value>
+  </data>
+  <data name="AIIntegrationStringId.DocumentDialogSelectSourcePage" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="AIIntegrationStringId.DocumentDialogSelectSourceSelection" xml:space="preserve">
+    <value>Selection</value>
+  </data>
+  <data name="AIIntegrationStringId.DocumentDialogSelectLanguageLabelText" xml:space="preserve">
+    <value>Output Language</value>
+  </data>
+  <data name="AIIntegrationStringId.DocumentDialogStopButtonText" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="AIIntegrationStringId.DocumentDialogProceedButtonText" xml:space="preserve">
+    <value>Proceed</value>
+  </data>
+  <data name="AIIntegrationStringId.DocumentDialogCopyButtonText" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="AIIntegrationStringId.SeparatorPromptAugmentationText" xml:space="preserve">
+    <value>1. Break the input string into parts, using the "^^^" character sequence as a sentence separator.
+2. Complete the task described above for each sentence/word.
+3. Concatenate all resulting sentences with the "^^^" character sequence as a separator. The response should be a single string.</value>
+  </data>
+  <data name="AIIntegrationStringId.ToneStyleProfessional" xml:space="preserve">
+    <value>Professional</value>
+  </data>
+  <data name="AIIntegrationStringId.ToneStyleCasual" xml:space="preserve">
+    <value>Casual</value>
+  </data>
+  <data name="AIIntegrationStringId.ToneStyleStraightforward" xml:space="preserve">
+    <value>Straightforward</value>
+  </data>
+  <data name="AIIntegrationStringId.ToneStyleConfident" xml:space="preserve">
+    <value>Confident</value>
+  </data>
+  <data name="AIIntegrationStringId.ToneStyleFriendly" xml:space="preserve">
+    <value>Friendly</value>
+  </data>
+  <data name="AIIntegrationStringId.WritingStyleFormal" xml:space="preserve">
+    <value>Formal</value>
+  </data>
+  <data name="AIIntegrationStringId.WritingStyleInformal" xml:space="preserve">
+    <value>Informal</value>
+  </data>
+  <data name="AIIntegrationStringId.WritingStyleTechnical" xml:space="preserve">
+    <value>Technical</value>
+  </data>
+  <data name="AIIntegrationStringId.WritingStyleBusiness" xml:space="preserve">
+    <value>Business</value>
+  </data>
+  <data name="AIIntegrationStringId.WritingStyleCreative" xml:space="preserve">
+    <value>Creative</value>
+  </data>
+  <data name="AIIntegrationStringId.WritingStyleJournalistic" xml:space="preserve">
+    <value>Journalistic</value>
+  </data>
+  <data name="AIIntegrationStringId.WritingStyleAcademic" xml:space="preserve">
+    <value>Academic</value>
+  </data>
+  <data name="AIIntegrationStringId.WritingStylePersuasive" xml:space="preserve">
+    <value>Persuasive</value>
+  </data>
+  <data name="AIIntegrationStringId.WritingStyleNarrative" xml:space="preserve">
+    <value>Narrative</value>
+  </data>
+  <data name="AIIntegrationStringId.WritingStyleExpository" xml:space="preserve">
+    <value>Expository</value>
+  </data>
+  <data name="AIIntegrationStringId.WritingStyleDescriptive" xml:space="preserve">
+    <value>Descriptive</value>
+  </data>
+  <data name="AIIntegrationStringId.WritingStyleConversational" xml:space="preserve">
+    <value>Conversational</value>
+  </data>
+  <data name="AIIntegrationStringId.ResponseWaitingCaption" xml:space="preserve">
+    <value>Waiting for response...</value>
+  </data>
+  <data name="AIIntegrationStringId.SemanticSearchModeStandard" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="AIIntegrationStringId.SemanticSearchModeSemantic" xml:space="preserve">
+    <value>Semantic</value>
+  </data>
+  <data name="AIIntegrationStringId.SemanticSearchModeHybrid" xml:space="preserve">
+    <value>Hybrid</value>
+  </data>
+  <data name="AIIntegrationStringId.ExpressionGeneratorRegeneratePrompt" xml:space="preserve">
+    <value>In a previous request, I asked you to generate an expression based on the following query: Original Question: "{0}". However, the expression you provided was invalid. Here is the result you previously returned: Invalid Result:"{1}". Could you please analyze the original request and provide a correct, valid expression that meets the intended requirements?</value>
+  </data>
+  <data name="AIIntegrationStringId.DocumentTranslateInlineLabel" xml:space="preserve">
+    <value>AI-generated Translation</value>
+  </data>
+  <data name="AIIntegrationStringId.DocumentTranslateInlineExportMessage" xml:space="preserve">
+    <value>You are about to export a document that contains AI-generated translations. Do you want to proceed?</value>
+  </data>
+  <data name="AIIntegrationStringId.DocumentTranslateInlineEntireDocument" xml:space="preserve">
+    <value>Entire Document</value>
+  </data>
+  <data name="AIIntegrationStringId.DocumentTranslateInlineSelection" xml:space="preserve">
+    <value>Selection</value>
+  </data>
+  <data name="AIIntegrationStringId.DocumentTranslateInlineCurrentPage" xml:space="preserve">
+    <value>Current Page</value>
+  </data>
+  <data name="AIIntegrationStringId.DocumentTranslateInlineMenuAction" xml:space="preserve">
+    <value>Translate Inline</value>
+  </data>
+  <data name="AIIntegrationStringId.DocumentTranslateInlineRevertToOriginal" xml:space="preserve">
+    <value>Revert to Original</value>
+  </data>
+  <data name="AIIntegrationStringId.ToolsErrorToolCannotBeCalled" xml:space="preserve">
+    <value>Error: This tool cannot be called because there is no appropriate context in the current application state.</value>
+  </data>
+  <data name="AIIntegrationStringId.ToolsErrorTargetNotFound" xml:space="preserve">
+    <value>Error: target with identifier '{0}' not found or the tool is not allowed for this target.</value>
+  </data>
+  <data name="AIIntegrationStringId.ToolsTargetIdentifierParameterName" xml:space="preserve">
+    <value>{0}_identifier</value>
+  </data>
+  <data name="AIIntegrationStringId.ToolsTargetIdentifierParameterDescription" xml:space="preserve">
+    <value>This parameter is the unique identifier of the target object. To retrieve the list of available targets and their descriptions, call the GetToolTargets tool.</value>
+  </data>
+  <data name="AIIntegrationStringId.ToolsGetTargetsToolName" xml:space="preserve">
+    <value>GetToolTargets</value>
+  </data>
+  <data name="AIIntegrationStringId.ToolsGetTargetsToolDescription" xml:space="preserve">
+    <value>This tool returns the current list of available targets. A target is any object that tools can operate on, identified by a unique identifier. The LLM should call this tool whenever another tool requires a target’s unique identifier as input.</value>
+  </data>
+  <data name="AIIntegrationStringId.TranslateDocumentSystemPrompt" xml:space="preserve">
+    <value>You are a professional document translator. Translate the following JSON-structured text into {0}. ### Input Format - The input is a JSON array of objects with two fields: `original` and `translated`. - Each item represents a text run (fragment). - Example input: [ {{ "original": "Hello", "translated": "" }}, {{ "original": "world!", "translated": "" }} ] ### Task - Translate the content from the `original` fields into the `translated` fields, following these rules: ### Translation Rules 1. Translate the full meaning of the input text across the runs. - It is allowed to carry over part of a sentence or phrase to neighboring runs **if needed for natural translation**. - However, the **total number of runs must remain exactly the same**. 2. If a run becomes empty in the target language (e.g., all meaning shifted to another run), leave its `translated` field empty — **but never remove the object**. 3. Strictly preserve: - The number of objects in the array. - The order of runs. - The key structure (`original`, `translated`). 4. Maintain punctuation, sentence flow, and boundaries as closely as possible to the original meaning. ### Output Format - Respond with **valid JSON only**. - Use double quotes for all keys and string values. - Do not include markdown, explanations, code fences, or any text outside the JSON. ### Example Output [ {{ "original": "Hello", "translated": "Hallo" }}, {{ "original": "world!", "translated": "Welt!" }} ]</value>
+  </data>
+  <data name="AIIntegrationStringId.ProofreadDocumentSystemPrompt" xml:space="preserve">
+    <value>You are a professional document proofreader. Proofread the following JSON-structured text in {0}. ### Input Format - The input is a JSON array of objects with two fields: `original` and `proofread`. - Each item represents a text run (fragment). - Example input: [ {{ "original": "Hello world!", "proofread": "" }}, {{ "original": "This is a test.", "proofread": ""  }} ] ### Task  - Proofread the content in the `original` fields and write the corrected version in the `proofread` fields, following these rules: ### Proofreading Rules 1. Correct grammar, spelling, punctuation, and stylistic issues while preserving the original meaning. 2. You may adjust sentence structure across runs **if necessary for clarity or correctness**, but: - The **total number of runs must remain exactly the same**. - If a run becomes empty (e.g., all content moved to another run), leave its `proofread` field empty — **but do not remove the object**. 3. Strictly preserve: - The number of objects in the array. - The order of runs.- The key structure (`original`, `proofread`). 4. Maintain sentence flow and boundaries as closely as possible to the original intent. ### Output Format - Respond with **valid JSON only**. - Use double quotes for all keys and string values. - Do not include markdown, explanations, code fences, or any text outside the JSON. ### Example Output [ {{ "original": "Hello world!", "proofread": "Hello, world!" }},  {{ "original": "This is a test.", "proofread": "This is a test." }} ]</value>
+  </data>
+<data name="AIIntegrationStringId.ReportLocalization_Button" xml:space="preserve">
+    <value>Localize with AI</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportLocalization_TranslatedTextWarning" xml:space="preserve">
+    <value>You are about to apply a translation that may include generated content. We recommend that you review all translated strings before you proceed. Do you want to continue?</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportWizard_EnterReportDescription" xml:space="preserve">
+    <value>Enter Report Description</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportWizard_EnterReportDescription_PromptPlaceholder" xml:space="preserve">
+    <value>Type in a detailed report description</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportWizard_EnterReportDescription_DataSourceStructure" xml:space="preserve">
+    <value>Data source structure</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportWizard_EnterReportDescription_PromptTitle" xml:space="preserve">
+    <value>Enter your prompt</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportWizard_EnterReportDescription_PredefinedPrompts" xml:space="preserve">
+    <value>Predefined Prompts</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportWizard_SelectDataSourceOption" xml:space="preserve">
+    <value>Select a Data Source Option</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportWizard_SelectReportType_AIPromptToReport" xml:space="preserve">
+    <value>AI Prompt-to-Report</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportWizard_SelectDataSourceOption_AddDataSource" xml:space="preserve">
+    <value>Add Data Source</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportWizard_SelectDataSourceOption_NoDataSource" xml:space="preserve">
+    <value>No Data Source</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportChat_ModificationRetry" xml:space="preserve">
+    <value>Modification could not be applied. Retry attempt number {0}...</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportChat_ModificationCouldNotBeApplied" xml:space="preserve">
+    <value>Modification could not be applied.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportChat_ModificationCancelled" xml:space="preserve">
+    <value>Modification cancelled.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportChat_DockPanel_Text" xml:space="preserve">
+    <value>AI Assistant</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportChat_EmptyText" xml:space="preserve">
+    <value>Send a report modification request using AI chat or select a predefined sample prompt:</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportChat_ModificationSummary" xml:space="preserve">
+    <value>Generate a human-readable short summary of the applied changes. Use names of modificated controls for best result</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportTestData_Button" xml:space="preserve">
+    <value>Test Data</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportTestData_ButtonToolTip" xml:space="preserve">
+    <value>Preview the report document with AI-generated data.</value>
+  </data>
+
+</root>

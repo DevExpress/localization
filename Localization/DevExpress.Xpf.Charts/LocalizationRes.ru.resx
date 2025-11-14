@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ChartStringId.EmptyLegendText" xml:space="preserve">
+    <value>Задайте отображаемое имя (DisplayName)</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectPropertyUsage" xml:space="preserve">
+    <value>Свойство '{0}' не поддерживается для класса '{1}'.</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectPointsCreation" xml:space="preserve">
+    <value>Коллекция точек должна создаваться либо из источника данных, либо вручную.</value>
+  </data>
+  <data name="ChartStringId.MsgInvalidLogarithmicBase" xml:space="preserve">
+    <value>Основание логарифма должно быть больше 1</value>
+  </data>
+  <data name="ChartStringId.MsgInvalidZeroAxisAlignment" xml:space="preserve">
+    <value>Выравнивание не может быть установлено в Alignment.Zero для вторичной оси.</value>
+  </data>
+  <data name="ChartStringId.MsgInvalidCenterAxisAlignment" xml:space="preserve">
+    <value>Выравнивание не может быть установлено в Alignment.Center для вторичной оси.</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectLabelAngle" xml:space="preserve">
+    <value>Угол метки должен быть не меньше  -360 и не больше 360.</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectSeriesRemoving" xml:space="preserve">
+    <value>Запрещается удалять автоматически созданные ряды.</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectSeriesReplacement" xml:space="preserve">
+    <value>Нельзя изменять данные автоматически созданным рядам.</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectSeriesReordering" xml:space="preserve">
+    <value>При изменении порядка рядов в коллекции, автоматически созданные ряды нельзя заменять на созданные вручную и наоборот.</value>
+  </data>
+  <data name="ChartStringId.MsgDiagramToPointIncorrectValue" xml:space="preserve">
+    <value>Тип параметра '{0}' не соответствует шкале, имеющей тип '{1}'.</value>
+  </data>
+  <data name="ChartStringId.ChartControlLocalizedControlType" xml:space="preserve">
+    <value>График</value>
+  </data>
+  <data name="ChartStringId.ChartControlAutomationPeerHelpText" xml:space="preserve">
+    <value>График.</value>
+  </data>
+  <data name="ChartStringId.MsgSeriesPointIncorrectValue" xml:space="preserve">
+    <value>Значение точки не может быть равно бесконечности.</value>
+  </data>
+  <data name="ChartStringId.ArgumentPatternDescription" xml:space="preserve">
+    <value>Аргумент</value>
+  </data>
+  <data name="ChartStringId.ValuePatternDescription" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="ChartStringId.SeriesNamePatternDescription" xml:space="preserve">
+    <value>Имя ряда</value>
+  </data>
+  <data name="ChartStringId.StackedGroupPatternDescription" xml:space="preserve">
+    <value>Группа</value>
+  </data>
+  <data name="ChartStringId.Value1PatternDescription" xml:space="preserve">
+    <value>Значение 1</value>
+  </data>
+  <data name="ChartStringId.Value2PatternDescription" xml:space="preserve">
+    <value>Значение 2</value>
+  </data>
+  <data name="ChartStringId.WeightPatternDescription" xml:space="preserve">
+    <value>Вес</value>
+  </data>
+  <data name="ChartStringId.HighValuePatternDescription" xml:space="preserve">
+    <value>Максимальное</value>
+  </data>
+  <data name="ChartStringId.LowValuePatternDescription" xml:space="preserve">
+    <value>Минимальное</value>
+  </data>
+  <data name="ChartStringId.OpenValuePatternDescription" xml:space="preserve">
+    <value>Открытие</value>
+  </data>
+  <data name="ChartStringId.CloseValuePatternDescription" xml:space="preserve">
+    <value>Закрытие</value>
+  </data>
+  <data name="ChartStringId.PercentValuePatternDescription" xml:space="preserve">
+    <value>Значение в процентах</value>
+  </data>
+  <data name="ChartStringId.PointHintPatternDescription" xml:space="preserve">
+    <value>Подсказка</value>
+  </data>
+  <data name="ChartStringId.ValueDurationPatternDescription" xml:space="preserve">
+    <value>Интервал значений</value>
+  </data>
+  <data name="ChartStringId.PatternEditorPreviewCaption" xml:space="preserve">
+    <value>Выберете заполнитель чтобы увидеть предварительный просмотр</value>
+  </data>
+  <data name="ChartStringId.ErrorTitle" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="ChartStringId.AnnotationDefaultContent" xml:space="preserve">
+    <value>Аннотация</value>
+  </data>
+  <data name="ChartStringId.CustomLegendItemDefaultText" xml:space="preserve">
+    <value>Элемент легенды</value>
+  </data>
+  <data name="ChartStringId.MsgCantImportHolidays" xml:space="preserve">
+    <value>Не удалось импортировать настройки праздничных дней из файла '{0}'.</value>
+  </data>
+  <data name="ChartStringId.MsgFileNotFound" xml:space="preserve">
+    <value>Файл '{0}' не найден.</value>
+  </data>
+  <data name="ChartStringId.TitleDefaultContent" xml:space="preserve">
+    <value>Заголовок</value>
+  </data>
+  <data name="ChartStringId.LegendTitleDefaultContent" xml:space="preserve">
+    <value>Легенда</value>
+  </data>
+  <data name="ChartStringId.ValueDurationDaysPatternDescription" xml:space="preserve">
+    <value>Интервал значений (дни)</value>
+  </data>
+  <data name="ChartStringId.ValueDurationHoursPatternDescription" xml:space="preserve">
+    <value>Интервал значений (часы)</value>
+  </data>
+  <data name="ChartStringId.ValueDurationMinutesPatternDescription" xml:space="preserve">
+    <value>Интервал значений (мин.)</value>
+  </data>
+  <data name="ChartStringId.ValueDurationSecondsPatternDescription" xml:space="preserve">
+    <value>Интервал значений (сек.)</value>
+  </data>
+  <data name="ChartStringId.ValueDurationMillisecondsPatternDescription" xml:space="preserve">
+    <value>Интервал значений (мс.)</value>
+  </data>
+  <data name="ChartStringId.Chart3DControlLocalizedControlType" xml:space="preserve">
+    <value>3D График</value>
+  </data>
+  <data name="ChartStringId.Chart3DControlAutomationPeerHelpText" xml:space="preserve">
+    <value>Элемент управления "3D График"</value>
+  </data>
+  <data name="ChartStringId.MsgUsingSeriesTemplateAndItemTemplate" xml:space="preserve">
+    <value>Свойства SeriesTemplate (Шаблон ряда) и SeriesItemTemplate (Шаблон экземпляра ряда) не могут быть установлены одновременно.</value>
+  </data>
+  <data name="ChartStringId.TotalValuePatternDescription" xml:space="preserve">
+    <value>Суммарное значение</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectDoubleValue" xml:space="preserve">
+    <value>Значение не может быть Double.NaN, Double.PositiveInfinity, или Double.NegativeInfinity.</value>
+  </data>
+  <data name="ChartStringId.TotalLabelHeader" xml:space="preserve">
+    <value>Всего</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectLegendMaxCrosshairContentWidth" xml:space="preserve">
+    <value>Максимальная ширина содержимого перекрестия в легенде должна быть больше 0 и меньше 1000.</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectLegendMaxCrosshairContentHeight" xml:space="preserve">
+    <value>Максимальная высота содержимого перекрестия в легенде должна быть больше 0 и меньше 1000 либо равна Double.NaN.</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectCalculatedFieldExpression" xml:space="preserve">
+    <value>Указанное выражение содержит некорректный символ (строка {0}, символ {1}).</value>
+  </data>
+  <data name="ChartStringId.OthersArgument" xml:space="preserve">
+    <value>Другие</value>
+  </data>
+  <data name="ChartStringId.MsgUsingColorWhenColorItemsSourceNotEmptyCustomPalette" xml:space="preserve">
+    <value>Операция недопустима в случае использования источника цветов. Вместо этого модифицируйте источник цветов.</value>
+  </data>
+  <data name="ChartStringId.MsgUsingColorWhenColorItemsSourceNotEmptyCustomIndicatorsPalette" xml:space="preserve">
+    <value>Операция недопустима в случае использования источника цветов. Вместо этого модифицируйте источник цветов.</value>
+  </data>
+  <data name="ChartStringId.MsgUsingColorItemsSourceWhenColorNotEmpty" xml:space="preserve">
+    <value>Необходимо, чтобы коллекция цветов была пустой, если предполагается использование источника цветов.</value>
+  </data>
+  <data name="ChartStringId.IntervalArgumentMinPatternDescription" xml:space="preserve">
+    <value>Аргумент 1</value>
+  </data>
+  <data name="ChartStringId.IntervalArgumentMaxPatternDescription" xml:space="preserve">
+    <value>Аргумент 2</value>
+  </data>
+  <data name="ChartStringId.OpeningBracketPatternDescription" xml:space="preserve">
+    <value>Открывающая скобка</value>
+  </data>
+  <data name="ChartStringId.ClosingBracketPatternDescription" xml:space="preserve">
+    <value>Закрывающая скобка</value>
+  </data>
+  <data name="ChartStringId.UnderflowSymbolPatternDescription" xml:space="preserve">
+    <value>Символ нижней границы</value>
+  </data>
+  <data name="ChartStringId.OverflowSymbolPatternDescription" xml:space="preserve">
+    <value>Символ верхней границы</value>
+  </data>
+  <data name="ChartStringId.MsgEmptyArgument" xml:space="preserve">
+    <value>Аргумент не может быть пуст.</value>
+  </data>
+  <data name="ChartStringId.AbsoluteValue" xml:space="preserve">
+    <value>Абсолютное значение</value>
+  </data>
+  <data name="ChartStringId.ToolbarPrintItemCaption" xml:space="preserve">
+    <value>Печать</value>
+  </data>
+  <data name="ChartStringId.ToolbarPrintPreviewItemCaption" xml:space="preserve">
+    <value>Предпросмотр печати</value>
+  </data>
+  <data name="ChartStringId.ToolbarChartToolsCategoryCaption" xml:space="preserve">
+    <value>Инструменты графика</value>
+  </data>
+  <data name="ChartStringId.ToolbarCommonPageCaption" xml:space="preserve">
+    <value>Общие</value>
+  </data>
+  <data name="ChartStringId.ToolbarFinancialOptionsPageCaption" xml:space="preserve">
+    <value>Параметры финансовых графиков</value>
+  </data>
+  <data name="ChartStringId.ToolbarAppearanceGroupCaption" xml:space="preserve">
+    <value>Внешний вид</value>
+  </data>
+  <data name="ChartStringId.ToolbarTemplatesGroupCaption" xml:space="preserve">
+    <value>Шаблоны</value>
+  </data>
+  <data name="ChartStringId.ToolbarRunDesignerGroupCaption" xml:space="preserve">
+    <value>Дизайнер</value>
+  </data>
+  <data name="ChartStringId.ToolbarPrintAndExportGroupCaption" xml:space="preserve">
+    <value>Печать и экспорт</value>
+  </data>
+  <data name="ChartStringId.ToolbarFinancialIndicatorsGroupCaption" xml:space="preserve">
+    <value>Индикаторы</value>
+  </data>
+  <data name="ChartStringId.ToolbarFinancialSeriesAndAxisGroupCaption" xml:space="preserve">
+    <value>Ряд и Ось</value>
+  </data>
+  <data name="ChartStringId.ToolbarPaletteItemCaption" xml:space="preserve">
+    <value>Палитра</value>
+  </data>
+  <data name="ChartStringId.ToolbarPaletteItemDescription" xml:space="preserve">
+    <value>Изменение палитры для выбранной диаграммы.</value>
+  </data>
+  <data name="ChartStringId.ToolbarRunDesignerItemDescription" xml:space="preserve">
+    <value>Дизайнер диаграммы служит для удобной настройки основных параметров диаграммы.</value>
+  </data>
+  <data name="ChartStringId.ToolbarRunDesignerItemCaption" xml:space="preserve">
+    <value>Запуск Дизайнера...</value>
+  </data>
+  <data name="ChartStringId.ToolbarSaveAsTemplateItemCaption" xml:space="preserve">
+    <value>Сохранить как 
+шаблон</value>
+  </data>
+  <data name="ChartStringId.ToolbarSaveAsTemplateItemDescription" xml:space="preserve">
+    <value>Создание шаблона с текущими настройками диаграммы.</value>
+  </data>
+  <data name="ChartStringId.ToolbarLoadTemplateItemCaption" xml:space="preserve">
+    <value>Загрузить из
+шаблона</value>
+  </data>
+  <data name="ChartStringId.ToolbarLoadTemplateItemDescription" xml:space="preserve">
+    <value>Загрузка диаграммы из шаблона.</value>
+  </data>
+  <data name="ChartStringId.ToolbarPrintItemDescription" xml:space="preserve">
+    <value>Выберете принтер, задайте число копий и другие настройки перед началом печати.</value>
+  </data>
+  <data name="ChartStringId.ToolbarPrintPreviewItemDescription" xml:space="preserve">
+    <value>Позволяет осуществить просмотр и редактирование страниц перед печатью.</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportItemCaption" xml:space="preserve">
+    <value>Экспорт</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportItemDescription" xml:space="preserve">
+    <value>Экспорт текущего документа в один из поддерживаемых форматов и сохранение настроек в файл на жестком диске.</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToPdfItemCaption" xml:space="preserve">
+    <value>Экспорт в PDF</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToPdfItemDescription" xml:space="preserve">
+    <value>Документ PDF</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToHtmlItemCaption" xml:space="preserve">
+    <value>Экспорт в HTML</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToHtmlItemDescription" xml:space="preserve">
+    <value>Web-страница HTML</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToMhtItemCaption" xml:space="preserve">
+    <value>Экспорт в MHT</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToMhtItemDescription" xml:space="preserve">
+    <value>Web-страница в одном файле</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToXlsItemCaption" xml:space="preserve">
+    <value>Экспорт в XLS</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToXlsItemDescription" xml:space="preserve">
+    <value>Книга Microsoft Excel 2000-2003</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToXlsxItemCaption" xml:space="preserve">
+    <value>Экспорт в XLSX</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToXlsxItemDescription" xml:space="preserve">
+    <value>Книга Microsoft Excel 2007</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToRtfItemCaption" xml:space="preserve">
+    <value>Экспорт в RTF</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToRtfItemDescription" xml:space="preserve">
+    <value>Документ RTF</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToDocxItemCaption" xml:space="preserve">
+    <value>Экспорт в DOCX</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToDocxItemDescription" xml:space="preserve">
+    <value>Документ DOCX</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToImageItemCaption" xml:space="preserve">
+    <value>Экспорт в изображение</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToBmpItemCaption" xml:space="preserve">
+    <value>BMP</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToBmpItemDescription" xml:space="preserve">
+    <value>Точечный рисунок</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToGifItemCaption" xml:space="preserve">
+    <value>GIF</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToGifItemDescription" xml:space="preserve">
+    <value>Изображение в формате GIF</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToJpegItemCaption" xml:space="preserve">
+    <value>JPEG</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToJpegItemDescription" xml:space="preserve">
+    <value>Изображение в формате JPEG</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToPngItemCaption" xml:space="preserve">
+    <value>PNG</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToPngItemDescription" xml:space="preserve">
+    <value>Изображение в формате PNG</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToTiffItemCaption" xml:space="preserve">
+    <value>TIFF</value>
+  </data>
+  <data name="ChartStringId.ToolbarExportToTiffItemDescription" xml:space="preserve">
+    <value>Изображение в формате TIFF</value>
+  </data>
+  <data name="ChartStringId.ToolbarSeriesSelectorItemCaption" xml:space="preserve">
+    <value>Ряд</value>
+  </data>
+  <data name="ChartStringId.ToolbarSeriesSelectorItemDescription" xml:space="preserve">
+    <value>Выберите ряд в выпадающем списке.</value>
+  </data>
+  <data name="ChartStringId.ToolbarRemoveIndicatorItemCaption" xml:space="preserve">
+    <value>Удалить индикатор</value>
+  </data>
+  <data name="ChartStringId.ToolbarRemoveIndicatorItemDescription" xml:space="preserve">
+    <value>Выберите индикатор на диаграмме, чтобы удалить его.</value>
+  </data>
+  <data name="ChartStringId.ToolbarDrawTrendLineIndicatorItemCaption" xml:space="preserve">
+    <value>Линия тренда</value>
+  </data>
+  <data name="ChartStringId.ToolbarDrawTrendLineIndicatorItemDescription" xml:space="preserve">
+    <value>Чтобы добавить линию тренда, щёлкните на точке ряда и перетащите к желаемой точке.</value>
+  </data>
+  <data name="ChartStringId.ToolbarDrawFibonacciArcsIndicatorItemCaption" xml:space="preserve">
+    <value>Дуги Фибоначчи</value>
+  </data>
+  <data name="ChartStringId.ToolbarDrawFibonacciArcsIndicatorItemDescription" xml:space="preserve">
+    <value>Чтобы добавить дуги Фибоначчи, щёлкните точку ряда и перетащите указатель мыши к желаемой точке.</value>
+  </data>
+  <data name="ChartStringId.ToolbarDrawFibonacciFansIndicatorItemCaption" xml:space="preserve">
+    <value>Вееры Фибоначчи</value>
+  </data>
+  <data name="ChartStringId.ToolbarDrawFibonacciFansIndicatorItemDescription" xml:space="preserve">
+    <value>Чтобы добавить вееры Фибоначчи, щёлкните точку ряда и перетащите указатель мыши к желаемой точке.</value>
+  </data>
+  <data name="ChartStringId.ToolbarDrawFibonacciRetracementIndicatorItemCaption" xml:space="preserve">
+    <value>Уровни коррекции Фибоначчи</value>
+  </data>
+  <data name="ChartStringId.ToolbarDrawFibonacciRetracementIndicatorItemDescription" xml:space="preserve">
+    <value>Чтобы добавить уровни коррекции Фибоначчи, щёлкните точку ряда и перетащите указатель мыши к желаемой точке.</value>
+  </data>
+  <data name="ChartStringId.ToolbarAddIndicatorItemCaption" xml:space="preserve">
+    <value>Добавить индикаторы</value>
+  </data>
+  <data name="ChartStringId.ToolbarAddIndicatorItemDescription" xml:space="preserve">
+    <value>Выберите индикатор в выпадающем списке, чтобы добавить его к текущему ряду.</value>
+  </data>
+  <data name="ChartStringId.ToolbarFinancialAxisUnitItemCaption" xml:space="preserve">
+    <value>Единицы оси</value>
+  </data>
+  <data name="ChartStringId.ToolbarFinancialAxisUnitItemDescription" xml:space="preserve">
+    <value>Выберете желаемые единицы оси X.</value>
+  </data>
+  <data name="ChartStringId.ToolbarFinancialAxisPeriodItemCaption" xml:space="preserve">
+    <value>Период</value>
+  </data>
+  <data name="ChartStringId.ToolbarFinancialAxisPeriodItemDescription" xml:space="preserve">
+    <value>Выберете желаемый период времени.</value>
+  </data>
+  <data name="ChartStringId.ToolbarAnnotationsGroupCaption" xml:space="preserve">
+    <value>Аннотации</value>
+  </data>
+  <data name="ChartStringId.ToolbarConstantLinesGroupCaption" xml:space="preserve">
+    <value>Линии констант</value>
+  </data>
+  <data name="ChartStringId.OpenFileDialogAllFiles" xml:space="preserve">
+    <value>Все файлы</value>
+  </data>
+  <data name="ChartStringId.SmallSankeyDefaultText" xml:space="preserve">
+    <value>Увеличьте размер диаграммы, 
+чтобы увидеть ее содержимое.</value>
+  </data>
+  <data name="ChartStringId.EmptySankeyDefaultText" xml:space="preserve">
+    <value>Нет данных для показа на диаграмме.
+Установите источник данных и убедитесь,
+что исходящий и целевой объекты назначены.</value>
+  </data>
+  <data name="ChartStringId.MsgIncompatibleSummaryFunctionScale" xml:space="preserve">
+    <value>Итоговая функция '{0}' несовместима со шкалой, имеющей тип '{1}'.</value>
+  </data>
+  <data name="ChartStringId.MsgIncompatibleSummaryFunctionDimension" xml:space="preserve">
+    <value>Размерность итоговой функции '{0}' несовместима с рядом данных, имеющим вид '{1}' ({2} вместо {3}).</value>
+  </data>
+  <data name="ChartStringId.ToolbarAddTextAnnotationItemCaption" xml:space="preserve">
+    <value>Добавить текстовую аннотацию</value>
+  </data>
+  <data name="ChartStringId.ToolbarAddTextAnnotationItemDescription" xml:space="preserve">
+    <value>Для добавления текстовой аннотации нажмите на график и введите текст.</value>
+  </data>
+  <data name="ChartStringId.ToolbarAddImageAnnotationItemCaption" xml:space="preserve">
+    <value>Добавить графическую аннотацию</value>
+  </data>
+  <data name="ChartStringId.ToolbarAddImageAnnotationItemDescription" xml:space="preserve">
+    <value>Для добавления графической аннотации нажмите на график и выберите изображение в открывшемся окне.</value>
+  </data>
+  <data name="ChartStringId.OpenFileDialogImageFiles" xml:space="preserve">
+    <value>Файлы изображений</value>
+  </data>
+  <data name="ChartStringId.MsgCantOpenImageMessage" xml:space="preserve">
+    <value>Неподдерживаемый или неверный формат изображения.</value>
+  </data>
+  <data name="ChartStringId.MsgCantOpenImageMessageBoxHeader" xml:space="preserve">
+    <value>Изображение не может быть открыто.</value>
+  </data>
+  <data name="ChartStringId.ToolbarDefaultConstantLineTitle" xml:space="preserve">
+    <value>Линия константы</value>
+  </data>
+  <data name="ChartStringId.ToolbarHorizontalConstantLineItemCaption" xml:space="preserve">
+    <value>Добавить горизонтальную линию константы</value>
+  </data>
+  <data name="ChartStringId.ToolbarHorizontalConstantLineItemDescription" xml:space="preserve">
+    <value>Для добавления горизонтальной линии константы нажмите на точку графика и введите текст.</value>
+  </data>
+  <data name="ChartStringId.ToolbarVerticalConstantLineItemCaption" xml:space="preserve">
+    <value>Добавить вертикальную линию константы</value>
+  </data>
+  <data name="ChartStringId.ToolbarVerticalConstantLineItemDescription" xml:space="preserve">
+    <value>Для добавления вертикальной линии константы нажмите на точку графика и введите текст.</value>
+  </data>
+  <data name="ChartStringId.WaterfallFallingBarLegendItem" xml:space="preserve">
+    <value>Снижение</value>
+  </data>
+  <data name="ChartStringId.WaterfallRisingBarLegendItem" xml:space="preserve">
+    <value>Рост</value>
+  </data>
+  <data name="ChartStringId.WaterfallTotalBarLabel" xml:space="preserve">
+    <value>Итого</value>
+  </data>
+  <data name="ChartStringId.WaterfallTotalBarLegendItem" xml:space="preserve">
+    <value>Итого</value>
+  </data>
+</root>

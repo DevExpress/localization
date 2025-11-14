@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9FCD906F-CE8B-4F7A-A1E2-7EDBAF433322}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevExpress.Snap</RootNamespace>
+    <AssemblyName>DevExpress.Snap.v25.2</AssemblyName>
+<SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DXWhidbey</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.XML">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Forms\MailMergeExportRangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SortingFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.ar.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.bg.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.ca.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.cs.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.da.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.de-CH.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.de.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.el.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.es.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.et.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.fa.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.fi.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.fr.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.he.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.hi.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.hr.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.hu.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.hy.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.is.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.it.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.ja.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.ko.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.lt.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.lv.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.mk.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.nl.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.no.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.pl.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.pt-BR.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.pt.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.ro.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.ru.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.sk.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.sl.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.sr-Cyrl-RS.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.sr-Latn-BA.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.sr-Latn-RS.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.sv.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.ta.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.th.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.tr.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.uk.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.vi.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.zh-CN.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.zh-Hans.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.zh-Hant.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MailMergeExportRangeForm.zh-TW.resx">
+      <DependentUpon>MailMergeExportRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.ar.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.bg.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.ca.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.cs.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.da.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.de-CH.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.de.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.el.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.es.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.et.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.fa.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.fi.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.fr.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.he.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.hi.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.hr.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.hu.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.hy.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.is.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.it.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.ja.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.ko.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.lt.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.lv.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.mk.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.nl.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.no.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.pl.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.pt-BR.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.pt.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.ro.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.sk.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.sl.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.sr-Cyrl-RS.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.sr-Latn-BA.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.sr-Latn-RS.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.sv.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.ta.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.th.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.tr.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.uk.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.vi.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.zh-CN.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.zh-Hans.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.zh-Hant.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortingFormBase.zh-TW.resx">
+      <DependentUpon>SortingFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+  </PropertyGroup>
+</Project>

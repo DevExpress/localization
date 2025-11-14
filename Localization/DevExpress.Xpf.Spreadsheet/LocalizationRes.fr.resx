@@ -1,0 +1,981 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SpreadsheetControlStringId.Caption_RenameSheetFormSheetName" xml:space="preserve">
+    <value>Nom de la feuille:</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_RenameSheetFormTitle" xml:space="preserve">
+    <value>Renommer la feuille</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DataValidationErrorMessageStyle" xml:space="preserve">
+    <value>Style :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormBorderStyle" xml:space="preserve">
+    <value>Style :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormBorderBorder" xml:space="preserve">
+    <value>Bordure</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormTabBorder" xml:space="preserve">
+    <value>Bordure</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormGeneralPage" xml:space="preserve">
+    <value>Général</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DefinedNameFormName" xml:space="preserve">
+    <value>Nom :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormPropertyName" xml:space="preserve">
+    <value>Nom :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormBorderColor" xml:space="preserve">
+    <value>Couleur :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormFontColor" xml:space="preserve">
+    <value>Couleur :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_NameManagerFormCloseButton" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormAlignmentIndent" xml:space="preserve">
+    <value>Indentation :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormFontFamily" xml:space="preserve">
+    <value>Police :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormPropertyValue" xml:space="preserve">
+    <value>Valeur :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormCustomPage" xml:space="preserve">
+    <value>Personnalisé</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ProtectedRangeManagerFormColumnTitle" xml:space="preserve">
+    <value>Titre</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormTabMargins" xml:space="preserve">
+    <value>Marges</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormTabAlignment" xml:space="preserve">
+    <value>Alignement</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormColumnName" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_NameManagerFormColumnName" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingBetweenRuleFormWith" xml:space="preserve">
+    <value>avec</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingBetweenRuleFormAnd" xml:space="preserve">
+    <value>et</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormTabFill" xml:space="preserve">
+    <value>Remplissage</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormTabFont" xml:space="preserve">
+    <value>Police</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormFileSize" xml:space="preserve">
+    <value>Taille :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormFontStrikethrough" xml:space="preserve">
+    <value>Barré</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormTabNumber" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormPropertyType" xml:space="preserve">
+    <value>Type :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormNumberType" xml:space="preserve">
+    <value>Type :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormNo" xml:space="preserve">
+    <value>Non</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormYes" xml:space="preserve">
+    <value>Oui</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_UnprotectRangeFormPassword" xml:space="preserve">
+    <value>Mot de passe :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_UnprotectSheetFormPassword" xml:space="preserve">
+    <value>Mot de passe :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_UnprotectWorkbookFormPassword" xml:space="preserve">
+    <value>Mot de passe :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_GenericFilterFormOperationAnd" xml:space="preserve">
+    <value>Et</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_GenericFilterFormOperationOr" xml:space="preserve">
+    <value>Ou</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormColumnValue" xml:space="preserve">
+    <value>Valeur</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormFontPreview" xml:space="preserve">
+    <value>Prévisualisation</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormPageLandscapeOrienation" xml:space="preserve">
+    <value>Paysage</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormPagePortraitOrienation" xml:space="preserve">
+    <value>Portrait</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormTabPage" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormColumnType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormTitle" xml:space="preserve">
+    <value>Propriétés</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_OutlineGroupFormColumns" xml:space="preserve">
+    <value>Colonnes</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ProtectWorkbookFormWindows" xml:space="preserve">
+    <value>Fenêtres</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormFillNoColor" xml:space="preserve">
+    <value>Aucune couleur</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DataValidationFormClearAllBtn" xml:space="preserve">
+    <value>Effacer tout</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormBorderLine" xml:space="preserve">
+    <value>Ligne</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_NameManagerFormColumnComment" xml:space="preserve">
+    <value>Commentaire</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormSubject" xml:space="preserve">
+    <value>Sujet :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_HyperlinkFormSubject" xml:space="preserve">
+    <value>Sujet :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormFontSubscript" xml:space="preserve">
+    <value>Indice</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormFontSuperscript" xml:space="preserve">
+    <value>Exposant</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_InsertSymbolFromSelectionFormTitle" xml:space="preserve">
+    <value>Symbole</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormFontEffects" xml:space="preserve">
+    <value>Effets:</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormFileLocation" xml:space="preserve">
+    <value>Emplacement :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormSummaryPage" xml:space="preserve">
+    <value>Résumé</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormPageOrienation" xml:space="preserve">
+    <value>Orientation</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormAlignmentTextAlignment" xml:space="preserve">
+    <value>Alignement texte</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_HeaderFooterFormTitle" xml:space="preserve">
+    <value>En-tête/Pied de page</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_HeaderFooterTabHeaderFooter" xml:space="preserve">
+    <value>En-tête/Pied de page</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormTabHeaderFooter" xml:space="preserve">
+    <value>En-tête/Pied de page</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormTitle" xml:space="preserve">
+    <value>Mise en page</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormSheetPrint" xml:space="preserve">
+    <value>Imprimer</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PasteSpecialFormTitle" xml:space="preserve">
+    <value>Collage spécial</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormKeywords" xml:space="preserve">
+    <value>Mots-clés :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DataValidationInputMessageTitle" xml:space="preserve">
+    <value>Titre :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormDocumentTitle" xml:space="preserve">
+    <value>Titre :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ProtectedRangeFormName" xml:space="preserve">
+    <value>Titre :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_OutlineGroupFormRows" xml:space="preserve">
+    <value>Lignes</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_Top10FilterFormShow" xml:space="preserve">
+    <value>Afficher</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormMarginBottom" xml:space="preserve">
+    <value>Bas:</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormMarginLeft" xml:space="preserve">
+    <value>Gauche:</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormMarginRight" xml:space="preserve">
+    <value>Droite:</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormMarginTop" xml:space="preserve">
+    <value>Haut:</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormMarginCenterOnPage" xml:space="preserve">
+    <value>Centrer sur la page</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FindReplaceFormTitle" xml:space="preserve">
+    <value>Rechercher et remplacer</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FindReplaceFormMatchCase" xml:space="preserve">
+    <value>Respecter la casse</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ChartSelectDataFormShowDataInHiddenRowsColumns" xml:space="preserve">
+    <value>Afficher les données des lignes et colonnes masquées</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormSheetGridlines" xml:space="preserve">
+    <value>Quadrillage</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormSheetPageOrder" xml:space="preserve">
+    <value>Ordre des pages</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ChartSelectDataFormTitle" xml:space="preserve">
+    <value>Sélectionnez la source de données</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormComments" xml:space="preserve">
+    <value>Commentaires :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ColumnWidthFormTitle" xml:space="preserve">
+    <value>Largeur de colonne</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ColumnWidthFormValue" xml:space="preserve">
+    <value>Largeur de colonne :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormAlignmentMergeCells" xml:space="preserve">
+    <value>Fusionner les cellules</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormAlignmentWrapText" xml:space="preserve">
+    <value>Renvoyer à la ligne automatiquement</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormTitle" xml:space="preserve">
+    <value>Format de cellule</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ProtectSheetFormTitle" xml:space="preserve">
+    <value>Protéger la feuille</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DataValidationCriteria" xml:space="preserve">
+    <value>Critères de validation</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DefaultColumnWidthFormTitle" xml:space="preserve">
+    <value>Largeur standard</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatPictureReset" xml:space="preserve">
+    <value>Réinitialiser</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatPictureSizeTab" xml:space="preserve">
+    <value>Taille</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatPictureColor" xml:space="preserve">
+    <value>Couleur :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ReplaceButton" xml:space="preserve">
+    <value>Remplacer</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatPictureHeight" xml:space="preserve">
+    <value>Hauteur :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatPictureScaledHeight" xml:space="preserve">
+    <value>Hauteur :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatPictureScaledWidth" xml:space="preserve">
+    <value>Largeur :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatPictureWidth" xml:space="preserve">
+    <value>Largeur :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatPictureScale" xml:space="preserve">
+    <value>Échelle</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatPicturePictureTab" xml:space="preserve">
+    <value>Photo</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatPictureCropBottom" xml:space="preserve">
+    <value>Bas:</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatPictureCropLeft" xml:space="preserve">
+    <value>Gauche:</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatPictureCropRight" xml:space="preserve">
+    <value>Droite:</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatPictureCropTop" xml:space="preserve">
+    <value>Haut:</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_MoveOrCopySheetFormTitle" xml:space="preserve">
+    <value>Déplacer ou copier</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormPagePrint" xml:space="preserve">
+    <value>Imprimer...</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_HyperlinkFormTitle" xml:space="preserve">
+    <value>Insérer le lien hypertexte</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DataValidationSettingsPage" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_OutlineSubtotalFormRemoveAll" xml:space="preserve">
+    <value>Supprimer tout</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_MoveOrCopySheetCreateCopy" xml:space="preserve">
+    <value>Créer une copie</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ChartHorizontalAxisTitleFormTitle" xml:space="preserve">
+    <value>Changer le titre de l'axe horizontal</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ChartVerticalAxisTitleFormTitle" xml:space="preserve">
+    <value>Changer le titre de l'axe vertical</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_CreateDefinedNamesFromSelectionFormLeftColumn" xml:space="preserve">
+    <value>Colonne de gauche</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormPageAdjustTo" xml:space="preserve">
+    <value>Ajuster à :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarNegativeValueAndAxisControlSelectAxisPosition" xml:space="preserve">
+    <value>Sélectionnez la position de l’axe dans la cellule pour modifier l’apparence des barres pour les valeurs négatives</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConfirmPasswordFormDescription" xml:space="preserve">
+    <value>Attention : Si vous perdez ou oubliez le mot de passe, il ne peut pas être récupéré. Il est conseillé de garder une liste de mots de passe correspondant classeur et les noms de feuille dans un endroit sûr. (N'oubliez pas que les mots de passe respectent la casse.)</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_UnprotectSheetFormTitle" xml:space="preserve">
+    <value>Déprotéger la feuille</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FindReplaceFormReplaceAllButton" xml:space="preserve">
+    <value>Remplacer _All</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_GenericFilterFormTitle" xml:space="preserve">
+    <value>Filtre automatique personnalisé</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DataValidationAllow" xml:space="preserve">
+    <value>Permettre à:</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarNegativeValueAndAxisControlAutomatic" xml:space="preserve">
+    <value>Automatique (affichage à position variable basée sur des valeurs négatives)</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_NewEditConditionalFormattingRuleFormFormatAllCellsBasedOnTheirValues" xml:space="preserve">
+    <value>Format de toutes les cellules selon leurs valeurs :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormPageTall" xml:space="preserve">
+    <value>Grand</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ProtectedRangeManagerFormTitle" xml:space="preserve">
+    <value>Permettre aux utilisateurs de modifier des plages</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ProtectSheetFormPermissions" xml:space="preserve">
+    <value>Permettre à tous les utilisateurs de cette feuille de calcul :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_SimpleFilterFormTitle" xml:space="preserve">
+    <value>Filtre automatique</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormSheetPrintArea" xml:space="preserve">
+    <value>Zone d'impression :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_UnprotectWorkbookFormTitle" xml:space="preserve">
+    <value>Déprotéger le classeur</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_NewEditConditionalFormattingRuleFormSelectRuleType" xml:space="preserve">
+    <value>Sélectionner un Type de règle :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_NewEditConditionalFormattingRuleFormEditRuleDescripiton" xml:space="preserve">
+    <value>Modifier la Description de la règle :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_NewEditConditionalFormattingRuleFormFormat" xml:space="preserve">
+    <value>Format...</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormHeaderFooterDifferentFirstPage" xml:space="preserve">
+    <value>Première page différente</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarNegativeValueAndAxisControlAxisSettings" xml:space="preserve">
+    <value>Paramètres de l’axe</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarNegativeValueAndAxisControlCellMidpoint" xml:space="preserve">
+    <value>Milieu de la cellule</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarNegativeValueAndAxisControlFillColor" xml:space="preserve">
+    <value>Couleur de remplissage :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarNegativeValueAndAxisControlTitle" xml:space="preserve">
+    <value>Valeur négative et paramètres de l’axe</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingIconSetsIcon" xml:space="preserve">
+    <value>Icône</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingIconSetsIconStyle" xml:space="preserve">
+    <value>Icône Style :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingIconSetsNoCellIcon" xml:space="preserve">
+    <value>Aucune icône de cellule</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingIconSetsReverseIconOrder" xml:space="preserve">
+    <value>Inverser l'ordre d'icône</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_CreateDefinedNamesFromSelectionFormBottomRow" xml:space="preserve">
+    <value>Ligne du bas</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_CreateDefinedNamesFromSelectionFormTopRow" xml:space="preserve">
+    <value>Ligne du haut</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingColorScaleControlMidpoint" xml:space="preserve">
+    <value>Point médian</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarControlNegativeValueAndAxis" xml:space="preserve">
+    <value>Valeur négative et axes...</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarControlShowBarOnly" xml:space="preserve">
+    <value>Voir la barre seule</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormAccessed" xml:space="preserve">
+    <value>Accédé :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormFileShortName" xml:space="preserve">
+    <value>Nom MS-DOS :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormFileAccessed" xml:space="preserve">
+    <value>Accédé :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_HyperlinkFormEMailAddress" xml:space="preserve">
+    <value>Adresse e-mail</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatTopBottomRankedValuesControlPercentOfTheSelectedRange" xml:space="preserve">
+    <value>% de la plage sélectionnée</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatUniqueDuplicateValuesControlValuesSelectedRange" xml:space="preserve">
+    <value>Valeurs dans la plage sélectionnée</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatValuesAboveBelowAverageControlAverageForSelectedRange" xml:space="preserve">
+    <value>La moyenne pour la plage sélectionnée</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_GenericFilterFormShowRows" xml:space="preserve">
+    <value>Montrer les lignes où :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FindReplaceFormReplaceButton" xml:space="preserve">
+    <value>_Remplacer</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_NewEditConditionalFormattingRuleFormPreview" xml:space="preserve">
+    <value>Prévisualisation :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingColorScaleControlColor" xml:space="preserve">
+    <value>Couleur :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormulaBarCancelButtonTooltip" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarControlFillColor" xml:space="preserve">
+    <value>Couleur</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarControlFill" xml:space="preserve">
+    <value>Remplissage</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormFileAttributeHidden" xml:space="preserve">
+    <value>Caché</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarControlBorderColor" xml:space="preserve">
+    <value>Couleur</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarControlBorder" xml:space="preserve">
+    <value>Bordure</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarControlMinimum" xml:space="preserve">
+    <value>Minimum</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarControlPreview" xml:space="preserve">
+    <value>Prévisualisation :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingColorScaleControlMaximum" xml:space="preserve">
+    <value>Maximale</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_OutlineSettingFormDirection" xml:space="preserve">
+    <value>Direction</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DefaultColumnWidthFormValue" xml:space="preserve">
+    <value>Largeur de colonne standard :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingColorScaleControlValue" xml:space="preserve">
+    <value>Valeur :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingIconSetsCustom" xml:space="preserve">
+    <value>Personnalisé</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarControlValue" xml:space="preserve">
+    <value>Valeur :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingColorScaleControlMinimum" xml:space="preserve">
+    <value>Minimum</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingFormatCellsClear" xml:space="preserve">
+    <value>Effacer</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_RowHeightFormValue" xml:space="preserve">
+    <value>Hauteur de ligne :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsThatContainControlAnd" xml:space="preserve">
+    <value>et</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormFileCreated" xml:space="preserve">
+    <value>Créé :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingColorScaleControlPreview" xml:space="preserve">
+    <value>Prévisualisation :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingIconSetsValue" xml:space="preserve">
+    <value>Valeur</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingColorScaleControlType" xml:space="preserve">
+    <value>Type :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_RowHeightFormTitle" xml:space="preserve">
+    <value>Hauteur de ligne</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormCreated" xml:space="preserve">
+    <value>Créé :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingIconSetsType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormProtectionHidden" xml:space="preserve">
+    <value>Caché</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarControlType" xml:space="preserve">
+    <value>Type :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_InsertHFPictureWarningKeep" xml:space="preserve">
+    <value>● pour garder une image existante, appuyez sur Garder.</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_InsertFunctionFormTitle" xml:space="preserve">
+    <value>Insérer une fonction</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormNumberLocation" xml:space="preserve">
+    <value>Locate (emplacement):</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormulaBarInsertFunctionButtonTooltip" xml:space="preserve">
+    <value>Insérer une fonction</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormulaBarOkButtonTooltip" xml:space="preserve">
+    <value>entrée</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FunctionArgumentsFormTitle" xml:space="preserve">
+    <value>Arguments d'une fonction</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FindReplaceFormFindButton" xml:space="preserve">
+    <value>Trouver le prochain</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarNegativeValueAndAxisControlApplySameFillColorAsPositiveBar" xml:space="preserve">
+    <value>Appliquer la même couleur de remplissage comme positive barre</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ProtectedRangeManagerFormDelete" xml:space="preserve">
+    <value>_Delete</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingIconSetsShowIconOnly" xml:space="preserve">
+    <value>Afficher l’icône seulement</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormAlignmentShrinkToFit" xml:space="preserve">
+    <value>Réduite pour s'ajuster</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FindReplaceFormMatchEntireCellContents" xml:space="preserve">
+    <value>Contenu de la cellule entière de match</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_NameManagerFormDelete" xml:space="preserve">
+    <value>_Delete</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_NameManagerFormEdit" xml:space="preserve">
+    <value>_Edit...</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ChartSelectDataFormDataRange" xml:space="preserve">
+    <value>Gamme de graphiques de données :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarControlBarAppearance" xml:space="preserve">
+    <value>Bar apparence :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarControlBarDirection" xml:space="preserve">
+    <value>Barre de Direction :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarControlMaximum" xml:space="preserve">
+    <value>Maximale :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarNegativeValueAndAxisControlApplySameBorderColorAsPositiveBar" xml:space="preserve">
+    <value>Appliquer la même couleur de la bordure comme positive bar</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarNegativeValueAndAxisControlAxisColor" xml:space="preserve">
+    <value>Axe couleur :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarNegativeValueAndAxisControlBorderColor" xml:space="preserve">
+    <value>Border couleur :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarNegativeValueAndAxisControlNegativeBarBorderColor" xml:space="preserve">
+    <value>Bar négatif couleur de la bordure</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarNegativeValueAndAxisControlNegativeBarFillColor" xml:space="preserve">
+    <value>Bar négatif couleur de remplissage</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingDataBarNegativeValueAndAxisControlNone" xml:space="preserve">
+    <value>None (afficher les barres de valeur négative dans la même direction que positive)</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_NewEditConditionalFormattingRuleFormFormatStyle" xml:space="preserve">
+    <value>Format de Style :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormPageFitTo" xml:space="preserve">
+    <value>Fit to :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatValuesAboveBelowAverageControlFormatValuesThatAre" xml:space="preserve">
+    <value>Forme les valeurs qui sont :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsThatContainControlFormatOnlyCellsWith" xml:space="preserve">
+    <value>Format cellules uniquement avec :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingRulesManagerFormDeleteRule" xml:space="preserve">
+    <value>Supprimez la règle</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingRulesManagerFormDown" xml:space="preserve">
+    <value>Bas</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingRulesManagerFormEditRule" xml:space="preserve">
+    <value>Modifier la règle...</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingRulesManagerFormGridFormat" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingIconSetsDisplayEachIcon" xml:space="preserve">
+    <value>Afficher chaque icône selon ces règles :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingRulesManagerFormNewRule" xml:space="preserve">
+    <value>Nouvelle règle...</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatTopBottomRankedValuesControlFormatValuesThatRankInThe" xml:space="preserve">
+    <value>Format de valeurs qui comptent de la :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ConditionalFormattingRulesManagerFormUp" xml:space="preserve">
+    <value>Haut</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatPictureBrightness" xml:space="preserve">
+    <value>Luminosité :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatPictureContrast" xml:space="preserve">
+    <value>Contraste :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PivotTableCalculatedItemSolveOrderCloseButton" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_OptionsPivotTableAltTextDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormDelete" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatBorderControlBottom" xml:space="preserve">
+    <value>Bas</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatBorderControlLeft" xml:space="preserve">
+    <value>Gauche</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatBorderControlRight" xml:space="preserve">
+    <value>Droite</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatBorderControlTop" xml:space="preserve">
+    <value>Haut</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_OptionsPivotTableTabData" xml:space="preserve">
+    <value>Données</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_OptionsPivotTableAltTextTitle" xml:space="preserve">
+    <value>Titre</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ChangeChartTypeFormTitle" xml:space="preserve">
+    <value>Modifier le Type de graphique</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_BorderStyleNone" xml:space="preserve">
+    <value>Aucun</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormBorderNone" xml:space="preserve">
+    <value>Aucun</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FieldSettingsPivotTableLayout" xml:space="preserve">
+    <value>Mise en page</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_OptionsPivotTableLayoutAndFormatLayout" xml:space="preserve">
+    <value>Mise en page</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FillEffectsFormatCellsHorizontal" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatBorderControlHorizontal" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FillEffectsFormatCellsVertical" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatBorderControlVertical" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ViewZoomFormTitle" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormAdd" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PivotTableLabelDateValueFilterFormAnd" xml:space="preserve">
+    <value>et</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ColumnHeaderItem" xml:space="preserve">
+    <value>Colonne</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_OptionsPivotTableLayoutAndFormatFormat" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormAlignmentPreview" xml:space="preserve">
+    <value>Prévisualisation :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_EncryptDocumentPassword" xml:space="preserve">
+    <value>Mot de passe :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PasswordRequestPassword" xml:space="preserve">
+    <value>Mot de passe :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PivotTableCalculatedFieldItemName" xml:space="preserve">
+    <value>Nom :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_SheetActivationFormTitle" xml:space="preserve">
+    <value>Activer</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_BorderStyleMedium" xml:space="preserve">
+    <value>Moyen</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PivotTableGroupFieldAuto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormBorderInside" xml:space="preserve">
+    <value>Intérieur</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormAlignmentPreviewText" xml:space="preserve">
+    <value>Texte</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ViewZoomPercent" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PasteSpecialLocalFormPaste" xml:space="preserve">
+    <value>Coller</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_OptionsPivotTableTotalsAndFiltersFilters" xml:space="preserve">
+    <value>Filtres</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FieldSettingsPivotTablePrint" xml:space="preserve">
+    <value>Imprimer</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_OptionsPivotTablePrintingPrint" xml:space="preserve">
+    <value>Imprimer</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PasswordRequestTitle" xml:space="preserve">
+    <value>Mot de passe</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_InsertMovePivotTableLocation" xml:space="preserve">
+    <value>Emplacement :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PivotTableSortOptionsSummary" xml:space="preserve">
+    <value>Résumé</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FieldSettingsPivotTableFilter" xml:space="preserve">
+    <value>Filtre</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PivotTableFieldsButtonUpdate" xml:space="preserve">
+    <value>Mise à jour</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_SpreadsheetViewScrollBarThumb" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormAlignmentOrientation" xml:space="preserve">
+    <value>Orientation</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_InsertSheetFormTitle" xml:space="preserve">
+    <value>Insérer</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_OptionsPivotTableTabPrinting" xml:space="preserve">
+    <value>Impression</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PivotTableMoreSortOptionsSortBy" xml:space="preserve">
+    <value>Trier par</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PivotTableTop10FilterFormShow" xml:space="preserve">
+    <value>Afficher</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_RowHeaderItem" xml:space="preserve">
+    <value>Ligne</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_BorderStyleDouble" xml:space="preserve">
+    <value>Double</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PivotTableMoreSortOptionsGrandTotal" xml:space="preserve">
+    <value>Total général</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatPictureOriginalSize" xml:space="preserve">
+    <value>Taille d'origine</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_InsertSymbolFormFindButton" xml:space="preserve">
+    <value>Insérer</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FindReplaceFormCloseButton" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormTabChart" xml:space="preserve">
+    <value>Graphique</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormChartBlackAndWhite" xml:space="preserve">
+    <value>Imprimer en noir et blanc</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormChartPrintingQuality" xml:space="preserve">
+    <value>Qualité d'impression</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_OptionsPivotTableDisplayFieldList" xml:space="preserve">
+    <value>Liste des champs</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormAuthor" xml:space="preserve">
+    <value>Auteur :</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_SpreadsheetSpinEditMore" xml:space="preserve">
+    <value>Plus</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_OutlineSettingFormTitle" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_BorderStyleDashed" xml:space="preserve">
+    <value>Tirets</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_BorderStyleDotted" xml:space="preserve">
+    <value>Pointillé</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_EnhancedPrintPreviewPages" xml:space="preserve">
+    <value>Pages</value>
+  </data>
+</root>

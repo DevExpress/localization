@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7CEE7755-684F-4520-838F-3EA2C9E75DCE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevExpress.DashboardWeb</RootNamespace>
+    <AssemblyName>DevExpress.Dashboard.v25.2.Web</AssemblyName>
+<SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DXWhidbey</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.XML">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LocalizationRes.ar.resx" />
+    <EmbeddedResource Include="LocalizationRes.bg.resx" />
+    <EmbeddedResource Include="LocalizationRes.ca.resx" />
+    <EmbeddedResource Include="LocalizationRes.cs.resx" />
+    <EmbeddedResource Include="LocalizationRes.da.resx" />
+    <EmbeddedResource Include="LocalizationRes.de-CH.resx" />
+    <EmbeddedResource Include="LocalizationRes.el.resx" />
+    <EmbeddedResource Include="LocalizationRes.fa.resx" />
+    <EmbeddedResource Include="LocalizationRes.fi.resx" />
+    <EmbeddedResource Include="LocalizationRes.he.resx" />
+    <EmbeddedResource Include="LocalizationRes.hr.resx" />
+    <EmbeddedResource Include="LocalizationRes.hu.resx" />
+    <EmbeddedResource Include="LocalizationRes.hy.resx" />
+    <EmbeddedResource Include="LocalizationRes.is.resx" />
+    <EmbeddedResource Include="LocalizationRes.it.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ko.resx" />
+    <EmbeddedResource Include="LocalizationRes.lt.resx" />
+    <EmbeddedResource Include="LocalizationRes.lv.resx" />
+    <EmbeddedResource Include="LocalizationRes.mk.resx" />
+    <EmbeddedResource Include="LocalizationRes.nl.resx" />
+    <EmbeddedResource Include="LocalizationRes.no.resx" />
+    <EmbeddedResource Include="LocalizationRes.pl.resx" />
+    <EmbeddedResource Include="LocalizationRes.pt-BR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.es.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.pt.resx" />
+    <EmbeddedResource Include="LocalizationRes.resx" />
+    <EmbeddedResource Include="LocalizationRes.ro.resx" />
+    <EmbeddedResource Include="LocalizationRes.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.sk.resx" />
+    <EmbeddedResource Include="LocalizationRes.sl.resx" />
+    <EmbeddedResource Include="LocalizationRes.sr-Cyrl-RS.resx" />
+    <EmbeddedResource Include="LocalizationRes.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="LocalizationRes.sr-Latn-RS.resx" />
+    <EmbeddedResource Include="LocalizationRes.sv.resx" />
+    <EmbeddedResource Include="LocalizationRes.ta.resx" />
+    <EmbeddedResource Include="LocalizationRes.tr.resx" />
+    <EmbeddedResource Include="LocalizationRes.uk.resx" />
+    <EmbeddedResource Include="LocalizationRes.vi.resx" />
+    <EmbeddedResource Include="LocalizationRes.zh-CN.resx" />
+    <EmbeddedResource Include="LocalizationRes.zh-Hans.resx" />
+    <EmbeddedResource Include="LocalizationRes.zh-Hant.resx" />
+    <EmbeddedResource Include="LocalizationRes.zh-TW.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.ar.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.bg.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.ca.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.cs.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.da.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.de-CH.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.el.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.es.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.et.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.fa.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.fi.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.fr.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.he.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.hi.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.hr.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.hu.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.hy.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.is.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.it.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.ko.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.lt.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.lv.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.mk.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.nl.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.no.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.pl.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.pt-BR.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.pt.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.ro.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.ru.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.de.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.ja.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.sk.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.sl.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.sr-Cyrl-RS.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.sr-Latn-RS.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.sv.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.ta.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.th.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.tr.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.uk.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.vi.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.zh-CN.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.zh-Hans.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.zh-Hant.resx" />
+    <EmbeddedResource Include="ResFiles\WebDashboardDesigner.zh-TW.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+  </PropertyGroup>
+</Project>

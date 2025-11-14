@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{35BE9345-E3BF-46CF-9DF6-E21623F3E5E0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevExpress.DataAccess.UI</RootNamespace>
+    <AssemblyName>DevExpress.DataAccess.v25.2.UI</AssemblyName>
+<TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <SignAssembly>true</SignAssembly>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\DevExpress.DLL\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\DevExpress.DLL\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Native\Sql\DataConnectionControls\ConnectionNameControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Native\Sql\DataConnectionControls\ProviderChooser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.ar.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.bg.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.ca.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.cs.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.da.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.de-CH.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.de.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.el.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.es.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.fa.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.fi.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.fr.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.he.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.hr.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.hu.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.hy.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.is.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.it.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.ja.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.ko.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.lt.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.lv.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.mk.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.nl.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.no.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.pl.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.pt-BR.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.pt.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.ro.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.ru.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.sk.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.sl.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.sr-Cyrl-RS.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.sr-Latn-BA.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.sr-Latn-RS.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.sv.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.ta.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.tr.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.uk.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.vi.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.zh-CN.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.zh-Hans.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.zh-Hant.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ConnectionNameControl.zh-TW.resx">
+      <DependentUpon>ConnectionNameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.ar.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.bg.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.ca.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.cs.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.da.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.de-CH.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.de.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.el.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.es.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.fa.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.fi.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.fr.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.he.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.hr.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.hu.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.hy.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.is.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.it.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.ja.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.ko.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.lt.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.lv.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.mk.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.nl.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.no.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.pl.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.pt-BR.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.pt.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.ro.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.ru.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.sk.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.sl.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.sr-Cyrl-RS.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.sr-Latn-BA.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.sr-Latn-RS.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.sv.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.ta.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.tr.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.uk.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.vi.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.zh-CN.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.zh-Hans.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.zh-Hant.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Sql\DataConnectionControls\ProviderChooser.zh-TW.resx">
+      <DependentUpon>ProviderChooser.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

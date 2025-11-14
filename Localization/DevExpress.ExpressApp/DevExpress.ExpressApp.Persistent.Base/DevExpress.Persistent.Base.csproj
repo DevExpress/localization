@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{81F65910-A8B6-4C91-B57C-E7663E1A19FD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevExpress.Persistent.Base</RootNamespace>
+    <AssemblyName>DevExpress.Persistent.Base.v25.2</AssemblyName>
+<TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\DevExpress.DLL\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\DevExpress.DLL\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\PropertyNamesRes.ar.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.bg.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.ca.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.cs.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.da.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.de-CH.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.de.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.el.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.es.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.et.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.fa.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.fi.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.fr.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.he.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.hr.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.hu.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.hy.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.is.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.it.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.ja.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.ko.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.lt.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.lv.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.mk.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.nl.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.no.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.pl.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.pt-BR.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.pt.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.ro.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\PropertyNamesRes.sk.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.sl.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.sr-Cyrl-RS.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.sr-Latn-RS.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.sv.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.ta.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.tr.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.uk.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.vi.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.zh-CN.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.zh-Hans.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.zh-Hant.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.zh-TW.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\PropertyNamesRes.hi.resx" />
+    <EmbeddedResource Include="Resources\PropertyNamesRes.th.resx" />
+  </ItemGroup>
+</Project>

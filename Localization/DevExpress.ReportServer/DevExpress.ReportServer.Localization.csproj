@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55A74DEA-8754-4D26-B42E-8D8A03EE9B43}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevExpress.ReportServer.Localization</RootNamespace>
+    <AssemblyName>DevExpress.ReportServer.v25.2.Localization</AssemblyName>
+<SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DXWhidbey</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AdminPanel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdminPanel.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Backend.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Designers.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Designers.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceManagerExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdminPanel.ar.resx" />
+    <EmbeddedResource Include="AdminPanel.bg.resx" />
+    <EmbeddedResource Include="AdminPanel.ca.resx" />
+    <EmbeddedResource Include="AdminPanel.cs.resx" />
+    <EmbeddedResource Include="AdminPanel.da.resx" />
+    <EmbeddedResource Include="AdminPanel.de-CH.resx" />
+    <EmbeddedResource Include="AdminPanel.de.resx" />
+    <EmbeddedResource Include="AdminPanel.el.resx" />
+    <EmbeddedResource Include="AdminPanel.es.resx" />
+    <EmbeddedResource Include="AdminPanel.et.resx" />
+    <EmbeddedResource Include="AdminPanel.fa.resx" />
+    <EmbeddedResource Include="AdminPanel.fi.resx" />
+    <EmbeddedResource Include="AdminPanel.fr.resx" />
+    <EmbeddedResource Include="AdminPanel.he.resx" />
+    <EmbeddedResource Include="AdminPanel.hi.resx" />
+    <EmbeddedResource Include="AdminPanel.hr.resx" />
+    <EmbeddedResource Include="AdminPanel.hu.resx" />
+    <EmbeddedResource Include="AdminPanel.hy.resx" />
+    <EmbeddedResource Include="AdminPanel.is.resx" />
+    <EmbeddedResource Include="AdminPanel.it.resx" />
+    <EmbeddedResource Include="AdminPanel.ja.resx" />
+    <EmbeddedResource Include="AdminPanel.ko.resx" />
+    <EmbeddedResource Include="AdminPanel.lt.resx" />
+    <EmbeddedResource Include="AdminPanel.lv.resx" />
+    <EmbeddedResource Include="AdminPanel.mk.resx" />
+    <EmbeddedResource Include="AdminPanel.nl.resx" />
+    <EmbeddedResource Include="AdminPanel.no.resx" />
+    <EmbeddedResource Include="AdminPanel.pl.resx" />
+    <EmbeddedResource Include="AdminPanel.pt-BR.resx" />
+    <EmbeddedResource Include="AdminPanel.pt.resx" />
+    <EmbeddedResource Include="AdminPanel.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AdminPanel.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel.ro.resx" />
+    <EmbeddedResource Include="AdminPanel.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel.sk.resx" />
+    <EmbeddedResource Include="AdminPanel.sl.resx" />
+    <EmbeddedResource Include="AdminPanel.sr-Cyrl-RS.resx" />
+    <EmbeddedResource Include="AdminPanel.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="AdminPanel.sr-Latn-RS.resx" />
+    <EmbeddedResource Include="AdminPanel.sv.resx" />
+    <EmbeddedResource Include="AdminPanel.ta.resx" />
+    <EmbeddedResource Include="AdminPanel.th.resx" />
+    <EmbeddedResource Include="AdminPanel.tr.resx" />
+    <EmbeddedResource Include="AdminPanel.uk.resx" />
+    <EmbeddedResource Include="AdminPanel.vi.resx" />
+    <EmbeddedResource Include="AdminPanel.zh-CN.resx" />
+    <EmbeddedResource Include="AdminPanel.zh-Hans.resx" />
+    <EmbeddedResource Include="AdminPanel.zh-Hant.resx" />
+    <EmbeddedResource Include="AdminPanel.zh-TW.resx" />
+    <EmbeddedResource Include="Backend.da.resx" />
+    <EmbeddedResource Include="Backend.de.resx" />
+    <EmbeddedResource Include="Backend.el.resx" />
+    <EmbeddedResource Include="Backend.fr.resx" />
+    <EmbeddedResource Include="Backend.it.resx" />
+    <EmbeddedResource Include="Backend.nl.resx" />
+    <EmbeddedResource Include="Backend.pt-BR.resx" />
+    <EmbeddedResource Include="Backend.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Backend.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Backend.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Backend.tr.resx" />
+    <EmbeddedResource Include="Designers.ar.resx" />
+    <EmbeddedResource Include="Designers.bg.resx" />
+    <EmbeddedResource Include="Designers.ca.resx" />
+    <EmbeddedResource Include="Designers.cs.resx" />
+    <EmbeddedResource Include="Designers.da.resx" />
+    <EmbeddedResource Include="Designers.de-CH.resx" />
+    <EmbeddedResource Include="Designers.de.resx" />
+    <EmbeddedResource Include="Designers.el.resx" />
+    <EmbeddedResource Include="Designers.es.resx" />
+    <EmbeddedResource Include="Designers.et.resx" />
+    <EmbeddedResource Include="Designers.fa.resx" />
+    <EmbeddedResource Include="Designers.fi.resx" />
+    <EmbeddedResource Include="Designers.fr.resx" />
+    <EmbeddedResource Include="Designers.he.resx" />
+    <EmbeddedResource Include="Designers.hi.resx" />
+    <EmbeddedResource Include="Designers.hr.resx" />
+    <EmbeddedResource Include="Designers.hu.resx" />
+    <EmbeddedResource Include="Designers.hy.resx" />
+    <EmbeddedResource Include="Designers.is.resx" />
+    <EmbeddedResource Include="Designers.it.resx" />
+    <EmbeddedResource Include="Designers.ja.resx" />
+    <EmbeddedResource Include="Designers.ko.resx" />
+    <EmbeddedResource Include="Designers.lt.resx" />
+    <EmbeddedResource Include="Designers.lv.resx" />
+    <EmbeddedResource Include="Designers.mk.resx" />
+    <EmbeddedResource Include="Designers.nl.resx" />
+    <EmbeddedResource Include="Designers.no.resx" />
+    <EmbeddedResource Include="Designers.pl.resx" />
+    <EmbeddedResource Include="Designers.pt-BR.resx" />
+    <EmbeddedResource Include="Designers.pt.resx" />
+    <EmbeddedResource Include="Designers.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Designers.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designers.ro.resx" />
+    <EmbeddedResource Include="Designers.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designers.sk.resx" />
+    <EmbeddedResource Include="Designers.sl.resx" />
+    <EmbeddedResource Include="Designers.sr-Cyrl-RS.resx" />
+    <EmbeddedResource Include="Designers.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="Designers.sr-Latn-RS.resx" />
+    <EmbeddedResource Include="Designers.sv.resx" />
+    <EmbeddedResource Include="Designers.ta.resx" />
+    <EmbeddedResource Include="Designers.th.resx" />
+    <EmbeddedResource Include="Designers.tr.resx" />
+    <EmbeddedResource Include="Designers.uk.resx" />
+    <EmbeddedResource Include="Designers.vi.resx" />
+    <EmbeddedResource Include="Designers.zh-CN.resx" />
+    <EmbeddedResource Include="Designers.zh-Hans.resx" />
+    <EmbeddedResource Include="Designers.zh-Hant.resx" />
+    <EmbeddedResource Include="Designers.zh-TW.resx" />
+    <EmbeddedResource Include="Login.ar.resx" />
+    <EmbeddedResource Include="Login.ca.resx" />
+    <EmbeddedResource Include="Login.cs.resx" />
+    <EmbeddedResource Include="Login.de-CH.resx" />
+    <EmbeddedResource Include="Login.de.resx" />
+    <EmbeddedResource Include="Login.el.resx" />
+    <EmbeddedResource Include="Login.es.resx" />
+    <EmbeddedResource Include="Login.fa.resx" />
+    <EmbeddedResource Include="Login.fi.resx" />
+    <EmbeddedResource Include="Login.fr.resx" />
+    <EmbeddedResource Include="Login.hr.resx" />
+    <EmbeddedResource Include="Login.hu.resx" />
+    <EmbeddedResource Include="Login.it.resx" />
+    <EmbeddedResource Include="Login.ja.resx" />
+    <EmbeddedResource Include="Login.ko.resx" />
+    <EmbeddedResource Include="Login.nl.resx" />
+    <EmbeddedResource Include="Login.no.resx" />
+    <EmbeddedResource Include="Login.pl.resx" />
+    <EmbeddedResource Include="Login.pt-BR.resx" />
+    <EmbeddedResource Include="Login.pt.resx" />
+    <EmbeddedResource Include="Login.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Login.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.ro.resx" />
+    <EmbeddedResource Include="Login.ru.resx" />
+    <EmbeddedResource Include="Login.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="Login.sv.resx" />
+    <EmbeddedResource Include="Login.tr.resx" />
+    <EmbeddedResource Include="Login.vi.resx" />
+    <EmbeddedResource Include="Login.zh-CN.resx" />
+    <EmbeddedResource Include="Login.zh-Hans.resx" />
+    <EmbeddedResource Include="Login.zh-TW.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)dxSign.targets" Condition="'$(RS_FILE_VERSION)' != ''" />
+  <Target Name="AfterGenerateSatelliteAssemblies" AfterTargets="GenerateSatelliteAssemblies" Condition="'$(RS_FILE_VERSION)' != ''">
+    <dxStrongName File="%(IntermediateSatelliteAssembliesWithTargetPath.FullPath)" Tool="$(dxSignTool)" Condition=" '$(DelaySign)' == 'true' " />
+  </Target>
+  <Target Name="AfterBuild" Condition="'$(RS_FILE_VERSION)' != ''">
+    <dxStrongName File="$(TargetPath)" Tool="$(dxSignTool)" Condition=" '$(DelaySign)' == 'true' " />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

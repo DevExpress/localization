@@ -1,0 +1,883 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DataAccessStringId.SkipWithoutSortingPropertyGridError" xml:space="preserve">
+    <value>Использована настройка ПРОПУСТИТЬ, хотя записи не отсортитрованы. Пожалуйста, добавьте сортировку, чтобы можно было пропустить первые N записей.</value>
+  </data>
+  <data name="DataAccessStringId.PositiveIntegerError" xml:space="preserve">
+    <value>Требуется целое неотрицательное значение.</value>
+  </data>
+  <data name="DataAccessStringId.MessageDuplicateItem" xml:space="preserve">
+    <value>Коллекция уже содержит элемент '{0}'</value>
+  </data>
+  <data name="DataAccessStringId.MessageInvalidItemName" xml:space="preserve">
+    <value>Имя элемента не может быть значением null или пустой строкой</value>
+  </data>
+  <data name="DataAccessStringId.MessageDuplicateItemName" xml:space="preserve">
+    <value>Коллекция уже содержит элемент с именем '{0}'</value>
+  </data>
+  <data name="DataAccessStringId.MessageEmptyQueryName" xml:space="preserve">
+    <value>Имя запроса не может быть null, быть пустым.</value>
+  </data>
+  <data name="DataAccessStringId.MessageDuplicateQueryName" xml:space="preserve">
+    <value>Запрос с таким именем уже есть: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.MessageNullItem" xml:space="preserve">
+    <value>Невозможно добавить в коллекцию значение null</value>
+  </data>
+  <data name="DataAccessStringId.MessageWrongCharacterItemName" xml:space="preserve">
+    <value>Имя элемента '{0}' содержит неправильные символы</value>
+  </data>
+  <data name="DataAccessStringId.DefaultNameDataSource" xml:space="preserve">
+    <value>Источник данных</value>
+  </data>
+  <data name="DataAccessStringId.ConnectingToDatabaseCaption" xml:space="preserve">
+    <value>Подождите</value>
+  </data>
+  <data name="DataAccessStringId.ConnectingToDatabaseMessage" xml:space="preserve">
+    <value>Подключение к базе данных...</value>
+  </data>
+  <data name="DataAccessStringId.LoadingDataPanelText" xml:space="preserve">
+    <value>Загрузка данных...</value>
+  </data>
+  <data name="DataAccessStringId.LoadingDataSourcePanelText" xml:space="preserve">
+    <value>Загрузка источника данных</value>
+  </data>
+  <data name="DataAccessStringId.LoadingDataSourcePanelCounter" xml:space="preserve">
+    <value>{0} из {1}...</value>
+  </data>
+  <data name="DataAccessStringId.EmptyColumnAliasPattern" xml:space="preserve">
+    <value>Столбец{0}</value>
+  </data>
+  <data name="DataAccessStringId.PropertyGridDataCategoryName" xml:space="preserve">
+    <value>Данные</value>
+  </data>
+  <data name="DataAccessStringId.PropertyGridBehaviorCategoryName" xml:space="preserve">
+    <value>Поведение</value>
+  </data>
+  <data name="DataAccessStringId.PropertyGridConnectionCategoryName" xml:space="preserve">
+    <value>Подключение</value>
+  </data>
+  <data name="DataAccessStringId.QueryPropertyGridCommonCategoryName" xml:space="preserve">
+    <value>Общие</value>
+  </data>
+  <data name="DataAccessStringId.QueryPropertyGridTableSelectionCategoryName" xml:space="preserve">
+    <value>Выбор таблиц</value>
+  </data>
+  <data name="DataAccessStringId.QueryPropertyGridStoredProcCategoryName" xml:space="preserve">
+    <value>Хранимая процедура</value>
+  </data>
+  <data name="DataAccessStringId.QueryPropertyGridCustomSqlCategoryName" xml:space="preserve">
+    <value>Пользовательский SQL</value>
+  </data>
+  <data name="DataAccessStringId.RelationEditorRelationTypeInnerJoin" xml:space="preserve">
+    <value>Внутреннее объединение</value>
+  </data>
+  <data name="DataAccessStringId.RelationEditorRelationTypeLeftOuterJoin" xml:space="preserve">
+    <value>Левое внешнее объединение</value>
+  </data>
+  <data name="DataAccessStringId.RelationEditorRelationTypeMasterDetail" xml:space="preserve">
+    <value>Отношение "Основной/подробности"</value>
+  </data>
+  <data name="DataAccessStringId.QueryDesignerJoinExpressionPattern" xml:space="preserve">
+    <value>{0} по {1}</value>
+  </data>
+  <data name="DataAccessStringId.QueryDesignerJoinExpressionElementSeparator" xml:space="preserve">
+    <value>, </value>
+  </data>
+  <data name="DataAccessStringId.QueryDesignerJoinTooltipPattern" xml:space="preserve">
+    <value>[{0}] {1} объединяется с [{2}] по {3}</value>
+  </data>
+  <data name="DataAccessStringId.MessageWrongCharacterParameterName" xml:space="preserve">
+    <value>Имя параметра '{0}' содержит неправильные символы</value>
+  </data>
+  <data name="DataAccessStringId.ConnectionStringPostfixServerExplorer" xml:space="preserve">
+    <value> (из Server Explorer)</value>
+  </data>
+  <data name="DataAccessStringId.ConnectionStringPostfixAppConfig" xml:space="preserve">
+    <value> (из файла конфигурации)</value>
+  </data>
+  <data name="DataAccessStringId.RebuildResultSchemaWaitFormText" xml:space="preserve">
+    <value>Перестроение Схемы...</value>
+  </data>
+  <data name="DataAccessStringId.NoXpoProviderStringId" xml:space="preserve">
+    <value>Строка подключения не содержит или содержит неверный ключ XpoProvider. 
+
+Детали исключения:
+ {0}</value>
+  </data>
+  <data name="DataAccessStringId.DatabaseConnectionExceptionStringId" xml:space="preserve">
+    <value>Не удалось подключиться к базе данных. Подробную информацию смотрите в деталях исключения. 
+
+Детали исключения:
+ {0}</value>
+  </data>
+  <data name="DataAccessStringId.DatabaseConnectionExceptionMessage" xml:space="preserve">
+    <value>Имя подключения: {0}
+Сообщение об ошибке:
+{1}</value>
+  </data>
+  <data name="DataAccessStringId.WizardEmptyConnectionNameMessage" xml:space="preserve">
+    <value>Имя подключения не может быть null, быть пустым или состоять только из пробелов.</value>
+  </data>
+  <data name="DataAccessStringId.WizardDataConnectionNameExistsMessage" xml:space="preserve">
+    <value>Подключение с таким именем уже есть. Пожалуйста, укажите другое имя.</value>
+  </data>
+  <data name="DataAccessStringId.CustomSqlQueryValidationException" xml:space="preserve">
+    <value>Пользовательский SQL-запрос может содержать только SELECT-выражения.</value>
+  </data>
+  <data name="DataAccessStringId.TableNotInSchemaValidationException" xml:space="preserve">
+    <value>Указанная таблица отсутствует в схеме: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.ColumnNullValidationException" xml:space="preserve">
+    <value>Столбец не может быть null.</value>
+  </data>
+  <data name="DataAccessStringId.UnnamedColumnValidationException" xml:space="preserve">
+    <value>Не указано имя столбца.</value>
+  </data>
+  <data name="DataAccessStringId.DuplicatingColumnNamesValidationException" xml:space="preserve">
+    <value>Столбец с таким именем уже есть: "{0}"."{1}".</value>
+  </data>
+  <data name="DataAccessStringId.ColumnNotInSchemaValidationException" xml:space="preserve">
+    <value>Указанный столбец отсутствует в схеме: "{0}"."{1}".</value>
+  </data>
+  <data name="DataAccessStringId.RelationColumnNullValidationException" xml:space="preserve">
+    <value>Столбец отношения не может быть null.</value>
+  </data>
+  <data name="DataAccessStringId.RelationColumnNotInSchemaValidationException" xml:space="preserve">
+    <value>Столбец отношения отсутствует в схеме: "{0}"."{1}".</value>
+  </data>
+  <data name="DataAccessStringId.UnnamedTableValidationException" xml:space="preserve">
+    <value>Не указано имя таблицы.</value>
+  </data>
+  <data name="DataAccessStringId.DuplicatingTableNamesValidationException" xml:space="preserve">
+    <value>Таблица с таким именем уже есть: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.IncompleteRelationValidationException" xml:space="preserve">
+    <value>Указанное отношение задано не полностью: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.RelationTableNotSelectedValidationException" xml:space="preserve">
+    <value>Таблица отношения не выбрана: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.NoTablesValidationException" xml:space="preserve">
+    <value>Коллекция таблиц не может быть пустой.</value>
+  </data>
+  <data name="DataAccessStringId.TableNullValidationException" xml:space="preserve">
+    <value>Таблица не может быть null.</value>
+  </data>
+  <data name="DataAccessStringId.NoColumnsValidationException" xml:space="preserve">
+    <value>Ни одна таблица не содержит столбцов.</value>
+  </data>
+  <data name="DataAccessStringId.RelationNullValidationException" xml:space="preserve">
+    <value>Отношение не может быть null.</value>
+  </data>
+  <data name="DataAccessStringId.NoRelationColumnsValidationException" xml:space="preserve">
+    <value>Указанное отношение не содержит ключевых столбцов: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.CircularRelationsValidationException" xml:space="preserve">
+    <value>Обнаружена циклическая зависимость.</value>
+  </data>
+  <data name="DataAccessStringId.TablesNotRelatedValidationException" xml:space="preserve">
+    <value>Не заданы отношения для указанных таблиц: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.SortingBySameColumnTwiceValidationException" xml:space="preserve">
+    <value>Следующий столбец использован в качестве критерия сортировки более одного раза: "{0}"."{1}".</value>
+  </data>
+  <data name="DataAccessStringId.AggregateQueryInvalidSortingValidationException" xml:space="preserve">
+    <value>Столбец "{0}"."{1}" не подходит для сортировки. Результаты запроса, содержащего агрегированные столбцы, могут быть отсортированы только по тем столбцам, по которым он сгруппирован.</value>
+  </data>
+  <data name="DataAccessStringId.AggregationWithoutAliasValidationException" xml:space="preserve">
+    <value>Агрегированный столбец должен иметь псевдоним.</value>
+  </data>
+  <data name="DataAccessStringId.GroupByAggregateColumnValidationException" xml:space="preserve">
+    <value>Невозможно сгруппировать по агрегированному столбцу: "{0}"."{1}".</value>
+  </data>
+  <data name="DataAccessStringId.PartialAggregationValidationException" xml:space="preserve">
+    <value>Некоторые столбцы в запросе не использованы ни в агрегирующей функции, ни в критерии группировки. Либо примените агрегацию/группировку к каждому из столбцов, либо не применяйте ни к одному.</value>
+  </data>
+  <data name="DataAccessStringId.SqlStringEmptyValidationException" xml:space="preserve">
+    <value>Строка SQL равна null или пустая.</value>
+  </data>
+  <data name="DataAccessStringId.StoredProcNameNullValidationException" xml:space="preserve">
+    <value>Имя хранимой процедуры не может быть null.</value>
+  </data>
+  <data name="DataAccessStringId.StoredProcNotInSchemaValidationException" xml:space="preserve">
+    <value>Не удалось найти указанную хранимую процедуру: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.StoredProcParamCountValidationException" xml:space="preserve">
+    <value>Несоответствие количества параметров: &lt;{0}&gt; вместо &lt;{1}&gt;.</value>
+  </data>
+  <data name="DataAccessStringId.StoredProcParamNullValidationException" xml:space="preserve">
+    <value>Параметр не может быть null.</value>
+  </data>
+  <data name="DataAccessStringId.StoredProcParamNameValidationException" xml:space="preserve">
+    <value>Несоответствие имени параметра: &lt;{0}&gt; вместо &lt;{1}&gt;.</value>
+  </data>
+  <data name="DataAccessStringId.StoredProcParamTypeValidationException" xml:space="preserve">
+    <value>Несоответствие типа параметра: &lt;{0}&gt; вместо &lt;{1}&gt;.</value>
+  </data>
+  <data name="DataAccessStringId.StoredProcedureParameterTypeValidationException" xml:space="preserve">
+    <value>Несовпадение типа параметра '{2}': ожидается &lt;{0}&gt;, &lt;{1}&gt;.</value>
+  </data>
+  <data name="DataAccessStringId.FilterByColumnOfMissingTableValidationException" xml:space="preserve">
+    <value>Ни одна из таблиц не содержит колонки [{0}], использованной в фильтре.</value>
+  </data>
+  <data name="DataAccessStringId.FilterByMissingInSchemaColumnValidationException" xml:space="preserve">
+    <value>Столбец [{0}].[{1}] используется в строке фильтра, но отсутствует в схеме базы данных.</value>
+  </data>
+  <data name="DataAccessStringId.FilterByAmbiguousColumnValidationException" xml:space="preserve">
+    <value>Имя столбца [{0}], использованное в строке фильтра, неоднозначно. Столбцы с таким именем есть в следующих таблицах: {1}.</value>
+  </data>
+  <data name="DataAccessStringId.CustomExpressionWithColumnOfMissingTableValidationException" xml:space="preserve">
+    <value>Столбец [{0}], используется в пользовательском выражении, но отсутствует в схеме базы данных.</value>
+  </data>
+  <data name="DataAccessStringId.CustomExpressionWithMissingInSchemaColumnValidationException" xml:space="preserve">
+    <value>Столбец [{0}].[{1}] использованное в пользовательском выражении, но отсутствует в схеме базы данных.</value>
+  </data>
+  <data name="DataAccessStringId.CustomExpressionWithAmbiguousColumnValidationException" xml:space="preserve">
+    <value>Имя столбца [{0}], использованное в пользовательском выражении, неоднозначно. Столбцы с таким именем есть в следующих таблицах: {1}.</value>
+  </data>
+  <data name="DataAccessStringId.HavingWithoutGroupByValidationException" xml:space="preserve">
+    <value>Чтобы использовать фильтр групп нужна группировка. Добавьте группировку или удалите фильтрацию в окне редактирования фильтров.</value>
+  </data>
+  <data name="DataAccessStringId.GroupByWithoutAggregateValidationException" xml:space="preserve">
+    <value>Для группировки нужен по крайней мере один агрегированный столбец.</value>
+  </data>
+  <data name="DataAccessStringId.SkipWithoutSortingValidationException" xml:space="preserve">
+    <value>Опция пропуска записей задана для несортированных данных. Задайте сорировку, чтобы получить возможность пропустить первые N записей, или удалите текущее значение опции.</value>
+  </data>
+  <data name="DataAccessStringId.TableNotSelectedValidationException" xml:space="preserve">
+    <value>Указанная таблица не содержится в списке таблиц, но её столбцы используются: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.RelationException" xml:space="preserve">
+    <value>Нельзя задать отношение между столбцами '{0}'.'{1}' типа {2} и '{3}'.'{4}' типа {5}.</value>
+  </data>
+  <data name="DataAccessStringId.SortingNullValidationException" xml:space="preserve">
+    <value>Критерий сортировки не может быть нулевым.</value>
+  </data>
+  <data name="DataAccessStringId.SortByAggregateColumnValidationException" xml:space="preserve">
+    <value>Невозможно отсортировать агрегированный столбец: {0}({1}), потому что агрегация не применена к запросу.</value>
+  </data>
+  <data name="DataAccessStringId.GroupNullValidationException" xml:space="preserve">
+    <value>Критерий группировки не может быть нулевым.</value>
+  </data>
+  <data name="DataAccessStringId.NegativeTopSkipValidationException" xml:space="preserve">
+    <value>Свойства Top и Skip должны быть инициализированы целыми неотрицательными значениями.</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionNullValidationException" xml:space="preserve">
+    <value>Выражение не может быть нулевым: должен быть задан стобец или пользовательское выражение.</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionStringNullValidationException" xml:space="preserve">
+    <value>Выражение не может быть нулевым.</value>
+  </data>
+  <data name="DataAccessStringId.ProviderNotSupportedException" xml:space="preserve">
+    <value>Следующий поставщик данных не поддерживается: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.InvalidExpressionStringValidationException" xml:space="preserve">
+    <value>Невозможно обработать следующее выражение: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.GatheringTypesPanelText" xml:space="preserve">
+    <value>Сбор информации о типах...</value>
+  </data>
+  <data name="DataAccessStringId.ParameterlessConstructor" xml:space="preserve">
+    <value>по умолчанию</value>
+  </data>
+  <data name="DataAccessStringId.ObjectDataSourceWizard_CannotGetTypeProperties" xml:space="preserve">
+    <value>Невозможно получить свойства для данного типа.</value>
+  </data>
+  <data name="DataAccessStringId.ObjectDataSourceWizard_CannotGetPropertiesForThisMethodReturnType" xml:space="preserve">
+    <value>Невозможно получить свойства для типа, возвращаемого данным методом.</value>
+  </data>
+  <data name="DataAccessStringId.ODSWizardErrorNoDefaultCtor" xml:space="preserve">
+    <value>Невозможно получить список свойств элементов IListSource без конструктора по умолчанию.</value>
+  </data>
+  <data name="DataAccessStringId.ODSWizardErrorExceptionInCtor" xml:space="preserve">
+    <value>Конструктор по умолчанию реализации ITypedList выбросил исключение.</value>
+  </data>
+  <data name="DataAccessStringId.ODSWizardErrorExceptionInGetItemProperties" xml:space="preserve">
+    <value>Метод GetItemProperties интерфейса ITypedList выбросил исключение.</value>
+  </data>
+  <data name="DataAccessStringId.ODSWizardErrorStaticValue" xml:space="preserve">
+    <value>Тип является статическим и не содержит членов, возвращающих IEnumerable.</value>
+  </data>
+  <data name="DataAccessStringId.ODSErrorMissingMember" xml:space="preserve">
+    <value>Элемента данных '{0}' не существует.</value>
+  </data>
+  <data name="DataAccessStringId.ParameterListNull" xml:space="preserve">
+    <value>null</value>
+  </data>
+  <data name="DataAccessStringId.ParameterListEmpty" xml:space="preserve">
+    <value>нет</value>
+  </data>
+  <data name="DataAccessStringId.MessageNonexistentQuery" xml:space="preserve">
+    <value>Запроса '{0}' не существует.</value>
+  </data>
+  <data name="DataAccessStringId.MessageNonexistentColumn" xml:space="preserve">
+    <value>Столбца '{0}'.'{1}' не существует.</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderAliasAlreadyExists" xml:space="preserve">
+    <value>Указанный псевдоним уже использован.</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderCanJoin" xml:space="preserve">
+    <value>Можно объединить с {0}</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderJoinedOn" xml:space="preserve">
+    <value>Объединено по {0}</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderNothingSelected" xml:space="preserve">
+    <value>Не выбран ни один столбец. Выберите по крайней мере один столбец для продолжения.</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderNoTablesSelected" xml:space="preserve">
+    <value>Не выбрано ни одной таблицы. Выберите хотя бы одну таблицу для продолжения.</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderJoinEditorMissingData" xml:space="preserve">
+    <value>Указаны не все части выражения.</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderInvalidFilter" xml:space="preserve">
+    <value>Нажмите кнопку 'Фильтр...', чтобы исправить строку фильтра.</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderNoTablesAndViews" xml:space="preserve">
+    <value>База данных не содержит таблиц или представлений и не поддерживает редактирование SQL. Для запуска Конструктора Запросов убедитесь, что ваша база данных содержит, по крайней мере, одну колонку или поддерживает редактирование SQL.</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilder_AllColumns" xml:space="preserve">
+    <value>* (Все Столбцы)</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilder_AllTables" xml:space="preserve">
+    <value>(Все Таблицы)</value>
+  </data>
+  <data name="DataAccessStringId.WizardNoEFDataContextsMessage" xml:space="preserve">
+    <value>Выбранная сборка не содержит контекстов данных Entity Framework.</value>
+  </data>
+  <data name="DataAccessStringId.WizardCustomConnectionString" xml:space="preserve">
+    <value>Пользовательская строка подключения</value>
+  </data>
+  <data name="DataAccessStringId.WizardAssemblyLoadingDisallowed" xml:space="preserve">
+    <value>Невозможно загрузить данную сборку по причинам безопасности.</value>
+  </data>
+  <data name="DataAccessStringId.ExcelEncryptedFileException_PasswordRequired" xml:space="preserve">
+    <value>Чтобы открыть эту книгу, необходим пароль.</value>
+  </data>
+  <data name="DataAccessStringId.ExcelEncryptedFileException_WrongPassword" xml:space="preserve">
+    <value>Неверный пароль. Попробуйте ещё раз.</value>
+  </data>
+  <data name="DataAccessStringId.ExcelEncryptedFileException_EncryptionTypeNotSupported" xml:space="preserve">
+    <value>Файл зашифрован и не может быть открыт.</value>
+  </data>
+  <data name="DataAccessStringId.ExcelInvalidFileException_WrongFormat" xml:space="preserve">
+    <value>Неверный формат файла</value>
+  </data>
+  <data name="DataAccessStringId.ExcelInvalidFileException_BIFF5Format" xml:space="preserve">
+    <value>Формат XLS-файла BIFF5 (Excel 5.0/95) не поддерживается.</value>
+  </data>
+  <data name="DataAccessStringId.ExcelInvalidFileException_CorruptedFile" xml:space="preserve">
+    <value>Файл повреждён.</value>
+  </data>
+  <data name="DataAccessStringId.ExcelDataSource_SchemaLoadingText" xml:space="preserve">
+    <value>Загрузка схемы...</value>
+  </data>
+  <data name="DataAccessStringId.ExcelWizard_ValueSeparator_Comma" xml:space="preserve">
+    <value>Запятая</value>
+  </data>
+  <data name="DataAccessStringId.ExcelWizard_ValueSeparator_Semicolon" xml:space="preserve">
+    <value>Точка с запятой</value>
+  </data>
+  <data name="DataAccessStringId.ExcelWizard_ValueSeparator_Tab" xml:space="preserve">
+    <value>Табуляция</value>
+  </data>
+  <data name="DataAccessStringId.ExcelWizard_ValueSeparator_Space" xml:space="preserve">
+    <value>Пробел</value>
+  </data>
+  <data name="DataAccessStringId.XmlFileStrategy_FileNameFilter" xml:space="preserve">
+    <value>Файлы XML</value>
+  </data>
+  <data name="DataAccessStringId.FileNameFilter_AllFormats" xml:space="preserve">
+    <value>Все поддерживаемые форматы</value>
+  </data>
+  <data name="DataAccessStringId.FileNameFilter_Excel" xml:space="preserve">
+    <value>Книги Excel</value>
+  </data>
+  <data name="DataAccessStringId.FileNameFilter_CSV" xml:space="preserve">
+    <value>Файлы CSV</value>
+  </data>
+  <data name="DataAccessStringId.ResultRelation_ColumnNotFoundError" xml:space="preserve">
+    <value>Столбец не найден: '{0}'.'{1}'.</value>
+  </data>
+  <data name="DataAccessStringId.ExcelDataSource_FileNotFoundMessage" xml:space="preserve">
+    <value>{0}
+Файл не найден.
+Проверьте имя файла и попробуйте ещё раз.</value>
+  </data>
+  <data name="DataAccessStringId.ConfigureQueryPage_CustomSqlWillBeLost" xml:space="preserve">
+    <value>Ручное редактирование SQL запрещенно. Текущий запрос представляет собой пользовательскую строку SQL, которая будет потеряна, если вы отредактируете запрос в окне Конструктора запросов. Вы действительно хотите сбросить пользовательский текст SQL и воспользоваться конструктором?</value>
+  </data>
+  <data name="DataAccessStringId.ConnectionPropertiesPage_ProviderNotSupported" xml:space="preserve">
+    <value>Параметры подключения были сброшены, потому что поставщик данных {0} не поддерживается.
+Выберите один из доступных поставщиков и укажите новые параметры подключения, либо закройте мастер
+кнопкой Закрыть, чтобы отменить все изменения.</value>
+  </data>
+  <data name="DataAccessStringId.DefaultNameParameter" xml:space="preserve">
+    <value>Параметр</value>
+  </data>
+  <data name="DataAccessStringId.InvalidPortErrorMessage" xml:space="preserve">
+    <value>Неверно задан номер порта. Номер порта должен лежать в диапазоне [0; 65535].</value>
+  </data>
+  <data name="DataAccessStringId.Type_Byte" xml:space="preserve">
+    <value>Неотрицательное целое число (8 бит)</value>
+  </data>
+  <data name="DataAccessStringId.Type_SByte" xml:space="preserve">
+    <value>Целое чило (8 бит)</value>
+  </data>
+  <data name="DataAccessStringId.Type_UInt" xml:space="preserve">
+    <value>Неотрицательное целое число (32 бита)</value>
+  </data>
+  <data name="DataAccessStringId.Type_UShort" xml:space="preserve">
+    <value>Неотрицательное целое число (16 бит)</value>
+  </data>
+  <data name="DataAccessStringId.Type_ULong" xml:space="preserve">
+    <value>Неотрицательное целое число (64 бит)</value>
+  </data>
+  <data name="DataAccessStringId.Type_Char" xml:space="preserve">
+    <value>Символ</value>
+  </data>
+  <data name="DataAccessStringId.Type_Object" xml:space="preserve">
+    <value>Объект</value>
+  </data>
+  <data name="DataAccessStringId.Type_TimeSpan" xml:space="preserve">
+    <value>Интервал времени</value>
+  </data>
+  <data name="DataAccessStringId.Type_ByteArray" xml:space="preserve">
+    <value>Массив байтов</value>
+  </data>
+  <data name="DataAccessStringId.XmlProviderNotSupportedFeatureException" xml:space="preserve">
+    <value>Поставщик данных XML не может выполнять действия, требующие запросов SQL. 
+Не поддерживаются следующие свойства и методы SelectQuery: SelectExpression, SelectAll, SelectRecordsCount, Distinct. 
+Не используйте их в запросе или преобразуйте данные XML в другой формат данных и используйте соответствующий источник данных.</value>
+  </data>
+  <data name="DataAccessStringId.XmlProviderNotSupportedLabel" xml:space="preserve">
+    <value>Некоторые возможности запроса не поддерживаются для XML файлов.</value>
+  </data>
+  <data name="DataAccessStringId.MessageCannotLoadCustomAssembly" xml:space="preserve">
+    <value>Не удалось загрузить сборку {0} для контекста {1}. Пожалуйста, выберите существующую внешнюю сборку и/или существующий контекст.</value>
+  </data>
+  <data name="DataAccessStringId.SqlQueryExecutionException" xml:space="preserve">
+    <value>Невозможно выполнить запрос {0}.</value>
+  </data>
+  <data name="DataAccessStringId.SqlExecutionException" xml:space="preserve">
+    <value>Ошибка при попытке выполнить SQL запрос{0}{1}.{2}
+Ошибка: {3}</value>
+  </data>
+  <data name="DataAccessStringId.SqlExecutionException_WithParameters" xml:space="preserve">
+    <value> с параметрами:{0}{1}</value>
+  </data>
+  <data name="DataAccessStringId.QueriesFailedToExecute_ExceptionMessage" xml:space="preserve">
+    <value>Невозможно выполнить один или более запросов.</value>
+  </data>
+  <data name="DataAccessStringId.QueriesFailedToValidate_ExceptionMessage" xml:space="preserve">
+    <value>Валидация одного или нескольких запросов не прошла.</value>
+  </data>
+  <data name="DataAccessStringId.RunExpressionEditor" xml:space="preserve">
+    <value>Редактор выражений...</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_Caption" xml:space="preserve">
+    <value>Редактор выражений</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_InvalidCustomFunction" xml:space="preserve">
+    <value>Неверная функция: '{0}'.</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_NotSupportedAggregateFunction" xml:space="preserve">
+    <value>Агрегатная функция '{0}' не поддерживается.</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_InvalidColumn" xml:space="preserve">
+    <value>Неверный столбец: '{0}'</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_InvalidParameter" xml:space="preserve">
+    <value>Неверный параметр: '{0}'</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_InvalidExpression" xml:space="preserve">
+    <value>Неверное выражение.</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Functions_Tooltip" xml:space="preserve">
+    <value>функция</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Operators_Tooltip" xml:space="preserve">
+    <value>оператор</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Columns_Tooltip" xml:space="preserve">
+    <value>столбец</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Constants_Tooltip" xml:space="preserve">
+    <value>константа</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Parameters_Tooltip" xml:space="preserve">
+    <value>параметр</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Functions" xml:space="preserve">
+    <value>Функции</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Operators" xml:space="preserve">
+    <value>Операторы</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Columns" xml:space="preserve">
+    <value>Столбцы</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Constants" xml:space="preserve">
+    <value>Константы</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Parameters" xml:space="preserve">
+    <value>Параметры</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Custom" xml:space="preserve">
+    <value>Пользовательское</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_FunctionCategory_DateTime" xml:space="preserve">
+    <value>Дата и время</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_FunctionCategory_Logical" xml:space="preserve">
+    <value>Логические</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_FunctionCategory_Math" xml:space="preserve">
+    <value>Математические</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_FunctionCategory_Text" xml:space="preserve">
+    <value>Строковые</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_FunctionCategory_Aggregate" xml:space="preserve">
+    <value>Агрегатные</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_EmptyExpression" xml:space="preserve">
+    <value>Строка выражения не должна быть пустой.</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_ColumnDescriptionFormat" xml:space="preserve">
+    <value>Тип: {0}</value>
+  </data>
+  <data name="DataAccessStringId.FilterEditor_TreeCreationError" xml:space="preserve">
+    <value>Невозможно построить дерево для этого выражения</value>
+  </data>
+  <data name="DataAccessStringId.UnknownType" xml:space="preserve">
+    <value>Неизвестно</value>
+  </data>
+  <data name="DataAccessStringId.ConnectionAborted_ExceptionMessage" xml:space="preserve">
+    <value>Подключение отменено.</value>
+  </data>
+  <data name="DataAccessStringId.ConnectionNotSpecified_ExceptionMessage" xml:space="preserve">
+    <value>Не задано подключение.</value>
+  </data>
+  <data name="DataAccessStringId.ConfigureMultiQueryPage_TableCategory" xml:space="preserve">
+    <value>Таблицы</value>
+  </data>
+  <data name="DataAccessStringId.ConfigureMultiQueryPage_ViewCategory" xml:space="preserve">
+    <value>Представления</value>
+  </data>
+  <data name="DataAccessStringId.ConfigureMultiQueryPage_SpCategory" xml:space="preserve">
+    <value>Хранимые процедуры</value>
+  </data>
+  <data name="DataAccessStringId.ConfigureMultiQueryPage_QueryCategory" xml:space="preserve">
+    <value>Запросы</value>
+  </data>
+  <data name="DataAccessStringId.ConfigureMultiQueryPage_ValidateRelationError" xml:space="preserve">
+    <value>Одно или несколько отношений неверны. 
+Чтобы узнать больше об ошибках, нажмите ‘Управление отношениями’.</value>
+  </data>
+  <data name="DataAccessStringId.GroupFilterStringEditorNoGroups" xml:space="preserve">
+    <value>Невозможно применить групповую фитрацию к несгруппированным данным. Пожалуйста, сначала сгруппируйте данные.</value>
+  </data>
+  <data name="DataAccessStringId.ObjectDataSourceLoadingWarningMessage" xml:space="preserve">
+    <value>Загрузка источников данных, на которые ссылается данный файл, может нанести вред вашему компьютеру. Вы уверены, что данный файл получен из надёжного источника?
+
+Нажмите 'Да', чтобы загрузить содержимое из источника данных без изменений.
+Нажмите 'Нет', чтобы загрузить только безопасное содержимое источника данных.</value>
+  </data>
+  <data name="DataAccessStringId.EFFilterControl_EmptyFilterString" xml:space="preserve">
+    <value>Строка фильтра не может быть null.</value>
+  </data>
+  <data name="DataAccessStringId.MessageCannotOpenDatabase" xml:space="preserve">
+    <value>Не удалось открыть базу данных.</value>
+  </data>
+  <data name="DataAccessStringId.MessageCannotCreateSelectStatement" xml:space="preserve">
+    <value>Не удалось построить SELECT выражение.</value>
+  </data>
+  <data name="DataAccessStringId.MessageCannotRebuildSchema" xml:space="preserve">
+    <value>При перестроении схемы источника данных произошла ошибка.</value>
+  </data>
+  <data name="DataAccessStringId.WizardPageChooseJsonSchema_EmptySelection" xml:space="preserve">
+    <value>Выберите хотя бы одно поле данных.</value>
+  </data>
+  <data name="DataAccessStringId.WizardPageChooseJsonSource_UnknownFormat" xml:space="preserve">
+    <value>Невозможно загрузить данные. Формат указанного URI неверный.</value>
+  </data>
+  <data name="DataAccessStringId.WizardPageChooseJsonSource_DataLocationMismatch" xml:space="preserve">
+    <value>Указанное местоположение данных JSON не соответствует выбранному источнику JSON.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_SourceNullValidationErrorMessage" xml:space="preserve">
+    <value>Ссылка на источник не инициализирована: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_RootNullValidationErrorMessage" xml:space="preserve">
+    <value>Корневая ссылка не инициализирована: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_NodeIsNotUniqueValidationErrorMessage" xml:space="preserve">
+    <value>Узлы не допускают дубликатов: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_NodeWithoutExpressionValidationErrorMessage" xml:space="preserve">
+    <value>Узел без заданного выражения: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_NodeExpressionNameNullValidationErrorMessage" xml:space="preserve">
+    <value>Узел содержит безымянное выражение: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_ExpressionNodeNullValidationErrorMessage" xml:space="preserve">
+    <value>Узел содержит выражение, не связанное с узлом: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_DuplicatedExpressionNamesValidationErrorMessage" xml:space="preserve">
+    <value>Узел {0} содержит выражения с дублированными действительными именами: {1}.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_ConditionColumnNotExistValidationErrorMessage" xml:space="preserve">
+    <value>Колонка [{0}] не существует в источниках данных. Условие: [{1}].</value>
+  </data>
+  <data name="DataAccessStringId.Federation_ConditionColumnMissingInTableValidationErrorMessage" xml:space="preserve">
+    <value>Колонка [{0}].[{1}] не существует в таблице [{0}]. Условие: [{2}].</value>
+  </data>
+  <data name="DataAccessStringId.Federation_ConditionAmbiguousColumnNameValidationErrorMessage" xml:space="preserve">
+    <value>Имя колонки [{0}] не уникально. То же имя используется в таблицах: {1}. Условие: [{2}].</value>
+  </data>
+  <data name="DataAccessStringId.Federation_ExpressionColumnNotExistValidationErrorMessage" xml:space="preserve">
+    <value>Колонки [{0}] не существует в источниках данных. Выражение: [{1}].</value>
+  </data>
+  <data name="DataAccessStringId.Federation_ExpressionColumnMissingInTableValidationErrorMessage" xml:space="preserve">
+    <value>Колонки [{0}].[{1}] не существует в таблице [{0}]. Выражение: [{2}].</value>
+  </data>
+  <data name="DataAccessStringId.Federation_ExpressionAmbiguousColumnNameValidationErrorMessage" xml:space="preserve">
+    <value>Имя колонки [{0}] не уникально. То же имя используется в таблицах: {1}. Выражение: [{2}].</value>
+  </data>
+  <data name="DataAccessStringId.Federation_FilterColumnNotExistValidationErrorMessage" xml:space="preserve">
+    <value>Колонка [{0}] не существует в источниках данных. Строка фильтра: [{1}].</value>
+  </data>
+  <data name="DataAccessStringId.Federation_FilterColumnMissingInTableValidationErrorMessage" xml:space="preserve">
+    <value>Колонка [{0}].[{1}] не существует в таблице [{0}]. Строка фильтра: [{2}].</value>
+  </data>
+  <data name="DataAccessStringId.Federation_FilterAmbiguousColumnNameValidationErrorMessage" xml:space="preserve">
+    <value>Имя колонки [{0}] не уникально. То же имя используется в таблицах: {1}. Строка фильтра: [{2}].</value>
+  </data>
+  <data name="DataAccessStringId.Federation_ColumnNotExistInTableValidationErrorMessage" xml:space="preserve">
+    <value>Таблица [{0}] не содержит колонку [{1}].</value>
+  </data>
+  <data name="DataAccessStringId.Federation_ColumnTableNotExistValidationErrorMessage" xml:space="preserve">
+    <value>Колонка [{0}].[{1}] не существует в источниках данных.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_EmptySourceNameErrorMessage" xml:space="preserve">
+    <value>Имя источника не может быть пустым.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_DuplicateSourceNameErrorMessage" xml:space="preserve">
+    <value>Источник с таким именем уже существует: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_NestedFederatedDataSourceErrorMessage" xml:space="preserve">
+    <value>Объединенный источник данных нельзя использовать для создания другого объединенного источника данных.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_UnionWithNoElementsValidationErrorMessage" xml:space="preserve">
+    <value>Узел соединения не содержит элементов: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_UnionWithDifferentNumberOfColumnsErrorMessage" xml:space="preserve">
+    <value>Узлы соединения {0}: элементы должны иметь одинаковое число колонок: {1}, {2}.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_UnionWithDifferentColumnTypesErrorMessage" xml:space="preserve">
+    <value>Узлы соединения {0}: связанные столбцы должны иметь одинаковые типы: {1}.{2}, {3}.{4}.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_TransformationNodeWithoutRuleValidationErrorMessage" xml:space="preserve">
+    <value>Узел трансформации без правила: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.Federation_TransformationDuplicatedColumnNamesValidationErrorMessage" xml:space="preserve">
+    <value>Узел {0} содержит колонки с повторяющимися именами: {1}.</value>
+  </data>
+  <data name="DataAccessStringId.MongoDB_NoQueriesMessage" xml:space="preserve">
+    <value>Нет запросов.</value>
+  </data>
+  <data name="DataAccessStringId.MongoDB_DuplicateQueryNameMessage" xml:space="preserve">
+    <value>Запрос с таким именем уже существует: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.DataSourceFillExceptionMessage" xml:space="preserve">
+    <value>Не удалось загрузить данные. Дополнительная информация в сведениях об исключении. 
+
+Сведения об исключении:
+ {0}</value>
+  </data>
+  <data name="DataAccessStringId.Wizard_NoDataSourcesForDataFederationMessage" xml:space="preserve">
+    <value>Сначала добавьте как минимум один источник данных, из которого можно создать федеративный источник данных.</value>
+  </data>
+  <data name="DataAccessStringId.LoadingPanelText" xml:space="preserve">
+    <value>Загрузка...</value>
+  </data>
+  <data name="DataAccessStringId.RelationEditorRelationTypeRightOuterJoin" xml:space="preserve">
+    <value>Правое внешнее объединение</value>
+  </data>
+  <data name="DataAccessStringId.RelationEditorRelationTypeFullOuterJoin" xml:space="preserve">
+    <value>Полное внешнее объединение</value>
+  </data>
+  <data name="DataAccessStringId.FilterByMissingParameterValidationException" xml:space="preserve">
+    <value>[{0}] параметр используется в строке фильтра, но отсутствует в запросе.</value>
+  </data>
+  <data name="DataAccessStringId.CustomExpressionWithMissingParameterValidationException" xml:space="preserve">
+    <value>[{0}] параметр используется в пользовательском выражении, но отсутствует в запросе.</value>
+  </data>
+  <data name="DataAccessStringId.SkipWithoutSortingWebValidationException" xml:space="preserve">
+    <value>Настройка смещения установлена, в то время как записи не отсортированы. Пожалуйста, примените сортировку, чтобы иметь возможность пропустить первые N записей.</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderNoRules" xml:space="preserve">
+    <value>Нет добавленных правил. Добавьте хотя бы одно правило чтобы продолжить.</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilder_RowCount" xml:space="preserve">
+    <value>(Кол-во Строк)</value>
+  </data>
+  <data name="DataAccessStringId.ExcelDataSource_WorksheetIndexNotFoundMessage" xml:space="preserve">
+    <value>Не найден рабочий лист {0}. Проверьте индекс рабочего листа и повторите попытку.</value>
+  </data>
+  <data name="DataAccessStringId.ExcelDataSource_WorksheetNotFoundMessage" xml:space="preserve">
+    <value>Не найден рабочий лист {0}. Проверьте имя рабочего листа и повторите попытку.</value>
+  </data>
+  <data name="DataAccessStringId.ProviderNotSupportedLabel" xml:space="preserve">
+    <value>Некоторые функции запроса не поддерживаются для текущего провайдера.</value>
+  </data>
+  <data name="DataAccessStringId.ProviderNotSupportedFeatureExceptionHeader" xml:space="preserve">
+    <value>Следующие функции запроса не поддерживаются для текущего провайдера:</value>
+  </data>
+  <data name="DataAccessStringId.ProviderNotSupportedFeatureParametersInSelect" xml:space="preserve">
+    <value>параметры в выражениях столбцов</value>
+  </data>
+  <data name="DataAccessStringId.IntegerDivisionValidationMessage" xml:space="preserve">
+    <value>Обратите внимание: данный механизм вычислений отбрасывает дроби во время операций деления целых чисел. Чтобы вернуть десятичные значения (деление с плавающей точкой), используйте ToDecimal(), ToDouble() или ToFloat() для вашего выражения. Например, ToDecimal(10)/4 вернет 2,5, тогда как 10/4 вернет 2.</value>
+  </data>
+  <data name="DataAccessStringId.SchemaDiscoveryMaxItemCountExceptionMessage" xml:space="preserve">
+    <value>Значение должно быть больше или равно нулю.</value>
+  </data>
+  <data name="DataAccessStringId.MongoDB_QueryExecutionException" xml:space="preserve">
+    <value>Не удалось выполнить запрос {0}.</value>
+  </data>
+  <data name="DataAccessStringId.MongoDB_InvalidDatabaseName" xml:space="preserve">
+    <value>Неправильное имя базы данных: '{0}'.</value>
+  </data>
+  <data name="DataAccessStringId.MongoDB_InvalidCollectionName" xml:space="preserve">
+    <value>Неправильное имя коллекции: '{0}'.</value>
+  </data>
+  <data name="DataAccessStringId.ManageQueries_QueryIsNotValid" xml:space="preserve">
+    <value>Неверный запрос '{0}'. {1}</value>
+  </data>
+  <data name="DataAccessStringId.ManageQueries_QueryIsNotValid_Postfix" xml:space="preserve">
+    <value>Исправьте ошибку или удалите запрос, чтобы продолжить.</value>
+  </data>
+  <data name="DataAccessStringId.PropertyGridDesignCategoryName" xml:space="preserve">
+    <value>Конструктор</value>
+  </data>
+</root>

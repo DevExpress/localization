@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActionMethodShouldBeNonGeneric" xml:space="preserve">
+    <value>Kann Aktion für die Methode {0} der Klasse {1} nicht erstellen. Aktion-Methode sollte nicht generische sein</value>
+  </data>
+  <data name="ActionMethodShouldBeParameterless" xml:space="preserve">
+    <value>Kann Aktion für die Methode {0} der Klasse {1} nicht erstellen. Action-Methode sollte ohne Parameter sein</value>
+  </data>
+  <data name="AlreadyUsedObjectSpace" xml:space="preserve">
+    <value>Die ObjectSpace ist schon einer anderen Wurzel Sicht zugeordnet: '{0}'. Dieser Fehler tritt nur auf, wenn Sie eine ObjectSpace, die bereits von einer Wurzel Blick auf eine andere Wurzel Ansicht verwendet zuzuweisen. Zum Beispiel können Sie diese Fehlermeldung erhalten, wenn Sie die XafApplication verwenden. CreateDetailView / CreateListView Methoden in einer ViewController und Weitergabe der View.ObjectSpace Objekt als Parameter an diese Methoden, wenn die View.IsRoot Eigenschaft true ist. \ R \ nWenn Sie diesen Fehler vermeiden wollen reicht es aus, eine neue ObjectSpace Instanz über die XafApplication.CreateObjectSpace Methode in dieser Methoden erstellen, oder erstellen Sie erstellen eine non-root Ansicht durch die Übergabe eines entsprechenden Parameter für diese Methoden. \ r \ nWenn dies nicht hilft, kontaktieren Sie bitte unser Support Team unter https://supportcenter.devexpress.com/</value>
+  </data>
+  <data name="AnErrorHasOccurredWhileLoadingTheModel" xml:space="preserve">
+    <value>Ein Fehler ist beim Laden des Modells aufgetreten. Quelle: '{0}'</value>
+  </data>
+  <data name="AnErrorHasOccurredWhileProcessingAShortcut" xml:space="preserve">
+    <value>Ein Fehler tritt bei der Verarbeitung eines shortcut auf: {0} '</value>
+  </data>
+  <data name="AnErrorHasOccurredWithContext" xml:space="preserve">
+    <value>Ein Fehler ist aufgetreten, Kontext: {0}</value>
+  </data>
+  <data name="AnUnsavedObjectCannotBeShown" xml:space="preserve">
+    <value>Ein ungesichertes Objekt kann nicht gezeigt werden</value>
+  </data>
+  <data name="ApplicationIsNotStarted" xml:space="preserve">
+    <value>Das Programm ist nicht gestartet</value>
+  </data>
+  <data name="ApplicationUpdaterAssemblyDoesNotExist" xml:space="preserve">
+    <value>Die Anwendung kann nicht aktualisiert werden, da der '{1}' Assembly nicht im '{0}' Ordner vorhanden ist.</value>
+  </data>
+  <data name="ApplicationUpdaterDatabaseVersionIsNewer" xml:space="preserve">
+    <value>Kann die Anwendung nicht auszuführen. Die Datenbank-Version ist neuer als die Version der Anwendung, aber der Server mit der neuen Version der Anwendung wurde nicht gefunden. Bitten Sie den Administrator, zu überprüfen, dass die Konfigurationsdatei den korrekten Pfad auf die neue Version der Anwendung enthält.</value>
+  </data>
+  <data name="AttributeModifyingFailed" xml:space="preserve">
+    <value>Attribute ändern fehlgeschlagen</value>
+  </data>
+  <data name="AttributeShouldStartWithSymbol" xml:space="preserve">
+    <value>Attribut '{0}' sollte nicht mit dem '@' Symbol starten: '{1}'</value>
+  </data>
+  <data name="AutoCreateOptionIs" xml:space="preserve">
+    <value>Die updatingReadOnlyDataStore.AutoCreateOption ist {0}</value>
+  </data>
+  <data name="CannotAccessCollectionCollectionSourceIsBeingIntialized" xml:space="preserve">
+    <value>Sie können nicht auf die Collection Eigenschaften, weil die Collection Source initialisiert wurde. Dieser Fehler kann auftreten, zum Beispiel, wenn Sie auf die Collection Eigenschaften in der OnActivated Methode eines ViewController zuzugreifen. Um diesen Fehler zu vermeiden ist es notwendig, auf die Collection Eigenschaften zu einem späteren Zeitpunkt zuzugreifen, wenn die Collection Source bereits initialisiert wurde. Der beste Weg dies zu tun ist, das CollectionChanged Ereignis zu behandeln. Bitte beachten Sie die Produkt-Dokumentation für weitere Informationen über diese Klassen und Methoden. Wenn dies nicht hilft, kontaktieren Sie bitte unser Support Team unter https://supportcenter.devexpress.com/</value>
+  </data>
+  <data name="CannotAddCollectionProperty" xml:space="preserve">
+    <value>Kann die '{0}' Kollektion nicht zuordnen</value>
+  </data>
+  <data name="CannotAddDuplicateProperty" xml:space="preserve">
+    <value>Duplizierter Property-Editor kann nicht hinzugefügt werden: '{0}'</value>
+  </data>
+  <data name="CannotAddToEmptySingleton" xml:space="preserve">
+    <value>Kann nicht zu Empty singleton hinzugefügt werden. Erstellen Sie neue Instanz der Sammlung</value>
+  </data>
+  <data name="CannotCreateAppropriateDetailItem" xml:space="preserve">
+    <value>Der entsprechende Detail Artikel für '{0}' kann nicht erstellt werden</value>
+  </data>
+  <data name="CannotCreateAppropriatePropertyEditorForTheProperty" xml:space="preserve">
+    <value>Der entsprechende Property-Editor kann nicht erstellt werden für '{0}. {1}' property</value>
+  </data>
+  <data name="CannotCreateSchemaForAttribute" xml:space="preserve">
+    <value>Kann Schema für Attribut nicht ändern</value>
+  </data>
+  <data name="CannotCreateTemplateByName" xml:space="preserve">
+    <value>Kann Schablone nicht nach Name erstellen: '{0}'</value>
+  </data>
+  <data name="CannotFindDescendantOfXafApplicationClass" xml:space="preserve">
+    <value>Kann keinen Nachfolger der XafApplication Klasse finden, um die Einstellungen Ihrer Anwendung in den folgenden Ordner (n) zu erkennen: {0} Für eine Windows Forms-Anwendung, muss dieser Ordner eine ausführbare Datei enthalten. Für eine ASP.NET-Anwendung, muss dieser Ordner die Assembly continaing Ihres WebApplication Nachfolgers enthalten.</value>
+  </data>
+  <data name="CannotFindListViewWithId" xml:space="preserve">
+    <value>Finde nicht ListView mit ID='{0}'</value>
+  </data>
+  <data name="CannotFindTheMemberWithinTheClass" xml:space="preserve">
+    <value>Das Element '{0}' kann nicht in der Klasse '{1}' gefunden werden.</value>
+  </data>
+  <data name="CannotFindThePropertyWithinTheClass" xml:space="preserve">
+    <value>Finde nicht '{0}' Eigenschaften mit '{1}' Klasse</value>
+  </data>
+  <data name="CannotGenerateContent" xml:space="preserve">
+    <value>Kann den Inhalt in 'ClassName' nicht erstellen, Attribut ist leer</value>
+  </data>
+  <data name="CannotObtainTheEditingObject" xml:space="preserve">
+    <value>Objekt bearbeiten nicht gestattet</value>
+  </data>
+  <data name="CannotProcessTheRequestedUrl" xml:space="preserve">
+    <value>Kann die angeforderte URL nicht verarbeiten</value>
+  </data>
+  <data name="CannotProcessTheRequestedUrlActionItemWasNotFound" xml:space="preserve">
+    <value>Kann die angeforderte URL icht verarbeiten das '{0}' Aktionelement wurde nicht gefunden</value>
+  </data>
+  <data name="CannotReadDictionaryFromResource" xml:space="preserve">
+    <value>Kann das Wörterbuch von '{0}' Ressource des '{1}' Assemblys nicht lesen</value>
+  </data>
+  <data name="CannotSetEditValueAvailableValues" xml:space="preserve">
+    <value>Kann den EditValue nicht durch den '{0}' Text, der verfügbaren Werte: \r\n{1} ersetzen</value>
+  </data>
+  <data name="CannotSetEditValueListIsEmpty" xml:space="preserve">
+    <value>Kann den EditValue nicht durch den '{0}' Text ersetzen, die Liste ist leer</value>
+  </data>
+  <data name="CannotShowViewUnknownContext" xml:space="preserve">
+    <value>Kann die Ansicht unbekannter Kontext nicht anzeigen: '{0}'</value>
+  </data>
+  <data name="CannotShowViewUnknownTarget" xml:space="preserve">
+    <value>Kann die Ansicht nicht anzeigen, unbekanntes Ziel: '{0}'</value>
+  </data>
+  <data name="ClassDoesntImplementInterface" xml:space="preserve">
+    <value>Klasse '{0}' implementiert die Schnittstelle '{1}' nicht</value>
+  </data>
+  <data name="CompatibilityApplicationIsOldError" xml:space="preserve">
+    <value>Die Datenbank-Version größer ist als die Version der Anwendung. Die Anwendung muss aktualisiert werden. Bitte kontaktieren Sie Ihren Systemadministrator oder laden Sie eine neue Version. \r\nAdditional Informationen: die lokale Version {0} von Modul '{1}' ist kleiner als Version {2} in der Datenbank.</value>
+  </data>
+  <data name="CompatibilityDatabaseIsOldError" xml:space="preserve">
+    <value>Die Datenbank ist eine ältere Version als die Anwendung. Die Datenbank muss aktualisiert werden.</value>
+  </data>
+  <data name="ConfigFileDoesNotExists" xml:space="preserve">
+    <value>Konfigurations Datei '{0}'existiert nicht</value>
+  </data>
+  <data name="ConfigFileHasNoModuleNames" xml:space="preserve">
+    <value>Der "add\[@ key ="Module"] 'Knoten sollte Modul Liste enthalten, Konfigurations Datei '{0}'</value>
+  </data>
+  <data name="CurrentObjectIsNotSet" xml:space="preserve">
+    <value>'{0}' Eigenschaft kann nicht gesetzt werden. Aktuelles Objekt ist nicht gesetzt</value>
+  </data>
+  <data name="CustomizePopupWindowParamsEventArgsViewIsNull" xml:space="preserve">
+    <value>Um diesen Fehler zu vermeiden, ist es notwendig, die CustomizePopupWindowParamsEventArgs.View Eigenschaft, beim Umgang mit dem CustomizePopupWindowParams Termine zuzuweisen. Um dies zu erreichen, erstellen Sie eine Ansicht mit dem XafApplication.CreateDetailView / CreateListView Methoden. Bitte beachten Sie die Produkt-Dokumentation für weitere Informationen über diese Klassen und Methoden. Wenn dies nicht hilft, kontaktieren Sie bitte unser Support Team unter https://supportcenter.devexpress.com/</value>
+  </data>
+  <data name="DataLayerAlreadyExists" xml:space="preserve">
+    <value>Ein dataLayer existiert bereits: '{0}'</value>
+  </data>
+  <data name="DictionaryPathItemParsingFailed" xml:space="preserve">
+    <value>Wörterbuch-Pfad-Analyse gescheitert. Es gibt einen Syntaxfehler in Ausdruck '{0}'</value>
+  </data>
+  <data name="DictionaryPathParsingFailed" xml:space="preserve">
+    <value>Wörterbuch-Pfad-Analyse gescheitert. Es gibt einen Syntaxfehler in Ausdruck '{0}'</value>
+  </data>
+  <data name="DuplicateComponentIdentifier" xml:space="preserve">
+    <value>Doppelter Identitätswert für eine Komponente '{0}'</value>
+  </data>
+  <data name="ErrorOccursWhileAddingTheCustomProperty" xml:space="preserve">
+    <value>Fehler beim Hinzufügen der '{2}' benutzerdefinierte Eigenschaft ("{0} 'Art der Eigenschaft) zu '{1}' Typ: '{3}'</value>
+  </data>
+  <data name="ExceptionDialogLabel" xml:space="preserve">
+    <value>Der folgende Fehler ist aufgetreten:</value>
+  </data>
+  <data name="GridColumnDoesNotExist" xml:space="preserve">
+    <value>Spalte '{0}' existiert nicht in Tabelle</value>
+  </data>
+  <data name="GridColumnExists" xml:space="preserve">
+    <value>Spalte '{0}' existiert schon in Tabelle</value>
+  </data>
+  <data name="GridControlIsAlreadyCreated" xml:space="preserve">
+    <value>Kann die EditMode-Eigenschaft nicht setzen. GridControl wurde bereits erstellt</value>
+  </data>
+  <data name="IncompatibleParametersCombinationOnViewChanged" xml:space="preserve">
+    <value>Inkompatible Parameter-Kombination. Der PopupWindow hat die gleiche ObjectSpace wie Haupt-Übersicht. Allerdings ist die SaveOnAccept Eigenschaft des Popup-Fensters DialogController auf true gesetzt. Verwenden Sie eine neue ObjectSpace für das aufgerufene Popup-Fenster oder setzen Sie die DialogController. SaveOnAccept-Eigenschaft auf false.</value>
+  </data>
+  <data name="IncorrectConfigFile" xml:space="preserve">
+    <value>Die übergebene Konfigurationsdatei '{0}' enthält nicht den '&lt;add key = "Module"' Knoten</value>
+  </data>
+  <data name="InfiniteRecursionDetected" xml:space="preserve">
+    <value>Unendliche Rekursion entdeckt: die '{0}' Detailansicht wurde {1} Mal erstellt. Um diesen Fehler zu vermeiden, verwenden Sie eine der Lösungen von https://www.devexpress.com/kb=B181657</value>
+  </data>
+  <data name="InfiniteRecursionDetectedInGenerateColumns" xml:space="preserve">
+    <value>Während der Erzeugung von Spalten für die Listenansicht der Klasse '{0}' wurde eine endlose Rekursion festgestellt. Die Verschachtelungstiefe ist grösser als der Grenzwert {1} (konfiguriert durch die Eigenschaft MaxRekursionsTiefe). Bitte prüfen Sie die Struktur Ihres Datenmodells.</value>
+  </data>
+  <data name="InvalidApplicationVersion" xml:space="preserve">
+    <value>Ungültige Version der Anwendung auf '{0}'</value>
+  </data>
+  <data name="InvalidParametrizedActionValueType" xml:space="preserve">
+    <value>Ungültiger Wert-Typ ist der '{0}' parametrisierten Aktion zugeordnet. Stellen Sie anstelle Int, Datensatz oder DateTime-Typ.</value>
+  </data>
+  <data name="InvalidValueOfEnumProperty" xml:space="preserve">
+    <value>Die {0} Objekt {1} Eigenschaft hat einen falschen Wert von {2}. Initialisieren Sie die Eigenschaft mit einem korrekten {3} Enumerationswert in der {4} Business Class 'AfterConstruction' Methode.</value>
+  </data>
+  <data name="IsNotValidNamespacePrefixDescription" xml:space="preserve">
+    <value>'{0}' ist keine gültige Namespacepräfix Beschreibung</value>
+  </data>
+  <data name="ItsImpossibleToFindPathForNode" xml:space="preserve">
+    <value>Es ist nicht möglich den Pfad = '{0}' für Knoten '{1}' zu finden</value>
+  </data>
+  <data name="ItsImpossibleToFindSourceNode" xml:space="preserve">
+    <value>Es ist nicht möglich den SourceNode='{0}\\{1}' zu finden</value>
+  </data>
+  <data name="LayoutControlInvalidCount" xml:space="preserve">
+    <value>Falsche Zählung: '{0}'</value>
+  </data>
+  <data name="ListEditorShouldImplement" xml:space="preserve">
+    <value>ListEditor sollte die IDXPopupMenuHolderSchnittstelle beinhalten</value>
+  </data>
+  <data name="MethodShouldBeUsed" xml:space="preserve">
+    <value>Die '{0}'Methode sollte verwendet werden</value>
+  </data>
+  <data name="ModulesHasAlreadyBeenLoaded" xml:space="preserve">
+    <value>Module bereits geladen</value>
+  </data>
+  <data name="NameAndValueCollectionsShouldHaveEqualLengths" xml:space="preserve">
+    <value>Namen und Werte Sammlungen sollten gleich lang sein</value>
+  </data>
+  <data name="NodeContainsDuplicatedChildNodes" xml:space="preserve">
+    <value>Der '{0}' Knoten enthält zwei untergeordnete Knoten mit dem '{1}' Wert im Schlüssel-Attribut. \r\n Knoten1: '{2}' \r\n Knoten2: '{3}'</value>
+  </data>
+  <data name="NodeWasNotFound" xml:space="preserve">
+    <value>Der '{0}' Knoten wurde nicht gefunden</value>
+  </data>
+  <data name="NotRegisteredReadOnlyParameterException" xml:space="preserve">
+    <value>Die '{0}' nur-lesen Parameter ist nicht in der ParametersFactory registriert.</value>
+  </data>
+  <data name="ObjectFormatterFormatStringIsInvalid" xml:space="preserve">
+    <value>Objekt kann nicht formatiert werden, da der angegebene Format-String ungültig ist: '{0}'</value>
+  </data>
+  <data name="PageCanOnlyContainOneInstanceOfControl" xml:space="preserve">
+    <value>Seite kann nur eine Instanz des Steuerelements '{0}' enthalten</value>
+  </data>
+  <data name="ParameterConflictsWithPropertyException" xml:space="preserve">
+    <value>Das Kriterium enthält die '{0}' nur-lesen Parameter welcher in Konflikt mit der '{0}' Eigenschaft der '{1}' Klasse steht. Um sich auf die nur-lese-Parameter zu beziehen, verwende '@ @ {0}' Syntax. Um sich auf Eigenschaften zu beziehen, den '@this.{0}' Syntax</value>
+  </data>
+  <data name="PassedObjectBelongsToAnotherObjectSpace" xml:space="preserve">
+    <value>Das Objekt, das bearbeitet wurde, gehört zu einem anderen ObjectSpace. Dieser Fehler kann auftreten, wenn Sie Ihre Objekte über eine ObjectSpace manipulieren, der diese Objekte nicht angehören. Zum Beispiel können Sie diesen Fehler erhalten, wenn Sie die XafApplication.CreateDetailView Methode, mit einem anderen Parameter als diesem ObjectSpace in dieser Methode zuordnen. Um diesen Fehler zu beheben, sollten Sie sicherstellen, dass alle Objekte, die Sie bearbeiten in einem ObjectSpace.\r\nIn sind. Um diesen Fehler zu vermeiden, ist es ausreichend, um die ObjectSpace.GetObject/ GetObjectByKey Methoden aufrufen, und das Objekt in das Ziel ObjectSpace.\r\n zu übergeben. Wenn dies nicht hilft, kontaktieren Sie bitte unser Support Team unter https://supportcenter.devexpress.com/</value>
+  </data>
+  <data name="PermissionIsDenied" xml:space="preserve">
+    <value>Erlaubnis verweigert</value>
+  </data>
+  <data name="ProcessWasAborted" xml:space="preserve">
+    <value>Prozess abgebrochen</value>
+  </data>
+  <data name="RequiresCurrentObjectException" xml:space="preserve">
+    <value>Kann den CriteriaWrapper nicht aktualisieren, da das Kriterium dynamische Parameter verwendet, aber das aktuelle Objekt nicht angegeben ist. Zum Aktualisieren der CriteriaWrapper, rufen Sie die UpdateParametersValues ​​(Object currentObject)-Methode und übergeben das aktuelle Objekt als Parameter.</value>
+  </data>
+  <data name="ResourceItemWithNameIsNotFound" xml:space="preserve">
+    <value>Ressourcen-Element mit dem Namen '{0}' wurde nicht gefunden</value>
+  </data>
+  <data name="RuleSetClearingIsDenied" xml:space="preserve">
+    <value>RuleSet löschen verweigert</value>
+  </data>
+  <data name="SourceAttributeExpressionShouldStartWith" xml:space="preserve">
+    <value>Source-Attribut Ausdruck sollte mit '{0}': '{1}' beginnen</value>
+  </data>
+  <data name="SourceAttributePathShouldConsistOf" xml:space="preserve">
+    <value>Der Pfad des Quellattributs sollte aus einem oder mehreren Knotennamen und dem letzten Attributnamen bestehen, die durch das Symbol ‚{\}‘ voneinander getrennt sind: '{0}'</value>
+  </data>
+  <data name="SourceNodeExpressionShouldStartWith" xml:space="preserve">
+    <value>SourceNode Ausdruck sollte mit '{0}': '{1}' beginnen</value>
+  </data>
+  <data name="TemplateTypeInfoMissed" xml:space="preserve">
+    <value>Kann TypeInfo für Typ '{0}' nicht finden . Sie sollten Ihre Vorlage in einem XAF Modul setzen oder manuell mit dem XafTypesInfo.Instance.FindTypeInfo (typeof ({0}))-Methode registrieren.</value>
+  </data>
+  <data name="TheAspectIsNotPresentInAspectsCollection" xml:space="preserve">
+    <value>Der Aspekt '{0}' ist nicht in den Aspekten Kollektion vorhanden</value>
+  </data>
+  <data name="TheAssemblyDoesntReferAssembly" xml:space="preserve">
+    <value>Der '{0}' Assembly bezieht sich nicht auf Assembly {1} ({2})</value>
+  </data>
+  <data name="TheClassIsNotFoundInBOModel" xml:space="preserve">
+    <value>Die '{0}' Klasse wurde im BOModel nicht gefunden</value>
+  </data>
+  <data name="TheClassNameAttributeIsEmpty" xml:space="preserve">
+    <value>Das ClassName Attribut des referenzierten Ansicht Knotens ist leer:</value>
+  </data>
+  <data name="TheClassNameAttributeRefersToADifferentType" xml:space="preserve">
+    <value>Das ClassName Attribut des referenzierten Ansicht Knoten bezieht sich auf einen anderen Typen. \r\nShortcut Objekttyp: {0}\r\nView node object typ: {1}</value>
+  </data>
+  <data name="TheCreateApplicationModulesManagerReturnsNull" xml:space="preserve">
+    <value>Die CreateApplicationModulesManager Methode gibt null zurück</value>
+  </data>
+  <data name="TheExpressionShouldConsistOf" xml:space="preserve">
+    <value>Der Ausdruck sollte den Suchausdruck und Quellattribut Namen bestehen, getrennt durch ';' symbol: '{0}'</value>
+  </data>
+  <data name="TheExpressionStringContainsANumberOfExpressions" xml:space="preserve">
+    <value>Die 'expressionString' datensatz enthält {0} Ausdrücke</value>
+  </data>
+  <data name="ThePassedFileIsNotADllOrConfig" xml:space="preserve">
+    <value>Die '{0}' Datei ist keine *.dll or *.config file</value>
+  </data>
+  <data name="ThereIsAlreadyRegisteredCreatorForFormat" xml:space="preserve">
+    <value>Für das Format '{0}' ist schon ein Autor registriert</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TheSourceNodeCannotAddressToSeveralNodes" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TheTypeAttributeCannotBeEmpty" xml:space="preserve">
+    <value>Das 'Type' Attribut darf nicht leer sein</value>
+  </data>
+  <data name="TheTypeIsNotDescendantOf" xml:space="preserve">
+    <value>Der '{0}' Typ ist nicht Nachfolger von '{1}'</value>
+  </data>
+  <data name="TheValueWasLocked" xml:space="preserve">
+    <value>Der Wert wurde gesperrt</value>
+  </data>
+  <data name="TypeDoesNotContainTheMember" xml:space="preserve">
+    <value>Der '{0}' Typ beinhaltet nicht '{1}' Mitglied</value>
+  </data>
+  <data name="TypeIsNotAEnum" xml:space="preserve">
+    <value>Die '{0}' Typ ist kein enum-Typ</value>
+  </data>
+  <data name="UnableToAssignDisabledActionItem" xml:space="preserve">
+    <value>Unmöglich ein untaugliches Element zuzuweisen. Aktion: {0}. Item: {1}. Untauglichkeitsgründe: {2}</value>
+  </data>
+  <data name="UnableToAssignInvisibleActionItem" xml:space="preserve">
+    <value>Unmöglich ein verstecktes Element zuzuweisen. Aktion: {0}. Item: {1}. Versteckgründe: {2}</value>
+  </data>
+  <data name="UnableToCast" xml:space="preserve">
+    <value>Unmöglich Objekt vom Typ '{0}' auf Typ '{1}' zu ersetzen</value>
+  </data>
+  <data name="UnableToChangeChildrenOfNodeDueItIsLocked" xml:space="preserve">
+    <value>Unmöglich Vorgänger '{0}' Knoten zu ändern, da er gesperrt ist.</value>
+  </data>
+  <data name="UnableToChangeConnectionString" xml:space="preserve">
+    <value>Kann Verbindungszeichenfolge nicht ändern. Bereits verbunden</value>
+  </data>
+  <data name="UnableToChangeValueOfAttributeDueItIsLocked" xml:space="preserve">
+    <value>Kann den Wert '{0}' Attribut nicht ändern, da er gesperrt ist</value>
+  </data>
+  <data name="UnableToCreateObjectSpace" xml:space="preserve">
+    <value>Kann kein ObjectSpace erstellen. Ein DataLayer ist null oder connectionString ist leer</value>
+  </data>
+  <data name="UnableToCreateUpdateSessionAutoCreateOption" xml:space="preserve">
+    <value>Kann keine UpdatingSession erstellen. Die dataLayer.AutoCreateOption ist {0}</value>
+  </data>
+  <data name="UnableToCreateUpdateSessionDataLayerIsNull" xml:space="preserve">
+    <value>Kann keine UpdatingSession erstellen. Ein DataLayer ist null oder connectionString ist leer</value>
+  </data>
+  <data name="UnableToCreateUpdatingReadonlySessionAutoCreateOption" xml:space="preserve">
+    <value>Kann keine UpdatingReadOnlySession erstellen. Die dataLayer.AutoCreateOption ist {0}</value>
+  </data>
+  <data name="UnableToExecuteDisabledOrInactiveAction" xml:space="preserve">
+    <value>Kann keine deaktivierte oder inaktive Aktion {2} ausführen. Deaktivierungs Gründe: {0} Inaktiv Gründe: {1}</value>
+  </data>
+  <data name="UnableToFindADetailViewForType" xml:space="preserve">
+    <value>Kann keine Detailansicht für den "{0} 'Objekttyp finden</value>
+  </data>
+  <data name="UnableToFindAListViewForType" xml:space="preserve">
+    <value>Kann keine Listenansicht für den "{0} 'Objekttyp finden</value>
+  </data>
+  <data name="UnableToFindPropertyInType" xml:space="preserve">
+    <value>Kann keine Eigenschaft '{0}' in Typ '{1}' finden</value>
+  </data>
+  <data name="UnableToFindType" xml:space="preserve">
+    <value>Kann keinen Typ '{0}' finden</value>
+  </data>
+  <data name="UnableToInitializeFileDataProperty" xml:space="preserve">
+    <value>Unfähig, die Eigenschaft {0} in {1} Objekt zu initialisieren, da diese Eigenschaft nur-lesen ist, oder der {2} Typ nicht über einen Standardkonstruktor verfügt, oder Sie haben keine Berechtigung zum Erstellen.</value>
+  </data>
+  <data name="UnableToSetReadOnlyProperty" xml:space="preserve">
+    <value>Kann die nur-lesen Eigenschaft '{0}' nicht setzen</value>
+  </data>
+  <data name="UnknownException" xml:space="preserve">
+    <value>Unbekannte Ausnahme aufgetreten. Kann die Ausnahme Details nicht abrufen</value>
+  </data>
+  <data name="UnknownValue" xml:space="preserve">
+    <value>Unbekannter Wert: '{0}'</value>
+  </data>
+  <data name="UnknownViewNodeName" xml:space="preserve">
+    <value>Unbekannter Ansichtsknotenname: '{0}'\r\nAllowed names: '{1}', '{2}'</value>
+  </data>
+  <data name="ValidationCannotFindThePropertyWithinTheClass" xml:space="preserve">
+    <value>Kann die '{0}' Gültigkeitsregel welche die '{1}' Eigenschaft benutzt nicht überprüfen, da diese Eigenschaft in der '{2}' Klasse nicht vorhanden ist</value>
+  </data>
+  <data name="ValidationMessageTemplateHasInvalidFormat" xml:space="preserve">
+    <value>Vorlage für Bestätigungsnachricht hat ein ungültiges Format: '{0}'</value>
+  </data>
+  <data name="ValueCannotBeStoredIntoTheProperty" xml:space="preserve">
+    <value>Der '{0}' Wert kann nicht in '{1}' Eigenschaften gespeichert werden</value>
+  </data>
+  <data name="WindowWasNotFound" xml:space="preserve">
+    <value>Das Fenster mit Id '{0}' kann nicht gefunden werden. Registierte Fenster: '{1}'</value>
+  </data>
+  <data name="XPDictionaryIsNull" xml:space="preserve">
+    <value>Der XPDictionary ist null</value>
+  </data>
+  <data name="YouCannotChangeCurrentAspect" xml:space="preserve">
+    <value>Sie können den aktuellen Aspekt nicht ändern. Er ist abhängig vom aktuellen Thema</value>
+  </data>
+  <data name="ValidationCannotFindTheAssociatedMemberInTargetClassForCollectionProperty" xml:space="preserve">
+    <value>Die Listeneigenschaft {0} der Klasse {1} hat kein entsprechendes Element in der Zielobjektklasse {2}</value>
+  </data>
+  <data name="InvalidStreamDataException" xml:space="preserve">
+    <value>Fehler beim Laden des Cache. Für weitere Details kontaktieren Sie Ihren Administrator.</value>
+  </data>
+  <data name="CustomPersistentPropertiesAreNotSupported" xml:space="preserve">
+    <value>Erweiterte Eigenschaften (definiert im Anwendungsmodell oder in TypesInfo) werden vom Typ '{0}' nicht unterstützt.</value>
+  </data>
+  <data name="DuplicatedVisibleInDashboardsClassCaption" xml:space="preserve">
+    <value>Der Typ '{0}' und der Typ '{1}' haben beide die gleiche Beschriftung '{2}' und können daher nicht im Dashboards-Modul verwendet werden. Alle Typen, die mit dem VisibleInDashboards-Attribut versehen sind, müssen über eindeutige Beschriftungen verfügen.</value>
+  </data>
+</root>

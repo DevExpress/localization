@@ -1,0 +1,802 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DashboardStringId.ActionExportTo" xml:space="preserve">
+    <value>匯出到</value>
+  </data>
+  <data name="DashboardStringId.ActionExportToImage" xml:space="preserve">
+    <value>匯出到圖像</value>
+  </data>
+  <data name="DashboardStringId.ActionExportToPdf" xml:space="preserve">
+    <value>匯出為 PDF</value>
+  </data>
+  <data name="DashboardStringId.ActionOtherValues" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="DashboardStringId.ActualValueCaption" xml:space="preserve">
+    <value>實際</value>
+  </data>
+  <data name="DashboardStringId.AxisXNameArguments" xml:space="preserve">
+    <value>參數</value>
+  </data>
+  <data name="DashboardStringId.AxisYNameCount" xml:space="preserve">
+    <value>計數</value>
+  </data>
+  <data name="DashboardStringId.AxisYNameValues" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="DashboardStringId.DateTimeGroupIntervalHour" xml:space="preserve">
+    <value>小時</value>
+  </data>
+  <data name="DashboardStringId.DateTimeGroupIntervalMinute" xml:space="preserve">
+    <value>分鐘</value>
+  </data>
+  <data name="DashboardStringId.DateTimeGroupIntervalQuarter" xml:space="preserve">
+    <value>季</value>
+  </data>
+  <data name="DashboardStringId.DateTimeGroupIntervalSecond" xml:space="preserve">
+    <value>第二次</value>
+  </data>
+  <data name="DashboardStringId.DefaultNameImageItem" xml:space="preserve">
+    <value>圖像</value>
+  </data>
+  <data name="DashboardStringId.DefaultNamePivotItem" xml:space="preserve">
+    <value>樞紐分析表</value>
+  </data>
+  <data name="DashboardStringId.DefaultNameRangeFilterItem" xml:space="preserve">
+    <value>範圍篩選器</value>
+  </data>
+  <data name="DashboardStringId.DescriptionArguments" xml:space="preserve">
+    <value>參數</value>
+  </data>
+  <data name="DashboardStringId.DescriptionCards" xml:space="preserve">
+    <value>卡</value>
+  </data>
+  <data name="DashboardStringId.DescriptionColumns" xml:space="preserve">
+    <value>列</value>
+  </data>
+  <data name="DashboardStringId.DescriptionRows" xml:space="preserve">
+    <value>行</value>
+  </data>
+  <data name="DashboardStringId.DescriptionValues" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="DashboardStringId.ElementNameCards" xml:space="preserve">
+    <value>卡</value>
+  </data>
+  <data name="DashboardStringId.EmptyColumnAliasPattern" xml:space="preserve">
+    <value>列 {0}</value>
+  </data>
+  <data name="DashboardStringId.FormatStringDashboardItemCaption" xml:space="preserve">
+    <value>- {0}</value>
+  </data>
+  <data name="DashboardStringId.MessageDuplicatedDataItem" xml:space="preserve">
+    <value>此實例的 '{0}' 資料項目目已添加到"{1}"。若要添加到 '{1}' 相似的資料項目目，創建此資料項目目的一個新實例。</value>
+  </data>
+  <data name="DashboardStringId.MessageIncorrectDataAssign" xml:space="preserve">
+    <value>如果使用資料提供程式無法分配資料</value>
+  </data>
+  <data name="DashboardStringId.MessageIncorrectNumericPrecision" xml:space="preserve">
+    <value>數位值的精度不能為負數。</value>
+  </data>
+  <data name="DashboardStringId.MessageIncorrectValueTopNCount" xml:space="preserve">
+    <value>TopNCount 屬性值不能為負數或零。</value>
+  </data>
+  <data name="DashboardStringId.MessageInternalError" xml:space="preserve">
+    <value>內部錯誤。請與應用程式供應商或您的系統管理員聯繫，並提供以下資訊。{0}</value>
+  </data>
+  <data name="DashboardStringId.MessageInvalidCultureName" xml:space="preserve">
+    <value>無法找到特定的區域性名稱如下： {0}</value>
+  </data>
+  <data name="DashboardStringId.MessageInvalidFilterExpression" xml:space="preserve">
+    <value>不正確的列識別碼： {0}.一個有效的列識別碼必須包含的列的名稱前冠的表的名稱 （或別名，如果指定）。這些名稱必須是圓點分隔。</value>
+  </data>
+  <data name="DashboardStringId.NumericFormatUnitSymbolBillions" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="DashboardStringId.RangeFilterIncompatibleArgumentSorting" xml:space="preserve">
+    <value>範圍篩選器參數應該不會被排序降冪順序或由另一個資料項目目</value>
+  </data>
+  <data name="DashboardStringId.RangeFilterIncompatibleDateTimeGroupInterval" xml:space="preserve">
+    <value>日期時間參數值應確定實際日曆日期或時間跨度，而不是分組 （即，他們應該包含一年部分）。相應地更改組的間隔</value>
+  </data>
+  <data name="DashboardStringId.RangeFilterIncompatibleNumericScale" xml:space="preserve">
+    <value>範圍篩選器數值參數值應產生一個連續的軸。設置為連續的數位尺規</value>
+  </data>
+  <data name="DashboardStringId.RangeFilterIncompatibleSeriesType" xml:space="preserve">
+    <value>A 範圍篩選器可以包含僅折線圖和麵積系列</value>
+  </data>
+  <data name="DashboardStringId.RangeFilterIncompatibleTopN" xml:space="preserve">
+    <value>範圍篩選器參數不支援前 N 功能</value>
+  </data>
+  <data name="DashboardStringId.SeriesTypeArea" xml:space="preserve">
+    <value>區</value>
+  </data>
+  <data name="DashboardStringId.SeriesTypeHighLowClose" xml:space="preserve">
+    <value>盤高-盤低-收盤</value>
+  </data>
+  <data name="DashboardStringId.SeriesTypeLine" xml:space="preserve">
+    <value>線</value>
+  </data>
+  <data name="DashboardStringId.SeriesTypePoint" xml:space="preserve">
+    <value>點</value>
+  </data>
+  <data name="DashboardStringId.SeriesTypeRangeArea" xml:space="preserve">
+    <value>範圍區域</value>
+  </data>
+  <data name="DashboardStringId.SummaryTypeSum" xml:space="preserve">
+    <value>總和</value>
+  </data>
+  <data name="DashboardStringId.TargetValueCaption" xml:space="preserve">
+    <value>目標</value>
+  </data>
+  <data name="DashboardStringId.TextGroupIntervalAlphabetical" xml:space="preserve">
+    <value>按字母順序排列</value>
+  </data>
+  <data name="DashboardStringId.ActionClearMasterFilter" xml:space="preserve">
+    <value>清除主篩檢程式</value>
+  </data>
+  <data name="DashboardStringId.ActionDrillUp" xml:space="preserve">
+    <value>向上切入</value>
+  </data>
+  <data name="DashboardStringId.MessageDashboardNotFoundError" xml:space="preserve">
+    <value>儀表板未被發現。</value>
+  </data>
+  <data name="DashboardStringId.ButtonCancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="DashboardStringId.ButtonOK" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="DashboardStringId.PaperKind" xml:space="preserve">
+    <value>大小</value>
+  </data>
+  <data name="DashboardStringId.FilterStatePresentationNone" xml:space="preserve">
+    <value>無</value>
+  </data>
+  <data name="DashboardStringId.ScaleModeNone" xml:space="preserve">
+    <value>無</value>
+  </data>
+  <data name="DashboardStringId.SizeModeNone" xml:space="preserve">
+    <value>無</value>
+  </data>
+  <data name="DashboardStringId.DateTimeGroupIntervalDay" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="DashboardStringId.CloseCaption" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+  <data name="DashboardStringId.DescriptionItemValue" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="DashboardStringId.ValueCaption" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="DashboardStringId.DefaultNameChartItem" xml:space="preserve">
+    <value>圖表</value>
+  </data>
+  <data name="DashboardStringId.SummaryTypeMax" xml:space="preserve">
+    <value>最大值</value>
+  </data>
+  <data name="DashboardStringId.SummaryTypeMin" xml:space="preserve">
+    <value>最小值</value>
+  </data>
+  <data name="DashboardStringId.SizeModeZoom" xml:space="preserve">
+    <value>縮放</value>
+  </data>
+  <data name="DashboardStringId.DateTimeGroupIntervalMonth" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="DashboardStringId.ButtonReset" xml:space="preserve">
+    <value>重設</value>
+  </data>
+  <data name="DashboardStringId.PageLayoutAuto" xml:space="preserve">
+    <value>自動</value>
+  </data>
+  <data name="DashboardStringId.Title" xml:space="preserve">
+    <value>標題</value>
+  </data>
+  <data name="DashboardStringId.OpenCaption" xml:space="preserve">
+    <value>開啟</value>
+  </data>
+  <data name="DashboardStringId.DescriptionItemArgument" xml:space="preserve">
+    <value>參數</value>
+  </data>
+  <data name="DashboardStringId.DescriptionSparklineArgument" xml:space="preserve">
+    <value>參數</value>
+  </data>
+  <data name="DashboardStringId.HighCaption" xml:space="preserve">
+    <value>高</value>
+  </data>
+  <data name="DashboardStringId.LowCaption" xml:space="preserve">
+    <value>低</value>
+  </data>
+  <data name="DashboardStringId.SummaryTypeAverage" xml:space="preserve">
+    <value>平均</value>
+  </data>
+  <data name="DashboardStringId.SummaryTypeCount" xml:space="preserve">
+    <value>計次</value>
+  </data>
+  <data name="DashboardStringId.DateTimeGroupIntervalYear" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="DashboardStringId.DefaultNameCardItem" xml:space="preserve">
+    <value>卡</value>
+  </data>
+  <data name="DashboardStringId.DescriptionArgument" xml:space="preserve">
+    <value>參數</value>
+  </data>
+  <data name="DashboardStringId.ColoringModeDefault" xml:space="preserve">
+    <value>預設值</value>
+  </data>
+  <data name="DashboardStringId.ColorAutoAssigned" xml:space="preserve">
+    <value>自動</value>
+  </data>
+  <data name="DashboardStringId.ColoringModeNone" xml:space="preserve">
+    <value>無</value>
+  </data>
+  <data name="DashboardStringId.FilterElementShowAllItem" xml:space="preserve">
+    <value>(全部)</value>
+  </data>
+  <data name="DashboardStringId.ButtonExport" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="DashboardStringId.DashboardErrorValue" xml:space="preserve">
+    <value>錯誤</value>
+  </data>
+  <data name="DashboardStringId.PageLayoutLandscape" xml:space="preserve">
+    <value>橫向</value>
+  </data>
+  <data name="DashboardStringId.DescriptionItemColor" xml:space="preserve">
+    <value>顏色</value>
+  </data>
+  <data name="DashboardStringId.DefaultDataSourceName" xml:space="preserve">
+    <value>資料來源</value>
+  </data>
+  <data name="DashboardStringId.GridTotalTypeCount" xml:space="preserve">
+    <value>計次</value>
+  </data>
+  <data name="DashboardStringId.GridTotalTypeMax" xml:space="preserve">
+    <value>最大值</value>
+  </data>
+  <data name="DashboardStringId.GridTotalTypeMin" xml:space="preserve">
+    <value>最小值</value>
+  </data>
+  <data name="DashboardStringId.GridTotalTypeSum" xml:space="preserve">
+    <value>加總</value>
+  </data>
+  <data name="DashboardStringId.GridTotalAutoTemplate" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="DashboardStringId.GridTotalValueTemplate" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="DashboardStringId.ParametersFormValueColumnCaption" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="DashboardStringId.DataEngineGrandTotal" xml:space="preserve">
+    <value>總計</value>
+  </data>
+  <data name="DashboardStringId.DataItemsHeader" xml:space="preserve">
+    <value>資料項目目</value>
+  </data>
+  <data name="DashboardStringId.DateTimeGroupIntervalDateHour" xml:space="preserve">
+    <value>日期時間</value>
+  </data>
+  <data name="DashboardStringId.DateTimeGroupIntervalDateHourMinute" xml:space="preserve">
+    <value>日期-小時-分鐘</value>
+  </data>
+  <data name="DashboardStringId.DateTimeGroupIntervalDateHourMinuteSecond" xml:space="preserve">
+    <value>日期-小時-分鐘-秒</value>
+  </data>
+  <data name="DashboardStringId.DateTimeGroupIntervalDayMonthYear" xml:space="preserve">
+    <value>日-月-年</value>
+  </data>
+  <data name="DashboardStringId.DateTimeQuarterFormat" xml:space="preserve">
+    <value>Q{0}</value>
+  </data>
+  <data name="DashboardStringId.DateTimeQuarterFormatSpecifier" xml:space="preserve">
+    <value>QQ</value>
+  </data>
+  <data name="DashboardStringId.DefaultNameChartPane" xml:space="preserve">
+    <value>窗格</value>
+  </data>
+  <data name="DashboardStringId.DefaultNameGridItem" xml:space="preserve">
+    <value>網格</value>
+  </data>
+  <data name="DashboardStringId.DescriptionDimensions" xml:space="preserve">
+    <value>尺寸</value>
+  </data>
+  <data name="DashboardStringId.DescriptionItemColumn" xml:space="preserve">
+    <value>列</value>
+  </data>
+  <data name="DashboardStringId.DescriptionItemDimension" xml:space="preserve">
+    <value>維度</value>
+  </data>
+  <data name="DashboardStringId.DescriptionItemMeasure" xml:space="preserve">
+    <value>措施</value>
+  </data>
+  <data name="DashboardStringId.DescriptionItemRow" xml:space="preserve">
+    <value>行</value>
+  </data>
+  <data name="DashboardStringId.FormatStringDataItemName" xml:space="preserve">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="DashboardStringId.FormatStringSeriesName" xml:space="preserve">
+    <value>- {0}</value>
+  </data>
+  <data name="DashboardStringId.GroupIntervalNone" xml:space="preserve">
+    <value>不分組</value>
+  </data>
+  <data name="DashboardStringId.HiddenDataItemsHeader" xml:space="preserve">
+    <value>隱藏資料項目目</value>
+  </data>
+  <data name="DashboardStringId.MessageDashboardInternalError" xml:space="preserve">
+    <value>儀表板內部錯誤。請與應用程式供應商或您的系統管理員聯繫。</value>
+  </data>
+  <data name="DashboardStringId.NumericFormatUnitSymbolMillions" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="DashboardStringId.NumericFormatUnitSymbolThousands" xml:space="preserve">
+    <value>K</value>
+  </data>
+  <data name="DashboardStringId.NumericGroupIntervalContinuous" xml:space="preserve">
+    <value>連續</value>
+  </data>
+  <data name="DashboardStringId.NumericGroupIntervalDiscrete" xml:space="preserve">
+    <value>離散</value>
+  </data>
+  <data name="DashboardStringId.PaperKindA3" xml:space="preserve">
+    <value>A3</value>
+  </data>
+  <data name="DashboardStringId.PaperKindA4" xml:space="preserve">
+    <value>A4</value>
+  </data>
+  <data name="DashboardStringId.PaperKindA5" xml:space="preserve">
+    <value>A5</value>
+  </data>
+  <data name="DashboardStringId.PaperKindExecutive" xml:space="preserve">
+    <value>行政</value>
+  </data>
+  <data name="DashboardStringId.PaperKindLegal" xml:space="preserve">
+    <value>法律</value>
+  </data>
+  <data name="DashboardStringId.PaperKindLetter" xml:space="preserve">
+    <value>信</value>
+  </data>
+  <data name="DashboardStringId.PivotGridGrandTotal" xml:space="preserve">
+    <value>總計</value>
+  </data>
+  <data name="DashboardStringId.PivotGridTotal" xml:space="preserve">
+    <value>{0} 共</value>
+  </data>
+  <data name="DashboardStringId.RangeFilterEmptyArgument" xml:space="preserve">
+    <value>請指定範圍篩選器參數</value>
+  </data>
+  <data name="DashboardStringId.RangeFilterEmptySeries" xml:space="preserve">
+    <value>請指定範圍篩選器的值</value>
+  </data>
+  <data name="DashboardStringId.RangeFilterIncompatibleArgument" xml:space="preserve">
+    <value>範圍篩選器參數欄位應具有數值、 日期時間或鍵入的時間跨度</value>
+  </data>
+  <data name="DashboardStringId.SeriesTypeGroupPointLine" xml:space="preserve">
+    <value>點/線</value>
+  </data>
+  <data name="DashboardStringId.SeriesTypeGroupRange" xml:space="preserve">
+    <value>範圍</value>
+  </data>
+  <data name="DashboardStringId.SeriesTypeGroupRangeFilter" xml:space="preserve">
+    <value>範圍篩選器</value>
+  </data>
+  <data name="DashboardStringId.SeriesTypeStock" xml:space="preserve">
+    <value>股票</value>
+  </data>
+  <data name="DashboardStringId.WeightCaption" xml:space="preserve">
+    <value>重量</value>
+  </data>
+  <data name="DashboardStringId.DescriptionItemMeasureWeight" xml:space="preserve">
+    <value>重量</value>
+  </data>
+  <data name="DashboardStringId.DescriptionItemWeight" xml:space="preserve">
+    <value>重量</value>
+  </data>
+  <data name="DashboardStringId.SizeModeStretch" xml:space="preserve">
+    <value>拉伸</value>
+  </data>
+  <data name="DashboardStringId.FilterElementCheckedComboBoxNoDataCaption" xml:space="preserve">
+    <value>(無)</value>
+  </data>
+  <data name="DashboardStringId.CategoryNameGeneral" xml:space="preserve">
+    <value>一般</value>
+  </data>
+  <data name="DashboardStringId.PeriodNextMonth" xml:space="preserve">
+    <value>下個月</value>
+  </data>
+  <data name="DashboardStringId.OlapRaggedHierarchyNoneItemCaption" xml:space="preserve">
+    <value>(無)</value>
+  </data>
+  <data name="DashboardStringId.ParametersFormCalendarTodayButton" xml:space="preserve">
+    <value>今天</value>
+  </data>
+  <data name="DashboardStringId.PageLayoutPortrait" xml:space="preserve">
+    <value>直向</value>
+  </data>
+  <data name="DashboardStringId.PeriodLastMonth" xml:space="preserve">
+    <value>上個月</value>
+  </data>
+  <data name="DashboardStringId.PointLabelContentTypePercent" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="DashboardStringId.PointLabelContentTypeValue" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="DashboardStringId.ExportParameters" xml:space="preserve">
+    <value>參數</value>
+  </data>
+  <data name="DashboardStringId.ExportFilters" xml:space="preserve">
+    <value>Filters</value>
+  </data>
+  <data name="DashboardStringId.PointLabelContentTypeArgument" xml:space="preserve">
+    <value>參數</value>
+  </data>
+  <data name="DashboardStringId.DashboardStatePosition" xml:space="preserve">
+    <value>位置</value>
+  </data>
+  <data name="DashboardStringId.TopNOthersValue" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="DashboardStringId.PointLabelContentTypeNone" xml:space="preserve">
+    <value>無</value>
+  </data>
+  <data name="DashboardStringId.DefaultNameTabPage" xml:space="preserve">
+    <value>頁</value>
+  </data>
+  <data name="DashboardStringId.Value2Caption" xml:space="preserve">
+    <value>值 2</value>
+  </data>
+  <data name="DashboardStringId.ActionPrintPreview" xml:space="preserve">
+    <value>預覽列印...</value>
+  </data>
+  <data name="DashboardStringId.FormatStringKpiElementCaption" xml:space="preserve">
+    <value>{0} vs {1}</value>
+  </data>
+  <data name="DashboardStringId.CalculatedFieldTypeDateTime" xml:space="preserve">
+    <value>日期時間</value>
+  </data>
+  <data name="DashboardStringId.CalculatedFieldTypeString" xml:space="preserve">
+    <value>字串</value>
+  </data>
+  <data name="DashboardStringId.CalculatedFieldTypeAuto" xml:space="preserve">
+    <value>自動</value>
+  </data>
+  <data name="DashboardStringId.CardLayoutTemplateNoneCaption" xml:space="preserve">
+    <value>無</value>
+  </data>
+  <data name="DashboardStringId.CardLayoutTemplateCustomCaption" xml:space="preserve">
+    <value>自訂</value>
+  </data>
+  <data name="DashboardStringId.CardRowDataElementTypeTitleCaption" xml:space="preserve">
+    <value>標題</value>
+  </data>
+  <data name="DashboardStringId.DateTimeFormatDateFormatDefaultCaption" xml:space="preserve">
+    <value>預設值</value>
+  </data>
+  <data name="DashboardStringId.DateTimeFormatDateTimeFormatDefaultCaption" xml:space="preserve">
+    <value>預設值</value>
+  </data>
+  <data name="DashboardStringId.DateTimeFormatDayOfWeekFormatDefaultCaption" xml:space="preserve">
+    <value>預設值</value>
+  </data>
+  <data name="DashboardStringId.DateTimeFormatMonthFormatDefaultCaption" xml:space="preserve">
+    <value>預設值</value>
+  </data>
+  <data name="DashboardStringId.DateTimeFormatQuarterFormatDefaultCaption" xml:space="preserve">
+    <value>預設值</value>
+  </data>
+  <data name="DashboardStringId.DateTimeFormatYearFormatDefaultCaption" xml:space="preserve">
+    <value>預設值</value>
+  </data>
+  <data name="DashboardStringId.FormatConditionAppearanceCustom" xml:space="preserve">
+    <value>自訂</value>
+  </data>
+  <data name="DashboardStringId.FormatConditionAppearanceNone" xml:space="preserve">
+    <value>無</value>
+  </data>
+  <data name="DashboardStringId.FormatConditionAppearanceFontBold" xml:space="preserve">
+    <value>粗體</value>
+  </data>
+  <data name="DashboardStringId.FormatConditionAppearanceFontItalic" xml:space="preserve">
+    <value>斜體</value>
+  </data>
+  <data name="DashboardStringId.FormatConditionAppearanceFontUnderline" xml:space="preserve">
+    <value>底線</value>
+  </data>
+  <data name="DashboardStringId.FormatConditionAppearanceRed" xml:space="preserve">
+    <value>紅色</value>
+  </data>
+  <data name="DashboardStringId.DateTimeIntervalDay" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="DashboardStringId.DateTimeIntervalHour" xml:space="preserve">
+    <value>小時</value>
+  </data>
+  <data name="DashboardStringId.DateTimeIntervalMonth" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="DashboardStringId.DateTimeIntervalQuarter" xml:space="preserve">
+    <value>季</value>
+  </data>
+  <data name="DashboardStringId.DateTimeIntervalYear" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="DashboardStringId.DateTimeIntervalAll" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="DashboardStringId.FormatConditionAutomaticValueType" xml:space="preserve">
+    <value>自動</value>
+  </data>
+  <data name="DashboardStringId.FormatConditionPercentValueType" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="DashboardStringId.SparklineIndicationModeLine" xml:space="preserve">
+    <value>線形</value>
+  </data>
+  <data name="DashboardStringId.RankOrderAscending" xml:space="preserve">
+    <value>升冪</value>
+  </data>
+  <data name="DashboardStringId.RankOrderDescending" xml:space="preserve">
+    <value>降冪</value>
+  </data>
+  <data name="DashboardStringId.DeltaThresholdTypePercent" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="DashboardStringId.NumericFormatFormatTypeGeneralCaption" xml:space="preserve">
+    <value>一般</value>
+  </data>
+  <data name="DashboardStringId.NumericFormatUnitAutoCaption" xml:space="preserve">
+    <value>自動</value>
+  </data>
+  <data name="DashboardStringId.NumericFormatFormatTypeCurrencyCaption" xml:space="preserve">
+    <value>貨幣</value>
+  </data>
+  <data name="DashboardStringId.NumericFormatFormatTypePercentCaption" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="DashboardStringId.NumericFormatFormatTypeAutoCaption" xml:space="preserve">
+    <value>自動</value>
+  </data>
+  <data name="DashboardStringId.PivotCalculationAlongColumns" xml:space="preserve">
+    <value>資料欄</value>
+  </data>
+  <data name="DashboardStringId.RangeFilterCalculationAlongArgument" xml:space="preserve">
+    <value>參數</value>
+  </data>
+  <data name="DashboardStringId.CardCalculationAlongCards" xml:space="preserve">
+    <value>卡</value>
+  </data>
+  <data name="DashboardStringId.CalculationTypeNone" xml:space="preserve">
+    <value>無</value>
+  </data>
+  <data name="DashboardStringId.ExactDateFormatDay" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="DashboardStringId.ExactDateFormatHour" xml:space="preserve">
+    <value>小時</value>
+  </data>
+  <data name="DashboardStringId.ExactDateFormatMonth" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="DashboardStringId.ExactDateFormatQuarter" xml:space="preserve">
+    <value>季</value>
+  </data>
+  <data name="DashboardStringId.ExactDateFormatYear" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="DashboardStringId.ActionRestoreDashboardItem" xml:space="preserve">
+    <value>還原</value>
+  </data>
+  <data name="DashboardStringId.FormatConditionAppearanceFontStrikeout" xml:space="preserve">
+    <value>刪除線</value>
+  </data>
+  <data name="DashboardStringId.NumericFormatUnitCaption" xml:space="preserve">
+    <value>單位</value>
+  </data>
+  <data name="DashboardStringId.CommandFormatRuleValue" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="DashboardStringId.CommandFormatRuleAboveBelowAverage" xml:space="preserve">
+    <value>平均</value>
+  </data>
+  <data name="DashboardStringId.CommandFormatRuleRange" xml:space="preserve">
+    <value>範圍</value>
+  </data>
+  <data name="DashboardStringId.CommandFormatRuleEqualTo" xml:space="preserve">
+    <value>等於</value>
+  </data>
+  <data name="DashboardStringId.CommandFormatRuleLessThan" xml:space="preserve">
+    <value>小於</value>
+  </data>
+  <data name="DashboardStringId.CommandFormatRuleGreaterThan" xml:space="preserve">
+    <value>大於</value>
+  </data>
+  <data name="DashboardStringId.CommandFormatRuleNotEqualTo" xml:space="preserve">
+    <value>不等於</value>
+  </data>
+  <data name="DashboardStringId.CommandFormatRuleBetween" xml:space="preserve">
+    <value>介於</value>
+  </data>
+  <data name="DashboardStringId.FunctionCategoryAggregate" xml:space="preserve">
+    <value>彙總函式</value>
+  </data>
+  <data name="DashboardStringId.FunctionDescriptionCountDistinct" xml:space="preserve">
+    <value>CountDistinct(Value)
+返回集合中的唯一物件的數量。</value>
+  </data>
+  <data name="DashboardStringId.RedoText" xml:space="preserve">
+    <value>重做</value>
+  </data>
+  <data name="DashboardStringId.UndoText" xml:space="preserve">
+    <value>復原</value>
+  </data>
+  <data name="DashboardStringId.FormatRuleStyleAppearance" xml:space="preserve">
+    <value>外觀</value>
+  </data>
+  <data name="DashboardStringId.FormatRuleStyle" xml:space="preserve">
+    <value>樣式設置</value>
+  </data>
+  <data name="DashboardStringId.FormatRuleRangeAdd" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="DashboardStringId.FormatRuleRangeDelete" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="DashboardStringId.FormatRuleRangeReverseStyles" xml:space="preserve">
+    <value>反向</value>
+  </data>
+  <data name="DashboardStringId.DataSourceDataMember" xml:space="preserve">
+    <value>資料成員</value>
+  </data>
+  <data name="DashboardStringId.FunctionCategoryWindow" xml:space="preserve">
+    <value>Window</value>
+  </data>
+  <data name="DashboardStringId.ButtonApply" xml:space="preserve">
+    <value>套用</value>
+  </data>
+  <data name="DashboardStringId.ExactDatePeriodCaption" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="DashboardStringId.NumericFormatFormatTypeCustomCaption" xml:space="preserve">
+    <value>自訂</value>
+  </data>
+  <data name="DashboardStringId.DateTimeIntervalWeek" xml:space="preserve">
+    <value>週</value>
+  </data>
+  <data name="DashboardStringId.ChartElementPointCaption" xml:space="preserve">
+    <value>點</value>
+  </data>
+  <data name="DashboardStringId.DataInspectorButtonClose" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+  <data name="DashboardStringId.LayoutDimensionModeAuto" xml:space="preserve">
+    <value>自動</value>
+  </data>
+  <data name="DashboardStringId.MessageBoxWarningTitle" xml:space="preserve">
+    <value>警告</value>
+  </data>
+</root>

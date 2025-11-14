@@ -1,0 +1,901 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ChartStringId.AllHolidays" xml:space="preserve">
+    <value>Всички празници</value>
+  </data>
+  <data name="ChartStringId.AlternateTextPlaceholder" xml:space="preserve">
+    <value>{0} Диаграма {1}.</value>
+  </data>
+  <data name="ChartStringId.AlternateTextSeriesPlaceholder" xml:space="preserve">
+    <value>показване на {0}</value>
+  </data>
+  <data name="ChartStringId.AnnotationFreePosition" xml:space="preserve">
+    <value>Свободна позиция</value>
+  </data>
+  <data name="ChartStringId.AnnotationRelativePosition" xml:space="preserve">
+    <value>Относителното положение</value>
+  </data>
+  <data name="ChartStringId.AppChameleon" xml:space="preserve">
+    <value>Хамелеон</value>
+  </data>
+  <data name="ChartStringId.AppDefault" xml:space="preserve">
+    <value>По подразбиране</value>
+  </data>
+  <data name="ChartStringId.AppInAFog" xml:space="preserve">
+    <value>В мъгла</value>
+  </data>
+  <data name="ChartStringId.AppLight" xml:space="preserve">
+    <value>Светлина</value>
+  </data>
+  <data name="ChartStringId.AppNorthernLights" xml:space="preserve">
+    <value>Северно сияние</value>
+  </data>
+  <data name="ChartStringId.AppTheTrees" xml:space="preserve">
+    <value>Дърветата</value>
+  </data>
+  <data name="ChartStringId.ArgumentMember" xml:space="preserve">
+    <value>Аргумент</value>
+  </data>
+  <data name="ChartStringId.AxisXDefaultTitle" xml:space="preserve">
+    <value>Ос на аргументи</value>
+  </data>
+  <data name="ChartStringId.AxisYDefaultTitle" xml:space="preserve">
+    <value>Ос на стойности</value>
+  </data>
+  <data name="ChartStringId.CloseValueMember" xml:space="preserve">
+    <value>Затвори</value>
+  </data>
+  <data name="ChartStringId.CmdChangeAppearancePlaceHolderMenuCaption" xml:space="preserve">
+    <value>Облик</value>
+  </data>
+  <data name="ChartStringId.CmdChangePalettePlaceHolderMenuCaption" xml:space="preserve">
+    <value>Палитра</value>
+  </data>
+  <data name="ChartStringId.CmdColumnConeGroupPlaceHolderMenuCaption" xml:space="preserve">
+    <value>Конус</value>
+  </data>
+  <data name="ChartStringId.CmdColumnCylinderGroupPlaceHolderMenuCaption" xml:space="preserve">
+    <value>Цилиндър</value>
+  </data>
+  <data name="ChartStringId.CmdColumnPyramidGroupPlaceHolderMenuCaption" xml:space="preserve">
+    <value>Пирамида</value>
+  </data>
+  <data name="ChartStringId.CmdCreateBarChartPlaceHolderMenuCaption" xml:space="preserve">
+    <value>Колона</value>
+  </data>
+  <data name="ChartStringId.CmdCreateFunnel3DChartMenuCaption" xml:space="preserve">
+    <value>3-D Фуния</value>
+  </data>
+  <data name="ChartStringId.CmdCreateFunnelChartMenuCaption" xml:space="preserve">
+    <value>Фуния</value>
+  </data>
+  <data name="ChartStringId.CmdCreateOtherSeriesTypesChartPlaceHolderMenuCaption" xml:space="preserve">
+    <value>Други диаграми</value>
+  </data>
+  <data name="ChartStringId.CmdExportToBMPDescription" xml:space="preserve">
+    <value>Растерна картина</value>
+  </data>
+  <data name="ChartStringId.CmdExportToGIFDescription" xml:space="preserve">
+    <value>Формат за обмен на графика</value>
+  </data>
+  <data name="ChartStringId.CmdExportToHTMLDescription" xml:space="preserve">
+    <value>Уеб страница</value>
+  </data>
+  <data name="ChartStringId.CmdExportToHTMLMenuCaption" xml:space="preserve">
+    <value>Експортиране в HTML</value>
+  </data>
+  <data name="ChartStringId.CmdExportToImagePlaceHolderMenuCaption" xml:space="preserve">
+    <value>Експортиране на изображение</value>
+  </data>
+  <data name="ChartStringId.CmdExportToMHTDescription" xml:space="preserve">
+    <value>Уеб страница от един файл</value>
+  </data>
+  <data name="ChartStringId.CmdExportToMHTMenuCaption" xml:space="preserve">
+    <value>Експортиране в MHT</value>
+  </data>
+  <data name="ChartStringId.CmdExportToPDFMenuCaption" xml:space="preserve">
+    <value>Експортиране в PDF</value>
+  </data>
+  <data name="ChartStringId.CmdExportToRTFDescription" xml:space="preserve">
+    <value>RTF формат</value>
+  </data>
+  <data name="ChartStringId.CmdExportToXLSDescription" xml:space="preserve">
+    <value>Работна книга на Microsoft Excel 2000-2003</value>
+  </data>
+  <data name="ChartStringId.CmdExportToXLSMenuCaption" xml:space="preserve">
+    <value>Експортиране в XLS</value>
+  </data>
+  <data name="ChartStringId.CmdExportToXLSXDescription" xml:space="preserve">
+    <value>Работна книга на Microsoft Excel</value>
+  </data>
+  <data name="ChartStringId.CmdExportToXLSXMenuCaption" xml:space="preserve">
+    <value>Експортиране в XLSX</value>
+  </data>
+  <data name="ChartStringId.CmdFunnelGroupPlaceHolderMenuCaption" xml:space="preserve">
+    <value>Фуния</value>
+  </data>
+  <data name="ChartStringId.CmdLoadTemplateMenuCaption" xml:space="preserve">
+    <value>Зареди
+Шаблон</value>
+  </data>
+  <data name="ChartStringId.CmdPolarGroupPlaceHolderMenuCaption" xml:space="preserve">
+    <value>Полярна</value>
+  </data>
+  <data name="ChartStringId.CmdPrintDescription" xml:space="preserve">
+    <value>Изберете принтер, брой копия и други опции за печат преди отпечатване.</value>
+  </data>
+  <data name="ChartStringId.CmdPrintMenuCaption" xml:space="preserve">
+    <value>Печат</value>
+  </data>
+  <data name="ChartStringId.CmdRadarGroupPlaceHolderMenuCaption" xml:space="preserve">
+    <value>Радар</value>
+  </data>
+  <data name="ChartStringId.CmdRangeGroupPlaceHolderMenuCaption" xml:space="preserve">
+    <value>Обхват</value>
+  </data>
+  <data name="ChartStringId.ColumnAnnotations" xml:space="preserve">
+    <value>Анотации</value>
+  </data>
+  <data name="ChartStringId.ColumnColor" xml:space="preserve">
+    <value>Цвят</value>
+  </data>
+  <data name="ChartStringId.ColumnLinks" xml:space="preserve">
+    <value>Връзки</value>
+  </data>
+  <data name="ChartStringId.ConstantLinePrefix" xml:space="preserve">
+    <value>Постоянна линия</value>
+  </data>
+  <data name="ChartStringId.CrosshairLabelFreePosition" xml:space="preserve">
+    <value>Свободна позиция</value>
+  </data>
+  <data name="ChartStringId.CrosshairLabelMousePosition" xml:space="preserve">
+    <value>Позиция на мишката</value>
+  </data>
+  <data name="ChartStringId.CustomAxisLabelPrefix" xml:space="preserve">
+    <value>Етикет</value>
+  </data>
+  <data name="ChartStringId.DefaultAnnotation" xml:space="preserve">
+    <value>Анотация</value>
+  </data>
+  <data name="ChartStringId.DefaultChartTitle" xml:space="preserve">
+    <value>Заглавие на диаграма</value>
+  </data>
+  <data name="ChartStringId.DefaultMaxValue" xml:space="preserve">
+    <value>Макс</value>
+  </data>
+  <data name="ChartStringId.DefaultMinValue" xml:space="preserve">
+    <value>Мин</value>
+  </data>
+  <data name="ChartStringId.ErrorTitle" xml:space="preserve">
+    <value>Грешка</value>
+  </data>
+  <data name="ChartStringId.FibonacciArcs" xml:space="preserve">
+    <value>Дъги на Фибоначи</value>
+  </data>
+  <data name="ChartStringId.FontFormat" xml:space="preserve">
+    <value>{0}, {1} pt, (2)</value>
+  </data>
+  <data name="ChartStringId.FunctionArgumentName" xml:space="preserve">
+    <value>Аргумент</value>
+  </data>
+  <data name="ChartStringId.FunctionNameAverage" xml:space="preserve">
+    <value>Средно</value>
+  </data>
+  <data name="ChartStringId.FunctionNameCount" xml:space="preserve">
+    <value>Брой</value>
+  </data>
+  <data name="ChartStringId.FunctionNameMax" xml:space="preserve">
+    <value>Макс</value>
+  </data>
+  <data name="ChartStringId.FunctionNameSum" xml:space="preserve">
+    <value>Сума</value>
+  </data>
+  <data name="ChartStringId.Holiday" xml:space="preserve">
+    <value>Празник</value>
+  </data>
+  <data name="ChartStringId.Holidays" xml:space="preserve">
+    <value>Празници</value>
+  </data>
+  <data name="ChartStringId.IncompatibleSeriesMessage" xml:space="preserve">
+    <value>от {0} с "{1}"</value>
+  </data>
+  <data name="ChartStringId.IncompatibleSeriesView" xml:space="preserve">
+    <value>(несъвместими)</value>
+  </data>
+  <data name="ChartStringId.InvisibleSeriesView" xml:space="preserve">
+    <value>(невидим)</value>
+  </data>
+  <data name="ChartStringId.IOCaption" xml:space="preserve">
+    <value>Недопустима операция</value>
+  </data>
+  <data name="ChartStringId.LegendPrefix" xml:space="preserve">
+    <value>Легенда</value>
+  </data>
+  <data name="ChartStringId.MenuItemAdd" xml:space="preserve">
+    <value>Добави</value>
+  </data>
+  <data name="ChartStringId.MenuItemClear" xml:space="preserve">
+    <value>Изчисти</value>
+  </data>
+  <data name="ChartStringId.MenuItemDelete" xml:space="preserve">
+    <value>Изтрий</value>
+  </data>
+  <data name="ChartStringId.MenuItemInsert" xml:space="preserve">
+    <value>Вмъкни</value>
+  </data>
+  <data name="ChartStringId.MenuItemMoveDown" xml:space="preserve">
+    <value>Премести надолу</value>
+  </data>
+  <data name="ChartStringId.MenuItemMoveUp" xml:space="preserve">
+    <value>Премести нагоре</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectLineThickness" xml:space="preserve">
+    <value>Дебелината на линията трябва да бъде по-голяма от 0.</value>
+  </data>
+  <data name="ChartStringId.MsgOrderUnregisteredElementFound" xml:space="preserve">
+    <value>Нерегистриран елемент е намерен.</value>
+  </data>
+  <data name="ChartStringId.MsgUnregisterGroupError" xml:space="preserve">
+    <value>Тази група вече е нерегистрирана.</value>
+  </data>
+  <data name="ChartStringId.MsgUnregisterPageError" xml:space="preserve">
+    <value>Тази страница вече е нерегистрирана.</value>
+  </data>
+  <data name="ChartStringId.OpenValueMember" xml:space="preserve">
+    <value>Отвори</value>
+  </data>
+  <data name="ChartStringId.OthersArgument" xml:space="preserve">
+    <value>Други</value>
+  </data>
+  <data name="ChartStringId.PalettePrefix" xml:space="preserve">
+    <value>Палитра</value>
+  </data>
+  <data name="ChartStringId.PanesVisibilityDialogVisibleColumn" xml:space="preserve">
+    <value>Видим</value>
+  </data>
+  <data name="ChartStringId.PltAspect" xml:space="preserve">
+    <value>Аспект</value>
+  </data>
+  <data name="ChartStringId.PltBlackAndWhite" xml:space="preserve">
+    <value>Черно и бяло</value>
+  </data>
+  <data name="ChartStringId.PltChameleon" xml:space="preserve">
+    <value>Хамелеон</value>
+  </data>
+  <data name="ChartStringId.PltCivic" xml:space="preserve">
+    <value>Граждански</value>
+  </data>
+  <data name="ChartStringId.PltDefault" xml:space="preserve">
+    <value>По подразбиране</value>
+  </data>
+  <data name="ChartStringId.PltFlow" xml:space="preserve">
+    <value>Поток</value>
+  </data>
+  <data name="ChartStringId.PltFoundry" xml:space="preserve">
+    <value>Леярна</value>
+  </data>
+  <data name="ChartStringId.PltInAFog" xml:space="preserve">
+    <value>В мъгла</value>
+  </data>
+  <data name="ChartStringId.PltIndDefault" xml:space="preserve">
+    <value>По подразбиране</value>
+  </data>
+  <data name="ChartStringId.PltMedian" xml:space="preserve">
+    <value>Медиана</value>
+  </data>
+  <data name="ChartStringId.PltMetro" xml:space="preserve">
+    <value>Метро</value>
+  </data>
+  <data name="ChartStringId.PltModule" xml:space="preserve">
+    <value>Модул</value>
+  </data>
+  <data name="ChartStringId.PltNorthernLights" xml:space="preserve">
+    <value>Северно сияние</value>
+  </data>
+  <data name="ChartStringId.PltOffice" xml:space="preserve">
+    <value>Офис</value>
+  </data>
+  <data name="ChartStringId.PltOpulent" xml:space="preserve">
+    <value>Пищен</value>
+  </data>
+  <data name="ChartStringId.PltOriel" xml:space="preserve">
+    <value>Еркер</value>
+  </data>
+  <data name="ChartStringId.PltOrigin" xml:space="preserve">
+    <value>Произход</value>
+  </data>
+  <data name="ChartStringId.PltPaper" xml:space="preserve">
+    <value>Хартия</value>
+  </data>
+  <data name="ChartStringId.PltSolstice" xml:space="preserve">
+    <value>Слънцестоене</value>
+  </data>
+  <data name="ChartStringId.PltTechnic" xml:space="preserve">
+    <value>Техник</value>
+  </data>
+  <data name="ChartStringId.PltTheTrees" xml:space="preserve">
+    <value>Дърветата</value>
+  </data>
+  <data name="ChartStringId.PltUrban" xml:space="preserve">
+    <value>Градско</value>
+  </data>
+  <data name="ChartStringId.PltVerve" xml:space="preserve">
+    <value>Ентусиазъм</value>
+  </data>
+  <data name="ChartStringId.RibbonAppearanceGroupCaption" xml:space="preserve">
+    <value>Облик</value>
+  </data>
+  <data name="ChartStringId.RibbonDesignPageCaption" xml:space="preserve">
+    <value>Дизайн</value>
+  </data>
+  <data name="ChartStringId.RibbonOtherPageCaption" xml:space="preserve">
+    <value>Други</value>
+  </data>
+  <data name="ChartStringId.RibbonPageCategoryCaption" xml:space="preserve">
+    <value>Инструменти за диаграма</value>
+  </data>
+  <data name="ChartStringId.RibbonPrintExportGroupCaption" xml:space="preserve">
+    <value>Печат и експортиране</value>
+  </data>
+  <data name="ChartStringId.RibbonTemplatesGroupCaption" xml:space="preserve">
+    <value>Шаблони</value>
+  </data>
+  <data name="ChartStringId.RibbonTypesGroupCaption" xml:space="preserve">
+    <value>Тип диаграма</value>
+  </data>
+  <data name="ChartStringId.RibbonWizardGroupCaption" xml:space="preserve">
+    <value>Съветник</value>
+  </data>
+  <data name="ChartStringId.ScaleTypeQualitative" xml:space="preserve">
+    <value>качествен</value>
+  </data>
+  <data name="ChartStringId.StackedGroupPrefix" xml:space="preserve">
+    <value>Група</value>
+  </data>
+  <data name="ChartStringId.StyleAllColors" xml:space="preserve">
+    <value>Всички цветове</value>
+  </data>
+  <data name="ChartStringId.StyleColorNumber" xml:space="preserve">
+    <value>Цвят {0}</value>
+  </data>
+  <data name="ChartStringId.SvnFunnel" xml:space="preserve">
+    <value>Фуния</value>
+  </data>
+  <data name="ChartStringId.SvnFunnel3D" xml:space="preserve">
+    <value>Фуния 3D</value>
+  </data>
+  <data name="ChartStringId.TextAnnotation" xml:space="preserve">
+    <value>Текстова анотация</value>
+  </data>
+  <data name="ChartStringId.TextAnnotationPrefix" xml:space="preserve">
+    <value>Текстова анотация</value>
+  </data>
+  <data name="ChartStringId.ToolTipFreePosition" xml:space="preserve">
+    <value>Свободна позиция</value>
+  </data>
+  <data name="ChartStringId.ToolTipMousePosition" xml:space="preserve">
+    <value>Позиция на мишката</value>
+  </data>
+  <data name="ChartStringId.ToolTipRelativePosition" xml:space="preserve">
+    <value>Относителното положение</value>
+  </data>
+  <data name="ChartStringId.ValueMember" xml:space="preserve">
+    <value>Стойност</value>
+  </data>
+  <data name="ChartStringId.ValuePatternDescription" xml:space="preserve">
+    <value>Стойност</value>
+  </data>
+  <data name="ChartStringId.VerbAbout" xml:space="preserve">
+    <value>За</value>
+  </data>
+  <data name="ChartStringId.VerbAnnotations" xml:space="preserve">
+    <value>Анотации...</value>
+  </data>
+  <data name="ChartStringId.VerbEditPalettes" xml:space="preserve">
+    <value>Палитри...</value>
+  </data>
+  <data name="ChartStringId.VerbLoadLayout" xml:space="preserve">
+    <value>Зареждане...</value>
+  </data>
+  <data name="ChartStringId.VerbSaveLayout" xml:space="preserve">
+    <value>Запиши...</value>
+  </data>
+  <data name="ChartStringId.WeightMember" xml:space="preserve">
+    <value>Тегло</value>
+  </data>
+  <data name="ChartStringId.WeightPatternDescription" xml:space="preserve">
+    <value>Тегло</value>
+  </data>
+  <data name="ChartStringId.WizAggregateFunctionAverage" xml:space="preserve">
+    <value>Средно</value>
+  </data>
+  <data name="ChartStringId.WizAggregateFunctionCount" xml:space="preserve">
+    <value>Брой</value>
+  </data>
+  <data name="ChartStringId.WizAggregateFunctionNone" xml:space="preserve">
+    <value>Няма</value>
+  </data>
+  <data name="ChartStringId.WizAggregateFunctionSum" xml:space="preserve">
+    <value>Сума</value>
+  </data>
+  <data name="ChartStringId.WizAnchorPointChart" xml:space="preserve">
+    <value>Диаграма</value>
+  </data>
+  <data name="ChartStringId.WizAnnotationConnectorStyleArrow" xml:space="preserve">
+    <value>Стрелка</value>
+  </data>
+  <data name="ChartStringId.WizAnnotationConnectorStyleLine" xml:space="preserve">
+    <value>Линия</value>
+  </data>
+  <data name="ChartStringId.WizAnnotationConnectorStyleNone" xml:space="preserve">
+    <value>Няма</value>
+  </data>
+  <data name="ChartStringId.WizAnnotationConnectorStyleTail" xml:space="preserve">
+    <value>Опашка</value>
+  </data>
+  <data name="ChartStringId.WizAnnotationsPageName" xml:space="preserve">
+    <value>Анотации</value>
+  </data>
+  <data name="ChartStringId.WizAppearancePageName" xml:space="preserve">
+    <value>Облик</value>
+  </data>
+  <data name="ChartStringId.WizAxesAlignmentFar" xml:space="preserve">
+    <value>Далеч</value>
+  </data>
+  <data name="ChartStringId.WizAxesAlignmentZero" xml:space="preserve">
+    <value>Нула</value>
+  </data>
+  <data name="ChartStringId.WizAxesPageName" xml:space="preserve">
+    <value>Оси</value>
+  </data>
+  <data name="ChartStringId.WizAxisLabelResolveOverlappingModeNone" xml:space="preserve">
+    <value>Няма</value>
+  </data>
+  <data name="ChartStringId.WizBar3DModelBox" xml:space="preserve">
+    <value>Кутия</value>
+  </data>
+  <data name="ChartStringId.WizBar3DModelCone" xml:space="preserve">
+    <value>Конус</value>
+  </data>
+  <data name="ChartStringId.WizBar3DModelCylinder" xml:space="preserve">
+    <value>Цилиндър</value>
+  </data>
+  <data name="ChartStringId.WizBar3DModelPyramid" xml:space="preserve">
+    <value>Пирамида</value>
+  </data>
+  <data name="ChartStringId.WizBarSeriesLabelPositionCenter" xml:space="preserve">
+    <value>Център</value>
+  </data>
+  <data name="ChartStringId.WizBarSeriesLabelPositionTop" xml:space="preserve">
+    <value>Отгоре</value>
+  </data>
+  <data name="ChartStringId.WizBubbleLabelPositionCenter" xml:space="preserve">
+    <value>Център</value>
+  </data>
+  <data name="ChartStringId.WizBubbleLabelPositionOutside" xml:space="preserve">
+    <value>Отвън</value>
+  </data>
+  <data name="ChartStringId.WizBubbleLabelValueToDisplayValue" xml:space="preserve">
+    <value>Стойност</value>
+  </data>
+  <data name="ChartStringId.WizBubbleLabelValueToDisplayValueAndWeight" xml:space="preserve">
+    <value>Стойност и Тегло</value>
+  </data>
+  <data name="ChartStringId.WizBubbleLabelValueToDisplayWeight" xml:space="preserve">
+    <value>Тегло</value>
+  </data>
+  <data name="ChartStringId.WizChartImageSizeModeZoom" xml:space="preserve">
+    <value>Мащабиране</value>
+  </data>
+  <data name="ChartStringId.WizChartPageDescription" xml:space="preserve">
+    <value>Персонализиране на свойствата на диаграмата.</value>
+  </data>
+  <data name="ChartStringId.WizChartPageName" xml:space="preserve">
+    <value>Диаграма</value>
+  </data>
+  <data name="ChartStringId.WizChartTypePageName" xml:space="preserve">
+    <value>Тип диаграма</value>
+  </data>
+  <data name="ChartStringId.WizConstructionGroupName" xml:space="preserve">
+    <value>Конструкция</value>
+  </data>
+  <data name="ChartStringId.WizDataFiltersDisabled" xml:space="preserve">
+    <value>(няма)</value>
+  </data>
+  <data name="ChartStringId.WizDataMemberNoneString" xml:space="preserve">
+    <value>(Няма)</value>
+  </data>
+  <data name="ChartStringId.WizDataPageName" xml:space="preserve">
+    <value>Данни</value>
+  </data>
+  <data name="ChartStringId.WizDateTimeMeasureUnitDay" xml:space="preserve">
+    <value>Ден</value>
+  </data>
+  <data name="ChartStringId.WizDateTimeMeasureUnitHour" xml:space="preserve">
+    <value>Час</value>
+  </data>
+  <data name="ChartStringId.WizDateTimeMeasureUnitMillisecond" xml:space="preserve">
+    <value>Милисекунда</value>
+  </data>
+  <data name="ChartStringId.WizDateTimeMeasureUnitMinute" xml:space="preserve">
+    <value>Минута</value>
+  </data>
+  <data name="ChartStringId.WizDateTimeMeasureUnitMonth" xml:space="preserve">
+    <value>Месец</value>
+  </data>
+  <data name="ChartStringId.WizDateTimeMeasureUnitQuarter" xml:space="preserve">
+    <value>Четвърт</value>
+  </data>
+  <data name="ChartStringId.WizDateTimeMeasureUnitWeek" xml:space="preserve">
+    <value>Седмица</value>
+  </data>
+  <data name="ChartStringId.WizDateTimeMeasureUnitYear" xml:space="preserve">
+    <value>Година</value>
+  </data>
+  <data name="ChartStringId.WizDateTimeScaleModeAutomaticAverage" xml:space="preserve">
+    <value>Автоматично: Средно</value>
+  </data>
+  <data name="ChartStringId.WizDateTimeScaleModeManual" xml:space="preserve">
+    <value>Ръчно</value>
+  </data>
+  <data name="ChartStringId.WizDiagramPageDescription" xml:space="preserve">
+    <value>Персонализиране на свойствата на диаграмата.</value>
+  </data>
+  <data name="ChartStringId.WizDiagramPageName" xml:space="preserve">
+    <value>Диаграма</value>
+  </data>
+  <data name="ChartStringId.WizDockCornerLeftBottom" xml:space="preserve">
+    <value>Ляво-долу</value>
+  </data>
+  <data name="ChartStringId.WizDockCornerRightBottom" xml:space="preserve">
+    <value>Дясно-долу</value>
+  </data>
+  <data name="ChartStringId.WizFunnelSeriesLabelPositionCenter" xml:space="preserve">
+    <value>Център</value>
+  </data>
+  <data name="ChartStringId.WizFunnelSeriesLabelPositionLeft" xml:space="preserve">
+    <value>Ляв</value>
+  </data>
+  <data name="ChartStringId.WizFunnelSeriesLabelPositionLeftColumn" xml:space="preserve">
+    <value>Лява колона</value>
+  </data>
+  <data name="ChartStringId.WizFunnelSeriesLabelPositionRight" xml:space="preserve">
+    <value>Десен</value>
+  </data>
+  <data name="ChartStringId.WizFunnelSeriesLabelPositionRightColumn" xml:space="preserve">
+    <value>Дясна колона</value>
+  </data>
+  <data name="ChartStringId.WizGradientFromCenter" xml:space="preserve">
+    <value>ОтЦентър</value>
+  </data>
+  <data name="ChartStringId.WizGradientLeftToRight" xml:space="preserve">
+    <value>ОтлявоНадясно</value>
+  </data>
+  <data name="ChartStringId.WizGradientRightToLeft" xml:space="preserve">
+    <value>ОтдясноНаляво</value>
+  </data>
+  <data name="ChartStringId.WizGradientTopToBottom" xml:space="preserve">
+    <value>ОтгореНаДолу</value>
+  </data>
+  <data name="ChartStringId.WizHatchCross" xml:space="preserve">
+    <value>Кръст</value>
+  </data>
+  <data name="ChartStringId.WizHatchHorizontal" xml:space="preserve">
+    <value>Хоризонтална</value>
+  </data>
+  <data name="ChartStringId.WizHatchMax" xml:space="preserve">
+    <value>Макс</value>
+  </data>
+  <data name="ChartStringId.WizHatchMin" xml:space="preserve">
+    <value>Мин</value>
+  </data>
+  <data name="ChartStringId.WizHatchPercent05" xml:space="preserve">
+    <value>Процент05</value>
+  </data>
+  <data name="ChartStringId.WizHatchPercent10" xml:space="preserve">
+    <value>Процент10</value>
+  </data>
+  <data name="ChartStringId.WizHatchPercent20" xml:space="preserve">
+    <value>Процент20</value>
+  </data>
+  <data name="ChartStringId.WizHatchPercent25" xml:space="preserve">
+    <value>Процент25</value>
+  </data>
+  <data name="ChartStringId.WizHatchPercent30" xml:space="preserve">
+    <value>Процент30</value>
+  </data>
+  <data name="ChartStringId.WizHatchPercent40" xml:space="preserve">
+    <value>Процент40</value>
+  </data>
+  <data name="ChartStringId.WizHatchPercent50" xml:space="preserve">
+    <value>Процент50</value>
+  </data>
+  <data name="ChartStringId.WizHatchPercent60" xml:space="preserve">
+    <value>Процент60</value>
+  </data>
+  <data name="ChartStringId.WizHatchPercent70" xml:space="preserve">
+    <value>Процент70</value>
+  </data>
+  <data name="ChartStringId.WizHatchPercent75" xml:space="preserve">
+    <value>Процент75</value>
+  </data>
+  <data name="ChartStringId.WizHatchPercent80" xml:space="preserve">
+    <value>Процент80</value>
+  </data>
+  <data name="ChartStringId.WizHatchPercent90" xml:space="preserve">
+    <value>Процент90</value>
+  </data>
+  <data name="ChartStringId.WizHatchPlaid" xml:space="preserve">
+    <value>Каре</value>
+  </data>
+  <data name="ChartStringId.WizHatchSphere" xml:space="preserve">
+    <value>Сфера</value>
+  </data>
+  <data name="ChartStringId.WizHatchTrellis" xml:space="preserve">
+    <value>Пергола</value>
+  </data>
+  <data name="ChartStringId.WizHatchVertical" xml:space="preserve">
+    <value>Вертикална</value>
+  </data>
+  <data name="ChartStringId.WizHatchWave" xml:space="preserve">
+    <value>Вълна</value>
+  </data>
+  <data name="ChartStringId.WizHatchZigZag" xml:space="preserve">
+    <value>ЗигЗаг</value>
+  </data>
+  <data name="ChartStringId.WizIndentDefault" xml:space="preserve">
+    <value>По подразбиране</value>
+  </data>
+  <data name="ChartStringId.WizLegendPageName" xml:space="preserve">
+    <value>Легенда</value>
+  </data>
+  <data name="ChartStringId.WizNoBackImage" xml:space="preserve">
+    <value>(Няма)</value>
+  </data>
+  <data name="ChartStringId.WizNumericMeasureUnitCustom" xml:space="preserve">
+    <value>По избор</value>
+  </data>
+  <data name="ChartStringId.WizPieSeriesLabelPositionOutside" xml:space="preserve">
+    <value>Отвън</value>
+  </data>
+  <data name="ChartStringId.WizPieSeriesLabelPositionTangent" xml:space="preserve">
+    <value>Допирателна</value>
+  </data>
+  <data name="ChartStringId.WizPieSeriesLabelPositionTwoColumns" xml:space="preserve">
+    <value>Две колони</value>
+  </data>
+  <data name="ChartStringId.WizPositionCenter" xml:space="preserve">
+    <value>Център</value>
+  </data>
+  <data name="ChartStringId.WizPositionLeft" xml:space="preserve">
+    <value>Ляв</value>
+  </data>
+  <data name="ChartStringId.WizPositionRight" xml:space="preserve">
+    <value>Десен</value>
+  </data>
+  <data name="ChartStringId.WizPresentationGroupName" xml:space="preserve">
+    <value>Презентация</value>
+  </data>
+  <data name="ChartStringId.WizResolveOverlappingModeDefault" xml:space="preserve">
+    <value>По подр.</value>
+  </data>
+  <data name="ChartStringId.WizResolveOverlappingModeNone" xml:space="preserve">
+    <value>Няма</value>
+  </data>
+  <data name="ChartStringId.WizScaleBreakStyleStraight" xml:space="preserve">
+    <value>Прав</value>
+  </data>
+  <data name="ChartStringId.WizScrollBarAlignmentFar" xml:space="preserve">
+    <value>Далеч</value>
+  </data>
+  <data name="ChartStringId.WizSeriesLabelTextOrientationTopToBottom" xml:space="preserve">
+    <value>ОтгореНаДолу</value>
+  </data>
+  <data name="ChartStringId.WizSeriesPointPageName" xml:space="preserve">
+    <value>Точки</value>
+  </data>
+  <data name="ChartStringId.WizShapeKindEllipse" xml:space="preserve">
+    <value>Елипса</value>
+  </data>
+  <data name="ChartStringId.WizShapeKindRectangle" xml:space="preserve">
+    <value>Правоъгълник</value>
+  </data>
+  <data name="ChartStringId.WizShapeKindRoundedRectangle" xml:space="preserve">
+    <value>Закръглен правоъгълник</value>
+  </data>
+  <data name="ChartStringId.WizShapePositionKindRelative" xml:space="preserve">
+    <value>Относителна</value>
+  </data>
+  <data name="ChartStringId.WizStringAlignmentCenter" xml:space="preserve">
+    <value>Център</value>
+  </data>
+  <data name="ChartStringId.WizStringAlignmentFar" xml:space="preserve">
+    <value>Далеч</value>
+  </data>
+  <data name="ChartStringId.WizValueLevelClose" xml:space="preserve">
+    <value>Затвори</value>
+  </data>
+  <data name="ChartStringId.WizValueLevelOpen" xml:space="preserve">
+    <value>Отвори</value>
+  </data>
+  <data name="ChartStringId.WizValueLevelValue" xml:space="preserve">
+    <value>Стойност</value>
+  </data>
+  <data name="ChartStringId.Workday" xml:space="preserve">
+    <value>Работен ден</value>
+  </data>
+  <data name="ChartStringId.CmdExportPlaceHolderMenuCaption" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="ChartStringId.WizIndentUndefined" xml:space="preserve">
+    <value>Недефинирана</value>
+  </data>
+  <data name="ChartStringId.PropertyGridCategory_Behavior" xml:space="preserve">
+    <value>Поведение</value>
+  </data>
+  <data name="ChartStringId.PropertyGridCategory_Misc" xml:space="preserve">
+    <value>Разни</value>
+  </data>
+  <data name="ChartStringId.PropertyGridCategory_Appearance" xml:space="preserve">
+    <value>Облик</value>
+  </data>
+  <data name="ChartStringId.PropertyGridCategory_Layout" xml:space="preserve">
+    <value>Оформление</value>
+  </data>
+  <data name="ChartStringId.PropertyGridCategory_Data" xml:space="preserve">
+    <value>Данни</value>
+  </data>
+  <data name="ChartStringId.PropertyGridCategory_Elements" xml:space="preserve">
+    <value>Елементи</value>
+  </data>
+  <data name="ChartStringId.WizValueLevelValue_2" xml:space="preserve">
+    <value>Стойност_2</value>
+  </data>
+  <data name="ChartStringId.WizValueLevelValue_1" xml:space="preserve">
+    <value>Стойност_1</value>
+  </data>
+  <data name="ChartStringId.WizValueLevelWeight" xml:space="preserve">
+    <value>Тегло</value>
+  </data>
+  <data name="ChartStringId.IncompatibleSeriesHeader" xml:space="preserve">
+    <value>Тази серия е несъвместима:</value>
+  </data>
+  <data name="ChartStringId.WizAggregateFunctionDefault" xml:space="preserve">
+    <value>По подразбиране</value>
+  </data>
+  <data name="ChartStringId.WizSeriesLabelTextOrientationHorizontal" xml:space="preserve">
+    <value>Хоризонтална</value>
+  </data>
+  <data name="ChartStringId.WizAggregateFunctionCustom" xml:space="preserve">
+    <value>По избор</value>
+  </data>
+  <data name="ChartStringId.WizAxesAlignmentCenter" xml:space="preserve">
+    <value>Център</value>
+  </data>
+  <data name="ChartStringId.BoxPlotMaxValueMember" xml:space="preserve">
+    <value>Макс</value>
+  </data>
+  <data name="ChartStringId.BoxPlotMinValueMember" xml:space="preserve">
+    <value>Мин</value>
+  </data>
+  <data name="ChartStringId.AnnotationFromToolbar1stLine" xml:space="preserve">
+    <value>Текст</value>
+  </data>
+</root>

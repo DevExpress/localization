@@ -1,0 +1,1381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SchedulerStringId.Msg_IsNotValid" xml:space="preserve">
+    <value>'{0}' ist kein gültiger Wert für '{1}'</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidDayOfWeekForDailyRecurrence" xml:space="preserve">
+    <value>Falscher Wochentag für einen täglichen Serientermin. Es sind nur folgende möglich: alle Wochentage, Wochenende oder Arbeitstag.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InternalError" xml:space="preserve">
+    <value>Interner Fehler!</value>
+  </data>
+  <data name="SchedulerStringId.Msg_NoMappingForObject" xml:space="preserve">
+    <value>Die folgende notwendige Objektzuordnung
+ {0} ist nicht gegeben</value>
+  </data>
+  <data name="SchedulerStringId.Msg_XtraSchedulerNotAssigned" xml:space="preserve">
+    <value>Die Speicher-Komponente ist keinem Schedulercontrol zugeordnet.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidTimeOfDayInterval" xml:space="preserve">
+    <value>Falsche Dauer für TimeOfDayInterval</value>
+  </data>
+  <data name="SchedulerStringId.Msg_OverflowTimeOfDayInterval" xml:space="preserve">
+    <value>Falscher Wert für TimeOfDayInterval. Er sollte weniger oder gleich einem Tag sein.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_LoadCollectionFromXml" xml:space="preserve">
+    <value>Der Scheduler kann nur im ungebunden Modus Daten aus einer XML Datei lesen</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_None" xml:space="preserve">
+    <value>Keine</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_Important" xml:space="preserve">
+    <value>Wichtig</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_Business" xml:space="preserve">
+    <value>Geschäftlich</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_Personal" xml:space="preserve">
+    <value>Persönliche</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_Vacation" xml:space="preserve">
+    <value>Urlaub</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_MustAttend" xml:space="preserve">
+    <value>Teilnahme erforderlich</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_TravelRequired" xml:space="preserve">
+    <value>Anreise einplanen</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_NeedsPreparation" xml:space="preserve">
+    <value>Vorbereitung notwendig</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_Birthday" xml:space="preserve">
+    <value>Geburtstag</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_Anniversary" xml:space="preserve">
+    <value>Jahrestag</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_PhoneCall" xml:space="preserve">
+    <value>Telefonanruf</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidEndDate" xml:space="preserve">
+    <value>Das eingegebene Datum liegt vor dem Anfangsdatum.</value>
+  </data>
+  <data name="SchedulerStringId.Caption_Appointment" xml:space="preserve">
+    <value>{0} - Termin</value>
+  </data>
+  <data name="SchedulerStringId.Caption_Event" xml:space="preserve">
+    <value>{0} - Ereignis</value>
+  </data>
+  <data name="SchedulerStringId.Caption_UntitledAppointment" xml:space="preserve">
+    <value>Ohne Titel</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekDaysEveryDay" xml:space="preserve">
+    <value>Tag</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekDaysWeekendDays" xml:space="preserve">
+    <value>Wochenendtag</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekDaysWorkDays" xml:space="preserve">
+    <value>Wochentag</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekOfMonthFirst" xml:space="preserve">
+    <value>Erster</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekOfMonthSecond" xml:space="preserve">
+    <value>zweiten</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekOfMonthThird" xml:space="preserve">
+    <value>dritten</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekOfMonthFourth" xml:space="preserve">
+    <value>vierten</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekOfMonthLast" xml:space="preserve">
+    <value>Letzter</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidDayCount" xml:space="preserve">
+    <value>Falsche Tagesanzahl. Geben Sie bitte einen korrekten Wert ein.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidDayCountValue" xml:space="preserve">
+    <value>Falsche Tagesanzahl. Geben Sie bitte einen korrekten Wert ein.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidWeekCount" xml:space="preserve">
+    <value>Falsche Wochenanzahl. Geben Sie bitte einen korrekten Wert ein.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidWeekCountValue" xml:space="preserve">
+    <value>Falsche Wochenanzahl. Geben Sie bitte einen korrekten Wert ein.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidMonthCount" xml:space="preserve">
+    <value>Falsche Monatsanzahl. Geben Sie bitte einen korrekten Wert ein.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidMonthCountValue" xml:space="preserve">
+    <value>Falsche Monatsanzahl. Geben Sie bitte einen korrekten Wert ein.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidYearCount" xml:space="preserve">
+    <value>
+Falsche Jahresanzahl. Geben Sie bitte einen korrekten Wert ein.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidYearCountValue" xml:space="preserve">
+    <value>
+Falsche Jahresanzahl. Geben Sie bitte einen korrekten Wert ein.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidOccurrencesCount" xml:space="preserve">
+    <value>Falsche Wiederholungsanzahl. Geben Sie bitte einen korrekten Wert ein.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidOccurrencesCountValue" xml:space="preserve">
+    <value>Falsche Wiederholungsanzahl. Geben Sie bitte einen korrekten Wert ein.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidDayNumber" xml:space="preserve">
+    <value>Falsche Anzahl an Tagen. Geben Sie bitte eine Zahl von 1 bis {0} an.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidDayNumberValue" xml:space="preserve">
+    <value>Falsche Anzahl an Tagen. Geben Sie bitte eine Zahl von 1 bis {0} an.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_WarningDayNumber" xml:space="preserve">
+    <value>Einige Monate haben weniger als {0} Tage. Für diese Monate, endet die Ansicht am letzten Tag des angezeigten Monats.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidDayOfWeek" xml:space="preserve">
+    <value>Kein Tag ausgewählt. Bitte wählen Sie einen Wochentag aus.</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_OpenAppointment" xml:space="preserve">
+    <value>Ö&amp;ffnen</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_PrintAppointment" xml:space="preserve">
+    <value>&amp;Drucken</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_DeleteAppointment" xml:space="preserve">
+    <value>&amp;Löschen</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_EditSeries" xml:space="preserve">
+    <value>S&amp;erie bearbeiten</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_RestoreOccurrence" xml:space="preserve">
+    <value>Terminserie &amp;wiederherstellen</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_NewAppointment" xml:space="preserve">
+    <value>Neuer &amp;Termin</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_NewAllDayEvent" xml:space="preserve">
+    <value>Neues &amp;ganztägiges Ereignis</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_NewRecurringAppointment" xml:space="preserve">
+    <value>Neue Termin&amp;serie</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_NewRecurringEvent" xml:space="preserve">
+    <value>Neue Ereignisserie</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_GotoThisDay" xml:space="preserve">
+    <value>Gehe zu diesem Dat&amp;um</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_GotoToday" xml:space="preserve">
+    <value>&amp;Heute</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_GotoDate" xml:space="preserve">
+    <value>Gehe zu &amp;Datum...</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_OtherSettings" xml:space="preserve">
+    <value>Zusätzl&amp;iche Einstellungen...</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_CustomizeCurrentView" xml:space="preserve">
+    <value>&amp;Aktuelle Anzeige anpassen...</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_CustomizeTimeRuler" xml:space="preserve">
+    <value>Zeitzone ändern...</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_5Minutes" xml:space="preserve">
+    <value>&amp;5 Minuten</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_6Minutes" xml:space="preserve">
+    <value>&amp;6 Minuten</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_10Minutes" xml:space="preserve">
+    <value>10 &amp;Minuten</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_15Minutes" xml:space="preserve">
+    <value>&amp;15 Minuten</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_20Minutes" xml:space="preserve">
+    <value>&amp;20 Minuten</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_30Minutes" xml:space="preserve">
+    <value>&amp;30 Minuten</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_60Minutes" xml:space="preserve">
+    <value>6&amp;0 Minuten</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_SwitchViewMenu" xml:space="preserve">
+    <value>Ansichtwechsel</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_SwitchToAgendaView" xml:space="preserve">
+    <value>&amp;Agenda-Ansicht</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_SwitchToDayView" xml:space="preserve">
+    <value>&amp;Tagesansicht</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_SwitchToWorkWeekView" xml:space="preserve">
+    <value>A&amp;rbeitswochenansicht</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_SwitchToWeekView" xml:space="preserve">
+    <value>&amp;Wochenansicht</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_SwitchToMonthView" xml:space="preserve">
+    <value>&amp;Monatsansicht</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_ShowTimeAs" xml:space="preserve">
+    <value>&amp;Anzeigen als</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_Free" xml:space="preserve">
+    <value>&amp;Frei</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_Busy" xml:space="preserve">
+    <value>Ge&amp;bucht</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_Tentative" xml:space="preserve">
+    <value>&amp;Mit Vorbehalt</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_OutOfOffice" xml:space="preserve">
+    <value>&amp;Abwesend</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_LabelAs" xml:space="preserve">
+    <value>&amp;Beschriftung</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_AppointmentLabelNone" xml:space="preserve">
+    <value>&amp;Keine</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_AppointmentLabelImportant" xml:space="preserve">
+    <value>W&amp;ichtig</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_AppointmentLabelBusiness" xml:space="preserve">
+    <value>&amp;Geschäftlich</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_AppointmentLabelPersonal" xml:space="preserve">
+    <value>&amp;Privat</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_AppointmentLabelVacation" xml:space="preserve">
+    <value>&amp;Urlaub</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_AppointmentLabelMustAttend" xml:space="preserve">
+    <value>Teiln&amp;ahme erforderlich</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_AppointmentLabelTravelRequired" xml:space="preserve">
+    <value>&amp;Anreise notwendig</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_AppointmentLabelNeedsPreparation" xml:space="preserve">
+    <value>Vorbereitung &amp;notwendig</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_AppointmentLabelBirthday" xml:space="preserve">
+    <value>Ge&amp;burtstag</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_AppointmentLabelAnniversary" xml:space="preserve">
+    <value>J&amp;ahrestag</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_AppointmentLabelPhoneCall" xml:space="preserve">
+    <value>Telefon &amp;Anruf</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_AppointmentMove" xml:space="preserve">
+    <value>&amp;Verschieben</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_AppointmentCopy" xml:space="preserve">
+    <value>&amp;Kopieren</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_AppointmentCancel" xml:space="preserve">
+    <value>&amp;Abbrechen</value>
+  </data>
+  <data name="SchedulerStringId.Caption_5Minutes" xml:space="preserve">
+    <value>5 Minuten</value>
+  </data>
+  <data name="SchedulerStringId.Caption_6Minutes" xml:space="preserve">
+    <value>6 Minuten</value>
+  </data>
+  <data name="SchedulerStringId.Caption_10Minutes" xml:space="preserve">
+    <value>10 Minuten</value>
+  </data>
+  <data name="SchedulerStringId.Caption_15Minutes" xml:space="preserve">
+    <value>15 Minuten</value>
+  </data>
+  <data name="SchedulerStringId.Caption_20Minutes" xml:space="preserve">
+    <value>20 Minuten</value>
+  </data>
+  <data name="SchedulerStringId.Caption_30Minutes" xml:space="preserve">
+    <value>30 Minuten</value>
+  </data>
+  <data name="SchedulerStringId.Caption_60Minutes" xml:space="preserve">
+    <value>60 Minuten</value>
+  </data>
+  <data name="SchedulerStringId.Caption_Free" xml:space="preserve">
+    <value>Frei</value>
+  </data>
+  <data name="SchedulerStringId.Caption_Busy" xml:space="preserve">
+    <value>Gebucht</value>
+  </data>
+  <data name="SchedulerStringId.Caption_Tentative" xml:space="preserve">
+    <value>Mit Vorbehalt</value>
+  </data>
+  <data name="SchedulerStringId.Caption_OutOfOffice" xml:space="preserve">
+    <value>Abwesend</value>
+  </data>
+  <data name="SchedulerStringId.ViewDisplayName_Day" xml:space="preserve">
+    <value>Tagesansicht</value>
+  </data>
+  <data name="SchedulerStringId.ViewDisplayName_WorkDays" xml:space="preserve">
+    <value>Arbeitswochenansicht</value>
+  </data>
+  <data name="SchedulerStringId.ViewDisplayName_Week" xml:space="preserve">
+    <value>Wochenansicht</value>
+  </data>
+  <data name="SchedulerStringId.ViewDisplayName_Month" xml:space="preserve">
+    <value>Monatsansicht</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_MinutesShort1" xml:space="preserve">
+    <value>m</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_MinutesShort2" xml:space="preserve">
+    <value>min</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Minute" xml:space="preserve">
+    <value>Minute</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Minutes" xml:space="preserve">
+    <value>Minuten</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_HoursShort" xml:space="preserve">
+    <value>s</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Hour" xml:space="preserve">
+    <value>Stunde</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Hours" xml:space="preserve">
+    <value>Stunden</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_DaysShort" xml:space="preserve">
+    <value>t</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Day" xml:space="preserve">
+    <value>tag</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Days" xml:space="preserve">
+    <value>Tage</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_WeeksShort" xml:space="preserve">
+    <value>w</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Week" xml:space="preserve">
+    <value>Woche</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Weeks" xml:space="preserve">
+    <value>Wochen</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Month" xml:space="preserve">
+    <value>Monat</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Months" xml:space="preserve">
+    <value>Monate</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Year" xml:space="preserve">
+    <value>Jahr</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Years" xml:space="preserve">
+    <value>Jahre</value>
+  </data>
+  <data name="SchedulerStringId.Caption_Reminder" xml:space="preserve">
+    <value>{0} Erinnerung</value>
+  </data>
+  <data name="SchedulerStringId.Caption_Reminders" xml:space="preserve">
+    <value>{0} Erinnerungen</value>
+  </data>
+  <data name="SchedulerStringId.Caption_StartTime" xml:space="preserve">
+    <value>Beginnt um: {0}</value>
+  </data>
+  <data name="SchedulerStringId.Caption_NAppointmentsAreSelected" xml:space="preserve">
+    <value>{0} Termine sind ausgewählt</value>
+  </data>
+  <data name="SchedulerStringId.Format_TimeBeforeStart" xml:space="preserve">
+    <value>{0} vor dem Beginn</value>
+  </data>
+  <data name="SchedulerStringId.Msg_Conflict" xml:space="preserve">
+    <value>Der bearbeitete Termin steht im Konflikt mit einem oder mehreren anderen Terminen.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidAppointmentDuration" xml:space="preserve">
+    <value>Falscher Wert angegeben für diese Intervaldauer. Geben Sie bitte einen korrekten Wert ein.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidReminderTimeBeforeStart" xml:space="preserve">
+    <value>Falscher Wert angegeben für die Erinnierungsereigniszeit. Geben Sie bitte einen korrekten Wert ein.</value>
+  </data>
+  <data name="SchedulerStringId.TextDuration_FromTo" xml:space="preserve">
+    <value>von {0} bis {1}</value>
+  </data>
+  <data name="SchedulerStringId.TextDuration_FromForDays" xml:space="preserve">
+    <value>ab {0} für {1}</value>
+  </data>
+  <data name="SchedulerStringId.TextDuration_FromForDaysHours" xml:space="preserve">
+    <value>ab {0} für {1} {2}</value>
+  </data>
+  <data name="SchedulerStringId.TextDuration_FromForDaysMinutes" xml:space="preserve">
+    <value>ab {0} für {1} {3}</value>
+  </data>
+  <data name="SchedulerStringId.TextDuration_FromForDaysHoursMinutes" xml:space="preserve">
+    <value>ab {0} für {1} {2} {3}</value>
+  </data>
+  <data name="SchedulerStringId.TextDuration_ForPattern" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+  <data name="SchedulerStringId.TextMinutelyPatternString_EveryHour" xml:space="preserve">
+    <value>jeden {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextMinutelyPatternString_EveryHours" xml:space="preserve">
+    <value>jeden {1} {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextMinutelyPatternString_EveryMinute" xml:space="preserve">
+    <value>jeden {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextMinutelyPatternString_EveryMinutes" xml:space="preserve">
+    <value>jeden {1} {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextDailyPatternString_EveryDay" xml:space="preserve">
+    <value>jeden {1} {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextDailyPatternString_EveryDays" xml:space="preserve">
+    <value>jeden {2} {1} {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextDailyPatternString_EveryWeekDay" xml:space="preserve">
+    <value>jeden Wochentag {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextDailyPatternString_EveryWeekend" xml:space="preserve">
+    <value>jedes Wochenende {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextWeekly_1Day" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="SchedulerStringId.TextWeekly_2Day" xml:space="preserve">
+    <value>{0} und {1}</value>
+  </data>
+  <data name="SchedulerStringId.TextWeekly_3Day" xml:space="preserve">
+    <value>{0}, {1}, und {2}</value>
+  </data>
+  <data name="SchedulerStringId.TextWeekly_4Day" xml:space="preserve">
+    <value>{0}, {1}, {2}, und {3}</value>
+  </data>
+  <data name="SchedulerStringId.TextWeekly_5Day" xml:space="preserve">
+    <value>{0}, {1}, {2}, {3}, und {4}</value>
+  </data>
+  <data name="SchedulerStringId.TextWeekly_6Day" xml:space="preserve">
+    <value>{0}, {1}, {2}, {3}, {4}, und {5}</value>
+  </data>
+  <data name="SchedulerStringId.TextWeekly_7Day" xml:space="preserve">
+    <value>{0}, {1}, {2}, {3}, {4}, {5}, und {6}</value>
+  </data>
+  <data name="SchedulerStringId.TextWeeklyPatternString_EveryWeek" xml:space="preserve">
+    <value>jede {3} {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextWeeklyPatternString_EveryWeeks" xml:space="preserve">
+    <value>jede {1} {2} von {3} {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextMonthlyPatternString_SubPattern" xml:space="preserve">
+    <value>für jeden {0} {1} {2}</value>
+  </data>
+  <data name="SchedulerStringId.TextMonthlyPatternString1" xml:space="preserve">
+    <value>Tag {3} {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextMonthlyPatternString2" xml:space="preserve">
+    <value>die {1} {2} {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextYearlyPattern_YearString1" xml:space="preserve">
+    <value>jede {3} {4} {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextYearlyPattern_YearString2" xml:space="preserve">
+    <value>das {5} {6} von {3} {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextYearlyPattern_YearsString1" xml:space="preserve">
+    <value>{3} {4} für jede {1} {2} {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextYearlyPattern_YearsString2" xml:space="preserve">
+    <value>das {5} {6} von {3} jede {1} {2} {0}</value>
+  </data>
+  <data name="SchedulerStringId.MemoPrintDateFormat" xml:space="preserve">
+    <value>{0} {1} {2}</value>
+  </data>
+  <data name="SchedulerStringId.Caption_EmptyResource" xml:space="preserve">
+    <value>(Alle)</value>
+  </data>
+  <data name="SchedulerStringId.Caption_DailyPrintStyle" xml:space="preserve">
+    <value>tägliche Vorlage</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeeklyPrintStyle" xml:space="preserve">
+    <value>wöchentliche Vorlage</value>
+  </data>
+  <data name="SchedulerStringId.Caption_MonthlyPrintStyle" xml:space="preserve">
+    <value>monatliche Vorlage</value>
+  </data>
+  <data name="SchedulerStringId.Caption_TrifoldPrintStyle" xml:space="preserve">
+    <value>Drei Ansichten Vorlage</value>
+  </data>
+  <data name="SchedulerStringId.Caption_CalendarDetailsPrintStyle" xml:space="preserve">
+    <value>Kalenderdetailvorlage</value>
+  </data>
+  <data name="SchedulerStringId.Caption_MemoPrintStyle" xml:space="preserve">
+    <value>Memo Vorlage</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ColorConverterFullColor" xml:space="preserve">
+    <value>Alle Farben</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ColorConverterGrayScale" xml:space="preserve">
+    <value>Graustufen</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ColorConverterBlackAndWhite" xml:space="preserve">
+    <value>Schwarzweiß</value>
+  </data>
+  <data name="SchedulerStringId.PrintPageSetupFormatTabControlCustomizeShading" xml:space="preserve">
+    <value>&lt;Anpassen...&gt;</value>
+  </data>
+  <data name="SchedulerStringId.PrintPageSetupFormatTabControlSizeAndFontName" xml:space="preserve">
+    <value>{0} Pt. {1}</value>
+  </data>
+  <data name="SchedulerStringId.PrintRangeControlInvalidDate" xml:space="preserve">
+    <value>Ende-Datum muss vor oder am Beginn-Datum liegen</value>
+  </data>
+  <data name="SchedulerStringId.PrintCalendarDetailsControlDayPeriod" xml:space="preserve">
+    <value>Tag</value>
+  </data>
+  <data name="SchedulerStringId.PrintCalendarDetailsControlWeekPeriod" xml:space="preserve">
+    <value>Woche</value>
+  </data>
+  <data name="SchedulerStringId.PrintCalendarDetailsControlMonthPeriod" xml:space="preserve">
+    <value>Monat</value>
+  </data>
+  <data name="SchedulerStringId.PrintMonthlyOptControlOnePagePerMonth" xml:space="preserve">
+    <value>1 Seite/Monat</value>
+  </data>
+  <data name="SchedulerStringId.PrintMonthlyOptControlTwoPagesPerMonth" xml:space="preserve">
+    <value>2  Seiten/Monat</value>
+  </data>
+  <data name="SchedulerStringId.PrintTimeIntervalControlInvalidDuration" xml:space="preserve">
+    <value>Die Dauer darf nicht größer als ein Tag und muss größer als 0 sein.</value>
+  </data>
+  <data name="SchedulerStringId.PrintTimeIntervalControlInvalidStartEndTime" xml:space="preserve">
+    <value>Die Ende-Uhrzeit muss nach der Start-Uhrzeit liegen.</value>
+  </data>
+  <data name="SchedulerStringId.PrintTriFoldOptControlDailyCalendar" xml:space="preserve">
+    <value>Tagesansicht</value>
+  </data>
+  <data name="SchedulerStringId.PrintTriFoldOptControlWeeklyCalendar" xml:space="preserve">
+    <value>Wochenansicht</value>
+  </data>
+  <data name="SchedulerStringId.PrintTriFoldOptControlMonthlyCalendar" xml:space="preserve">
+    <value>Monatskalender</value>
+  </data>
+  <data name="SchedulerStringId.PrintWeeklyOptControlOneWeekPerPage" xml:space="preserve">
+    <value>1 Seite/Woche</value>
+  </data>
+  <data name="SchedulerStringId.PrintWeeklyOptControlTwoWeekPerPage" xml:space="preserve">
+    <value>2 Seiten/Woche</value>
+  </data>
+  <data name="SchedulerStringId.PrintPageSetupFormCaption" xml:space="preserve">
+    <value>Druckoptionen: {0}</value>
+  </data>
+  <data name="SchedulerStringId.PrintMoreItemsMsg" xml:space="preserve">
+    <value>Weitere Elemente...</value>
+  </data>
+  <data name="SchedulerStringId.PrintNoPrintersInstalled" xml:space="preserve">
+    <value>Keine Drucker installiert</value>
+  </data>
+  <data name="SchedulerStringId.Caption_AllResources" xml:space="preserve">
+    <value>Alle Ressourcen</value>
+  </data>
+  <data name="SchedulerStringId.Caption_GroupByDate" xml:space="preserve">
+    <value>Datum</value>
+  </data>
+  <data name="SchedulerStringId.Caption_GroupByNone" xml:space="preserve">
+    <value>Keine</value>
+  </data>
+  <data name="SchedulerStringId.Caption_GroupByResources" xml:space="preserve">
+    <value>Ressourcen</value>
+  </data>
+  <data name="SchedulerStringId.Caption_OnScreenResources" xml:space="preserve">
+    <value>Ressourcen auf dem Bildschirm.</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ReadOnly" xml:space="preserve">
+    <value>[nur lesend]</value>
+  </data>
+  <data name="SchedulerStringId.Caption_VisibleResources" xml:space="preserve">
+    <value>Nur sichtbare Ressourcen</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_SwitchToTimelineView" xml:space="preserve">
+    <value>&amp;Chronologisch</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_TimeScaleCaptionsMenu" xml:space="preserve">
+    <value>Zeitskala &amp;Beschriftung</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_TimeScaleDay" xml:space="preserve">
+    <value>&amp;Tag</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_TimeScaleHour" xml:space="preserve">
+    <value>&amp;Stunde</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_TimeScaleMonth" xml:space="preserve">
+    <value>&amp;Monat</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_TimeScaleQuarter" xml:space="preserve">
+    <value>&amp;Quartal</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_TimeScalesMenu" xml:space="preserve">
+    <value>&amp;Zeitskala</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_TimeScaleWeek" xml:space="preserve">
+    <value>&amp;Woche</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_TimeScaleYear" xml:space="preserve">
+    <value>&amp;Jahr</value>
+  </data>
+  <data name="SchedulerStringId.Msg_ApplyToAllStyles" xml:space="preserve">
+    <value>Aktuelle Druckeinstellung für alle Ansichten übernehmen ?</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidInputFile" xml:space="preserve">
+    <value>Die Eingabedatei ist fehlerhaft.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidSize" xml:space="preserve">
+    <value>Ungültiger Wert für diese Größe.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_MemoPrintNoSelectedItems" xml:space="preserve">
+    <value>Es kann nicht gedruckt werden, wenn kein Eintrag selektiert ist.
+Selektieren Sie einen Eintrag und starten  das Drucken erneut.</value>
+  </data>
+  <data name="SchedulerStringId.TextRecurrenceTypeDaily" xml:space="preserve">
+    <value>täglich</value>
+  </data>
+  <data name="SchedulerStringId.TextRecurrenceTypeHourly" xml:space="preserve">
+    <value>stündlich</value>
+  </data>
+  <data name="SchedulerStringId.TextRecurrenceTypeMinutely" xml:space="preserve">
+    <value>minütlich</value>
+  </data>
+  <data name="SchedulerStringId.TextRecurrenceTypeMonthly" xml:space="preserve">
+    <value>monatlich</value>
+  </data>
+  <data name="SchedulerStringId.TextRecurrenceTypeWeekly" xml:space="preserve">
+    <value>wöchentlich</value>
+  </data>
+  <data name="SchedulerStringId.TextRecurrenceTypeYearly" xml:space="preserve">
+    <value>jährlich</value>
+  </data>
+  <data name="SchedulerStringId.TextWeekly_0Day" xml:space="preserve">
+    <value>Kein spezifischer Tag der Woche</value>
+  </data>
+  <data name="SchedulerStringId.TimeScaleDisplayName_Day" xml:space="preserve">
+    <value>Tag</value>
+  </data>
+  <data name="SchedulerStringId.TimeScaleDisplayName_Hour" xml:space="preserve">
+    <value>Stunde</value>
+  </data>
+  <data name="SchedulerStringId.TimeScaleDisplayName_Month" xml:space="preserve">
+    <value>Monat</value>
+  </data>
+  <data name="SchedulerStringId.TimeScaleDisplayName_Quarter" xml:space="preserve">
+    <value>Quartal</value>
+  </data>
+  <data name="SchedulerStringId.TimeScaleDisplayName_Week" xml:space="preserve">
+    <value>Woche</value>
+  </data>
+  <data name="SchedulerStringId.TimeScaleDisplayName_Year" xml:space="preserve">
+    <value>Jahr</value>
+  </data>
+  <data name="SchedulerStringId.ViewDisplayName_Timeline" xml:space="preserve">
+    <value>Chronologischer Kalender</value>
+  </data>
+  <data name="SchedulerStringId.Caption_DecreaseVisibleResourcesCount" xml:space="preserve">
+    <value>Sichtbare Zeilen vermindern.</value>
+  </data>
+  <data name="SchedulerStringId.Caption_IncreaseVisibleResourcesCount" xml:space="preserve">
+    <value>Sichtbare Zeilen erhöhen.</value>
+  </data>
+  <data name="SchedulerStringId.Caption_NextAppointment" xml:space="preserve">
+    <value>Nächster Termin</value>
+  </data>
+  <data name="SchedulerStringId.Caption_PrevAppointment" xml:space="preserve">
+    <value>Vorheriger Termin</value>
+  </data>
+  <data name="SchedulerStringId.Msg_CantFitIntoPage" xml:space="preserve">
+    <value>Es ist unmöglich anhand der vorhandenen Druckereinstellungen, den Ausdruck auf eine einzelne Seite anzupassen! Bitte verändern Sie die Seitengröße in den Druckereinstellungen oder verändern Sie das Zeitintervall.</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ShadingApplyToAllDayArea" xml:space="preserve">
+    <value>Tagesbereich</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ShadingApplyToAppointments" xml:space="preserve">
+    <value>Termine</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ShadingApplyToAppointmentStatuses" xml:space="preserve">
+    <value>Terminstatus</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ShadingApplyToCells" xml:space="preserve">
+    <value>Zellen</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ShadingApplyToHeaders" xml:space="preserve">
+    <value>Kopfzeilen</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ShadingApplyToTimeRulers" xml:space="preserve">
+    <value>Zeitleiste</value>
+  </data>
+  <data name="SchedulerStringId.Caption_FirstVisibleResources" xml:space="preserve">
+    <value>Erster</value>
+  </data>
+  <data name="SchedulerStringId.Caption_LastVisibleResources" xml:space="preserve">
+    <value>Letzter</value>
+  </data>
+  <data name="SchedulerStringId.Caption_NextVisibleResources" xml:space="preserve">
+    <value>Weiter</value>
+  </data>
+  <data name="SchedulerStringId.Caption_NextVisibleResourcesPage" xml:space="preserve">
+    <value>Nächste Seite</value>
+  </data>
+  <data name="SchedulerStringId.Caption_PrevVisibleResources" xml:space="preserve">
+    <value>Vorherige</value>
+  </data>
+  <data name="SchedulerStringId.Caption_PrevVisibleResourcesPage" xml:space="preserve">
+    <value>Vorherige Seite</value>
+  </data>
+  <data name="SchedulerStringId.ViewShortDisplayName_Day" xml:space="preserve">
+    <value>Tag</value>
+  </data>
+  <data name="SchedulerStringId.ViewShortDisplayName_Month" xml:space="preserve">
+    <value>Monat</value>
+  </data>
+  <data name="SchedulerStringId.ViewShortDisplayName_Timeline" xml:space="preserve">
+    <value>Chronologisch</value>
+  </data>
+  <data name="SchedulerStringId.ViewShortDisplayName_Week" xml:space="preserve">
+    <value>Woche</value>
+  </data>
+  <data name="SchedulerStringId.ViewShortDisplayName_WorkDays" xml:space="preserve">
+    <value>Arbeitswoche</value>
+  </data>
+  <data name="SchedulerStringId.Caption_SetupAppointmentMappings" xml:space="preserve">
+    <value>Einstellung der Terminfelder</value>
+  </data>
+  <data name="SchedulerStringId.Msg_DuplicateCustomFieldMappings" xml:space="preserve">
+    <value>Doppelter Feldname im Anwendereintrag! 
+Kontrollieren Sie die Einträge:
+ {0}</value>
+  </data>
+  <data name="SchedulerStringId.Msg_DuplicateMappingMember" xml:space="preserve">
+    <value>Der Eintrag {0} ist nicht eindeutig!</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InconsistentRecurrenceInfoMapping" xml:space="preserve">
+    <value>Um Wiederholungen anzulegen, müssen Sie die Terminserien und die Art festlegen!</value>
+  </data>
+  <data name="SchedulerStringId.Msg_IncorrectMappingsQuestion" xml:space="preserve">
+    <value>Falsche Dateneingabe! Weiter?
+Detail:
+</value>
+  </data>
+  <data name="SchedulerStringId.Msg_MappingsCheckPassedOk" xml:space="preserve">
+    <value>Die Feldkontrolle ist erfolgreich beendet!</value>
+  </data>
+  <data name="SchedulerStringId.Msg_MissingMappingMember" xml:space="preserve">
+    <value>Es Fehlen {1} Einträge der {0} Eigenschaft.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_MissingRequiredMapping" xml:space="preserve">
+    <value>Der Pflichteintrag für die Eigenschaft {0} ist nicht vorhanden!</value>
+  </data>
+  <data name="SchedulerStringId.Msg_WarningAppointmentDeleted" xml:space="preserve">
+    <value>Der Eintrag wurde von einem anderen Anwender gelöscht!</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ModifyAppointmentMappingsTransactionDescription" xml:space="preserve">
+    <value>Ändern der Termin-Datenfelder</value>
+  </data>
+  <data name="SchedulerStringId.Caption_SetupResourceMappings" xml:space="preserve">
+    <value>Einstellung der Ressourcen-Datenfelder</value>
+  </data>
+  <data name="SchedulerStringId.Caption_CheckMappings" xml:space="preserve">
+    <value>Datenfelder überprüfen</value>
+  </data>
+  <data name="SchedulerStringId.Caption_DayViewDescription" xml:space="preserve">
+    <value>Wechseln Sie zur Tagesansicht!  
+Die Tagesansicht zeigt mehr Informationen.</value>
+  </data>
+  <data name="SchedulerStringId.Caption_MappingsValidation" xml:space="preserve">
+    <value>Datenfelder überprüfen</value>
+  </data>
+  <data name="SchedulerStringId.Caption_MappingsWizard" xml:space="preserve">
+    <value>Datenfelder Assistent</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ModifyAppointmentStorageTransactionDescription" xml:space="preserve">
+    <value>Ändern der Terminspeicherung</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ModifyResourceMappingsTransactionDescription" xml:space="preserve">
+    <value>Ressourcen Datenfelder ändern.</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ModifyResourceStorageTransactionDescription" xml:space="preserve">
+    <value>Ändern der Ressourcenspeicherung</value>
+  </data>
+  <data name="SchedulerStringId.Caption_MonthViewDescription" xml:space="preserve">
+    <value>Wechseln Sie zur Monatsansicht!
+Diese Ansicht ist besser für eine Langzeitplanung.</value>
+  </data>
+  <data name="SchedulerStringId.Caption_SetupAppointmentStorage" xml:space="preserve">
+    <value>Einstellung der Terminspeicherung</value>
+  </data>
+  <data name="SchedulerStringId.Caption_SetupResourceStorage" xml:space="preserve">
+    <value>Einstellung der Ressourcenspeicherung</value>
+  </data>
+  <data name="SchedulerStringId.Caption_TimelineViewDescription" xml:space="preserve">
+    <value>Wechseln Sie zur Zeitleistenansicht!
+Diese Ansicht zeigt die Termine im Verhältnis zur Zeit!</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekViewDescription" xml:space="preserve">
+    <value>Wechseln Sie zur Wochenansicht!
+Übersicht einer gewählten Woche, in einer kompakten Form.</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WorkWeekViewDescription" xml:space="preserve">
+    <value>Wechseln Sie zur Arbeitswochenansicht!
+Listet die Arbeitstage einer gewählten Woche auf.</value>
+  </data>
+  <data name="SchedulerStringId.Appointment_StartContinueText" xml:space="preserve">
+    <value>Von {0}</value>
+  </data>
+  <data name="SchedulerStringId.Appointment_EndContinueText" xml:space="preserve">
+    <value>bis {0}</value>
+  </data>
+  <data name="SchedulerStringId.Caption_AllDay" xml:space="preserve">
+    <value>Ganztägig</value>
+  </data>
+  <data name="SchedulerStringId.Caption_PleaseSeeAbove" xml:space="preserve">
+    <value>Wie oben angegeben</value>
+  </data>
+  <data name="SchedulerStringId.Caption_RecurrenceSubject" xml:space="preserve">
+    <value>Betreff:</value>
+  </data>
+  <data name="SchedulerStringId.Caption_RecurrenceLocation" xml:space="preserve">
+    <value>Ort:</value>
+  </data>
+  <data name="SchedulerStringId.Caption_RecurrenceStartTime" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="SchedulerStringId.Caption_RecurrenceEndTime" xml:space="preserve">
+    <value>Ende:</value>
+  </data>
+  <data name="SchedulerStringId.Caption_RecurrenceShowTimeAs" xml:space="preserve">
+    <value>Zeit anzeigen als:</value>
+  </data>
+  <data name="SchedulerStringId.Caption_Recurrence" xml:space="preserve">
+    <value>Serientyp:</value>
+  </data>
+  <data name="SchedulerStringId.Caption_RecurrencePattern" xml:space="preserve">
+    <value>Serienmuster:</value>
+  </data>
+  <data name="SchedulerStringId.Caption_NoneRecurrence" xml:space="preserve">
+    <value>(keine)</value>
+  </data>
+  <data name="SchedulerStringId.Caption_NoneReminder" xml:space="preserve">
+    <value>Keine</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ResourceNone" xml:space="preserve">
+    <value>(Keine)</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ResourceAll" xml:space="preserve">
+    <value>(Alle)</value>
+  </data>
+  <data name="SchedulerStringId.Msg_Warning" xml:space="preserve">
+    <value>Warnung!</value>
+  </data>
+  <data name="SchedulerStringId.Msg_PrintStyleNameExists" xml:space="preserve">
+    <value>Der Name '{0}' für einen Stil existiert bereits. Bitte wählen Sie einen anderen.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_OutlookCalendarNotFound" xml:space="preserve">
+    <value>Der Kalender {0} wurde nicht gefunden</value>
+  </data>
+  <data name="SchedulerStringId.Format_CopyOf" xml:space="preserve">
+    <value>Kopie von {0}</value>
+  </data>
+  <data name="SchedulerStringId.Format_CopyNOf" xml:space="preserve">
+    <value>Kopie ({0}) von {1}</value>
+  </data>
+  <data name="SchedulerStringId.Msg_iCalendar_AppointmentsImportWarning" xml:space="preserve">
+    <value>Kann einige Termine nicht importieren</value>
+  </data>
+  <data name="SchedulerStringId.Msg_iCalendar_NotValidFile" xml:space="preserve">
+    <value>Ungültige Calender Datei</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_GotoToday" xml:space="preserve">
+    <value>Die Ansicht auf das heutige Datum stellen</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_NavigateBackward" xml:space="preserve">
+    <value>Zurück</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_NavigateForward" xml:space="preserve">
+    <value>Vorwärts</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_NavigateBackward" xml:space="preserve">
+    <value>Um die vorgeschlagene Zeit zurückspringen</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_NavigateForward" xml:space="preserve">
+    <value>Um die vorgegebene Zeit vorspringen</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_ViewZoomIn" xml:space="preserve">
+    <value>Vergrößern</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_ViewZoomOut" xml:space="preserve">
+    <value>Verkleinern</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_ViewZoomIn" xml:space="preserve">
+    <value>Skaliert die Ansicht um mehr Details zu zeigen</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_ViewZoomOut" xml:space="preserve">
+    <value>Skaliert die Ansicht um eine größere Übersicht zu erhalten</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_SwitchToGanttView" xml:space="preserve">
+    <value>&amp;Gantt Ansicht</value>
+  </data>
+  <data name="SchedulerStringId.Msg_RecurrenceExceptionsWillBeLost" xml:space="preserve">
+    <value>Ausnahmen dieser Terminserie gehen verloren. Weiter?</value>
+  </data>
+  <data name="SchedulerStringId.Reporting_NotAssigned_View" xml:space="preserve">
+    <value>Erforderlich Ansicht-Komponente ist nicht belegt</value>
+  </data>
+  <data name="SchedulerStringId.UD_SchedulerReportsToolboxCategoryName" xml:space="preserve">
+    <value>Scheduler Kontrolle</value>
+  </data>
+  <data name="SchedulerStringId.Caption_GroupByNoneDescription" xml:space="preserve">
+    <value>Keine Gruppierung</value>
+  </data>
+  <data name="SchedulerStringId.VS_SchedulerReportsToolboxCategoryName" xml:space="preserve">
+    <value>DX.{0}: Scheduler Bericht</value>
+  </data>
+  <data name="SchedulerStringId.Caption_GanttViewDescription" xml:space="preserve">
+    <value>Wechseln Sie zur Gantt-Ansicht. Projektmanagementansicht, die Termine und ihre zeitlichen Abhängigkeiten anzeigt.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_SplitAppointment" xml:space="preserve">
+    <value>Teilen Sie den ausgewählten Termin in zwei Teile, indem Sie eine Trennlinie ziehen.</value>
+  </data>
+  <data name="SchedulerStringId.Reporting_NotAssigned_TimeCells" xml:space="preserve">
+    <value>Erforderliche ZeitZellen Kontrolle ist nicht belegt</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_SwitchToGroupByResource" xml:space="preserve">
+    <value>&amp;Gruppiere nach Ressourcen</value>
+  </data>
+  <data name="SchedulerStringId.Caption_GroupByDateDescription" xml:space="preserve">
+    <value>Gruppiere nach Datum</value>
+  </data>
+  <data name="SchedulerStringId.ViewDisplayName_Gantt" xml:space="preserve">
+    <value>Gantt Ansicht</value>
+  </data>
+  <data name="SchedulerStringId.Caption_GroupByResourceDescription" xml:space="preserve">
+    <value>Gruppiere nach Ressourcen</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_SwitchToGroupByNone" xml:space="preserve">
+    <value>&amp;Keine Gruppierung</value>
+  </data>
+  <data name="SchedulerStringId.DefaultToolTipStringFormat_SplitAppointment" xml:space="preserve">
+    <value>{0} : Schritt {1}</value>
+  </data>
+  <data name="SchedulerStringId.Caption_SplitAppointment" xml:space="preserve">
+    <value>Teilen</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_SwitchToGroupByDate" xml:space="preserve">
+    <value>&amp;Gruppiere nach Datum</value>
+  </data>
+  <data name="SchedulerStringId.DisplayName_Appointment" xml:space="preserve">
+    <value>Termin</value>
+  </data>
+  <data name="SchedulerStringId.Caption_AppointmentDependencyTypeFinishToStart" xml:space="preserve">
+    <value>Schluss-zu-Anfang (FS)</value>
+  </data>
+  <data name="SchedulerStringId.Caption_AppointmentDependencyTypeStartToStart" xml:space="preserve">
+    <value>Anfang-zu-Anfang (SS)</value>
+  </data>
+  <data name="SchedulerStringId.Caption_AppointmentDependencyTypeFinishToFinish" xml:space="preserve">
+    <value>Schluss-zu-Schluss (FF)</value>
+  </data>
+  <data name="SchedulerStringId.Caption_AppointmentDependencyTypeStartToFinish" xml:space="preserve">
+    <value>Anfang-zu-Schluss (SF)</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_DeleteAppointmentDependency" xml:space="preserve">
+    <value>&amp;Löschen</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_EditAppointmentDependency" xml:space="preserve">
+    <value>&amp;Bearbeiten</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_CreateAppointmentDependency" xml:space="preserve">
+    <value>Bilde Abhängigkeiten zwischen Terminen</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_DeleteAppointmentDependency" xml:space="preserve">
+    <value>Lösche Terminabhängigkeit</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ModifyAppointmentDependencyStorageTransactionDescription" xml:space="preserve">
+    <value>AppointmentDependency-Speicher modifizieren</value>
+  </data>
+  <data name="SchedulerStringId.Caption_SetupAppointmentDependencyStorage" xml:space="preserve">
+    <value>Einstellung der Abhängigkeits speicherung</value>
+  </data>
+  <data name="SchedulerStringId.Caption_SetupDependencyMappings" xml:space="preserve">
+    <value>Einstellung der Abhängigkeits Zuordnung</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_EditAppointmentDependency" xml:space="preserve">
+    <value>Ändere Termin Abhängigkeit</value>
+  </data>
+  <data name="SchedulerStringId.ViewShortDisplayName_Gantt" xml:space="preserve">
+    <value>Balkendiagramm</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_ShowWorkTimeOnly" xml:space="preserve">
+    <value>Arbeitszeiten</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_PrintPreview" xml:space="preserve">
+    <value>&amp;Druckvorschau</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_ChangeAppointmentReminderUI" xml:space="preserve">
+    <value>Auswahl wann Erinnerung an gewählten Termin erfolgen soll.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_NewAppointment" xml:space="preserve">
+    <value>Neuen Termin anlegen.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_ToggleRecurrence" xml:space="preserve">
+    <value>Termin zur Terminserie machen oder Serientyp ändern.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_ChangeSnapToCellsUI" xml:space="preserve">
+    <value>Einrast-Modus  für Termin-Anzeige in Zeit-Zellen einstellen.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_OpenAppointment" xml:space="preserve">
+    <value>Gewählten Termin öffnen.</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_ChangeSnapToCellsUI" xml:space="preserve">
+    <value>Einrasten in Zellen</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_PrintPageSetup" xml:space="preserve">
+    <value>Seiten-Erscheinungsbild anpassen und verschiedene Druck-Optionen konfigurieren.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_CellsAutoHeight" xml:space="preserve">
+    <value>Automatische Zellen-Höhenanpassung an enthaltene Termine aktivieren.</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_ChangeAppointmentReminderUI" xml:space="preserve">
+    <value>Erinnerung</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_PrintPageSetup" xml:space="preserve">
+    <value>&amp;Seiteneinstellungen</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_CellsAutoHeight" xml:space="preserve">
+    <value>Automatische Zellenhöhe</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_ShowTimeAs" xml:space="preserve">
+    <value>Status des Termins ändern.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_DeleteAppointment" xml:space="preserve">
+    <value>Löschen der ausgewählten Termin(e).</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_ChangeTimelineScaleWidth" xml:space="preserve">
+    <value>Skala Breite</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_Print" xml:space="preserve">
+    <value>Senden Sie den Zeitplan direkt an den Standarddrucker, ohne Änderungen vorzunehmen.</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_CompressWeekend" xml:space="preserve">
+    <value>Wochenende komprimieren</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_ToggleRecurrence" xml:space="preserve">
+    <value>Wiederholung</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_TimeScalesMenu" xml:space="preserve">
+    <value>Zeitskala ändern.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_PrintPreview" xml:space="preserve">
+    <value>Vorschau und Änderungen an Seiten vornehmen vor dem Drucken.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_LabelAs" xml:space="preserve">
+    <value>Kategorie des Termins ändern.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_ChangeTimelineScaleWidth" xml:space="preserve">
+    <value>Spaltenbreite in Pixel für die Basis-Skala angeben.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_CompressWeekend" xml:space="preserve">
+    <value>Samstag und Sonntag in eine Zeile komprimieren.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_NewRecurringAppointment" xml:space="preserve">
+    <value>Neue Terminserie anlegen.</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_Print" xml:space="preserve">
+    <value>Sofort drucken</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_ShowWorkTimeOnly" xml:space="preserve">
+    <value>Nur Arbeitszeiten im Kalender anzeigen.</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_SaveSchedule" xml:space="preserve">
+    <value>Speichern</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_SaveSchedule" xml:space="preserve">
+    <value>Einen Temin in eine Datei speichern (.ics).</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_DeleteOccurrence" xml:space="preserve">
+    <value>Serienelement löschen.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_DeleteSeries" xml:space="preserve">
+    <value>Serie löschen.</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_CreateAppointmentDependency" xml:space="preserve">
+    <value>Abhängigkeit erzeugen</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_DeleteOccurrence" xml:space="preserve">
+    <value>Serienelement löschen</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_DeleteSeries" xml:space="preserve">
+    <value>Serie löschen</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_OpenSchedule" xml:space="preserve">
+    <value>Importieren</value>
+  </data>
+  <data name="SchedulerStringId.TextAppointmentSnapToCells_Always" xml:space="preserve">
+    <value>Immer</value>
+  </data>
+  <data name="SchedulerStringId.TextAppointmentSnapToCells_Auto" xml:space="preserve">
+    <value>Automatisch</value>
+  </data>
+  <data name="SchedulerStringId.TextAppointmentSnapToCells_Never" xml:space="preserve">
+    <value>Nie</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_OpenSeries" xml:space="preserve">
+    <value>Serie öffnen</value>
+  </data>
+  <data name="SchedulerStringId.TextAppointmentSnapToCells_Disabled" xml:space="preserve">
+    <value>Deaktiviert</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_OpenSchedule" xml:space="preserve">
+    <value>Importieren einen Zeitplan aus einer Datei (.ics).</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_OpenOccurrence" xml:space="preserve">
+    <value>Ereignis öffnen</value>
+  </data>
+  <data name="SchedulerStringId.DateTimeAutoFormat_WithoutYear" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SchedulerStringId.DateTimeAutoFormat_Week" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SchedulerStringId.Caption_WorkingElsewhere" xml:space="preserve">
+    <value>Arbeiten an anderer Stelle</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_OpenOccurrence" xml:space="preserve">
+    <value>Öffnen dieser Besprechungsinstanz.</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ModifyAppointmentDependencyMappingsTransactionDescription" xml:space="preserve">
+    <value>Zuordnungen von Terminabhängigkeiten modifizieren</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_OpenSeries" xml:space="preserve">
+    <value>Öffnen dieser Meeting-Serie.</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_WorkingElsewhere" xml:space="preserve">
+    <value>Woanders arbeiten</value>
+  </data>
+  <data name="SchedulerStringId.ViewDisplayName_FullWeek" xml:space="preserve">
+    <value>Voller Wochenkalender</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_SwitchToFullWeekView" xml:space="preserve">
+    <value>Wochenansicht</value>
+  </data>
+  <data name="SchedulerStringId.Msg_SaveBeforeClose" xml:space="preserve">
+    <value>Möchten Sie die Änderungen speichern?</value>
+  </data>
+  <data name="SchedulerStringId.Caption_AgendaViewDescription" xml:space="preserve">
+    <value>Schalter, die Agenda-Ansicht. Zeigt eine Liste der anstehenden Ereignisse.</value>
+  </data>
+  <data name="SchedulerStringId.FlyoutCaption_Reminder" xml:space="preserve">
+    <value>Erinnerung:</value>
+  </data>
+  <data name="SchedulerStringId.FlyoutCaption_Location" xml:space="preserve">
+    <value>Ort:</value>
+  </data>
+  <data name="SchedulerStringId.FlyoutCaption_Start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="SchedulerStringId.FlyoutCaption_End" xml:space="preserve">
+    <value>Ende:</value>
+  </data>
+  <data name="SchedulerStringId.String_to" xml:space="preserve">
+    <value>bis</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidTime" xml:space="preserve">
+    <value>Ungültige Zeit - fällt es in einer Stunde, die nach vorne bereinigt die Uhr auf Sommerzeit übersprungen wurde.</value>
+  </data>
+  <data name="SchedulerStringId.CategoryResourceSelectorCaption_Cancel" xml:space="preserve">
+    <value>Abbrechen</value>
+  </data>
+  <data name="SchedulerStringId.CategoryResourceSelectorCaption_Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="SchedulerStringId.CategoryResourceSelectorText_NullPrompt" xml:space="preserve">
+    <value>Suchtext eingeben...</value>
+  </data>
+  <data name="SchedulerStringId.DateNavigationBarCaption_Today" xml:space="preserve">
+    <value>Heute</value>
+  </data>
+  <data name="SchedulerStringId.ViewShortDisplayName_Year" xml:space="preserve">
+    <value>Jahr</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidHourCount" xml:space="preserve">
+    <value>Ungültige Stundenanzahl. Geben Sie einen positiven Ganzzahlwert ein.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidHourCountValue" xml:space="preserve">
+    <value>Ungültige Stundenanzahl. Geben Sie einen positiven Ganzzahlwert ein.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidMinuteCount" xml:space="preserve">
+    <value>Ungültige Minutenanzahl. Geben Sie einen positiven Ganzzahlwert ein.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidMinuteCountValue" xml:space="preserve">
+    <value>Ungültige Minutenanzahl. Geben Sie einen positiven Ganzzahlwert ein.</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_TimeScaleWorkHour" xml:space="preserve">
+    <value>Arbeitsstunde</value>
+  </data>
+  <data name="SchedulerStringId.TimeScaleDisplayName_WorkHour" xml:space="preserve">
+    <value>Arbeitsstunde</value>
+  </data>
+  <data name="SchedulerStringId.Msg_DateOutsideLimitInterval" xml:space="preserve">
+    <value>Das eingegebene Datum ist außerhalb des Intervalls Grenze.</value>
+  </data>
+  <data name="SchedulerStringId.Caption_AllDayResource" xml:space="preserve">
+    <value>(Ganztägig)</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_SwitchToYearView" xml:space="preserve">
+    <value>&amp;Jahresansicht</value>
+  </data>
+  <data name="SchedulerStringId.ViewDisplayName_Year" xml:space="preserve">
+    <value>Jahreskalender</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_TimeScaleWorkDay" xml:space="preserve">
+    <value>Arbeitstag</value>
+  </data>
+  <data name="SchedulerStringId.TimeScaleDisplayName_WorkDay" xml:space="preserve">
+    <value>Arbeitstag</value>
+  </data>
+  <data name="SchedulerStringId.ViewShortDisplayName_FullWeek" xml:space="preserve">
+    <value>Gesamte Woche</value>
+  </data>
+  <data name="SchedulerStringId.Caption_FullWeekViewDescription" xml:space="preserve">
+    <value>Wechseln Sie in die Ansicht der gesamten Woche. Vereinbart Termine für eine bestimmte Woche in kompakter Form.</value>
+  </data>
+  <data name="SchedulerStringId.Caption_YearViewDescription" xml:space="preserve">
+    <value>Wechseln Sie in die Jahresansicht. Zeigt eine Liste der bevorstehenden Ereignisse an.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidAppointmentTime" xml:space="preserve">
+    <value>Ungültige Terminzeit</value>
+  </data>
+  <data name="SchedulerStringId.ViewDisplayName_Agenda" xml:space="preserve">
+    <value>Agenda Kalendar</value>
+  </data>
+  <data name="SchedulerStringId.ViewShortDisplayName_Agenda" xml:space="preserve">
+    <value>Agenda</value>
+  </data>
+</root>

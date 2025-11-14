@@ -1,0 +1,3337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B9668DB7-FC09-48B1-BC91-B1681235CBD3}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>DevExpress.XtraSpreadsheet.v25.2</AssemblyName>
+<DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DevExpress.XtraSpreadsheet</RootNamespace>
+    <SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\ChangeChartHorizontalAxisTitleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChangeChartTitleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChangeChartTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChangeChartVerticalAxisTitleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChangeDataSourcePivotTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChartSelectDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ColumnWidthForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConditionalFormattingAverageRuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConditionalFormattingBetweenRuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConditionalFormattingDataBarNegativeValueAndAxisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConditionalFormattingDateOccurringRuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConditionalFormattingDuplicateValuesRuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConditionalFormattingFormatCellsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConditionalFormattingHighlightCellsRuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConditionalFormattingTopBottomRuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConditionalFormattingRulesManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConfirmPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CreateDefinedNamesFromSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DataFieldSettingsPivotTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DataMemberEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DataValidationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DefaultColumnWidthForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DefineNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\CellReferenceAddressControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\ConditionalFormattingColorScaleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\ConditionalFormattingDataBarControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\ConditionalFormattingFormatCellsThatContainControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\ConditionalFormattingFormatTopBottomRankedValuesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\ConditionalFormattingFormatUniqueDuplicateValuesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\ConditionalFormattingFormatValuesAboveBelowAverageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\ConditionalFormattingFormulaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\ConditionalFormattingIconSetsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\EmailAddressControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\ExternalAddressControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\FormatBorderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\FormatNumberCustomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\FormatNumberDecimalControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\FormatNumberTypeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\FunctionArgumentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\HeaderFooterEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\HeaderFooterPreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\PageMarginsPreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\PrintPreviewSettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DocumentPropertiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EncryptDocumentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FieldSettingsPivotTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FieldsPanelPivotTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FillEffectsFormatCellsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FindReplaceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormatCellsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormatPictureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FunctionArgumentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GenericFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GroupEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GroupUngroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HeaderFooterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HyperlinkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertDeleteCellsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertFunctionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertHFPictureWarningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertPivotTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertSheetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageDataSourcesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MoveChartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MoveOrCopySheetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MovePivotTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NameForDefinedNameRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NameManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewEditConditionalFormattingRuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OptionsPivotTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OutlineSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OutlineSubtotalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PageSetupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PasswordRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PasteSpecialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PasteSpecialLocalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PivotTableCalculatedFieldAndItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PivotTableCalculatedItemSolveOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PivotTableDateFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PivotTableFieldsFilterItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PivotTableGroupFieldForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PivotTableLabelFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PivotTableMoreSortOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PivotTableNumberFormatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PivotTableShowValuesAsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PivotTableSortOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PivotTableTop10FilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PivotTableValueFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProtectChartsheetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProtectedRangeManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProtectRangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProtectSheetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProtectWorkbookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RenameSheetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RowHeightForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelectDataMemberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelectDataSourceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SheetActivationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SimpleFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SortWarningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Top10FilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UnhideSheetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UnprotectRangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UnprotectSheetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UnprotectWorkbookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewZoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\ChangeChartHorizontalAxisTitleForm.de.resx">
+      <DependentUpon>ChangeChartHorizontalAxisTitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeChartHorizontalAxisTitleForm.es.resx">
+      <DependentUpon>ChangeChartHorizontalAxisTitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeChartHorizontalAxisTitleForm.fr.resx">
+      <DependentUpon>ChangeChartHorizontalAxisTitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeChartHorizontalAxisTitleForm.resx">
+      <DependentUpon>ChangeChartHorizontalAxisTitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeChartHorizontalAxisTitleForm.ru.resx">
+      <DependentUpon>ChangeChartHorizontalAxisTitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeChartTitleForm.de.resx">
+      <DependentUpon>ChangeChartTitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeChartTitleForm.es.resx">
+      <DependentUpon>ChangeChartTitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeChartTitleForm.fr.resx">
+      <DependentUpon>ChangeChartTitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeChartTitleForm.resx">
+      <DependentUpon>ChangeChartTitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeChartTitleForm.ru.resx">
+      <DependentUpon>ChangeChartTitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeChartTypeForm.de.resx">
+      <DependentUpon>ChangeChartTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeChartTypeForm.es.resx">
+      <DependentUpon>ChangeChartTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeChartTypeForm.fr.resx">
+      <DependentUpon>ChangeChartTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeChartTypeForm.resx">
+      <DependentUpon>ChangeChartTypeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeChartTypeForm.ru.resx">
+      <DependentUpon>ChangeChartTypeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeChartVerticalAxisTitleForm.de.resx">
+      <DependentUpon>ChangeChartVerticalAxisTitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeChartVerticalAxisTitleForm.es.resx">
+      <DependentUpon>ChangeChartVerticalAxisTitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeChartVerticalAxisTitleForm.fr.resx">
+      <DependentUpon>ChangeChartVerticalAxisTitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeChartVerticalAxisTitleForm.resx">
+      <DependentUpon>ChangeChartVerticalAxisTitleForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeChartVerticalAxisTitleForm.ru.resx">
+      <DependentUpon>ChangeChartVerticalAxisTitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeDataSourcePivotTableForm.de.resx">
+      <DependentUpon>ChangeDataSourcePivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeDataSourcePivotTableForm.es.resx">
+      <DependentUpon>ChangeDataSourcePivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeDataSourcePivotTableForm.fr.resx">
+      <DependentUpon>ChangeDataSourcePivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeDataSourcePivotTableForm.resx">
+      <DependentUpon>ChangeDataSourcePivotTableForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeDataSourcePivotTableForm.ru.resx">
+      <DependentUpon>ChangeDataSourcePivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChartSelectDataForm.de.resx">
+      <DependentUpon>ChartSelectDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChartSelectDataForm.es.resx">
+      <DependentUpon>ChartSelectDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChartSelectDataForm.fr.resx">
+      <DependentUpon>ChartSelectDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChartSelectDataForm.resx">
+      <DependentUpon>ChartSelectDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChartSelectDataForm.ru.resx">
+      <DependentUpon>ChartSelectDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ColumnWidthForm.de.resx">
+      <DependentUpon>ColumnWidthForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ColumnWidthForm.es.resx">
+      <DependentUpon>ColumnWidthForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ColumnWidthForm.fr.resx">
+      <DependentUpon>ColumnWidthForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ColumnWidthForm.resx">
+      <DependentUpon>ColumnWidthForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ColumnWidthForm.ru.resx">
+      <DependentUpon>ColumnWidthForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingAverageRuleForm.de.resx">
+      <DependentUpon>ConditionalFormattingAverageRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingAverageRuleForm.es.resx">
+      <DependentUpon>ConditionalFormattingAverageRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingAverageRuleForm.fr.resx">
+      <DependentUpon>ConditionalFormattingAverageRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingAverageRuleForm.resx">
+      <DependentUpon>ConditionalFormattingAverageRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingAverageRuleForm.ru.resx">
+      <DependentUpon>ConditionalFormattingAverageRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingBetweenRuleForm.de.resx">
+      <DependentUpon>ConditionalFormattingBetweenRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingBetweenRuleForm.es.resx">
+      <DependentUpon>ConditionalFormattingBetweenRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingBetweenRuleForm.fr.resx">
+      <DependentUpon>ConditionalFormattingBetweenRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingBetweenRuleForm.resx">
+      <DependentUpon>ConditionalFormattingBetweenRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingBetweenRuleForm.ru.resx">
+      <DependentUpon>ConditionalFormattingBetweenRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingDataBarNegativeValueAndAxisForm.de.resx">
+      <DependentUpon>ConditionalFormattingDataBarNegativeValueAndAxisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingDataBarNegativeValueAndAxisForm.es.resx">
+      <DependentUpon>ConditionalFormattingDataBarNegativeValueAndAxisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingDataBarNegativeValueAndAxisForm.fr.resx">
+      <DependentUpon>ConditionalFormattingDataBarNegativeValueAndAxisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingDataBarNegativeValueAndAxisForm.resx">
+      <DependentUpon>ConditionalFormattingDataBarNegativeValueAndAxisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingDataBarNegativeValueAndAxisForm.ru.resx">
+      <DependentUpon>ConditionalFormattingDataBarNegativeValueAndAxisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingDateOccurringRuleForm.de.resx">
+      <DependentUpon>ConditionalFormattingDateOccurringRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingDateOccurringRuleForm.es.resx">
+      <DependentUpon>ConditionalFormattingDateOccurringRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingDateOccurringRuleForm.fr.resx">
+      <DependentUpon>ConditionalFormattingDateOccurringRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingDateOccurringRuleForm.resx">
+      <DependentUpon>ConditionalFormattingDateOccurringRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingDateOccurringRuleForm.ru.resx">
+      <DependentUpon>ConditionalFormattingDateOccurringRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingDuplicateValuesRuleForm.de.resx">
+      <DependentUpon>ConditionalFormattingDuplicateValuesRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingDuplicateValuesRuleForm.es.resx">
+      <DependentUpon>ConditionalFormattingDuplicateValuesRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingDuplicateValuesRuleForm.fr.resx">
+      <DependentUpon>ConditionalFormattingDuplicateValuesRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingDuplicateValuesRuleForm.resx">
+      <DependentUpon>ConditionalFormattingDuplicateValuesRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingDuplicateValuesRuleForm.ru.resx">
+      <DependentUpon>ConditionalFormattingDuplicateValuesRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingFormatCellsForm.de.resx">
+      <DependentUpon>ConditionalFormattingFormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingFormatCellsForm.es.resx">
+      <DependentUpon>ConditionalFormattingFormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingFormatCellsForm.fr.resx">
+      <DependentUpon>ConditionalFormattingFormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingFormatCellsForm.resx">
+      <DependentUpon>ConditionalFormattingFormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingFormatCellsForm.ru.resx">
+      <DependentUpon>ConditionalFormattingFormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingHighlightCellsRuleForm.de.resx">
+      <DependentUpon>ConditionalFormattingHighlightCellsRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingHighlightCellsRuleForm.es.resx">
+      <DependentUpon>ConditionalFormattingHighlightCellsRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingHighlightCellsRuleForm.fr.resx">
+      <DependentUpon>ConditionalFormattingHighlightCellsRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingHighlightCellsRuleForm.resx">
+      <DependentUpon>ConditionalFormattingHighlightCellsRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingHighlightCellsRuleForm.ru.resx">
+      <DependentUpon>ConditionalFormattingHighlightCellsRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingRulesManagerForm.cs.resx">
+      <DependentUpon>ConditionalFormattingRulesManagerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingRulesManagerForm.de.resx">
+      <DependentUpon>ConditionalFormattingRulesManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingRulesManagerForm.es.resx">
+      <DependentUpon>ConditionalFormattingRulesManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingRulesManagerForm.ru.resx">
+      <DependentUpon>ConditionalFormattingRulesManagerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingTopBottomRuleForm.de.resx">
+      <DependentUpon>ConditionalFormattingTopBottomRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingTopBottomRuleForm.es.resx">
+      <DependentUpon>ConditionalFormattingTopBottomRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingTopBottomRuleForm.fr.resx">
+      <DependentUpon>ConditionalFormattingTopBottomRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingTopBottomRuleForm.resx">
+      <DependentUpon>ConditionalFormattingTopBottomRuleForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingTopBottomRuleForm.ru.resx">
+      <DependentUpon>ConditionalFormattingTopBottomRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormattingRulesManagerForm.resx">
+      <DependentUpon>ConditionalFormattingRulesManagerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConfirmPasswordForm.de.resx">
+      <DependentUpon>ConfirmPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConfirmPasswordForm.es.resx">
+      <DependentUpon>ConfirmPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConfirmPasswordForm.fr.resx">
+      <DependentUpon>ConfirmPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConfirmPasswordForm.resx">
+      <DependentUpon>ConfirmPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConfirmPasswordForm.ru.resx">
+      <DependentUpon>ConfirmPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CreateDefinedNamesFromSelectionForm.de.resx">
+      <DependentUpon>CreateDefinedNamesFromSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CreateDefinedNamesFromSelectionForm.es.resx">
+      <DependentUpon>CreateDefinedNamesFromSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CreateDefinedNamesFromSelectionForm.fr.resx">
+      <DependentUpon>CreateDefinedNamesFromSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CreateDefinedNamesFromSelectionForm.resx">
+      <DependentUpon>CreateDefinedNamesFromSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CreateDefinedNamesFromSelectionForm.ru.resx">
+      <DependentUpon>CreateDefinedNamesFromSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataFieldSettingsPivotTableForm.de.resx">
+      <DependentUpon>DataFieldSettingsPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataFieldSettingsPivotTableForm.es.resx">
+      <DependentUpon>DataFieldSettingsPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataFieldSettingsPivotTableForm.fr.resx">
+      <DependentUpon>DataFieldSettingsPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataFieldSettingsPivotTableForm.resx">
+      <DependentUpon>DataFieldSettingsPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataFieldSettingsPivotTableForm.ru.resx">
+      <DependentUpon>DataFieldSettingsPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataMemberEditorForm.de.resx">
+      <DependentUpon>DataMemberEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataMemberEditorForm.es.resx">
+      <DependentUpon>DataMemberEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataMemberEditorForm.fr.resx">
+      <DependentUpon>DataMemberEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataMemberEditorForm.resx">
+      <DependentUpon>DataMemberEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataMemberEditorForm.ru.resx">
+      <DependentUpon>DataMemberEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataValidationForm.de.resx">
+      <DependentUpon>DataValidationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataValidationForm.es.resx">
+      <DependentUpon>DataValidationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataValidationForm.fr.resx">
+      <DependentUpon>DataValidationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataValidationForm.resx">
+      <DependentUpon>DataValidationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataValidationForm.ru.resx">
+      <DependentUpon>DataValidationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DefaultColumnWidthForm.de.resx">
+      <DependentUpon>DefaultColumnWidthForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DefaultColumnWidthForm.es.resx">
+      <DependentUpon>DefaultColumnWidthForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DefaultColumnWidthForm.fr.resx">
+      <DependentUpon>DefaultColumnWidthForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DefaultColumnWidthForm.resx">
+      <DependentUpon>DefaultColumnWidthForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DefaultColumnWidthForm.ru.resx">
+      <DependentUpon>DefaultColumnWidthForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DefineNameForm.de.resx">
+      <DependentUpon>DefineNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DefineNameForm.es.resx">
+      <DependentUpon>DefineNameForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DefineNameForm.fr.resx">
+      <DependentUpon>DefineNameForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DefineNameForm.resx">
+      <DependentUpon>DefineNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DefineNameForm.ru.resx">
+      <DependentUpon>DefineNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\CellReferenceAddressControl.cs.resx">
+      <DependentUpon>CellReferenceAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\CellReferenceAddressControl.de.resx">
+      <DependentUpon>CellReferenceAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\CellReferenceAddressControl.es.resx">
+      <DependentUpon>CellReferenceAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\CellReferenceAddressControl.fr.resx">
+      <DependentUpon>CellReferenceAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\CellReferenceAddressControl.it.resx">
+      <DependentUpon>CellReferenceAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\CellReferenceAddressControl.nl.resx">
+      <DependentUpon>CellReferenceAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\CellReferenceAddressControl.pl.resx">
+      <DependentUpon>CellReferenceAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\CellReferenceAddressControl.pt-BR.resx">
+      <DependentUpon>CellReferenceAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\CellReferenceAddressControl.resx">
+      <DependentUpon>CellReferenceAddressControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\CellReferenceAddressControl.ru.resx">
+      <DependentUpon>CellReferenceAddressControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\CellReferenceAddressControl.sv.resx">
+      <DependentUpon>CellReferenceAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\CellReferenceAddressControl.tr.resx">
+      <DependentUpon>CellReferenceAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\CellReferenceAddressControl.zh-CN.resx">
+      <DependentUpon>CellReferenceAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\CellReferenceAddressControl.zh-Hans.resx">
+      <DependentUpon>CellReferenceAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingColorScaleControl.cs.resx">
+      <DependentUpon>ConditionalFormattingColorScaleControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingColorScaleControl.de.resx">
+      <DependentUpon>ConditionalFormattingColorScaleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingColorScaleControl.es.resx">
+      <DependentUpon>ConditionalFormattingColorScaleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingColorScaleControl.fr.resx">
+      <DependentUpon>ConditionalFormattingColorScaleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingColorScaleControl.resx">
+      <DependentUpon>ConditionalFormattingColorScaleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingColorScaleControl.ru.resx">
+      <DependentUpon>ConditionalFormattingColorScaleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingDataBarControl.cs.resx">
+      <DependentUpon>ConditionalFormattingDataBarControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingDataBarControl.de.resx">
+      <DependentUpon>ConditionalFormattingDataBarControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingDataBarControl.es.resx">
+      <DependentUpon>ConditionalFormattingDataBarControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingDataBarControl.fr.resx">
+      <DependentUpon>ConditionalFormattingDataBarControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingDataBarControl.resx">
+      <DependentUpon>ConditionalFormattingDataBarControl.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ConditionalFormattingDataBarControl.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingDataBarControl.ru.resx">
+      <DependentUpon>ConditionalFormattingDataBarControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormatCellsThatContainControl.de.resx">
+      <DependentUpon>ConditionalFormattingFormatCellsThatContainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormatCellsThatContainControl.es.resx">
+      <DependentUpon>ConditionalFormattingFormatCellsThatContainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormatCellsThatContainControl.fr.resx">
+      <DependentUpon>ConditionalFormattingFormatCellsThatContainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormatCellsThatContainControl.resx">
+      <DependentUpon>ConditionalFormattingFormatCellsThatContainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormatCellsThatContainControl.ru.resx">
+      <DependentUpon>ConditionalFormattingFormatCellsThatContainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormatTopBottomRankedValuesControl.de.resx">
+      <DependentUpon>ConditionalFormattingFormatTopBottomRankedValuesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormatTopBottomRankedValuesControl.es.resx">
+      <DependentUpon>ConditionalFormattingFormatTopBottomRankedValuesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormatTopBottomRankedValuesControl.fr.resx">
+      <DependentUpon>ConditionalFormattingFormatTopBottomRankedValuesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormatTopBottomRankedValuesControl.resx">
+      <DependentUpon>ConditionalFormattingFormatTopBottomRankedValuesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormatTopBottomRankedValuesControl.ru.resx">
+      <DependentUpon>ConditionalFormattingFormatTopBottomRankedValuesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormatUniqueDuplicateValuesControl.de.resx">
+      <DependentUpon>ConditionalFormattingFormatUniqueDuplicateValuesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormatUniqueDuplicateValuesControl.es.resx">
+      <DependentUpon>ConditionalFormattingFormatUniqueDuplicateValuesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormatUniqueDuplicateValuesControl.fr.resx">
+      <DependentUpon>ConditionalFormattingFormatUniqueDuplicateValuesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormatUniqueDuplicateValuesControl.resx">
+      <DependentUpon>ConditionalFormattingFormatUniqueDuplicateValuesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormatUniqueDuplicateValuesControl.ru.resx">
+      <DependentUpon>ConditionalFormattingFormatUniqueDuplicateValuesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormatValuesAboveBelowAverageControl.de.resx">
+      <DependentUpon>ConditionalFormattingFormatValuesAboveBelowAverageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormatValuesAboveBelowAverageControl.es.resx">
+      <DependentUpon>ConditionalFormattingFormatValuesAboveBelowAverageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormatValuesAboveBelowAverageControl.fr.resx">
+      <DependentUpon>ConditionalFormattingFormatValuesAboveBelowAverageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormatValuesAboveBelowAverageControl.resx">
+      <DependentUpon>ConditionalFormattingFormatValuesAboveBelowAverageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormatValuesAboveBelowAverageControl.ru.resx">
+      <DependentUpon>ConditionalFormattingFormatValuesAboveBelowAverageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormulaControl.de.resx">
+      <DependentUpon>ConditionalFormattingFormulaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormulaControl.es.resx">
+      <DependentUpon>ConditionalFormattingFormulaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormulaControl.fr.resx">
+      <DependentUpon>ConditionalFormattingFormulaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormulaControl.resx">
+      <DependentUpon>ConditionalFormattingFormulaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingFormulaControl.ru.resx">
+      <DependentUpon>ConditionalFormattingFormulaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingIconSetsControl.cs.resx">
+      <DependentUpon>ConditionalFormattingIconSetsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingIconSetsControl.de.resx">
+      <DependentUpon>ConditionalFormattingIconSetsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingIconSetsControl.es.resx">
+      <DependentUpon>ConditionalFormattingIconSetsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingIconSetsControl.fr.resx">
+      <DependentUpon>ConditionalFormattingIconSetsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingIconSetsControl.resx">
+      <DependentUpon>ConditionalFormattingIconSetsControl.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ConditionalFormattingIconSetsControl.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ConditionalFormattingIconSetsControl.ru.resx">
+      <DependentUpon>ConditionalFormattingIconSetsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.ar.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.ca.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.cs.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.da.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.de-CH.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.de.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.el.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.es.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.fa.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.fi.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.fr.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.he.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.hr.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.hu.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.it.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.ja.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.ko.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.nl.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.no.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.pl.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.pt-BR.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.pt.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.ro.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.ru.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.sr-Latn-BA.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.sv.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.tr.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.vi.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.zh-CN.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\EmailAddressControl.zh-Hans.resx">
+      <DependentUpon>EmailAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ExternalAddressControl.bg.resx">
+      <DependentUpon>ExternalAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ExternalAddressControl.cs.resx">
+      <DependentUpon>ExternalAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ExternalAddressControl.de.resx">
+      <DependentUpon>ExternalAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ExternalAddressControl.el.resx">
+      <DependentUpon>ExternalAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ExternalAddressControl.es.resx">
+      <DependentUpon>ExternalAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ExternalAddressControl.fr.resx">
+      <DependentUpon>ExternalAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ExternalAddressControl.it.resx">
+      <DependentUpon>ExternalAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ExternalAddressControl.nl.resx">
+      <DependentUpon>ExternalAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ExternalAddressControl.pl.resx">
+      <DependentUpon>ExternalAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ExternalAddressControl.pt-BR.resx">
+      <DependentUpon>ExternalAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ExternalAddressControl.resx">
+      <DependentUpon>ExternalAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ExternalAddressControl.ru.resx">
+      <DependentUpon>ExternalAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ExternalAddressControl.sv.resx">
+      <DependentUpon>ExternalAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ExternalAddressControl.tr.resx">
+      <DependentUpon>ExternalAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ExternalAddressControl.zh-CN.resx">
+      <DependentUpon>ExternalAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\ExternalAddressControl.zh-Hans.resx">
+      <DependentUpon>ExternalAddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatBorderControl.de.resx">
+      <DependentUpon>FormatBorderControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatBorderControl.es.resx">
+      <DependentUpon>FormatBorderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatBorderControl.fr.resx">
+      <DependentUpon>FormatBorderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatBorderControl.resx">
+      <DependentUpon>FormatBorderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatBorderControl.ru.resx">
+      <DependentUpon>FormatBorderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.ar.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.bg.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.ca.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.cs.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.da.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.de-CH.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.de.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.el.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.es.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.fa.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.fi.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.fr.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.he.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.hr.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.hu.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.it.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.ja.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.ko.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.nl.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.no.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.pl.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.pt-BR.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.pt.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.ro.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.ru.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.sk.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.sl.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.sr-Cyrl-RS.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.sr-Latn-BA.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.sr-Latn-RS.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.sv.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.ta.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.tr.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.vi.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.zh-CN.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.zh-Hans.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberCustomControl.zh-Hant.resx">
+      <DependentUpon>FormatNumberCustomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.ar.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.ca.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.cs.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.da.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.de.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.el.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.es.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.fa.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.fr.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.hr.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.hu.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.it.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.ja.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.ko.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.nl.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.no.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.pl.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.pt-BR.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.ru.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.sr-Latn-BA.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.sv.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.ta.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.tr.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberDecimalControl.zh-Hans.resx">
+      <DependentUpon>FormatNumberDecimalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberTypeControl.cs.resx">
+      <DependentUpon>FormatNumberTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberTypeControl.de.resx">
+      <DependentUpon>FormatNumberTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberTypeControl.el.resx">
+      <DependentUpon>FormatNumberTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberTypeControl.es.resx">
+      <DependentUpon>FormatNumberTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberTypeControl.fa.resx">
+      <DependentUpon>FormatNumberTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberTypeControl.fr.resx">
+      <DependentUpon>FormatNumberTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberTypeControl.hr.resx">
+      <DependentUpon>FormatNumberTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberTypeControl.hu.resx">
+      <DependentUpon>FormatNumberTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberTypeControl.it.resx">
+      <DependentUpon>FormatNumberTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberTypeControl.ko.resx">
+      <DependentUpon>FormatNumberTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberTypeControl.nl.resx">
+      <DependentUpon>FormatNumberTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberTypeControl.pl.resx">
+      <DependentUpon>FormatNumberTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberTypeControl.pt-BR.resx">
+      <DependentUpon>FormatNumberTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberTypeControl.pt.resx">
+      <DependentUpon>FormatNumberTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberTypeControl.resx">
+      <DependentUpon>FormatNumberTypeControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberTypeControl.ru.resx">
+      <DependentUpon>FormatNumberTypeControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberTypeControl.sr-Latn-BA.resx">
+      <DependentUpon>FormatNumberTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberTypeControl.sv.resx">
+      <DependentUpon>FormatNumberTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberTypeControl.tr.resx">
+      <DependentUpon>FormatNumberTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberTypeControl.zh-CN.resx">
+      <DependentUpon>FormatNumberTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FormatNumberTypeControl.zh-Hans.resx">
+      <DependentUpon>FormatNumberTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FunctionArgumentControl.de.resx">
+      <DependentUpon>FunctionArgumentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FunctionArgumentControl.es.resx">
+      <DependentUpon>FunctionArgumentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FunctionArgumentControl.fr.resx">
+      <DependentUpon>FunctionArgumentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FunctionArgumentControl.resx">
+      <DependentUpon>FunctionArgumentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\FunctionArgumentControl.ru.resx">
+      <DependentUpon>FunctionArgumentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\HeaderFooterEditControl.de.resx">
+      <DependentUpon>HeaderFooterEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\HeaderFooterEditControl.es.resx">
+      <DependentUpon>HeaderFooterEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\HeaderFooterEditControl.fr.resx">
+      <DependentUpon>HeaderFooterEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\HeaderFooterEditControl.ja.resx">
+      <DependentUpon>HeaderFooterEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\HeaderFooterEditControl.resx">
+      <DependentUpon>HeaderFooterEditControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\HeaderFooterEditControl.ru.resx">
+      <DependentUpon>HeaderFooterEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\HeaderFooterPreviewControl.de.resx">
+      <DependentUpon>HeaderFooterPreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\HeaderFooterPreviewControl.es.resx">
+      <DependentUpon>HeaderFooterPreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\HeaderFooterPreviewControl.fr.resx">
+      <DependentUpon>HeaderFooterPreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\HeaderFooterPreviewControl.resx">
+      <DependentUpon>HeaderFooterPreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\HeaderFooterPreviewControl.ru.resx">
+      <DependentUpon>HeaderFooterPreviewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\PageMarginsPreviewControl.de.resx">
+      <DependentUpon>PageMarginsPreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\PageMarginsPreviewControl.es.resx">
+      <DependentUpon>PageMarginsPreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\PageMarginsPreviewControl.fr.resx">
+      <DependentUpon>PageMarginsPreviewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\PageMarginsPreviewControl.ja.resx">
+      <DependentUpon>PageMarginsPreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\PageMarginsPreviewControl.resx">
+      <DependentUpon>PageMarginsPreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\PageMarginsPreviewControl.ru.resx">
+      <DependentUpon>PageMarginsPreviewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\PrintPreviewSettingsControl.de.resx">
+      <DependentUpon>PrintPreviewSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\PrintPreviewSettingsControl.es.resx">
+      <DependentUpon>PrintPreviewSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\PrintPreviewSettingsControl.ja.resx">
+      <DependentUpon>PrintPreviewSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\PrintPreviewSettingsControl.resx">
+      <DependentUpon>PrintPreviewSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Design\PrintPreviewSettingsControl.ru.resx">
+      <DependentUpon>PrintPreviewSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DocumentPropertiesForm.de.resx">
+      <DependentUpon>DocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DocumentPropertiesForm.es.resx">
+      <DependentUpon>DocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DocumentPropertiesForm.fr.resx">
+      <DependentUpon>DocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DocumentPropertiesForm.resx">
+      <DependentUpon>DocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DocumentPropertiesForm.ru.resx">
+      <DependentUpon>DocumentPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EncryptDocumentForm.de.resx">
+      <DependentUpon>EncryptDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EncryptDocumentForm.es.resx">
+      <DependentUpon>EncryptDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EncryptDocumentForm.fr.resx">
+      <DependentUpon>EncryptDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EncryptDocumentForm.resx">
+      <DependentUpon>EncryptDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EncryptDocumentForm.ru.resx">
+      <DependentUpon>EncryptDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FieldSettingsPivotTableForm.de.resx">
+      <DependentUpon>FieldSettingsPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FieldSettingsPivotTableForm.es.resx">
+      <DependentUpon>FieldSettingsPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FieldSettingsPivotTableForm.fr.resx">
+      <DependentUpon>FieldSettingsPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FieldSettingsPivotTableForm.resx">
+      <DependentUpon>FieldSettingsPivotTableForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FieldSettingsPivotTableForm.ru.resx">
+      <DependentUpon>FieldSettingsPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FieldsPanelPivotTableForm.de.resx">
+      <DependentUpon>FieldsPanelPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FieldsPanelPivotTableForm.es.resx">
+      <DependentUpon>FieldsPanelPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FieldsPanelPivotTableForm.fr.resx">
+      <DependentUpon>FieldsPanelPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FieldsPanelPivotTableForm.resx">
+      <DependentUpon>FieldsPanelPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FieldsPanelPivotTableForm.ru.resx">
+      <DependentUpon>FieldsPanelPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FillEffectsFormatCellsForm.de.resx">
+      <DependentUpon>FillEffectsFormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FillEffectsFormatCellsForm.es.resx">
+      <DependentUpon>FillEffectsFormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FillEffectsFormatCellsForm.resx">
+      <DependentUpon>FillEffectsFormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FillEffectsFormatCellsForm.ru.resx">
+      <DependentUpon>FillEffectsFormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FindReplaceForm.de.resx">
+      <DependentUpon>FindReplaceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FindReplaceForm.es.resx">
+      <DependentUpon>FindReplaceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FindReplaceForm.fr.resx">
+      <DependentUpon>FindReplaceForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FindReplaceForm.resx">
+      <DependentUpon>FindReplaceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FindReplaceForm.ru.resx">
+      <DependentUpon>FindReplaceForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.ar.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.bg.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.ca.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.cs.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.da.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.de-CH.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.de.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.el.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.es.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.fa.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.fi.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.fr.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.he.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.hr.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.hu.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.hy.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.is.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.it.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.ja.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.ko.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.lt.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.lv.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.mk.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.nl.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.no.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.pl.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.pt-BR.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.pt.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.ro.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.ru.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.sk.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.sl.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.sr-Cyrl-RS.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.sr-Latn-BA.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.sr-Latn-RS.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.sv.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.ta.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.tr.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.uk.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.vi.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.zh-CN.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.zh-Hans.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.zh-Hant.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatCellsForm.zh-TW.resx">
+      <DependentUpon>FormatCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatPictureForm.de.resx">
+      <DependentUpon>FormatPictureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatPictureForm.es.resx">
+      <DependentUpon>FormatPictureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatPictureForm.ja.resx">
+      <DependentUpon>FormatPictureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatPictureForm.resx">
+      <DependentUpon>FormatPictureForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormatPictureForm.ru.resx">
+      <DependentUpon>FormatPictureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FunctionArgumentsForm.de.resx">
+      <DependentUpon>FunctionArgumentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FunctionArgumentsForm.es.resx">
+      <DependentUpon>FunctionArgumentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FunctionArgumentsForm.fr.resx">
+      <DependentUpon>FunctionArgumentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FunctionArgumentsForm.resx">
+      <DependentUpon>FunctionArgumentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FunctionArgumentsForm.ru.resx">
+      <DependentUpon>FunctionArgumentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GenericFilterForm.de.resx">
+      <DependentUpon>GenericFilterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GenericFilterForm.es.resx">
+      <DependentUpon>GenericFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GenericFilterForm.fr.resx">
+      <DependentUpon>GenericFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GenericFilterForm.resx">
+      <DependentUpon>GenericFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GenericFilterForm.ru.resx">
+      <DependentUpon>GenericFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GroupEditorForm.de.resx">
+      <DependentUpon>GroupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GroupEditorForm.fr.resx">
+      <DependentUpon>GroupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GroupEditorForm.resx">
+      <DependentUpon>GroupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GroupEditorForm.ru.resx">
+      <DependentUpon>GroupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GroupUngroupForm.de.resx">
+      <DependentUpon>GroupUngroupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GroupUngroupForm.es.resx">
+      <DependentUpon>GroupUngroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GroupUngroupForm.fr.resx">
+      <DependentUpon>GroupUngroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GroupUngroupForm.resx">
+      <DependentUpon>GroupUngroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GroupUngroupForm.ru.resx">
+      <DependentUpon>GroupUngroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HeaderFooterForm.de.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HeaderFooterForm.es.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HeaderFooterForm.fr.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HeaderFooterForm.ja.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HeaderFooterForm.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HeaderFooterForm.ru.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.ar.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.bg.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.ca.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.cs.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.da.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.de-CH.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.de.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.el.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.es.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.fa.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.fi.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.fr.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.he.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.hr.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.hu.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.hy.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.is.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.it.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.ja.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.ko.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.lt.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.lv.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.mk.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.nl.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.no.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.pl.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.pt-BR.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.pt.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.ro.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.ru.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.sk.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.sl.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.sr-Cyrl-RS.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.sr-Latn-BA.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.sr-Latn-RS.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.sv.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.ta.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.tr.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.uk.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.vi.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.zh-CN.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.zh-Hans.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.zh-Hant.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HyperlinkForm.zh-TW.resx">
+      <DependentUpon>HyperlinkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertDeleteCellsForm.de.resx">
+      <DependentUpon>InsertDeleteCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertDeleteCellsForm.es.resx">
+      <DependentUpon>InsertDeleteCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertDeleteCellsForm.ja.resx">
+      <DependentUpon>InsertDeleteCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertDeleteCellsForm.resx">
+      <DependentUpon>InsertDeleteCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertDeleteCellsForm.ru.resx">
+      <DependentUpon>InsertDeleteCellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertFunctionForm.de.resx">
+      <DependentUpon>InsertFunctionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertFunctionForm.es.resx">
+      <DependentUpon>InsertFunctionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertFunctionForm.fr.resx">
+      <DependentUpon>InsertFunctionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertFunctionForm.resx">
+      <DependentUpon>InsertFunctionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertFunctionForm.ru.resx">
+      <DependentUpon>InsertFunctionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertHFPictureWarningForm.de.resx">
+      <DependentUpon>InsertHFPictureWarningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertHFPictureWarningForm.es.resx">
+      <DependentUpon>InsertHFPictureWarningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertHFPictureWarningForm.ja.resx">
+      <DependentUpon>InsertHFPictureWarningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertHFPictureWarningForm.resx">
+      <DependentUpon>InsertHFPictureWarningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertHFPictureWarningForm.ru.resx">
+      <DependentUpon>InsertHFPictureWarningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertPivotTableForm.de.resx">
+      <DependentUpon>InsertPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertPivotTableForm.es.resx">
+      <DependentUpon>InsertPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertPivotTableForm.fr.resx">
+      <DependentUpon>InsertPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertPivotTableForm.resx">
+      <DependentUpon>InsertPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertPivotTableForm.ru.resx">
+      <DependentUpon>InsertPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertSheetForm.de.resx">
+      <DependentUpon>InsertSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertSheetForm.es.resx">
+      <DependentUpon>InsertSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertSheetForm.resx">
+      <DependentUpon>InsertSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertSheetForm.ru.resx">
+      <DependentUpon>InsertSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.ar.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.bg.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.ca.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.cs.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.da.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.de-CH.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.de.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.el.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.es.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.fa.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.fi.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.fr.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.he.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.hr.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.hu.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.hy.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.is.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.it.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.ja.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.ko.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.lt.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.lv.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.mk.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.nl.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.no.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.pl.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.pt-BR.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.pt.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.ro.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.ru.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.sk.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.sl.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.sr-Cyrl-RS.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.sr-Latn-BA.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.sr-Latn-RS.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.sv.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.ta.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.tr.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.uk.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.vi.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.zh-CN.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.zh-Hans.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.zh-Hant.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertTableForm.zh-TW.resx">
+      <DependentUpon>InsertTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageDataSourcesForm.de.resx">
+      <DependentUpon>ManageDataSourcesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageDataSourcesForm.resx">
+      <DependentUpon>ManageDataSourcesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageDataSourcesForm.ru.resx">
+      <DependentUpon>ManageDataSourcesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MoveChartForm.de.resx">
+      <DependentUpon>MoveChartForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MoveChartForm.es.resx">
+      <DependentUpon>MoveChartForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MoveChartForm.resx">
+      <DependentUpon>MoveChartForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MoveChartForm.ru.resx">
+      <DependentUpon>MoveChartForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MoveOrCopySheetForm.de.resx">
+      <DependentUpon>MoveOrCopySheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MoveOrCopySheetForm.es.resx">
+      <DependentUpon>MoveOrCopySheetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MoveOrCopySheetForm.fr.resx">
+      <DependentUpon>MoveOrCopySheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MoveOrCopySheetForm.resx">
+      <DependentUpon>MoveOrCopySheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MoveOrCopySheetForm.ru.resx">
+      <DependentUpon>MoveOrCopySheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MovePivotTableForm.de.resx">
+      <DependentUpon>MovePivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MovePivotTableForm.es.resx">
+      <DependentUpon>MovePivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MovePivotTableForm.fr.resx">
+      <DependentUpon>MovePivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MovePivotTableForm.resx">
+      <DependentUpon>MovePivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MovePivotTableForm.ru.resx">
+      <DependentUpon>MovePivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NameForDefinedNameRequestForm.de.resx">
+      <DependentUpon>NameForDefinedNameRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NameForDefinedNameRequestForm.es.resx">
+      <DependentUpon>NameForDefinedNameRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NameForDefinedNameRequestForm.resx">
+      <DependentUpon>NameForDefinedNameRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NameForDefinedNameRequestForm.ru.resx">
+      <DependentUpon>NameForDefinedNameRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NameManagerForm.de.resx">
+      <DependentUpon>NameManagerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NameManagerForm.es.resx">
+      <DependentUpon>NameManagerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NameManagerForm.fr.resx">
+      <DependentUpon>NameManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NameManagerForm.resx">
+      <DependentUpon>NameManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NameManagerForm.ru.resx">
+      <DependentUpon>NameManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewEditConditionalFormattingRuleForm.cs.resx">
+      <DependentUpon>NewEditConditionalFormattingRuleForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewEditConditionalFormattingRuleForm.de.resx">
+      <DependentUpon>NewEditConditionalFormattingRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewEditConditionalFormattingRuleForm.es.resx">
+      <DependentUpon>NewEditConditionalFormattingRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewEditConditionalFormattingRuleForm.fr.resx">
+      <DependentUpon>NewEditConditionalFormattingRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewEditConditionalFormattingRuleForm.resx">
+      <DependentUpon>NewEditConditionalFormattingRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewEditConditionalFormattingRuleForm.ru.resx">
+      <DependentUpon>NewEditConditionalFormattingRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptionsPivotTableForm.de.resx">
+      <DependentUpon>OptionsPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptionsPivotTableForm.es.resx">
+      <DependentUpon>OptionsPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptionsPivotTableForm.fr.resx">
+      <DependentUpon>OptionsPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptionsPivotTableForm.resx">
+      <DependentUpon>OptionsPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptionsPivotTableForm.ru.resx">
+      <DependentUpon>OptionsPivotTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OutlineSettingsForm.de.resx">
+      <DependentUpon>OutlineSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OutlineSettingsForm.es.resx">
+      <DependentUpon>OutlineSettingsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OutlineSettingsForm.fr.resx">
+      <DependentUpon>OutlineSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OutlineSettingsForm.resx">
+      <DependentUpon>OutlineSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OutlineSettingsForm.ru.resx">
+      <DependentUpon>OutlineSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OutlineSubtotalForm.de.resx">
+      <DependentUpon>OutlineSubtotalForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OutlineSubtotalForm.es.resx">
+      <DependentUpon>OutlineSubtotalForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OutlineSubtotalForm.fr.resx">
+      <DependentUpon>OutlineSubtotalForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OutlineSubtotalForm.resx">
+      <DependentUpon>OutlineSubtotalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OutlineSubtotalForm.ru.resx">
+      <DependentUpon>OutlineSubtotalForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PageSetupForm.de.resx">
+      <DependentUpon>PageSetupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PageSetupForm.es.resx">
+      <DependentUpon>PageSetupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PageSetupForm.fr.resx">
+      <DependentUpon>PageSetupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PageSetupForm.ja.resx">
+      <DependentUpon>PageSetupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PageSetupForm.resx">
+      <DependentUpon>PageSetupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PageSetupForm.ru.resx">
+      <DependentUpon>PageSetupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasswordRequestForm.de.resx">
+      <DependentUpon>PasswordRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasswordRequestForm.es.resx">
+      <DependentUpon>PasswordRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasswordRequestForm.fr.resx">
+      <DependentUpon>PasswordRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasswordRequestForm.resx">
+      <DependentUpon>PasswordRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasswordRequestForm.ru.resx">
+      <DependentUpon>PasswordRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.ar.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.bg.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.ca.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.cs.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.da.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.de-CH.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.de.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.el.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.es.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.fa.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.fi.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.fr.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.he.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.hr.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.hu.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.hy.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.is.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.it.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.ja.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.ko.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.lt.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.lv.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.mk.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.nl.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.no.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.pl.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.pt-BR.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.pt.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.ro.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.ru.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.sk.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.sl.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.sr-Cyrl-RS.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.sr-Latn-BA.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.sr-Latn-RS.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.sv.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.ta.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.tr.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.uk.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.vi.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.zh-CN.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.zh-Hans.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.zh-Hant.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialForm.zh-TW.resx">
+      <DependentUpon>PasteSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.ar.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.bg.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.ca.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.cs.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.da.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.de-CH.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.de.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.el.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.es.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.fa.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.fi.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.fr.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.he.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.hr.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.hu.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.hy.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.is.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.it.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.ja.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.ko.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.lt.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.lv.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.mk.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.nl.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.no.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.pl.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.pt-BR.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.pt.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.ro.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.ru.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.sk.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.sl.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.sr-Cyrl-RS.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.sr-Latn-BA.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.sr-Latn-RS.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.sv.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.ta.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.tr.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.uk.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.vi.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.zh-CN.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.zh-Hans.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.zh-Hant.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasteSpecialLocalForm.zh-TW.resx">
+      <DependentUpon>PasteSpecialLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableCalculatedFieldAndItemForm.de.resx">
+      <DependentUpon>PivotTableCalculatedFieldAndItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableCalculatedFieldAndItemForm.es.resx">
+      <DependentUpon>PivotTableCalculatedFieldAndItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableCalculatedFieldAndItemForm.fr.resx">
+      <DependentUpon>PivotTableCalculatedFieldAndItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableCalculatedFieldAndItemForm.resx">
+      <DependentUpon>PivotTableCalculatedFieldAndItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableCalculatedFieldAndItemForm.ru.resx">
+      <DependentUpon>PivotTableCalculatedFieldAndItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableCalculatedItemSolveOrderForm.de.resx">
+      <DependentUpon>PivotTableCalculatedItemSolveOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableCalculatedItemSolveOrderForm.es.resx">
+      <DependentUpon>PivotTableCalculatedItemSolveOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableCalculatedItemSolveOrderForm.fr.resx">
+      <DependentUpon>PivotTableCalculatedItemSolveOrderForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableCalculatedItemSolveOrderForm.resx">
+      <DependentUpon>PivotTableCalculatedItemSolveOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableCalculatedItemSolveOrderForm.ru.resx">
+      <DependentUpon>PivotTableCalculatedItemSolveOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableDateFilterForm.de.resx">
+      <DependentUpon>PivotTableDateFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableDateFilterForm.es.resx">
+      <DependentUpon>PivotTableDateFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableDateFilterForm.fr.resx">
+      <DependentUpon>PivotTableDateFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableDateFilterForm.resx">
+      <DependentUpon>PivotTableDateFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableDateFilterForm.ru.resx">
+      <DependentUpon>PivotTableDateFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableFieldsFilterItemsForm.de.resx">
+      <DependentUpon>PivotTableFieldsFilterItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableFieldsFilterItemsForm.es.resx">
+      <DependentUpon>PivotTableFieldsFilterItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableFieldsFilterItemsForm.fr.resx">
+      <DependentUpon>PivotTableFieldsFilterItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableFieldsFilterItemsForm.resx">
+      <DependentUpon>PivotTableFieldsFilterItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableFieldsFilterItemsForm.ru.resx">
+      <DependentUpon>PivotTableFieldsFilterItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableGroupFieldForm.de.resx">
+      <DependentUpon>PivotTableGroupFieldForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableGroupFieldForm.es.resx">
+      <DependentUpon>PivotTableGroupFieldForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableGroupFieldForm.fr.resx">
+      <DependentUpon>PivotTableGroupFieldForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableGroupFieldForm.resx">
+      <DependentUpon>PivotTableGroupFieldForm.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PivotTableGroupFieldForm.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableGroupFieldForm.ru.resx">
+      <DependentUpon>PivotTableGroupFieldForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableLabelFilterForm.de.resx">
+      <DependentUpon>PivotTableLabelFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableLabelFilterForm.es.resx">
+      <DependentUpon>PivotTableLabelFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableLabelFilterForm.fr.resx">
+      <DependentUpon>PivotTableLabelFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableLabelFilterForm.resx">
+      <DependentUpon>PivotTableLabelFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableLabelFilterForm.ru.resx">
+      <DependentUpon>PivotTableLabelFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableMoreSortOptionsForm.de.resx">
+      <DependentUpon>PivotTableMoreSortOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableMoreSortOptionsForm.es.resx">
+      <DependentUpon>PivotTableMoreSortOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableMoreSortOptionsForm.fr.resx">
+      <DependentUpon>PivotTableMoreSortOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableMoreSortOptionsForm.resx">
+      <DependentUpon>PivotTableMoreSortOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableMoreSortOptionsForm.ru.resx">
+      <DependentUpon>PivotTableMoreSortOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableNumberFormatForm.de.resx">
+      <DependentUpon>PivotTableNumberFormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableNumberFormatForm.es.resx">
+      <DependentUpon>PivotTableNumberFormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableNumberFormatForm.fr.resx">
+      <DependentUpon>PivotTableNumberFormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableNumberFormatForm.resx">
+      <DependentUpon>PivotTableNumberFormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableNumberFormatForm.ru.resx">
+      <DependentUpon>PivotTableNumberFormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableShowValuesAsForm.de.resx">
+      <DependentUpon>PivotTableShowValuesAsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableShowValuesAsForm.es.resx">
+      <DependentUpon>PivotTableShowValuesAsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableShowValuesAsForm.fr.resx">
+      <DependentUpon>PivotTableShowValuesAsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableShowValuesAsForm.resx">
+      <DependentUpon>PivotTableShowValuesAsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableShowValuesAsForm.ru.resx">
+      <DependentUpon>PivotTableShowValuesAsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableSortOptionsForm.de.resx">
+      <DependentUpon>PivotTableSortOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableSortOptionsForm.es.resx">
+      <DependentUpon>PivotTableSortOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableSortOptionsForm.resx">
+      <DependentUpon>PivotTableSortOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableSortOptionsForm.ru.resx">
+      <DependentUpon>PivotTableSortOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableTop10FilterForm.de.resx">
+      <DependentUpon>PivotTableTop10FilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableTop10FilterForm.es.resx">
+      <DependentUpon>PivotTableTop10FilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableTop10FilterForm.fr.resx">
+      <DependentUpon>PivotTableTop10FilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableTop10FilterForm.resx">
+      <DependentUpon>PivotTableTop10FilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableTop10FilterForm.ru.resx">
+      <DependentUpon>PivotTableTop10FilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableValueFilterForm.de.resx">
+      <DependentUpon>PivotTableValueFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableValueFilterForm.es.resx">
+      <DependentUpon>PivotTableValueFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableValueFilterForm.fr.resx">
+      <DependentUpon>PivotTableValueFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableValueFilterForm.resx">
+      <DependentUpon>PivotTableValueFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PivotTableValueFilterForm.ru.resx">
+      <DependentUpon>PivotTableValueFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectChartsheetForm.de.resx">
+      <DependentUpon>ProtectChartsheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectChartsheetForm.es.resx">
+      <DependentUpon>ProtectChartsheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectChartsheetForm.resx">
+      <DependentUpon>ProtectChartsheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectChartsheetForm.ru.resx">
+      <DependentUpon>ProtectChartsheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectedRangeManagerForm.de.resx">
+      <DependentUpon>ProtectedRangeManagerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectedRangeManagerForm.es.resx">
+      <DependentUpon>ProtectedRangeManagerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectedRangeManagerForm.fr.resx">
+      <DependentUpon>ProtectedRangeManagerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectedRangeManagerForm.resx">
+      <DependentUpon>ProtectedRangeManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectedRangeManagerForm.ru.resx">
+      <DependentUpon>ProtectedRangeManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectRangeForm.de.resx">
+      <DependentUpon>ProtectRangeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectRangeForm.es.resx">
+      <DependentUpon>ProtectRangeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectRangeForm.fr.resx">
+      <DependentUpon>ProtectRangeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectRangeForm.resx">
+      <DependentUpon>ProtectRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectRangeForm.ru.resx">
+      <DependentUpon>ProtectRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectSheetForm.de.resx">
+      <DependentUpon>ProtectSheetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectSheetForm.es.resx">
+      <DependentUpon>ProtectSheetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectSheetForm.fr.resx">
+      <DependentUpon>ProtectSheetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectSheetForm.resx">
+      <DependentUpon>ProtectSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectSheetForm.ru.resx">
+      <DependentUpon>ProtectSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectWorkbookForm.de.resx">
+      <DependentUpon>ProtectWorkbookForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectWorkbookForm.es.resx">
+      <DependentUpon>ProtectWorkbookForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectWorkbookForm.fr.resx">
+      <DependentUpon>ProtectWorkbookForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectWorkbookForm.resx">
+      <DependentUpon>ProtectWorkbookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProtectWorkbookForm.ru.resx">
+      <DependentUpon>ProtectWorkbookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.ar.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.bg.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.ca.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.cs.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.da.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.de-CH.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.de.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.el.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.es.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.fa.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.fi.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.fr.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.he.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.hr.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.hu.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.hy.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.is.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.it.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.ja.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.ko.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.lt.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.lv.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.mk.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.nl.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.no.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.pl.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.pt-BR.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.pt.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.ro.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.ru.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.sk.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.sl.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.sr-Cyrl-RS.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.sr-Latn-BA.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.sr-Latn-RS.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.sv.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.ta.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.tr.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.uk.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.vi.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.zh-CN.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.zh-Hans.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.zh-Hant.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RenameSheetForm.zh-TW.resx">
+      <DependentUpon>RenameSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RowHeightForm.de.resx">
+      <DependentUpon>RowHeightForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RowHeightForm.es.resx">
+      <DependentUpon>RowHeightForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RowHeightForm.fr.resx">
+      <DependentUpon>RowHeightForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RowHeightForm.resx">
+      <DependentUpon>RowHeightForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RowHeightForm.ru.resx">
+      <DependentUpon>RowHeightForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectDataMemberForm.de.resx">
+      <DependentUpon>SelectDataMemberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectDataMemberForm.es.resx">
+      <DependentUpon>SelectDataMemberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectDataMemberForm.ja.resx">
+      <DependentUpon>SelectDataMemberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectDataMemberForm.resx">
+      <DependentUpon>SelectDataMemberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectDataMemberForm.ru.resx">
+      <DependentUpon>SelectDataMemberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectDataSourceForm.de.resx">
+      <DependentUpon>SelectDataSourceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectDataSourceForm.resx">
+      <DependentUpon>SelectDataSourceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectDataSourceForm.ru.resx">
+      <DependentUpon>SelectDataSourceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SheetActivationForm.de.resx">
+      <DependentUpon>SheetActivationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SheetActivationForm.es.resx">
+      <DependentUpon>SheetActivationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SheetActivationForm.resx">
+      <DependentUpon>SheetActivationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SheetActivationForm.ru.resx">
+      <DependentUpon>SheetActivationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SimpleFilterForm.de.resx">
+      <DependentUpon>SimpleFilterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SimpleFilterForm.es.resx">
+      <DependentUpon>SimpleFilterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SimpleFilterForm.fr.resx">
+      <DependentUpon>SimpleFilterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SimpleFilterForm.resx">
+      <DependentUpon>SimpleFilterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SimpleFilterForm.ru.resx">
+      <DependentUpon>SimpleFilterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortWarningForm.de.resx">
+      <DependentUpon>SortWarningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortWarningForm.es.resx">
+      <DependentUpon>SortWarningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortWarningForm.ja.resx">
+      <DependentUpon>SortWarningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortWarningForm.resx">
+      <DependentUpon>SortWarningForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortWarningForm.ru.resx">
+      <DependentUpon>SortWarningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Top10FilterForm.de.resx">
+      <DependentUpon>Top10FilterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Top10FilterForm.es.resx">
+      <DependentUpon>Top10FilterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Top10FilterForm.fr.resx">
+      <DependentUpon>Top10FilterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Top10FilterForm.resx">
+      <DependentUpon>Top10FilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Top10FilterForm.ru.resx">
+      <DependentUpon>Top10FilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.ar.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.bg.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.ca.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.cs.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.da.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.de-CH.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.de.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.el.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.es.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.fa.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.fi.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.fr.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.he.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.hr.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.hu.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.hy.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.is.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.it.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.ja.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.ko.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.lt.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.lv.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.mk.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.nl.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.no.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.pl.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.pt-BR.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.pt.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.ro.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.ru.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.sk.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.sl.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.sr-Cyrl-RS.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.sr-Latn-BA.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.sr-Latn-RS.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.sv.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.ta.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.tr.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.uk.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.vi.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.zh-CN.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.zh-Hans.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.zh-Hant.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnhideSheetForm.zh-TW.resx">
+      <DependentUpon>UnhideSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnprotectRangeForm.de.resx">
+      <DependentUpon>UnprotectRangeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnprotectRangeForm.es.resx">
+      <DependentUpon>UnprotectRangeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnprotectRangeForm.fr.resx">
+      <DependentUpon>UnprotectRangeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnprotectRangeForm.resx">
+      <DependentUpon>UnprotectRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnprotectRangeForm.ru.resx">
+      <DependentUpon>UnprotectRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnprotectSheetForm.de.resx">
+      <DependentUpon>UnprotectSheetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnprotectSheetForm.es.resx">
+      <DependentUpon>UnprotectSheetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnprotectSheetForm.fr.resx">
+      <DependentUpon>UnprotectSheetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnprotectSheetForm.resx">
+      <DependentUpon>UnprotectSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnprotectSheetForm.ru.resx">
+      <DependentUpon>UnprotectSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnprotectWorkbookForm.de.resx">
+      <DependentUpon>UnprotectWorkbookForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnprotectWorkbookForm.es.resx">
+      <DependentUpon>UnprotectWorkbookForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnprotectWorkbookForm.fr.resx">
+      <DependentUpon>UnprotectWorkbookForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnprotectWorkbookForm.resx">
+      <DependentUpon>UnprotectWorkbookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnprotectWorkbookForm.ru.resx">
+      <DependentUpon>UnprotectWorkbookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewZoomForm.de.resx">
+      <DependentUpon>ViewZoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewZoomForm.es.resx">
+      <DependentUpon>ViewZoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewZoomForm.fr.resx">
+      <DependentUpon>ViewZoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewZoomForm.resx">
+      <DependentUpon>ViewZoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewZoomForm.ru.resx">
+      <DependentUpon>ViewZoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+  </PropertyGroup>
+</Project>

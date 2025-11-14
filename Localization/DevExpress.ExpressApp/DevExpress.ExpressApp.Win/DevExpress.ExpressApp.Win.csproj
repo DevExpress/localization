@@ -1,0 +1,2810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9992A4B1-AD48-4AE4-8D21-B96D0DDEE421}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevExpress.ExpressApp.Win</RootNamespace>
+    <AssemblyName>DevExpress.ExpressApp.Win.v25.2</AssemblyName>
+<SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\DevExpress.DLL\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\DevExpress.DLL\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="Core\ModelEditor\AspectManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\ModelEditor\NewAspectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Templates\Bars\DetailFormV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Templates\Bars\LightStyleMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Templates\Bars\MainFormV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Templates\Bars\NestedFrameTemplateV2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Templates\DetailViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Templates\LookupControlTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Templates\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Templates\NestedFrameTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Templates\PopupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Templates\Ribbon\DetailRibbonFormV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Templates\Ribbon\LightStyleMainRibbonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Templates\Ribbon\MainRibbonFormV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Templates\Ribbon\OutlookStyleMainRibbonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ModuleLocalizationResources.ar.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.bg.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.ca.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.cs.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.da.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.de-CH.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.de.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.el.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.es.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.et.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.fa.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.fi.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.fr.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.he.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.hi.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.hr.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.hu.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.hy.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.is.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.it.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.ja.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.ko.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.lt.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.lv.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.mk.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.nl.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.no.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.pl.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.pt-BR.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.pt.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.ro.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.ru.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.sk.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.sl.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.sr-Cyrl-RS.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.sr-Latn-RS.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.sv.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.ta.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.th.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.tr.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.uk.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.vi.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.zh-CN.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.zh-Hans.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.zh-Hant.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.zh-TW.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.ru.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.vi.resx" />
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.th.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.ar.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.bg.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.ca.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.cs.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.da.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.de-CH.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.de.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.el.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.es.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.et.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.fa.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.fi.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.fr.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.he.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.hr.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.hu.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.hy.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.is.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.it.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.ja.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.ko.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.lt.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.lv.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.mk.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.nl.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.no.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.pl.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.pt-BR.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.pt.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.ro.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.ru.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.sk.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.sl.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.sr-Cyrl-RS.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.sr-Latn-BA.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.sr-Latn-RS.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.sv.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.ta.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.th.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.tr.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.uk.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.vi.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.zh-CN.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.zh-Hans.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.zh-Hant.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.zh-TW.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.th.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.ar.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.bg.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.ca.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.cs.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.da.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.de-CH.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.de.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.el.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.es.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.et.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.fa.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.fi.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.fr.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.he.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.hr.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.hu.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.hy.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.is.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.it.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.ja.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.ko.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.lt.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.lv.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.mk.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.nl.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.no.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.pl.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.pt-BR.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.pt.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.ro.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.ru.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.sk.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.sl.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.sr-Cyrl-RS.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.sr-Latn-BA.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.sr-Latn-RS.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.sv.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.ta.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.th.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.tr.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.uk.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.vi.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.zh-CN.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.zh-Hans.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.zh-Hant.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.zh-TW.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.th.resx">
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.th.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.th.resx">
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.th.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.ar.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.bg.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.ca.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.cs.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.da.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.de-CH.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.de.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.el.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.es.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.et.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.fa.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.fi.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.fr.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.he.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.hr.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.hu.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.hy.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.is.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.it.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.ja.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.ko.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.lt.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.lv.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.mk.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.nl.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.no.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.pl.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.pt-BR.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.pt.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.ro.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.ru.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.sk.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.sl.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.sr-Cyrl-RS.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.sr-Latn-BA.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.sr-Latn-RS.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.sv.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.ta.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.th.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.tr.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.uk.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.vi.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.zh-CN.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.zh-Hans.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.zh-Hant.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.zh-TW.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.th.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.th.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.et.resx" />
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.ar.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.bg.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.ca.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.cs.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.da.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.de-CH.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.de.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.el.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.es.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.et.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.fa.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.fi.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.fr.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.he.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.hr.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.hu.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.hy.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.is.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.it.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.ja.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.ko.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.lt.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.lv.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.mk.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.nl.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.no.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.pl.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.pt-BR.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.pt.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.ro.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.ru.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.sk.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.sl.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.sr-Cyrl-RS.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.sr-Latn-BA.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.sr-Latn-RS.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.sv.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.ta.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.tr.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.uk.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.vi.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.zh-CN.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.zh-Hans.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.zh-Hant.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.zh-TW.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.ar.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.bg.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.ca.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.cs.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.da.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.de-CH.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.de.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.el.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.es.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.et.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.fa.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.fi.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.fr.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.he.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.hr.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.hu.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.hy.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.is.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.it.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.ja.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.ko.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.lt.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.lv.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.mk.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.nl.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.no.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.pl.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.pt-BR.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.pt.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.ro.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.ru.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.sk.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.sl.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.sr-Cyrl-RS.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.sr-Latn-BA.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.sr-Latn-RS.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.sv.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.ta.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.tr.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.uk.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.vi.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.zh-CN.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.zh-Hans.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.zh-Hant.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.zh-TW.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.et.resx">
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.et.resx">
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.et.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.et.resx">
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.tr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.ta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.sv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.sr-Latn-BA.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.sl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.sk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.ro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.hu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.fi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.es.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.de-CH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.da.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.ca.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.tr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.ta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.sv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.sl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.sk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.ro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.hu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.fi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.de-CH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.da.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.ca.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.tr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.ta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.sv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.sl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.sk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.ro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.hu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.fi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.de-CH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.da.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.ca.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.tr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.ta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.sv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.sl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.sk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.ro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.hu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.fi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.es.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.de-CH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.da.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.ca.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.tr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.ta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.sv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.sl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.sk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.ro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.hu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.fi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.de-CH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.da.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.ca.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.zh-TW.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.zh-Hant.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.zh-Hans.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.vi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.uk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.tr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.ta.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.sv.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.sl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.sk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.ro.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.pt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.no.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.mk.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.lv.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.lt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.ko.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.is.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.hy.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.he.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.fi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.fa.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.es.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.el.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.de-CH.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.da.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.cs.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.ca.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.bg.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.ar.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.vi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.tr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.ta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.sv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.sr-Latn-BA.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.sl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.sk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.ro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.pl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.hu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.hr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.fi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.es.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.de-CH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.da.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.ca.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.zh-Hant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.zh-Hans.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.vi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.uk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.tr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.ta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.sv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.sr-Latn-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.sr-Latn-BA.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.sr-Cyrl-RS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.sl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.sk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.ro.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.pt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.pl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.mk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.lv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.lt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.ko.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.is.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.hy.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.hu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.hr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.he.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.fr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.fi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.fa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.es.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.el.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.de-CH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.da.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.ca.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.bg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.ar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.sr-Latn-BA.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.it.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.nl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.hu.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.nl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.ar.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.bg.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.ca.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.cs.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.da.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.de-CH.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.de.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.el.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.es.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.et.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.fa.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.fi.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.fr.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.he.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.hr.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.hu.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.hy.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.is.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.it.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.ja.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.ko.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.lt.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.lv.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.mk.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.nl.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.no.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.pl.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.pt-BR.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.pt.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.ro.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.ru.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.sk.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.sl.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.sr-Cyrl-RS.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.sr-Latn-BA.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.sr-Latn-RS.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.sv.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.ta.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.tr.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.uk.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.vi.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.zh-CN.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.zh-Hans.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.zh-Hant.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.zh-TW.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.ar.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.bg.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.ca.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.cs.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.da.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.de-CH.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.de.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.el.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.es.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.et.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.fa.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.fi.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.fr.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.he.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.hr.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.hu.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.hy.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.is.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.it.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.ja.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.ko.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.lt.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.lv.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.mk.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.nl.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.no.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.pl.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.pt-BR.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.pt.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.ro.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.ru.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.sk.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.sl.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.sr-Cyrl-RS.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.sr-Latn-BA.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.sr-Latn-RS.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.sv.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.ta.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.tr.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.uk.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.vi.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.zh-CN.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.zh-Hans.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.zh-Hant.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.zh-TW.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.ar.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.bg.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.ca.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.cs.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.da.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.de-CH.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.de.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.el.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.es.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.et.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.fa.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.fi.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.fr.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.he.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.hr.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.hu.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.hy.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.is.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.it.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.ja.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.ko.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.lt.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.lv.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.mk.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.nl.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.no.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.pl.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.pt-BR.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.pt.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.ro.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.ru.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.sk.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.sl.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.sr-Cyrl-RS.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.sr-Latn-BA.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.sr-Latn-RS.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.sv.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.ta.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.tr.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.uk.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.vi.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.zh-CN.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.zh-Hans.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.zh-Hant.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.zh-TW.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Templates\DetailViewForm.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.it.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.ru.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Templates\DetailViewForm.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.es.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.es.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.es.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Templates\DetailViewForm.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.de.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.ja.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.vi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.vi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.vi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.vi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.vi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.hr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.hr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.hr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.hr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.hr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.cs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.hr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.pt-BR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\DetailViewForm.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.pl.resx" />
+    <EmbeddedResource Include="Templates\DetailViewForm.pl.resx">
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.pl.resx">
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.pl.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.pl.resx">
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.pl.resx">
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="Templates\DetailViewForm.sr-Latn-BA.resx">
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.sr-Latn-BA.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.sr-Latn-BA.resx">
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.et.resx">
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.hi.resx">
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.th.resx">
+      <DependentUpon>AspectManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.et.resx">
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.hi.resx">
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\ModelEditor\NewAspectForm.th.resx">
+      <DependentUpon>NewAspectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.hi.resx" />
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.th.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.ar.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.bg.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.ca.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.cs.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.da.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.de-CH.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.de.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.el.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.es.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.et.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.fa.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.fi.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.fr.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.he.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.hi.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.hr.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.hu.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.hy.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.is.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.it.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.ja.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.ko.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.lt.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.lv.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.mk.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.nl.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.no.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.pl.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.pt-BR.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.pt.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.ro.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.sk.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.sl.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.sr-Cyrl-RS.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.sr-Latn-RS.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.sv.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.ta.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.th.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.tr.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.uk.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.zh-CN.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.zh-Hans.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.zh-Hant.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.zh-TW.resx" />
+    <EmbeddedResource Include="Templates\DetailViewForm.hi.resx">
+      <DependentUpon>DetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.hi.resx">
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.th.resx">
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\MainForm.hi.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\NestedFrameTemplate.hi.resx">
+      <DependentUpon>NestedFrameTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.et.resx">
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.hi.resx">
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.th.resx">
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.hi.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.hi.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.hi.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.hi.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.hi.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.hi.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.hi.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.hi.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

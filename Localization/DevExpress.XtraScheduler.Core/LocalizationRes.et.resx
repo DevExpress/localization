@@ -1,0 +1,868 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SchedulerStringId.Abbr_Days" xml:space="preserve">
+    <value>päeva</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Hour" xml:space="preserve">
+    <value>tund</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Hours" xml:space="preserve">
+    <value>tundi</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_HoursShort" xml:space="preserve">
+    <value>H</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Minute" xml:space="preserve">
+    <value>Minut</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Minutes" xml:space="preserve">
+    <value>minutit</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_MinutesShort1" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_MinutesShort2" xml:space="preserve">
+    <value>MIN</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Month" xml:space="preserve">
+    <value>kuu</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Week" xml:space="preserve">
+    <value>Nädal</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Weeks" xml:space="preserve">
+    <value>nädala</value>
+  </data>
+  <data name="SchedulerStringId.Abbr_Year" xml:space="preserve">
+    <value>aasta</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_Anniversary" xml:space="preserve">
+    <value>Aastapäeva</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_Birthday" xml:space="preserve">
+    <value>Sünnipäev</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_Business" xml:space="preserve">
+    <value>Äri</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_Important" xml:space="preserve">
+    <value>Oluline</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_MustAttend" xml:space="preserve">
+    <value>Peavad läbima</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_NeedsPreparation" xml:space="preserve">
+    <value>Vajab ettevalmistust</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_None" xml:space="preserve">
+    <value>Ükski</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_PhoneCall" xml:space="preserve">
+    <value>Telefonikõne</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_TravelRequired" xml:space="preserve">
+    <value>Reisimine nõutav</value>
+  </data>
+  <data name="SchedulerStringId.AppointmentLabel_Vacation" xml:space="preserve">
+    <value>Puhkus</value>
+  </data>
+  <data name="SchedulerStringId.Caption_10Minutes" xml:space="preserve">
+    <value>10 minutit</value>
+  </data>
+  <data name="SchedulerStringId.Caption_15Minutes" xml:space="preserve">
+    <value>15 minutit</value>
+  </data>
+  <data name="SchedulerStringId.Caption_20Minutes" xml:space="preserve">
+    <value>20 minutit</value>
+  </data>
+  <data name="SchedulerStringId.Caption_30Minutes" xml:space="preserve">
+    <value>30 minutit</value>
+  </data>
+  <data name="SchedulerStringId.Caption_5Minutes" xml:space="preserve">
+    <value>5 minutit</value>
+  </data>
+  <data name="SchedulerStringId.Caption_60Minutes" xml:space="preserve">
+    <value>60 minutit</value>
+  </data>
+  <data name="SchedulerStringId.Caption_6Minutes" xml:space="preserve">
+    <value>6 minutit</value>
+  </data>
+  <data name="SchedulerStringId.Caption_AllDay" xml:space="preserve">
+    <value>Kogu päeva</value>
+  </data>
+  <data name="SchedulerStringId.Caption_AllResources" xml:space="preserve">
+    <value>Kõik ressursid</value>
+  </data>
+  <data name="SchedulerStringId.Caption_Appointment" xml:space="preserve">
+    <value>{0} – kohtumise</value>
+  </data>
+  <data name="SchedulerStringId.Caption_CheckMappings" xml:space="preserve">
+    <value>Kontrollida vastendused</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ColorConverterBlackAndWhite" xml:space="preserve">
+    <value>Must ja valge</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ColorConverterFullColor" xml:space="preserve">
+    <value>Täisvärvides</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ColorConverterGrayScale" xml:space="preserve">
+    <value>Gray Scale</value>
+  </data>
+  <data name="SchedulerStringId.Caption_DailyPrintStyle" xml:space="preserve">
+    <value>Igapäevase stiili</value>
+  </data>
+  <data name="SchedulerStringId.Caption_DecreaseVisibleResourcesCount" xml:space="preserve">
+    <value>Nähtavate vahendite arv väheneb</value>
+  </data>
+  <data name="SchedulerStringId.Caption_Event" xml:space="preserve">
+    <value>{0} – sündmuse</value>
+  </data>
+  <data name="SchedulerStringId.Caption_FirstVisibleResources" xml:space="preserve">
+    <value>Esimene</value>
+  </data>
+  <data name="SchedulerStringId.Caption_Free" xml:space="preserve">
+    <value>Tasuta</value>
+  </data>
+  <data name="SchedulerStringId.Caption_FullWeekViewDescription" xml:space="preserve">
+    <value>Vaate kogu nädal aktiveerimine Korraldab kohtumisi konkreetseks nädalaks tihendatud kujul.</value>
+  </data>
+  <data name="SchedulerStringId.Caption_GanttViewDescription" xml:space="preserve">
+    <value>minna Gantti diagrammina vaadata. Projekti juhtimise vaade, milles kuvatakse kohtumised ja nende sõltuvusi ajaga seostatuse.</value>
+  </data>
+  <data name="SchedulerStringId.Caption_GroupByDateDescription" xml:space="preserve">
+    <value>Rühm kohtumiste kuupäevade järgi.</value>
+  </data>
+  <data name="SchedulerStringId.Caption_GroupByNone" xml:space="preserve">
+    <value>Ükski</value>
+  </data>
+  <data name="SchedulerStringId.Caption_GroupByNoneDescription" xml:space="preserve">
+    <value>Rühmituse tühistada kohtumisi.</value>
+  </data>
+  <data name="SchedulerStringId.Caption_GroupByResourceDescription" xml:space="preserve">
+    <value>Grupi kohtumiste ressurss.</value>
+  </data>
+  <data name="SchedulerStringId.Caption_GroupByResources" xml:space="preserve">
+    <value>Ressursid</value>
+  </data>
+  <data name="SchedulerStringId.Caption_IncreaseVisibleResourcesCount" xml:space="preserve">
+    <value>Suurendada nähtavat ressursside arvu</value>
+  </data>
+  <data name="SchedulerStringId.Caption_LastVisibleResources" xml:space="preserve">
+    <value>Viimase</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ModifyAppointmentDependencyMappingsTransactionDescription" xml:space="preserve">
+    <value>Muuta kohtumise sõltuvus vastendused</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ModifyAppointmentDependencyStorageTransactionDescription" xml:space="preserve">
+    <value>AppointmentDependency mäluruumi muutmiseks</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ModifyAppointmentMappingsTransactionDescription" xml:space="preserve">
+    <value>Muuta kohtumise vastendused</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ModifyAppointmentStorageTransactionDescription" xml:space="preserve">
+    <value>Kohtumise mäluruumi muutmiseks</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ModifyResourceMappingsTransactionDescription" xml:space="preserve">
+    <value>Muuda ressursi vastendused</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ModifyResourceStorageTransactionDescription" xml:space="preserve">
+    <value>Ressursi mäluruumi muutmiseks</value>
+  </data>
+  <data name="SchedulerStringId.Caption_MonthlyPrintStyle" xml:space="preserve">
+    <value>Igakuine stiil</value>
+  </data>
+  <data name="SchedulerStringId.Caption_MonthViewDescription" xml:space="preserve">
+    <value>Lüliti kuu (mitme nädala) vaade. Kalendri vaadet abiks pikaajalised kavad.</value>
+  </data>
+  <data name="SchedulerStringId.Caption_NAppointmentsAreSelected" xml:space="preserve">
+    <value>{0} kohtumised valitakse</value>
+  </data>
+  <data name="SchedulerStringId.Caption_NextAppointment" xml:space="preserve">
+    <value>Järgmisele kohtumisele</value>
+  </data>
+  <data name="SchedulerStringId.Caption_NextVisibleResources" xml:space="preserve">
+    <value>Järgmise</value>
+  </data>
+  <data name="SchedulerStringId.Caption_NextVisibleResourcesPage" xml:space="preserve">
+    <value>Järgmine lehekülg</value>
+  </data>
+  <data name="SchedulerStringId.Caption_NoneReminder" xml:space="preserve">
+    <value>Ükski</value>
+  </data>
+  <data name="SchedulerStringId.Caption_PrevAppointment" xml:space="preserve">
+    <value>Eelmisele kohtumisele</value>
+  </data>
+  <data name="SchedulerStringId.Caption_PrevVisibleResources" xml:space="preserve">
+    <value>Eelmine</value>
+  </data>
+  <data name="SchedulerStringId.Caption_PrevVisibleResourcesPage" xml:space="preserve">
+    <value>Eelmine lehekülg</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ReadOnly" xml:space="preserve">
+    <value>[kirjutuskaitstud]</value>
+  </data>
+  <data name="SchedulerStringId.Caption_RecurrenceEndTime" xml:space="preserve">
+    <value>Lõpp:</value>
+  </data>
+  <data name="SchedulerStringId.Caption_RecurrenceLocation" xml:space="preserve">
+    <value>Asukoht:</value>
+  </data>
+  <data name="SchedulerStringId.Caption_RecurrenceShowTimeAs" xml:space="preserve">
+    <value>Näita aega kui:</value>
+  </data>
+  <data name="SchedulerStringId.Caption_RecurrenceStartTime" xml:space="preserve">
+    <value>Alustada:</value>
+  </data>
+  <data name="SchedulerStringId.Caption_RecurrenceSubject" xml:space="preserve">
+    <value>Teema:</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ResourceAll" xml:space="preserve">
+    <value>(Kõik)</value>
+  </data>
+  <data name="SchedulerStringId.Caption_SetupAppointmentMappings" xml:space="preserve">
+    <value>Setup kohtumise vastendused</value>
+  </data>
+  <data name="SchedulerStringId.Caption_SetupAppointmentStorage" xml:space="preserve">
+    <value>Setup kohtumise ladustamise</value>
+  </data>
+  <data name="SchedulerStringId.Caption_SetupDependencyMappings" xml:space="preserve">
+    <value>Seadistus sõltuvus vastendused</value>
+  </data>
+  <data name="SchedulerStringId.Caption_SetupResourceMappings" xml:space="preserve">
+    <value>Setup ressursi vastendused</value>
+  </data>
+  <data name="SchedulerStringId.Caption_SetupResourceStorage" xml:space="preserve">
+    <value>Setup ressursi ladustamise</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ShadingApplyToAppointments" xml:space="preserve">
+    <value>Kohtumised</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ShadingApplyToAppointmentStatuses" xml:space="preserve">
+    <value>kohtumise staatused</value>
+  </data>
+  <data name="SchedulerStringId.Caption_ShadingApplyToHeaders" xml:space="preserve">
+    <value>Päised</value>
+  </data>
+  <data name="SchedulerStringId.Caption_Tentative" xml:space="preserve">
+    <value>Ebalev</value>
+  </data>
+  <data name="SchedulerStringId.Caption_TimelineViewDescription" xml:space="preserve">
+    <value>lülitiebalev. Krundid kohtumiste aja suhtes.</value>
+  </data>
+  <data name="SchedulerStringId.Caption_UntitledAppointment" xml:space="preserve">
+    <value>Pealkirjata</value>
+  </data>
+  <data name="SchedulerStringId.Caption_VisibleResources" xml:space="preserve">
+    <value>Nähtavate vahendite</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekDaysEveryDay" xml:space="preserve">
+    <value>Päev</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekDaysWeekendDays" xml:space="preserve">
+    <value>Puhkepäev</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeeklyPrintStyle" xml:space="preserve">
+    <value>Iganädalane stiil</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekOfMonthFirst" xml:space="preserve">
+    <value>Esimene</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekOfMonthFourth" xml:space="preserve">
+    <value>Neljas</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekOfMonthLast" xml:space="preserve">
+    <value>Viimase</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekOfMonthSecond" xml:space="preserve">
+    <value>Teine</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekOfMonthThird" xml:space="preserve">
+    <value>Kolmas</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WeekViewDescription" xml:space="preserve">
+    <value>Lüliti nädala esitus. Korraldab kohtumisi konkreetseks nädalaks tihendatud kujul.</value>
+  </data>
+  <data name="SchedulerStringId.Caption_WorkWeekViewDescription" xml:space="preserve">
+    <value>Lüliti töönädala vaate. Üksikasjalik vaade teatud nädala tööpäevade.</value>
+  </data>
+  <data name="SchedulerStringId.DefaultToolTipStringFormat_SplitAppointment" xml:space="preserve">
+    <value>{0}: samm {1}</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_CellsAutoHeight" xml:space="preserve">
+    <value>lubade kasutada aega lahtris automaatselt reguleerida oma suuruse mahutada kohtumised sisaldab.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_ChangeAppointmentReminderUI" xml:space="preserve">
+    <value>Valida valitud kohtumise meeldetuletust.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_ChangeSnapToCellsUI" xml:space="preserve">
+    <value>Määrata haaramine mode väljapanek kohtumiste aeg lahtrites.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_ChangeTimelineScaleWidth" xml:space="preserve">
+    <value>Saate määrata veeru laius pikslites baasi skaala.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_CompressWeekend" xml:space="preserve">
+    <value>Laupäeva ja pühapäeva saate jagada ühe veeru kuvamine.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_CreateAppointmentDependency" xml:space="preserve">
+    <value>Loo sõltuvus vahel kohtumised</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_DeleteAppointment" xml:space="preserve">
+    <value>Kustutada valitud appointment(s).</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_DeleteAppointmentDependency" xml:space="preserve">
+    <value>Kustuta kohtumine sõltuvus.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_DeleteOccurrence" xml:space="preserve">
+    <value>Kustuta kord.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_DeleteSeries" xml:space="preserve">
+    <value>Sarja kustutamine.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_EditAppointmentDependency" xml:space="preserve">
+    <value>Redigeerimiseks kohtumise sõltuvus.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_GotoToday" xml:space="preserve">
+    <value>Kuni praeguse kuupäevani praeguses vaates kuvatud kuupäeva muuta.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_LabelAs" xml:space="preserve">
+    <value>Muuta valitud nimetamise silt.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_NavigateBackward" xml:space="preserve">
+    <value>Sammu ajas tagasi pakutud praeguses vaates.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_NavigateForward" xml:space="preserve">
+    <value>Eelnevalt edasi aega pakutud praeguses vaates.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_NewAppointment" xml:space="preserve">
+    <value>Saate luua uue kohtumise.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_NewRecurringAppointment" xml:space="preserve">
+    <value>Luua uus korduvkohtumine.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_OpenAppointment" xml:space="preserve">
+    <value>Valitud kohtumise avada.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_OpenOccurrence" xml:space="preserve">
+    <value>Selle koosoleku esinemiskorra avada.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_OpenSchedule" xml:space="preserve">
+    <value>Ajakava importimiseks failist (.ics).</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_OpenSeries" xml:space="preserve">
+    <value>Selle koosolekute sarja avada.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_Print" xml:space="preserve">
+    <value>Saada nimekirjale otse vaikeprinterisse muutmata.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_PrintPageSetup" xml:space="preserve">
+    <value>Lehekülje ilmet kohandada ja konfigureerida erinevate prindisuvandid.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_PrintPreview" xml:space="preserve">
+    <value>Prindieelne eelvaade ja tehke muudatused.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_ShowTimeAs" xml:space="preserve">
+    <value>Valitud kohtumise olekut muuta.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_ShowWorkTimeOnly" xml:space="preserve">
+    <value>Kuva ainult tööajad kalender.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_TimeScalesMenu" xml:space="preserve">
+    <value>Kellaajaskaala muutmine.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_ToggleRecurrence" xml:space="preserve">
+    <value>Muuta valitud kohtumise korduvaks või redigeerida korduvusmustrit.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_ViewZoomIn" xml:space="preserve">
+    <value>Kuva sisu täpsemalt ülespoole tehakse.</value>
+  </data>
+  <data name="SchedulerStringId.DescCmd_ViewZoomOut" xml:space="preserve">
+    <value>Tehakse laiemalt vaadata vaate kuvamiseks tagi.</value>
+  </data>
+  <data name="SchedulerStringId.DisplayName_Appointment" xml:space="preserve">
+    <value>Kohtumine</value>
+  </data>
+  <data name="SchedulerStringId.Format_CopyNOf" xml:space="preserve">
+    <value>Koopia ({0}) {1}</value>
+  </data>
+  <data name="SchedulerStringId.Format_CopyOf" xml:space="preserve">
+    <value>Koopia {0}</value>
+  </data>
+  <data name="SchedulerStringId.MemoPrintDateFormat" xml:space="preserve">
+    <value>{0} {1} (2)</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_ChangeAppointmentReminderUI" xml:space="preserve">
+    <value>Meeldetuletus</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_ChangeTimelineScaleWidth" xml:space="preserve">
+    <value>Skaala laius</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_CompressWeekend" xml:space="preserve">
+    <value>Tihenda nädalavahetusel</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_DeleteOccurrence" xml:space="preserve">
+    <value>Kustuta kord</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_DeleteSeries" xml:space="preserve">
+    <value>Sarja kustutamine</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_NavigateBackward" xml:space="preserve">
+    <value>Tahapoole</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_SaveSchedule" xml:space="preserve">
+    <value>Salvesta</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_ToggleRecurrence" xml:space="preserve">
+    <value>Korduvus</value>
+  </data>
+  <data name="SchedulerStringId.Msg_ApplyToAllStyles" xml:space="preserve">
+    <value>Praeguse printeri sätted rakenduvad kõik stiilid?</value>
+  </data>
+  <data name="SchedulerStringId.Msg_CantFitIntoPage" xml:space="preserve">
+    <value>On võimatu printimise toodangu mahu ühe lehe printimine praeguseid sätteid kasutades. Palun proovige lehekülje kõrguse suurendamiseks või vähendamiseks PrintTime intervall.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_Conflict" xml:space="preserve">
+    <value>Redigeeritud kohtumise vastuolus ühe või mitme muude ametikohtadega.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_DuplicateCustomFieldMappings" xml:space="preserve">
+    <value>Eksemplaris kohandatud väli nimi. Vaadata vastendused: {0}</value>
+  </data>
+  <data name="SchedulerStringId.Msg_DuplicateMappingMember" xml:space="preserve">
+    <value>{0} liige kaardistamine on ainulaadne:</value>
+  </data>
+  <data name="SchedulerStringId.Msg_iCalendar_AppointmentsImportWarning" xml:space="preserve">
+    <value>ei saa importida mõne kohtumise</value>
+  </data>
+  <data name="SchedulerStringId.Msg_iCalendar_NotValidFile" xml:space="preserve">
+    <value>sobimatu Interneti-kalendri faili</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InconsistentRecurrenceInfoMapping" xml:space="preserve">
+    <value>kordumist toetamiseks tuleb kaart RecurrenceInfo ja tüüp liikmed.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_IncorrectMappingsQuestion" xml:space="preserve">
+    <value>Vale vastendused. Kas soovite ikkagi jätkata?
+Üksikasjad:</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InternalError" xml:space="preserve">
+    <value>Sisemine tõrge!</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidAppointmentDuration" xml:space="preserve">
+    <value>Kehtetu väärtus määratud intervalli kestus. Palun sisestage positiivne.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidDayCount" xml:space="preserve">
+    <value>On sobimatu päevade arv. Palun sisestage positiivne täisarv.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidDayCountValue" xml:space="preserve">
+    <value>On sobimatu päevade arv. Palun sisestage positiivne täisarv.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidDayNumber" xml:space="preserve">
+    <value>On sobimatu päeva number. Palun sisestage täisarv vahemikus 1 {0}.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidDayNumberValue" xml:space="preserve">
+    <value>On sobimatu päeva number. Palun sisestage täisarv vahemikus 1 {0}.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidDayOfWeek" xml:space="preserve">
+    <value>Pole valitud päeval. Valige vähemalt üks päev nädalas.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidDayOfWeekForDailyRecurrence" xml:space="preserve">
+    <value>Ei sobi päev nädalas iga päev korduda. Ainult WeekDays.EveryDay, WeekDays.WeekendDays ja WeekDays.WorkDays on selles kontekstis lubamatu.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidEndDate" xml:space="preserve">
+    <value>Sisestatud kuupäeva väärtus enne alguskuupäeva.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidInputFile" xml:space="preserve">
+    <value>Sisend fail ei sobi</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidMonthCount" xml:space="preserve">
+    <value>On sobimatu kuu count. Palun sisestage positiivne täisarv.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidMonthCountValue" xml:space="preserve">
+    <value>On sobimatu kuu count. Palun sisestage positiivne täisarv.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidOccurrencesCount" xml:space="preserve">
+    <value>Ei sobi esinemisjuhtude loendamine. Palun sisestage positiivne täisarv.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidOccurrencesCountValue" xml:space="preserve">
+    <value>Ei sobi esinemisjuhtude loendamine. Palun sisestage positiivne täisarv.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidSize" xml:space="preserve">
+    <value>Suurus on määratud sobimatu väärtus.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidTimeOfDayInterval" xml:space="preserve">
+    <value>Sobimatu kestuse ning TimeOfDayInterval</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidWeekCount" xml:space="preserve">
+    <value>On sobimatu nädal count. Palun sisestage positiivne täisarv.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidWeekCountValue" xml:space="preserve">
+    <value>On sobimatu nädal count. Palun sisestage positiivne täisarv.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidYearCount" xml:space="preserve">
+    <value>Ei sobi aasta loota. Palun sisestage positiivne täisarv.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_InvalidYearCountValue" xml:space="preserve">
+    <value>Ei sobi aasta loota. Palun sisestage positiivne täisarv.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_IsNotValid" xml:space="preserve">
+    <value>{0} on kehtetu väärtus {1}</value>
+  </data>
+  <data name="SchedulerStringId.Msg_LoadCollectionFromXml" xml:space="preserve">
+    <value>Plaanuris peab olema köitmata režiimis kollektsioon kirjed XML-ist laadimiseks</value>
+  </data>
+  <data name="SchedulerStringId.Msg_MappingsCheckPassedOk" xml:space="preserve">
+    <value>Kaardistamisel on õiged!</value>
+  </data>
+  <data name="SchedulerStringId.Msg_MemoPrintNoSelectedItems" xml:space="preserve">
+    <value>Ei saa printida, kui üksust pole valitud. Valige mõni üksus ja seejärel proovige uuesti printida.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_NoMappingForObject" xml:space="preserve">
+    <value>Järgmine nõutav vastendused objekti {0} on määratud</value>
+  </data>
+  <data name="SchedulerStringId.Msg_OverflowTimeOfDayInterval" xml:space="preserve">
+    <value>On sobimatu väärtus on TimeOfDayInterval. Peaks olema väiksem või võrdne päeva</value>
+  </data>
+  <data name="SchedulerStringId.Msg_RecurrenceExceptionsWillBeLost" xml:space="preserve">
+    <value>Selle korduva kohtumisega seotud suvalised erandid lähevad kaotsi. Toimitakse?</value>
+  </data>
+  <data name="SchedulerStringId.Msg_SaveBeforeClose" xml:space="preserve">
+    <value>Kas soovite muudatused salvestada?</value>
+  </data>
+  <data name="SchedulerStringId.Msg_Warning" xml:space="preserve">
+    <value>Hoiatus!</value>
+  </data>
+  <data name="SchedulerStringId.Msg_WarningAppointmentDeleted" xml:space="preserve">
+    <value>Kohtumine on kustutanud teine kasutaja.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_WarningDayNumber" xml:space="preserve">
+    <value>Mõnes kuus on vähem kui {0} päeva. Nende kuude puhul langeb sündmuste kuu viimasel päeval.</value>
+  </data>
+  <data name="SchedulerStringId.Msg_XtraSchedulerNotAssigned" xml:space="preserve">
+    <value>The SchedulerStorage komponent on omistatud ka SchedulerControl</value>
+  </data>
+  <data name="SchedulerStringId.PrintCalendarDetailsControlDayPeriod" xml:space="preserve">
+    <value>Päev</value>
+  </data>
+  <data name="SchedulerStringId.PrintCalendarDetailsControlWeekPeriod" xml:space="preserve">
+    <value>Nädal</value>
+  </data>
+  <data name="SchedulerStringId.PrintMonthlyOptControlOnePagePerMonth" xml:space="preserve">
+    <value>1 leht/kuu</value>
+  </data>
+  <data name="SchedulerStringId.PrintMoreItemsMsg" xml:space="preserve">
+    <value>Veel üksusi...</value>
+  </data>
+  <data name="SchedulerStringId.PrintNoPrintersInstalled" xml:space="preserve">
+    <value>Printerit pole installitud</value>
+  </data>
+  <data name="SchedulerStringId.PrintPageSetupFormatTabControlSizeAndFontName" xml:space="preserve">
+    <value>{0} pt. {1}</value>
+  </data>
+  <data name="SchedulerStringId.PrintPageSetupFormCaption" xml:space="preserve">
+    <value>Prindi suvandid: {0}</value>
+  </data>
+  <data name="SchedulerStringId.PrintTimeIntervalControlInvalidDuration" xml:space="preserve">
+    <value>Kestus ei tohi olla suurem kui ööpäev ja suurem kui 0</value>
+  </data>
+  <data name="SchedulerStringId.Reporting_NotAssigned_TimeCells" xml:space="preserve">
+    <value>vajalik TimeCells tõrje on määratud</value>
+  </data>
+  <data name="SchedulerStringId.TextAppointmentSnapToCells_Always" xml:space="preserve">
+    <value>Alati</value>
+  </data>
+  <data name="SchedulerStringId.TextAppointmentSnapToCells_Auto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="SchedulerStringId.TextAppointmentSnapToCells_Never" xml:space="preserve">
+    <value>Kunagi</value>
+  </data>
+  <data name="SchedulerStringId.TextMinutelyPatternString_EveryHour" xml:space="preserve">
+    <value>iga {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextMinutelyPatternString_EveryHours" xml:space="preserve">
+    <value>iga {1} {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextMinutelyPatternString_EveryMinute" xml:space="preserve">
+    <value>iga {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextMinutelyPatternString_EveryMinutes" xml:space="preserve">
+    <value>iga {1} {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextDailyPatternString_EveryDay" xml:space="preserve">
+    <value>iga {0} {1}</value>
+  </data>
+  <data name="SchedulerStringId.TextDailyPatternString_EveryDays" xml:space="preserve">
+    <value>iga (2) {1} {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextDailyPatternString_EveryWeekDay" xml:space="preserve">
+    <value>iga nädalapäeva {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextDuration_ForPattern" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+  <data name="SchedulerStringId.TextMonthlyPatternString_SubPattern" xml:space="preserve">
+    <value>ning iga {0} {1} (2)</value>
+  </data>
+  <data name="SchedulerStringId.TextMonthlyPatternString1" xml:space="preserve">
+    <value>päev {3} {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextMonthlyPatternString2" xml:space="preserve">
+    <value>{0} {1} (2)</value>
+  </data>
+  <data name="SchedulerStringId.TextRecurrenceTypeDaily" xml:space="preserve">
+    <value>Iga päev</value>
+  </data>
+  <data name="SchedulerStringId.TextRecurrenceTypeMonthly" xml:space="preserve">
+    <value>Iga kuu</value>
+  </data>
+  <data name="SchedulerStringId.TextWeekly_1Day" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="SchedulerStringId.TextWeekly_2Day" xml:space="preserve">
+    <value>{0} ja {1}</value>
+  </data>
+  <data name="SchedulerStringId.TextWeekly_3Day" xml:space="preserve">
+    <value>{0}, {1}, ja (2)</value>
+  </data>
+  <data name="SchedulerStringId.TextWeekly_4Day" xml:space="preserve">
+    <value>{0}, {1}, {2}, ja {3}</value>
+  </data>
+  <data name="SchedulerStringId.TextWeekly_5Day" xml:space="preserve">
+    <value>{0}, {1}, {2}, {3}, ja {4}</value>
+  </data>
+  <data name="SchedulerStringId.TextWeekly_6Day" xml:space="preserve">
+    <value>{0}, {1}, {2}, {3}, {4} ja {5}</value>
+  </data>
+  <data name="SchedulerStringId.TextWeekly_7Day" xml:space="preserve">
+    <value>{0}, {1}, {2}, {3}, {4}, {5}, ja {6}</value>
+  </data>
+  <data name="SchedulerStringId.TextWeeklyPatternString_EveryWeek" xml:space="preserve">
+    <value>iga {3} {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextWeeklyPatternString_EveryWeeks" xml:space="preserve">
+    <value>iga {1} (2) {3} {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextYearlyPattern_YearsString1" xml:space="preserve">
+    <value>{3} {4} iga {0} {1} (2)</value>
+  </data>
+  <data name="SchedulerStringId.TextYearlyPattern_YearsString2" xml:space="preserve">
+    <value>{5} {6} {3} iga {1} (2) {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextYearlyPattern_YearString1" xml:space="preserve">
+    <value>iga {3} {4} {0}</value>
+  </data>
+  <data name="SchedulerStringId.TextYearlyPattern_YearString2" xml:space="preserve">
+    <value>{5} {6} {3} {0}</value>
+  </data>
+  <data name="SchedulerStringId.TimeScaleDisplayName_Day" xml:space="preserve">
+    <value>Päev</value>
+  </data>
+  <data name="SchedulerStringId.TimeScaleDisplayName_Week" xml:space="preserve">
+    <value>Nädal</value>
+  </data>
+  <data name="SchedulerStringId.ViewDisplayName_FullWeek" xml:space="preserve">
+    <value>Terve nädala kalender</value>
+  </data>
+  <data name="SchedulerStringId.ViewDisplayName_Month" xml:space="preserve">
+    <value>Kuu kalender</value>
+  </data>
+  <data name="SchedulerStringId.ViewDisplayName_Timeline" xml:space="preserve">
+    <value>Ajaskaala kalender</value>
+  </data>
+  <data name="SchedulerStringId.ViewDisplayName_Week" xml:space="preserve">
+    <value>Nädala kalender</value>
+  </data>
+  <data name="SchedulerStringId.ViewDisplayName_WorkDays" xml:space="preserve">
+    <value>Töönädala kalender</value>
+  </data>
+  <data name="SchedulerStringId.ViewShortDisplayName_Day" xml:space="preserve">
+    <value>Päev</value>
+  </data>
+  <data name="SchedulerStringId.ViewShortDisplayName_FullWeek" xml:space="preserve">
+    <value>Terve nädal</value>
+  </data>
+  <data name="SchedulerStringId.ViewShortDisplayName_Gantt" xml:space="preserve">
+    <value>Gantti diagramm</value>
+  </data>
+  <data name="SchedulerStringId.ViewShortDisplayName_Timeline" xml:space="preserve">
+    <value>Ajaskaala</value>
+  </data>
+  <data name="SchedulerStringId.ViewShortDisplayName_Week" xml:space="preserve">
+    <value>Nädal</value>
+  </data>
+  <data name="SchedulerStringId.ViewShortDisplayName_WorkDays" xml:space="preserve">
+    <value>Töönädal</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_10Minutes" xml:space="preserve">
+    <value>10 &amp;minutit</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_15Minutes" xml:space="preserve">
+    <value>&amp;15 minutit</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_5Minutes" xml:space="preserve">
+    <value>&amp;5 minutit</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_6Minutes" xml:space="preserve">
+    <value>&amp;6 minutit</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_AppointmentCopy" xml:space="preserve">
+    <value>&amp;Kopeeri</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_AppointmentMove" xml:space="preserve">
+    <value>&amp;Teisalda</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_CustomizeCurrentView" xml:space="preserve">
+    <value>&amp;Kohanda praegust vaadet...</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_DeleteAppointment" xml:space="preserve">
+    <value>&amp;Kustuta</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_DeleteAppointmentDependency" xml:space="preserve">
+    <value>&amp;Kustuta</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_EditAppointmentDependency" xml:space="preserve">
+    <value>&amp;Redigeeri</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_PrintAppointment" xml:space="preserve">
+    <value>&amp;Prindi</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_RestoreOccurrence" xml:space="preserve">
+    <value>&amp;Taasta vaikeoleku</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_SwitchToGanttView" xml:space="preserve">
+    <value>&amp;Gantti vaade</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_SwitchToGroupByDate" xml:space="preserve">
+    <value>&amp;Rühmita kuupäeva järgi</value>
+  </data>
+  <data name="SchedulerStringId.MenuCmd_Tentative" xml:space="preserve">
+    <value>&amp;Ebalev</value>
+  </data>
+  <data name="SchedulerStringId.FlyoutCaption_Reminder" xml:space="preserve">
+    <value>Meeldetuletus:</value>
+  </data>
+  <data name="SchedulerStringId.FlyoutCaption_Location" xml:space="preserve">
+    <value>Asukoht:</value>
+  </data>
+  <data name="SchedulerStringId.CategoryResourceSelectorCaption_Cancel" xml:space="preserve">
+    <value>Tühista</value>
+  </data>
+  <data name="SchedulerStringId.CategoryResourceSelectorCaption_Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+</root>
