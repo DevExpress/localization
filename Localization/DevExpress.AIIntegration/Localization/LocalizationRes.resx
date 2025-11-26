@@ -448,13 +448,13 @@ User's ROLE: {1}</value>
     <value>{0}_identifier</value>
   </data>
   <data name="AIIntegrationStringId.ToolsTargetIdentifierParameterDescription" xml:space="preserve">
-    <value>This parameter is the unique identifier of the target object. To retrieve the list of available targets and their descriptions, call the GetToolTargets tool.</value>
+    <value>This parameter is the identifier of the tool target object. To retrieve the list of available targets and their descriptions, call the GetToolTargets tool.</value>
   </data>
   <data name="AIIntegrationStringId.ToolsGetTargetsToolName" xml:space="preserve">
     <value>GetToolTargets</value>
   </data>
   <data name="AIIntegrationStringId.ToolsGetTargetsToolDescription" xml:space="preserve">
-    <value>This tool returns the current list of available targets. A target is any object that tools can operate on, identified by a unique identifier. The LLM should call this tool whenever another tool requires a target’s unique identifier as input.</value>
+    <value>This tool returns the current list of available targets. A target is any object that tools can operate on, identified by a unique identifier. The LLM should call this tool whenever another tool requires a target’s identifier as input.</value>
   </data>
   <data name="AIIntegrationStringId.TranslateDocumentSystemPrompt" xml:space="preserve">
     <value>You are a professional document translator. Translate the following JSON-structured text into {0}. ### Input Format - The input is a JSON array of objects with two fields: `original` and `translated`. - Each item represents a text run (fragment). - Example input: [ {{ "original": "Hello", "translated": "" }}, {{ "original": "world!", "translated": "" }} ] ### Task - Translate the content from the `original` fields into the `translated` fields, following these rules: ### Translation Rules 1. Translate the full meaning of the input text across the runs. - It is allowed to carry over part of a sentence or phrase to neighboring runs **if needed for natural translation**. - However, the **total number of runs must remain exactly the same**. 2. If a run becomes empty in the target language (e.g., all meaning shifted to another run), leave its `translated` field empty — **but never remove the object**. 3. Strictly preserve: - The number of objects in the array. - The order of runs. - The key structure (`original`, `translated`). 4. Maintain punctuation, sentence flow, and boundaries as closely as possible to the original meaning. ### Output Format - Respond with **valid JSON only**. - Use double quotes for all keys and string values. - Do not include markdown, explanations, code fences, or any text outside the JSON. ### Example Output [ {{ "original": "Hello", "translated": "Hallo" }}, {{ "original": "world!", "translated": "Welt!" }} ]</value>
@@ -462,7 +462,10 @@ User's ROLE: {1}</value>
   <data name="AIIntegrationStringId.ProofreadDocumentSystemPrompt" xml:space="preserve">
     <value>You are a professional document proofreader. Proofread the following JSON-structured text in {0}. ### Input Format - The input is a JSON array of objects with two fields: `original` and `proofread`. - Each item represents a text run (fragment). - Example input: [ {{ "original": "Hello world!", "proofread": "" }}, {{ "original": "This is a test.", "proofread": ""  }} ] ### Task  - Proofread the content in the `original` fields and write the corrected version in the `proofread` fields, following these rules: ### Proofreading Rules 1. Correct grammar, spelling, punctuation, and stylistic issues while preserving the original meaning. 2. You may adjust sentence structure across runs **if necessary for clarity or correctness**, but: - The **total number of runs must remain exactly the same**. - If a run becomes empty (e.g., all content moved to another run), leave its `proofread` field empty — **but do not remove the object**. 3. Strictly preserve: - The number of objects in the array. - The order of runs.- The key structure (`original`, `proofread`). 4. Maintain sentence flow and boundaries as closely as possible to the original intent. ### Output Format - Respond with **valid JSON only**. - Use double quotes for all keys and string values. - Do not include markdown, explanations, code fences, or any text outside the JSON. ### Example Output [ {{ "original": "Hello world!", "proofread": "Hello, world!" }},  {{ "original": "This is a test.", "proofread": "This is a test." }} ]</value>
   </data>
-<data name="AIIntegrationStringId.ReportLocalization_Button" xml:space="preserve">
+  <data name="AIIntegrationStringId.AskAIDocumentRequestPrompt" xml:space="preserve">
+    <value>You are an AI assistant. Use the following document context to respond to the question. If the document lacks enough information, say so. Question: {0}</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportLocalization_Button" xml:space="preserve">
     <value>Localize with AI</value>
   </data>
   <data name="AIIntegrationStringId.ReportLocalization_TranslatedTextWarning" xml:space="preserve">
@@ -519,5 +522,4 @@ User's ROLE: {1}</value>
   <data name="AIIntegrationStringId.ReportTestData_ButtonToolTip" xml:space="preserve">
     <value>Preview the report document with AI-generated data.</value>
   </data>
-
 </root>

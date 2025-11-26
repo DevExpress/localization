@@ -493,6 +493,8 @@ namespace DevExpress.Internal {
         SRAssemblyAIIntegrationWinFormsSemanticSearchFull = SRAssemblyAIIntegrationWinFormsSemanticSearch + FullAssemblyVersionExtension,
         SRAssemblyAIIntegrationEvaluationWinFormsTests = "DevExpress.AIIntegration.Evaluation.WinForms.Tests" + VSuffix,
         SRAssemblyAIIntegrationWpf = "DevExpress.AIIntegration.Wpf" + VSuffix,
+        SRAssemblyAIIntegrationWpfChat = "DevExpress.AIIntegration.Wpf.Chat" + VSuffix,
+
         SRAssemblyAIIntegrationWpfFull = SRAssemblyAIIntegrationWpf + FullAssemblyVersionExtension,
         SRAssemblyAIIntegrationDocs = "DevExpress.AIIntegration.Docs" + VSuffix,
         SRAssemblyAIIntegrationDocsFull = SRAssemblyAIIntegrationDocs + FullAssemblyVersionExtension,
