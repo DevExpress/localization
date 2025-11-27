@@ -442,13 +442,13 @@ User's ROLE: {1}</value>
     <value>Error: This tool cannot be called because there is no appropriate context in the current application state.</value>
   </data>
   <data name="AIIntegrationStringId.ToolsErrorTargetNotFound" xml:space="preserve">
-    <value>Error: target with identifier '{0}' not found or the tool is not allowed for this target.</value>
+    <value>Error: tool target with identifier '{0}' was not found, or the tool is not allowed for this target. Ensure that the identifier you used was obtained from a GetToolTargets call and not generated or guessed. Repeat the operation and first call GetToolTargets to retrieve a valid identifier.</value>
   </data>
   <data name="AIIntegrationStringId.ToolsTargetIdentifierParameterName" xml:space="preserve">
     <value>{0}_identifier</value>
   </data>
   <data name="AIIntegrationStringId.ToolsTargetIdentifierParameterDescription" xml:space="preserve">
-    <value>This parameter is the identifier of the tool target object. To retrieve the list of available targets and their descriptions, call the GetToolTargets tool.</value>
+    <value>This parameter is the tool target identifier. Use only identifiers returned by the GetToolTargets tool call.</value>
   </data>
   <data name="AIIntegrationStringId.ToolsGetTargetsToolName" xml:space="preserve">
     <value>GetToolTargets</value>
