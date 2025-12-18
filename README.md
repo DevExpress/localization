@@ -66,7 +66,7 @@ Once translations are complete, our platform generates ready-to-use localization
 
 ## Getting Started
 
-Please refer to our online documentation for step-by-step guidance: [Getting Started with DevExpress Localization Tool](https://docs.devexpress.com/GeneralInformation/404608).
+Please refer to our online documentation for step-by-step guidance: [Getting Started — Localization Tool](https://docs.devexpress.com/GeneralInformation/404608).
 
 ## Feedback and Support
 
