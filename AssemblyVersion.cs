@@ -438,6 +438,7 @@ namespace DevExpress.Internal {
         SRAssemblyDashboardWinDesignFull = SRAssemblyDashboardWinDesign + FullAssemblyVersionExtension,
         SRAssemblyDashboardWebDesign = "DevExpress.Dashboard" + VSuffix + ".Web.Design",
         SRAssemblyDashboardWebDesignFull = SRAssemblyDashboardWebDesign + FullAssemblyVersionExtension,
+        SRAssemblyDashboardWebBlazor = "DevExpress.Dashboard" + VSuffix + ".Blazor",
         SRAssemblyMapCore = "DevExpress.Map" + VSuffix + ".Core",
         SRAssemblyMapCoreTests = "DevExpress.Map.Core.Tests",
         SRAssemblyMap = "DevExpress.XtraMap" + VSuffix,

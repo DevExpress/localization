@@ -847,6 +847,26 @@ Returns a date-time value that is away from the specified DateTime for the given
     <value>AddYears(DateTime, YearsCount)
 Returns a date-time value that is the specified number of years away from the specieid DateTime.</value>
   </data>
+  <data name="DateOnlyFromParts3.Description" xml:space="preserve">
+    <value>DateOnlyFromParts(Year, Month, Day)
+Returns a DateOnly value constructed from the specified Year, Month and Day.</value>
+  </data>
+  <data name="DateTimeFromParts3.Description" xml:space="preserve">
+    <value>DateTimeFromParts(Year, Month, Day)
+Returns a DateTime value constructed from the specified Year, Month and Day.</value>
+  </data>
+  <data name="DateTimeFromParts5.Description" xml:space="preserve">
+    <value>DateTimeFromParts(Year, Month, Day, Hour, Minute)
+Returns a DateTime value constructed from the specified Year, Month, Day, Hour and Minute.</value>
+  </data>
+  <data name="DateTimeFromParts6.Description" xml:space="preserve">
+    <value>DateTimeFromParts(Year, Month, Day, Hour, Minute, Second)
+Returns a DateTime value constructed from the specified Year, Month, Day, Hour, Minute and Second.</value>
+  </data>
+  <data name="DateTimeFromParts7.Description" xml:space="preserve">
+    <value>DateTimeFromParts(Year, Month, Day, Hour, Minute, Second, Millisecond)
+Returns a DateTime value constructed from the specified Year, Month, Day, Hour, Minute, Second and Millisecond.</value>
+  </data>
   <data name="Ascii.Description" xml:space="preserve">
     <value>Ascii(String)
 Returns the ASCII code value of the leftmost character in a character expression.</value>
@@ -934,6 +954,10 @@ Returns the largest integer less than or equal to the given numeric expression.<
   <data name="GetDate.Description" xml:space="preserve">
     <value>GetDate(DateTime)
 Extracts a date from the defined DateTime.</value>
+  </data>
+  <data name="GetTime.Description" xml:space="preserve">
+    <value>GetTime(DateTime)
+Extracts a time from the defined DateTime.</value>
   </data>
   <data name="GetDay.Description" xml:space="preserve">
     <value>GetDay(DateTime)
@@ -1042,7 +1066,7 @@ Rounds the given value to the nearest integer.</value>
   <data name="Round2Param.Description" xml:space="preserve">
     <value>Round(Value, Precision)
 Rounds the given value to the nearest integer, or to a specified number of decimal places.</value>
-  </data>  
+  </data>
   <data name="Sign.Description" xml:space="preserve">
     <value>Sign(Value)
 Returns the positive (+1), zero (0), or negative (-1) sign of the given expression.</value>
@@ -1167,6 +1191,22 @@ Tests for the existence of a property in an object.</value>
     <value>Between (,)
 Specifies a range to test. Returns true if a value is greater than or equal to the first operand and less than or equal to the second operand.</value>
   </data>
+  <data name="InRange.Description" xml:space="preserve">
+    <value>InRange(Value, FromValue, ToValue)
+Returns True if the specified value is in the range between the FromValue and ToValue arguments.</value>
+  </data>
+  <data name="InDateRange.Description" xml:space="preserve">
+    <value>InDateRange(Date, FromDate, ToDate)
+Returns True if the specified date is in the range between the FromDate and ToDate arguments.</value>
+  </data>
+  <data name="InTimeRange.Description" xml:space="preserve">
+    <value>InTimeRange(Time, FromTime, ToTime)
+Returns True if the specified time is in the range between the FromTime and ToTime arguments, including cases where the range spans across midnight.</value>
+  </data>
+  <data name="OutOfTimeRange.Description" xml:space="preserve">
+    <value>OutOfTimeRange(Time, FromTime, ToTime)
+Returns True if the specified time is outside the range between the FromTime and ToTime arguments, including cases where the range spans across midnight.</value>
+  </data>
   <data name="And.Description" xml:space="preserve">
     <value>Performs a logical conjunction on two expressions.</value>
   </data>
@@ -1242,7 +1282,7 @@ Returns a single object from the collection.</value>
     <value>Max(Value1, Value2)
 Returns the maximum value from the specified values.</value>
   </data>
-	<data name="Min.Description" xml:space="preserve">
+  <data name="Min.Description" xml:space="preserve">
     <value>Min(Value1, Value2)
 Returns the minimum value from the specified values.</value>
   </data>
@@ -1272,5 +1312,100 @@ Returns True if the specified date falls within the current year.</value>
   </data>
   <data name="FormatRule.Caption" xml:space="preserve">
     <value>Format rule expression editor</value>
+  </data>
+  <data name="LocalDateTimeLastMonth.Description" xml:space="preserve">
+    <value>LocalDateTimeLastMonth()
+Returns a date-time value corresponding to the first day of the previous month.</value>
+  </data>
+  <data name="LocalDateTimeLastYear.Description" xml:space="preserve">
+    <value>LocalDateTimeLastYear()
+Returns a date-time value corresponding to the first day of the previous year.</value>
+  </data>
+  <data name="LocalDateTimeTwoMonthsAway.Description" xml:space="preserve">
+    <value>LocalDateTimeTwoMonthsAway()
+Returns a date-time value corresponding to the first day of the month after next.</value>
+  </data>
+  <data name="LocalDateTimeTwoYearsAway.Description" xml:space="preserve">
+    <value>LocalDateTimeTwoYearsAway()
+Returns a date-time value corresponding to the first day of the year after next.</value>
+  </data>
+  <data name="LocalDateTimeYearBeforeToday.Description" xml:space="preserve">
+    <value>LocalDateTimeYearBeforeToday()
+Returns a date-time value corresponding to the day one year ago.</value>
+  </data>
+  <data name="IsApril.Description" xml:space="preserve">
+    <value>IsApril(DateTime)
+Returns True if the specified date falls within April.</value>
+  </data>
+  <data name="IsAugust.Description" xml:space="preserve">
+    <value>IsAugust(DateTime)
+Returns True if the specified date falls within August.</value>
+  </data>
+  <data name="IsDecember.Description" xml:space="preserve">
+    <value>IsDecember(DateTime)
+Returns True if the specified date falls within December.</value>
+  </data>
+  <data name="IsFebruary.Description" xml:space="preserve">
+    <value>IsFebruary(DateTime)
+Returns True if the specified date falls within February.</value>
+  </data>
+  <data name="IsJanuary.Description" xml:space="preserve">
+    <value>IsJanuary(DateTime)
+Returns True if the specified date falls within January.</value>
+  </data>
+  <data name="IsJuly.Description" xml:space="preserve">
+    <value>IsJuly(DateTime)
+Returns True if the specified date falls within July.</value>
+  </data>
+  <data name="IsJune.Description" xml:space="preserve">
+    <value>IsJune(DateTime)
+Returns True if the specified date falls within June.</value>
+  </data>
+  <data name="IsLastMonth.Description" xml:space="preserve">
+    <value>IsLastMonth(DateTime)
+Returns True if the specified date falls within the previous month.</value>
+  </data>
+  <data name="IsLastYear.Description" xml:space="preserve">
+    <value>IsLastYear(DateTime)
+Returns True if the specified date falls within the previous year.</value>
+  </data>
+  <data name="IsMarch.Description" xml:space="preserve">
+    <value>IsMarch(DateTime)
+Returns True if the specified date falls within March.</value>
+  </data>
+  <data name="IsMay.Description" xml:space="preserve">
+    <value>IsMay(DateTime)
+Returns True if the specified date falls within May.</value>
+  </data>
+  <data name="IsNextMonth.Description" xml:space="preserve">
+    <value>IsNextMonth(DateTime)
+Returns True if the specified date falls within the next month.</value>
+  </data>
+  <data name="IsNextYear.Description" xml:space="preserve">
+    <value>IsNextYear(DateTime)
+Returns True if the specified date falls within the next year.</value>
+  </data>
+  <data name="IsNovember.Description" xml:space="preserve">
+    <value>IsNovember(DateTime)
+Returns True if the specified date falls within November.</value>
+  </data>
+  <data name="IsOctober.Description" xml:space="preserve">
+    <value>IsOctober(DateTime)
+Returns True if the specified date falls within October.</value>
+  </data>
+  <data name="IsSeptember.Description" xml:space="preserve">
+    <value>IsSeptember(DateTime)
+Returns True if the specified date falls within September.</value>
+  </data>
+  <data name="IsYearToDate.Description" xml:space="preserve">
+    <value>IsYearToDate(DateTime)
+Returns True if the specified date falls within the year-to-date period (starting from the first day of the current year and continuing up to the current date).</value>
+  </data>
+  <data name="IsSameDay.Description" xml:space="preserve">
+    <value>IsSameDay(DateTime, DateTime)
+Returns True if the specified date-time values fall within the same day.</value>
+  </data>
+  <data name="DisabledCellBehaviorExpression.Caption" xml:space="preserve">
+    <value>Expression editor</value>
   </data>
 </root>

@@ -60,61 +60,45 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace">
-    </xsd:import>
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0">
-                </xsd:element>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string">
-              </xsd:attribute>
-              <xsd:attribute name="type" type="xsd:string">
-              </xsd:attribute>
-              <xsd:attribute name="mimetype" type="xsd:string">
-              </xsd:attribute>
-              <xsd:attribute ref="xml:space">
-              </xsd:attribute>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string">
-              </xsd:attribute>
-              <xsd:attribute name="name" type="xsd:string">
-              </xsd:attribute>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1">
-                </xsd:element>
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2">
-                </xsd:element>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1">
-              </xsd:attribute>
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3">
-              </xsd:attribute>
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4">
-              </xsd:attribute>
-              <xsd:attribute ref="xml:space">
-              </xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1">
-                </xsd:element>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required">
-              </xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -133,41 +117,86 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-  </assembly>
-  <data name="filterControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 209</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-  </assembly>
+  <data name="btnOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 22</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>317, 209</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 22</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v25.2, Version=25.2.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="filterControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+    <value>7, 7</value>
   </data>
   <data name="filterControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>392, 188</value>
+    <value>386, 193</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-  </assembly>
   <data name="filterControl.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;filterControl.Name" xml:space="preserve">
     <value>filterControl</value>
   </data>
+  <data name="&gt;&gt;filterControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraReports.Design.FilterStringControl, DevExpress.Utils.v25.2.UI, Version=25.2.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4</value>
+  </data>
   <data name="&gt;&gt;filterControl.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>layoutControl1</value>
   </data>
   <data name="&gt;&gt;filterControl.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="layoutControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="layoutControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="layoutControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 238</value>
+  </data>
+  <data name="layoutControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="btnOk.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
+  <data name="layoutControl1.Text" xml:space="preserve">
+    <value>layoutControl1</value>
   </data>
-  <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 7</value>
+  <data name="&gt;&gt;layoutControl1.Name" xml:space="preserve">
+    <value>layoutControl1</value>
   </data>
-  <data name="btnOk.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 25</value>
+  <data name="&gt;&gt;layoutControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v25.2, Version=25.2.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="btnOk.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -178,35 +207,14 @@
   <data name="&gt;&gt;btnOk.Name" xml:space="preserve">
     <value>btnOk</value>
   </data>
+  <data name="&gt;&gt;btnOk.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v25.2, Version=25.2.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4</value>
+  </data>
   <data name="&gt;&gt;btnOk.Parent" xml:space="preserve">
-    <value>bottomPanel</value>
+    <value>layoutControl1</value>
   </data>
   <data name="&gt;&gt;btnOk.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>307, 7</value>
-  </data>
-  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 25</value>
-  </data>
-  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="btnCancel.Text" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
-    <value>btnCancel</value>
-  </data>
-  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
-    <value>bottomPanel</value>
-  </data>
-  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>6</value>
   </data>
   <data name="bottomPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
@@ -226,12 +234,6 @@
   <data name="&gt;&gt;bottomPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;bottomPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;bottomPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -241,16 +243,46 @@
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>300, 200</value>
   </data>
-  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 2, 0</value>
-  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>FilterString Editor</value>
   </data>
+  <data name="&gt;&gt;layoutControlGroup1.Name" xml:space="preserve">
+    <value>layoutControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v25.2, Version=25.2.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Name" xml:space="preserve">
+    <value>layoutControlItem1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v25.2, Version=25.2.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4</value>
+  </data>
+  <data name="&gt;&gt;grpButtons.Name" xml:space="preserve">
+    <value>grpButtons</value>
+  </data>
+  <data name="&gt;&gt;grpButtons.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v25.2, Version=25.2.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Name" xml:space="preserve">
+    <value>layoutControlItem3</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v25.2, Version=25.2.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem2.Name" xml:space="preserve">
+    <value>layoutControlItem2</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v25.2, Version=25.2.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FilterStringEditorForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraReports.Design.FilterStringEditorFormBase, DevExpress.Utils.v25.2.UI, Version=25.2.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4</value>
   </data>
 </root>
