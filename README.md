@@ -70,4 +70,4 @@ Please refer to our online documentation for step-by-step guidance: [Getting Sta
 
 ## Feedback and Support
 
-If you cannot run or use our Localization Platform, or if you have questions about supported functionality, please submit your questions via the [DevExpress Support Center](www.devexpress.com/ask) or the [GitHub Issues](https://github.com/DevExpress/localization/issues) tab. We are happy to help and appreciate your feedback.
+If you cannot run or use our Localization Platform, or if you have questions about supported functionality, please submit your questions via the [DevExpress Support Center](https://www.devexpress.com/ask). We are happy to help and appreciate your feedback.
