@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7E89D52A-351A-4C97-A0A4-79B3C9B8AF7C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DevExpress.AspNetCore.RichEdit</RootNamespace>
+    <AssemblyName>DevExpress.AspNetCore.RichEdit.v26.1</AssemblyName>
+<SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\DevExpress.DLL\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\DevExpress.DLL\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\LocalizationRes.de.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.ar.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.bg.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.ca.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.cs.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.da.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.el.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.es.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.et.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.fa.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.fi.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.fr.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.he.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.hi.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.hr.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.hu.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.hy.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.id.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.is.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.it.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.ja.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.kk.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.ko.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.lt.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.lv.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.mk.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.ms.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.nl.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.no.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.pl.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.pt.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.ro.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.ru.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.sk.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.sl.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.sv.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.ta.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.th.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.tr.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.uk.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.vi.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.de-CH.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.pt-BR.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.sr-Cyrl-RS.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.sr-Latn-RS.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.zh-CN.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.zh-Hans.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.zh-Hant.resx" />
+    <EmbeddedResource Include="Resources\LocalizationRes.zh-TW.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

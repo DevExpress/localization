@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!--
     Microsoft ResX Schema
@@ -352,6 +352,14 @@ Returns a DateTime value constructed from the specified Year, Month, Day, Hour, 
     <value>DateTimeFromParts(Year, Month, Day, Hour, Minute, Second, Millisecond)
 Returns a DateTime value constructed from the specified Year, Month, Day, Hour, Minute, Second and Millisecond.</value>
   </data>
+  <data name="EditorStringId.ExpressionEditor_DateTimeOffsetFromParts7_Description" xml:space="preserve">
+    <value>DateTimeOffsetFromParts(Year, Month, Day, Hour, Minute, Second, Offset)
+Returns a DateTimeOffset value constructed from the specified Year, Month, Day, Hour, Minute, Second and Offset.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_DateTimeOffsetFromParts8_Description" xml:space="preserve">
+    <value>DateTimeOffsetFromParts(Year, Month, Day, Hour, Minute, Second, Millisecond, Offset)
+Returns a DateTimeOffset value constructed from the specified Year, Month, Day, Hour, Minute, Second, Millisecond and Offset.</value>
+  </data>
   <data name="EditorStringId.ExpressionEditor_Ascii_Description" xml:space="preserve">
     <value>Ascii(String)
 Returns the ASCII code value of the leftmost character in a character expression.</value>
@@ -487,6 +495,26 @@ Extracts the time of the day from the defined DateTime, in ticks.</value>
   <data name="EditorStringId.ExpressionEditor_GetYear_Description" xml:space="preserve">
     <value>GetYear(DateTime)
 Extracts a year from the defined DateTime.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_GetOffset_Description" xml:space="preserve">
+    <value>GetOffset(DateTimeOffset)
+Extracts the UTC offset in minutes from the defined DateTimeOffset or String.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_GetOffsetTimeSpan_Description" xml:space="preserve">
+    <value>GetOffsetTimeSpan(DateTimeOffset)
+Extracts the UTC offset as a TimeSpan from the defined DateTimeOffset or String.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_GetOffsetTimeSpan2_Description" xml:space="preserve">
+    <value>GetOffsetTimeSpan(Hours, Minutes)
+Returns a UTC offset as a TimeSpan constructed from the specified Hours and Minutes.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_SwitchOffset_Description" xml:space="preserve">
+    <value>SwitchOffset(DateTimeOffset, Offset)
+Returns a DateTimeOffset value that is changed from the stored time zone offset to a specified new time zone offset.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_ConvertToTimeZone_Description" xml:space="preserve">
+    <value>ConvertToTimeZone(DateTimeOffset, String)
+Converts a DateTimeOffset value to the corresponding value in the specified time zone.</value>
   </data>
   <data name="EditorStringId.ExpressionEditor_Iif_Description" xml:space="preserve">
     <value>Iif(Expression, TruePart, FalsePart)
@@ -648,6 +676,10 @@ Converts Value to an equivalent 64-bit double-precision floating-point number.</
     <value>ToDecimal(Value)
 Converts Value to an equivalent decimal number.</value>
   </data>
+  <data name="EditorStringId.ExpressionEditor_ToDateTime_Description" xml:space="preserve">
+    <value>ToDateTime(Value)
+Converts Value to an equivalent DateTime value.</value>
+  </data>
   <data name="EditorStringId.ExpressionEditor_ToStr_Description" xml:space="preserve">
     <value>ToStr(Value)
 Returns a string representation of an object.</value>
@@ -719,6 +751,78 @@ Returns a date-time value corresponding to the first day of the week that is aft
   <data name="EditorStringId.ExpressionEditor_LocalDateTimeYesterday_Description" xml:space="preserve">
     <value>LocalDateTimeYesterday()
 Returns a date-time value corresponding to Yesterday.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeOffsetThisYear_Description" xml:space="preserve">
+    <value>LocalDateTimeOffsetThisYear()
+Returns a date-time value with time zone offset corresponding to the first day of the current year.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeOffsetThisMonth_Description" xml:space="preserve">
+    <value>LocalDateTimeOffsetThisMonth()
+Returns a date-time value with time zone offset corresponding to the first day of the current month.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeOffsetLastWeek_Description" xml:space="preserve">
+    <value>LocalDateTimeOffsetLastWeek()
+Returns a date-time value with time zone offset corresponding to the first day of the previous week.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeOffsetThisWeek_Description" xml:space="preserve">
+    <value>LocalDateTimeOffsetThisWeek()
+Returns a date-time value with time zone offset corresponding to the first day of the current week.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeOffsetYesterday_Description" xml:space="preserve">
+    <value>LocalDateTimeOffsetYesterday()
+Returns a date-time value with time zone offset corresponding to Yesterday.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeOffsetToday_Description" xml:space="preserve">
+    <value>LocalDateTimeOffsetToday()
+Returns a date-time value with time zone offset corresponding to Today.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeOffsetNow_Description" xml:space="preserve">
+    <value>LocalDateTimeOffsetNow()
+Returns a date-time value with time zone offset corresponding to the current moment in time.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeOffsetTomorrow_Description" xml:space="preserve">
+    <value>LocalDateTimeOffsetTomorrow()
+Returns a date-time value with time zone offset corresponding to Tomorrow.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeOffsetDayAfterTomorrow_Description" xml:space="preserve">
+    <value>LocalDateTimeOffsetDayAfterTomorrow()
+Returns a date-time value with time zone offset corresponding to the day after Tomorrow.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeOffsetNextWeek_Description" xml:space="preserve">
+    <value>LocalDateTimeOffsetNextWeek()
+Returns a date-time value with time zone offset corresponding to the first day of the following week.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeOffsetTwoWeeksAway_Description" xml:space="preserve">
+    <value>LocalDateTimeOffsetTwoWeeksAway()
+Returns a date-time value with time zone offset corresponding to the first day of the week that is after next week.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeOffsetNextMonth_Description" xml:space="preserve">
+    <value>LocalDateTimeOffsetNextMonth()
+Returns a date-time value with time zone offset corresponding to the first day of next month.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeOffsetNextYear_Description" xml:space="preserve">
+    <value>LocalDateTimeOffsetNextYear()
+Returns a date-time value with time zone offset corresponding to the first day of the following year.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeOffsetTwoMonthsAway_Description" xml:space="preserve">
+    <value>LocalDateTimeOffsetTwoMonthsAway()
+Returns a date-time value with time zone offset corresponding to the first day of the month after next.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeOffsetTwoYearsAway_Description" xml:space="preserve">
+    <value>LocalDateTimeOffsetTwoYearsAway()
+Returns a date-time value with time zone offset corresponding to the first day of the year after next.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeOffsetLastMonth_Description" xml:space="preserve">
+    <value>LocalDateTimeOffsetLastMonth()
+Returns a date-time value with time zone offset corresponding to the first day of the previous month.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeOffsetLastYear_Description" xml:space="preserve">
+    <value>LocalDateTimeOffsetLastYear()
+Returns a date-time value with time zone offset corresponding to the first day of the previous year.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeOffsetYearBeforeToday_Description" xml:space="preserve">
+    <value>LocalDateTimeOffsetYearBeforeToday()
+Returns a date-time value with time zone offset corresponding to the day one year ago.</value>
   </data>
   <data name="EditorStringId.ExpressionEditor_StartsWith_Description" xml:space="preserve">
     <value>StartsWith(String, StartString)

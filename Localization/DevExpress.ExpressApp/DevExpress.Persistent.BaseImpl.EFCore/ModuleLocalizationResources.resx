@@ -53,10 +53,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Non-calculated\BOModel\DevExpress.ExpressApp.StateMachine.Utils.MarkerObject\Caption" xml:space="preserve">
     <value>Marker Object</value>
@@ -398,7 +398,7 @@
     <value>Navigation Permissions</value>
   </data>
   <data name="Non-calculated\BOModel\DevExpress.Persistent.BaseImpl.EF.PermissionPolicy.PermissionPolicyRoleBase\OwnMembers\ActionPermissions\Caption" xml:space="preserve">
-    <value>Action Permissions</value>
+    <value>Denied Actions</value>
   </data>
   <data name="Non-calculated\BOModel\DevExpress.Persistent.BaseImpl.EF.PermissionPolicy.PermissionPolicyTypePermissionObject\Caption" xml:space="preserve">
     <value>Type Operation Permissions</value>
@@ -446,7 +446,10 @@
     <value>Is Active</value>
   </data>
   <data name="Non-calculated\BOModel\DevExpress.Persistent.BaseImpl.EF.PermissionPolicy.PermissionPolicyUser\OwnMembers\ChangePasswordOnFirstLogon\Caption" xml:space="preserve">
-    <value>Change Password On First Logon</value>
+    <value>Force Password Change</value>
+  </data>
+  <data name="Non-calculated\BOModel\DevExpress.Persistent.BaseImpl.EF.PermissionPolicy.PermissionPolicyUser\OwnMembers\ChangePasswordOnFirstLogon\ToolTip" xml:space="preserve">
+    <value>User Must Change Password at Next Logon</value>
   </data>
   <data name="Non-calculated\BOModel\DevExpress.Persistent.BaseImpl.EF.PermissionPolicy.PermissionPolicyUser\OwnMembers\StoredPassword\Caption" xml:space="preserve">
     <value>Stored Password</value>
@@ -1922,7 +1925,7 @@
     <value>:</value>
   </data>
   <data name="Views\PermissionPolicyRole_DetailView\Items\ActionPermissions\Caption" xml:space="preserve">
-    <value>Action Permissions</value>
+    <value>Denied Actions</value>
   </data>
   <data name="Views\PermissionPolicyRole_DetailView\Items\ActiveAdminExists\Caption" xml:space="preserve">
     <value>Active Admin Exists</value>
@@ -1976,7 +1979,7 @@
     <value>Navigation Permissions</value>
   </data>
   <data name="Views\PermissionPolicyRole_DetailView\Layout\Main\Tabs\ActionPermissions\Caption" xml:space="preserve">
-    <value>Action Permissions</value>
+    <value>Denied Actions</value>
   </data>
   <data name="Views\PermissionPolicyRole_ListView\Caption" xml:space="preserve">
     <value>Role</value>
@@ -2042,7 +2045,10 @@
     <value>Is Active</value>
   </data>
   <data name="Views\PermissionPolicyRole_Users_ListView\Columns\ChangePasswordOnFirstLogon\Caption" xml:space="preserve">
-    <value>Change Password On First Logon</value>
+    <value>Force Password Change</value>
+  </data>
+  <data name="Views\PermissionPolicyRole_Users_ListView\Columns\ChangePasswordOnFirstLogon\ToolTip" xml:space="preserve">
+    <value>User Must Change Password at Next Logon</value>
   </data>
   <data name="Views\PermissionPolicyRoleBase_ActionPermissions_ListView\Caption" xml:space="preserve">
     <value>Denied Actions</value>
@@ -2081,7 +2087,7 @@
     <value>:</value>
   </data>
   <data name="Views\PermissionPolicyRoleBase_DetailView\Items\ActionPermissions\Caption" xml:space="preserve">
-    <value>Action Permissions</value>
+    <value>Denied Actions</value>
   </data>
   <data name="Views\PermissionPolicyRoleBase_DetailView\Items\CanEditModel\Caption" xml:space="preserve">
     <value>Can Edit Model</value>
@@ -2126,7 +2132,7 @@
     <value>Navigation Permissions</value>
   </data>
   <data name="Views\PermissionPolicyRoleBase_DetailView\Layout\Main\Tabs\ActionPermissions\Caption" xml:space="preserve">
-    <value>Action Permissions</value>
+    <value>Denied Actions</value>
   </data>
   <data name="Views\PermissionPolicyRoleBase_ListView\Caption" xml:space="preserve">
     <value>Permission Policy Role Base</value>
@@ -2396,7 +2402,10 @@
     <value>Active Admin Exists</value>
   </data>
   <data name="Views\PermissionPolicyUser_DetailView\Items\ChangePasswordOnFirstLogon\Caption" xml:space="preserve">
-    <value>Change Password On First Logon</value>
+    <value>Force Password Change</value>
+  </data>
+  <data name="Views\PermissionPolicyUser_DetailView\Items\ChangePasswordOnFirstLogon\ToolTip" xml:space="preserve">
+    <value>User Must Change Password at Next Logon</value>
   </data>
   <data name="Views\PermissionPolicyUser_DetailView\Items\GCRecord\Caption" xml:space="preserve">
     <value>GCRecord</value>
@@ -2418,6 +2427,9 @@
   </data>
   <data name="Views\PermissionPolicyUser_DetailView\Items\UserName\Caption" xml:space="preserve">
     <value>User Name</value>
+  </data>
+  <data name="Views\PermissionPolicyUser_DetailView\Layout\Main\SimpleEditors\PermissionPolicyUser\ChangePasswordOnFirstLogon\ToolTip" xml:space="preserve">
+    <value>User Must Change Password at Next Logon</value>
   </data>
   <data name="Views\PermissionPolicyUser_DetailView\Layout\Main\Roles_Group\Caption" xml:space="preserve">
     <value>Roles</value>
@@ -2447,7 +2459,10 @@
     <value>Is Active</value>
   </data>
   <data name="Views\PermissionPolicyUser_ListView\Columns\ChangePasswordOnFirstLogon\Caption" xml:space="preserve">
-    <value>Change Password On First Logon</value>
+    <value>Force Password Change</value>
+  </data>
+  <data name="Views\PermissionPolicyUser_ListView\Columns\ChangePasswordOnFirstLogon\ToolTip" xml:space="preserve">
+    <value>User Must Change Password at Next Logon</value>
   </data>
   <data name="Views\PermissionPolicyUser_LookupListView\Caption" xml:space="preserve">
     <value>User</value>

@@ -6,17 +6,17 @@ public static class AssemblyInfo {
 namespace DevExpress.Internal {
     internal static class AssemblyInfo {
 #endif
-    public const string AssemblyCopyright = "Copyright © 2000-2025 Developer Express Inc."; // don't touch!!!!!
+    public const string AssemblyCopyright = "Copyright © 2000-2026 Developer Express Inc."; // don't touch!!!!!
     public const string AssemblyCompany = "Developer Express Inc.";
 
-    public const int VersionId = 252;
-    public const int VersionIdMinor = 25201;
-    public const string VersionShort = "25.2";
+    public const int VersionId = 261;
+    public const int VersionIdMinor = 26101;
+    public const string VersionShort = "26.1";
     public const string Version = VersionShort + ".0.0";
 
     public const string FileVersion = Version;
-    public const string MarketingVersion = "v2025 vol 2";
-    public const string VirtDirSuffix = "_v25_2";
+    public const string MarketingVersion = "v2026 vol 1";
+    public const string VirtDirSuffix = "_v26_1";
 
     public const string PublicKeyToken = "79868b8147b5eae4";
     public const string PublicKey = "0024000004800000940000000602000000240000525341310004000001000100dd3415ad127e2479d518586804419e99231acd687f889e897fb021bec3d90d53781811bb9d569e032d00362413298930c553dfd43a24e699c6a3d4922824f3c987fc01524b94059de1ccfbef1ff6aedc86055d56c4c3c92c550c84a1410b0c0e891e8f2f0fa193e1532f25727ae634055808129b901bdc24cb517e95fb8815b5";
@@ -512,6 +512,8 @@ namespace DevExpress.Internal {
         SRAssemblyAIIntegrationGeneration = "DevExpress.AIIntegration.Generation" + VSuffix,
         SRAssemblyAIIntegrationGenerationFull = SRAssemblyAIIntegrationGeneration + FullAssemblyVersionExtension,
 
+        SRAssemblyAIIntegrationPrinting = "DevExpress.AIIntegration.Printing" + VSuffix,
+        SRAssemblyAIIntegrationPrintingFull = SRAssemblyAIIntegrationPrinting + FullAssemblyVersionExtension,
         SRAssemblyAIIntegrationReportingCommon = "DevExpress.AIIntegration.Reporting.Common" + VSuffix,
         SRAssemblyAIIntegrationWebReportingCommon = "DevExpress.AIIntegration.Web.Reporting.Common" + VSuffix,
         SRAssemblyAIIntegrationReportingCommonFull = SRAssemblyAIIntegrationReportingCommon + FullAssemblyVersionExtension,
@@ -524,7 +526,8 @@ namespace DevExpress.Internal {
 
         SRAssemblyAIIntegrationNetCoreReporting = "DevExpress.AIIntegration.AspNetCore.Reporting" + VSuffix,
         SRAssemblyAIIntegrationBlazorReportingViewer = "DevExpress.AIIntegration.Blazor.Reporting.Viewer" + VSuffix,
-        SRAssemblyAIIntegrationBlazorRichEdit = "DevExpress.AIIntegration.Blazor.RichEdit" + VSuffix;
+        SRAssemblyAIIntegrationBlazorRichEdit = "DevExpress.AIIntegration.Blazor.RichEdit" + VSuffix,
+        SRAssemblyAIIntegrationWeb = "DevExpress.AIIntegration.Web" + VSuffix;
 
     public const string
         DXTabNameComponents = "Components",
@@ -598,6 +601,7 @@ namespace DevExpress.Internal {
         DXLinkTrialCommon = "https://go.devexpress.com/Licensing_Installer_Watermark.aspx", // use this one everywhere if it is difficult to integrate product-specific links
 
         DXLinkLicensingDocASP = "https://www.devexpress.com/go/Licensing_Documentation_AspNetClassic.aspx",
+        DXLinkLicensingDocASPNETCore = "https://www.devexpress.com/go/Licensing_Documentation_AspNetCore.aspx",
         DXLinkLicensingDocXAF = "https://www.devexpress.com/go/Licensing_Documentation_XAF.aspx",
         DXLinkLicensingDocBlazor = "https://www.devexpress.com/go/Licensing_Documentation_Blazor.aspx",
         DXLinkLicensingDocOffice = "https://www.devexpress.com/go/Licensing_Documentation_Office.aspx",
