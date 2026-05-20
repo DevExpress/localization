@@ -151,6 +151,9 @@ namespace DevExpress.Internal {
     public const string SRAssemblyDocsPdf = "DevExpress.Docs.Pdf" + VSuffix;
     public const string SRAssemblyDocsPdfTests = "DevExpress.Docs.Pdf" + TestsSuffix;
     public const string SRAssemblyRDSReportDesigner = "DevExpress.ReportDesigner" + VSuffix;
+
+    public const string SRAssemblyDevExtremeAspNetCore = "DevExtreme.AspNet.Core";
+    public const string SRAssemblyDevExtremeAspNetMvc = "DevExtreme.AspNet.Mvc";
 #endif
 
     public const string SRDocumentationLink = "https://docs.devexpress.com/?l=true/";
@@ -183,7 +186,7 @@ namespace DevExpress.Internal {
         SRAssemblyBlazorSpreadsheetUtils = "DevExpress.Blazor.SpreadsheetUtils" + VSuffix,
         SRAssemblyBlazorPdfViewer = "DevExpress.Blazor.PdfViewer" + VSuffix,
         SRAssemblyBlazorRichEdit = "DevExpress.Blazor.RichEdit" + VSuffix,
-        SRAssemblyBlazorRichEditTest = "DevExpress.Blazor.RichEdit" + VSuffix + ".Tests",
+        SRAssemblyBlazorRichEditTest = "DevExpress.Blazor.RichEdit.Tests",
         SRAssemblyBlazorRichEditSeleniumTest = "DevExpress.Blazor.RichEdit.Selenium.Tests";
     #endregion
 
