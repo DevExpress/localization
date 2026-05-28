@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>DevExpress.AIIntegration.WinForms</RootNamespace>
     <AssemblyName>DevExpress.AIIntegration.WinForms.v26.1</AssemblyName>
-<SignAssembly>true</SignAssembly>
+    <SignAssembly>true</SignAssembly>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -212,6 +212,9 @@
     <EmbeddedResource Include="Controls\AIRequestControl.zh-TW.resx">
       <DependentUpon>AIRequestControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\DocumentAIOperationForm.it.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -221,5 +224,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  
 </Project>

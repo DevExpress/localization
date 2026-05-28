@@ -630,7 +630,7 @@ Per recuperare manualmente i dati effettivi, creare l'istanza di un oggetto orig
     <value>Query</value>
   </data>
   <data name="DataAccessUIStringId.WizardPageConfigureQuery_StoredProcedure" xml:space="preserve">
-    <value>Stored Procedure</value>
+    <value>Password memorizzata</value>
   </data>
   <data name="DataAccessUIStringId.WizardPageEFConnectionProperties_CustomConnection" xml:space="preserve">
     <value>Specificare una stringa di connessione personalizzata</value>
@@ -1045,5 +1045,30 @@ Aggiornare le impostazioni di connessione in modo che corrisponda allo schema di
   </data>
   <data name="DataAccessUIStringId.ConnectionProperties_TrustServerCertificate_True" xml:space="preserve">
     <value>Si</value>
+  </data>
+  <data name="DataAccessUIStringId.QueryBuilderColumns_Source" xml:space="preserve">
+    <value>Origine</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseJsonSchema_PartiallyAnalyzedJsonMessage" xml:space="preserve">
+    <value>I tipi di campo sopra indicati vengono generati in base ai primi {0} record JSON.
+
+Se i dati contengono un record il cui tipo all'interno di questo limite differisce dal tipo al di fuori di esso, il tipo di campo corrispondente viene generato in modo errato. Ciò comporterà errori di deserializzazione del tipo.
+
+È possibile analizzare tutti i record JSON per garantire la corretta generazione del tipo. Si noti che questa operazione potrebbe richiedere più tempo rispetto all'analisi di un numero limitato di documenti.</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseMongoDBSchema_PartiallyAnalyzedCollectionMessage" xml:space="preserve">
+    <value>I tipi di campo sopra indicati vengono generati in base ai primi {0} documenti MongoDB.
+
+Se i dati contengono un campo il cui tipo all'interno di questo limite differisce dal tipo al di fuori di esso, il tipo di campo corrispondente verrà generato in modo errato. Ciò comporterà errori di deserializzazione del tipo.
+
+È possibile analizzare tutti i documenti MongoDB per garantire la corretta generazione dei tipi. Si noti che questa operazione potrebbe richiedere più tempo rispetto all'analisi di un numero limitato di documenti.</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBQueries_QueryAlias" xml:space="preserve">
+    <value>Alias</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardUnableToLoadMongoDBDriver" xml:space="preserve">
+    <value>Il tentativo di caricare l'assembly "MongoDB.Driver.dll" non è riuscito.
+
+Il pacchetto "MongoDB.Driver" deve essere installato nel progetto dell'applicazione per fornire dati MongoDB in fase di esecuzione.</value>
   </data>
 </root>
