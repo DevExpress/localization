@@ -3184,7 +3184,7 @@ Utilizzarlo per sottolineare la tendenza nel totale in tutta la serie per una so
     <value>{0} R x C {1}</value>
   </data>
   <data name="XtraSpreadsheetStringId.Scope_DefinedName" xml:space="preserve">
-    <value>DefinedName</value>
+    <value>Nome definito</value>
   </data>
   <data name="XtraSpreadsheetStringId.Scope_SheetIndex" xml:space="preserve">
     <value>SheetIndex = {0}</value>
@@ -4846,5 +4846,1087 @@ L'elenco dei campi consente di aggiungere e rimuovere campi dal report della tab
   </data>
   <data name="XtraSpreadsheetStringId.PivotPageFieldMultipleItemsCaption" xml:space="preserve">
     <value>(Elementi multipli)</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_CellStyleAccent" xml:space="preserve">
+    <value>Accento</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_PivotTableAnalyzeActions" xml:space="preserve">
+    <value>Azioni</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_PivotTableAnalyzeActiveField" xml:space="preserve">
+    <value>Campo attivo</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_AutoOutlineCommandDescription" xml:space="preserve">
+    <value>Analizza le formule per determinare i livelli di raggruppamento e crea una struttura che includa gruppi di colonne, gruppi di righe o entrambi.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_HeaderFooterInsertPictureDescription" xml:space="preserve">
+    <value>Aggiungi un'immagine all'intestazione o al piè di pagina.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartHierarchyCommandGroupDescription" xml:space="preserve">
+    <value>Inserisci un diagramma gerarchico.
+
+Utilizza questo tipo di diagramma per confrontare le parti con il tutto, oppure quando diverse colonne di categorie formano una gerarchia.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartStatisticCommandGroupDescription" xml:space="preserve">
+    <value>Inserisci un grafico statistico.
+
+Utilizza questo tipo di grafico per mostrare l'analisi statistica dei tuoi dati.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_MailMergeAddDataSourceCommand" xml:space="preserve">
+    <value>Aggiungi origine dati</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_MailMergeSetGroupFooterCommandDescription" xml:space="preserve">
+    <value>Specifica un piè di pagina di gruppo. Si basa su un campo di ordinamento e visualizza le informazioni alla fine di un gruppo di record nel documento risultante.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_MailMergeSetGroupHeaderCommandDescription" xml:space="preserve">
+    <value>Specifica un'intestazione di gruppo. Si basa su un campo di ordinamento e visualizza le informazioni all'inizio di un gruppo di record nel documento risultante.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_PageSetupAddPrintAreaDescription" xml:space="preserve">
+    <value>Aggiungi un'area specifica del foglio all'area di stampa.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_PageSetupPrintHeadingsDescription" xml:space="preserve">
+    <value>Stampa le intestazioni di riga e di colonna.
+
+Le intestazioni di riga sono i numeri di riga che corrispondono alla dimensione del foglio.
+
+Le intestazioni di colonna sono le lettere o i numeri che compaiono sopra le colonne del foglio.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_PasteBitmapDescription" xml:space="preserve">
+    <value>Inserisce il contenuto degli Appunti come immagine bitmap. Questo formato può occupare molta memoria e spazio su disco, ma è esattamente ciò che vedi sullo schermo.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_PasteEnhancedMetafileDescription" xml:space="preserve">
+    <value>Inserisce il contenuto degli Appunti come immagine. Questo formato è migliore di Bitmap per la stampa su stampanti di alta qualità.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ReviewInsertCommentContextMenuItemDescription" xml:space="preserve">
+    <value>Aggiungi una nota relativa a questa parte del documento.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_BindedDataSourceDoesNotAllowEditing" xml:space="preserve">
+    <value>L'intervallo di celle che si sta tentando di modificare è associato a un'origine dati che non consente la modifica.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_BindedDataSourcePropertyIsReadonly" xml:space="preserve">
+    <value>L'intervallo di celle che si sta tentando di modificare è associato al campo di origine dati di sola lettura.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_CannotBeModifiedCellsWithFormulasInBindingRange" xml:space="preserve">
+    <value>Impossibile modificare i dati nell'intervallo di celle selezionato. Contiene formule che appartengono a un intervallo di origine dati e non possono essere modificate.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_CannotBeModifiedCellsWithFormulasInBindingRangeAPI" xml:space="preserve">
+    <value>Impossibile modificare i dati nell'intervallo di celle selezionato. Contiene formule appartenenti a un intervallo di origine dati per il quale è impostata l'opzione Mantieni formule.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_CannotExportEmptyWorkbook" xml:space="preserve">
+    <value>Un quaderno di lavoro deve contenere almeno un foglio.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_CannotTableContainMultipleDataBindings" xml:space="preserve">
+    <value>Una tabella non può contenere più data binding.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ChartExUnableToDeleteSeries" xml:space="preserve">
+    <value>Impossibile eliminare la serie.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_CommandRequiresAtLeastTwoRows" xml:space="preserve">
+    <value>Questo comando richiede almeno due righe di dati di origine. Non è possibile utilizzare questo comando su una selezione composta da una sola riga.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ConfirmDeleteDefinedName" xml:space="preserve">
+    <value>Sei sicuro di voler eliminare il nome {0}?</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ConfirmDeleteDefinedNames" xml:space="preserve">
+    <value>Sei sicuro di voler eliminare i nomi selezionati?</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ConfirmModifyExistingOutline" xml:space="preserve">
+    <value>Modificare il contorno esistente?</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_CouldNotCreatePropertyDecsriptorCollection" xml:space="preserve">
+    <value>Impossibile creare un'istanza di PropertyDescriptorCollection.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_DataValidationDefinedNameNotFound" xml:space="preserve">
+    <value>L'intervallo denominato specificato non è stato trovato.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_DataValidationInvalidDate" xml:space="preserve">
+    <value>La data inserita per {0} non è valida.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_DataValidationInvalidDecimalValue" xml:space="preserve">
+    <value>Per le condizioni {0} non è possibile utilizzare valori decimali.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_DataValidationInvalidNegativeValue" xml:space="preserve">
+    <value>Per le condizioni {0} non è possibile utilizzare valori negativi.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_DataValidationInvalidNonnumericValue" xml:space="preserve">
+    <value>Lo {0} deve essere un valore numerico, un'espressione numerica o fare riferimento a una cella contenente un valore numerico.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_DataValidationInvalidReference" xml:space="preserve">
+    <value>Questo tipo di riferimento non può essere utilizzato in una formula di convalida dei dati.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_DataValidationInvalidTime" xml:space="preserve">
+    <value>L'ora inserita per {0} non è valida.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_DataValidationMinGreaterThanMax" xml:space="preserve">
+    <value>Lo {0} deve essere maggiore o uguale all'{1}.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_DataValidationMustBeRowOrColumnRange" xml:space="preserve">
+    <value>L'origine dell'elenco deve essere un elenco delimitato oppure un riferimento a una singola riga o colonna.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_DeleteSheetConfirmation" xml:space="preserve">
+    <value>Non è possibile annullare l'eliminazione dei fogli e si potrebbero rimuovere alcuni dati. Se non sono necessari, fare clic su OK.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_EncryptedFileIntegrityCheckFailed" xml:space="preserve">
+    <value>Questo file potrebbe essere stato manomesso o danneggiato e il suo contenuto potrebbe non essere affidabile. Desideri continuare ad aprire questo file?</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorApplyChartTemplateDueToNumberOfSeries" xml:space="preserve">
+    <value>Il numero di serie nel grafico non è valido per il modello di grafico specificato.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorArrayFormulaCannotContainLockedAndUnlockedCells" xml:space="preserve">
+    <value>Non è possibile inserire una formula matriciale in un intervallo di celle che non siano tutte bloccate o tutte sbloccate.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorAttemptToHideAllColumns" xml:space="preserve">
+    <value>Non è possibile nascondere tutte le colonne in un foglio di lavoro.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorAttemptToHideAllRows" xml:space="preserve">
+    <value>Non è possibile nascondere tutte le righe di un foglio di lavoro.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorAxisGroupCannotBeChanged" xml:space="preserve">
+    <value>Non è possibile modificare il tipo di asse per questa serie di dati nella raccolta di visualizzazioni del grafico corrente.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorCannotChangingMergedCell" xml:space="preserve">
+    <value>Questa operazione non può essere eseguita su celle unite.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorChartSheetIndexOutside" xml:space="preserve">
+    <value>L'indice ChartSheet deve essere positivo e inferiore al numero di ChartSheet.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorChartSheetToBeDeletedNotFound" xml:space="preserve">
+    <value>Il foglio di calcolo non è presente in una cartella di lavoro.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorChartSheetWithNameNotFound" xml:space="preserve">
+    <value>Il foglio di calcolo con questo nome non è stato trovato.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorClearDefinedNamesCollectionReferencedQueryTable" xml:space="preserve">
+    <value>Impossibile cancellare la raccolta di nomi definiti. Contiene un nome definito che fa riferimento a una QueryTable. Rimuovere la QueryTable e provare a cancellare nuovamente la raccolta.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorColumnIntervalRangeExpected" xml:space="preserve">
+    <value>L'intervallo deve essere un intervallo di colonna valido.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorConditionalFormattingCannotAdd" xml:space="preserve">
+    <value>Impossibile aggiungere la formattazione condizionale.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorConditionalFormattingEmptyValue" xml:space="preserve">
+    <value>Inserisci un valore.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorConditionalFormattingInvalidCellValue" xml:space="preserve">
+    <value>Il valore inserito non è un numero, una data, un'ora o una stringa validi.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorConditionalFormattingInvalidFormula" xml:space="preserve">
+    <value>La formula inserita non restituisce un valore numerico, una data, un'ora o una stringa.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorConditionalFormattingInvalidIconSetNumber" xml:space="preserve">
+    <value>Il valore inserito non è un numero, una data o un orario validi.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorConditionalFormattingInvalidPercentRank" xml:space="preserve">
+    <value>Inserisci un numero compreso tra 1 e 100.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorConditionalFormattingValueGreaterThanOtherValue" xml:space="preserve">
+    <value>Il valore per {0} deve essere maggiore del valore per {1}.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorConditionalFormattingValueNotValidNumber" xml:space="preserve">
+    <value>Il valore specificato {0} non è un numero valido.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorConditionalFormattingValueNotValidPercentage" xml:space="preserve">
+    <value>Il valore specificato {0} non è una percentuale valida.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorConditionalFormattingValueNotValidPercentile" xml:space="preserve">
+    <value>Il valore specificato {0} non è un percentile valido.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorConditionalFormattingValuesNotValidPercentage" xml:space="preserve">
+    <value>Uno o più dei valori specificati non rappresentano una percentuale valida.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorCopyAreaCannotOverlapUnlessSameSizeAndShape" xml:space="preserve">
+    <value>Le aree da copiare e incollare non possono sovrapporsi a meno che non abbiano le stesse dimensioni e la stessa forma.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorCreateEmptyGroupShape" xml:space="preserve">
+    <value>Un gruppo deve contenere due o più forme.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorDefinedNameExceedAllowedLength" xml:space="preserve">
+    <value>Il nome definito non deve superare i 255 caratteri.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorErrorBarsWithBarDirectionAlreadyExists" xml:space="preserve">
+    <value>Esistono già barre di errore con la stessa direzione.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorExcludeRangeFromAnotherWorksheet" xml:space="preserve">
+    <value>Non è possibile escludere un intervallo da un altro foglio di lavoro.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorFirstDVCriteriaMustBeEmpty" xml:space="preserve">
+    <value>Il primo campo dei criteri di convalida dei dati deve essere vuoto.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorFirstDVCriteriaMustNotBeEmpty" xml:space="preserve">
+    <value>Il primo criterio di convalida dei dati non deve essere vuoto.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorIncompatibleDataLabelPosition" xml:space="preserve">
+    <value>La posizione dell'etichetta specificata non è compatibile con la visualizzazione/serie del grafico corrente.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorIncorectFirstIndex" xml:space="preserve">
+    <value>Il primo indice è errato.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorIncorectLastIndex" xml:space="preserve">
+    <value>L'ultimo indice non è corretto.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorIncorrectCreateStockHighLowCloseChart" xml:space="preserve">
+    <value>Per creare questo grafico azionario, disponete i dati sul foglio in quest'ordine: prezzo massimo, prezzo minimo, prezzo di chiusura. Utilizzate date o nomi di titoli azionari come etichette.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorIncorrectErrorBarsCollectionCount" xml:space="preserve">
+    <value>Il numero di barre di errore raccolte deve essere compreso tra 0 e 2.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorIncorrectPaperHeightOrWidth" xml:space="preserve">
+    <value>La larghezza e l'altezza della carta devono essere maggiori di zero.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorIndexOutOfRange" xml:space="preserve">
+    <value>Valore dell'indice fuori intervallo.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorInParseLine" xml:space="preserve">
+    <value>Errore nell'analisi della riga.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorInplaceComboBoxMustBeUseRangeOrTextData" xml:space="preserve">
+    <value>Utilizza un intervallo di celle o valori di testo per gli elementi di un editor integrato di ComboBox.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorInsertBelowTotalRow" xml:space="preserve">
+    <value>Impossibile inserire una riga di tabella sotto la riga del totale.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorInvalidCustomPropertyValue" xml:space="preserve">
+    <value>Il valore inserito non corrisponde al tipo specificato. Il valore verrà memorizzato come testo.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorInvalidFilterArgument" xml:space="preserve">
+    <value>L'argomento del filtro inserito non è valido.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorInvalidNumberFormat" xml:space="preserve">
+    <value>Impossibile utilizzare il formato numerico specificato.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorInvalidOperationForDataSheet" xml:space="preserve">
+    <value>Questa operazione non è valida per la scheda tecnica.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorInvalidRange" xml:space="preserve">
+    <value>Intervallo non valido.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorInvalidTableStyleType" xml:space="preserve">
+    <value>Il tipo di stile non è valido.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorLastPrimaryAxisCannotBeChanged" xml:space="preserve">
+    <value>L'ultimo asse primario del grafico non può essere convertito in un asse secondario.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorMaxNumberOfSeriesPerChart" xml:space="preserve">
+    <value>Il numero massimo di serie per grafico è 255.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorRangeConsistsOfEmptyCells" xml:space="preserve">
+    <value>L'intervallo specificato deve contenere almeno una cella con dati.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorRangeContainsTable" xml:space="preserve">
+    <value>L'intervallo specificato non deve intersecare una tabella.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorRangeMustConsistOfASingleRowOrColumn" xml:space="preserve">
+    <value>L'intervallo specificato deve essere costituito da una singola riga o colonna.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorRemoveDefinedNameReferencedQueryTable" xml:space="preserve">
+    <value>Impossibile eliminare un nome definito che fa riferimento a una QueryTable. Rimuovere la QueryTable prima di eliminare il nome definito.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorRowIntervalRangeExpected" xml:space="preserve">
+    <value>L'intervallo deve essere un intervallo di righe valido.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorSecondDVCriteriaMustBeEmpty" xml:space="preserve">
+    <value>Il secondo criterio di convalida dei dati deve essere vuoto.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorSecondDVCriteriaMustNotBeEmpty" xml:space="preserve">
+    <value>Il secondo criterio di convalida dei dati non deve essere vuoto.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorSetShapeCustomPreset" xml:space="preserve">
+    <value>La proprietà ShapeGeometry.Preset non può essere impostata su ShapeGeometryPreset.Custom.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorSheetAlreadyExists" xml:space="preserve">
+    <value>Esiste già un foglio con lo stesso nome.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorSheetIndexOutside" xml:space="preserve">
+    <value>L'indice del foglio deve essere positivo e inferiore al numero di fogli.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorSheetWithNameNotFound" xml:space="preserve">
+    <value>Il foglio con questo nome non è stato trovato.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorSomeChartTypesCannotBeCombinedWithOtherChartTypes" xml:space="preserve">
+    <value>Alcuni tipi di grafico non possono essere combinati con altri. Seleziona un tipo di grafico diverso.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorSparklinePositionOrDataRangeIsInvalid" xml:space="preserve">
+    <value>La posizione o l'intervallo di dati specificato non sono validi.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorSparklinePositionsMustBeUnique" xml:space="preserve">
+    <value>L'intervallo di posizioni specificato non è valido. Le posizioni nella sparkline devono essere univoche.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorStyleTypeMustBeTableOrPivot" xml:space="preserve">
+    <value>Il tipo di stile deve essere tabella, pivot o entrambi.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorSubtotalUncomplete" xml:space="preserve">
+    <value>Impossibile completare il comando utilizzando l'intervallo specificato. Selezionare una singola cella all'interno dell'intervallo e riprovare.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorSurfaceChartMustContainAtLeastTwoSeries" xml:space="preserve">
+    <value>Un grafico di superficie deve contenere almeno due serie.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorTableSlicersCantBeCopied" xml:space="preserve">
+    <value>I filtri tabella non possono essere copiati da una cartella di lavoro all'altra. Riprova selezionando l'intera tabella e i relativi filtri.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorThreadedCommentAlreadyExists" xml:space="preserve">
+    <value>Esiste già un commento in questa discussione con lo stesso riferimento.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorUseCommentFromAnotherWorksheet" xml:space="preserve">
+    <value>Non è possibile utilizzare un commento proveniente da un altro foglio di lavoro.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorUseDeletedChartsheet" xml:space="preserve">
+    <value>ChartSheet è già stato eliminato.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorUseDeletedObject" xml:space="preserve">
+    <value>L'oggetto è già stato eliminato.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorIncorrectExtension" xml:space="preserve">
+    <value>Estensione del file errata.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorWorkbookIsProtected" xml:space="preserve">
+    <value>La cartella di lavoro è protetta e non può essere modificata.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_Exporting" xml:space="preserve">
+    <value>Esportazione...</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_FormulasNotAllowed" xml:space="preserve">
+    <value>Non è consentito inserire o modificare formule.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_GroupEditorFieldNameEmpty" xml:space="preserve">
+    <value>La colonna Nome campo non può contenere valori vuoti.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_HeaderFooterTooLongTextString" xml:space="preserve">
+    <value>La stringa di testo inserita è troppo lunga. Riduci il numero di caratteri utilizzati.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_IncorrectNumberRange" xml:space="preserve">
+    <value>Il numero deve essere compreso tra {0} e {1}. Riprova inserendo un numero in questo intervallo.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_IncorrectPassword" xml:space="preserve">
+    <value>La password inserita non è corretta. Verifica che il tasto BLOC MAIUSC sia disattivato e assicurati di utilizzare la corretta capitalizzazione.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_InvalidBorderIndexReplaced" xml:space="preserve">
+    <value>Il file contiene un indice di bordo non valido. Il bordo non valido viene sostituito con un bordo di stile Normale.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_InvalidBorderStyleRemoved" xml:space="preserve">
+    <value>Lo stile del bordo non è valido ed è stato rimosso.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_InvalidCommentAuthor" xml:space="preserve">
+    <value>Il nome dell'autore del commento non deve essere nullo.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_InvalidDefinedNameReference" xml:space="preserve">
+    <value>Il riferimento specificato è vuoto o non valido. Un nome definito deve fare riferimento a una cella, un intervallo di celle, una formula o una costante.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_InvalidFillIndexReplaced" xml:space="preserve">
+    <value>Il file contiene un indice di riempimento non valido. Il riempimento non valido viene sostituito con il riempimento in stile Normale.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_InvalidFillParameter" xml:space="preserve">
+    <value>Il parametro "fill" non è valido.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_InvalidFontIndexReplaced" xml:space="preserve">
+    <value>Il file contiene un indice di carattere non valido. Il carattere non valido verrà sostituito con il carattere in stile Normale.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_InvalidNumber" xml:space="preserve">
+    <value>Il valore intero non è valido.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_InvalidSortColumnIndex" xml:space="preserve">
+    <value>Questo comando non può essere eseguito con l'indice di colonna specificato.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_InvalidThreadedCommentAuthor" xml:space="preserve">
+    <value>L'autore del commento nella discussione deve essere diverso da null.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_InvalidThreadedCommentAuthorName" xml:space="preserve">
+    <value>Il nome dell'autore del commento nella discussione non deve essere nullo.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_MailMergeReachesEndOfWorksheet" xml:space="preserve">
+    <value>Il foglio di calcolo ha raggiunto la fine del foglio di lavoro durante la generazione dei documenti di stampa unione.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_MenuManagerPropertyIsNotSet" xml:space="preserve">
+    <value>La proprietà MenuManager di SpreadsheetControl non è impostata.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_MergeCellsClarification" xml:space="preserve">
+    <value>Unendo le celle, viene mantenuto solo il valore della cella in alto a sinistra, scartando gli altri valori.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_NoCellsWereFound" xml:space="preserve">
+    <value>Non sono state trovate cellule.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_NumberColumnsInTableIsLessThanInDataSource" xml:space="preserve">
+    <value>Il numero di colonne nella tabella è inferiore al numero di colonne nell'origine dati.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_NumberRowsInTableAndDataSourceDoNotMatch" xml:space="preserve">
+    <value>Il numero di righe nella tabella e nell'origine dati non corrispondono.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PageSetupMarginsNotFitPageSize" xml:space="preserve">
+    <value>I margini non sono adatti alle dimensioni della pagina.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PageSetupPrintTitlesMultiSelect" xml:space="preserve">
+    <value>I titoli di stampa devono essere contigui e occupare righe o colonne complete.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PageSetupProblemFormula" xml:space="preserve">
+    <value>La formula che hai digitato contiene un errore. Il riferimento all'intervallo o il nome definito non è presente.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ParametersIdenticalNames" xml:space="preserve">
+    <value>Impossibile creare parametri con nomi identici:</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ParametersInvalidCharacters" xml:space="preserve">
+    <value>Impossibile creare parametri con nomi non validi:</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ParametersNoName" xml:space="preserve">
+    <value>Non è possibile creare un parametro senza specificarne il nome.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PasswordNotConfirmed" xml:space="preserve">
+    <value>La password di conferma non è identica.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PasswordTooLong" xml:space="preserve">
+    <value>La lunghezza della password deve essere inferiore a {0} caratteri.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PasteAreaNotSameSizeAsSelectionClarification" xml:space="preserve">
+    <value>I dati che stai incollando non hanno le stesse dimensioni della selezione. Vuoi comunque incollarli?</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotCacheFieldContainsNonDateItems" xml:space="preserve">
+    <value>Impossibile aggiungere un filtro data. Il campo cache pivot contiene elementi non di tipo data.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotCacheSourceTypeIsInvalid" xml:space="preserve">
+    <value>L'origine della cache pivot deve essere di tipo foglio di lavoro.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotCalculatedFieldCantBeABase" xml:space="preserve">
+    <value>Il campo calcolato non può essere la base.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotCalculatedFieldCantBeGroupped" xml:space="preserve">
+    <value>I campi calcolati non possono essere raggruppati.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotCalculationRequiresField" xml:space="preserve">
+    <value>Questo calcolo richiede la specifica di un campo pivot.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotCalculationRequiresItem" xml:space="preserve">
+    <value>Questo calcolo richiede di specificare un elemento pivot o di impostare il tipo di elemento su precedente/successivo.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotCanNotDetermineField" xml:space="preserve">
+    <value>Impossibile determinare in base a quale campo della tabella pivot ordinare.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotCannotGroupThatSelection" xml:space="preserve">
+    <value>Impossibile raggruppare questa selezione.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotCannotHideLastVisibleItem" xml:space="preserve">
+    <value>Impossibile nascondere l'ultimo elemento pivot visibile.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotEndNumberMustBeGreaterThanStartNumber" xml:space="preserve">
+    <value>Il numero finale deve essere maggiore del numero iniziale.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotFieldAlreadyHasAnotherGroupingType" xml:space="preserve">
+    <value>Il campo pivot è già raggruppato in base a un altro tipo di gruppo.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotFieldCannotBePlacedOnThatAxis" xml:space="preserve">
+    <value>Il campo che stai spostando non può essere posizionato in quell'area del report.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotFieldCantBeGrouped" xml:space="preserve">
+    <value>Alcuni campi non sono supportati dal raggruppamento selezionato.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotFieldContainsTooMuschUniqueItems" xml:space="preserve">
+    <value>Sono supportati solo 32.500 elementi univoci per campo.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotFieldNameAlreadyExists" xml:space="preserve">
+    <value>Il campo con il nome "PivotTable" esiste già.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotFieldNameIsInvalid" xml:space="preserve">
+    <value>Non è possibile inserire un valore nullo come nome di un elemento o di un campo in un report di tabella pivot.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotFilterCannotAddFilterToPageField" xml:space="preserve">
+    <value>Impossibile aggiungere un filtro pivot al campo della pagina.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotFilterCannotChangeTop10TypeProperty" xml:space="preserve">
+    <value>Per modificare questa proprietà, il tipo di filtro pivot deve essere conteggio, somma o percentuale.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotFilterCannotChangeUseWholeDayProperty" xml:space="preserve">
+    <value>La proprietà UseWholeDay non può essere impostata su false quando si utilizza una sequenza temporale di una tabella pivot per filtrare le date.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotFilterInteger" xml:space="preserve">
+    <value>un numero intero</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotFilterInvalidDate" xml:space="preserve">
+    <value>La data inserita non è valida. Riprova.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotFilterNumber" xml:space="preserve">
+    <value>un numero</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotFilterNumbers" xml:space="preserve">
+    <value>numeri</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotFilterRequiresMeasureField" xml:space="preserve">
+    <value>Questo tipo di filtro pivot richiede la specifica del campo di misura.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotFilterRequiresSecondValue" xml:space="preserve">
+    <value>Questo tipo di filtro pivot richiede la specifica di due valori.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotFilterRequiresValue" xml:space="preserve">
+    <value>Questo tipo di filtro pivot richiede di specificare un valore.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotFilterTop10CountMustBeInteger" xml:space="preserve">
+    <value>Il valore di questo filtro deve essere un numero intero.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotFormulaContainsReferences" xml:space="preserve">
+    <value>Nelle formule delle tabelle pivot non sono supportati riferimenti, nomi e matrici.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotItemNameCannotBeFound" xml:space="preserve">
+    <value>Impossibile trovare il nome di un elemento. Verifica di aver digitato correttamente il nome e che l'elemento sia presente nel report della tabella pivot.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotItemOrFieldWithSameNameExist" xml:space="preserve">
+    <value>Impossibile creare l'elemento o il campo calcolato perché esiste già un altro elemento o campo con lo stesso nome.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotReferencesToMultipleItemNames" xml:space="preserve">
+    <value>Nelle formule delle tabelle pivot non è possibile includere riferimenti a più nomi di elementi per campo.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotReferenceToAnotherField" xml:space="preserve">
+    <value>Le formule delle tabelle pivot possono fare riferimento solo agli elementi presenti nello stesso campo dell'elemento calcolato.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotTableCanNotApplyDataValidation" xml:space="preserve">
+    <value>Non è possibile applicare la convalida dei dati alle celle in un report di tabella pivot.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotTableCanNotBeBuiltFromEmptyCache" xml:space="preserve">
+    <value>Non è possibile creare un report di tabella pivot partendo da una cache dati vuota. Aggiornare la cache dati.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotTableCanNotOverlapPivotTable" xml:space="preserve">
+    <value>Un report di tabella pivot non può sovrapporsi a un'altra tabella pivot.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotTableConsolidationRestricted" xml:space="preserve">
+    <value>Medie, deviazioni standard e varianze non sono supportate quando un report pivot contiene elementi calcolati.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotTableDataSourceAndDestinationReferencesAreBothInvalid" xml:space="preserve">
+    <value>I riferimenti all'origine e alla destinazione dei dati non sono entrambi validi.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotTableDataSourceReferenceNotValid" xml:space="preserve">
+    <value>Il riferimento alla fonte dati non è valido.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotTableDestinationReferenceNotValid" xml:space="preserve">
+    <value>Il riferimento di destinazione non è valido.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotTableEmptyDataCaption" xml:space="preserve">
+    <value>Non è possibile inserire un valore nullo come nome di un elemento o di un campo in un report di tabella pivot.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotTableEmptyDataCaptionAPI" xml:space="preserve">
+    <value>Non è possibile assegnare un valore nullo come nome di un elemento o di un campo in un report di tabella pivot.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotTableFieldMoveRestricted" xml:space="preserve">
+    <value>Il campo che stai spostando è protetto da restrizioni, pertanto non può essere rimosso dalla tabella pivot.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotTableIndentOverflow" xml:space="preserve">
+    <value>Poiché è stato raggiunto il limite massimo di rientro per una cella, il campo successivo verrà visualizzato in una colonna separata.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotTableNameIsInvalid" xml:space="preserve">
+    <value>Il nome della tabella pivot non è valido.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotTableNotEnoughDataFields" xml:space="preserve">
+    <value>Questa operazione richiede almeno due campi dati nel report della tabella pivot.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotTablePartCanNotBeChanged" xml:space="preserve">
+    <value>Impossibile modificare questa parte di un report di tabella pivot.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotTableReportCanNotOverlapTable" xml:space="preserve">
+    <value>Un report di tabella pivot non può sovrapporsi a una tabella o a una mappatura XML.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotTableSavedWithoutUnderlyingData" xml:space="preserve">
+    <value>Il report della tabella pivot è stato salvato senza i dati sottostanti. Utilizzare il comando Aggiorna dati per aggiornare il report.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotTableSubtotalListPlace" xml:space="preserve">
+    <value>Questo comando visualizza i subtotali direttamente sul posto. Per visualizzare e rimuovere i subtotali in un report di tabella pivot, utilizzare il comando Impostazioni campo.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotTableTooMuchDataFields" xml:space="preserve">
+    <value>Un report di tabella pivot non può contenere più di 256 campi dati.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotTableTooMuchPageFields" xml:space="preserve">
+    <value>Un report di tabella pivot non può contenere più di 256 campi di pagina.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotTableWillNotFitOnTheSheet" xml:space="preserve">
+    <value>Il report della tabella pivot non si adatta al foglio. Desideri visualizzare il maggior numero possibile di elementi?</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotTableWillNotFitOnTheSheetSelectNewLocation" xml:space="preserve">
+    <value>Il report della tabella pivot non può essere inserito nel foglio. Selezionare una posizione diversa.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_PivotTableWillOverrideSheetCells" xml:space="preserve">
+    <value>Il foglio di lavoro contiene già dei dati. Vuoi sostituirli?</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ProtectedRangeDuplicateName" xml:space="preserve">
+    <value>Esiste già un intervallo con il titolo '{0}'. Inserisci un nuovo titolo per l'intervallo.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ProtectedRangeInvalidName" xml:space="preserve">
+    <value>Il titolo '{0}' contiene caratteri non validi. I titoli degli intervalli possono contenere solo lettere, numeri e spazi e devono iniziare con una lettera.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_RangeNotContainAllColumnsOfBindingRange" xml:space="preserve">
+    <value>L'intervallo di celle specificato non può essere ordinato poiché non contiene tutte le colonne dell'intervallo associato ai dati.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ReplaceAllSucceeded" xml:space="preserve">
+    <value>La ricerca è stata completata e sono state effettuate {0} sostituzioni.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ReplaceCantFindMatch" xml:space="preserve">
+    <value>Impossibile trovare una corrispondenza.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ResolveDefinedNameConflict" xml:space="preserve">
+    <value>Il nome '{0}' esiste già. Fai clic su Sì per utilizzare questa versione del nome oppure su No per rinominare la versione di '{0}' che stai spostando o copiando.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ResolveDefinedNameConflictWithTableName" xml:space="preserve">
+    <value>Impossibile utilizzare il nome esistente {0} a causa di un conflitto con il nome di una tabella.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_Saving" xml:space="preserve">
+    <value>Risparmio...</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_SearchCantFindData" xml:space="preserve">
+    <value>Impossibile trovare i dati che stai cercando.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_SearchingInDataSourceRangeNotSupported" xml:space="preserve">
+    <value>La ricerca nell'intervallo dell'origine dati non è supportata.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_SelectedCellsAffectsPivotTableAndCanNotBeChanged" xml:space="preserve">
+    <value>Non possiamo apportare questa modifica alle celle selezionate perché avrebbe un impatto su una tabella pivot.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_SelectionContainsCellsWithoutDataValidation" xml:space="preserve">
+    <value>La selezione contiene alcune celle senza impostazioni di convalida dei dati. Si desidera estendere la convalida dei dati anche a queste celle?</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ShiftCellsInBindingRangeIsNotAllowed" xml:space="preserve">
+    <value>Non è consentito spostare le celle all'interno di un intervallo di celle associato a un'origine dati.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_Sorting" xml:space="preserve">
+    <value>Ordinamento in corso...</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_SortingInDataSourceRangeNotSupported" xml:space="preserve">
+    <value>L'ordinamento nell'intervallo dell'origine dati non è supportato.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_TableMustHaveHeader" xml:space="preserve">
+    <value>La tabella deve avere un'intestazione perché l'intervallo di binding ha un'intestazione.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_TableRangeDoesNotIncludeHeaderRow" xml:space="preserve">
+    <value>L'intervallo di binding non ha un'intestazione. Estendi l'intervallo per includere una riga superiore che fungerà da intestazione della tabella.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_TopLeftOfBindingRangeBelongsMergedCells" xml:space="preserve">
+    <value>Impossibile associare l'intervallo di celle specificato a un'origine dati. La cella in alto a sinistra fa parte di una cella unita.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_UnableToInsertRowsIntoBindingRange" xml:space="preserve">
+    <value>Impossibile aggiungere righe a un intervallo di origine dati.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_UnableToInsertRowsIntoBindingRangeAPI" xml:space="preserve">
+    <value>Impossibile aggiungere righe a un intervallo di origine dati per il quale l'opzione AllowEdit o AllowNew non è impostata.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_UnableToRemoveRowsFromBindingRange" xml:space="preserve">
+    <value>Impossibile rimuovere righe da un intervallo di origine dati.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_UnableToRemoveRowsFromBindingRangeAPI" xml:space="preserve">
+    <value>Impossibile rimuovere righe da un intervallo di origine dati per il quale l'opzione AllowRemove non è impostata.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_UnableToSortRangeContainsBindingRange" xml:space="preserve">
+    <value>Impossibile ordinare i dati selezionati. Appartengono a un intervallo di origine dati per il quale l'ordinamento non è consentito.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_UnableToSortRangeContainsBindingRangeAPI" xml:space="preserve">
+    <value>Impossibile ordinare un intervallo di origini dati per il quale l'opzione AllowSort non è impostata.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_UnableToSortSelection" xml:space="preserve">
+    <value>Impossibile completare il comando utilizzando l'intervallo specificato. Selezionare una singola cella all'interno dell'intervallo e riprovare.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_UnsupportedChart" xml:space="preserve">
+    <value>Questo grafico non è disponibile nel foglio di calcolo.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_UnsupportedFormControl" xml:space="preserve">
+    <value>Questa forma rappresenta un controllo modulo non disponibile in Foglio di calcolo.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_UnsupportedSlicer" xml:space="preserve">
+    <value>Questa forma rappresenta uno strumento di selezione dati non disponibile in Foglio di calcolo.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_UnsupportedSmartArtGraphic" xml:space="preserve">
+    <value>Questa forma rappresenta un oggetto grafico SmartArt non disponibile in Foglio di calcolo.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_UnsupportedTimeline" xml:space="preserve">
+    <value>Questa forma rappresenta una linea temporale non disponibile nel foglio di calcolo.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_UnsupportedTimelineExcel" xml:space="preserve">
+    <value>Cronologia: Funziona con Excel 2013 o versioni successive. Non spostare o ridimensionare.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_UseMethodSetCustomPaperSize" xml:space="preserve">
+    <value>Utilizzare il metodo SheetView.SetCustomPaperSize per definire un formato carta personalizzato.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewConditionalFormattingRuleForm_FormTitle" xml:space="preserve">
+    <value>Nuova regola di formattazione</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingAverageAboveCondition" xml:space="preserve">
+    <value>sopra</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingAverageBelowCondition" xml:space="preserve">
+    <value>sotto</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingAverageEqualOrAboveCondition" xml:space="preserve">
+    <value>uguale o superiore</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingAverageEqualOrBelowCondition" xml:space="preserve">
+    <value>uguale o inferiore</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingBeginsWithTextCondition" xml:space="preserve">
+    <value>iniziando con</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingCellsBasedOnValuesDataBarType" xml:space="preserve">
+    <value>Barra dati</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingCellValueOperatorTypeBetween" xml:space="preserve">
+    <value>fra</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingCellValueOperatorTypeEqualTo" xml:space="preserve">
+    <value>uguale a</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingCellValueOperatorTypeGreaterThan" xml:space="preserve">
+    <value>maggiore di</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingCellValueOperatorTypeGreaterThanOrEqualTo" xml:space="preserve">
+    <value>maggiore o uguale a</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingCellValueOperatorTypeLessThan" xml:space="preserve">
+    <value>meno di</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingCellValueOperatorTypeLessThanOrEqualTo" xml:space="preserve">
+    <value>minore o uguale a</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingCellValueOperatorTypeNotBetween" xml:space="preserve">
+    <value>non tra</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingCellValueOperatorTypeNotEqualTo" xml:space="preserve">
+    <value>non uguale a</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingContainsTextCondition" xml:space="preserve">
+    <value>contenente</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingDataBarGradientFillType" xml:space="preserve">
+    <value>Riempimento sfumato</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingDataBarNoBorder" xml:space="preserve">
+    <value>Nessun confine</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingDataBarSolidBorder" xml:space="preserve">
+    <value>Bordo solido</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingDataBarSolidFillType" xml:space="preserve">
+    <value>Kit solido</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingEndsWithTextCondition" xml:space="preserve">
+    <value>terminando con</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingFormatCellsThatContainTypeBlanks" xml:space="preserve">
+    <value>Vuoti</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingFormatCellsThatContainTypeCellValue" xml:space="preserve">
+    <value>Valore della cella</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingFormatCellsThatContainTypeDatesOccurring" xml:space="preserve">
+    <value>Date in cui si verificano</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingFormatCellsThatContainTypeErrors" xml:space="preserve">
+    <value>Errori</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingFormatCellsThatContainTypeNoBlanks" xml:space="preserve">
+    <value>Nessun campo vuoto</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingFormatCellsThatContainTypeNoErrors" xml:space="preserve">
+    <value>Nessun errore</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingFormatCellsThatContainTypeSpecificText" xml:space="preserve">
+    <value>Testo specifico</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingIconSetCustom" xml:space="preserve">
+    <value>Costume</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingIconSetNoCellIcon" xml:space="preserve">
+    <value>Nessuna icona cellulare</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingIconSetWhen" xml:space="preserve">
+    <value>Quando</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingIconSetWhenValueIs" xml:space="preserve">
+    <value>quando il valore è</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingLast7DayTimePeriod" xml:space="preserve">
+    <value>Negli ultimi 7 giorni</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingNotContainsTextCondition" xml:space="preserve">
+    <value>Non contenente</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingPreviewNoFormatSet" xml:space="preserve">
+    <value>Nessun formato impostato</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingSpecialDuplicateCondition" xml:space="preserve">
+    <value>duplicato</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingSpecialUniqueCondition" xml:space="preserve">
+    <value>unico</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingValueObjectTypeAutomatic" xml:space="preserve">
+    <value>Automatico</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingValueObjectTypeHighestValue" xml:space="preserve">
+    <value>Valore più alto</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingValueObjectTypeLowestValue" xml:space="preserve">
+    <value>Valore più basso</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingValueObjectTypePercent" xml:space="preserve">
+    <value>Percentuale</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ConditionalFormattingValueObjectTypePercentile" xml:space="preserve">
+    <value>Percentile</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_FormatOnlyCellsThatContain" xml:space="preserve">
+    <value>Formatta solo le celle che contengono</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_FormatOnlyTopOrBottomRankedValues" xml:space="preserve">
+    <value>Formatta solo i valori più alti o più bassi</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_FormatOnlyUniqueOrDuplicateValues" xml:space="preserve">
+    <value>Formatta solo i valori univoci o duplicati</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_FormatOnlyValuesThatAreAboveOrBelowAverage" xml:space="preserve">
+    <value>Formatta solo i valori superiori o inferiori alla media</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_LongestBar" xml:space="preserve">
+    <value>La barra più lunga</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_MidPoint" xml:space="preserve">
+    <value>Punto medio</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_MinimumPoint" xml:space="preserve">
+    <value>Minimo</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_RankDirectionBottom" xml:space="preserve">
+    <value>Metter il fondo a</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_RankDirectionTop" xml:space="preserve">
+    <value>Superiore</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_ShortestBar" xml:space="preserve">
+    <value>Barra più corta</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewEditConditionalFormattingRuleForm_UseFormulaToDetermineWhichCellsToFormat" xml:space="preserve">
+    <value>Utilizzare una formula per determinare quali celle formattare</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.NewSpreadsheetMailMergeParameter_Text" xml:space="preserve">
+    <value>Nuovo parametro del foglio di calcolo...</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.OptionsPivotTableForm_MissingItemsLimitAutomatic" xml:space="preserve">
+    <value>Automatico</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.OptionsPivotTableForm_PageDownThenOver" xml:space="preserve">
+    <value>Giù, poi oltre</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.OptionsPivotTableForm_PageOverThenDown" xml:space="preserve">
+    <value>Sopra, poi giù</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.PageSetupForm_CommentsPrintModeAsDisplayedOnSheet" xml:space="preserve">
+    <value>Come mostrato sul foglio</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.PageSetupForm_CommentsPrintModeAtEndOfSheet" xml:space="preserve">
+    <value>In fondo al foglio</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.PageSetupForm_ErrorPrintModeDisplayed" xml:space="preserve">
+    <value>visualizzato</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.PageSetupForm_PagePrintQualityDpi" xml:space="preserve">
+    <value>dpi</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.PivotTableCalculatedFieldAndItemForm_Field" xml:space="preserve">
+    <value>Campo</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.PivotTableCalculatedFieldAndItemForm_InsertCalculatedField" xml:space="preserve">
+    <value>Inserisci campo calcolato</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.PivotTableCalculatedFieldAndItemForm_InsertCalculatedItemIn" xml:space="preserve">
+    <value>Inserisci l'elemento calcolato in "{0}"</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.PivotTableGroupFieldForm_Minutes" xml:space="preserve">
+    <value>Minuti</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.PivotTableGroupFieldForm_Months" xml:space="preserve">
+    <value>Mesi</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.PivotTableGroupFieldForm_Quarters" xml:space="preserve">
+    <value>Quartieri</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.PivotTableMoreSortOptionsForm_SortReferenceIsNotValid" xml:space="preserve">
+    <value>Il riferimento di ordinamento non è valido. Assicurati che sia presente nei dati che desideri ordinare e che la prima casella "Ordina per" non sia uguale o vuota.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.PivotTableMoreSortOptionsForm_Title" xml:space="preserve">
+    <value>Altre opzioni di ordinamento ({0})</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.PivotTableMoreSortOptionsForm_ValuesInSelectedColumn" xml:space="preserve">
+    <value>Valori nella colonna selezionata:</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.PivotTableMoreSortOptionsForm_ValuesInSelectedRow" xml:space="preserve">
+    <value>Valori nella riga selezionata:</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.PivotTableSortOptionsForm_Title" xml:space="preserve">
+    <value>Ordina ({0})</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.PivotTableSortOptionsForms_SortInAscendingOrder" xml:space="preserve">
+    <value>in ordine crescente</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.PivotTableSortOptionsForms_SortInDescendingOrder" xml:space="preserve">
+    <value>in ordine decrescente</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.PivotTableSortOptionsForms_SortTypeManualDescription" xml:space="preserve">
+    <value>Trascina gli elementi del campo {0} per visualizzarli in qualsiasi ordine</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.PivotTableSortOptionsForms_SortTypeNonManualByPivotDataFieldDescription" xml:space="preserve">
+    <value>Ordina {0} per {1} {2}</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.PivotTableSortOptionsForms_SortTypeNonManualDescription" xml:space="preserve">
+    <value>Ordina {0} {1}</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.SortFilterByColorForm_CellColorCaption" xml:space="preserve">
+    <value>Colori delle celle disponibili</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.SortFilterByColorForm_FilterByCellColorTypeOperation" xml:space="preserve">
+    <value>Seleziona il colore di una cella per filtrare:</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.SortFilterByColorForm_FilterByFontColorTypeOperation" xml:space="preserve">
+    <value>Seleziona un colore del carattere per filtrare:</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.SortFilterByColorForm_FontColorCaption" xml:space="preserve">
+    <value>Colori dei caratteri disponibili</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.SortFilterByColorForm_SortByCellColorTypeOperation" xml:space="preserve">
+    <value>Seleziona il colore di una cella per ordinarla:</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.SortFilterByColorForm_SortByFontColorTypeOperation" xml:space="preserve">
+    <value>Seleziona un colore del carattere per ordinare i caratteri:</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.StatusBarControl_Average" xml:space="preserve">
+    <value>MEDIA:</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.StatusBarControl_Count" xml:space="preserve">
+    <value>CONTARE:</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.StatusBarControl_EndMode" xml:space="preserve">
+    <value>MODALITÀ FINE</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.StatusBarControl_NumericalCount" xml:space="preserve">
+    <value>CONTEGGIO NUMERICO:</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.StatusBarControl_Sum" xml:space="preserve">
+    <value>SOMMA:</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_CellStyleCalculation" xml:space="preserve">
+    <value>Calcolo</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_ChangeChartTitleFormLabel" xml:space="preserve">
+    <value>Titolo del grafico:</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_DataValidationCustom" xml:space="preserve">
+    <value>Personalizzato</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_DataValidationMinimum" xml:space="preserve">
+    <value>Minimo</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_FormatPictureBlackAndWhite" xml:space="preserve">
+    <value>In bianco e nero</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GenericFilterOperatorBetween" xml:space="preserve">
+    <value>è tra</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GenericFilterOperatorGreater" xml:space="preserve">
+    <value>è maggiore di</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupFormulaCalculation" xml:space="preserve">
+    <value>Calcolo</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_NewDefinedNameFormTitle" xml:space="preserve">
+    <value>Nuovo nome</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_PivotTableAnalyzeCalculations" xml:space="preserve">
+    <value>Calcoli</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_PivotTableAnalyzePivotTable" xml:space="preserve">
+    <value>Tabella pivot</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_PivotTrueValue" xml:space="preserve">
+    <value>VERO</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_ShowValuesAsCalculation" xml:space="preserve">
+    <value>Calcolo:</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_Top10FilterOrderTop" xml:space="preserve">
+    <value>Superiore</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.ConditionalFormattingRulesManagerForm_PivotTable" xml:space="preserve">
+    <value>Tabella pivot</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.ConditionalFormattingRulesManagerForm_TopCaption" xml:space="preserve">
+    <value>Superiore {0}</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.DefaultInitialTableColumnNamePrefix" xml:space="preserve">
+    <value>Colonna</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.FieldAndDataFieldSettingsPivotTableForm_FunctionCount" xml:space="preserve">
+    <value>Conteggio</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_CalculationOptionsCommandGroup" xml:space="preserve">
+    <value>Opzioni di calcolo</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_DataFilterCustom" xml:space="preserve">
+    <value>Filtro personalizzato...</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_DataFilterCustomDescription" xml:space="preserve">
+    <value>Filtro personalizzato.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_DataFilterDateCustom" xml:space="preserve">
+    <value>Filtro personalizzato...</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_DataFilterDateCustomDescription" xml:space="preserve">
+    <value>Filtro personalizzato.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_FunctionsInsertCount" xml:space="preserve">
+    <value>Conteggio</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_FunctionsInsertCountDescription" xml:space="preserve">
+    <value>Conteggio.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertPivotTable" xml:space="preserve">
+    <value>Tabella pivot</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_MailMergeManageQueriesCommand" xml:space="preserve">
+    <value>Gestisci le query</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_MailMergeSelectDataMemberCommand" xml:space="preserve">
+    <value>Seleziona membro dati</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_MailMergeSelectDataMemberCommandDescription" xml:space="preserve">
+    <value>Seleziona membro dati</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_PageSetupCustomMargins" xml:space="preserve">
+    <value>Margini personalizzati...</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_PageSetupCustomMarginsPrintPreview" xml:space="preserve">
+    <value>Margini personalizzati</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_PageSetupPrintTitles" xml:space="preserve">
+    <value>Stampa titoli</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_PasteBiff12ContentDescription" xml:space="preserve">
+    <value>Inserisce il contenuto degli Appunti mantenendo la maggior parte della formattazione di Microsoft Excel.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_PasteBiff5ContentDescription" xml:space="preserve">
+    <value>Inserisce il contenuto degli Appunti mantenendo la maggior parte della formattazione di Microsoft Excel.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_PasteMSODrawingObjectDescription" xml:space="preserve">
+    <value>Inserisce il contenuto degli Appunti in formato Oggetto Disegno di Microsoft Office.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_PivotSortAscendingOnlyNumbers" xml:space="preserve">
+    <value>Ordina dal più piccolo al più grande</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_PivotSortAscendingOnlyNumbersDescription" xml:space="preserve">
+    <value>Ordina dal più piccolo al più grande.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_PivotTableShowValuesAs" xml:space="preserve">
+    <value>Mostra i valori come</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ReviewProtectSheet" xml:space="preserve">
+    <value>Proteggi foglio</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ReviewProtectSheetContextMenuItem" xml:space="preserve">
+    <value>Proteggi foglio...</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_SortAscendingNumbers" xml:space="preserve">
+    <value>Ordina dal più piccolo al più grande</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_StatusBarPopupMenuCount" xml:space="preserve">
+    <value>Conteggio</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_CannotAddCalculatedItemIfCustomSubtotalsExists" xml:space="preserve">
+    <value>Gli elementi calcolati non sono compatibili con i subtotali personalizzati.</value>
   </data>
 </root>
