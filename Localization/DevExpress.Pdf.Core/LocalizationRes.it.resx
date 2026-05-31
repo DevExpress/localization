@@ -154,7 +154,7 @@
     <value>La lista deve contenere almeno un valore.</value>
   </data>
   <data name="PdfCoreStringId.MsgIncorrectPageNumber" xml:space="preserve">
-    <value>Il numero di pagina deve essere maggiore di 0.</value>
+    <value>Il numero di pagina deve rientrare nell’intervallo da 1 a {0}.</value>
   </data>
   <data name="PdfCoreStringId.MsgIncorrectPdfData" xml:space="preserve">
     <value>Dati di input non sono riconosciuti come validi pdf.</value>
@@ -205,13 +205,13 @@
     <value>L'argomento deve essere un valore stringa o un elenco di valori di stringa dall'array options.</value>
   </data>
   <data name="PdfCoreStringId.MsgFormDataNotFound" xml:space="preserve">
-    <value>La struttura del documento non contiene un campo con il nome specificato: {0}.</value>
+    <value>Il campo con il nome specificato non è presente nel documento.</value>
   </data>
   <data name="PdfCoreStringId.MsgIncorrectButtonFormFieldValue" xml:space="preserve">
     <value>L'argomento dovrebbe essere il nome di un aspetto del pulsante o un valore dall'array options.</value>
   </data>
   <data name="PdfCoreStringId.MsgIncorrectPrintableFilePath" xml:space="preserve">
-    <value>Impossibile creare un documento di stampa con il nome specificato: {0}.</value>
+    <value>Il nome file specificato per il documento stampabile non è valido.</value>
   </data>
   <data name="PdfCoreStringId.MsgIncorrectTextFormFieldValue" xml:space="preserve">
     <value>L'argomento deve essere un valore stringa.</value>
@@ -259,7 +259,7 @@
     <value>Dimensione: {0}</value>
   </data>
   <data name="PdfCoreStringId.MsgIncompatibleOperationWithCurrentDocumentFormat" xml:space="preserve">
-    <value>l'operazione non è supportata in PdfCompatibility. { 0} modalità di compatibilità. Si prega di creare un documento in modalità di compatibilità PdfCompatibility.Pdf.</value>
+    <value>L'operazione non è supportata nella modalità di compatibilità PdfCompatibility.{0}. Creare un documento nella modalità di compatibilità PdfCompatibility.Pdf.</value>
   </data>
   <data name="PdfCoreStringId.MsgIncorrectBookmarkListValue" xml:space="preserve">
     <value>Elenco dei segnalibri non può essere null</value>
@@ -286,7 +286,7 @@
     <value>Unità Display e mondo non sono supportati per il sistema di coordinate di origine immagine.</value>
   </data>
   <data name="PdfCoreStringId.MsgAttachmentHintModificationDate" xml:space="preserve">
-    <value>Modifica: {0: g}</value>
+    <value>Modificato: {0:G}</value>
   </data>
   <data name="PdfCoreStringId.MsgMissingPageNumbers" xml:space="preserve">
     <value>Almeno una pagina numero deve essere specificato.</value>
@@ -545,5 +545,14 @@
   </data>
   <data name="PdfCoreStringId.RubberStampForPublicRelease" xml:space="preserve">
     <value>Per diffusione pubblica</value>
+  </data>
+  <data name="PdfCoreStringId.MsgUnsupportedConversionCompatibility" xml:space="preserve">
+    <value>La conversione alla modalità di compatibilità specificata non è supportata.</value>
+  </data>
+  <data name="PdfCoreStringId.RubberStampFinal" xml:space="preserve">
+    <value>Finale</value>
+  </data>
+  <data name="PdfCoreStringId.SignatureTreeInfoField" xml:space="preserve">
+    <value>Campo: {0} a pagina {1}</value>
   </data>
 </root>

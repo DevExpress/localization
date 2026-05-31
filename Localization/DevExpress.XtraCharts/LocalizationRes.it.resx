@@ -1094,13 +1094,13 @@ o assicurarsi che almeno una serie sia visibile. </value>
     <value>Il nome di un pannello non può essere vuoto.</value>
   </data>
   <data name="ChartStringId.MsgEmptyPaneTextForHorizontalLayout" xml:space="preserve">
-    <value>Assegnare questo pannello 
-alla proprietà Series.View.Pane, 
-per mostrare una serie su questo pannello.</value>
+    <value>Assegna questo riquadro alla proprietà
+Series.View.Pane,
+per visualizzare una serie in questo riquadro</value>
   </data>
   <data name="ChartStringId.MsgEmptyPaneTextForVerticalLayout" xml:space="preserve">
-    <value>Assegnare questo pannello alla proprietà Series.View.Pane, 
-per mostrare una serie su questo pannello.</value>
+    <value>Assegna questo riquadro alla proprietà Series.View.Pane,
+per visualizzare una serie in questo riquadro</value>
   </data>
   <data name="ChartStringId.MsgEmptySecondaryAxisName" xml:space="preserve">
     <value>Il nome di un asse secondario non può essere vuoto.</value>
@@ -1259,7 +1259,7 @@ per mostrare una serie su questo pannello.</value>
     <value>La proprietà {0} non può essere impostata su non intero per la scala data-ora.</value>
   </data>
   <data name="ChartStringId.MsgIncorrectDoubleValue" xml:space="preserve">
-    <value>Il valore non può essere uguale a NaN, NegativeInfinity o PositiveInfinity.</value>
+    <value>Il valore non può essere uguale a Double.NaN, Double.PositiveInfinity o Double.NegativeInfinity.</value>
   </data>
   <data name="ChartStringId.MsgIncorrectDoughnutHolePercent" xml:space="preserve">
     <value>La percentuale del foro dell'anello dev'essere maggiore o uguale a 0 e minore o uguale ai 100.</value>
@@ -1349,7 +1349,7 @@ per mostrare una serie su questo pannello.</value>
     <value>Il peso di ciambella nidificata deve essere maggiore di 0.</value>
   </data>
   <data name="ChartStringId.MsgIncorrectNumericGridAlignment" xml:space="preserve">
-    <value>L'allineamento della griglia deve essere maggiore o uguale alla corrente unità di misura</value>
+    <value>L'allineamento della griglia deve essere maggiore o uguale all'unità di misura corrente.</value>
   </data>
   <data name="ChartStringId.MsgIncorrectNumericGridAlignmentPropertyUsing" xml:space="preserve">
     <value>GridAlignment la proprietà non può essere modificato in modalità automatica scala numerica.</value>
@@ -1538,7 +1538,7 @@ per mostrare una serie su questo pannello.</value>
     <value>La percentuale di zoom dev'essere maggiore di 0 e minore o uguale {0}.</value>
   </data>
   <data name="ChartStringId.MsgInitializeChartNotFound" xml:space="preserve">
-    <value>Impossibile trovare il ChartControl o sono presenti diversi grafici su questo controllo. Per risolvere il problema, gestire l'evento WizardPage.InitializePage e specificare manualmente il grafico.</value>
+    <value>Il controllo ChartControl non è stato trovato oppure sono presenti più grafici. Per risolvere il problema, gestire l’evento WizardPage.InitializePage e specificare manualmente il grafico.</value>
   </data>
   <data name="ChartStringId.MsgInternalPropertyChangeError" xml:space="preserve">
     <value>La proprietà è solo per uso interno. Non è possibile modificarne il valore.</value>
@@ -3318,7 +3318,7 @@ Usarlo quando devi accentuare il delta tra i valori di inizio e fine.</value>
 Lo uso quando è necessario rappresentare fasi in un processo di vendita, Visualizza l'importo delle entrate potenziali per ciascuna fase, così come identificare potenziali aree problematiche nei processi di un'organizzazione di vendita.</value>
   </data>
   <data name="ChartStringId.PointHintPatternDescription" xml:space="preserve">
-    <value>Suggerimento di punto</value>
+    <value>Suggerimento</value>
   </data>
   <data name="ChartStringId.SvnOverlappedGantt" xml:space="preserve">
     <value>Gantt</value>
@@ -3346,17 +3346,19 @@ Usarlo quando devi accentuare il delta tra i valori di inizio e fine.</value>
 Lo uso quando è necessario visualizzare barre attività di serie diverse, uno sopra l'altro, per confrontare la loro durata.</value>
   </data>
   <data name="ChartStringId.CmdCreatePieChartPlaceHolderDescription" xml:space="preserve">
-    <value>Display il contributo di ciascun valore al totale.
+    <value>Inserisci un grafico a torta.
 
-Usarlo quando i valori possono essere sommati o quando si dispone di serie di dati in un solo e tutti i valori sono positivi.</value>
+I grafici a torta mostrano il contributo di ciascun valore al totale.
+
+Usalo quando i valori possono essere sommati oppure quando è presente una sola serie di dati e tutti i valori sono positivi.</value>
   </data>
   <data name="ChartStringId.PltOriel" xml:space="preserve">
     <value>Oriel</value>
   </data>
   <data name="ChartStringId.CmdCreateFunnelChartDescription" xml:space="preserve">
-    <value>Display una vasta area nella parte superiore, che indica il valore totale dei punti, mentre altre zone sono proporzionalmente più piccole.
+    <value>Visualizza un’ampia area che rappresenta il valore totale nella parte superiore. Le altre aree sono proporzionalmente più piccole.
 
-Lo uso quando è necessario rappresentare fasi in un processo di vendita, Visualizza l'importo delle entrate potenziali per ciascuna fase, così come identificare potenziali aree problematiche nei processi di un'organizzazione di vendita.</value>
+Può essere utilizzato per rappresentare le fasi di un processo di vendita, mostrare il potenziale fatturato per ciascuna fase o individuare eventuali criticità nei processi di vendita di un’organizzazione.</value>
   </data>
   <data name="ChartStringId.WizValueLevelWeight" xml:space="preserve">
     <value>Peso</value>
@@ -3410,11 +3412,9 @@ Grafici a linee sono utilizzate per visualizzare gli straordinari tendenze.</val
 Usarlo quando i valori del grafico rappresentano durate o quando il testo di categoria è molto lungo.</value>
   </data>
   <data name="ChartStringId.CmdCreatePieChartDescription" xml:space="preserve">
-    <value>Inserire un grafico a torta.
+    <value>Mostra il contributo di ciascun valore al totale.
 
-Grafici a torta visualizzare il contributo di ciascun valore al totale.
-
-Usarlo quando i valori possono essere sommati o quando si dispone di serie di dati in un solo e tutti i valori sono positivi.</value>
+Usalo quando i valori possono essere sommati oppure quando è presente una sola serie di dati e tutti i valori sono positivi.</value>
   </data>
   <data name="ChartStringId.ValueDurationDaysPatternDescription" xml:space="preserve">
     <value>Valore di durata (giorni)</value>
@@ -3857,5 +3857,53 @@ per visualizzarne la disposizione.</value>
   </data>
   <data name="ChartStringId.CmdExportToGIFDescription" xml:space="preserve">
     <value>Formato di interscambio grafico</value>
+  </data>
+  <data name="ChartStringId.BoxPlotQuartile1ValueMember" xml:space="preserve">
+    <value>Primo quartile</value>
+  </data>
+  <data name="ChartStringId.BoxPlotQuartile3ValueMember" xml:space="preserve">
+    <value>Terzo quartile</value>
+  </data>
+  <data name="ChartStringId.CmdDrawFibonacciFansIndicatorPlaceHolderMenuCaption" xml:space="preserve">
+    <value>Ventagli di Fibonacci</value>
+  </data>
+  <data name="ChartStringId.CmdDrawFibonacciRetracementIndicatorPlaceHolderMenuCaption" xml:space="preserve">
+    <value>Ritracciamento del trend di Fibonacci</value>
+  </data>
+  <data name="ChartStringId.CmdExportToTIFFDescription" xml:space="preserve">
+    <value>Formato file immagine taggato</value>
+  </data>
+  <data name="ChartStringId.MsgFirstPointSettingRuntimeError" xml:space="preserve">
+    <value>La proprietà "FirstPoint" non può essere impostata in fase di esecuzione.</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectCapWidthPercentage" xml:space="preserve">
+    <value>La percentuale di larghezza del cappuccio deve essere uguale o maggiore di 0.</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectTimeSpanRangeControlClientSpacing" xml:space="preserve">
+    <value>La proprietà {0} non può essere impostata su un valore non intero per la scala dell'intervallo di tempo.</value>
+  </data>
+  <data name="ChartStringId.MsgInvalidCenterAxisAlignment" xml:space="preserve">
+    <value>L'allineamento non può essere impostato su Alignment.Center per l'asse secondario.</value>
+  </data>
+  <data name="ChartStringId.MsgLastPointSettingRuntimeError" xml:space="preserve">
+    <value>La proprietà "LastPoint" non può essere impostata in fase di esecuzione.</value>
+  </data>
+  <data name="ChartStringId.PltConcourse" xml:space="preserve">
+    <value>Concorso</value>
+  </data>
+  <data name="ChartStringId.RibbonFinancialPageCaption" xml:space="preserve">
+    <value>Opzioni finanziarie</value>
+  </data>
+  <data name="ChartStringId.VerbCommonBars" xml:space="preserve">
+    <value>Creare barriere finanziarie</value>
+  </data>
+  <data name="ChartStringId.VerbFinancialBars" xml:space="preserve">
+    <value>Creare barriere finanziarie</value>
+  </data>
+  <data name="ChartStringId.WizValueLevelBoxPlotQuartile1" xml:space="preserve">
+    <value>Box plot quartile 1</value>
+  </data>
+  <data name="ChartStringId.WizValueLevelBoxPlotQuartile3" xml:space="preserve">
+    <value>Box plot quartile 3</value>
   </data>
 </root>

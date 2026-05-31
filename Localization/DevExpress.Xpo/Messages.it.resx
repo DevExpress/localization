@@ -185,7 +185,7 @@
     <value>Il parametro 'data' contiene un DataSet con modifiche non salvate. Prima di creare una nuova istanza della classe DataSetDataStore, chiamare il metodo DataSet.AcceptChanges.</value>
   </data>
   <data name="Security_DeletingAnObjectWasProhibitedByTheRules" xml:space="preserve">
-    <value>Eliminazione proibita da una regola di convalida.</value>
+    <value>Non è consentito eliminare l'oggetto '{0}' a causa delle regole di sicurezza.</value>
   </data>
   <data name="SerOLHelpers_NestedParentMapIsNull" xml:space="preserve">
     <value>Errore interno: NestedParentMap and ParentNestedMap sono nulli.</value>
@@ -332,7 +332,7 @@
     <value>Errore interno: Il metodo specificato '{0}.{1}' non è supportato.</value>
   </data>
   <data name="Security_SavingAnObjectWasProhibitedByTheRulesOfVal" xml:space="preserve">
-    <value>Salvataggio proibito da una regola di convalida.</value>
+    <value>Non è consentito salvare l'oggetto '{0}' in base alle regole di sicurezza.</value>
   </data>
   <data name="Async_OperationCannotBePerformedBecauseNoSyncContext" xml:space="preserve">
     <value>Questa operazione può essere eseguita, perché il Thread in esecuzione non ha alcun contesto di sincronizzazione corrente.</value>
@@ -491,7 +491,7 @@
     <value>Tabella '{0}' non trovata.</value>
   </data>
   <data name="Session_EnteringTheX0StateFromTheX1StateIsProhibit" xml:space="preserve">
-    <value>L'ingresso nello stato '{0}' dallo stato '{2}' è vietato a causa dello stato '{1}'.</value>
+    <value>Non è consentito passare allo stato '{0}' dallo stato '{2}' a causa dello stato '{1}' per '{3}'.</value>
   </data>
   <data name="Metadata_MemberAttributeExclusive" xml:space="preserve">
     <value>Gli attributi PersistentAttribute, NonPersistentAttribute e PersistentAliasAttribute sono esclusivi. Solo uno di questi può essere applicato al membro '{0}.{1}'.</value>
@@ -539,7 +539,7 @@
     <value>Impossibile convalidare lo schema del database per il membro '{1}' del tipo '{0}'. Errore: '{2}'.</value>
   </data>
   <data name="Collections_CannotAssignProperty" xml:space="preserve">
-    <value>Impossibile modificare la proprietà {0}, quando XPCollection non è in modalità di progettazione o di inizializzazione.</value>
+    <value>Non è possibile modificare la proprietà '{0}' se {1} non è in modalità di progettazione o inizializzazione.</value>
   </data>
   <data name="XpoDefault_CannotAssignPropertyWhileAnotherIsNotNull" xml:space="preserve">
     <value>Impossibile assegnare XpoDefault.{0} mentre XpoDefault.{1} non è null.</value>
@@ -919,5 +919,8 @@ Restituisce la varianza dell'espressione all'interno della finestra.</value>
   </data>
   <data name="Metadata_NonPersistentKey" xml:space="preserve">
     <value>Trovata la chiave non persistente '{0}.{1}'.</value>
+  </data>
+  <data name="ConnectionProvider_TheAutoIncrementedKeyWithX0TypeIsNotSupport" xml:space="preserve">
+    <value>La chiave AutoIncremented di tipo ‘{0}’ non è supportata per ‘{1}’</value>
   </data>
 </root>
