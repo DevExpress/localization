@@ -60,45 +60,45 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -232,7 +232,7 @@
     <value>Modifica password all'accesso successivo</value>
   </data>
   <data name="Non-calculated\Views\ChangePasswordOnLogonParameters_DetailView\Items\ChangePasswordText\Text" xml:space="preserve">
-    <value>Impostare la password.</value>
+    <value>Per motivi di sicurezza, inserire la propria password. Si prega di inserire la nuova password nei due campi sottostanti, ed assicurarsi di non usare la password usata precedentemente.</value>
   </data>
   <data name="Views\ChangePasswordParameters_DetailView\Caption" xml:space="preserve">
     <value>Modifica Password</value>
@@ -1611,20 +1611,26 @@
   <data name="Non-calculated\Localization\Enums\DevExpress.ExpressApp.Security.SecurityRequestOperations\Write\Value" xml:space="preserve">
     <value>Scrivere</value>
   </data>
-  <data name="ActionDesign\ActionToContainerMapping\Edit\Caption" xml:space="preserve">
-    <value>Modifica</value>
-  </data>
   <data name="ActionDesign\ActionToContainerMapping\Save\Caption" xml:space="preserve">
     <value>Salva</value>
   </data>
-  <data name="NavigationItems\Items\Default\Items\PermissionPolicyRole_ListView\Caption" xml:space="preserve">
-    <value>Ruolo</value>
+  <data name="Non-calculated\Localization\Messages\CurrentUserHasBeenDeleted\Value" xml:space="preserve">
+    <value>L'account utente non esiste più. Si prega di contattare l'amministratore per assistenza.</value>
+  </data>
+  <data name="Views\AuthenticationStandardLogonParameters_Blazor_DetailView\Caption" xml:space="preserve">
+    <value>Accedi</value>
+  </data>
+  <data name="Views\AuthenticationStandardLogonParameters_Blazor_DetailView\CaptionColon" xml:space="preserve">
+    <value>:</value>
   </data>
   <data name="Views\AuthenticationStandardLogonParameters_Blazor_DetailView\Items\Password\Caption" xml:space="preserve">
     <value>Password</value>
   </data>
-  <data name="Views\AuthenticationStandardLogonParameters_Blazor_DetailView\Items\UserName\Caption" xml:space="preserve">
-    <value>Nome utente</value>
+  <data name="Views\AuthenticationStandardLogonParameters_Win_DetailView\Caption" xml:space="preserve">
+    <value>Accedi</value>
+  </data>
+  <data name="Views\AuthenticationStandardLogonParameters_Win_DetailView\CaptionColon" xml:space="preserve">
+    <value>:</value>
   </data>
   <data name="Views\AuthenticationStandardLogonParameters_Win_DetailView\Items\Password\Caption" xml:space="preserve">
     <value>Password</value>
@@ -1632,11 +1638,38 @@
   <data name="Views\AuthenticationStandardLogonParameters_Win_DetailView\Items\UserName\Caption" xml:space="preserve">
     <value>Nome utente</value>
   </data>
-  <data name="Views\PermissionPolicyRole_DetailView\Layout\Main\SimpleEditors1\IsAdministrative\ToolTip" xml:space="preserve">
-    <value>Le autorizzazioni sono personalizzabili e si applicano solo ai ruoli non amministrativi.</value>
+  <data name="Views\ChangePasswordOnLogonParameters_Blazor_DetailView\Caption" xml:space="preserve">
+    <value>Cambia Password</value>
   </data>
-  <data name="Views\PermissionPolicyRole_DetailView\Layout\Main\Tabs1\ActionPermissions\Caption" xml:space="preserve">
-    <value>Azioni negate</value>
+  <data name="Views\ChangePasswordOnLogonParameters_Blazor_DetailView\CaptionColon" xml:space="preserve">
+    <value>:</value>
+  </data>
+  <data name="Views\ChangePasswordOnLogonParameters_Blazor_DetailView\Items\ConfirmPassword\Caption" xml:space="preserve">
+    <value>Conferma Password</value>
+  </data>
+  <data name="Views\ChangePasswordOnLogonParameters_Blazor_DetailView\Items\NewPassword\Caption" xml:space="preserve">
+    <value>Nuova Password</value>
+  </data>
+  <data name="Views\ChangePasswordParameters_Blazor_DetailView\Caption" xml:space="preserve">
+    <value>Cambia Password</value>
+  </data>
+  <data name="Views\ChangePasswordParameters_Blazor_DetailView\CaptionColon" xml:space="preserve">
+    <value>:</value>
+  </data>
+  <data name="Views\ChangePasswordParameters_Blazor_DetailView\Items\ConfirmPassword\Caption" xml:space="preserve">
+    <value>Conferma Password</value>
+  </data>
+  <data name="Views\ChangePasswordParameters_Blazor_DetailView\Items\NewPassword\Caption" xml:space="preserve">
+    <value>Nuova Password</value>
+  </data>
+  <data name="Views\ChangePasswordParameters_Blazor_DetailView\Items\OldPassword\Caption" xml:space="preserve">
+    <value>Vecchia Password</value>
+  </data>
+  <data name="Views\ResetPasswordParameters_Blazor_DetailView\Caption" xml:space="preserve">
+    <value>Reimpostare la Password</value>
+  </data>
+  <data name="Views\ResetPasswordParameters_Blazor_DetailView\CaptionColon" xml:space="preserve">
+    <value>:</value>
   </data>
   <data name="Views\ResetPasswordParameters_Blazor_DetailView\Items\Password\Caption" xml:space="preserve">
     <value>Password</value>
@@ -1644,91 +1677,7 @@
   <data name="Views\SecuredActionDescriptor_LookupListView\Columns\Category\Caption" xml:space="preserve">
     <value>Categoria</value>
   </data>
-  <data name="ActionDesign\ActionToContainerMapping\None\Caption" xml:space="preserve">
-    <value>Nessuno</value>
-  </data>
-  <data name="NavigationItems\Items\Default\Items\PermissionPolicyUser_ListView\Caption" xml:space="preserve">
-    <value>Utente</value>
-  </data>
-  <data name="Views\ChangePasswordOnLogonParameters_Blazor_DetailView\Caption" xml:space="preserve">
-    <value>Cambiare la password</value>
-  </data>
-  <data name="Views\ChangePasswordParameters_Blazor_DetailView\Caption" xml:space="preserve">
-    <value>Cambiare la password</value>
-  </data>
   <data name="Views\SecuredActionDescriptor_LookupListView\Columns\Image\Caption" xml:space="preserve">
     <value>Immagine</value>
-  </data>
-  <data name="ActionDesign\ActionToContainerMapping\View\Caption" xml:space="preserve">
-    <value>Visualizza</value>
-  </data>
-  <data name="BOModel\DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyMemberPermissionsObject\OwnMembers\Members\NullText" xml:space="preserve">
-    <value>Seleziona membri</value>
-  </data>
-  <data name="Views\PermissionPolicyMemberPermissionsObject_DetailView\Items\Members\NullText" xml:space="preserve">
-    <value>Seleziona membri</value>
-  </data>
-  <data name="Views\PermissionPolicyMemberPermissionsObject_ListView\Columns\Members\NullText" xml:space="preserve">
-    <value>Seleziona membri</value>
-  </data>
-  <data name="Views\PermissionPolicyMemberPermissionsObject_LookupListView\Columns\Members\NullText" xml:space="preserve">
-    <value>Seleziona membri</value>
-  </data>
-  <data name="Views\PermissionPolicyTypePermissionObject_MemberPermissions_ListView\Columns\Members\NullText" xml:space="preserve">
-    <value>Seleziona membri</value>
-  </data>
-  <data name="Non-calculated\Localization\Security\ProtectedContentToolTip\Value" xml:space="preserve">
-    <value>Non hai le autorizzazioni per visualizzare questo contenuto.</value>
-  </data>
-  <data name="Non-calculated\Views\AuthenticationStandardLogonParameters_Win_DetailView\Items\LogonText\Text" xml:space="preserve">
-    <value>&lt;size=14&gt;Accedi al tuo account&lt;/size&gt;</value>
-  </data>
-  <data name="ActionDesign\ActionToContainerMapping\Link\Caption" xml:space="preserve">
-    <value>Link</value>
-  </data>
-  <data name="ActionDesign\ActionToContainerMapping\Tools\Caption" xml:space="preserve">
-    <value>Strumenti</value>
-  </data>
-  <data name="Views\AuthenticationStandardLogonParameters_Blazor_DetailView\Caption" xml:space="preserve">
-    <value>Login</value>
-  </data>
-  <data name="Views\AuthenticationStandardLogonParameters_Win_DetailView\Caption" xml:space="preserve">
-    <value>Login</value>
-  </data>
-  <data name="Views\ChangePasswordOnLogonParameters_Blazor_DetailView\Items\NewPassword\Caption" xml:space="preserve">
-    <value>Nuova password</value>
-  </data>
-  <data name="Views\ChangePasswordParameters_Blazor_DetailView\Items\NewPassword\Caption" xml:space="preserve">
-    <value>Nuova password</value>
-  </data>
-  <data name="ActionDesign\ActionToContainerMapping\Export\Caption" xml:space="preserve">
-    <value>Esportare</value>
-  </data>
-  <data name="ActionDesign\ActionToContainerMapping\Filters\Caption" xml:space="preserve">
-    <value>Filtri</value>
-  </data>
-  <data name="Views\ChangePasswordOnLogonParameters_Blazor_DetailView\Items\ConfirmPassword\Caption" xml:space="preserve">
-    <value>Conferma password</value>
-  </data>
-  <data name="Views\ChangePasswordParameters_Blazor_DetailView\Items\ConfirmPassword\Caption" xml:space="preserve">
-    <value>Conferma password</value>
-  </data>
-  <data name="ActionDesign\ActionToContainerMapping\UndoRedo\Caption" xml:space="preserve">
-    <value>Annulla ripristino</value>
-  </data>
-  <data name="Non-calculated\Localization\Messages\CurrentUserHasBeenDeleted\Value" xml:space="preserve">
-    <value>L'account utente non esiste più. Si prega di contattare l'amministratore per assistenza.</value>
-  </data>
-  <data name="Non-calculated\Views\ChangePasswordParameters_Blazor_DetailView\Items\ChangePasswordText\Text" xml:space="preserve">
-    <value>Per modificare la password, inserisci la vecchia e la nuova password nei campi di testo sottostanti.</value>
-  </data>
-  <data name="ActionDesign\ActionToContainerMapping\Diagnostic\Caption" xml:space="preserve">
-    <value>Diagnostica</value>
-  </data>
-  <data name="Non-calculated\Views\AuthenticationStandardLogonParameters_Blazor_DetailView\Items\LogonText\Text" xml:space="preserve">
-    <value>Inserisci il tuo nome utente e la password qui sotto.</value>
-  </data>
-  <data name="Non-calculated\Views\ResetPasswordParameters_Blazor_DetailView\Items\ResetPasswordText\Text" xml:space="preserve">
-    <value>Inserisci una nuova password per l'utente oppure accetta quella generata automaticamente, quindi rendi la password disponibile all'utente.</value>
   </data>
 </root>

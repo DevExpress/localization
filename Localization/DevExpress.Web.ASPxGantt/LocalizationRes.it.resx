@@ -60,45 +60,45 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -174,56 +174,62 @@
   <data name="ASPxGanttStringId.DoNothing" xml:space="preserve">
     <value>Non fare nulla</value>
   </data>
+  <data name="ASPxGanttStringId.AddNewTask" xml:space="preserve">
+    <value>Aggiungi nuova attività</value>
+  </data>
+  <data name="ASPxGanttStringId.DeleteDependency" xml:space="preserve">
+    <value>Elimina dipendenza</value>
+  </data>
+  <data name="ASPxGanttStringId.DeleteSelectedTask" xml:space="preserve">
+    <value>Elimina attività selezionata</value>
+  </data>
+  <data name="ASPxGanttStringId.DeleteTask" xml:space="preserve">
+    <value>Elimina attività</value>
+  </data>
+  <data name="ASPxGanttStringId.DialogDeleteDependency" xml:space="preserve">
+    <value>Elimina la dipendenza</value>
+  </data>
   <data name="ASPxGanttStringId.End" xml:space="preserve">
     <value>Fine</value>
   </data>
   <data name="ASPxGanttStringId.ExpandAll" xml:space="preserve">
     <value>Espandi tutto</value>
   </data>
-  <data name="ASPxGanttStringId.SeveralTasksCriticalLinkedWarning" xml:space="preserve">
-    <value>L'attività che stai tentando di spostare è collegata ad altre attività tramite relazioni di dipendenza. Questa modifica entrerebbe in conflitto con le regole di dipendenza. Come desideri procedere?</value>
-  </data>
-  <data name="ASPxGanttStringId.ResourcesDeleteConfirmation" xml:space="preserve">
-    <value>L'eliminazione di una risorsa comporta anche la sua rimozione dalle attività a cui è assegnata.&lt;br /&gt;Sei ​​sicuro di voler eliminare queste risorse?&lt;br /&gt;Risorse: {0}</value>
-  </data>
-  <data name="ASPxGanttStringId.SeveralTasksLinkedWarning" xml:space="preserve">
-    <value>L'attività che stai tentando di spostare è collegata ad altre attività tramite relazioni di dipendenza. Come desideri procedere?</value>
-  </data>
-  <data name="ASPxGanttStringId.AddNewTask" xml:space="preserve">
-    <value>Aggiungi nuova attività</value>
-  </data>
   <data name="ASPxGanttStringId.Progress" xml:space="preserve">
     <value>Progressi</value>
   </data>
-  <data name="ASPxGanttStringId.TaskDeleteConfirmation" xml:space="preserve">
-    <value>L'eliminazione di un'attività comporta anche l'eliminazione di tutte le sue dipendenze e sottoattività.&lt;br /&gt;Sei ​​sicuro di voler eliminare questa attività?</value>
+  <data name="ASPxGanttStringId.QuarterAbbreviation" xml:space="preserve">
+    <value>Q{0}</value>
   </data>
   <data name="ASPxGanttStringId.RequiredField" xml:space="preserve">
     <value>Il campo {0} non deve essere vuoto</value>
   </data>
-  <data name="ASPxGanttStringId.NewTask" xml:space="preserve">
-    <value>Nuovo compito</value>
+  <data name="ASPxGanttStringId.ResourceManager" xml:space="preserve">
+    <value>Responsabile delle risorse</value>
   </data>
-  <data name="ASPxGanttStringId.NewSubtask" xml:space="preserve">
-    <value>Nuova sottoattività</value>
+  <data name="ASPxGanttStringId.ResourcesDeleteConfirmation" xml:space="preserve">
+    <value>L'eliminazione di una risorsa comporta anche la sua rimozione dalle attività a cui è assegnata.&lt;br /&gt;Sei ​​sicuro di voler eliminare queste risorse?&lt;br /&gt;Risorse: {0}</value>
   </data>
-  <data name="ASPxGanttStringId.DeleteTask" xml:space="preserve">
-    <value>Elimina attività</value>
+  <data name="ASPxGanttStringId.SeveralTasksCriticalLinkedWarning" xml:space="preserve">
+    <value>L'attività che stai tentando di spostare è collegata ad altre attività tramite relazioni di dipendenza. Questa modifica entrerebbe in conflitto con le regole di dipendenza. Come desideri procedere?</value>
   </data>
-  <data name="ASPxGanttStringId.DeleteDependency" xml:space="preserve">
-    <value>Elimina dipendenza</value>
+  <data name="ASPxGanttStringId.SeveralTasksLinkedWarning" xml:space="preserve">
+    <value>L'attività che stai tentando di spostare è collegata ad altre attività tramite relazioni di dipendenza. Come desideri procedere?</value>
   </data>
-  <data name="ASPxGanttStringId.NewResourceName" xml:space="preserve">
-    <value>Nuovo nome della risorsa</value>
+  <data name="ASPxGanttStringId.ShowDependencies" xml:space="preserve">
+    <value>Mostra dipendenze</value>
   </data>
-  <data name="ASPxGanttStringId.DeleteSelectedTask" xml:space="preserve">
-    <value>Elimina l'attività selezionata</value>
+  <data name="ASPxGanttStringId.ShowResources" xml:space="preserve">
+    <value>Mostra risorse</value>
   </data>
-  <data name="ASPxGanttStringId.DialogDeleteDependency" xml:space="preserve">
-    <value>Elimina la dipendenza</value>
+  <data name="ASPxGanttStringId.TaskDeleteConfirmation" xml:space="preserve">
+    <value>L'eliminazione di un'attività comporta anche l'eliminazione di tutte le sue dipendenze e sottoattività.&lt;br /&gt;Sei ​​sicuro di voler eliminare questa attività?</value>
   </data>
   <data name="ASPxGanttStringId.TaskDetails" xml:space="preserve">
-    <value>Dettagli dell'attività</value>
+    <value>Dettagli attività</value>
+  </data>
+  <data name="ASPxGanttStringId.TaskEndDateValidation" xml:space="preserve">
+    <value>La data di fine deve essere successiva a {0}</value>
   </data>
   <data name="ASPxGanttStringId.TaskStartDateValidation" xml:space="preserve">
     <value>La data di inizio deve essere successiva a {0}</value>

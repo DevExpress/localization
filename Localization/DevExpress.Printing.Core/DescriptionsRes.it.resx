@@ -1,5 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -7,247 +112,67 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeGenerator.CompactionMode.Description" xml:space="preserve">
-    <value>Specifica se utilizzare la modalità testo o binaria per codificare i dati del codice a barre.</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.Parameter.Type.Description" xml:space="preserve">
-    <value>Specifica un tipo di parametro.</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.Parameter.Value.Description" xml:space="preserve">
-    <value>Specifica un valore di parametro.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.Code128Generator.FNC1Substitute.Description" xml:space="preserve">
-    <value>Una sottostringa/carattere che funge da segnaposto per il carattere funzionale FNC1.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.Code128Generator.FNC2Substitute.Description" xml:space="preserve">
-    <value>Una sottostringa/carattere che funge da segnaposto per il carattere funzionale FNC2.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.Code128Generator.FNC3Substitute.Description" xml:space="preserve">
-    <value>Una sottostringa/carattere che funge da segnaposto per il carattere funzionale FNC3.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.DataMatrixGS1Generator.FNC1Substitute.Description" xml:space="preserve">
-    <value>Specifica il simbolo (o l'insieme di simboli) nel testo del codice a barre che verrà sostituito con il carattere funzionale FNC1 durante la fase di disegno delle barre del codice a barre.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.QRCodeGS1Generator.FNC1Substitute.Description" xml:space="preserve">
-    <value>Specifica il simbolo (o l'insieme di simboli) nel testo del codice a barre che verrà sostituito con il carattere funzionale FNC1 durante la fase di disegno delle barre del codice a barre.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.DocxExportOptions.KeepRowHeight.Description" xml:space="preserve">
-    <value>Specifica se l'altezza delle righe della tabella nel documento risultante debba avere valori fissi oppure se l'aggiunta di una nuova riga di testo al contenuto di una cella debba incrementare l'altezza della riga.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.ExportOptions.Csv.Description" xml:space="preserve">
-    <value>Recupera le impostazioni utilizzate per specificare i parametri di esportazione quando un documento viene esportato in formato CSV.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.ExportOptions.Docx.Description" xml:space="preserve">
-    <value>Recupera le impostazioni utilizzate per specificare i parametri di esportazione quando un documento viene esportato in formato DOCX.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.ExportOptions.Xlsx.Description" xml:space="preserve">
-    <value>Consente di ottenere le impostazioni utilizzate per specificare i parametri di esportazione quando un documento viene esportato in formato XLSX.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.FormattedTextExportOptions.KeepRowHeight.Description" xml:space="preserve">
-    <value>Specifica se l'altezza delle celle della tabella nel documento risultante debba avere valori fissi oppure se l'aggiunta di una nuova riga di testo al contenuto di una cella debba incrementare l'altezza della riga.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.HtmlExportOptionsBase.InlineCss.Description" xml:space="preserve">
-    <value>Specifica se le proprietà di stile vengono scritte nella sezione &lt;head&gt; di un documento HTML oppure se vengono definite nello stesso punto in cui viene assegnato uno stile specifico all'interno del documento.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.ImageExportOptions.RetainBackgroundTransparency.Description" xml:space="preserve">
-    <value>Specifica se un report viene stampato con uno sfondo bianco o trasparente quando la proprietà XtraReport.PageColor (BrickGraphics.PageBackColor) è impostata su trasparente.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PrintPreviewOptions.DefaultSendFormat.Description" xml:space="preserve">
-    <value>Specifica il formato predefinito in cui viene convertito un documento quando viene eseguito il comando PrintingSystemCommand.SendFile.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.Code128Generator.FNC4Substitute.Description" xml:space="preserve">
-    <value>Una sottostringa/carattere che funge da segnaposto per il carattere funzionale FNC4.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.EmailOptions.RecipientAddress.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare il testo utilizzato come indirizzo del destinatario di un'e-mail, quando un documento viene esportato e inviato tramite e-mail dalla sua anteprima di stampa.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.Recipient.Address.Description" xml:space="preserve">
-    <value>Specifica l'indirizzo email del destinatario.</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.RangeParametersSettings.EndParameter.Description" xml:space="preserve">
-    <value>Parametro finale annidato di un parametro di intervallo.</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.RangeParametersSettings.StartParameter.Description" xml:space="preserve">
-    <value>Parametro iniziale annidato di un parametro di intervallo.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.CsvExportOptions.UseCustomSeparator.Description" xml:space="preserve">
-    <value>Specifica se utilizzare il separatore di sistema predefinito o un carattere separatore personalizzato per l'esportazione in formato CSV.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.Code128Generator.AddLeadingZero.Description" xml:space="preserve">
-    <value>Aggiunge uno zero come prefisso al numero che viene codificato.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.DataBarGenerator.FNC1Substitute.Description" xml:space="preserve">
-    <value>Specifica il simbolo (o l'insieme di simboli) nel testo del codice a barre che verrà sostituito con il carattere funzionale FNC1 durante la visualizzazione delle barre.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.Drawing.ImageItem.Id.Description" xml:space="preserve">
-    <value>Un ID per la sorgente dell'immagine specificata.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PdfExportOptions.ConvertImagesToJpeg.Description" xml:space="preserve">
-    <value>Specifica se convertire le immagini bitmap e i metadati contenuti nel documento in formato JPEG durante l'esportazione in PDF.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlExportOptionsBase.RawDataMode.Description" xml:space="preserve">
-    <value>Abilita la modalità che produce semplici dati tabellari senza elementi grafici, stile e impostazioni di aspetto.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlsxExportOptions.ExportMode.Description" xml:space="preserve">
-    <value>Specifica se il file sorgente viene esportato come un singolo file XLSX o come più file, e se ogni pagina viene esportata come un foglio di lavoro separato.</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.DynamicListLookUpSettings.UseServerSideFiltering.Description" xml:space="preserve">
-    <value>Specifica se filtrare i parametri a cascata a livello di database (lato server) o a livello di applicazione (lato client).</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeGenerator.ErrorCorrectionLevel.Description" xml:space="preserve">
-    <value>Specifica il livello di ridondanza integrato nel codice a barre per compensare gli errori di calcolo.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeGenerator.Version.Description" xml:space="preserve">
-    <value>Specifica la versione del Codice Azteco.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.CodabarGenerator.WideNarrowRatio.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare la densità delle barre di un codice a barre.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.Code128Generator.CharacterSet.Description" xml:space="preserve">
-    <value>Ottiene o imposta il tipo di set di caratteri per il codice a barre.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.Code39Generator.WideNarrowRatio.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare la densità delle barre di un codice a barre.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.CodeMSIGenerator.MSICheckSum.Description" xml:space="preserve">
-    <value>Ottiene o imposta il tipo di checksum per il codice a barre.</value>
+  <data name="DevExpress.XtraPrinting.BarCode.DataMatrixGenerator.CompactionMode.Description" xml:space="preserve">
+    <value>Consente di ottenere o impostare se per la codifica dei dati del codice a barre deve essere utilizzata la modalità testo o binaria.</value>
   </data>
   <data name="DevExpress.XtraPrinting.BarCode.DataMatrixGenerator.MatrixSize.Description" xml:space="preserve">
     <value>Ottiene o imposta la dimensione della matrice del codice a barre.</value>
   </data>
+  <data name="DevExpress.XtraPrinting.BarCode.DataMatrixGS1Generator.FNC1Substitute.Description" xml:space="preserve">
+    <value>Specifica il simbolo (o l'insieme di simboli) nel testo del codice a barre che verrà sostituito con il carattere funzionale FNC1 durante la fase di disegno delle barre del codice a barre.</value>
+  </data>
   <data name="DevExpress.XtraPrinting.BarCode.DataMatrixGS1Generator.HumanReadableText.Description" xml:space="preserve">
     <value>Specifica se le parentesi devono essere incluse o meno nel testo del codice a barre.</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.EAN128Generator.HumanReadableText.Description" xml:space="preserve">
-    <value>Specifica se le parentesi devono essere incluse o meno nel testo del codice a barre.</value>
+  <data name="DevExpress.XtraPrinting.BarCode.EAN128Generator.FNC1Substitute.Description" xml:space="preserve">
+    <value>Ottiene o imposta il simbolo (o l'insieme di simboli) nel testo del codice a barre che verrà sostituito con il carattere funzionale FNC1 quando vengono disegnate le barre del codice a barre.</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.Industrial2of5Generator.WideNarrowRatio.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare la densità delle barre di un codice a barre.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.Interleaved2of5Generator.WideNarrowRatio.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare la densità delle barre di un codice a barre.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.ITF14Generator.WideNarrowRatio.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare la densità delle barre di un codice a barre.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.MicroQRCodeGenerator.ErrorCorrectionLevel.Description" xml:space="preserve">
-    <value>Specifica il livello di ridondanza integrato nel codice Micro QR per compensare gli errori di calcolo.</value>
+  <data name="DevExpress.XtraPrinting.BarCode.MicroQRCodeGenerator.IncludeQuietZone.Description" xml:space="preserve">
+    <value>Consente di impostare se aggiungere uno spazio vuoto attorno al codice Micro QR per separarlo dagli elementi circostanti.</value>
   </data>
   <data name="DevExpress.XtraPrinting.BarCode.MicroQRCodeGenerator.Version.Description" xml:space="preserve">
     <value>Ottiene o imposta la versione del codice a barre.</value>
   </data>
+  <data name="DevExpress.XtraPrinting.BarCode.PDF417Generator.Columns.Description" xml:space="preserve">
+    <value>Consente di ottenere o impostare il numero di colonne del codice a barre, permettendo così di controllare la larghezza logica del codice a barre.</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.PDF417Generator.CompactionMode.Description" xml:space="preserve">
+    <value>Consente di ottenere o impostare se per la codifica dei dati del codice a barre deve essere utilizzata la modalità testo o binaria.</value>
+  </data>
   <data name="DevExpress.XtraPrinting.BarCode.PDF417Generator.ErrorCorrectionLevel.Description" xml:space="preserve">
     <value>Consente di ottenere o impostare il livello di ridondanza incorporato nella codifica del codice a barre, per compensare gli errori di calcolo.</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.PharmacodeGenerator.PharmacodeType.Description" xml:space="preserve">
-    <value>Specifica se il codice a barre Pharmacode ha una o due tracce.</value>
+  <data name="DevExpress.XtraPrinting.BarCode.PDF417Generator.Rows.Description" xml:space="preserve">
+    <value>Consente di ottenere o impostare il numero di righe del codice a barre, permettendo così di controllare l'altezza logica del codice a barre.</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.QRCodeGenerator.ErrorCorrectionLevel.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare il livello di ridondanza incorporato nella codifica del codice a barre, per compensare gli errori di calcolo.</value>
+  <data name="DevExpress.XtraPrinting.DocxExportOptions.ExportMode.Description" xml:space="preserve">
+    <value>Ottiene o imposta un valore che indica come un documento viene esportato in formato DOCX.</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.QRCodeGenerator.Logo.Description" xml:space="preserve">
-    <value>Specifica l'immagine che si sovrappone al codice QR.</value>
+  <data name="DevExpress.XtraPrinting.DocxExportOptions.KeepRowHeight.Description" xml:space="preserve">
+    <value>Specifica se l'altezza delle righe della tabella nel documento risultante debba avere valori fissi oppure se l'aggiunta di una nuova riga di testo al contenuto di una cella debba incrementare l'altezza della riga.</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.QRCodeGenerator.Version.Description" xml:space="preserve">
-    <value>Ottiene o imposta la versione del codice a barre.</value>
+  <data name="DevExpress.XtraPrinting.Drawing.PageWatermark.ImageTransparency.Description" xml:space="preserve">
+    <value>Consente di impostare o ottenere la trasparenza dell'immagine della filigrana.</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.QRFrameOptions.CornerRadius.Description" xml:space="preserve">
-    <value>Specifica gli angoli arrotondati per la cornice rettangolare in pixel.</value>
+  <data name="DevExpress.XtraPrinting.Drawing.PageWatermark.ImageViewMode.Description" xml:space="preserve">
+    <value>Ottiene o imposta la modalità di visualizzazione di una filigrana di pagina immagine.</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.QRFrameOptions.FrameColor.Description" xml:space="preserve">
-    <value>Specifica il colore della cornice.</value>
+  <data name="DevExpress.XtraPrinting.ExportOptions.Image.Description" xml:space="preserve">
+    <value>Recupera le impostazioni utilizzate per specificare i parametri di esportazione quando un documento viene esportato come immagine.</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.QRFrameOptions.FrameWidth.Description" xml:space="preserve">
-    <value>Specifica la larghezza del frame in pixel.</value>
+  <data name="DevExpress.XtraPrinting.ExportOptions.NativeFormat.Description" xml:space="preserve">
+    <value>Consente l'accesso all'oggetto che contiene le impostazioni per il salvataggio del documento PrintingSystem in formato nativo.</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.QRFrameOptions.Padding.Description" xml:space="preserve">
-    <value>Specifica la distanza tra la cornice e il codice QR.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.QRFrameOptions.Text.Description" xml:space="preserve">
-    <value>Specifica il testo visualizzato nella cornice.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.QRFrameOptions.TextAlignment.Description" xml:space="preserve">
-    <value>Specifica come il testo viene allineato alla linea della cornice.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.QRFrameOptions.TextColor.Description" xml:space="preserve">
-    <value>Specifica il colore del testo nella cornice.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.QRFrameOptions.TextPosition.Description" xml:space="preserve">
-    <value>Specifica come il testo viene posizionato rispetto al codice QR.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.CsvExportOptions.Separator.Description" xml:space="preserve">
-    <value>Specifica il/i carattere/i utilizzato/i per separare gli elementi di testo durante l'esportazione di un documento in un file di testo.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.CsvExportOptions.SkipEmptyColumns.Description" xml:space="preserve">
-    <value>Specifica se includere o meno le colonne vuote nel file CSV risultante.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.CsvExportOptions.SkipEmptyRows.Description" xml:space="preserve">
-    <value>Specifica se includere o meno le righe vuote nel file CSV risultante.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.DocxDocumentOptions.Author.Description" xml:space="preserve">
-    <value>Specifica l'autore del documento.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.DocxDocumentOptions.Category.Description" xml:space="preserve">
-    <value>Specifica la categoria del documento.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.DocxDocumentOptions.Comments.Description" xml:space="preserve">
-    <value>Specifica i commenti del documento.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.DocxDocumentOptions.Keywords.Description" xml:space="preserve">
-    <value>Specifica le parole chiave del documento.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.DocxDocumentOptions.Subject.Description" xml:space="preserve">
-    <value>Specifica l'oggetto del documento.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.DocxDocumentOptions.Title.Description" xml:space="preserve">
-    <value>Specifica il titolo del documento.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.DocxExportOptions.AllowFloatingPictures.Description" xml:space="preserve">
-    <value>Specifica se incorporare immagini flottanti nei file DOCX esportati.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.DocxExportOptions.TableLayout.Description" xml:space="preserve">
-    <value>Specifica se utilizzare il layout a tabella o a riquadro nel file DOCX risultante.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.Drawing.ImageItem.ImageSource.Description" xml:space="preserve">
-    <value>L'immagine sorgente a cui è associato l'ID specificato dalla proprietà ImageItem.Id.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.Drawing.PageWatermark.ImagePosition.Description" xml:space="preserve">
-    <value>Specifica se una filigrana con immagine deve essere stampata dietro o davanti al contenuto della pagina.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.Drawing.PageWatermark.TextPosition.Description" xml:space="preserve">
-    <value>Specifica se una filigrana di testo deve essere stampata dietro o davanti al contenuto della pagina.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.Drawing.Watermark.Id.Description" xml:space="preserve">
-    <value>Specifica l'identificativo univoco di una filigrana</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.FormattedTextExportOptions.EmptyFirstPageHeaderFooter.Description" xml:space="preserve">
-    <value>Specifica se visualizzare l'intestazione e il piè di pagina nella prima pagina del documento esportato.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.FormattedTextExportOptions.ExportPageBreaks.Description" xml:space="preserve">
-    <value>Specifica se le interruzioni di pagina debbano essere incluse o meno nel file risultante quando un documento viene esportato in formato RTF/DOCX.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.FormattedTextExportOptions.ExportWatermarks.Description" xml:space="preserve">
-    <value>Specifica se le filigrane debbano essere incluse o meno nel file risultante.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.FormattedTextExportOptions.PageRange.Description" xml:space="preserve">
-    <value>Specifica l'intervallo di pagine da esportare.</value>
+  <data name="DevExpress.XtraPrinting.FormattedTextExportOptions.KeepRowHeight.Description" xml:space="preserve">
+    <value>Specifica se l'altezza delle celle della tabella nel documento risultante debba avere valori fissi oppure se l'aggiunta di una nuova riga di testo al contenuto di una cella debba incrementare l'altezza della riga.</value>
   </data>
   <data name="DevExpress.XtraPrinting.HtmlExportOptionsBase.EmbedImagesInHTML.Description" xml:space="preserve">
     <value>Specifica se le immagini vengono incorporate o meno nel contenuto HTML.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.HtmlExportOptionsBase.ExportWatermarks.Description" xml:space="preserve">
-    <value>Specifica se esportare le filigrane in HTML insieme al resto del contenuto del documento.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.HtmlExportOptionsBase.PageBorderColor.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare il colore dei bordi di pagina quando un documento viene esportato in HTML pagina per pagina.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.HtmlExportOptionsBase.UseHRefHyperlinks.Description" xml:space="preserve">
-    <value>Specifica se la navigazione del documento viene implementata tramite script.</value>
   </data>
   <data name="DevExpress.XtraPrinting.ImageExportOptions.ExportMode.Description" xml:space="preserve">
     <value>Specifica se le pagine del documento vengono esportate in un'unica immagine o in più immagini.</value>
@@ -256,10 +181,10 @@
     <value>Specifica il formato dell'immagine per l'esportazione di un documento.</value>
   </data>
   <data name="DevExpress.XtraPrinting.ImageExportOptions.PageBorderColor.Description" xml:space="preserve">
-    <value>Specifica il colore del bordo della pagina quando un documento viene esportato in un'immagine singola pagina per pagina.</value>
+    <value>Specifica il colore del bordo della pagina quando un documento viene esportato come singola immagine, pagina per pagina.</value>
   </data>
   <data name="DevExpress.XtraPrinting.ImageExportOptions.PageBorderWidth.Description" xml:space="preserve">
-    <value>Specifica la larghezza del bordo della pagina (in pixel) quando un documento viene esportato in un'unica immagine pagina per pagina.</value>
+    <value>Specifica la larghezza del bordo della pagina (in pixel) quando un documento viene esportato come singola immagine pagina per pagina.</value>
   </data>
   <data name="DevExpress.XtraPrinting.ImageExportOptions.PageRange.Description" xml:space="preserve">
     <value>Specifica l'intervallo di pagine da esportare.</value>
@@ -267,8 +192,14 @@
   <data name="DevExpress.XtraPrinting.ImageExportOptions.Resolution.Description" xml:space="preserve">
     <value>Specifica la risoluzione dell'immagine (in DPI).</value>
   </data>
+  <data name="DevExpress.XtraPrinting.ImageExportOptions.RetainBackgroundTransparency.Description" xml:space="preserve">
+    <value>Specifica se un report viene stampato con uno sfondo bianco o trasparente quando la proprietà XtraReport.PageColor (BrickGraphics.PageBackColor) è impostata su trasparente.</value>
+  </data>
   <data name="DevExpress.XtraPrinting.ImageExportOptions.TextRenderingMode.Description" xml:space="preserve">
     <value>Specifica la qualità di rendering del testo nelle immagini (in particolare nelle immagini con valori DPI bassi e sfondo trasparente).</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.NativeFormatOptions.ShowOptionsBeforeSave.Description" xml:space="preserve">
+    <value>Ottiene o imposta un valore che indica se deve essere visualizzata la finestra Opzioni formato nativo quando un utente finale salva un documento dall'anteprima di stampa.</value>
   </data>
   <data name="DevExpress.XtraPrinting.PageByPageExportOptionsBase.RasterizationResolution.Description" xml:space="preserve">
     <value>Specifica la risoluzione (in DPI) utilizzata per rasterizzare le immagini vettoriali durante l'esportazione nel formato di documento corrispondente.</value>
@@ -276,266 +207,11 @@
   <data name="DevExpress.XtraPrinting.PageByPageExportOptionsBase.RasterizeImages.Description" xml:space="preserve">
     <value>Specifica se le immagini vettoriali debbano essere rasterizzate o meno durante l'esportazione nel formato di documento corrispondente.</value>
   </data>
-  <data name="DevExpress.XtraPrinting.PdfExportOptions.ExportBookmarks.Description" xml:space="preserve">
-    <value>Specifica se includere i segnalibri nel documento esportato.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PdfExportOptions.ExportEditingFieldsToAcroForms.Description" xml:space="preserve">
-    <value>Specifica se convertire i campi modificabili in campi AcroForms durante l'esportazione in PDF.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PdfExportOptions.PdfACompatibility.Description" xml:space="preserve">
-    <value>Specifica la compatibilità del documento con le specifiche PDF/A.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PdfExportOptions.PdfUACompatibility.Description" xml:space="preserve">
-    <value>Specifica la compatibilità del documento con le specifiche PDF/UA.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PdfPasswordSecurityOptions.EncryptionLevel.Description" xml:space="preserve">
-    <value>Specifica l'algoritmo utilizzato per crittografare il contenuto dei file PDF.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PdfPasswordSecurityOptions.OpenPassword.Description" xml:space="preserve">
-    <value>Specifica la password per aprire il documento PDF esportato.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PdfPasswordSecurityOptions.PermissionsPassword.Description" xml:space="preserve">
-    <value>Specifica la password di autorizzazione per i file PDF del documento.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PdfPermissionsOptions.ChangingPermissions.Description" xml:space="preserve">
-    <value>Specifica le autorizzazioni per la modifica del documento PDF esportato.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PdfPermissionsOptions.EnableCopying.Description" xml:space="preserve">
-    <value>Specifica le autorizzazioni per la copia del contenuto del documento PDF esportato.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PdfPermissionsOptions.EnableScreenReaders.Description" xml:space="preserve">
-    <value>Specifica le autorizzazioni di accesso dei lettori di schermo al documento PDF esportato.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PdfPermissionsOptions.PrintingPermissions.Description" xml:space="preserve">
-    <value>Specifica le autorizzazioni per la stampa del documento PDF esportato.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PrinterSettingsUsing.UseLandscape.Description" xml:space="preserve">
-    <value>Specifica se utilizzare o meno l'orientamento orizzontale della stampante predefinita del sistema durante la stampa di un documento.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PrinterSettingsUsing.UsePaperKind.Description" xml:space="preserve">
-    <value>Specifica se, durante la stampa di un documento, viene utilizzato o meno il tipo di carta impostato per la stampante predefinita del sistema.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PrintPreviewOptions.DefaultExportFormat.Description" xml:space="preserve">
-    <value>Specifica il formato predefinito in cui un documento viene esportato dal modulo Anteprima di stampa.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.Recipient.ContactName.Description" xml:space="preserve">
-    <value>Specifica il nome del destinatario dell'e-mail.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.Recipient.FieldType.Description" xml:space="preserve">
-    <value>Specifica il tipo di destinatario dell'e-mail.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.Recipient.Prefix.Description" xml:space="preserve">
-    <value>Specifica il prefisso del messaggio di posta elettronica (ad esempio, "SMTP:" o "Fax:").</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlDocumentOptions.Application.Description" xml:space="preserve">
-    <value>Specifica una stringa da aggiungere come proprietà Nome programma del file XLS risultante.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlDocumentOptions.Author.Description" xml:space="preserve">
-    <value>Specifica una stringa da aggiungere come proprietà Autori del file XLS risultante.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlDocumentOptions.Category.Description" xml:space="preserve">
-    <value>Specifica una stringa da aggiungere come proprietà Categorie del file XLS risultante.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlDocumentOptions.Comments.Description" xml:space="preserve">
-    <value>Specifica una stringa da aggiungere come proprietà Commenti del file XLS risultante.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlDocumentOptions.Company.Description" xml:space="preserve">
-    <value>Specifica una stringa da aggiungere come proprietà Azienda del file XLS risultante.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlDocumentOptions.Subject.Description" xml:space="preserve">
-    <value>Specifica una stringa da aggiungere come proprietà Oggetto del file XLS risultante.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlDocumentOptions.Tags.Description" xml:space="preserve">
-    <value>Specifica una stringa da aggiungere come proprietà Tags del file XLS risultante.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlDocumentOptions.Title.Description" xml:space="preserve">
-    <value>Specifica una stringa da aggiungere come proprietà Titolo del file XLS risultante.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlEncryptionOptions.Password.Description" xml:space="preserve">
-    <value>Specifica la password per aprire il file.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlEncryptionOptions.Type.Description" xml:space="preserve">
-    <value>Specifica il meccanismo di crittografia applicato.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlExportOptionsBase.ExportHyperlinks.Description" xml:space="preserve">
-    <value>Specifica se i collegamenti ipertestuali devono essere esportati in Excel o meno.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlExportOptionsBase.IgnoreErrors.Description" xml:space="preserve">
-    <value>Specifica gli errori del documento da ignorare nel file Excel risultante.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlsExportOptions.ExportMode.Description" xml:space="preserve">
-    <value>Specifica se il documento deve essere esportato in un singolo file XLS o in file XLS separati, con ogni pagina in un file distinto.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlsExportOptions.WorkbookColorPaletteCompliance.Description" xml:space="preserve">
-    <value>Specifica la modalità di compatibilità della tavolozza dei colori con le diverse versioni delle cartelle di lavoro.</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.DynamicListLookUpSettings.DisplayMember.Description" xml:space="preserve">
-    <value>Specifica il membro dati per l'archivio che contiene il nome visualizzato del parametro del report.</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.DynamicListLookUpSettings.SortMember.Description" xml:space="preserve">
-    <value>Specifica il nome del campo utilizzato per ordinare i valori dei parametri nell'editor di ricerca.</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.DynamicListLookUpSettings.SortOrder.Description" xml:space="preserve">
-    <value>Specifica l'ordine di visualizzazione dei valori dei parametri nell'editor di ricerca.</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.DynamicListLookUpSettings.ValueMember.Description" xml:space="preserve">
-    <value>Il nome del campo che memorizza i valori dei parametri del report.</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.LookUpSettings.DataAdapter.Description" xml:space="preserve">
-    <value>Specifica l'adattatore dati utilizzato per fornire i valori dei parametri all'editor di ricerca.</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.LookUpSettings.DataMember.Description" xml:space="preserve">
-    <value>Specifica il membro dati utilizzato per fornire i valori dei parametri all'editor di ricerca.</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.LookUpSettings.DataSource.Description" xml:space="preserve">
-    <value>Specifica l'origine dati utilizzata per fornire i valori dei parametri all'editor di ricerca.</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.LookUpSettings.FilterString.Description" xml:space="preserve">
-    <value>Specifica i criteri di filtro applicati all'oggetto LookUpSettings.</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.Parameter.AllowNull.Description" xml:space="preserve">
-    <value>Specifica se un campo vuoto deve essere considerato nullo.</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.Parameter.Description.Description" xml:space="preserve">
-    <value>Specifica la descrizione di un parametro. Questa descrizione viene visualizzata accanto all'editor dei parametri nel pannello parametri.</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.Parameter.Enabled.Description" xml:space="preserve">
-    <value>Specifica se un editor di parametri è abilitato o disabilitato nel pannello Parametri.</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.Parameter.MultiValue.Description" xml:space="preserve">
-    <value>Specifica se tu e gli utenti finali potete passare più valori a un parametro del report.</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.Parameter.SelectAllValues.Description" xml:space="preserve">
-    <value>Specifica se utilizzare tutti i valori di un parametro multivalore come valori predefiniti.</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.Parameter.Tag.Description" xml:space="preserve">
-    <value>Specifica l'oggetto che contiene i dati relativi al parametro del report.</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.Parameter.Visible.Description" xml:space="preserve">
-    <value>Specifica se un editor di parametri è visibile nel pannello Parametri.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.CodabarGenerator.StartSymbol.Description" xml:space="preserve">
-    <value>Ottiene o imposta il primo simbolo (iniziale) utilizzato per codificare la struttura del codice a barre.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.CodabarGenerator.StopSymbol.Description" xml:space="preserve">
-    <value>Ottiene o imposta l'ultimo simbolo (stop) utilizzato per codificare la struttura del codice a barre.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.DataBarGenerator.SegmentsInRow.Description" xml:space="preserve">
-    <value>Ottiene o imposta il numero di segmenti di dati per riga nel tipo Expanded Stacked di un codice a barre GS1 DataBar.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.DataBarGenerator.Type.Description" xml:space="preserve">
-    <value>Ottiene o imposta il tipo di un codice a barre GS1 DataBar.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.EAN128Generator.FNC1Substitute.Description" xml:space="preserve">
-    <value>Ottiene o imposta il simbolo (o l'insieme di simboli) nel testo del codice a barre che verrà sostituito con il carattere funzionale FNC1 quando vengono disegnate le barre del codice a barre.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.PDF417Generator.Columns.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare il numero di colonne del codice a barre, permettendo così di controllare la larghezza logica del codice a barre.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.PDF417Generator.Rows.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare il numero di righe del codice a barre, permettendo così di controllare l'altezza logica del codice a barre.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.PDF417Generator.YToXRatio.Description" xml:space="preserve">
-    <value>Ottiene o imposta il rapporto altezza-larghezza della rappresentazione grafica di un'unità logica.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.QRCodeGenerator.FrameOptions.Description" xml:space="preserve">
-    <value>Ottiene o imposta la cornice per i codici QR.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.DocxExportOptions.ExportMode.Description" xml:space="preserve">
-    <value>Ottiene o imposta un valore che indica come un documento viene esportato in formato DOCX.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.Drawing.PageWatermark.Font.Description" xml:space="preserve">
-    <value>Ottiene o imposta il carattere della filigrana di pagina.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.Drawing.PageWatermark.ForeColor.Description" xml:space="preserve">
-    <value>Ottiene o imposta il colore di primo piano del testo della filigrana di pagina.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.Drawing.PageWatermark.ImageAlignment.Description" xml:space="preserve">
-    <value>Ottiene o imposta la posizione dell'immagine della filigrana di pagina. Utilizzare questa proprietà in ambienti non Windows.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.Drawing.PageWatermark.ImageSource.Description" xml:space="preserve">
-    <value>Ottiene o imposta l'immagine della filigrana di pagina.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.Drawing.PageWatermark.ImageTiling.Description" xml:space="preserve">
-    <value>Ottiene o imposta un valore che indica se l'immagine di una filigrana di pagina deve essere ripetuta a mosaico.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.Drawing.PageWatermark.ImageTransparency.Description" xml:space="preserve">
-    <value>Consente di impostare o ottenere la trasparenza dell'immagine della filigrana.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.Drawing.PageWatermark.ImageViewMode.Description" xml:space="preserve">
-    <value>Ottiene o imposta la modalità di visualizzazione di una filigrana di pagina immagine.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.Drawing.PageWatermark.Text.Description" xml:space="preserve">
-    <value>Ottiene o imposta il testo di una filigrana di pagina.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.Drawing.PageWatermark.TextDirection.Description" xml:space="preserve">
-    <value>Ottiene o imposta l'inclinazione del testo della filigrana di pagina.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.Drawing.PageWatermark.TextTransparency.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare la trasparenza del testo della filigrana di pagina.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.Drawing.Watermark.PageRange.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare l'intervallo di pagine che contengono una filigrana.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.EmailOptions.Body.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare il testo che viene aggiunto al corpo di un'e-mail quando un documento viene esportato e inviato tramite e-mail dall'anteprima di stampa.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.EmailOptions.RecipientAddressPrefix.Description" xml:space="preserve">
-    <value>Ottiene o imposta il prefisso aggiunto al valore della proprietà EmailOptions.RecipientAddress.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.EmailOptions.RecipientName.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare il testo utilizzato come nome del destinatario di un'e-mail, quando un documento viene esportato e inviato tramite e-mail dalla sua anteprima di stampa.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.EmailOptions.Subject.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare il testo utilizzato come oggetto di un'e-mail quando un documento viene esportato e inviato tramite e-mail dalla sua anteprima di stampa.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.HtmlExportOptionsBase.CharacterSet.Description" xml:space="preserve">
-    <value>Restituisce o imposta il nome di codifica utilizzato durante l'esportazione di un documento in HTML.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.HtmlExportOptionsBase.ExportMode.Description" xml:space="preserve">
-    <value>Ottiene o imposta un valore che indica come un documento viene esportato in HTML.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.HtmlExportOptionsBase.PageRange.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare l'intervallo di pagine da esportare.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.HtmlExportOptionsBase.RemoveSecondarySymbols.Description" xml:space="preserve">
-    <value>Ottiene o imposta un valore che indica se i simboli secondari devono essere rimossi dal file HTML risultante, per ridurne le dimensioni.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.HtmlExportOptionsBase.TableLayout.Description" xml:space="preserve">
-    <value>Determina se utilizzare il layout a tabella o non a tabella nel file HTML risultante.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.HtmlExportOptionsBase.Title.Description" xml:space="preserve">
-    <value>Ottiene o imposta il titolo del file HTML creato</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.NativeFormatOptions.Compressed.Description" xml:space="preserve">
-    <value>Ottiene o imposta un valore che indica se il file PRNX risultante deve essere compresso.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.NativeFormatOptions.ShowOptionsBeforeSave.Description" xml:space="preserve">
-    <value>Ottiene o imposta un valore che indica se deve essere visualizzata la finestra Opzioni formato nativo quando un utente finale salva un documento dall'anteprima di stampa.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PageByPageExportOptionsBase.PageRange.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare l'intervallo di pagine da esportare.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PdfDocumentOptions.Application.Description" xml:space="preserve">
-    <value>Ottiene o imposta la stringa da aggiungere come proprietà dell'applicazione al file PDF risultante.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PdfDocumentOptions.Author.Description" xml:space="preserve">
-    <value>Ottiene o imposta la stringa da aggiungere come proprietà Autore del file PDF risultante.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PdfDocumentOptions.Keywords.Description" xml:space="preserve">
-    <value>Ottiene o imposta la stringa da aggiungere come proprietà Keywords del file PDF risultante.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PdfDocumentOptions.Subject.Description" xml:space="preserve">
-    <value>Ottiene o imposta la stringa da aggiungere come proprietà Subject del file PDF risultante.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PdfDocumentOptions.Title.Description" xml:space="preserve">
-    <value>Ottiene o imposta la stringa da aggiungere come proprietà Titolo del file PDF risultante.</value>
+  <data name="DevExpress.XtraPrinting.PdfExportOptions.ConvertImagesToJpeg.Description" xml:space="preserve">
+    <value>Specifica se convertire le immagini bitmap e i metadati contenuti nel documento in formato JPEG durante l'esportazione in PDF.</value>
   </data>
   <data name="DevExpress.XtraPrinting.PdfExportOptions.ImageQuality.Description" xml:space="preserve">
     <value>Consente di ottenere o impostare la qualità delle immagini nel file PDF risultante.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PdfExportOptions.NeverEmbeddedFonts.Description" xml:space="preserve">
-    <value>Restituisce o imposta una stringa di valori separati da punto e virgola contenente i nomi dei caratteri che non devono essere incorporati nel file PDF risultante.</value>
   </data>
   <data name="DevExpress.XtraPrinting.PrintPreviewOptions.ActionAfterExport.Description" xml:space="preserve">
     <value>Ottiene o imposta un valore che indica se il file risultante deve essere aperto automaticamente dopo l'esportazione di un documento dall'anteprima di stampa.</value>
@@ -543,8 +219,14 @@
   <data name="DevExpress.XtraPrinting.PrintPreviewOptions.DefaultDirectory.Description" xml:space="preserve">
     <value>Ottiene o imposta il percorso del file in cui, per impostazione predefinita, viene esportato un documento dall'anteprima di stampa.</value>
   </data>
+  <data name="DevExpress.XtraPrinting.PrintPreviewOptions.DefaultExportFormat.Description" xml:space="preserve">
+    <value>Specifica il formato predefinito in cui un documento viene esportato dal modulo Anteprima di stampa.</value>
+  </data>
   <data name="DevExpress.XtraPrinting.PrintPreviewOptions.DefaultFileName.Description" xml:space="preserve">
     <value>Consente di ottenere o impostare il nome del file con cui, per impostazione predefinita, viene esportato un documento dall'anteprima di stampa.</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.PrintPreviewOptions.DefaultSendFormat.Description" xml:space="preserve">
+    <value>Specifica il formato predefinito in cui viene convertito un documento quando viene eseguito il comando PrintingSystemCommand.SendFile.</value>
   </data>
   <data name="DevExpress.XtraPrinting.PrintPreviewOptions.SaveMode.Description" xml:space="preserve">
     <value>Ottiene o imposta un valore che specifica come viene ottenuto il percorso del file da esportare quando si esporta un documento dall'anteprima di stampa.</value>
@@ -552,139 +234,16 @@
   <data name="DevExpress.XtraPrinting.PrintPreviewOptions.ShowOptionsBeforeExport.Description" xml:space="preserve">
     <value>Ottiene o imposta un valore che indica se deve essere visualizzata la finestra Opzioni di esportazione quando un utente finale esporta un documento dall'Anteprima di stampa.</value>
   </data>
-  <data name="DevExpress.XtraPrinting.RtfExportOptions.ExportMode.Description" xml:space="preserve">
-    <value>Ottiene o imposta un valore che indica come un documento viene esportato in formato RTF.</value>
+  <data name="DevExpress.XtraPrinting.Recipient.Address.Description" xml:space="preserve">
+    <value>Specifica l'indirizzo email del destinatario.</value>
   </data>
-  <data name="DevExpress.XtraPrinting.TextExportOptionsBase.Encoding.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare la codifica del file di testo in cui viene esportato un report.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.TextExportOptionsBase.QuoteStringsWithSeparators.Description" xml:space="preserve">
-    <value>Ottiene o imposta un valore che indica se una stringa con separatori deve essere racchiusa tra virgolette quando un documento viene esportato in un file di testo.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.TextExportOptionsBase.Separator.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare i simboli per separare gli elementi di testo quando un documento viene esportato in un file di testo.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.TextExportOptionsBase.TextExportMode.Description" xml:space="preserve">
-    <value>Ottiene o imposta un valore che indica se utilizzare la formattazione dei campi dati nel dataset associato per le celle del documento TXT, CSV, XLS o XLSX esportato.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlExportOptionsBase.SheetName.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare il nome del foglio nel file XLS creato in cui viene esportato un documento.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlExportOptionsBase.TextExportMode.Description" xml:space="preserve">
-    <value>Ottiene o imposta un valore che indica se le celle del documento XLS risultante devono utilizzare la stessa formattazione del documento originale.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlsExportOptions.PageRange.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare l'intervallo di pagine da esportare.</value>
+  <data name="DevExpress.XtraPrinting.XlExportOptionsBase.RightToLeftDocument.Description" xml:space="preserve">
+    <value>Ottiene o imposta se il layout del documento XLS risultante deve essere allineato per supportare le impostazioni locali che utilizzano caratteri da destra a sinistra.</value>
   </data>
   <data name="DevExpress.XtraPrinting.XlsExportOptions.Suppress256ColumnsWarning.Description" xml:space="preserve">
     <value>Ottiene o imposta un valore che indica se sopprimere l'eccezione che si verifica quando si tenta di esportare un documento in un file XLS con più di 256 colonne.</value>
   </data>
   <data name="DevExpress.XtraPrinting.XlsExportOptions.Suppress65536RowsWarning.Description" xml:space="preserve">
     <value>Ottiene o imposta un valore che indica se sopprimere l'eccezione che si verifica quando si tenta di esportare un documento in un file XLS con più di 65.536 righe.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlsxExportOptions.PageRange.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare l'intervallo di pagine da esportare.</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.Parameter.ValueSourceSettings.Description" xml:space="preserve">
-    <value>Ottiene o imposta le impostazioni utilizzate per generare valori predefiniti per un parametro del report.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.BarCodeGeneratorBase.CalcCheckSum.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare se calcolare un checksum per il codice a barre.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.DataMatrixGenerator.CompactionMode.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare se per la codifica dei dati del codice a barre deve essere utilizzata la modalità testo o binaria.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.MicroQRCodeGenerator.CompactionMode.Description" xml:space="preserve">
-    <value>Restituisce o imposta se il codice a barre contiene un numero, una stringa alfanumerica o un array di byte.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.MicroQRCodeGenerator.IncludeQuietZone.Description" xml:space="preserve">
-    <value>Consente di impostare se aggiungere uno spazio vuoto attorno al codice Micro QR per separarlo dagli elementi circostanti.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.PDF417Generator.CompactionMode.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare se per la codifica dei dati del codice a barre deve essere utilizzata la modalità testo o binaria.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.PDF417Generator.TruncateSymbol.Description" xml:space="preserve">
-    <value>Ottiene o imposta se il simbolo finale speciale deve essere aggiunto al codice a barre.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.QRCodeGenerator.CompactionMode.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare se per la codifica dei dati del codice a barre deve essere utilizzata la modalità numerica, alfanumerica o a byte.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.QRCodeGenerator.IncludeQuietZone.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare se aggiungere uno spazio vuoto attorno al codice QR.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.ExportOptions.Email.Description" xml:space="preserve">
-    <value>Consente di recuperare le impostazioni utilizzate per specificare i parametri di esportazione quando un documento viene inviato tramite e-mail in Anteprima di stampa.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.ExportOptions.Html.Description" xml:space="preserve">
-    <value>Recupera le impostazioni utilizzate per specificare i parametri di esportazione quando un documento viene esportato in formato HTML.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.ExportOptions.Image.Description" xml:space="preserve">
-    <value>Recupera le impostazioni utilizzate per specificare i parametri di esportazione quando un documento viene esportato come immagine.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.ExportOptions.Mht.Description" xml:space="preserve">
-    <value>Recupera le impostazioni utilizzate per specificare i parametri di esportazione quando un documento viene esportato in formato MHT.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.ExportOptions.Pdf.Description" xml:space="preserve">
-    <value>Consente di ottenere le impostazioni utilizzate per specificare i parametri di esportazione quando un documento viene esportato in formato PDF.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.ExportOptions.PrintPreview.Description" xml:space="preserve">
-    <value>Consente di recuperare le impostazioni utilizzate per specificare come un documento viene esportato dall'anteprima di stampa.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.ExportOptions.Rtf.Description" xml:space="preserve">
-    <value>Consente di ottenere le impostazioni utilizzate per specificare i parametri di esportazione quando un documento viene esportato in formato RTF.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.ExportOptions.Text.Description" xml:space="preserve">
-    <value>Recupera le impostazioni utilizzate per specificare i parametri di esportazione quando un documento viene esportato in formato testo.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.ExportOptions.Xls.Description" xml:space="preserve">
-    <value>Consente di ottenere le impostazioni utilizzate per specificare i parametri di esportazione quando un documento viene esportato in formato XLS.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.HtmlExportOptionsBase.PageBorderWidth.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare la larghezza (in pixel) dei bordi di pagina quando un documento viene esportato in HTML pagina per pagina.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PdfExportOptions.DocumentOptions.Description" xml:space="preserve">
-    <value>Consente di ottenere le opzioni da incorporare come proprietà del documento del file PDF creato.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PdfExportOptions.ShowPrintDialogOnOpen.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare se visualizzare la finestra di dialogo di stampa all'apertura di un file PDF.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlExportOptionsBase.FitToPrintedPageHeight.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare se il documento di output deve essere adattato all'altezza della pagina durante la stampa.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlExportOptionsBase.FitToPrintedPageWidth.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare se il documento di output deve essere adattato alla larghezza della pagina durante la stampa.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlExportOptionsBase.RightToLeftDocument.Description" xml:space="preserve">
-    <value>Ottiene o imposta se il layout del documento XLS risultante deve essere allineato per supportare le impostazioni locali che utilizzano caratteri da destra a sinistra.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlExportOptionsBase.ShowGridLines.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare se le linee della griglia del foglio di lavoro sono visibili nel file XLS risultante.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.DocxExportOptions.DocumentOptions.Description" xml:space="preserve">
-    <value>Consente l'accesso a un oggetto, specificando le opzioni del documento esportato.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.EmailOptions.AdditionalRecipients.Description" xml:space="preserve">
-    <value>Consente l'accesso alla raccolta dei destinatari delle email.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.ExportOptions.MailMessage.Description" xml:space="preserve">
-    <value>Consente di accedere a un oggetto che contiene le opzioni che definiscono le modalità di esportazione di un documento in un messaggio di posta elettronica.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.ExportOptions.NativeFormat.Description" xml:space="preserve">
-    <value>Consente l'accesso all'oggetto che contiene le impostazioni per il salvataggio del documento PrintingSystem in formato nativo.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PdfExportOptions.PasswordSecurityOptions.Description" xml:space="preserve">
-    <value>Consente l'accesso alle opzioni di sicurezza del documento PDF, che richiedono l'inserimento di una password.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PdfPasswordSecurityOptions.PermissionsOptions.Description" xml:space="preserve">
-    <value>Consente di accedere alle opzioni di autorizzazione PDF del documento.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlExportOptionsBase.DocumentOptions.Description" xml:space="preserve">
-    <value>Consente di accedere alle opzioni da incorporare come proprietà del documento nel file XLS o XLSX risultante.</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.XlExportOptionsBase.EncryptionOptions.Description" xml:space="preserve">
-    <value>Consente l'accesso alle opzioni di crittografia dei file XLS e XLSX.</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.StaticListLookUpSettings.LookUpValues.Description" xml:space="preserve">
-    <value>Memorizza l'elenco dei valori statici di un parametro del report.</value>
   </data>
 </root>

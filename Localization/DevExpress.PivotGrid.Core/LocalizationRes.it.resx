@@ -1,45 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -92,7 +92,7 @@
     <value>DevStd</value>
   </data>
   <data name="PivotGridStringId.ColumnHeadersCustomization">
-    <value>Trascinare qui i Campi Colonna</value>
+    <value>Trascinare qui i Campi Colonna.</value>
   </data>
   <data name="PivotGridStringId.Alt_LayoutButton">
     <value>[Pulsante Layout]</value>
@@ -122,7 +122,7 @@
     <value>Ordina "{0}" in Base a questa Colonna</value>
   </data>
   <data name="PivotGridStringId.SummaryStdDevp">
-    <value>StdDevp</value>
+    <value>DevStdP</value>
   </data>
   <data name="PivotGridStringId.Alt_FieldListHeaders">
     <value>[Intestazioni Campi Nascosti]</value>
@@ -371,7 +371,7 @@
     <value>Vai all'Inizio</value>
   </data>
   <data name="PivotGridStringId.TotalFormatStdDevp">
-    <value>{0} StdDevp</value>
+    <value>DevStdP {0}</value>
   </data>
   <data name="PivotGridStringId.GrandTotal">
     <value>Gran Totale</value>
@@ -459,7 +459,7 @@ Potete scaricarlo qui:</value>
     <value>Obiettivo</value>
   </data>
   <data name="PivotGridStringId.OLAPKPITypeTrend" xml:space="preserve">
-    <value>Tendenza</value>
+    <value>Trend</value>
   </data>
   <data name="PivotGridStringId.PopupMenuKPIGraphicCylinder" xml:space="preserve">
     <value>Cilindro</value>
@@ -489,7 +489,7 @@ Potete scaricarlo qui:</value>
     <value>Var</value>
   </data>
   <data name="PivotGridStringId.PopupMenuKPIGraphicGauge" xml:space="preserve">
-    <value>Indicatore</value>
+    <value>Gauge</value>
   </data>
   <data name="PivotGridStringId.OLAPKPIsCaption" xml:space="preserve">
     <value>KPI</value>
@@ -713,337 +713,5 @@ Le righe di dati vengono ordinate in base ai valori nella colonna specificata in
   </data>
   <data name="PivotGridStringId.FunctionCategoryCustomAggregateNames" xml:space="preserve">
     <value>CustomAggregateNames</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionAggr" xml:space="preserve">
-    <value>aggr(SummaryExpression, Dimensione1, Dimensione2, ...)
-Aggrega i dati sottostanti utilizzando il livello di dettaglio e la funzione di riepilogo. Il livello è specificato da un insieme predefinito di dimensioni.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionGetDateWeekYear2" xml:space="preserve">
-    <value>GetDateWeekYear(DateTime, ['FirstDay', 'FirstFullWeek', 'FirstFourDayWeek'])
-Restituisce la data del primo giorno della settimana per un dato DateTime. Il secondo parametro determina la regola per il calcolo della settimana del calendario.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionRankCompetition" xml:space="preserve">
-    <value>RankCompetition(SummaryExpression, ['asc', 'desc'])
-Restituisce la classifica standard della competizione per la riga corrente nella finestra.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionRankDense" xml:space="preserve">
-    <value>RankDense(SummaryExpression, ['asc', 'desc'])
-Restituisce il rango denso per la riga corrente nella finestra.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionRankModified" xml:space="preserve">
-    <value>RankModified(SummaryExpression, ['asc', 'desc'])
-Restituisce la classifica di competizione modificata per la riga corrente nella finestra.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionRankPercentile" xml:space="preserve">
-    <value>RankPercentile(SummaryExpression, ['asc', 'desc'])
-Restituisce il rango percentile per la riga corrente nella finestra.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionRankUnique" xml:space="preserve">
-    <value>RankUnique(SummaryExpression, ['asc', 'desc'])
-Restituisce il rango univoco per la riga corrente nella finestra.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionRunningCustomAggregate" xml:space="preserve">
-    <value>RunningAggregate(SummaryExpression, CustomAggregateName) - Restituisce il risultato cumulativo della funzione personalizzata applicata all'espressione specificata, dalla prima riga della finestra alla riga corrente.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionWindowAvg" xml:space="preserve">
-    <value>WindowAvg(SummaryExpression, StartOffset, EndOffset)
-Restituisce la media dell'espressione all'interno della finestra, definita utilizzando gli offset dalla riga corrente.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionWindowCount" xml:space="preserve">
-    <value>WindowCount(SummaryExpression, StartOffset, EndOffset)
-Restituisce il conteggio dell'espressione all'interno della finestra.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionWindowCountDistinct" xml:space="preserve">
-    <value>WindowCountDistinct(SummaryExpression, StartOffset, EndOffset)
-Restituisce il conteggio distinto dell'espressione all'interno della finestra.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionWindowDefinition" xml:space="preserve">
-    <value>w(WindowExpression, partitionByFunction, orderByFunction)
-Calcola i valori aggregati con la funzione finestra specificata per la finestra definita dal partizionamento e dall'ordinamento specificati.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionWindowDefinitionPartitionBy" xml:space="preserve">
-    <value>partitionBy(colonna1, colonna2, ...)
-Specifica le colonne in base alle quali vengono partizionate le righe di dati. La funzione finestra viene applicata a ciascuna partizione separatamente.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionGetDateHourMinuteSecond" xml:space="preserve">
-    <value>GetDateHourMinuteSecond(DateTime)
-Estrae la parte relativa alla data, comprensiva di ore, minuti e secondi, dal DateTime definito.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionGetDateMonthYear" xml:space="preserve">
-    <value>GetDateMonthYear(DateTime)
-Restituisce la data del primo giorno del mese per un dato oggetto DateTime.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionGetDateQuarterYear" xml:space="preserve">
-    <value>GetDateQuarterYear(DateTime)
-Restituisce la data del primo giorno del trimestre per un dato oggetto DateTime.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionMax" xml:space="preserve">
-    <value>Max(Valore)
-Restituisce il valore massimo tra le righe utilizzate per calcolare un valore aggregato.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionRunningAvg" xml:space="preserve">
-    <value>RunningAvg(SummaryExpression)
-Restituisce la media mobile dell'espressione specificata dalla prima riga della finestra alla riga corrente.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionRunningCount" xml:space="preserve">
-    <value>RunningCount(SummaryExpression)
-Restituisce il conteggio progressivo dell'espressione specificata dalla prima riga della finestra alla riga corrente.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionRunningMax" xml:space="preserve">
-    <value>RunningMax(SummaryExpression)
-Restituisce il valore massimo progressivo dell'espressione specificata, dalla prima riga della finestra alla riga corrente.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionRunningMin" xml:space="preserve">
-    <value>RunningMin(SummaryExpression)
-Restituisce il valore minimo progressivo dell'espressione specificata, calcolato dalla prima riga della finestra fino alla riga corrente.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionRunningSum" xml:space="preserve">
-    <value>RunningSum(SummaryExpression)
-Restituisce la somma progressiva dell'espressione specificata dalla prima riga della finestra alla riga corrente.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionToBoolean" xml:space="preserve">
-    <value>ToBoolean(Value)
-Converte il valore in un valore booleano equivalente.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionTotal" xml:space="preserve">
-    <value>Totale(EspressioneRiepilogativa)
-Restituisce il totale per l'espressione specificata in una finestra di calcolo tabellare.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionWindowCustomAggregate" xml:space="preserve">
-    <value>WindowAggregate(SummaryExpression, StartOffset, EndOffset, CustomAggregateName) - Restituisce il risultato della funzione personalizzata applicata all'espressione specificata nella finestra.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionWindowDefinitionOrderBy" xml:space="preserve">
-    <value>orderBy(colonna1, colonna2, ...)
-Specifica le colonne in base alle quali vengono ordinati i valori.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionWindowFirstValue" xml:space="preserve">
-    <value>WindowFirstValue(SummaryExpression, StartOffset, EndOffset)
-Restituisce il primo valore dell'espressione all'interno della finestra.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionWindowMax" xml:space="preserve">
-    <value>WindowMax(SummaryExpression, StartOffset, EndOffset)
-Restituisce il valore massimo dell'espressione all'interno della finestra.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionWindowMedian" xml:space="preserve">
-    <value>WindowMedian(SummaryExpression, StartOffset, EndOffset)
-Restituisce la mediana dell'espressione all'interno della finestra.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionWindowMin" xml:space="preserve">
-    <value>WindowMin(SummaryExpression, StartOffset, EndOffset)
-Restituisce il valore minimo dell'espressione all'interno della finestra.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionWindowMode" xml:space="preserve">
-    <value>WindowMode(SummaryExpression, StartOffset, EndOffset)
-Restituisce la modalità dell'espressione all'interno della finestra.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionAvg" xml:space="preserve">
-    <value>Avg(Valore)
-Calcola il valore medio delle righe utilizzate per calcolare un valore aggregato.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionCount" xml:space="preserve">
-    <value>Count()
-Restituisce il numero di righe utilizzate per calcolare un valore aggregato.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionCountDistinct" xml:space="preserve">
-    <value>CountDistinct(Value)
-Restituisce il numero di valori univoci nelle righe utilizzate per calcolare un valore aggregato.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionCountNotNull" xml:space="preserve">
-    <value>CountNotNull(Value)
-Restituisce il numero di valori non nulli presenti nelle righe utilizzate per calcolare un valore aggregato.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionFirst" xml:space="preserve">
-    <value>First()
-Restituisce il numero di righe dalla riga corrente alla prima riga della finestra.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionFirstValue" xml:space="preserve">
-    <value>FirstValue(Value)
-Restituisce il primo valore delle righe utilizzate per calcolare un valore aggregato.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionGetDateHour" xml:space="preserve">
-    <value>GetDateHour(DateTime)
-Estrae la parte relativa alla data, comprensiva dell'ora, dal DateTime definito.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionGetDateHourMinute" xml:space="preserve">
-    <value>GetDateHourMinute(DateTime)
-Estrae la parte relativa alla data, comprensiva di ore e minuti, dal DateTime definito.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionGetWeekOfYear" xml:space="preserve">
-    <value>GetWeekOfYear(DateTime)
-Estrae la settimana dell'anno dal DateTime definito.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionLookup" xml:space="preserve">
-    <value>Ricerca(EspressioneRiepilogativa, Posizione)
-Restituisce il valore dell'espressione in una posizione di destinazione specificata come offset relativo rispetto alla posizione corrente.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionMakeDateTime3" xml:space="preserve">
-    <value>MakeDateTime(Anno, Mese, Giorno)
-Restituisce un valore di data costruito a partire dall'anno, dal mese e dal giorno specificati.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionMakeDateTime4" xml:space="preserve">
-    <value>MakeDateTime(Anno, Mese, Giorno, Ora)
-Restituisce un valore di data costruito a partire dall'anno, dal mese, dal giorno e dall'ora specificati.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionMakeDateTime5" xml:space="preserve">
-    <value>MakeDateTime(Anno, Mese, Giorno, Ora, Minuto)
-Restituisce un valore di data costruito a partire dall'anno, dal mese, dal giorno, dall'ora e dal minuto specificati.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionMakeDateTime6" xml:space="preserve">
-    <value>MakeDateTime(Anno, Mese, Giorno, Ora, Minuto, Secondo)
-Restituisce un valore di data costruito a partire dall'anno, dal mese, dal giorno, dall'ora, dal minuto e dal secondo specificati.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionSize" xml:space="preserve">
-    <value>Size()
-Restituisce il numero di righe nella finestra.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionStdDev" xml:space="preserve">
-    <value>StdDev(Value)
-Restituisce una stima della deviazione standard di una popolazione, dove il campione è un sottoinsieme dell'intera popolazione.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionStdDevp" xml:space="preserve">
-    <value>StdDevp(Value)
-Restituisce la deviazione standard di una popolazione, dove la popolazione è costituita dall'intero insieme di dati da riassumere.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionSum" xml:space="preserve">
-    <value>Somma(Valore)
-Restituisce la somma dei valori nelle righe.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionToDate" xml:space="preserve">
-    <value>ToDate(Value)
-Converte il valore in un valore di tipo DateOnly.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionToDateTime" xml:space="preserve">
-    <value>ToDateTime(Value)
-Converte il valore in un valore DateTime.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionToTime" xml:space="preserve">
-    <value>ToTime(Value)
-Converte il valore in un valore TimeOnly.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionVar" xml:space="preserve">
-    <value>Var(Value)
-Restituisce una stima della varianza di una popolazione, dove il campione è un sottoinsieme dell'intera popolazione.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionVarp" xml:space="preserve">
-    <value>Varp(Valore)
-Restituisce la varianza di una popolazione, dove la popolazione è costituita dall'insieme completo dei dati da riassumere.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionWindowDefinitionOrderDesc" xml:space="preserve">
-    <value>desc(colonna)
-Le righe di dati vengono ordinate in base ai valori della colonna specificata in ordine decrescente.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionWindowStdDev" xml:space="preserve">
-    <value>WindowStdDev(SummaryExpression, StartOffset, EndOffset)
-Restituisce la deviazione standard campionaria dell'espressione all'interno della finestra.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionWindowStdDevp" xml:space="preserve">
-    <value>WindowStdDevp(SummaryExpression, StartOffset, EndOffset)
-Restituisce la deviazione standard distorta dell'espressione all'interno della finestra.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionWindowSum" xml:space="preserve">
-    <value>WindowSum(SummaryExpression, StartOffset, EndOffset)
-Restituisce la somma dell'espressione all'interno della finestra.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionWindowVar" xml:space="preserve">
-    <value>WindowVar(SummaryExpression, StartOffset, EndOffset)
-Restituisce la varianza dell'espressione all'interno della finestra.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionWindowVarp" xml:space="preserve">
-    <value>WindowVarp(SummaryExpression, StartOffset, EndOffset)
-Restituisce la varianza distorta dell'espressione all'interno della finestra.</value>
-  </data>
-  <data name="PivotGridStringId.OptimizedEngineServerModeNotSupportedException" xml:space="preserve">
-    <value>Il motore di elaborazione dati ottimizzato non supporta la modalità server. Non passare al motore ottimizzato quando si lavora con origini dati che operano in modalità server.</value>
-  </data>
-  <data name="PivotGridStringId.TotalFormatCountDistinct" xml:space="preserve">
-    <value>{0} Conteggio distinto</value>
-  </data>
-  <data name="PivotGridStringId.TotalFormatMedian" xml:space="preserve">
-    <value>{0} Mediana</value>
-  </data>
-  <data name="PivotGridStringId.DateTimeGroupIntervalDateHour" xml:space="preserve">
-    <value>Data-Ora</value>
-  </data>
-  <data name="PivotGridStringId.DateTimeGroupIntervalDateHourMinute" xml:space="preserve">
-    <value>Data-Ora-Minuto</value>
-  </data>
-  <data name="PivotGridStringId.DateTimeGroupIntervalDateHourMinuteSecond" xml:space="preserve">
-    <value>Data-Ora-Minuto-Secondo</value>
-  </data>
-  <data name="PivotGridStringId.DateTimeGroupIntervalWeekOfMonth" xml:space="preserve">
-    <value>Settimana del mese</value>
-  </data>
-  <data name="PivotGridStringId.DateTimeGroupIntervalWeekOfYear" xml:space="preserve">
-    <value>Settimana dell'anno</value>
-  </data>
-  <data name="PivotGridStringId.FilterInvalidCriteria" xml:space="preserve">
-    <value>Si è verificato un errore nei criteri di filtro. Si prega di individuare le intestazioni di proprietà non valide all'interno degli operandi dei criteri e di correggerle o rimuoverle.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionIndex" xml:space="preserve">
-    <value>Index()
-Restituisce l'indice della riga corrente nella finestra.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionMin" xml:space="preserve">
-    <value>Min(Valore)
-Restituisce il valore minimo tra le righe utilizzate per calcolare un valore aggregato.</value>
-  </data>
-  <data name="PivotGridStringId.PopupMenuUnfixColumnRight" xml:space="preserve">
-    <value>Rimuovi questa colonna dal lato destro</value>
-  </data>
-  <data name="PivotGridStringId.PopupMenuUnfixRowBottom" xml:space="preserve">
-    <value>Sblocca questa riga dal basso</value>
-  </data>
-  <data name="PivotGridStringId.PopupMenuUnfixRowTop" xml:space="preserve">
-    <value>Rimuovi questa riga dall'alto</value>
-  </data>
-  <data name="PivotGridStringId.SummaryCountDistinct" xml:space="preserve">
-    <value>Contare i distinti</value>
-  </data>
-  <data name="PivotGridStringId.ExpressionValidationInvalidExpression" xml:space="preserve">
-    <value>L'espressione non può essere valutata.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionGetQuarter" xml:space="preserve">
-    <value>GetQuarter(DateTime)
-Estrae un quarto d'ora dalla data e ora specificata.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionLast" xml:space="preserve">
-    <value>Last()
-Restituisce il numero di righe dalla riga corrente all'ultima riga della finestra.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionMode" xml:space="preserve">
-    <value>Moda(Valore)
-Restituisce la moda dei valori, dove la moda è il valore che si ripete più frequentemente.</value>
-  </data>
-  <data name="PivotGridStringId.CustomizationFormEmptyFilterText" xml:space="preserve">
-    <value>Nessuna corrispondenza per la stringa di ricerca</value>
-  </data>
-  <data name="PivotGridStringId.DateTimeGroupIntervalDayMonthYear" xml:space="preserve">
-    <value>Giorno-Mese-Anno</value>
-  </data>
-  <data name="PivotGridStringId.DateTimeGroupIntervalDayOfWeek" xml:space="preserve">
-    <value>Giorno della settimana</value>
-  </data>
-  <data name="PivotGridStringId.DateTimeGroupIntervalDayOfYear" xml:space="preserve">
-    <value>Giorno dell'anno</value>
-  </data>
-  <data name="PivotGridStringId.DateTimeGroupIntervalExactDate" xml:space="preserve">
-    <value>Data esatta</value>
-  </data>
-  <data name="PivotGridStringId.DateTimeGroupIntervalExactTime" xml:space="preserve">
-    <value>Ora esatta</value>
-  </data>
-  <data name="PivotGridStringId.DateTimeGroupIntervalQuarterYear" xml:space="preserve">
-    <value>Trimestre</value>
-  </data>
-  <data name="PivotGridStringId.ExpressionValidationInvalidWindowExpressionUsage" xml:space="preserve">
-    <value>La funzione {0} può essere utilizzata solo in un'espressione finestra.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionIsTotal" xml:space="preserve">
-    <value>IsTotal(Dimensione1, Dimensione2, ...)
-Determina se viene calcolato un valore di riepilogo totale.</value>
-  </data>
-  <data name="PivotGridStringId.FunctionDescriptionMedian" xml:space="preserve">
-    <value>Mediana(Valore)
-Restituisce la mediana dei valori nelle righe utilizzate per calcolare un valore aggregato.</value>
   </data>
 </root>

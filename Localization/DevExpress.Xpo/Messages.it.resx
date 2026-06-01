@@ -1,45 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -185,7 +185,7 @@
     <value>Il parametro 'data' contiene un DataSet con modifiche non salvate. Prima di creare una nuova istanza della classe DataSetDataStore, chiamare il metodo DataSet.AcceptChanges.</value>
   </data>
   <data name="Security_DeletingAnObjectWasProhibitedByTheRules" xml:space="preserve">
-    <value>Non è consentito eliminare l'oggetto '{0}' a causa delle regole di sicurezza.</value>
+    <value>Eliminazione proibita da una regola di convalida.</value>
   </data>
   <data name="SerOLHelpers_NestedParentMapIsNull" xml:space="preserve">
     <value>Errore interno: NestedParentMap and ParentNestedMap sono nulli.</value>
@@ -332,7 +332,7 @@
     <value>Errore interno: Il metodo specificato '{0}.{1}' non è supportato.</value>
   </data>
   <data name="Security_SavingAnObjectWasProhibitedByTheRulesOfVal" xml:space="preserve">
-    <value>Non è consentito salvare l'oggetto '{0}' in base alle regole di sicurezza.</value>
+    <value>Salvataggio proibito da una regola di convalida.</value>
   </data>
   <data name="Async_OperationCannotBePerformedBecauseNoSyncContext" xml:space="preserve">
     <value>Questa operazione può essere eseguita, perché il Thread in esecuzione non ha alcun contesto di sincronizzazione corrente.</value>
@@ -491,7 +491,7 @@
     <value>Tabella '{0}' non trovata.</value>
   </data>
   <data name="Session_EnteringTheX0StateFromTheX1StateIsProhibit" xml:space="preserve">
-    <value>Non è consentito passare allo stato '{0}' dallo stato '{2}' a causa dello stato '{1}' per '{3}'.</value>
+    <value>L'ingresso nello stato '{0}' dallo stato '{2}' è vietato a causa dello stato '{1}'.</value>
   </data>
   <data name="Metadata_MemberAttributeExclusive" xml:space="preserve">
     <value>Gli attributi PersistentAttribute, NonPersistentAttribute e PersistentAliasAttribute sono esclusivi. Solo uno di questi può essere applicato al membro '{0}.{1}'.</value>
@@ -539,7 +539,7 @@
     <value>Impossibile convalidare lo schema del database per il membro '{1}' del tipo '{0}'. Errore: '{2}'.</value>
   </data>
   <data name="Collections_CannotAssignProperty" xml:space="preserve">
-    <value>Non è possibile modificare la proprietà '{0}' se {1} non è in modalità di progettazione o inizializzazione.</value>
+    <value>Impossibile modificare la proprietà {0}, quando XPCollection non è in modalità di progettazione o di inizializzazione.</value>
   </data>
   <data name="XpoDefault_CannotAssignPropertyWhileAnotherIsNotNull" xml:space="preserve">
     <value>Impossibile assegnare XpoDefault.{0} mentre XpoDefault.{1} non è null.</value>
@@ -823,104 +823,10 @@
   <data name="XpoDefault_CustomGuidGenerationHandlerCannotBeNull" xml:space="preserve">
     <value>XpoDefault.CustomGuidGenerationHandler il valore del campo è null. È necessario assegnare un delegato personalizzato per questo campo se si imposta il campo di XpoDefault.GuidGenerationMode a 'Custom'.</value>
   </data>
-  <data name="WebApi_ICacheToCacheCommunicationCore_NotImplemented" xml:space="preserve">
-    <value>Il tuo Connection Provider '{0}' non supporta l'interfaccia 'DevExpress.Xpo.DB.ICacheToCacheCommunicationCore'. Incapsulalo con un'istanza di 'DevExpress.Xpo.DB.DataCacheRoot'. Per maggiori dettagli, consulta il seguente argomento della guida: https://docs.devexpress.com/XPO/402182.</value>
-  </data>
-  <data name="CollectClassInfos_CouldNotLoadAssembly" xml:space="preserve">
-    <value>Impossibile raccogliere le informazioni sulla classe dall'assembly '{0}'. ThreadSafeDataLayer potrebbe generare un'eccezione InvalidOperationException quando si utilizzano classi di questo assembly. Per ulteriori dettagli, consultare InnerException.</value>
-  </data>
-  <data name="PostgreSQL_LegacyGuidDetected" xml:space="preserve">
-    <value>Per evitare questa eccezione, impostare il campo UseLegacyGuidSupport o il campo statico GlobalUseLegacyGuidSupport di DevExpress.Xpo.DB.PostgreSqlConnectionProvider su 'true'.</value>
-  </data>
-  <data name="LinqToXpo_WithDeletedOptionNotSupported" xml:space="preserve">
-    <value>L'opzione WithDeleted non è supportata perché XPQuery è stato inizializzato con DataLayer. Per utilizzare l'opzione WithDeleted, utilizzare il costruttore XPQuery(Session) o XPQuery(Session, Boolean).</value>
-  </data>
   <data name="ImageValueConverter_NotPresent" xml:space="preserve">
     <value>Impossibile trovare la classe 'System.Drawing.ImageConverter' nell'assembly 'System.Drawing.Common'. Utilizzare System.Drawing.Common 5.0 o versioni successive.</value>
   </data>
-  <data name="JsonConverter_CouldNotFindAppropriateConstructor" xml:space="preserve">
-    <value>Impossibile trovare un costruttore appropriato per il tipo '{0}'. Era previsto un costruttore senza parametri o un costruttore che accettasse un oggetto XPDictionary come parametro.</value>
-  </data>
-  <data name="InMemory_DataSetUncommitted" xml:space="preserve">
-    <value>Il parametro 'data' contiene un DataSet con modifiche non ancora confermate. Chiamare il metodo DataSet.AcceptChanges prima di creare una nuova istanza della classe DataSetDataStore.</value>
-  </data>
-  <data name="NestedSession_NotCloneable" xml:space="preserve">
-    <value>Impossibile clonare la gerarchia degli oggetti perché il membro '{0}.{1}' è stato modificato durante l'operazione.</value>
-  </data>
-  <data name="Session_DictConstructor" xml:space="preserve">
-    <value>WindowVar(SummaryExpression, StartOffset, EndOffset)
-Restituisce la varianza dell'espressione all'interno della finestra.</value>
-  </data>
-  <data name="LinqToXpo_DoesNotSupportNestedJoinsWithLevel" xml:space="preserve">
-    <value>LinqToXpo non supporta più di due join annidati. Ciò non influisce sul conteggio totale dei join nella query.</value>
-  </data>
-  <data name="Async_DataLayerDoesNotImplementIDataLayerAsync" xml:space="preserve">
-    <value>Il tuo Data Layer '{0}' non supporta l'interfaccia 'DevExpress.Xpo.IDataLayerAsync'. Implementa questa interfaccia oppure utilizza un altro Data Layer compatibile.</value>
-  </data>
-  <data name="Async_CommandChannelDoesNotImplementICommandChannelAsync" xml:space="preserve">
-    <value>Il tuo canale di comandi '{0}' non supporta l'interfaccia 'DevExpress.Xpo.Helpers.ICommandChannelAsync'. Implementa questa interfaccia oppure utilizza un altro canale di comandi compatibile.</value>
-  </data>
-  <data name="Async_ConnectionProviderDoesNotImplementIDataStoreAsync" xml:space="preserve">
-    <value>Il tuo Connection Provider '{0}' non supporta l'interfaccia 'DevExpress.Xpo.DB.IDataStoreAsync'. Implementa questa interfaccia oppure utilizza un altro Connection Provider compatibile.</value>
-  </data>
-  <data name="XpoServerMode_NonPersistentIsNotSupported" xml:space="preserve">
-    <value>Una raccolta in modalità server non può utilizzare la classe non persistente '{0}'</value>
-  </data>
-  <data name="CustomAggregate_DoesNotImplementInterface" xml:space="preserve">
-    <value>La funzione di aggregazione personalizzata '{0}' non implementa l'interfaccia '{1}'.</value>
-  </data>
-  <data name="CustomAggregate_NotFound" xml:space="preserve">
-    <value>La funzione di aggregazione personalizzata '{0}' non è registrata.</value>
-  </data>
-  <data name="JsonConverter_CouldNotResolvePropertyType" xml:space="preserve">
-    <value>Impossibile risolvere il tipo di proprietà per '{0}'.</value>
-  </data>
-  <data name="CriteriaAnalyzer_ClassesAreNotAssignable" xml:space="preserve">
-    <value>Le classi '{0}' e '{1}' non sono reciprocamente assegnabili.</value>
-  </data>
-  <data name="CriteriaAnalyzer_PathNotFound" xml:space="preserve">
-    <value>Impossibile trovare il percorso {0}-&gt;{1}.</value>
-  </data>
-  <data name="InMemoryFull_CannotPrepareQueryPlanX0" xml:space="preserve">
-    <value>Impossibile creare un piano di query perché il criterio '{0}' non è valido.</value>
-  </data>
-  <data name="View_AtLeastOneFetchPropertyShouldBeDefined" xml:space="preserve">
-    <value>Per il recupero dei dati è necessario definire almeno una proprietà.</value>
-  </data>
-  <data name="XPBindingSource_BadClassInfo_DataSourceDictionary" xml:space="preserve">
-    <value>Impossibile modificare ObjectClassInfo. Il suo dizionario non corrisponde al dizionario di DataSource.</value>
-  </data>
-  <data name="XPBindingSource_BadClassInfo_DataSource" xml:space="preserve">
-    <value>Impossibile modificare ObjectClassInfo. DataSource ha già le proprie informazioni di classe (ClassInfo).</value>
-  </data>
-  <data name="XPBindingSource_BadClassInfo_Dictionary" xml:space="preserve">
-    <value>Impossibile modificare ObjectClassInfo. Il suo dizionario non corrisponde al dizionario corrente.</value>
-  </data>
-  <data name="XPBindingSource_BadObjectType_DataSource" xml:space="preserve">
-    <value>Impossibile modificare ObjectType. DataSource ha le proprie informazioni di classe (ClassInfo).</value>
-  </data>
-  <data name="CriteriaAnalyzer_TopLevelAggregateNotSupported" xml:space="preserve">
-    <value>Gli aggregati di livello superiore non possono essere utilizzati nelle condizioni.</value>
-  </data>
-  <data name="LinqToXpo_TheDeclaringTypeAssemblyNamePropertyIsEmpty" xml:space="preserve">
-    <value>La proprietà DeclaringTypeAssemblyName è vuota.</value>
-  </data>
-  <data name="PostgreSQL_CommandPoolNotSupported" xml:space="preserve">
-    <value>Il CommandPoolBehavior specificato {0} non è supportato da PostgreSQL {1}.</value>
-  </data>
-  <data name="JsonConverter_UnexpectedToken" xml:space="preserve">
-    <value>Token imprevisto '{0}' in posizione {1}. Era previsto 'StartObject'.</value>
-  </data>
-  <data name="JsonConverter_CouldNotAssignPropertyValue" xml:space="preserve">
-    <value>Impossibile assegnare un valore alla proprietà '{0}'.</value>
-  </data>
-  <data name="InitOperator_DeserializationProhibitedDueSecurityIssue" xml:space="preserve">
-    <value>L'espressione non può essere deserializzata perché include tipi non sicuri. La deserializzazione di tipi non sicuri è proibita.</value>
-  </data>
-  <data name="Metadata_NonPersistentKey" xml:space="preserve">
-    <value>Trovata la chiave non persistente '{0}.{1}'.</value>
-  </data>
-  <data name="ConnectionProvider_TheAutoIncrementedKeyWithX0TypeIsNotSupport" xml:space="preserve">
-    <value>La chiave AutoIncremented di tipo ‘{0}’ non è supportata per ‘{1}’</value>
+  <data name="LinqToXpo_WithDeletedOptionNotSupported" xml:space="preserve">
+    <value>L'opzione WithDeleted non è supportata perché XPQuery è stato inizializzato con DataLayer. Per utilizzare l'opzione WithDeleted, utilizzare il costruttore XPQuery(Session) o XPQuery(Session, Boolean).</value>
   </data>
 </root>

@@ -60,45 +60,45 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -1094,13 +1094,13 @@ o assicurarsi che almeno una serie sia visibile. </value>
     <value>Il nome di un pannello non può essere vuoto.</value>
   </data>
   <data name="ChartStringId.MsgEmptyPaneTextForHorizontalLayout" xml:space="preserve">
-    <value>Assegna questo riquadro alla proprietà
-Series.View.Pane,
-per visualizzare una serie in questo riquadro</value>
+    <value>Assegnare questo pannello 
+alla proprietà Series.View.Pane, 
+per mostrare una serie su questo pannello.</value>
   </data>
   <data name="ChartStringId.MsgEmptyPaneTextForVerticalLayout" xml:space="preserve">
-    <value>Assegna questo riquadro alla proprietà Series.View.Pane,
-per visualizzare una serie in questo riquadro</value>
+    <value>Assegnare questo pannello alla proprietà Series.View.Pane, 
+per mostrare una serie su questo pannello.</value>
   </data>
   <data name="ChartStringId.MsgEmptySecondaryAxisName" xml:space="preserve">
     <value>Il nome di un asse secondario non può essere vuoto.</value>
@@ -1259,7 +1259,7 @@ per visualizzare una serie in questo riquadro</value>
     <value>La proprietà {0} non può essere impostata su non intero per la scala data-ora.</value>
   </data>
   <data name="ChartStringId.MsgIncorrectDoubleValue" xml:space="preserve">
-    <value>Il valore non può essere uguale a Double.NaN, Double.PositiveInfinity o Double.NegativeInfinity.</value>
+    <value>Il valore non può essere uguale a NaN, NegativeInfinity o PositiveInfinity.</value>
   </data>
   <data name="ChartStringId.MsgIncorrectDoughnutHolePercent" xml:space="preserve">
     <value>La percentuale del foro dell'anello dev'essere maggiore o uguale a 0 e minore o uguale ai 100.</value>
@@ -1349,7 +1349,7 @@ per visualizzare una serie in questo riquadro</value>
     <value>Il peso di ciambella nidificata deve essere maggiore di 0.</value>
   </data>
   <data name="ChartStringId.MsgIncorrectNumericGridAlignment" xml:space="preserve">
-    <value>L'allineamento della griglia deve essere maggiore o uguale all'unità di misura corrente.</value>
+    <value>L'allineamento della griglia deve essere maggiore o uguale alla corrente unità di misura</value>
   </data>
   <data name="ChartStringId.MsgIncorrectNumericGridAlignmentPropertyUsing" xml:space="preserve">
     <value>GridAlignment la proprietà non può essere modificato in modalità automatica scala numerica.</value>
@@ -1538,7 +1538,7 @@ per visualizzare una serie in questo riquadro</value>
     <value>La percentuale di zoom dev'essere maggiore di 0 e minore o uguale {0}.</value>
   </data>
   <data name="ChartStringId.MsgInitializeChartNotFound" xml:space="preserve">
-    <value>Il controllo ChartControl non è stato trovato oppure sono presenti più grafici. Per risolvere il problema, gestire l’evento WizardPage.InitializePage e specificare manualmente il grafico.</value>
+    <value>Impossibile trovare il ChartControl o sono presenti diversi grafici su questo controllo. Per risolvere il problema, gestire l'evento WizardPage.InitializePage e specificare manualmente il grafico.</value>
   </data>
   <data name="ChartStringId.MsgInternalPropertyChangeError" xml:space="preserve">
     <value>La proprietà è solo per uso interno. Non è possibile modificarne il valore.</value>
@@ -3192,7 +3192,7 @@ Utilizzare Alt con il tasto sinistro del mouse per ingrandire il grafico.</value
     <value>Elementi della legenda personalizzata modificati</value>
   </data>
   <data name="ChartStringId.CmdExportToPNGDescription" xml:space="preserve">
-    <value>Grafica di rete portatile</value>
+    <value>Portable Network Graphics</value>
   </data>
   <data name="ChartStringId.CmdCreateAreaChartPlaceHolderDescription" xml:space="preserve">
     <value>Inserire un grafico ad area.
@@ -3215,16 +3215,16 @@ Grafici ad area sottolineano le differenze tra diversi insiemi di dati per un pe
     <value>Punto di serie non può essere impostato su null per l'oggetto di SeriesPointAncherPoint.</value>
   </data>
   <data name="ChartStringId.IndAverageTrueRange" xml:space="preserve">
-    <value>Intervallo reale medio</value>
+    <value>Average True Range</value>
   </data>
   <data name="ChartStringId.IndCommodityChannelIndex" xml:space="preserve">
-    <value>Indice di canale delle merci</value>
+    <value>Commodity Channel Index</value>
   </data>
   <data name="ChartStringId.IndDataSourceBasedErrorBars" xml:space="preserve">
     <value>Origine dati basato su barre di errore</value>
   </data>
   <data name="ChartStringId.IndDetrendedPriceOscillator" xml:space="preserve">
-    <value>Oscillatore di prezzo detrendizzato</value>
+    <value>Detrended Price Oscillator</value>
   </data>
   <data name="ChartStringId.IndMovingAverageConvergenceDivergence" xml:space="preserve">
     <value>Moving Average Convergence/Divergence</value>
@@ -3271,9 +3271,9 @@ Utilizzarlo per sottolineare il totale in tutta la serie per una sola categoria.
     <value>The Bounciness proprietà valore deve essere maggiore di 1. Non è consentito il valore PositiveInfinity.</value>
   </data>
   <data name="ChartStringId.CmdCreateArea3DChartDescription" xml:space="preserve">
-    <value>Visualizza i dati come aree piene su un diagramma, dove ogni punto dati è rappresentato da un picco o da una depressione nell'area.
+    <value>Displays data as filled areas on a diagram, with each data point displayed as a peak or hollow in the area.
 
-Utilizzalo quando devi mostrare l'andamento di diverse serie nello stesso diagramma e anche la relazione tra le parti e il tutto.</value>
+Use it when you need to show trends for several series on the same diagram, and also show the relationship of the parts to the whole.</value>
   </data>
   <data name="ChartStringId.CmdCreatePolarRangeAreaChartDescription" xml:space="preserve">
     <value>Visualizza serie su un diagramma circolare come aree riempite, definite dai punti dati con due valori che sono limiti minimi e massimi. Utilizzarla quando è necessario accentuare il delta tra i valori di inizio e di fine.</value>
@@ -3288,7 +3288,7 @@ Utilizzalo quando devi mostrare l'andamento di diverse serie nello stesso diagra
     <value>Radar</value>
   </data>
   <data name="ChartStringId.PropertyGridCategory_Misc" xml:space="preserve">
-    <value>Varie</value>
+    <value>Misc</value>
   </data>
   <data name="ChartStringId.CmdChangeAppearancePlaceHolderDescription" xml:space="preserve">
     <value>Contiene diversi stili predefiniti di controllo grafico per definire l'aspetto in base alla tavolozza selezionata.</value>
@@ -3318,7 +3318,7 @@ Usarlo quando devi accentuare il delta tra i valori di inizio e fine.</value>
 Lo uso quando è necessario rappresentare fasi in un processo di vendita, Visualizza l'importo delle entrate potenziali per ciascuna fase, così come identificare potenziali aree problematiche nei processi di un'organizzazione di vendita.</value>
   </data>
   <data name="ChartStringId.PointHintPatternDescription" xml:space="preserve">
-    <value>Suggerimento</value>
+    <value>Suggerimento di punto</value>
   </data>
   <data name="ChartStringId.SvnOverlappedGantt" xml:space="preserve">
     <value>Gantt</value>
@@ -3335,7 +3335,7 @@ Lo uso quando è necessario rappresentare fasi in un processo di vendita, Visual
 Usarlo quando devi accentuare il delta tra i valori di inizio e fine.</value>
   </data>
   <data name="ChartStringId.CmdExportToPDFDescription" xml:space="preserve">
-    <value>Formato documento portatile Adobe</value>
+    <value>Adobe Portable Document Format</value>
   </data>
   <data name="ChartStringId.PropertyGridCategory_Data" xml:space="preserve">
     <value>Dati</value>
@@ -3346,19 +3346,17 @@ Usarlo quando devi accentuare il delta tra i valori di inizio e fine.</value>
 Lo uso quando è necessario visualizzare barre attività di serie diverse, uno sopra l'altro, per confrontare la loro durata.</value>
   </data>
   <data name="ChartStringId.CmdCreatePieChartPlaceHolderDescription" xml:space="preserve">
-    <value>Inserisci un grafico a torta.
+    <value>Display il contributo di ciascun valore al totale.
 
-I grafici a torta mostrano il contributo di ciascun valore al totale.
-
-Usalo quando i valori possono essere sommati oppure quando è presente una sola serie di dati e tutti i valori sono positivi.</value>
+Usarlo quando i valori possono essere sommati o quando si dispone di serie di dati in un solo e tutti i valori sono positivi.</value>
   </data>
   <data name="ChartStringId.PltOriel" xml:space="preserve">
     <value>Oriel</value>
   </data>
   <data name="ChartStringId.CmdCreateFunnelChartDescription" xml:space="preserve">
-    <value>Visualizza un’ampia area che rappresenta il valore totale nella parte superiore. Le altre aree sono proporzionalmente più piccole.
+    <value>Display una vasta area nella parte superiore, che indica il valore totale dei punti, mentre altre zone sono proporzionalmente più piccole.
 
-Può essere utilizzato per rappresentare le fasi di un processo di vendita, mostrare il potenziale fatturato per ciascuna fase o individuare eventuali criticità nei processi di vendita di un’organizzazione.</value>
+Lo uso quando è necessario rappresentare fasi in un processo di vendita, Visualizza l'importo delle entrate potenziali per ciascuna fase, così come identificare potenziali aree problematiche nei processi di un'organizzazione di vendita.</value>
   </data>
   <data name="ChartStringId.WizValueLevelWeight" xml:space="preserve">
     <value>Peso</value>
@@ -3412,9 +3410,11 @@ Grafici a linee sono utilizzate per visualizzare gli straordinari tendenze.</val
 Usarlo quando i valori del grafico rappresentano durate o quando il testo di categoria è molto lungo.</value>
   </data>
   <data name="ChartStringId.CmdCreatePieChartDescription" xml:space="preserve">
-    <value>Mostra il contributo di ciascun valore al totale.
+    <value>Inserire un grafico a torta.
 
-Usalo quando i valori possono essere sommati oppure quando è presente una sola serie di dati e tutti i valori sono positivi.</value>
+Grafici a torta visualizzare il contributo di ciascun valore al totale.
+
+Usarlo quando i valori possono essere sommati o quando si dispone di serie di dati in un solo e tutti i valori sono positivi.</value>
   </data>
   <data name="ChartStringId.ValueDurationDaysPatternDescription" xml:space="preserve">
     <value>Valore di durata (giorni)</value>
@@ -3563,40 +3563,14 @@ Usalo quando i valori possono essere sommati oppure quando è presente una sola 
   <data name="ChartStringId.WaterfallTotalBarLegendItem" xml:space="preserve">
     <value>Totale</value>
   </data>
-  <data name="ChartStringId.CmdCreateScatterPolarLineChartDescription" xml:space="preserve">
-    <value>Mostra le tendenze di diverse serie e confronta i loro valori per gli stessi punti di riferimento su un diagramma circolare in base agli angoli. I punti delle serie sono disegnati sulla griglia circolare nello stesso ordine in cui compaiono nella raccolta dei punti delle serie.</value>
+  <data name="ChartStringId.IndLogarithmicRegression" xml:space="preserve">
+    <value>Regressione logaritmica</value>
   </data>
-  <data name="ChartStringId.CmdCreateWaterfallChartMenuCaption" xml:space="preserve">
-    <value>Cascata</value>
+  <data name="ChartStringId.IndPolynomialRegression" xml:space="preserve">
+    <value>Regressione polinomiale</value>
   </data>
-  <data name="ChartStringId.HeatmapPrintSizeModeZoom" xml:space="preserve">
-    <value>Zoom (una mappa di calore viene ridimensionata proporzionalmente (senza ritaglio),
-in modo che si adatti al meglio alla pagina su cui viene stampata)</value>
-  </data>
-  <data name="ChartStringId.SankeyPrintSizeModeZoom" xml:space="preserve">
-    <value>Zoom (un diagramma viene ridimensionato proporzionalmente (senza ritaglio),
-in modo che si adatti al meglio alla pagina su cui è stampato)</value>
-  </data>
-  <data name="ChartStringId.ScaleTypeAuto" xml:space="preserve">
-    <value>auto</value>
-  </data>
-  <data name="ChartStringId.SvnWaterfall" xml:space="preserve">
-    <value>Cascata</value>
-  </data>
-  <data name="ChartStringId.WizAxesAlignmentZero" xml:space="preserve">
-    <value>Zero</value>
-  </data>
-  <data name="ChartStringId.CmdSelectAxisMeasureUnitPlaceHolderMenuCaption" xml:space="preserve">
-    <value>Unità dell'asse</value>
-  </data>
-  <data name="ChartStringId.EmptySankeyDefaultText" xml:space="preserve">
-    <value>Il diagramma non contiene dati.
-
-Per popolare questo diagramma, scegli un'origine dati,
-e assicurati che siano specificati i membri dati Origine e Destinazione.</value>
-  </data>
-  <data name="ChartStringId.HeatmapPrintSizeModeStretch" xml:space="preserve">
-    <value>Allungamento (una mappa di calore viene allungata o ridotta per adattarsi alla pagina su cui è stampata)</value>
+  <data name="ChartStringId.IndPowerRegression" xml:space="preserve">
+    <value>Regressione di potenza</value>
   </data>
   <data name="ChartStringId.IntervalArgumentMaxPatternDescription" xml:space="preserve">
     <value>Argomento 2</value>
@@ -3604,306 +3578,22 @@ e assicurati che siano specificati i membri dati Origine e Destinazione.</value>
   <data name="ChartStringId.IntervalArgumentMinPatternDescription" xml:space="preserve">
     <value>Argomento 1</value>
   </data>
-  <data name="ChartStringId.PltOffice2013" xml:space="preserve">
-    <value>Office 2013</value>
-  </data>
-  <data name="ChartStringId.CmdCreateBoxPlotChartDescription" xml:space="preserve">
-    <value>Il grafico a scatola (Box Plot) viene utilizzato per analizzare punti dati statistici. Per disegnare un punto in un Box Plot, è necessario passare i parametri Min, Quartile1, Median, Quartile3 e Max. È inoltre possibile visualizzare un insieme di valori anomali (Outlier) e un valore medio.</value>
-  </data>
-  <data name="ChartStringId.CmdCreateScatterRadarLineChartDescription" xml:space="preserve">
-    <value>Visualizza i dati come una linea su una griglia circolare con più assi lungo i quali è possibile tracciare i dati. I punti della serie vengono disegnati sulla griglia circolare nello stesso ordine in cui compaiono nella raccolta dei punti della serie.</value>
-  </data>
-  <data name="ChartStringId.ColumnOutliers" xml:space="preserve">
-    <value>Valori anomali</value>
-  </data>
-  <data name="ChartStringId.HeatmapPrintSizeModeNone" xml:space="preserve">
-    <value>Nessuno (viene stampata una mappa di calore con le stesse dimensioni di quella mostrata nel modulo)</value>
-  </data>
   <data name="ChartStringId.OpenFileDialogAllFiles" xml:space="preserve">
     <value>Tutti i file</value>
   </data>
-  <data name="ChartStringId.SankeyPrintSizeModeNone" xml:space="preserve">
-    <value>Nessuno (viene stampato un diagramma con le stesse dimensioni di quello mostrato sul modulo)</value>
+  <data name="ChartStringId.SmallHeatmapDefaultText" xml:space="preserve">
+    <value>Aumenta le dimensioni della mappa di calore per visualizzarne la struttura.</value>
   </data>
-  <data name="ChartStringId.SankeyPrintSizeModeStretch" xml:space="preserve">
-    <value>Allungamento (un diagramma viene allungato o ridotto per adattarsi alla pagina su cui è stampato)</value>
+  <data name="ChartStringId.SmallSankeyDefaultText" xml:space="preserve">
+    <value>Ingrandisci il diagramma per visualizzarne la struttura.</value>
+  </data>
+  <data name="ChartStringId.VerbSankeySaveLayoutDescription" xml:space="preserve">
+    <value>Salva un diagramma Sankey in un file XML.</value>
   </data>
   <data name="ChartStringId.WaterfallRisingBarLegendItem" xml:space="preserve">
     <value>Aumenta</value>
   </data>
-  <data name="ChartStringId.AbsoluteValue" xml:space="preserve">
-    <value>Valore assoluto</value>
-  </data>
-  <data name="ChartStringId.CmdAddHorizontalConstantLineDescription" xml:space="preserve">
-    <value>Per aggiungere una linea costante, fare clic sul grafico.</value>
-  </data>
-  <data name="ChartStringId.CmdAddImageAnnotationRuntimeCaption" xml:space="preserve">
-    <value>Aggiungi annotazione all’immagine</value>
-  </data>
-  <data name="ChartStringId.CmdAddImageAnnotationRuntimeDescription" xml:space="preserve">
-    <value>Per aggiungere un'annotazione con immagine, fai clic sul grafico e seleziona un'immagine nella finestra di dialogo che si apre.</value>
-  </data>
-  <data name="ChartStringId.CmdAddTextAnnotationRuntimeDescription" xml:space="preserve">
-    <value>Per aggiungere un'annotazione di testo, fai clic sul grafico e digita il testo.</value>
-  </data>
-  <data name="ChartStringId.CmdAddVerticalConstantLineDescription" xml:space="preserve">
-    <value>Per aggiungere una linea costante, fare clic sul grafico.</value>
-  </data>
-  <data name="ChartStringId.CmdCreateWaterfallChartDescription" xml:space="preserve">
-    <value>Un grafico a cascata visualizza una sequenza di barre che indicano variazioni positive o negative.</value>
-  </data>
-  <data name="ChartStringId.CmdDrawFibonacciArcsIndicatorPlaceHolderDescription" xml:space="preserve">
-    <value>Per aggiungere un indicatore degli archi di Fibonacci alla serie corrente, fai clic su un punto della serie e trascina il mouse fino al punto desiderato.</value>
-  </data>
-  <data name="ChartStringId.CmdDrawFibonacciFansIndicatorPlaceHolderDescription" xml:space="preserve">
-    <value>Per aggiungere un indicatore a ventaglio di Fibonacci alla serie corrente, fai clic su un punto della serie e trascina il mouse fino al punto desiderato.</value>
-  </data>
-  <data name="ChartStringId.CmdDrawFibonacciRetracementIndicatorPlaceHolderDescription" xml:space="preserve">
-    <value>Per aggiungere un indicatore di ritracciamento di Fibonacci alla serie corrente, fai clic su un punto della serie e trascina il mouse fino al punto desiderato.</value>
-  </data>
-  <data name="ChartStringId.CmdDrawTrendLineIndicatorPlaceHolderDescription" xml:space="preserve">
-    <value>Per aggiungere un indicatore di linea di tendenza alla serie corrente, fai clic su un punto della serie e trascina il mouse fino al punto desiderato.</value>
-  </data>
-  <data name="ChartStringId.MsgEmptyCalculatedFieldName" xml:space="preserve">
-    <value>Il nome di un campo calcolato non può essere vuoto.</value>
-  </data>
-  <data name="ChartStringId.CmdAddHorizontalConstantLineCaption" xml:space="preserve">
-    <value>Aggiungi la linea costante orizzontale</value>
-  </data>
-  <data name="ChartStringId.CmdCreateNestedDoughnutChartDescription" xml:space="preserve">
-    <value>Mostra il contributo di ciascun valore al totale, confrontando serie con un anello annidato all'interno di un altro.</value>
-  </data>
-  <data name="ChartStringId.MsgIncorrectDateTimeMeasureUnitMultiplierPropertyUsing" xml:space="preserve">
-    <value>La proprietà MeasureUnitMultiplier non può essere modificata né nella modalità di scalatura automatica né in quella continua della data e dell'ora.</value>
-  </data>
-  <data name="ChartStringId.MsgIncorrectTimeSpanMeasureUnitMultiplierPropertyUsing" xml:space="preserve">
-    <value>La proprietà MeasureUnitMultiplier non può essere modificata né nella modalità di scalatura automatica né in quella a intervallo di tempo continuo.</value>
-  </data>
-  <data name="ChartStringId.SmallHeatmapDefaultText" xml:space="preserve">
-    <value>Aumenta le dimensioni della mappa di calore,
-per visualizzarne la struttura.</value>
-  </data>
-  <data name="ChartStringId.SmallSankeyDefaultText" xml:space="preserve">
-    <value>Aumenta le dimensioni del diagramma,
-per visualizzarne la disposizione.</value>
-  </data>
-  <data name="ChartStringId.VerbAllBarsDescription" xml:space="preserve">
-    <value>Aggiungi o ripristina tutte le pagine/barre degli strumenti.</value>
-  </data>
-  <data name="ChartStringId.VerbBarManagerDescription" xml:space="preserve">
-    <value>Aggiungi un nuovo responsabile del bar alla tabella.</value>
-  </data>
-  <data name="ChartStringId.VerbRibbonDescription" xml:space="preserve">
-    <value>Aggiungi un nuovo controllo Ribbon al grafico.</value>
-  </data>
-  <data name="ChartStringId.CmdDrawTrendLineIndicatorPlaceHolderMenuCaption" xml:space="preserve">
-    <value>Linea di tendenza</value>
-  </data>
-  <data name="ChartStringId.CmdExportToJPEGDescription" xml:space="preserve">
-    <value>Immagine JPEG</value>
-  </data>
-  <data name="ChartStringId.WizValueLevelBoxPlotMean" xml:space="preserve">
-    <value>Media nel box plot</value>
-  </data>
-  <data name="ChartStringId.VerbCommonBarsDescription" xml:space="preserve">
-    <value>Aggiungi o ripristina pagine/barre degli strumenti comuni.</value>
-  </data>
-  <data name="ChartStringId.VerbFinancialBarsDescription" xml:space="preserve">
-    <value>Aggiungere o ripristinare le pagine/barre degli strumenti delle Opzioni finanziarie.</value>
-  </data>
-  <data name="ChartStringId.CmdAddIndicatorPlaceHolderDescription" xml:space="preserve">
-    <value>Per tracciare un indicatore per la serie corrente, selezionare l'indicatore desiderato dall'elenco a discesa.</value>
-  </data>
-  <data name="ChartStringId.CmdAddTextAnnotationRuntimeCaption" xml:space="preserve">
-    <value>Aggiungi annotazione di testo</value>
-  </data>
-  <data name="ChartStringId.CmdAddVerticalConstantLineCaption" xml:space="preserve">
-    <value>Aggiungi la linea costante verticale</value>
-  </data>
-  <data name="ChartStringId.CmdChangeSeriesViewDescription" xml:space="preserve">
-    <value>Modifica il tipo di visualizzazione utilizzato per la serie corrente.</value>
-  </data>
-  <data name="ChartStringId.CmdCreateScatterPolarLineChartMenuCaption" xml:space="preserve">
-    <value>Linea polare dispersa</value>
-  </data>
-  <data name="ChartStringId.CmdCreateScatterRadarLineChartMenuCaption" xml:space="preserve">
-    <value>Linea radar dispersa</value>
-  </data>
-  <data name="ChartStringId.MsgIncorrectConnectorColorPropertyUsing" xml:space="preserve">
-    <value>Non è possibile impostare la proprietà ConnectorColor se la serie non viene aggiunta alla raccolta del grafico.</value>
-  </data>
-  <data name="ChartStringId.MsgIncorrectConnectorStylePropertyUsing" xml:space="preserve">
-    <value>Non è possibile impostare la proprietà ConnectorStyle a meno che la serie non venga aggiunta alla raccolta del grafico.</value>
-  </data>
-  <data name="ChartStringId.MsgIncorrectStartBarColorPropertyUsing" xml:space="preserve">
-    <value>Non è possibile impostare la proprietà StartBarColor se la serie non viene aggiunta alla raccolta del grafico.</value>
-  </data>
-  <data name="ChartStringId.MsgIncorrectSubtotalBarColorPropertyUsing" xml:space="preserve">
-    <value>Non è possibile impostare la proprietà SubtotalBarColor a meno che la serie non venga aggiunta alla raccolta del grafico.</value>
-  </data>
-  <data name="ChartStringId.MsgIncorrectTotalBarColorPropertyUsing" xml:space="preserve">
-    <value>Non è possibile impostare la proprietà TotalBarColor a meno che la serie non venga aggiunta alla raccolta del grafico.</value>
-  </data>
-  <data name="ChartStringId.MsgIncorrectValueOptionsPropertyUsing" xml:space="preserve">
-    <value>Non è possibile impostare o ottenere la proprietà ValueOptions a meno che la serie non venga aggiunta alla raccolta del grafico.</value>
-  </data>
-  <data name="ChartStringId.MsgPaletteEditorInvalidFile" xml:space="preserve">
-    <value>File della tavolozza dei grafici non valido</value>
-  </data>
-  <data name="ChartStringId.SvnBoxPlot" xml:space="preserve">
-    <value>Scatola Plot</value>
-  </data>
-  <data name="ChartStringId.SvnScatterPolarLine" xml:space="preserve">
-    <value>Linea polare dispersa</value>
-  </data>
-  <data name="ChartStringId.SvnScatterRadarLine" xml:space="preserve">
-    <value>Linea radar dispersa</value>
-  </data>
-  <data name="ChartStringId.TrnCalculatedFieldsChanged" xml:space="preserve">
-    <value>Campi calcolati modificati</value>
-  </data>
-  <data name="ChartStringId.TrnViewTypeChanged" xml:space="preserve">
-    <value>Tipo di visualizzazione modificato</value>
-  </data>
-  <data name="ChartStringId.UnknownPatternPlaceholder" xml:space="preserve">
-    <value>Segnaposto per modello sconosciuto</value>
-  </data>
-  <data name="ChartStringId.ValueDurationMinutesPatternDescription" xml:space="preserve">
-    <value>Valore Durata (minuti)</value>
-  </data>
-  <data name="ChartStringId.ValueDurationSecondsPatternDescription" xml:space="preserve">
-    <value>Valore Durata (secondi)</value>
-  </data>
-  <data name="ChartStringId.VisibilityInPanes" xml:space="preserve">
-    <value>Visibilità nei riquadri</value>
-  </data>
-  <data name="ChartStringId.WaterfallFallingBarLegendItem" xml:space="preserve">
-    <value>Diminuire</value>
-  </data>
-  <data name="ChartStringId.WizValueLevelBoxPlotMax" xml:space="preserve">
-    <value>Massimo del diagramma a scatola</value>
-  </data>
-  <data name="ChartStringId.WizValueLevelBoxPlotMedian" xml:space="preserve">
-    <value>Mediana del diagramma a scatola</value>
-  </data>
-  <data name="ChartStringId.WizValueLevelBoxPlotMin" xml:space="preserve">
-    <value>Minimo del diagramma a scatola</value>
-  </data>
-  <data name="ChartStringId.MsgCantOpenImageMessage" xml:space="preserve">
-    <value>Il formato dell'immagine non è supportato o è errato</value>
-  </data>
-  <data name="ChartStringId.MsgIncompatibleDataMember" xml:space="preserve">
-    <value>Il tipo del membro dati "{0}" non è compatibile con la scala {1}.</value>
-  </data>
-  <data name="ChartStringId.MsgIncorrectCollectionDataMember" xml:space="preserve">
-    <value>Il membro dati con il nome "{0}" non esiste oppure il suo tipo non è una collezione.</value>
-  </data>
-  <data name="ChartStringId.MsgIncorrectDateTimeMeasureUnitMultiplierValue" xml:space="preserve">
-    <value>Il valore della proprietà MeasureUnitMultiplier deve essere maggiore di zero.</value>
-  </data>
-  <data name="ChartStringId.MsgIncorrectLegendCrosshairContentOffset" xml:space="preserve">
-    <value>L'offset del contenuto del mirino della legenda deve essere maggiore o uguale a 0 e minore di 1000.</value>
-  </data>
-  <data name="ChartStringId.MsgIncorrectLegendMaxCrosshairContentHeight" xml:space="preserve">
-    <value>Il valore della proprietà MaxCrosshairContentHeight della legenda deve essere maggiore o uguale a 0 e minore di 1000.</value>
-  </data>
-  <data name="ChartStringId.MsgIncorrectMaxZoomPercent" xml:space="preserve">
-    <value>La percentuale di zoom deve essere maggiore o uguale al 100%.</value>
-  </data>
-  <data name="ChartStringId.MsgIncorrectTimeSpanGridAlignment" xml:space="preserve">
-    <value>La proprietà GridAlignment deve essere maggiore o uguale all'unità di misura corrente.</value>
-  </data>
-  <data name="ChartStringId.MsgIncorrectTimeSpanGridAlignmentPropertyUsing" xml:space="preserve">
-    <value>La proprietà GridAlignment non può essere modificata nella modalità di scalatura automatica dell'intervallo di tempo.</value>
-  </data>
-  <data name="ChartStringId.MsgIncorrectTimeSpanMeasureUnitMultiplierValue" xml:space="preserve">
-    <value>Il valore della proprietà MeasureUnitMultiplier deve essere maggiore di zero.</value>
-  </data>
-  <data name="ChartStringId.MsgIncorrectTimeSpanMeasureUnitPropertyUsing" xml:space="preserve">
-    <value>La proprietà MeasureUnit non può essere modificata sia nella modalità di scala temporale automatica che in quella continua.</value>
-  </data>
-  <data name="ChartStringId.MsgSankeyEqualDataMembers" xml:space="preserve">
-    <value>I membri dati di origine e di destinazione devono essere diversi.</value>
-  </data>
-  <data name="ChartStringId.MsgSkipRangesWithoutPointsForContinuousScale" xml:space="preserve">
-    <value>La proprietà SkipRangesWithoutPoints non può essere specificata nella modalità di scala continua.</value>
-  </data>
-  <data name="ChartStringId.MsgSkipRangesWithoutPointsForValueAxis" xml:space="preserve">
-    <value>La proprietà SkipRangesWithoutPoints agisce solo sulla scala dell'asse X.</value>
-  </data>
-  <data name="ChartStringId.ScaleTypeTimeSpan" xml:space="preserve">
-    <value>intervallo di tempo</value>
-  </data>
-  <data name="ChartStringId.UnderflowSymbolPatternDescription" xml:space="preserve">
-    <value>Simbolo di flusso inferiore</value>
-  </data>
-  <data name="ChartStringId.VerbAllBars" xml:space="preserve">
-    <value>Crea tutte le barre</value>
-  </data>
-  <data name="ChartStringId.CmdDisableIndicatorInteractionPlaceHolderDescription" xml:space="preserve">
-    <value>Disabilita l'utilizzo degli indicatori interattivi del grafico.</value>
-  </data>
-  <data name="ChartStringId.CmdDisableIndicatorInteractionPlaceHolderMenuCaption" xml:space="preserve">
-    <value>Disabilita l'interazione</value>
-  </data>
-  <data name="ChartStringId.DefaultLegend" xml:space="preserve">
-    <value>Legenda predefinita</value>
-  </data>
-  <data name="ChartStringId.IndExponentialRegression" xml:space="preserve">
-    <value>Regressione esponenziale</value>
-  </data>
-  <data name="ChartStringId.SvnSwiftPoint" xml:space="preserve">
-    <value>Punto Swift</value>
-  </data>
-  <data name="ChartStringId.CmdExportToGIFDescription" xml:space="preserve">
-    <value>Formato di interscambio grafico</value>
-  </data>
-  <data name="ChartStringId.BoxPlotQuartile1ValueMember" xml:space="preserve">
-    <value>Primo quartile</value>
-  </data>
-  <data name="ChartStringId.BoxPlotQuartile3ValueMember" xml:space="preserve">
-    <value>Terzo quartile</value>
-  </data>
-  <data name="ChartStringId.CmdDrawFibonacciFansIndicatorPlaceHolderMenuCaption" xml:space="preserve">
-    <value>Ventagli di Fibonacci</value>
-  </data>
-  <data name="ChartStringId.CmdDrawFibonacciRetracementIndicatorPlaceHolderMenuCaption" xml:space="preserve">
-    <value>Ritracciamento del trend di Fibonacci</value>
-  </data>
-  <data name="ChartStringId.CmdExportToTIFFDescription" xml:space="preserve">
-    <value>Formato file immagine taggato</value>
-  </data>
-  <data name="ChartStringId.MsgFirstPointSettingRuntimeError" xml:space="preserve">
-    <value>La proprietà "FirstPoint" non può essere impostata in fase di esecuzione.</value>
-  </data>
-  <data name="ChartStringId.MsgIncorrectCapWidthPercentage" xml:space="preserve">
-    <value>La percentuale di larghezza del cappuccio deve essere uguale o maggiore di 0.</value>
-  </data>
-  <data name="ChartStringId.MsgIncorrectTimeSpanRangeControlClientSpacing" xml:space="preserve">
-    <value>La proprietà {0} non può essere impostata su un valore non intero per la scala dell'intervallo di tempo.</value>
-  </data>
-  <data name="ChartStringId.MsgInvalidCenterAxisAlignment" xml:space="preserve">
-    <value>L'allineamento non può essere impostato su Alignment.Center per l'asse secondario.</value>
-  </data>
-  <data name="ChartStringId.MsgLastPointSettingRuntimeError" xml:space="preserve">
-    <value>La proprietà "LastPoint" non può essere impostata in fase di esecuzione.</value>
-  </data>
-  <data name="ChartStringId.PltConcourse" xml:space="preserve">
-    <value>Concorso</value>
-  </data>
-  <data name="ChartStringId.RibbonFinancialPageCaption" xml:space="preserve">
-    <value>Opzioni finanziarie</value>
-  </data>
-  <data name="ChartStringId.VerbCommonBars" xml:space="preserve">
-    <value>Creare barriere finanziarie</value>
-  </data>
-  <data name="ChartStringId.VerbFinancialBars" xml:space="preserve">
-    <value>Creare barriere finanziarie</value>
-  </data>
-  <data name="ChartStringId.WizValueLevelBoxPlotQuartile1" xml:space="preserve">
-    <value>Box plot quartile 1</value>
-  </data>
-  <data name="ChartStringId.WizValueLevelBoxPlotQuartile3" xml:space="preserve">
-    <value>Box plot quartile 3</value>
+  <data name="ChartStringId.WizAxesAlignmentZero" xml:space="preserve">
+    <value>Zero</value>
   </data>
 </root>

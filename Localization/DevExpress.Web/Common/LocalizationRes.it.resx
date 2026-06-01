@@ -60,45 +60,45 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -161,7 +161,7 @@ I seguenti {0} file non sono validi perché superano le dimensioni di file conse
     <value>La dimensione del file supera il massimo consentito, che è di {0} bytes</value>
   </data>
   <data name="ASPxperienceStringId.FileManager_ErrorThumbnail" xml:space="preserve">
-    <value>Accesso negato alla cartella di anteprima</value>
+    <value>Accesso negato alla cartella di anteprima.</value>
   </data>
   <data name="ASPxperienceStringId.TitleIndex_FilterHint" xml:space="preserve">
     <value>&lt;b&gt;?&lt;/b&gt; = ogni singolo carattere
@@ -171,7 +171,7 @@ I seguenti {0} file non sono validi perché superano le dimensioni di file conse
     <value>Muovi (F6)</value>
   </data>
   <data name="ASPxperienceStringId.UploadControl_EnctypeError" xml:space="preserve">
-    <value>Il caricamento del file non riesce perché l'attributo enctype del modulo non è impostato su 'multipart/form-data'.</value>
+    <value>Impossibile eseguire l'upload dei file perché l'attributo "enctype" del form non è impostata su "multipart/form-data".</value>
   </data>
   <data name="ASPxperienceStringId.UploadControl_RemoveButton" xml:space="preserve">
     <value>Rimuovi</value>
@@ -240,7 +240,7 @@ I seguenti {0} file non sono validi perché superano le dimensioni di file conse
     <value>Nessun dato da visualizzare</value>
   </data>
   <data name="ASPxperienceStringId.UploadControl_FileDoesNotExistError" xml:space="preserve">
-    <value>Il file di caricamento '{0}' non esiste.</value>
+    <value>Il file per l'upload non esiste</value>
   </data>
   <data name="ASPxperienceStringId.FileManager_ErrorIO" xml:space="preserve">
     <value>Errore Input/Output non specificato. L'operazione non può essere completata.</value>
@@ -363,7 +363,7 @@ I seguenti {0} file non sono validi perché superano le dimensioni di file conse
     <value>[Aggiornamento]</value>
   </data>
   <data name="ASPxperienceStringId.UploadControl_PlatformErrorText" xml:space="preserve">
-    <value>Utilizza un browser che supporta HTML5 oppure installa &lt;a href="{0}"&gt;Microsoft Silverlight v3 o versioni successive&lt;/a&gt; per visualizzare questo contenuto e caricare file.</value>
+    <value>Si prega di utilizzare un browser con supporto HTML5; o installare &lt; href = "{0}" &gt; Microsoft Silverlight v3 o successive &lt; /a &gt; per visualizzare questo contenuto e hanno una capacità di caricare i file.</value>
   </data>
   <data name="ASPxperienceStringId.UploadControl_TooManyFilesError" xml:space="preserve">
     <value>Troppi file selezionati. Ridurre il numero di file selezionati e riprovare.</value>
@@ -525,7 +525,7 @@ I seguenti {0} file non sono validi perché superano le dimensioni di file conse
     <value>da {0} di {1}</value>
   </data>
   <data name="ASPxperienceStringId.Accessibility_ItemPositionFormat" xml:space="preserve">
-    <value>, {0} di {1}</value>
+    <value>, {0} of {1}</value>
   </data>
   <data name="ASPxperienceStringId.Accessibility_CheckBoxListItemFormat" xml:space="preserve">
     <value>{2}, {0} di {1}</value>
@@ -618,7 +618,7 @@ I seguenti {0} file non sono validi perché superano le dimensioni di file conse
     <value>Scegli un colore con i tasti freccia</value>
   </data>
   <data name="ASPxperienceStringId.Accessibility_ColorEditDescription" xml:space="preserve">
-    <value>Editor di colori.</value>
+    <value>Color editor.</value>
   </data>
   <data name="ASPxperienceStringId.Accessibility_ColorNestedControlAutomaticColorDescription" xml:space="preserve">
     <value>Set di colori automatico</value>
@@ -779,28 +779,43 @@ I seguenti {0} file non sono validi perché superano le dimensioni di file conse
   <data name="ASPxperienceStringId.Accessibility_ClearFilter" xml:space="preserve">
     <value>Pulisci filtro</value>
   </data>
-  <data name="ASPxperienceStringId.SharePoint_DesignTime_EmptyView" xml:space="preserve">
-    <value>Questo controllo non può essere visualizzato nella vista Progettazione per il tipo di progetto corrente</value>
+  <data name="ASPxperienceStringId.Accessibility_AltLoadingPanelImage" xml:space="preserve">
+    <value>Caricamento immagine</value>
   </data>
-  <data name="ASPxperienceStringId.UploadControl_CallbackResultIncorrectError" xml:space="preserve">
-    <value>Il server web ha restituito una risposta imprevista.</value>
+  <data name="ASPxperienceStringId.Accessibility_BatchFocusedRow" xml:space="preserve">
+    <value>riga focalizzata</value>
   </data>
-  <data name="ASPxperienceStringId.FileManager_ErrorPathToLong" xml:space="preserve">
-    <value>Il percorso specificato, il nome del file o entrambi sono troppo lunghi</value>
+  <data name="ASPxperienceStringId.Accessibility_ColorPickerHexInputDescription" xml:space="preserve">
+    <value>HEX</value>
   </data>
   <data name="ASPxperienceStringId.Accessibility_ExpandCollapse" xml:space="preserve">
-    <value>Espandi-comprimi</value>
-  </data>
-  <data name="ASPxperienceStringId.Accessibility_FilterEditorFormat" xml:space="preserve">
-    <value>Filtra per la colonna {0}.</value>
+    <value>Espandere-comprimere</value>
   </data>
   <data name="ASPxperienceStringId.Accessibility_FilterControlConditionEditor" xml:space="preserve">
     <value>Inserisci una condizione di filtro</value>
   </data>
-  <data name="ASPxperienceStringId.Accessibility_ListBoxHideFilter" xml:space="preserve">
-    <value>Nascondi filtro</value>
+  <data name="ASPxperienceStringId.Accessibility_FilterEditorFormat" xml:space="preserve">
+    <value>Filtro per la colonna {0}.</value>
   </data>
   <data name="ASPxperienceStringId.Accessibility_GridHiddenColumn" xml:space="preserve">
     <value>Colonna nascosta.</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_ListBoxHideFilter" xml:space="preserve">
+    <value>Nascondi filtro</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_ListBoxShowFilter" xml:space="preserve">
+    <value>Visualizza il filtro</value>
+  </data>
+  <data name="ASPxperienceStringId.Accessibility_RemoveFilter" xml:space="preserve">
+    <value>Rimuovi il filtro</value>
+  </data>
+  <data name="ASPxperienceStringId.FileManager_ErrorPathToLong" xml:space="preserve">
+    <value>Il percorso, il nome del file o entrambi sono troppo lunghi</value>
+  </data>
+  <data name="ASPxperienceStringId.SharePoint_DesignTime_EmptyView" xml:space="preserve">
+    <value>Questo controllo non può essere visualizzato nella vista progettazione per il tipo di progetto corrente</value>
+  </data>
+  <data name="ASPxperienceStringId.UploadControl_CallbackResultIncorrectError" xml:space="preserve">
+    <value>Il server web ha restituito una risposta imprevista.</value>
   </data>
 </root>

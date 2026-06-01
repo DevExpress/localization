@@ -60,45 +60,45 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -222,7 +222,7 @@ Desidera continuare?</value>
     <value>Non è possibile recuperare l'elenco dei database disponibili. Vedi i dettagli qui sotto.</value>
   </data>
   <data name="DataAccessUIStringId.WizardDataSourceNameExistsMessage" xml:space="preserve">
-    <value>&lt;b&gt;Esiste già una fonte dati con il nome specificato&lt;/b&gt;</value>
+    <value>&lt; b &gt; una origine di dati con il nome specificato già esiste &lt;/b &gt;</value>
   </data>
   <data name="DataAccessUIStringId.MessageBoxConfirmationTitle" xml:space="preserve">
     <value>Conferma</value>
@@ -421,7 +421,7 @@ Per chiudere l'editor visuale e mantenere la query corrente, fare clic su Annull
     <value>Si desidera eseguire la query sul server e ottenere lo schema di query risultante?</value>
   </data>
   <data name="DataAccessUIStringId.WizardDataSourceEmptyNameMessage" xml:space="preserve">
-    <value>&lt;b&gt;Il nome della fonte dati non può essere vuoto.&lt;/b&gt;</value>
+    <value>&lt; b &gt; i dati sorgente nome non può essere vuoto. &lt;/b &gt;</value>
   </data>
   <data name="DataAccessUIStringId.WizardEmptyStoredProceduresListMessage" xml:space="preserve">
     <value>Non ci sono nessun qualsiasi stored procedure nel database corrente.</value>
@@ -630,7 +630,7 @@ Per recuperare manualmente i dati effettivi, creare l'istanza di un oggetto orig
     <value>Query</value>
   </data>
   <data name="DataAccessUIStringId.WizardPageConfigureQuery_StoredProcedure" xml:space="preserve">
-    <value>Password memorizzata</value>
+    <value>Stored Procedure</value>
   </data>
   <data name="DataAccessUIStringId.WizardPageEFConnectionProperties_CustomConnection" xml:space="preserve">
     <value>Specificare una stringa di connessione personalizzata</value>
@@ -767,7 +767,7 @@ Si prega di andare alla pagina successiva procedura guidata per dichiarare i par
     <value>Foglio di lavoro</value>
   </data>
   <data name="DataAccessUIStringId.FiltersView_CheckText" xml:space="preserve">
-    <value>&amp;Seleziona solo</value>
+    <value>&amp; selezionare solo</value>
   </data>
   <data name="DataAccessUIStringId.FiltersView_Filter" xml:space="preserve">
     <value>&amp; filtro</value>
@@ -1046,328 +1046,352 @@ Aggiornare le impostazioni di connessione in modo che corrisponda allo schema di
   <data name="DataAccessUIStringId.ConnectionProperties_TrustServerCertificate_True" xml:space="preserve">
     <value>Si</value>
   </data>
-  <data name="DataAccessUIStringId.QueryBuilderColumns_Source" xml:space="preserve">
-    <value>Origine</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseJsonSchema_PartiallyAnalyzedJsonMessage" xml:space="preserve">
-    <value>I tipi di campo sopra indicati vengono generati in base ai primi {0} record JSON.
-
-Se i dati contengono un record il cui tipo all'interno di questo limite differisce dal tipo al di fuori di esso, il tipo di campo corrispondente viene generato in modo errato. Ciò comporterà errori di deserializzazione del tipo.
-
-È possibile analizzare tutti i record JSON per garantire la corretta generazione del tipo. Si noti che questa operazione potrebbe richiedere più tempo rispetto all'analisi di un numero limitato di documenti.</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseMongoDBSchema_PartiallyAnalyzedCollectionMessage" xml:space="preserve">
-    <value>I tipi di campo sopra indicati vengono generati in base ai primi {0} documenti MongoDB.
-
-Se i dati contengono un campo il cui tipo all'interno di questo limite differisce dal tipo al di fuori di esso, il tipo di campo corrispondente verrà generato in modo errato. Ciò comporterà errori di deserializzazione del tipo.
-
-È possibile analizzare tutti i documenti MongoDB per garantire la corretta generazione dei tipi. Si noti che questa operazione potrebbe richiedere più tempo rispetto all'analisi di un numero limitato di documenti.</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBQueries_QueryAlias" xml:space="preserve">
-    <value>Alias</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardUnableToLoadMongoDBDriver" xml:space="preserve">
-    <value>Il tentativo di caricare l'assembly "MongoDB.Driver.dll" non è riuscito.
-
-Il pacchetto "MongoDB.Driver" deve essere installato nel progetto dell'applicazione per fornire dati MongoDB in fase di esecuzione.</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseDataProvider_GroupAll" xml:space="preserve">
-    <value>Tutto</value>
-  </data>
-  <data name="DataAccessUIStringId.ExcelDataSourceIncorrectFilePathMessage" xml:space="preserve">
-    <value>Impossibile trovare il file {0}.
-
-Specificare un percorso valido e premere OK per continuare.</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseJsonSource_SourceType_File" xml:space="preserve">
-    <value>File JSON</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseJsonSource_SourceType_Custom" xml:space="preserve">
-    <value>JSON String</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageSaveJsonConnection_SaveRequestParametersPrompt" xml:space="preserve">
-    <value>I parametri della richiesta potrebbero contenere dati sensibili.
-
-Vuoi salvare i parametri della richiesta?</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageMultipleFederatedQueriesPage" xml:space="preserve">
-    <value>Crea una query federata.
-Le colonne di dati selezionate da specifiche origini dati e/o tabelle verranno automaticamente incluse in una query separata.</value>
-  </data>
-  <data name="DataAccessUIStringId.QueryBuilder_EditSql" xml:space="preserve">
-    <value>&amp;Modifica SQL</value>
-  </data>
-  <data name="DataAccessUIStringId.QueryBuilderButtons_EditParameters" xml:space="preserve">
-    <value>&amp;Modifica parametri...</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseJsonSource_Custom" xml:space="preserve">
-    <value>Stringa JSON:</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseJsonSchema_RootElement" xml:space="preserve">
-    <value>&amp;Elemento radice:</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseJsonSchema_FieldExists" xml:space="preserve">
-    <value>Il nome del campo {0} esiste già a questo livello</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseJsonSchema_FieldNameIsEmpty" xml:space="preserve">
-    <value>Il nome di un campo non può essere vuoto.</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseJsonSchema_AnalyzeAllRecordsButton" xml:space="preserve">
-    <value>&amp;Analizza tutti i record</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseMongoDBSchema_QueryName" xml:space="preserve">
-    <value>Nome della query:</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseMongoDBSchema_AnalyzeAllDocumentsButton" xml:space="preserve">
-    <value>&amp;Analizzare tutti i documenti</value>
-  </data>
-  <data name="DataAccessUIStringId.ConnectionProperties_Encrypt" xml:space="preserve">
-    <value>&amp;Encrypt:</value>
-  </data>
-  <data name="DataAccessUIStringId.ConnectionProperties_TrustServerCertificate" xml:space="preserve">
-    <value>Certificato del server di fiducia:</value>
-  </data>
-  <data name="DataAccessUIStringId.Button_ResetSchema" xml:space="preserve">
-    <value>&amp;Ripristina schema...</value>
-  </data>
-  <data name="DataAccessUIStringId.QueryBuilderReverseRelationConfirmation" xml:space="preserve">
-    <value>La nuova direzione di join verrà applicata a tutte le relazioni esistenti tra le due tabelle seguenti: {0}, {1}. Desideri continuare?</value>
-  </data>
-  <data name="DataAccessUIStringId.XPObjectSource_ConfirmReplaceProperties" xml:space="preserve">
-    <value>La raccolta Proprietà verrà ricreata in base alle informazioni sul tipo di entità specificato. Vuoi continuare?</value>
-  </data>
-  <data name="DataAccessUIStringId.ConnectionProperties_AuthenticationType_ActiveDirectoryInteractive" xml:space="preserve">
-    <value>Active Directory Interattivo</value>
-  </data>
   <data name="DataAccessUIStringId.ConnectionProperties_AuthenticationType_ActiveDirectoryPassword" xml:space="preserve">
-    <value>Password di Active Directory</value>
+    <value>Password Active Directory</value>
   </data>
-  <data name="DataAccessUIStringId.ConnectionProperties_AuthenticationType_ActiveDirectoryIntegrated" xml:space="preserve">
-    <value>Integrazione con Active Directory</value>
-  </data>
-  <data name="DataAccessUIStringId.ConnectionProperties_AuthenticationType_ActiveDirectoryDefault" xml:space="preserve">
-    <value>Predefinito di Active Directory</value>
-  </data>
-  <data name="DataAccessUIStringId.FederationDataSourceQueryBuilder_RemovedColumnMessage" xml:space="preserve">
-    <value>La colonna "{0}.{1}" è stata rimossa dall'origine dati "{2}". Rimuovere questa colonna dalla query federata per procedere.</value>
-  </data>
-  <data name="DataAccessUIStringId.QueryBuilderColumns_ColumnName" xml:space="preserve">
-    <value>Nome della colonna</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageConfigureEFConnection_CustomConnection" xml:space="preserve">
-    <value>Specificare una stringa di connessione personalizzata</value>
-  </data>
-  <data name="DataAccessUIStringId.FederatedQueryCollectionEditorForm_Title" xml:space="preserve">
-    <value>Gestisci le query</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageMultipleFederatedQueriesPage_AddQuery" xml:space="preserve">
-    <value>Aggiungi query...</value>
-  </data>
-  <data name="DataAccessUIStringId.MessageBoxCloseManageQueriesDialogConfirmation" xml:space="preserve">
-    <value>Tutte le modifiche apportate andranno perse se si chiude la finestra di dialogo Gestisci query. Si desidera continuare?</value>
-  </data>
-  <data name="DataAccessUIStringId.MessageBoxCloseQueryBuilderDialogConfirmation" xml:space="preserve">
-    <value>Tutte le modifiche apportate andranno perse se si chiude la finestra di dialogo Generatore di query. Si desidera continuare?</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseDataProvider_AddFavorite" xml:space="preserve">
-    <value>Aggiungi ai preferiti</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageConfigureEFConnection_DefaultConnection" xml:space="preserve">
-    <value>Utilizza la stringa di connessione predefinita</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageProviderSpecificConnectionProperties" xml:space="preserve">
-    <value>Specificare le proprietà di connessione.</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseJsonSource_SourceType_Uri" xml:space="preserve">
-    <value>Endpoint del servizio web (URI)</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseJsonSource_URI" xml:space="preserve">
-    <value>Endpoint del servizio web (&amp;URI):</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseJsonSource_UriPathParametersText" xml:space="preserve">
-    <value>Parametri del percorso URI</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseJsonSchema" xml:space="preserve">
-    <value>Selezionare i campi dati.</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseMongoDBSchema" xml:space="preserve">
-    <value>Selezionare i campi dati.</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageConfigureJsonConnection_BasicHttpAuthText" xml:space="preserve">
-    <value>Autenticazione HTTP di base</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageConfigureJsonConnection_UsernameText" xml:space="preserve">
-    <value>Nome utente:</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageSaveJsonConnection_SaveRequestParameters" xml:space="preserve">
-    <value>Sì, salva i parametri di richiesta specificati</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseXPObjectEntityType" xml:space="preserve">
-    <value>Scegli un tipo di entità.</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseXPObjectSourceConnectionType_UseDefaultDataLayer" xml:space="preserve">
-    <value>Sì, la mia connessione dati è disponibile solo in fase di esecuzione.</value>
-  </data>
-  <data name="DataAccessUIStringId.MessageCannotLoadServersList" xml:space="preserve">
-    <value>Impossibile trovare alcun server di database.</value>
-  </data>
-  <data name="DataAccessUIStringId.ConnectionProperties_Encrypt_Default" xml:space="preserve">
-    <value>Utilizza le impostazioni del provider</value>
+  <data name="DataAccessUIStringId.ConnectionProperties_OracleProviderTypeODP" xml:space="preserve">
+    <value>ODP</value>
   </data>
   <data name="DataAccessUIStringId.ConnectionProperties_TrustServerCertificate_Default" xml:space="preserve">
-    <value>Utilizza le impostazioni del provider</value>
+    <value>Usa le impostazioni del provider</value>
   </data>
-  <data name="DataAccessUIStringId.Parameters_AddNewParameterPlaceholder" xml:space="preserve">
-    <value>Fai clic sul pulsante Aggiungi per creare un parametro.</value>
+  <data name="DataAccessUIStringId.DSTypeJson" xml:space="preserve">
+    <value>JSON</value>
   </data>
-  <data name="DataAccessUIStringId.WizardPageConfigureEFFilters_ChooseEntityPlaceholder" xml:space="preserve">
-    <value>Seleziona l'entità</value>
+  <data name="DataAccessUIStringId.DSTypeMongoDB" xml:space="preserve">
+    <value>MongoDB</value>
   </data>
-  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBQueries_ChooseDatabasePlaceholder" xml:space="preserve">
-    <value>Scegli il database</value>
+  <data name="DataAccessUIStringId.DSTypeNoData" xml:space="preserve">
+    <value>Nessun dato</value>
   </data>
-  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBQueries_ChooseCollectionPlaceholder" xml:space="preserve">
-    <value>Scegli la collezione</value>
+  <data name="DataAccessUIStringId.DSTypeXpo" xml:space="preserve">
+    <value>XPO</value>
   </data>
-  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBConnection" xml:space="preserve">
-    <value>Specificare le proprietà di connessione.</value>
+  <data name="DataAccessUIStringId.EFFilterParametersForm" xml:space="preserve">
+    <value>Parametri del filtro</value>
   </data>
-  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBConnection_AuthenticationType" xml:space="preserve">
-    <value>Autenticazione:</value>
+  <data name="DataAccessUIStringId.ExcelDataSourceDesignerVerbEditSchema" xml:space="preserve">
+    <value>Modifica schema...</value>
   </data>
-  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBConnection_AuthenticationType_NamePassword" xml:space="preserve">
-    <value>Nome utente / Password</value>
+  <data name="DataAccessUIStringId.ExpressionEditor_NoSuggestionsMessage" xml:space="preserve">
+    <value>Nessun suggerimento</value>
   </data>
-  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBConnection_AuthenticationDatabase" xml:space="preserve">
-    <value>Database di autenticazione:</value>
+  <data name="DataAccessUIStringId.FederatedQueryCollectionEditorForm_Title" xml:space="preserve">
+    <value>Gestire le query</value>
   </data>
-  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBConnection_CanonicalizeHostName" xml:space="preserve">
-    <value>Canonicalizzare il nome host</value>
+  <data name="DataAccessUIStringId.FederationDataSourceQueryBuilder_NodeType_Select" xml:space="preserve">
+    <value>Join</value>
+  </data>
+  <data name="DataAccessUIStringId.FederationDataSourceQueryBuilder_NodeType_Transform" xml:space="preserve">
+    <value>Trasformare</value>
   </data>
   <data name="DataAccessUIStringId.FederationDataSourceQueryBuilder_NodeType_Union" xml:space="preserve">
     <value>Unione</value>
   </data>
   <data name="DataAccessUIStringId.FederationDataSourceQueryBuilder_NodeType_UnionAll" xml:space="preserve">
-    <value>Unione completa</value>
+    <value>Unione di tutti</value>
   </data>
-  <data name="DataAccessUIStringId.FederationDataSourceQueryBuilder_AliasUniqueMessage" xml:space="preserve">
-    <value>L'alias non è unico</value>
+  <data name="DataAccessUIStringId.FederationDataSourceQueryBuilder_NodeTypeLabel" xml:space="preserve">
+    <value>Tipo di query:</value>
   </data>
-  <data name="DataAccessUIStringId.MessageBoxCloseDataSourceWizardConfirmation" xml:space="preserve">
-    <value>Chiudendo la procedura guidata Origine dati, le modifiche verranno annullate. Si desidera continuare?</value>
+  <data name="DataAccessUIStringId.FederationDataSourceQueryBuilder_RemovedColumnMessage" xml:space="preserve">
+    <value>La colonna "{0}.{1}" è stata rimossa dall'origine dati "{2}". Rimuovi questa colonna dalla query federata per continuare.</value>
   </data>
-  <data name="DataAccessUIStringId.WizardPageChooseJsonSource" xml:space="preserve">
-    <value>Specificare la posizione dei dati JSON.</value>
-  </data>
-  <data name="DataAccessUIStringId.ExcelDataSourceIncorrectFilePathExceptionMessage" xml:space="preserve">
-    <value>Impossibile trovare il file {0}.</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageConfigureFederatedQueryPage" xml:space="preserve">
-    <value>Crea una query federata.</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageConfigureFederatedQueryPage_InvalidQuery" xml:space="preserve">
-    <value>La query non è valida.</value>
-  </data>
-  <data name="DataAccessUIStringId.XPObjectSource_ConfirmClearProperties" xml:space="preserve">
-    <value>La raccolta Proprietà verrà svuotata. L'origine dati caricherà gli oggetti completi. Vuoi continuare?</value>
-  </data>
-  <data name="DataAccessUIStringId.FederationDataSourceQueryBuilder_NodeType_Transform" xml:space="preserve">
-    <value>Trasformare</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageSaveJsonConnection_SkipSaveRequestParameters" xml:space="preserve">
-    <value>No, salta i parametri della richiesta</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseXPObjectSourceConnectionType" xml:space="preserve">
-    <value>Desideri utilizzare il livello dati predefinito?</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseXPObjectSourceConnectionType_SpecifyConnection" xml:space="preserve">
-    <value>No, vorrei specificare una connessione che sia valida sia in fase di progettazione che in fase di esecuzione.</value>
-  </data>
-  <data name="DataAccessUIStringId.DSTypeNoData" xml:space="preserve">
-    <value>Nessun dato</value>
-  </data>
-  <data name="DataAccessUIStringId.ConnectionProperties_ClientLibrary" xml:space="preserve">
-    <value>Libreria client:</value>
-  </data>
-  <data name="DataAccessUIStringId.ExpressionEditor_NoSuggestionsMessage" xml:space="preserve">
-    <value>Nessun suggerimento</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageConfigureEFFilters_EntityColumnName" xml:space="preserve">
-    <value>Nome dell'entità</value>
-  </data>
-  <data name="DataAccessUIStringId.EFFilterParametersForm" xml:space="preserve">
-    <value>Parametri del filtro</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBQueries_CollectionNameColumnName" xml:space="preserve">
-    <value>Collezione</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBConnection_EnterConnectionFields" xml:space="preserve">
-    <value>Inserire i campi di connessione singolarmente</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageConfigureJsonConnection_HttpHeadersText" xml:space="preserve">
-    <value>Parametri dell'intestazione HTTP</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageConfigureJsonConnection_HeaderValueText" xml:space="preserve">
-    <value>Valore dell'intestazione</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageConfigureJsonConnection_HeaderNameText" xml:space="preserve">
-    <value>Nome dell'intestazione</value>
-  </data>
-  <data name="DataAccessUIStringId.QueryBuilderColumns_TableName" xml:space="preserve">
-    <value>Nome della tabella</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseDataProvider_GroupFavorite" xml:space="preserve">
-    <value>Preferiti</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseJsonSource_UriQueryParametersText" xml:space="preserve">
-    <value>Parametri di query</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseJsonSchema_FieldDisplayName" xml:space="preserve">
-    <value>Nome visualizzato del campo</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageChooseMongoDBSchema_FieldDisplayName" xml:space="preserve">
-    <value>Nome visualizzato del campo</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageConfigureJsonConnection" xml:space="preserve">
-    <value>Configurare la richiesta dell'endpoint del servizio web.</value>
-  </data>
-  <data name="DataAccessUIStringId.ExcelDataSourceDesignerVerbEditSchema" xml:space="preserve">
-    <value>Modifica schema...</value>
-  </data>
-  <data name="DataAccessUIStringId.JsonDataSourceDesignerVerbEditSchema" xml:space="preserve">
-    <value>Modifica schema...</value>
-  </data>
-  <data name="DataAccessUIStringId.DSTypeFederation" xml:space="preserve">
-    <value>Federazione dei dati</value>
-  </data>
-  <data name="DataAccessUIStringId.XPObjectSource_EntityTypeNotSet" xml:space="preserve">
-    <value>Impossibile popolare la raccolta di proprietà perché EntityType non è impostato.</value>
-  </data>
-  <data name="DataAccessUIStringId.XPObjectSource_DataProvidersListMustBeNonEmpty" xml:space="preserve">
-    <value>L'elenco DataProviders è vuoto.</value>
-  </data>
-  <data name="DataAccessUIStringId.FederatedQueryCollectionList_Title" xml:space="preserve">
-    <value>Query federate</value>
-  </data>
-  <data name="DataAccessUIStringId.ConnectionProperties_DatabaseListLoadingError" xml:space="preserve">
-    <value>Errore durante il caricamento dell'elenco del database</value>
-  </data>
-  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBQueries" xml:space="preserve">
-    <value>Configura le query.</value>
+  <data name="DataAccessUIStringId.FederationDataSourceQueryBuilder_RemovedDataSourceMessage" xml:space="preserve">
+    <value>L'origine dati "{0}" è stata rimossa. Rimuovi la tabella "{1}" dalla query federata per continuare.</value>
   </data>
   <data name="DataAccessUIStringId.FederationDataSourceQueryBuilder_RemovedTableMessage" xml:space="preserve">
     <value>La tabella "{0}" è stata rimossa dall'origine dati "{1}". Rimuovere questa tabella dalla query federata per procedere.</value>
   </data>
-  <data name="DataAccessUIStringId.FederationDataSourceQueryBuilder_RemovedDataSourceMessage" xml:space="preserve">
-    <value>L'origine dati "{0}" è stata rimossa. Rimuovere la tabella "{1}" dalla query federata per procedere.</value>
+  <data name="DataAccessUIStringId.FederationDataSourceQueryBuilder_SelectResult" xml:space="preserve">
+    <value>Risultato Join</value>
+  </data>
+  <data name="DataAccessUIStringId.FederationDataSourceQueryBuilder_TransformationNodeRoot" xml:space="preserve">
+    <value>Nodo radice della trasformazione: {0}</value>
   </data>
   <data name="DataAccessUIStringId.FederationDataSourceQueryBuilder_TransformationResult" xml:space="preserve">
     <value>Risultato della trasformazione</value>
   </data>
-  <data name="DataAccessUIStringId.FederationDataSourceQueryBuilder_TransformationNodeRoot" xml:space="preserve">
-    <value>Radice del nodo di trasformazione: {0}</value>
+  <data name="DataAccessUIStringId.JsonDataSourceDesignerVerbEditSchema" xml:space="preserve">
+    <value>Modifica schema...</value>
   </data>
-  <data name="DataAccessUIStringId.FederationDataSourceQueryBuilder_NodeTypeLabel" xml:space="preserve">
-    <value>Tipo di query:</value>
+  <data name="DataAccessUIStringId.JsonDataSourceEditorTitle" xml:space="preserve">
+    <value>Editor origine dati JSON</value>
+  </data>
+  <data name="DataAccessUIStringId.JsonDataSourceSchemaEditorTitle" xml:space="preserve">
+    <value>Editor schema origine dati JSON</value>
+  </data>
+  <data name="DataAccessUIStringId.MessageBoxCloseDataSourceWizardConfirmation" xml:space="preserve">
+    <value>Chiudendo la procedura guidata Origine dati, le modifiche verranno annullate. Si desidera continuare?</value>
+  </data>
+  <data name="DataAccessUIStringId.MessageBoxCloseManageQueriesDialogConfirmation" xml:space="preserve">
+    <value>Tutte le modifiche apportate andranno perse se si chiude la finestra di dialogo Gestisci query. Si desidera continuare?</value>
+  </data>
+  <data name="DataAccessUIStringId.MessageBoxCloseQueryBuilderDialogConfirmation" xml:space="preserve">
+    <value>Tutte le modifiche verranno eliminate se chiudi la finestra del Generatore di query. Vuoi continuare?</value>
+  </data>
+  <data name="DataAccessUIStringId.MessageCannotLoadServersList" xml:space="preserve">
+    <value>Impossibile trovare server di database.</value>
+  </data>
+  <data name="DataAccessUIStringId.Parameters_AddNewParameterPlaceholder" xml:space="preserve">
+    <value>Fai clic sul pulsante Aggiungi per creare un parametro.</value>
+  </data>
+  <data name="DataAccessUIStringId.QueryBuilder_EditSql" xml:space="preserve">
+    <value>Modifica SQL</value>
+  </data>
+  <data name="DataAccessUIStringId.QueryBuilder_ReverseRelation" xml:space="preserve">
+    <value>Relazione inversa</value>
+  </data>
+  <data name="DataAccessUIStringId.QueryBuilderButtons_EditParameters" xml:space="preserve">
+    <value>&amp;Modifica parametri...</value>
+  </data>
+  <data name="DataAccessUIStringId.QueryBuilderColumns_ColumnName" xml:space="preserve">
+    <value>Nome di colonna</value>
+  </data>
+  <data name="DataAccessUIStringId.QueryBuilderColumns_Source" xml:space="preserve">
+    <value>Fonte</value>
+  </data>
+  <data name="DataAccessUIStringId.QueryBuilderColumns_TableName" xml:space="preserve">
+    <value>Nome tabella</value>
+  </data>
+  <data name="DataAccessUIStringId.QueryBuilderReverseRelationConfirmation" xml:space="preserve">
+    <value>La nuova direzione del join verrà applicata a tutte le relazioni esistenti tra le seguenti tabelle: {0}, {1}. Continuare?</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseDataProvider" xml:space="preserve">
+    <value>Seleziona un tipo di connessione dati.</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseDataProvider_AddFavorite" xml:space="preserve">
+    <value>Aggiungi ai preferiti</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseDataProvider_GroupAll" xml:space="preserve">
+    <value>Tutti</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseDataProvider_GroupFavorite" xml:space="preserve">
+    <value>Preferiti</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseDataProvider_RemoveFavorite" xml:space="preserve">
+    <value>Rimuovi dai preferiti</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseJsonSchema" xml:space="preserve">
+    <value>Seleziona i campi dati.</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseJsonSchema_AnalyzeAllRecordsButton" xml:space="preserve">
+    <value>&amp;Analizza tutti i record</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseJsonSchema_FieldDisplayName" xml:space="preserve">
+    <value>Nome visualizzato del campo</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseJsonSchema_FieldExists" xml:space="preserve">
+    <value>Il nome del campo {0} esiste già a questo livello</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseJsonSchema_FieldNameIsEmpty" xml:space="preserve">
+    <value>Il nome del campo non può essere vuoto.</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseJsonSchema_PartiallyAnalyzedJsonMessage" xml:space="preserve">
+    <value>I tipi di campo sopra indicati vengono generati in base ai primi {0} record JSON. Se i dati contengono un record il cui tipo all'interno di questo limite differisce dal tipo al di fuori di esso, il tipo di campo corrispondente viene generato in modo errato. Ciò comporterà errori di deserializzazione del tipo. È possibile analizzare tutti i record JSON per garantire la corretta generazione del tipo. Si noti che questa operazione potrebbe richiedere più tempo rispetto all'analisi di un numero limitato di documenti.</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseJsonSchema_RootElement" xml:space="preserve">
+    <value>&amp;Elemento radice:</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseJsonSource" xml:space="preserve">
+    <value>Specifica la posizione dei dati JSON.</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseJsonSource_Custom" xml:space="preserve">
+    <value>&amp;Stringa JSON:</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseJsonSource_File" xml:space="preserve">
+    <value>File JSON:</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseJsonSource_ResultingUri" xml:space="preserve">
+    <value>URI risultante:</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseJsonSource_SourceType" xml:space="preserve">
+    <value>Origine JSON:</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseJsonSource_SourceType_Custom" xml:space="preserve">
+    <value>Stringa JSON</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseJsonSource_SourceType_File" xml:space="preserve">
+    <value>File JSON</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseJsonSource_SourceType_Uri" xml:space="preserve">
+    <value>Endpoint servizio Web (URI)</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseJsonSource_URI" xml:space="preserve">
+    <value>Endpoint servizio Web (URI):</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseJsonSource_UriPathParametersText" xml:space="preserve">
+    <value>Parametri del percorso URI</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseJsonSource_UriQueryParametersText" xml:space="preserve">
+    <value>Parametri di query</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseMongoDBSchema" xml:space="preserve">
+    <value>Selezionare i campi dati.</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseMongoDBSchema_AnalyzeAllDocumentsButton" xml:space="preserve">
+    <value>&amp;Analizzare tutti i documenti</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseMongoDBSchema_FieldDisplayName" xml:space="preserve">
+    <value>Nome visualizzato del campo</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseMongoDBSchema_PartiallyAnalyzedCollectionMessage" xml:space="preserve">
+    <value>I tipi di campo sopra indicati vengono generati in base ai primi {0} documenti MongoDB. Se i dati contengono un campo il cui tipo all'interno di questo limite differisce dal tipo al di fuori di esso, il tipo di campo corrispondente viene generato in modo errato. Ciò comporterà errori di deserializzazione del tipo. È possibile analizzare tutti i documenti MongoDB per garantire la corretta generazione del tipo. Si noti che questa operazione potrebbe richiedere più tempo rispetto all'analisi di un numero limitato di documenti.</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseMongoDBSchema_QueryName" xml:space="preserve">
+    <value>Nome query:</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseXPObjectEntityType" xml:space="preserve">
+    <value>Scegli un tipo di entità.</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseXPObjectSourceConnectionType" xml:space="preserve">
+    <value>Vuoi utilizzare il livello dati predefinito?</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseXPObjectSourceConnectionType_SpecifyConnection" xml:space="preserve">
+    <value>No, desidero specificare una connessione valida sia in fase di progettazione che in fase di esecuzione.</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageChooseXPObjectSourceConnectionType_UseDefaultDataLayer" xml:space="preserve">
+    <value>Sì, la mia connessione dati è disponibile solo in fase di esecuzione.</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureEFConnection" xml:space="preserve">
+    <value>Seleziona una connessione dati o specifica una stringa di connessione.</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureEFConnection_ChooseConnection" xml:space="preserve">
+    <value>Seleziona una stringa di connessione dall'elenco delle impostazioni disponibili</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureEFConnection_CustomConnection" xml:space="preserve">
+    <value>Specifica una stringa di connessione personalizzata</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureEFConnection_DefaultConnection" xml:space="preserve">
+    <value>Usa la stringa di connessione predefinita</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureEFConnection_SaveToConfig" xml:space="preserve">
+    <value>Salva la stringa di connessione nel file di configurazione come:</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureEFFilters_ChooseEntityPlaceholder" xml:space="preserve">
+    <value>Scegliere entità</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureEFFilters_EntityColumnName" xml:space="preserve">
+    <value>Nome entità</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureFederatedQueryPage" xml:space="preserve">
+    <value>Crea una query federata.</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureFederatedQueryPage_EditingIsNotSupported" xml:space="preserve">
+    <value>La modifica non è supportata per questa query.</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureFederatedQueryPage_InvalidQuery" xml:space="preserve">
+    <value>La query non è valida.</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureJsonConnection" xml:space="preserve">
+    <value>Configura la richiesta dell'endpoint del servizio Web.</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureJsonConnection_BasicHttpAuthText" xml:space="preserve">
+    <value>Autenticazione HTTP di base</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureJsonConnection_HeaderNameText" xml:space="preserve">
+    <value>Nome intestazione</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureJsonConnection_HeaderValueText" xml:space="preserve">
+    <value>Valore intestazione</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureJsonConnection_HttpHeadersText" xml:space="preserve">
+    <value>Intestazioni HTTP</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureJsonConnection_ParameterNameText" xml:space="preserve">
+    <value>Nome del parametro</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureJsonConnection_ParameterValueText" xml:space="preserve">
+    <value>Valore del parametro</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureJsonConnection_UsernameText" xml:space="preserve">
+    <value>Nome utente:</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBConnection" xml:space="preserve">
+    <value>Specifica le proprietà di connessione.</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBConnection_AuthenticationDatabase" xml:space="preserve">
+    <value>Database di autenticazione:</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBConnection_AuthenticationType" xml:space="preserve">
+    <value>Autenticazione:</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBConnection_AuthenticationType_NamePassword" xml:space="preserve">
+    <value>nome utente / password</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBConnection_CanonicalizeHostName" xml:space="preserve">
+    <value>Normalizza nome host</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBConnection_Dsn" xml:space="preserve">
+    <value>DSN:</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBConnection_EnterConnectionFields" xml:space="preserve">
+    <value>Inserisci i campi di connessione singolarmente</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBConnection_IsSRVRecord" xml:space="preserve">
+    <value>Record SRV</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBConnection_PasteConnectionString" xml:space="preserve">
+    <value>Incolla una stringa di connessione</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBConnection_Principal" xml:space="preserve">
+    <value>Principal</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBConnection_ServiceName" xml:space="preserve">
+    <value>Nome servizio:</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBQueries" xml:space="preserve">
+    <value>Configura le query.</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBQueries_ChooseCollectionPlaceholder" xml:space="preserve">
+    <value>Scegli collezione</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBQueries_ChooseDatabasePlaceholder" xml:space="preserve">
+    <value>Scegli database</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBQueries_CollectionNameColumnName" xml:space="preserve">
+    <value>Collezione</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageConfigureMongoDBQueries_QueryAlias" xml:space="preserve">
+    <value>Alias</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageMultipleFederatedQueriesPage" xml:space="preserve">
+    <value>Crea una query federata. Le colonne selezionate da specifiche origini dati e/o tabelle verranno incluse automaticamente in una query separata.</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageMultipleFederatedQueriesPage_AddQuery" xml:space="preserve">
+    <value>Aggiungere Query...</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageProviderSpecificConnectionProperties" xml:space="preserve">
+    <value>Specifica le proprietà di connessione.</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageSaveJsonConnection_SaveRequestParameters" xml:space="preserve">
+    <value>Sì, salva i parametri della richiesta specificati</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageSaveJsonConnection_SaveRequestParametersPrompt" xml:space="preserve">
+    <value>I parametri della richiesta possono contenere dati sensibili. Vuoi salvarli?</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardPageSaveJsonConnection_SkipSaveRequestParameters" xml:space="preserve">
+    <value>No, ignora i parametri della richiesta</value>
+  </data>
+  <data name="DataAccessUIStringId.WizardUnableToLoadMongoDBDriver" xml:space="preserve">
+    <value>Il tentativo di caricare l'assembly "MongoDB.Driver.dll" non è riuscito. Il pacchetto "MongoDB.Driver" deve essere installato nel progetto dell'applicazione per fornire dati MongoDB in fase di esecuzione.</value>
+  </data>
+  <data name="DataAccessUIStringId.XPObjectSource_ConfirmClearProperties" xml:space="preserve">
+    <value>La raccolta Proprietà verrà svuotata. L'origine dati caricherà gli oggetti completi. Vuoi continuare?</value>
+  </data>
+  <data name="DataAccessUIStringId.XPObjectSource_ConfirmReplaceProperties" xml:space="preserve">
+    <value>La raccolta Proprietà verrà ricreata in base alle informazioni sul tipo di entità specificato. Vuoi continuare?</value>
+  </data>
+  <data name="DataAccessUIStringId.XPObjectSource_DataProvidersListMustBeNonEmpty" xml:space="preserve">
+    <value>L'elenco DataProviders è vuoto.</value>
+  </data>
+  <data name="DataAccessUIStringId.XPObjectSource_EntityTypeNotSet" xml:space="preserve">
+    <value>Impossibile popolare la raccolta di proprietà perché EntityType non è impostato.</value>
+  </data>
+  <data name="DataAccessUIStringId.XPObjectSourceDesignerVerbClearProperties" xml:space="preserve">
+    <value>Cancella proprietà</value>
+  </data>
+  <data name="DataAccessUIStringId.XPObjectSourceDesignerVerbPopulateProperties" xml:space="preserve">
+    <value>Proprietà popolate</value>
   </data>
 </root>

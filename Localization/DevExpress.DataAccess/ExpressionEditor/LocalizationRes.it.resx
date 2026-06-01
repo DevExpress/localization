@@ -9,45 +9,45 @@
 //*****************************************************************************
 -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -76,7 +76,7 @@
     <value>Rappresenta un riferimento NULL, uno che non fa riferimento a nessun oggetto.</value>
   </data>
   <data name="ExpressionEditorStringId.Operator_Plus" xml:space="preserve">
-    <value>Aggiunge il valore di un'espressione numerica ad un'altra, o concatena le due stringhe</value>
+    <value>Aggiunge il valore di un'espressione numerica ad un'altra, o concatena le due stringhe.</value>
   </data>
   <data name="ExpressionEditorStringId.Operator_Minus" xml:space="preserve">
     <value>Trova la differenza tra due numeri.</value>
@@ -717,273 +717,5 @@ Concatena gli elementi dell'insieme specificato, utilizzando il separatore speci
     <value>NewLine()
 
 Restituisce la stringa nuova riga definita per questo ambiente.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_OutOfTimeRange" xml:space="preserve">
-    <value>OutOfTimeRange(Time, FromTime, ToTime)
-
-Restituisce True se l'ora specificata è al di fuori dell'intervallo compreso tra gli argomenti FromTime e ToTime, inclusi i casi in cui l'intervallo include la mezzanotte.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_SwitchOffset" xml:space="preserve">
-    <value>SwitchOffset(DateTimeOffset, Offset)
-
-Restituisce un valore DateTimeOffset che viene modificato dall'offset del fuso orario memorizzato a un nuovo offset di fuso orario specificato.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetLastMonth" xml:space="preserve">
-    <value>LocalDateTimeOffsetLastMonth()
-
-Restituisce un valore data-ora con offset di fuso orario corrispondente al primo giorno del mese precedente.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_TimeOnlyFromParts" xml:space="preserve">
-    <value>TimeOnlyFromParts(Ora, Minuto)
-
-Restituisce un valore TimeOnly costruito a partire dall'ora e dal minuto specificati.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_TimeOnlyFromParts1" xml:space="preserve">
-    <value>TimeOnlyFromParts(Ora, Minuto, Secondo)
-
-Restituisce un valore TimeOnly costruito a partire dall'ora, dal minuto e dal secondo specificati.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_TimeOnlyFromParts2" xml:space="preserve">
-    <value>TimeOnlyFromParts(Ora, Minuto, Secondo, Millisecondo)
-
-Restituisce un valore TimeOnly costruito a partire dall'ora, dal minuto, dal secondo e dal millisecondo specificati.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_IsWorkTime" xml:space="preserve">
-    <value>IsWorkTime(Time)
-
-Restituisce True se l'orario specificato da DateTime/TimeOnly rientra nell'orario di lavoro.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_ToDateTime" xml:space="preserve">
-    <value>ToDateTime(Valore)
-
-Converte il valore in un valore DateTime equivalente.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_InRange" xml:space="preserve">
-    <value>InRange(Valore, ValoreDa, ValoreA)
-
-Restituisce True se il valore specificato è compreso tra gli argomenti ValoreDa e ValoreA.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_InDateRange" xml:space="preserve">
-    <value>InDateRange(Data, DataDa, DataDiFine)
-
-Restituisce True se la data specificata è compresa tra la DataDa e la DataDiFine.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_InTimeRange" xml:space="preserve">
-    <value>InTimeRange(Time, FromTime, ToTime)
-
-Restituisce True se l'ora specificata è compresa tra gli argomenti FromTime e ToTime, inclusi i casi in cui l'intervallo include la mezzanotte.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetTwoYearsAway" xml:space="preserve">
-    <value>LocalDateTimeOffsetTwoYearsAway()
-
-Restituisce un valore data-ora con offset di fuso orario corrispondente al primo giorno dell'anno successivo al prossimo.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_GetOffset" xml:space="preserve">
-    <value>GetOffset(DateTimeOffset)
-
-Estrae l'offset UTC in minuti dal DateTimeOffset o dalla stringa definiti.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_ConvertToTimeZone" xml:space="preserve">
-    <value>ConvertToTimeZone(DateTimeOffset, String)
-
-Converte un valore DateTimeOffset nel valore corrispondente nel fuso orario specificato.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_DateOnlyFromParts" xml:space="preserve">
-    <value>DateOnlyFromParts(Anno, Mese, Giorno)
-
-Restituisce un valore DateOnly costruito a partire dall'anno, dal mese e dal giorno specificati.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_AfterMidday" xml:space="preserve">
-    <value>AfterMidday(Time)
-
-Restituisce True se l'ora specificata da DateTime/TimeOnly è successiva alle 12:00.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_BeforeMidday" xml:space="preserve">
-    <value>Prima di Mezzogiorno (Ora)
-
-Restituisce True se l'ora specificata da DateTime/TimeOnly è precedente alle 12:00.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetLastYear" xml:space="preserve">
-    <value>LocalDateTimeOffsetLastYear()
-
-Restituisce un valore data-ora con offset di fuso orario corrispondente al primo giorno dell'anno precedente.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetTwoMonthsAway" xml:space="preserve">
-    <value>LocalDateTimeOffsetTwoMonthsAway()
-
-Restituisce un valore data-ora con offset di fuso orario corrispondente al primo giorno del mese successivo al prossimo.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetYearBeforeToday" xml:space="preserve">
-    <value>LocalDateTimeOffsetYearBeforeToday()
-
-Restituisce un valore data-ora con offset di fuso orario corrispondente al giorno di un anno fa.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetDayAfterTomorrow" xml:space="preserve">
-    <value>LocalDateTimeOffsetDayAfterTomorrow()
-
-Restituisce un valore data-ora con offset di fuso orario corrispondente al giorno successivo a domani.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetLastWeek" xml:space="preserve">
-    <value>LocalDateTimeOffsetLastWeek()
-
-Restituisce un valore data-ora con offset di fuso orario corrispondente al primo giorno della settimana precedente.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetNextMonth" xml:space="preserve">
-    <value>LocalDateTimeOffsetNextMonth()
-
-Restituisce un valore data-ora con offset di fuso orario corrispondente al primo giorno del mese successivo.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetNextWeek" xml:space="preserve">
-    <value>LocalDateTimeOffsetNextWeek()
-
-Restituisce un valore data-ora con offset di fuso orario corrispondente al primo giorno della settimana successiva.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetNextYear" xml:space="preserve">
-    <value>LocalDateTimeOffsetNextYear()
-
-Restituisce un valore data-ora con offset di fuso orario corrispondente al primo giorno dell'anno successivo.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetNow" xml:space="preserve">
-    <value>LocalDateTimeOffsetNow()
-
-Restituisce un valore data-ora con offset di fuso orario corrispondente al momento attuale.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetThisMonth" xml:space="preserve">
-    <value>LocalDateTimeOffsetThisMonth()
-
-Restituisce un valore data-ora con offset di fuso orario corrispondente al primo giorno del mese corrente.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetThisWeek" xml:space="preserve">
-    <value>LocalDateTimeOffsetThisWeek()
-
-Restituisce un valore data-ora con offset di fuso orario corrispondente al primo giorno della settimana corrente.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetThisYear" xml:space="preserve">
-    <value>LocalDateTimeOffsetThisYear()
-
-Restituisce un valore data-ora con offset di fuso orario corrispondente al primo giorno dell'anno corrente.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetToday" xml:space="preserve">
-    <value>LocalDateTimeOffsetToday()
-
-Restituisce un valore data-ora con offset di fuso orario corrispondente alla data odierna.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetTomorrow" xml:space="preserve">
-    <value>LocalDateTimeOffsetTomorrow()
-
-Restituisce un valore data-ora con offset di fuso orario corrispondente a domani.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetTwoWeeksAway" xml:space="preserve">
-    <value>LocalDateTimeOffsetTwoWeeksAway()
-
-Restituisce un valore data-ora con offset di fuso orario corrispondente al primo giorno della settimana successiva alla prossima settimana.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetYesterday" xml:space="preserve">
-    <value>LocalDateTimeOffsetYesterday()
-
-Restituisce un valore data-ora con offset di fuso orario corrispondente a ieri.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_DateTimeFromParts3" xml:space="preserve">
-    <value>DateTimeFromParts(Anno, Mese, Giorno)
-
-Restituisce un valore di data costruito a partire dall'anno, dal mese e dal giorno specificati.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_DateTimeFromParts4" xml:space="preserve">
-    <value>DateTimeFromParts(Anno, Mese, Giorno, Ora)
-
-Restituisce un valore di data costruito a partire dall'anno, dal mese, dal giorno e dall'ora specificati.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_DateTimeFromParts5" xml:space="preserve">
-    <value>DateTimeFromParts(Anno, Mese, Giorno, Ora, Minuto)
-
-Restituisce un valore di data costruito a partire dall'anno, dal mese, dal giorno, dall'ora e dal minuto specificati.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_DateTimeFromParts6" xml:space="preserve">
-    <value>DateTimeFromParts(Anno, Mese, Giorno, Ora, Minuto, Secondo)
-
-Restituisce un valore di data costruito a partire dall'anno, dal mese, dal giorno, dall'ora, dal minuto e dal secondo specificati.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_DateTimeOffsetFromParts7" xml:space="preserve">
-    <value>DateTimeOffsetFromParts(Anno, Mese, Giorno, Ora, Minuto, Secondo, Offset)
-
-Restituisce un valore DateTimeOffset costruito a partire da Anno, Mese, Giorno, Ora, Minuto, Secondo e Offset specificati.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_DateTimeOffsetFromParts8" xml:space="preserve">
-    <value>DateTimeOffsetFromParts(Anno, Mese, Giorno, Ora, Minuto, Secondo, Millisecondo, Offset)
-
-Restituisce un valore DateTimeOffset costruito a partire da Anno, Mese, Giorno, Ora, Minuto, Secondo, Millisecondo e Offset specificati.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_IsAfternoon" xml:space="preserve">
-    <value>IsAfternoon(Time)
-
-Restituisce True se l'ora specificata da DateTime/TimeOnly è compresa tra le 12:00 e le 18:00.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_IsNight" xml:space="preserve">
-    <value>IsNight(Time)
-
-Restituisce True se l'ora specificata da DateTime/TimeOnly è compresa tra le 21:00 e le 9:00.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_IsSameHour" xml:space="preserve">
-    <value>IsSameHour(Time)
-
-Restituisce True se l'ora specificata da DateTime/TimeOnly rientra nella stessa ora.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_IsSameTime" xml:space="preserve">
-    <value>IsSameTime(Time)
-
-Restituisce True se l'ora specificata da DateTime/TimeOnly rientra nella stessa fascia oraria (ora e minuto).</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_IsThisHour" xml:space="preserve">
-    <value>IsThisHour(Time)
-
-Restituisce True se l'ora specificata da DateTime/TimeOnly rientra nell'ora indicata.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_GetOffsetTimeSpan" xml:space="preserve">
-    <value>GetOffsetTimeSpan(DateTimeOffset)
-
-Estrae l'offset UTC come TimeSpan dal DateTimeOffset o dalla stringa definiti.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_GetOffsetTimeSpan2" xml:space="preserve">
-    <value>GetOffsetTimeSpan(Ore, Minuti)
-
-Restituisce un offset UTC come intervallo di tempo (TimeSpan) costruito a partire dalle ore e dai minuti specificati.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_IsEvening" xml:space="preserve">
-    <value>IsEvening(Time)
-
-Restituisce True se l'ora specificata da DateTime/TimeOnly è compresa tra le 18:00 e le 21:00.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_IsLunchTime" xml:space="preserve">
-    <value>IsLunchTime(Time)
-
-Restituisce True se l'ora specificata da DateTime/TimeOnly rientra nell'orario di pranzo.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_IsMorning" xml:space="preserve">
-    <value>IsMorning(Time)
-
-Restituisce True se l'ora specificata da DateTime/TimeOnly è compresa tra le 6:00 e le 12:00.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_IsNextHour" xml:space="preserve">
-    <value>IsNextHour(Time)
-
-Restituisce True se l'ora specificata da DateTime/TimeOnly rientra nell'ora successiva.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Exception_SyntaxError" xml:space="preserve">
-    <value>Errore di sintassi.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_GetTime" xml:space="preserve">
-    <value>GetTime(Data)
-
-Estrae un orario dal tipo DateTime/TimeOnly definito.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_IsFreeTime" xml:space="preserve">
-    <value>IsFreeTime(Time)
-
-Restituisce True se l'orario specificato da DateTime/TimeOnly rientra nel tempo libero.</value>
-  </data>
-  <data name="ExpressionEditorStringId.Function_IsLastHour" xml:space="preserve">
-    <value>IsLastHour(Time)
-
-Restituisce True se l'ora specificata da DateTime/TimeOnly rientra nell'ultima ora.</value>
   </data>
 </root>

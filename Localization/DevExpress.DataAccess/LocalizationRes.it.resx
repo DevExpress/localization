@@ -60,45 +60,45 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -145,7 +145,7 @@
     <value>Caricamento dei dati...</value>
   </data>
   <data name="DataAccessStringId.LoadingDataSourcePanelCounter" xml:space="preserve">
-    <value>{0} di {1}...</value>
+    <value>{0} of {1}...</value>
   </data>
   <data name="DataAccessStringId.MessageDuplicateItem" xml:space="preserve">
     <value>L'insieme contiene già l'elemento ' {0}'</value>
@@ -227,7 +227,7 @@ Messaggio di errore: {1}</value>
     <value>nessuno</value>
   </data>
   <data name="DataAccessStringId.QueryPropertyGridStoredProcCategoryName" xml:space="preserve">
-    <value>Password memorizzata</value>
+    <value>Stored Procedure</value>
   </data>
   <data name="DataAccessStringId.RelationNullValidationException" xml:space="preserve">
     <value>Una relazione non può essere null.</value>
@@ -293,13 +293,13 @@ Messaggio di errore: {1}</value>
     <value>Lo schema non contiene la colonna seguente relazione: "{0}". "{1}".</value>
   </data>
   <data name="DataAccessStringId.ParameterListNull" xml:space="preserve">
-    <value>nullo</value>
+    <value>null</value>
   </data>
   <data name="DataAccessStringId.ProviderNotSupportedException" xml:space="preserve">
     <value>i seguenti provider di database non è supportato: {0}.</value>
   </data>
   <data name="DataAccessStringId.QueryPropertyGridCustomSqlCategoryName" xml:space="preserve">
-    <value>SQL personalizzato</value>
+    <value>Custom SQL</value>
   </data>
   <data name="DataAccessStringId.ODSWizardErrorExceptionInGetItemProperties" xml:space="preserve">
     <value>Metodo GetItemProperties the di un ITypedList ha generato un'eccezione.</value>
@@ -508,10 +508,11 @@ Dettagli eccezione:
     <value>(Tutte le tabelle)</value>
   </data>
   <data name="DataAccessStringId.SqlExecutionException" xml:space="preserve">
-    <value>Errore durante l'esecuzione della query SQL{0}{1}.{2}Errore: {3}</value>
+    <value>Errore tentando di eseguire una query SQL {0} {1}.
+Errore: {2}</value>
   </data>
   <data name="DataAccessStringId.SqlExecutionException_WithParameters" xml:space="preserve">
-    <value>con i parametri:{0}{1}</value>
+    <value>con i parametri:</value>
   </data>
   <data name="DataAccessStringId.SqlQueryExecutionException" xml:space="preserve">
     <value>Impossibile eseguire la Query {0}.</value>
@@ -549,7 +550,7 @@ Non utilizzarli nella query, oppure convertire i dati XML in un altro formato di
     <value>Nella tabella seguente non è presente nell'elenco di tabelle, ma la colonna viene utilizzata: "{0}".</value>
   </data>
   <data name="DataAccessStringId.Type_Char" xml:space="preserve">
-    <value>Carattere</value>
+    <value>Char</value>
   </data>
   <data name="DataAccessStringId.ExpressionNullValidationException" xml:space="preserve">
     <value>Un'espressione non può essere null, o colonna o espressione personalizzata previsto.</value>
@@ -658,7 +659,7 @@ Per conoscere i dettagli dell'errore, fare clic su Gestisci relazioni.</value>
     <value>Data/Ora</value>
   </data>
   <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_ColumnDescriptionFormat" xml:space="preserve">
-    <value>Tipo: {0}</value>
+    <value>Type: {0}</value>
   </data>
   <data name="DataAccessStringId.FilterEditor_TreeCreationError" xml:space="preserve">
     <value>Non è possibile creare un struttura ad albero per questa espressione</value>
@@ -711,55 +712,6 @@ Per conoscere i dettagli dell'errore, fare clic su Gestisci relazioni.</value>
   <data name="DataAccessStringId.DataSourceProvider_SQLite" xml:space="preserve">
     <value>SQLite</value>
   </data>
-  <data name="DataAccessStringId.ExcelDataSource_WorksheetNotFoundMessage" xml:space="preserve">
-    <value>{0}
-Foglio di lavoro non trovato.
-
-Verifica il nome del foglio di lavoro e riprova.</value>
-  </data>
-  <data name="DataAccessStringId.ObjectDataSourceLoadingWarningMessage" xml:space="preserve">
-    <value>Il caricamento delle fonti di dati a cui si fa riferimento in questo file potrebbe danneggiare il computer. Questo file proviene da una fonte attendibile?
-
-Fai clic su "Sì" per caricare il contenuto della fonte di dati così com'è.
-
-Fai clic su "No" per caricare solo il contenuto della fonte di dati attendibile.</value>
-  </data>
-  <data name="DataAccessStringId.IntegerDivisionValidationMessage" xml:space="preserve">
-    <value>Nota bene: questo motore di espressioni scarta le frazioni durante le operazioni di divisione intera. Per restituire valori decimali (divisione in virgola mobile), utilizzare ToDecimal(), ToDouble() o ToFloat() per l'espressione. Ad esempio, ToDecimal(10)/4 restituirà 2,5 mentre 10/4 restituirà 2.</value>
-  </data>
-  <data name="DataAccessStringId.DataSourceProvider_Oracle" xml:space="preserve">
-    <value>Oracle</value>
-  </data>
-  <data name="DataAccessStringId.DataSourceProvider_MySql" xml:space="preserve">
-    <value>MySQL</value>
-  </data>
-  <data name="DataAccessStringId.NoColumnsValidationException" xml:space="preserve">
-    <value>Nessuna delle tabelle contiene colonne.</value>
-  </data>
-  <data name="DataAccessStringId.ExcelDataSource_WorksheetIndexNotFoundMessage" xml:space="preserve">
-    <value>Foglio di lavoro {0} non trovato.
-
-Verifica l'indice dei fogli di lavoro e riprova.</value>
-  </data>
-  <data name="DataAccessStringId.Federation_UnionWithDifferentNumberOfColumnsErrorMessage" xml:space="preserve">
-    <value>Nodo di unione {0}: gli elementi devono avere lo stesso numero di colonne: {1}, {2}.</value>
-  </data>
-  <data name="DataAccessStringId.Federation_UnionWithDifferentColumnTypesErrorMessage" xml:space="preserve">
-    <value>Nodo di unione {0}: le colonne correlate devono avere tipi simili: {1}.{2}, {3}.{4}.</value>
-  </data>
-  <data name="DataAccessStringId.DataSourceFillExceptionMessage" xml:space="preserve">
-    <value>Impossibile caricare i dati. Consultare i dettagli dell'eccezione per ulteriori informazioni.
-
-Dettagli dell'eccezione:
-
-{0}</value>
-  </data>
-  <data name="DataAccessStringId.DataSourceProvider_Access97" xml:space="preserve">
-    <value>Microsoft Access 97</value>
-  </data>
-  <data name="DataAccessStringId.DataSourceProvider_Access2007" xml:space="preserve">
-    <value>Microsoft Access 2007</value>
-  </data>
   <data name="DataAccessStringId.DataSourceProvider_VistaDB" xml:space="preserve">
     <value>VistaDB</value>
   </data>
@@ -769,154 +721,34 @@ Dettagli dell'eccezione:
   <data name="DataAccessStringId.DataSourceProvider_VistaDB6" xml:space="preserve">
     <value>VistaDB6</value>
   </data>
-  <data name="DataAccessStringId.QueryBuilder_RowCount" xml:space="preserve">
-    <value>(Conteggio delle righe)</value>
-  </data>
-  <data name="DataAccessStringId.EFFilterControl_EmptyFilterString" xml:space="preserve">
-    <value>Una stringa di filtro non può essere nulla.</value>
-  </data>
-  <data name="DataAccessStringId.Federation_DuplicateSourceNameErrorMessage" xml:space="preserve">
-    <value>Esiste già una sorgente con il nome specificato: {0}.</value>
-  </data>
-  <data name="DataAccessStringId.Federation_ObjectCycleValidationErrorMessage" xml:space="preserve">
-    <value>È stato rilevato un possibile ciclo di oggetti. L'origine dati '{0}' fa riferimento all'origine dati '{1}'.</value>
-  </data>
-  <data name="DataAccessStringId.MongoDB_DuplicateQueryNameMessage" xml:space="preserve">
-    <value>Esiste già una query con il nome specificato: {0}.</value>
-  </data>
-  <data name="DataAccessStringId.OdbcDriverDoesNotSupportOAuthErrorMessage" xml:space="preserve">
-    <value>Il driver ODBC non supporta il tipo di autenticazione OAuth. Utilizzare l'autenticazione tramite file chiave oppure installare DevExpress BigQueryProvider per utilizzare OAuth.</value>
-  </data>
-  <data name="DataAccessStringId.CustomExpressionWithMissingParameterValidationException" xml:space="preserve">
-    <value>Il parametro [{0}] viene utilizzato nell'espressione personalizzata, ma manca nella query.</value>
-  </data>
-  <data name="DataAccessStringId.Federation_ConditionColumnNotExistValidationErrorMessage" xml:space="preserve">
-    <value>La colonna [{0}] non esiste nelle origini dati. Condizione: [{1}].</value>
-  </data>
-  <data name="DataAccessStringId.Federation_ConditionAmbiguousColumnNameValidationErrorMessage" xml:space="preserve">
-    <value>Il nome della colonna [{0}] non è univoco. Lo stesso nome di colonna esiste nelle tabelle: {1}. Condizione: [{2}].</value>
-  </data>
-  <data name="DataAccessStringId.Federation_ExpressionColumnNotExistValidationErrorMessage" xml:space="preserve">
-    <value>La colonna [{0}] non esiste nelle origini dati. Espressione: [{1}].</value>
-  </data>
-  <data name="DataAccessStringId.Federation_ExpressionAmbiguousColumnNameValidationErrorMessage" xml:space="preserve">
-    <value>Il nome della colonna [{0}] non è univoco. Lo stesso nome di colonna esiste nelle tabelle: {1}. Espressione: [{2}].</value>
-  </data>
-  <data name="DataAccessStringId.Federation_FilterColumnNotExistValidationErrorMessage" xml:space="preserve">
-    <value>La colonna [{0}] non esiste nelle origini dati. Stringa filtro: [{1}].</value>
-  </data>
-  <data name="DataAccessStringId.Federation_FilterAmbiguousColumnNameValidationErrorMessage" xml:space="preserve">
-    <value>Il nome della colonna [{0}] non è univoco. Lo stesso nome di colonna esiste nelle tabelle: {1}. Stringa di filtro: [{2}].</value>
-  </data>
-  <data name="DataAccessStringId.ObjectDataSourceWizard_CannotGetTypeProperties" xml:space="preserve">
-    <value>Impossibile ottenere le proprietà per questo tipo.</value>
-  </data>
-  <data name="DataAccessStringId.ObjectDataSourceWizard_CannotGetPropertiesForThisMethodReturnType" xml:space="preserve">
-    <value>Impossibile ottenere le proprietà per il tipo restituito da questo metodo.</value>
-  </data>
-  <data name="DataAccessStringId.Type_ByteArray" xml:space="preserve">
-    <value>Array di byte</value>
-  </data>
-  <data name="DataAccessStringId.ProviderNotSupportedLabel" xml:space="preserve">
-    <value>Alcune funzionalità di interrogazione non sono supportate dal provider attuale.</value>
-  </data>
-  <data name="DataAccessStringId.Federation_UnionWithNoElementsValidationErrorMessage" xml:space="preserve">
-    <value>Il nodo unione non contiene elementi: {0}.</value>
-  </data>
-  <data name="DataAccessStringId.DataSourceProvider_AmazonRedshift" xml:space="preserve">
-    <value>Amazon Redshift</value>
-  </data>
   <data name="DataAccessStringId.DataSourceProvider_XMLFile" xml:space="preserve">
     <value>File XML</value>
   </data>
-  <data name="DataAccessStringId.SkipWithoutSortingWebValidationException" xml:space="preserve">
-    <value>L'impostazione Offset viene applicata quando i record non sono ordinati. Applica l'ordinamento per poter saltare i primi N record.</value>
-  </data>
-  <data name="DataAccessStringId.ODSErrorInvalidMember" xml:space="preserve">
-    <value>Il membro dati '{0}' non restituisce alcun valore.</value>
-  </data>
-  <data name="DataAccessStringId.Type_TimeSpan" xml:space="preserve">
-    <value>Intervallo di tempo</value>
-  </data>
-  <data name="DataAccessStringId.ProviderNotSupportedFeatureExceptionHeader" xml:space="preserve">
-    <value>Le seguenti funzionalità di query non sono supportate dal provider attuale:</value>
-  </data>
-  <data name="DataAccessStringId.ExpressionEditor_EmptyExpression" xml:space="preserve">
-    <value>La stringa dell'espressione non può essere vuota.</value>
-  </data>
-  <data name="DataAccessStringId.WizardPageChooseJsonSource_UnknownFormat" xml:space="preserve">
-    <value>Impossibile caricare i dati perché non è possibile determinare il formato dell'URI specificato.</value>
-  </data>
-  <data name="DataAccessStringId.WizardPageChooseJsonSource_DataLocationMismatch" xml:space="preserve">
-    <value>La posizione specificata per i dati JSON non corrisponde all'origine JSON selezionata.</value>
-  </data>
-  <data name="DataAccessStringId.Federation_EmptySourceNameErrorMessage" xml:space="preserve">
-    <value>Il nome della sorgente non può essere vuoto.</value>
-  </data>
-  <data name="DataAccessStringId.SchemaDiscoveryMaxItemCountExceptionMessage" xml:space="preserve">
-    <value>Il valore deve essere maggiore o uguale a zero.</value>
-  </data>
-  <data name="DataAccessStringId.QueryBuilderNoRules" xml:space="preserve">
-    <value>Non è stata aggiunta alcuna regola. Aggiungi almeno una regola per procedere.</value>
-  </data>
-  <data name="DataAccessStringId.Federation_NodeIsNotUniqueValidationErrorMessage" xml:space="preserve">
-    <value>I nodi non ammettono duplicati: {0}.</value>
-  </data>
-  <data name="DataAccessStringId.Federation_NodeWithoutExpressionValidationErrorMessage" xml:space="preserve">
-    <value>Nodo senza espressione: {0}.</value>
+  <data name="DataAccessStringId.Federation_ExpressionNodeNullValidationErrorMessage" xml:space="preserve">
+    <value>Il nodo contiene un'espressione che non è collegata a un nodo: {0}.</value>
   </data>
   <data name="DataAccessStringId.Federation_NodeExpressionNameNullValidationErrorMessage" xml:space="preserve">
     <value>Il nodo contiene un'espressione senza nome: {0}.</value>
   </data>
-  <data name="DataAccessStringId.Federation_ExpressionNodeNullValidationErrorMessage" xml:space="preserve">
-    <value>Il nodo contiene un'espressione non collegata a un nodo: {0}.</value>
-  </data>
-  <data name="DataAccessStringId.Federation_DuplicatedExpressionNamesValidationErrorMessage" xml:space="preserve">
-    <value>Il nodo {0} contiene espressioni con nomi effettivi duplicati: {1}.</value>
-  </data>
-  <data name="DataAccessStringId.Federation_ConditionColumnMissingInTableValidationErrorMessage" xml:space="preserve">
-    <value>La colonna [{0}].[{1}] non esiste nella tabella [{0}]. Condizione: [{2}].</value>
-  </data>
-  <data name="DataAccessStringId.Federation_ExpressionColumnMissingInTableValidationErrorMessage" xml:space="preserve">
-    <value>La colonna [{0}].[{1}] non esiste nella tabella [{0}]. Espressione: [{2}].</value>
-  </data>
-  <data name="DataAccessStringId.Federation_FilterColumnMissingInTableValidationErrorMessage" xml:space="preserve">
-    <value>La colonna [{0}].[{1}] non esiste nella tabella [{0}]. Stringa di filtro: [{2}].</value>
-  </data>
-  <data name="DataAccessStringId.Federation_ColumnTableNotExistValidationErrorMessage" xml:space="preserve">
-    <value>La colonna [{0}].[{1}] non esiste nelle origini dati.</value>
-  </data>
-  <data name="DataAccessStringId.ManageQueries_CustomSqlIsNotAllowed" xml:space="preserve">
-    <value>L'esecuzione di query SQL personalizzate non è consentita.</value>
-  </data>
-  <data name="DataAccessStringId.Federation_NestedFederatedDataSourceErrorMessage" xml:space="preserve">
-    <value>Un'origine dati federata non può essere utilizzata come origine dati per un'altra origine dati federata.</value>
-  </data>
-  <data name="DataAccessStringId.DataSourceProvider_BigQuery" xml:space="preserve">
-    <value>Google BigQuery</value>
-  </data>
-  <data name="DataAccessStringId.RelationEditorRelationTypeFullOuterJoin" xml:space="preserve">
-    <value>Giunzione esterna completa</value>
-  </data>
-  <data name="DataAccessStringId.Federation_ColumnNotExistInTableValidationErrorMessage" xml:space="preserve">
-    <value>La tabella [{0}] non contiene la colonna [{1}].</value>
-  </data>
-  <data name="DataAccessStringId.Federation_TransformationNodeWithoutRuleValidationErrorMessage" xml:space="preserve">
-    <value>Nodo di trasformazione senza regola: {0}.</value>
-  </data>
-  <data name="DataAccessStringId.Federation_TransformationDuplicatedColumnNamesValidationErrorMessage" xml:space="preserve">
-    <value>Il nodo {0} contiene colonne con nomi duplicati: {1}.</value>
+  <data name="DataAccessStringId.IntegerDivisionValidationMessage" xml:space="preserve">
+    <value>Nota bene: questo motore di espressioni scarta le frazioni durante le operazioni di divisione intera. Per restituire valori decimali (divisione in virgola mobile), utilizzare ToDecimal(), ToDouble() o ToFloat() per l'espressione. Ad esempio, ToDecimal(10)/4 restituirà 2,5 mentre 10/4 restituirà 2.</value>
   </data>
   <data name="DataAccessStringId.MongoDB_QueryExecutionException" xml:space="preserve">
     <value>L'esecuzione della query {0} non è riuscita.</value>
   </data>
-  <data name="DataAccessStringId.Wizard_NoDataSourcesForDataFederationMessage" xml:space="preserve">
-    <value>Fornire almeno un'origine dati da utilizzare per creare un'origine dati federata.</value>
+  <data name="DataAccessStringId.NoColumnsValidationException" xml:space="preserve">
+    <value>Nessuna delle tabelle contiene colonne.</value>
   </data>
-  <data name="DataAccessStringId.ManageQueries_QueryIsNotValid" xml:space="preserve">
-    <value>La query '{0}' non è valida. {1}</value>
+  <data name="DataAccessStringId.ObjectDataSourceLoadingWarningMessage" xml:space="preserve">
+    <value>Il caricamento delle fonti di dati a cui si fa riferimento in questo file potrebbe danneggiare il computer. Questo file proviene da una fonte attendibile? Fare clic su "Sì" per caricare il contenuto della fonte di dati così com'è. Fare clic su "No" per caricare solo il contenuto della fonte di dati attendibile.</value>
   </data>
-  <data name="DataAccessStringId.ManageQueries_QueryIsNotValid_Postfix" xml:space="preserve">
-    <value>Correggi l'errore o rimuovi la query per procedere.</value>
+  <data name="DataAccessStringId.QueryBuilder_RowCount" xml:space="preserve">
+    <value>(Conteggio righe)</value>
+  </data>
+  <data name="DataAccessStringId.Type_ByteArray" xml:space="preserve">
+    <value>Matrice di byte</value>
+  </data>
+  <data name="DataAccessStringId.Type_TimeSpan" xml:space="preserve">
+    <value>Intervallo di tempo</value>
   </data>
 </root>

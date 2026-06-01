@@ -60,45 +60,45 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -169,7 +169,7 @@
     <value>Gradi</value>
   </data>
   <data name="lblFont.AccessibleName" xml:space="preserve">
-    <value>Carattere</value>
+    <value>Font</value>
   </data>
   <data name="lblFontDescription.AccessibleName" xml:space="preserve">
     <value>Descrizione del tipo di carattere</value>
@@ -313,7 +313,7 @@
     <value>Esempio</value>
   </data>
   <data name="lblFont.Text" xml:space="preserve">
-    <value>&amp;Carattere:</value>
+    <value>&amp;Font:</value>
   </data>
   <data name="edtVerticalAlignment.Properties.NullText" xml:space="preserve">
     <value>Fondo</value>
@@ -334,7 +334,7 @@
     <value>&amp;Apice</value>
   </data>
   <data name="btnOutline.AccessibleName" xml:space="preserve">
-    <value>Contorno</value>
+    <value>Outline</value>
   </data>
   <data name="chkJustifyDistributed.Properties.Caption" xml:space="preserve">
     <value>Giustifica distribuiti</value>
@@ -349,16 +349,31 @@
     <value>Stile P&amp;attern:</value>
   </data>
   <data name="lblOutline.AccessibleName" xml:space="preserve">
-    <value>Contorno</value>
+    <value>Outline</value>
   </data>
   <data name="lblFontStyle.Text" xml:space="preserve">
     <value>Stile f&amp;ont:</value>
   </data>
-  <data name="lblOrientation.AccessibleName" xml:space="preserve">
-    <value>Orientamento</value>
+  <data name="btnClear.Text" xml:space="preserve">
+    <value>Cancella</value>
   </data>
-  <data name="lblOrientation.Text" xml:space="preserve">
-    <value>Orientamento</value>
+  <data name="layoutControl1.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="layoutControlGroup1.Text" xml:space="preserve">
+    <value>Campione</value>
+  </data>
+  <data name="layoutControlGroup10.Text" xml:space="preserve">
+    <value>Campione</value>
+  </data>
+  <data name="layoutControlGroup3.Text" xml:space="preserve">
+    <value>Anteprima</value>
+  </data>
+  <data name="layoutControlGroup7.Text" xml:space="preserve">
+    <value>Linea</value>
+  </data>
+  <data name="lblProtection.Text" xml:space="preserve">
+    <value>Il blocco delle celle o la visualizzazione nascosta delle formule non hanno alcun effetto finché non si protegge il foglio di lavoro (scheda Revisione, gruppo Modifiche, pulsante Proteggi foglio).</value>
   </data>
   <data name="lblTextAlignment.AccessibleName" xml:space="preserve">
     <value>Allineamento del testo</value>
@@ -366,53 +381,14 @@
   <data name="lblTextAlignment.Text" xml:space="preserve">
     <value>Allineamento del testo</value>
   </data>
-  <data name="layoutControlGroup1.Text" xml:space="preserve">
-    <value>Esempio</value>
-  </data>
-  <data name="layoutControlGroup10.Text" xml:space="preserve">
-    <value>Esempio</value>
-  </data>
-  <data name="btnClear.Text" xml:space="preserve">
-    <value>Cancella</value>
-  </data>
-  <data name="layoutControlGroup3.Text" xml:space="preserve">
-    <value>Anteprima</value>
-  </data>
-  <data name="lblPreview.AccessibleName" xml:space="preserve">
-    <value>Anteprima</value>
-  </data>
-  <data name="lblPreview.Text" xml:space="preserve">
-    <value>Anteprima:</value>
+  <data name="lblTextDirection.AccessibleName" xml:space="preserve">
+    <value>Direzione del testo</value>
   </data>
   <data name="tabAlignment.Text" xml:space="preserve">
     <value>Allineamento</value>
   </data>
   <data name="tabNumber.Text" xml:space="preserve">
     <value>Numero</value>
-  </data>
-  <data name="tabFont.Text" xml:space="preserve">
-    <value>Carattere</value>
-  </data>
-  <data name="lblTextDirection.Text" xml:space="preserve">
-    <value>&amp;Indicazione del testo:</value>
-  </data>
-  <data name="lblOutline.Text" xml:space="preserve">
-    <value>&amp;Schema</value>
-  </data>
-  <data name="layoutControlGroup2.Text" xml:space="preserve">
-    <value>Editor</value>
-  </data>
-  <data name="lblProtection.Text" xml:space="preserve">
-    <value>Il blocco delle celle o la visualizzazione delle formule non hanno effetto finché non si protegge il foglio di lavoro (scheda Revisione, gruppo Modifiche, pulsante Proteggi foglio).</value>
-  </data>
-  <data name="tabFill.Text" xml:space="preserve">
-    <value>Riempire</value>
-  </data>
-  <data name="bthFillEffects.AccessibleName" xml:space="preserve">
-    <value>Effetti di riempimento</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Format cells</value>
   </data>
   <data name="tabProtection.Text" xml:space="preserve">
     <value>Protezione</value>

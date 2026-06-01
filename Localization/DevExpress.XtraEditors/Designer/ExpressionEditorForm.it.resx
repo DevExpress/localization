@@ -1,45 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -368,7 +368,7 @@ Allinea a sinistra i caratteri della stringa specificata, aggiungendo alla sinis
     <value>Esegue una congiunzione logica di due espressioni.</value>
   </data>
   <data name="CurrentRowIndex.Description" xml:space="preserve">
-    <value>Restituisce l'indice della riga di dati corrente in un'origine dati. Si noti che questo indice è basato su zero.</value>
+    <value>Restituisce l'indice della riga corrente di dati in un'origine dati. Si noti che questo indice è in base zero.</value>
   </data>
   <data name="Rnd.Description" xml:space="preserve">
     <value>Rnd()
@@ -721,126 +721,10 @@ Restituisce il valore massimo in una collezione.</value>
   <data name="&gt;&gt;buttonOK.Name" xml:space="preserve">
     <value>buttonOK</value>
   </data>
-  <data name="DateTimeFromParts7.Description" xml:space="preserve">
-    <value>DateTimeFromParts(Anno, Mese, Giorno, Ora, Minuto, Secondo, Millisecondo)
-Restituisce un valore DateTime costruito a partire da Anno, Mese, Giorno, Ora, Minuto, Secondo e Millisecondo specificati.</value>
-  </data>
-  <data name="SwitchOffset.Description" xml:space="preserve">
-    <value>SwitchOffset(DateTimeOffset, Offset)
-Restituisce un valore DateTimeOffset che viene modificato dall'offset del fuso orario memorizzato a un nuovo offset del fuso orario specificato.</value>
-  </data>
-  <data name="OutOfTimeRange.Description" xml:space="preserve">
-    <value>OutOfTimeRange(Time, FromTime, ToTime)
-Restituisce True se l'ora specificata è al di fuori dell'intervallo compreso tra gli argomenti FromTime e ToTime, inclusi i casi in cui l'intervallo include la mezzanotte.</value>
-  </data>
-  <data name="ToDateTime.Description" xml:space="preserve">
-    <value>ToDateTime(Value)
-Converte il valore in un valore DateTime equivalente.</value>
-  </data>
-  <data name="LocalDateTimeOffsetLastWeek.Description" xml:space="preserve">
-    <value>LocalDateTimeOffsetLastWeek()
-Restituisce un valore data-ora con offset di fuso orario corrispondente al primo giorno della settimana precedente.</value>
-  </data>
-  <data name="IsYearToDate.Description" xml:space="preserve">
-    <value>IsYearToDate(DateTime)
-Restituisce True se la data specificata rientra nel periodo dall'inizio dell'anno (a partire dal primo giorno dell'anno corrente e fino alla data odierna).</value>
-  </data>
-  <data name="DateOnlyFromParts3.Description" xml:space="preserve">
-    <value>DateOnlyFromParts(Anno, Mese, Giorno)
-Restituisce un valore DateOnly costruito a partire dall'anno, dal mese e dal giorno specificati.</value>
-  </data>
-  <data name="GetTime.Description" xml:space="preserve">
-    <value>GetTime(DateTime)
-Estrae un orario dal DateTime definito.</value>
-  </data>
-  <data name="ConvertToTimeZone.Description" xml:space="preserve">
-    <value>ConvertToTimeZone(DateTimeOffset, String)
-Converte un valore DateTimeOffset nel valore corrispondente nel fuso orario specificato.</value>
-  </data>
   <data name="Remove2Param.Description" xml:space="preserve">
-    <value>Remove(String, StartPosition)
-Elimina tutti i caratteri da questa istanza, a partire da una posizione specificata.</value>
+    <value>Remove(String, StartPosition) Elimina tutti i caratteri da questa istanza, a partire da una posizione specificata.</value>
   </data>
   <data name="Remove3Param.Description" xml:space="preserve">
-    <value>Rimuovi(Stringa, PosizioneIniziale, Lunghezza)
-Elimina un numero specificato di caratteri da questa istanza, a partire da una posizione specificata.</value>
-  </data>
-  <data name="InRange.Description" xml:space="preserve">
-    <value>InRange(Valore, ValoreDa, ValoreA)
-Restituisce True se il valore specificato è compreso tra gli argomenti ValoreDa e ValoreA.</value>
-  </data>
-  <data name="InDateRange.Description" xml:space="preserve">
-    <value>InDateRange(Data, DataDa, DataDiFine)
-Restituisce True se la data specificata è compresa tra gli argomenti DataDa e DataDiFine.</value>
-  </data>
-  <data name="InTimeRange.Description" xml:space="preserve">
-    <value>InTimeRange(Time, FromTime, ToTime)
-Restituisce True se l'ora specificata è compresa tra gli argomenti FromTime e ToTime, inclusi i casi in cui l'intervallo include la mezzanotte.</value>
-  </data>
-  <data name="LocalDateTimeOffsetTwoWeeksAway.Description" xml:space="preserve">
-    <value>LocalDateTimeOffsetTwoWeeksAway()
-Restituisce un valore data-ora con offset di fuso orario corrispondente al primo giorno della settimana successiva alla prossima settimana.</value>
-  </data>
-  <data name="IsSeptember.Description" xml:space="preserve">
-    <value>IsSeptember(DataOra)
-Restituisce True se la data specificata cade nel mese di settembre.</value>
-  </data>
-  <data name="DateTimeFromParts3.Description" xml:space="preserve">
-    <value>DateTimeFromParts(Anno, Mese, Giorno)
-Restituisce un valore DateTime costruito a partire dall'anno, dal mese e dal giorno specificati.</value>
-  </data>
-  <data name="DateTimeFromParts5.Description" xml:space="preserve">
-    <value>DateTimeFromParts(Anno, Mese, Giorno, Ora, Minuto)
-Restituisce un valore DateTime costruito a partire dall'anno, dal mese, dal giorno, dall'ora e dal minuto specificati.</value>
-  </data>
-  <data name="DateTimeFromParts6.Description" xml:space="preserve">
-    <value>DateTimeFromParts(Anno, Mese, Giorno, Ora, Minuto, Secondo)
-Restituisce un valore DateTime costruito a partire dall'anno, dal mese, dal giorno, dall'ora, dal minuto e dal secondo specificati.</value>
-  </data>
-  <data name="DateTimeOffsetFromParts7.Description" xml:space="preserve">
-    <value>DateTimeOffsetFromParts(Anno, Mese, Giorno, Ora, Minuto, Secondo, Offset)
-Restituisce un valore DateTimeOffset costruito a partire da Anno, Mese, Giorno, Ora, Minuto, Secondo e Offset specificati.</value>
-  </data>
-  <data name="DateTimeOffsetFromParts8.Description" xml:space="preserve">
-    <value>DateTimeOffsetFromParts(Anno, Mese, Giorno, Ora, Minuto, Secondo, Millisecondo, Offset)
-Restituisce un valore DateTimeOffset costruito a partire da Anno, Mese, Giorno, Ora, Minuto, Secondo, Millisecondo e Offset specificati.</value>
-  </data>
-  <data name="GetOffset.Description" xml:space="preserve">
-    <value>GetOffset(DateTimeOffset)
-Estrae l'offset UTC in minuti dal DateTimeOffset o dalla stringa definiti.</value>
-  </data>
-  <data name="GetOffsetTimeSpan.Description" xml:space="preserve">
-    <value>GetOffsetTimeSpan(DateTimeOffset)
-Estrae l'offset UTC come TimeSpan dal DateTimeOffset o dalla stringa definiti.</value>
-  </data>
-  <data name="GetOffsetTimeSpan2.Description" xml:space="preserve">
-    <value>GetOffsetTimeSpan(Ore, Minuti)
-Restituisce un offset UTC come intervallo di tempo costruito a partire dalle ore e dai minuti specificati.</value>
-  </data>
-  <data name="LocalDateTimeLastMonth.Description" xml:space="preserve">
-    <value>LocalDateTimeLastMonth()
-Restituisce un valore data-ora corrispondente al primo giorno del mese precedente.</value>
-  </data>
-  <data name="IsApril.Description" xml:space="preserve">
-    <value>IsApril(DataOra)
-Restituisce True se la data specificata cade nel mese di aprile.</value>
-  </data>
-  <data name="IsAugust.Description" xml:space="preserve">
-    <value>IsAugust(DataOra)
-Restituisce True se la data specificata cade nel mese di agosto.</value>
-  </data>
-  <data name="IsDecember.Description" xml:space="preserve">
-    <value>IsDecember(DataOra)
-Restituisce True se la data specificata cade nel mese di dicembre.</value>
-  </data>
-  <data name="IsFebruary.Description" xml:space="preserve">
-    <value>IsFebruary(DateTime)
-Restituisce True se la data specificata cade nel mese di febbraio.</value>
-  </data>
-  <data name="FormatRule.Caption" xml:space="preserve">
-    <value>Editor espressione regola di formattazione</value>
-  </data>
-  <data name="DisabledCellBehaviorExpression.Caption" xml:space="preserve">
-    <value>Editor di espressioni</value>
+    <value>Remove(String, StartPosition, Length) Elimina un numero specificato di caratteri da questa istanza, a partire da una posizione specificata.</value>
   </data>
 </root>

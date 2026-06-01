@@ -60,45 +60,45 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -817,7 +817,7 @@
     <value>Restituisce il tasso di interesse del prestito a tasso fisso.</value>
   </data>
   <data name="XtraSpreadsheetFunctionDescriptionStringId.DateDif" xml:space="preserve">
-    <value>Calcola il numero di giorni, mesi o anni tra due date.</value>
+    <value></value>
   </data>
   <data name="XtraSpreadsheetFunctionDescriptionStringId.Roman" xml:space="preserve">
     <value>Converte un numero arabo in un numero romano in forma di testo.</value>
@@ -1500,31 +1500,16 @@
   <data name="XtraSpreadsheetFunctionDescriptionStringId.EncodeURL" xml:space="preserve">
     <value>Restituisce una stringa con codifica URL.</value>
   </data>
-  <data name="XtraSpreadsheetFunctionDescriptionStringId.Single" xml:space="preserve">
-    <value>Riduce più valori a un singolo valore. La logica funziona nel seguente modo: se il valore è un singolo elemento, restituisce l'elemento; se il valore è un intervallo, restituisce il valore dalla cella nella stessa riga o colonna della formula; se il valore è una matrice, seleziona il valore in alto a sinistra.</value>
-  </data>
-  <data name="XtraSpreadsheetFunctionDescriptionStringId.Field" xml:space="preserve">
-    <value>Recupera un valore di dati dal campo corrispondente nell'origine dati.</value>
-  </data>
-  <data name="XtraSpreadsheetFunctionDescriptionStringId.FieldPicture" xml:space="preserve">
-    <value>Recupera un'immagine dal campo dati specificato e la inserisce in un documento unito.</value>
-  </data>
-  <data name="XtraSpreadsheetFunctionDescriptionStringId.Switch" xml:space="preserve">
-    <value>Valuta un'espressione rispetto a un elenco di valori e restituisce il risultato corrispondente al primo valore trovato. Se non viene trovata alcuna corrispondenza, viene restituito un valore predefinito facoltativo.</value>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Parameter" xml:space="preserve">
+    <value>Recupera il valore del parametro di stampa unione.</value>
   </data>
   <data name="XtraSpreadsheetFunctionDescriptionStringId.Range" xml:space="preserve">
     <value>Restituisce un intervallo di celle in cui la cella modello specificata verrà espansa nel documento risultante dopo l'esecuzione di una stampa unione.</value>
   </data>
-  <data name="XtraSpreadsheetFunctionDescriptionStringId.Sort" xml:space="preserve">
-    <value>Ordina un intervallo o un array.</value>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Single" xml:space="preserve">
+    <value>Riduce più valori a un singolo valore. La logica funziona nel seguente modo: se il valore è un singolo elemento, restituisce l'elemento; se il valore è un intervallo, restituisce il valore dalla cella nella stessa riga o colonna della formula; se il valore è una matrice, seleziona il valore in alto a sinistra.</value>
   </data>
-  <data name="XtraSpreadsheetFunctionDescriptionStringId.Ifs" xml:space="preserve">
-    <value>Controlla se una o più condizioni sono soddisfatte e restituisce un valore corrispondente alla prima condizione VERA.</value>
-  </data>
-  <data name="XtraSpreadsheetFunctionDescriptionStringId.Concat" xml:space="preserve">
-    <value>Concatena un elenco o un intervallo di stringhe di testo.</value>
-  </data>
-  <data name="XtraSpreadsheetFunctionDescriptionStringId.TextJoin" xml:space="preserve">
-    <value>Concatena un elenco o un intervallo di stringhe di testo utilizzando un delimitatore.</value>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Switch" xml:space="preserve">
+    <value>Valuta un'espressione rispetto a un elenco di valori e restituisce il risultato corrispondente al primo valore trovato. Se non viene trovata alcuna corrispondenza, viene restituito un valore predefinito facoltativo.</value>
   </data>
 </root>

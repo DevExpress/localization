@@ -9,45 +9,45 @@
 //*****************************************************************************
 -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -93,10 +93,10 @@
     <value>Dimensione</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_PaperSizeLetter" xml:space="preserve">
-    <value>Lettera</value>
+    <value>Lettera USA (21,6 x 27,9 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_PaperSizeLegal" xml:space="preserve">
-    <value>Legale</value>
+    <value>Legale USA (21,6 x 35,5 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_PaperSizeFolio" xml:space="preserve">
     <value>Folio (21,6 x 33 cm)</value>
@@ -138,13 +138,17 @@
     <value>Inserisci Didascalia</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_InsertCaptionMenuDescription" xml:space="preserve">
-    <value>Inserisci una didascalia.</value>
+    <value>Aggiunge una didascalia a una immagine.
+
+Una didascalia è una riga di teso posta sotto un oggetto per descriverlo.</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_TableOfFiguresMenu" xml:space="preserve">
     <value>Inserisci Indice delle Figure</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_TableOfFiguresMenuDescription" xml:space="preserve">
-    <value>Inserisci un elenco di figure, tabelle o equazioni.</value>
+    <value>Inserisce un Indice delle Figure nel documento.
+
+Un Indice delle Figure contiene l'elenco di tutte le figure, tabelle o equazioni presenti nel documento.</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_TableStyleOptions" xml:space="preserve">
     <value>Opzioni stile tabella</value>
@@ -550,7 +554,7 @@ Il testo viene disposto automaticamente attorno all'oggetto.</value>
     <value>Speciale</value>
   </data>
   <data name="DxBlazorRichEditStringId.ParagraphDialog_By" xml:space="preserve">
-    <value>Da</value>
+    <value>By</value>
   </data>
   <data name="DxBlazorRichEditStringId.ParagraphDialog_FirstLine" xml:space="preserve">
     <value>Prima linea</value>
@@ -568,7 +572,7 @@ Il testo viene disposto automaticamente attorno all'oggetto.</value>
     <value>Interlinea</value>
   </data>
   <data name="DxBlazorRichEditStringId.ParagraphDialog_At" xml:space="preserve">
-    <value>A</value>
+    <value>At</value>
   </data>
   <data name="DxBlazorRichEditStringId.ParagraphDialog_After" xml:space="preserve">
     <value>Dopo</value>
@@ -580,7 +584,7 @@ Il testo viene disposto automaticamente attorno all'oggetto.</value>
     <value>Doppia</value>
   </data>
   <data name="DxBlazorRichEditStringId.ParagraphDialog_Multiple" xml:space="preserve">
-    <value>Multiplo</value>
+    <value>Multiple</value>
   </data>
   <data name="DxBlazorRichEditStringId.ParagraphDialog_Exactly" xml:space="preserve">
     <value>Esattamente</value>
@@ -661,7 +665,7 @@ Il testo viene disposto automaticamente attorno all'oggetto.</value>
     <value>Segni di uguale</value>
   </data>
   <data name="DxBlazorRichEditStringId.TabsDialog_Dots" xml:space="preserve">
-    <value>Punti</value>
+    <value>Dots</value>
   </data>
   <data name="DxBlazorRichEditStringId.TabsDialog_Underline" xml:space="preserve">
     <value>Sottolineato</value>
@@ -714,7 +718,7 @@ Ctrl + X (taglia), Ctrl + C (copia) e Ctrl + V (incolla).</value>
     <value>Stampa</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_PrintDocumentDescription" xml:space="preserve">
-    <value>Stampa il documento.</value>
+    <value>Consente di selezionare una stampante, il numero di copie e altre opzioni di stampa prima di stampare.</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_ShapeFill" xml:space="preserve">
     <value>Riempimento Forma</value>
@@ -858,7 +862,7 @@ Ctrl + X (taglia), Ctrl + C (copia) e Ctrl + V (incolla).</value>
     <value>Porta Dietro al Testo</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_SendBehindTextDescription" xml:space="preserve">
-    <value> </value>
+    <value>Invia la forma selezionata dietro al testo.</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_GoToPageHeader" xml:space="preserve">
     <value>Vai all'Intestazione</value>
@@ -915,7 +919,7 @@ Ctrl + X (taglia), Ctrl + C (copia) e Ctrl + V (incolla).</value>
     <value>Specificare la distanza dalla parte inferiore della pagina verso il basso del piè di pagina.</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_ClosePageHeaderFooter" xml:space="preserve">
-    <value>Chiudi intestazione e piè di pagina</value>
+    <value>Chiudi Intestazione e Piè di Pagina</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_ClosePageHeaderFooterDescription" xml:space="preserve">
     <value>Chiude lo strumento di modifica dell'intestazione e del piè di pagina.
@@ -926,7 +930,7 @@ Si può anche fare doppio click nell'area del documento per tornare alla modific
     <value>Annulla</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_UndoDescription" xml:space="preserve">
-    <value>Annulla l’ultima operazione.</value>
+    <value>Annulla</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_Redo" xml:space="preserve">
     <value>Ripeti</value>
@@ -1106,7 +1110,9 @@ Si può anche fare doppio click nell'area del documento per tornare alla modific
     <value>Giustifica</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_ParagraphAlignmentJustifyDescription" xml:space="preserve">
-    <value>Allineare il paragrafo ai margini sinistro e destro.</value>
+    <value>Allinea il testo sia al margine sinistro che al margine destro, aggiungendo lo spazio necessario tra le parole.
+
+In questo modo si ottiene una distribuzione uniforme del testo tra i lati sinistro e destro della pagina.</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_AddSpacingBeforeParagraph" xml:space="preserve">
     <value>Aggiungi Spazio Prima del Paragrafo</value>
@@ -1139,7 +1145,7 @@ Si può anche fare doppio click nell'area del documento per tornare alla modific
     <value>Tabella</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_TableDescription" xml:space="preserve">
-    <value>Inserisci una tabella.</value>
+    <value>Consente di inserire o disegnare una tabella nel documento.</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_InlinePicture" xml:space="preserve">
     <value>Immagine in linea</value>
@@ -1151,7 +1157,9 @@ Si può anche fare doppio click nell'area del documento per tornare alla modific
     <value>Segnalibro</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_BookmarkDescription" xml:space="preserve">
-    <value>Crea un segnalibro.</value>
+    <value>Crea un segnalibro per assegnare un nome a un punto specifico di un documento.
+
+È possibile effettuare collegamenti ipertestuali che rimandano direttamente ad una posizione di un segnalibro.</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_Hyperlink" xml:space="preserve">
     <value>Collegamento</value>
@@ -1317,7 +1325,9 @@ Il contenuto del piè di pagina apparirà in fondo ad ogni pagina stampata.</val
     <value>Sommario</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_TableOfContentsDescription" xml:space="preserve">
-    <value>Inserisci un indice.</value>
+    <value>Aggiunge un Sommario al documento.
+
+Dopo aver aggiunto un Sommario, fare click su "Aggiungi Testo" per aggiungere voci al sommario.</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_UpdateTableOfContents" xml:space="preserve">
     <value>Aggiorna Sommario</value>
@@ -1359,19 +1369,25 @@ Il contenuto del piè di pagina apparirà in fondo ad ogni pagina stampata.</val
     <value>Indice delle figure</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_TableOfFiguresDescription" xml:space="preserve">
-    <value>Inserisci un elenco di figure.</value>
+    <value>Inserisce un Indice delle Figure nel documento.
+
+Un Indice delle Figure contiene l'elenco di tutte le figure presenti nel documento.</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_TableOfTables" xml:space="preserve">
     <value>Indice delle Tabelle</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_TableOfTablesDescription" xml:space="preserve">
-    <value>Inserisci un elenco di tabelle.</value>
+    <value>Inserisce un Indice delle Tabelle nel documento.
+
+Un Indice delle Tabelle contiene l'elenco di tutte le tabelle presenti nel documento.</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_TableOfEquations" xml:space="preserve">
     <value>Indice delle Equazioni</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_TableOfEquationsDescription" xml:space="preserve">
-    <value>Inserisci un elenco di equazioni.</value>
+    <value>Inserisce un Indice delle Equazioni nel documento.
+
+Un Indice delle Equazioni contiene l'elenco di tutte le equazioni presenti nel documento.</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_HeaderRow" xml:space="preserve">
     <value>Riga di intestazione</value>
@@ -1642,7 +1658,9 @@ Questa fascia può facilitare tavoli lettura.</value>
     <value>Visualizzazione Semplificata</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_SimpleViewDescription" xml:space="preserve">
-    <value>Visualizza il documento come un semplice promemoria.</value>
+    <value>Visualizza il documento come un semplice memo.
+
+Questa visualizzazione ignora il layout di pagina per attirare l'attenzione sulla modifica del testo.</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_PrintLayout" xml:space="preserve">
     <value>Layout di Stampa</value>
@@ -1726,7 +1744,7 @@ Questa fascia può facilitare tavoli lettura.</value>
     <value>Opzioni stile tabella</value>
   </data>
   <data name="DxBlazorRichEditStringId.BordersAndShadingsGroup" xml:space="preserve">
-    <value>Bordi &amp; ombreggiature</value>
+    <value>Confini  sfumature</value>
   </data>
   <data name="DxBlazorRichEditStringId.LayoutTab" xml:space="preserve">
     <value>Layout</value>
@@ -1879,10 +1897,10 @@ Questa fascia può facilitare tavoli lettura.</value>
     <value>Personalizzata</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_Letter" xml:space="preserve">
-    <value>Lettera</value>
+    <value>Lettera USA (21,6 x 27,9 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_LetterSmall" xml:space="preserve">
-    <value>Lettera piccola</value>
+    <value>Lettera USA Ridotta (21,6 x 27,9 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_Tabloid" xml:space="preserve">
     <value>Tabloid (27,9 x 43,2 cm)</value>
@@ -1891,7 +1909,7 @@ Questa fascia può facilitare tavoli lettura.</value>
     <value>Ledger (43,1 x 27,9 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_Legal" xml:space="preserve">
-    <value>Legale</value>
+    <value>Legale USA (21,6 x 35,5 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_Statement" xml:space="preserve">
     <value>Statement (13,9 x 21,5 cm)</value>
@@ -1930,22 +1948,22 @@ Questa fascia può facilitare tavoli lettura.</value>
     <value>Standard (27,9 x 43,2 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_Note" xml:space="preserve">
-    <value>Nota</value>
+    <value>Nota (21,6 x 27,9 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_Number9Envelope" xml:space="preserve">
-    <value>Busta numero 9</value>
+    <value>Busta n. 9 (9,8 x 22,5 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_Number10Envelope" xml:space="preserve">
-    <value>Busta numero 10</value>
+    <value>Busta n. 10 (10,4 x 24,1 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_Number11Envelope" xml:space="preserve">
-    <value>Busta numero 11</value>
+    <value>Busta n. 11 (11,4 x 26,3 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_Number12Envelope" xml:space="preserve">
-    <value>Busta numero 12</value>
+    <value>Busta n. 12 (12 x 27,9 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_Number14Envelope" xml:space="preserve">
-    <value>Busta numero 14</value>
+    <value>Busta n. 14 (12,7 x 29,2 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_CSheet" xml:space="preserve">
     <value>C (43,1 x 55,8 cm)</value>
@@ -1993,7 +2011,7 @@ Questa fascia può facilitare tavoli lettura.</value>
     <value>Busta 6 3/4 (9,2 x 16,5 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_USStandardFanfold" xml:space="preserve">
-    <value>Modulo continuo standard USA</value>
+    <value>Modulo Continuo Standard USA (37,8 x 27,9 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_GermanStandardFanfold" xml:space="preserve">
     <value>Modulo Continuo Standard Tedesco (21,6 x 30,4 cm)</value>
@@ -2020,10 +2038,10 @@ Questa fascia può facilitare tavoli lettura.</value>
     <value>Busta Invito (220 x 220 mm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_LetterExtra" xml:space="preserve">
-    <value>Formato Letter extra</value>
+    <value>Lettera USA Extra (23,5 x 30,5 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_LegalExtra" xml:space="preserve">
-    <value>Formato legale extra</value>
+    <value>Legale USA Extra (23,5 x 38,1 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_TabloidExtra" xml:space="preserve">
     <value>Tabloid extra (29,7 x 45,7 cm)</value>
@@ -2032,13 +2050,13 @@ Questa fascia può facilitare tavoli lettura.</value>
     <value>A4 Extra (23,6 x 32,2 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_LetterTransverse" xml:space="preserve">
-    <value>Formato Letter trasversale</value>
+    <value>Lettera USA Orizzontale (21 x 27,9 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_A4Transverse" xml:space="preserve">
     <value>A4 Orizzontale (21 x 29,7 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_LetterExtraTransverse" xml:space="preserve">
-    <value>Letter Extra Transverse</value>
+    <value>Lettera USA Extra Orizzontale (23,5 x 30,5 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_APlus" xml:space="preserve">
     <value>SuperA/SuperA/A4 (22,7 x 35,6 cm)</value>
@@ -2047,7 +2065,7 @@ Questa fascia può facilitare tavoli lettura.</value>
     <value>SuperB/SuperB/A3 (30,5 x 48,7 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_LetterPlus" xml:space="preserve">
-    <value>Lettera Plus</value>
+    <value>Lettera USA Plus (21,6 x 32,2 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_A4Plus" xml:space="preserve">
     <value>A4 Plus (21 x 33 cm)</value>
@@ -2095,7 +2113,7 @@ Questa fascia può facilitare tavoli lettura.</value>
     <value>Busta Giapponese Chou 4</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_LetterRotated" xml:space="preserve">
-    <value>Lettera ruotata</value>
+    <value>Lettera USA Ruotata (27,9 x 21,6 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_A3Rotated" xml:space="preserve">
     <value>A3 Ruotato (42 x 29,7 cm)</value>
@@ -2119,7 +2137,7 @@ Questa fascia può facilitare tavoli lettura.</value>
     <value>Cartolina Giapponese Doppia Ruotata (14,8 x 20 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_A6Rotated" xml:space="preserve">
-    <value>A6 Ruotato (14,8 x 10,5 cm)</value>
+    <value>A6 Ruotato (14,8 x 10,5 cm).</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_JapaneseEnvelopeKakuNumber2Rotated" xml:space="preserve">
     <value>Busta Giapponese Kaku 2 Ruotata</value>
@@ -2149,13 +2167,13 @@ Questa fascia può facilitare tavoli lettura.</value>
     <value>Busta Giapponese You 4 Ruotata</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_Prc16K" xml:space="preserve">
-    <value>PRC 16K</value>
+    <value>16K della Repubblica Popolare Cinese (14,6 x 21,5 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_Prc32K" xml:space="preserve">
-    <value>Formato PRC 32K</value>
+    <value>32K della Repubblica Popolare Cinese (9,7 x 15,1 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_Prc32KBig" xml:space="preserve">
-    <value>Formato PRC 32K grande</value>
+    <value>32K Grande della Repubblica Popolare Cinese (9,7 x 15,1 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_PrcEnvelopeNumber1" xml:space="preserve">
     <value>Busta n.1 della Repubblica Popolare Cinese (10,2 x 16,5 cm)</value>
@@ -2188,13 +2206,13 @@ Questa fascia può facilitare tavoli lettura.</value>
     <value>Busta n.10 della Repubblica Popolare Cinese (32,4 x 45,8 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_Prc16KRotated" xml:space="preserve">
-    <value>Formato PRC 16K ruotato</value>
+    <value>16K Ruotato della Repubblica Popolare Cinese (21,5 x 14,6 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_Prc32KRotated" xml:space="preserve">
-    <value>Formato PRC 32K ruotato</value>
+    <value>32K Ruotato della Repubblica Popolare Cinese (15,1 x 9,7 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_Prc32KBigRotated" xml:space="preserve">
-    <value>Formato PRC 32K grande ruotato</value>
+    <value>32K Grande Ruotato della Repubblica Popolare Cinese (15,1 x 9,7 cm)</value>
   </data>
   <data name="DxBlazorRichEditStringId.PageSetupDialog_PaperKind_PrcEnvelopeNumber1Rotated" xml:space="preserve">
     <value>Busta n.1 Ruotata della Repubblica Popolare Cinese (16,5 x 10,2 cm)</value>
@@ -2367,32 +2385,167 @@ Questa fascia può facilitare tavoli lettura.</value>
   <data name="DxBlazorRichEditStringId.A11y_InsertMergeFieldDialog_FilterPanel" xml:space="preserve">
     <value>Filtro</value>
   </data>
-  <data name="DxBlazorRichEditStringId.ZoomGroup" xml:space="preserve">
-    <value>Zoom</value>
+  <data name="DxBlazorRichEditStringId.A11y_MailMergeDialog_RangeSettingGroup" xml:space="preserve">
+    <value>Gruppo impostazioni intervallo</value>
   </data>
-  <data name="DxBlazorRichEditStringId.Command_ChangeZoomLevel" xml:space="preserve">
-    <value>Zoom</value>
+  <data name="DxBlazorRichEditStringId.A11y_RichEdit" xml:space="preserve">
+    <value>Editor di testo avanzato</value>
   </data>
-  <data name="DxBlazorRichEditStringId.Command_TimeField" xml:space="preserve">
-    <value>TEMPO</value>
+  <data name="DxBlazorRichEditStringId.Announcement_Blank" xml:space="preserve">
+    <value>vuoto</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Announcement_Bullet" xml:space="preserve">
+    <value>punto elenco</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Announcement_CarriageReturn" xml:space="preserve">
+    <value>a capo</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Announcement_InTable" xml:space="preserve">
+    <value>tabella con {0} righe e {1} colonne</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Announcement_LineBreak" xml:space="preserve">
+    <value>interruzione di riga</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Announcement_Link" xml:space="preserve">
+    <value>link</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Announcement_ListItem" xml:space="preserve">
+    <value>elemento elenco livello {0} {1}</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Announcement_OutOfLink" xml:space="preserve">
+    <value>fuori dal collegamento</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Announcement_OutOfTable" xml:space="preserve">
+    <value>fuori dalla tabella</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Announcement_Page" xml:space="preserve">
+    <value>pagina {0}</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Announcement_PageBreak" xml:space="preserve">
+    <value>interruzione di pagina</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Announcement_Picture" xml:space="preserve">
+    <value>grafica {0}</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Announcement_SelectAll" xml:space="preserve">
+    <value>seleziona tutto</value>
   </data>
   <data name="DxBlazorRichEditStringId.Announcement_Space" xml:space="preserve">
     <value>spazio</value>
   </data>
-  <data name="DxBlazorRichEditStringId.Command_TableStyles" xml:space="preserve">
-    <value>Stili tabella</value>
+  <data name="DxBlazorRichEditStringId.Announcement_Tab" xml:space="preserve">
+    <value>tabulazione</value>
   </data>
-  <data name="DxBlazorRichEditStringId.TableStylesGroup" xml:space="preserve">
-    <value>Stili tabella</value>
+  <data name="DxBlazorRichEditStringId.Announcement_TableColumn" xml:space="preserve">
+    <value>colonna {0}</value>
   </data>
-  <data name="DxBlazorRichEditStringId.ParagraphStyle_Heading1" xml:space="preserve">
-    <value>Intestazione 1</value>
+  <data name="DxBlazorRichEditStringId.Announcement_TableRow" xml:space="preserve">
+    <value>riga {0}</value>
   </data>
-  <data name="DxBlazorRichEditStringId.ParagraphStyle_Heading2" xml:space="preserve">
-    <value>Intestazione 2</value>
+  <data name="DxBlazorRichEditStringId.Announcement_TextSelected" xml:space="preserve">
+    <value>{0} selezionato</value>
   </data>
-  <data name="DxBlazorRichEditStringId.ParagraphStyle_ListParagraph" xml:space="preserve">
-    <value>Paragrafo elenco</value>
+  <data name="DxBlazorRichEditStringId.Announcement_TextUnselected" xml:space="preserve">
+    <value>{0} non selezionato</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.AutoFitGroup" xml:space="preserve">
+    <value>Adattamento automatico</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_AlignParagraph" xml:space="preserve">
+    <value>Allinea il paragrafo</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_AlignParagraphDescription" xml:space="preserve">
+    <value>Allinea il paragrafo</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_AutoFit" xml:space="preserve">
+    <value>Adattamento automatico</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_AutoFitContents" xml:space="preserve">
+    <value>Adatta al contenuto</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_AutoFitDescription" xml:space="preserve">
+    <value>Modifica l'adattamento automatico.</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_AutoFitFixedColumnWidth" xml:space="preserve">
+    <value>Larghezza della colonna fissa</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_AutoFitWindow" xml:space="preserve">
+    <value>Adattamento automatico finestra</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_ChangeZoomLevel" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_ChangeZoomLevelDescription" xml:space="preserve">
+    <value>Modifica il livello di zoom.</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_DateField" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_DateFieldDescription" xml:space="preserve">
+    <value>Inserisce la data corrente.</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_DocVariableField" xml:space="preserve">
+    <value>DOCVARIABLE</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_DocVariableFieldDescription" xml:space="preserve">
+    <value>Inserisce un valore assegnato a una variabile del documento.</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_DownloadDocx" xml:space="preserve">
+    <value>Documento word (*.docx)</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_DownloadDocxDescription" xml:space="preserve">
+    <value>Documento word (*.docx)</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_DownloadHtml" xml:space="preserve">
+    <value>Documento Html (*.html)</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_DownloadHtmlDescription" xml:space="preserve">
+    <value>Documento Html (*.html)</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_DownloadRtf" xml:space="preserve">
+    <value>Formato RTF (*.rtf)</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_DownloadRtfDescription" xml:space="preserve">
+    <value>Formato RTF (*.rtf)</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_DownloadTxt" xml:space="preserve">
+    <value>Testo normale (*.txt)</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_DownloadTxtDescription" xml:space="preserve">
+    <value>Testo normale (*.txt)</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_FindDescription" xml:space="preserve">
+    <value>Trova testo nel documento</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_FullScreenDescription" xml:space="preserve">
+    <value>Visualizza l'editor in modalità a schermo intero.</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_IfField" xml:space="preserve">
+    <value>IF</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_IfFieldDescription" xml:space="preserve">
+    <value>Confronta due valori e inserisce un testo in base al risultato del confronto.</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_MergeField" xml:space="preserve">
+    <value>MERGEFIELD</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_MergeFieldDescription" xml:space="preserve">
+    <value>Recupera un valore dall'origine dati associata.</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_NoSpellingSuggestions" xml:space="preserve">
+    <value>Nessun suggerimento</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_NumpagesField" xml:space="preserve">
+    <value>NUMPAGES</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_NumpagesFieldDescription" xml:space="preserve">
+    <value>Inserisce il numero totale di pagine.</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_PageField" xml:space="preserve">
+    <value>Pagina</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_PageFieldDescription" xml:space="preserve">
+    <value>Inserisce il numero di pagina.</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_ParagraphHeading3Level" xml:space="preserve">
     <value>Livello 3</value>
@@ -2415,110 +2568,245 @@ Questa fascia può facilitare tavoli lettura.</value>
   <data name="DxBlazorRichEditStringId.Command_ParagraphHeading9Level" xml:space="preserve">
     <value>Livello 9</value>
   </data>
-  <data name="DxBlazorRichEditStringId.Announcement_TextSelected" xml:space="preserve">
-    <value>{0} selezionato</value>
+  <data name="DxBlazorRichEditStringId.Command_ParagraphStylesDescription" xml:space="preserve">
+    <value>Modificare lo stile del paragrafo.</value>
   </data>
-  <data name="DxBlazorRichEditStringId.Command_DownloadHtml" xml:space="preserve">
-    <value>Documento HTML (*.html)</value>
+  <data name="DxBlazorRichEditStringId.Command_ReplaceDescription" xml:space="preserve">
+    <value>Sostituire il testo nel documento</value>
   </data>
-  <data name="DxBlazorRichEditStringId.Command_DownloadHtmlDescription" xml:space="preserve">
-    <value>Documento HTML (*.html)</value>
+  <data name="DxBlazorRichEditStringId.Command_SplitCellsDescription" xml:space="preserve">
+    <value>Divide le celle selezionate in più celle.</value>
   </data>
-  <data name="DxBlazorRichEditStringId.Command_IfField" xml:space="preserve">
-    <value>SE</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Announcement_SelectAll" xml:space="preserve">
-    <value>seleziona tutto</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Announcement_TextUnselected" xml:space="preserve">
-    <value>{0} non selezionato</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.HyperlinkDialog_InvalidURL" xml:space="preserve">
-    <value>URL non valido.</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable1LightAccent1" xml:space="preserve">
-    <value>Tabella griglia 1 chiaro accento 1</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable1LightAccent2" xml:space="preserve">
-    <value>Tabella griglia 1 chiaro accento 2</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable1LightAccent3" xml:space="preserve">
-    <value>Tabella griglia 1 chiaro accento 3</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable1LightAccent4" xml:space="preserve">
-    <value>Tabella griglia 1 chiaro accento 4</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable1LightAccent5" xml:space="preserve">
-    <value>Tabella griglia 1 chiaro accento 5</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable1LightAccent6" xml:space="preserve">
-    <value>Tabella griglia 1 chiaro accento 6</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Announcement_Link" xml:space="preserve">
-    <value>link</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Announcement_Blank" xml:space="preserve">
-    <value>vuoto</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Command_DownloadDocx" xml:space="preserve">
-    <value>Documento Word (*.docx)</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Command_DownloadDocxDescription" xml:space="preserve">
-    <value>Documento Word (*.docx)</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Command_AlignParagraph" xml:space="preserve">
-    <value>Allinea il paragrafo</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Command_AlignParagraphDescription" xml:space="preserve">
-    <value>Allinea il paragrafo</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Command_AutoFit" xml:space="preserve">
-    <value>Adatta automaticamente</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Command_AutoFitDescription" xml:space="preserve">
-    <value>Modifica l'adattamento automatico.</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Command_AutoFitContents" xml:space="preserve">
-    <value>Adatta automaticamente ai contenuti</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Command_AutoFitWindow" xml:space="preserve">
-    <value>Adatta automaticamente alla finestra</value>
+  <data name="DxBlazorRichEditStringId.Command_TableStyles" xml:space="preserve">
+    <value>Stili di tabella</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_TableStylesDescription" xml:space="preserve">
-    <value>Modifica lo stile della tabella.</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.AutoFitGroup" xml:space="preserve">
-    <value>Adatta automaticamente</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.FontDialog_SmallCaps" xml:space="preserve">
-    <value>Maiuscolo</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TabsDialog_OutOfBoundTabStop" xml:space="preserve">
-    <value>Il valore deve essere compreso tra -22" e 22"</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Command_ParagraphStylesDescription" xml:space="preserve">
-    <value>Modifica lo stile del paragrafo.</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Command_ChangeZoomLevelDescription" xml:space="preserve">
-    <value>Modifica il livello di zoom.</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Announcement_TableColumn" xml:space="preserve">
-    <value>colonna {0}</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Announcement_Bullet" xml:space="preserve">
-    <value>proiettile</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Announcement_CarriageReturn" xml:space="preserve">
-    <value>ritorno in carrozza</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.UndoClipboardGroup" xml:space="preserve">
-    <value>Annulla/Appunti</value>
+    <value>Modificare lo stile della tabella.</value>
   </data>
   <data name="DxBlazorRichEditStringId.Command_TextWrapInline" xml:space="preserve">
     <value>In linea con il testo</value>
   </data>
+  <data name="DxBlazorRichEditStringId.Command_TextWrapInlineDescription" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_TimeField" xml:space="preserve">
+    <value>Tempo</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.Command_TimeFieldDescription" xml:space="preserve">
+    <value>Inserisce l'ora corrente.</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.FindAndReplaceDialog_ExpandCollapseReplaceSection" xml:space="preserve">
+    <value>Espandi o comprimi la sezione Sostituisci</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.FindAndReplaceDialog_Next" xml:space="preserve">
+    <value>Prossima partita</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.FindAndReplaceDialog_Previous" xml:space="preserve">
+    <value>Corrispondenza precedente</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.FindAndReplaceDialog_Title" xml:space="preserve">
+    <value>Ricerca rapida</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.FontDialog_SmallCaps" xml:space="preserve">
+    <value>Maiuscoletto</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.HyperlinkDialog_InvalidURL" xml:space="preserve">
+    <value>URL non valido.</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.MailMergeDialog_DocumentFormat" xml:space="preserve">
+    <value>Formato di documento</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.MailMergeDialog_MergeMode" xml:space="preserve">
+    <value>Modalità di unione</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.MethodIsNotAccessible" xml:space="preserve">
+    <value>Il metodo {0} non è accessibile nella transazione.</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.ParagraphDialog_lines" xml:space="preserve">
+    <value>righe</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.ParagraphStyle_Heading1" xml:space="preserve">
+    <value>Titolo 1</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.ParagraphStyle_Heading2" xml:space="preserve">
+    <value>Titolo 2</value>
+  </data>
   <data name="DxBlazorRichEditStringId.ParagraphStyle_IntenseQuote" xml:space="preserve">
     <value>Citazione intensa</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.ParagraphStyle_ListParagraph" xml:space="preserve">
+    <value>Paragrafo elenco</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.ParagraphStyle_NoSpacing" xml:space="preserve">
+    <value>Nessuno spazio</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.ParagraphStyle_Quote" xml:space="preserve">
+    <value>Citazione</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.ParagraphStyle_Subtitle" xml:space="preserve">
+    <value>Sottotitoli</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.PathDoesNotExist" xml:space="preserve">
+    <value>Il percorso '{0}' non esiste.</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.PropertyIsNotAccessible" xml:space="preserve">
+    <value>La proprietà {0} non è accessibile nella transazione.</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.SplashScreen_Loading" xml:space="preserve">
+    <value>Caricamento</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable1Light" xml:space="preserve">
+    <value>Tabella griglia 1 chiara</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable1LightAccent1" xml:space="preserve">
+    <value>Tabella griglia 1 chiara - Accento 1</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable1LightAccent2" xml:space="preserve">
+    <value>Tabella griglia 1 chiara - Accento 2</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable1LightAccent3" xml:space="preserve">
+    <value>Tabella griglia 1 chiara - Accento 3</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable1LightAccent4" xml:space="preserve">
+    <value>Tabella griglia 1 chiara - Accento 4</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable1LightAccent5" xml:space="preserve">
+    <value>Tabella griglia 1 chiara - Accento 5</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable1LightAccent6" xml:space="preserve">
+    <value>Tabella griglia 1 chiara - Accento 6</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable2" xml:space="preserve">
+    <value>Tabella griglia 2</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable2Accent1" xml:space="preserve">
+    <value>Tabella griglia 2 - Accento 1</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable2Accent2" xml:space="preserve">
+    <value>Tabella griglia 2 - Accento 2</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable2Accent3" xml:space="preserve">
+    <value>Tabella griglia 2 - Accento 3</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable2Accent4" xml:space="preserve">
+    <value>Tabella griglia 2 - Accento 4</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable2Accent5" xml:space="preserve">
+    <value>Tabella griglia 2 - Accento 5</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable2Accent6" xml:space="preserve">
+    <value>Tabella griglia 2 - Accento 6</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable3" xml:space="preserve">
+    <value>Tabella griglia 3</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable3Accent1" xml:space="preserve">
+    <value>Tabella griglia 3 - Accento 1</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable3Accent2" xml:space="preserve">
+    <value>Tabella griglia 3 - Accento 2</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable3Accent3" xml:space="preserve">
+    <value>Tabella griglia 3 - Accento 3</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable3Accent4" xml:space="preserve">
+    <value>Tabella griglia 3 - Accento 4</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable3Accent5" xml:space="preserve">
+    <value>Tabella griglia 3 - Accento 5</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable3Accent6" xml:space="preserve">
+    <value>Tabella griglia 3 - Accento 6</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable4" xml:space="preserve">
+    <value>Tabella griglia 4</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable4Accent1" xml:space="preserve">
+    <value>Tabella griglia 4 - Accento 1</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable4Accent2" xml:space="preserve">
+    <value>Tabella griglia 4 - Accento 2</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable4Accent3" xml:space="preserve">
+    <value>Tabella griglia 4 - Accento 3</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable4Accent4" xml:space="preserve">
+    <value>Tabella griglia 4 - Accento 4</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable4Accent5" xml:space="preserve">
+    <value>Tabella griglia 4 - Accento 5</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable4Accent6" xml:space="preserve">
+    <value>Tabella griglia 4 - Accento 6</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable5Dark" xml:space="preserve">
+    <value>Tabella griglia 5 scura</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable5DarkAccent1" xml:space="preserve">
+    <value>Tabella griglia 5 scura - Accento 1</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable5DarkAccent2" xml:space="preserve">
+    <value>Tabella griglia 5 scura - Accento 2</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable5DarkAccent3" xml:space="preserve">
+    <value>Tabella griglia 5 scura - Accento 3</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable5DarkAccent4" xml:space="preserve">
+    <value>Tabella griglia 5 scura - Accento 4</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable5DarkAccent5" xml:space="preserve">
+    <value>Tabella griglia 5 scura - Accento 5</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable5DarkAccent6" xml:space="preserve">
+    <value>Tabella griglia 5 scura - Accento 6</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable6Colorful" xml:space="preserve">
+    <value>Tabella griglia 6 colorata</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable6ColorfulAccent1" xml:space="preserve">
+    <value>Tabella griglia 6 colorata - Accento 1</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable6ColorfulAccent2" xml:space="preserve">
+    <value>Tabella griglia 6 colorata - Accento 2</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable6ColorfulAccent3" xml:space="preserve">
+    <value>Tabella griglia 6 colorata - Accento 3</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable6ColorfulAccent4" xml:space="preserve">
+    <value>Tabella griglia 6 colorata - Accento 4</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable6ColorfulAccent5" xml:space="preserve">
+    <value>Tabella griglia 6 colorata - Accento 5</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable6ColorfulAccent6" xml:space="preserve">
+    <value>Tabella griglia 6 colorata - Accento 6</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable7Colorful" xml:space="preserve">
+    <value>Tabella griglia 7 colorata</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable7ColorfulAccent1" xml:space="preserve">
+    <value>Tabella griglia 7 colorata - Accento 1</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable7ColorfulAccent2" xml:space="preserve">
+    <value>Tabella griglia 7 colorata - Accento 2</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable7ColorfulAccent3" xml:space="preserve">
+    <value>Tabella griglia 7 colorata - Accento 3</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable7ColorfulAccent4" xml:space="preserve">
+    <value>Tabella griglia 7 colorata - Accento 4</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable7ColorfulAccent5" xml:space="preserve">
+    <value>Tabella griglia 7 colorata - Accento 5</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTable7ColorfulAccent6" xml:space="preserve">
+    <value>Tabella griglia 7 colorata - Accento 6</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_GridTableLight" xml:space="preserve">
+    <value>Tabella griglia chiara</value>
+  </data>
+  <data name="DxBlazorRichEditStringId.TableStyle_NormalTable" xml:space="preserve">
+    <value>Tabella normale</value>
   </data>
   <data name="DxBlazorRichEditStringId.TableStyle_PlainTable1" xml:space="preserve">
     <value>Tabella semplice 1</value>
@@ -2535,199 +2823,19 @@ Questa fascia può facilitare tavoli lettura.</value>
   <data name="DxBlazorRichEditStringId.TableStyle_PlainTable5" xml:space="preserve">
     <value>Tabella semplice 5</value>
   </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable2" xml:space="preserve">
-    <value>Tabella griglia 2</value>
+  <data name="DxBlazorRichEditStringId.TableStylesGroup" xml:space="preserve">
+    <value>Stili di tabella</value>
   </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable3" xml:space="preserve">
-    <value>Tabella griglia 3</value>
+  <data name="DxBlazorRichEditStringId.TabsDialog_InvalidTabStop" xml:space="preserve">
+    <value>Formato non valido / Deve essere un numero</value>
   </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable4" xml:space="preserve">
-    <value>Tabella griglia 4</value>
+  <data name="DxBlazorRichEditStringId.TabsDialog_OutOfBoundTabStop" xml:space="preserve">
+    <value>Il valore deve essere compreso tra -22" e 22"</value>
   </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable2Accent1" xml:space="preserve">
-    <value>Tabella griglia 2 Accento 1</value>
+  <data name="DxBlazorRichEditStringId.UndoClipboardGroup" xml:space="preserve">
+    <value>Annulla/Appunti</value>
   </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable3Accent1" xml:space="preserve">
-    <value>Tabella griglia 3 Accento 1</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable4Accent1" xml:space="preserve">
-    <value>Tabella griglia 4 Accento 1</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable2Accent2" xml:space="preserve">
-    <value>Tabella griglia 2 Accento 2</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable3Accent2" xml:space="preserve">
-    <value>Tabella griglia 3 Accento 2</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable4Accent2" xml:space="preserve">
-    <value>Tabella griglia 4 Accento 2</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable2Accent3" xml:space="preserve">
-    <value>Tabella griglia 2 Accento 3</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable3Accent3" xml:space="preserve">
-    <value>Tabella griglia 3 Accento 3</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable4Accent3" xml:space="preserve">
-    <value>Tabella griglia 4 Accento 3</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable2Accent4" xml:space="preserve">
-    <value>Tabella griglia 2 Accento 4</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable3Accent4" xml:space="preserve">
-    <value>Tabella griglia 3 Accento 4</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable4Accent4" xml:space="preserve">
-    <value>Tabella griglia 4 Accento 4</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable2Accent5" xml:space="preserve">
-    <value>Tabella griglia 2 Accento 5</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable3Accent5" xml:space="preserve">
-    <value>Tabella griglia 3 Accento 5</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable4Accent5" xml:space="preserve">
-    <value>Tabella griglia 4 Accento 5</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable2Accent6" xml:space="preserve">
-    <value>Tabella griglia 2 Accento 6</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable3Accent6" xml:space="preserve">
-    <value>Tabella griglia 3 Accento 6</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable4Accent6" xml:space="preserve">
-    <value>Tabella griglia 4 Accento </value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Announcement_Page" xml:space="preserve">
-    <value>pagina {0}</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.FindAndReplaceDialog_Next" xml:space="preserve">
-    <value>Prossima partita</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.FindAndReplaceDialog_ExpandCollapseReplaceSection" xml:space="preserve">
-    <value>Espandi o comprimi la sezione sostituisci</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.MailMergeDialog_DocumentFormat" xml:space="preserve">
-    <value>Formato del documento</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.ParagraphStyle_NoSpacing" xml:space="preserve">
-    <value>Nessuno spazio</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_NormalTable" xml:space="preserve">
-    <value>Tabella normale</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Command_DateField" xml:space="preserve">
-    <value>DATA</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Command_DocVariableField" xml:space="preserve">
-    <value>DOCVARIABILE</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Command_IfFieldDescription" xml:space="preserve">
-    <value>Confronta due valori e inserisce un testo correlato al risultato del confronto.</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Command_FullScreenDescription" xml:space="preserve">
-    <value>Visualizza l'editor in modalità a schermo intero.</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Command_NoSpellingSuggestions" xml:space="preserve">
-    <value>Nessun suggerimento</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable1Light" xml:space="preserve">
-    <value>Griglia Tabella 1 Luce</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable5Dark" xml:space="preserve">
-    <value>Griglia Tabella 5 Scuro</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable6Colorful" xml:space="preserve">
-    <value>Tabella a griglia 6 colorata</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable7Colorful" xml:space="preserve">
-    <value>Tabella a griglia 7 colorata</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable5DarkAccent1" xml:space="preserve">
-    <value>Tabella a griglia 5 Accenti scuri 1</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable6ColorfulAccent1" xml:space="preserve">
-    <value>Tabella a griglia 6 Accenti colorati 1</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable7ColorfulAccent1" xml:space="preserve">
-    <value>Tabella a griglia 7 Accenti colorati 1</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable5DarkAccent2" xml:space="preserve">
-    <value>Tabella a griglia 5 Accenti scuri 2</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable6ColorfulAccent2" xml:space="preserve">
-    <value>Tabella a griglia 6 Accenti colorati 2</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable7ColorfulAccent2" xml:space="preserve">
-    <value>Tabella a griglia 7 Accenti colorati 2</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable5DarkAccent3" xml:space="preserve">
-    <value>Tabella a griglia 5 Accenti scuri 3</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable6ColorfulAccent3" xml:space="preserve">
-    <value>Tabella a griglia 6 Accenti colorati 3</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable7ColorfulAccent3" xml:space="preserve">
-    <value>Tabella a griglia 7 Accenti colorati 3</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable5DarkAccent4" xml:space="preserve">
-    <value>Tabella a griglia 5 Accenti scuri 4</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable6ColorfulAccent4" xml:space="preserve">
-    <value>Tabella a griglia 6 Accenti colorati 4</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable7ColorfulAccent4" xml:space="preserve">
-    <value>Tabella a griglia 7 Accenti colorati 4</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable5DarkAccent5" xml:space="preserve">
-    <value>Tabella a griglia 5 Accenti scuri 5</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable6ColorfulAccent5" xml:space="preserve">
-    <value>Tabella a griglia 6 Accenti colorati 5</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable7ColorfulAccent5" xml:space="preserve">
-    <value>Tabella a griglia 7 Accenti colorati 5</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable5DarkAccent6" xml:space="preserve">
-    <value>Tabella a griglia 5 Accenti scuri 6</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable6ColorfulAccent6" xml:space="preserve">
-    <value>Tabella a griglia 6 Accenti colorati 6</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.TableStyle_GridTable7ColorfulAccent6" xml:space="preserve">
-    <value>Tabella a griglia 7 Accenti colorati 6</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Announcement_Picture" xml:space="preserve">
-    <value>grafica {0}</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Command_AutoFitFixedColumnWidth" xml:space="preserve">
-    <value>Larghezza della colonna esterna</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.FindAndReplaceDialog_Title" xml:space="preserve">
-    <value>Ricerca rapida</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.PathDoesNotExist" xml:space="preserve">
-    <value>Il percorso '{0}' non esiste.</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.PropertyIsNotAccessible" xml:space="preserve">
-    <value>La proprietà {0} non è accessibile nella transazione.</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.MethodIsNotAccessible" xml:space="preserve">
-    <value>Il metodo {0} non è accessibile nella transazione.</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Command_FindDescription" xml:space="preserve">
-    <value>Trova il testo nel documento</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.ParagraphStyle_Subtitle" xml:space="preserve">
-    <value>Sottotitolo</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.ParagraphStyle_Quote" xml:space="preserve">
-    <value>Citazione</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Announcement_InTable" xml:space="preserve">
-    <value>tabella con {0} righe e {1} colonne</value>
-  </data>
-  <data name="DxBlazorRichEditStringId.Announcement_Tab" xml:space="preserve">
-    <value>scheda</value>
+  <data name="DxBlazorRichEditStringId.ZoomGroup" xml:space="preserve">
+    <value>Zoom</value>
   </data>
 </root>

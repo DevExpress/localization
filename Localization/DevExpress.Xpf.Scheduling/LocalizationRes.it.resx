@@ -60,45 +60,45 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -313,7 +313,7 @@
     <value>Diminuire le risorse visibili totali</value>
   </data>
   <data name="SchedulerStringId.Caption_EmptyResource" xml:space="preserve">
-    <value>(Qualsiasi)</value>
+    <value>(Any)</value>
   </data>
   <data name="SchedulerStringId.Caption_Free" xml:space="preserve">
     <value>Gratis</value>
@@ -933,37 +933,7 @@
   <data name="SchedulerStringId.Appointment_End" xml:space="preserve">
     <value>Fine</value>
   </data>
-  <data name="SchedulerStringId.Caption_TimeScaleSeconds" xml:space="preserve">
-    <value>{0} secondi</value>
-  </data>
-  <data name="SchedulerStringId.Caption_TimeScaleDays" xml:space="preserve">
-    <value>{0} giorni</value>
-  </data>
-  <data name="SchedulerStringId.Caption_TimeScaleHours" xml:space="preserve">
-    <value>{0} ore</value>
-  </data>
-  <data name="SchedulerStringId.Caption_TimeScaleMilliseconds" xml:space="preserve">
-    <value>{0} millisecondi</value>
-  </data>
-  <data name="SchedulerStringId.Caption_TimeScaleMonths" xml:space="preserve">
-    <value>{0} mesi</value>
-  </data>
-  <data name="SchedulerStringId.Caption_TimeScaleQuarters" xml:space="preserve">
-    <value>{0} quarti</value>
-  </data>
-  <data name="SchedulerStringId.Caption_TimeScaleWeeks" xml:space="preserve">
-    <value>{0} settimane</value>
-  </data>
-  <data name="SchedulerStringId.Caption_TimeScaleYears" xml:space="preserve">
-    <value>{0} anni</value>
-  </data>
-  <data name="SchedulerStringId.Caption_AgendaView" xml:space="preserve">
-    <value>Visualizzazione dell'agenda</value>
-  </data>
-  <data name="SchedulerStringId.MenuCmd_ShowWorkDaysOnly" xml:space="preserve">
-    <value>Giorni lavorativi</value>
-  </data>
-  <data name="SchedulerStringId.DescCmd_CopyAppointment" xml:space="preserve">
-    <value>Copia l'appuntamento/gli appuntamenti selezionati.</value>
+  <data name="SchedulerStringId.DisplayFormat_TimeScaleQuarter" xml:space="preserve">
+    <value>Q{0}</value>
   </data>
 </root>

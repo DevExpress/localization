@@ -1,5 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -7,202 +112,49 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="DevExpress.DataAccess.DataSourceParameterBase.Name.Description" xml:space="preserve">
-    <value>Specifica il nome del parametro.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Sql.SelectQuery.GroupFilterString.Description" xml:space="preserve">
-    <value>Specifica i criteri di filtro da aggiungere alla SelectQuery corrente contenente colonne raggruppate/aggregate.</value>
-  </data>
-  <data name="DevExpress.DataAccess.DataFederation.FederationDataSource.Relations.Description" xml:space="preserve">
-    <value>Fornisce l'accesso alla raccolta di oggetti FederationMasterDetailInfo che definiscono le relazioni master-detail.</value>
-  </data>
-  <data name="DevExpress.DataAccess.EntityFramework.DBSetFilter.Parameters.Description" xml:space="preserve">
-    <value>Consente l'accesso alla raccolta di parametri passati a una stored procedure da un'origine dati di Entity Framework.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Sql.CustomSqlQuery.Sql.Description" xml:space="preserve">
-    <value>Specifica la stringa di query personalizzata.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Excel.ExcelWorksheetSettings.WorksheetIndex.Description" xml:space="preserve">
-    <value>Consente di associare un'applicazione o un componente a un foglio di un file Excel tramite indice.</value>
-  </data>
-  <data name="DevExpress.DataAccess.ConnectionParameters.BigQueryConnectionParameters.AuthorizationType.Description" xml:space="preserve">
-    <value>Ottiene o imposta il tipo di autorizzazione utilizzato per stabilire una connessione ai dati.</value>
-  </data>
-  <data name="DevExpress.DataAccess.ConnectionParameters.BigQueryConnectionParameters.Dsn.Description" xml:space="preserve">
-    <value>Specifica il nome utilizzato per richiedere una connessione a un'origine dati ODBC.</value>
-  </data>
-  <data name="DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.PortNumber.Description" xml:space="preserve">
-    <value>Specifica il numero di porta per la connessione ai database di FireBird.</value>
-  </data>
-  <data name="DevExpress.DataAccess.ConnectionParameters.HanaConnectionParameters.PortNumber.Description" xml:space="preserve">
-    <value>Specifica il numero di porta per la connessione ai database SAP HANA.</value>
-  </data>
-  <data name="DevExpress.DataAccess.ConnectionParameters.MongoDBConnectionParameters.Hostname.Description" xml:space="preserve">
-    <value>Specifica il nome host di un'istanza MongoDB.</value>
-  </data>
-  <data name="DevExpress.DataAccess.ConnectionParameters.MongoDBConnectionParameters.IsSRVRecord.Description" xml:space="preserve">
-    <value>Specifica se la proprietà MongoDBConnectionParameters.Hostname contiene un record SRV.</value>
-  </data>
-  <data name="DevExpress.DataAccess.ConnectionParameters.MongoDBConnectionParameters.Port.Description" xml:space="preserve">
-    <value>Specifica la porta su cui un'istanza di MongoDB è in ascolto.</value>
-  </data>
-  <data name="DevExpress.DataAccess.ConnectionParameters.MsSqlConnectionParameters.AuthorizationType.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare la modalità di autenticazione di Microsoft SQL Server.</value>
-  </data>
-  <data name="DevExpress.DataAccess.ConnectionParameters.MySqlConnectionParameters.PortNumber.Description" xml:space="preserve">
-    <value>Specifica il numero di porta per la connessione ai database MySQL.</value>
-  </data>
-  <data name="DevExpress.DataAccess.ConnectionParameters.MySqlConnectionParameters.SslMode.Description" xml:space="preserve">
-    <value>Specifica lo stato di sicurezza della connessione al server.</value>
-  </data>
-  <data name="DevExpress.DataAccess.ConnectionParameters.PostgreSqlConnectionParameters.PortNumber.Description" xml:space="preserve">
-    <value>Specifica il numero di porta per la connessione ai database PostgreSQL.</value>
-  </data>
-  <data name="DevExpress.DataAccess.ConnectionParameters.TeradataConnectionParameters.PortNumber.Description" xml:space="preserve">
-    <value>Specifica il numero di porta per la connessione ai database Teradata.</value>
-  </data>
-  <data name="DevExpress.DataAccess.DataSourceParameterBase.Type.Description" xml:space="preserve">
-    <value>Specifies the parameter type.</value>
-  </data>
-  <data name="DevExpress.DataAccess.DataSourceParameterBase.Value.Description" xml:space="preserve">
-    <value>Specifies the parameter value.</value>
-  </data>
-  <data name="DevExpress.DataAccess.EntityFramework.EFConnectionParameters.ConnectionStringName.Description" xml:space="preserve">
-    <value>Specifica il nome di una stringa di connessione utilizzata da un'origine dati di Entity Framework.</value>
-  </data>
-  <data name="DevExpress.DataAccess.EntityFramework.EFConnectionParameters.Source.Description" xml:space="preserve">
-    <value>Specifica il tipo di contesto di database Entity Framework utilizzato per connettersi ai dati.</value>
-  </data>
-  <data name="DevExpress.DataAccess.EntityFramework.EFDataSource.Connection.Description" xml:space="preserve">
-    <value>Specifica la connessione per un EFDataSource.</value>
-  </data>
-  <data name="DevExpress.DataAccess.EntityFramework.EFDataSource.ConnectionName.Description" xml:space="preserve">
-    <value>Specifica il nome di una connessione dati di Entity Framework.</value>
-  </data>
-  <data name="DevExpress.DataAccess.EntityFramework.EFStoredProcedureInfo.Name.Description" xml:space="preserve">
-    <value>Specifica il nome della stored procedure.</value>
-  </data>
-  <data name="DevExpress.DataAccess.EntityFramework.EFStoredProcedureInfo.Parameters.Description" xml:space="preserve">
-    <value>Specifica i parametri della stored procedure.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Excel.CsvSourceOptions.CellRange.Description" xml:space="preserve">
-    <value>Ottiene o imposta l'intervallo di celle da cui vengono importati i dati.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Excel.CsvSourceOptions.Culture.Description" xml:space="preserve">
-    <value>Ottiene o imposta le informazioni sulla cultura utilizzate per analizzare i dati importati.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Excel.CsvSourceOptions.Encoding.Description" xml:space="preserve">
-    <value>Ottiene o imposta la codifica dei caratteri del documento CSV.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Excel.CsvSourceOptions.NewlineType.Description" xml:space="preserve">
-    <value>Ottiene o imposta il carattere utilizzato per identificare una nuova riga in un documento CSV.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Excel.CsvSourceOptions.TextQualifier.Description" xml:space="preserve">
-    <value>Recupera o imposta il carattere che racchiude i valori nel documento CSV.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Excel.ExcelDefinedNameSettings.DefinedName.Description" xml:space="preserve">
-    <value>Ottiene o imposta il nome definito che fa riferimento all'intervallo di celle richiesto.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Excel.ExcelSourceOptions.ImportSettings.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare le impostazioni utilizzate per importare i dati dalla cartella di lavoro di Microsoft Excel.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Excel.ExcelWorksheetSettings.CellRange.Description" xml:space="preserve">
-    <value>Ottiene o imposta l'intervallo di celle da cui vengono importati i dati.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Json.JsonDataSource.ConnectionName.Description" xml:space="preserve">
-    <value>Specifica il nome della connessione che JsonDataSource utilizza per ottenere i parametri di autenticazione o di query.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Json.JsonDataSource.SchemaDiscoveryMaxItemCount.Description" xml:space="preserve">
-    <value>Specifica quanti elementi della sorgente dati analizzare a ciascun livello per costruire lo schema.</value>
-  </data>
-  <data name="DevExpress.DataAccess.MongoDB.MongoDBDataSourceBase.SchemaDiscoveryMaxItemCount.Description" xml:space="preserve">
-    <value>Specifica il numero di elementi della collezione MongoDB utilizzati per creare lo schema dell'origine dati.</value>
-  </data>
-  <data name="DevExpress.DataAccess.MongoDB.MongoDBQuery.Schema.Description" xml:space="preserve">
-    <value>Specifica lo schema della query MongoDB.</value>
-  </data>
-  <data name="DevExpress.DataAccess.ObjectBinding.ObjectDataSource.Constructor.Description" xml:space="preserve">
-    <value>Specifica un oggetto che consente a un ObjectDataSource di accedere ai parametri del costruttore.</value>
-  </data>
-  <data name="DevExpress.DataAccess.ObjectBinding.ObjectDataSource.DataMember.Description" xml:space="preserve">
-    <value>Specifica il membro dati di un'origine dati oggetto.</value>
-  </data>
-  <data name="DevExpress.DataAccess.ObjectBinding.ObjectDataSource.DataSource.Description" xml:space="preserve">
-    <value>Specifica l'origine dati dell'oggetto, che può essere un'istanza di oggetto specifica o un tipo.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Sql.ConnectionOptions.CloseConnection.Description" xml:space="preserve">
-    <value>Specifica se una connessione dati debba essere chiusa o meno dopo l'esecuzione di una query.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Sql.ConnectionOptions.DbCommandTimeout.Description" xml:space="preserve">
-    <value>Specifica il tempo di attesa (in secondi) prima di interrompere il tentativo di esecuzione di una query e generare un errore.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Sql.ConnectionOptions.IsolationLevel.Description" xml:space="preserve">
-    <value>Specifica il livello di isolamento per tutte le query, le stored procedure e le altre operazioni eseguite per la connessione specificata.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Sql.SelectQuery.Distinct.Description" xml:space="preserve">
-    <value>Specifica se il set di risultati di una query debba includere o meno valori duplicati.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Sql.SelectQuery.FilterString.Description" xml:space="preserve">
-    <value>Specifica i criteri utilizzati per filtrare i dati restituiti dalla SelectQuery corrente.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Sql.SelectQuery.Skip.Description" xml:space="preserve">
-    <value>Specifica il numero di righe da saltare nel set di risultati della query restituito.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Sql.SelectQuery.Top.Description" xml:space="preserve">
-    <value>Specifica il numero di righe restituite nel set di risultati della query.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Sql.SqlDataSource.ConnectionName.Description" xml:space="preserve">
-    <value>Specifica il nome di una connessione dati nel file App.config.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Sql.SqlDataSource.ConnectionParameters.Description" xml:space="preserve">
-    <value>Specifica le impostazioni di connessione dati di SqlDataSource.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Sql.SqlQuery.IsolationLevel.Description" xml:space="preserve">
-    <value>Specifica il livello di isolamento per SqlQuery.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Sql.SqlQuery.Name.Description" xml:space="preserve">
-    <value>Specifica il nome della query.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Sql.StoredProcQuery.StoredProcName.Description" xml:space="preserve">
-    <value>Specifica la stored procedure da utilizzare nella query.</value>
-  </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.Access97ConnectionParameters.UserName.Description" xml:space="preserve">
-    <value>Recupera o imposta il nome utente utilizzato per l'autenticazione al database.</value>
+    <value>Ottiene o imposta il nome utente utilizzato per l'autenticazione al database.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.AdvantageConnectionParameters.ServerType.Description" xml:space="preserve">
     <value>Ottiene o imposta il tipo di server Advantage.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.AdvantageConnectionParameters.UserName.Description" xml:space="preserve">
-    <value>Recupera o imposta il nome utente utilizzato per l'autenticazione al database.</value>
+    <value>Ottiene o imposta il nome utente utilizzato per l'autenticazione al database.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.AsaConnectionParameters.ConnectionType.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare il tipo di connessione a un database SAP SQL Anywhere.</value>
+    <value>Ottiene o imposta il tipo di connessione a un database SAP SQL Anywhere.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.AsaConnectionParameters.DatabaseName.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare il nome del database distribuito su un server di database SAP SQL Anywhere.</value>
+    <value>Ottiene o imposta il nome del database distribuito su un server SAP SQL Anywhere.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.AsaConnectionParameters.FileName.Description" xml:space="preserve">
-    <value>Ottiene o imposta il percorso del file del database.</value>
+    <value>Ottiene o imposta il percorso del file di database.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.AsaConnectionParameters.Hostname.Description" xml:space="preserve">
-    <value>Ottiene o imposta il nome host del server SAP SQL Anywhere a cui deve essere stabilita la connessione.</value>
+    <value>Ottiene o imposta il nome host del server SAP SQL Anywhere a cui stabilire la connessione.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.AsaConnectionParameters.Password.Description" xml:space="preserve">
-    <value>Consente di recuperare o impostare la password utilizzata per l'autenticazione al server SAP SQL Anywhere.</value>
+    <value>Ottiene o imposta la password utilizzata per l'autenticazione al server SAP SQL Anywhere.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.AsaConnectionParameters.ServerName.Description" xml:space="preserve">
-    <value>Ottiene o imposta il nome del server SAP SQL Anywhere a cui deve essere stabilita la connessione.</value>
+    <value>Ottiene o imposta il nome del server SAP SQL Anywhere a cui stabilire la connessione.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.AsaConnectionParameters.UserName.Description" xml:space="preserve">
     <value>Ottiene o imposta il nome utente utilizzato per l'autenticazione al server SAP SQL Anywhere.</value>
   </data>
+  <data name="DevExpress.DataAccess.ConnectionParameters.BigQueryConnectionParameters.AuthorizationType.Description" xml:space="preserve">
+    <value>Ottiene o imposta il tipo di autorizzazione utilizzato per stabilire la connessione ai dati.</value>
+  </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.BigQueryConnectionParameters.DataSetID.Description" xml:space="preserve">
-    <value>Ottiene o imposta l'ID del dataset che contiene le tabelle richieste.</value>
+    <value>Ottiene o imposta l’ID del set di dati che contiene le tabelle richieste.</value>
+  </data>
+  <data name="DevExpress.DataAccess.ConnectionParameters.BigQueryConnectionParameters.Dsn.Description" xml:space="preserve">
+    <value>Specifica il nome utilizzato per richiedere una connessione a un'origine dati ODBC.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.BigQueryConnectionParameters.OAuthClientID.Description" xml:space="preserve">
     <value>Ottiene o imposta un identificatore client.</value>
@@ -217,10 +169,10 @@
     <value>Ottiene o imposta il percorso del file della chiave privata P12.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.BigQueryConnectionParameters.ProjectID.Description" xml:space="preserve">
-    <value>Ottiene o imposta l'ID del progetto che contiene i dati richiesti.</value>
+    <value>Ottiene o imposta l’ID del progetto che contiene i dati richiesti.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.BigQueryConnectionParameters.ServiceAccountEmail.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare l'indirizzo email dell'account di servizio.</value>
+    <value>Ottiene o imposta l’indirizzo e-mail dell’account di servizio.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.CustomStringConnectionParameters.ConnectionString.Description" xml:space="preserve">
     <value>Ottiene o imposta una stringa di connessione.</value>
@@ -229,10 +181,13 @@
     <value>Ottiene o imposta il percorso di un file di database.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.FileConnectionParametersBase.Password.Description" xml:space="preserve">
-    <value>Recupera o imposta la password utilizzata per accedere al file del database.</value>
+    <value>Ottiene o imposta la password per accedere al file di database.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.ClientLibrary.Description" xml:space="preserve">
-    <value>Ottiene o imposta il percorso di una libreria client di Firebird 3.0 o versioni successive.</value>
+    <value>Ottiene o imposta il percorso di una libreria client Firebird 3.0+.</value>
+  </data>
+  <data name="DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.ConnectionType.Description" xml:space="preserve">
+    <value>Ottiene o imposta se connettersi a un server di database o a un database incorporato.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.DatabaseName.Description" xml:space="preserve">
     <value>Ottiene o imposta il nome del database che contiene i dati richiesti.</value>
@@ -243,86 +198,134 @@
   <data name="DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.Password.Description" xml:space="preserve">
     <value>Ottiene o imposta la password utilizzata per l'autenticazione.</value>
   </data>
+  <data name="DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.PortNumber.Description" xml:space="preserve">
+    <value>Specifica il numero di porta per la connessione ai database Firebird.</value>
+  </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.ServerName.Description" xml:space="preserve">
-    <value>Ottiene o imposta il nome del server Firebird al quale deve essere stabilita la connessione.</value>
+    <value>Ottiene o imposta il nome del server Firebird a cui stabilire la connessione.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.UserName.Description" xml:space="preserve">
     <value>Ottiene o imposta il nome utente utilizzato per l'autenticazione.</value>
   </data>
+  <data name="DevExpress.DataAccess.ConnectionParameters.HanaConnectionParameters.PortNumber.Description" xml:space="preserve">
+    <value>Specifica il numero di porta per la connessione ai database SAP HANA.</value>
+  </data>
+  <data name="DevExpress.DataAccess.ConnectionParameters.MongoDBConnectionParameters.AuthenticationInfo.Description" xml:space="preserve">
+    <value>Memorizza le informazioni di autenticazione per un'istanza MongoDB.</value>
+  </data>
+  <data name="DevExpress.DataAccess.ConnectionParameters.MongoDBConnectionParameters.Hostname.Description" xml:space="preserve">
+    <value>Specifica il nome host di un'istanza MongoDB.</value>
+  </data>
+  <data name="DevExpress.DataAccess.ConnectionParameters.MongoDBConnectionParameters.IsSRVRecord.Description" xml:space="preserve">
+    <value>Specifica se la proprietà MongoDBConnectionParameters.Hostname contiene un record SRV.</value>
+  </data>
+  <data name="DevExpress.DataAccess.ConnectionParameters.MongoDBConnectionParameters.Port.Description" xml:space="preserve">
+    <value>Specifica la porta su cui è in esecuzione un'istanza MongoDB.</value>
+  </data>
+  <data name="DevExpress.DataAccess.ConnectionParameters.MongoDBCustomConnectionParameters.ConnectionString.Description" xml:space="preserve">
+    <value>Memorizza una stringa di connessione MongoDB.</value>
+  </data>
+  <data name="DevExpress.DataAccess.ConnectionParameters.MsSqlConnectionParameters.AuthorizationType.Description" xml:space="preserve">
+    <value>Ottiene o imposta la modalità di autenticazione di Microsoft SQL Server.</value>
+  </data>
+  <data name="DevExpress.DataAccess.ConnectionParameters.MySqlConnectionParameters.PortNumber.Description" xml:space="preserve">
+    <value>Specifica il numero di porta per la connessione ai database MySQL.</value>
+  </data>
+  <data name="DevExpress.DataAccess.ConnectionParameters.MySqlConnectionParameters.SslMode.Description" xml:space="preserve">
+    <value>Specifica lo stato di sicurezza della connessione al server.</value>
+  </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.OracleConnectionParameters.Password.Description" xml:space="preserve">
-    <value>Consente di recuperare o impostare la password utilizzata per l'autenticazione a un server Oracle.</value>
+    <value>Ottiene o imposta la password utilizzata per l'autenticazione al server Oracle.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.OracleConnectionParameters.ProviderType.Description" xml:space="preserve">
-    <value>Ottiene o imposta il tipo di provider gestito o non gestito utilizzato per creare una connessione al database.</value>
+    <value>Ottiene o imposta il tipo di provider (gestito o non gestito) utilizzato per creare la connessione al database.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.OracleConnectionParameters.ServerName.Description" xml:space="preserve">
-    <value>Ottiene o imposta il nome del server Oracle al quale deve essere stabilita la connessione.</value>
+    <value>Ottiene o imposta il nome del server Oracle a cui stabilire la connessione.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.OracleConnectionParameters.UserName.Description" xml:space="preserve">
     <value>Ottiene o imposta il nome utente utilizzato per l'autenticazione al server Oracle.</value>
+  </data>
+  <data name="DevExpress.DataAccess.ConnectionParameters.PostgreSqlConnectionParameters.PortNumber.Description" xml:space="preserve">
+    <value>Specifica il numero di porta per la connessione ai database PostgreSQL.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.DatabaseName.Description" xml:space="preserve">
     <value>Ottiene o imposta il nome del database che contiene i dati richiesti.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.Password.Description" xml:space="preserve">
-    <value>Recupera o imposta la password utilizzata per l'autenticazione a un server SQL.</value>
+    <value>Ottiene o imposta la password utilizzata per l'autenticazione al server SQL.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.ServerName.Description" xml:space="preserve">
-    <value>Ottiene o imposta il nome del server SQL a cui deve essere stabilita la connessione.</value>
+    <value>Ottiene o imposta il nome del server SQL a cui stabilire la connessione.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.SqlServerConnectionParametersBase.UserName.Description" xml:space="preserve">
-    <value>Recupera o imposta il nome utente utilizzato per l'autenticazione al server SQL.</value>
+    <value>Ottiene o imposta il nome utente utilizzato per l'autenticazione al server SQL.</value>
+  </data>
+  <data name="DevExpress.DataAccess.ConnectionParameters.TeradataConnectionParameters.PortNumber.Description" xml:space="preserve">
+    <value>Specifica il numero di porta per la connessione ai database Teradata.</value>
   </data>
   <data name="DevExpress.DataAccess.ConnectionParameters.XmlFileConnectionParameters.FileName.Description" xml:space="preserve">
     <value>Ottiene o imposta il percorso di un file XML.</value>
   </data>
+  <data name="DevExpress.DataAccess.DataFederation.FederationDataSource.Relations.Description" xml:space="preserve">
+    <value>Fornisce accesso alla raccolta di oggetti FederationMasterDetailInfo che definiscono le relazioni master-dettaglio.</value>
+  </data>
+  <data name="DevExpress.DataAccess.DataFederation.FederationDataSourceBase.Queries.Description" xml:space="preserve">
+    <value>Fornisce accesso alle query federate contenute nell'origine dati.</value>
+  </data>
   <data name="DevExpress.DataAccess.DataFederation.QueryNode.Alias.Description" xml:space="preserve">
     <value>Ottiene o imposta l'alias del nodo di query.</value>
   </data>
+  <data name="DevExpress.DataAccess.DataSourceParameterBase.Name.Description" xml:space="preserve">
+    <value>Specifica il nome del parametro.</value>
+  </data>
+  <data name="DevExpress.DataAccess.DataSourceParameterBase.Type.Description" xml:space="preserve">
+    <value>Specifica il tipo del parametro.</value>
+  </data>
+  <data name="DevExpress.DataAccess.DataSourceParameterBase.Value.Description" xml:space="preserve">
+    <value>Specifica il valore del parametro.</value>
+  </data>
+  <data name="DevExpress.DataAccess.EntityFramework.DBSetFilter.Parameters.Description" xml:space="preserve">
+    <value>Fornisce accesso alla raccolta di parametri passati a una stored procedure da un'origine dati Entity Framework.</value>
+  </data>
+  <data name="DevExpress.DataAccess.EntityFramework.EFConnectionParameters.ConnectionString.Description" xml:space="preserve">
+    <value>Specifica la stringa di connessione utilizzata da un'origine dati Entity Framework per stabilire la connessione ai dati.</value>
+  </data>
+  <data name="DevExpress.DataAccess.EntityFramework.EFConnectionParameters.ConnectionStringName.Description" xml:space="preserve">
+    <value>Specifica il nome della stringa di connessione utilizzata da un'origine dati Entity Framework.</value>
+  </data>
   <data name="DevExpress.DataAccess.EntityFramework.EFConnectionParameters.CustomAssemblyPath.Description" xml:space="preserve">
-    <value>Ottiene o imposta il percorso dell'assembly esterno contenente il modello Entity Framework.</value>
+    <value>Ottiene o imposta il percorso dell'assembly esterno che contiene il modello Entity Framework.</value>
   </data>
   <data name="DevExpress.DataAccess.EntityFramework.EFConnectionParameters.CustomContextName.Description" xml:space="preserve">
-    <value>Ottiene o imposta il nome del contesto di Entity Framework.</value>
+    <value>Ottiene o imposta il nome del contesto Entity Framework.</value>
   </data>
-  <data name="DevExpress.DataAccess.Excel.CsvSourceOptions.ValueSeparator.Description" xml:space="preserve">
-    <value>Ottiene o imposta un carattere utilizzato per separare i valori in un documento CSV.</value>
+  <data name="DevExpress.DataAccess.EntityFramework.EFConnectionParameters.Source.Description" xml:space="preserve">
+    <value>Specifica il tipo di contesto di database Entity Framework utilizzato per connettersi ai dati.</value>
   </data>
-  <data name="DevExpress.DataAccess.Excel.ExcelDataSource.FileName.Description" xml:space="preserve">
-    <value>Ottiene o imposta il percorso della cartella di lavoro di Microsoft Excel o del file CSV.</value>
+  <data name="DevExpress.DataAccess.EntityFramework.EFDataSource.Connection.Description" xml:space="preserve">
+    <value>Specifica la connessione per un EFDataSource.</value>
   </data>
-  <data name="DevExpress.DataAccess.Excel.ExcelDataSource.SourceOptions.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare le opzioni utilizzate per estrarre dati da cartelle di lavoro di Microsoft Excel (file XLS, XLSX o XLSM) o da file CSV.</value>
+  <data name="DevExpress.DataAccess.EntityFramework.EFDataSource.ConnectionName.Description" xml:space="preserve">
+    <value>Specifica il nome di una connessione dati di Entity Framework.</value>
   </data>
-  <data name="DevExpress.DataAccess.Excel.ExcelDefinedNameSettings.Scope.Description" xml:space="preserve">
-    <value>Ottiene o imposta il nome dell'ambito contenente il nome definito richiesto.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Excel.ExcelSourceOptions.Password.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare la password utilizzata per accedere alla cartella di lavoro protetta.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Excel.ExcelTableSettings.TableName.Description" xml:space="preserve">
-    <value>Ottiene o imposta il nome della tabella da cui vengono importati i dati.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Excel.ExcelWorksheetSettings.WorksheetName.Description" xml:space="preserve">
-    <value>Ottiene o imposta il nome del foglio di lavoro da cui vengono importati i dati.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Json.CustomJsonSource.Json.Description" xml:space="preserve">
-    <value>Ottiene o imposta una stringa contenente dati JSON.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Json.JsonDataSource.JsonSource.Description" xml:space="preserve">
-    <value>Ottiene o imposta un oggetto che memorizza le impostazioni di importazione dei dati JSON.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Json.JsonDataSource.RootElement.Description" xml:space="preserve">
-    <value>Ottiene o imposta il nome dell'elemento radice nell'origine dati associata.</value>
-  </data>
-  <data name="DevExpress.DataAccess.Json.UriJsonSource.Uri.Description" xml:space="preserve">
-    <value>Ottiene o imposta l'oggetto System.Uri che punta a un URI o a un file di testo contenente dati JSON.</value>
-  </data>
-  <data name="DevExpress.DataAccess.ConnectionParameters.FireBirdConnectionParameters.ConnectionType.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare se connettersi a un server di database o a un database incorporato.</value>
+  <data name="DevExpress.DataAccess.EntityFramework.EFDataSource.Filters.Description" xml:space="preserve">
+    <value>Consente l'accesso alla raccolta di filtri per le origini dati di Entity Framework.</value>
   </data>
   <data name="DevExpress.DataAccess.EntityFramework.EFDataSource.StoredProcedures.Description" xml:space="preserve">
     <value>Recupera la raccolta di stored procedure fornite da un EFDataSource.</value>
+  </data>
+  <data name="DevExpress.DataAccess.EntityFramework.EFStoredProcedureInfo.Name.Description" xml:space="preserve">
+    <value>Specifica il nome della stored procedure.</value>
+  </data>
+  <data name="DevExpress.DataAccess.EntityFramework.EFStoredProcedureInfo.Parameters.Description" xml:space="preserve">
+    <value>Specifica i parametri della stored procedure.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Excel.CsvSourceOptions.CellRange.Description" xml:space="preserve">
+    <value>Ottiene o imposta l'intervallo di celle da cui importare i dati.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Excel.CsvSourceOptions.Culture.Description" xml:space="preserve">
+    <value>Ottiene o imposta le informazioni sulla cultura utilizzate per analizzare i dati importati.</value>
   </data>
   <data name="DevExpress.DataAccess.Excel.CsvSourceOptions.DetectEncoding.Description" xml:space="preserve">
     <value>Consente di ottenere o impostare se la codifica dei caratteri viene determinata automaticamente.</value>
@@ -333,47 +336,98 @@
   <data name="DevExpress.DataAccess.Excel.CsvSourceOptions.DetectValueSeparator.Description" xml:space="preserve">
     <value>Consente di ottenere o impostare se un carattere utilizzato per separare i valori in un documento CSV viene determinato automaticamente.</value>
   </data>
+  <data name="DevExpress.DataAccess.Excel.CsvSourceOptions.Encoding.Description" xml:space="preserve">
+    <value>Ottiene o imposta la codifica dei caratteri del documento CSV.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Excel.CsvSourceOptions.NewlineType.Description" xml:space="preserve">
+    <value>Ottiene o imposta il carattere utilizzato per identificare una nuova riga in un documento CSV.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Excel.CsvSourceOptions.TextQualifier.Description" xml:space="preserve">
+    <value>Ottiene o imposta il carattere che racchiude i valori nel documento CSV.</value>
+  </data>
   <data name="DevExpress.DataAccess.Excel.CsvSourceOptions.TrimBlanks.Description" xml:space="preserve">
     <value>Consente di ottenere o impostare se rimuovere tutti gli spazi bianchi iniziali e finali da ciascun valore nel documento CSV.</value>
   </data>
+  <data name="DevExpress.DataAccess.Excel.CsvSourceOptions.ValueSeparator.Description" xml:space="preserve">
+    <value>Ottiene o imposta il carattere utilizzato per separare i valori in un documento CSV.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Excel.ExcelDataSource.FileName.Description" xml:space="preserve">
+    <value>Ottiene o imposta il percorso della cartella di lavoro di Microsoft Excel o del file CSV.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Excel.ExcelDataSource.SourceOptions.Description" xml:space="preserve">
+    <value>Consente di ottenere o impostare le opzioni utilizzate per estrarre dati da cartelle di lavoro di Microsoft Excel (file XLS, XLSX o XLSM) o da file CSV.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Excel.ExcelDefinedNameSettings.DefinedName.Description" xml:space="preserve">
+    <value>Ottiene o imposta il nome definito che fa riferimento all'intervallo di celle richiesto.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Excel.ExcelDefinedNameSettings.Scope.Description" xml:space="preserve">
+    <value>Ottiene o imposta il nome dell'ambito che contiene il nome definito richiesto.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Excel.ExcelSourceOptions.ImportSettings.Description" xml:space="preserve">
+    <value>Ottiene o imposta le impostazioni utilizzate per importare i dati da una cartella di lavoro Microsoft Excel.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Excel.ExcelSourceOptions.Password.Description" xml:space="preserve">
+    <value>Ottiene o imposta la password utilizzata per accedere alla cartella di lavoro protetta.</value>
+  </data>
   <data name="DevExpress.DataAccess.Excel.ExcelSourceOptions.SkipHiddenColumns.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare se ignorare le colonne nascoste durante l'importazione di dati in ExcelDataSource.</value>
+    <value>Ottiene o imposta se ignorare le colonne nascoste durante l'importazione dei dati in ExcelDataSource.</value>
   </data>
   <data name="DevExpress.DataAccess.Excel.ExcelSourceOptions.SkipHiddenRows.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare se ignorare le righe nascoste durante l'importazione di dati in ExcelDataSource.</value>
+    <value>Ottiene o imposta se ignorare le righe nascoste durante l'importazione dei dati in ExcelDataSource.</value>
   </data>
   <data name="DevExpress.DataAccess.Excel.ExcelSourceOptionsBase.SkipEmptyRows.Description" xml:space="preserve">
-    <value>Consente di ottenere o impostare se includere o meno le righe vuote nell'oggetto ExcelDataSource risultante.</value>
+    <value>Ottiene o imposta se includere le righe vuote nell'ExcelDataSource risultante.</value>
   </data>
   <data name="DevExpress.DataAccess.Excel.ExcelSourceOptionsBase.UseFirstRowAsHeader.Description" xml:space="preserve">
-    <value>Ottiene o imposta se elaborare i valori della prima riga come intestazioni.</value>
+    <value>Ottiene o imposta se utilizzare i valori della prima riga come intestazioni.</value>
   </data>
-  <data name="DevExpress.DataAccess.ConnectionParameters.MongoDBConnectionParameters.AuthenticationInfo.Description" xml:space="preserve">
-    <value>Memorizza le informazioni di autenticazione per un'istanza MongoDB.</value>
+  <data name="DevExpress.DataAccess.Excel.ExcelTableSettings.TableName.Description" xml:space="preserve">
+    <value>Ottiene o imposta il nome della tabella da cui importare i dati.</value>
   </data>
-  <data name="DevExpress.DataAccess.ConnectionParameters.MongoDBCustomConnectionParameters.ConnectionString.Description" xml:space="preserve">
-    <value>Memorizza una stringa di connessione a MongoDB.</value>
+  <data name="DevExpress.DataAccess.Excel.ExcelWorksheetSettings.CellRange.Description" xml:space="preserve">
+    <value>Ottiene o imposta l'intervallo di celle da cui importare i dati.</value>
   </data>
-  <data name="DevExpress.DataAccess.DataFederation.FederationDataSourceBase.Queries.Description" xml:space="preserve">
-    <value>Consente l'accesso alle query federate contenute nell'origine dati.</value>
+  <data name="DevExpress.DataAccess.Excel.ExcelWorksheetSettings.WorksheetIndex.Description" xml:space="preserve">
+    <value>Consente di associare un'applicazione o un componente a un foglio Excel tramite indice.</value>
   </data>
-  <data name="DevExpress.DataAccess.EntityFramework.EFDataSource.Filters.Description" xml:space="preserve">
-    <value>Consente l'accesso alla raccolta di filtri per le origini dati di Entity Framework.</value>
+  <data name="DevExpress.DataAccess.Excel.ExcelWorksheetSettings.WorksheetName.Description" xml:space="preserve">
+    <value>Ottiene o imposta il nome del foglio di lavoro da cui importare i dati.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Json.CustomJsonSource.Json.Description" xml:space="preserve">
+    <value>Ottiene o imposta una stringa contenente dati JSON.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Json.JsonDataSource.ConnectionName.Description" xml:space="preserve">
+    <value>Specifica il nome della connessione utilizzato da JsonDataSource per ottenere parametri di autenticazione o query.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Json.JsonDataSource.JsonSource.Description" xml:space="preserve">
+    <value>Ottiene o imposta un oggetto che memorizza le impostazioni di importazione dei dati JSON.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Json.JsonDataSource.RootElement.Description" xml:space="preserve">
+    <value>Ottiene o imposta il nome dell'elemento radice nell'origine dati associata.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Json.JsonDataSource.SchemaDiscoveryMaxItemCount.Description" xml:space="preserve">
+    <value>Specifica il numero di elementi dell'origine dati da analizzare a ogni livello per costruire lo schema.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Json.UriJsonSource.Uri.Description" xml:space="preserve">
+    <value>Ottiene o imposta l'oggetto System.Uri che punta a un URI o a un file di testo contenente dati JSON.</value>
   </data>
   <data name="DevExpress.DataAccess.MongoDB.MongoDBDataSourceBase.ConnectionName.Description" xml:space="preserve">
-    <value>Memorizza il nome di una stringa di connessione MongoDB specificata nel file di configurazione di un progetto.</value>
+    <value>Memorizza il nome di una stringa di connessione MongoDB specificata nel file di configurazione del progetto.</value>
   </data>
   <data name="DevExpress.DataAccess.MongoDB.MongoDBDataSourceBase.ConnectionParameters.Description" xml:space="preserve">
-    <value>Memorizza i parametri di connessione a MongoDB.</value>
+    <value>Memorizza i parametri di connessione MongoDB.</value>
   </data>
   <data name="DevExpress.DataAccess.MongoDB.MongoDBDataSourceBase.Queries.Description" xml:space="preserve">
-    <value>Memorizza una raccolta di query in un'istanza MongoDB.</value>
+    <value>Memorizza una raccolta di query su un'istanza MongoDB.</value>
+  </data>
+  <data name="DevExpress.DataAccess.MongoDB.MongoDBDataSourceBase.SchemaDiscoveryMaxItemCount.Description" xml:space="preserve">
+    <value>Specifica il numero di elementi della raccolta MongoDB utilizzati per costruire lo schema dell'origine dati.</value>
   </data>
   <data name="DevExpress.DataAccess.MongoDB.MongoDBQuery.Alias.Description" xml:space="preserve">
-    <value>Memorizza un alias di una query MongoDB.</value>
+    <value>Memorizza l'alias di una query MongoDB.</value>
   </data>
   <data name="DevExpress.DataAccess.MongoDB.MongoDBQuery.CollectionName.Description" xml:space="preserve">
-    <value>Memorizza il nome di una collezione del database MongoDB.</value>
+    <value>Memorizza il nome di una raccolta di database MongoDB.</value>
   </data>
   <data name="DevExpress.DataAccess.MongoDB.MongoDBQuery.DatabaseName.Description" xml:space="preserve">
     <value>Memorizza il nome di un database MongoDB.</value>
@@ -384,19 +438,73 @@
   <data name="DevExpress.DataAccess.MongoDB.MongoDBQuery.Parameters.Description" xml:space="preserve">
     <value>Memorizza un elenco di parametri di query.</value>
   </data>
+  <data name="DevExpress.DataAccess.MongoDB.MongoDBQuery.Schema.Description" xml:space="preserve">
+    <value>Specifica lo schema della query MongoDB.</value>
+  </data>
+  <data name="DevExpress.DataAccess.ObjectBinding.ObjectDataSource.Constructor.Description" xml:space="preserve">
+    <value>Specifica un oggetto che consente a ObjectDataSource di accedere ai parametri del costruttore.</value>
+  </data>
+  <data name="DevExpress.DataAccess.ObjectBinding.ObjectDataSource.DataMember.Description" xml:space="preserve">
+    <value>Specifica il membro dati di un'origine dati oggetto.</value>
+  </data>
+  <data name="DevExpress.DataAccess.ObjectBinding.ObjectDataSource.DataSource.Description" xml:space="preserve">
+    <value>Specifica l'origine dati dell'oggetto, che può essere un'istanza di oggetto specifica o un tipo.</value>
+  </data>
   <data name="DevExpress.DataAccess.ObjectBinding.ObjectDataSource.Parameters.Description" xml:space="preserve">
     <value>Consente di accedere all'elenco dei parametri che devono essere specificati quando si associa un ObjectDataSource a un metodo.</value>
   </data>
+  <data name="DevExpress.DataAccess.Sql.ConnectionOptions.CloseConnection.Description" xml:space="preserve">
+    <value>Specifica se la connessione dati deve essere chiusa dopo l'esecuzione di una query.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Sql.ConnectionOptions.DbCommandTimeout.Description" xml:space="preserve">
+    <value>Specifica il tempo di attesa (in secondi) prima di interrompere il tentativo di esecuzione di una query e generare un errore.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Sql.ConnectionOptions.IsolationLevel.Description" xml:space="preserve">
+    <value>Specifica il livello di isolamento per tutte le query, le stored procedure e le altre operazioni eseguite per la connessione specificata.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Sql.CustomSqlQuery.Sql.Description" xml:space="preserve">
+    <value>Specifica la stringa della query personalizzata.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Sql.SelectQuery.Distinct.Description" xml:space="preserve">
+    <value>Specifica se il set di risultati della query deve includere valori duplicati.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Sql.SelectQuery.FilterString.Description" xml:space="preserve">
+    <value>Specifica i criteri utilizzati per filtrare i dati restituiti dalla SelectQuery corrente.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Sql.SelectQuery.GroupFilterString.Description" xml:space="preserve">
+    <value>Specifica i criteri di filtro da aggiungere alla SelectQuery corrente contenente colonne raggruppate o aggregate.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Sql.SelectQuery.Skip.Description" xml:space="preserve">
+    <value>Specifica il numero di righe da ignorare nel set di risultati restituito.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Sql.SelectQuery.Top.Description" xml:space="preserve">
+    <value>Specifica il numero di righe restituite nel set di risultati della query.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Sql.SqlDataSource.ConnectionName.Description" xml:space="preserve">
+    <value>Specifica il nome di una connessione dati nel file App.config.</value>
+  </data>
   <data name="DevExpress.DataAccess.Sql.SqlDataSource.ConnectionOptions.Description" xml:space="preserve">
-    <value>Fornisce l'accesso alle opzioni di connessione dati di SqlDataSource.</value>
+    <value>Fornisce accesso alle opzioni di connessione dati di SqlDataSource.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Sql.SqlDataSource.ConnectionParameters.Description" xml:space="preserve">
+    <value>Specifica le impostazioni di connessione dati di SqlDataSource.</value>
   </data>
   <data name="DevExpress.DataAccess.Sql.SqlDataSource.Queries.Description" xml:space="preserve">
-    <value>Fornisce l'accesso alla raccolta di query definite per SqlDataSource.</value>
+    <value>Fornisce accesso alla raccolta di query definite per SqlDataSource.</value>
   </data>
   <data name="DevExpress.DataAccess.Sql.SqlDataSource.Relations.Description" xml:space="preserve">
-    <value>Fornisce l'accesso alla raccolta di relazioni master-detail di SqlDataSource.</value>
+    <value>Fornisce accesso alla raccolta di relazioni master-dettaglio di SqlDataSource.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Sql.SqlQuery.IsolationLevel.Description" xml:space="preserve">
+    <value>Specifica il livello di isolamento per SqlQuery.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Sql.SqlQuery.Name.Description" xml:space="preserve">
+    <value>Specifica il nome della query.</value>
   </data>
   <data name="DevExpress.DataAccess.Sql.SqlQuery.Parameters.Description" xml:space="preserve">
-    <value>Fornisce l'accesso alla raccolta di parametri definiti per SqlQuery.</value>
+    <value>Fornisce accesso alla raccolta di parametri definiti per SqlQuery.</value>
+  </data>
+  <data name="DevExpress.DataAccess.Sql.StoredProcQuery.StoredProcName.Description" xml:space="preserve">
+    <value>Specifica la stored procedure da utilizzare nella query.</value>
   </data>
 </root>

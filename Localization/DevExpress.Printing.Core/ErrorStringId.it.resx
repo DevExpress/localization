@@ -1,5 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -7,330 +112,69 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ErrorStringId.XRE027_Description" xml:space="preserve">
-    <value>Seleziona il campo calcolato, passa alla finestra Proprietà e specifica un valore valido per la proprietà Espressione. Puoi fare clic sul pulsante con i puntini di sospensione della proprietà Espressione e creare un'espressione nell'Editor di espressioni che verrà visualizzato.</value>
-  </data>
-  <data name="ErrorStringId.XRE028_Description" xml:space="preserve">
-    <value>Seleziona il campo calcolato, passa alla finestra Proprietà e specifica un'origine dati. Se il campo calcolato non è necessario, eliminalo: seleziona il report, passa alla finestra Proprietà e fai clic sul pulsante con i puntini di sospensione della proprietà Campi calcolati.</value>
-  </data>
-  <data name="ErrorStringId.XRE060_Description" xml:space="preserve">
-    <value>I report di riferimento non possono contenere un'intestazione o un piè di pagina. Rimuovere queste bande dal report di riferimento oppure fare riferimento a un report che non le contenga.</value>
-  </data>
-  <data name="ErrorStringId.AYXRE300_Description" xml:space="preserve">
-    <value>Definisci un testo alternativo descrittivo (massimo 125 caratteri) per tutte le immagini, i diagrammi, i codici QR e gli altri elementi visivi non decorativi. Utilizza la proprietà AccessibleDescription. Se un elemento visivo ha una funzione decorativa, utilizza la proprietà AccessibleRole per contrassegnarlo di conseguenza.</value>
-  </data>
-  <data name="ErrorStringId.XRE000_Description" xml:space="preserve">
-    <value>Utilizza questo codice di errore per cercare nella documentazione Microsoft informazioni su come risolvere il problema.</value>
-  </data>
-  <data name="ErrorStringId.XRE004_Description" xml:space="preserve">
-    <value>Assicurarsi che i controlli del report non si sovrappongano. I controlli sovrapposti potrebbero essere esportati in modo errato nei formati HTML, RTF, DOCX, XLS, XLSX, CSV e Testo.</value>
-  </data>
-  <data name="ErrorStringId.XRE016_Description" xml:space="preserve">
-    <value>Seleziona il controllo, passa alla Griglia delle proprietà e fai clic sul pulsante con i puntini di sospensione della proprietà Regole di formattazione. Aggiungi la regola di formattazione nell'Editor delle regole di formattazione che si apre e applica la regola aggiunta al controllo.</value>
-  </data>
-  <data name="ErrorStringId.XRE062_Description" xml:space="preserve">
-    <value>Espandere il tag intelligente del controllo Subreport e fare clic su Modifica associazioni parametri. Nell'editor della raccolta di associazioni parametri che si apre, selezionare un parametro valido.</value>
-  </data>
-  <data name="ErrorStringId.XRE080_Description" xml:space="preserve">
-    <value>Espandere il tag intelligente del report e fare clic su Modifica associazioni. Nella finestra di dialogo Modifica associazioni visualizzata, verificare che tutti i campi della tabella pivot siano associati a campi dati validi.</value>
-  </data>
-  <data name="ErrorStringId.XRE081_Description" xml:space="preserve">
-    <value>Espandere lo smart tag del controllo Cross Tab e fare clic sul pulsante con i puntini di sospensione della proprietà Parametri. Nell'editor di raccolta visualizzato, specificare un binding valido per il parametro del controllo Cross Tab.</value>
-  </data>
-  <data name="ErrorStringId.XRE093_Description" xml:space="preserve">
-    <value>Seleziona il controllo, passa alla finestra Proprietà e aggiungi una funzione di riepilogo (ad esempio, sumSum) all'espressione della proprietà Testo oppure imposta Riepilogo in esecuzione su Nessuno.</value>
-  </data>
-  <data name="ErrorStringId.XRE100_Description" xml:space="preserve">
-    <value>Assicurarsi che il binding del parametro di query sia valido. Fare clic con il pulsante destro del mouse sull'origine dati nell'elenco dei campi e selezionare Gestisci query. Nella finestra di dialogo Gestisci query visualizzata, fare clic sul pulsante con i puntini di sospensione della query e quindi fare clic su Esegui Generatore di query nell'Editor di query. Nella finestra di dialogo Generatore di query, fare clic su Modifica parametri e specificare un valore valido per il parametro di query.</value>
-  </data>
-  <data name="ErrorStringId.XRE101_Description" xml:space="preserve">
-    <value>Assicurati di associare il parametro di query ai dati del tipo appropriato. Fai clic con il pulsante destro del mouse sull'origine dati nell'Elenco campi e seleziona Gestisci query. Nella finestra di dialogo Gestisci query visualizzata, fai clic sul pulsante con i puntini di sospensione della query e quindi fai clic su Esegui Generatore di query nell'Editor di query. Fai clic su Modifica parametri nella finestra di dialogo Generatore di query e specifica un valore valido per il parametro di query.</value>
-  </data>
-  <data name="ErrorStringId.XRE110_Description" xml:space="preserve">
-    <value>Seleziona il controllo, passa alla finestra Proprietà e imposta la proprietà PageRange su un valore valido.</value>
+  <data name="ErrorStringId.AYXRE001" xml:space="preserve">
+    <value>Il rapporto di contrasto tra il testo e i colori di sfondo non è conforme alle raccomandazioni.</value>
   </data>
   <data name="ErrorStringId.AYXRE001_Description" xml:space="preserve">
     <value>Assicurati che il rapporto di contrasto tra testo e sfondo sia almeno di 4,5:1 (o 3:1 per testi di grandi dimensioni). Utilizza uno strumento di analisi del contrasto cromatico per verificarne la conformità.</value>
   </data>
-  <data name="ErrorStringId.XRE010_Description" xml:space="preserve">
-    <value>Seleziona il controllo, passa alla Griglia delle proprietà, espandi l'elenco a discesa della proprietà URL di navigazione e seleziona un valore valido.</value>
+  <data name="ErrorStringId.AYXRE010" xml:space="preserve">
+    <value>La dimensione del testo è inferiore alle linee guida consigliate.</value>
   </data>
-  <data name="ErrorStringId.XRE015_Description" xml:space="preserve">
-    <value>Seleziona il controllo, passa alla Griglia delle proprietà e fai clic sul pulsante con i puntini di sospensione della proprietà Stringa di formato testo. Specifica una stringa di formato valida nell'Editor di stringa di formato che si apre.</value>
+  <data name="ErrorStringId.AYXRE010_Description" xml:space="preserve">
+    <value>Utilizza un carattere di almeno 12 pt per il corpo del testo e di 16 pt per i titoli. Per le presentazioni, utilizza un carattere di 18 pt o superiore. Assicurati che i titoli siano sempre più grandi del corpo del testo.</value>
   </data>
-  <data name="ErrorStringId.XRE021_Description" xml:space="preserve">
-    <value>Passa alla griglia delle proprietà, apri l'editor di espressioni della proprietà e specifica un'espressione che utilizzi i campi dati della tabella a cui è associata la banda.</value>
+  <data name="ErrorStringId.AYXRE011" xml:space="preserve">
+    <value>L'interlinea e la spaziatura tra i paragrafi non sono conformi alle raccomandazioni.</value>
   </data>
-  <data name="ErrorStringId.XRE022_Description" xml:space="preserve">
-    <value>Seleziona il controllo, passa alla scheda Dati della griglia delle proprietà, espandi il nodo Associazioni dati e il sotto-nodo {0} e seleziona un valore valido per la proprietà Associazione.</value>
+  <data name="ErrorStringId.AYXRE011_Description" xml:space="preserve">
+    <value>Imposta l'interlinea ad almeno 1,5 volte la dimensione del carattere. Utilizza un'interlinea di 2-3 volte la dimensione del carattere.</value>
   </data>
-  <data name="ErrorStringId.XRE023_Description" xml:space="preserve">
-    <value>Assicurati che i campi dati utilizzati nella tua espressione esistano nell'origine dati. Se i campi dati esistono, assicurati che le proprietà DataSource e/o DataMember del tuo report siano specificate.</value>
+  <data name="ErrorStringId.AYXRE012" xml:space="preserve">
+    <value>Il documento utilizza caratteri decorativi o non accessibili che potrebbero risultare di difficile lettura.</value>
   </data>
-  <data name="ErrorStringId.XRE030_Description" xml:space="preserve">
-    <value>Associa le bande del report dettagliato ai livelli di annidamento sequenziali nell'origine dati. Assicurati che vengano visualizzati tutti i livelli di annidamento intermedi.</value>
+  <data name="ErrorStringId.AYXRE100_Description" xml:space="preserve">
+    <value>Utilizza gli stili di intestazione in ordine sequenziale (H1, H2, H3) senza saltare alcun livello. Assicurati che ogni sezione abbia i livelli di intestazione appropriati.</value>
   </data>
-  <data name="ErrorStringId.XRE050_Description" xml:space="preserve">
-    <value>Assicurati che tutti i caratteri siano conformi alle specifiche del codice a barre. Se il codice a barre utilizza testo statico, selezionalo, espandi lo smart tag e correggi il valore della proprietà Testo. Se il codice a barre utilizza un'espressione, assicurati che l'espressione recuperi solo caratteri validi.</value>
+  <data name="ErrorStringId.AYXRE101" xml:space="preserve">
+    <value>La tabella contiene celle unite, celle divise o tabelle nidificate che impediscono la navigazione accessibile.</value>
   </data>
-  <data name="ErrorStringId.XRE051_Description" xml:space="preserve">
-    <value>Assicurati che il formato del testo del codice a barre sia conforme alle specifiche. Se il codice a barre utilizza testo statico, selezionalo, espandi lo smart tag e correggi il valore della proprietà Testo. Se il codice a barre utilizza un'espressione, assicurati che l'espressione recuperi i valori corretti.</value>
+  <data name="ErrorStringId.AYXRE200_Description" xml:space="preserve">
+    <value>Aggiungi etichette descrittive a tutti i campi del modulo. Assicurati che l'ordine di tabulazione sia corretto e fornisci messaggi di errore chiari per la convalida dei dati.</value>
   </data>
-  <data name="ErrorStringId.XRE053_Description" xml:space="preserve">
-    <value>Seleziona il codice a barre, passa alla Griglia delle proprietà e aumenta i valori di Larghezza e Altezza.</value>
+  <data name="ErrorStringId.AYXRE300" xml:space="preserve">
+    <value>L'immagine, il diagramma o altro elemento visivo non dispone di testo alternativo.</value>
+  </data>
+  <data name="ErrorStringId.AYXRE300_Description" xml:space="preserve">
+    <value>Definisci un testo alternativo descrittivo (massimo 125 caratteri) per tutte le immagini, i diagrammi, i codici QR e gli altri elementi visivi non decorativi. Utilizza la proprietà AccessibleDescription. Se un elemento visivo ha una funzione decorativa, utilizza la proprietà AccessibleRole per contrassegnarlo di conseguenza.</value>
+  </data>
+  <data name="ErrorStringId.XRE009" xml:space="preserve">
+    <value>Si è verificato un errore durante l'esecuzione del metodo di script {0}</value>
+  </data>
+  <data name="ErrorStringId.XRE016" xml:space="preserve">
+    <value>La regola di formattazione '{0}' non è contenuta nel foglio delle regole di formattazione del report e non verrà applicata.</value>
+  </data>
+  <data name="ErrorStringId.XRE016_Description" xml:space="preserve">
+    <value>Seleziona il controllo, passa alla Griglia delle proprietà e fai clic sul pulsante con i puntini di sospensione della proprietà Regole di formattazione. Aggiungi la regola di formattazione nell'Editor delle regole di formattazione che si apre e applica la regola aggiunta al controllo.</value>
+  </data>
+  <data name="ErrorStringId.XRE028_Description" xml:space="preserve">
+    <value>Seleziona il campo calcolato, passa alla finestra Proprietà e specifica un'origine dati. Se il campo calcolato non è necessario, eliminalo: seleziona il report, passa alla finestra Proprietà e fai clic sul pulsante con i puntini di sospensione della proprietà Campi calcolati.</value>
+  </data>
+  <data name="ErrorStringId.XRE060" xml:space="preserve">
+    <value>Il report di riferimento contiene un'intestazione di pagina o una banda di piè di pagina</value>
+  </data>
+  <data name="ErrorStringId.XRE060_Description" xml:space="preserve">
+    <value>I report di riferimento non possono contenere un'intestazione o un piè di pagina. Rimuovere queste bande dal report di riferimento oppure fare riferimento a un report che non le contenga.</value>
   </data>
   <data name="ErrorStringId.XRE061_Description" xml:space="preserve">
     <value>La larghezza della pagina del report di riferimento deve essere inferiore alla larghezza della pagina del report principale. Selezionare il report, passare alla Griglia delle proprietà e modificare il valore della proprietà Tipo di carta.</value>
   </data>
   <data name="ErrorStringId.XRE063_Description" xml:space="preserve">
     <value>Assicurarsi che il parametro del report di riferimento sia dello stesso tipo del parametro del report principale. Espandere il tag intelligente del controllo Sottoreport e fare clic su Modifica associazioni parametri. Nell'Editor raccolta associazioni parametri visualizzato, selezionare un parametro del tipo appropriato.</value>
-  </data>
-  <data name="ErrorStringId.XRE070_Description" xml:space="preserve">
-    <value>Seleziona il controllo, passa alla griglia delle proprietà e imposta uno spessore della linea inferiore o una dimensione maggiore.</value>
-  </data>
-  <data name="ErrorStringId.XRE090_Description" xml:space="preserve">
-    <value>Seleziona il controllo che visualizza il riepilogo, espandi lo smart tag e seleziona una regione dal menu a discesa Riepilogo.</value>
-  </data>
-  <data name="ErrorStringId.XRE091_Description" xml:space="preserve">
-    <value>Seleziona il controllo che visualizza il riepilogo, espandi lo smart tag e specifica un campo di gruppo nella casella a discesa Associazione dati.</value>
-  </data>
-  <data name="ErrorStringId.XRE270" xml:space="preserve">
-    <value>Alcuni elementi del documento si estendono su più pagine e pertanto non possono essere esportati correttamente nel formato {0} con le impostazioni di esportazione specificate.</value>
-  </data>
-  <data name="ErrorStringId.XRE270_Description" xml:space="preserve">
-    <value>Se possibile, prova a utilizzare la modalità di esportazione "File singolo" quando esporti il ​​documento nei formati RTF, DOCX, XLS o XLSX.</value>
-  </data>
-  <data name="ErrorStringId.AYXRE010_Description" xml:space="preserve">
-    <value>Utilizza un carattere di almeno 12 pt per il corpo del testo e di 16 pt per i titoli. Per le presentazioni, utilizza un carattere di 18 pt o superiore. Assicurati che i titoli siano sempre più grandi del corpo del testo.</value>
-  </data>
-  <data name="ErrorStringId.AYXRE100_Description" xml:space="preserve">
-    <value>Utilizza gli stili di intestazione in ordine sequenziale (H1, H2, H3) senza saltare alcun livello. Assicurati che ogni sezione abbia i livelli di intestazione appropriati.</value>
-  </data>
-  <data name="ErrorStringId.AYXRE210_Description" xml:space="preserve">
-    <value>Utilizza un testo descrittivo per i link che ne spieghi la destinazione o lo scopo. Evita testi di ancoraggio che si limitino a dire "clicca qui", "leggi di più" o che mostrino un URL.</value>
-  </data>
-  <data name="ErrorStringId.AYXRE310" xml:space="preserve">
-    <value>Il documento {0} non è accessibile in quanto privo di metadati adeguati.</value>
-  </data>
-  <data name="ErrorStringId.AYXRE200_Description" xml:space="preserve">
-    <value>Aggiungi etichette descrittive a tutti i campi del modulo. Assicurati che l'ordine di tabulazione sia corretto e fornisci messaggi di errore chiari per la convalida dei dati.</value>
-  </data>
-  <data name="ErrorStringId.AYXRE111_Description" xml:space="preserve">
-    <value>Aggiungi i numeri di pagina a tutte le pagine, preferibilmente in una posizione fissa (intestazione o piè di pagina).</value>
-  </data>
-  <data name="ErrorStringId.XRE009" xml:space="preserve">
-    <value>Si è verificato un errore durante l'esecuzione del metodo di script {0}</value>
-  </data>
-  <data name="ErrorStringId.XRE013_Description" xml:space="preserve">
-    <value>Per gestire le impostazioni di caricamento dei contenuti, utilizzare la proprietà DevExpress.Security.Resources.AccessSettings.StaticResources.</value>
-  </data>
-  <data name="ErrorStringId.XRE016" xml:space="preserve">
-    <value>La regola di formattazione '{0}' non è contenuta nel foglio delle regole di formattazione del report e non verrà applicata.</value>
-  </data>
-  <data name="ErrorStringId.XRE025_Description" xml:space="preserve">
-    <value>Un oggetto a cui è assegnata la proprietà DataSource non può essere utilizzato come origine dati di un report, poiché non implementa alcuna delle interfacce supportate.</value>
-  </data>
-  <data name="ErrorStringId.XRE028" xml:space="preserve">
-    <value>Impossibile identificare l'origine dati del campo calcolato.</value>
-  </data>
-  <data name="ErrorStringId.XRE900_Description" xml:space="preserve">
-    <value>Chiedi aiuto al responsabile della manutenzione dell'applicazione.</value>
-  </data>
-  <data name="ErrorStringId.AYXRE011_Description" xml:space="preserve">
-    <value>Imposta l'interlinea ad almeno 1,5 volte la dimensione del carattere. Utilizza un'interlinea di 2-3 volte la dimensione del carattere.</value>
-  </data>
-  <data name="ErrorStringId.AYXRE101_Description" xml:space="preserve">
-    <value>Evita tabelle annidate e celle unite o divise. Aggiungi contenuto a tutte le celle di dati (compila le celle vuote con valori come '0' o 'N/D').</value>
-  </data>
-  <data name="ErrorStringId.XRE002" xml:space="preserve">
-    <value>Il controllo si trova al di fuori del margine destro della pagina.</value>
-  </data>
-  <data name="ErrorStringId.XRE003_Description" xml:space="preserve">
-    <value>Il controllo si trova al di fuori dell'area di stampa del report e non verrà stampato e/o esportato correttamente.</value>
-  </data>
-  <data name="ErrorStringId.XRE004" xml:space="preserve">
-    <value>Il controllo è sovrapposto</value>
-  </data>
-  <data name="ErrorStringId.XRE010" xml:space="preserve">
-    <value>Impossibile risolvere l'URL di navigazione '{0}' per la destinazione '_self'</value>
-  </data>
-  <data name="ErrorStringId.XRE011" xml:space="preserve">
-    <value>Impossibile caricare il contenuto specificato da {0}: '{1}'</value>
-  </data>
-  <data name="ErrorStringId.XRE012" xml:space="preserve">
-    <value>Impossibile risolvere l'URI dal valore specificato {0}: '{1}'</value>
-  </data>
-  <data name="ErrorStringId.XRE013" xml:space="preserve">
-    <value>Impossibile caricare il contenuto specificato da {0}: '{1}'</value>
-  </data>
-  <data name="ErrorStringId.XRE024" xml:space="preserve">
-    <value>Il membro dati non è valido</value>
-  </data>
-  <data name="ErrorStringId.XRE025" xml:space="preserve">
-    <value>L'origine dati non è valida.</value>
-  </data>
-  <data name="ErrorStringId.XRE026" xml:space="preserve">
-    <value>La stringa del filtro non è valida</value>
-  </data>
-  <data name="ErrorStringId.XRE030" xml:space="preserve">
-    <value>La banda del rapporto dettagliato ha un livello di dettaglio inadeguato</value>
-  </data>
-  <data name="ErrorStringId.XRE040" xml:space="preserve">
-    <value>La banda finale non è complementare alla banda iniziale.</value>
-  </data>
-  <data name="ErrorStringId.XRE060" xml:space="preserve">
-    <value>Il report di riferimento contiene un'intestazione di pagina o una banda di piè di pagina</value>
-  </data>
-  <data name="ErrorStringId.XRE061" xml:space="preserve">
-    <value>La larghezza della pagina del report di riferimento supera quella corrente</value>
-  </data>
-  <data name="ErrorStringId.XRE062" xml:space="preserve">
-    <value>Il nome del parametro nel binding {0} non è valido</value>
-  </data>
-  <data name="ErrorStringId.XRE064" xml:space="preserve">
-    <value>Impossibile assegnare il valore '{1}' al parametro report nel binding {0}</value>
-  </data>
-  <data name="ErrorStringId.XRE070" xml:space="preserve">
-    <value>La larghezza della linea supera i suoi limiti</value>
-  </data>
-  <data name="ErrorStringId.XRE080" xml:space="preserve">
-    <value>Il campo della tabella pivot non è valido</value>
-  </data>
-  <data name="ErrorStringId.XRE092" xml:space="preserve">
-    <value>La sezione dettagli non visualizza i dati da utilizzare per il riepilogo della pagina.</value>
-  </data>
-  <data name="ErrorStringId.XRE110" xml:space="preserve">
-    <value>Il valore della proprietà PageRange '{0}' non può essere convertito in numeri di pagina</value>
-  </data>
-  <data name="ErrorStringId.XRE300" xml:space="preserve">
-    <value>Il carattere '{0}' non è stato trovato sul tuo sistema.</value>
-  </data>
-  <data name="ErrorStringId.XRE900" xml:space="preserve">
-    <value>L'analizzatore della progettazione dei report si è bloccato.</value>
-  </data>
-  <data name="ErrorStringId.AYXRE001" xml:space="preserve">
-    <value>Il rapporto di contrasto tra il testo e i colori di sfondo non è conforme alle raccomandazioni.</value>
-  </data>
-  <data name="ErrorStringId.AYXRE310_Description" xml:space="preserve">
-    <value>Specificare il titolo del documento, l'autore, l'oggetto e i metadati della lingua durante l'esportazione dei report in {0}.</value>
-  </data>
-  <data name="ErrorStringId.XRE002_Description" xml:space="preserve">
-    <value>Assicurati che il controllo sia all'interno dei margini del report per evitare di stampare pagine aggiuntive.</value>
-  </data>
-  <data name="ErrorStringId.XRE011_Description" xml:space="preserve">
-    <value>Assicurati che la posizione specificata sia valida e accessibile.</value>
-  </data>
-  <data name="ErrorStringId.XRE012_Description" xml:space="preserve">
-    <value>Assicurarsi che la posizione specificata sia valida.</value>
-  </data>
-  <data name="ErrorStringId.XRE020_Description" xml:space="preserve">
-    <value>Passa alla griglia delle proprietà e associa la proprietà a un campo dati della tabella a cui è associata la banda.</value>
-  </data>
-  <data name="ErrorStringId.XRE026_Description" xml:space="preserve">
-    <value>Passa alla griglia delle proprietà e specifica un valore valido per la proprietà Stringa filtro testo.</value>
-  </data>
-  <data name="ErrorStringId.XRE040_Description" xml:space="preserve">
-    <value>Assicurarsi che il controllo inizi e termini in bande che compaiono nel report un numero uguale di volte.</value>
-  </data>
-  <data name="ErrorStringId.XRE052_Description" xml:space="preserve">
-    <value>Assicurarsi che i dati binari assegnati al codice a barre non superino i 1033 byte e siano conformi ai requisiti della simbologia corrente.</value>
-  </data>
-  <data name="ErrorStringId.XRE054_Description" xml:space="preserve">
-    <value>Assicurarsi che le impostazioni del codice a barre siano conformi alle specifiche del codice a barre.</value>
-  </data>
-  <data name="ErrorStringId.XRE064_Description" xml:space="preserve">
-    <value>Assicurarsi che il tipo di valore sia appropriato per il parametro del report.</value>
-  </data>
-  <data name="ErrorStringId.XRE090" xml:space="preserve">
-    <value>Non è specificata alcuna regione per il riepilogo</value>
-  </data>
-  <data name="ErrorStringId.XRE091" xml:space="preserve">
-    <value>Non sono specificati campi di gruppo per il riepilogo del gruppo.</value>
-  </data>
-  <data name="ErrorStringId.XRE092_Description" xml:space="preserve">
-    <value>Assicurati che la sezione Dettagli visualizzi i dati. Aggiungi dei controlli alla sezione Dettagli e collega questi controlli ai campi dell'origine dati.</value>
-  </data>
-  <data name="ErrorStringId.AYXRE012" xml:space="preserve">
-    <value>Il documento utilizza caratteri decorativi o non accessibili che potrebbero risultare di difficile lettura.</value>
-  </data>
-  <data name="ErrorStringId.AYXRE100" xml:space="preserve">
-    <value>La gerarchia delle intestazioni del documento non è logica né sequenziale.</value>
-  </data>
-  <data name="ErrorStringId.AYXRE110" xml:space="preserve">
-    <value>Il documento esportato non include un indice, necessario per una navigazione accessibile.</value>
-  </data>
-  <data name="ErrorStringId.AYXRE111" xml:space="preserve">
-    <value>Il documento esportato non presenta i numeri di pagina necessari per una navigazione accessibile.</value>
-  </data>
-  <data name="ErrorStringId.XRE001" xml:space="preserve">
-    <value>La proprietà {0} è impostata su un valore non valido</value>
-  </data>
-  <data name="ErrorStringId.XRE003" xml:space="preserve">
-    <value>Il controllo si trova al di fuori dell'area di stampa del report.</value>
-  </data>
-  <data name="ErrorStringId.XRE009_Description" xml:space="preserve">
-    <value>Il codice presente nei vostri script dovrebbe gestire tutte le possibili situazioni di eccezione.</value>
-  </data>
-  <data name="ErrorStringId.XRE015" xml:space="preserve">
-    <value>La stringa di formato del testo '{0}' non è valida.</value>
-  </data>
-  <data name="ErrorStringId.XRE020" xml:space="preserve">
-    <value>Il binding della proprietà {0} non corrisponde alla tabella dati</value>
-  </data>
-  <data name="ErrorStringId.XRE021" xml:space="preserve">
-    <value>L'espressione della proprietà {0} non corrisponde alla tabella dati</value>
-  </data>
-  <data name="ErrorStringId.XRE022" xml:space="preserve">
-    <value>Il binding della proprietà {0} non è valido</value>
-  </data>
-  <data name="ErrorStringId.XRE023" xml:space="preserve">
-    <value>L'espressione della proprietà {0} non è valida</value>
-  </data>
-  <data name="ErrorStringId.XRE027" xml:space="preserve">
-    <value>L'espressione del campo calcolato non è valida.</value>
-  </data>
-  <data name="ErrorStringId.XRE050" xml:space="preserve">
-    <value>Il testo del codice a barre contiene caratteri non validi</value>
-  </data>
-  <data name="ErrorStringId.XRE051" xml:space="preserve">
-    <value>Il formato del testo del codice a barre non è valido.</value>
-  </data>
-  <data name="ErrorStringId.XRE052" xml:space="preserve">
-    <value>I dati del codice a barre non sono validi</value>
-  </data>
-  <data name="ErrorStringId.XRE053" xml:space="preserve">
-    <value>I limiti del codice a barre sono troppo piccoli</value>
-  </data>
-  <data name="ErrorStringId.XRE054" xml:space="preserve">
-    <value>Il codice a barre ha impostazioni incompatibili</value>
-  </data>
-  <data name="ErrorStringId.XRE063" xml:space="preserve">
-    <value>Il tipo {1} non corrisponde al tipo di parametro del report nel binding {0}</value>
-  </data>
-  <data name="ErrorStringId.XRE081" xml:space="preserve">
-    <value>Il binding del parametro {0} non è valido</value>
-  </data>
-  <data name="ErrorStringId.XRE093" xml:space="preserve">
-    <value>Il valore di esecuzione del controllo Summary Running è impostato su '{0}', ma la sua espressione non ha funzioni di riepilogo.</value>
-  </data>
-  <data name="ErrorStringId.XRE100" xml:space="preserve">
-    <value>Il binding del parametro {1} della query {0} non è valido</value>
-  </data>
-  <data name="ErrorStringId.XRE101" xml:space="preserve">
-    <value>Il tipo di parametro della query {1} non corrisponde al parametro del report nella query {0}</value>
-  </data>
-  <data name="ErrorStringId.XRE300_Description" xml:space="preserve">
-    <value>Il carattere '{0}' non è disponibile sul tuo sistema e viene sostituito dal carattere sostitutivo '{1}'.</value>
-  </data>
-  <data name="ErrorStringId.AYXRE010" xml:space="preserve">
-    <value>La dimensione del testo è inferiore alle linee guida consigliate.</value>
-  </data>
-  <data name="ErrorStringId.AYXRE101" xml:space="preserve">
-    <value>La tabella contiene celle unite, celle divise o tabelle nidificate che impediscono la navigazione accessibile.</value>
   </data>
 </root>

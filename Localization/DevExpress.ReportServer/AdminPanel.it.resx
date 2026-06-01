@@ -60,45 +60,45 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -268,7 +268,7 @@
     <value>Cruscotto</value>
   </data>
   <data name="Document_List_Report" xml:space="preserve">
-    <value>Rapporto</value>
+    <value>Report</value>
   </data>
   <data name="Document_Preview" xml:space="preserve">
     <value>Anteprima</value>
@@ -403,7 +403,7 @@
     <value>URL del sito</value>
   </data>
   <data name="Branding_SiteURL_Placeholder" xml:space="preserve">
-    <value>http://www.latuaazienda.com</value>
+    <value>http://www.yourcompany.com</value>
   </data>
   <data name="Categories_Delete_DialogContent" xml:space="preserve">
     <value>Sei sicuro di voler eliminare definitivamente questa categoria?</value>
@@ -730,7 +730,7 @@
     <value>Porta</value>
   </data>
   <data name="DataModel_Provider" xml:space="preserve">
-    <value>Fornitore</value>
+    <value>Provider</value>
   </data>
   <data name="DataModel_Query_Delete_DialogContent" xml:space="preserve">
     <value>Sei sicuro di voler eliminare definitivamente questa query?</value>
@@ -1177,19 +1177,7 @@
     <value>Invio percorsi di file separati da virgole...</value>
   </data>
   <data name="JobWizard_ExportToFileSystemPage_Info" xml:space="preserve">
-    <value>Durante l’esportazione, puoi utilizzare i seguenti segnaposto nei nomi di cartelle e/o file per impostarli automaticamente sulla data e ora correnti:&lt;br /&gt;
-&lt;ul&gt;
-&lt;li&gt;#Year# - quattro cifre;&lt;/li&gt;
-&lt;li&gt;#Month# - due cifre;&lt;/li&gt;
-&lt;li&gt;#Day# - due cifre;&lt;/li&gt;
-&lt;li&gt;#Hour# - due cifre (formato 24 ore);&lt;/li&gt;
-&lt;li&gt;#Minute# - due cifre.&lt;/li&gt;
-&lt;/ul&gt;
-Formati di esportazione supportati:
-&lt;ul&gt;
-&lt;li&gt;Report – CSV, DOCX, HTML, MHT, PDF, RTF, TXT, XLS, XLSX&lt;/li&gt;
-&lt;li&gt;Dashboard – PDF, PNG, XLSX&lt;/li&gt;
-&lt;/ul&gt;</value>
+    <value>è possibile utilizzare i seguenti segnaposto nei nomi di cartella e/o file per trasformarli in data/ora corrente valori durante l'esportazione: &lt; br / &gt;&lt; ul &gt;&lt; li &gt; #Year # - quattro cifre; &lt;/li &gt;&lt; li &gt; #Month # - due cifre; &lt;/li &gt;&lt; li &gt; #Day # - due cifre; &lt;/li &gt;&lt; li &gt; #Hour # - due cifre (formato 24 ore); &lt;/li &gt;&lt; li &gt; #Minute # - due cifre. &lt;/li &gt;&lt; / UL &gt; supportati formati di esportazione: &lt; ul &gt;&lt; li &gt; Report – CSV, DOCX, HTML, MHT, PDF , RTF, TXT, XLS, XLSX &lt;/li &gt;&lt; li &gt; Dashboard – PDF, PNG, XLSX &lt;/li &gt;&lt; / UL &gt;</value>
   </data>
   <data name="JobWizard_GeneralPage_Document_LastModifiedBy" xml:space="preserve">
     <value>Ultima modifica di</value>
@@ -1231,7 +1219,7 @@ Formati di esportazione supportati:
     <value>Negare</value>
   </data>
   <data name="ThemeSettings_DashboardDesigner" xml:space="preserve">
-    <value>Designer di dashboard</value>
+    <value>Dashboard Designer</value>
   </data>
   <data name="ThemeSettings_DesignerColorScheme_Dark" xml:space="preserve">
     <value>Scuro</value>
@@ -1254,11 +1242,11 @@ Fare clic su OK per aggiornare l'origine dati automaticamente.</value>
     <value>Questo rapporto utilizza una vecchia versione di origine dati.</value>
   </data>
   <data name="Report_LegacyDataSourceAndScripts_Upgrade" xml:space="preserve">
-    <value>La fonte dati utilizzata in questo report è stata creata con una versione precedente del Report and Dashboard Server.
-Fare clic su OK per aggiornarla automaticamente.
+    <value>L'origine dati utilizzata in questo rapporto è stato creato con una versione precedente di Report e Dashboard Server.
+Fare clic su OK per aggiornare l'origine dati automaticamente.
 
-Il report contiene anche script che devono essere aggiornati manualmente.
-Per ulteriori informazioni, vedere &lt;a style="color:white" target="_blank" href="https://supportcenter.devexpress.com/ticket/details/t511341/" &gt;T511341&lt;/a&gt;.</value>
+La relazione contiene anche gli script che devono essere aggiornati manualmente.
+Vedere &lt; un style = "color: bianco" target = blank"href ="https://supportcenter.devexpress.com/ticket/details/t511341/"&gt; T511341 &lt; /a &gt; per ulteriori informazioni.</value>
   </data>
   <data name="DataModel_Queries_WriteCustomSqlQuery_Name" xml:space="preserve">
     <value>Nome</value>
@@ -1323,112 +1311,148 @@ Per ulteriori informazioni, vedere &lt;a style="color:white" target="_blank" hre
   <data name="ServerSettings_General_ReportScriptExecutionMode_DialogContent" xml:space="preserve">
     <value>Gli script di report non sono sicuri. Utilizzare la modalità 'Senza restrizioni' solo se si considerano attendibili gli utenti e l'ambiente.</value>
   </data>
-  <data name="SharedStrings_DateTo" xml:space="preserve">
-    <value>A</value>
-  </data>
-  <data name="ServerSettings_General_UnsafeExecutionModes_DialogContent" xml:space="preserve">
-    <value>Gli script di report e le query SQL personalizzate possono causare un'escalation dei permessi e il controllo del server. Utilizza la modalità di esecuzione degli script "Illimitata" e la modalità di esecuzione delle query "Esegui solo istruzioni SELECT"/"Esegui tutto" solo se ti fidi dei tuoi utenti e del tuo ambiente.</value>
-  </data>
-  <data name="ServerSettings_WsFederation_Metadata" xml:space="preserve">
-    <value>Metadata</value>
-  </data>
-  <data name="ServerSettings_General_CustomSqlQueryExecutionMode_DialogContent" xml:space="preserve">
-    <value>L'esecuzione di query SQL personalizzate può portare a un'escalation dei privilegi e al controllo del server. Utilizzare la modalità "Esegui solo istruzioni SELECT" o "Esegui tutto" solo se ci si fida degli utenti e dell'ambiente.</value>
-  </data>
-  <data name="Dashboard_AutoRefresh_5Minutes" xml:space="preserve">
-    <value>5 minuti</value>
-  </data>
-  <data name="DataModel_SetCustomCommandTimeout" xml:space="preserve">
-    <value>Imposta un timeout personalizzato per i comandi</value>
-  </data>
-  <data name="DataModel_Queries_WriteCustomSqlQuery" xml:space="preserve">
-    <value>Scrivi una query SQL personalizzata</value>
-  </data>
-  <data name="DataModel_Queries_WriteCustomSqlQuery_DialogTitle" xml:space="preserve">
-    <value>Scrivi una query SQL personalizzata</value>
+  <data name="AccessType_None" xml:space="preserve">
+    <value> </value>
   </data>
   <data name="Add_Category" xml:space="preserve">
     <value>Aggiungi categoria</value>
   </data>
-  <data name="ThemeSettings_AdminPanel" xml:space="preserve">
-    <value>Pannello amministrativo</value>
+  <data name="Categories_Delete" xml:space="preserve">
+    <value>Elimina categorie</value>
   </data>
   <data name="Categories_DeleteMultiple_DialogContent" xml:space="preserve">
     <value>Sei sicuro di voler eliminare le categorie selezionate?</value>
   </data>
-  <data name="MultipleJobs_StartNotification" xml:space="preserve">
-    <value>I lavori selezionati sono stati avviati</value>
-  </data>
-  <data name="ServerSettings_WsFederation_AppIdUri" xml:space="preserve">
-    <value>ID app URI</value>
-  </data>
-  <data name="ServerSettings_EmailTemplates_Body_Placeholder" xml:space="preserve">
-    <value>Inserisci qui il corpo dell'email...</value>
-  </data>
-  <data name="ServerSettings_General_UserActivationExpiration" xml:space="preserve">
-    <value>Scadenza attivazione utente (giorni)</value>
-  </data>
-  <data name="ThemeSettings_DesignerColorScheme_Contrast" xml:space="preserve">
-    <value>Contrasto</value>
-  </data>
-  <data name="ThemeSettings_ApplyChanges_DialogTitle" xml:space="preserve">
-    <value>Applica le modifiche</value>
-  </data>
-  <data name="DataModel_Queries_WriteCustomSqlQuery_Query_Placeholder" xml:space="preserve">
-    <value>Inserisci qui la query...</value>
-  </data>
   <data name="Dashboard_AutoRefresh" xml:space="preserve">
     <value>Aggiornamento automatico</value>
+  </data>
+  <data name="Dashboard_AutoRefresh_5Minutes" xml:space="preserve">
+    <value>5 minuti</value>
   </data>
   <data name="Dashboard_AutoRefresh_Label" xml:space="preserve">
     <value>Intervallo di aggiornamento automatico</value>
   </data>
-  <data name="Categories_Delete" xml:space="preserve">
-    <value>Elimina categorie</value>
+  <data name="Dashboard_AutoRefresh_Off" xml:space="preserve">
+    <value>Disattivato</value>
+  </data>
+  <data name="DataModel_CommandTimeout" xml:space="preserve">
+    <value>Timeout comando (secondi)</value>
+  </data>
+  <data name="DataModel_CubeName" xml:space="preserve">
+    <value>Nome cubo</value>
+  </data>
+  <data name="DataModel_ProcedureHasNoFields" xml:space="preserve">
+    <value>La procedura non restituisce alcun risultato</value>
+  </data>
+  <data name="DataModel_Procedures" xml:space="preserve">
+    <value>Procedure</value>
+  </data>
+  <data name="DataModel_Queries_RunQueryBuilder" xml:space="preserve">
+    <value>Esegui Query Builder</value>
+  </data>
+  <data name="DataModel_Queries_WriteCustomSqlQuery" xml:space="preserve">
+    <value>Scrivi query SQL personalizzata</value>
+  </data>
+  <data name="DataModel_Queries_WriteCustomSqlQuery_DialogTitle" xml:space="preserve">
+    <value>Scrivi query SQL personalizzata</value>
+  </data>
+  <data name="DataModel_Queries_WriteCustomSqlQuery_Name_Placeholder" xml:space="preserve">
+    <value>Inserisci il nome della query...</value>
+  </data>
+  <data name="DataModel_Queries_WriteCustomSqlQuery_Query_Placeholder" xml:space="preserve">
+    <value>Inserisci la query...</value>
+  </data>
+  <data name="DataModel_SetCustomCommandTimeout" xml:space="preserve">
+    <value>Imposta timeout comando personalizzato</value>
   </data>
   <data name="Job_ExecuteAll" xml:space="preserve">
     <value>Esegui tutto</value>
   </data>
-  <data name="ThemeSettings_DesignerColorScheme_Carmine" xml:space="preserve">
-    <value>Carminio</value>
+  <data name="JobWizard_EmailRecepientsPage_ExternalSubscribers_ValidationMessage" xml:space="preserve">
+    <value>Formato non valido. Inserisci indirizzi e-mail validi separati da virgole.</value>
   </data>
-  <data name="ThemeSettings_DesignerColorScheme_DarkMoon" xml:space="preserve">
-    <value>Luna Nera</value>
+  <data name="MultipleJobs_StartNotification" xml:space="preserve">
+    <value>I processi selezionati sono stati avviati</value>
   </data>
-  <data name="ThemeSettings_DesignerColorScheme_DarkViolet" xml:space="preserve">
-    <value>Viola scuro</value>
-  </data>
-  <data name="ThemeSettings_ApplyChanges_DialogContent" xml:space="preserve">
-    <value>Desideri apportare modifiche?</value>
-  </data>
-  <data name="DataModel_CommandTimeout" xml:space="preserve">
-    <value>Timeout del comando (secondi)</value>
+  <data name="ServerSettings_EmailTemplates_Body_Placeholder" xml:space="preserve">
+    <value>Inserisci qui il corpo dell'email...</value>
   </data>
   <data name="ServerSettings_General_CustomSqlQueryExecutionMode" xml:space="preserve">
     <value>Modalità di esecuzione query SQL personalizzata</value>
   </data>
   <data name="ServerSettings_General_CustomSqlQueryExecutionMode_DenyAll" xml:space="preserve">
-    <value>Nega tutto</value>
+    <value>Negare tutto</value>
   </data>
-  <data name="ServerSettings_General_CustomSqlQueryExecutionMode_ExecuteSelectStatements" xml:space="preserve">
-    <value>Eseguire solo le istruzioni SELECT</value>
+  <data name="ServerSettings_General_CustomSqlQueryExecutionMode_DialogContent" xml:space="preserve">
+    <value>L'esecuzione di query SQL personalizzate può portare a un'escalation dei privilegi e al controllo del server. Utilizzare la modalità "Esegui solo istruzioni SELECT" o "Esegui tutto" solo se ci si fida degli utenti e dell'ambiente.</value>
   </data>
   <data name="ServerSettings_General_CustomSqlQueryExecutionMode_ExecuteAll" xml:space="preserve">
     <value>Esegui tutto</value>
   </data>
-  <data name="DataModel_Queries_WriteCustomSqlQuery_Name_Placeholder" xml:space="preserve">
-    <value>Inserisci qui il nome della query...</value>
+  <data name="ServerSettings_General_CustomSqlQueryExecutionMode_ExecuteSelectStatements" xml:space="preserve">
+    <value>Eseguire solo le istruzioni SELECT</value>
+  </data>
+  <data name="ServerSettings_General_SecurityWarning_DialogTitle" xml:space="preserve">
+    <value>Avviso di sicurezza</value>
+  </data>
+  <data name="ServerSettings_General_UnsafeExecutionModes_DialogContent" xml:space="preserve">
+    <value>Gli script di report e le query SQL personalizzate possono causare un'escalation dei permessi e il controllo del server. Utilizza la modalità di esecuzione degli script "Illimitata" e la modalità di esecuzione delle query "Esegui solo istruzioni SELECT"/"Esegui tutto" solo se ti fidi dei tuoi utenti e del tuo ambiente.</value>
+  </data>
+  <data name="ServerSettings_General_UserActivationExpiration" xml:space="preserve">
+    <value>Scadenza attivazione utente (giorni)</value>
+  </data>
+  <data name="ServerSettings_InstallDate" xml:space="preserve">
+    <value>Data di installazione</value>
+  </data>
+  <data name="ServerSettings_WsFederation_AppIdUri" xml:space="preserve">
+    <value>URI ID applicazione</value>
+  </data>
+  <data name="ServerSettings_WsFederation_Metadata" xml:space="preserve">
+    <value>Metadati</value>
+  </data>
+  <data name="SharedStrings_DateTo" xml:space="preserve">
+    <value>Da</value>
+  </data>
+  <data name="ThemeSettings_AdminPanel" xml:space="preserve">
+    <value>Pannello amministrativo</value>
+  </data>
+  <data name="ThemeSettings_ApplyChanges_DialogContent" xml:space="preserve">
+    <value>Vuoi applicare le modifiche?</value>
+  </data>
+  <data name="ThemeSettings_ApplyChanges_DialogTitle" xml:space="preserve">
+    <value>Applicare le modifiche</value>
+  </data>
+  <data name="ThemeSettings_DashboardDesigner_ReloadRequest" xml:space="preserve">
+    <value>Ricarica il Designer dashboard per visualizzare le modifiche applicate.</value>
+  </data>
+  <data name="ThemeSettings_DesignerColorScheme_Carmine" xml:space="preserve">
+    <value>Carmine</value>
+  </data>
+  <data name="ThemeSettings_DesignerColorScheme_Contrast" xml:space="preserve">
+    <value>Contrasto</value>
+  </data>
+  <data name="ThemeSettings_DesignerColorScheme_DarkCompact" xml:space="preserve">
+    <value>Scuro compatto</value>
+  </data>
+  <data name="ThemeSettings_DesignerColorScheme_DarkMoon" xml:space="preserve">
+    <value>Luna scura</value>
+  </data>
+  <data name="ThemeSettings_DesignerColorScheme_DarkViolet" xml:space="preserve">
+    <value>Viola scuro</value>
   </data>
   <data name="ThemeSettings_DesignerColorScheme_GreenMist" xml:space="preserve">
-    <value>Nebbia Verde</value>
+    <value>Nebbia verde</value>
   </data>
-  <data name="DataModel_Procedures" xml:space="preserve">
-    <value>Procedure</value>
+  <data name="ThemeSettings_DesignerColorScheme_LightCompact" xml:space="preserve">
+    <value>Compatto leggero</value>
   </data>
-  <data name="DataModel_ProcedureHasNoFields" xml:space="preserve">
-    <value>La procedura non ha un set di risultati</value>
+  <data name="ThemeSettings_DesignerColorScheme_SoftBlue" xml:space="preserve">
+    <value>Blu tenue</value>
   </data>
-  <data name="Dashboard_AutoRefresh_Off" xml:space="preserve">
-    <value>Spento</value>
+  <data name="ThemeSettings_ReportDesigner_ReloadRequest" xml:space="preserve">
+    <value>Riavvia la finestra di progettazione dei report per visualizzare le modifiche applicate.</value>
+  </data>
+  <data name="User_SortType_ByEmail" xml:space="preserve">
+    <value>Ordina per E-mail</value>
   </data>
 </root>

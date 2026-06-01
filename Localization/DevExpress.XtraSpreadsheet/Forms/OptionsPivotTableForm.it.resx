@@ -1,5 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -7,19 +112,16 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lblAltText.Text" xml:space="preserve">
-    <value>Titoli e descrizioni forniscono rappresentazioni alternative, basate su testo, delle informazioni contenute nelle tabelle. Queste informazioni sono utili per le persone con disabilità visive o cognitive che potrebbero non essere in grado di vedere o comprendere la tabella. Un titolo può essere letto a una persona con disabilità e serve a stabilire se desidera ascoltare la descrizione del contenuto.</value>
-  </data>
   <data name="btnCancel.AccessibleName" xml:space="preserve">
-    <value>Annulla</value>
+    <value>Annullare</value>
   </data>
   <data name="btnCancel.Text" xml:space="preserve">
-    <value>Annulla</value>
+    <value>Annullare</value>
   </data>
   <data name="btnOk.AccessibleName" xml:space="preserve">
     <value>OK</value>
@@ -27,29 +129,68 @@
   <data name="btnOk.Text" xml:space="preserve">
     <value>OK</value>
   </data>
+  <data name="chkEnableShowDetails.Properties.AccessibleName" xml:space="preserve">
+    <value>Abilita la visualizzazione dei dettagli</value>
+  </data>
+  <data name="chkSaveSourceDataWithFile.Properties.AccessibleName" xml:space="preserve">
+    <value>Salva i dati di origine nel file</value>
+  </data>
+  <data name="chkSaveSourceDataWithFile.Properties.Caption" xml:space="preserve">
+    <value>Salva i dati di origine nel file</value>
+  </data>
   <data name="edtDecsription.Properties.AccessibleName" xml:space="preserve">
     <value>Descrizione</value>
   </data>
-  <data name="lblDescription.AccessibleName" xml:space="preserve">
-    <value>Descrizione</value>
+  <data name="edtFieldsReportFilterArea.Properties.NullText" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="edtNumberOfItems.Properties.NullText" xml:space="preserve">
+    <value> </value>
   </data>
   <data name="edtTitle.Properties.AccessibleName" xml:space="preserve">
     <value>Titolo</value>
   </data>
-  <data name="lblTitle.AccessibleName" xml:space="preserve">
-    <value>Titolo</value>
+  <data name="layoutControlGroup3.Text" xml:space="preserve">
+    <value>Display</value>
   </data>
-  <data name="lblTitle.Text" xml:space="preserve">
-    <value>&amp;Titolo</value>
-  </data>
-  <data name="lblPrint.AccessibleName" xml:space="preserve">
+  <data name="layoutControlGroup4.Text" xml:space="preserve">
     <value>Stampa</value>
   </data>
-  <data name="lblPrint.Text" xml:space="preserve">
-    <value>Stampa</value>
+  <data name="layoutControlGroup5.Text" xml:space="preserve">
+    <value>Dati</value>
+  </data>
+  <data name="lblAltText.Text" xml:space="preserve">
+    <value>Titoli e descrizioni forniscono rappresentazioni testuali alternative delle informazioni contenute nelle tabelle. Queste informazioni sono utili per le persone con disabilità visive o cognitive che potrebbero non essere in grado di vedere o comprendere la tabella. Il titolo può essere letto a una persona con disabilità e utilizzato per stabilire se desidera ascoltare la descrizione del contenuto.</value>
+  </data>
+  <data name="lblCharacters.AccessibleName" xml:space="preserve">
+    <value>Caratteri</value>
+  </data>
+  <data name="lblCharacters.Text" xml:space="preserve">
+    <value>caratteri</value>
+  </data>
+  <data name="lblColumn.AccessibleName" xml:space="preserve">
+    <value>colonna</value>
   </data>
   <data name="lblColumn.Text" xml:space="preserve">
     <value>colonna:</value>
+  </data>
+  <data name="lblDescription.AccessibleName" xml:space="preserve">
+    <value>Descrizione</value>
+  </data>
+  <data name="lblDescription.Text" xml:space="preserve">
+    <value>Descrizione</value>
+  </data>
+  <data name="lblDisplay.AccessibleName" xml:space="preserve">
+    <value>Display</value>
+  </data>
+  <data name="lblDisplay.Text" xml:space="preserve">
+    <value>Display</value>
+  </data>
+  <data name="lblFilters.AccessibleName" xml:space="preserve">
+    <value>Filtri</value>
+  </data>
+  <data name="lblFilters.Text" xml:space="preserve">
+    <value>Filtri</value>
   </data>
   <data name="lblFormat.AccessibleName" xml:space="preserve">
     <value>Formato</value>
@@ -58,195 +199,39 @@
     <value>Formato</value>
   </data>
   <data name="lblLayout.AccessibleName" xml:space="preserve">
-    <value>Layout</value>
+    <value>Disposizione</value>
   </data>
   <data name="lblLayout.Text" xml:space="preserve">
-    <value>Layout</value>
+    <value>Disposizione</value>
   </data>
-  <data name="lblFieldList.AccessibleName" xml:space="preserve">
-    <value>Elenco campi</value>
-  </data>
-  <data name="lblFieldList.Text" xml:space="preserve">
-    <value>Elenco campi</value>
-  </data>
-  <data name="lblSorting.AccessibleName" xml:space="preserve">
-    <value>Ordinamento</value>
-  </data>
-  <data name="lblSorting.Text" xml:space="preserve">
-    <value>Ordinamento</value>
-  </data>
-  <data name="lblDisplay.AccessibleName" xml:space="preserve">
-    <value>Visualizza</value>
-  </data>
-  <data name="lblDisplay.Text" xml:space="preserve">
-    <value>Visualizza</value>
-  </data>
-  <data name="layoutControlGroup3.Text" xml:space="preserve">
-    <value>Visualizza</value>
-  </data>
-  <data name="layoutControlGroup4.Text" xml:space="preserve">
+  <data name="lblPrint.AccessibleName" xml:space="preserve">
     <value>Stampa</value>
   </data>
-  <data name="lblDescription.Text" xml:space="preserve">
-    <value>&amp;Descrizione</value>
+  <data name="lblPrint.Text" xml:space="preserve">
+    <value>Stampa</value>
+  </data>
+  <data name="lblRow.AccessibleName" xml:space="preserve">
+    <value>riga</value>
+  </data>
+  <data name="lblRow.Text" xml:space="preserve">
+    <value>riga:</value>
+  </data>
+  <data name="lblSeparator3.AccessibleName" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="lblSeparator4.AccessibleName" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="lblSeparator5.AccessibleName" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="lblSeparator6.AccessibleName" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="lblTitle.AccessibleName" xml:space="preserve">
+    <value>Titolo</value>
   </data>
   <data name="rgrpSort.Properties.AccessibleName" xml:space="preserve">
-    <value>Ordina</value>
-  </data>
-  <data name="rgrpSort.Properties.Items1" xml:space="preserve">
-    <value>Ordina dalla &amp;A alla Z</value>
-  </data>
-  <data name="chkEnableCellEditing.Properties.Caption" xml:space="preserve">
-    <value>&amp;Abilita la modifica delle celle nell'area dei valori</value>
-  </data>
-  <data name="chkSetPrintTitles.Properties.Caption" xml:space="preserve">
-    <value>&amp;Imposta titoli di stampa</value>
-  </data>
-  <data name="chkRepeatRowLabels.Properties.Caption" xml:space="preserve">
-    <value>&amp;Ripetere le etichette di riga su ogni pagina stampata</value>
-  </data>
-  <data name="lblNumberOfItems.Text" xml:space="preserve">
-    <value>&amp;Numero di elementi da conservare per campo:</value>
-  </data>
-  <data name="chkPrintExpandColapseButtons.Properties.Caption" xml:space="preserve">
-    <value>&amp;Stampa i pulsanti di espansione/compressione quando visualizzati sulla tabella pivot</value>
-  </data>
-  <data name="chkRerfeshData.Properties.Caption" xml:space="preserve">
-    <value>&amp;Aggiorna i dati all'apertura del file</value>
-  </data>
-  <data name="chkEnableShowDetails.Properties.Caption" xml:space="preserve">
-    <value>&amp;Abilita la visualizzazione dei dettagli</value>
-  </data>
-  <data name="chkSaveSourceDataWithFile.Properties.Caption" xml:space="preserve">
-    <value>&amp;Salva i dati sorgente con il file</value>
-  </data>
-  <data name="chkPreserveCellFormatting.Properties.Caption" xml:space="preserve">
-    <value>&amp;Mantieni la formattazione delle celle durante l'aggiornamento</value>
-  </data>
-  <data name="chkMultipleFiltersField.Properties.Caption" xml:space="preserve">
-    <value>&amp;Consenti l'utilizzo di più filtri per campo</value>
-  </data>
-  <data name="chkAutofitColumnWidths.Properties.Caption" xml:space="preserve">
-    <value>&amp;Adatta automaticamente la larghezza delle colonne all'aggiornamento</value>
-  </data>
-  <data name="chkDisplayFieldAndFilter.Properties.Caption" xml:space="preserve">
-    <value>&amp;Visualizza le didascalie dei campi e i menu a tendina dei filtri</value>
-  </data>
-  <data name="chkGrandTotalsRows.Properties.Caption" xml:space="preserve">
-    <value>&amp;Mostra i totali complessivi per riga</value>
-  </data>
-  <data name="chkShowExpandCollapseButtons.Properties.Caption" xml:space="preserve">
-    <value>&amp;Mostra i pulsanti di espansione/compressione</value>
-  </data>
-  <data name="chkMergeAndCenterCells.Properties.Caption" xml:space="preserve">
-    <value>&amp;Unisci e centra le celle con le etichette</value>
-  </data>
-  <data name="lblFieldsReportFilterArea.Text" xml:space="preserve">
-    <value>&amp;Campi da visualizzare nell'area del filtro del report:</value>
-  </data>
-  <data name="chkUseCustomLists.Properties.AccessibleName" xml:space="preserve">
-    <value>Utilizza elenchi personalizzati durante l'ordinamento</value>
-  </data>
-  <data name="chkUseCustomLists.Properties.Caption" xml:space="preserve">
-    <value>Utilizza elenchi personalizzati durante l'ordinamento</value>
-  </data>
-  <data name="lblColumn.AccessibleName" xml:space="preserve">
-    <value>colonna</value>
-  </data>
-  <data name="lblWhatIfAnalysis.AccessibleName" xml:space="preserve">
-    <value>Analisi di scenario</value>
-  </data>
-  <data name="lblWhatIfAnalysis.Text" xml:space="preserve">
-    <value>Analisi di scenario</value>
-  </data>
-  <data name="lblFilters.AccessibleName" xml:space="preserve">
-    <value>Filtri</value>
-  </data>
-  <data name="lblFilters.Text" xml:space="preserve">
-    <value>Filtri</value>
-  </data>
-  <data name="lblIndentRowLabels.AccessibleName" xml:space="preserve">
-    <value>Quando in formato compatto, rientrare le etichette di riga</value>
-  </data>
-  <data name="lblIndentRowLabels.Text" xml:space="preserve">
-    <value>Quando in formato compatto, rientra le etichette di riga:</value>
-  </data>
-  <data name="edtIndentRowLabels.Properties.AccessibleName" xml:space="preserve">
-    <value>Quando in formato compatto, rientrare le etichette di riga</value>
-  </data>
-  <data name="lblAltText.AccessibleName" xml:space="preserve">
-    <value>Titoli e descrizioni forniscono rappresentazioni alternative, basate sul testo, del</value>
-  </data>
-  <data name="chkDisplayItemLabels.Properties.AccessibleName" xml:space="preserve">
-    <value>Unisci e centra le celle con le etichette</value>
-  </data>
-  <data name="chkMultipleFiltersField.Properties.AccessibleName" xml:space="preserve">
-    <value>Consenti più filtri per campo</value>
-  </data>
-  <data name="chkAutofitColumnWidths.Properties.AccessibleName" xml:space="preserve">
-    <value>Adatta automaticamente la larghezza delle colonne all'aggiornamento</value>
-  </data>
-  <data name="chkMergeAndCenterCells.Properties.AccessibleName" xml:space="preserve">
-    <value>Unisci e centra le celle con le etichette</value>
-  </data>
-  <data name="layoutControlGroup2.Text" xml:space="preserve">
-    <value>Totale e filtri</value>
-  </data>
-  <data name="layoutControlGroup6.Text" xml:space="preserve">
-    <value>Testo alternativo</value>
-  </data>
-  <data name="chkEnableCellEditing.Properties.AccessibleName" xml:space="preserve">
-    <value>Abilita la modifica delle celle nell'area dei valori</value>
-  </data>
-  <data name="chkEnableShowDetails.Properties.AccessibleName" xml:space="preserve">
-    <value>Abilita la visualizzazione dei dettagli</value>
-  </data>
-  <data name="chkDisplayItemLabels.Properties.Caption" xml:space="preserve">
-    <value>Visualizza le etichette degli elementi quando non sono presenti campi nell'area dei valori</value>
-  </data>
-  <data name="chkDisplayFieldAndFilter.Properties.AccessibleName" xml:space="preserve">
-    <value>Visualizza le didascalie dei campi e i menu a tendina dei filtri</value>
-  </data>
-  <data name="edtFieldsReportFilterArea.Properties.AccessibleName" xml:space="preserve">
-    <value>Visualizza i campi nell'area del filtro del report</value>
-  </data>
-  <data name="lblCharacters.AccessibleName" xml:space="preserve">
-    <value>Caratteri</value>
-  </data>
-  <data name="lblCharacters.Text" xml:space="preserve">
-    <value>caratteri</value>
-  </data>
-  <data name="lblFieldsReportFilterArea.AccessibleName" xml:space="preserve">
-    <value>Visualizza i campi nell'area del filtro del report</value>
-  </data>
-  <data name="edtEmptyCellsShow.Properties.AccessibleName" xml:space="preserve">
-    <value>Per le celle vuote mostra</value>
-  </data>
-  <data name="lblGrandTotals.AccessibleName" xml:space="preserve">
-    <value>Totali complessivi</value>
-  </data>
-  <data name="lblGrandTotals.Text" xml:space="preserve">
-    <value>Totali complessivi</value>
-  </data>
-  <data name="chkEmptyCellsShow.Properties.AccessibleName" xml:space="preserve">
-    <value>Per le celle vuote mostra</value>
-  </data>
-  <data name="chkEmptyCellsShow.Properties.Caption" xml:space="preserve">
-    <value>Per le celle vuote mostra:</value>
-  </data>
-  <data name="chkErrorValuesShow.Properties.AccessibleName" xml:space="preserve">
-    <value>Per visualizzare il valore di errore</value>
-  </data>
-  <data name="chkErrorValuesShow.Properties.Caption" xml:space="preserve">
-    <value>Per i valori di errore, mostra:</value>
-  </data>
-  <data name="edtErrorValuesShow.Properties.AccessibleName" xml:space="preserve">
-    <value>Per visualizzare il valore di errore</value>
-  </data>
-  <data name="chkRepeatRowLabels.Properties.AccessibleName" xml:space="preserve">
-    <value>Ripeti le etichette di riga su ogni pagina stampata</value>
-  </data>
-  <data name="layoutControlGroup5.Text" xml:space="preserve">
-    <value>Dati</value>
+    <value>Ordinamento</value>
   </data>
 </root>

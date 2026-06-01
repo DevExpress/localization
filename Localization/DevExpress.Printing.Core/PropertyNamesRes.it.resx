@@ -60,45 +60,45 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -352,7 +352,7 @@
     <value>In Basso</value>
   </data>
   <data name="DevExpress.XtraPrinting.XlDocumentOptions.Tags" xml:space="preserve">
-    <value>Etichette</value>
+    <value>Tags</value>
   </data>
   <data name="DevExpress.XtraPrinting.BarCode.QRCodeVersion.Version14" xml:space="preserve">
     <value>Versione 14 (73x73)</value>
@@ -1309,7 +1309,7 @@
     <value>Binario</value>
   </data>
   <data name="DevExpress.XtraPrinting.BarCode.CodabarStartStopPair.AT" xml:space="preserve">
-    <value>A</value>
+    <value>AT</value>
   </data>
   <data name="DevExpress.XtraPrinting.BarCode.DataMatrixSize.Matrix48x48" xml:space="preserve">
     <value>48 x 48</value>
@@ -1375,7 +1375,7 @@
     <value>Altezza automatica</value>
   </data>
   <data name="DevExpress.XtraPrinting.SizeMode.AutoSize" xml:space="preserve">
-    <value>Dimensioni automatiche</value>
+    <value>Auto Size</value>
   </data>
   <data name="DevExpress.XtraPrinting.SizeMode.AutoWidth" xml:space="preserve">
     <value>Larghezza automatica</value>
@@ -1399,7 +1399,7 @@
     <value>Compatibile</value>
   </data>
   <data name="DevExpress.XtraPrinting.XlEncryptionType.Strong" xml:space="preserve">
-    <value>Forte</value>
+    <value>Strong</value>
   </data>
   <data name="DevExpress.XtraPrinting.XlEncryptionOptions.Type" xml:space="preserve">
     <value>Tipo</value>
@@ -1492,10 +1492,10 @@
     <value>Codice MSI</value>
   </data>
   <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.DataBar" xml:space="preserve">
-    <value>Database</value>
+    <value>DataBar</value>
   </data>
   <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.DataMatrix" xml:space="preserve">
-    <value>Matrice di dati</value>
+    <value>Data Matrix</value>
   </data>
   <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.DataMatrixGS1" xml:space="preserve">
     <value>Dati matrice GS1</value>
@@ -1605,35 +1605,11 @@
   <data name="DevExpress.XtraPrinting.BarCode.QRFrameOptions.TextColor" xml:space="preserve">
     <value>Colore Testo</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.QRFrameOptions.TextPosition" xml:space="preserve">
-    <value>Posizione del testo</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.GlyphStyle.YesNo" xml:space="preserve">
-    <value>Sì/No</value>
-  </data>
-  <data name="DevExpress.XtraReports.Diagnostics.ErrorCategory.General" xml:space="preserve">
-    <value>Generale</value>
-  </data>
-  <data name="DevExpress.XtraReports.Diagnostics.ErrorCategory.Accessibility" xml:space="preserve">
-    <value>Accessibilità</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.Drawing.PageWatermark.TextPosition" xml:space="preserve">
-    <value>Posizione del testo</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeGenerator.Version" xml:space="preserve">
-    <value>Versione</value>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeCompactionMode.Binary" xml:space="preserve">
+    <value>Binario</value>
   </data>
   <data name="DevExpress.XtraPrinting.BarCode.AztecCodeCompactionMode.Text" xml:space="preserve">
     <value>Testo</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.MicroQRCodeErrorCorrectionLevel.Auto" xml:space="preserve">
-    <value>Auto</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.MicroQRCodeGenerator.Version" xml:space="preserve">
-    <value>Versione</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.MicroQRCodeCompactionMode.Byte" xml:space="preserve">
-    <value>Byte</value>
   </data>
   <data name="DevExpress.XtraPrinting.BarCode.AztecCodeErrorCorrectionLevel.Level0" xml:space="preserve">
     <value>Livello 0</value>
@@ -1650,68 +1626,152 @@
   <data name="DevExpress.XtraPrinting.BarCode.AztecCodeErrorCorrectionLevel.Level4" xml:space="preserve">
     <value>Livello 4</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.MicroQRCode" xml:space="preserve">
-    <value>Micro QR Code</value>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeGenerator.Version" xml:space="preserve">
+    <value>Versione</value>
   </data>
-  <data name="DevExpress.XtraReports.Diagnostics.ErrorSource.ReportExport" xml:space="preserve">
-    <value>Esplora report</value>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version101x101" xml:space="preserve">
+    <value>101x101</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version15x15Compact" xml:space="preserve">
-    <value>15x15 Compatto</value>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version105x105" xml:space="preserve">
+    <value>105x105</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version19x19Compact" xml:space="preserve">
-    <value>19x19 Compatto</value>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version109x109" xml:space="preserve">
+    <value>109x109</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version113x113" xml:space="preserve">
+    <value>113x113</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version117x117" xml:space="preserve">
+    <value>117x117</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version121x121" xml:space="preserve">
+    <value>121x121</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version125x125" xml:space="preserve">
+    <value>125x125</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version131x131" xml:space="preserve">
+    <value>131x131</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version135x135" xml:space="preserve">
+    <value>135x135</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version139x139" xml:space="preserve">
+    <value>139x139</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version143x143" xml:space="preserve">
+    <value>143x143</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version147x147" xml:space="preserve">
+    <value>147x147</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version151x151" xml:space="preserve">
+    <value>151x151</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version19x19" xml:space="preserve">
+    <value>19x19</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version23x23" xml:space="preserve">
+    <value>23x23</value>
   </data>
   <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version23x23Compact" xml:space="preserve">
-    <value>23x23 Compatto</value>
+    <value>Compatto 23x23</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version27x27" xml:space="preserve">
+    <value>27x27</value>
   </data>
   <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version27x27Compact" xml:space="preserve">
-    <value>27x27 Compatto</value>
+    <value>Compatto 27X27</value>
   </data>
-  <data name="DevExpress.XtraReports.Parameters.Parameter.SelectAllValues" xml:space="preserve">
-    <value>Seleziona tutti i valori</value>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version31x31" xml:space="preserve">
+    <value>31x31</value>
   </data>
-  <data name="DevExpress.XtraReports.Parameters.Parameter.ValueSourceSettings" xml:space="preserve">
-    <value>Fonte di valore</value>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version37x37" xml:space="preserve">
+    <value>37x37</value>
   </data>
-  <data name="DevExpress.XtraReports.Parameters.Parameter.AllowNull" xml:space="preserve">
-    <value>Consenti Null</value>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version41x41" xml:space="preserve">
+    <value>41x41</value>
   </data>
-  <data name="DevExpress.XtraReports.Parameters.Parameter.ValueExpression" xml:space="preserve">
-    <value>Espressione del valore</value>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version45x45" xml:space="preserve">
+    <value>45x45</value>
   </data>
-  <data name="DevExpress.XtraReports.Parameters.DynamicListLookUpSettings.UseServerSideFiltering" xml:space="preserve">
-    <value>Utilizzare il filtro lato server</value>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version49x49" xml:space="preserve">
+    <value>49x49</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.UPCSupplemental2" xml:space="preserve">
-    <value>Supplemento UPC 2</value>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version53x53" xml:space="preserve">
+    <value>53x53</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.UPCSupplemental5" xml:space="preserve">
-    <value>Supplemento UPC 5</value>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version57x57" xml:space="preserve">
+    <value>57x57</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.QRFrameTextAlignment.Baseline" xml:space="preserve">
-    <value>Linea di base</value>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version61x61" xml:space="preserve">
+    <value>61x61</value>
   </data>
-  <data name="DevExpress.XtraPrinting.GlyphStyle.YesNoBox" xml:space="preserve">
-    <value>Casella Sì/No</value>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version67x67" xml:space="preserve">
+    <value>67x67</value>
   </data>
-  <data name="DevExpress.XtraPrinting.GlyphStyle.YesNoSolidBox" xml:space="preserve">
-    <value>Sì/No casella solida</value>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version71x71" xml:space="preserve">
+    <value>71x71</value>
   </data>
-  <data name="DevExpress.XtraPrinting.Drawing.WatermarkPosition.Behind" xml:space="preserve">
-    <value>Dietro</value>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version75x75" xml:space="preserve">
+    <value>75x75</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.AztecCode" xml:space="preserve">
-    <value>Codice Azteco</value>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version79x79" xml:space="preserve">
+    <value>79x79</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.AutoVersion" xml:space="preserve">
-    <value>Versione a selezione automatica</value>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version83x83" xml:space="preserve">
+    <value>83x83</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeCompactionMode.Binary" xml:space="preserve">
-    <value>Binario</value>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version87x87" xml:space="preserve">
+    <value>87x87</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.MicroQRCodeVersion.AutoVersion" xml:space="preserve">
-    <value>Versione a selezione automatica</value>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version91x91" xml:space="preserve">
+    <value>91x91</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeVersion.Version95x95" xml:space="preserve">
+    <value>95x95</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.CodabarStartStopSymbol.D" xml:space="preserve">
+    <value>d</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.Code128Generator.FNC1Substitute" xml:space="preserve">
+    <value>Carattere funzionale FNC1</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.Code128Generator.FNC2Substitute" xml:space="preserve">
+    <value>Carattere funzionale FNC2</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.Code128Generator.FNC3Substitute" xml:space="preserve">
+    <value>Carattere funzionale FNC3</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.Code128Generator.FNC4Substitute" xml:space="preserve">
+    <value>Carattere funzionale FNC4</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.MicroQRCodeCompactionMode.AlphaNumeric" xml:space="preserve">
+    <value>Alfa numerici</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.MicroQRCodeCompactionMode.Byte" xml:space="preserve">
+    <value>Byte</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.MicroQRCodeCompactionMode.Numeric" xml:space="preserve">
+    <value>Numerico</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.MicroQRCodeErrorCorrectionLevel.Auto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.MicroQRCodeErrorCorrectionLevel.D" xml:space="preserve">
+    <value>d</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.MicroQRCodeErrorCorrectionLevel.L" xml:space="preserve">
+    <value>L</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.MicroQRCodeErrorCorrectionLevel.M" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.MicroQRCodeErrorCorrectionLevel.Q" xml:space="preserve">
+    <value>Q</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.MicroQRCodeGenerator.Version" xml:space="preserve">
+    <value>Versione</value>
   </data>
   <data name="DevExpress.XtraPrinting.BarCode.MicroQRCodeVersion.VersionM1" xml:space="preserve">
     <value>Versione M1 (11 x 11)</value>
@@ -1725,91 +1785,139 @@
   <data name="DevExpress.XtraPrinting.BarCode.MicroQRCodeVersion.VersionM4" xml:space="preserve">
     <value>Versione M4 (17 x 17)</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.MicroQRCodeCompactionMode.AlphaNumeric" xml:space="preserve">
-    <value>Alfa Numerico</value>
+  <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.ITF14" xml:space="preserve">
+    <value>ITF 14</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.CornerQRFrameOptions" xml:space="preserve">
-    <value>Angolo</value>
+  <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.Matrix2of5" xml:space="preserve">
+    <value>Matrix 2 di 5</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.QRFrameOptions.CornerRadius" xml:space="preserve">
-    <value>Raggio d'angolo</value>
+  <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.MicroQRCode" xml:space="preserve">
+    <value>Micro QR Code</value>
   </data>
-  <data name="DevExpress.XtraPrinting.GlyphStyle.Toggle" xml:space="preserve">
-    <value>Attiva/disattiva</value>
+  <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.PDF417" xml:space="preserve">
+    <value>PDF 417</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.PharmacodeType.TwoTrack" xml:space="preserve">
-    <value>Due tracce</value>
+  <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.Pharmacode" xml:space="preserve">
+    <value>Pharmacode</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.QRCodeEPC" xml:space="preserve">
-    <value>Codice QR EPC</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.DeutschePostIdentcode" xml:space="preserve">
-    <value>Codice identificativo delle Poste tedesche</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.DeutschePostLeitcode" xml:space="preserve">
-    <value>Codice postale tedesco</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.CsvExportOptions.EncodeExecutableContent" xml:space="preserve">
-    <value>Codifica il contenuto eseguibile</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.PdfExportOptions.ExportBookmarks" xml:space="preserve">
-    <value>Esporta segnalibri</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeGenerator.ErrorCorrectionLevel" xml:space="preserve">
-    <value>Livello di correzione degli errori</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.AztecCodeGenerator.CompactionMode" xml:space="preserve">
-    <value>Modalità di compressione</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.MicroQRCodeGenerator.ErrorCorrectionLevel" xml:space="preserve">
-    <value>Livello di correzione degli errori</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.MicroQRCodeGenerator.CompactionMode" xml:space="preserve">
-    <value>Modalità di compressione</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.Code128Generator.FNC1Substitute" xml:space="preserve">
-    <value>Caratteristica funzionale FNC1</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.QRCodeGS1Generator.FNC1Substitute" xml:space="preserve">
-    <value>Caratteristica funzionale FNC1</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.Code128Generator.FNC2Substitute" xml:space="preserve">
-    <value>Carattere funzionale FNC2</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.Code128Generator.FNC3Substitute" xml:space="preserve">
-    <value>Carattere funzionale FNC3</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.BarCode.Code128Generator.FNC4Substitute" xml:space="preserve">
-    <value>Carattere funzionale FNC4</value>
-  </data>
-  <data name="DevExpress.XtraPrinting.GlyphStyle.Heart" xml:space="preserve">
-    <value>Cuore</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.RangeParametersSettings.StartParameter" xml:space="preserve">
-    <value>Parametro iniziale</value>
-  </data>
-  <data name="DevExpress.XtraReports.Parameters.RangeParametersSettings.EndParameter" xml:space="preserve">
-    <value>Parametro finale</value>
+  <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.PostNet" xml:space="preserve">
+    <value>PostNet</value>
   </data>
   <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.QRCode" xml:space="preserve">
     <value>Codice QR</value>
   </data>
+  <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.QRCodeEPC" xml:space="preserve">
+    <value>Codice QR EPC</value>
+  </data>
   <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.QRCodeGS1" xml:space="preserve">
-    <value>Codice QR GS1</value>
+    <value>QR Code GS1</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.QRFrameOptions.FrameColor" xml:space="preserve">
-    <value>Colore della cornice</value>
+  <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.SSCC" xml:space="preserve">
+    <value>SSCC-18</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.QRFrameOptions.FrameWidth" xml:space="preserve">
-    <value>Larghezza del telaio</value>
+  <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.UPCA" xml:space="preserve">
+    <value>UPC A</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.QRCodeGenerator.FrameOptions" xml:space="preserve">
-    <value>Opzioni di cornice</value>
+  <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.UPCE0" xml:space="preserve">
+    <value>UPC E0</value>
   </data>
-  <data name="DevExpress.XtraPrinting.BarCode.CodabarGenerator.StartSymbol" xml:space="preserve">
-    <value>Simbolo di avvio</value>
+  <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.UPCE1" xml:space="preserve">
+    <value>UPC E1</value>
   </data>
-  <data name="DevExpress.XtraPrinting.GlyphStyle.Thumb" xml:space="preserve">
-    <value>Pollice</value>
+  <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.UPCSupplemental2" xml:space="preserve">
+    <value>UPC supplementare 2</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.UPCSupplemental5" xml:space="preserve">
+    <value>UPC supplementare 5</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.PharmacodeType.OneTrack" xml:space="preserve">
+    <value>One-Track</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.PharmacodeType.TwoTrack" xml:space="preserve">
+    <value>Two-Track</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.QRFrameOptions.TextPosition" xml:space="preserve">
+    <value>Posizione del testo</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.Drawing.ImageItem" xml:space="preserve">
+    <value>Elemento immagine</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.Drawing.PageWatermark.ImageAlignment" xml:space="preserve">
+    <value>Allineamento dell'immagine</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.Drawing.PageWatermark.ImagePosition" xml:space="preserve">
+    <value>Posizione dell'immagine</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.Drawing.PageWatermark.ImageSource" xml:space="preserve">
+    <value>Origine dell'immagine</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.Drawing.PageWatermark.TextPosition" xml:space="preserve">
+    <value>Posizione del testo</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.Drawing.WatermarkPosition.Behind" xml:space="preserve">
+    <value>Dietro</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.GlyphStyle.YesNo" xml:space="preserve">
+    <value>Sì/No</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.ImageItem.ImageSource" xml:space="preserve">
+    <value>Origine dell'immagine</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.PdfACompatibility.PdfA1a" xml:space="preserve">
+    <value>PDF/A-1a</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.PdfACompatibility.PdfA2a" xml:space="preserve">
+    <value>PDF/A-2a</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.PdfACompatibility.PdfA3a" xml:space="preserve">
+    <value>PDF/A-3a</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.PdfExportOptions.ExportBookmarks" xml:space="preserve">
+    <value>Esporta segnalibri</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.PdfExportOptions.PdfUACompatibility" xml:space="preserve">
+    <value>Compatibilità PDF/UA</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.PdfHashAlgorithm.SHA1" xml:space="preserve">
+    <value>SHA-1</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.PdfHashAlgorithm.SHA256" xml:space="preserve">
+    <value>SHA-256</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.PdfHashAlgorithm.SHA384" xml:space="preserve">
+    <value>SHA-384</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.PdfHashAlgorithm.SHA512" xml:space="preserve">
+    <value>SHA-512</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.PdfUACompatibility.PdfUA1" xml:space="preserve">
+    <value>PDF/UA-1</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.PdfUACompatibility.PdfUA2" xml:space="preserve">
+    <value>PDF/UA-2</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.SignatureImageDisplayMode.ShowCertificateNameAsImage" xml:space="preserve">
+    <value>Mostra il nome del certificato come immagine</value>
+  </data>
+  <data name="DevExpress.XtraReports.Diagnostics.ErrorCategory.Accessibility" xml:space="preserve">
+    <value>Accessibilità</value>
+  </data>
+  <data name="DevExpress.XtraReports.Diagnostics.ErrorCategory.General" xml:space="preserve">
+    <value>Generale</value>
+  </data>
+  <data name="DevExpress.XtraReports.Diagnostics.ErrorSource.ReportCreation" xml:space="preserve">
+    <value>Creazione report</value>
+  </data>
+  <data name="DevExpress.XtraReports.Diagnostics.ErrorSource.ReportExport" xml:space="preserve">
+    <value>Esportazione report</value>
+  </data>
+  <data name="DevExpress.XtraReports.Diagnostics.ErrorSource.ReportLayout" xml:space="preserve">
+    <value>Layout del report</value>
+  </data>
+  <data name="DevExpress.XtraReports.Diagnostics.ErrorSource.ReportScripts" xml:space="preserve">
+    <value>Script report</value>
+  </data>
+  <data name="DevExpress.XtraReports.Parameters.Parameter.SelectAllValues" xml:space="preserve">
+    <value>Selezionare tutti i valori</value>
   </data>
 </root>

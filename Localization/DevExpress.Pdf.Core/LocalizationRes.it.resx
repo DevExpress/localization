@@ -60,45 +60,45 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -124,7 +124,7 @@
     <value>{1} {0:0.00} ({2} Byte)</value>
   </data>
   <data name="PdfCoreStringId.FileSizeInBytes" xml:space="preserve">
-    <value>{0} Byte</value>
+    <value>{0} Bytes</value>
   </data>
   <data name="PdfCoreStringId.MsgIncorrectText" xml:space="preserve">
     <value>Il valore di testo non può essere null.</value>
@@ -154,7 +154,7 @@
     <value>La lista deve contenere almeno un valore.</value>
   </data>
   <data name="PdfCoreStringId.MsgIncorrectPageNumber" xml:space="preserve">
-    <value>Il numero di pagina deve rientrare nell’intervallo da 1 a {0}.</value>
+    <value>Il numero di pagina deve essere maggiore di 0.</value>
   </data>
   <data name="PdfCoreStringId.MsgIncorrectPdfData" xml:space="preserve">
     <value>Dati di input non sono riconosciuti come validi pdf.</value>
@@ -205,13 +205,13 @@
     <value>L'argomento deve essere un valore stringa o un elenco di valori di stringa dall'array options.</value>
   </data>
   <data name="PdfCoreStringId.MsgFormDataNotFound" xml:space="preserve">
-    <value>Il campo con il nome specificato non è presente nel documento.</value>
+    <value>La struttura del documento non contiene un campo con il nome specificato: {0}.</value>
   </data>
   <data name="PdfCoreStringId.MsgIncorrectButtonFormFieldValue" xml:space="preserve">
     <value>L'argomento dovrebbe essere il nome di un aspetto del pulsante o un valore dall'array options.</value>
   </data>
   <data name="PdfCoreStringId.MsgIncorrectPrintableFilePath" xml:space="preserve">
-    <value>Il nome file specificato per il documento stampabile non è valido.</value>
+    <value>Impossibile creare un documento di stampa con il nome specificato: {0}.</value>
   </data>
   <data name="PdfCoreStringId.MsgIncorrectTextFormFieldValue" xml:space="preserve">
     <value>L'argomento deve essere un valore stringa.</value>
@@ -259,7 +259,7 @@
     <value>Dimensione: {0}</value>
   </data>
   <data name="PdfCoreStringId.MsgIncompatibleOperationWithCurrentDocumentFormat" xml:space="preserve">
-    <value>L'operazione non è supportata nella modalità di compatibilità PdfCompatibility.{0}. Creare un documento nella modalità di compatibilità PdfCompatibility.Pdf.</value>
+    <value>l'operazione non è supportata in PdfCompatibility. { 0} modalità di compatibilità. Si prega di creare un documento in modalità di compatibilità PdfCompatibility.Pdf.</value>
   </data>
   <data name="PdfCoreStringId.MsgIncorrectBookmarkListValue" xml:space="preserve">
     <value>Elenco dei segnalibri non può essere null</value>
@@ -286,7 +286,7 @@
     <value>Unità Display e mondo non sono supportati per il sistema di coordinate di origine immagine.</value>
   </data>
   <data name="PdfCoreStringId.MsgAttachmentHintModificationDate" xml:space="preserve">
-    <value>Modificato: {0:G}</value>
+    <value>Modifica: {0: g}</value>
   </data>
   <data name="PdfCoreStringId.MsgMissingPageNumbers" xml:space="preserve">
     <value>Almeno una pagina numero deve essere specificato.</value>
@@ -381,178 +381,19 @@
   <data name="PdfCoreStringId.RubberStampDConfidentialCredentials" xml:space="preserve">
     <value>{0}</value>
   </data>
-  <data name="PdfCoreStringId.AnnotationFilterTypeRubberStamp" xml:space="preserve">
-    <value>Timbro</value>
-  </data>
-  <data name="PdfCoreStringId.MsgUnresolvedXmpPrefix" xml:space="preserve">
-    <value>Impossibile risolvere il prefisso specificato nel nome qualificato. Assicurarsi di aver registrato il prefisso e il relativo namespace nella chiamata al metodo XmpDocument.RegisterNamespace.</value>
-  </data>
-  <data name="PdfCoreStringId.AnnotationFilterTypeFileAttachment" xml:space="preserve">
-    <value>File allegato</value>
-  </data>
-  <data name="PdfCoreStringId.RubberStampConfidential" xml:space="preserve">
-    <value>Riservato</value>
-  </data>
-  <data name="PdfCoreStringId.RubberStampDConfidential" xml:space="preserve">
-    <value>Riservato</value>
-  </data>
-  <data name="PdfCoreStringId.AnnotationFilterTypeCaret" xml:space="preserve">
-    <value>Inserisci testo</value>
-  </data>
-  <data name="PdfCoreStringId.MsgConversionIssueDeviceCmykRgbError" xml:space="preserve">
-    <value>Gli spazi colore DeviceCMYK e DeviceRGB vengono utilizzati senza profili ICC. Valutare la possibilità di convertire il documento in un singolo spazio colore per dispositivo o in uno spazio colore indipendente dal dispositivo.</value>
-  </data>
-  <data name="PdfCoreStringId.MsgConversionIssueFailedException" xml:space="preserve">
-    <value>Possibile errore di formato del documento. Conversione non riuscita con la seguente eccezione: {0}.</value>
-  </data>
-  <data name="PdfCoreStringId.MsgConversionIssueType1FontEmbedding" xml:space="preserve">
-    <value>L'incorporamento del carattere Type1 non è completamente supportato: {0}. È stato sostituito con il seguente carattere: {1}.</value>
-  </data>
-  <data name="PdfCoreStringId.MsgConversionIssueTransparencyRemoved" xml:space="preserve">
-    <value>Il documento contiene elementi grafici trasparenti. La trasparenza è stata rimossa e l'aspetto visivo del documento potrebbe risultare modificato.</value>
-  </data>
-  <data name="PdfCoreStringId.RubberStampSHAccepted" xml:space="preserve">
-    <value>Accettato</value>
+  <data name="PdfCoreStringId.MsgConversionActionsRemoved" xml:space="preserve">
+    <value>Il documento contiene annotazioni incompatibili con il formato di destinazione. Le annotazioni sono state rimosse. Il documento esportato potrebbe differire dall'originale.</value>
   </data>
   <data name="PdfCoreStringId.MsgConversionAnnotationsRemoved" xml:space="preserve">
     <value>Il documento contiene annotazioni incompatibili con il formato di destinazione. Le annotazioni sono state rimosse. Il documento esportato potrebbe differire dall'originale.</value>
   </data>
-  <data name="PdfCoreStringId.MsgConversionEmbeddedFilesNotValidated" xml:space="preserve">
-    <value>Il documento contiene file incorporati. L'output potrebbe non essere valido se i file non sono compatibili con il formato PDF/A-2. La verifica di compatibilità interna non è riuscita.</value>
+  <data name="PdfCoreStringId.SignatureTreeInfoSignatureIsInvalid" xml:space="preserve">
+    <value>La firma non è valida</value>
   </data>
-  <data name="PdfCoreStringId.MsgConversionOptionalContentRemoved" xml:space="preserve">
-    <value>Il contenuto facoltativo non è compatibile con il formato di destinazione. Le proprietà del contenuto facoltativo sono state rimosse. I gruppi di contenuto facoltativo sono sempre visibili nel documento esportato.</value>
+  <data name="PdfCoreStringId.SignatureTreeInfoSignatureIsValid" xml:space="preserve">
+    <value>La firma è valida</value>
   </data>
-  <data name="PdfCoreStringId.MsgConversionIssueFontSubsetEmbedded" xml:space="preserve">
-    <value>È stato incorporato un sottoinsieme per il seguente carattere: {0}.</value>
-  </data>
-  <data name="PdfCoreStringId.SignatureAppearanceReasonFormatString" xml:space="preserve">
-    <value>Motivo: {0}</value>
-  </data>
-  <data name="PdfCoreStringId.SignatureTreeInfoReason" xml:space="preserve">
-    <value>Motivo: {0}</value>
-  </data>
-  <data name="PdfCoreStringId.MsgConversionIssueDeviceCmyk" xml:space="preserve">
-    <value>Lo spazio colore DeviceCMYK viene utilizzato senza un profilo ICC. È stato incorporato il profilo ICC CMYK predefinito.</value>
-  </data>
-  <data name="PdfCoreStringId.MsgConversionIssueDeviceGray" xml:space="preserve">
-    <value>Lo spazio colore DeviceGray viene utilizzato senza un profilo ICC. È stato incorporato il profilo ICC RGB predefinito.</value>
-  </data>
-  <data name="PdfCoreStringId.MsgConversionIssueDeviceRgb" xml:space="preserve">
-    <value>Lo spazio colore DeviceRGB viene utilizzato senza un profilo ICC. È stato incorporato il profilo ICC RGB predefinito.</value>
-  </data>
-  <data name="PdfCoreStringId.MsgIncorrectAdditionalMetadata" xml:space="preserve">
-    <value>I metadati aggiuntivi non sono riconosciuti come valore valido: {0}</value>
-  </data>
-  <data name="PdfCoreStringId.RubberStampApproved" xml:space="preserve">
-    <value>Approvato</value>
-  </data>
-  <data name="PdfCoreStringId.RubberStampAsIs" xml:space="preserve">
-    <value>Così com'è</value>
-  </data>
-  <data name="PdfCoreStringId.RubberStampDApproved" xml:space="preserve">
-    <value>Approvato</value>
-  </data>
-  <data name="PdfCoreStringId.RubberStampSHWitness" xml:space="preserve">
-    <value>Testimone</value>
-  </data>
-  <data name="PdfCoreStringId.SignatureTreeInfoCertificateDetails" xml:space="preserve">
-    <value>Dettagli del certificato...</value>
-  </data>
-  <data name="PdfCoreStringId.MsgConversionEmbeddedFilesRemoved" xml:space="preserve">
-    <value>I file incorporati non sono compatibili con il formato di destinazione. I file incorporati sono stati rimossi.</value>
-  </data>
-  <data name="PdfCoreStringId.MsgConversionXfaRemoved" xml:space="preserve">
-    <value>I moduli XFA non sono compatibili con il formato di destinazione. Tutti i moduli XFA sono stati rimossi.</value>
-  </data>
-  <data name="PdfCoreStringId.AnnotationFilterTypeText" xml:space="preserve">
-    <value>Post-it</value>
-  </data>
-  <data name="PdfCoreStringId.MsgICULibraryNotFound" xml:space="preserve">
-    <value>Impossibile caricare la libreria ICU.</value>
-  </data>
-  <data name="PdfCoreStringId.MsgIncorrectMarkupAnnotation" xml:space="preserve">
-    <value>L'annotazione specificata non appartiene al documento corrente.</value>
-  </data>
-  <data name="PdfCoreStringId.MsgIncorrectOpacity" xml:space="preserve">
-    <value>Il valore di opacità deve essere maggiore o uguale a 0 e minore o uguale a 1.</value>
-  </data>
-  <data name="PdfCoreStringId.MsgStreamIsInUse" xml:space="preserve">
-    <value>Il flusso è già in uso per un documento. Si prega di utilizzare un altro flusso.</value>
-  </data>
-  <data name="PdfCoreStringId.MsgWinOnlyLimitation" xml:space="preserve">
-    <value>Questa operazione può essere eseguita solo sul sistema operativo Windows.</value>
-  </data>
-  <data name="PdfCoreStringId.RubberStampTopSecret" xml:space="preserve">
-    <value>Segretissimo</value>
-  </data>
-  <data name="PdfCoreStringId.SignatureTreeInfoSignersIdentityIsValid" xml:space="preserve">
-    <value>L'identità del firmatario è valida.</value>
-  </data>
-  <data name="PdfCoreStringId.SignatureTreeInfoSignersIdentityIsUnknown" xml:space="preserve">
-    <value>L'identità del firmatario è sconosciuta perché non è stata inclusa nel tuo elenco di certificati attendibili.</value>
-  </data>
-  <data name="PdfCoreStringId.SignatureTreeInfoEmbeddedTimestamp" xml:space="preserve">
-    <value>La firma include un timestamp incorporato.</value>
-  </data>
-  <data name="PdfCoreStringId.MsgConversionIssueFontSubstituted" xml:space="preserve">
-    <value>Carattere non trovato: {0}. È stato sostituito con il seguente carattere: {1}. È stato incorporato un sottoinsieme di tale carattere.</value>
-  </data>
-  <data name="PdfCoreStringId.MsgEmptyCustomPropertyName" xml:space="preserve">
-    <value>Il nome della proprietà personalizzata non può essere nullo o una stringa vuota.</value>
-  </data>
-  <data name="PdfCoreStringId.RubberStampDepartmental" xml:space="preserve">
-    <value>Dipartimento</value>
-  </data>
-  <data name="PdfCoreStringId.RubberStampDraft" xml:space="preserve">
-    <value>Bozza</value>
-  </data>
-  <data name="PdfCoreStringId.RubberStampExperimental" xml:space="preserve">
-    <value>Sperimentale</value>
-  </data>
-  <data name="PdfCoreStringId.RubberStampExpired" xml:space="preserve">
-    <value>Scaduto</value>
-  </data>
-  <data name="PdfCoreStringId.RubberStampNotApproved" xml:space="preserve">
-    <value>Non approvato</value>
-  </data>
-  <data name="PdfCoreStringId.RubberStampNotForPublicRelease" xml:space="preserve">
-    <value>Non destinato alla diffusione pubblica</value>
-  </data>
-  <data name="PdfCoreStringId.SignatureAppearanceCommonNameFormatString" xml:space="preserve">
-    <value>Firmato digitalmente da {0}</value>
-  </data>
-  <data name="PdfCoreStringId.SignatureAppearanceDateFormatString" xml:space="preserve">
-    <value>Data: {0}</value>
-  </data>
-  <data name="PdfCoreStringId.TextStrikethroughDefaultSubject" xml:space="preserve">
-    <value>Barrato</value>
-  </data>
-  <data name="PdfCoreStringId.FreeTextDefaultSubject" xml:space="preserve">
-    <value>Nota</value>
-  </data>
-  <data name="PdfCoreStringId.SignatureTreeInfoDocumentHasNotBeenModified" xml:space="preserve">
-    <value>Il documento non è stato modificato da quando è stato firmato.</value>
-  </data>
-  <data name="PdfCoreStringId.SignatureTreeInfoDocumentHasBeenAltered" xml:space="preserve">
-    <value>Il documento è stato alterato o corrotto dopo la firma.</value>
-  </data>
-  <data name="PdfCoreStringId.MsgConversionActionsRemoved" xml:space="preserve">
-    <value>Il documento contiene azioni incompatibili con il formato di destinazione. Le azioni sono state rimosse.</value>
-  </data>
-  <data name="PdfCoreStringId.MsgConversionIssueFontNotFound" xml:space="preserve">
-    <value>Impossibile risolvere il font. Verificare che il seguente font sia disponibile nel sistema: {0}.</value>
-  </data>
-  <data name="PdfCoreStringId.RubberStampForPublicRelease" xml:space="preserve">
-    <value>Per diffusione pubblica</value>
-  </data>
-  <data name="PdfCoreStringId.MsgUnsupportedConversionCompatibility" xml:space="preserve">
-    <value>La conversione alla modalità di compatibilità specificata non è supportata.</value>
-  </data>
-  <data name="PdfCoreStringId.RubberStampFinal" xml:space="preserve">
-    <value>Finale</value>
-  </data>
-  <data name="PdfCoreStringId.SignatureTreeInfoField" xml:space="preserve">
-    <value>Campo: {0} a pagina {1}</value>
+  <data name="PdfCoreStringId.SignatureTreeInfoTimestampTime" xml:space="preserve">
+    <value>Ora del timestamp: {0}</value>
   </data>
 </root>

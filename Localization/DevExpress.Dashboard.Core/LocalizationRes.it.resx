@@ -60,45 +60,45 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -175,7 +175,7 @@
     <value>{0} ({1})</value>
   </data>
   <data name="DashboardStringId.FormatStringKpiElementCaption" xml:space="preserve">
-    <value>{0} contro {1}</value>
+    <value>{0} vs {1}</value>
   </data>
   <data name="DashboardStringId.FormatStringSeriesName" xml:space="preserve">
     <value>- {0}</value>
@@ -427,7 +427,7 @@
     <value>OK</value>
   </data>
   <data name="DashboardStringId.ButtonReset" xml:space="preserve">
-    <value>Reimposta</value>
+    <value>Reset</value>
   </data>
   <data name="DashboardStringId.DefaultNameMapItem" xml:space="preserve">
     <value>Mappa</value>
@@ -450,7 +450,7 @@
     <value>Risoluzione (dpi)</value>
   </data>
   <data name="DashboardStringId.TargetValueCaption" xml:space="preserve">
-    <value>Destinazione</value>
+    <value>Target</value>
   </data>
   <data name="DashboardStringId.ButtonSubmit" xml:space="preserve">
     <value>Invia</value>
@@ -528,7 +528,7 @@
     <value>Modalità di dimensione</value>
   </data>
   <data name="DashboardStringId.SummaryTypeStdDevp" xml:space="preserve">
-    <value>StdDevp</value>
+    <value>StdDevP</value>
   </data>
   <data name="DashboardStringId.DescriptionSparkline" xml:space="preserve">
     <value>Sparkline</value>
@@ -681,7 +681,7 @@
     <value>Iniziare:</value>
   </data>
   <data name="DashboardStringId.SummaryTypeStdDev" xml:space="preserve">
-    <value>Deviazione standard</value>
+    <value>StdDev</value>
   </data>
   <data name="DashboardStringId.RangeFilterEmptyArgument" xml:space="preserve">
     <value>Si prega di specificare il filtro gamma di argomento</value>
@@ -729,13 +729,13 @@
     <value>TopNCount il valore della proprietà non può essere negativo o zero.</value>
   </data>
   <data name="DashboardStringId.SeriesTypeCandleStick" xml:space="preserve">
-    <value>Candelabro</value>
+    <value>Candle Stick</value>
   </data>
   <data name="DashboardStringId.SeriesTypeFullStackedArea" xml:space="preserve">
     <value>Area Full-stack</value>
   </data>
   <data name="DashboardStringId.SeriesTypeFullStackedBar" xml:space="preserve">
-    <value>Barre in pila completa</value>
+    <value>Full-Stacked Bar</value>
   </data>
   <data name="DashboardStringId.SeriesTypeFullStackedLine" xml:space="preserve">
     <value>Linea full-stack</value>
@@ -817,7 +817,7 @@ Il server di applicazioni Web non è riuscito a stabilire le connessioni dati se
     <value>Auto (non applicato)</value>
   </data>
   <data name="DashboardStringId.ColoringModeHue" xml:space="preserve">
-    <value>Tinta</value>
+    <value>Hue</value>
   </data>
   <data name="DashboardStringId.ColorInherited" xml:space="preserve">
     <value>(Ereditato)</value>
@@ -856,7 +856,7 @@ Il server di applicazioni Web non è riuscito a stabilire le connessioni dati se
     <value>Vista ad albero</value>
   </data>
   <data name="DashboardStringId.MeasureNamesDimensionName" xml:space="preserve">
-    <value>Nomi delle misure</value>
+    <value>MeasureNames</value>
   </data>
   <data name="DashboardStringId.MessageIncorrectDashboardItemGroupAssign" xml:space="preserve">
     <value>A cruscotto elemento gruppo non può essere aggiunto in un insieme di elementi del cruscotto. Utilizzare la proprietà Dashboard.Groups per aggiungere il gruppo dashboard.</value>
@@ -1168,7 +1168,7 @@ Converte il valore in un valore DateTime.</value>
     <value>La gamma filtro non contiene tutti i dati da visualizzare.</value>
   </data>
   <data name="DashboardStringId.RangeFilterSelectRangeToCaption" xml:space="preserve">
-    <value>A:</value>
+    <value>To:</value>
   </data>
   <data name="DashboardStringId.RankCalculationMeasureCaptionFormatString" xml:space="preserve">
     <value>Rango di {0}</value>
@@ -1492,7 +1492,7 @@ Restituisce un valore date costruito dall'elemento specificato anno, mese, giorn
     <value>Giallo sfumato</value>
   </data>
   <data name="DashboardStringId.FormatConditionAppearanceOrange" xml:space="preserve">
-    <value>Arancione</value>
+    <value>Orange</value>
   </data>
   <data name="DashboardStringId.FormatConditionAppearancePaleBlue" xml:space="preserve">
     <value>Blu pallido</value>
@@ -2248,20 +2248,9 @@ Specifica la dimensione per la funzione 'aggr' e una colonna i cui valori vengon
   <data name="DashboardStringId.MessageBoxWarningTitle" xml:space="preserve">
     <value>AVVERTENZA</value>
   </data>
-  <data name="DashboardStringId.CalculatedFieldTypeDateOnly" xml:space="preserve">
-    <value>Data</value>
-  </data>
-  <data name="DashboardStringId.CalculatedFieldTypeTimeOnly" xml:space="preserve">
-    <value>Tempo</value>
-  </data>
-  <data name="DashboardStringId.CardRowDataElementTypeTargetValueCaption" xml:space="preserve">
-    <value>Valore obiettivo</value>
-  </data>
-  <data name="DashboardStringId.CustomItemMetadataInteractivitySectionsIncorrectOrderExceptionMessage" xml:space="preserve">
-    <value>La configurazione dei metadati dell'elemento personalizzato '{0}' non supporta l'interattività. Dichiarare la proprietà '{1}' prima delle sezioni di dati non interattive. Per ulteriori informazioni, consultare la documentazione: https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.SupportInteractivityAttribute</value>
-  </data>
-  <data name="DashboardStringId.DeltaValueTypeTargetValueCaption" xml:space="preserve">
-    <value>Valore obiettivo</value>
+  <data name="DashboardStringId.ActionClearSelection" xml:space="preserve">
+    <value>Cancella selezione
+</value>
   </data>
   <data name="DashboardStringId.DescriptionBoundImageAltText" xml:space="preserve">
     <value>Testo alternativo</value>
@@ -2269,327 +2258,43 @@ Specifica la dimensione per la funzione 'aggr' e una colonna i cui valori vengon
   <data name="DashboardStringId.DescriptionImageAltText" xml:space="preserve">
     <value>Testo alternativo</value>
   </data>
-  <data name="DashboardStringId.FormatRuleApplyToTextElement" xml:space="preserve">
-    <value>Testo - "{0}"</value>
-  </data>
-  <data name="DashboardStringId.FunctionDescriptionGetDateWeekYear2" xml:space="preserve">
-    <value>GetDateWeekYear(DateTime, ['FirstDay', 'FirstFullWeek', 'FirstFourDayWeek'])
-Restituisce la data del primo giorno della settimana per un dato DateTime. Il secondo parametro definisce la regola utilizzata per calcolare la settimana di calendario.</value>
-  </data>
-  <data name="DashboardStringId.FunctionDescriptionRunningCustomAggregate" xml:space="preserve">
-    <value>RunningAggregate(SummaryExpression, CustomAggregateName) - Restituisce il risultato cumulativo della funzione personalizzata applicata all'espressione specificata, dalla prima riga della finestra alla riga corrente.</value>
-  </data>
-  <data name="DashboardStringId.FunctionDescriptionWindowDefinition" xml:space="preserve">
-    <value>w(WindowExpression, partitionByFunction, orderByFunction)
-Calcola i valori aggregati con la funzione finestra specificata per la finestra definita dal partizionamento e dall'ordinamento specificati.</value>
-  </data>
-  <data name="DashboardStringId.FunctionDescriptionWindowDefinitionPartitionBy" xml:space="preserve">
-    <value>partitionBy(colonna1, colonna2, ...)
-Specifica le colonne in base alle quali vengono partizionate le righe di dati. La funzione finestra viene applicata a ciascuna partizione separatamente.</value>
-  </data>
   <data name="DashboardStringId.PaletteNameDefault" xml:space="preserve">
     <value>Default</value>
-  </data>
-  <data name="DashboardStringId.FormatRuleDisplayInLegend" xml:space="preserve">
-    <value>Visualizza nella legenda</value>
-  </data>
-  <data name="DashboardStringId.FunctionDescriptionWindowCustomAggregate" xml:space="preserve">
-    <value>WindowAggregate(SummaryExpression, StartOffset, EndOffset, CustomAggregateName) - Restituisce il risultato della funzione personalizzata applicata all'espressione specificata nella finestra.</value>
-  </data>
-  <data name="DashboardStringId.FunctionDescriptionWindowDefinitionOrderBy" xml:space="preserve">
-    <value>orderBy(colonna1, colonna2, ...)
-Specifica le colonne in base alle quali vengono ordinati i valori.</value>
-  </data>
-  <data name="DashboardStringId.FunctionDescriptionWindowFirstValue" xml:space="preserve">
-    <value>WindowFirstValue(SummaryExpression, StartOffset, EndOffset)
-Restituisce il primo valore dell'espressione all'interno della finestra.</value>
-  </data>
-  <data name="DashboardStringId.FunctionDescriptionWindowMode" xml:space="preserve">
-    <value>WindowMode(SummaryExpression, StartOffset, EndOffset)
-Restituisce la modalità dell'espressione all'interno della finestra.</value>
-  </data>
-  <data name="DashboardStringId.FunctionOperatorExFunctionDescriptionToTime" xml:space="preserve">
-    <value>ToTime(Value)
-Converte il valore in un valore TimeOnly.</value>
   </data>
   <data name="DashboardStringId.ParameterNullExportValue" xml:space="preserve">
     <value>nullo</value>
   </data>
-  <data name="DashboardStringId.WindowFunctionValidationMessage" xml:space="preserve">
-    <value>Nota bene: il campo creato non può essere utilizzato come elemento dati. L'espressione {0} è valida solo all'interno della funzione w o come espressione personalizzata applicata al calcolo di una misura.</value>
-  </data>
-  <data name="DashboardStringId.AggregateExFunctionDescriptionMode" xml:space="preserve">
-    <value>Moda (Valore)
-La moda dei valori. La moda è il valore che si ripete più spesso di qualsiasi altro.</value>
-  </data>
-  <data name="DashboardStringId.AggrInMasterFilterDimensionError" xml:space="preserve">
-    <value>Il filtro master non può essere applicato ai valori delle dimensioni creati utilizzando l'espressione contenente la funzione Aggr.</value>
-  </data>
-  <data name="DashboardStringId.FunctionDescriptionAggregateFilter" xml:space="preserve">
-    <value>filtro(EspressioneRiepilogativa, CriteridiFiltro)
-Filtra i dati sottostanti in base ai criteri di filtro specificati e aggrega i dati filtrati utilizzando il livello di dettaglio corrente e la funzione di riepilogo.</value>
-  </data>
-  <data name="DashboardStringId.FunctionDescriptionCountDistinct" xml:space="preserve">
-    <value>CountDistinct(Value)
-Restituisce il numero di oggetti unici in una collezione.</value>
-  </data>
-  <data name="DashboardStringId.FunctionDescriptionFirstValue" xml:space="preserve">
-    <value>FirstValue(Value)
-Restituisce il primo valore di una collezione.</value>
-  </data>
-  <data name="DashboardStringId.FunctionDescriptionWindowDefinitionOrderAsc" xml:space="preserve">
-    <value>asc(colonna)
-Le righe di dati vengono ordinate in base ai valori della colonna specificata in ordine crescente. Questo è l'ordinamento predefinito.</value>
-  </data>
-  <data name="DashboardStringId.FunctionDescriptionWindowDefinitionOrderDesc" xml:space="preserve">
-    <value>desc(colonna)
-Le righe di dati vengono ordinate in base ai valori della colonna specificata in ordine decrescente.</value>
-  </data>
-  <data name="DashboardStringId.FunctionOperatorExFunctionDescriptionToDate" xml:space="preserve">
-    <value>ToDate(Value)
-Converte il valore in un valore di tipo DateOnly.</value>
-  </data>
-  <data name="DashboardStringId.MessageCustomItemConfigurationError" xml:space="preserve">
-    <value>Errore di configurazione dell'elemento del pannello di controllo. Contattare il fornitore dell'applicazione o l'amministratore di sistema per assistenza.</value>
-  </data>
-  <data name="DashboardStringId.MessageCustomItemIncorrectDataItemSectionName" xml:space="preserve">
-    <value>La definizione del dashboard contiene la proprietà {0} che non esiste nella corrispondente classe {1}. Questa proprietà verrà ignorata durante il caricamento dell'elemento personalizzato.</value>
-  </data>
-  <data name="DashboardStringId.MessageLegacyCardLayoutIsNotSupported" xml:space="preserve">
-    <value>Il layout della scheda non è aggiornato e non può essere visualizzato. Per visualizzare questo elemento, specificare il modello di layout in Dashboard Designer. Per ulteriori informazioni, consultare l'argomento della documentazione "Progettazione di elementi della dashboard &gt; Schede &gt; Layout".</value>
-  </data>
-  <data name="DashboardStringId.PeriodNextHour" xml:space="preserve">
-    <value>Prossima ora</value>
-  </data>
-  <data name="DashboardStringId.CardRowDataElementTypeAbsoluteVariationCaption" xml:space="preserve">
-    <value>Variazione assoluta</value>
-  </data>
-  <data name="DashboardStringId.ErrorHandlingIncompatibleGroupInterval" xml:space="preserve">
-    <value>{0} non è un intervallo adatto per il campo {1} perché il suo tipo è {2}</value>
-  </data>
-  <data name="DashboardStringId.FormatRuleUnableToAddRule" xml:space="preserve">
-    <value>Impossibile aggiungere una nuova regola di formattazione.</value>
-  </data>
-  <data name="DashboardStringId.FormatRuleUnableToAddRule_NoCardLayout" xml:space="preserve">
-    <value>Impossibile aggiungere una nuova regola di formattazione alle schede che utilizzano un layout precedente.</value>
-  </data>
-  <data name="DashboardStringId.FormatRuleUnableToAddRule_NoCardsToApply" xml:space="preserve">
-    <value>Impossibile aggiungere una nuova regola di formato. Non è presente alcuna scheda a cui applicare la regola.</value>
-  </data>
-  <data name="DashboardStringId.FormatRuleUnableToAddRule_NoColumnsToApply" xml:space="preserve">
-    <value>Impossibile aggiungere una nuova regola di formattazione. Non è presente alcuna colonna a cui applicare la regola.</value>
-  </data>
-  <data name="DashboardStringId.FormatRuleUnableToAddRule_NoItemsToCalculate" xml:space="preserve">
-    <value>Impossibile aggiungere una nuova regola di formattazione. Non è presente alcun elemento dati per calcolare la regola.</value>
-  </data>
-  <data name="DashboardStringId.FormatRuleUnableToAddRule_NoSeriesToApply" xml:space="preserve">
-    <value>Impossibile aggiungere una nuova regola di formattazione. Non esiste alcuna serie a cui applicare la regola.</value>
-  </data>
-  <data name="DashboardStringId.FormatRuleUnableToAddRule_NoXYAxes" xml:space="preserve">
-    <value>Impossibile aggiungere una nuova regola di formattazione. Gli assi X e Y sono obbligatori.</value>
-  </data>
-  <data name="DashboardStringId.CardRowDataElementTypeActualValueCaption" xml:space="preserve">
-    <value>Valore effettivo</value>
-  </data>
-  <data name="DashboardStringId.DefaultNameCustomItem" xml:space="preserve">
-    <value>Articolo personalizzato</value>
-  </data>
-  <data name="DashboardStringId.DefaultNameTabContainerItem" xml:space="preserve">
-    <value>Contenitore schede</value>
-  </data>
-  <data name="DashboardStringId.ExtractCustomDriverNameError" xml:space="preserve">
-    <value>Il nome del driver di estrazione personalizzato non può essere nullo o vuoto.</value>
-  </data>
-  <data name="DashboardStringId.FormatRuleCustomColor" xml:space="preserve">
-    <value>Colore personalizzato</value>
-  </data>
-  <data name="DashboardStringId.FunctionCategoryCustomAggregateNames" xml:space="preserve">
-    <value>Nomi aggregati personalizzati</value>
-  </data>
-  <data name="DashboardStringId.UniqueNameValidationMessage" xml:space="preserve">
-    <value>Un nome deve essere unico.</value>
-  </data>
-  <data name="DashboardStringId.AggregatedDataType" xml:space="preserve">
-    <value>Aggregato</value>
-  </data>
-  <data name="DashboardStringId.DefaultNameDateFilterItem" xml:space="preserve">
-    <value>Filtro data</value>
-  </data>
-  <data name="DashboardStringId.DefaultXpoDataSourceName" xml:space="preserve">
-    <value>Fonte dati XPO</value>
-  </data>
-  <data name="DashboardStringId.PaletteNameVibrant" xml:space="preserve">
-    <value>Vibrante</value>
-  </data>
-  <data name="DashboardStringId.PaletteNameWarmGradient" xml:space="preserve">
-    <value>Gradiente caldo</value>
-  </data>
-  <data name="DashboardStringId.ErrorHandlingJoinRuleFunctionServerMode" xml:space="preserve">
-    <value>La funzione joinRule non può essere utilizzata per origini dati in modalità server.</value>
-  </data>
-  <data name="DashboardStringId.ErrorHandlingWindowDefinitionServerMode" xml:space="preserve">
-    <value>La funzione w non può essere utilizzata per le origini dati in modalità server.</value>
-  </data>
-  <data name="DashboardStringId.ErrorIncorrectIntervalCount" xml:space="preserve">
-    <value>Il parametro di conteggio deve essere maggiore o uguale a 1.</value>
-  </data>
-  <data name="DashboardStringId.FormatRuleAppliesToCardBackground" xml:space="preserve">
-    <value>Lo stile selezionato si applica allo sfondo della carta.</value>
-  </data>
-  <data name="DashboardStringId.FormatRuleApplyToChartElement" xml:space="preserve">
-    <value>Applica agli elementi del grafico</value>
-  </data>
-  <data name="DashboardStringId.FormatRuleApplyToPointSeriesElementOnly" xml:space="preserve">
-    <value>Questa opzione è valida solo per le serie di linee o aree</value>
-  </data>
-  <data name="DashboardStringId.FormatRuleApplyToReadOnlyDescription" xml:space="preserve">
-    <value>Lo stile selezionato si applica a tutti gli elementi del layout</value>
-  </data>
-  <data name="DashboardStringId.OlapConnectionError" xml:space="preserve">
-    <value>Impossibile connettersi al server OLAP. Verificare le impostazioni di connessione e riprovare.</value>
+  <data name="DashboardStringId.PeriodLastDay" xml:space="preserve">
+    <value>Ultimo giorno</value>
   </data>
   <data name="DashboardStringId.PeriodLastHour" xml:space="preserve">
     <value>Ultima ora</value>
   </data>
-  <data name="DashboardStringId.PieCalculationAlongArgumentsAndSeries" xml:space="preserve">
-    <value>Argomenti / Serie</value>
-  </data>
-  <data name="DashboardStringId.RangeFilterCalculationAlongArgumentAndSeries" xml:space="preserve">
-    <value>Argomentazione / Serie</value>
-  </data>
-  <data name="DashboardStringId.ScaleModeAutoFitToPagesWidth" xml:space="preserve">
-    <value>Adattamento automatico alla larghezza della pagina</value>
-  </data>
-  <data name="DashboardStringId.ToDatePeriodCaption" xml:space="preserve">
-    <value>A {0}</value>
-  </data>
-  <data name="DashboardStringId.ActionClearSelection" xml:space="preserve">
-    <value>Cancella selezione</value>
-  </data>
-  <data name="DashboardStringId.CardRowDataElementTypeCardNameCaption" xml:space="preserve">
-    <value>Nome della scheda</value>
-  </data>
-  <data name="DashboardStringId.CustomItemCalculationAlongFirstAxisDimensions" xml:space="preserve">
-    <value>Dimensioni</value>
-  </data>
-  <data name="DashboardStringId.DateFilterDisplayTextPattern" xml:space="preserve">
-    <value>Modello di testo visualizzato</value>
-  </data>
-  <data name="DashboardStringId.DateTimeGroupIntervalExactTime" xml:space="preserve">
-    <value>Ora esatta</value>
-  </data>
-  <data name="DashboardStringId.DisplayValueCaption" xml:space="preserve">
-    <value>Visualizza il valore</value>
-  </data>
-  <data name="DashboardStringId.FormatRuleApplyToDimensionElement" xml:space="preserve">
-    <value>Dimensione - {0}</value>
-  </data>
-  <data name="DashboardStringId.MessageInvalidDataFormat" xml:space="preserve">
-    <value>Impossibile convertire il valore {0} nel tipo di dati {1}.</value>
-  </data>
-  <data name="DashboardStringId.PeriodNextDay" xml:space="preserve">
-    <value>Il giorno dopo</value>
+  <data name="DashboardStringId.PeriodLastSecond" xml:space="preserve">
+    <value>Ultimo secondo</value>
   </data>
   <data name="DashboardStringId.PivotCalculationAlongColumnsAndRows" xml:space="preserve">
     <value>Colonne / Righe</value>
   </data>
-  <data name="DashboardStringId.PivotCalculationAlongGroupsInColumnsAndRows" xml:space="preserve">
-    <value>Colonne/Righe all'interno dei gruppi</value>
-  </data>
-  <data name="DashboardStringId.PaletteNameSunset" xml:space="preserve">
-    <value>Tramonto</value>
-  </data>
-  <data name="DashboardStringId.PaletteNameHighContrast" xml:space="preserve">
-    <value>Contrasto elevato</value>
-  </data>
-  <data name="DashboardStringId.CalculationTypePercentageDifference" xml:space="preserve">
-    <value>Differenza percentuale</value>
-  </data>
-  <data name="DashboardStringId.CardLayoutTemplateLightweightCaption" xml:space="preserve">
-    <value>Leggero</value>
-  </data>
-  <data name="DashboardStringId.CardRowDataElementTypePercentOfTargetCaption" xml:space="preserve">
-    <value>Percentuale dell'obiettivo</value>
-  </data>
-  <data name="DashboardStringId.CardRowDataElementTypePercentVariationCaption" xml:space="preserve">
-    <value>Variazione percentuale</value>
-  </data>
-  <data name="DashboardStringId.ChartElementLineOrAreaCaption" xml:space="preserve">
-    <value>Linea/Area</value>
-  </data>
-  <data name="DashboardStringId.DateFilterDatePickerButtonDefaultText" xml:space="preserve">
-    <value>Imposta filtro...</value>
-  </data>
-  <data name="DashboardStringId.DateFilterInvalidDisplayTextPattern" xml:space="preserve">
-    <value>Modello di testo non valido</value>
-  </data>
-  <data name="DashboardStringId.DefaultFederationDataSourceName" xml:space="preserve">
-    <value>Fonte di dati federata</value>
-  </data>
-  <data name="DashboardStringId.DefaultJsonDataSourceName" xml:space="preserve">
-    <value>Origine dati JSON</value>
-  </data>
-  <data name="DashboardStringId.DefaultMongoDBDataSourceName" xml:space="preserve">
-    <value>Origine dati MongoDB</value>
-  </data>
-  <data name="DashboardStringId.GaugeScaleLabelFormatCaption" xml:space="preserve">
-    <value>Etichetta della scala</value>
-  </data>
-  <data name="DashboardStringId.GridHyperlinkUriPatternErrorMessage" xml:space="preserve">
-    <value>Segnaposto non valido</value>
-  </data>
-  <data name="DashboardStringId.IndicatorTypeNotFound" xml:space="preserve">
-    <value>L'indicatore {0} non è configurato. Registrare il tipo di indicatore corrispondente nell'applicazione.</value>
-  </data>
-  <data name="DashboardStringId.InspectedData" xml:space="preserve">
-    <value>Dati esaminati:</value>
-  </data>
-  <data name="DashboardStringId.MeasureFilterCaptionFormatString" xml:space="preserve">
-    <value>Filtrato {0}</value>
-  </data>
-  <data name="DashboardStringId.MessageServerModeNotSupportedMode" xml:space="preserve">
-    <value>La modalità non è supportata in modalità server per</value>
-  </data>
-  <data name="DashboardStringId.OLAPUnavailableRawData" xml:space="preserve">
-    <value>Origine dati OLAP - Dati non disponibili</value>
-  </data>
-  <data name="DashboardStringId.PeriodLastDay" xml:space="preserve">
-    <value>Ultimo giorno</value>
-  </data>
-  <data name="DashboardStringId.PeriodLastMinute" xml:space="preserve">
-    <value>Ultimo minuto</value>
-  </data>
-  <data name="DashboardStringId.PeriodLastSecond" xml:space="preserve">
-    <value>Ultima scheda</value>
-  </data>
-  <data name="DashboardStringId.PieCalculationAlongSeriesAndArguments" xml:space="preserve">
-    <value>Serie / Argomenti</value>
-  </data>
-  <data name="DashboardStringId.PivotCalculationAlongGroupsInRowsAndColumns" xml:space="preserve">
-    <value>Righe/Colonne all'interno dei gruppi</value>
-  </data>
   <data name="DashboardStringId.PivotCalculationAlongRowsAndColumns" xml:space="preserve">
-    <value>Righe/Colonne</value>
+    <value>Righe / Colonne</value>
+  </data>
+  <data name="DashboardStringId.RangeFilterCalculationAlongArgumentAndSeries" xml:space="preserve">
+    <value>Argomento / Serie</value>
   </data>
   <data name="DashboardStringId.RangeFilterCalculationAlongSeriesAndArgument" xml:space="preserve">
     <value>Serie / Argomento</value>
   </data>
-  <data name="DashboardStringId.RawDataType" xml:space="preserve">
-    <value>Crudo</value>
-  </data>
   <data name="DashboardStringId.ResetExactDateFormatToDefault" xml:space="preserve">
-    <value>Ripristina le impostazioni predefinite</value>
+    <value>Ripristinare i valori predefiniti</value>
   </data>
   <data name="DashboardStringId.ResetExactTimeFormatToDefault" xml:space="preserve">
-    <value>Ripristina le impostazioni predefinite</value>
+    <value>Ripristinare i valori predefiniti</value>
   </data>
-  <data name="DashboardStringId.SelectDate" xml:space="preserve">
-    <value>Seleziona la data</value>
+  <data name="DashboardStringId.SparklineValuesSeparator" xml:space="preserve">
+    <value>, </value>
   </data>
-  <data name="DashboardStringId.UniqueCalculatedFieldNameValidationMessage" xml:space="preserve">
-    <value>Il {0} contiene già un campo denominato {1}.</value>
-  </data>
-  <data name="DashboardStringId.PaletteNameBright" xml:space="preserve">
-    <value>Luminoso</value>
+  <data name="DashboardStringId.UriCaption" xml:space="preserve">
+    <value>URI</value>
   </data>
 </root>
