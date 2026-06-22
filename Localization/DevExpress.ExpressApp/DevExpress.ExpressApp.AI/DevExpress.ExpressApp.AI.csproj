@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0AC33609-439F-4637-BA18-78F8245AC999}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevExpress.ExpressApp.AI</RootNamespace>
+    <AssemblyName>DevExpress.ExpressApp.AI.v26.1</AssemblyName>
+<TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\DevExpress.DLL\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\DevExpress.DLL\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ModuleLocalizationResources.ar.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.bg.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.ca.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.cs.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.da.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.de-CH.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.de.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.el.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.es.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.et.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.fa.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.fi.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.fr.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.he.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.hr.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.hu.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.is.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.it.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.ja.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.ko.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.mk.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.nl.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.no.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.pl.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.pt-BR.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.pt.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.ro.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.ru.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.sk.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.sl.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.sr-Cyrl-RS.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.sr-Latn-BA.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.sr-Latn-RS.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.sv.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.ta.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.tr.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.uk.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.vi.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.zh-CN.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.zh-Hans.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.zh-Hant.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.zh-TW.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.id.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.kk.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.ms.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.af.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.az.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.bs.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.cy.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.en-GB.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.es-MX.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.ka.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.mn-MN.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.nb-NO.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.sq.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.sr-Latn-ME.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.ur.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.uz-Cyrl-UZ.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.uz-Latn-UZ.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.ky.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.hi.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.hy.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.lt.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.lv.resx" />
+    <EmbeddedResource Include="ModuleLocalizationResources.th.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

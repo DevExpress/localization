@@ -3091,6 +3091,42 @@ namespace DevExpress.ReportServer.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to URI Validation Mode.
+        /// </summary>
+        public static string ServerSettings_General_UriValidationMode {
+            get {
+                return ResourceManager.GetString("ServerSettings_General_UriValidationMode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use this option only if Strict validation causes issues with your content. All URLs are accepted if their URI scheme is http, https, or mailto. Other URI parts are not inspected. Use Strict validation to reduce XSS risk..
+        /// </summary>
+        public static string ServerSettings_General_UriValidationMode_DialogContent {
+            get {
+                return ResourceManager.GetString("ServerSettings_General_UriValidationMode_DialogContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scheme Only.
+        /// </summary>
+        public static string ServerSettings_General_UriValidationMode_SchemeOnly {
+            get {
+                return ResourceManager.GetString("ServerSettings_General_UriValidationMode_SchemeOnly", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Strict.
+        /// </summary>
+        public static string ServerSettings_General_UriValidationMode_Strict {
+            get {
+                return ResourceManager.GetString("ServerSettings_General_UriValidationMode_Strict", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to User Activation Expiration (days).
         /// </summary>
         public static string ServerSettings_General_UserActivationExpiration {

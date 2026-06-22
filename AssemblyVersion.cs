@@ -157,7 +157,7 @@ namespace DevExpress.Internal {
 #endif
 
     public const string SRDocumentationLink = "https://docs.devexpress.com/?l=true/";
-    public const string SRNewDocumentationLink = "http://docs.devexpress.com/";
+    public const string SRNewDocumentationLink = "https://docs.devexpress.com/";
     public const string InstallationRegistryKeyBase = "SOFTWARE\\DevExpress\\Components\\";
     public const string InstallationRegistryKey = InstallationRegistryKeyBase + VSuffixWithoutSeparator;
     public const string InstallationDevExtremeRegistryKey = "SOFTWARE\\DevExpress\\DevExtreme\\" + VSuffixWithoutSeparator;
@@ -315,6 +315,7 @@ namespace DevExpress.Internal {
         SRAssemblyReportsNReportTest = "NReportTest" + VSuffix,
         SRAssemblyReportServerDesigner = "DevExpress.ReportDesigner" + VSuffix + ".Core",
         SRAssemblyReportServerWeb = "DevExpress.ReportServer" + VSuffix + ".Web",
+        SRAssemblyReportServerWebTest = "DevExpress.ReportServer" + VSuffix + ".Web.Tests",
         SRAssemblyReportServerDataAccess = "DevExpress.ReportServer" + VSuffix + ".DataAccess",
         SRAssemblyReportsCodeCompletion = SRAssemblyReports + ".CodeCompletion",
         SRAssemblyReportsCodeCompletionFull = SRAssemblyReportsCodeCompletion + FullAssemblyVersionExtension,
