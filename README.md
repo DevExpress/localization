@@ -4,9 +4,6 @@ The DevExpress Localization Platform is a new localization engine designed to si
 
 This repo hosts all localization resources and tooling used by DevExpress product libraries.
 
-> [!Note]
-> **Status**: Community Technology Preview (CTP)
-
 ![DevExpress Localization Tool](devexpress-localization-tool.png)
 
 ## Features
