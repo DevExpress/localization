@@ -1,5 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -12,4 +58,193 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="OfficeStringId.Msg_IsNotValid" xml:space="preserve">
+    <value>'{0}' er ikke en gyldig verdi for '{1}'</value>
+  </data>
+  <data name="OfficeStringId.Msg_InternalError" xml:space="preserve">
+    <value>Det oppstod en intern feil.</value>
+  </data>
+  <data name="OfficeStringId.Msg_InvalidBeginUpdate" xml:space="preserve">
+    <value>Feil: Kall til BeginInit innenfor BeginUpdate.</value>
+  </data>
+  <data name="OfficeStringId.Msg_InvalidEndUpdate" xml:space="preserve">
+    <value>Feil: Kall til EndUpdate eller CancelUpate er uten BeginUpdate eller innenfor BeginInit.</value>
+  </data>
+  <data name="OfficeStringId.Msg_InvalidBeginInit" xml:space="preserve">
+    <value>Feil: Kall til BeginInit innenfor BeginUpdate.</value>
+  </data>
+  <data name="OfficeStringId.Msg_InvalidEndInit" xml:space="preserve">
+    <value>Feil: Kall til EndInit eller CancelInit er uten BeginInit eller innenfor BeginUpdate.</value>
+  </data>
+  <data name="OfficeStringId.Msg_InvalidCopyFromDocumentModel" xml:space="preserve">
+    <value>Feil: Modellene for kilde- og måldokumentet er ulike</value>
+  </data>
+  <data name="OfficeStringId.Msg_Loading" xml:space="preserve">
+    <value>Laster inn...</value>
+  </data>
+  <data name="OfficeStringId.Msg_MagicNumberNotFound" xml:space="preserve">
+    <value>Filen du prøver å åpne er i et annet format enn det som angis med filtypen.</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_AllFiles" xml:space="preserve">
+    <value>Alle filer</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_AllSupportedFiles" xml:space="preserve">
+    <value>Alle støttede filer</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontBold" xml:space="preserve">
+    <value>Fet</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_CopySelection" xml:space="preserve">
+    <value>Kopier</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_CutSelection" xml:space="preserve">
+    <value>Klipp ut</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontItalic" xml:space="preserve">
+    <value>Kursiv</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_AlignmentJustify" xml:space="preserve">
+    <value>Blokkjuster</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_Paste" xml:space="preserve">
+    <value>Lim inn</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_Redo" xml:space="preserve">
+    <value>Gjør om</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_RedoDescription" xml:space="preserve">
+    <value>Gjør om</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontUnderline" xml:space="preserve">
+    <value>Understreking</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_Undo" xml:space="preserve">
+    <value>Angre</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_UndoDescription" xml:space="preserve">
+    <value>Angre</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ChangeFontSize" xml:space="preserve">
+    <value>Skriftstørrelse</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_AlignmentCenter" xml:space="preserve">
+    <value>Midt</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ChangeFontName" xml:space="preserve">
+    <value>Skrift</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_SaveDocument" xml:space="preserve">
+    <value>Lagre</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_NewEmptyDocument" xml:space="preserve">
+    <value>Ny</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_LoadDocument" xml:space="preserve">
+    <value>Åpne</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ShowPasteSpecialForm" xml:space="preserve">
+    <value>Lim inn spesielt</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ZoomIn" xml:space="preserve">
+    <value>Zoom inn</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ZoomInDescription" xml:space="preserve">
+    <value>Zoom inn</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ZoomOut" xml:space="preserve">
+    <value>Zoom ut</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ZoomOutDescription" xml:space="preserve">
+    <value>Zoom ut</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageOrientationLandscape" xml:space="preserve">
+    <value>Liggende</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageOrientationPortrait" xml:space="preserve">
+    <value>Stående</value>
+  </data>
+  <data name="OfficeStringId.Caption_UnitPoints" xml:space="preserve">
+    <value>Punkter</value>
+  </data>
+  <data name="OfficeStringId.UnitAbbreviation_Percent" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="OfficeStringId.Caption_UnitPercent" xml:space="preserve">
+    <value>Prosent</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontStrikeout" xml:space="preserve">
+    <value>Gjennomstreking</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageOrientationCommandGroup" xml:space="preserve">
+    <value>Retning</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_SaveDocumentAs" xml:space="preserve">
+    <value>Lagre som</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_InsertSymbol" xml:space="preserve">
+    <value>Symbol</value>
+  </data>
+  <data name="OfficeStringId.Caption_EditHyperlinkForm" xml:space="preserve">
+    <value>Rediger hyperkobling</value>
+  </data>
+  <data name="OfficeStringId.Caption_InsertHyperlinkForm" xml:space="preserve">
+    <value>Sett inn hyperkobling</value>
+  </data>
+  <data name="OfficeStringId.Caption_UnitCentimeters" xml:space="preserve">
+    <value>Centimeter</value>
+  </data>
+  <data name="OfficeStringId.Caption_UnitInches" xml:space="preserve">
+    <value>Tommer</value>
+  </data>
+  <data name="OfficeStringId.Caption_UnitMillimeters" xml:space="preserve">
+    <value>Millimeter</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_BitmapFiles" xml:space="preserve">
+    <value>Windows-punktgrafikk</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_DeleteComment" xml:space="preserve">
+    <value>Slett</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_JPEGFiles" xml:space="preserve">
+    <value>JPEG File Interchange Format</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_TiffFiles" xml:space="preserve">
+    <value>Tag Image File Format</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_AlignmentCenterDescription" xml:space="preserve">
+    <value>Midtstill teksten.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ChangeFontColor" xml:space="preserve">
+    <value>Skriftfarge</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ChangeFontColorDescription" xml:space="preserve">
+    <value>Endre tekstfarge.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ChangeFontNameDescription" xml:space="preserve">
+    <value>Endrer skrifttypen.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ChangeFontSizeDescription" xml:space="preserve">
+    <value>Endrer skriftstørrelsen.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_InsertComment" xml:space="preserve">
+    <value>Ny kommentar</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_InsertFloatingObjectPicture" xml:space="preserve">
+    <value>Bilde</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_Hyperlink" xml:space="preserve">
+    <value>Hyperkobling</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_CopySelectionDescription" xml:space="preserve">
+    <value>Kopier merket område og plasserer det på utklippstavlen.</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_GifFiles" xml:space="preserve">
+    <value>Graphics Interchange Format</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_StatusBarPopupMenuZoom" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_StatusBarZoomSliderDescription" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
 </root>

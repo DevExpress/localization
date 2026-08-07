@@ -2,7 +2,7 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
   <PropertyGroup>
     <ProjectType>Local</ProjectType>
-    <ProductVersion>9.0.30729</ProductVersion>
+    
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4C0BA46F-2FCC-498B-8940-EC27E6944F8C}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -21,9 +21,7 @@
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <BaseAddress>285212672</BaseAddress>
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
-    
     <DefineConstants>TRACE;DEBUG</DefineConstants>
-    
     <DebugSymbols>true</DebugSymbols>
     <FileAlignment>4096</FileAlignment>
     <Optimize>false</Optimize>
@@ -39,9 +37,7 @@
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <BaseAddress>285212672</BaseAddress>
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
-    
     <DefineConstants>TRACE</DefineConstants>
-    
     <DebugSymbols>false</DebugSymbols>
     <FileAlignment>4096</FileAlignment>
     <Optimize>true</Optimize>
@@ -51,6 +47,9 @@
     <WarningLevel>4</WarningLevel>
     <DebugType>none</DebugType>
     <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System">
@@ -90,7 +89,6 @@
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
-  
   <ItemGroup>
     <EmbeddedResource Include="DescriptionsRes.de.resx" />
     <EmbeddedResource Include="LocalizationRes.et.resx" />
@@ -224,6 +222,9 @@
     <EmbeddedResource Include="PropertyNamesRes.no.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="PropertyNamesRes.nb-NO.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="PropertyNamesRes.pt.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -308,6 +309,9 @@
     <EmbeddedResource Include="LocalizationRes.no.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.nb-NO.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="LocalizationRes.pl.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -374,7 +378,6 @@
     <EmbeddedResource Include="DescriptionsRes.es-MX.resx" />
     <EmbeddedResource Include="DescriptionsRes.ka.resx" />
     <EmbeddedResource Include="DescriptionsRes.mn-MN.resx" />
-    <EmbeddedResource Include="DescriptionsRes.nb-NO.resx" />
     <EmbeddedResource Include="DescriptionsRes.sq.resx" />
     <EmbeddedResource Include="DescriptionsRes.sr-Latn-ME.resx" />
     <EmbeddedResource Include="DescriptionsRes.ur.resx" />

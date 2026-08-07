@@ -2,7 +2,7 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
   <PropertyGroup>
     <ProjectType>Local</ProjectType>
-    <ProductVersion>9.0.30729</ProductVersion>
+    
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4C0BA46F-2FCC-498B-7740-EC27E6944F8C}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -47,6 +47,9 @@
     <WarningLevel>4</WarningLevel>
     <DebugType>none</DebugType>
     <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System">
@@ -396,6 +399,9 @@
     <EmbeddedResource Include="Design\FavoritePropertyEditorForm.no.resx">
       <DependentUpon>FavoritePropertyEditorForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\FavoritePropertyEditorForm.nb-NO.resx">
+      <DependentUpon>FavoritePropertyEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\FavoritePropertyEditorForm.pl.resx">
       <DependentUpon>FavoritePropertyEditorForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -538,6 +544,9 @@
       <DependentUpon>FormattingRuleSheetEditorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\FormattingRuleSheetEditorForm.no.resx">
+      <DependentUpon>FormattingRuleSheetEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\FormattingRuleSheetEditorForm.nb-NO.resx">
       <DependentUpon>FormattingRuleSheetEditorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\FormattingRuleSheetEditorForm.pl.resx">
@@ -792,6 +801,9 @@
     <EmbeddedResource Include="Design\ReportFilterStringEditorForm.no.resx">
       <DependentUpon>ReportFilterStringEditorForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\ReportFilterStringEditorForm.nb-NO.resx">
+      <DependentUpon>ReportFilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\ReportFilterStringEditorForm.pl.resx">
       <DependentUpon>ReportFilterStringEditorForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -939,6 +951,9 @@
     <EmbeddedResource Include="Design\SplitCellsEditorForm.no.resx">
       <DependentUpon>SplitCellsEditorForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\SplitCellsEditorForm.nb-NO.resx">
+      <DependentUpon>SplitCellsEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\SplitCellsEditorForm.pl.resx">
       <DependentUpon>SplitCellsEditorForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -1080,6 +1095,9 @@
       <DependentUpon>StyleSheetEditorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\StyleSheetEditorForm.no.resx">
+      <DependentUpon>StyleSheetEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\StyleSheetEditorForm.nb-NO.resx">
       <DependentUpon>StyleSheetEditorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\StyleSheetEditorForm.pl.resx">
@@ -1287,6 +1305,9 @@
     <EmbeddedResource Include="Design\XRSummaryExpressionEditorForm.no.resx">
       <DependentUpon>XRSummaryExpressionEditorForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\XRSummaryExpressionEditorForm.nb-NO.resx">
+      <DependentUpon>XRSummaryExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\XRSummaryExpressionEditorForm.pl.resx">
       <DependentUpon>XRSummaryExpressionEditorForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -1431,6 +1452,9 @@
     <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardEndPageView.no.resx">
       <DependentUpon>WizardEndPageView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardEndPageView.nb-NO.resx">
+      <DependentUpon>WizardEndPageView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardEndPageView.pl.resx">
       <DependentUpon>WizardEndPageView.cs</DependentUpon>
     </EmbeddedResource>
@@ -1564,6 +1588,9 @@
       <DependentUpon>WizardLayoutSettingsPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardLayoutSettingsPage.no.resx">
+      <DependentUpon>WizardLayoutSettingsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardLayoutSettingsPage.nb-NO.resx">
       <DependentUpon>WizardLayoutSettingsPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardLayoutSettingsPage.pl.resx">
@@ -1704,6 +1731,9 @@
     <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardPageView.no.resx">
       <DependentUpon>WizardPageView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardPageView.nb-NO.resx">
+      <DependentUpon>WizardPageView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardPageView.pl.resx">
       <DependentUpon>WizardPageView.cs</DependentUpon>
     </EmbeddedResource>
@@ -1837,6 +1867,9 @@
       <DependentUpon>WizardStartPageView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardStartPageView.no.resx">
+      <DependentUpon>WizardStartPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardStartPageView.nb-NO.resx">
       <DependentUpon>WizardStartPageView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardStartPageView.pl.resx">
@@ -1977,6 +2010,9 @@
     <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptions.no.resx">
       <DependentUpon>WizardViewOptions.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptions.nb-NO.resx">
+      <DependentUpon>WizardViewOptions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptions.pl.resx">
       <DependentUpon>WizardViewOptions.cs</DependentUpon>
     </EmbeddedResource>
@@ -2110,6 +2146,9 @@
       <DependentUpon>WizardViewOptionsGeneral.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsGeneral.no.resx">
+      <DependentUpon>WizardViewOptionsGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsGeneral.nb-NO.resx">
       <DependentUpon>WizardViewOptionsGeneral.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsGeneral.pl.resx">
@@ -2247,6 +2286,9 @@
     <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsGrouping.no.resx">
       <DependentUpon>WizardViewOptionsGrouping.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsGrouping.nb-NO.resx">
+      <DependentUpon>WizardViewOptionsGrouping.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsGrouping.pl.resx">
       <DependentUpon>WizardViewOptionsGrouping.cs</DependentUpon>
     </EmbeddedResource>
@@ -2382,6 +2424,9 @@
     <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsStyles.no.resx">
       <DependentUpon>WizardViewOptionsStyles.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsStyles.nb-NO.resx">
+      <DependentUpon>WizardViewOptionsStyles.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsStyles.pl.resx">
       <DependentUpon>WizardViewOptionsStyles.cs</DependentUpon>
     </EmbeddedResource>
@@ -2490,6 +2535,9 @@
     <EmbeddedResource Include="UserDesigner\XRDesignFormExBase.no.resx">
       <DependentUpon>XRDesignFormExBase.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignFormExBase.nb-NO.resx">
+      <DependentUpon>XRDesignFormExBase.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserDesigner\XRDesignFormExBase.pl.resx">
       <DependentUpon>XRDesignFormExBase.cs</DependentUpon>
     </EmbeddedResource>
@@ -2546,6 +2594,7 @@
     <EmbeddedResource Include="Wizards\Localization\LocalizationRes.mk.resx" />
     <EmbeddedResource Include="Wizards\Localization\LocalizationRes.nl.resx" />
     <EmbeddedResource Include="Wizards\Localization\LocalizationRes.no.resx" />
+    <EmbeddedResource Include="Wizards\Localization\LocalizationRes.nb-NO.resx" />
     <EmbeddedResource Include="Wizards\Localization\LocalizationRes.pl.resx" />
     <EmbeddedResource Include="Wizards\Localization\LocalizationRes.pt-BR.resx" />
     <EmbeddedResource Include="Wizards\Localization\LocalizationRes.pt.resx" />
@@ -2639,6 +2688,9 @@
       <DependentUpon>AddGroupingLevelPageView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Wizards\Views\AddGroupingLevelPageView.no.resx">
+      <DependentUpon>AddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\AddGroupingLevelPageView.nb-NO.resx">
       <DependentUpon>AddGroupingLevelPageView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Wizards\Views\AddGroupingLevelPageView.pl.resx">
@@ -2761,6 +2813,9 @@
     <EmbeddedResource Include="Wizards\Views\ConfigureCrossTabPageView.no.resx">
       <DependentUpon>ConfigureCrossTabPageView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ConfigureCrossTabPageView.nb-NO.resx">
+      <DependentUpon>ConfigureCrossTabPageView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Wizards\Views\ConfigureCrossTabPageView.pl.resx">
       <DependentUpon>ConfigureCrossTabPageView.cs</DependentUpon>
     </EmbeddedResource>
@@ -2881,6 +2936,9 @@
     <EmbeddedResource Include="Wizards\Views\ConfigureReportPageSettingsPageView.no.resx">
       <DependentUpon>ConfigureReportPageSettingsPageView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ConfigureReportPageSettingsPageView.nb-NO.resx">
+      <DependentUpon>ConfigureReportPageSettingsPageView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Wizards\Views\ConfigureReportPageSettingsPageView.pl.resx">
       <DependentUpon>ConfigureReportPageSettingsPageView.cs</DependentUpon>
     </EmbeddedResource>
@@ -2978,6 +3036,9 @@
       <DependentUpon>ChooseReportLayoutPageView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Wizards\Views\ChooseReportLayoutPageView.no.resx">
+      <DependentUpon>ChooseReportLayoutPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseReportLayoutPageView.nb-NO.resx">
       <DependentUpon>ChooseReportLayoutPageView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Wizards\Views\ChooseReportLayoutPageView.pl.resx">
@@ -3116,6 +3177,9 @@
       <DependentUpon>ChooseReportStylePageView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Wizards\Views\ChooseReportStylePageView.no.resx">
+      <DependentUpon>ChooseReportStylePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseReportStylePageView.nb-NO.resx">
       <DependentUpon>ChooseReportStylePageView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Wizards\Views\ChooseReportStylePageView.pl.resx">
@@ -3274,6 +3338,9 @@
     <EmbeddedResource Include="Wizards\Views\ChooseReportTypePageView.no.resx">
       <DependentUpon>ChooseReportTypePageView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseReportTypePageView.nb-NO.resx">
+      <DependentUpon>ChooseReportTypePageView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Wizards\Views\ChooseReportTypePageView.pl.resx">
       <DependentUpon>ChooseReportTypePageView.cs</DependentUpon>
     </EmbeddedResource>
@@ -3407,6 +3474,9 @@
       <DependentUpon>ChooseSummaryOptionsPageView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Wizards\Views\ChooseSummaryOptionsPageView.no.resx">
+      <DependentUpon>ChooseSummaryOptionsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseSummaryOptionsPageView.nb-NO.resx">
       <DependentUpon>ChooseSummaryOptionsPageView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Wizards\Views\ChooseSummaryOptionsPageView.pl.resx">
@@ -3592,6 +3662,9 @@
     <EmbeddedResource Include="Wizards\Views\ConfigureReportTemplateQueryPageView.no.resx">
       <DependentUpon>ConfigureReportTemplateQueryPageView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ConfigureReportTemplateQueryPageView.nb-NO.resx">
+      <DependentUpon>ConfigureReportTemplateQueryPageView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Wizards\Views\ConfigureReportTemplateQueryPageView.pl.resx">
       <DependentUpon>ConfigureReportTemplateQueryPageView.cs</DependentUpon>
     </EmbeddedResource>
@@ -3725,6 +3798,9 @@
       <DependentUpon>CustomizeLabelPageView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Wizards\Views\CustomizeLabelPageView.no.resx">
+      <DependentUpon>CustomizeLabelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\CustomizeLabelPageView.nb-NO.resx">
       <DependentUpon>CustomizeLabelPageView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Wizards\Views\CustomizeLabelPageView.pl.resx">
@@ -3949,6 +4025,9 @@
     <EmbeddedResource Include="Wizards\Views\MasterDetailChooseSummaryOptionsPageView.no.resx">
       <DependentUpon>MasterDetailChooseSummaryOptionsPageView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailChooseSummaryOptionsPageView.nb-NO.resx">
+      <DependentUpon>MasterDetailChooseSummaryOptionsPageView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Wizards\Views\MasterDetailChooseSummaryOptionsPageView.pl.resx">
       <DependentUpon>MasterDetailChooseSummaryOptionsPageView.cs</DependentUpon>
     </EmbeddedResource>
@@ -4144,6 +4223,9 @@
     <EmbeddedResource Include="Wizards\Views\SelectColumnsPageView.no.resx">
       <DependentUpon>SelectColumnsPageView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SelectColumnsPageView.nb-NO.resx">
+      <DependentUpon>SelectColumnsPageView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Wizards\Views\SelectColumnsPageView.pl.resx">
       <DependentUpon>SelectColumnsPageView.cs</DependentUpon>
     </EmbeddedResource>
@@ -4277,6 +4359,9 @@
       <DependentUpon>SelectLabelTypePageView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Wizards\Views\SelectLabelTypePageView.no.resx">
+      <DependentUpon>SelectLabelTypePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SelectLabelTypePageView.nb-NO.resx">
       <DependentUpon>SelectLabelTypePageView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Wizards\Views\SelectLabelTypePageView.pl.resx">
@@ -4481,6 +4566,9 @@
       <DependentUpon>SetReportTitlePageView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Wizards\Views\SetReportTitlePageView.no.resx">
+      <DependentUpon>SetReportTitlePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SetReportTitlePageView.nb-NO.resx">
       <DependentUpon>SetReportTitlePageView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Wizards\Views\SetReportTitlePageView.pl.resx">
@@ -4813,6 +4901,10 @@
       <SubType>Designer</SubType>
       <DependentUpon>TemplateForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Native\Templates\TemplateForm.nb-NO.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TemplateForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Native\Templates\TemplateForm.nl.resx">
       <SubType>Designer</SubType>
       <DependentUpon>TemplateForm.cs</DependentUpon>
@@ -4962,6 +5054,10 @@
       <DependentUpon>ProgressUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Native\Templates\ProgressUserControl.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProgressUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Templates\ProgressUserControl.nb-NO.resx">
       <SubType>Designer</SubType>
       <DependentUpon>ProgressUserControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -5122,6 +5218,10 @@
       <DependentUpon>GalleryUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Native\Templates\GalleryUserControl.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GalleryUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Templates\GalleryUserControl.nb-NO.resx">
       <SubType>Designer</SubType>
       <DependentUpon>GalleryUserControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -5866,6 +5966,10 @@
       <DependentUpon>BindingMapperForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\BindingMapper\BindingMapperForm.nb-NO.resx">
+      <DependentUpon>BindingMapperForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\BindingMapper\BindingMapperForm.pl.resx">
       <DependentUpon>BindingMapperForm.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -5988,6 +6092,10 @@
       <DependentUpon>NewParameterEditorForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\NewParameterEditorForm.nb-NO.resx">
+      <DependentUpon>NewParameterEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\NewParameterEditorForm.pl.resx">
       <DependentUpon>NewParameterEditorForm.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -6100,6 +6208,10 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\LookUpValuesEditorForm.no.resx">
+      <DependentUpon>LookUpValuesEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\LookUpValuesEditorForm.nb-NO.resx">
       <DependentUpon>LookUpValuesEditorForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -6255,7 +6367,15 @@
       <SubType>Designer</SubType>
       <DependentUpon>FormattingRulesEditorForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\FormattingRulesEditorForm.nb-NO.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormattingRulesEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\BordersEditor.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BordersEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\BordersEditor.nb-NO.resx">
       <SubType>Designer</SubType>
       <DependentUpon>BordersEditor.cs</DependentUpon>
     </EmbeddedResource>
@@ -6264,6 +6384,10 @@
       <DependentUpon>BandCollectionEditorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\GroupSortingSummaryEditorForm.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GroupSortingSummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupSortingSummaryEditorForm.nb-NO.resx">
       <SubType>Designer</SubType>
       <DependentUpon>GroupSortingSummaryEditorForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -6471,6 +6595,10 @@
       <DependentUpon>XRDesignForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignForm.nb-NO.resx">
+      <DependentUpon>XRDesignForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserDesigner\XRDesignRibbonForm.de.resx">
       <DependentUpon>XRDesignRibbonForm.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -6484,6 +6612,10 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UserDesigner\XRDesignRibbonForm.no.resx">
+      <DependentUpon>XRDesignRibbonForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignRibbonForm.nb-NO.resx">
       <DependentUpon>XRDesignRibbonForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -6782,6 +6914,9 @@
     <EmbeddedResource Include="Wizards\Views\SpecifyReportTemplateOptionsPageView.no.resx">
       <DependentUpon>SpecifyReportTemplateOptionsPageView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SpecifyReportTemplateOptionsPageView.nb-NO.resx">
+      <DependentUpon>SpecifyReportTemplateOptionsPageView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Wizards\Views\SpecifyReportTemplateOptionsPageView.pl.resx">
       <DependentUpon>SpecifyReportTemplateOptionsPageView.cs</DependentUpon>
     </EmbeddedResource>
@@ -6938,6 +7073,9 @@
     <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorContentControl.no.resx">
       <DependentUpon>ParameterEditorContentControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorContentControl.nb-NO.resx">
+      <DependentUpon>ParameterEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorContentControl.pl.resx">
       <DependentUpon>ParameterEditorContentControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -7089,6 +7227,9 @@
       <DependentUpon>ParameterEditorDynamicListSettingsControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorDynamicListSettingsControl.no.resx">
+      <DependentUpon>ParameterEditorDynamicListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorDynamicListSettingsControl.nb-NO.resx">
       <DependentUpon>ParameterEditorDynamicListSettingsControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorDynamicListSettingsControl.pl.resx">
@@ -7244,6 +7385,9 @@
     <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorRangeSettingsControl.no.resx">
       <DependentUpon>ParameterEditorRangeSettingsControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorRangeSettingsControl.nb-NO.resx">
+      <DependentUpon>ParameterEditorRangeSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorRangeSettingsControl.pl.resx">
       <DependentUpon>ParameterEditorRangeSettingsControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -7395,6 +7539,9 @@
       <DependentUpon>ParameterEditorStaticLookUpValuesControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticLookUpValuesControl.no.resx">
+      <DependentUpon>ParameterEditorStaticLookUpValuesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticLookUpValuesControl.nb-NO.resx">
       <DependentUpon>ParameterEditorStaticLookUpValuesControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticLookUpValuesControl.pl.resx">
@@ -7550,6 +7697,9 @@
     <EmbeddedResource Include="Design\ParameterEditor\ReportParameterCollectionEditorForm.no.resx">
       <DependentUpon>ReportParameterCollectionEditorForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ReportParameterCollectionEditorForm.nb-NO.resx">
+      <DependentUpon>ReportParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\ParameterEditor\ReportParameterCollectionEditorForm.pl.resx">
       <DependentUpon>ReportParameterCollectionEditorForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -7701,6 +7851,9 @@
       <DependentUpon>ReportParameterEditorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\ParameterEditor\ReportParameterEditorForm.no.resx">
+      <DependentUpon>ReportParameterEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ReportParameterEditorForm.nb-NO.resx">
       <DependentUpon>ReportParameterEditorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\ParameterEditor\ReportParameterEditorForm.pl.resx">

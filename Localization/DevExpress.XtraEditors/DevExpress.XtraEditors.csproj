@@ -2,7 +2,7 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
   <PropertyGroup>
     <ProjectType>Local</ProjectType>
-    <ProductVersion>9.0.30729</ProductVersion>
+    
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{2681BDAF-5AB2-4D08-BBE5-4A4D6837D72E}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -21,9 +21,7 @@
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <BaseAddress>1107296256</BaseAddress>
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
-    
     <DefineConstants>DEBUG;TRACE</DefineConstants>
-    
     <DebugSymbols>true</DebugSymbols>
     <FileAlignment>4096</FileAlignment>
     <Optimize>false</Optimize>
@@ -39,9 +37,7 @@
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <BaseAddress>1107296256</BaseAddress>
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
-    
     <DefineConstants>TRACE</DefineConstants>
-    
     <DebugSymbols>false</DebugSymbols>
     <FileAlignment>4096</FileAlignment>
     <Optimize>true</Optimize>
@@ -51,6 +47,9 @@
     <WarningLevel>4</WarningLevel>
     <DebugType>none</DebugType>
     <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Accessibility">
@@ -202,6 +201,9 @@
     <EmbeddedResource Include="Designer\EditMaskEditorForm.no.resx">
       <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.nb-NO.resx">
+      <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Designer\EditMaskEditorForm.pl.resx">
       <DependentUpon>EditMaskEditorForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -285,6 +287,7 @@
     <EmbeddedResource Include="FilterPanel\LocalizationRes.ja.resx" />
     <EmbeddedResource Include="FilterPanel\LocalizationRes.nl.resx" />
     <EmbeddedResource Include="FilterPanel\LocalizationRes.no.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.nb-NO.resx" />
     <EmbeddedResource Include="FilterPanel\LocalizationRes.pl.resx" />
     <EmbeddedResource Include="FilterPanel\LocalizationRes.pt-BR.resx" />
     <EmbeddedResource Include="FilterPanel\LocalizationRes.pt.resx" />
@@ -326,6 +329,7 @@
     <EmbeddedResource Include="ImageEditing\LocalizationRes.mk.resx" />
     <EmbeddedResource Include="ImageEditing\LocalizationRes.nl.resx" />
     <EmbeddedResource Include="ImageEditing\LocalizationRes.no.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.nb-NO.resx" />
     <EmbeddedResource Include="ImageEditing\LocalizationRes.pl.resx" />
     <EmbeddedResource Include="ImageEditing\LocalizationRes.pt-BR.resx" />
     <EmbeddedResource Include="ImageEditing\LocalizationRes.pt.resx" />
@@ -429,6 +433,9 @@
       <DependentUpon>FrmColorPicker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.no.resx">
+      <DependentUpon>FrmColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.nb-NO.resx">
       <DependentUpon>FrmColorPicker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.pl.resx">
@@ -569,6 +576,9 @@
     <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.no.resx">
       <DependentUpon>HSVModelUserControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.nb-NO.resx">
+      <DependentUpon>HSVModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.pl.resx">
       <DependentUpon>HSVModelUserControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -704,6 +714,9 @@
     <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.no.resx">
       <DependentUpon>RGBModelUserControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.nb-NO.resx">
+      <DependentUpon>RGBModelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.pl.resx">
       <DependentUpon>RGBModelUserControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -818,6 +831,10 @@
       <DependentUpon>Layouts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Designer\Layouts.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\Layouts.nb-NO.resx">
       <SubType>Designer</SubType>
       <DependentUpon>Layouts.cs</DependentUpon>
     </EmbeddedResource>
@@ -1212,7 +1229,15 @@
       <DependentUpon>ColumnDesigner.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ColumnDesigner.nb-NO.resx">
+      <DependentUpon>ColumnDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Designer\ExpressionEditorForm.no.resx">
+      <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.nb-NO.resx">
       <DependentUpon>ExpressionEditorForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -1500,6 +1525,7 @@
     <EmbeddedResource Include="Properties\Resources.mk.resx" />
     <EmbeddedResource Include="Properties\Resources.nl.resx" />
     <EmbeddedResource Include="Properties\Resources.no.resx" />
+    <EmbeddedResource Include="Properties\Resources.nb-NO.resx" />
     <EmbeddedResource Include="Properties\Resources.pl.resx" />
     <EmbeddedResource Include="Properties\Resources.pt-BR.resx" />
     <EmbeddedResource Include="Properties\Resources.pt.resx" />

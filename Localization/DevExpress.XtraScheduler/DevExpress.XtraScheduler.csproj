@@ -2,7 +2,7 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
   <PropertyGroup>
     <ProjectType>Local</ProjectType>
-    <ProductVersion>9.0.30729</ProductVersion>
+    
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{99D7BF5D-353F-4C75-A10A-03AA2E3AFA4E}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -264,6 +264,9 @@
     <EmbeddedResource Include="Design\HourlyRecurrenceControl.no.resx">
       <DependentUpon>HourlyRecurrenceControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\HourlyRecurrenceControl.nb-NO.resx">
+      <DependentUpon>HourlyRecurrenceControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\HourlyRecurrenceControl.pl.resx">
       <DependentUpon>HourlyRecurrenceControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -400,6 +403,9 @@
       <DependentUpon>MinutelyRecurrenceControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\MinutelyRecurrenceControl.no.resx">
+      <DependentUpon>MinutelyRecurrenceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\MinutelyRecurrenceControl.nb-NO.resx">
       <DependentUpon>MinutelyRecurrenceControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\MinutelyRecurrenceControl.pl.resx">
@@ -591,6 +597,9 @@
     <EmbeddedResource Include="Forms\AppointmentRibbonForm.no.resx">
       <DependentUpon>AppointmentRibbonForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AppointmentRibbonForm.nb-NO.resx">
+      <DependentUpon>AppointmentRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AppointmentRibbonForm.pl.resx">
       <DependentUpon>AppointmentRibbonForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -748,6 +757,9 @@
       <DependentUpon>LegacyAppointmentRecurrenceForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Legacy\LegacyAppointmentRecurrenceForm.no.resx">
+      <DependentUpon>LegacyAppointmentRecurrenceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Legacy\LegacyAppointmentRecurrenceForm.nb-NO.resx">
       <DependentUpon>LegacyAppointmentRecurrenceForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Legacy\LegacyAppointmentRecurrenceForm.pl.resx">
@@ -1433,6 +1445,10 @@
       <DependentUpon>AppointmentDependencyForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AppointmentDependencyForm.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AppointmentDependencyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AppointmentDependencyForm.nb-NO.resx">
       <SubType>Designer</SubType>
       <DependentUpon>AppointmentDependencyForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -3090,6 +3106,10 @@
       <DependentUpon>RecurrenceAppointmentEditForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RecurrenceAppointmentEditForm.nb-NO.resx">
+      <DependentUpon>RecurrenceAppointmentEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\RecurrenceAppointmentEditForm.it.resx">
       <SubType>Designer</SubType>
       <DependentUpon>RecurrenceAppointmentEditForm.cs</DependentUpon>
@@ -4221,6 +4241,10 @@
       <DependentUpon>MonthlyRecurrenceControl.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\MonthlyRecurrenceControl.nb-NO.resx">
+      <DependentUpon>MonthlyRecurrenceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\MonthlyRecurrenceControl.pl.resx">
       <DependentUpon>MonthlyRecurrenceControl.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -4293,6 +4317,10 @@
       <SubType>Designer</SubType>
       <DependentUpon>CalendarDetailsPrintStyleOptionsControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\PrintStyleControls\CalendarDetailsPrintStyleOptionsControl.nb-NO.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CalendarDetailsPrintStyleOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\PrintStyleControls\CalendarDetailsPrintStyleOptionsControl.pt-BR.resx">
       <SubType>Designer</SubType>
       <DependentUpon>CalendarDetailsPrintStyleOptionsControl.cs</DependentUpon>
@@ -4354,6 +4382,10 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\PrintStyleControls\DailyPrintStyleOptions.no.resx">
+      <DependentUpon>DailyPrintStyleOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\PrintStyleControls\DailyPrintStyleOptions.nb-NO.resx">
       <DependentUpon>DailyPrintStyleOptions.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -4425,6 +4457,10 @@
       <SubType>Designer</SubType>
       <DependentUpon>MemoPrintStyleOptionsControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\PrintStyleControls\MemoPrintStyleOptionsControl.nb-NO.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MemoPrintStyleOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\PrintStyleControls\MemoPrintStyleOptionsControl.pt-BR.resx">
       <SubType>Designer</SubType>
       <DependentUpon>MemoPrintStyleOptionsControl.cs</DependentUpon>
@@ -4493,6 +4529,10 @@
       <SubType>Designer</SubType>
       <DependentUpon>MonthlyPrintStyleOptionsControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\PrintStyleControls\MonthlyPrintStyleOptionsControl.nb-NO.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MonthlyPrintStyleOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\PrintStyleControls\MonthlyPrintStyleOptionsControl.pt-BR.resx">
       <SubType>Designer</SubType>
       <DependentUpon>MonthlyPrintStyleOptionsControl.cs</DependentUpon>
@@ -4558,6 +4598,10 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\PrintStyleControls\PageSetupFormatTabControl.no.resx">
+      <DependentUpon>PageSetupFormatTabControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\PrintStyleControls\PageSetupFormatTabControl.nb-NO.resx">
       <DependentUpon>PageSetupFormatTabControl.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -4633,6 +4677,10 @@
       <DependentUpon>PageSetupPaperTabControl.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\PrintStyleControls\PageSetupPaperTabControl.nb-NO.resx">
+      <DependentUpon>PageSetupPaperTabControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\PrintStyleControls\PageSetupPaperTabControl.pt-BR.resx">
       <DependentUpon>PageSetupPaperTabControl.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -4705,6 +4753,10 @@
       <DependentUpon>PageSetupResourcesTabControl.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\PrintStyleControls\PageSetupResourcesTabControl.nb-NO.resx">
+      <DependentUpon>PageSetupResourcesTabControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\PrintStyleControls\PageSetupResourcesTabControl.resx">
       <DependentUpon>PageSetupResourcesTabControl.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -4750,6 +4802,10 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\PrintStyleControls\picturePreviewControl.no.resx">
+      <DependentUpon>picturePreviewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\PrintStyleControls\picturePreviewControl.nb-NO.resx">
       <DependentUpon>picturePreviewControl.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -4821,6 +4877,10 @@
       <DependentUpon>PrintRangeControl.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\PrintStyleControls\PrintRangeControl.nb-NO.resx">
+      <DependentUpon>PrintRangeControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\PrintStyleControls\PrintRangeControl.pt-BR.resx">
       <DependentUpon>PrintRangeControl.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -4878,6 +4938,10 @@
       <DependentUpon>PrintStyleOptionsControlBase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\PrintStyleControls\PrintStyleOptionsControlBase.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintStyleOptionsControlBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\PrintStyleControls\PrintStyleOptionsControlBase.nb-NO.resx">
       <SubType>Designer</SubType>
       <DependentUpon>PrintStyleOptionsControlBase.cs</DependentUpon>
     </EmbeddedResource>
@@ -4949,6 +5013,10 @@
       <DependentUpon>TimeIntervalEditControl.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\PrintStyleControls\TimeIntervalEditControl.nb-NO.resx">
+      <DependentUpon>TimeIntervalEditControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\PrintStyleControls\TimeIntervalEditControl.pt-BR.resx">
       <DependentUpon>TimeIntervalEditControl.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -5014,6 +5082,10 @@
       <DependentUpon>TriFoldPrintStyleOptionsControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\PrintStyleControls\TriFoldPrintStyleOptionsControl.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TriFoldPrintStyleOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\PrintStyleControls\TriFoldPrintStyleOptionsControl.nb-NO.resx">
       <SubType>Designer</SubType>
       <DependentUpon>TriFoldPrintStyleOptionsControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -5085,6 +5157,10 @@
       <SubType>Designer</SubType>
       <DependentUpon>WeeklyPrintStyleOptionsControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\PrintStyleControls\WeeklyPrintStyleOptionsControl.nb-NO.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WeeklyPrintStyleOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\PrintStyleControls\WeeklyPrintStyleOptionsControl.pt-BR.resx">
       <SubType>Designer</SubType>
       <DependentUpon>WeeklyPrintStyleOptionsControl.cs</DependentUpon>
@@ -5153,6 +5229,10 @@
       <DependentUpon>TimeZonePropertiesControl.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\TimeZonePropertiesControl.nb-NO.resx">
+      <DependentUpon>TimeZonePropertiesControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\TimeZonePropertiesControl.pt-BR.resx">
       <DependentUpon>TimeZonePropertiesControl.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -5218,6 +5298,10 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\WeeklyRecurrenceControl.no.resx">
+      <DependentUpon>WeeklyRecurrenceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\WeeklyRecurrenceControl.nb-NO.resx">
       <DependentUpon>WeeklyRecurrenceControl.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -5293,6 +5377,10 @@
       <DependentUpon>YearlyRecurrenceControl.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\YearlyRecurrenceControl.nb-NO.resx">
+      <DependentUpon>YearlyRecurrenceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Design\YearlyRecurrenceControl.pl.resx">
       <DependentUpon>YearlyRecurrenceControl.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -5362,6 +5450,10 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AppointmentForm.no.resx">
+      <DependentUpon>AppointmentForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AppointmentForm.nb-NO.resx">
       <DependentUpon>AppointmentForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -5441,6 +5533,10 @@
       <DependentUpon>AppointmentRecurrenceForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AppointmentRecurrenceForm.nb-NO.resx">
+      <DependentUpon>AppointmentRecurrenceForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AppointmentRecurrenceForm.pl.resx">
       <DependentUpon>AppointmentRecurrenceForm.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -5514,6 +5610,10 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DefineNewStyleForm.no.resx">
+      <DependentUpon>DefineNewStyleForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DefineNewStyleForm.nb-NO.resx">
       <DependentUpon>DefineNewStyleForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -5593,6 +5693,10 @@
       <DependentUpon>GotoDateForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GotoDateForm.nb-NO.resx">
+      <DependentUpon>GotoDateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\GotoDateForm.pl.resx">
       <DependentUpon>GotoDateForm.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -5666,6 +5770,10 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PageSetupForm.no.resx">
+      <DependentUpon>PageSetupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PageSetupForm.nb-NO.resx">
       <DependentUpon>PageSetupForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -5789,6 +5897,10 @@
       <DependentUpon>RecurrentAppointmentDeleteForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RecurrentAppointmentDeleteForm.nb-NO.resx">
+      <DependentUpon>RecurrentAppointmentDeleteForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\RecurrentAppointmentDeleteForm.pl.resx">
       <DependentUpon>RecurrentAppointmentDeleteForm.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -5865,6 +5977,10 @@
       <DependentUpon>RemindersForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RemindersForm.nb-NO.resx">
+      <DependentUpon>RemindersForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\RemindersForm.pl.resx">
       <DependentUpon>RemindersForm.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -5934,6 +6050,10 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ShadingSetupForm.no.resx">
+      <DependentUpon>ShadingSetupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShadingSetupForm.nb-NO.resx">
       <DependentUpon>ShadingSetupForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -6010,6 +6130,10 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TimeRulerForm.no.resx">
+      <DependentUpon>TimeRulerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TimeRulerForm.nb-NO.resx">
       <DependentUpon>TimeRulerForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>

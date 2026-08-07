@@ -151,6 +151,10 @@ namespace DevExpress.Internal {
     public const string SRAssemblyDocsPdf = "DevExpress.Docs.Pdf" + VSuffix;
     public const string SRAssemblyDocsPdfTests = "DevExpress.Docs.Pdf" + TestsSuffix;
     public const string SRAssemblyRDSReportDesigner = "DevExpress.ReportDesigner" + VSuffix;
+    public const string SRAssemblyDocsSpreadsheet = "DevExpress.Docs.Spreadsheet" + VSuffix;
+    public const string SRAssemblyDocsSpreadsheetTests = "DevExpress.Docs.Spreadsheet" + TestsSuffix;
+    public const string SRAssemblyDocsWord = "DevExpress.Docs.Word" + VSuffix;
+    public const string SRAssemblyDocsWordTests = "DevExpress.Docs.Word" + TestsSuffix;
 
     public const string SRAssemblyDevExtremeAspNetCore = "DevExtreme.AspNet.Core";
     public const string SRAssemblyDevExtremeAspNetMvc = "DevExtreme.AspNet.Mvc";

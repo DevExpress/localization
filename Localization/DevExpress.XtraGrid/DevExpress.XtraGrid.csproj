@@ -2,7 +2,7 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
   <PropertyGroup>
     <ProjectType>Local</ProjectType>
-    <ProductVersion>9.0.30729</ProductVersion>
+    
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{F355827D-3C33-425F-AB52-2C766611B44E}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -176,6 +176,9 @@
       <DependentUpon>ErrorPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Base\ErrorPanel.no.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.nb-NO.resx">
       <DependentUpon>ErrorPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Base\ErrorPanel.pl.resx">
@@ -486,6 +489,9 @@
     <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.no.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.nb-NO.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.nl.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -606,6 +612,10 @@
       <DependentUpon>PrintDesigner.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.no.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.nb-NO.resx">
       <SubType>Designer</SubType>
       <DependentUpon>PrintDesigner.cs</DependentUpon>
     </EmbeddedResource>
@@ -855,6 +865,10 @@
       <DependentUpon>CardViewPrinting.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.nb-NO.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Printing\CardViewPrinting.pl.resx">
       <DependentUpon>CardViewPrinting.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -976,6 +990,10 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Printing\GridViewPrinting.no.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.nb-NO.resx">
       <DependentUpon>GridViewPrinting.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
