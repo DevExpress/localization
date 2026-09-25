@@ -1,4 +1,4 @@
-﻿using DevExpress.Internal;
+using DevExpress.Internal;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -6,10 +6,11 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("DevExpress.Persistent.Base")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]
 [assembly: AssemblyProduct("DevExpress.Persistent.Base")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 [assembly: ComVisible(false)]
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]

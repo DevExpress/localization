@@ -1,47 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7E89D52A-351A-4C97-A0A4-79B3C9B8AF7C}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <RootNamespace>DevExpress.AspNetCore.RichEdit</RootNamespace>
+    <TargetFramework>net8.0</TargetFramework>
     <AssemblyName>DevExpress.AspNetCore.RichEdit.v26.1</AssemblyName>
-<SignAssembly>true</SignAssembly>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <RootNamespace>DevExpress.AspNetCore.RichEdit</RootNamespace>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>..\DevExpress.Dll\NETCore\</OutputPath>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>..\DevExpress.DLL\</OutputPath>
-    <DefineConstants>TRACE;DEBUG</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <UseVSHostingProcess>true</UseVSHostingProcess>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>none</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>..\DevExpress.DLL\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="..\..\AssemblyVersion.cs">
+    <Compile Include="..\AssemblyVersion.cs">
       <Link>AssemblyVersion.cs</Link>
     </Compile>
     <Compile Include="AssemblyInfo.cs" />
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="Resources\LocalizationRes.de.resx" />
     <EmbeddedResource Include="Resources\LocalizationRes.resx" />
@@ -110,12 +85,4 @@
     <EmbeddedResource Include="Resources\LocalizationRes.uz-Latn-UZ.resx" />
     <EmbeddedResource Include="Resources\LocalizationRes.ky.resx" />
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

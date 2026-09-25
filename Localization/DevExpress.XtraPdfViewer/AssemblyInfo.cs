@@ -9,6 +9,8 @@ using DevExpress.Internal;
 [assembly:AssemblyCulture("")]
 [assembly:CLSCompliant(true)]		
 
-
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
 
+[assembly: AssemblyProduct("DevExpress.XtraPdfViewer")]
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
+[assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]

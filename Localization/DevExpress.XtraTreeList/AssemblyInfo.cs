@@ -12,3 +12,5 @@ using DevExpress.Internal;
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
 [assembly: CLSCompliant(true)]
 
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
+[assembly: AssemblyCompany("Developer Express Inc.")]

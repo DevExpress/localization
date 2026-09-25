@@ -14,4 +14,3 @@ using DevExpress.Internal;
 [assembly: AssemblyCulture("")]
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
 [assembly: CLSCompliant(true)]
-

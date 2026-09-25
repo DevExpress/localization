@@ -9,11 +9,11 @@ using DevExpress.Internal;
 [assembly:AssemblyTitle("DevExpress.Xpf.ReportDesigner")]
 [assembly:AssemblyDescription("DXReportDesigner")]
 [assembly:AssemblyConfiguration("")]
-[assembly:AssemblyCompany("Developer Express Inc.")]
-[assembly:AssemblyProduct("DXReportDesigner")]
+[assembly:AssemblyCompany(AssemblyInfo.AssemblyCompany)]
+[assembly:AssemblyProduct("DevExpress.Xpf.ReportDesigner")]
 [assembly:AssemblyTrademark("DXReportDesigner")]
 [assembly:AssemblyCulture("")]		
 [assembly:CLSCompliant(true)]		
 
-
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]

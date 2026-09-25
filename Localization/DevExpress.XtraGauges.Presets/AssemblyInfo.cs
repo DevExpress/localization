@@ -8,11 +8,11 @@ using DevExpress.Internal;
 [assembly: AssemblyTitle("DevExpress.XtraGauges.Presets")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Developer Express Inc.")]
+[assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]
 [assembly: AssemblyProduct("DevExpress.XtraGauges.Presets")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: CLSCompliant(true)]
 
-
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]

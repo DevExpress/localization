@@ -9,9 +9,10 @@ using DevExpress.Internal;
 [assembly: AssemblyTitle("DevExpress.Xpf.Spreadsheet")]
 [assembly: AssemblyDescription("DXSpreadsheet")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Developer Express Inc.")]
+[assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]
 [assembly: AssemblyCulture("")]
 [assembly: CLSCompliant(true)]
 
-
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+[assembly: AssemblyProduct("DevExpress.Xpf.Spreadsheet")]
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]

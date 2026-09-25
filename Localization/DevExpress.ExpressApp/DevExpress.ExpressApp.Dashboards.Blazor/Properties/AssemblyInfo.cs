@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using DevExpress.Internal;
@@ -9,9 +9,9 @@ using DevExpress.Internal;
 [assembly: AssemblyTitle("DevExpress.ExpressApp.Dashboards.Blazor")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DevExpress.ExpressApp.Dashboards.Blazor")]
-[assembly: AssemblyCopyright("")]
+[assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]
+[assembly: AssemblyProduct("eXpressApp Framework")]
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -19,5 +19,4 @@ using DevExpress.Internal;
 // to COM components.  If you need to access a type in this assembly from
 // COM, set the ComVisible attribute to true on that type.
 [assembly: ComVisible(false)]
-
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]

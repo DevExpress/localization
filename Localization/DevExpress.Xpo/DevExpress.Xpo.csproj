@@ -1,254 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <ProjectType>Local</ProjectType>
-    
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{4E2159BE-5FBD-496B-8765-16E9E40796B3}</ProjectGuid>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    
+    <TargetFrameworks>net462;net8.0</TargetFrameworks>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <AssemblyName>DevExpress.Xpo.v26.1</AssemblyName>
-<DefaultClientScript>JScript</DefaultClientScript>
-    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
-    <DefaultTargetSchema>IE50</DefaultTargetSchema>
-    <DelaySign>false</DelaySign>
-    <OutputType>Library</OutputType>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>DevExpress.Xpo</RootNamespace>
-    <SignAssembly>true</SignAssembly>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>..\DevExpress.Dll\</OutputPath>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <BaseAddress>285212672</BaseAddress>
-    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
-    
-    <DefineConstants>TRACE;DEBUG</DefineConstants>
-    
-    <DebugSymbols>true</DebugSymbols>
-    <FileAlignment>4096</FileAlignment>
-    <Optimize>false</Optimize>
-    <RegisterForComInterop>false</RegisterForComInterop>
-    <RemoveIntegerChecks>false</RemoveIntegerChecks>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <WarningLevel>4</WarningLevel>
-    <DebugType>full</DebugType>
-    <ErrorReport>prompt</ErrorReport>
+    <IntermediateOutputPath>obj\$(Configuration)\$(TargetFramework)\</IntermediateOutputPath>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>..\DevExpress.Dll\</OutputPath>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <BaseAddress>285212672</BaseAddress>
-    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
-    
-    <DefineConstants>TRACE;</DefineConstants>
-    
-    <DebugSymbols>false</DebugSymbols>
-    <FileAlignment>4096</FileAlignment>
-    <Optimize>true</Optimize>
-    <RegisterForComInterop>false</RegisterForComInterop>
-    <RemoveIntegerChecks>false</RemoveIntegerChecks>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <WarningLevel>4</WarningLevel>
-    <DebugType>none</DebugType>
-    <ErrorReport>prompt</ErrorReport>
+
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net462'">
+    <OutputPath>..\DevExpress.Dll\Framework\</OutputPath>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0'">
+    <OutputPath>..\DevExpress.Dll\NETCore\</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="System">
-      <Name>System</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.configuration">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Data">
-      <Name>System.Data</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Drawing">
-      <Name>System.Drawing</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Web">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Web.Services">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Windows.Forms">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Xml">
-      <Name>System.XML</Name>
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="..\..\AssemblyVersion.cs">
+    <Compile Include="..\AssemblyVersion.cs">
       <Link>AssemblyVersion.cs</Link>
     </Compile>
-    <Compile Include="AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
     <Compile Include="Messages.ID.cs" />
-    <EmbeddedResource Include="Messages.et.resx" />
-    <EmbeddedResource Include="Messages.zh-TW.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.vi.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.uk.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.tr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.ta.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.sv.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.sr-Latn-RS.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.sr-Cyrl-RS.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.sl.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.pt.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.no.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.mk.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.lv.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.lt.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.ko.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.is.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.hy.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.he.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.fi.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.fa.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.el.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.da.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.ca.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.bg.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.ar.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.sr-Latn-BA.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.de-CH.resx" />
-    <EmbeddedResource Include="Messages.it.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.hr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.ja.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.zh-Hans.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.zh-CN.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.zh-Hant.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.hu.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.cs.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.de.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.es.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.fr.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.nl.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.pl.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.pt-BR.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.ro.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.ru.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.sk.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Messages.hi.resx" />
-    <EmbeddedResource Include="Messages.id.resx" />
-    <EmbeddedResource Include="Messages.kk.resx" />
-    <EmbeddedResource Include="Messages.ms.resx" />
-    <EmbeddedResource Include="Messages.th.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Include="Messages.af.resx" />
+    <EmbeddedResource Include="Messages.ar.resx" />
     <EmbeddedResource Include="Messages.az.resx" />
+    <EmbeddedResource Include="Messages.bg.resx" />
     <EmbeddedResource Include="Messages.bs.resx" />
+    <EmbeddedResource Include="Messages.ca.resx" />
+    <EmbeddedResource Include="Messages.cs.resx" />
     <EmbeddedResource Include="Messages.cy.resx" />
+    <EmbeddedResource Include="Messages.da.resx" />
+    <EmbeddedResource Include="Messages.de-CH.resx" />
+    <EmbeddedResource Include="Messages.de.resx" />
+    <EmbeddedResource Include="Messages.el.resx" />
     <EmbeddedResource Include="Messages.en-GB.resx" />
     <EmbeddedResource Include="Messages.es-MX.resx" />
+    <EmbeddedResource Include="Messages.es.resx" />
+    <EmbeddedResource Include="Messages.et.resx" />
+    <EmbeddedResource Include="Messages.fa.resx" />
+    <EmbeddedResource Include="Messages.fi.resx" />
+    <EmbeddedResource Include="Messages.fr.resx" />
+    <EmbeddedResource Include="Messages.he.resx" />
+    <EmbeddedResource Include="Messages.hi.resx" />
+    <EmbeddedResource Include="Messages.hr.resx" />
+    <EmbeddedResource Include="Messages.hu.resx" />
+    <EmbeddedResource Include="Messages.hy.resx" />
+    <EmbeddedResource Include="Messages.id.resx" />
+    <EmbeddedResource Include="Messages.is.resx" />
+    <EmbeddedResource Include="Messages.it.resx" />
+    <EmbeddedResource Include="Messages.ja.resx" />
     <EmbeddedResource Include="Messages.ka.resx" />
+    <EmbeddedResource Include="Messages.kk.resx" />
+    <EmbeddedResource Include="Messages.ko.resx" />
+    <EmbeddedResource Include="Messages.ky.resx" />
+    <EmbeddedResource Include="Messages.lt.resx" />
+    <EmbeddedResource Include="Messages.lv.resx" />
+    <EmbeddedResource Include="Messages.mk.resx" />
     <EmbeddedResource Include="Messages.mn-MN.resx" />
+    <EmbeddedResource Include="Messages.ms.resx" />
     <EmbeddedResource Include="Messages.nb-NO.resx" />
+    <EmbeddedResource Include="Messages.nl.resx" />
+    <EmbeddedResource Include="Messages.no.resx" />
+    <EmbeddedResource Include="Messages.pl.resx" />
+    <EmbeddedResource Include="Messages.pt-BR.resx" />
+    <EmbeddedResource Include="Messages.pt.resx" />
+    <EmbeddedResource Include="Messages.resx" />
+    <EmbeddedResource Include="Messages.ro.resx" />
+    <EmbeddedResource Include="Messages.ru.resx" />
+    <EmbeddedResource Include="Messages.sk.resx" />
+    <EmbeddedResource Include="Messages.sl.resx" />
     <EmbeddedResource Include="Messages.sq.resx" />
+    <EmbeddedResource Include="Messages.sr-Cyrl-RS.resx" />
+    <EmbeddedResource Include="Messages.sr-Latn-BA.resx" />
     <EmbeddedResource Include="Messages.sr-Latn-ME.resx" />
+    <EmbeddedResource Include="Messages.sr-Latn-RS.resx" />
+    <EmbeddedResource Include="Messages.sv.resx" />
+    <EmbeddedResource Include="Messages.ta.resx" />
+    <EmbeddedResource Include="Messages.th.resx" />
+    <EmbeddedResource Include="Messages.tr.resx" />
+    <EmbeddedResource Include="Messages.uk.resx" />
     <EmbeddedResource Include="Messages.ur.resx" />
     <EmbeddedResource Include="Messages.uz-Cyrl-UZ.resx" />
     <EmbeddedResource Include="Messages.uz-Latn-UZ.resx" />
-    <EmbeddedResource Include="Messages.ky.resx" />
+    <EmbeddedResource Include="Messages.vi.resx" />
+    <EmbeddedResource Include="Messages.zh-CN.resx" />
+    <EmbeddedResource Include="Messages.zh-Hans.resx" />
+    <EmbeddedResource Include="Messages.zh-Hant.resx" />
+    <EmbeddedResource Include="Messages.zh-TW.resx" />
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,13 @@
+<Project>
+  <PropertyGroup Condition="'$(DXDisableCentral)' != 'true'">
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuGetAuditMode>all</NuGetAuditMode>
+    <WarningsNotAsErrors>NU1901;NU1902;NU1903;NU1904;NU1510;DX1000;DX1001;DX1002;$(WarningsNotAsErrors)</WarningsNotAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageVersion Include="System.Resources.Extensions" Version="10.0.10" />
+  </ItemGroup>
+</Project>

@@ -6,10 +6,11 @@ using DevExpress.Internal;
 [assembly: AssemblyTitle("DevExpress.XtraReports")]
 [assembly: AssemblyDescription("XtraReports Suite")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyProduct("XtraReports(tm) SUITE SOFTWARE COMPONENT PRODUCT")]
+[assembly: AssemblyProduct("DevExpress.XtraReports")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: CLSCompliant(true)]
 
-
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
+[assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]

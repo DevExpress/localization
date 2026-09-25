@@ -6,10 +6,10 @@ using System.Security;
 [assembly: AssemblyTitle("DevExpress.Xpf.CodeView")]
 [assembly: AssemblyDescription("DXCodeView Suite")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Developer Express Inc.")]
+[assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]
 [assembly: AssemblyProduct("DevExpress.Xpf.CodeView")]
 [assembly: AssemblyCulture("")]
 [assembly: CLSCompliant(true)]
 
-
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]

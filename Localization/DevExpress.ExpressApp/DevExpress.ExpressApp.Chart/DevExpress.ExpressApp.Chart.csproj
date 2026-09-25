@@ -1,44 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7019015B-FB50-42E9-98AD-3FAC3711F9A6}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DevExpress.ExpressApp.Chart</RootNamespace>
+    <TargetFramework>net8.0</TargetFramework>
     <AssemblyName>DevExpress.ExpressApp.Chart.v26.1</AssemblyName>
-<SignAssembly>true</SignAssembly>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <RootNamespace>DevExpress.ExpressApp.Chart</RootNamespace>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>..\..\DevExpress.Dll\NETCore\</OutputPath>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>..\..\DevExpress.DLL\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>..\..\DevExpress.DLL\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="System" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="..\..\..\AssemblyVersion.cs">
+    <Compile Include="..\..\AssemblyVersion.cs">
       <Link>AssemblyVersion.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="ModuleLocalizationResources.cs.resx" />
     <EmbeddedResource Include="ModuleLocalizationResources.de.resx" />
@@ -71,7 +49,7 @@
     <EmbeddedResource Include="ModuleLocalizationResources.uz-Latn-UZ.resx" />
     <EmbeddedResource Include="ModuleLocalizationResources.ky.resx" />
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+
   <ItemGroup>
     <EmbeddedResource Include="ModuleLocalizationResources.ar.resx" />
     <EmbeddedResource Include="ModuleLocalizationResources.bg.resx" />

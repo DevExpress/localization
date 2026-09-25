@@ -7,12 +7,12 @@ using DevExpress.Internal;
 [assembly: AssemblyTitle("DevExpress.Xpf.Grid.Core")]
 [assembly:AssemblyDescription("DXGrid Suite")]
 [assembly:AssemblyConfiguration("")]
-[assembly:AssemblyCompany("Developer Express Inc.")]
-[assembly:AssemblyProduct("DXGrid SUITE SOFTWARE COMPONENT PRODUCT")]
+[assembly:AssemblyCompany(AssemblyInfo.AssemblyCompany)]
+[assembly:AssemblyProduct("DevExpress.Xpf.Grid.Core")]
 [assembly:AssemblyTrademark("DXGrid Suite")]
 [assembly:AssemblyCulture("")]
 [assembly:CLSCompliant(true)]		
 
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
 
-
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]

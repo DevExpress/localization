@@ -1,44 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{75DC1DE9-A07C-463C-8CE7-244668F5B8D6}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DevExpress.ExpressApp</RootNamespace>
+    <TargetFramework>net8.0</TargetFramework>
     <AssemblyName>DevExpress.ExpressApp.v26.1</AssemblyName>
-<SignAssembly>true</SignAssembly>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <RootNamespace>DevExpress.ExpressApp</RootNamespace>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>..\..\DevExpress.Dll\NETCore\</OutputPath>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>..\..\DevExpress.DLL\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>..\..\DevExpress.DLL\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="System" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="..\..\..\AssemblyVersion.cs">
+    <Compile Include="..\..\AssemblyVersion.cs">
       <Link>Localization\AssemblyVersion.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="Localization\ApplicationStatusMesssages.et.resx" />
     <EmbeddedResource Include="Localization\SystemExceptions.et.resx" />
@@ -466,6 +444,7 @@
     <EmbeddedResource Include="ModuleLocalizationResources.uz-Latn-UZ.resx" />
     <EmbeddedResource Include="ModuleLocalizationResources.ky.resx" />
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="Localization\UserVisibleExceptions.es.resx">
       <SubType>Designer</SubType>
@@ -474,6 +453,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="Localization\UserVisibleExceptions.vi.resx">
       <SubType>Designer</SubType>
@@ -482,6 +462,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="Localization\SystemExceptions.de.resx">
       <SubType>Designer</SubType>
@@ -490,6 +471,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="Localization\SystemExceptions.cs.resx">
       <SubType>Designer</SubType>
@@ -504,6 +486,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="Localization\SystemExceptions.pt-BR.resx">
       <SubType>Designer</SubType>
@@ -512,16 +495,18 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="Localization\SystemExceptions.de-CH.resx" />
     <EmbeddedResource Include="Localization\UserVisibleExceptions.de-CH.resx" />
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="Localization\SystemExceptions.fr.resx" />
     <EmbeddedResource Include="Localization\SystemExceptions.sr-Latn-BA.resx" />
     <EmbeddedResource Include="Localization\UserVisibleExceptions.fr.resx" />
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+
   <ItemGroup>
     <EmbeddedResource Include="Localization\ApplicationStatusMesssages.hi.resx" />
     <EmbeddedResource Include="Localization\ApplicationStatusMesssages.th.resx" />

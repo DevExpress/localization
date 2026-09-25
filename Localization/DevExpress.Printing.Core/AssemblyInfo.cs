@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using DevExpress.Internal;
@@ -6,7 +6,7 @@ using DevExpress.Internal;
 [assembly: AssemblyTitle("DevExpress.Printing.Core")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]
 [assembly: AssemblyProduct("DevExpress.Printing.Core")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -14,3 +14,4 @@ using DevExpress.Internal;
 [assembly: ComVisible(false)]
 
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]

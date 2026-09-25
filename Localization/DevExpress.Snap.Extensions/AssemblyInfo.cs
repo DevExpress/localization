@@ -9,6 +9,7 @@ using DevExpress.Internal;
 [assembly:AssemblyCulture("")]
 [assembly:CLSCompliant(true)]		
 
-
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
-
+[assembly: AssemblyProduct("DevExpress.Snap.Extensions")]
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
+[assembly: AssemblyCompany("Developer Express Inc.")]

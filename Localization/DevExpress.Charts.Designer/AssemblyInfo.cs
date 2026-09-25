@@ -9,4 +9,6 @@ using DevExpress.Internal;
 [assembly: CLSCompliant(true)]
 
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
-
+[assembly: AssemblyProduct("DevExpress.Charts.Designer")]
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
+[assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]

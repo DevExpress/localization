@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using DevExpress.Internal;
@@ -12,3 +12,5 @@ using DevExpress.Internal;
 [assembly: AssemblyCulture("")]
 [assembly: Guid("0724ecd5-a3df-486e-93ba-9fa5dbc1befe")]
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
+[assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]

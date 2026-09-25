@@ -9,6 +9,7 @@ using DevExpress.Internal;
 [assembly:AssemblyCulture("")]
 [assembly:CLSCompliant(true)]		
 
-
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
-
+[assembly: AssemblyProduct("DevExpress.Office.Core")]
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
+[assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]

@@ -1,41 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{9992A4B1-AD48-4AE4-8D21-B96D0DDEE421}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DevExpress.ExpressApp.Win</RootNamespace>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <AssemblyName>DevExpress.ExpressApp.Win.v26.1</AssemblyName>
-<SignAssembly>true</SignAssembly>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <RootNamespace>DevExpress.ExpressApp.Win</RootNamespace>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>..\..\DevExpress.Dll\NETCore\</OutputPath>
+    <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>..\..\DevExpress.DLL\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>..\..\DevExpress.DLL\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Windows.Forms" />
+    <PackageReference Include="System.Resources.Extensions" />
   </ItemGroup>
+
   <ItemGroup>
-    <Compile Include="..\..\..\AssemblyVersion.cs">
+    <Compile Include="..\..\AssemblyVersion.cs">
       <Link>AssemblyVersion.cs</Link>
     </Compile>
     <Compile Include="Core\ModelEditor\AspectManagementForm.cs">
@@ -76,6 +58,7 @@
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="ModuleLocalizationResources.ar.resx" />
     <EmbeddedResource Include="ModuleLocalizationResources.bg.resx" />
@@ -2064,6 +2047,7 @@
     <EmbeddedResource Include="ModuleLocalizationResources.uz-Latn-UZ.resx" />
     <EmbeddedResource Include="ModuleLocalizationResources.ky.resx" />
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="Templates\LookupControlTemplate.it.resx">
       <SubType>Designer</SubType>
@@ -2106,17 +2090,20 @@
       <DependentUpon>PopupForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="Templates\PopupForm.de.resx">
       <SubType>Designer</SubType>
       <DependentUpon>PopupForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.ru.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="Templates\LookupControlTemplate.de.resx">
       <SubType>Designer</SubType>
@@ -2135,16 +2122,19 @@
       <DependentUpon>LookupControlTemplate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.ja.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.de.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.hr.resx">
       <SubType>Designer</SubType>
@@ -2166,6 +2156,7 @@
       <DependentUpon>PopupForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.pt-BR.resx">
       <SubType>Designer</SubType>
@@ -2179,6 +2170,7 @@
       <DependentUpon>PopupForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.pl.resx" />
     <EmbeddedResource Include="Templates\LookupControlTemplate.pl.resx">
@@ -2188,10 +2180,11 @@
       <DependentUpon>PopupForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.sr-Latn-BA.resx" />
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+
   <ItemGroup>
     <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.et.resx">
       <DependentUpon>AspectManagementForm.cs</DependentUpon>

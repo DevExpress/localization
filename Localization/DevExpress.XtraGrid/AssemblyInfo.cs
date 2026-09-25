@@ -15,4 +15,4 @@ using DevExpress.Internal;
 
 [assembly:AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
 
-
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]

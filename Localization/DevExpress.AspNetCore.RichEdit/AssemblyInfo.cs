@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Reflection;
 using DevExpress.Internal;
 
@@ -7,6 +7,8 @@ using DevExpress.Internal;
 [assembly:AssemblyCulture("")]
 [assembly:CLSCompliant(true)]		
 
-
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
 
+[assembly: AssemblyProduct("DevExpress.AspNetCore.RichEdit")]
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
+[assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]

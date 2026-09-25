@@ -13,3 +13,6 @@ using DevExpress.Internal;
 [assembly:CLSCompliant(true)]		
 
 [assembly:AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+[assembly: AssemblyProduct("DevExpress.XtraBars")]
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
+[assembly: AssemblyCompany("Developer Express Inc.")]

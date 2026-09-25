@@ -7,9 +7,10 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("DevExpress.Xpf.Scheduling")]
 [assembly: AssemblyDescription("DXScheduling")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Developer Express Inc.")]
+[assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]
 [assembly: AssemblyCulture("")]
 [assembly: CLSCompliant(true)]
 
-
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+[assembly: AssemblyProduct("DevExpress.Xpf.Scheduling")]
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]

@@ -9,11 +9,11 @@ using DevExpress.Internal;
 [assembly:AssemblyTitle("DevExpress.Blazor")]
 [assembly:AssemblyDescription("DevExpress.Blazor")]
 [assembly:AssemblyConfiguration("")]
-[assembly:AssemblyCompany("Developer Express Inc.")]
+[assembly:AssemblyCompany(AssemblyInfo.AssemblyCompany)]
 [assembly:AssemblyProduct("DevExpress.Blazor")]
 [assembly:AssemblyTrademark("DevExpress.Blazor")]
 [assembly:AssemblyCulture("")]		
 [assembly:CLSCompliant(true)]		
 
-
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
