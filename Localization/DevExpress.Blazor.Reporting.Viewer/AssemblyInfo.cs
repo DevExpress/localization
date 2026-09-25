@@ -9,7 +9,7 @@ using DevExpress.Internal;
 [assembly:AssemblyTitle("DevExpress.Blazor.Reporting.Viewer")]
 [assembly:AssemblyDescription("DevExpress.Blazor.Reporting.Viewer")]
 [assembly:AssemblyConfiguration("")]
-[assembly:AssemblyCompany("Developer Express Inc.")]
+[assembly:AssemblyCompany(AssemblyInfo.AssemblyCompany)]
 [assembly:AssemblyProduct("DevExpress.Blazor.Reporting.Viewer")]
 [assembly:AssemblyTrademark("DevExpress.Blazor.Reporting.Viewer")]
 [assembly:AssemblyCulture("")]		
@@ -17,3 +17,5 @@ using DevExpress.Internal;
 
 
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]

@@ -12,3 +12,9 @@ using DevExpress.Internal;
 
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
 
+
+[assembly: AssemblyProduct("DevExpress.RichEdit.Core")]
+
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
+
+[assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]

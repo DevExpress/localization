@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 using DevExpress.Internal;
 
 [assembly: AssemblyTitle("DevExpress.DataAccess")]
-[assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]
+[assembly: AssemblyCompany("Developer Express Inc.")]
 [assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyProduct("")]
+[assembly: AssemblyProduct("DevExpress.DataAccess")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: CLSCompliant(true)]

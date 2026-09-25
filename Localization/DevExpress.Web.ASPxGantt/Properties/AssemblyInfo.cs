@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using DevExpress.Internal;
 
@@ -6,3 +6,9 @@ using DevExpress.Internal;
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+
+[assembly: AssemblyProduct("DevExpress.Web.ASPxGantt")]
+
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
+
+[assembly: AssemblyCompany("Developer Express Inc.")]

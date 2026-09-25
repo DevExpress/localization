@@ -1,134 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <ProjectType>Local</ProjectType>
-    <ProductVersion>9.0.30729</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F170A60A-CC59-49FE-A103-818ECF43235F}</ProjectGuid>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    
+    <TargetFrameworks>net462;net8.0-windows</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <AssemblyName>DevExpress.Utils.v25.2.UI</AssemblyName>
-<DefaultClientScript>JScript</DefaultClientScript>
-    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
-    <DefaultTargetSchema>IE50</DefaultTargetSchema>
-    <DelaySign>false</DelaySign>
-    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
     <RootNamespace>DevExpress.Utils.UI</RootNamespace>
-    <SignAssembly>true</SignAssembly>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\$(TargetFramework)\</IntermediateOutputPath>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>..\DevExpress.Dll\</OutputPath>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <BaseAddress>285212672</BaseAddress>
-    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
-    
-    <DefineConstants>TRACE;DEBUG;DXWhidbey</DefineConstants>
-    
-    <DebugSymbols>true</DebugSymbols>
-    <FileAlignment>4096</FileAlignment>
-    <Optimize>false</Optimize>
-    <RegisterForComInterop>false</RegisterForComInterop>
-    <RemoveIntegerChecks>false</RemoveIntegerChecks>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <WarningLevel>4</WarningLevel>
-    <DebugType>full</DebugType>
-    <ErrorReport>prompt</ErrorReport>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net462'">
+    <OutputPath>..\DevExpress.Dll\Framework\</OutputPath>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>..\DevExpress.Dll\</OutputPath>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <BaseAddress>285212672</BaseAddress>
-    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
-    
-    <DefineConstants>TRACE;DXWhidbey</DefineConstants>
-    
-    <DebugSymbols>false</DebugSymbols>
-    <FileAlignment>4096</FileAlignment>
-    <Optimize>true</Optimize>
-    <RegisterForComInterop>false</RegisterForComInterop>
-    <RemoveIntegerChecks>false</RemoveIntegerChecks>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <WarningLevel>4</WarningLevel>
-    <DebugType>none</DebugType>
-    <ErrorReport>prompt</ErrorReport>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0-windows'">
+    <OutputPath>..\DevExpress.Dll\NETCore\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System">
-      <Name>System</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Data">
-      <Name>System.Data</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Design">
-      <Name>System.Design</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Drawing">
-      <Name>System.Drawing</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Web">
-      <Name>System.Web</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Windows.Forms">
-      <Name>System.Windows.Forms</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Xml">
-      <Name>System.XML</Name>
-      <Private>False</Private>
-    </Reference>
+    <PackageReference Include="System.Resources.Extensions" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="..\..\AssemblyVersion.cs">
-      <Link>AssemblyVersion.cs</Link>
-    </Compile>
-    <Compile Include="AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="CollectionEditorContentControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CollectionEditorFormBase.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DXFontEditor\DXFontEditorControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DXFontEditor\DXFontEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DXImageEditor\DXImageEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FilterStringEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormatStringEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StringArrayEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SummaryEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SummaryEditorFormBase.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="XmlSchemaEditorControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="XmlSchemaEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-  </ItemGroup>
-  
   <ItemGroup>
     <EmbeddedResource Include="CollectionEditorContentControl.ar.resx">
       <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
@@ -1753,6 +1646,60 @@
     <EmbeddedResource Include="CollectionEditorContentControl.ms.resx">
       <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.nb-NO.resx" />
+    <EmbeddedResource Include="CollectionEditorFormBase.nb-NO.resx" />
+    <EmbeddedResource Include="FilterStringEditorForm.nb-NO.resx" />
+    <EmbeddedResource Include="FormatStringEditorForm.nb-NO.resx" />
+    <EmbeddedResource Include="LocalizationRes.nb-NO.resx" />
+    <EmbeddedResource Include="StringArrayEditorForm.nb-NO.resx" />
+    <EmbeddedResource Include="SummaryEditorForm.nb-NO.resx" />
+    <EmbeddedResource Include="SummaryEditorFormBase.nb-NO.resx" />
+    <EmbeddedResource Include="XmlSchemaEditorControl.nb-NO.resx" />
+    <EmbeddedResource Include="XmlSchemaEditorForm.nb-NO.resx" />
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.nb-NO.resx" />
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionEditorContentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CollectionEditorFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DXFontEditor\DXFontEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DXFontEditor\DXFontEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DXImageEditor\DXImageEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilterStringEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormatStringEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StringArrayEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SummaryEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SummaryEditorFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XmlSchemaEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XmlSchemaEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
 </Project>

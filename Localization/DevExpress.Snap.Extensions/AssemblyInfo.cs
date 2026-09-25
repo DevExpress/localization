@@ -12,3 +12,9 @@ using DevExpress.Internal;
 
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
 
+
+[assembly: AssemblyProduct("DevExpress.Snap.Extensions")]
+
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
+
+[assembly: AssemblyCompany("Developer Express Inc.")]

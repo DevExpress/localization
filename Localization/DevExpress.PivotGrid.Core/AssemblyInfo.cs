@@ -7,7 +7,7 @@ using DevExpress.Internal;
 [assembly:AssemblyTitle("DevExpress.XtraPivotGrid.Core")]
 [assembly:AssemblyDescription("XtraPivotGrid Suite, Core Library ")]
 [assembly:AssemblyConfiguration("")]
-[assembly:AssemblyProduct("DevExpress.XtraPivotGrid")]
+[assembly:AssemblyProduct("DevExpress.PivotGrid.Core")]
 [assembly:AssemblyTrademark("XtraPivotGrid Suite")]
 [assembly:AssemblyCulture("")]
 [assembly:CLSCompliant(true)]		
@@ -15,3 +15,7 @@ using DevExpress.Internal;
 
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
 
+
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
+
+[assembly: AssemblyCompany("Developer Express Inc.")]

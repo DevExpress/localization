@@ -12,3 +12,9 @@ using DevExpress.Internal;
 
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
 
+
+[assembly: AssemblyProduct("DevExpress.Xpf.LayoutControl")]
+
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
+
+[assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]

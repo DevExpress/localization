@@ -1,186 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <ProjectType>Local</ProjectType>
-    <ProductVersion>9.0.30729</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{99D7BF5D-353F-4C75-A10A-03AA2E3AFA4E}</ProjectGuid>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <TargetFrameworks>net462;net8.0-windows</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <AssemblyName>DevExpress.XtraScheduler.v25.2</AssemblyName>
-<DefaultClientScript>JScript</DefaultClientScript>
-    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
-    <DefaultTargetSchema>IE50</DefaultTargetSchema>
-    <DelaySign>false</DelaySign>
-    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
     <RootNamespace>DevExpress.XtraScheduler</RootNamespace>
-    <SignAssembly>true</SignAssembly>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\$(TargetFramework)\</IntermediateOutputPath>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>..\DevExpress.Dll\</OutputPath>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <BaseAddress>285212672</BaseAddress>
-    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
-    
-    <DefineConstants>TRACE;DEBUG;DXWhidbey</DefineConstants>
-    
-    <DebugSymbols>true</DebugSymbols>
-    <FileAlignment>4096</FileAlignment>
-    <Optimize>false</Optimize>
-    <RegisterForComInterop>false</RegisterForComInterop>
-    <RemoveIntegerChecks>false</RemoveIntegerChecks>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <WarningLevel>4</WarningLevel>
-    <DebugType>full</DebugType>
-    <ErrorReport>prompt</ErrorReport>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net462'">
+    <OutputPath>..\DevExpress.Dll\Framework\</OutputPath>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>..\DevExpress.Dll\</OutputPath>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <BaseAddress>285212672</BaseAddress>
-    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
-    
-    <DefineConstants>TRACE;DXWhidbey</DefineConstants>
-    
-    <DebugSymbols>false</DebugSymbols>
-    <FileAlignment>4096</FileAlignment>
-    <Optimize>true</Optimize>
-    <RegisterForComInterop>false</RegisterForComInterop>
-    <RemoveIntegerChecks>false</RemoveIntegerChecks>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <WarningLevel>4</WarningLevel>
-    <DebugType>none</DebugType>
-    <ErrorReport>prompt</ErrorReport>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0-windows'">
+    <OutputPath>..\DevExpress.Dll\NETCore\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System">
-      <Name>System</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Data">
-      <Name>System.Data</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Drawing">
-      <Name>System.Drawing</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Windows.Forms">
-      <Name>System.Windows.Forms</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Xml">
-      <Name>System.XML</Name>
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="..\..\AssemblyVersion.cs">
-      <Link>AssemblyVersion.cs</Link>
-    </Compile>
-    <Compile Include="AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Design\DailyRecurrenceControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Design\HourlyRecurrenceControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Design\MinutelyRecurrenceControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Design\MonthlyRecurrenceControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Design\PrintStyleControls\CalendarDetailsPrintStyleOptionsControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Design\PrintStyleControls\DailyPrintStyleOptions.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Design\PrintStyleControls\MemoPrintStyleOptionsControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Design\PrintStyleControls\MonthlyPrintStyleOptionsControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Design\PrintStyleControls\PageSetupFormatTabControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Design\PrintStyleControls\PageSetupPaperTabControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Design\PrintStyleControls\PageSetupResourcesTabControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Design\PrintStyleControls\picturePreviewControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Design\PrintStyleControls\PrintRangeControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Design\PrintStyleControls\PrintStyleOptionsControlBase.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Design\PrintStyleControls\TimeIntervalEditControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Design\PrintStyleControls\TriFoldPrintStyleOptionsControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Design\PrintStyleControls\WeeklyPrintStyleOptionsControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Design\TimeZonePropertiesControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Design\WeeklyRecurrenceControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Design\YearlyRecurrenceControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\AppointmentDependencyForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AppointmentForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AppointmentRecurrenceForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AppointmentRibbonForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\DefineNewStyleForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\GotoDateForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Legacy\LegacyAppointmentRecurrenceForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\RecurrenceAppointmentEditForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\PageSetupForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\RecurrentAppointmentDeleteForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\RemindersForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\ShadingSetupForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\TimeRulerForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <PackageReference Include="System.Resources.Extensions" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Design\DailyRecurrenceControl.et.resx">
@@ -6054,7 +5894,145 @@
     <EmbeddedResource Include="Design\DailyRecurrenceControl.ms.resx">
       <DependentUpon>DailyRecurrenceControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\DailyRecurrenceControl.nb-NO.resx" />
+    <EmbeddedResource Include="Design\HourlyRecurrenceControl.nb-NO.resx" />
+    <EmbeddedResource Include="Design\MinutelyRecurrenceControl.nb-NO.resx" />
+    <EmbeddedResource Include="Design\MonthlyRecurrenceControl.nb-NO.resx" />
+    <EmbeddedResource Include="Design\TimeZonePropertiesControl.nb-NO.resx" />
+    <EmbeddedResource Include="Design\WeeklyRecurrenceControl.nb-NO.resx" />
+    <EmbeddedResource Include="Design\YearlyRecurrenceControl.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\AppointmentDependencyForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\AppointmentForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\AppointmentRecurrenceForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\AppointmentRibbonForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\DefineNewStyleForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\GotoDateForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\PageSetupForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\RecurrenceAppointmentEditForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\RecurrentAppointmentDeleteForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\RemindersForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\ShadingSetupForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\TimeRulerForm.nb-NO.resx" />
+    <EmbeddedResource Include="Design\PrintStyleControls\CalendarDetailsPrintStyleOptionsControl.nb-NO.resx" />
+    <EmbeddedResource Include="Design\PrintStyleControls\DailyPrintStyleOptions.nb-NO.resx" />
+    <EmbeddedResource Include="Design\PrintStyleControls\MemoPrintStyleOptionsControl.nb-NO.resx" />
+    <EmbeddedResource Include="Design\PrintStyleControls\MonthlyPrintStyleOptionsControl.nb-NO.resx" />
+    <EmbeddedResource Include="Design\PrintStyleControls\PageSetupFormatTabControl.nb-NO.resx" />
+    <EmbeddedResource Include="Design\PrintStyleControls\PageSetupPaperTabControl.nb-NO.resx" />
+    <EmbeddedResource Include="Design\PrintStyleControls\PageSetupResourcesTabControl.nb-NO.resx" />
+    <EmbeddedResource Include="Design\PrintStyleControls\picturePreviewControl.nb-NO.resx" />
+    <EmbeddedResource Include="Design\PrintStyleControls\PrintRangeControl.nb-NO.resx" />
+    <EmbeddedResource Include="Design\PrintStyleControls\PrintStyleOptionsControlBase.nb-NO.resx" />
+    <EmbeddedResource Include="Design\PrintStyleControls\TimeIntervalEditControl.nb-NO.resx" />
+    <EmbeddedResource Include="Design\PrintStyleControls\TriFoldPrintStyleOptionsControl.nb-NO.resx" />
+    <EmbeddedResource Include="Design\PrintStyleControls\WeeklyPrintStyleOptionsControl.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\Legacy\LegacyAppointmentRecurrenceForm.nb-NO.resx" />
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  
+  <ItemGroup>
+    <Compile Include="..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\DailyRecurrenceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\HourlyRecurrenceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\MinutelyRecurrenceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\MonthlyRecurrenceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\PrintStyleControls\CalendarDetailsPrintStyleOptionsControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\PrintStyleControls\DailyPrintStyleOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\PrintStyleControls\MemoPrintStyleOptionsControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\PrintStyleControls\MonthlyPrintStyleOptionsControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\PrintStyleControls\PageSetupFormatTabControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\PrintStyleControls\PageSetupPaperTabControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\PrintStyleControls\PageSetupResourcesTabControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\PrintStyleControls\picturePreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\PrintStyleControls\PrintRangeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\PrintStyleControls\PrintStyleOptionsControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\PrintStyleControls\TimeIntervalEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\PrintStyleControls\TriFoldPrintStyleOptionsControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\PrintStyleControls\WeeklyPrintStyleOptionsControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\TimeZonePropertiesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\WeeklyRecurrenceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\YearlyRecurrenceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\AppointmentDependencyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AppointmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AppointmentRecurrenceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AppointmentRibbonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DefineNewStyleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GotoDateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Legacy\LegacyAppointmentRecurrenceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RecurrenceAppointmentEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PageSetupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RecurrentAppointmentDeleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RemindersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShadingSetupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TimeRulerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
 </Project>

@@ -8,7 +8,7 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]
-[assembly: AssemblyProduct("XtraSpreadsheet(tm) SUITE SOFTWARE COMPONENT PRODUCT")]
+[assembly: AssemblyProduct("DevExpress.XtraSpreadsheet")]
 [assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -8,7 +8,7 @@ using DevExpress.Internal;
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]
-[assembly: AssemblyProduct("XtraRichEdit(tm) SUITE SOFTWARE COMPONENT PRODUCT")]
+[assembly: AssemblyProduct("DevExpress.XtraRichEdit")]
 [assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

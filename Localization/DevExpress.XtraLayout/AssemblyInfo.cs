@@ -15,3 +15,7 @@ using DevExpress.Internal;
 
 [assembly: CLSCompliant(true)]
 
+
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
+
+[assembly: AssemblyCompany("Developer Express Inc.")]

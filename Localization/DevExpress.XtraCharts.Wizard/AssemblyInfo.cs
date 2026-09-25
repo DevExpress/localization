@@ -9,10 +9,12 @@ using DevExpress.Internal;
 [assembly: AssemblyDescription("XtraCharts Wizard")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Developer Express Inc.")]
-[assembly: AssemblyProduct("XtraCharts(tm) SUITE SOFTWARE COMPONENT PRODUCT")]
+[assembly: AssemblyProduct("DevExpress.XtraCharts.Wizard")]
 [assembly: AssemblyTrademark("XtraCharts Suite")]
 [assembly: AssemblyCulture("")]		
 [assembly: CLSCompliant(true)]
 
 
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]

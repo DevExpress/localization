@@ -15,3 +15,7 @@ using DevExpress.Internal;
 
 
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+
+[assembly: AssemblyProduct("DevExpress.Xpf.Ribbon")]
+
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]

@@ -1,121 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <ProjectType>Local</ProjectType>
-    <ProductVersion>9.0.30729</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2681BDAF-5AB2-4D08-BBE5-4A4D6837D72E}</ProjectGuid>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <TargetFrameworks>net462;net8.0-windows</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <AssemblyName>DevExpress.XtraEditors.v25.2</AssemblyName>
-<DefaultClientScript>JScript</DefaultClientScript>
-    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
-    <DefaultTargetSchema>IE50</DefaultTargetSchema>
-    <DelaySign>false</DelaySign>
-    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
     <RootNamespace>DevExpress.XtraEditors</RootNamespace>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\$(TargetFramework)\</IntermediateOutputPath>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>..\DevExpress.Dll\</OutputPath>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <BaseAddress>1107296256</BaseAddress>
-    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
-    
-    <DefineConstants>DXWhidbey;DEBUG;TRACE</DefineConstants>
-    
-    <DebugSymbols>true</DebugSymbols>
-    <FileAlignment>4096</FileAlignment>
-    <Optimize>false</Optimize>
-    <RegisterForComInterop>false</RegisterForComInterop>
-    <RemoveIntegerChecks>false</RemoveIntegerChecks>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <WarningLevel>4</WarningLevel>
-    <DebugType>full</DebugType>
-    <ErrorReport>prompt</ErrorReport>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net462'">
+    <OutputPath>..\DevExpress.Dll\Framework\</OutputPath>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>..\DevExpress.Dll\</OutputPath>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <BaseAddress>1107296256</BaseAddress>
-    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
-    
-    <DefineConstants>DXWhidbey;TRACE</DefineConstants>
-    
-    <DebugSymbols>false</DebugSymbols>
-    <FileAlignment>4096</FileAlignment>
-    <Optimize>true</Optimize>
-    <RegisterForComInterop>false</RegisterForComInterop>
-    <RemoveIntegerChecks>false</RemoveIntegerChecks>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <WarningLevel>4</WarningLevel>
-    <DebugType>none</DebugType>
-    <ErrorReport>prompt</ErrorReport>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0-windows'">
+    <OutputPath>..\DevExpress.Dll\NETCore\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Accessibility">
-      <Name>Accessibility</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System">
-      <Name>System</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Data">
-      <Name>System.Data</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Design">
-      <Name>System.Design</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Drawing">
-      <Name>System.Drawing</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Windows.Forms">
-      <Name>System.Windows.Forms</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Xml">
-      <Name>System.XML</Name>
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="..\..\AssemblyVersion.cs">
-      <Link>AssemblyVersion.cs</Link>
-    </Compile>
-    <Compile Include="AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Popups\ColorPickEdit\Picker\FrmColorPicker.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Designer\AppearancesDesigner.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Designer\ColumnDesigner.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Designer\EditMaskEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Designer\ExpressionEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Designer\FormatCondition.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Designer\Layouts.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <PackageReference Include="System.Resources.Extensions" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Designer\AppearancesDesigner.it-IT.resx">
@@ -1524,7 +1429,51 @@
     <EmbeddedResource Include="LocalizationRes.id.resx" />
     <EmbeddedResource Include="LocalizationRes.kk.resx" />
     <EmbeddedResource Include="LocalizationRes.ms.resx" />
+    <EmbeddedResource Include="LocalizationRes.nb-NO.resx" />
+    <EmbeddedResource Include="Designer\ColumnDesigner.nb-NO.resx" />
+    <EmbeddedResource Include="Designer\EditMaskEditorForm.nb-NO.resx" />
+    <EmbeddedResource Include="Designer\ExpressionEditorForm.nb-NO.resx" />
+    <EmbeddedResource Include="Designer\Layouts.nb-NO.resx" />
+    <EmbeddedResource Include="FilterPanel\LocalizationRes.nb-NO.resx" />
+    <EmbeddedResource Include="ImageEditing\LocalizationRes.nb-NO.resx" />
+    <EmbeddedResource Include="Properties\Resources.nb-NO.resx" />
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\FrmColorPicker.nb-NO.resx" />
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.nb-NO.resx" />
+    <EmbeddedResource Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.nb-NO.resx" />
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  
+  <ItemGroup>
+    <Compile Include="..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Popups\ColorPickEdit\Picker\FrmColorPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popups\ColorPickEdit\Picker\HSVModelUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Popups\ColorPickEdit\Picker\RGBModelUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Designer\AppearancesDesigner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Designer\ColumnDesigner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Designer\EditMaskEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Designer\ExpressionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Designer\FormatCondition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Designer\Layouts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
 </Project>

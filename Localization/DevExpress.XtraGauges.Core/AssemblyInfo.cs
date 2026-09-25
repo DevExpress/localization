@@ -8,7 +8,7 @@ using DevExpress.Internal;
 [assembly: AssemblyTitle("DevExpress.XtraGauges.Core")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Developer Express Inc.")]
+[assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]
 [assembly: AssemblyProduct("DevExpress.XtraGauges.Core")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -16,3 +16,5 @@ using DevExpress.Internal;
 
 
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]

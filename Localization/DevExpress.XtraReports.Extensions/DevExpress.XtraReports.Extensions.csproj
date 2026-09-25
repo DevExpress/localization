@@ -1,290 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <ProjectType>Local</ProjectType>
-    <ProductVersion>9.0.30729</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{4C0BA46F-2FCC-498B-7740-EC27E6944F8C}</ProjectGuid>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <TargetFrameworks>net462;net8.0-windows</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <AssemblyName>DevExpress.XtraReports.v25.2.Extensions</AssemblyName>
-<DefaultClientScript>JScript</DefaultClientScript>
-    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
-    <DefaultTargetSchema>IE50</DefaultTargetSchema>
-    <DelaySign>false</DelaySign>
-    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
     <RootNamespace>DevExpress.XtraReports</RootNamespace>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\$(TargetFramework)\</IntermediateOutputPath>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>..\DevExpress.Dll\</OutputPath>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <BaseAddress>285212672</BaseAddress>
-    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
-    <ConfigurationOverrideFile>
-    </ConfigurationOverrideFile>
-    <DefineConstants>TRACE;DEBUG;DXWhidbey</DefineConstants>
-    <DocumentationFile>
-    </DocumentationFile>
-    <DebugSymbols>true</DebugSymbols>
-    <FileAlignment>4096</FileAlignment>
-    <Optimize>false</Optimize>
-    <RegisterForComInterop>false</RegisterForComInterop>
-    <RemoveIntegerChecks>false</RemoveIntegerChecks>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <WarningLevel>4</WarningLevel>
-    <DebugType>full</DebugType>
-    <ErrorReport>prompt</ErrorReport>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net462'">
+    <OutputPath>..\DevExpress.Dll\Framework\</OutputPath>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>..\DevExpress.Dll\</OutputPath>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <BaseAddress>285212672</BaseAddress>
-    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
-    <ConfigurationOverrideFile>
-    </ConfigurationOverrideFile>
-    <DefineConstants>TRACE;DXWhidbey</DefineConstants>
-    <DocumentationFile>
-    </DocumentationFile>
-    <DebugSymbols>false</DebugSymbols>
-    <FileAlignment>4096</FileAlignment>
-    <Optimize>true</Optimize>
-    <RegisterForComInterop>false</RegisterForComInterop>
-    <RemoveIntegerChecks>false</RemoveIntegerChecks>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <WarningLevel>4</WarningLevel>
-    <DebugType>none</DebugType>
-    <ErrorReport>prompt</ErrorReport>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0-windows'">
+    <OutputPath>..\DevExpress.Dll\NETCore\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System">
-      <Name>System</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Data">
-      <Name>System.Data</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Design">
-      <Name>System.Design</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Drawing">
-      <Name>System.Drawing</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Web">
-      <Name>System.Web</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Windows.Forms">
-      <Name>System.Windows.Forms</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Xml">
-      <Name>System.XML</Name>
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="..\..\AssemblyVersion.cs">
-      <Link>AssemblyVersion.cs</Link>
-    </Compile>
-    <Compile Include="AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Design\FavoritePropertyEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\ReportFilterStringEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\SplitCellsEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\XRSummaryExpressionEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserDesigner\XRDesignForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserDesigner\XRDesignToolBox.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserDesigner\XRDesignFormExBase.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserDesigner\XRDesignRibbonForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\BandCollectionEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\BordersEditor.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Design\BindingMapper\BindingMapperForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\CalculatedFieldCollectionEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\FormattingRuleSheetEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\ParameterBindingEditorContentControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Design\StyleSheetEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\TableOfContentsLevelCollectionEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\SubBandCollectionEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\ParameterCollectionEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\ParameterBindingCollectionEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\GroupFieldCollectionEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\NewParameterEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\FormattingRulesEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\GroupSortingSummaryEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\LookUpValuesEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Native\Templates\GalleryUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Native\Templates\ProgressUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Native\Templates\TemplateForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ReportGeneration\Wizard\Views\WizardEndPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ReportGeneration\Wizard\Views\WizardLayoutSettingsPage.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ReportGeneration\Wizard\Views\WizardPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ReportGeneration\Wizard\Views\WizardStartPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ReportGeneration\Wizard\Views\WizardViewOptions.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ReportGeneration\Wizard\Views\WizardViewOptionsGeneral.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ReportGeneration\Wizard\Views\WizardViewOptionsGrouping.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ReportGeneration\Wizard\Views\WizardViewOptionsStyles.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\AddGroupingLevelPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\ChooseReportColorSchemePageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\ConfigureReportPageSettingsPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\ChooseReportLayoutPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\ChooseReportStylePageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\ChooseReportTypePageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\ChooseSummaryOptionsPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\ConfigureCrossTabPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\CustomizeLabelPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\MultiQuerySelectFieldsPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\SelectColumnsPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\SelectLabelTypePageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\SetReportTitlePageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\MasterDetailChooseSummaryOptionsPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\MasterDetailSelectDataMembersPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\ChooseReportTemplatePageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\ConfigureReportTemplateQueryPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\MapReportTemplateFieldsPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\SelectReportTemplateDataMemberPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\SpecifyReportTemplateOptionsPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Design\ParameterEditor\ParameterEditorContentControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Design\ParameterEditor\ParameterEditorDynamicListSettingsControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Design\ParameterEditor\ParameterEditorRangeSettingsControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Design\ParameterEditor\ParameterEditorStaticLookUpValuesControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Design\ParameterEditor\ReportParameterCollectionEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\ParameterEditor\ReportParameterEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ReportGeneration\Views\" />
+    <PackageReference Include="System.Resources.Extensions" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Design\BandCollectionEditorForm.et.resx">
@@ -7777,9 +7513,250 @@
     <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.ru.resx">
       <DependentUpon>ParameterEditorStaticListSettingsControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\BandCollectionEditorForm.nb-NO.resx" />
+    <EmbeddedResource Include="Design\BordersEditor.nb-NO.resx" />
+    <EmbeddedResource Include="Design\FavoritePropertyEditorForm.nb-NO.resx" />
+    <EmbeddedResource Include="Design\FormattingRulesEditorForm.nb-NO.resx" />
+    <EmbeddedResource Include="Design\FormattingRuleSheetEditorForm.nb-NO.resx" />
+    <EmbeddedResource Include="Design\GroupSortingSummaryEditorForm.nb-NO.resx" />
+    <EmbeddedResource Include="Design\LookUpValuesEditorForm.nb-NO.resx" />
+    <EmbeddedResource Include="Design\NewParameterEditorForm.nb-NO.resx" />
+    <EmbeddedResource Include="Design\ReportFilterStringEditorForm.nb-NO.resx" />
+    <EmbeddedResource Include="Design\SplitCellsEditorForm.nb-NO.resx" />
+    <EmbeddedResource Include="Design\StyleSheetEditorForm.nb-NO.resx" />
+    <EmbeddedResource Include="Design\XRSummaryExpressionEditorForm.nb-NO.resx" />
+    <EmbeddedResource Include="UserDesigner\XRDesignForm.nb-NO.resx" />
+    <EmbeddedResource Include="UserDesigner\XRDesignFormExBase.nb-NO.resx" />
+    <EmbeddedResource Include="UserDesigner\XRDesignRibbonForm.nb-NO.resx" />
+    <EmbeddedResource Include="Design\BindingMapper\BindingMapperForm.nb-NO.resx" />
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorContentControl.nb-NO.resx" />
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorDynamicListSettingsControl.nb-NO.resx" />
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorRangeSettingsControl.nb-NO.resx" />
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticLookUpValuesControl.nb-NO.resx" />
+    <EmbeddedResource Include="Design\ParameterEditor\ReportParameterCollectionEditorForm.nb-NO.resx" />
+    <EmbeddedResource Include="Design\ParameterEditor\ReportParameterEditorForm.nb-NO.resx" />
+    <EmbeddedResource Include="Native\Templates\GalleryUserControl.nb-NO.resx" />
+    <EmbeddedResource Include="Native\Templates\ProgressUserControl.nb-NO.resx" />
+    <EmbeddedResource Include="Native\Templates\TemplateForm.nb-NO.resx" />
+    <EmbeddedResource Include="Wizards\Localization\LocalizationRes.nb-NO.resx" />
+    <EmbeddedResource Include="Wizards\Views\AddGroupingLevelPageView.nb-NO.resx" />
+    <EmbeddedResource Include="Wizards\Views\ChooseReportLayoutPageView.nb-NO.resx" />
+    <EmbeddedResource Include="Wizards\Views\ChooseReportStylePageView.nb-NO.resx" />
+    <EmbeddedResource Include="Wizards\Views\ChooseReportTypePageView.nb-NO.resx" />
+    <EmbeddedResource Include="Wizards\Views\ChooseSummaryOptionsPageView.nb-NO.resx" />
+    <EmbeddedResource Include="Wizards\Views\ConfigureCrossTabPageView.nb-NO.resx" />
+    <EmbeddedResource Include="Wizards\Views\ConfigureReportPageSettingsPageView.nb-NO.resx" />
+    <EmbeddedResource Include="Wizards\Views\ConfigureReportTemplateQueryPageView.nb-NO.resx" />
+    <EmbeddedResource Include="Wizards\Views\CustomizeLabelPageView.nb-NO.resx" />
+    <EmbeddedResource Include="Wizards\Views\MasterDetailChooseSummaryOptionsPageView.nb-NO.resx" />
+    <EmbeddedResource Include="Wizards\Views\SelectColumnsPageView.nb-NO.resx" />
+    <EmbeddedResource Include="Wizards\Views\SelectLabelTypePageView.nb-NO.resx" />
+    <EmbeddedResource Include="Wizards\Views\SetReportTitlePageView.nb-NO.resx" />
+    <EmbeddedResource Include="Wizards\Views\SpecifyReportTemplateOptionsPageView.nb-NO.resx" />
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardEndPageView.nb-NO.resx" />
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardLayoutSettingsPage.nb-NO.resx" />
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardPageView.nb-NO.resx" />
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardStartPageView.nb-NO.resx" />
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptions.nb-NO.resx" />
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsGeneral.nb-NO.resx" />
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsGrouping.nb-NO.resx" />
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsStyles.nb-NO.resx" />
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    
-  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\FavoritePropertyEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ReportFilterStringEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\SplitCellsEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\XRSummaryExpressionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDesigner\XRDesignForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDesigner\XRDesignToolBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserDesigner\XRDesignFormExBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDesigner\XRDesignRibbonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\BandCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\BordersEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\BindingMapper\BindingMapperForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\CalculatedFieldCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\FormattingRuleSheetEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterBindingEditorContentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\StyleSheetEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\TableOfContentsLevelCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\SubBandCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterBindingCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\GroupFieldCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\NewParameterEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\FormattingRulesEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\GroupSortingSummaryEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\LookUpValuesEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Native\Templates\GalleryUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Native\Templates\ProgressUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Native\Templates\TemplateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardEndPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardLayoutSettingsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardStartPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardViewOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardViewOptionsGeneral.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardViewOptionsGrouping.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardViewOptionsStyles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\AddGroupingLevelPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ChooseReportColorSchemePageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ConfigureReportPageSettingsPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ChooseReportLayoutPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ChooseReportStylePageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ChooseReportTypePageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ChooseSummaryOptionsPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ConfigureCrossTabPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\CustomizeLabelPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\MultiQuerySelectFieldsPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\SelectColumnsPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\SelectLabelTypePageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\SetReportTitlePageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\MasterDetailChooseSummaryOptionsPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\MasterDetailSelectDataMembersPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ChooseReportTemplatePageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ConfigureReportTemplateQueryPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\MapReportTemplateFieldsPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\SelectReportTemplateDataMemberPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\SpecifyReportTemplateOptionsPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterEditor\ParameterEditorContentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterEditor\ParameterEditorDynamicListSettingsControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterEditor\ParameterEditorRangeSettingsControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterEditor\ParameterEditorStaticLookUpValuesControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterEditor\ReportParameterCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterEditor\ReportParameterEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
 </Project>

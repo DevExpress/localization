@@ -9,11 +9,13 @@ using DevExpress.Internal;
 [assembly:AssemblyTitle("DevExpress.Xpf.Printing")]
 [assembly:AssemblyDescription("DXPrinting")]
 [assembly:AssemblyConfiguration("")]
-[assembly:AssemblyCompany("Developer Express Inc.")]
-[assembly:AssemblyProduct("DXPrinting")]
+[assembly:AssemblyCompany(AssemblyInfo.AssemblyCompany)]
+[assembly:AssemblyProduct("DevExpress.Xpf.Printing")]
 [assembly:AssemblyTrademark("DXPrinting")]
 [assembly:AssemblyCulture("")]		
 [assembly:CLSCompliant(true)]		
 
 
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]

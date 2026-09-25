@@ -12,6 +12,8 @@ using DevExpress.Internal;
 [assembly: AssemblyDescription("XPO")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Developer Express Inc.")]
-[assembly: AssemblyProduct("eXpress Persistent Objects")]
+[assembly: AssemblyProduct("DevExpress.Xpo")]
 [assembly: AssemblyCulture("")]
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]

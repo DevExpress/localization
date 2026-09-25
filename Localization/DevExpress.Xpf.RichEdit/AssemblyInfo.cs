@@ -9,9 +9,13 @@ using DevExpress.Internal;
 [assembly:AssemblyTitle("DevExpress.Xpf.RichEdit")]
 [assembly:AssemblyDescription("DXRichEdit")]
 [assembly:AssemblyConfiguration("")]
-[assembly:AssemblyCompany("Developer Express Inc.")]
+[assembly:AssemblyCompany(AssemblyInfo.AssemblyCompany)]
 [assembly:AssemblyCulture("")]		
 [assembly:CLSCompliant(true)]		
 
 
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+
+[assembly: AssemblyProduct("DevExpress.Xpf.RichEdit")]
+
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]

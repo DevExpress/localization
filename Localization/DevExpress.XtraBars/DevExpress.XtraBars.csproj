@@ -1,121 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <ProjectType>Local</ProjectType>
-    <ProductVersion>9.0.30729</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{1E3BA48B-1783-4735-A211-263BD81E7325}</ProjectGuid>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    
+    <TargetFrameworks>net462;net8.0-windows</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <AssemblyName>DevExpress.XtraBars.v25.2</AssemblyName>
-<DefaultClientScript>JScript</DefaultClientScript>
-    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
-    <DefaultTargetSchema>IE50</DefaultTargetSchema>
-    <DelaySign>false</DelaySign>
-    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
     <RootNamespace>DevExpress.XtraBars</RootNamespace>
-    <SignAssembly>true</SignAssembly>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\$(TargetFramework)\</IntermediateOutputPath>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>..\DevExpress.Dll\</OutputPath>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <BaseAddress>1174405120</BaseAddress>
-    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
-    
-    <DefineConstants>TRACE;DEBUG;DXWhidbey;XtraV3</DefineConstants>
-    
-    <DebugSymbols>true</DebugSymbols>
-    <FileAlignment>4096</FileAlignment>
-    <Optimize>false</Optimize>
-    <RegisterForComInterop>false</RegisterForComInterop>
-    <RemoveIntegerChecks>false</RemoveIntegerChecks>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <WarningLevel>4</WarningLevel>
-    <DebugType>full</DebugType>
-    <ErrorReport>prompt</ErrorReport>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net462'">
+    <OutputPath>..\DevExpress.Dll\Framework\</OutputPath>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>..\DevExpress.Dll\</OutputPath>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <BaseAddress>1174405120</BaseAddress>
-    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
-    
-    <DefineConstants>DXWhidbey;TRACE;XtraV3</DefineConstants>
-    
-    <DebugSymbols>false</DebugSymbols>
-    <FileAlignment>4096</FileAlignment>
-    <Optimize>true</Optimize>
-    <RegisterForComInterop>false</RegisterForComInterop>
-    <RemoveIntegerChecks>false</RemoveIntegerChecks>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <WarningLevel>4</WarningLevel>
-    <DebugType>none</DebugType>
-    <ErrorReport>prompt</ErrorReport>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0-windows'">
+    <OutputPath>..\DevExpress.Dll\NETCore\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="mscorlib">
-      <Name>mscorlib</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System">
-      <Name>System</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Data">
-      <Name>System.Data</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Design">
-      <Name>System.Design</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Drawing">
-      <Name>System.Drawing</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Drawing.Design">
-      <Name>System.Drawing.Design</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Windows.Forms">
-      <Name>System.Windows.Forms</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Xml">
-      <Name>System.XML</Name>
-      <Private>False</Private>
-    </Reference>
+    <PackageReference Include="System.Resources.Extensions" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\AssemblyVersion.cs">
-      <Link>AssemblyVersion.cs</Link>
-    </Compile>
-    <Compile Include="AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Docking2010\Components\DocumentManager\Customization\OpenedWindowsDialog\OpenedWindowsDialog.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="LocalizationManager.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Ribbon\RenameForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ribbon\RibbonCustomizationForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ribbon\RibbonCustomizationUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="TileNavigation\OptionsWindow.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="WorkspaceNameForm.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <EmbeddedResource Include="Docking2010\LocalizationRes.et.resx" />
     <EmbeddedResource Include="Docking2010\LocalizationRes.th.resx" />
     <EmbeddedResource Include="Docking\LocalizationRes.et.resx" />
@@ -1583,8 +1490,44 @@
     <EmbeddedResource Include="LocalizationManager.ms.resx">
       <DependentUpon>LocalizationManager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationManager.nb-NO.resx" />
+    <EmbeddedResource Include="LocalizationRes.nb-NO.resx" />
+    <EmbeddedResource Include="WorkspaceNameForm.nb-NO.resx" />
+    <EmbeddedResource Include="Docking\LocalizationRes.nb-NO.resx" />
+    <EmbeddedResource Include="Docking2010\LocalizationRes.nb-NO.resx" />
+    <EmbeddedResource Include="Ribbon\RenameForm.nb-NO.resx" />
+    <EmbeddedResource Include="Ribbon\RibbonCustomizationForm.nb-NO.resx" />
+    <EmbeddedResource Include="Ribbon\RibbonCustomizationUserControl.nb-NO.resx" />
+    <EmbeddedResource Include="TileNavigation\OptionsWindow.nb-NO.resx" />
+    <EmbeddedResource Include="Docking2010\Components\DocumentManager\Customization\OpenedWindowsDialog\OpenedWindowsDialog.nb-NO.resx" />
   </ItemGroup>
-  
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  
+  <ItemGroup>
+    <Compile Include="..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking2010\Components\DocumentManager\Customization\OpenedWindowsDialog\OpenedWindowsDialog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LocalizationManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ribbon\RenameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ribbon\RibbonCustomizationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ribbon\RibbonCustomizationUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TileNavigation\OptionsWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkspaceNameForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
 </Project>

@@ -13,3 +13,9 @@ using DevExpress.Internal;
 
 
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+
+[assembly: AssemblyProduct("DevExpress.Xpf.Controls")]
+
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
+
+[assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]

@@ -9,9 +9,13 @@ using DevExpress.Internal;
 [assembly:AssemblyTitle("DevExpress.Xpf.PdfViewer")]
 [assembly:AssemblyDescription("DXPdfViewer")]
 [assembly:AssemblyConfiguration("")]
-[assembly:AssemblyCompany("Developer Express Inc.")]
+[assembly:AssemblyCompany(AssemblyInfo.AssemblyCompany)]
 [assembly:AssemblyCulture("")]		
 [assembly:CLSCompliant(true)]		
 
 
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+
+[assembly: AssemblyProduct("DevExpress.Xpf.PdfViewer")]
+
+[assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]

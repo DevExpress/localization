@@ -1,256 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="17.0">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <ProjectType>Local</ProjectType>
-    <ProductVersion>9.0.30729</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{1AF898A0-02F4-4064-BBD6-8E86C96F49E0}</ProjectGuid>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <TargetFrameworks>net462;net8.0-windows</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <AssemblyName>DevExpress.XtraRichEdit.v25.2</AssemblyName>
-<DefaultClientScript>JScript</DefaultClientScript>
-    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
-    <DefaultTargetSchema>IE50</DefaultTargetSchema>
-    <DelaySign>false</DelaySign>
-    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
     <RootNamespace>DevExpress.XtraRichEdit</RootNamespace>
-    <SignAssembly>true</SignAssembly>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\$(TargetFramework)\</IntermediateOutputPath>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>..\DevExpress.Dll\</OutputPath>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <BaseAddress>285212672</BaseAddress>
-    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
-    
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    
-    <DebugSymbols>true</DebugSymbols>
-    <FileAlignment>4096</FileAlignment>
-    <Optimize>false</Optimize>
-    <RegisterForComInterop>false</RegisterForComInterop>
-    <RemoveIntegerChecks>false</RemoveIntegerChecks>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <WarningLevel>4</WarningLevel>
-    <DebugType>full</DebugType>
-    <ErrorReport>prompt</ErrorReport>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net462'">
+    <OutputPath>..\DevExpress.Dll\Framework\</OutputPath>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>..\DevExpress.Dll\</OutputPath>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <BaseAddress>285212672</BaseAddress>
-    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
-    
-    <DefineConstants>TRACE</DefineConstants>
-    
-    <DebugSymbols>false</DebugSymbols>
-    <FileAlignment>4096</FileAlignment>
-    <Optimize>true</Optimize>
-    <RegisterForComInterop>false</RegisterForComInterop>
-    <RemoveIntegerChecks>false</RemoveIntegerChecks>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <WarningLevel>4</WarningLevel>
-    <DebugType>none</DebugType>
-    <ErrorReport>prompt</ErrorReport>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0-windows'">
+    <OutputPath>..\DevExpress.Dll\NETCore\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System">
-      <Name>System</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Data">
-      <Name>System.Data</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Drawing">
-      <Name>System.Drawing</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Windows.Forms">
-      <Name>System.Windows.Forms</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Web">
-      <Name>System.Web</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Xml">
-      <Name>System.XML</Name>
-      <Private>False</Private>
-    </Reference>
+    <PackageReference Include="System.Resources.Extensions" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="..\..\AssemblyVersion.cs">
-      <Link>AssemblyVersion.cs</Link>
-    </Compile>
-    <Compile Include="AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Forms\AltTextForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\BookmarkForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\BulletedListForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\ColumnsSetupForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\ConfirmPasswordForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\ConvertNotesForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\DeleteTableCellsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Design\BorderShadingTypeLineUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Design\BorderShadingUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Design\ColumnsEdit.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Design\FontEffects.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Design\ParagraphIndentationControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Design\ParagraphSpacingControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Design\RichTextFontControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Design\RichEditFontAdvancedPropertiesControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Design\TableRowHeightControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Design\TableSizeControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\DocumentProtectionQueryNewPasswordForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\DocumentProtectionQueryPasswordForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\EditStyleForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\EncryptDocumentForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\EncryptionPasswordRequestForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FloatingObjectLayoutForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FontForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\HyperlinkForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\HyphenationOptionsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\InsertMergeFieldForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\InsertObjectForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\InsertTableCellsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\InsertTableForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\BorderShadingForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\LanguageForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\LineNumberingForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\MultiLevelNumberingListForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\NotesForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\NumberingListForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\PageSetupForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\ParagraphForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\PasteSpecialForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\RangeEditingPermissionsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\RichEditDocumentPropertiesForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\SearchTextForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\ShowNotesForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\SimpleNumberingListForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\SplitTableCellsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\SymbolForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\TableCellOptionsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\TableOfContentsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\TableOptionsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\TablePositioningForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\TablePropertiesForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\TableStyleForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\TabsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\WatermarkForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-  </ItemGroup>
-  
-  
   <ItemGroup>
     <EmbeddedResource Include="Forms\AltTextForm.de.resx">
       <DependentUpon>AltTextForm.cs</DependentUpon>
@@ -9243,7 +9014,228 @@
     <EmbeddedResource Include="Forms\AltTextForm.ms.resx">
       <DependentUpon>AltTextForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BookmarkForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\BorderShadingForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\BulletedListForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\ColumnsSetupForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\ConfirmPasswordForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\ConvertNotesForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\DeleteTableCellsForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\DocumentProtectionQueryNewPasswordForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\DocumentProtectionQueryPasswordForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\EditStyleForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\EncryptDocumentForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\EncryptionPasswordRequestForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\FloatingObjectLayoutForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\FontForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\HyperlinkForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\HyphenationOptionsForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\InsertMergeFieldForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\InsertObjectForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\InsertTableCellsForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\InsertTableForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\LanguageForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\LineNumberingForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\MultiLevelNumberingListForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\NotesForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\NumberingListForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\PageSetupForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\ParagraphForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\PasteSpecialForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\RangeEditingPermissionsForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\RichEditDocumentPropertiesForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\SearchTextForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\ShowNotesForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\SimpleNumberingListForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\SplitTableCellsForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\SymbolForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\TableCellOptionsForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\TableOfContentsForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\TableOptionsForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\TablePositioningForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\TablePropertiesForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\TableStyleForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\TabsForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\WatermarkForm.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\Design\BorderShadingTypeLineUserControl.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\Design\BorderShadingUserControl.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\Design\ColumnsEdit.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\Design\FontEffects.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\Design\ParagraphIndentationControl.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\Design\ParagraphSpacingControl.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\Design\RichEditFontAdvancedPropertiesControl.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\Design\RichTextFontControl.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\Design\TableRowHeightControl.nb-NO.resx" />
+    <EmbeddedResource Include="Forms\Design\TableSizeControl.nb-NO.resx" />
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  
+  <ItemGroup>
+    <Compile Include="..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\AltTextForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BookmarkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BulletedListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ColumnsSetupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConfirmPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConvertNotesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DeleteTableCellsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\BorderShadingTypeLineUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\BorderShadingUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\ColumnsEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\FontEffects.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\ParagraphIndentationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\ParagraphSpacingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\RichTextFontControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\RichEditFontAdvancedPropertiesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\TableRowHeightControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Design\TableSizeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DocumentProtectionQueryNewPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DocumentProtectionQueryPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditStyleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EncryptDocumentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EncryptionPasswordRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FloatingObjectLayoutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FontForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HyperlinkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HyphenationOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertMergeFieldForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertObjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertTableCellsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BorderShadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LanguageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LineNumberingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MultiLevelNumberingListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NotesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NumberingListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PageSetupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ParagraphForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PasteSpecialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RangeEditingPermissionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RichEditDocumentPropertiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SearchTextForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShowNotesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SimpleNumberingListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplitTableCellsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SymbolForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TableCellOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TableOfContentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TableOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TablePositioningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TablePropertiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TableStyleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TabsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WatermarkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
 </Project>
