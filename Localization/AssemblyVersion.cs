@@ -158,6 +158,8 @@ namespace DevExpress.Internal {
 
     public const string SRAssemblyDevExtremeAspNetCore = "DevExtreme.AspNet.Core";
     public const string SRAssemblyDevExtremeAspNetMvc = "DevExtreme.AspNet.Mvc";
+    public const string SRAssemblyDevExtremeAspNetMvcProjectWizard = "DevExtreme.AspNet.Mvc.ProjectWizard";
+    public const string SRAssemblyDevExtremeAspNetMvcProjectWizardTests = "DevExtreme.AspNet.Mvc.ProjectWizard" + VSuffix + TestsSuffix;
 #endif
 
     public const string SRDocumentationLink = "https://docs.devexpress.com/?l=true/";
