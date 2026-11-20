@@ -5,6 +5,8 @@ using System.Reflection;
 using DevExpress.Data.Mask;
 using DevExpress.Office;
 using DevExpress.Office.Design.Internal;
+using DevExpress.Office.Internal.Rendering;
+using DevExpress.Office.Internal.Rendering.Primitives;
 using DevExpress.Utils;
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Mask;
@@ -85,8 +87,8 @@ namespace DevExpress.XtraRichEdit.Design {
         }
 
         DocumentUnit defaultUnitType;
-        int maxValue;
-        int minValue;
+        RenderUnit maxValue;
+        RenderUnit minValue;
         int defaultValue;
         bool isValueInPercent;
         bool isUseValueInPercent;
@@ -96,8 +98,8 @@ namespace DevExpress.XtraRichEdit.Design {
         public RepositoryItemRichTextIndentEdit() {
             Mask.MaskType = MaskType.Custom;
             defaultUnitType = DocumentUnit.Inch;
-            maxValue = defaultMaxValue;
-            minValue = defaultMinValue;
+            maxValue = RenderUnit.FromI32(defaultMaxValue);
+            minValue = RenderUnit.FromI32(defaultMinValue);
             CustomDisplayText += OnCustomDisplayText;
         }
 
@@ -214,7 +216,7 @@ namespace DevExpress.XtraRichEdit.Design {
         }
         public bool IsWithinAllowedLimits(string stringValue, DocumentUnit unitType, bool isValueInPercent, UIUnitConverter uiUnitConverter) {
             UIUnit unit = uiUnitConverter.CreateUIUnit(stringValue, unitType, isValueInPercent);
-            int intValue = uiUnitConverter.ToTwipsUnit(unit, IsValueInPercent);
+            RenderUnit intValue = uiUnitConverter.ToTwipsUnit(unit, IsValueInPercent);
             return IsWithinAllowedLimits(intValue);
         }
 
@@ -246,7 +248,7 @@ namespace DevExpress.XtraRichEdit.Design {
         readonly BatchUpdateHelper batchUpdateHelper;
         readonly UIUnitConverter uiUnitConverter;
         bool deferredValueChanged;
-        int? exactValue;
+        RenderUnit? exactValue;
         DocumentModelUnitConverter valueUnitConverter;
 
         public RichTextIndentEdit() {
@@ -255,7 +257,7 @@ namespace DevExpress.XtraRichEdit.Design {
             valueUnitConverter = new DocumentModelUnitTwipsConverter();
             //EditValue = UIUnit.Create("0", DocumentUnit.Inch, UnitPrecisionDictionary.DefaultPrecisions); // ???
             EditValue = uiUnitConverter.CreateUIUnit("0", Properties.DefaultUnitType);
-            exactValue = 0;
+            exactValue = RenderUnit.FromI32(0);
             SubscribeEvents();
         }
 
@@ -275,7 +277,8 @@ namespace DevExpress.XtraRichEdit.Design {
         protected internal bool IsValueInPercent { get { return Properties.IsValueInPercent; } }
         protected internal bool IsUseValueInPercent { get { return Properties.IsUseValueInPercent; } }
 
-        protected internal float? CoreValue { // value in twips 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        protected internal float? CoreValue { // value in twips
             get {
                 string editValue = EditValue as String;
                 if(editValue == null)
@@ -312,15 +315,15 @@ namespace DevExpress.XtraRichEdit.Design {
                 float? result = CoreValue;
                 if(result == null)
                     return null;
-                return ValueUnitConverter.TwipsToModelUnits((int)result.Value);
+                return ValueUnitConverter.TwipsToModelUnits(RenderUnit.FromF32(result.Value));
             }
             set {
-                float? newValue = (value == null) ? value : (float?)ValueUnitConverter.ModelUnitsToTwipsF(value.Value);
+                float? newValue = (value == null) ? null : (float?)ValueUnitConverter.ModelUnitsToTwipsF(value.Value);
                 CoreValue = newValue;
                 exactValue = value;
                 if(!newValue.HasValue)
                     return;
-                if(!Properties.AllowAssignExceedLimits && !Properties.IsWithinAllowedLimits((int)Math.Round(newValue.Value)))
+                if(!Properties.AllowAssignExceedLimits && !Properties.IsWithinAllowedLimits(Renderer.Active.Round(newValue.Value)))
                     exactValue = ValueUnitConverter.TwipsToModelUnits(Properties.MinValue);
             }
         }
@@ -352,7 +355,7 @@ namespace DevExpress.XtraRichEdit.Design {
         }
         protected override void OnSpin(DevExpress.XtraEditors.Controls.SpinEventArgs e) {
             exactValue = null;
-            if(CoreValue != null && !Properties.IsWithinAllowedLimits((int)CoreValue.Value))
+            if(CoreValue != null && !Properties.IsWithinAllowedLimits(RenderUnit.FromF32(CoreValue.Value)))
                 CoreValue = Properties.DefaultValue;
             else
                 base.OnSpin(e);

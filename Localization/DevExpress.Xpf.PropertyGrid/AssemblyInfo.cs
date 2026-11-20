@@ -11,7 +11,11 @@ using DevExpress.Internal;
 [assembly:AssemblyCulture("")]		
 [assembly:CLSCompliant(true)]
 
+
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+
 [assembly: AssemblyProduct("DevExpress.Xpf.PropertyGrid")]
+
 [assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
+
 [assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]

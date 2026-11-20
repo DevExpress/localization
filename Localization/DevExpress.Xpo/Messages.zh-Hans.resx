@@ -41,200 +41,266 @@
   </resheader>
   <data name="MetaData_IncorrectPath">
     <value>'{0}'类型的属性'{1}'路径错误</value>
+    <comment>Community:类型 '{0}' 的属性路径 '{1}' 不正确。</comment>
   </data>
   <data name="MetaData_IncorrectPathMemberNotExists">
     <value>由于'{2}.{3}'成员不存在而导致'{0}'类型的属性'{1}'路径错误</value>
+    <comment>Community:类型 '{0}' 的属性路径 '{1}' 不正确，因为成员 '{2}.{3}' 不存在。</comment>
   </data>
   <data name="MetaData_IncorrectPathNonPersistentMember">
     <value>由于'{2}.{3}'成员不是固定成员而导致'{0}'类型的属性'{1}'路径错误</value>
+    <comment>Community:类型 '{0}' 的属性路径 '{1}' 不正确，因为成员 '{2}.{3}' 不是持久化成员。</comment>
   </data>
   <data name="MetaData_IncorrectPathNonReferenceMember">
     <value>由于'{2}.{3}'成员不是所涉及到的成员而导致'{0}'类型的属性'{1}'路径错误</value>
+    <comment>Community:类型 '{0}' 的属性路径 '{1}' 不正确，因为成员 '{2}.{3}' 不是引用成员。</comment>
   </data>
   <data name="Session_TypeNotFound">
     <value>ID = '{0}'的类型无法查找到</value>
+    <comment>Community:无法查找到标识符 = '{0}' 的类型。</comment>
   </data>
   <data name="Session_TypeFieldIsEmpty">
     <value>'{0}' 字段为空 (基本类型 '{1}')</value>
+    <comment>Community:字段 '{0}' 为 NULL（基类 '{1}'）。</comment>
   </data>
   <data name="ConnectionProvider_UnableToFillRefType">
     <value>无法保证'{0}'类型的'{1}'成员的数据库计划.错误: {2}</value>
+    <comment>Community:无法确保类型“{0}”的成员“{1}”所需的数据库结构。错误：{2}。</comment>
   </data>
   <data name="MetaData_KeyPropertyAbsent">
     <value>缺少 '{0}' 类型的基本属性</value>
+    <comment>Community:类型 '{0}' 缺少键属性。</comment>
   </data>
   <data name="MetaData_DuplicateKeyProperty">
     <value>'{0}'类型发现复制键</value>
+    <comment>Community:类型 '{0}' 中发现重复的键。</comment>
   </data>
   <data name="MetaData_XMLLoadError">
     <value>XML 字典加载出错: {0}</value>
+    <comment>Community:XML 字典加载错误：{0}。</comment>
   </data>
   <data name="MetaData_XMLLoadErrorCannotFindClassinfoType">
     <value>无法找到类信息类型</value>
+    <comment>Community:XML 格式错误：找不到类类型。</comment>
   </data>
   <data name="MetaData_XMLLoadErrorCannotFindConstructor">
     <value>无法找到构造器</value>
+    <comment>Community:XML 格式错误：找不到类型 '{0}' 的构造函数。</comment>
   </data>
   <data name="MetaData_XMLLoadErrorModelTagAbsent">
     <value>错误的XML格式Incorrect formed XML</value>
+    <comment>Community:XML 格式错误：未找到 &lt;Model&gt; 标记，或指定的命名空间不正确。</comment>
   </data>
   <data name="MetaData_XMLLoadErrorCannotResolveClassinfoInstanceType">
     <value>无法解决类信息事例类型</value>
+    <comment>Community:XML 格式错误：无法解析 ClassInfo 类型。</comment>
   </data>
   <data name="MetaData_XMLLoadErrorCannotLoadMember">
     <value>无法载入成员[{0}]{1}.{2}</value>
+    <comment>Community:XML 格式错误：无法加载成员 [{0}]{1}.{2}。</comment>
   </data>
   <data name="MetaData_XMLLoadErrorUnknownAttribute">
     <value>未知属性 '{0}'</value>
+    <comment>Community:XML 格式错误：未知特性 '{0}'。</comment>
   </data>
   <data name="MetaData_PropertyTypeMismatch">
     <value>类型'{3}'与类型'{4}'之间的关联'{1}'非法或无效。类型'{3}'包含属性'{2}'，该属性属于类型'{4}'。类型'{4}'包含属性'{0}'，该属性不恰当地归属到类型'{5}'，而该属性却必须归属于类型'{3}'</value>
+    <comment>Community:类 '{3}' 与类 '{4}' 之间的关联 '{1}' 无效。类 '{3}' 包含属性 '{2}'，该属性引用类 '{4}'。类 '{4}' 包含属性 '{0}'，该属性错误地引用了类 '{5}'，而它必须引用类 '{3}'。</comment>
   </data>
   <data name="MetaData_PropertyMissing">
     <value>'{1}'类型中的属性'{0}'不存在</value>
+    <comment>Community:类型 '{1}' 中不存在属性 '{0}'。</comment>
   </data>
   <data name="MetaData_AssociationElementTypeMissing">
     <value>'Association'属性中的'{0}'属性为指定'ElementType'属性</value>
+    <comment>Community:属性 '{0}' 未在其 'Association' 特性中指定 'ElementType' 属性。</comment>
   </data>
   <data name="MetaData_RequiredAttributeMissing">
     <value>属性'{0}'未定义'{1}'属性</value>
+    <comment>Community:属性 '{0}' 未定义特性 '{1}'。</comment>
   </data>
   <data name="MetaData_NonPersistentReferenceFound">
     <value>当分析一个实际对象类型的时候,发现一个非持续的'{0}类型</value>
+    <comment>Community:对非持久化类 '{0}' 执行了持久化专用操作</comment>
   </data>
   <data name="Session_ObjectCannotBePurged">
     <value>ID = '{1}'的'{0}'对象不能被清除.它是一个对象.</value>
+    <comment>Community:无法彻底删除标识符 = '{1}' 的对象 '{0}'——有其他对象引用它。</comment>
   </data>
   <data name="Session_WrongConnectionString">
     <value>无效的连接字符串: '{0}'</value>
+    <comment>Community:指定的连接字符串无效：'{0}'。</comment>
   </data>
   <data name="Session_CannotReloadPurgedObject">
     <value>被请求的对象不能被加载, 因为他们缺少数据存储过程.这些对象已经被删除或清理.如果你再一次看见相同对象列表中出现这个异常, 注意你的数据存储的参考性完整性可能被破坏. 再这种情况下,请联系您的系统管理员.({0})</value>
+    <comment>Community:无法加载请求的对象，因为数据存储中不存在这些对象。这些对象可能已被删除/彻底删除。如果再次出现此异常，且列表中仍是相同的对象，请注意，数据存储的引用完整性可能已受损。在这种情况下，请联系系统管理员。请求的对象：{0}。</comment>
   </data>
   <data name="Session_SessionMixing">
     <value>对象'{0}'属于不同的会话</value>
+    <comment>Community:对象 '{0}' 属于另一个会话。有关解决方案，请参阅 https://docs.devexpress.com/eXpressAppFramework/403631/。</comment>
   </data>
   <data name="Session_CannotAddObjectToObjectCache">
     <value>因为对象'{2}'使用相同的关键字添加了它，所以对象'{0}'不能使用关键字为'{1}'来添加.</value>
+    <comment>Community:无法将键 = '{1}' 的对象 '{0}' 添加到对象标识映射，因为具有相同键的另一个对象 '{2}' 已添加到该映射。</comment>
   </data>
   <data name="MetaData_SessionCtorAbsent">
     <value>{0}类型尚未拥有会话构造器</value>
+    <comment>Community:类型 {0} 没有会话专用构造函数。</comment>
   </data>
   <data name="Paging_PageSizeShouldBeGreaterThanZero">
     <value>页面大小必须大于0</value>
+    <comment>Community:PageSize 应大于 0。</comment>
   </data>
   <data name="Paging_CurrentPageShouldBeGreaterOrEqualZero">
     <value>当前页必须大于等于0</value>
+    <comment>Community:CurrentPage 应大于或等于 0。</comment>
   </data>
   <data name="Paging_CurrentPageShouldBeLessThanPageCount">
     <value>当前页应该小于总页数</value>
+    <comment>Community:CurrentPage 应小于 PageCount。</comment>
   </data>
   <data name="Session_TranSequenceBegin">
     <value>不能在该会话里启动更多事务</value>
+    <comment>Community:无法在一个会话中启动多个事务。</comment>
   </data>
   <data name="Session_TranSequenceCommit">
     <value>没有活动事务</value>
+    <comment>Community:无法提交，因为没有活动事务。</comment>
   </data>
   <data name="Session_TranSequenceRollback">
     <value>没有活动事务</value>
+    <comment>Community:无法回滚，因为没有活动事务。</comment>
   </data>
   <data name="Collections_InvalidCastOnAdd">
     <value>不能在集合中增加对象.对象'{0}'不是类型'{1}'的实例</value>
+    <comment>Community:无法将项添加到集合。对象“{0}”不是类型“{1}”的实例。</comment>
   </data>
   <data name="Generator_OneOfBinaryOperatorsOperandsIsNull">
     <value>二进制操作的一个操作数为空</value>
+    <comment>Community:BinaryOperator 的一个操作数为空引用。</comment>
   </data>
   <data name="ConnectionProvider_KeysAutogenerationNonSupportedTypeException">
     <value>密匙自动产生并仅支持Int32和Guid数据类型.类类型: '{0}'</value>
+    <comment>Community:类类型“{0}”不支持自动生成键。仅支持 32 位整数、64 位整数和全局唯一标识符数据类型。</comment>
   </data>
   <data name="Session_CannotLoadInvalidType">
     <value>无法加载无效类型'{0}'</value>
+    <comment>Community:无法加载无效类型 '{0}'。</comment>
   </data>
   <data name="Paging_EnumeratorPositioning">
     <value>例子被放在了集合的第一个元素之前或者最后一个元素之后</value>
+    <comment>Community:枚举器位于集合的第一个元素之前或最后一个元素之后。</comment>
   </data>
   <data name="Paging_EnumeratorObjectModifiedOrDeleted">
     <value>所请求的一个或多个对象已经被修改或删除.您需要刷新已定义值列表</value>
+    <comment>Community:请求范围内的一个或多个对象已被修改或删除。您需要刷新标识值列表。</comment>
   </data>
   <data name="Session_CannotChangePropertyWhenSessionIsConnected">
     <value>当连接会话的时候不能改变{0}</value>
+    <comment>Community:会话已连接时，无法更改 '{0}'。</comment>
   </data>
   <data name="Session_DifferentObjectsWithSameKey">
     <value>不同对象拥有了相同的关键字</value>
+    <comment>Community:发现键重复的对象。</comment>
   </data>
   <data name="MetaData_CannotResolveClassInfo">
     <value>不能解决类型'[{0}]{1}'的类型信息</value>
+    <comment>Community:无法解析类型 '[{0}]{1}' 的 ClassInfo。</comment>
   </data>
   <data name="Session_IncompatibleIdType">
     <value>通过的ID类型'{0}'与密码类型'{1}''{2}''{3}'不兼容</value>
+    <comment>Community:传入的标识符类型 '{0}' 与键 '{1}.{2}' 的类型 '{3}' 不兼容。</comment>
   </data>
   <data name="MetaData_ReferenceTooComplex">
     <value>'{0}.{1}'太复杂</value>
+    <comment>Community:引用成员 '{0}.{1}' 过于复杂。</comment>
   </data>
   <data name="Metadata_SameTableName">
     <value>类{0}部署到相同的表中,如{1}</value>
+    <comment>Community:类 {0} 和 {1} 映射到同一个表。</comment>
   </data>
   <data name="Metadata_CustomProperties_PersistentAndNonStorableType">
     <value>类型{2}'的自定义成员'{0}.{1}'不能保证持续性</value>
+    <comment>Community:类型为 '{2}' 的自定义成员 '{0}.{1}' 不能持久化</comment>
   </data>
   <data name="Metadata_CustomProperties_ReferenceOrCollectionInSessionStore">
     <value>由于'{0}'类没有实现'{2}'接口而无法创建相关类型或集合类型的用户成员'{1}'</value>
+    <comment>Community:无法创建引用或集合类型的自定义成员 '{1}'，因为类 '{0}' 未实现接口 '{2}'。</comment>
   </data>
   <data name="XpoDefault_CannotAssignPropertyWhileAnotherIsNotNull">
     <value>当XpoDefault.{1}不为空则不能分配XpoDefault.{0}</value>
+    <comment>Community:已指定 XpoDefault.{1} 时，无法为 XpoDefault.{0} 赋值。</comment>
   </data>
   <data name="ThreadSafeDataLayer_DictionaryModified">
     <value>抱歉,当它被线程安全数据层使用的时候不能修改字典.请呼叫会话.在使用线程安全数据层前在您的安装/管理应用程序中创建对象类型记录方法</value>
+    <comment>Community:无法修改 Dictionary，因为 ThreadSafeDataLayer 正在使用它。已修改或创建的 ClassInfo：'{0}'。要避免此异常，请遵循以下建议：https://www.devexpress.com/kb=T901732</comment>
   </data>
   <data name="Metadata_DictionaryMixing">
     <value>类'{0}'类信息属于不同的字典</value>
+    <comment>Community:ClassInfo '{0}' 属于另一个字典。</comment>
   </data>
   <data name="Metadata_CantPersistGenericType">
     <value>不能持续一般类型.请删除'{0}'类型中定义的持久属性并创建一个非普通的派生来替代</value>
+    <comment>Community:无法持久化泛型类型。请从类型 '{0}' 的定义中移除 PersistentAttribute，并改为创建一个或多个非泛型持久化派生类。</comment>
   </data>
   <data name="PersistentAliasExpander_ReferenceOrCollectionExpectedInTheMiddleOfThePath">
     <value>路径中的错误成员'{0}'.一个相关属性或者集合联合被执行</value>
+    <comment>Community:路径中的成员 '{0}' 不正确。应为引用属性或集合关联。</comment>
   </data>
   <data name="XPWeakReference_SavedObjectExpected">
     <value>保存对象被执行</value>
+    <comment>Community:只能使用指向已保存对象的弱引用。</comment>
   </data>
   <data name="PersistentAliasExpander_NonPersistentCriteria">
     <value>由于其使用了'{1}'持续特性所以不能使用"{0}"标准来查询数据记录</value>
+    <comment>Community:无法使用条件 "{0}" 查询数据存储，因为该条件使用了非持久化属性 '{1}'。有关更多详细信息和可能的解决方案，请参阅知识库文章 https://www.devexpress.com/kb=Q352044。</comment>
   </data>
   <data name="View_PropertyNotFetched">
     <value>'{0}'特性没有被获取</value>
+    <comment>Community:属性 '{0}' 未提取。</comment>
   </data>
   <data name="Session_AlreadyConnected">
     <value>会话已经连接</value>
+    <comment>Community:会话已连接。</comment>
   </data>
   <data name="Session_AssociationCollectionWithDisabledLoading">
     <value>联合集合的状态被破坏(LoadingEnabled不为真)</value>
+    <comment>Community:关联集合的状态异常：LoadingEnabled 应为 true。</comment>
   </data>
   <data name="Metadata_SeveralClassesWithSameName">
     <value>字典已经包含类信息'{1}'.可能的原因: 集合'{0}'已经加载了两次.</value>
+    <comment>Community:字典已包含 ClassInfo '{1}'。可能的原因：程序集 [{0}] 已加载两次。</comment>
   </data>
   <data name="Metadata_PersistentAliasCircular">
     <value>'{0}'类型的'{1}'特性被持久别名和错误的'{2}'表达式标记.因为它涉及到了它本身所以就产生了周期</value>
+    <comment>Community:类 '{0}' 的属性 '{1}' 应用了 PersistentAlias 属性，该属性使用以下表达式：'{2}'。此表达式会导致无限循环。</comment>
   </data>
   <data name="Metadata_AssociationInvalid_AssociationAttributeOnlyForListOrReference">
     <value>联合属性不能被'{1}.{2}'成员所使用.一个参照或列表被执行</value>
+    <comment>Community:关联属性不能用于成员 '{1}.{2}'。应为引用或列表。</comment>
   </data>
   <data name="Metadata_AssociationInvalid_MoreThenOneAssociatedMemberFound">
     <value>联合'{0}'不明确类'{1}'中的'{2}'和'{3}'中的成员</value>
+    <comment>Community:关联 '{0}' 在类 '{1}' 的成员 '{2}' 和 '{3}' 之间存在歧义。</comment>
   </data>
   <data name="Metadata_AssociationInvalid_NoAssociationListInAssociation">
     <value>在'{1}.{2}'和'{3}.{4}'之间存在一个畸形的联合'{0}'.一个列表被联合的一侧所执行</value>
+    <comment>Community:'{1}.{2}' 和 '{3}.{4}' 之间的关联 '{0}' 定义有误。关联的一端应为列表或集合。</comment>
   </data>
   <data name="Metadata_AssociationInvalid_TwoAssociationListsInAssociation">
     <value>在'{1}.{2}'和'{3}.{4}'列表之间存在一个畸形的联合'{0}'.使用多对多属性或者XPCollection类型列表表示多对多关系</value>
+    <comment>Community:列表/集合 '{1}.{2}' 和 '{3}.{4}' 之间的关联 '{0}' 定义有误。对于多对多关系，请使用 ManyToManyAlias 属性或 XPCollection 类型的列表/集合。</comment>
   </data>
   <data name="Metadata_AssociationInvalid_UseAssociationNameAsIntermediateTableNameMismatch">
     <value>使用联合名称作为媒体表名称值应当使联合'{0}'的'{1}.{2}'和'{3}.{4}'两边相等</value>
+    <comment>Community:'{1}.{2}' 和 '{3}.{4}' 之间的关联 '{0}' 两端的 UseAssociationNameAsIntermediateTableName 值必须相同。</comment>
   </data>
   <data name="Metadata_AssociationInvalid_PropertyTypeMismatch">
     <value>类'{1}'与类'{3}'之间的关联'{0}'无效.类'{1}'包含属性'{2}',该属性引用了类'{3}'.类'{3}'包含属性'{4}',该属性不恰当地引用了类'{5}',而该属性却必须涉及到类'{1}'.</value>
+    <comment>Community:类 '{1}' 和类 '{3}' 之间的关联 '{0}' 无效。类 '{1}' 包含引用类 '{3}' 的属性 '{2}'。类 '{3}' 包含属性 '{4}'，该属性错误地引用了类 '{5}'；应引用类 '{1}'。</comment>
   </data>
-  <data name="Metadata_AssociationInvalid_NotFound">4
+  <data name="Metadata_AssociationInvalid_NotFound">
+    <comment>Community:关联 '{0}' 定义有误。无法在类 '{3}' 中找到 '{1}.{2}' 的关联成员。</comment>4
 		<value>存在一个畸形的关联'{0}'. 无法找到类'{3}'中的关联成员'{1}.{2}'</value></data>
   <data name="">
     <value></value>
@@ -250,33 +316,43 @@
   </data>
   <data name="Async_CanChangeProperties" xml:space="preserve">
     <value>是不可能更改 InstantFeedback 源属性，当它已经由网格使用。</value>
+    <comment>Community:InstantFeedback 数据源已被网格使用时，无法更改其属性。</comment>
   </data>
   <data name="Async_OperationCannotBePerformedBecauseNoSyncContext" xml:space="preserve">
     <value>不能执行此操作，因为执行线程已没有当前同步上下文。</value>
+    <comment>Community:无法执行此操作，因为执行线程没有当前同步上下文。</comment>
   </data>
   <data name="Collections_CannotAssignProperty" xml:space="preserve">
     <value>XPCollection 不是设计或初始化模式时，不能更改属性"{0}"。</value>
+    <comment>Community:当 {1} 不处于设计或初始化模式时，无法更改属性“{0}”。</comment>
   </data>
   <data name="Collections_CannotResolvePropertyTypeComparer" xml:space="preserve">
     <value>不能解决的比较器类型 '{1}' 属性 '{0}'.</value>
+    <comment>Community:无法获取类型为“{1}”的属性“{0}”的比较器。</comment>
   </data>
   <data name="Collections_CriteriaEvaluationBehaviorIsNotSupported" xml:space="preserve">
     <value>内部错误: 指定的 CriteriaEvaluationBehavior。此重载构造函数不支持 {0}。</value>
+    <comment>Community:内部错误：此构造函数重载不支持指定的 CriteriaEvaluationBehavior.{0}。</comment>
   </data>
   <data name="Collections_GeneralPurposeCollectionInsteadOfRefCollection" xml:space="preserve">
     <value>无效的关联的集合属性执行 ' {0}。{1}' 检测到。应通过 GetCollection 方法或 XPCollection 会话、 相邻对象 XPMemberInfo refProperty） 构造函数创建集合。</value>
+    <comment>Community:检测到关联集合属性“{0}.{1}”的实现无效。应通过 GetCollection 方法或 XPCollection(Session session, object theOwner, XPMemberInfo refProperty) 构造函数创建该集合。</comment>
   </data>
   <data name="Collections_NotCollectionProperty" xml:space="preserve">
     <value>{0}.{1} 不是一个集合属性。它应标有 AssociationAttribute 和 XPBaseCollection 的子代类型。也许，你在哪里应该使用 GetList 情况下使用 GetCollection.</value>
+    <comment>Community:{0}.{1} 不是集合属性。该属性应标记有 AssociationAttribute，且其类型应派生自 XPBaseCollection。您可能在应使用 GetList 的情况下使用了 GetCollection。</comment>
   </data>
   <data name="Collections_RecurringObjectAdd" xml:space="preserve">
     <value>重复地址</value>
+    <comment>Community:重入添加。</comment>
   </data>
   <data name="Collections_WantNotDeleteFilteredAggregateCollection" xml:space="preserve">
     <value>分配标准向聚合的集合通常使孤立记录在数据库中。明确 ' {1}。标准 ' 之前删除所有者属性对象 '{0}'.</value>
+    <comment>Community:删除对象“{0}”时，如果其聚合集合“{1}”仅部分加载，可能会产生孤立对象/记录。</comment>
   </data>
   <data name="Common_MethodOrOperationNotImplemented" xml:space="preserve">
     <value>未实现的方法或操作。</value>
+    <comment>Community:尚未实现该方法或操作。</comment>
   </data>
   <data name="ConnectionProvider_TheAutoIncrementedKeyWithX0TypeIsNotSuppor" xml:space="preserve">
     <value>与 '{0}' 类型不支持 '{1}' 自动递增键</value>
@@ -301,425 +377,845 @@
   </data>
   <data name="DataView_ReferenceMembersWithCompoundKeyAreNotSupported" xml:space="preserve">
     <value>不支持类与结构成员。</value>
+    <comment>Community:不支持包含结构体成员的类。</comment>
   </data>
   <data name="DirectSQL_CollectionMembersAreNotSupported" xml:space="preserve">
     <value>不支持集合成员。</value>
+    <comment>Community:不支持集合类型的成员。</comment>
   </data>
   <data name="DirectSQL_WrongColumnCount" xml:space="preserve">
     <value>设置行的结果中的列数和目标行不匹配。</value>
+    <comment>Community:结果集行与目标行的列数不匹配。</comment>
   </data>
   <data name="Filtering_TheIifFunctionOperatorRequiresThree" xml:space="preserve">
     <value>'Iif' 函数运算符需要三个或更多的参数。参数的个数必须是奇数。</value>
+    <comment>Community:“Iif”函数运算符需要至少 3 个参数。参数个数必须为奇数。</comment>
   </data>
   <data name="Filtering_TheTypeNameArgumentOfTheX0FunctionIsNotFound" xml:space="preserve">
     <value>TypeName '{0}' 函数的参数找不到。</value>
+    <comment>Community:找不到“{0}”函数的“typeName”参数。</comment>
   </data>
   <data name="Generator_TheUseOfATopLevelSingleAggregateIsProhibit" xml:space="preserve">
     <value>禁止使用顶级的 '单' 料。</value>
+    <comment>Community:禁止使用顶层 'Single' 聚合。</comment>
   </data>
   <data name="Generator_TheUseOfNestedSingleAggregatesIsProhibited" xml:space="preserve">
     <value>禁止使用嵌套的 '单' 骨料。</value>
+    <comment>Community:禁止使用嵌套的 'Single' 聚合。</comment>
   </data>
   <data name="Helpers_CloningObjectModified" xml:space="preserve">
     <value>具有未保存的更改的对象不能克隆。</value>
+    <comment>Community:无法克隆有未保存更改的对象。</comment>
   </data>
   <data name="Helpers_DifferentObjectsKeys" xml:space="preserve">
     <value>用改性的密钥不能合并对象更改。</value>
+    <comment>Community:无法合并键已修改的对象的更改。</comment>
   </data>
   <data name="Helpers_ResolveDataForCollection" xml:space="preserve">
     <value>的成员不是一个集合.</value>
+    <comment>Community:该成员不是集合。</comment>
   </data>
   <data name="Helpers_SameDictionaryExpected" xml:space="preserve">
     <value>字典不匹配。</value>
+    <comment>Community:字典错误。</comment>
   </data>
   <data name="InMemory_CannotFindParentRelationForNode" xml:space="preserve">
     <value>找不到父节点"{0}"的关系。格式不正确的查询或内部 XPO 错误。</value>
+    <comment>Community:无法找到节点 '{0}' 的父关系。查询格式错误或 XPO 内部错误。</comment>
   </data>
   <data name="InMemory_DataSetUncommited" xml:space="preserve">
     <value>'数据' 参数包含一个数据集与未提交的更改。在创建 DataSetDataStore 类的一个新实例之前调用 DataSet.AcceptChanges 方法</value>
   </data>
   <data name="InMemory_IsReadOnly" xml:space="preserve">
     <value>不支持写入。</value>
+    <comment>Approved</comment>
   </data>
   <data name="InMemory_MalformedAggregate" xml:space="preserve">
     <value>格式错误的聚合或内部 XPO 错误。</value>
+    <comment>Community:聚合格式错误或 XPO 内部错误。</comment>
   </data>
   <data name="InMemory_NotACollection" xml:space="preserve">
     <value>格式不正确的查询或内部 XPO 错误： '{0}' 不是一个集合.</value>
+    <comment>Community:查询格式错误或 XPO 内部错误：'{0}' 不是集合。</comment>
   </data>
   <data name="InMemory_SingleRowExpected" xml:space="preserve">
     <value>单排预计通过 '{0}'，发现行： {1}.</value>
+    <comment>Community:预期通过“{0}”获得一行，找到的行数：{1}。</comment>
   </data>
   <data name="InMemoryFull_CannotPrepareQueryPlan" xml:space="preserve">
     <value>不能生成查询计划。</value>
+    <comment>Community:无法构建查询计划。</comment>
   </data>
   <data name="InMemoryFull_DifferentColumnListLengths" xml:space="preserve">
     <value>内部错误: 主键和功能键的列数不匹配。</value>
+    <comment>Community:内部错误：PKey 和 FKey 的列数不匹配。</comment>
   </data>
   <data name="InMemoryFull_UseDataSetDataStoreOrCtor" xml:space="preserve">
     <value>而不是使用数据集.ctor，使用 DataSetDataStore 类或无数据集.ctor。</value>
+    <comment>Community:请使用 DataSetDataStore 类或不带 DataSet 的 .ctor，而不要使用带 DataSet 的 .ctor。</comment>
   </data>
   <data name="InMemoryFull_WrongIndexInfo" xml:space="preserve">
     <value>内部错误: 格式不正确的索引信息。</value>
+    <comment>Community:内部错误：索引信息格式错误。</comment>
   </data>
   <data name="InMemorySet_AddRelation" xml:space="preserve">
     <value>不能添加重复的关系。</value>
+    <comment>Community:无法添加重复的关系。</comment>
   </data>
   <data name="InMemorySet_AliasNotFound" xml:space="preserve">
     <value>表别名 '{0}' 找不到。</value>
+    <comment>Community:未找到别名为 '{0}' 的表。</comment>
   </data>
   <data name="InMemorySet_CantUpdateRelationColumn" xml:space="preserve">
     <value>不能更新列关系。</value>
+    <comment>Community:无法更新具有关系的列。</comment>
   </data>
   <data name="InMemorySet_ColumnNotFound" xml:space="preserve">
     <value>列 '{0}' 找不到。</value>
+    <comment>Community:未找到列 '{0}'。</comment>
   </data>
   <data name="InMemorySet_ConstraintConflict" xml:space="preserve">
     <value>违反了约束表 '{0}' 中的键列 '{1}'.</value>
+    <comment>Community:表 '{0}' 中列 '{1}' 的外键违反了约束。</comment>
   </data>
   <data name="InMemorySet_DifferentComplexSet" xml:space="preserve">
     <value>内部错误: 不能从复杂的另一组添加行。</value>
+    <comment>Community:内部错误：无法添加来自另一个复合集合的行。</comment>
   </data>
   <data name="InMemorySet_DifferentTypes" xml:space="preserve">
     <value>主键和功能键的列类型不匹配。</value>
+    <comment>Community:主键列与外键列的类型不匹配。</comment>
   </data>
   <data name="InMemorySet_InEditMode" xml:space="preserve">
     <value>行已经处于编辑模式。</value>
+    <comment>Community:该行已处于编辑模式。</comment>
   </data>
   <data name="InMemorySet_InsertingDataIntoAutoincrementColumn" xml:space="preserve">
     <value>不能将值分配给一个自动增量的列 '{0}'.</value>
+    <comment>Community:无法为自动递增列 '{0}' 赋值。</comment>
   </data>
   <data name="InMemorySet_InvalidTypeString" xml:space="preserve">
     <value>XML 加载程序: 无效的类型名称。</value>
+    <comment>Community:XML 加载器：类型名称无效。</comment>
   </data>
   <data name="InMemorySet_NotLoadingMode" xml:space="preserve">
     <value>不能将值赋给自动递增列 '{0}' 而不是在加载模式。</value>
+    <comment>Community:未处于加载模式时，无法为自动递增列 '{0}' 赋值。</comment>
   </data>
   <data name="InMemorySet_NullDefaultValueNotAllowed" xml:space="preserve">
     <value>Null 值不允许作为默认值的列 '{0}'.</value>
+    <comment>Community:不允许将空值用作列 '{0}' 的默认值。</comment>
   </data>
   <data name="InMemorySet_OperationNotAllowed" xml:space="preserve">
     <value>指定的操作，严禁。</value>
+    <comment>Community:禁止执行指定的操作。</comment>
   </data>
   <data name="InMemorySet_WrongCommitInfo" xml:space="preserve">
     <value>内部错误： 错误格式提交信息。</value>
+    <comment>Community:内部错误：提交信息格式错误。</comment>
   </data>
   <data name="InMemorySet_WrongDictionaryIndex" xml:space="preserve">
     <value>内部错误： 索引 '{0}' 中的不正确的字典数据。</value>
+    <comment>Community:内部错误：索引 '{0}' 中的字典数据不正确。</comment>
   </data>
   <data name="InMemorySet_WrongInitData" xml:space="preserve">
     <value>的源行和目标表行中的列数不匹配。</value>
+    <comment>Community:源行与目标表行的列数不匹配。</comment>
   </data>
   <data name="InMemorySet_WrongRollbackInfo" xml:space="preserve">
     <value>内部错误: 格式错误回滚信息。</value>
+    <comment>Community:内部错误：回滚信息格式错误。</comment>
   </data>
   <data name="InMemorySet_XMLException_CantGetColumnType" xml:space="preserve">
     <value>XML 加载程序： 无法解析的列类型。</value>
+    <comment>Community:XML 加载器：无法解析列类型。</comment>
   </data>
   <data name="InMemorySet_XMLException_CantRestoreObjectFromXML" xml:space="preserve">
     <value>XML 加载程序： 无法反序列化对象。</value>
+    <comment>Community:XML 加载器：无法反序列化对象。</comment>
   </data>
   <data name="InMemorySet_XMLException_choiceNodeNotFound" xml:space="preserve">
     <value>XML 加载程序： '选择' 找不到节点。</value>
+    <comment>Community:XML 加载器：未找到 'choice' 节点。</comment>
   </data>
   <data name="InMemorySet_XMLException_ColumnNameIsNotSpecified" xml:space="preserve">
     <value>XML 加载程序： 未指定的列名称。</value>
+    <comment>Community:XML 加载器：未指定列名。</comment>
   </data>
   <data name="InMemorySet_XMLException_ComplexTypeNodeNotFound" xml:space="preserve">
     <value>XML 加载程序： 节点 '复杂类型找不到。</value>
+    <comment>Community:XML 加载器：未找到 'complexType' 节点。</comment>
   </data>
   <data name="InMemorySet_XMLException_DataTypeAttributeNotFound" xml:space="preserve">
     <value>XML 加载程序： 找不到属性 '的数据类型 '.</value>
+    <comment>Community:XML 加载器：无法找到 'DataType' 属性。</comment>
   </data>
   <data name="InMemorySet_XMLException_ElementNodeNotFound" xml:space="preserve">
     <value>XML 加载程序： 节点 '元素找不到。</value>
+    <comment>Community:XML 加载器：未找到 'element' 节点。</comment>
   </data>
   <data name="InMemorySet_XMLException_InconsistentForeignKeyCount" xml:space="preserve">
     <value>XML 加载程序： 主键和功能键的列数不匹配。</value>
+    <comment>Community:XML 加载器：主键和外键的列数不匹配。</comment>
   </data>
   <data name="InMemorySet_XMLException_InvalidBaseAttributeValue" xml:space="preserve">
     <value>XML 加载程序： 不正确的 '基地' 属性值.</value>
+    <comment>Community:XML 加载器：'base' 属性值不正确。</comment>
   </data>
   <data name="InMemorySet_XMLException_InvalidColumnTypeDeclaration" xml:space="preserve">
     <value>XML 加载程序: 无效的列类型名称.</value>
+    <comment>Community:XML 加载器：列类型名称无效。</comment>
   </data>
   <data name="InMemorySet_XMLException_InvalidValueAttributeValue" xml:space="preserve">
     <value>XML 加载程序： 不正确的 value 属性值.</value>
+    <comment>Community:XML 加载器：'value' 属性值不正确。</comment>
   </data>
   <data name="InMemorySet_XMLException_NameAttributeExpected" xml:space="preserve">
     <value>XML 加载程序： name 属性预期。</value>
+    <comment>Community:XML 加载器：应有 'name' 属性。</comment>
   </data>
   <data name="InMemorySet_XMLException_NotDataSetNode" xml:space="preserve">
     <value>XML 加载程序： 未标记为数据集节点。</value>
+    <comment>Community:XML 加载器：节点未标记为数据集。</comment>
   </data>
   <data name="InMemorySet_XMLException_NullPrimaryColumns" xml:space="preserve">
     <value>XML 加载程序： 找不到主关键 '{0}'.</value>
+    <comment>Community:XML 加载器：无法定位主键 '{0}'。</comment>
   </data>
   <data name="InMemorySet_XMLException_ReferAttributeExpected" xml:space="preserve">
     <value>XML 加载程序： 属性 '参考' 预期。</value>
+    <comment>Community:XML 加载器：应有 'refer' 属性。</comment>
   </data>
   <data name="InMemorySet_XMLException_ReferNotFound" xml:space="preserve">
     <value>XML 加载程序： 无法查找引用 '{0}'.</value>
+    <comment>Community:XML 加载器：无法定位被引用的 '{0}'。</comment>
   </data>
   <data name="InMemorySet_XMLException_SchemaNodeNotFound" xml:space="preserve">
     <value>XML 加载程序： 找不到 ' 架构节点。</value>
+    <comment>Community:XML 加载器：未找到 'schema' 节点。</comment>
   </data>
   <data name="InMemorySet_XMLException_TableNameIsNotSpecified" xml:space="preserve">
     <value>XML 加载程序: 未指定表名。</value>
+    <comment>Community:XML 加载器：未指定表名。</comment>
   </data>
   <data name="InMemorySet_XMLException_TableNotDeclared" xml:space="preserve">
     <value>XML 加载程序： 表"{0}"不声明。</value>
+    <comment>Community:XML 加载器：表 '{0}' 未声明。</comment>
   </data>
   <data name="InMemorySet_XMLException_XpathAttributeExpected" xml:space="preserve">
     <value>XML 加载程序： 属性 'xpath' 预期。</value>
+    <comment>Community:XML 加载器：应有 'xpath' 属性。</comment>
   </data>
   <data name="InMemorySet_XMLException_XpathAttributeWrongFormat" xml:space="preserve">
     <value>XML 加载程序： 'xpath' 属性值格式不正确。</value>
+    <comment>Community:XML 加载器：'xpath' 属性值格式不正确。</comment>
   </data>
   <data name="InMemorySet_XMLException_XScomplexTypeExpected" xml:space="preserve">
     <value>XML 加载程序： 预期 xs:complexType.</value>
+    <comment>Community:XML 加载器：应为 xs:complexType。</comment>
   </data>
   <data name="InMemorySet_XMLException_XSlengthExpected" xml:space="preserve">
     <value>XML 加载程序： 预期 xs:length.</value>
+    <comment>Community:XML 加载器：应为 xs:length。</comment>
   </data>
   <data name="InMemorySet_XMLException_XSrestrictionExpected" xml:space="preserve">
     <value>XML 加载程序： 预期 xs:restriction.</value>
+    <comment>Community:XML 加载器：应为 xs:restriction。</comment>
   </data>
   <data name="InMemorySet_XMLException_XSselectorNodeExpected" xml:space="preserve">
     <value>XML 加载程序： 节点 'xs:selector' 预期。</value>
+    <comment>Community:XML 加载器：应有 'xs:selector' 节点。</comment>
   </data>
   <data name="InMemorySet_XMLException_XSsequenceExpected" xml:space="preserve">
     <value>XML 加载程序： 预期 xs:sequence.</value>
+    <comment>Community:XML 加载器：应为 xs:sequence。</comment>
   </data>
   <data name="InMemorySet_XMLException_XSsimpleTypeExpected" xml:space="preserve">
     <value>XML 加载程序： 预期 xs:simpleType.</value>
+    <comment>Community:XML 加载器：应为 xs:simpleType。</comment>
   </data>
   <data name="InTransactionLoader_NotInSelectDataMode" xml:space="preserve">
     <value>内部错误: 未在 SelectData 模式。</value>
+    <comment>Community:内部错误：不处于 SelectData 模式。</comment>
   </data>
   <data name="InTransactionLoader_ProcessReturnResultError" xml:space="preserve">
     <value>内部错误: 在 SelectData 模式下不允许操作。</value>
+    <comment>Community:内部错误：SelectData 模式下不允许执行操作。</comment>
   </data>
   <data name="Loader_InternalErrorOrUnsupportedReferenceStructure" xml:space="preserve">
     <value>内部 XPO 错误或不受支持的参考结构： 复合键不能引用具有后代的类型。对象类型 '{0}'，解决类型 '{1}'.</value>
+    <comment>Community:XPO 内部错误或不支持的引用结构：复合键不得引用具有派生类的类型。对象类型 '{0}'，解析得到的类型 '{1}'。</comment>
   </data>
   <data name="Loader_ReloadError" xml:space="preserve">
     <value>内部错误: 指定的 ' {0}。{1}' 不支持.</value>
+    <comment>Community:内部错误：不支持指定的 '{0}.{1}'。</comment>
   </data>
   <data name="Metadata_ClassAttributeExclusive" xml:space="preserve">
     <value>PersistentAttribute，NonPersistentAttribute 和 MapToAttribute 是排斥的。他们中的只有一个可以应用于类 '{0}'.</value>
+    <comment>Community:PersistentAttribute、NonPersistentAttribute 和 MapToAttribute 互斥。只能将其中一个应用于类 '{0}'。</comment>
   </data>
   <data name="Metadata_ConverterOnKeyOrReference" xml:space="preserve">
     <value>ValueConverter 属性不能应用于 ' {0}。{1}' 表示对象键或引用另一个对象的属性。</value>
+    <comment>Community:ValueConverter 属性不能应用于表示对象键或对另一对象的引用的属性 '{0}.{1}'。</comment>
   </data>
   <data name="Metadata_DuplicateMappingField" xml:space="preserve">
     <value>复制到 '{0}' 类 '{1}' 中的列映射。</value>
+    <comment>Community:类 '{1}' 中存在到列 '{0}' 的重复映射。</comment>
   </data>
   <data name="Metadata_MemberAttributeExclusive" xml:space="preserve">
     <value>PersistentAttribute，NonPersistentAttribute 和 PersistentAliasAttribute 是排斥的。他们中的只有一个可以应用于成员 ' {0}。{1}'.</value>
+    <comment>Community:PersistentAttribute、NonPersistentAttribute 和 PersistentAliasAttribute 互斥。只能将其中一个应用于成员 '{0}.{1}'。</comment>
   </data>
   <data name="Metadata_NonpesistentKey" xml:space="preserve">
     <value>非持久性密钥 ' {0}。{1}' 发现。</value>
   </data>
   <data name="Metadata_NotCollection" xml:space="preserve">
     <value>'{0}.{1}' 不是一个集合.</value>
+    <comment>Community:'{0}.{1}' 不是集合。</comment>
   </data>
   <data name="Metadata_NullSessionProvider" xml:space="preserve">
     <value>内部错误: 无法访问会话。</value>
+    <comment>Community:内部错误：无法访问会话。</comment>
   </data>
   <data name="MetaData_PersistentReferenceFound" xml:space="preserve">
     <value>非持久性-特定操作是与持久性类 '{0}'</value>
+    <comment>Community:对持久化类 '{0}' 执行了非持久化专用操作</comment>
   </data>
   <data name="MetaData_PropertyIsDuplicatedInIndexDeclaration" xml:space="preserve">
     <value>'{0}' 属性重复的 ' {1} {2} {3' {4} 索引宣言。</value>
+    <comment>Community:属性 '{0}' 在 '{1}{2}{3}' 的 {4} 索引声明中重复出现。</comment>
   </data>
   <data name="Metadata_SuppressSuspiciousMemberInheritanceCheckError" xml:space="preserve">
     <value>成员 ' {0}。{1}' 和其属性 '{2}' 将被忽略。'{3}' 基类中已经声明具有相同名称的成员。为了制止此异常将 DevExpress.Xpo.Metadata.ReflectionClassInfo.SuppressSuspiciousMemberInheritanceCheck 设置为 True。</value>
+    <comment>Community:成员 '{0}.{1}' 及其属性 '{2}' 已被忽略。基类 '{3}' 中已声明同名成员。要抑制此异常，请将 DevExpress.Xpo.Metadata.ReflectionClassInfo.SuppressSuspiciousMemberInheritanceCheck 设置为 True。</comment>
   </data>
   <data name="Metadata_WrongObjectType" xml:space="preserve">
     <value>使用 ClassInfo {2} 创建对象 {0} 返回不正确的 ClassInfo {1}.</value>
+    <comment>Community:使用 ClassInfo {2} 创建的对象 {0} 返回了错误的 ClassInfo {1}。</comment>
   </data>
   <data name="MsSql_RootIsNotInsertStatement" xml:space="preserve">
     <value>内部错误： 根不是 InsertStatement.</value>
+    <comment>Community:内部错误：Root 不是 InsertStatement。</comment>
   </data>
   <data name="NestedSession_NotClonable" xml:space="preserve">
     <value>对象层次结构不能克隆，因为成员 ' {0}。{1}' 在操作过程中改变了。</value>
   </data>
   <data name="Object_CorrectPIinUOW" xml:space="preserve">
     <value>持久性接口。改为使用单位的工作。</value>
+    <comment>Community:会话不完全支持持久化接口。请改用工作单元。</comment>
   </data>
   <data name="Object_DelayedPropertyContainerCannotBeAssigned" xml:space="preserve">
     <value>延迟的自定义属性的容器 ' {0}。{1}' 无法分配。</value>
+    <comment>Community:无法为延迟自定义属性 '{0}.{1}' 的容器赋值。</comment>
   </data>
   <data name="Object_DelayedPropertyDoesNotContainProperObject" xml:space="preserve">
     <value>属性 ' {0}。{1}' 不包含一个 XPDelayedProperty 对象。</value>
+    <comment>Community:属性 '{0}.{1}' 不包含 XPDelayedProperty 对象。</comment>
   </data>
   <data name="Object_EmptyMemberInstance" xml:space="preserve">
     <value>InstanceType 成员不包含任何值。这是不可能没有正确初始化的对象中使用 GetInstanceObject.</value>
+    <comment>Community:InstanceType 成员不包含任何值。无法对尚未正确初始化的对象使用 GetInstanceObject。</comment>
   </data>
   <data name="Object_NullInstance" xml:space="preserve">
     <value>找不到接口虚拟对象"{0}"的执行者。</value>
+    <comment>Community:无法找到接口虚拟对象 '{0}' 的实现者。</comment>
   </data>
   <data name="Object_PersistentOrThis" xml:space="preserve">
     <value>成员 ' {0}。{1}' 应持续或返回 'this'。</value>
+    <comment>Community:成员 '{0}.{1}' 应为持久化成员或返回 'this'。</comment>
   </data>
   <data name="Object_ReferencePropertyViaCollectionAccessor" xml:space="preserve">
     <value>试图通过集合访问器的引用属性设置.</value>
+    <comment>Community:尝试通过集合访问器设置引用属性。</comment>
   </data>
   <data name="ObjectLayer_MemberNotFound" xml:space="preserve">
     <value>成员 ' {0}。{1}' 找不到。</value>
+    <comment>Community:未找到成员 '{0}.{1}'。</comment>
   </data>
   <data name="ObjectLayer_XPClassInfoNotFound" xml:space="preserve">
     <value>ClassInfo '{0}' 找不到。</value>
+    <comment>Community:未找到类信息 '{0}'。</comment>
   </data>
   <data name="PersistentAliasExpander_NonPersistentCriteriaThisValueMember" xml:space="preserve">
     <value>无法查询数据存储区使用"{0}"使用非持久性属性 '{1}' 的标准。如果您在使用 '{0}' 作为 ValueMember 的查找，请改为使用空的 ValueMember.</value>
+    <comment>Community:无法使用条件 "{0}" 查询数据存储，因为该条件使用了非持久化属性 '{1}'。如果您将 '{0}' 用作查找控件的 ValueMember，请改用空的 ValueMember。</comment>
   </data>
   <data name="Security_DeletingAnObjectWasProhibitedByTheRules" xml:space="preserve">
     <value>删除 '{0}' 对象禁止的验证规则。</value>
+    <comment>Community:安全规则禁止删除 '{0}' 对象。</comment>
   </data>
   <data name="Security_ICommandChannel_TransferringRequestsIsProhibited" xml:space="preserve">
     <value>通过 ICommandChannel 转移请求禁止安全引擎内。</value>
+    <comment>Community:安全引擎内禁止通过 ICommandChannel 传输请求。</comment>
   </data>
   <data name="Security_SavingAnObjectWasProhibitedByTheRulesOfVal" xml:space="preserve">
     <value>保存 '{0}' 对象禁止的验证规则。</value>
+    <comment>Community:安全规则禁止保存 '{0}' 对象。</comment>
   </data>
   <data name="Security_SavingAnObjectWasProhibitedByTheRulesWProp" xml:space="preserve">
     <value>节能 ' {0}。{1}' 属性禁止的验证规则。</value>
+    <comment>Community:安全规则禁止保存属性 '{0}.{1}'。</comment>
   </data>
   <data name="Security_TheCommitOperationWasProhibitedByTheRules" xml:space="preserve">
     <value>提交操作禁止的验证规则。</value>
+    <comment>Community:安全规则禁止执行提交操作。</comment>
   </data>
   <data name="SerializableObjectLayer_OLDoesNotImplementptISerializableObjectLayerEx" xml:space="preserve">
     <value>对象层未实现 ISerializableObjectLayerEx.</value>
   </data>
   <data name="SerializableObjectLayer_OptimisticLockFieldInDLNotExists" xml:space="preserve">
     <value>ClassInfo '{0}' 已定义没有 OptimisticLockFieldInDataLayer.</value>
+    <comment>Community:类信息 '{0}' 未定义 OptimisticLockFieldInDataLayer。</comment>
   </data>
   <data name="SerializableObjectLayer_OptimisticLockFieldNotExists" xml:space="preserve">
     <value>ClassInfo '{0}' 已定义没有 OptimisticLockField.</value>
+    <comment>Community:类信息 '{0}' 未定义 OptimisticLockField。</comment>
   </data>
   <data name="SerOLHelpers_NestedParentMapIsNull" xml:space="preserve">
     <value>内部错误： NestedParentMap 和 ParentNestedMap 是 null。</value>
+    <comment>Community:内部错误：NestedParentMap 和 ParentNestedMap 均为 null。</comment>
   </data>
   <data name="ServerModeGridSource_GroupAndAddOrRemoveIsNotAllwed" xml:space="preserve">
     <value>不允许同时组和添加/删除项目。</value>
   </data>
   <data name="ServerModeGridSource_SummaryItemTypeNotSupported" xml:space="preserve">
     <value>内部错误: 指定的 SummaryItemType。不支持 {0}。</value>
+    <comment>Community:内部错误：不支持指定的 SummaryItemType.{0}。</comment>
   </data>
   <data name="ServerModeGridSource_WrongTopLevelAggregate" xml:space="preserve">
     <value>服务器或内部 XPO 错误： 多个组中一个顶级的聚合.</value>
+    <comment>Community:服务器错误或 XPO 内部错误：顶层聚合中存在多个组。</comment>
   </data>
   <data name="Session_CrossThreadFailureDetected" xml:space="preserve">
     <value>检测到跨线程操作。'{0}' 不是线程安全的对象，请避免从不同的线程同时使用</value>
+    <comment>Community:检测到跨线程操作。'{0}' 不是线程安全的对象，请避免从不同线程同时使用它</comment>
   </data>
   <data name="Session_DictConstractor" xml:space="preserve">
     <value>时使用会话 （XPDictionary 字典） 的构造函数，您必须指定有效的 Session.ConnectionString 前调用 Session.Connect 方法。</value>
   </data>
   <data name="Session_EnteringTheX0StateFromTheX1StateIsProhibit" xml:space="preserve">
     <value>从状态 '{2}' 进入状态 '{0}' 状态 '{1}' '{3}' 由于禁止。</value>
+    <comment>Community:由于 '{3}' 的状态 '{1}'，禁止从状态 '{2}' 进入状态 '{0}'。</comment>
   </data>
   <data name="Session_InternalXPOError" xml:space="preserve">
     <value>内部 XPO 错误。</value>
+    <comment>Community:XPO 内部错误。</comment>
   </data>
   <data name="Session_MostProbablyYouAreTryingToInitiateAnObject" xml:space="preserve">
     <value>最有可能，要启动时前一个对象保存操作尚未完成加载操作的对象。推迟您的操作，直到，Session.ObjectsSaved 或 IXPObject.OnSaved 的事件触发 (虽然 Session.IsObjectsSaving 是真的）。</value>
+    <comment>Community: 很可能，您正尝试在上一次对象保存操作尚未完成时启动对象加载操作。请推迟此操作，直到 Session.ObjectsSaved 或 IXPObject.OnSaved 事件触发（此时 Session.IsObjectsSaving 为 true）。</comment>
   </data>
   <data name="Session_MostProbablyYouAreTryingToInitiateAnObjectEx" xml:space="preserve">
     <value>最有可能，你想启动时加载操作的前一个对象尚未完成加载操作的对象。推迟您的操作，直到，Session.ObjectsLoaded 或 IXPObject.OnLoaded 的事件触发 (虽然 Session.IsObjectsLoading 是真的）。此异常的另一个原因是你正在试图同一个会话从不同的线程同时工作。</value>
+    <comment>Community: 很可能，您正尝试在上一次对象加载操作尚未完成时启动对象加载操作。请推迟此操作，直到 Session.ObjectsLoaded 或 IXPObject.OnLoaded 事件触发（此时 Session.IsObjectsLoading 为 true）。此异常的另一个原因是，您正尝试从不同线程同时使用同一会话。</comment>
   </data>
   <data name="Session_NotClassMember" xml:space="preserve">
     <value>'{0}' 不是成员的类 '{1}'.</value>
+    <comment>Community:'{0}' 不是类 '{1}' 的成员。</comment>
   </data>
   <data name="Session_ObjectModificationIsNotAllowed" xml:space="preserve">
     <value>会话处于 CommitChangesToDataLayerInner 状态时，不能修改对象。</value>
+    <comment>Community:会话处于 CommitChangesToDataLayerInner 状态时，无法修改对象。</comment>
   </data>
   <data name="Session_UnexpectedPersistentCriteriaEvaluationBehavior" xml:space="preserve">
     <value>内部错误: 指定的 PersistentCriteriaEvaluationBehavior。不支持 {0}。</value>
+    <comment>Community:内部错误：不支持指定的 PersistentCriteriaEvaluationBehavior.{0}。</comment>
   </data>
   <data name="Session_UnexpectedState" xml:space="preserve">
     <value>指定的会话状态。不支持 {0}。</value>
+    <comment>Community:不支持指定的 SessionState.{0}。</comment>
   </data>
   <data name="View_AtLeastOneFetchProperptyShouldBeDefined" xml:space="preserve">
     <value>应将至少一个属性定义为读取。</value>
   </data>
   <data name="View_IsInLoading" xml:space="preserve">
     <value>虽然它异步加载数据，但不能重新加载视图。</value>
+    <comment>Community:视图正在异步加载数据时，无法重新加载该视图。</comment>
   </data>
   <data name="InMemorySet_UniqueIndex" xml:space="preserve">
     <value>唯一索引 '{0}' 违反了。</value>
+    <comment>Community:违反了唯一索引 '{0}'。</comment>
   </data>
   <data name="LinqToXpo_DuplicateJoinOperatorFound" xml:space="preserve">
     <value>重复联接运算符发现。</value>
+    <comment>Community:发现重复的联接运算符。</comment>
   </data>
   <data name="Metadata_AssociationInvalid_NonPersistentClassInTheAssociation" xml:space="preserve">
     <value>关联属性无法用于成员 ' {0}。{1}' 因为类 '{2}' 不是持久性。</value>
+    <comment>Community:关联属性不能用于成员 '{0}.{1}'，因为类 '{2}' 不是持久化类。</comment>
   </data>
   <data name="Metadata_AssociationListExpected" xml:space="preserve">
     <value>关联列表或集合预计： ' {0}。{1}'.</value>
+    <comment>Community:应为关联列表或集合：'{0}.{1}'。</comment>
   </data>
   <data name="Metadata_TypeNotFound" xml:space="preserve">
     <value>类型 '{0}' 找不到。</value>
+    <comment>Community:未找到类型 '{0}'。</comment>
   </data>
   <data name="Session_LengthsOfTheCollectionsAreDifferentInArgs" xml:space="preserve">
     <value>集合的长度和参数不同。</value>
+    <comment>Community:参数中各集合的长度不同。</comment>
   </data>
   <data name="Session_AssociationListExpected" xml:space="preserve">
     <value>集合或协会名单预计。</value>
+    <comment>Community:应为集合或关联列表。</comment>
   </data>
   <data name="LinqToXpo_TheX0MethodIsNotSupported" xml:space="preserve">
     <value>不支持 {0} 方法。</value>
+    <comment>Approved</comment>
   </data>
   <data name="LinqToXpo_TheDeclaringTypeAssemblyNamePropertyIsEmpt" xml:space="preserve">
     <value>DeclaringTypeAssemblyName 属性为空。</value>
   </data>
   <data name="LinqToXpo_TheDeclaringTypeNamePropertyIsEmpty" xml:space="preserve">
     <value>DeclaringTypeName 属性为空。</value>
+    <comment>Approved</comment>
   </data>
   <data name="LinqToXpo_GroupingWithACustomComparerIsNotSupported" xml:space="preserve">
     <value>不支持具有自定义比较器的分组.</value>
+    <comment>Community:不支持使用自定义比较器进行分组。</comment>
   </data>
   <data name="LinqToXpo_SequenceContainsMoreThanOneElement" xml:space="preserve">
     <value>序列包含多个元素。</value>
+    <comment>Approved</comment>
   </data>
   <data name="LinqToXpo_SequenceContainsNoMatchingElement" xml:space="preserve">
     <value>序列中不包含任何匹配元素。</value>
+    <comment>Community:序列中没有匹配的元素。</comment>
   </data>
   <data name="DroneDataStore_CommitNotSupported" xml:space="preserve">
     <value>无法提交的更改，因为没有配置数据库连接 (目前使用的存根 (stub) 数据库提供程序)。请连接到数据存储区，它是描述在 https://help.devexpress.com/#CoreLibraries/CustomDocument2123</value>
+    <comment>Community:无法提交更改，因为尚未配置数据库连接（当前使用的是占位数据库提供程序）。请按照 https://docs.devexpress.com/XPO/2123/connect-to-a-data-store 中的说明连接到数据存储</comment>
   </data>
   <data name="LinqToXpo_DoesnTSupportNestedJoinsWithLevel" xml:space="preserve">
     <value>LinqToXpo 不支持两个以上的嵌套的联接。它不会影响到联接查询中的常见计数。</value>
   </data>
   <data name="LinqToXpo_ExpressionX0IsNotSupported" xml:space="preserve">
     <value>不支持表达式: {0}</value>
+    <comment>Community:不支持该表达式：{0}</comment>
   </data>
   <data name="LinqToXpo_SpecifiedJoinKeySelectorsNotCompatibleX0X1" xml:space="preserve">
     <value>'{0}' 和 '{1}' 联接键选择器不兼容。</value>
+    <comment>Community:联接键选择器 '{0}' 和 '{1}' 不兼容。</comment>
   </data>
   <data name="LinqToXpo_TheCallExpressionGenericReturnTypeX0" xml:space="preserve">
     <value>调用表达式应该有一个通用的返回类型: {0}</value>
+    <comment>Community:调用表达式应具有泛型返回类型：{0}</comment>
   </data>
   <data name="LinqToXpo_TheCallExpressionIsExpectedX0" xml:space="preserve">
     <value>预期调用表达式: {0}</value>
+    <comment>Community:需要调用表达式：{0}</comment>
   </data>
   <data name="LinqToXpo_TheCallExpressionReturnTypeX0" xml:space="preserve">
     <value>调用表达式应该有返回类型: {0}</value>
+    <comment>Community:调用表达式应具有返回类型：{0}</comment>
   </data>
   <data name="LinqToXpo_TheCallExpressionXPQueryX0" xml:space="preserve">
     <value>XPQuery 预计作为第一个参数为调用表达式: {0}</value>
+    <comment>Community:调用表达式的第一个参数应为 XPQuery：{0}</comment>
   </data>
   <data name="LinqToXpo_TheJoinWithManyTablesSimultaneouslyInASing" xml:space="preserve">
     <value>不支持具有多个表中单个运算符的联接操作。</value>
+    <comment>Community:不支持在单个运算符中对多个表执行联接操作。</comment>
   </data>
   <data name="LinqToXpo_TheLambdaExpressionWithSuchParametersIsNot" xml:space="preserve">
     <value>不支持这种参数的 lambda 表达式: {0}</value>
+    <comment>Community:不支持具有此类参数的 Lambda 表达式：{0}</comment>
   </data>
   <data name="LinqToXpo_X0WithSkipOrTakeOrGroupingIsNotSupported" xml:space="preserve">
     <value>不支持 {0} 与跳过或采取或分组。</value>
+    <comment>Community:不支持将 {0} 与 Skip、Take 或分组结合使用。</comment>
   </data>
   <data name="LinqToXpo_X0WithSoManyParametersIsNotSupported" xml:space="preserve">
     <value>不支持这么多参数 {0}。</value>
+    <comment>Community:不支持使用此数量参数的 {0}。</comment>
+  </data>
+  <data name="LinqToXpo_X0OperatorAfterSkipOrTakeIsNotSupported" xml:space="preserve">
+    <value>不支持在 Skip 或 Take 之后执行 {0}。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0OverGroupingIsNotSupported" xml:space="preserve">
+    <value>不支持对分组结果执行 {0}。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XpoServerMode_NonPersistentIsNotSupported" xml:space="preserve">
+    <value>服务器模式集合无法使用非持久化类 '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="View_AtLeastOneFetchPropertyShouldBeDefined" xml:space="preserve">
+    <value>应至少定义一个用于提取的属性。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_CannotPrepareQueryPlanX0" xml:space="preserve">
+    <value>无法构建查询计划，因为条件 '{0}' 无效。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadClassInfo_Dictionary" xml:space="preserve">
+    <value>无法更改 ObjectClassInfo。其字典与当前 Dictionary 不相同。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadClassInfo_DataSourceDictionary" xml:space="preserve">
+    <value>无法更改 ObjectClassInfo。其字典与 DataSource 的字典不相同。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadClassInfo_DataSource" xml:space="preserve">
+    <value>无法更改 ObjectClassInfo。DataSource 有自己的 ClassInfo。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadObjectType_DataSource" xml:space="preserve">
+    <value>无法更改 ObjectType。DataSource 有自己的 ClassInfo。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotConvertWindowsTimeZoneIdToIanaTimeZoneId" xml:space="preserve">
+    <value>无法将 Windows 时区标识符转换为 IANA 时区标识符。请设置 ConnectionProviderSql.MapWindowsToIanaTimeZoneId 委托以提供转换逻辑。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SqlConnectionProvider_CannotCreateAColumnForTheX0FieldWithTheX1D" xml:space="preserve">
+    <value>无法为字段 '{0}' 创建默认值为 '{1}' 的列。请为此字段指定其他默认值</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_PathNotFound" xml:space="preserve">
+    <value>无法找到路径 {0}-&gt;{1}。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_ClassesAreNotAssignable" xml:space="preserve">
+    <value>类“{0}”和“{1}”不能相互赋值。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ComplexDataSelectionIsNotSupportedPerhapsY" xml:space="preserve">
+    <value>不支持复杂的数据选取。您可能在选择器中使用了复杂的子查询。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_ConnectionPoolCannotBeUsed" xml:space="preserve">
+    <value>连接池不能与简单数据层一起使用</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_ConnectionStringEmpty" xml:space="preserve">
+    <value>使用非内存且非自定义的数据存储时，连接字符串不能为空</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CollectClassInfos_CouldNotLoadAssembly" xml:space="preserve">
+    <value>无法从程序集“{0}”中收集 ClassInfos。使用此程序集中的类时，ThreadSafeDataLayer 可能会引发 InvalidOperationException。有关详细信息，请参阅 InnerException。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ImageValueConverter_NotPresent" xml:space="preserve">
+    <value>无法在 'System.Drawing.Common' 程序集中找到 'System.Drawing.ImageConverter' 类。请使用 System.Drawing.Common 5.0 或更高版本。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_CouldNotAssignPropertyValue" xml:space="preserve">
+    <value>无法为属性 '{0}' 赋值。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_CouldNotFindAppropriateConstructor" xml:space="preserve">
+    <value>找不到适用于类型 '{0}' 的构造函数。需要无参数构造函数，或接受 XPDictionary 对象作为参数的构造函数。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_CouldNotResolvePropertyType" xml:space="preserve">
+    <value>无法解析 '{0}' 的属性类型。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_CurrentExpressionWithX0IsNotSupported" xml:space="preserve">
+    <value>不支持当前包含 {0} 的表达式。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_EntityTypesEmpty" xml:space="preserve">
+    <value>EntityTypes 不能为 null，且必须至少包含 1 项</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_CachedExpressionIsIncompatible" xml:space="preserve">
+    <value>表达式不兼容。它应由编译器生成，且仅包含静态参数。可使用 CachedExpression 方法的 a1、a2 和 a3 参数传递非静态参数。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_IncorrectDeclaringTypeX0InTheMethodCallQue" xml:space="preserve">
+    <value>方法调用中的声明类型 '{0}' 不正确。需要 'System.Linq.Queryable' 或 'System.Linq.Enumerable' 类型。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_InternalErrorAsyncActionIsAlreadyDisposed" xml:space="preserve">
+    <value>内部错误：异步操作已被释放。这可能是由 XPO 中的问题引起的。请联系 DevExpress 支持团队。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_ODataType_Mismatch" xml:space="preserve">
+    <value>无效的 '@odata.type' 注解：'{0}'。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CreateCollection_InvalidCastException" xml:space="preserve">
+    <value>属性“{2}.{3}”中从“{0}”到“{1}”的转换无效。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AmbiguousClassName" xml:space="preserve">
+    <value>类型名称 '{0}' 在类型 '{1}' 和类型 '{2}' 之间存在歧义，无法解析其 ClassInfo</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_CanChangeViewProperties" xml:space="preserve">
+    <value>XPInstantFeedbackView 已被网格使用时，无法更改其属性。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServerModeGridSource_GroupAndAddOrRemoveIsNotAllowed" xml:space="preserve">
+    <value>不允许同时进行分组和添加/移除项。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_NullJoinClassInfo" xml:space="preserve">
+    <value>JoinClassInfo 为空值。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_EmptyJoinOperandId" xml:space="preserve">
+    <value>JoinOperandId 为空。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_LambdaExpressionIsExpectedX0" xml:space="preserve">
+    <value>需要 Lambda 表达式：{0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_DoesNotSupportNestedJoinsWithLevel" xml:space="preserve">
+    <value>LinqToXpo 不支持两个以上的嵌套联接。这不影响查询中的联接总数。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NonPersistentKey" xml:space="preserve">
+    <value>发现非持久化键 '{0}.{1}'。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NullableAttributeNotApplicable" xml:space="preserve">
+    <value>Nullable 属性不能应用于类 {1} 的成员 {0}，因为该成员不是持久化成员、是别名成员、是多对多别名成员或具有对象引用类型。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="NestedSession_NotCloneable" xml:space="preserve">
+    <value>无法克隆对象层次结构，因为成员 '{0}.{1}' 在操作期间发生了更改。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerializableObjectLayer_OLDoesNotImplementISerializableObjectLayerEx" xml:space="preserve">
+    <value>对象层未实现 ISerializableObjectLayerEx。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_QueryWithAppliedTheSkipOrTheTakeOperations" xml:space="preserve">
+    <value>应用了 Skip 或 Take 操作的查询不能用于联接。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SessionIsNull" xml:space="preserve">
+    <value>Session 为空。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SortingIsNotSupportedForSelectManyOperation" xml:space="preserve">
+    <value>对多对多集合执行 SelectMany 操作时不支持排序。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_TableNotFound" xml:space="preserve">
+    <value>未找到表 '{0}'。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_MethodX0ForX1IsNotSupported" xml:space="preserve">
+    <value>{1} 不支持 '{0}' 方法。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProvider_TheAutoIncrementedKeyWithX0TypeIsNotSupport" xml:space="preserve">
+    <value>“{1}”不支持类型为“{0}”的自增键</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CustomAggregate_DoesNotImplementInterface" xml:space="preserve">
+    <value>自定义聚合函数“{0}”未实现接口“{1}”。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CustomAggregate_NotFound" xml:space="preserve">
+    <value>自定义聚合函数“{0}”尚未注册。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_DataSetUncommitted" xml:space="preserve">
+    <value>'data' 参数包含具有未提交更改的 DataSet。请在创建 DataSetDataStore 类的新实例之前调用 DataSet.AcceptChanges 方法。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ASE_CommandNotAllowedWithinMultiStatementTransaction" xml:space="preserve">
+    <value>数据库不支持在事务中创建或修改数据库结构。要执行此操作，必须将数据库配置为支持在事务中修改数据库结构，或在更新数据库结构时禁用事务。为此，请设置字段 ExecuteUpdateSchemaInTransaction = false（针对当前提供程序实例），或设置字段 GlobalExecuteUpdateSchemaInTransaction = false（针对提供程序的所有实例）。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheDeclaringTypeAssemblyNamePropertyIsEmpty" xml:space="preserve">
+    <value>DeclaringTypeAssemblyName 属性为空。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ElemAtOperationIsNotSupportedWithoutSorting" xml:space="preserve">
+    <value>未排序时不支持 ElementAt 操作。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InitOperator_DeserializationProhibitedDueSecurityIssue" xml:space="preserve">
+    <value>无法反序列化该表达式，因为它包含不安全的类型。禁止反序列化不安全的类型。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ExpressionX0IsNotSupportedInX1" xml:space="preserve">
+    <value>在 {1} 中不支持该表达式：{0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_FetchOnlyAttributeNotApplicable" xml:space="preserve">
+    <value>FetchOnly 属性不能应用于 {0}.{1}，因为目标成员不是持久化成员、是别名成员、是多对多别名成员、是键或是嵌套结构的一部分。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_FetchOnlyAttributeNotApplicableToReference" xml:space="preserve">
+    <value>FetchOnly 属性不能应用于 {0}.{1}，因为目标成员为引用类型。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SkipOperationIsNotSupportedWithoutSorting" xml:space="preserve">
+    <value>未排序时不支持 Skip 操作。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PostgreSQL_CommandPoolNotSupported" xml:space="preserve">
+    <value>PosgreSQL {1} 不支持指定的 CommandPoolBehavior.{0}。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_WithDeletedOptionNotSupported" xml:space="preserve">
+    <value>不支持 WithDeleted 选项，因为 XPQuery 是使用 DataLayer 初始化的。要使用 WithDeleted 选项，请使用 XPQuery(Session) 或 XPQuery(Session, Boolean) 构造函数。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XpoDefault_CustomGuidGenerationHandlerCannotBeNull" xml:space="preserve">
+    <value>XpoDefault.CustomGuidGenerationHandler 字段的值为 null。如果将 XpoDefault.GuidGenerationMode 字段设置为 'Custom'，则应为此字段指定自定义委托。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PostgreSQL_LegacyGuidDetected" xml:space="preserve">
+    <value>为避免此异常，请将 DevExpress.Xpo.DB.PostgreSqlConnectionProvider 的 UseLegacyGuidSupport 字段或静态 GlobalUseLegacyGuidSupport 字段设置为 'true'。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_TopLevelAggregateNotSupported" xml:space="preserve">
+    <value>条件中不能使用顶层聚合。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_NullTransitionMemberInfo" xml:space="preserve">
+    <value>过渡 MemberInfo 为空值。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_NoConstructor" xml:space="preserve">
+    <value>类型 {0} 没有参数为 {1} 的构造函数。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_UnexpectedToken" xml:space="preserve">
+    <value>位置 {1} 处出现意外标记 '{0}'。需要 'StartObject'。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="VistaDB_UpdatingSchemaIsForbiddenWhileExplicitTran" xml:space="preserve">
+    <value>显式事务尚未结束时，禁止更新架构。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_DictConstructor" xml:space="preserve">
+    <value>使用 Session(XPDictionary dictionary) 构造函数时，必须在调用 Session.Connect 方法之前指定有效的 Session.ConnectionString。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_YouCannotApplyTheMapInheritanceParentTable" xml:space="preserve">
+    <value>不能将参数值为 ParentTable 的 MapInheritance 属性应用于没有持久化父类的类。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_CommandChannelDoesNotImplementICommandChannelAsync" xml:space="preserve">
+    <value>您的命令通道“{0}”不支持“DevExpress.Xpo.Helpers.ICommandChannelAsync”接口。请实现此接口，或使用其他兼容的命令通道。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="WebApi_ICacheToCacheCommunicationCore_NotImplemented" xml:space="preserve">
+    <value>您的连接提供程序 '{0}' 不支持 'DevExpress.Xpo.DB.ICacheToCacheCommunicationCore' 接口。请使用 'DevExpress.Xpo.DB.DataCacheRoot' 实例将其包装。有关详细信息，请参阅以下帮助主题：https://docs.devexpress.com/XPO/402182。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_ConnectionProviderDoesNotImplementIDataStoreAsync" xml:space="preserve">
+    <value>您的连接提供程序“{0}”不支持“DevExpress.Xpo.DB.IDataStoreAsync”接口。请实现此接口，或使用其他兼容的连接提供程序。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_DataLayerDoesNotImplementIDataLayerAsync" xml:space="preserve">
+    <value>您的数据层“{0}”不支持“DevExpress.Xpo.IDataLayerAsync”接口。请实现此接口，或使用其他兼容的数据层。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_ObjectLayerDoesNotImplementIObjectLayerAsync" xml:space="preserve">
+    <value>您的对象层不支持“DevExpress.Xpo.IObjectLayerAsync”接口。请在“{0}”类中实现此接口，或使用其他兼容的对象层。</value>
+    <comment>AI</comment>
   </data>
 </root>

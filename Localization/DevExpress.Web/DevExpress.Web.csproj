@@ -1,23 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net462</TargetFramework>
-    <EnableWindowsTargeting>true</EnableWindowsTargeting>
-    <AssemblyName>DevExpress.Web.v26.1</AssemblyName>
+    <AssemblyName>DevExpress.Web.v26.2</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>true</DelaySign>
+    <AssemblyOriginatorKeyFile>..\DevExpress.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>DevExpress.Web</RootNamespace>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <OutputPath>..\DevExpress.Dll\Framework\</OutputPath>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Include="..\AssemblyVersion.cs">
-      <Link>AssemblyVersion.cs</Link>
-    </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="Common\LocalizationRes.resx" />
     <EmbeddedResource Include="Common\LocalizationRes.ar.resx" />
@@ -306,5 +301,15 @@
     <EmbeddedResource Include="Common\LocalizationRes.uz-Cyrl-UZ.resx" />
     <EmbeddedResource Include="Common\LocalizationRes.uz-Latn-UZ.resx" />
     <EmbeddedResource Include="Common\LocalizationRes.ky.resx" />
+    <EmbeddedResource Include="Edit\LocalizationRes.es-MX.resx" />
+    <EmbeddedResource Include="Grid\LocalizationRes.es-MX.resx" />
+    <EmbeddedResource Include="Edit\LocalizationRes.af.resx" />
+    <EmbeddedResource Include="Grid\LocalizationRes.af.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
 </Project>

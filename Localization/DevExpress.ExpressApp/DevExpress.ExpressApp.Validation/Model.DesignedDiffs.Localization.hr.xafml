@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ShowAllContexts" Caption="Provjeri" ToolTip="Provjeri odabrane objekte u svim predstavljenim kontekstima" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ContextValidationResult" Caption="Rezultati provjere konteksta">
+      <OwnMembers>
+        <Member Name="BrokenRules" Caption="Neispravna pravila" />
+        <Member Name="Context" Caption="Kontekst" />
+        <Member Name="DisplayableValidationResultItems" Caption="Prikazujuće stavke rezultata provjere" />
+        <Member Name="State" Caption="Stanje" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.DisplayableValidationResultItem" Caption="Detalji validacije">
+      <OwnMembers>
+        <Member Name="ContextCaption" Caption="Naslov konteksta" />
+        <Member Name="ContextId" Caption="Id konteksta" />
+        <Member Name="ErrorMessage" Caption="Poruka greške" />
+        <Member Name="Rule" Caption="Pravilo" />
+        <Member Name="RuleName" Caption="Naziv pravila" />
+        <Member Name="RuleProperties" Caption="Svojstva pravila" />
+        <Member Name="State" Caption="Stanje" />
+        <Member Name="TargetCaption" Caption="Cilj" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ValidationResults" Caption="Rezultati provjere">
+      <OwnMembers>
+        <Member Name="DisplayableValidationResultItems" Caption="Prikazujuće stavke rezultata provjere" />
+        <Member Name="HighlightErrors" Caption="Posvijetli greške" />
+        <Member Name="Results" Caption="Rezultati" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleBaseProperties">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Predložak za korisničke poruke" />
+        <Member Name="InvertResult" Caption="Izokreni rezultate" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Predložak poruke Skip Null ili Empty Values" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Predložak poruke Target Does Not Satisfy Target Criteria" />
+        <Member Name="Name" Caption="Naziv" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Skip Null ili Empty Values" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCollectionPropertyProperties">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Predložak korisničke poruke" />
+        <Member Name="InvertResult" Caption="Izokreni rezultat" />
+        <Member Name="Name" Caption="Naziv" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCombinationOfPropertiesIsUniqueProperties">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Predložak korisničke poruke" />
+        <Member Name="InvertResult" Caption="Izokreni rezultat" />
+        <Member Name="Name" Caption="Naziv" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCriteriaProperties">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Predložak korisničke poruke" />
+        <Member Name="InvertResult" Caption="Izokreni rezultat" />
+        <Member Name="Name" Caption="Naziv" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleFromBoolPropertyProperties">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Predložak korisničke poruke" />
+        <Member Name="InvertResult" Caption="Izokreni rezultat" />
+        <Member Name="Name" Caption="Naziv" />
+        <Member Name="UsedProperties" Caption="Korištena svojstva" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleIsReferencedProperties">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Predložak korisničke poruke" />
+        <Member Name="InvertResult" Caption="Izokreni rezultat" />
+        <Member Name="LooksFor" Caption="Traži" />
+        <Member Name="Name" Caption="Naziv" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleObjectExistsProperties">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Predložak korisničke poruke" />
+        <Member Name="InvertResult" Caption="Izokreni rezultat" />
+        <Member Name="LooksFor" Caption="ooks For" />
+        <Member Name="Name" Caption="Naziv" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRulePropertyValueProperties">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Predložak korisničke poruke" />
+        <Member Name="InvertResult" Caption="Izokreni rezultat" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRangeProperties">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Predložak korisničke poruke" />
+        <Member Name="InvertResult" Caption="Izokreni rezultat" />
+        <Member Name="MaximumValue" Caption="Najveća vrijednost" />
+        <Member Name="MaximumValueExpression" Caption="Izraz za najveću vrijednost" />
+        <Member Name="MinimumValue" Caption="Najmanja vrijednost" />
+        <Member Name="MinimumValueExpression" Caption="Izraz za najmanju vrijednost" />
+        <Member Name="Name" Caption="Naziv" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRegularExpressionProperties">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Predložak korisničke poruke" />
+        <Member Name="InvertResult" Caption="Izokreni rezultat" />
+        <Member Name="Name" Caption="Naziv" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRequiredFieldProperties">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Predložak korisničke poruke" />
+        <Member Name="InvertResult" Caption="Izokreni rezultat" />
+        <Member Name="Name" Caption="Naziv" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleSearchObjectProperties">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Predložak korisničke poruke" />
+        <Member Name="Name" Caption="Naziv" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleStringComparisonProperties">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Predložak korisničke poruke" />
+        <Member Name="IgnoreCase" Caption="Zanemari veličinu slova" />
+        <Member Name="InvertResult" Caption="Izokreni rezultat" />
+        <Member Name="Name" Caption="Naziv" />
+        <Member Name="OperandValue" Caption="Vrijednost operatora" />
+        <Member Name="OperatorType" Caption="Tio operatora" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleSupportsCollectionAggregatesProperties">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Predložak korisničke poruke" />
+        <Member Name="InvertResult" Caption="Izokreni rezultat" />
+        <Member Name="Name" Caption="Naziv" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleUniqueValueProperties">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Predložak korisničke poruke" />
+        <Member Name="InvertResult" Caption="Izokreni rezultat" />
+        <Member Name="Name" Caption="Naziv" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleValueComparisonProperties">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Predložak korisničke poruke" />
+        <Member Name="InvertResult" Caption="Izokreni rezultat" />
+        <Member Name="Name" Caption="Naziv" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleBaseProperties">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Predložak korisničke poruke" />
+        <Member Name="InvertResult" Caption="Izokreni rezultat" />
+        <Member Name="Name" Caption="Naziv" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleFromBoolPropertyProperties">
+      <OwnMembers>
+        <Member Name="UsedProperties" Caption="Korištena svojstva" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleIsReferencedProperties">
+      <OwnMembers>
+        <Member Name="LooksFor" Caption="Traži" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResult" Caption="Razultati provjere">
+      <OwnMembers>
+        <Member Name="Results" Caption="Rezultati" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResultItem" Caption="Detalji provjere">
+      <OwnMembers>
+        <Member Name="ErrorMessage" Caption="Poruke greške" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleStringComparisonProperties">
+      <OwnMembers>
+        <Member Name="IgnoreCase" Caption="Zanemari veličinu slova" />
+        <Member Name="OperandValue" Caption="Vrijednost operatora" />
+        <Member Name="OperatorType" Caption="Tip operatora" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleValueComparisonProperties">
+      <OwnMembers>
+        <Member Name="OperatorType" Caption="Tip operatora" />
+        <Member Name="RightOperand" Caption="Desni Operand" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.Data.Filtering.Aggregate" Value="Agregat">
+        <LocalizationItem Name="Avg" Value="Prosjek" />
+        <LocalizationItem Name="Count" Value="Prebroji" />
+        <LocalizationItem Name="Exists" Value="Postoji" />
+        <LocalizationItem Name="Sum" Value="Zbroj" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Validation.AllContextsView.IsValid" Value="Ispravan?">
+        <LocalizationItem Name="Invalid" Value="Neispravan" />
+        <LocalizationItem Name="Valid" Value="Ispravan" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.StringComparisonType" Value="Tip usporedbe teksta">
+        <LocalizationItem Name="Contains" Value="Sadrži" />
+        <LocalizationItem Name="EndsWith" Value="Završava s" />
+        <LocalizationItem Name="Equals" Value="Jednak" />
+        <LocalizationItem Name="NotEquals" Value="Različit" />
+        <LocalizationItem Name="StartsWith" Value="Počinje s" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValidationState" Value="Stanje provjere">
+        <LocalizationItem Name="Invalid" Value="Neispravan" />
+        <LocalizationItem Name="Skipped" Value="Preskočen" />
+        <LocalizationItem Name="Valid" Value="Ispravan" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValueComparisonType" Value="Tip usporedbe vrijednosti">
+        <LocalizationItem Name="Equals" Value="Jednak" />
+        <LocalizationItem Name="GreaterThan" Value="Veći od" />
+        <LocalizationItem Name="GreaterThanOrEqual" Value="Veći od ili jednak" />
+        <LocalizationItem Name="LessThan" Value="Manji od" />
+        <LocalizationItem Name="LessThanOrEqual" Value="Manji od ili jednak" />
+        <LocalizationItem Name="NotEquals" Value="Različit" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Xpo.PersistentCriteriaEvaluationBehavior">
+        <LocalizationItem Name="BeforeTransaction" Value="Prije transakcije" />
+        <LocalizationItem Name="InTransaction" Value="U transakciji" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <Validation>
+    <ErrorMessageTemplates>
+      <RuleBase MessageTemplateSkipNullOrEmptyValues="Pravilo &quot;{Id}&quot; nije izvršeno jer nisu određena svojstva ciljnog objekta." MessageTemplateTargetDoesNotSatisfyTargetCriteria="Pravilo &quot;{Id}&quot; nije izvršeno jer ciljni objekta ne udovoljava kriteriju ciljnog objekta pravila." />
+      <RuleCollectionProperty MessageTemplateTargetDoesNotSatisfyCollectionCriteria="Pravilo &quot;{Id}&quot; nije izvršeno jer ciljni objekt nije element kolekcije &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot;." MessageTemplateCollectionValidationMessageSuffix="(Za elemente kolekcije &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot;)." />
+      <RuleCombinationOfPropertiesIsUnique MessageTemplateCombinationOfPropertiesMustBeUnique="Kombinacija sljedećih svojstava mora biti jedinstvena: {FormattedTargetProperties}." MessageTemplateFoundObjects="Pronađeni su sljedeći objekti: " />
+      <RuleCriteria MessageTemplateMustSatisfyCriteria="Objekt &quot;{TargetObject}&quot; mora udovoljavati sljedećim uvjetim: &quot;{Criteria}&quot;." />
+      <RuleFromBoolProperty MessageTemplateMustBeTrue="&quot;{TargetPropertyName}&quot; mora biti postavljen na 'true'." />
+      <RuleIsReferenced MessageTemplateMustBeReferenced="Objekt &quot;{TargetObject}&quot; mora biti referenciran." MessageTemplateFoundObjects="Pronađeni su sljedeći objekti: " />
+      <RuleObjectExists MessageTemplateMustExist="Mora postojati objekt koji udovoljava uvjetu &quot;{Criteria}&quot;." MessageTemplateFoundObjects="Pronađeni su sljedeći objekti: " />
+      <RuleRange MessageTemplateMustBeInRange="&quot;{TargetPropertyName}&quot; mora biti u rasponu između &quot;{MinimumValue}&quot; i &quot;{MaximumValue}&quot;, uključujući i granice." />
+      <RuleRegularExpression MessageTemplateMustMatchPattern="&quot;{TargetPropertyName}&quot; mora odgovarati sljedećem uzorku: &quot;{Pattern}&quot;." />
+      <RuleRequiredField MessageTemplateMustNotBeEmpty="&quot;{TargetPropertyName}&quot; ne smije biti prazno." />
+      <RuleSearchObject MessageTemplateFoundObjects="Pronađeni su sljedeći objekti: " />
+      <RuleStringComparison MessageTemplateMustContain="&quot;{TargetPropertyName}&quot; mora sadržavati &quot;{OperandValue}&quot;." MessageTemplateMustBeginWith="&quot;{TargetPropertyName}&quot; mora početi s &quot;{OperandValue}&quot;." MessageTemplateMustEndWith="&quot;{TargetPropertyName}&quot; mora završavati s &quot;{OperandValue}&quot;." MessageTemplateMustBeEqual="&quot;{TargetPropertyName}&quot; mora biti jednak &quot;{OperandValue}&quot;." MessageTemplateMustNotBeEqual="&quot;{TargetPropertyName}&quot; mora biti različit od &quot;{OperandValue}&quot;." />
+      <RuleUniqueValue MessageTemplateMustBeUnique="Postoji objekt s istom vrijednošću za &quot;{TargetPropertyName}&quot;. &quot;{TargetPropertyName}&quot; vrijednosti moraju biti jedinstvene." />
+      <RuleValueComparison MessageTemplateMustBeEqualToOperand="&quot;{TargetPropertyName}&quot; mora biti jednak &quot;{RightOperand}&quot;." MessageTemplateMustBeGreaterThanOperand="&quot;{TargetPropertyName}&quot; mora biti veći od &quot;{RightOperand}&quot;." MessageTemplateMustBeGreaterThanOrEqualToOperand="&quot;{TargetPropertyName}&quot; mora biti veći ili jednak &quot;{RightOperand}&quot;." MessageTemplateMustBeLessThanOperand="&quot;{TargetPropertyName}&quot; mora biti manji od &quot;{RightOperand}&quot;." MessageTemplateMustBeLessThanOrEqualToOperand="&quot;{TargetPropertyName}&quot; mora biti manji ili jednak od &quot;{RightOperand}&quot;." MessageTemplateMustNotBeEqualToOperand="&quot;{TargetPropertyName}&quot; mora biti različit od &quot;{RightOperand}&quot;." />
+    </ErrorMessageTemplates>
+  </Validation>
+  <Views>
+    <DetailView Id="DisplayableValidationResultItem_DetailView">
+      <Items>
+        <PropertyEditor Id="RuleProperties" Caption="Detalji Pravila" />
+      </Items>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResult_ByTarget_Error_DetailView">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="Tijekom validacije podataka, pojavili su se problemi. Pročitajte informacije niže kako bi saznali koji problemi su se pojavili i kako ih otkloniti. " />
+      </Items>
+    </DetailView>
+    <ListView Id="RuleSetValidationResultItem_ByTarget_ListView">
+      <Columns>
+        <ColumnInfo Id="ErrorMessage" Caption="Opis" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ValidationResults_Error_DetailView">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="Tijekom validacije podataka, pojavili su se problemi. Pročitajte informacije niže kako bi saznali koji problemi su se pojavili i kako ih otkloniti. " />
+      </Items>
+    </DetailView>
+    <DetailView Id="ValidationResults_Passed_DetailView">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="Nije se pojavio ni jedan problem. " />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>

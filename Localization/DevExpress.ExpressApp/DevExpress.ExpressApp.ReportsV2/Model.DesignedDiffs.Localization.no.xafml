@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ShowInReportV2" Caption="Vis i rapport" ToolTip="Vis merkede poster i en rapport" />
+      <Action Id="PreviewReportV2" Caption="Forhåndsvisning" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.ReportDataV2" Caption="Rapport">
+      <OwnMembers>
+        <Member Name="DataTypeCaption" Caption="Datatype" />
+        <Member Name="IsInplaceReport" Caption="Er inplace rapport" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.EF.ReportDataV2" Caption="Rapport">
+      <OwnMembers>
+        <Member Name="DataTypeCaption" Caption="Datatype" />
+        <Member Name="IsInplaceReport" Caption="Er inplace rapport" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.ReportsV2.NewReportWizardParameters" Caption="Ny Xaf rapport veileder parametere">
+      <OwnMembers>
+        <Member Name="DataType" Caption="Datatype" />
+        <Member Name="ReportType" Caption="Rapporttype" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.ReportsV2.ReportType">
+        <LocalizationItem Name="Label" Value="Etikett" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems RelatedReportsGroupCaption="Rapporter" />
+  <Views>
+    <ListView Id="DevExpress.Persistent.BaseImpl.XtraReportData_ListView" Caption="Rapporter" />
+  </Views>
+</Application>

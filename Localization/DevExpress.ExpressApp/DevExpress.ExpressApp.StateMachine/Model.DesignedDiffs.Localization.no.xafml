@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.StateMachine.StateMachine" Caption="Status maskin">
+      <OwnMembers>
+        <Member Name="InitialState" Caption="Starttilstand" />
+        <Member Name="Name" Caption="navn" />
+        <Member Name="States" Caption="Tilstander" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.StateMachineItem" Caption="Tilstand maskin element">
+      <OwnMembers>
+        <Member Name="State" Caption="Tilstand" />
+        <Member Name="StateHistoryItems" Caption="Tilstand historiske elementer" />
+        <Member Name="StateMachine" Caption="Tilstand maskin" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.WFAction" Caption="Handling">
+      <OwnMembers>
+        <Member Name="EndState" Caption="Slutt tilstand" />
+        <Member Name="Name" Caption="navn" />
+        <Member Name="ReasonRequired" Caption="Årsak påkrevd" />
+        <Member Name="StartState" Caption="Start tilstand" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.WFHistoryItem" Caption="Tilstand historie">
+      <OwnMembers>
+        <Member Name="ActionName" Caption="Handling" />
+        <Member Name="Reason" Caption="Årsak" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.WFState" Caption="Tilstand">
+      <OwnMembers>
+        <Member Name="Actions" Caption="Handlinger" />
+        <Member Name="Name" Caption="navn" />
+        <Member Name="StateMachine" Caption="Status maskin" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+</Application>

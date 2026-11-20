@@ -15,4 +15,5 @@ using DevExpress.Internal;
 [assembly: AssemblyProduct("DevExpress.Xpo")]
 [assembly: AssemblyCulture("")]
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+
 [assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]

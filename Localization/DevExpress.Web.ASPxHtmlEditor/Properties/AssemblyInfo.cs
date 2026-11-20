@@ -8,5 +8,7 @@ using DevExpress.Internal;
 [assembly: ComVisible(false)]
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
 [assembly: AssemblyProduct("DevExpress.Web.ASPxHtmlEditor")]
+
 [assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
+
 [assembly: AssemblyCompany("Developer Express Inc.")]

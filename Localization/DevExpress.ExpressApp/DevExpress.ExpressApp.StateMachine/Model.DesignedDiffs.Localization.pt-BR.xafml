@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ChangeStateAction" Caption="Alterar Estado" ToolTip="Alterar estado do objeto atual" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCState">
+      <OwnMembers>
+        <Member Name="Appearances" Caption="Aparências" />
+        <Member Name="Caption" Caption="Título" />
+        <Member Name="Marker" Caption="Marcador" />
+        <Member Name="MarkerObject" Caption="Objeto Marcador" />
+        <Member Name="StateMachine" Caption="Máquina de Estados" />
+        <Member Name="TargetObjectCriteria" Caption="Critério Objeto Destino" />
+        <Member Name="Transitions" Caption="Transições" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCStateAppearance">
+      <OwnMembers>
+        <Member Name="AppearanceItemType" Caption="Tipo de Aparência do Item" />
+        <Member Name="BackColor" Caption="Cor de fundo" />
+        <Member Name="Context" Caption="Contexto" />
+        <Member Name="Criteria" Caption="Critério" />
+        <Member Name="DeclaringType" Caption="Tipo Declaração" />
+        <Member Name="Enabled" Caption="Habilitado" />
+        <Member Name="FontColor" Caption="Cor da Fonte" />
+        <Member Name="FontStyle" Caption="Estilo da Fonte" />
+        <Member Name="Method" Caption="Método" />
+        <Member Name="Priority" Caption="Prioridade" />
+        <Member Name="State" Caption="Estado" />
+        <Member Name="TargetItems" Caption="Item Destino" />
+        <Member Name="Visibility" Caption="Visibilidade" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCStateMachine">
+      <OwnMembers>
+        <Member Name="Active" Caption="Ativo" />
+        <Member Name="ExpandActionsInDetailView" Caption="Mostrar Ações na Visão Detalhada" />
+        <Member Name="Name" Caption="Nome" />
+        <Member Name="StartState" Caption="Estado Inicial" />
+        <Member Name="StatePropertyName" Caption="Nome da Propriedade Estado" />
+        <Member Name="States" Caption="Estados" />
+        <Member Name="TargetObjectType" Caption="Tipo Objeto Destino" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCTransition">
+      <OwnMembers>
+        <Member Name="Caption" Caption="Título" />
+        <Member Name="SourceState" Caption="Estado Origem" />
+        <Member Name="TargetState" Caption="Estado Destino" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Utils.MarkerObject" Caption="Objeto Marcador">
+      <OwnMembers>
+        <Member Name="DisplayName" Caption="Nome para Exibição" />
+        <Member Name="Marker" Caption="Marcador" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.StateMachineObjectBase" Caption="Objeto Base da Máquina de Estados" />
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoState" Caption="Estado">
+      <OwnMembers>
+        <Member Name="Appearance" Caption="Aparência" />
+        <Member Name="Caption" Caption="Título" />
+        <Member Name="Marker" Caption="Marcador" />
+        <Member Name="StateMachine" Caption="Máquina de Estados" />
+        <Member Name="TargetObjectCriteria" Caption="Critério Objeto Destino" />
+        <Member Name="Transitions" Caption="Transições" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoStateAppearance" Caption="Aparência">
+      <OwnMembers>
+        <Member Name="AppearanceItemType" Caption="Tipo de Aparência do Item" />
+        <Member Name="BackColor" Caption="Cor de fundo" />
+        <Member Name="Context" Caption="Contexto" />
+        <Member Name="Enabled" Caption="Habilitado" />
+        <Member Name="FontColor" Caption="Cor da Fonte" />
+        <Member Name="FontStyle" Caption="Estilo da Fonte" />
+        <Member Name="Priority" Caption="Prioridade" />
+        <Member Name="TargetItems" Caption="Item Destino" />
+        <Member Name="Visibility" Caption="Visibilidade" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoStateMachine" Caption="Máquina de Estados">
+      <OwnMembers>
+        <Member Name="Active" Caption="Ativo" />
+        <Member Name="ExpandActionsInDetailView" Caption="Mostrar Ações na Visão Detalhada" />
+        <Member Name="Name" Caption="Nome" />
+        <Member Name="StartState" Caption="Estado Inicial" />
+        <Member Name="StatePropertyName" Caption="Nome da Propriedade Estado" />
+        <Member Name="States" Caption="Estados" />
+        <Member Name="TargetObjectType" Caption="Tipo Objeto Destino" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoTransition" Caption="Transição">
+      <OwnMembers>
+        <Member Name="Caption" Caption="Título" />
+        <Member Name="SourceState" Caption="Estado Origem" />
+        <Member Name="TargetState" Caption="Estado Destino" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Editors.ViewItemVisibility" Value="Visibilidade do Item da Visão">
+        <LocalizationItem Name="Hide" Value="Oculto" />
+        <LocalizationItem Name="Show" Value="Mostrar" />
+        <LocalizationItem Name="ShowEmptySpace" Value="Mostrar espaços vazios" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="System.Drawing.FontStyle" Value="Estilo da Fonte">
+        <LocalizationItem Name="Bold" Value="Negrito" />
+        <LocalizationItem Name="Italic" Value="Itálico" />
+        <LocalizationItem Name="Strikeout" Value="Tachado" />
+        <LocalizationItem Name="Underline" Value="Sublinhado" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <Validation>
+    <Rules>
+      <RuleIsReferenced Id="StateIsReferencedDc" MessageTemplateMustBeReferenced="Se você deseja excluir este Estado, você deve ter certeza que ele não é referenciado em nenhuma Transição como TargetState." />
+      <RuleIsReferenced Id="StateIsReferencedXpo" MessageTemplateMustBeReferenced="Se você deseja excluir este Estado, você deve ter certeza que ele não é referenciado em nenhuma Transição como TargetState." />
+    </Rules>
+  </Validation>
+</Application>

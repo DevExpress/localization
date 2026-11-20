@@ -1,32 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net462;net8.0</TargetFrameworks>
-    <EnableWindowsTargeting>true</EnableWindowsTargeting>
-    <AssemblyName>DevExpress.Xpf.Core.v26.1</AssemblyName>
+    <TargetFrameworks>net462;net10.0</TargetFrameworks>
+    <AssemblyName>DevExpress.Xpf.Core.v26.2</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>true</DelaySign>
+    <AssemblyOriginatorKeyFile>..\DevExpress.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>DevExpress.Xpf.Core</RootNamespace>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\$(TargetFramework)\</IntermediateOutputPath>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(TargetFramework)' == 'net462'">
     <OutputPath>..\DevExpress.Dll\Framework\</OutputPath>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0'">
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net10.0'">
     <OutputPath>..\DevExpress.Dll\NETCore\</OutputPath>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Include="..\AssemblyVersion.cs">
-      <Link>AssemblyVersion.cs</Link>
-    </Compile>
-    <Compile Include="AssemblyInfo.cs" />
-    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
-  </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="Bars\LocalizationRes.et.resx" />
     <EmbeddedResource Include="Bars\LocalizationRes.hi.resx" />
@@ -612,9 +604,21 @@
     <EmbeddedResource Include="Bars\LocalizationRes.uz-Cyrl-UZ.resx" />
     <EmbeddedResource Include="Bars\LocalizationRes.uz-Latn-UZ.resx" />
     <EmbeddedResource Include="Bars\LocalizationRes.ky.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.hi.resx" />
+    <EmbeddedResource Include="Core\SearchPanelRes.hi.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.es-MX.resx" />
+    <EmbeddedResource Include="Core\SearchPanelRes.es-MX.resx" />
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.es-MX.resx" />
+    <EmbeddedResource Include="Editors\LocalizationRes.es-MX.resx" />
+    <EmbeddedResource Include="Core\ConditionalFormatting\LocalizationRes.af.resx" />
+    <EmbeddedResource Include="Core\SearchPanelRes.af.resx" />
+    <EmbeddedResource Include="Core\Window\DXMessageBoxRes.af.resx" />
+    <EmbeddedResource Include="Editors\LocalizationRes.af.resx" />
   </ItemGroup>
-
   <ItemGroup>
-    <Folder Include="Properties\" />
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
   </ItemGroup>
 </Project>

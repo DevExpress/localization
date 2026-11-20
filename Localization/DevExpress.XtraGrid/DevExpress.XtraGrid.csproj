@@ -1,52 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net462;net8.0-windows</TargetFrameworks>
+    <TargetFrameworks>net462;net10.0-windows</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
     <EnableWindowsTargeting>true</EnableWindowsTargeting>
-    <AssemblyName>DevExpress.XtraGrid.v26.1</AssemblyName>
+    <AssemblyName>DevExpress.XtraGrid.v26.2</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>true</DelaySign>
+    <AssemblyOriginatorKeyFile>..\DevExpress.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>DevExpress.XtraGrid</RootNamespace>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <BaseAddress>1140850688</BaseAddress>
     <IntermediateOutputPath>obj\$(Configuration)\$(TargetFramework)\</IntermediateOutputPath>
-    <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(TargetFramework)' == 'net462'">
     <OutputPath>..\DevExpress.Dll\Framework\</OutputPath>
-    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0-windows'">
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net10.0-windows'">
     <OutputPath>..\DevExpress.Dll\NETCore\</OutputPath>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="System.Resources.Extensions" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="..\AssemblyVersion.cs">
-      <Link>AssemblyVersion.cs</Link>
-    </Compile>
-    <Compile Include="AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Base\ErrorPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Printing\CardViewPrinting.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="LayoutView\Designer\PrintDesigner.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Printing\GridViewPrinting.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-  </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="Base\ErrorPanel.ar.resx">
       <DependentUpon>ErrorPanel.cs</DependentUpon>
@@ -1035,5 +1009,64 @@
     <EmbeddedResource Include="LocalizationRes.uz-Cyrl-UZ.resx" />
     <EmbeddedResource Include="LocalizationRes.uz-Latn-UZ.resx" />
     <EmbeddedResource Include="LocalizationRes.ky.resx" />
+    <EmbeddedResource Include="Base\ErrorPanel.hi.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.hi.resx" />
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.hi.resx">
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.hi.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.hi.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.es-MX.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.es-MX.resx" />
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.es-MX.resx">
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.es-MX.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.es-MX.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ErrorPanel.af.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutView\Designer\LocalizationRes.af.resx" />
+    <EmbeddedResource Include="LayoutView\Designer\PrintDesigner.af.resx">
+      <DependentUpon>PrintDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\CardViewPrinting.af.resx">
+      <DependentUpon>CardViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\GridViewPrinting.af.resx">
+      <DependentUpon>GridViewPrinting.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\ErrorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Printing\CardViewPrinting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LayoutView\Designer\PrintDesigner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Printing\GridViewPrinting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

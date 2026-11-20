@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="Task.MarkCompleted" Caption="OznačiKaoZavršen" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.Persistent.AuditTrail.BaseAuditedObjectWeakReference">
+      <OwnMembers>
+        <Member Name="DisplayName" Caption="Naziv za prikaz" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Address" Caption="Adresa">
+      <OwnMembers>
+        <Member Name="City" Caption="Mjesto" />
+        <Member Name="Country" Caption="Država" />
+        <Member Name="FullAddress" Caption="Puna adresa" />
+        <Member Name="StateProvince" Caption="Općina" />
+        <Member Name="Street" Caption="Ulica" />
+        <Member Name="ZipPostal" Caption="Poštanski broj" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Analysis" Caption="Analiza">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Kriterij" />
+        <Member Name="DataType" Caption="Tip podataka" />
+        <Member Name="Name" Caption="Naziv" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.AuditDataItemPersistent">
+      <OwnMembers>
+        <Member Name="Description" Caption="Opis" />
+        <Member Name="ModifiedOn" Caption="Datum promjene" />
+        <Member Name="NewValue" Caption="Nova vrijednost" />
+        <Member Name="OldValue" Caption="Stara vrijednost" />
+        <Member Name="OperationType" Caption="Tip operacija" />
+        <Member Name="PropertyName" Caption="Naziv svojstva" />
+        <Member Name="UserName" Caption="Korisničko ime" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.BaseObject" Caption="Bazni objekt" />
+    <Class Name="DevExpress.Persistent.BaseImpl.Country" Caption="Država">
+      <OwnMembers>
+        <Member Name="Name" Caption="Naziv" />
+        <Member Name="PhoneCode" Caption="Pozivni broj" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Event" Caption="Događaj u kalendaru">
+      <OwnMembers>
+        <Member Name="AllDay" Caption="Cijeli dan" />
+        <Member Name="Description" Caption="Opis" />
+        <Member Name="EndOn" Caption="Datum/Vrijeme završetka" />
+        <Member Name="Label" Caption="Oznaka" />
+        <Member Name="Location" Caption="Lokacija" />
+        <Member Name="RecurrenceInfoXml" Caption="Ponavljanje" />
+        <Member Name="RecurrencePattern" Caption="Uzorak ponavljanja" />
+        <Member Name="Resources" Caption="Resursi" />
+        <Member Name="StartOn" Caption="Datum/Vrijeme početka" />
+        <Member Name="Subject" Caption="Naslov" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.FileAttachmentBase" Caption="Baza privitka">
+      <OwnMembers>
+        <Member Name="File" Caption="Datoteka" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.FileData" Caption="Podaci datoteke">
+      <OwnMembers>
+        <Member Name="FileName" Caption="Naziv datoteke" />
+        <Member Name="Size" Caption="Veličina" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.HCategory" Caption="HKategorija">
+      <OwnMembers>
+        <Member Name="Children" Caption="Djeca" />
+        <Member Name="Name" Caption="Naziv" />
+        <Member Name="Parent" Caption="Roditelj" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Note" Caption="Bilješka">
+      <OwnMembers>
+        <Member Name="Author" Caption="Autor" />
+        <Member Name="DateTime" Caption="Datum i vrijeme" />
+        <Member Name="Text" Caption="Tekst" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.OidGenerator" Caption="Oid generator" />
+    <Class Name="DevExpress.Persistent.BaseImpl.Organization" Caption="Tvrtka">
+      <OwnMembers>
+        <Member Name="Description" Caption="Opis" />
+        <Member Name="FullName" Caption="Puno ime" />
+        <Member Name="Name" Caption="Naziv" />
+        <Member Name="Profile" Caption="Profil" />
+        <Member Name="WebSite" Caption="Web Stranica" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Party" Caption="Stranka">
+      <OwnMembers>
+        <Member Name="Address1" Caption="Adresa 1" />
+        <Member Name="Address2" Caption="Adresa 2" />
+        <Member Name="DisplayName" Caption="Ime za prikaz" />
+        <Member Name="PhoneNumbers" Caption="Telefonski brojevi" />
+        <Member Name="Photo" Caption="Fotografija" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PersistentPermission" Caption="Dozvole spremanja">
+      <OwnMembers>
+        <Member Name="Permission" Caption="Dozvola" />
+        <Member Name="Role" Caption="Uloga" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Person" Caption="Osoba">
+      <OwnMembers>
+        <Member Name="Birthday" Caption="Rođendan" />
+        <Member Name="FirstName" Caption="Ime" />
+        <Member Name="FullName" Caption="Puno ime" />
+        <Member Name="LastName" Caption="Prezime" />
+        <Member Name="MiddleName" Caption="Srednje ime" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PhoneNumber" Caption="Telefonski broj">
+      <OwnMembers>
+        <Member Name="Number" Caption="Broj" />
+        <Member Name="Party" Caption="Stranka" />
+        <Member Name="PhoneType" Caption="Tip telefona" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PhoneType" Caption="Tip telefona">
+      <OwnMembers>
+        <Member Name="TypeName" Caption="Naziv tipa" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PropertyDescriptor">
+      <OwnMembers>
+        <Member Name="Code" Caption="Šifra" />
+        <Member Name="Name" Caption="Naziv" />
+        <Member Name="Type" Caption="Tip" />
+        <Member Name="ValueType" Caption="Tip vrijednosti" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PropertyValue" Caption="Vrijednost svojstva" />
+    <Class Name="DevExpress.Persistent.BaseImpl.Resource" Caption="Resurs">
+      <OwnMembers>
+        <Member Name="Caption" Caption="Naslov" />
+        <Member Name="Color" Caption="Boja" />
+        <Member Name="Events" Caption="Događaji" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Role" Caption="Uloga">
+      <OwnMembers>
+        <Member Name="Users" Caption="Korisnici" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.RoleBase" Caption="Baza uloge">
+      <OwnMembers>
+        <Member Name="Name" Caption="Naziv" />
+        <Member Name="PersistentPermissions" Caption="Dozvole" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.ServerPrefix" Caption="Prefiks servera" />
+    <Class Name="DevExpress.Persistent.BaseImpl.SimpleUser" Caption="Korisnik">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="Promijeni lozinku kod prve prijave" />
+        <Member Name="FullName" Caption="Puno ime" />
+        <Member Name="IsActive" Caption="Aktivan?" />
+        <Member Name="IsAdministrator" Caption="Administrator?" />
+        <Member Name="UserName" Caption="Korisničko ime" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.State" Caption="Stanje">
+      <OwnMembers>
+        <Member Name="LongName" Caption="Dugo ime" />
+        <Member Name="ShortName" Caption="Kratko ime" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Task" Caption="Zadatak">
+      <OwnMembers>
+        <Member Name="AssignedTo" Caption="Pridružen" />
+        <Member Name="DateCompleted" Caption="Datum završetka" />
+        <Member Name="Description" Caption="Opis" />
+        <Member Name="DueDate" Caption="Rok" />
+        <Member Name="PercentCompleted" Caption="Postotak završenosti" />
+        <Member Name="StartDate" Caption="Datum početka" />
+        <Member Name="Subject" Caption="Predmet" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.User" Caption="Korisnik">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="Promijeni lozinku kod prve prijave" />
+        <Member Name="IsActive" Caption="Aktivan?" />
+        <Member Name="Permissions" Caption="Dozvole" />
+        <Member Name="Roles" Caption="Uloge" />
+        <Member Name="UserName" Caption="Korisničko ime" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Xpo.XPWeakReference" Caption="XPWeak referenca" />
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.Persistent.Base.General.TaskStatus" Value="Status zadatka">
+        <LocalizationItem Name="Completed" Value="Završen" />
+        <LocalizationItem Name="Deferred" Value="Odgođen" />
+        <LocalizationItem Name="InProgress" Value="U tijeku" />
+        <LocalizationItem Name="NotStarted" Value="Nezapočet" />
+        <LocalizationItem Name="WaitingForSomeoneElse" Value="Na čekanju zbog drugih" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Reports" Caption="Izvještaji" />
+    </Items>
+  </NavigationItems>
+  <Validation>
+    <Rules>
+      <RuleFromBoolProperty Id="EventIntervalValid" CustomMessageTemplate="Datum početka mora biti manji od datuma završetka" />
+      <RuleRequiredField Id="FileAttachmentBaseRule" CustomMessageTemplate="Datoteka bi trebala biti pridružena" />
+      <RuleFromBoolProperty Id="HCategoryCircularReferences" CustomMessageTemplate="Otkrivena je kružna referenca. Kako bi izbjegli ovu grešku, postavite Roditelj (Parent) svojstvo na drugu vrijednost." />
+      <RuleUniqueValue Id="PropertyDescriptor Code is unique" CustomMessageTemplate="Code' svojstvo mora imati jedinstvenu vrijednost" Name="PropertyDescriptor Code je jedinstven" />
+      <RuleRequiredField Id="PropertyDescriptor Code required" Name="PropertyDescriptor Code je obavezan" />
+      <RuleCriteria Id="Role is not referenced" CustomMessageTemplate="Ne mogu obrisati ulogu jer postoje korisnici koji je referenciraju" Name="Uloga nije referencirana" MessageTemplateMustSatisfyCriteria="Objekt &quot;{TargetObject}&quot; mora zadovoljiti sljedeće kriterije: &quot;{Criteria}&quot;." />
+      <RuleRequiredField Id="Role required" CustomMessageTemplate="Aktivan korisnik mora imati pridruženu barem jednu ulogu" Name="Uloge je obavezna" />
+      <RuleUniqueValue Id="User Name is unique" CustomMessageTemplate="Unešeno korisničko ime već je registrirano u sustavu" Name="Korisničko ime je jedinstveno" />
+      <RuleRequiredField Id="User Name required" CustomMessageTemplate="Korisničko ime ne može biti prazno" Name="Korisničko ime je obavezno" />
+    </Rules>
+  </Validation>
+  <Views>
+    <DetailView Id="BasicUser_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="BasicUser" Caption="Osnovni korisnik" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Organization_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Organization" Caption="Organizacija" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="PropertyDescriptor_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="PropertyDescriptor" Caption="Opisnik svojstva" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="SimpleUser_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="SimpleUser" Caption="Jednostavni korisnik" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

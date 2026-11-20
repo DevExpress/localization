@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="EditReportControllerV2.Edit" Caption="編集" />
+      <Action Id="ExecuteReportV2" Caption="レポートの実行" />
+      <Action Id="ShowReportDesignerV2" Caption="レポート デザイナを表示" />
+    </Actions>
+  </ActionDesign>
+  <Localization>
+    <LocalizationGroup Name="Captions">
+      <LocalizationItem Name="AllFiles" Value="すべてのファイル" />
+      <LocalizationItem Name="ExportLayout" Value="レイアウトをファイルにエクスポート..." />
+      <LocalizationItem Name="ImportLayout" Value="レイアウトをファイルからインポート..." />
+      <LocalizationItem Name="ReportDesignerError" Value="エラー" />
+      <LocalizationItem Name="ReportDesignerWarning" Value="警告" />
+      <LocalizationItem Name="ReportFiles" Value="レポート ファイル" />
+    </LocalizationGroup>
+  </Localization>
+  <Views>
+    <DetailView Id="NewReportWizardParameters_DetailView" Caption="新規レポート ウィザード">
+      <Items>
+        <StaticText Id="ReportText" Text="新しいレポートを作成するには、下のフィールドに名前を入力し、リストからレポートの主要データ タイプを選択してください。" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="Static" Caption="静的(11)">
+            <LayoutGroup Id="NewReportParams" Caption="新規レポート パラメーター">
+              <LayoutGroup Id="SimpleEditors" Caption="シンプル エディタ" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

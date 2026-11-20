@@ -1,59 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net462;net8.0-windows</TargetFrameworks>
+    <TargetFrameworks>net462;net10.0-windows</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
     <EnableWindowsTargeting>true</EnableWindowsTargeting>
-    <AssemblyName>DevExpress.XtraBars.v26.1</AssemblyName>
+    <AssemblyName>DevExpress.XtraBars.v26.2</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>true</DelaySign>
+    <AssemblyOriginatorKeyFile>..\DevExpress.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>DevExpress.XtraBars</RootNamespace>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <BaseAddress>1174405120</BaseAddress>
     <IntermediateOutputPath>obj\$(Configuration)\$(TargetFramework)\</IntermediateOutputPath>
-    <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(TargetFramework)' == 'net462'">
     <OutputPath>..\DevExpress.Dll\Framework\</OutputPath>
-    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0-windows'">
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net10.0-windows'">
     <OutputPath>..\DevExpress.Dll\NETCore\</OutputPath>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="System.Resources.Extensions" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="..\AssemblyVersion.cs">
-      <Link>AssemblyVersion.cs</Link>
-    </Compile>
-    <Compile Include="AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Docking2010\Components\DocumentManager\Customization\OpenedWindowsDialog\OpenedWindowsDialog.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="LocalizationManager.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Ribbon\RenameForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ribbon\RibbonCustomizationForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ribbon\RibbonCustomizationUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="TileNavigation\OptionsWindow.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="WorkspaceNameForm.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <EmbeddedResource Include="Docking2010\LocalizationRes.et.resx" />
     <EmbeddedResource Include="Docking2010\LocalizationRes.th.resx" />
     <EmbeddedResource Include="Docking\LocalizationRes.et.resx" />
@@ -1594,5 +1562,75 @@
     <EmbeddedResource Include="LocalizationManager.ky.resx">
       <DependentUpon>LocalizationManager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Docking\LocalizationRes.hi.resx" />
+    <EmbeddedResource Include="Docking2010\LocalizationRes.hi.resx" />
+    <EmbeddedResource Include="Ribbon\RibbonCustomizationUserControl.hi.resx">
+      <DependentUpon>RibbonCustomizationUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\LocalizationRes.es-MX.resx" />
+    <EmbeddedResource Include="Docking2010\LocalizationRes.es-MX.resx" />
+    <EmbeddedResource Include="LocalizationRes.es-MX.resx" />
+    <EmbeddedResource Include="Ribbon\RenameForm.es-MX.resx">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ribbon\RibbonCustomizationForm.es-MX.resx">
+      <DependentUpon>RibbonCustomizationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ribbon\RibbonCustomizationUserControl.es-MX.resx">
+      <DependentUpon>RibbonCustomizationUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TileNavigation\OptionsWindow.es-MX.resx">
+      <DependentUpon>OptionsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkspaceNameForm.es-MX.resx">
+      <DependentUpon>WorkspaceNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\LocalizationRes.af.resx" />
+    <EmbeddedResource Include="Docking2010\LocalizationRes.af.resx" />
+    <EmbeddedResource Include="LocalizationRes.af.resx" />
+    <EmbeddedResource Include="Ribbon\RenameForm.af.resx">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ribbon\RibbonCustomizationForm.af.resx">
+      <DependentUpon>RibbonCustomizationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ribbon\RibbonCustomizationUserControl.af.resx">
+      <DependentUpon>RibbonCustomizationUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TileNavigation\OptionsWindow.af.resx">
+      <DependentUpon>OptionsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkspaceNameForm.af.resx">
+      <DependentUpon>WorkspaceNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking2010\Components\DocumentManager\Customization\OpenedWindowsDialog\OpenedWindowsDialog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LocalizationManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ribbon\RenameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ribbon\RibbonCustomizationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ribbon\RibbonCustomizationUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TileNavigation\OptionsWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkspaceNameForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

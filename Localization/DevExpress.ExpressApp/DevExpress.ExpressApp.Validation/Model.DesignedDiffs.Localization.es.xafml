@@ -1,0 +1,974 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ShowAllContexts" Caption="Validar" ToolTip="Validar el objeto seleccionado (s) en todos los contextos presentados" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ContextValidationResult" Caption="Resultados de la validación en el Contexto">
+      <OwnMembers>
+        <Member Name="Id" Caption="Identificación del" />
+        <Member Name="Context" Caption="Contexto" />
+        <Member Name="DisplayableValidationResultItems" Caption="Mostrable elementos de validación de resultados" />
+        <Member Name="State" Caption="Estado" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.DisplayableValidationResultItem" Caption="Detalles de validación">
+      <OwnMembers>
+        <Member Name="ContextCaption" Caption="Leyenda de contexto" />
+        <Member Name="ContextId" Caption="Id de Contexto" />
+        <Member Name="ErrorMessage" Caption="Mensaje de error" />
+        <Member Name="Rule" Caption="Regla" />
+        <Member Name="RuleName" Caption="Nombre de la regla" />
+        <Member Name="RuleProperties" Caption="Propiedades de la regla" />
+        <Member Name="State" Caption="Estado" />
+        <Member Name="TargetCaption" Caption="Meta" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ValidationResults" Caption="Resultados de la validación">
+      <OwnMembers>
+        <Member Name="DisplayableValidationResultItems" Caption="Mostrable elementos de validación de resultados" />
+        <Member Name="HighlightErrors" Caption="Resaltar errores" />
+        <Member Name="Results" Caption="Resultados" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleBaseProperties" Caption="IRule Propiedades Base">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Plantilla mensaje" />
+        <Member Name="Id" Caption="Identificación del" />
+        <Member Name="InvertResult" Caption="Invertir Resultados" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mensaje plantilla Pasar valores nulos o vacíos" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mensaje de destino de plantilla no cumple los criterios de destino" />
+        <Member Name="Name" Caption="Nombre" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Saltar nulo o valores vacíos" />
+        <Member Name="TargetContextIDs" Caption="Objetivo identificadores de contexto" />
+        <Member Name="TargetCriteria" Caption="Objetivo Criterios" />
+        <Member Name="TargetType" Caption="Tipo de destino" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCollectionPropertyProperties" Caption="IRule Propiedades de propiedad Collection">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Plantilla mensaje" />
+        <Member Name="Id" Caption="Identificación del" />
+        <Member Name="InvertResult" Caption="Invertir Resultados" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Colección de plantillas de mensajes de validación sufijo mensaje" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mensaje plantilla Pasar valores nulos o vacíos" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mensaje de destino de plantilla no responde a criterios de la colección" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mensaje de destino de plantilla no cumple los criterios de destino" />
+        <Member Name="Name" Caption="Nombre" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Saltar nulo o valores vacíos" />
+        <Member Name="TargetCollectionOwnerType" Caption="La colección de destino Tipo de propietario" />
+        <Member Name="TargetCollectionPropertyName" Caption="La colección de destino Nombre de la propiedad" />
+        <Member Name="TargetContextIDs" Caption="Objetivo identificadores de contexto" />
+        <Member Name="TargetCriteria" Caption="Objetivo Criterios" />
+        <Member Name="TargetType" Caption="Tipo de destino" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCombinationOfPropertiesIsUniqueProperties" Caption="La combinación de propiedades es IRule propiedades únicas">
+      <OwnMembers>
+        <Member Name="CriteriaEvaluationBehavior" Caption="Criterios de evaluación del comportamiento" />
+        <Member Name="CustomMessageTemplate" Caption="Plantilla mensaje" />
+        <Member Name="FoundObjectMessageFormat" Caption="Objetos encontrados en formato de mensaje" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Objetos encontrados en mensajes de separación" />
+        <Member Name="Id" Caption="Identificación del" />
+        <Member Name="IncludeCurrentObject" Caption="Incluya actual de objetos" />
+        <Member Name="InvertResult" Caption="Invertir Resultados" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Colección de plantillas de mensajes de validación sufijo mensaje" />
+        <Member Name="MessageTemplateCombinationOfPropertiesMustBeUnique" Caption="Combinación de mensajes de plantilla de las propiedades deben ser únicos" />
+        <Member Name="MessageTemplateFoundObjects" Caption="Mensaje plantilla Objetos hallados" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mensaje plantilla Pasar valores nulos o vacíos" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mensaje de destino de plantilla no responde a criterios de la colección" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mensaje de destino de plantilla no cumple los criterios de destino" />
+        <Member Name="Name" Caption="Nombre" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Saltar nulo o valores vacíos" />
+        <Member Name="TargetCollectionOwnerType" Caption="La colección de destino Tipo de propietario" />
+        <Member Name="TargetCollectionPropertyName" Caption="La colección de destino Nombre de la propiedad" />
+        <Member Name="TargetContextIDs" Caption="Objetivo identificadores de contexto" />
+        <Member Name="TargetCriteria" Caption="Objetivo Criterios" />
+        <Member Name="TargetProperties" Caption="Propiedades de destino" />
+        <Member Name="TargetType" Caption="Tipo de destino" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCriteriaProperties" Caption="Criterios IRule Propiedades">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Criterios" />
+        <Member Name="CustomMessageTemplate" Caption="Plantilla mensaje" />
+        <Member Name="Id" Caption="Identificación del" />
+        <Member Name="InvertResult" Caption="Invertir Resultados" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Colección de plantillas de mensajes de validación sufijo mensaje" />
+        <Member Name="MessageTemplateMustSatisfyCriteria" Caption="Plantilla de mensaje debe satisfacer criterios" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mensaje plantilla Pasar valores nulos o vacíos" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mensaje de destino de plantilla no responde a criterios de la colección" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mensaje de destino de plantilla no cumple los criterios de destino" />
+        <Member Name="Name" Caption="Nombre" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Saltar nulo o valores vacíos" />
+        <Member Name="TargetCollectionOwnerType" Caption="La colección de destino Tipo de propietario" />
+        <Member Name="TargetCollectionPropertyName" Caption="La colección de destino Nombre de la propiedad" />
+        <Member Name="TargetContextIDs" Caption="Objetivo identificadores de contexto" />
+        <Member Name="TargetCriteria" Caption="Objetivo Criterios" />
+        <Member Name="TargetType" Caption="Tipo de destino" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleFromBoolPropertyProperties" Caption="IRule De Inmuebles Bool">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Plantilla mensaje" />
+        <Member Name="Id" Caption="Identificación del" />
+        <Member Name="InvertResult" Caption="Invertir Resultados" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Colección de plantillas de mensajes de validación sufijo mensaje" />
+        <Member Name="MessageTemplateMustBeTrue" Caption="Plantilla de mensaje debe ser cierto" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mensaje plantilla Pasar valores nulos o vacíos" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mensaje de destino de plantilla no responde a criterios de la colección" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mensaje de destino de plantilla no cumple los criterios de destino" />
+        <Member Name="Name" Caption="Nombre" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Saltar nulo o valores vacíos" />
+        <Member Name="TargetCollectionOwnerType" Caption="La colección de destino Tipo de propietario" />
+        <Member Name="TargetCollectionPropertyName" Caption="La colección de destino Nombre de la propiedad" />
+        <Member Name="TargetContextIDs" Caption="Objetivo identificadores de contexto" />
+        <Member Name="TargetCriteria" Caption="Objetivo Criterios" />
+        <Member Name="TargetPropertyName" Caption="Objetivo Nombre de la propiedad" />
+        <Member Name="TargetType" Caption="Tipo de destino" />
+        <Member Name="UsedProperties" Caption="Propiedades Usadas" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleIsReferencedProperties" Caption="IRule es referencia Propiedades">
+      <OwnMembers>
+        <Member Name="CriteriaEvaluationBehavior" Caption="Criterios de evaluación del comportamiento" />
+        <Member Name="CustomMessageTemplate" Caption="Plantilla mensaje" />
+        <Member Name="FoundObjectMessageFormat" Caption="Objetos encontrados en formato de mensaje" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Objetos encontrados en mensajes de separación" />
+        <Member Name="Id" Caption="Identificación del" />
+        <Member Name="IncludeCurrentObject" Caption="Incluya actual de objetos" />
+        <Member Name="InvertResult" Caption="Invertir Resultados" />
+        <Member Name="LooksFor" Caption="Busca" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Colección de plantillas de mensajes de validación sufijo mensaje" />
+        <Member Name="MessageTemplateFoundObjects" Caption="Mensaje plantilla Objetos hallados" />
+        <Member Name="MessageTemplateMustBeReferenced" Caption="Plantilla de mensaje debe ser de Referencia" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mensaje plantilla Pasar valores nulos o vacíos" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mensaje de destino de plantilla no responde a criterios de la colección" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mensaje de destino de plantilla no cumple los criterios de destino" />
+        <Member Name="Name" Caption="Nombre" />
+        <Member Name="ReferencePropertyName" Caption="Nombre de referencia de la Propiedad" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Saltar nulo o valores vacíos" />
+        <Member Name="TargetCollectionOwnerType" Caption="La colección de destino Tipo de propietario" />
+        <Member Name="TargetCollectionPropertyName" Caption="La colección de destino Nombre de la propiedad" />
+        <Member Name="TargetContextIDs" Caption="Objetivo identificadores de contexto" />
+        <Member Name="TargetCriteria" Caption="Objetivo Criterios" />
+        <Member Name="TargetType" Caption="Tipo de destino" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleObjectExistsProperties" Caption="Objeto IRule existe Propiedades">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Criterios" />
+        <Member Name="CriteriaEvaluationBehavior" Caption="Criterios de evaluación del comportamiento" />
+        <Member Name="CustomMessageTemplate" Caption="Plantilla mensaje" />
+        <Member Name="FoundObjectMessageFormat" Caption="Objetos encontrados en formato de mensaje" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Objetos encontrados en mensajes de separación" />
+        <Member Name="Id" Caption="Identificación del" />
+        <Member Name="IncludeCurrentObject" Caption="Incluya actual de objetos" />
+        <Member Name="InvertResult" Caption="Invertir Resultados" />
+        <Member Name="LooksFor" Caption="Busca" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Colección de plantillas de mensajes de validación sufijo mensaje" />
+        <Member Name="MessageTemplateFoundObjects" Caption="Mensaje plantilla Objetos hallados" />
+        <Member Name="MessageTemplateMustExist" Caption="Mensaje plantilla debe existir" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mensaje plantilla Pasar valores nulos o vacíos" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mensaje de destino de plantilla no responde a criterios de la colección" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mensaje de destino de plantilla no cumple los criterios de destino" />
+        <Member Name="Name" Caption="Nombre" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Saltar nulo o valores vacíos" />
+        <Member Name="TargetCollectionOwnerType" Caption="La colección de destino Tipo de propietario" />
+        <Member Name="TargetCollectionPropertyName" Caption="La colección de destino Nombre de la propiedad" />
+        <Member Name="TargetContextIDs" Caption="Objetivo identificadores de contexto" />
+        <Member Name="TargetCriteria" Caption="Objetivo Criterios" />
+        <Member Name="TargetType" Caption="Tipo de destino" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRulePropertyValueProperties" Caption="IRule Propiedades Valor de la Propiedad">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Plantilla mensaje" />
+        <Member Name="Id" Caption="Identificación del" />
+        <Member Name="InvertResult" Caption="Invertir Resultados" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Colección de plantillas de mensajes de validación sufijo mensaje" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mensaje plantilla Pasar valores nulos o vacíos" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mensaje de destino de plantilla no responde a criterios de la colección" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mensaje de destino de plantilla no cumple los criterios de destino" />
+        <Member Name="Name" Caption="Nombre" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Saltar nulo o valores vacíos" />
+        <Member Name="TargetCollectionOwnerType" Caption="La colección de destino Tipo de propietario" />
+        <Member Name="TargetCollectionPropertyName" Caption="La colección de destino Nombre de la propiedad" />
+        <Member Name="TargetContextIDs" Caption="Objetivo identificadores de contexto" />
+        <Member Name="TargetCriteria" Caption="Objetivo Criterios" />
+        <Member Name="TargetPropertyName" Caption="Objetivo Nombre de la propiedad" />
+        <Member Name="TargetType" Caption="Tipo de destino" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRangeProperties" Caption="IRule Propiedades Gama">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Plantilla mensaje" />
+        <Member Name="Id" Caption="Identificación del" />
+        <Member Name="InvertResult" Caption="Invertir Resultados" />
+        <Member Name="MaximumValue" Caption="Valor máximo" />
+        <Member Name="MaximumValueExpression" Caption="Máxima expresión de valor" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Colección de plantillas de mensajes de validación sufijo mensaje" />
+        <Member Name="MessageTemplateMustBeInRange" Caption="Plantilla de mensaje debe ser en el radio" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mensaje plantilla Pasar valores nulos o vacíos" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mensaje de destino de plantilla no responde a criterios de la colección" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mensaje de destino de plantilla no cumple los criterios de destino" />
+        <Member Name="MinimumValue" Caption="Valor mínimo" />
+        <Member Name="MinimumValueExpression" Caption="Expresión del valor mínimo" />
+        <Member Name="Name" Caption="Nombre" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Saltar nulo o valores vacíos" />
+        <Member Name="TargetCollectionAggregate" Caption="Objetivo total de Colección" />
+        <Member Name="TargetCollectionOwnerType" Caption="La colección de destino Tipo de propietario" />
+        <Member Name="TargetCollectionPropertyName" Caption="La colección de destino Nombre de la propiedad" />
+        <Member Name="TargetContextIDs" Caption="Objetivo identificadores de contexto" />
+        <Member Name="TargetCriteria" Caption="Objetivo Criterios" />
+        <Member Name="TargetPropertyName" Caption="Objetivo Nombre de la propiedad" />
+        <Member Name="TargetType" Caption="Tipo de destino" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRegularExpressionProperties" Caption="IRule Propiedades de expresiones regulares">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Plantilla mensaje" />
+        <Member Name="Id" Caption="Identificación del" />
+        <Member Name="InvertResult" Caption="Invertir Resultados" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Colección de plantillas de mensajes de validación sufijo mensaje" />
+        <Member Name="MessageTemplateMustMatchPattern" Caption="Mensaje plantilla debe coincidir con Patrón" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mensaje plantilla Pasar valores nulos o vacíos" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mensaje de destino de plantilla no responde a criterios de la colección" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mensaje de destino de plantilla no cumple los criterios de destino" />
+        <Member Name="Name" Caption="Nombre" />
+        <Member Name="Pattern" Caption="Patrón" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Saltar nulo o valores vacíos" />
+        <Member Name="TargetCollectionOwnerType" Caption="La colección de destino Tipo de propietario" />
+        <Member Name="TargetCollectionPropertyName" Caption="La colección de destino Nombre de la propiedad" />
+        <Member Name="TargetContextIDs" Caption="Objetivo identificadores de contexto" />
+        <Member Name="TargetCriteria" Caption="Objetivo Criterios" />
+        <Member Name="TargetPropertyName" Caption="Objetivo Nombre de la propiedad" />
+        <Member Name="TargetType" Caption="Tipo de destino" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRequiredFieldProperties" Caption="IRule Requerido Propiedades del campo">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Plantilla mensaje" />
+        <Member Name="Id" Caption="Identificación del" />
+        <Member Name="InvertResult" Caption="Invertir Resultados" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Colección de plantillas de mensajes de validación sufijo mensaje" />
+        <Member Name="MessageTemplateMustNotBeEmpty" Caption="Plantilla de mensaje no puede estar vacío" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mensaje plantilla Pasar valores nulos o vacíos" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mensaje de destino de plantilla no responde a criterios de la colección" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mensaje de destino de plantilla no cumple los criterios de destino" />
+        <Member Name="Name" Caption="Nombre" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Saltar nulo o valores vacíos" />
+        <Member Name="TargetCollectionOwnerType" Caption="La colección de destino Tipo de propietario" />
+        <Member Name="TargetCollectionPropertyName" Caption="La colección de destino Nombre de la propiedad" />
+        <Member Name="TargetContextIDs" Caption="Objetivo identificadores de contexto" />
+        <Member Name="TargetCriteria" Caption="Objetivo Criterios" />
+        <Member Name="TargetPropertyName" Caption="Objetivo Nombre de la propiedad" />
+        <Member Name="TargetType" Caption="Tipo de destino" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleSearchObjectProperties" Caption="IRule Propiedades de la búsqueda de objetos">
+      <OwnMembers>
+        <Member Name="CriteriaEvaluationBehavior" Caption="Criterios de evaluación del comportamiento" />
+        <Member Name="CustomMessageTemplate" Caption="Plantilla mensaje" />
+        <Member Name="FoundObjectMessageFormat" Caption="Objetos encontrados en formato de mensaje" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Objetos encontrados en mensajes de separación" />
+        <Member Name="Id" Caption="Identificación del" />
+        <Member Name="IncludeCurrentObject" Caption="Incluya actual de objetos" />
+        <Member Name="InvertResult" Caption="Invertir Resultados" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Colección de plantillas de mensajes de validación sufijo mensaje" />
+        <Member Name="MessageTemplateFoundObjects" Caption="Mensaje plantilla Objetos hallados" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mensaje plantilla Pasar valores nulos o vacíos" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mensaje de destino de plantilla no responde a criterios de la colección" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mensaje de destino de plantilla no cumple los criterios de destino" />
+        <Member Name="Name" Caption="Nombre" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Saltar nulo o valores vacíos" />
+        <Member Name="TargetCollectionOwnerType" Caption="La colección de destino Tipo de propietario" />
+        <Member Name="TargetCollectionPropertyName" Caption="La colección de destino Nombre de la propiedad" />
+        <Member Name="TargetContextIDs" Caption="Objetivo identificadores de contexto" />
+        <Member Name="TargetCriteria" Caption="Objetivo Criterios" />
+        <Member Name="TargetType" Caption="Tipo de destino" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleStringComparisonProperties" Caption="IRule propiedades de comparación de cadenas">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Plantilla mensaje" />
+        <Member Name="Id" Caption="Identificación del" />
+        <Member Name="IgnoreCase" Caption="Ignorar el asunto" />
+        <Member Name="InvertResult" Caption="Invertir Resultados" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Colección de plantillas de mensajes de validación sufijo mensaje" />
+        <Member Name="MessageTemplateMustBeEqual" Caption="Plantilla de mensaje debe ser igual" />
+        <Member Name="MessageTemplateMustBeginWith" Caption="Plantilla de mensaje debe comenzar con" />
+        <Member Name="MessageTemplateMustContain" Caption="Mensaje plantilla debe contener" />
+        <Member Name="MessageTemplateMustEndWith" Caption="Mensaje plantilla debe terminar con" />
+        <Member Name="MessageTemplateMustNotBeEqual" Caption="Plantilla de mensaje no debe ser igual" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mensaje plantilla Pasar valores nulos o vacíos" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mensaje de destino de plantilla no responde a criterios de la colección" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mensaje de destino de plantilla no cumple los criterios de destino" />
+        <Member Name="Name" Caption="Nombre" />
+        <Member Name="OperandValue" Caption="Valor del Operando" />
+        <Member Name="OperatorType" Caption="Tipo de operador" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Saltar nulo o valores vacíos" />
+        <Member Name="TargetCollectionOwnerType" Caption="La colección de destino Tipo de propietario" />
+        <Member Name="TargetCollectionPropertyName" Caption="La colección de destino Nombre de la propiedad" />
+        <Member Name="TargetContextIDs" Caption="Objetivo identificadores de contexto" />
+        <Member Name="TargetCriteria" Caption="Objetivo Criterios" />
+        <Member Name="TargetPropertyName" Caption="Objetivo Nombre de la propiedad" />
+        <Member Name="TargetType" Caption="Tipo de destino" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleSupportsCollectionAggregatesProperties" Caption="IRule Soporta agregados Propiedades de colección">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Plantilla mensaje" />
+        <Member Name="Id" Caption="Identificación del" />
+        <Member Name="InvertResult" Caption="Invertir Resultados" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Colección de plantillas de mensajes de validación sufijo mensaje" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mensaje plantilla Pasar valores nulos o vacíos" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mensaje de destino de plantilla no responde a criterios de la colección" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mensaje de destino de plantilla no cumple los criterios de destino" />
+        <Member Name="Name" Caption="Nombre" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Saltar nulo o valores vacíos" />
+        <Member Name="TargetCollectionAggregate" Caption="Objetivo total de Colección" />
+        <Member Name="TargetCollectionOwnerType" Caption="La colección de destino Tipo de propietario" />
+        <Member Name="TargetCollectionPropertyName" Caption="La colección de destino Nombre de la propiedad" />
+        <Member Name="TargetContextIDs" Caption="Objetivo identificadores de contexto" />
+        <Member Name="TargetCriteria" Caption="Objetivo Criterios" />
+        <Member Name="TargetPropertyName" Caption="Objetivo Nombre de la propiedad" />
+        <Member Name="TargetType" Caption="Tipo de destino" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleUniqueValueProperties" Caption="IRule Propiedades Valor Único">
+      <OwnMembers>
+        <Member Name="CriteriaEvaluationBehavior" Caption="Criterios de evaluación del comportamiento" />
+        <Member Name="CustomMessageTemplate" Caption="Plantilla mensaje" />
+        <Member Name="FoundObjectMessageFormat" Caption="Objetos encontrados en formato de mensaje" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Objetos encontrados en mensajes de separación" />
+        <Member Name="Id" Caption="Identificación del" />
+        <Member Name="IncludeCurrentObject" Caption="Incluya actual de objetos" />
+        <Member Name="InvertResult" Caption="Invertir Resultados" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Colección de plantillas de mensajes de validación sufijo mensaje" />
+        <Member Name="MessageTemplateFoundObjects" Caption="Mensaje plantilla Objetos hallados" />
+        <Member Name="MessageTemplateMustBeUnique" Caption="Plantilla de mensaje debe ser único" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mensaje plantilla Pasar valores nulos o vacíos" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mensaje de destino de plantilla no responde a criterios de la colección" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mensaje de destino de plantilla no cumple los criterios de destino" />
+        <Member Name="Name" Caption="Nombre" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Saltar nulo o valores vacíos" />
+        <Member Name="TargetCollectionOwnerType" Caption="La colección de destino Tipo de propietario" />
+        <Member Name="TargetCollectionPropertyName" Caption="La colección de destino Nombre de la propiedad" />
+        <Member Name="TargetContextIDs" Caption="Objetivo identificadores de contexto" />
+        <Member Name="TargetCriteria" Caption="Objetivo Criterios" />
+        <Member Name="TargetPropertyName" Caption="Objetivo Nombre de la propiedad" />
+        <Member Name="TargetType" Caption="Tipo de destino" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleValueComparisonProperties" Caption="IRule Propiedades Valor Comparación">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Plantilla mensaje" />
+        <Member Name="Id" Caption="Identificación del" />
+        <Member Name="InvertResult" Caption="Invertir Resultados" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Colección de plantillas de mensajes de validación sufijo mensaje" />
+        <Member Name="MessageTemplateMustBeEqualToOperand" Caption="Mensaje plantilla debe ser igual que el de" />
+        <Member Name="MessageTemplateMustBeGreaterThanOperand" Caption="Mensaje plantilla deberá ser superior al del operando" />
+        <Member Name="MessageTemplateMustBeGreaterThanOrEqualToOperand" Caption="Plantilla de mensaje debe ser mayor o igual que el de" />
+        <Member Name="MessageTemplateMustBeLessThanOperand" Caption="Mensaje de plantilla debe ser menos de un operador sobre" />
+        <Member Name="MessageTemplateMustBeLessThanOrEqualToOperand" Caption="Plantilla de mensaje debe ser menor o igual que el de" />
+        <Member Name="MessageTemplateMustNotBeEqualToOperand" Caption="Plantilla de mensaje no debe ser igual que el de" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mensaje plantilla Pasar valores nulos o vacíos" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mensaje de destino de plantilla no responde a criterios de la colección" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mensaje de destino de plantilla no cumple los criterios de destino" />
+        <Member Name="Name" Caption="Nombre" />
+        <Member Name="OperatorType" Caption="Tipo de operador" />
+        <Member Name="RightOperand" Caption="Operando derecho" />
+        <Member Name="RightOperandExpression" Caption="Expresión del operando derecho" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Saltar nulo o valores vacíos" />
+        <Member Name="TargetCollectionAggregate" Caption="Objetivo total de Colección" />
+        <Member Name="TargetCollectionOwnerType" Caption="La colección de destino Tipo de propietario" />
+        <Member Name="TargetCollectionPropertyName" Caption="La colección de destino Nombre de la propiedad" />
+        <Member Name="TargetContextIDs" Caption="Objetivo identificadores de contexto" />
+        <Member Name="TargetCriteria" Caption="Objetivo Criterios" />
+        <Member Name="TargetPropertyName" Caption="Objetivo Nombre de la propiedad" />
+        <Member Name="TargetType" Caption="Tipo de destino" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleBaseProperties" Caption="Propiedades de la regla de base">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Plantilla mensaje" />
+        <Member Name="Id" Caption="Identificación del" />
+        <Member Name="InvertResult" Caption="Invertir Resultados" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Colección de plantillas de mensajes de validación sufijo mensaje" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mensaje plantilla Pasar valores nulos o vacíos" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mensaje de destino de plantilla no responde a criterios de la colección" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mensaje de destino de plantilla no cumple los criterios de destino" />
+        <Member Name="Name" Caption="Nombre" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Saltar nulo o valores vacíos" />
+        <Member Name="TargetCollectionOwnerType" Caption="La colección de destino Tipo de propietario" />
+        <Member Name="TargetCollectionPropertyName" Caption="La colección de destino Nombre de la propiedad" />
+        <Member Name="TargetContextIDs" Caption="Objetivo identificadores de contexto" />
+        <Member Name="TargetCriteria" Caption="Objetivo Criterios" />
+        <Member Name="TargetType" Caption="Tipo de destino" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleCombinationOfPropertiesIsUniqueProperties" Caption="La combinación de propiedades es la regla propiedades únicas">
+      <OwnMembers>
+        <Member Name="MessageTemplateCombinationOfPropertiesMustBeUnique" Caption="Combinación de mensajes de plantilla de las propiedades deben ser únicos" />
+        <Member Name="TargetProperties" Caption="Propiedades de destino" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleCriteriaProperties" Caption="Criterios de propiedades de la regla">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Criterios" />
+        <Member Name="MessageTemplateMustSatisfyCriteria" Caption="Plantilla de mensaje debe satisfacer criterios" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleFromBoolPropertyProperties" Caption="Detalles de la regla Booleana">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeTrue" Caption="Plantilla de mensaje debe ser cierto" />
+        <Member Name="UsedProperties" Caption="Propiedades Usadas" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleIsReferencedProperties" Caption="Propiedads de la regla Is Referenced">
+      <OwnMembers>
+        <Member Name="LooksFor" Caption="Busca" />
+        <Member Name="MessageTemplateMustBeReferenced" Caption="Plantilla de mensaje debe ser de Referencia" />
+        <Member Name="ReferencePropertyName" Caption="Nombre de referencia de la Propiedad" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleObjectExistsProperties" Caption="Propiedades de la regla existe Objeto">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Criterios" />
+        <Member Name="LooksFor" Caption="Busca" />
+        <Member Name="MessageTemplateMustExist" Caption="Mensaje plantilla debe existir" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RulePropertyValueProperties" Caption="Propiedades de la regla Valor de la Propiedad">
+      <OwnMembers>
+        <Member Name="TargetPropertyName" Caption="Objetivo Nombre de la propiedad" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRangeProperties" Caption="Propiedades de la regla rango">
+      <OwnMembers>
+        <Member Name="MaximumValue" Caption="Valor máximo" />
+        <Member Name="MaximumValueExpression" Caption="Máxima expresión de valor" />
+        <Member Name="MessageTemplateMustBeInRange" Caption="Plantilla de mensaje debe ser en el radio" />
+        <Member Name="MinimumValue" Caption="Valor mínimo" />
+        <Member Name="MinimumValueExpression" Caption="Expresión del valor mínimo" />
+        <Member Name="TargetCollectionAggregate" Caption="Objetivo total de Colección" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRegularExpressionProperties" Caption="Propiedades de la regla de expresiones regulares">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustMatchPattern" Caption="Mensaje plantilla debe coincidir con Patrón" />
+        <Member Name="Pattern" Caption="Patrón" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRequiredFieldProperties" Caption="Artículo Requerido Propiedades del campo">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustNotBeEmpty" Caption="Plantilla de mensaje no puede estar vacío" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSearchObjectProperties" Caption="Propiedades de la regla de la búsqueda de objetos">
+      <OwnMembers>
+        <Member Name="CriteriaEvaluationBehavior" Caption="Criterios de evaluación del comportamiento" />
+        <Member Name="FoundObjectMessageFormat" Caption="Objetos encontrados en formato de mensaje" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Objetos encontrados en mensajes de separación" />
+        <Member Name="IncludeCurrentObject" Caption="Incluya actual de objetos" />
+        <Member Name="MessageTemplateFoundObjects" Caption="Mensaje plantilla Objetos hallados" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResult" Caption="Resultados de la validación">
+      <OwnMembers>
+        <Member Name="Results" Caption="Resultados" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResultItem" Caption="Detalles de validación">
+      <OwnMembers>
+        <Member Name="ContextId" Caption="Id de Contexto" />
+        <Member Name="ErrorMessage" Caption="Mensaje de error" />
+        <Member Name="Rule" Caption="Regla" />
+        <Member Name="RuleName" Caption="Nombre de la regla" />
+        <Member Name="State" Caption="Estado" />
+        <Member Name="Target" Caption="Meta" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResultItemAggregate" Caption="Conjunto de reglas de validación de resultados agregada del artículo">
+      <OwnMembers>
+        <Member Name="AggregatedResults" Caption="Resultados agregados" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleStringComparisonProperties" Caption="Propiedades de la regla de comparación de cadenas">
+      <OwnMembers>
+        <Member Name="IgnoreCase" Caption="Ignorar el asunto" />
+        <Member Name="MessageTemplateMustBeEqual" Caption="Plantilla de mensaje debe ser igual" />
+        <Member Name="MessageTemplateMustBeginWith" Caption="Plantilla de mensaje debe comenzar con" />
+        <Member Name="MessageTemplateMustContain" Caption="Mensaje plantilla debe contener" />
+        <Member Name="MessageTemplateMustEndWith" Caption="Mensaje plantilla debe terminar con" />
+        <Member Name="MessageTemplateMustNotBeEqual" Caption="Plantilla de mensaje no debe ser igual" />
+        <Member Name="OperandValue" Caption="Valor del Operando" />
+        <Member Name="OperatorType" Caption="Tipo de operador" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleUniqueValueProperties" Caption="Propiedades de la regla de valor único">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeUnique" Caption="Plantilla de mensaje debe ser único" />
+        <Member Name="TargetPropertyName" Caption="Objetivo Nombre de la propiedad" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleValueComparisonProperties" Caption="Propiedades de la regla del valor Comparación">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeEqualToOperand" Caption="Mensaje plantilla debe ser igual que el de" />
+        <Member Name="MessageTemplateMustBeGreaterThanOperand" Caption="Mensaje plantilla deberá ser superior al del operando" />
+        <Member Name="MessageTemplateMustBeGreaterThanOrEqualToOperand" Caption="Plantilla de mensaje debe ser mayor o igual que el de" />
+        <Member Name="MessageTemplateMustBeLessThanOperand" Caption="Mensaje de plantilla debe ser menos de un operador sobre" />
+        <Member Name="MessageTemplateMustBeLessThanOrEqualToOperand" Caption="Plantilla de mensaje debe ser menor o igual que el de" />
+        <Member Name="MessageTemplateMustNotBeEqualToOperand" Caption="Plantilla de mensaje no debe ser igual que el de" />
+        <Member Name="OperatorType" Caption="Tipo de operador" />
+        <Member Name="RightOperand" Caption="Operando derecho" />
+        <Member Name="RightOperandExpression" Caption="Expresión del operando derecho" />
+        <Member Name="TargetCollectionAggregate" Caption="Objetivo total de Colección" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.Data.Filtering.Aggregate">
+        <LocalizationItem Name="Avg" Value="Promedio" />
+        <LocalizationItem Name="Count" Value="Cantidad" />
+        <LocalizationItem Name="Exists" Value="Existe" />
+        <LocalizationItem Name="Sum" Value="Suma" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Validation.AllContextsView.IsValid">
+        <LocalizationItem Name="Invalid" Value="No válido" />
+        <LocalizationItem Name="Valid" Value="Válido" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.StringComparisonType">
+        <LocalizationItem Name="Contains" Value="Contiene" />
+        <LocalizationItem Name="EndsWith" Value="Termina con" />
+        <LocalizationItem Name="Equals" Value="Es igual a" />
+        <LocalizationItem Name="NotEquals" Value="No es igual" />
+        <LocalizationItem Name="StartsWith" Value="Comienza con" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValidationState">
+        <LocalizationItem Name="Invalid" Value="No válido" />
+        <LocalizationItem Name="Skipped" Value="Saltado" />
+        <LocalizationItem Name="Valid" Value="Válido" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValueComparisonType">
+        <LocalizationItem Name="Equals" Value="Es igual a" />
+        <LocalizationItem Name="GreaterThan" Value="Mayor que" />
+        <LocalizationItem Name="GreaterThanOrEqual" Value="Mayor o igual" />
+        <LocalizationItem Name="LessThan" Value="Menos de" />
+        <LocalizationItem Name="LessThanOrEqual" Value="Menor o igual" />
+        <LocalizationItem Name="NotEquals" Value="No es igual" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Xpo.PersistentCriteriaEvaluationBehavior">
+        <LocalizationItem Name="BeforeTransaction" Value="Antes de la transacción" />
+        <LocalizationItem Name="InTransaction" Value="En la transacción" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Exceptions">
+      <LocalizationGroup Name="UserVisibleExceptions">
+        <LocalizationGroup Name="Validation">
+          <LocalizationItem Name="ActionErrorMessageHeaderFormat" Value="Los problemas fueron detectados durante la validación de datos. Por favor, lea la siguiente información para entender cuáles son los problemas y cómo se pueden corregir." />
+          <LocalizationItem Name="AllContextsErrorMessageHeader" Value="Los problemas fueron detectados durante la validación de datos. Por favor, lea la siguiente información para entender cuáles son los problemas y cómo se pueden corregir." />
+          <LocalizationItem Name="DeleteErrorMessageHeader" Value="Los problemas fueron detectados durante la validación de datos. Por favor, lea la siguiente información para entender cuáles son los problemas y cómo se pueden corregir." />
+          <LocalizationItem Name="SaveErrorMessageHeader" Value="Los problemas fueron detectados durante la validación de datos. Por favor, lea la siguiente información para entender cuáles son los problemas y cómo se pueden corregir." />
+          <LocalizationItem Name="ValidationSucceededMessageHeader" Value="No se detectaron problemas." />
+        </LocalizationGroup>
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <Validation>
+    <Contexts>
+      <ValidationContext Id="Accept" Caption="Aceptar" />
+      <ValidationContext Id="Delete" Caption="Eliminar" />
+      <ValidationContext Id="Save" Caption="Guardar" />
+    </Contexts>
+    <ErrorMessageTemplates>
+      <RuleBase MessageTemplateSkipNullOrEmptyValues="La &quot;{Id}&quot; regla no se comprobó ya que las propiedades de destino no se especifican." MessageTemplateTargetDoesNotSatisfyTargetCriteria="La &quot;{Id}&quot; regla no se comprobó porque el objeto de destino no responde a criterios de la regla de destino." />
+      <RuleCollectionProperty MessageTemplateTargetDoesNotSatisfyCollectionCriteria="La &quot;{Id}&quot; regla no se comprobó porque el objetivo no es un elemento de la &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot; colección." MessageTemplateCollectionValidationMessageSuffix="(Para el &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot; elementos de la colección)." />
+      <RuleCombinationOfPropertiesIsUnique MessageTemplateCombinationOfPropertiesMustBeUnique="La combinación de las siguientes propiedades deben ser únicos: {FormattedTargetProperties}." MessageTemplateFoundObjects="Los objetos se encuentran los siguientes:" />
+      <RuleCriteria MessageTemplateMustSatisfyCriteria="La &quot;{TargetObject}&quot; objeto debe cumplir los siguientes criterios: &quot;{Criteria}&quot;." />
+      <RuleFromBoolProperty MessageTemplateMustBeTrue="&quot;{TargetPropertyName}&quot; se debe establecer en true." />
+      <RuleIsReferenced MessageTemplateMustBeReferenced="La &quot;{TargetObject}&quot; objeto debe hacer referencia." MessageTemplateFoundObjects="Los objetos se encuentran los siguientes:" />
+      <RuleObjectExists MessageTemplateMustExist="Los objetos que satisfacen las &quot;{Criteria}&quot; criterios debe existir." MessageTemplateFoundObjects="Los objetos se encuentran los siguientes:" />
+      <RuleRange MessageTemplateMustBeInRange="&quot;{TargetPropertyName}&quot; debe estar dentro del &quot;{MinimumValue}&quot; y &quot;{MaximumValue}&quot; rango, los límites están incluidos." />
+      <RuleRegularExpression MessageTemplateMustMatchPattern="&quot;{TargetPropertyName}&quot; debe coincidir con la siguiente distribución: &quot;{Pattern}&quot;." />
+      <RuleRequiredField MessageTemplateMustNotBeEmpty="&quot;{TargetPropertyName}&quot; no debe estar vacío." />
+      <RuleSearchObject MessageTemplateFoundObjects="Los objetos se encuentran los siguientes:" />
+      <RuleStringComparison MessageTemplateMustContain="&quot;{TargetPropertyName}&quot; debe contener &quot;{OperandValue}&quot;." MessageTemplateMustBeginWith="&quot;{TargetPropertyName}&quot; debe comenzar con &quot;{OperandValue}&quot;." MessageTemplateMustEndWith="&quot;{TargetPropertyName}&quot; debe terminar con &quot;{OperandValue}&quot;." MessageTemplateMustBeEqual="&quot;{TargetPropertyName}&quot; debe ser igual a &quot;{OperandValue}&quot;." MessageTemplateMustNotBeEqual="&quot;{TargetPropertyName}&quot; no debe ser igual a &quot;{OperandValue}&quot;." />
+      <RuleUniqueValue MessageTemplateMustBeUnique="No es un objeto con el mismo valor especificado para &quot;{TargetPropertyName}&quot;. &quot;{TargetPropertyName}&quot; valores deben ser únicos." />
+      <RuleValueComparison MessageTemplateMustBeEqualToOperand="&quot;{TargetPropertyName}&quot; debe ser igual a &quot;{RightOperand}&quot;." MessageTemplateMustBeGreaterThanOperand="&quot;{TargetPropertyName}&quot; debe ser mayor que &quot;{RightOperand}&quot;." MessageTemplateMustBeGreaterThanOrEqualToOperand="&quot;{TargetPropertyName}&quot; debe ser mayor o igual a &quot;{RightOperand}&quot;." MessageTemplateMustBeLessThanOperand="&quot;{TargetPropertyName}&quot; debe ser inferior a &quot;{RightOperand}&quot;." MessageTemplateMustBeLessThanOrEqualToOperand="&quot;{TargetPropertyName}&quot; debe ser menor o igual a &quot;{RightOperand}&quot;." MessageTemplateMustNotBeEqualToOperand="&quot;{TargetPropertyName}&quot; no debe ser igual a &quot;{RightOperand}&quot;." />
+    </ErrorMessageTemplates>
+  </Validation>
+  <Views>
+    <DetailView Id="ContextValidationResult_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="DisplayableValidationResultItem_DetailView">
+      <Items>
+        <PropertyEditor Id="RuleProperties" Caption="Detalles de la regla" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DisplayableValidationResultItem" Caption="Validación del artículo visualizables Resultados" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleBaseProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Propiedades Base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCollectionPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Propiedades Base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCombinationOfPropertiesIsUniqueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="IRule Propiedades de la búsqueda de objetos" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Propiedades Base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCriteriaProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Propiedades Base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleFromBoolPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Propiedades Base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleIsReferencedProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="IRule Propiedades de la búsqueda de objetos" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Propiedades Base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleObjectExistsProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="IRule Propiedades de la búsqueda de objetos" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Propiedades Base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRulePropertyValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Propiedades Base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRangeProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleRangeProperties" Caption="IRule Propiedades Gama" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Propiedades Base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRegularExpressionProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Propiedades Base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRequiredFieldProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Propiedades Base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleSearchObjectProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="IRule Propiedades de la búsqueda de objetos" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Propiedades Base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleStringComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleStringComparisonProperties" Caption="IRule propiedades de comparación de cadenas" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Propiedades Base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleSupportsCollectionAggregatesProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Propiedades Base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleUniqueValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Propiedades Base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleValueComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleValueComparisonProperties" Caption="IRule Propiedades Valor Comparación" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Propiedades Base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleBaseProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Propiedades de la regla de base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleCombinationOfPropertiesIsUniqueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Propiedades de la regla de la búsqueda de objetos" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Propiedades de la regla de base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleCriteriaProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Propiedades de la regla de base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleFromBoolPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Propiedades de la regla de base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleIsReferencedProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Propiedades de la regla de la búsqueda de objetos" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Propiedades de la regla de base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleObjectExistsProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Propiedades de la regla de la búsqueda de objetos" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Propiedades de la regla de base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RulePropertyValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Propiedades de la regla de base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRangeProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleRangeProperties" Caption="Propiedades de la regla rango" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Propiedades de la regla de base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRegularExpressionProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Propiedades de la regla de base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRequiredFieldProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Propiedades de la regla de base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSearchObjectProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Propiedades de la regla de la búsqueda de objetos" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Propiedades de la regla de base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResult_ByTarget_Error_DetailView" Caption="Error de Validación">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="Los problemas fueron detectados durante la validación de datos. Por favor, lea la siguiente información para entender cuáles son los problemas y cómo se pueden corregir." />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="Static" Caption="Estática" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResult_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales" />
+      </Layout>
+    </DetailView>
+    <ListView Id="RuleSetValidationResultItem_ByTarget_ListView">
+      <Columns>
+        <ColumnInfo Id="ContextCaption" Caption="Contexto" />
+        <ColumnInfo Id="ContextId" Caption="ContextID" />
+        <ColumnInfo Id="ErrorMessage" Caption="Descripción" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleSetValidationResultItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSetValidationResultItem" Caption="Conjunto de reglas del artículo validación de resultados" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResultItemAggregate_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSetValidationResultItem" Caption="Conjunto de reglas del artículo validación de resultados" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleStringComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleStringComparisonProperties" Caption="Propiedades de la regla de comparación de cadenas" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Propiedades de la regla de base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleUniqueValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Propiedades de la regla de la búsqueda de objetos" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Propiedades de la regla de base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleValueComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleValueComparisonProperties" Caption="Propiedades de la regla del valor Comparación" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Propiedades de la regla de base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ValidationResults_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ValidationResults_Error_DetailView">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="Los problemas fueron detectados durante la validación de datos. Por favor, lea la siguiente información para entender cuáles son los problemas y cómo se pueden corregir." />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="Static" Caption="Estática" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ValidationResults_Passed_DetailView">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="No se detectaron problemas." />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="Static" Caption="Estática" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

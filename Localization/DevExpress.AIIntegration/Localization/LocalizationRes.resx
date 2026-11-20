@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
+  <!--
+    Microsoft ResX Schema
+
     Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
     associated with the data types.
-    
+
     Example:
-    
+
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,36 +26,36 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-                
-    There are any number of "resheader" rows that contain simple 
+
+    There are any number of "resheader" rows that contain simple
     name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
     mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
     extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
     read any of the formats listed below.
-    
+
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
+    value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
+    value   : The object must be serialized into a byte array
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
@@ -348,6 +348,12 @@ User's ROLE: {1}</value>
   <data name="AIIntegrationStringId.DocumentDialogCopyButtonText" xml:space="preserve">
     <value>Copy</value>
   </data>
+  <data name="AIIntegrationStringId.SummarizeDialogTitle" xml:space="preserve">
+    <value>Summarize with AI</value>
+  </data>
+  <data name="AIIntegrationStringId.TranslateDialogTitle" xml:space="preserve">
+    <value>Translate with AI</value>
+  </data>
   <data name="AIIntegrationStringId.SeparatorPromptAugmentationText" xml:space="preserve">
     <value>1. Break the input string into parts, using the "^^^" character sequence as a sentence separator.
 2. Complete the task described above for each sentence/word.
@@ -486,7 +492,7 @@ User's ROLE: {1}</value>
     <value>Localize with AI</value>
   </data>
   <data name="AIIntegrationStringId.ReportLocalization_TranslatedTextWarning" xml:space="preserve">
-    <value>You are about to apply a translation that may include generated content. We recommend that you review all translated strings before you proceed. Do you want to continue?</value>
+    <value>You are about to apply a translation that may include AI-generated content. We recommend that you review all translated strings before you proceed. Do you want to continue?</value>
   </data>
   <data name="AIIntegrationStringId.ReportWizard_EnterReportDescription" xml:space="preserve">
     <value>Enter Report Description</value>
@@ -551,6 +557,9 @@ User's ROLE: {1}</value>
   <data name="AIIntegrationStringId.ReportWizard_ReportGeneration_Submit" xml:space="preserve">
     <value>Submit</value>
   </data>
+  <data name="AIIntegrationStringId.ReportWizard_AIGeneratedLabel" xml:space="preserve">
+    <value>AI-generated</value>
+  </data>
   <data name="AIIntegrationStringId.ReportGenerationWorkflow_AnalyzingRequest" xml:space="preserve">
     <value>Analyzing the request...</value>
   </data>
@@ -580,5 +589,326 @@ User's ROLE: {1}</value>
   </data>
   <data name="AIIntegrationStringId.ReportGenerationWorkflow_GenerationFailed" xml:space="preserve">
     <value>Report generation failed. Please try again.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportChat_ClearHistory" xml:space="preserve">
+    <value>Clear chat history</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportErrorsAnalyzer_AnalyzingErrors" xml:space="preserve">
+    <value>Analyzing Issues...</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_SmartTagDisplayName" xml:space="preserve">
+    <value>Fix Issues with AI</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_Title" xml:space="preserve">
+    <value>Report Design Analyzer</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ReviewWindowTitle" xml:space="preserve">
+    <value>Review Changes and Suggestions</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_FixWithAITooltip" xml:space="preserve">
+    <value>Fix Issues with AI</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_BadgeApplied" xml:space="preserve">
+    <value>Applied</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_BadgeFailed" xml:space="preserve">
+    <value>Failed</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ChangeKindModify" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ChangeKindAdd" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ChangeKindRemove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ChangeKindConvert" xml:space="preserve">
+    <value>Convert</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertStructureLabel" xml:space="preserve">
+    <value>Structure</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertLocationLabel" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertSizeLabel" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertCellMappingLabel" xml:space="preserve">
+    <value>Cell mapping</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertOldStructureFormat" xml:space="preserve">
+    <value>{0} controls</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertNewStructureFormat" xml:space="preserve">
+    <value>Rows: {0} × Columns: {1}</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertRowLabelFormat" xml:space="preserve">
+    <value>Row {0}</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertColumnLabelFormat" xml:space="preserve">
+    <value>Col {0}</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertCellConvertedTooltip" xml:space="preserve">
+    <value>The control is replaced with this cell: its text and appearance are copied to the cell.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertCellMovedTooltip" xml:space="preserve">
+    <value>The control is moved into this cell without changes.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertError_UnsupportedControlType" xml:space="preserve">
+    <value>Unsupported control type '{0}'.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertError_ContainerNotFound" xml:space="preserve">
+    <value>Target container '{0}' was not found.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertError_EmptyRemovedPath" xml:space="preserve">
+    <value>RemovedObjectPaths must not contain empty paths.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertError_TooFewControls" xml:space="preserve">
+    <value>At least two controls are required to build a table.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertError_ControlNameRequired" xml:space="preserve">
+    <value>ControlName is required.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertError_ControlNameExists" xml:space="preserve">
+    <value>A control named '{0}' already exists.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertError_CellNameExists" xml:space="preserve">
+    <value>A control named '{0}' already exists, and the table needs this name for one of its cells.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertError_SourceNotFound" xml:space="preserve">
+    <value>'{0}' was not found or is not a direct child of '{1}'.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertError_DuplicateRemovedPath" xml:space="preserve">
+    <value>'{0}' is listed in RemovedObjectPaths more than once.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertError_NestedNotRemoved" xml:space="preserve">
+    <value>'{0}' is used as a nested control but is not listed in RemovedObjectPaths.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertError_NestedPlacedTwice" xml:space="preserve">
+    <value>'{0}' is placed into more than one cell.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertError_SourceControlInvalid" xml:space="preserve">
+    <value>The properties of a cell can only be copied from a converted label that is used by a single cell and is not moved into a cell: '{0}'.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertError_CellControlRequired" xml:space="preserve">
+    <value>A cell can refer to only one converted control: either to move (NestedControlObjectPath) or to replace (SourceControlObjectPath). A cell that refers to neither stays empty.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertError_RowsRequired" xml:space="preserve">
+    <value>Rows is required and must contain at least one row.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertError_RowNotDefined" xml:space="preserve">
+    <value>Every row must be defined and contain at least one cell.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertError_CellNotDefined" xml:space="preserve">
+    <value>Every cell must be defined.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertError_RowsNotUniform" xml:space="preserve">
+    <value>The cell widths of every row must add up to the width of the table.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertError_CellCountMismatch" xml:space="preserve">
+    <value>The cells that refer to a converted control must match RemovedObjectPaths.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertError_SizesInvalid" xml:space="preserve">
+    <value>Every row must have a positive HeightF and every cell a positive WidthF, and the row heights must add up to the height of the table.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertError_RowSpanInvalid" xml:space="preserve">
+    <value>A cell that spans several rows (RowSpan greater than 1) must replace a label (SourceControlObjectPath), fit into the table, and have an empty cell of the same position and width in every row it spans.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ConvertError_BoundsInvalid" xml:space="preserve">
+    <value>Properties must contain numeric X, Y, WidthF, and HeightF values.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_StyleError_StyleNotFound" xml:space="preserve">
+    <value>Style '{0}' was not found.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_StyleError_StylesNotSupported" xml:space="preserve">
+    <value>'{0}' does not support styles.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_StyleError_NotStylePriorityFlag" xml:space="preserve">
+    <value>'{0}' is not a StylePriority flag.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_StyleError_NotAppearanceProperty" xml:space="preserve">
+    <value>'{0}' is not an appearance property of '{1}'.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_StyleError_NameReferenced" xml:space="preserve">
+    <value>Report controls already refer to a style named '{0}'.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_ValueNone" xml:space="preserve">
+    <value>(none)</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_ValueInherited" xml:space="preserve">
+    <value>(inherited)</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_WouldChangeAppearanceFormat" xml:space="preserve">
+    <value>Not applied: it would change how the report looks ({0}).</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_NotAppliedRequirementFormat" xml:space="preserve">
+    <value>Not applied because "{0}", which it depends on, was not applied.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_NotAppliedBatchFailedFormat" xml:space="preserve">
+    <value>Not applied because another change in the same step failed: {0}</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_CardApplyStyleFormat" xml:space="preserve">
+    <value>Apply style: {0}</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_CardMoveToContainerFormat" xml:space="preserve">
+    <value>Move shared formatting to {0}</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_CardRemoveOwnValuesFormat" xml:space="preserve">
+    <value>Remove own {0}</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_CardStyleControlsFormat" xml:space="preserve">
+    <value>Let styles set {0}</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_CardControlsLabelFormat" xml:space="preserve">
+    <value>Controls ({0})</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_CardMoreFormat" xml:space="preserve">
+    <value>{0} and {1} more</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_CardRelyOnStyleFormat" xml:space="preserve">
+    <value>Rely on style: {0}</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_CardApplyStyleDescriptionFormat" xml:space="preserve">
+    <value>Assigns style {0} to these controls: what the style provides now comes from it. The report looks the same.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_CleanupExplanationFormat" xml:space="preserve">
+    <value>Removes own values or style priority settings of these controls that have no effect on the print, so editing style {0} changes them. The report looks the same.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_SmartTagDisplayName" xml:space="preserve">
+    <value>Optimize with AI</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_CategoryConvertLabelsToTables" xml:space="preserve">
+    <value>Convert adjacent controls to tables</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_SelectCategories" xml:space="preserve">
+    <value>Choose Optimizations</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_AnalyzingReport" xml:space="preserve">
+    <value>Analyzing your report...</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_OptimizationFailed" xml:space="preserve">
+    <value>Report optimization failed. Please try again.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_ReviewWindowTitle" xml:space="preserve">
+    <value>Review Changes</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_CategoryFixDataAlignment" xml:space="preserve">
+    <value>Use type-based text alignment in table columns</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_CategoryCreateStyles" xml:space="preserve">
+    <value>Clean up report control formatting</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_ResultTitle" xml:space="preserve">
+    <value>Optimization Result</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_NoSuggestionsFound" xml:space="preserve">
+    <value>No optimization suggestions</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_NoSuggestionsFoundDescription" xml:space="preserve">
+    <value>AI-powered report analysis suggests no changes based on the current report configuration and optimization areas you selected.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignOptimizer_AIGeneratedContent" xml:space="preserve">
+    <value>Contains AI-generated content</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ApplyFixesTransaction" xml:space="preserve">
+    <value>Apply AI-suggested fixes</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ReportDocumentNotFound" xml:space="preserve">
+    <value>Report document not found.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_TargetObjectNotFound" xml:space="preserve">
+    <value>Target object not found: '{0}'</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_UnsupportedChangeType" xml:space="preserve">
+    <value>Unsupported change type '{0}'.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_FailedToPrepareChange" xml:space="preserve">
+    <value>Failed to prepare a change on '{0}': {1}</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_PropertyNotFound" xml:space="preserve">
+    <value>Property '{0}' not found on '{1}'</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_DataSourceNotRegistered" xml:space="preserve">
+    <value>No data source named '{0}' is registered in this report.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_PropertyReadOnly" xml:space="preserve">
+    <value>Property '{0}' is read-only on '{1}'</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ExpressionsNotSupported" xml:space="preserve">
+    <value>Expression bindings are not supported on '{0}'</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ExpressionRequiresProperty" xml:space="preserve">
+    <value>An expression change must specify a PropertyName.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_BindingsNotSupported" xml:space="preserve">
+    <value>Data bindings are not supported on '{0}'</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_BindingRequiresProperty" xml:space="preserve">
+    <value>A binding change must specify a BoundPropertyName.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_NoDataSourceProperty" xml:space="preserve">
+    <value>'{0}' does not have a property named 'DataSource'.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_LayoutChangesNotSupported" xml:space="preserve">
+    <value>Layout changes are not supported on '{0}'</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_LayoutChangeRequiresValue" xml:space="preserve">
+    <value>A layout change must modify location, size, or line width.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_LineWidthNotSupported" xml:space="preserve">
+    <value>LineWidth is not supported on '{0}'</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_PropertyUnavailable" xml:space="preserve">
+    <value>'{0}' does not have a property named '{1}'.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_FailedToApplyChange" xml:space="preserve">
+    <value>Failed to apply '{0}': {1}</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_AnalysisFailed" xml:space="preserve">
+    <value>Report analysis failed. Please try again.</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_SearchNullText" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_SelectAll" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_Apply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_SelectedChangesCount" xml:space="preserve">
+    <value>Selected changes: {0}</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_FilterAllResults" xml:space="preserve">
+    <value>All results</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_FilterChanges" xml:space="preserve">
+    <value>Changes</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_FilterSuggestions" xml:space="preserve">
+    <value>Suggestions</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ScopeLayout" xml:space="preserve">
+    <value>Layout</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ScopeDataBinding" xml:space="preserve">
+    <value>Data Binding</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ScopeBarcode" xml:space="preserve">
+    <value>Barcode</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ScopeSummary" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="AIIntegrationStringId.ReportDesignAnalyzer_ScopeOther" xml:space="preserve">
+    <value>Other</value>
   </data>
 </root>

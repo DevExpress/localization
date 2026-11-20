@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ChangeStateAction" Caption="Promijeni stanje" ToolTip="Promijeni stanje trenutnom objektu" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCState">
+      <OwnMembers>
+        <Member Name="Appearances" Caption="Izgledi" />
+        <Member Name="Caption" Caption="Naslov" />
+        <Member Name="MarkerObject" Caption="Marker objekt" />
+        <Member Name="Transitions" Caption="Tranzicije" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCStateAppearance" Caption="IDCState izgled">
+      <OwnMembers>
+        <Member Name="AppearanceItemType" Caption="Tipe stavke izgleda" />
+        <Member Name="BackColor" Caption="Boja pozadine" />
+        <Member Name="Context" Caption="Kontekst" />
+        <Member Name="Criteria" Caption="Kriterija" />
+        <Member Name="DeclaringType" Caption="Deklaracijski tip" />
+        <Member Name="Enabled" Caption="Omogućen" />
+        <Member Name="FontColor" Caption="Boja fonta" />
+        <Member Name="FontStyle" Caption="Stil fonta" />
+        <Member Name="Method" Caption="Metoda" />
+        <Member Name="Priority" Caption="Prioritet" />
+        <Member Name="State" Caption="Stanje" />
+        <Member Name="TargetItems" Caption="Ciljne stavke" />
+        <Member Name="Visibility" Caption="Vidljivost" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCStateMachine">
+      <OwnMembers>
+        <Member Name="Active" Caption="Aktivan" />
+        <Member Name="ExpandActionsInDetailView" Caption="Proširi akcije u detaljnom pogledu" />
+        <Member Name="Name" Caption="Naziv" />
+        <Member Name="StartState" Caption="Početno stanje" />
+        <Member Name="StatePropertyName" Caption="Naziv svojstva stanja" />
+        <Member Name="States" Caption="Stanja" />
+        <Member Name="TargetObjectType" Caption="Ciljni tip objekta" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCTransition">
+      <OwnMembers>
+        <Member Name="Caption" Caption="Naslov" />
+        <Member Name="SourceState" Caption="Izvorno stanje" />
+        <Member Name="TargetState" Caption="Ciljno stanje" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Utils.MarkerObject" Caption="Marker objekt">
+      <OwnMembers>
+        <Member Name="DisplayName" Caption="Naziv za priakz" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoState" Caption="Stanje">
+      <OwnMembers>
+        <Member Name="Appearance" Caption="Izgled" />
+        <Member Name="Caption" Caption="Naslov" />
+        <Member Name="Transitions" Caption="Tranzicije" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoStateAppearance" Caption="Izgled">
+      <OwnMembers>
+        <Member Name="AppearanceItemType" Caption="Tip stavke izgleda" />
+        <Member Name="BackColor" Caption="Boja pozadine" />
+        <Member Name="Context" Caption="Kontekst" />
+        <Member Name="Enabled" Caption="Omogućen" />
+        <Member Name="FontColor" Caption="Boja fonta" />
+        <Member Name="FontStyle" Caption="Stil fonta" />
+        <Member Name="Priority" Caption="Prioritet" />
+        <Member Name="TargetItems" Caption="Ciljne stavke" />
+        <Member Name="Visibility" Caption="Vidljivost" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoStateMachine">
+      <OwnMembers>
+        <Member Name="Active" Caption="Aktivan" />
+        <Member Name="ExpandActionsInDetailView" Caption="Proširi akcije u detaljnom pogledu" />
+        <Member Name="Name" Caption="Naziv" />
+        <Member Name="StartState" Caption="Početno stanje" />
+        <Member Name="StatePropertyName" Caption="Naziv svojstva stanja" />
+        <Member Name="States" Caption="Stanja" />
+        <Member Name="TargetObjectType" Caption="Tip ciljnog objekta" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoTransition" Caption="Tranzicije">
+      <OwnMembers>
+        <Member Name="Caption" Caption="Naslov" />
+        <Member Name="SourceState" Caption="Izvorno stanje" />
+        <Member Name="TargetState" Caption="Ciljno stanje" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Editors.ViewItemVisibility" Value="Vidljivost stavaka pogleda">
+        <LocalizationItem Name="Hide" Value="Sakrij" />
+        <LocalizationItem Name="Show" Value="Prikaži" />
+        <LocalizationItem Name="ShowEmptySpace" Value="Prikaži prazni prostor" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="System.Drawing.FontStyle" Value="Stil fonta">
+        <LocalizationItem Name="Bold" Value="Podevljano" />
+        <LocalizationItem Name="Italic" Value="Ukošeno" />
+        <LocalizationItem Name="Regular" Value="Regularno" />
+        <LocalizationItem Name="Strikeout" Value="Prekriženo" />
+        <LocalizationItem Name="Underline" Value="Podcrtano" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <Validation>
+    <Rules>
+      <RuleIsReferenced Id="StateIsReferencedDc" MessageTemplateMustBeReferenced="Ako želite obrisati ovo stanje, morate biti sigurni da nije referenciran ni u jednoj Tranziciji kao 'TargetState'." />
+      <RuleIsReferenced Id="StateIsReferencedXpo" MessageTemplateMustBeReferenced="Ako želite obrisati ovo stanje, morate biti sigurni da nije referenciran ni u jednoj Tranziciji kao 'TargetState'." />
+    </Rules>
+  </Validation>
+  <Views>
+    <DetailView Id="IDCStateAppearance_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IDCStateAppearance" Caption="IDCState izgled" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ShowInReportV2" Caption="Показать в Отчете" Tooltip="Показать выбранные записи в отчете" />
+      <Action Id="PreviewReportV2" Caption="Предварительный просмотр" />
+      <Action Id="ReportViewerDialogControllerV2_Close" Caption="Закрыть"/>
+      <Action Id="CopyPredefinedReport" Caption="Копировать отчет для редактирования" Tooltip="Копировать отчет для редактирования" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.ReportDataV2" Caption="Отчет">
+      <OwnMembers>
+        <Member Name="DataTypeCaption" Caption="Тип данных" />
+        <Member Name="IsInplaceReport" Caption="Встроенный отчет" />
+        <Member Name="DisplayName" Caption="Отображаемое имя" />
+        <Member Name="ParametersObjectType" Caption="Тип объекта параметров" />
+        <Member Name="IsPredefined" Caption="Только для чтения" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.EF.ReportDataV2" Caption="Отчет">
+      <OwnMembers>
+        <Member Name="DataTypeCaption" Caption="Тип данных" />
+        <Member Name="IsInplaceReport" Caption="Встроенный отчет" />
+        <Member Name="DisplayName" Caption="Отображаемое имя" />
+        <Member Name="ParametersObjectType" Caption="Тип объекта параметров" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.ReportsV2.NewReportWizardParameters" Caption="Параметры мастера нового отчета">
+      <OwnMembers>
+        <Member Name="DataType" Caption="Тип данных" />
+        <Member Name="ReportType" Caption="Тип отчета" />
+        <Member Name="DisplayName" Caption="Отображаемое имя" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.ReportsV2.PredefinedReportDataContainer">
+      <OwnMembers>
+        <Member Name="IsInplaceReport" Caption="Встроенный отчет" />
+        <Member Name="ParametersObjectType" Caption="Тип объекта параметров" />
+        <Member Name="DataType" Caption="Тип данных" />
+        <Member Name="DisplayName" Caption="Отображаемое имя" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.ReportsV2.ReportType" Value="Тип отчета">
+        <LocalizationItem Name="Label" Value="Этикетка" />
+        <LocalizationItem Name="Standard" Value="Стандартный" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems RelatedReportsGroupCaption="Отчеты" >
+    <Items>
+	    <Item Id="Reports" Caption="Отчеты">
+	      <Items>
+		      <Item Id="ReportsV2" Caption="Отчеты" />
+		    </Items>
+	    </Item>
+	  </Items>
+  </NavigationItems>
+  <Views>
+    <DetailView Id="NewReportWizardParameters_DetailView">
+      <Items>
+        <PropertyEditor Id="DisplayName" Caption="Отображаемое имя" />
+      </Items>
+    </DetailView>
+    <DetailView Id="PredefinedReportDataContainer_DetailView">
+      <Items>
+        <PropertyEditor Id="DataType" Caption="Тип данных" />
+        <PropertyEditor Id="ParametersObjectType" Caption="Тип объекта параметров" />
+        <PropertyEditor Id="IsInplaceReport" Caption="Встроенный отчет" />
+        <PropertyEditor Id="DisplayName" Caption="Отображаемое имя" />
+      </Items>
+    </DetailView>
+    <DetailView Id="ReportDataV2_DetailView">
+      <Items>
+        <PropertyEditor Id="ParametersObjectType" Caption="Тип объекта параметров" />
+        <PropertyEditor Id="DisplayName" Caption="Отображаемое имя" />
+        <PropertyEditor Id="IsPredefined" Caption="Только для чтения" />
+      </Items>
+    </DetailView>
+    <ListView Id="DevExpress.Persistent.BaseImpl.XtraReportData_ListView" Caption="Отчеты" />
+    <ListView Id="NewReportWizardParameters_ListView">
+      <Columns>
+        <ColumnInfo Id="DisplayName" Caption="Отображаемое имя" />
+      </Columns>
+    </ListView>
+    <ListView Id="PredefinedReportDataContainer_ListView">
+      <Columns>
+        <ColumnInfo Id="DataType" Caption="Тип данных" />
+        <ColumnInfo Id="ParametersObjectType" Caption="Тип объекта параметров" />
+        <ColumnInfo Id="IsInplaceReport" Caption="Встроенный отчет" />
+        <ColumnInfo Id="DisplayName" Caption="Отображаемое имя" />
+      </Columns>
+    </ListView>
+    <ListView Id="ReportDataV2_ListView">
+      <Columns>
+        <ColumnInfo Id="ParametersObjectType" Caption="Тип объекта параметров" />
+        <ColumnInfo Id="DisplayName" Caption="Отображаемое имя" />
+        <ColumnInfo Id="IsPredefined" Caption="Только для чтения" />
+      </Columns>
+    </ListView>
+    <ListView Id="PredefinedReportDataContainer_LookupListView">
+      <Columns>
+        <ColumnInfo Id="DisplayName" Caption="Отображаемое имя" />
+      </Columns>
+    </ListView>
+    <ListView Id="ReportDataV2_LookupListView">
+      <Columns>
+        <ColumnInfo Id="DisplayName" Caption="Отображаемое имя" />
+      </Columns>
+    </ListView>
+  </Views>
+  <Localization>
+    <LocalizationGroup Name="Exceptions">
+      <LocalizationItem Name="ReportsDisplayNameIsEmptyErrorMessage" Value="Вы пытаетесь сохранить отчет с пустым &quot;Отображаемым именем&quot;. Пожалуйста, введите значение прежде, чем сохранять отчет." />
+    </LocalizationGroup>
+  </Localization>
+</Application>

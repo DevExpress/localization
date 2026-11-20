@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="AddFromFile" Caption="ファイルから追加..." ToolTip="ダイアログを開き、追加するファイルを選択してください。" />
+      <Action Id="Open" Caption="開く..." ToolTip="外部アプリケーションでデータを開きます。" />
+      <Action Id="SaveTo" Caption="名前を付けて保存..." ToolTip="ダイアログを開き、データを保存するファイルを選択してください。" />
+    </Actions>
+    <DisableReasons>
+      <Reason Id="AttachmentAssigned" Caption="添付ファイルは空です。" />
+    </DisableReasons>
+  </ActionDesign>
+  <Localization>
+    <LocalizationGroup Name="FileAttachments">
+      <LocalizationItem Name="Editor_Clear" Value="クリア" />
+      <LocalizationItem Name="Editor_Open" Value="開く" />
+      <LocalizationItem Name="Editor_Save" Value="名前を付けて保存..." />
+      <LocalizationItem Name="OverwritePrompt" Value="{0}' ファイルは既に存在します。上書きしてもよろしいですか？" />
+      <LocalizationItem Name="OverwritePromptCaption" Value="名前を付けて保存..." />
+      <LocalizationItem Name="WordAll" Value="すべて" />
+      <LocalizationItem Name="WordFiles" Value="ファイル" />
+    </LocalizationGroup>
+  </Localization>
+</Application>

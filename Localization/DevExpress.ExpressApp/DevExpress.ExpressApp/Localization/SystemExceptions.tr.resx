@@ -60,365 +60,492 @@
   </resheader>
   <data name="ApplicationIsNotStarted" xml:space="preserve">
     <value>Uygulama Başlatılmadı</value>
+    <comment>Community:Uygulama başlatılmamış</comment>
   </data>
   <data name="ActionMethodShouldBeNonGeneric" xml:space="preserve">
     <value>Sınıfı {1} yöntemi {0} eylemi oluşturulamadı. Eylem yöntem-meli var olmak genel olmayan</value>
+    <comment>Community:{1} sınıfının {0} yöntemi için eylem oluşturulamıyor. Eylem yöntemi genel tür parametreleri içermemelidir</comment>
   </data>
   <data name="ActionMethodShouldBeParameterless" xml:space="preserve">
     <value>sınıfı {1} yöntemi {0} eylemi oluşturulamadı. Eylem yöntem-meli var olmak parametresiz</value>
+    <comment>Community:{1} sınıfının {0} yöntemi için eylem oluşturulamıyor. Eylem yöntemi parametresiz olmalıdır</comment>
   </data>
   <data name="AlreadyUsedObjectSpace" xml:space="preserve">
     <value>ObjectSpace zaten başka bir kök görünümüne atanan: '{0}'. Zaten başka bir kök görünüme kök görünümü tarafından kullanılan bir ObjectSpace atama çalıştığınızda bu hata oluşur. Örneğin, bir ViewController XafApplication.CreateDetailView/CreateListView yöntemlerle ve View.IsRoot özelliği true.\r\nTo iken View.ObjectSpace nesne bu yöntemlere parametre olarak geçirerek bu yöntemleri XafApplication.CreateObjectSpace yöntemi ile oluşturulan ObjectSpace ü geçmek için yeterli olan bu hatayı önlemek bu hata alırsınız, veya bu yaramaz bu methods.\r\nIf karşılık gelen bir parametre ileterek kök olmayan görünümler oluşturma, https://supportcenter.devexpress.com/ de destek ekibimize ulaşın</value>
+    <comment>Community:ObjectSpace zaten başka bir kök görünüme atanmış: '{0}'. Bu hata yalnızca bir kök görünüm tarafından kullanılan ObjectSpace'i başka bir kök görünüme atamaya çalıştığınızda oluşur. Örneğin, bir ViewController içinde XafApplication.CreateDetailView/CreateListView yöntemlerini kullanırken View.IsRoot özelliği true olduğunda bu yöntemlere parametre olarak View.ObjectSpace nesnesini geçirirseniz bu hatayla karşılaşabilirsiniz.\r\nBu hatayı önlemek için bu yöntemlere XafApplication.CreateObjectSpace yöntemiyle oluşturulmuş yeni bir ObjectSpace örneği geçirmeniz veya bu yöntemlere uygun bir parametre geçirerek kök olmayan görünümler oluşturmanız yeterlidir.\r\nBu işlem sorunu çözmezse lütfen https://supportcenter.devexpress.com/ adresinden Destek Ekibimizle iletişime geçin.</comment>
   </data>
   <data name="AnErrorHasOccurredWhileLoadingTheModel" xml:space="preserve">
     <value>bir hata oluştu. Kaynak: '{0}'</value>
+    <comment>Community:Model yüklenirken bir hata oluştu. Kaynak: '{0}'</comment>
   </data>
   <data name="AnErrorHasOccurredWhileProcessingAShortcut" xml:space="preserve">
     <value>kısayol işlenirken bir hata oluşur: {0}</value>
+    <comment>Community:Kısayol işlenirken bir hata oluşuyor: {0}</comment>
   </data>
   <data name="AnErrorHasOccurredWithContext" xml:space="preserve">
     <value>bir hata oluştu, bağlam: {0}</value>
+    <comment>Community:Bir hata oluştu, bağlam: {0}</comment>
   </data>
   <data name="AnUnsavedObjectCannotBeShown" xml:space="preserve">
     <value>kaydedilmemiş bir nesne gösterilemeyen</value>
+    <comment>Community:Kaydedilmemiş bir nesne görüntülenemez</comment>
   </data>
   <data name="ApplicationUpdaterAssemblyDoesNotExist" xml:space="preserve">
     <value>Assembly '{1}' '{0}' klasörü var olmadığı için uygulama güncelleştirilemez.</value>
+    <comment>Community:'{0}' klasöründe '{1}' derlemesi bulunmadığından uygulama güncellenemiyor.</comment>
   </data>
   <data name="ApplicationUpdaterDatabaseVersionIsNewer" xml:space="preserve">
     <value>uygulama çalıştırılamıyor. Veritabanı sürümü uygulama sürümünden daha yeni, ancak yeni uygulama sürümü ile sunucu bulunamadı. Yapılandırma dosyasını yeni uygulama sürümü için doğru yolu içeren kontrol etmek için yöneticinize sorun.</value>
+    <comment>Community:Uygulama çalıştırılamıyor. Veritabanı sürümü uygulama sürümünden daha yeni, ancak yeni uygulama sürümünün bulunduğu sunucu bulunamıyor. Yöneticiden yapılandırma dosyasının yeni uygulama sürümüne giden doğru yolu içerdiğini kontrol etmesini isteyin.</comment>
   </data>
   <data name="AttributeModifyingFailed" xml:space="preserve">
     <value>başarısız özniteliği değiştirerek</value>
+    <comment>Community:Öznitelik değiştirme işlemi başarısız oldu</comment>
   </data>
   <data name="AttributeShouldStartWithSymbol" xml:space="preserve">
     <value>özniteliği '{0}' ile başlamalı ' @' sembolü: '{1}'</value>
+    <comment>Community:'{0}' özniteliği '@' simgesiyle başlamalıdır: '{1}'</comment>
   </data>
   <data name="AutoCreateOptionIs" xml:space="preserve">
     <value>updatingReadOnlyDataStore.AutoCreateOption {0} olan</value>
+    <comment>Community:updatingReadOnlyDataStore.AutoCreateOption değeri {0}</comment>
   </data>
   <data name="CannotAccessCollectionCollectionSourceIsBeingIntialized" xml:space="preserve">
     <value>toplama kaynak şimdi başlatılır çünkü koleksiyon özelliğine erişemiyor. OnActivated yöntemi bir ViewController koleksiyonu özelliğinde erişmeye çalıştığınızda bu hata, oluşabilir. Bu hatanın oluşmaması için ne zaman toplama kaynak zaten başlatılmış olan daha sonraki bir zamanda koleksiyon özelliğine erişmek gereklidir. CollectionChanged olayını işlemek için bunu yapmak için en iyi yoldur. Bu sınıflar ve yöntemler hakkında daha fazla bilgi için ürün belgelerine bakın. Bu yardımcı olmazsa, lütfen https://supportcenter.devexpress.com/ de destek ekibimize ulaşın</value>
+    <comment>Community:Koleksiyon Kaynağı şu anda başlatılmakta olduğundan Collection özelliğine erişemezsiniz. Bu hata, örneğin bir ViewController'ın OnActivated yönteminde Collection özelliğine erişmeye çalıştığınızda oluşabilir. Bu hatayı önlemek için Collection özelliğine daha sonra, Koleksiyon Kaynağı başlatıldığında erişmeniz gerekir. Bunu yapmanın en iyi yolu CollectionChanged olayını işlemektir. Bu sınıflar ve yöntemler hakkında daha ayrıntılı bilgi için lütfen ürün belgelerine başvurun. Bu işlem sorunu çözmezse lütfen https://supportcenter.devexpress.com/ adresinden Destek Ekibimizle iletişime geçin.</comment>
   </data>
   <data name="CannotAddCollectionProperty" xml:space="preserve">
     <value>' {0}' Koleksiyon ekleyemezsiniz</value>
+    <comment>Community:'{0}' koleksiyonu eklenemiyor</comment>
   </data>
   <data name="CannotAddDuplicateProperty" xml:space="preserve">
     <value>Yinelenen özellik düzenleyici ekleyemezsiniz: '{0}'</value>
+    <comment>Community:Kopya özellik düzenleyicisi eklenemiyor: '{0}'</comment>
   </data>
   <data name="CannotAddToEmptySingleton" xml:space="preserve">
     <value>Boş singleton ekleyemezsiniz. Koleksiyon yeni bir örneğini oluşturmak</value>
+    <comment>Community:Empty tekil örneğine ekleme yapılamaz. Koleksiyonun yeni bir örneğini oluşturun</comment>
   </data>
   <data name="CannotCreateAppropriateDetailItem" xml:space="preserve">
     <value>Uygun detay için ' {0}' öğesi oluşturulamıyor</value>
+    <comment>Community:'{0}' için uygun ayrıntı öğesi oluşturulamıyor</comment>
   </data>
   <data name="CannotCreateAppropriatePropertyEditorForTheProperty" xml:space="preserve">
     <value>Düzenleyicisi için uygun özellik oluşturamadı ' {0}.{1}' özelliği</value>
+    <comment>Community:'{0}.{1}' özelliği için uygun özellik düzenleyicisi oluşturulamıyor</comment>
   </data>
   <data name="CannotCreateSchemaForAttribute" xml:space="preserve">
     <value>şema öznitelik değiştiremezsiniz</value>
+    <comment>Community:Özniteliğin şeması değiştirilemiyor</comment>
   </data>
   <data name="CannotCreateTemplateByName" xml:space="preserve">
     <value>şablon adı oluşturamıyor: '{0}'</value>
+    <comment>Community:Ada göre şablon oluşturulamıyor: '{0}'</comment>
   </data>
   <data name="CannotFindDescendantOfXafApplicationClass" xml:space="preserve">
     <value>, uygulamanızın ayarlarını aşağıdaki klasörleri içinde algılamak için XafApplication sınıfının soyundan bulamıyorum:
 {0}
 Bir Windows Forms uygulaması için bu klasörleri uygulama yürütülebilir dosyasını içermelidir.
 Bir ASP.NET uygulaması için bu klasörleri WebApplication alt montaj continaing içermelidir.</value>
+    <comment>Community:Uygulamanızın ayarlarını belirlemek için aşağıdaki klasörlerde XafApplication sınıfından türetilmiş bir sınıf bulunamıyor:
+{0}
+Windows Forms uygulamalarında bu klasörler uygulamanızın yürütülebilir dosyasını içermelidir.
+ASP.NET uygulamalarında bu klasörler WebApplication'dan türetilmiş sınıfınızı içeren derlemeyi içermelidir.</comment>
   </data>
   <data name="CannotFindListViewWithId" xml:space="preserve">
     <value>ListView kimliği bulunamadı = '{0}'</value>
+    <comment>Community:ID='{0}' olan liste görünümü bulunamıyor</comment>
   </data>
   <data name="CannotFindThePropertyWithinTheClass" xml:space="preserve">
     <value>' {1}' Sınıfındaki ' {0}' özelliği bulunamıyor</value>
+    <comment>Community:'{1}' sınıfında '{0}' özelliği bulunamıyor</comment>
   </data>
   <data name="CannotGenerateContent" xml:space="preserve">
     <value>İçeriği oluşturulamıyor: 'ClassName' özniteliği boş</value>
+    <comment>Community:İçerik oluşturulamıyor: 'ClassName' özniteliği boş</comment>
   </data>
   <data name="CannotObtainTheEditingObject" xml:space="preserve">
     <value>Düzenleme nesnesi alınamıyor</value>
+    <comment>Community:Düzenlenen nesne alınamıyor</comment>
   </data>
   <data name="CannotProcessTheRequestedUrl" xml:space="preserve">
     <value>İstenen url işleyemiyor</value>
+    <comment>Community:İstenen web adresi işlenemiyor</comment>
   </data>
   <data name="CannotProcessTheRequestedUrlActionItemWasNotFound" xml:space="preserve">
     <value>İstenen url işleyemiyor eylem öğesi '{0}' bulunamadı</value>
+    <comment>Community:İstenen web adresi işlenemiyor, '{0}' eylem öğesi bulunamadı</comment>
   </data>
   <data name="CannotReadDictionaryFromResource" xml:space="preserve">
     <value>Kaynak ' {0}' ' {1}' derleme sözlüğü okunamıyor</value>
+    <comment>Community:'{0}' derlemesinin '{1}' kaynağından sözlük okunamıyor</comment>
   </data>
   <data name="CannotSetEditValueAvailableValues" xml:space="preserve">
     <value>EditValue ' {0}' metin, kullanılabilir değerler: \r\n ' {1} tarafından ayarlanamaz</value>
+    <comment>Community:EditValue, '{0}' metnine göre ayarlanamıyor, kullanılabilir değerler:\r\n{1}</comment>
   </data>
   <data name="CannotSetEditValueListIsEmpty" xml:space="preserve">
     <value>EditValue ayarlayamazsınız '{0}' tarafından metin, liste boş</value>
+    <comment>Community:EditValue, '{0}' metnine göre ayarlanamıyor, liste boş</comment>
   </data>
   <data name="CannotShowViewUnknownContext" xml:space="preserve">
     <value>Görünüm, bilinmeyen bağlam göstermek değil: '{0}'</value>
+    <comment>Community:Görünüm görüntülenemiyor, bilinmeyen bağlam: '{0}'</comment>
   </data>
   <data name="CannotShowViewUnknownTarget" xml:space="preserve">
     <value>Görünüm, bilinmeyen hedef göstermek değil: '{0}'</value>
+    <comment>Community:Görünüm görüntülenemiyor, bilinmeyen hedef: '{0}'</comment>
   </data>
   <data name="ClassDoesntImplementInterface" xml:space="preserve">
     <value>Sınıfın ' {0}' arabirimi ' {1}' uygulaması değil</value>
+    <comment>Community:'{0}' sınıfı '{1}' arabirimini uygulamıyor</comment>
   </data>
   <data name="CompatibilityApplicationIsOldError" xml:space="preserve">
     <value>veritabanı sürümü uygulama sürümünden büyük. Uygulama güncellenmesi gerekir. Lütfen sistem yöneticinize başvurun veya yeni bir version.\r\nAdditional bilgi download: modülü '{1}' yerel sürüm {0} veritabanı sürümü (2) daha küçük.</value>
+    <comment>Community:Veritabanı sürümü uygulama sürümünden daha yüksek. Uygulamanın güncellenmesi gerekiyor. Lütfen sistem yöneticinizle iletişime geçin veya yeni bir sürüm indirin.\r\nEk bilgi: '{1}' modülünün yerel sürümü {0}, veritabanındaki {2} sürümünden daha düşük.</comment>
   </data>
   <data name="CompatibilityDatabaseIsOldError" xml:space="preserve">
     <value>Veritabanı uygulama daha eski bir sürümü var. Veritabanı güncelleştirilmesi gerekiyor.</value>
+    <comment>Community:Veritabanının sürümü uygulamanın sürümünden daha eski. Veritabanının güncellenmesi gerekiyor.</comment>
   </data>
   <data name="ConfigFileDoesNotExists" xml:space="preserve">
     <value>' {0}' dosyası değil Config bulunmaktadır</value>
+    <comment>Community:'{0}' yapılandırma dosyası yok</comment>
   </data>
   <data name="ConfigFileHasNoModuleNames" xml:space="preserve">
     <value>' Add\[@key="Modules"]' düğümü modül listesi içermesi gerektiğini, config dosyası '{0}'</value>
+    <comment>Community:'add\[@key="Modules"]' düğümü modül listesini içermelidir, yapılandırma dosyası: '{0}'</comment>
   </data>
   <data name="CurrentObjectIsNotSet" xml:space="preserve">
     <value>'{0}' Özelliği ayarlanamıyor. Geçerli nesnenin ayarlı değil</value>
+    <comment>Community:'{0}' özelliği ayarlanamıyor. Geçerli nesne ayarlanmamış</comment>
   </data>
   <data name="DataLayerAlreadyExists" xml:space="preserve">
     <value>bir dataLayer zaten var: '{0}'</value>
+    <comment>Community:Bir veri katmanı zaten mevcut: '{0}'</comment>
   </data>
   <data name="DictionaryPathItemParsingFailed" xml:space="preserve">
     <value>Sözlük yolu öğe ayrıştırma başarısız oldu. '{0}' İfadesinde sözdizimi hatası var</value>
+    <comment>Community:Sözlük yolu öğesi ayrıştırılamadı. '{0}' ifadesinde bir söz dizimi hatası var</comment>
   </data>
   <data name="DictionaryPathParsingFailed" xml:space="preserve">
     <value>Sözlük yolu ayrıştırma başarısız oldu. '{0}' İfadesinde sözdizimi hatası olduğunu</value>
+    <comment>Community:Sözlük yolu ayrıştırılamadı. '{0}' ifadesinde bir söz dizimi hatası var</comment>
   </data>
   <data name="DuplicateComponentIdentifier" xml:space="preserve">
     <value>Bileşeni tanımlayıcısı ' {0}' yinelenen</value>
+    <comment>Community:Yinelenen bileşen tanımlayıcısı '{0}'</comment>
   </data>
   <data name="ErrorOccursWhileAddingTheCustomProperty" xml:space="preserve">
     <value>'{1}' Türü için '{2}' özel özellik (özellik türü '{0}') eklerken hata: '{3}'</value>
+    <comment>Community:'{1}' türüne '{2}' özel özelliği ('{0}' özellik türü) eklenirken hata oluştu: '{3}'</comment>
   </data>
   <data name="ExceptionDialogLabel" xml:space="preserve">
     <value>Aşağıdaki hata oluştu:</value>
+    <comment>Approved</comment>
   </data>
   <data name="GridColumnExists" xml:space="preserve">
     <value>Tasarım kılavuzunda sütun ' {0}' zaten var</value>
+    <comment>Community:Tabloda '{0}' sütunu zaten mevcut</comment>
   </data>
   <data name="GridControlIsAlreadyCreated" xml:space="preserve">
     <value>, EditMode özelliği ayarlanamaz. GridControl oluşturulan zaten</value>
+    <comment>Community:EditMode özelliği ayarlanamıyor. GridControl zaten oluşturulmuş</comment>
   </data>
   <data name="IncompatibleParametersCombinationOnViewChanged" xml:space="preserve">
     <value>Uyumsuz parametreleri birleşimi. PopupWindow ana görünüm olarak aynı ObjectSpace sahiptir.  Ancak, açılan pencerenin DialogController SaveOnAccept özellik küme için true. Yeni bir ObjectSpace için çağrılan açılan penceresini kullanın veya DialogController ayarlayın. SaveOnAccept özellik false.</value>
+    <comment>Community:Uyumsuz parametre birleşimi. Açılır pencere, ana Görünüm ile aynı ObjectSpace'i kullanıyor.  Ancak açılır pencerenin DialogController bileşeninin SaveOnAccept özelliği true olarak ayarlanmış. Çağrılan açılır pencere için yeni bir ObjectSpace kullanın veya DialogController'ın SaveOnAccept özelliğini false olarak ayarlayın.</comment>
   </data>
   <data name="IncorrectConfigFile" xml:space="preserve">
     <value>geçirilen config dosya '{0}' ' &lt; anahtarı eklemek "Modules" =' düğümü</value>
+    <comment>Community:İletilen '{0}' yapılandırma dosyası '&lt;add key="Modules"' düğümünü içermiyor</comment>
   </data>
   <data name="InfiniteRecursionDetected" xml:space="preserve">
     <value>sonsuz özyinelemeye algıladı: '{0}' ayrıntı görünümü oluşturulan {1} kez yapıldı.</value>
+    <comment>Community:Sonsuz özyineleme algılandı: '{0}' Görünümü, '{2}' Görünüm Öğesi nedeniyle {1} kez oluşturuldu. Bu Görünüm Öğesi düzenden kaldırıldı. Bu hatayı gidermek için aşağıdaki bilgi bankası makalesindeki uygun bir çözümü kullanın: https://www.devexpress.com/kb=B181657.</comment>
   </data>
   <data name="InvalidApplicationVersion" xml:space="preserve">
     <value>'{0}' geçersiz uygulama sürümü</value>
+    <comment>Community:'{0}' konumunda geçersiz uygulama sürümü</comment>
   </data>
   <data name="InvalidParametrizedActionValueType" xml:space="preserve">
     <value>geçersiz değer türü '{0}' parametreli eylem atanmış. Tamsayı, dize veya DateTime türü ayarlayın.</value>
+    <comment>Community:'{0}' parametreli eylemine geçersiz bir değer türü atanmış. Bunun yerine Tamsayı, Dize veya Tarih/Saat türünü ayarlayın.</comment>
   </data>
   <data name="InvalidValueOfEnumProperty" xml:space="preserve">
     <value>{0} Nesnesinin {1} özelliği {2} hatalı bir değer vardır. Doğru {3} numaralandırma değeri {4} iş sınıfının AfterConstruction yöntemi özellik başlatmak.</value>
+    <comment>Community:{0} nesnesinin {1} özelliği, hatalı {2} değerine sahip. Özelliği, {4} iş sınıfının AfterConstruction metodunda doğru bir {3} numaralandırma değeriyle başlatın.</comment>
   </data>
   <data name="IsNotValidNamespacePrefixDescription" xml:space="preserve">
     <value>' {0}' Geçersiz ad alanı öneki açıklama olduğunu</value>
+    <comment>Community:'{0}' geçerli bir ad alanı öneki tanımı değil</comment>
   </data>
   <data name="ItsImpossibleToFindPathForNode" xml:space="preserve">
     <value>Yolunu bulmak için Imposible düğüm '{1}' ' {0}' =</value>
+    <comment>Community:'{1}' düğümü için yol='{0}' bulunamıyor</comment>
   </data>
   <data name="ItsImpossibleToFindSourceNode" xml:space="preserve">
     <value>SourceNode bulmak için Imposible ='{0} \\ {1}'</value>
+    <comment>Community:SourceNode='{0}\\{1}' bulunamıyor</comment>
   </data>
   <data name="LayoutControlInvalidCount" xml:space="preserve">
     <value>Yanlış sayımı: '{0}'</value>
+    <comment>Community:Hatalı sayı: '{0}'</comment>
   </data>
   <data name="ListEditorShouldImplement" xml:space="preserve">
     <value>ListEditor IDXPopupMenuHolder arabirimini uygulamalıdır</value>
+    <comment>Community:ListEditor, IDXPopupMenuHolder arabirimini uygulamalıdır</comment>
   </data>
   <data name="MethodShouldBeUsed" xml:space="preserve">
     <value>' {0}' Yöntemi kullanılmalıdır</value>
+    <comment>Community:'{0}' metodu kullanılmalıdır</comment>
   </data>
   <data name="ModulesHasAlreadyBeenLoaded" xml:space="preserve">
     <value>Modül zaten yüklenmiş</value>
+    <comment>Community:Modüller zaten yüklenmiş</comment>
   </data>
   <data name="NameAndValueCollectionsShouldHaveEqualLengths" xml:space="preserve">
     <value>Adları ve değerleri koleksiyonlarını eşit uzunlukta olması</value>
+    <comment>Community:Ad ve değer koleksiyonları eşit uzunlukta olmalıdır</comment>
   </data>
   <data name="NodeContainsDuplicatedChildNodes" xml:space="preserve">
     <value>İki alt düğümleri Düğüm1 anahtar özniteliği. \r\n değer '{1}' '{0}' düğüm içeriyor: '{2}' \r\n Düğüm2: '{3}'</value>
+    <comment>Community:'{0}' düğümü, anahtar özniteliğinde '{1}' değeri bulunan iki alt düğüm içeriyor. \r\n  Düğüm1: '{2}'\r\n  Düğüm2: '{3}'</comment>
   </data>
   <data name="NodeWasNotFound" xml:space="preserve">
     <value>' {0}' Düğümü bulunamadı</value>
+    <comment>Community:'{0}' düğümü bulunamadı</comment>
   </data>
   <data name="NotRegisteredReadOnlyParameterException" xml:space="preserve">
     <value>Parametresi '{0}' salt okunur ParametersFactory kayıtlı değil.</value>
+    <comment>Community:'{0}' salt okunur parametresi ParametersFactory içinde kayıtlı değil.</comment>
   </data>
   <data name="ObjectFormatterFormatStringIsInvalid" xml:space="preserve">
     <value>Nesne belirtilen biçim dizesi geçersiz olduğu için biçimlendirilmiş olamaz: '{0}'</value>
+    <comment>Community:Belirtilen biçim dizesi geçersiz olduğundan nesne biçimlendirilemiyor: '{0}'</comment>
   </data>
   <data name="PageCanOnlyContainOneInstanceOfControl" xml:space="preserve">
     <value>Sayfa yalnızca ' {0}' denetiminin bir örneğini içerebilir</value>
+    <comment>Community:Sayfa, '{0}' denetiminin yalnızca bir örneğini içerebilir</comment>
   </data>
   <data name="PermissionIsDenied" xml:space="preserve">
     <value>izin verilmedi</value>
+    <comment>Community:İzin reddedildi</comment>
   </data>
   <data name="ProcessWasAborted" xml:space="preserve">
     <value>işlemi iptal edildi</value>
+    <comment>Community:İşlem durduruldu</comment>
   </data>
   <data name="UnableToFindType" xml:space="preserve">
     <value>türü ' {0}' bulmak için</value>
+    <comment>Community:'{0}' türü bulunamıyor</comment>
   </data>
   <data name="UnknownValue" xml:space="preserve">
     <value>bilinmeyen değer: '{0}'</value>
+    <comment>Community:Bilinmeyen değer: '{0}'</comment>
   </data>
   <data name="ResourceItemWithNameIsNotFound" xml:space="preserve">
     <value>Kaynak ' {0} ' adlı öğe bulunamadı</value>
+    <comment>Community:'{0}' adlı kaynak öğesi bulunamadı</comment>
   </data>
   <data name="TheValueWasLocked" xml:space="preserve">
     <value>Değer kilitlendi</value>
+    <comment>Approved</comment>
   </data>
   <data name="GridColumnDoesNotExist" xml:space="preserve">
     <value>' {0}' sütunu gridde mevcut değil</value>
+    <comment>Community:Tabloda '{0}' sütunu mevcut değil</comment>
   </data>
   <data name="TypeDoesNotContainTheMember" xml:space="preserve">
     <value>' {0}' Türü ' {1}' üye içermiyor</value>
+    <comment>Community:'{0}' türü, '{1}' üyesini içermiyor</comment>
   </data>
   <data name="TypeIsNotAEnum" xml:space="preserve">
     <value>' {0}' Türü bir enum türü değil</value>
+    <comment>Community:'{0}' türü bir sabit listesi türü değil</comment>
   </data>
   <data name="CustomizePopupWindowParamsEventArgsViewIsNull" xml:space="preserve">
     <value>Bu hatayı önlemek için CustomizePopupWindowParams olay ele alırken CustomizePopupWindowParamsEventArgs.View özellik atamak gereklidir. Bunun için XafApplication.CreateDetailView/CreateListView yöntemleri kullanarak bir görünüm oluşturun. Bu sınıflar ve yöntemler hakkında daha fazla bilgi için ürün belgelerine bakın. Bu yardımcı olmazsa, lütfen https://supportcenter.devexpress.com/ de destek ekibimize ulaşın</value>
+    <comment>Community:Bu hatayı önlemek için CustomizePopupWindowParams olayını işlerken CustomizePopupWindowParamsEventArgs.View özelliğine atama yapmanız gerekir. Bunun için XafApplication.CreateDetailView/CreateListView yöntemlerini kullanarak bir görünüm oluşturun. Bu sınıflar ve yöntemler hakkında daha ayrıntılı bilgi için lütfen ürün belgelerine başvurun. Bu işlem sorunu çözmezse lütfen https://supportcenter.devexpress.com/ adresinden Destek Ekibimizle iletişime geçin.</comment>
   </data>
   <data name="ParameterConflictsWithPropertyException" xml:space="preserve">
     <value>, '{0}' Özelliği '{1}' sınıf ile çatışmaları '{0}' salt okunur parametresi için ölçüt içerir. Salt okunur parametresi için başvurmak için kullanın ' @@ {0}' sözdizimi. Özelliğe başvurmak için kullanın ' @this.{0}' sözdizimi.</value>
+    <comment>Community:Ölçüt, '{1}' sınıfının '{0}' özelliğiyle çakışan '{0}' salt okunur parametresini içeriyor. Salt okunur parametreye başvurmak için '@@{0}' söz dizimini kullanın. Özelliğe başvurmak için '@this.{0}' söz dizimini kullanın.</comment>
   </data>
   <data name="RequiresCurrentObjectException" xml:space="preserve">
     <value>güncelleştiremiyor CriteriaWrapper kriteri dinamik parametreler kullanır çünkü, ancak geçerli nesne belirtilen değil. CriteriaWrapper güncelleştirmek için UpdateParametersValues (Object currentObject) yöntemini çağırın ve geçerli nesne parametre olarak geçirin.</value>
+    <comment>Community:Ölçüt dinamik parametreler kullandığı ancak geçerli nesne belirtilmediği için CriteriaWrapper güncellenemiyor. CriteriaWrapper'ı güncellemek için UpdateParametersValues(Object currentObject) metodunu çağırın ve geçerli nesneyi parametre olarak iletin.</comment>
   </data>
   <data name="RuleSetClearingIsDenied" xml:space="preserve">
     <value>Takas RuleSet engellendi</value>
+    <comment>Community:RuleSet'in boşaltılmasına izin verilmiyor</comment>
   </data>
   <data name="SourceAttributeExpressionShouldStartWith" xml:space="preserve">
     <value>Kaynak özniteliği ifade başlamalı '{0}' ile: '{1}'</value>
+    <comment>Community:Kaynak özniteliği ifadesi '{0}' ile başlamalıdır: '{1}'</comment>
   </data>
   <data name="SourceAttributePathShouldConsistOf" xml:space="preserve">
     <value>Kaynak öznitelik yol oluşur bir veya daha fazla düğüm adı ve soyadı özniteliği, hangi tarafından sınırlandırılır ' \\' sembolü: '{0}'</value>
+    <comment>Community:Kaynak özniteliği yolu, '\\' simgesiyle ayrılmış bir veya daha fazla düğüm adından ve sonda bir öznitelik adından oluşmalıdır: '{0}'</comment>
   </data>
   <data name="TemplateTypeInfoMissed" xml:space="preserve">
     <value>Türü için '{0}' tür bulamıyorum. Şablonunuzu XAF modülünde koymak veya XafTypesInfo.Instance.FindTypeInfo(typeof({0})) yöntemini kullanarak el ile kaydetmeniz gerekir.</value>
+    <comment>Community:'{0}' türü için TypeInfo bulunamıyor. Şablonunuzu bir XAF modülüne yerleştirmeli veya XafTypesInfo.Instance.FindTypeInfo(typeof({0})) metodunu kullanarak elle kaydetmelisiniz.</comment>
   </data>
   <data name="TheAspectIsNotPresentInAspectsCollection" xml:space="preserve">
     <value>Boy ' {0}' yönleri koleksiyonda mevcut değil</value>
+    <comment>Community:'{0}' aspekti, aspekt koleksiyonunda bulunmuyor</comment>
   </data>
   <data name="TheAssemblyDoesntReferAssembly" xml:space="preserve">
     <value>' {0}' Derlemesi derleme {1} ({2}) göstermez</value>
+    <comment>Community:'{0}' derlemesi, {1} derlemesine ({2}) başvurmuyor</comment>
   </data>
   <data name="TheClassIsNotFoundInBOModel" xml:space="preserve">
     <value>' {0}' Sınıf BOModel içinde bulunamadı</value>
+    <comment>Community:'{0}' sınıfı BOModel içinde bulunamadı</comment>
   </data>
   <data name="TheClassNameAttributeIsEmpty" xml:space="preserve">
     <value>ClassName özniteliğini başvurulan görünümü düğüm boş:</value>
+    <comment>Community:Başvurulan görünüm düğümünün ClassName özniteliği boş:</comment>
   </data>
   <data name="TheClassNameAttributeRefersToADifferentType" xml:space="preserve">
     <value>ClassName özniteliğini başvurulan görünümü düğümü başvuran bir farklı tipi. \r\nShortcut nesne türü için: \r\nView düğüm nesne türü {0}: {1}</value>
+    <comment>Community:Başvurulan görünüm düğümünün ClassName özniteliği farklı bir türe başvuruyor. \r\nKısayol nesne türü: {0}\r\nGörünüm düğümü nesne türü: {1}</comment>
   </data>
   <data name="TheCreateApplicationModulesManagerReturnsNull" xml:space="preserve">
     <value>CreateApplicationModulesManager yöntemi null döndürür</value>
+    <comment>Community:CreateApplicationModulesManager yöntemi boş referans döndürüyor</comment>
   </data>
   <data name="TheExpressionShouldConsistOf" xml:space="preserve">
     <value>İfade hangi tarafından sınırlandırılır ';' simge arama ifade ve kaynak öznitelik adını oluşmalıdır: '{0}'</value>
+    <comment>Community:İfade, ';' simgesiyle ayrılmış arama ifadesinden ve kaynak özniteliği adından oluşmalıdır: '{0}'</comment>
   </data>
   <data name="TheExpressionStringContainsANumberOfExpressions" xml:space="preserve">
     <value>'ExpressionString' dize {0} ifadeleri içerir.</value>
+    <comment>Community:'expressionString' dizesi {0} ifade içeriyor</comment>
   </data>
   <data name="ThePassedFileIsNotADllOrConfig" xml:space="preserve">
     <value>Geçirilen ' {0}' dosyası değil bir *.dll veya *.config dosyadır.</value>
+    <comment>Community:Sağlanan '{0}' dosyası bir *.dll veya *.config dosyası değil</comment>
   </data>
   <data name="ThereIsAlreadyRegisteredCreatorForFormat" xml:space="preserve">
     <value>Zaten bir yaratıcı biçimi ' {0}' kayıtlı değil</value>
+    <comment>Community:'{0}' biçimi için zaten kayıtlı bir oluşturucu var</comment>
   </data>
   <data name="TheTypeAttributeCannotBeEmpty" xml:space="preserve">
     <value>'Type' özniteliği boş olamaz</value>
+    <comment>Approved</comment>
   </data>
   <data name="TheTypeIsNotDescendantOf" xml:space="preserve">
     <value>' {0}' türü ' {1}' soyundan</value>
+    <comment>Community:'{0}' türü, '{1}' türünden türetilmemiştir</comment>
   </data>
   <data name="UnableToAssignDisabledActionItem" xml:space="preserve">
     <value>Engelli öğesi atamak için yapamaz. Eylem: {0}. madde: {1}. devre dışı nedenler: (2)</value>
+    <comment>Community:Devre dışı bir öğe atanamıyor. Eylem: {0}. Öğe: {1}. Devre dışı bırakılma nedenleri: {2}</comment>
   </data>
   <data name="UnableToAssignInvisibleActionItem" xml:space="preserve">
     <value>görünmez bir öğeyi atamak için yapamaz. Eylem: {0}. madde: {1}. görünmez nedenler: (2)</value>
+    <comment>Community:Görünmez bir öğe atanamıyor. Eylem: {0}. Öğe: {1}. Görünmezlik nedenleri: {2}</comment>
   </data>
   <data name="UnableToCast" xml:space="preserve">
     <value>türü ' {1}' türü için ' {0}' nesne artığını açılamıyor</value>
+    <comment>Community:'{0}' türündeki nesnenin türü '{1}' olarak değiştirilemiyor</comment>
   </data>
   <data name="UnableToChangeChildrenOfNodeDueItIsLocked" xml:space="preserve">
     <value>nedeniyle bu düğüm kilitli '{0}' alt değiştirme kurulamıyor.</value>
+    <comment>Community:'{0}' düğümü kilitli olduğu için alt düğümleri değiştirilemiyor.</comment>
   </data>
   <data name="UnableToChangeConnectionString" xml:space="preserve">
     <value>Bağlantı dizesini değiştirin yapamaz. Zaten bağlı</value>
+    <comment>Community:Bağlantı dizesi değiştirilemiyor. Zaten bağlı</comment>
   </data>
   <data name="UnableToChangeValueOfAttributeDueItIsLocked" xml:space="preserve">
     <value>değeri ' {0}' özniteliği bu nedeniyle Kilitli değiştirmek için</value>
+    <comment>Community:Kilitli olduğu için '{0}' özniteliğinin değeri değiştirilemiyor</comment>
   </data>
   <data name="UnableToCreateObjectSpace" xml:space="preserve">
     <value>ObjectSpace oluşturulamıyor. Bir dataLayer null veya boş connectionString</value>
+    <comment>Community:ObjectSpace oluşturulamıyor. dataLayer referansı boş veya connectionString boş</comment>
   </data>
   <data name="UnableToCreateUpdateSessionAutoCreateOption" xml:space="preserve">
     <value>UpdatingSession oluşturulamıyor. {0} DataLayer.AutoCreateOption değil</value>
+    <comment>Community:UpdatingSession oluşturulamıyor. dataLayer.AutoCreateOption değeri: {0}</comment>
   </data>
   <data name="UnableToCreateUpdateSessionDataLayerIsNull" xml:space="preserve">
     <value>UpdatingSession oluşturulamıyor. Bir dataLayer null veya boş connectionString</value>
+    <comment>Community:UpdatingSession oluşturulamıyor. dataLayer referansı boş veya connectionString boş</comment>
   </data>
   <data name="UnableToCreateUpdatingReadonlySessionAutoCreateOption" xml:space="preserve">
     <value>UpdatingReadOnlySession oluşturulamıyor. {0} DataLayer.AutoCreateOption değil</value>
+    <comment>Community:UpdatingReadOnlySession oluşturulamıyor. dataLayer.AutoCreateOption değeri: {0}</comment>
   </data>
   <data name="UnableToExecuteDisabledOrInactiveAction" xml:space="preserve">
     <value>Engelli veya etkin eyleminin yürütülemiyor {2}. Nedenlerle devre dışı bırakın: {0}, etkin olmayan nedenler: {1}</value>
+    <comment>Community:Devre dışı veya etkin olmayan {2} eylemi yürütülemiyor. Devre dışı bırakılma nedenleri: {0}, etkin olmama nedenleri: {1}</comment>
   </data>
   <data name="UnableToFindADetailViewForType" xml:space="preserve">
     <value>' {0}' nesne türü için bir ayrıntı görünümü bulmak için</value>
+    <comment>Community:'{0}' nesne türü için ayrıntı görünümü bulunamıyor</comment>
   </data>
   <data name="UnableToFindAListViewForType" xml:space="preserve">
     <value>' {0}' nesne türü için bir liste görünümü bulmak için</value>
+    <comment>Community:'{0}' nesne türü için liste görünümü bulunamıyor</comment>
   </data>
   <data name="UnableToFindPropertyInType" xml:space="preserve">
     <value>yapamaz bulmak özelliği ' {0}' türündeki ' {1}'</value>
+    <comment>Community:'{1}' türünde '{0}' özelliği bulunamıyor</comment>
   </data>
   <data name="UnableToInitializeFileDataProperty" xml:space="preserve">
     <value>yapamaz, ya da oluşturmak için izinleriniz yok</value>
+    <comment>Community:{1} nesnesindeki {0} özelliği başlatılamıyor; çünkü bu özellik salt okunur veya {2} türünün varsayılan oluşturucusu yok ya da bunu oluşturma izniniz yok</comment>
   </data>
   <data name="UnableToSetReadOnlyProperty" xml:space="preserve">
     <value>readonly özelliği ' {0}' ayarlanamıyor</value>
+    <comment>Community:Salt okunur '{0}' özelliği ayarlanamıyor</comment>
   </data>
   <data name="UnknownException" xml:space="preserve">
     <value>bilinmeyen özel durum oluşur. Özel durum ayrıntıları alınamıyor</value>
+    <comment>Community:Bilinmeyen bir özel durum oluşuyor. Özel durum ayrıntıları alınamıyor</comment>
   </data>
   <data name="UnknownViewNodeName" xml:space="preserve">
     <value>bilinmeyen görünümü düğüm adı: '{0}' \r\nAllowed adı: '{1}', '{2}'</value>
+    <comment>Community:Bilinmeyen görünüm düğümü adı: '{0}'\r\nİzin verilen adlar: '{1}', '{2}'</comment>
   </data>
   <data name="ValidationCannotFindThePropertyWithinTheClass" xml:space="preserve">
     <value>' {0}' Geçerlilik kuralı özelliği ' {1}' hedef ' {2}' sınıfında bu özellik varolmadığı için kullandığı denetleyemiyor</value>
+    <comment>Community:'{1}' özelliğini kullanan '{0}' geçerlilik kuralı denetlenemiyor; çünkü bu özellik hedef '{2}' sınıfında bulunmuyor</comment>
   </data>
   <data name="ValidationMessageTemplateHasInvalidFormat" xml:space="preserve">
     <value>Doğrulama iletisi şablonu geçersiz biçime sahip: '{0}'</value>
+    <comment>Community:Doğrulama iletisi şablonunun biçimi geçersiz: '{0}'</comment>
   </data>
   <data name="ValueCannotBeStoredIntoTheProperty" xml:space="preserve">
     <value>' {0}' Değeri ' {1}' özelliği saklanamaz</value>
+    <comment>Community:'{0}' değeri '{1}' özelliğine kaydedilemiyor</comment>
   </data>
   <data name="WindowWasNotFound" xml:space="preserve">
     <value>Pencere tarafından kimliği '{0}' bulunamadı. Kayıtlı windows: '{1}'</value>
+    <comment>Community:'{0}' kimliğine sahip pencere bulunamadı. Kayıtlı pencereler: '{1}'</comment>
   </data>
   <data name="XPDictionaryIsNull" xml:space="preserve">
     <value>XPDictionary null</value>
+    <comment>Community:XPDictionary referansı boş</comment>
   </data>
   <data name="YouCannotChangeCurrentAspect" xml:space="preserve">
     <value>geçerli yönünü değiştiremez. Geçerli iş parçacığı kültür üzerinde bağlıdır</value>
+    <comment>Community:Geçerli yönü değiştiremezsiniz. Bu yön, geçerli iş parçacığının kültürüne bağlıdır</comment>
   </data>
   <data name="SourceNodeExpressionShouldStartWith" xml:space="preserve">
     <value>SourceNode ifade başlamalı '{0}' ile: '{1}'</value>
+    <comment>Community:SourceNode ifadesi '{0}' ile başlamalıdır: '{1}'</comment>
   </data>
   <data name="DuplicatedVisibleInDashboardsClassCaption" xml:space="preserve">
     <value>Türü '{0}' ve türü '{1}' hem '{2}' aynı başlık var ve bu yüzden panolar modülünde kullanılamaz. VisibleInDashboards özniteliği ile dekore edilmiş tüm türleri benzersiz başlıklar olmalıdır.</value>
+    <comment>Community:'{0}' türü ve '{1}' türü aynı '{2}' başlığına sahip olduğundan Panolar Modülünde kullanılamaz. VisibleInDashboards özniteliğiyle işaretlenmiş tüm türlerin başlıkları benzersiz olmalıdır.</comment>
+  </data>
+  <data name="PassedObjectBelongsToAnotherObjectSpace" xml:space="preserve">
+    <value>İletilen nesne başka bir ObjectSpace'e ait. Bu hata, nesneleriniz üzerinde ait olmadıkları bir ObjectSpace aracılığıyla işlem yaptığınızda oluşabilir. Örneğin, XafApplication.CreateDetailView metodunu kullanırken, bu metoda parametre olarak verilen ObjectSpace'ten farklı bir ObjectSpace'ten alınmış bir nesne ilettiğinizde bu hatayla karşılaşabilirsiniz. Bu hatayı düzeltmek için işlem yaptığınız tüm nesnelerin tek bir ObjectSpace'e ait olduğundan emin olmalısınız.\r\nÇoğu durumda, bu hatayı önlemek için iletilen nesneyi hedef ObjectSpace içinde almak üzere ObjectSpace.GetObject/GetObjectByKey metotlarını çağırmak yeterlidir.\r\nBu çözüm işe yaramazsa lütfen https://supportcenter.devexpress.com/ adresinden Destek Ekibimizle iletişime geçin</value>
+    <comment>AI</comment>
   </data>
 </root>

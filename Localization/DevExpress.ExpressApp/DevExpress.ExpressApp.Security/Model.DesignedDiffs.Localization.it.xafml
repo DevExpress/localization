@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ChangePasswordByUser" Caption="Modifica la mia Password" />
+      <Action Id="MyDetails" Caption="Dettagli Personali" />
+      <Action Id="ResetPassword" Caption="Reimposta Password" ToolTip="Crea una nuova password per l'utente selezionato" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters" Caption="Parametri Accesso Autenticazione Standard">
+      <OwnMembers>
+        <Member Name="UserName" Caption="Nome Utente" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordOnLogonParameters" Caption="Parametri Modifica Password all'Accesso">
+      <OwnMembers>
+        <Member Name="ConfirmPassword" Caption="Conferma Password" />
+        <Member Name="NewPassword" Caption="Nuova Password" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordParameters" Caption="Parametri Modifica Password">
+      <OwnMembers>
+        <Member Name="OldPassword" Caption="Vecchia Password" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.EditModelPermission" Caption="Autorizzazioni Modifica Modello">
+      <OwnMembers>
+        <Member Name="Modifier" Caption="Modificatore" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ObjectAccessPermission" Caption="Autorizzazioni Accesso Oggetto">
+      <OwnMembers>
+        <Member Name="CreateAccess" Caption="Creazione" />
+        <Member Name="DeleteAccess" Caption="Eliminazione" />
+        <Member Name="NavigateAccess" Caption="Navigazione" />
+        <Member Name="ObjectType" Caption="Tipo Oggetto" />
+        <Member Name="ReadAccess" Caption="Lettura" />
+        <Member Name="WriteAccess" Caption="Modifica" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ResetPasswordParameters" Caption="Parametri Reimposta Password" />
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ModelAccessModifier">
+        <LocalizationItem Name="Allow" Value="Consenti" />
+        <LocalizationItem Name="Deny" Value="Nega" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccess">
+        <LocalizationItem Name="AllAccess" Value="Tutti gli Accessi" />
+        <LocalizationItem Name="ChangeAccess" Value="Modifica Accesso" />
+        <LocalizationItem Name="Create" Value="Creazione" />
+        <LocalizationItem Name="Delete" Value="Eliminazione" />
+        <LocalizationItem Name="Navigate" Value="Navigazione" />
+        <LocalizationItem Name="NoAccess" Value="Nessun Accesso" />
+        <LocalizationItem Name="Read" Value="Lettura" />
+        <LocalizationItem Name="Write" Value="Modifica" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccessModifier">
+        <LocalizationItem Name="Allow" Value="Consenti" />
+        <LocalizationItem Name="Deny" Value="Nega" />
+        <LocalizationItem Name="None" Value="Nessuno" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="System.Security.Permissions.PermissionState">
+        <LocalizationItem Name="None" Value="Nessuno" />
+        <LocalizationItem Name="Unrestricted" Value="Illimitato" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Exceptions">
+      <LocalizationGroup Name="UserVisibleExceptions">
+        <LocalizationGroup Name="Security">
+          <LocalizationItem Name="LastAdmin" Value="L'utente '{0}' è l'ultimo amministratore del sistema. Impossibile revocare i diritti amministrativi." />
+          <LocalizationItem Name="LoginFailed" Value="Accesso fallito per {0}.{1}" />
+          <LocalizationItem Name="NewPasswordIsEqualToOldPassword" Value="La nuova password è uguale alla vecchia." />
+          <LocalizationItem Name="OldPasswordIsWrong" Value="La vecchia password è errata." />
+          <LocalizationItem Name="PasswordsAreDifferent" Value="Le passwords sono differenti." />
+          <LocalizationItem Name="RetypeTheInformation" Value="Si prega di reinserire le informazioni. Le lettere nelle password devono essere immesse rispettando il maiuscolo ed il minuscolo." />
+          <LocalizationItem Name="UserNameIsEmpty" Value="Il nome utente non può essere vuoto." />
+        </LocalizationGroup>
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="MyDetails" Caption="Dettagli Personali" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView" Caption="Accedi">
+      <Items>
+        <StaticText Id="LogonText" Text="Benvenuti! Inserire il proprio nome utente e password." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ChangePasswordOnLogonParameters_DetailView" Caption="Modifica password all'accesso successivo">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="Per motivi di sicurezza, inserire la propria password. Si prega di inserire la nuova password nei due campi sottostanti, ed assicurarsi di non usare la password usata precedentemente." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ChangePasswordParameters_DetailView" Caption="Modifica Password">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="Per modificare la propria password, si prega di inserire la vecchia e la nuova password nei campi sottostanti." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ObjectAccessPermission_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ObjectAccessPermission" Caption="Autorizzazzioni Accesso Oggetto" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ResetPasswordParameters_DetailView" Caption="Reimposta Password">
+      <Items>
+        <StaticText Id="ResetPasswordText" Text="Impostando la password dell'utente, verrà assegnata all'utente e contemporaneamente verrà disabilitata la vecchia password. Si dovrà informare l'utente della nuova password affinchè possa continuare ad utilizzare l'applicazione. Si desidera procedere?" />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>

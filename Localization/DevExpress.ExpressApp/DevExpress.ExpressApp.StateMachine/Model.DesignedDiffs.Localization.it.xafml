@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.StateMachine.StateMachine" Caption="Macchina a Stati">
+      <OwnMembers>
+        <Member Name="InitialState" Caption="Stato Iniziale" />
+        <Member Name="Name" Caption="Nome" />
+        <Member Name="States" Caption="Stati" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.StateMachineItem" Caption="Elemento Macchina a Stati">
+      <OwnMembers>
+        <Member Name="State" Caption="Stato" />
+        <Member Name="StateHistoryItems" Caption="Elementi Storico Stati" />
+        <Member Name="StateMachine" Caption="Macchina a Stati" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.WFAction" Caption="Azione">
+      <OwnMembers>
+        <Member Name="EndState" Caption="Stato Finale" />
+        <Member Name="Name" Caption="Nome" />
+        <Member Name="ReasonRequired" Caption="Motivo Obbligatorio" />
+        <Member Name="StartState" Caption="Stato di Partenza" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.WFHistoryItem" Caption="Storico Stati">
+      <OwnMembers>
+        <Member Name="ActionName" Caption="Azione" />
+        <Member Name="Reason" Caption="Motivo" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.WFState" Caption="Stato">
+      <OwnMembers>
+        <Member Name="Actions" Caption="Azioni" />
+        <Member Name="Name" Caption="Nome" />
+        <Member Name="StateMachine" Caption="Macchina a Stati" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+</Application>

@@ -1,21 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <AssemblyName>DevExpress.ExpressApp.Notifications.v26.1</AssemblyName>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>DevExpress.ExpressApp.Notifications.v26.2</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>true</DelaySign>
+    <AssemblyOriginatorKeyFile>..\..\DevExpress.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>DevExpress.ExpressApp.Notifications</RootNamespace>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <OutputPath>..\..\DevExpress.Dll\NETCore\</OutputPath>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Include="..\..\AssemblyVersion.cs">
-      <Link>AssemblyVersion.cs</Link>
-    </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="ModuleLocalizationResources.ar.resx" />
@@ -79,13 +75,17 @@
     <EmbeddedResource Include="ModuleLocalizationResources.uz-Cyrl-UZ.resx" />
     <EmbeddedResource Include="ModuleLocalizationResources.uz-Latn-UZ.resx" />
     <EmbeddedResource Include="ModuleLocalizationResources.ky.resx" />
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="ModuleLocalizationResources.hi.resx" />
     <EmbeddedResource Include="ModuleLocalizationResources.is.resx" />
     <EmbeddedResource Include="ModuleLocalizationResources.lt.resx" />
     <EmbeddedResource Include="ModuleLocalizationResources.lv.resx" />
     <EmbeddedResource Include="ModuleLocalizationResources.th.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
 </Project>

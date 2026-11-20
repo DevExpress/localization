@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ChangeStateAction" Caption="Trạng thái thay đổi" ToolTip="Trạng thái thay đổi của đối tượng hiện thời" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCState">
+      <OwnMembers>
+        <Member Name="Appearances" Caption="Diện mạo" />
+        <Member Name="Caption" Caption="Tiêu đề" />
+        <Member Name="Marker" Caption="Người đánh dấu" />
+        <Member Name="MarkerObject" Caption="Người đánh dấu Đối tượng" />
+        <Member Name="StateMachine" Caption="Trạng thái Máy" />
+        <Member Name="TargetObjectCriteria" Caption="Biểu thức lọc Đối tượng Mục tiêu" />
+        <Member Name="Transitions" Caption="Chuyển tiếp" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCStateAppearance" Caption="Diện mạo IDCState">
+      <OwnMembers>
+        <Member Name="AppearanceItemType" Caption="Kiểu Mục Giao diện" />
+        <Member Name="BackColor" Caption="Màu nền" />
+        <Member Name="Context" Caption="Ngữ cảnh" />
+        <Member Name="Criteria" Caption="Biểu thức lọc" />
+        <Member Name="DeclaringType" Caption="Kiểu Khai báo" />
+        <Member Name="Enabled" Caption="Bật" />
+        <Member Name="FontColor" Caption="Màu chữ" />
+        <Member Name="FontStyle" Caption="Kiểu chữ" />
+        <Member Name="Method" Caption="Phương thức" />
+        <Member Name="Priority" Caption="Ưu tiên" />
+        <Member Name="State" Caption="Trạng thái" />
+        <Member Name="TargetItems" Caption="Các mục Mục tiêu" />
+        <Member Name="Visibility" Caption="Nhìn thấy được" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCStateMachine" Caption="Trạng thái Máy IDCState">
+      <OwnMembers>
+        <Member Name="Active" Caption="Hoạt động" />
+        <Member Name="ExpandActionsInDetailView" Caption="Mở các Hành động trong Detail View" />
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="StartState" Caption="Trạng thái Bắt đầu" />
+        <Member Name="StatePropertyName" Caption="Tên Thuộc tính Trạng thái" />
+        <Member Name="States" Caption="Các trạng thái" />
+        <Member Name="TargetObjectType" Caption="Kiểu Đối tượng Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCTransition">
+      <OwnMembers>
+        <Member Name="Caption" Caption="Tiêu đề" />
+        <Member Name="SourceState" Caption="Trạng thái Nguồn" />
+        <Member Name="TargetState" Caption="Trạng thái Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Utils.MarkerObject" Caption="Người đánh dấu Đối tượng">
+      <OwnMembers>
+        <Member Name="DisplayName" Caption="Tên hiển thị" />
+        <Member Name="Marker" Caption="Người đánh đấu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Utils.StringObject" Caption="Đối tượng Chuỗi">
+      <OwnMembers>
+        <Member Name="Name" Caption="Tên" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.StateMachineObjectBase" Caption="Đối tượng Trạng thái Máy Cơ sở" />
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoState" Caption="Trạng thái">
+      <OwnMembers>
+        <Member Name="Appearance" Caption="Diện mạo" />
+        <Member Name="Caption" Caption="Tiêu đề" />
+        <Member Name="Marker" Caption="Người đánh dấu" />
+        <Member Name="StateMachine" Caption="Trạng thái Máy" />
+        <Member Name="TargetObjectCriteria" Caption="Biểu thức lọc Đối tượng Mục tiêu" />
+        <Member Name="Transitions" Caption="Chuyển tiếp" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoStateAppearance" Caption="Diện mạo">
+      <OwnMembers>
+        <Member Name="AppearanceItemType" Caption="Kiểu Mục Giao diện" />
+        <Member Name="BackColor" Caption="Màu nền" />
+        <Member Name="Context" Caption="Ngữ cảnh" />
+        <Member Name="Enabled" Caption="Bật" />
+        <Member Name="FontColor" Caption="Màu chữ" />
+        <Member Name="FontStyle" Caption="Kiểu chữ" />
+        <Member Name="Priority" Caption="Ưu tiên" />
+        <Member Name="TargetItems" Caption="Các mục Mục tiêu" />
+        <Member Name="Visibility" Caption="Nhìn thấy được" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoStateMachine" Caption="Trạng thái Máy">
+      <OwnMembers>
+        <Member Name="Active" Caption="Hoạt động" />
+        <Member Name="ExpandActionsInDetailView" Caption="Mở các Hành động trong Detail View" />
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="StartState" Caption="Trạng thái Bắt đầu" />
+        <Member Name="StatePropertyName" Caption="Tên Thuộc tính Trạng thái" />
+        <Member Name="States" Caption="Các trạng thái" />
+        <Member Name="TargetObjectType" Caption="Kiểu Đối tượng Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoTransition" Caption="Chuyển tiếp">
+      <OwnMembers>
+        <Member Name="Caption" Caption="Tiêu đề" />
+        <Member Name="SourceState" Caption="Trạng thái Nguồn" />
+        <Member Name="TargetState" Caption="Trạng thái Mục tiêu" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Editors.ViewItemVisibility" Value="Xem Mục Có thể thấy được">
+        <LocalizationItem Name="Hide" Value="Ẩn" />
+        <LocalizationItem Name="Show" Value="Hiện" />
+        <LocalizationItem Name="ShowEmptySpace" Value="Hiển thị khoảng trống" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="System.Drawing.FontStyle" Value="Kiểu chữ">
+        <LocalizationItem Name="Bold" Value="Đậm" />
+        <LocalizationItem Name="Italic" Value="Nghiêng" />
+        <LocalizationItem Name="Regular" Value="Thường" />
+        <LocalizationItem Name="Strikeout" Value="Gạch ngang" />
+        <LocalizationItem Name="Underline" Value="Gạch chân" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <Validation>
+    <Rules>
+      <RuleIsReferenced Id="StateIsReferencedDc" MessageTemplateMustBeReferenced="Nếu bạn muốn xóa Trạng thái này, bạn phải chắc chắn nó không được tham chiếu trong bất kỳ Chuyển tiếp nào như Trạng Thái Mục tiêu." />
+      <RuleIsReferenced Id="StateIsReferencedXpo" MessageTemplateMustBeReferenced="Nếu bạn muốn xóa Trạng thái này, bạn phải chắc chắn nó không được tham chiếu trong bất kỳ Chuyển tiếp nào như Trạng Thái Mục tiêu." />
+    </Rules>
+  </Validation>
+  <Views>
+    <DetailView Id="IDCStateAppearance_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IDCStateAppearance" Caption="Diện mạo IDCState" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IDCStateMachine_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IDCStateMachine" Caption="Trạng thái Máy IDCState" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

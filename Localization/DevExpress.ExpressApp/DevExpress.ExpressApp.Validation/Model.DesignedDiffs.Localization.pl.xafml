@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ShowAllContexts" Caption="Walidacja" ToolTip="Walidacja wybranego obiektu(ów) we wszystkich kontekstach" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ContextValidationResult">
+      <OwnMembers>
+        <Member Name="BrokenRules" Caption="Złamane zasady" />
+        <Member Name="Context" Caption="Kontekst" />
+        <Member Name="State" Caption="Stan" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.DisplayableValidationResultItem" Caption="Szczegóły walidacji">
+      <OwnMembers>
+        <Member Name="ContextCaption" Caption="Tytuł kontekstu" />
+        <Member Name="ContextId" Caption="Identyfikator kontekstu" />
+        <Member Name="ErrorMessage" Caption="Komunikat o błędzie" />
+        <Member Name="Rule" Caption="Zasada" />
+        <Member Name="RuleName" Caption="Nazwa zasady" />
+        <Member Name="State" Caption="Stan" />
+        <Member Name="TargetCaption" Caption="Cel" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ValidationResults" Caption="Wyniki walidacji">
+      <OwnMembers>
+        <Member Name="Results" Caption="Wyniki" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleBaseProperties">
+      <OwnMembers>
+        <Member Name="Name" Caption="Nazwa" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Pomiń Null-e lub puste wartości" />
+        <Member Name="TargetCriteria" Caption="Kryteria docelowe" />
+        <Member Name="TargetType" Caption="Typ docelowy" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCriteriaProperties">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Kryteria" />
+        <Member Name="MessageTemplateMustSatisfyCriteria" Caption="Szablon wiadomość musi spełniać kryteria" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleObjectExistsProperties">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Kryteria" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRangeProperties">
+      <OwnMembers>
+        <Member Name="MaximumValue" Caption="Maksymalna wartość" />
+        <Member Name="MinimumValue" Caption="Minimalna wartość" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRegularExpressionProperties">
+      <OwnMembers>
+        <Member Name="Pattern" Caption="Wzorzec" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRequiredFieldProperties">
+      <OwnMembers>
+        <Member Name="SkipNullOrEmptyValues" Caption="Pomiń Null-e lub puste wartości" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleStringComparisonProperties">
+      <OwnMembers>
+        <Member Name="IgnoreCase" Caption="Ignoruj wielkość liter" />
+        <Member Name="MessageTemplateMustBeEqual" Caption="Szablon wiadomości musi być równy" />
+        <Member Name="MessageTemplateMustBeginWith" Caption="Szablon wiadomości musi zaczynać się od" />
+        <Member Name="MessageTemplateMustContain" Caption="Szablon wiadomości musi zawierać" />
+        <Member Name="MessageTemplateMustEndWith" Caption="Szablon wiadomość musi kończyć się" />
+        <Member Name="MessageTemplateMustNotBeEqual" Caption="Szablon wiadomości nie może być równy" />
+        <Member Name="OperandValue" Caption="Wartość argumentu" />
+        <Member Name="OperatorType" Caption="Typ Operatora" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleValueComparisonProperties">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeGreaterThanOperand" Caption="Szablon wiadomości musi być większa od argumentu" />
+        <Member Name="OperatorType" Caption="Typ Operatora" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleBaseProperties">
+      <OwnMembers>
+        <Member Name="Name" Caption="Nazwa" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Pomiń Null-e lub puste wartości" />
+        <Member Name="TargetCriteria" Caption="Kryteria docelowe" />
+        <Member Name="TargetType" Caption="Typ docelowy" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleCriteriaProperties">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Kryteria" />
+        <Member Name="MessageTemplateMustSatisfyCriteria" Caption="Szablon wiadomość musi spełniać kryteria" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleObjectExistsProperties">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Kryteria" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRangeProperties">
+      <OwnMembers>
+        <Member Name="MaximumValue" Caption="Maksymalna wartość" />
+        <Member Name="MinimumValue" Caption="Minimalna wartość" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRegularExpressionProperties">
+      <OwnMembers>
+        <Member Name="Pattern" Caption="Wzorzec" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResult" Caption="Rezultaty walidacji">
+      <OwnMembers>
+        <Member Name="Results" Caption="Wyniki" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResultItem" Caption="Szczegóły walidacji">
+      <OwnMembers>
+        <Member Name="ContextId" Caption="Identyfikator kontekstu" />
+        <Member Name="ErrorMessage" Caption="Komunikat o błędzie" />
+        <Member Name="Rule" Caption="Zasada" />
+        <Member Name="RuleName" Caption="Nazwa zasady" />
+        <Member Name="State" Caption="Stan" />
+        <Member Name="Target" Caption="Cel" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResultItemAggregate">
+      <OwnMembers>
+        <Member Name="AggregatedResults" Caption="Zagregowane wyniki" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleStringComparisonProperties">
+      <OwnMembers>
+        <Member Name="IgnoreCase" Caption="Ignoruj wielkość liter" />
+        <Member Name="MessageTemplateMustBeEqual" Caption="Szablon wiadomości musi być równy" />
+        <Member Name="MessageTemplateMustBeginWith" Caption="Szablon wiadomości musi zaczynać się od" />
+        <Member Name="MessageTemplateMustContain" Caption="Szablon wiadomości musi zawierać" />
+        <Member Name="MessageTemplateMustEndWith" Caption="Szablon Wiadomość musi kończyć się" />
+        <Member Name="MessageTemplateMustNotBeEqual" Caption="Szablon komunikatu nie może być równa" />
+        <Member Name="OperandValue" Caption="Wartość argumentu" />
+        <Member Name="OperatorType" Caption="Typ Operatora" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleValueComparisonProperties">
+      <OwnMembers>
+        <Member Name="RightOperand" Caption="Argument po prawej" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.Data.Filtering.Aggregate" Value="Agregacja">
+        <LocalizationItem Name="Avg" Value="Średnia" />
+        <LocalizationItem Name="Count" Value="Ilość" />
+        <LocalizationItem Name="Exists" Value="Istnieje" />
+        <LocalizationItem Name="Sum" Value="Suma" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Validation.AllContextsView.IsValid" Value="Jest prawidłowy">
+        <LocalizationItem Name="Invalid" Value="Nieprawidłowy" />
+        <LocalizationItem Name="Valid" Value="Prawidłowy" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.StringComparisonType">
+        <LocalizationItem Name="Contains" Value="Zawiera" />
+        <LocalizationItem Name="EndsWith" Value="Kończy się" />
+        <LocalizationItem Name="Equals" Value="Równa się" />
+        <LocalizationItem Name="NotEquals" Value="Nie równa się" />
+        <LocalizationItem Name="StartsWith" Value="Zaczyna się" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValidationState" Value="Stan walidacji">
+        <LocalizationItem Name="Invalid" Value="Nieprawidłowy" />
+        <LocalizationItem Name="Skipped" Value="Pominięty" />
+        <LocalizationItem Name="Valid" Value="Prawidłowy" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValueComparisonType">
+        <LocalizationItem Name="Equals" Value="Równa się" />
+        <LocalizationItem Name="GreaterThan" Value="Większy niż" />
+        <LocalizationItem Name="GreaterThanOrEqual" Value="Większy lub równy" />
+        <LocalizationItem Name="LessThan" Value="Mniej niż" />
+        <LocalizationItem Name="LessThanOrEqual" Value="Mniejszy lub równy" />
+        <LocalizationItem Name="NotEquals" Value="Nie równa się" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Xpo.PersistentCriteriaEvaluationBehavior">
+        <LocalizationItem Name="BeforeTransaction" Value="Przed transakcją" />
+        <LocalizationItem Name="InTransaction" Value="W transakcji" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <Validation>
+    <ErrorMessageTemplates>
+      <RuleCombinationOfPropertiesIsUnique MessageTemplateCombinationOfPropertiesMustBeUnique="Kombinacja następujących właściwości musi być unikalna: {FormattedTargetProperties}." MessageTemplateFoundObjects="Następujące obiekty zostały znalezione: " />
+      <RuleCriteria MessageTemplateMustSatisfyCriteria="Obiekt &quot;{TargetObject}&quot; musi spełniać następujące kryteria: &quot;{Criteria}&quot;." />
+      <RuleFromBoolProperty MessageTemplateMustBeTrue="&quot;{TargetPropertyName}&quot; musi być zaznaczone." />
+      <RuleIsReferenced MessageTemplateMustBeReferenced="Obiekt &quot;{TargetObject}&quot; musi być powiązany." MessageTemplateFoundObjects="Następujące obiekty zostały znalezione: " />
+      <RuleObjectExists MessageTemplateFoundObjects="Następujące obiekty zostały znalezione: " MessageTemplateMustExist="Muszą istnieć obiekty spełniające kryterium &quot;{Criteria}&quot;." />
+      <RuleRange MessageTemplateMustBeInRange="&quot;{TargetPropertyName}&quot; musi być pomiędzy &quot;{MinimumValue}&quot; i &quot;{MaximumValue}&quot;. Granice są uwzględnione." />
+      <RuleRegularExpression MessageTemplateMustMatchPattern="&quot;{TargetPropertyName}&quot; musi być zgodna z następującym wzorem: &quot;{Pattern}&quot;." />
+      <RuleRequiredField MessageTemplateMustNotBeEmpty="&quot;{TargetPropertyName}&quot; nie może być pusty." />
+      <RuleSearchObject MessageTemplateFoundObjects="Następujące obiekty zostały znalezione: " />
+      <RuleStringComparison MessageTemplateMustContain="&quot;{TargetPropertyName}&quot; musi zawierać &quot;{OperandValue}&quot;." MessageTemplateMustBeginWith="&quot;{TargetPropertyName}&quot; musi zaczynać się od &quot;{OperandValue}&quot;." MessageTemplateMustEndWith="&quot;{TargetPropertyName}&quot; musi kończyć się &quot;{OperandValue}&quot;." MessageTemplateMustBeEqual="&quot;{TargetPropertyName}&quot; musi być równy &quot;{OperandValue}&quot;." MessageTemplateMustNotBeEqual="&quot;{TargetPropertyName}&quot; nie musi być równy &quot;{OperandValue}&quot;." />
+      <RuleUniqueValue MessageTemplateMustBeUnique="Istnieje obiekt z taką samą wartością dla &quot;{TargetPropertyName}&quot;. Wartośc &quot;{TargetPropertyName}&quot; muszą być unikalne." />
+      <RuleValueComparison MessageTemplateMustBeEqualToOperand="&quot;{TargetPropertyName}&quot; musi być równa &quot;{RightOperand}&quot;." MessageTemplateMustBeGreaterThanOperand="&quot;{TargetPropertyName}&quot; musi być większa niż &quot;{RightOperand}&quot;." MessageTemplateMustBeGreaterThanOrEqualToOperand="&quot;{TargetPropertyName}&quot; musi być większa lub równa &quot;{RightOperand}&quot;." MessageTemplateMustBeLessThanOperand="&quot;{TargetPropertyName}&quot; musi być mniejszy niż &quot;{RightOperand}&quot;." MessageTemplateMustBeLessThanOrEqualToOperand="&quot;{TargetPropertyName}&quot; musi być mniejsza lub równa &quot;{RightOperand}&quot;." MessageTemplateMustNotBeEqualToOperand="&quot;{TargetPropertyName}&quot; nie musi być równa &quot;{RightOperand}&quot;." />
+    </ErrorMessageTemplates>
+  </Validation>
+  <Views>
+    <DetailView Id="RuleSetValidationResult_ByTarget_Error_DetailView" Caption="Błąd walidacji">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="Wykryto problemy podczas sprawdzania poprawności danych. Prosimy o zapoznanie się z poniższymi informacjami, aby sprawdzić jakie to problemy i jak można je poprawić." />
+      </Items>
+    </DetailView>
+    <ListView Id="RuleSetValidationResultItem_ByTarget_ListView">
+      <Columns>
+        <ColumnInfo Id="ContextCaption" Caption="Kontekst" />
+        <ColumnInfo Id="ErrorMessage" Caption="Opis" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ValidationResults_Error_DetailView">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="Wykryto problemy podczas sprawdzania poprawności danych. Prosimy o zapoznanie się z poniższymi informacjami, aby sprawdzić jakie to problemy i jak można je poprawić." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ValidationResults_Passed_DetailView">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="Nie wykryto żadnych problemów." />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ChangePasswordByUser" Caption="Thay đổi mật khẩu của tôi" />
+      <Action Id="MyDetails" Caption="Chi tiết về tôi" />
+      <Action Id="ResetPassword" Caption="Thiết lập lại mật khẩu" ToolTip="Sinh một mật khẩu mới cho người dùng được chọn" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters" Caption="Các thông số tiêu chuẩn xác thực đăng nhập">
+      <OwnMembers>
+        <Member Name="Password" Caption="Mật khẩu" />
+        <Member Name="UserName" Caption="Tên Người dùng" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordOnLogonParameters" Caption="Các tham số thay đổi mật khẩu lúc đăng nhập">
+      <OwnMembers>
+        <Member Name="ConfirmPassword" Caption="Khẳng định Mật khẩu" />
+        <Member Name="NewPassword" Caption="Mật khẩu Mới" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordParameters" Caption="Các tham số Thay đổi Mật khẩu">
+      <OwnMembers>
+        <Member Name="OldPassword" Caption="Mật khẩu Cũ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.EditModelPermission" Caption="Quyền Sửa Model">
+      <OwnMembers>
+        <Member Name="Modifier" Caption="Người sửa" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ObjectAccessPermission" Caption="Quyền Truy cập Đối tượng">
+      <OwnMembers>
+        <Member Name="CreateAccess" Caption="Quyền tạo" />
+        <Member Name="DeleteAccess" Caption="Quyền xóa" />
+        <Member Name="NavigateAccess" Caption="Quyền điều hướng" />
+        <Member Name="ObjectType" Caption="Kiểu Đối tượng" />
+        <Member Name="ReadAccess" Caption="Quyền đọc" />
+        <Member Name="WriteAccess" Caption="Quyền ghi" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ResetPasswordParameters" Caption="Các tham số thiết lập lại mật khẩu">
+      <OwnMembers>
+        <Member Name="Password" Caption="Mật khẩu" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ModelAccessModifier" Value="Người Truy cập Model">
+        <LocalizationItem Name="Allow" Value="Cho phép" />
+        <LocalizationItem Name="Deny" Value="Từ chối" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccess" Value="Truy cập Đối tượng">
+        <LocalizationItem Name="AllAccess" Value="Tất cả Quyền" />
+        <LocalizationItem Name="ChangeAccess" Value="Quyền Thay đổi" />
+        <LocalizationItem Name="Create" Value="Tạo" />
+        <LocalizationItem Name="Delete" Value="Xóa" />
+        <LocalizationItem Name="Navigate" Value="Điều hướng" />
+        <LocalizationItem Name="NoAccess" Value="Không Truy cập" />
+        <LocalizationItem Name="Read" Value="Đọc" />
+        <LocalizationItem Name="Write" Value="Ghi" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccessModifier" Value="Người truy cập đối tượng">
+        <LocalizationItem Name="Allow" Value="Cho phép" />
+        <LocalizationItem Name="Deny" Value="Từ chối" />
+        <LocalizationItem Name="None" Value="Không xác định" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="MyDetails" Caption="Chi tiết về tôi" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView" Caption="Đăng nhập">
+      <Items>
+        <StaticText Id="LogonText" Text="Chào mừng bạn! Xin vui lòng nhập tên người dùng và mật khẩu của bạn dưới đây." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ChangePasswordOnLogonParameters_DetailView" Caption="Thay đổi mật khẩu đăng nhập lần đầu">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="Vì lý do bảo mật, bạn phải thiết lập mật khẩu của riêng bạn. Xin vui lòng nhập mật khẩu mới trong hai trường văn bản bên dưới, và chắc chắn không tái sử dụng một mật khẩu mà bạn sử dụng trước đó." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ChangePasswordParameters_DetailView" Caption="Thay đổi Mật khẩu">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="Để thay đổi mật khẩu, vui lòng nhập các mật khẩu cũ và mới trong trường văn bản dưới đây." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ObjectAccessPermission_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ObjectAccessPermission" Caption="Quyền Truy cập Đối tượng" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ResetPasswordParameters_DetailView" Caption="Thiết lập lại mật khẩu">
+      <Items>
+        <StaticText Id="ResetPasswordText" Text="Thiết lập mật khẩu của người dùng sẽ tự động tạo ra một mật khẩu mới cho người dùng, và đồng thời vô hiệu hóa đăng nhập của người dùng với mật khẩu cũ. Sau đó bạn phải đưa mật khẩu mới cho người dùng để người dùng có thể tiếp tục làm việc với ứng dụng. Bạn có chắc chắn muốn làm điều này?" />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>

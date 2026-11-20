@@ -1,0 +1,911 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ShowAllContexts" Caption="Kiểm tra hợp lệ" ToolTip="Kiểm tra hợp lệ (các) đối tượng được chọn trong tất cả các ngữ cảnh được định trước" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ContextValidationResult" Caption="Kết quả kiểm tra ngữ cảnh">
+      <OwnMembers>
+        <Member Name="BrokenRules" Caption="Các qui ước bị bẻ gãy" />
+        <Member Name="Context" Caption="Ngữ cảnh" />
+        <Member Name="DisplayableValidationResultItems" Caption="Các mục kết quả kiểm tra có thể hiển thị" />
+        <Member Name="State" Caption="Trạng thái" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.DisplayableValidationResultItem" Caption="Chi tiết kiểm tra hợp lệ">
+      <OwnMembers>
+        <Member Name="ContextCaption" Caption="Tiêu đề Ngữ cảnh" />
+        <Member Name="ContextId" Caption="Id của Ngữ cảnh" />
+        <Member Name="ErrorMessage" Caption="Thông báo Lỗi" />
+        <Member Name="Rule" Caption="Qui ước" />
+        <Member Name="RuleName" Caption="Tên Qui ước" />
+        <Member Name="RuleProperties" Caption="Qui ước Các thuộc tính" />
+        <Member Name="State" Caption="Trạng thái" />
+        <Member Name="TargetCaption" Caption="Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ValidationResults" Caption="Kết quả kiểm tra hợp lệ">
+      <OwnMembers>
+        <Member Name="DisplayableValidationResultItems" Caption="Các mục kết quả kiểm tra có thể hiển thị" />
+        <Member Name="HighlightErrors" Caption="Bôi sáng các lỗi" />
+        <Member Name="Results" Caption="Kết quả" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleBaseProperties" Caption="IRule Các thuộc tính Cơ bản">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Mẫu Thông báo Tùy chỉnh" />
+        <Member Name="InvertResult" Caption="Đảo ngược Kết quả" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mẫu thông báo bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc mục tiêu" />
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="TargetContextIDs" Caption="Các ID Ngữ cảnh Mục tiêu" />
+        <Member Name="TargetCriteria" Caption="Biểu thức lọc Mục tiêu" />
+        <Member Name="TargetType" Caption="Kiểu Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCollectionPropertyProperties" Caption="IRule Tập hợp Các thuộc tính Sở hữu">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Mẫu Thông báo Tùy chỉnh" />
+        <Member Name="InvertResult" Caption="Đảo ngược Kết quả" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Mẫu thông báo sau tin nhắn kiểm tra hợp lệ tập hợp" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mẫu thông báo bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biễu thức lọc tập hợp" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc mục tiêu" />
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="TargetCollectionOwnerType" Caption="Kiểu Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetCollectionPropertyName" Caption="Tên Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetContextIDs" Caption="Các ID Ngữ cảnh Mục tiêu" />
+        <Member Name="TargetCriteria" Caption="Biểu thức lọc Mục tiêu" />
+        <Member Name="TargetType" Caption="Kiểu Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCombinationOfPropertiesIsUniqueProperties" Caption="IRule Sự kết hợp Của Các thuộc tính Là Các thuộc tính Duy nhất">
+      <OwnMembers>
+        <Member Name="CriteriaEvaluationBehavior" Caption="Cách thức Đánh giá Biểu thức lọc" />
+        <Member Name="CustomMessageTemplate" Caption="Mẫu Thông báo Tùy chỉnh" />
+        <Member Name="FoundObjectMessageFormat" Caption="Định dạng Thông báo Tìm thấy Đối tượng" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Tách Các thông báo Đối tượng Tìm thấy" />
+        <Member Name="IncludeCurrentObject" Caption="Bao gồm Đối tượng Hiện tại" />
+        <Member Name="InvertResult" Caption="Đảo ngược Kết quả" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Mẫu thông báo sau tin nhắn kiểm tra hợp lệ tập hợp" />
+        <Member Name="MessageTemplateCombinationOfPropertiesMustBeUnique" Caption="Mẫu thông báo kết hợp của các thuộc tính phải là duy nhất" />
+        <Member Name="MessageTemplateFoundObjects" Caption="Mẫu thông báo các đối tượng tìm thấy" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mẫu thông báo bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc tập hợp" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc mục tiêu" />
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="TargetCollectionOwnerType" Caption="Kiểu Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetCollectionPropertyName" Caption="Tên Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetContextIDs" Caption="Các ID Ngữ cảnh Mục tiêu" />
+        <Member Name="TargetCriteria" Caption="Biểu thức lọc Mục tiêu" />
+        <Member Name="TargetProperties" Caption="Các thuộc tính Mục tiêu" />
+        <Member Name="TargetType" Caption="Kiểu Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCriteriaProperties" Caption="IRule Các thuộc tính Biểu thức lọc">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Biểu thức lọc" />
+        <Member Name="CustomMessageTemplate" Caption="Mẫu Thông báo Tùy chỉnh" />
+        <Member Name="InvertResult" Caption="Đảo ngược Kết quả" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Mẫu thông báo sau tin nhắn kiểm tra hợp lệ tập hợp" />
+        <Member Name="MessageTemplateMustSatisfyCriteria" Caption="Mẫu thông báo phải thỏa mãn biểu thức lọc" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mẫu thông báo bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc tập hợp" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc mục tiêu" />
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="TargetCollectionOwnerType" Caption="Kiểu Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetCollectionPropertyName" Caption="Tên Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetContextIDs" Caption="Các ID Ngữ cảnh Mục tiêu" />
+        <Member Name="TargetCriteria" Caption="Biểu thức lọc Mục tiêu" />
+        <Member Name="TargetType" Caption="Kiểu Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleFromBoolPropertyProperties" Caption="IRule Từ Các thuộc tính Sở hữu Bool">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Mẫu Thông báo Tùy chỉnh" />
+        <Member Name="InvertResult" Caption="Đảo ngược Kết quả" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Mẫu thông báo sau tin nhắn kiểm tra hợp lệ tập hợp" />
+        <Member Name="MessageTemplateMustBeTrue" Caption="Mẫu thông báo phải là True" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mẫu thông báo bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc tập hợp" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc mục tiêu" />
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="TargetCollectionOwnerType" Caption="Kiểu Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetCollectionPropertyName" Caption="Tên Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetContextIDs" Caption="Các ID Ngữ cảnh Mục tiêu" />
+        <Member Name="TargetCriteria" Caption="Biểu thức lọc Mục tiêu" />
+        <Member Name="TargetPropertyName" Caption="Tên Sở hữu Mục tiêu" />
+        <Member Name="TargetType" Caption="Kiểu Mục tiêu" />
+        <Member Name="UsedProperties" Caption="Các thuộc tính được sử dụng" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleIsReferencedProperties" Caption="IRule Là Các thuộc tính Được tham chiếu">
+      <OwnMembers>
+        <Member Name="CriteriaEvaluationBehavior" Caption="Cách thức Đánh giá Biểu thức lọc" />
+        <Member Name="CustomMessageTemplate" Caption="Mẫu Thông báo Tùy chỉnh" />
+        <Member Name="FoundObjectMessageFormat" Caption="Định dạng Thông báo Tìm thấy Đối tượng" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Tách Các thông báo Đối tượng Tìm thấy" />
+        <Member Name="IncludeCurrentObject" Caption="Bao gồm Đối tượng Hiện tại" />
+        <Member Name="InvertResult" Caption="Đảo ngược Kết quả" />
+        <Member Name="LooksFor" Caption="Tìm cho" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Mẫu thông báo sau tin nhắn kiểm tra hợp lệ tập hợp" />
+        <Member Name="MessageTemplateFoundObjects" Caption="Mẫu thông báo các đối tượng tìm thấy" />
+        <Member Name="MessageTemplateMustBeReferenced" Caption="Mẫu thông báo phải được tham chiếu" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mẫu thông báo bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc tập hợp" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc mục tiêu" />
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="ReferencePropertyName" Caption="Tên Sở hữu Tham chiếu" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="TargetCollectionOwnerType" Caption="Kiểu Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetCollectionPropertyName" Caption="Tên Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetContextIDs" Caption="Các ID Ngữ cảnh Mục tiêu" />
+        <Member Name="TargetCriteria" Caption="Biểu thức lọc Mục tiêu" />
+        <Member Name="TargetType" Caption="Kiểu Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleObjectExistsProperties" Caption="IRule Đối tượng Có Các thuộc tính">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Biểu thức lọc" />
+        <Member Name="CriteriaEvaluationBehavior" Caption="Cách thức Đánh giá Biểu thức lọc" />
+        <Member Name="CustomMessageTemplate" Caption="Mẫu Thông báo Tùy chỉnh" />
+        <Member Name="FoundObjectMessageFormat" Caption="Định dạng Thông báo Tìm thấy Đối tượng" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Tách Các thông báo Đối tượng Tìm thấy" />
+        <Member Name="IncludeCurrentObject" Caption="Bao gồm Đối tượng Hiện tại" />
+        <Member Name="InvertResult" Caption="Đảo ngược Kết quả" />
+        <Member Name="LooksFor" Caption="Tìm cho" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Mẫu thông báo sau tin nhắn kiểm tra hợp lệ tập hợp" />
+        <Member Name="MessageTemplateFoundObjects" Caption="Mẫu thông báo các đối tượng tìm thấy" />
+        <Member Name="MessageTemplateMustExist" Caption="Mẫu thông báo phải tồn tại" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mẫu thông báo bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc tập hợp" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc mục tiêu" />
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="TargetCollectionOwnerType" Caption="Kiểu Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetCollectionPropertyName" Caption="Tên Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetContextIDs" Caption="Các ID Ngữ cảnh Mục tiêu" />
+        <Member Name="TargetCriteria" Caption="Biểu thức lọc Mục tiêu" />
+        <Member Name="TargetType" Caption="Kiểu Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRulePropertyValueProperties" Caption="IRule Các thuộc tính Sở hữu Giá trị">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Mẫu Thông báo Tùy chỉnh" />
+        <Member Name="InvertResult" Caption="Đảo ngược Kết quả" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Mẫu thông báo sau tin nhắn kiểm tra hợp lệ tập hợp" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mẫu thông báo bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc tập hợp" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc mục tiêu" />
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="TargetCollectionOwnerType" Caption="Kiểu Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetCollectionPropertyName" Caption="Tên Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetContextIDs" Caption="Các ID Ngữ cảnh Mục tiêu" />
+        <Member Name="TargetCriteria" Caption="Biểu thức lọc Mục tiêu" />
+        <Member Name="TargetPropertyName" Caption="Tên Sở hữu Mục tiêu" />
+        <Member Name="TargetType" Caption="Kiểu Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRangeProperties" Caption="IRule Xếp loại Các thuộc tính">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Mẫu Thông báo Tùy chỉnh" />
+        <Member Name="InvertResult" Caption="Đảo ngược Kết quả" />
+        <Member Name="MaximumValue" Caption="Giá trị Lớn nhất" />
+        <Member Name="MaximumValueExpression" Caption="Biểu thức Giá trị Lớn nhất" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Mẫu thông báo sau tin nhắn kiểm tra hợp lệ tập hợp" />
+        <Member Name="MessageTemplateMustBeInRange" Caption="Mẫu thông báo phải nằm trong khoảng" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mẫu thông báo bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc tập hợp" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc mục tiêu" />
+        <Member Name="MinimumValue" Caption="Giá trị Nhỏ nhất" />
+        <Member Name="MinimumValueExpression" Caption="Biểu thức Giá trị Nhỏ nhất" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="TargetCollectionAggregate" Caption="Toàn bộ Tập hợp Mục tiêu" />
+        <Member Name="TargetCollectionOwnerType" Caption="Kiểu Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetCollectionPropertyName" Caption="Tên Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetContextIDs" Caption="Các ID Ngữ cảnh Mục tiêu" />
+        <Member Name="TargetCriteria" Caption="Biểu thức lọc Mục tiêu" />
+        <Member Name="TargetPropertyName" Caption="Tên Sở hữu Mục tiêu" />
+        <Member Name="TargetType" Caption="Kiểu Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRegularExpressionProperties" Caption="IRule Các thuộc tính Biểu thức Thường">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Mẫu Thông báo Tùy chỉnh" />
+        <Member Name="InvertResult" Caption="Đảo ngược Kết quả" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Mẫu thông báo sau tin nhắn kiểm tra hợp lệ tập hợp" />
+        <Member Name="MessageTemplateMustMatchPattern" Caption="Mẫu thông báo phải tướng ứng với mẫu" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mẫu thông báo bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc tập hợp" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc mục tiêu" />
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="Pattern" Caption="Mẫu" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="TargetCollectionOwnerType" Caption="Kiểu Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetCollectionPropertyName" Caption="Tên Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetContextIDs" Caption="Các ID Ngữ cảnh Mục tiêu" />
+        <Member Name="TargetCriteria" Caption="Biểu thức lọc Mục tiêu" />
+        <Member Name="TargetPropertyName" Caption="Tên Sở hữu Mục tiêu" />
+        <Member Name="TargetType" Caption="Kiểu Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRequiredFieldProperties" Caption="IRule Các thuộc tính Trường Được yêu cầu">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Mẫu Thông báo Tùy chỉnh" />
+        <Member Name="InvertResult" Caption="Đảo ngược Kết quả" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Mẫu thông báo sau tin nhắn kiểm tra hợp lệ tập hợp" />
+        <Member Name="MessageTemplateMustNotBeEmpty" Caption="Mẫu thông báo không được trống" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mẫu thông báo bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc tập hợp" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc mục tiêu" />
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="TargetCollectionOwnerType" Caption="Kiểu Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetCollectionPropertyName" Caption="Tên Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetContextIDs" Caption="Các ID Ngữ cảnh Mục tiêu" />
+        <Member Name="TargetCriteria" Caption="Biểu thức lọc Mục tiêu" />
+        <Member Name="TargetPropertyName" Caption="Tên Sở hữu Mục tiêu" />
+        <Member Name="TargetType" Caption="Kiểu Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleSearchObjectProperties" Caption="IRule Tìm Các thuộc tính Đối tượng">
+      <OwnMembers>
+        <Member Name="CriteriaEvaluationBehavior" Caption="Cách thức Đánh giá Biểu thức lọc" />
+        <Member Name="CustomMessageTemplate" Caption="Mẫu Thông báo Tùy chỉnh" />
+        <Member Name="FoundObjectMessageFormat" Caption="Định dạng Thông báo Tìm thấy Đối tượng" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Tách Các thông báo Đối tượng Tìm thấy" />
+        <Member Name="IncludeCurrentObject" Caption="Bao gồm Đối tượng Hiện tại" />
+        <Member Name="InvertResult" Caption="Đảo ngược Kết quả" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Mẫu thông báo sau tin nhắn kiểm tra hợp lệ tập hợp" />
+        <Member Name="MessageTemplateFoundObjects" Caption="Mẫu thông báo các đối tượng tìm thấy" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mẫu thông báo bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc tập hợp" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc mục tiêu" />
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="TargetCollectionOwnerType" Caption="Kiểu Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetCollectionPropertyName" Caption="Tên Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetContextIDs" Caption="Các ID Ngữ cảnh Mục tiêu" />
+        <Member Name="TargetCriteria" Caption="Biểu thức lọc Mục tiêu" />
+        <Member Name="TargetType" Caption="Kiểu Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleStringComparisonProperties" Caption="IRule Các thuộc tính So sánh Chuỗi">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Mẫu Thông báo Tùy chỉnh" />
+        <Member Name="IgnoreCase" Caption="Trường hợp Bỏ qua" />
+        <Member Name="InvertResult" Caption="Đảo ngược Kết quả" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Mẫu thông báo sau tin nhắn kiểm tra hợp lệ tập hợp" />
+        <Member Name="MessageTemplateMustBeEqual" Caption="Mẫu thông báo phải bằng" />
+        <Member Name="MessageTemplateMustBeginWith" Caption="Mẫu thông báo phải bắt đầu với" />
+        <Member Name="MessageTemplateMustContain" Caption="Mẫu thông báo phải chứa" />
+        <Member Name="MessageTemplateMustEndWith" Caption="Mẫu thông báo phải kết thúc với" />
+        <Member Name="MessageTemplateMustNotBeEqual" Caption="Mẫu thông báo phải không bằng" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mẫu thông báo bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc tập hợp" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc mục tiêu" />
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="OperandValue" Caption="Giá trị Toán hạng" />
+        <Member Name="OperatorType" Caption="Kiểu Toán tử" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="TargetCollectionOwnerType" Caption="Kiểu Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetCollectionPropertyName" Caption="Tên Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetContextIDs" Caption="Các ID Ngữ cảnh Mục tiêu" />
+        <Member Name="TargetCriteria" Caption="Biểu thức lọc Mục tiêu" />
+        <Member Name="TargetPropertyName" Caption="Tên Sở hữu Mục tiêu" />
+        <Member Name="TargetType" Caption="Kiểu Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleSupportsCollectionAggregatesProperties" Caption="IRule Hỗ trợ Tập hợp Các thuộc tính Tổng hợp">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Mẫu Thông báo Tùy chỉnh" />
+        <Member Name="InvertResult" Caption="Đảo ngược Kết quả" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Mẫu thông báo sau tin nhắn kiểm tra hợp lệ tập hợp" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mẫu thông báo bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc tập hợp" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc mục tiêu" />
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="TargetCollectionAggregate" Caption="Toàn bộ Tập hợp Mục tiêu" />
+        <Member Name="TargetCollectionOwnerType" Caption="Kiểu Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetCollectionPropertyName" Caption="Tên Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetContextIDs" Caption="Các ID Ngữ cảnh Mục tiêu" />
+        <Member Name="TargetCriteria" Caption="Biểu thức lọc Mục tiêu" />
+        <Member Name="TargetPropertyName" Caption="Tên Sở hữu Mục tiêu" />
+        <Member Name="TargetType" Caption="Kiểu Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleUniqueValueProperties" Caption="IRule Các thuộc tính Giá trị Duy nhất">
+      <OwnMembers>
+        <Member Name="CriteriaEvaluationBehavior" Caption="Cách thức Đánh giá Biểu thức lọc" />
+        <Member Name="CustomMessageTemplate" Caption="Mẫu Thông báo Tùy chỉnh" />
+        <Member Name="FoundObjectMessageFormat" Caption="Định dạng Thông báo Tìm thấy Đối tượng" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Tách Các thông báo Đối tượng Tìm thấy" />
+        <Member Name="IncludeCurrentObject" Caption="Bao gồm Đối tượng Hiện tại" />
+        <Member Name="InvertResult" Caption="Đảo ngược Kết quả" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Mẫu thông báo sau tin nhắn kiểm tra hợp lệ tập hợp" />
+        <Member Name="MessageTemplateFoundObjects" Caption="Mẫu thông báo các đối tượng tìm thấy" />
+        <Member Name="MessageTemplateMustBeUnique" Caption="Mẫu thông báo phải là duy nhất" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mẫu thông báo bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc tập hợp" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc mục tiêu" />
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="TargetCollectionOwnerType" Caption="Kiểu Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetCollectionPropertyName" Caption="Tên Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetContextIDs" Caption="Các ID Ngữ cảnh Mục tiêu" />
+        <Member Name="TargetCriteria" Caption="Biểu thức lọc Mục tiêu" />
+        <Member Name="TargetPropertyName" Caption="Tên Sở hữu Mục tiêu" />
+        <Member Name="TargetType" Caption="Kiểu Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleValueComparisonProperties" Caption="IRule Các thuộc tính So sánh Giá trị">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Mẫu Thông báo Tùy chỉnh" />
+        <Member Name="InvertResult" Caption="Đảo ngược Kết quả" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Mẫu thông báo sau tin nhắn kiểm tra hợp lệ tập hợp" />
+        <Member Name="MessageTemplateMustBeEqualToOperand" Caption="Mẫu thông báo phải bằng toán hạng" />
+        <Member Name="MessageTemplateMustBeGreaterThanOperand" Caption="Mẫu thông báo phải lớn hơn toán hạng" />
+        <Member Name="MessageTemplateMustBeGreaterThanOrEqualToOperand" Caption="Mẫu thông báo phải lớn hơn hoặc bằng toán hạng" />
+        <Member Name="MessageTemplateMustBeLessThanOperand" Caption="Mẫu thông báo phải nhỏ hơn toán hạng" />
+        <Member Name="MessageTemplateMustBeLessThanOrEqualToOperand" Caption="Mẫu thông báo phải nhỏ hơn hoặc bằng toán hạng" />
+        <Member Name="MessageTemplateMustNotBeEqualToOperand" Caption="Mẫu thông báo phải không bằng toán hạng" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mẫu thông báo bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc tập hợp" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc mục tiêu" />
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="OperatorType" Caption="Kiểu Toán tử" />
+        <Member Name="RightOperand" Caption="Toán hạng Phải" />
+        <Member Name="RightOperandExpression" Caption="Biểu thức Toán hạng Phải" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="TargetCollectionAggregate" Caption="Toàn bộ Tập hợp Mục tiêu" />
+        <Member Name="TargetCollectionOwnerType" Caption="Kiểu Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetCollectionPropertyName" Caption="Tên Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetContextIDs" Caption="Các ID Ngữ cảnh Mục tiêu" />
+        <Member Name="TargetCriteria" Caption="Biểu thức lọc Mục tiêu" />
+        <Member Name="TargetPropertyName" Caption="Tên Sở hữu Mục tiêu" />
+        <Member Name="TargetType" Caption="Kiểu Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleBaseProperties" Caption="Qui ước Các thuộc tính Cơ bản">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Mẫu Thông báo Tùy chỉnh" />
+        <Member Name="InvertResult" Caption="Đảo ngược Kết quả" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Mẫu thông báo sau tin nhắn kiểm tra hợp lệ tập hợp" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Mẫu thông báo bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc tập hợp" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mẫu thông báo mục tiêu không thỏa mãn biểu thức lọc mục tiêu" />
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Bỏ qua các giá trị Null hoặc rỗng" />
+        <Member Name="TargetCollectionOwnerType" Caption="Kiểu Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetCollectionPropertyName" Caption="Tên Sở hữu Tập hợp Mục tiêu" />
+        <Member Name="TargetContextIDs" Caption="Các ID Ngữ cảnh Mục tiêu" />
+        <Member Name="TargetCriteria" Caption="Biểu thức lọc Mục tiêu" />
+        <Member Name="TargetType" Caption="Kiểu Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleCombinationOfPropertiesIsUniqueProperties" Caption="Qui ước sự kết hợp của các thuộc tính là các thuộc tính duy nhất">
+      <OwnMembers>
+        <Member Name="MessageTemplateCombinationOfPropertiesMustBeUnique" Caption="Mẫu thông báo sự kết hợp của các thuộc tính phải là duy nhất" />
+        <Member Name="TargetProperties" Caption="Các thuộc tính Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleCriteriaProperties" Caption="Qui ước Các thuộc tính Biểu thức">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Biểu thức lọc" />
+        <Member Name="MessageTemplateMustSatisfyCriteria" Caption="Mẫu thông báo phải thỏa mãn biểu thức lọc" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleFromBoolPropertyProperties" Caption="Qui ước Từ Bool Các thuộc tính Sở hữu">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeTrue" Caption="Mẫu thông báo phải là True" />
+        <Member Name="UsedProperties" Caption="Các thuộc tính được sử dụng" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleIsReferencedProperties" Caption="Qui ước Là Các thuộc tính Được tham chiếu">
+      <OwnMembers>
+        <Member Name="LooksFor" Caption="Tìm cho" />
+        <Member Name="MessageTemplateMustBeReferenced" Caption="Mẫu thông báo phải được tham chiếu" />
+        <Member Name="ReferencePropertyName" Caption="Tên Sở hữu Tham chiếu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleObjectExistsProperties" Caption="Qui ước Đối tượng Có Các thuộc tính">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Biểu thức lọc" />
+        <Member Name="LooksFor" Caption="Tìm cho" />
+        <Member Name="MessageTemplateMustExist" Caption="Mẫu thông báo phải tồn tại" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RulePropertyValueProperties" Caption="Qui ước Các thuộc tính Sở hữu Giá trị">
+      <OwnMembers>
+        <Member Name="TargetPropertyName" Caption="Tên Sở hữu Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRangeProperties" Caption="Qui ước Xếp loại Các thuộc tính">
+      <OwnMembers>
+        <Member Name="MaximumValue" Caption="Giá trị Lớn nhất" />
+        <Member Name="MaximumValueExpression" Caption="Biểu thức Giá trị Lớn nhất" />
+        <Member Name="MessageTemplateMustBeInRange" Caption="Mẫu thông báo phải nằm trong khoảng" />
+        <Member Name="MinimumValue" Caption="Giá trị Nhỏ nhất" />
+        <Member Name="MinimumValueExpression" Caption="Biểu thức Giá trị Nhỏ nhất" />
+        <Member Name="TargetCollectionAggregate" Caption="Toàn bộ Tập hợp Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRegularExpressionProperties" Caption="Qui ước Các thuộc tính Biểu thức Thường">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustMatchPattern" Caption="Mẫu thông báo phải tương ứng với mẫu" />
+        <Member Name="Pattern" Caption="Mẫu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRequiredFieldProperties" Caption="Qui ước Các thuộc tính Trường Được yêu cầu">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustNotBeEmpty" Caption="Mẫu thông báo không được trống" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSearchObjectProperties" Caption="Qui ước Tìm Các thuộc tính Đối tượng">
+      <OwnMembers>
+        <Member Name="CriteriaEvaluationBehavior" Caption="Cách thức Đánh giá Biểu thức lọc" />
+        <Member Name="FoundObjectMessageFormat" Caption="Định dạng Thông báo Tìm thấy Đối tượng" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Tách Các thông báo Đối tượng Tìm thấy" />
+        <Member Name="IncludeCurrentObject" Caption="Bao gồm Đối tượng Hiện tại" />
+        <Member Name="MessageTemplateFoundObjects" Caption="Mẫu thông báo các đối tượng tìm thấy" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResult" Caption="Kết quả kiểm tra hợp lệ">
+      <OwnMembers>
+        <Member Name="Results" Caption="Kết quả" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResultItem" Caption="Chi tiết kiểm tra hợp lệ">
+      <OwnMembers>
+        <Member Name="ContextId" Caption="Id Ngữ cảnh" />
+        <Member Name="ErrorMessage" Caption="Thông báo Lỗi" />
+        <Member Name="Rule" Caption="Qui ước" />
+        <Member Name="RuleName" Caption="Tên Qui ước" />
+        <Member Name="State" Caption="Trạng thái" />
+        <Member Name="Target" Caption="Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResultItemAggregate" Caption="Qui ước Thiết lập Toàn bộ Mục Kết quả Kiểm tra hợp lệ">
+      <OwnMembers>
+        <Member Name="AggregatedResults" Caption="Kết quả được tổng hợp" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleStringComparisonProperties" Caption="Qui ước các thuộc tính so sánh chuỗi">
+      <OwnMembers>
+        <Member Name="IgnoreCase" Caption="Trường hợp Bỏ qua" />
+        <Member Name="MessageTemplateMustBeEqual" Caption="Mẫu thông báo phải bằng" />
+        <Member Name="MessageTemplateMustBeginWith" Caption="Mẫu thông báo phải bắt đầu với" />
+        <Member Name="MessageTemplateMustContain" Caption="Mẫu thông báo phải chứa" />
+        <Member Name="MessageTemplateMustEndWith" Caption="Mẫu thông báo phải kết thúc với" />
+        <Member Name="MessageTemplateMustNotBeEqual" Caption="Mẫu thông báo phải không bằng" />
+        <Member Name="OperandValue" Caption="Giá trị Toán hạng" />
+        <Member Name="OperatorType" Caption="Kiểu Toán tử" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleUniqueValueProperties" Caption="Qui ước Các thuộc tính Giá trị Duy nhất">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeUnique" Caption="Mẫu thông báo phải là duy nhất" />
+        <Member Name="TargetPropertyName" Caption="Tên Sở hữu Mục tiêu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleValueComparisonProperties" Caption="Qui ước Các thuộc tính So sánh Giá trị">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeEqualToOperand" Caption="Mẫu thông báo phải bằng toán hạng" />
+        <Member Name="MessageTemplateMustBeGreaterThanOperand" Caption="Mẫu thông báo phải lớn hơn toán hạng" />
+        <Member Name="MessageTemplateMustBeGreaterThanOrEqualToOperand" Caption="Mẫu thông báo phải lớn hơn hoặc bằng toán hạng" />
+        <Member Name="MessageTemplateMustBeLessThanOperand" Caption="Mẫu thông báo phải nhỏ hơn toán hạng" />
+        <Member Name="MessageTemplateMustBeLessThanOrEqualToOperand" Caption="Mẫu thông báo phải nhỏ hơn hoặc bằng toán hạng" />
+        <Member Name="MessageTemplateMustNotBeEqualToOperand" Caption="Mẫu thông báo phải không bằng toán hạng" />
+        <Member Name="OperatorType" Caption="Kiểu Toán tử" />
+        <Member Name="RightOperand" Caption="Toán hạng Phải" />
+        <Member Name="RightOperandExpression" Caption="Biểu thức Toán hạng Phải" />
+        <Member Name="TargetCollectionAggregate" Caption="Toàn bộ Tập hợp Mục tiêu" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.Data.Filtering.Aggregate" Value="Toàn bộ">
+        <LocalizationItem Name="Avg" Value="Trung bình" />
+        <LocalizationItem Name="Count" Value="Đếm" />
+        <LocalizationItem Name="Exists" Value="Tồn tại" />
+        <LocalizationItem Name="Max" Value="Lớn nhất" />
+        <LocalizationItem Name="Min" Value="Nhỏ nhất" />
+        <LocalizationItem Name="Sum" Value="Tổng" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Validation.AllContextsView.IsValid" Value="Là Hợp lệ">
+        <LocalizationItem Name="Invalid" Value="Không hợp lệ" />
+        <LocalizationItem Name="Valid" Value="Hợp lệ" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.StringComparisonType" Value="Kiểu So sánh Chuỗi">
+        <LocalizationItem Name="Contains" Value="Có chứa" />
+        <LocalizationItem Name="EndsWith" Value="Kết thúc với" />
+        <LocalizationItem Name="Equals" Value="Bằng" />
+        <LocalizationItem Name="NotEquals" Value="Không bằng" />
+        <LocalizationItem Name="StartsWith" Value="Bắt đầu với" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValidationState" Value="Trạng thái Kiểm tra hợp lệ">
+        <LocalizationItem Name="Invalid" Value="Không hợp lệ" />
+        <LocalizationItem Name="Skipped" Value="Đã bỏ qua" />
+        <LocalizationItem Name="Valid" Value="Hợp lệ" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValueComparisonType" Value="Kiểu So sánh Giá trị">
+        <LocalizationItem Name="Equals" Value="Bằng" />
+        <LocalizationItem Name="GreaterThan" Value="Lớn hơn" />
+        <LocalizationItem Name="GreaterThanOrEqual" Value="Lớn hơn hoặc bằng" />
+        <LocalizationItem Name="LessThan" Value="Nhỏ hơn" />
+        <LocalizationItem Name="LessThanOrEqual" Value="Nhỏ hơn hoặc bằng" />
+        <LocalizationItem Name="NotEquals" Value="Không bằng" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Xpo.PersistentCriteriaEvaluationBehavior" Value="Persistent Cách thức Đánh giá Biểu thức lọc">
+        <LocalizationItem Name="BeforeTransaction" Value="Trước khi giao dịch" />
+        <LocalizationItem Name="InTransaction" Value="Trong khi giao dịch" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <Validation>
+    <ErrorMessageTemplates>
+      <RuleBase MessageTemplateSkipNullOrEmptyValues="Qui ước {Id}&quot; không được kiểm tra bởi vì các thuộc tính mục tiêu không được xác định.&quot;" MessageTemplateTargetDoesNotSatisfyTargetCriteria="Qui ước {Id}&quot; không được kiểm tra bởi vì đối tượng mục tiêu không thỏa mãn biểu thức lọc mục tiêu của qui ước.&quot;" />
+      <RuleCollectionProperty MessageTemplateTargetDoesNotSatisfyCollectionCriteria="Qui ước {Id}&quot; không được kiểm tra bởi vì mục tiêu không phải là một phần tử của bộ sưu tập &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot;.&quot;" MessageTemplateCollectionValidationMessageSuffix="(Cho các phần tử bộ sưu tập {TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot;).&quot;" />
+      <RuleCombinationOfPropertiesIsUnique MessageTemplateCombinationOfPropertiesMustBeUnique="Sự kết hợp của các thuộc tính sau phải là duy nhất: {FormattedTargetProperties}." MessageTemplateFoundObjects="Các đối tượng sau được tìm thấy: " />
+      <RuleCriteria MessageTemplateMustSatisfyCriteria="Đối tượng {TargetObject}&quot; phải thỏa mãn biểu thức lọc sau: &quot;{Criteria}&quot;.&quot;" />
+      <RuleFromBoolProperty MessageTemplateMustBeTrue="{TargetPropertyName}&quot; phải được thiết lập là true.&quot;" />
+      <RuleIsReferenced MessageTemplateMustBeReferenced="Đối tượng {TargetObject}&quot; phải được tham chiếu.&quot;" MessageTemplateFoundObjects="Các đối tượng sau được tìm thấy: " />
+      <RuleObjectExists MessageTemplateMustExist="Các đối tượng thỏa mãn biểu thức lọc {Criteria}&quot; phải tồn tại.&quot;" MessageTemplateFoundObjects="Các đối tượng sau được tìm thấy: " />
+      <RuleRegularExpression MessageTemplateMustMatchPattern="{TargetPropertyName}&quot; phải tương ứng với mẫu sau: &quot;{Pattern}&quot;.&quot;" />
+      <RuleRequiredField MessageTemplateMustNotBeEmpty="{TargetPropertyName}&quot; không được trống.&quot;" />
+      <RuleSearchObject MessageTemplateFoundObjects="Các đối tượng sau được tìm thấy: " />
+      <RuleStringComparison MessageTemplateMustContain="{TargetPropertyName}&quot; phải chứa &quot;{OperandValue}&quot;.&quot;" MessageTemplateMustBeginWith="{TargetPropertyName}&quot; phải bắt đầu với &quot;{OperandValue}&quot;.&quot;" MessageTemplateMustEndWith="{TargetPropertyName}&quot; phải kết thúc với &quot;{OperandValue}&quot;.&quot;" MessageTemplateMustBeEqual="{TargetPropertyName}&quot; phải bằng &quot;{OperandValue}&quot;.&quot;" MessageTemplateMustNotBeEqual="{TargetPropertyName}&quot; phải không bằng &quot;{OperandValue}&quot;.&quot;" />
+      <RuleUniqueValue MessageTemplateMustBeUnique="Có một đối tượng có cùng giá trị với {TargetPropertyName}&quot;. Các giá trị của &quot;{TargetPropertyName}&quot; phải là duy nhất.&quot;" />
+      <RuleValueComparison MessageTemplateMustBeEqualToOperand="{TargetPropertyName}&quot; phải bằng với &quot;{RightOperand}&quot;.&quot;" MessageTemplateMustBeGreaterThanOperand="{TargetPropertyName}&quot; phải lớn hơn &quot;{RightOperand}&quot;.&quot;" MessageTemplateMustBeGreaterThanOrEqualToOperand="{TargetPropertyName}&quot; phải lớn hơn hoặc bằng &quot;{RightOperand}&quot;.&quot;" MessageTemplateMustBeLessThanOperand="{TargetPropertyName}&quot; phải nhỏ hơn &quot;{RightOperand}&quot;.&quot;" MessageTemplateMustBeLessThanOrEqualToOperand="{TargetPropertyName}&quot; phải nhỏ hơn hoặc bằng &quot;{RightOperand}&quot;.&quot;" MessageTemplateMustNotBeEqualToOperand="{TargetPropertyName}&quot; phải không bằng &quot;{RightOperand}&quot;.&quot;" />
+    </ErrorMessageTemplates>
+  </Validation>
+  <Views>
+    <DetailView Id="DisplayableValidationResultItem_DetailView">
+      <Items>
+        <PropertyEditor Id="RuleProperties" Caption="Chi tiết qui ước" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DisplayableValidationResultItem" Caption="Mục Kết quả Kiểm tra hợp lệ Có thể hiển thị" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleBaseProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCollectionPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCombinationOfPropertiesIsUniqueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="IRule Tìm Các thuộc tính Đối tượng" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCriteriaProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleFromBoolPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleIsReferencedProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="IRule Tìm Các thuộc tính Đối tượng" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleObjectExistsProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="IRule Tìm Các thuộc tính Đối tượng" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRulePropertyValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRangeProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleRangeProperties" Caption="IRule Xếp loại Các thuộc tính" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRegularExpressionProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRequiredFieldProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleSearchObjectProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="IRule Tìm Các thuộc tính Đối tượng" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleStringComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleStringComparisonProperties" Caption="IRule xâu Các thuộc tính So sánh" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleSupportsCollectionAggregatesProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleUniqueValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleValueComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleValueComparisonProperties" Caption="IRule Các thuộc tính So sánh Giá trị" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleBaseProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Qui ước Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleCombinationOfPropertiesIsUniqueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Qui ước Tìm Các thuộc tính Đối tượng" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Qui ước Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleCriteriaProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Qui ước Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleFromBoolPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Qui ước Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleIsReferencedProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Qui ước Tìm Các thuộc tính Đối tượng" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Qui ước Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleObjectExistsProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Qui ước Tìm Các thuộc tính Đối tượng" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Qui ước Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RulePropertyValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Qui ước Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRangeProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleRangeProperties" Caption="Qui ước Xếp loại Các thuộc tính" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Qui ước Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRegularExpressionProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Qui ước Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRequiredFieldProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Qui ước Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSearchObjectProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Qui ước Tìm Các thuộc tính Đối tượng" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Qui ước Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResult_ByTarget_Error_DetailView" Caption="Lỗi Kiểm tra hợp lệ">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="Các vấn đề được phát hiện trong quá trình kiểm tra dữ liệu. Vui lòng đọc các thông tin dưới đây để hiểu những gì đã xảy ra và làm thế nào để sửa chúng." />
+      </Items>
+    </DetailView>
+    <ListView Id="RuleSetValidationResultItem_ByTarget_ListView">
+      <Columns>
+        <ColumnInfo Id="ContextCaption" Caption="Ngữ cảnh" />
+        <ColumnInfo Id="ContextId" Caption="Id Ngữ cảnh" />
+        <ColumnInfo Id="ErrorMessage" Caption="Mô tả" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleSetValidationResultItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSetValidationResultItem" Caption="Qui ước Thiết lập Mục Kết quả Kiểm tra hợp lệ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResultItemAggregate_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSetValidationResultItem" Caption="Qui ước Thiết lập Mục Kết quả Kiểm tra hợp lệ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleStringComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleStringComparisonProperties" Caption="Qui ước các thuộc tính so sánh chuỗi" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Qui ước Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleUniqueValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Qui ước Tìm Các thuộc tính Đối tượng" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Qui ước Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleValueComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleValueComparisonProperties" Caption="Qui ước Các thuộc tính So sánh Giá trị" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Qui ước Các thuộc tính Cơ bản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ValidationResults_Error_DetailView">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="Các vấn đề được phát hiện trong quá trình kiểm tra dữ liệu. Vui lòng đọc các thông tin dưới đây để hiểu những gì đã xay ra và làm thế nào để sửa chúng." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ValidationResults_Passed_DetailView">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="Không có vấn đề nào được phát hiện." />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>

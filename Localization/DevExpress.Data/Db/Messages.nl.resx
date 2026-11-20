@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -41,29 +41,66 @@
   </resheader>
   <data name="ConnectionProvider_TypeMappingMissing">
     <value>Databaseprovider kan het type '{0}' niet verwerken, omdat het niet is gekoppeld aan de typen van een onderliggende database. Gebruik een ander type.</value>
+    <comment>Community:De databaseprovider kan het type '{0}' niet verwerken omdat het niet is toegewezen aan de typen van de onderliggende database. Gebruik een ander type.</comment>
   </data>
   <data name="ConnectionProvider_UnableToCreateDBObject">
     <value>Kan '{0}' '{1}' niet maken. Bovenliggend item: '{2}'. Fout: {3}</value>
+    <comment>Community:Kan '{0}' '{1}' niet maken. Bovenliggend: '{2}'. Fout: {3}</comment>
   </data>
   <data name="ConnectionProvider_SqlExecutionError">
     <value>SQL '{0}' wordt uitgevoerd met parameters '{1}', uitzondering '{2}'</value>
+    <comment>Community:Uitzondering '{2}' bij het uitvoeren van SQL '{0}' met parameters '{1}'</comment>
   </data>
   <data name="ConnectionProvider_SchemaCorrectionNeeded">
     <value>Schema moet worden bijgewerkt. Neem contact op met de systeembeheerder. SQL-tekst: {0}</value>
+    <comment>Community:Het schema moet worden bijgewerkt. Neem contact op met uw systeembeheerder. SQL-tekst: {0}</comment>
   </data>
   <data name="ConnectionProvider_TableNameTooLong">
     <value>Kan databasetabel '{0}' niet maken. De naam van de tabel is te lang (meer dan 64 tekens)</value>
+    <comment>Approved</comment>
   </data>
   <data name="ConnectionProvider_ColumnNameTooLong">
     <value>Kan tabelkolom '{1}' van tabel '{0}' niet maken. De naam van de kolom is te lang (meer dan 64 tekens)</value>
+    <comment>Approved</comment>
   </data>
   <data name="ConnectionProvider_AtLeastOneColumnExpected">
     <value>Minimaal één kolom verwacht</value>
+    <comment>Community:Minstens één kolom verwacht</comment>
   </data>
   <data name="ConnectionProvider_Locking">
     <value>Kan het object niet behouden. Het is gewijzigd of verwijderd door een andere applicatie.</value>
+    <comment>Community:Het object kan niet worden opgeslagen. Het is door een andere toepassing gewijzigd of verwijderd (gewist).</comment>
   </data>
   <data name="ConnectionProvider_UnableToOpenDatabase">
     <value>Kan database niet openen. Verbindingsreeks: '{0}'; Fout: '{1}'</value>
+    <comment>Community:Kan de database niet openen. Verbindingsreeks: '{0}'; Fout: '{1}'</comment>
+  </data>
+  <data name="IsExactTypeFunction_ShouldNotBeCalledExplicitly" xml:space="preserve">
+    <value>Deze methode dient niet expliciet te worden aangeroepen.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_ShouldNotBeCalledExplicitly" xml:space="preserve">
+    <value>Deze methode dient niet expliciet te worden aangeroepen.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CommandChannelHelper_CannotDeserializeResponse" xml:space="preserve">
+    <value>De respons op de bewerking '{0}' kan niet worden gedeserialiseerd vanwege beperkingen van de XmlSerializer-implementatie onder de Mono-runtime. Als u kleine hoeveelheden gegevens moet deserialiseren, stelt u de eigenschap DevExpress.Xpo.Helpers.CommandChannelHelper.EnableMonoDeserializationFixForSmallAmountsOfData in op 'true' en probeert u het opnieuw.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProviderSql_ParameterValueSizeExceedsMaximumSize" xml:space="preserve">
+    <value>Kan parameter '{1}' niet maken. SQL: {0}. De lengte van de waarde ({2}) overschrijdt de parametergrootte ({3}).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_ClassNotFound" xml:space="preserve">
+    <value>De functie '{0}' kan het opgegeven type niet vinden: '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_ParametersMustBeConstants" xml:space="preserve">
+    <value>De functie '{0}' verwacht een constante waarde als het argument 'typeName'. Er is een expressie opgegeven.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_InvalidArgument_TypeName" xml:space="preserve">
+    <value>De functie '{0}' verwacht een tekenreekswaarde als het argument 'typeName'. Er is een waarde van het type '{1}' opgegeven.</value>
+    <comment>AI</comment>
   </data>
 </root>

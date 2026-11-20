@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
+  <!-- 
 		Microsoft ResX Schema
 
 		Version 1.3
@@ -58,44 +58,1163 @@
 			: using a System.ComponentModel.TypeConverter
 			: and then encoded with base64 encoding.
 	-->
-	
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>1.3</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Security_DeletingAnObjectWasProhibitedByTheRules" xml:space="preserve">
+    <value>'{0}' பொருளை நீக்குவது பாதுகாப்பு விதிகளால் தடைசெய்யப்பட்டுள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_SavingAnObjectWasProhibitedByTheRulesOfVal" xml:space="preserve">
+    <value>'{0}' பொருளைச் சேமிப்பது பாதுகாப்பு விதிகளால் தடைசெய்யப்பட்டுள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_SavingAnObjectWasProhibitedByTheRulesWProp" xml:space="preserve">
+    <value>'{0}.{1}' பண்பைச் சேமிப்பது பாதுகாப்பு விதிகளால் தடைசெய்யப்பட்டுள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_MostProbablyYouAreTryingToInitiateAnObjectEx" xml:space="preserve">
+    <value> அநேகமாக, முந்தைய பொருள் ஏற்றுச் செயல்பாடு இன்னும் முடிவடையாத நிலையில், ஒரு பொருள் ஏற்றுச் செயல்பாட்டைத் தொடங்க முயல்கிறீர்கள். Session.ObjectsLoaded அல்லது IXPObject.OnLoaded நிகழ்வு தூண்டப்படும் வரை உங்கள் செயல்பாட்டை ஒத்திவைக்கவும் (Session.IsObjectsLoading என்பது true ஆக இருக்கும்போது). வெவ்வேறு செயலிழைகளிலிருந்து அதே அமர்வுடன் ஒரே நேரத்தில் செயல்பட முயல்வதும் இந்த விதிவிலக்கிற்கான மற்றொரு காரணமாகும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_MostProbablyYouAreTryingToInitiateAnObject" xml:space="preserve">
+    <value> அநேகமாக, முந்தைய பொருள் சேமிப்புச் செயல்பாடு இன்னும் முடிவடையாத நிலையில், ஒரு பொருள் ஏற்றுச் செயல்பாட்டைத் தொடங்க முயல்கிறீர்கள். Session.ObjectsSaved அல்லது IXPObject.OnSaved நிகழ்வு தூண்டப்படும் வரை உங்கள் செயல்பாட்டை ஒத்திவைக்கவும் (Session.IsObjectsSaving என்பது true ஆக இருக்கும்போது).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0OperatorAfterSkipOrTakeIsNotSupported" xml:space="preserve">
+    <value>Skip அல்லது Take க்குப் பிறகு {0} ஆதரிக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SpecifiedJoinKeySelectorsNotCompatibleX0X1" xml:space="preserve">
+    <value>'{0}' மற்றும் '{1}' இணைப்புச் சாவித் தேர்விகள் இணக்கமானவை அல்ல.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_NotClassMember" xml:space="preserve">
+    <value>'{0}' என்பது '{1}' வகுப்பின் உறுப்பு அல்ல.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0OverGroupingIsNotSupported" xml:space="preserve">
+    <value>குழுவாக்கப்பட்ட முடிவுகளின் மீது {0} ஆதரிக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0WithSkipOrTakeOrGroupingIsNotSupported" xml:space="preserve">
+    <value>Skip அல்லது Take அல்லது குழுவாக்குதலுடன் {0} ஆதரிக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0WithSoManyParametersIsNotSupported" xml:space="preserve">
+    <value>இத்தனை அளவுருக்களுடன் {0} ஆதரிக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_NotCollectionProperty" xml:space="preserve">
+    <value>{0}.{1} ஒரு தொகுப்புப் பண்பு அல்ல. இது AssociationAttribute மூலம் குறிக்கப்பட்டு, XPBaseCollection-இலிருந்து பெறப்பட்ட வகையைச் சேர்ந்ததாக இருக்க வேண்டும். GetList பயன்படுத்த வேண்டிய இடத்தில் நீங்கள் GetCollection பயன்படுத்துகிறீர்கள் போலும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NotCollection" xml:space="preserve">
+    <value>'{0}.{1}' ஒரு தொகுப்பு அல்ல.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XpoServerMode_NonPersistentIsNotSupported" xml:space="preserve">
+    <value>சேவையகப் பயன்முறைத் தொகுப்பு நிரந்தரமாகச் சேமிக்கப்படாத வகுப்பான '{0}'-ஐப் பயன்படுத்த முடியாது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_ReferencePropertyViaCollectionAccessor" xml:space="preserve">
+    <value>தொகுப்பு அணுகி வழியாகக் குறிப்புப் பண்பை அமைக்கும் முயற்சி.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionXPQueryX0" xml:space="preserve">
+    <value>அழைப்புக் கோவையின் முதல் மதிப்புருவாக XPQuery எதிர்பார்க்கப்படுகிறது: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_PropertyTypeMismatch" xml:space="preserve">
+    <value>'{1}' மற்றும் '{3}' வகுப்புகளுக்கு இடையேயான '{0}' தொடர்பு செல்லுபடியாகாது. '{1}' வகுப்பில் உள்ள '{2}' பண்பு '{3}' வகுப்பைச் சுட்டுகிறது. '{3}' வகுப்பில் உள்ள '{4}' பண்பு தவறாக '{5}' வகுப்பைச் சுட்டுகிறது; அது '{1}' வகுப்பைச் சுட்ட வேண்டும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_MoreThenOneAssociatedMemberFound" xml:space="preserve">
+    <value>'{1}' வகுப்பின் '{2}' மற்றும் '{3}' உறுப்பினர்களுக்கு இடையே '{0}' தொடர்பு தெளிவற்றதாக உள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_PropertyTypeMismatch" xml:space="preserve">
+    <value>'{3}' மற்றும் '{4}' வகுப்புகளுக்கு இடையிலான '{1}' தொடர்பு செல்லாதது. '{3}' வகுப்பில் உள்ள '{2}' பண்பு, '{4}' வகுப்பைக் குறிப்பிடுகிறது. '{4}' வகுப்பில் உள்ள '{0}' பண்பு, '{3}' வகுப்பைக் குறிப்பிட வேண்டியிருந்தும், தவறாக '{5}' வகுப்பைக் குறிப்பிடுகிறது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_AssociationCollectionWithDisabledLoading" xml:space="preserve">
+    <value>தொடர்புறவுத் தொகுப்பின் நிலை தவறாக உள்ளது: LoadingEnabled என்பது true ஆக இருக்க வேண்டும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationListExpected" xml:space="preserve">
+    <value>தொடர்புப் பட்டியல் அல்லது தொகுப்பு எதிர்பார்க்கப்படுகிறது: '{0}.{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="View_AtLeastOneFetchPropertyShouldBeDefined" xml:space="preserve">
+    <value>பெறுவதற்குக் குறைந்தது ஒரு பண்பாவது வரையறுக்கப்பட வேண்டும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_AddRelation" xml:space="preserve">
+    <value>நகல் தொடர்பைச் சேர்க்க முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CannotAddObjectToObjectCache" xml:space="preserve">
+    <value>விசை = '{1}' கொண்ட '{0}' பொருளைப் பொருள் அடையாள வரைபடத்தில் சேர்க்க முடியாது, ஏனெனில் அதே விசையைக் கொண்ட மற்றொரு பொருள் '{2}' ஏற்கனவே அதில் சேர்க்கப்பட்டுள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_NotLoadingMode" xml:space="preserve">
+    <value>ஏற்றுதல் பயன்முறையில் இல்லாதபோது, '{0}' என்ற தானாக அதிகரிக்கும் நெடுவரிசைக்கு மதிப்பை ஒதுக்க முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_InsertingDataIntoAutoincrementColumn" xml:space="preserve">
+    <value>'{0}' என்ற தானாக அதிகரிக்கும் நெடுவரிசைக்கு மதிப்பை ஒதுக்க முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XpoDefault_CannotAssignPropertyWhileAnotherIsNotNull" xml:space="preserve">
+    <value>XpoDefault.{1} குறிப்பிடப்பட்டிருக்கும்போது XpoDefault.{0}-ஐ அமைக்க முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_CannotPrepareQueryPlanX0" xml:space="preserve">
+    <value>'{0}' நிபந்தனைகள் செல்லாதவை என்பதால் வினவல் திட்டத்தை உருவாக்க முடியவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_CannotPrepareQueryPlan" xml:space="preserve">
+    <value>வினவல் திட்டத்தை உருவாக்க முடியவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CannotChangePropertyWhenSessionIsConnected" xml:space="preserve">
+    <value>அமர்வு இணைக்கப்பட்டிருக்கும்போது '{0}' என்பதை மாற்ற முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadClassInfo_Dictionary" xml:space="preserve">
+    <value>ObjectClassInfo என்பதை மாற்ற முடியாது. அதன் டிக்ஷனரி, தற்போதைய Dictionary என்பதற்குச் சமமாக இல்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadClassInfo_DataSourceDictionary" xml:space="preserve">
+    <value>ObjectClassInfo என்பதை மாற்ற முடியாது. அதன் டிக்ஷனரி, DataSource டிக்ஷனரிக்குச் சமமாக இல்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadClassInfo_DataSource" xml:space="preserve">
+    <value>ObjectClassInfo என்பதை மாற்ற முடியாது. DataSource என்பதற்குச் சொந்தமான ClassInfo உள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadObjectType_DataSource" xml:space="preserve">
+    <value>ObjectType என்பதை மாற்ற முடியாது. DataSource என்பதற்குச் சொந்தமான ClassInfo உள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_CannotAssignProperty" xml:space="preserve">
+    <value>{1} வடிவமைப்பு அல்லது தொடக்கநிலை அமைப்பு முறையில் இல்லாதபோது, '{0}' பண்பை மாற்ற முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TranSequenceCommit" xml:space="preserve">
+    <value>எந்தப் பரிவர்த்தனையும் செயலில் இல்லாததால் உறுதிசெய்ய முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DroneDataStore_CommitNotSupported" xml:space="preserve">
+    <value>தரவுத்தள இணைப்பு உள்ளமைக்கப்படாததால் மாற்றங்களை நிலைநிறுத்த முடியாது (தற்போது பதிலீட்டுத் தரவுத்தள வழங்கி பயன்படுத்தப்படுகிறது). https://docs.devexpress.com/XPO/2123/connect-to-a-data-store இல் விவரிக்கப்பட்டுள்ளபடி தரவுச் சேமிப்பகத்துடன் இணைக்கவும்</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotConvertWindowsTimeZoneIdToIanaTimeZoneId" xml:space="preserve">
+    <value>Windows நேர மண்டல அடையாளங்காட்டியை IANA நேர மண்டல அடையாளங்காட்டியாக மாற்ற முடியாது. மாற்றத்திற்கான தருக்கத்தை வழங்க, ConnectionProviderSql.MapWindowsToIanaTimeZoneId பிரதிநிதியை அமைக்கவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SqlConnectionProvider_CannotCreateAColumnForTheX0FieldWithTheX1D" xml:space="preserve">
+    <value>'{1}' இயல்புநிலை மதிப்புடன் '{0}' புலத்திற்கான நெடுவரிசையை உருவாக்க முடியாது. இந்தப் புலத்திற்கு வேறொரு இயல்புநிலை மதிப்பைக் குறிப்பிடவும்</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProvider_UnableToFillRefType" xml:space="preserve">
+    <value>'{0}' வகையின் '{1}' உறுப்புக்கான தரவுத்தளக் கட்டமைப்பை உறுதிசெய்ய முடியாது. பிழை: {2}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_CannotFindParentRelationForNode" xml:space="preserve">
+    <value>கணு '{0}'-க்கான பெற்றோர் தொடர்பைக் கண்டறிய முடியவில்லை. தவறாக வடிவமைக்கப்பட்ட வினவல் அல்லது உள் XPO பிழை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_PathNotFound" xml:space="preserve">
+    <value>{0}-&gt;{1} பாதையைக் கண்டறிய முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TypeNotFound" xml:space="preserve">
+    <value>அடையாளம் = '{0}' கொண்ட வகையைக் கண்டறிய முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CannotLoadInvalidType" xml:space="preserve">
+    <value>செல்லாத வகை '{0}' என்பதை ஏற்ற முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Helpers_DifferentObjectsKeys" xml:space="preserve">
+    <value>திறவுகோல் மாற்றப்பட்ட பொருளின் மாற்றங்களை ஒன்றிணைக்க முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ThreadSafeDataLayer_DictionaryModified" xml:space="preserve">
+    <value>ThreadSafeDataLayer பயன்படுத்துவதால் Dictionary என்பதை மாற்ற முடியாது. மாற்றப்பட்ட அல்லது உருவாக்கப்பட்ட ClassInfo: '{0}'. இந்த விதிவிலக்கைத் தவிர்க்க, இந்தப் பரிந்துரைகளைப் பின்பற்றவும்: https://www.devexpress.com/kb=T901732</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_CantPersistGenericType" xml:space="preserve">
+    <value>ஜெனரிக் வகையை நிலையாகச் சேமிக்க முடியாது. '{0}' வகையின் வரையறையிலிருந்து PersistentAttribute-ஐ அகற்றி, அதற்குப் பதிலாக நிலையாகச் சேமிக்கத்தக்க, ஜெனரிக் அல்லாத ஒன்று அல்லது அதற்கு மேற்பட்ட வழித்தோன்றல் வகைகளை உருவாக்கவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PersistentAliasExpander_NonPersistentCriteria" xml:space="preserve">
+    <value>நிலைத்ததல்லாத பண்பு '{1}'-ஐப் பயன்படுத்தும் "{0}" நிபந்தனையைக் கொண்டு தரவுச் சேமிப்பகத்தை வினவ முடியாது. கூடுதல் விவரங்களுக்கும் சாத்தியமான தீர்வுகளுக்கும் https://www.devexpress.com/kb=Q352044 அறிவுத் தளக் கட்டுரையைப் பார்க்கவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PersistentAliasExpander_NonPersistentCriteriaThisValueMember" xml:space="preserve">
+    <value>நிலைத்ததல்லாத பண்பு '{1}'-ஐப் பயன்படுத்தும் "{0}" நிபந்தனையைக் கொண்டு தரவுச் சேமிப்பகத்தை வினவ முடியாது. மதிப்புத் தேர்வுக் கட்டுப்பாட்டிற்கான ValueMember ஆக '{0}'-ஐப் பயன்படுத்தியிருந்தால், அதற்குப் பதிலாக வெற்று ValueMember-ஐப் பயன்படுத்தவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="View_IsInLoading" xml:space="preserve">
+    <value>காட்சியானது தரவை ஒத்திசைவின்றி ஏற்றிக்கொண்டிருக்கும்போது அதை மீண்டும் ஏற்ற முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_CannotResolveClassInfo" xml:space="preserve">
+    <value>'[{0}]{1}' வகைக்கான ClassInfo-ஐத் தீர்மானிக்க முடியவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_CannotResolvePropertyTypeComparer" xml:space="preserve">
+    <value>'{1}' வகையைச் சேர்ந்த '{0}' பண்புக்கான ஒப்பீட்டாளரைப் பெற முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TranSequenceRollback" xml:space="preserve">
+    <value>எந்தப் பரிவர்த்தனையும் செயலில் இல்லாததால் திரும்பப்பெற முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TranSequenceBegin" xml:space="preserve">
+    <value>ஒரு அமர்வில் ஒன்றுக்கு மேற்பட்ட பரிவர்த்தனைகளைத் தொடங்க முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_SameTableName" xml:space="preserve">
+    <value>{0} மற்றும் {1} வகுப்புகள் ஒரே அட்டவணைக்கு மேப்பிங் செய்யப்பட்டுள்ளன.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_ClassesAreNotAssignable" xml:space="preserve">
+    <value>'{0}' மற்றும் '{1}' வகுப்புகள் ஒன்றுக்கொன்று மதிப்பிருத்தம் செய்ய ஏற்றவை அல்ல.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DataView_ReferenceMembersWithCompoundKeyAreNotSupported" xml:space="preserve">
+    <value>கட்டமைப்பு வகை உறுப்புகளைக் கொண்ட வகுப்புகள் ஆதரிக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_DictionaryMixing" xml:space="preserve">
+    <value>ClassInfo '{0}' வேறொரு பதிவகத்தைச் சேர்ந்தது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerializableObjectLayer_OptimisticLockFieldNotExists" xml:space="preserve">
+    <value>ClassInfo '{0}'-இல் OptimisticLockField வரையறுக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerializableObjectLayer_OptimisticLockFieldInDLNotExists" xml:space="preserve">
+    <value>ClassInfo '{0}'-இல் OptimisticLockFieldInDataLayer வரையறுக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ObjectLayer_XPClassInfoNotFound" xml:space="preserve">
+    <value>ClassInfo '{0}' கண்டறியப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DirectSQL_CollectionMembersAreNotSupported" xml:space="preserve">
+    <value>தொகுப்பு வகை உறுப்புகள் ஆதரிக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_AssociationListExpected" xml:space="preserve">
+    <value>ஒரு தொகுப்பு அல்லது தொடர்புறவுப் பட்டியல் எதிர்பார்க்கப்படுகிறது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_ColumnNotFound" xml:space="preserve">
+    <value>'{0}' என்ற நெடுவரிசை காணப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_CantUpdateRelationColumn" xml:space="preserve">
+    <value>தொடர்புகளைக் கொண்ட நெடுவரிசைகளைப் புதுப்பிக்க முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ComplexDataSelectionIsNotSupportedPerhapsY" xml:space="preserve">
+    <value>சிக்கலான தரவுத் தேர்வு ஆதரிக்கப்படவில்லை. தேர்வியில் சிக்கலான துணைவினவலை நீங்கள் பயன்படுத்தியிருக்கலாம்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_ConnectionPoolCannotBeUsed" xml:space="preserve">
+    <value>எளிய தரவு அடுக்குடன் இணைப்புத் தொகுப்பைப் பயன்படுத்த முடியாது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_ConnectionStringEmpty" xml:space="preserve">
+    <value>நினைவகத்தில் இல்லாததும் தனிப்பயன் அல்லாததுமான தரவுச் சேமிப்பகத்தைப் பயன்படுத்தும்போது இணைப்புச் சரம் வெறுமையாக இருக்கக்கூடாது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_ConstraintConflict" xml:space="preserve">
+    <value>'{0}' அட்டவணையில் '{1}' நெடுவரிசைகளுக்கான வெளி விசைக் கட்டுப்பாடு மீறப்பட்டுள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_DelayedPropertyContainerCannotBeAssigned" xml:space="preserve">
+    <value>தாமதப்படுத்தப்பட்ட தனிப்பயன் பண்பு '{0}.{1}'-இன் கொள்கலனை ஒதுக்க முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CollectClassInfos_CouldNotLoadAssembly" xml:space="preserve">
+    <value>'{0}' அசெம்பிளியிலிருந்து ClassInfos-ஐச் சேகரிக்க முடியவில்லை. இந்த அசெம்பிளியில் உள்ள வகுப்புகளைப் பயன்படுத்தும்போது ThreadSafeDataLayer, InvalidOperationException-ஐ எழுப்பக்கூடும். விவரங்களுக்கு InnerException-ஐப் பார்க்கவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ImageValueConverter_NotPresent" xml:space="preserve">
+    <value>'System.Drawing.Common' அசெம்பிளியில் 'System.Drawing.ImageConverter' வகுப்பைக் கண்டறிய முடியவில்லை. System.Drawing.Common 5.0 அல்லது அதற்கு மேற்பட்ட பதிப்பைப் பயன்படுத்தவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_CouldNotAssignPropertyValue" xml:space="preserve">
+    <value>'{0}' என்பதற்குப் பண்பு மதிப்பை ஒதுக்க முடியவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_CouldNotFindAppropriateConstructor" xml:space="preserve">
+    <value>'{0}' வகைக்குப் பொருத்தமான கட்டமைப்பியைக் கண்டறிய முடியவில்லை. அளவுருக்கள் இல்லாத கட்டமைப்பி அல்லது XPDictionary பொருளை அளவுருவாக ஏற்கும் கட்டமைப்பி எதிர்பார்க்கப்பட்டது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_CouldNotResolvePropertyType" xml:space="preserve">
+    <value>'{0}' என்பதற்குப் பண்பு வகையைத் தீர்மானிக்க முடியவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CrossThreadFailureDetected" xml:space="preserve">
+    <value>செயலிழைகளுக்கிடையேயான செயல்பாடு கண்டறியப்பட்டது. '{0}' என்பது செயலிழைப் பாதுகாப்புள்ள பொருள் அல்ல; வெவ்வேறு செயலிழைகளிலிருந்து அதை ஒரே நேரத்தில் பயன்படுத்துவதைத் தவிர்க்கவும்</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_CurrentExpressionWithX0IsNotSupported" xml:space="preserve">
+    <value>{0} கொண்ட தற்போதைய கோவை ஆதரிக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_CustomProperties_PersistentAndNonStorableType" xml:space="preserve">
+    <value>'{2}' வகையைச் சேர்ந்த '{0}.{1}' தனிப்பயன் உறுப்பினரை நிலையாகச் சேமிக்க முடியாது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_WantNotDeleteFilteredAggregateCollection" xml:space="preserve">
+    <value>பகுதியளவு ஏற்றப்பட்ட, உரிமைத் தொடர்புடைய '{1}' தொகுப்பைக் கொண்ட '{0}' பொருளை நீக்குவது, உரிமையாளரற்ற பொருட்கள்/பதிவுகளை உருவாக்கக்கூடும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_SeveralClassesWithSameName" xml:space="preserve">
+    <value>பதிவகத்தில் ஏற்கெனவே ClassInfo '{1}' உள்ளது. சாத்தியமான காரணம்: [{0}] அசெம்பிளி இருமுறை ஏற்றப்பட்டுள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_DuplicateJoinOperatorFound" xml:space="preserve">
+    <value>நகல் இணைப்புச் செயற்குறி கண்டறியப்பட்டது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_DuplicateKeyProperty" xml:space="preserve">
+    <value>'{0}' வகைக்கு ஒன்றுக்கு மேற்பட்ட திறவுகோல்கள் கண்டறியப்பட்டன.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_DuplicateMappingField" xml:space="preserve">
+    <value>'{1}' வகுப்பில் '{0}' நெடுவரிசைக்கு இரட்டை மேப்பிங்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_EnteringTheX0StateFromTheX1StateIsProhibit" xml:space="preserve">
+    <value>'{3}' என்பதற்கு, '{1}' நிலை காரணமாக '{2}' நிலையிலிருந்து '{0}' நிலைக்குச் செல்வது தடைசெய்யப்பட்டுள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_EntityTypesEmpty" xml:space="preserve">
+    <value>EntityTypes null ஆக இருக்கக்கூடாது; அதில் குறைந்தபட்சம் 1 உருப்படி இருக்க வேண்டும்</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TypeFieldIsEmpty" xml:space="preserve">
+    <value>'{0}' புலம் null ஆக உள்ளது (அடிப்படை வகுப்பு '{1}').</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_GroupingWithACustomComparerIsNotSupported" xml:space="preserve">
+    <value>தனிப்பயன் ஒப்பீட்டாளருடன் குழுவாக்குதல் ஆதரிக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_NullInstance" xml:space="preserve">
+    <value>இடைமுக மெய்நிகர் பொருள் '{0}'-க்கான செயலாக்கியைக் கண்டறிய முடியவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_CachedExpressionIsIncompatible" xml:space="preserve">
+    <value>இணக்கமற்ற கோவை. இது தொகுப்பியால் உருவாக்கப்பட்டிருக்க வேண்டும்; நிலையான மதிப்புருக்களை மட்டுமே கொண்டிருக்க வேண்டும். நிலையானவை அல்லாத மதிப்புருக்களை அனுப்ப CachedExpression செயல்முறையின் a1, a2 மற்றும் a3 அளவுருக்களைப் பயன்படுத்தலாம்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_IncorrectDeclaringTypeX0InTheMethodCallQue" xml:space="preserve">
+    <value>செயல்முறை அழைப்பில் செயல்முறையை அறிவிக்கும் '{0}' வகை தவறானது. 'System.Linq.Queryable' அல்லது 'System.Linq.Enumerable' வகை எதிர்பார்க்கப்படுகிறது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PersistentAliasExpander_ReferenceOrCollectionExpectedInTheMiddleOfThePath" xml:space="preserve">
+    <value>பாதையில் தவறான உறுப்பு '{0}' உள்ளது. குறிப்புப் பண்பு அல்லது தொகுப்பு இணைப்பு எதிர்பார்க்கப்படுகிறது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_EmptyMemberInstance" xml:space="preserve">
+    <value>InstanceType உறுப்பில் எந்த மதிப்பும் இல்லை. இன்னும் முறையாகத் தொடக்கநிலைப்படுத்தப்படாத பொருளுடன் GetInstanceObject-ஐப் பயன்படுத்த முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_InternalErrorAsyncActionIsAlreadyDisposed" xml:space="preserve">
+    <value>அகப் பிழை: ஒத்திசைவற்ற செயல் ஏற்கெனவே விடுவிக்கப்பட்டுவிட்டது. XPO-இல் உள்ள சிக்கல் இதற்குக் காரணமாக இருக்கலாம். DevExpress ஆதரவுக் குழுவைத் தொடர்புகொள்ளவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NullSessionProvider" xml:space="preserve">
+    <value>அகப் பிழை: அமர்வை அணுக முடியவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_DifferentComplexSet" xml:space="preserve">
+    <value>அகப் பிழை: மற்றொரு கூட்டுத் தொகுப்பிலிருந்து வரிசையைச் சேர்க்க முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongDictionaryIndex" xml:space="preserve">
+    <value>அகப் பிழை: '{0}' இண்டெக்ஸில் தவறான டிக்ஷனரி தரவு.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongCommitInfo" xml:space="preserve">
+    <value>அகப் பிழை: தவறான வடிவிலுள்ள உறுதிப்படுத்தல் தகவல்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_WrongIndexInfo" xml:space="preserve">
+    <value>உள் பிழை: தவறாக வடிவமைக்கப்பட்ட சுட்டுத் தகவல்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongRollbackInfo" xml:space="preserve">
+    <value>அகப் பிழை: தவறான வடிவிலுள்ள மாற்றங்களைத் திரும்பப்பெறுவதற்கான தகவல்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerOLHelpers_NestedParentMapIsNull" xml:space="preserve">
+    <value>உள் பிழை: NestedParentMap மற்றும் ParentNestedMap ஆகியவை null ஆக உள்ளன.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InTransactionLoader_NotInSelectDataMode" xml:space="preserve">
+    <value>உள் பிழை: SelectData பயன்முறையில் இல்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InTransactionLoader_ProcessReturnResultError" xml:space="preserve">
+    <value>உள் பிழை: SelectData பயன்முறையில் செயல்பாடு அனுமதிக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_DifferentColumnListLengths" xml:space="preserve">
+    <value>உள் பிழை: PKey மற்றும் FKey நெடுவரிசைகளின் எண்ணிக்கைகள் பொருந்தவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MsSql_RootIsNotInsertStatement" xml:space="preserve">
+    <value>அகப் பிழை: Root ஒரு InsertStatement அல்ல.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Loader_ReloadError" xml:space="preserve">
+    <value>உள் பிழை: குறிப்பிடப்பட்ட '{0}.{1}' ஆதரிக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_CriteriaEvaluationBehaviorIsNotSupported" xml:space="preserve">
+    <value>அகப் பிழை: குறிப்பிடப்பட்ட CriteriaEvaluationBehavior.{0}-ஐ இந்த மிகையேற்றப்பட்ட கட்டமைப்பி ஆதரிக்கவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_UnexpectedPersistentCriteriaEvaluationBehavior" xml:space="preserve">
+    <value>உள் பிழை: குறிப்பிடப்பட்ட PersistentCriteriaEvaluationBehavior.{0} ஆதரிக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServerModeGridSource_SummaryItemTypeNotSupported" xml:space="preserve">
+    <value>உள் பிழை: குறிப்பிடப்பட்ட SummaryItemType.{0} ஆதரிக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Loader_InternalErrorOrUnsupportedReferenceStructure" xml:space="preserve">
+    <value>உள் XPO பிழை அல்லது ஆதரிக்கப்படாத குறிப்பு அமைப்பு: கூட்டுத் திறவுகோல், வழித்தோன்றல் வகுப்புகளைக் கொண்ட ஒரு வகையைக் குறிப்பிடக்கூடாது. பொருள் வகை '{0}', தீர்மானிக்கப்பட்ட வகை '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_InternalXPOError" xml:space="preserve">
+    <value>உள் XPO பிழை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_ODataType_Mismatch" xml:space="preserve">
+    <value>செல்லாத '@odata.type' குறிப்பு: '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CreateCollection_InvalidCastException" xml:space="preserve">
+    <value>'{2}.{3}' பண்பில் '{0}'-இலிருந்து '{1}'-க்குச் செல்லாத வகை மாற்றம்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_WrongConnectionString" xml:space="preserve">
+    <value>செல்லாத இணைப்புச் சரம் குறிப்பிடப்பட்டுள்ளது: '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AmbiguousClassName" xml:space="preserve">
+    <value>'{1}' மற்றும் '{2}' வகைகளுக்கு இடையே தெளிவற்றதாக உள்ள '{0}' வகைப் பெயருக்கான ClassInfo-ஐத் தீர்மானிக்க முடியாது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_CanChangeProperties" xml:space="preserve">
+    <value>InstantFeedback மூலத்தைத் தரவுக் கட்டம் ஏற்கெனவே பயன்படுத்தும்போது, அதன் பண்புகளை மாற்ற முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_CanChangeViewProperties" xml:space="preserve">
+    <value>XPInstantFeedbackView ஏற்கெனவே தரவுக் கட்டத்தால் பயன்படுத்தப்படும்போது, அதன் பண்புகளை மாற்ற முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServerModeGridSource_GroupAndAddOrRemoveIsNotAllowed" xml:space="preserve">
+    <value>ஒரே நேரத்தில் குழுவாக்குவதும் உருப்படிகளைச் சேர்ப்பதும்/அகற்றுவதும் அனுமதிக்கப்படாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_NullJoinClassInfo" xml:space="preserve">
+    <value>JoinClassInfo null ஆக உள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_EmptyJoinOperandId" xml:space="preserve">
+    <value>JoinOperandId காலியாக உள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProvider_KeysAutogenerationNonSupportedTypeException" xml:space="preserve">
+    <value>'{0}' வகுப்பு வகைக்குத் திறவுகோல் தானாக உருவாக்கப்படுவது ஆதரிக்கப்படவில்லை. இது 32 பிட் முழு எண், 64 பிட் முழு எண் மற்றும் உலகளாவிய தனித்துவ அடையாளங்காட்டி ஆகிய தரவு வகைகளுக்கு மட்டுமே ஆதரிக்கப்படுகிறது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_KeyPropertyAbsent" xml:space="preserve">
+    <value>'{0}' வகைக்கான திறவுகோல் பண்பு இல்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_LambdaExpressionIsExpectedX0" xml:space="preserve">
+    <value>லாம்ப்டா கோவை எதிர்பார்க்கப்படுகிறது: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_DoesNotSupportNestedJoinsWithLevel" xml:space="preserve">
+    <value>இரண்டுக்கும் மேற்பட்ட ஒன்றுக்குள் ஒன்றாக அமைந்த இணைப்புகளை LinqToXpo ஆதரிக்காது. இது வினவலில் உள்ள மொத்த இணைப்புகளின் எண்ணிக்கையைப் பாதிக்காது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_MalformedAggregate" xml:space="preserve">
+    <value>தவறாக வடிவமைக்கப்பட்ட திரட்டல் அல்லது உள் XPO பிழை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_NoAssociationListInAssociation" xml:space="preserve">
+    <value>'{1}.{2}' மற்றும் '{3}.{4}' இடையேயான '{0}' தொடர்பு தவறாக அமைக்கப்பட்டுள்ளது. தொடர்பின் ஒரு பக்கத்தில் பட்டியல் அல்லது தொகுப்பு எதிர்பார்க்கப்படுகிறது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_TwoAssociationListsInAssociation" xml:space="preserve">
+    <value>'{1}.{2}' மற்றும் '{3}.{4}' பட்டியல்கள்/தொகுப்புகளுக்கு இடையேயான '{0}' தொடர்பு தவறாக அமைக்கப்பட்டுள்ளது. பலவற்றிலிருந்து பலவற்றுக்கான உறவுகளுக்கு ManyToManyAlias பண்புக்கூறை அல்லது XPCollection வகைப் பட்டியல்கள்/தொகுப்புகளைப் பயன்படுத்தவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_NotFound" xml:space="preserve">
+    <value>'{0}' தொடர்பு தவறாக அமைக்கப்பட்டுள்ளது. '{1}.{2}'-க்கான தொடர்புடைய உறுப்பினரை '{3}' வகுப்பில் கண்டறிய முடியவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_NotACollection" xml:space="preserve">
+    <value>தவறாக வடிவமைக்கப்பட்ட வினவல் அல்லது உள் XPO பிழை: '{0}' ஒரு தொகுப்பு அல்ல.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotFindClassinfoType" xml:space="preserve">
+    <value>தவறாக அமைந்த XML: வகுப்பு வகையைக் கண்டுபிடிக்க முடியவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotFindConstructor" xml:space="preserve">
+    <value>தவறாக அமைந்த XML: '{0}' வகைக்கான கட்டமைப்பியைக் கண்டுபிடிக்க முடியவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotLoadMember" xml:space="preserve">
+    <value>தவறாக அமைந்த XML: [{0}]{1}.{2} உறுப்பை ஏற்ற முடியவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotResolveClassinfoInstanceType" xml:space="preserve">
+    <value>தவறாக அமைந்த XML: ClassInfo வகையைத் தீர்மானிக்க முடியவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorModelTagAbsent" xml:space="preserve">
+    <value>தவறாக அமைந்த XML: &lt;Model&gt; குறிச்சொல் காணப்படவில்லை அல்லது தவறான பெயர்வெளி குறிப்பிடப்பட்டுள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorUnknownAttribute" xml:space="preserve">
+    <value>தவறாக அமைந்த XML: அறியப்படாத பண்புக்கூறு '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_SuppressSuspiciousMemberInheritanceCheckError" xml:space="preserve">
+    <value>'{0}.{1}' உறுப்பினரும் அதன் '{2}' பண்புக்கூறும் புறக்கணிக்கப்படுகின்றன. அதே பெயருள்ள உறுப்பினர் ஏற்கெனவே '{3}' அடிப்படை வகுப்பில் அறிவிக்கப்பட்டுள்ளது. இந்த விதிவிலக்கைத் தடுக்க DevExpress.Xpo.Metadata.ReflectionClassInfo.SuppressSuspiciousMemberInheritanceCheck-ஐ True என அமைக்கவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ObjectLayer_MemberNotFound" xml:space="preserve">
+    <value>'{0}.{1}' உறுப்பு கண்டறியப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_PersistentOrThis" xml:space="preserve">
+    <value>'{0}.{1}' உறுப்பு நிலைத்ததாக இருக்க வேண்டும் அல்லது 'this' என்பதைத் திருப்பித் தர வேண்டும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NonPersistentKey" xml:space="preserve">
+    <value>நிலையாகச் சேமிக்கத்தக்கதல்லாத '{0}.{1}' விசை கண்டறியப்பட்டது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_PersistentReferenceFound" xml:space="preserve">
+    <value>நிலைத்த சேமிப்பற்ற வகுப்புகளுக்குரிய செயல்பாடு, நிலைத்த சேமிப்புடைய '{0}' வகுப்புடன் செய்யப்படுகிறது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_NullDefaultValueNotAllowed" xml:space="preserve">
+    <value>'{0}' நெடுவரிசையின் இயல்புநிலை மதிப்புகளாக Null மதிப்புகள் அனுமதிக்கப்படாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NullableAttributeNotApplicable" xml:space="preserve">
+    <value>உறுப்பினர் நிலையாகச் சேமிக்கத்தக்கதல்ல, மாற்றுப்பெயரைக் கொண்டுள்ளது, பலவற்றிலிருந்து பலவற்றுக்கான உறவின் மாற்றுப்பெயரைக் கொண்டுள்ளது அல்லது பொருளுக்கான சுட்டு வகையைக் கொண்டுள்ளது என்பதால், {1} வகுப்பின் {0} உறுப்பினருக்கு Nullable பண்புக்கூறைப் பயன்படுத்த முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_WrongObjectType" xml:space="preserve">
+    <value>ClassInfo {2}-ஐப் பயன்படுத்தி உருவாக்கப்பட்ட {0} பொருள், தவறான ClassInfo {1}-ஐத் திருப்பித் தருகிறது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="NestedSession_NotCloneable" xml:space="preserve">
+    <value>செயல்பாட்டின்போது '{0}.{1}' உறுப்பினர் மாற்றப்பட்டதால், பொருள் படிநிலையை நகலாக்க முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerializableObjectLayer_OLDoesNotImplementISerializableObjectLayerEx" xml:space="preserve">
+    <value>பொருள் அடுக்கு ISerializableObjectLayerEx-ஐச் செயலாக்கவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_ObjectModificationIsNotAllowed" xml:space="preserve">
+    <value>அமர்வு CommitChangesToDataLayerInner நிலையில் இருக்கும்போது பொருட்களை மாற்ற முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_DifferentObjectsWithSameKey" xml:space="preserve">
+    <value>நகல் விசைகளைக் கொண்ட பொருட்கள் கண்டறியப்பட்டன.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Generator_OneOfBinaryOperatorsOperandsIsNull" xml:space="preserve">
+    <value>BinaryOperator-இன் செயலுருபுகளில் ஒன்று null ஆக உள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_EnumeratorObjectModifiedOrDeleted" xml:space="preserve">
+    <value>கோரப்பட்ட வரம்பில் உள்ள ஒன்று அல்லது அதற்கு மேற்பட்ட பொருட்கள் மாற்றப்பட்டுள்ளன அல்லது நீக்கப்பட்டுள்ளன. அடையாள மதிப்புப் பட்டியலைப் புதுப்பிக்க வேண்டும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_IncompatibleIdType" xml:space="preserve">
+    <value>வழங்கப்பட்ட அடையாளத்தின் வகை '{0}', '{1}.{2}' விசையின் வகை '{3}' உடன் இணக்கமாக இல்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_CorrectPIinUOW" xml:space="preserve">
+    <value>நிலைத்த இடைமுகங்கள் அமர்வுகளில் முழுமையாக ஆதரிக்கப்படுவதில்லை. அதற்குப் பதிலாகப் பணியலகுகளைப் பயன்படுத்தவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_ClassAttributeExclusive" xml:space="preserve">
+    <value>PersistentAttribute, NonPersistentAttribute மற்றும் MapToAttribute ஆகியவற்றை ஒன்றாகப் பயன்படுத்த முடியாது. இவற்றில் ஒன்றை மட்டுமே '{0}' வகுப்பிற்குப் பயன்படுத்த முடியும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_MemberAttributeExclusive" xml:space="preserve">
+    <value>PersistentAttribute, NonPersistentAttribute மற்றும் PersistentAliasAttribute ஆகியவற்றை ஒன்றாகப் பயன்படுத்த முடியாது. இவற்றில் ஒன்றை மட்டுமே '{0}.{1}' உறுப்பினருக்குப் பயன்படுத்த முடியும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_NonPersistentReferenceFound" xml:space="preserve">
+    <value>நிலைத்த சேமிப்புக்குரிய செயல்பாடு, நிலைத்த சேமிப்பற்ற '{0}' வகுப்புடன் செய்யப்படுகிறது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_DifferentTypes" xml:space="preserve">
+    <value>முதன்மை விசை மற்றும் வெளி விசை நெடுவரிசை வகைகளின் பொருத்தமின்மை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_RequiredAttributeMissing" xml:space="preserve">
+    <value>'{0}' பண்பு, '{1}' பண்புக்கூறை வரையறுக்கவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_PropertyMissing" xml:space="preserve">
+    <value>'{1}' வகையில் '{0}' பண்பு இல்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_AssociationElementTypeMissing" xml:space="preserve">
+    <value>'{0}' பண்பு, அதன் 'Association' பண்புக்கூறில் 'ElementType' பண்பைக் குறிப்பிடவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="View_PropertyNotFetched" xml:space="preserve">
+    <value>'{0}' பண்பு பெறப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_DelayedPropertyDoesNotContainProperObject" xml:space="preserve">
+    <value>'{0}.{1}' பண்பில் XPDelayedProperty பொருள் இல்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_IncorrectPathMemberNotExists" xml:space="preserve">
+    <value>'{2}.{3}' உறுப்பு இல்லாததால், '{0}' வகைக்கான பண்புப் பாதை '{1}' தவறானது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_IncorrectPathNonPersistentMember" xml:space="preserve">
+    <value>'{2}.{3}' உறுப்பு நிலைத்த சேமிப்புக்குரிய உறுப்பு அல்ல என்பதால், '{0}' வகைக்கான பண்புப் பாதை '{1}' தவறானது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_IncorrectPathNonReferenceMember" xml:space="preserve">
+    <value>'{2}.{3}' உறுப்பு குறிப்பு உறுப்பு அல்ல என்பதால், '{0}' வகைக்கான பண்புப் பாதை '{1}' தவறானது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_IncorrectPath" xml:space="preserve">
+    <value>'{0}' வகைக்கான பண்புப் பாதை '{1}' தவறானது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_QueryWithAppliedTheSkipOrTheTakeOperations" xml:space="preserve">
+    <value>Skip அல்லது Take செயல்பாடுகள் பயன்படுத்தப்பட்ட வினவலை இணைப்புக்குப் பயன்படுத்த முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_UseDataSetDataStoreOrCtor" xml:space="preserve">
+    <value>DataSet உடன் .ctor-ஐப் பயன்படுத்துவதற்குப் பதிலாக, DataSetDataStore வகுப்பை அல்லது DataSet இல்லாத .ctor-ஐப் பயன்படுத்தவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_RecurringObjectAdd" xml:space="preserve">
+    <value>மறுநுழைவுச் சேர்த்தல்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_ReferenceTooComplex" xml:space="preserve">
+    <value>குறிப்பு உறுப்பு '{0}.{1}' மிகச் சிக்கலானது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CannotReloadPurgedObject" xml:space="preserve">
+    <value>கோரப்பட்ட பொருட்களை ஏற்ற முடியாது, ஏனெனில் அவை தரவுச் சேமிப்பகத்தில் இல்லை. இந்தப் பொருட்கள் ஏற்கனவே நீக்கப்பட்டிருக்கலாம்/நிரந்தரமாக அகற்றப்பட்டிருக்கலாம். பட்டியலில் உள்ள அதே பொருட்களுடன் இந்த விதிவிலக்கை மீண்டும் நீங்கள் கண்டால், உங்கள் தரவுச் சேமிப்பகத்தின் குறிப்பீட்டு ஒருமைப்பாடு பாதிக்கப்பட்டிருக்கலாம் என்பதை நினைவில் கொள்ளவும். அத்தகைய நிலையில், உங்கள் கணினி நிர்வாகியைத் தொடர்புகொள்ளவும். கோரப்பட்ட பொருட்கள்: {0}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SequenceContainsMoreThanOneElement" xml:space="preserve">
+    <value>வரிசையில் ஒன்றுக்கும் மேற்பட்ட உறுப்புகள் உள்ளன.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SequenceContainsNoMatchingElement" xml:space="preserve">
+    <value>வரிசையில் பொருந்தும் உறுப்பு எதுவும் இல்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServerModeGridSource_WrongTopLevelAggregate" xml:space="preserve">
+    <value>சேவையகப் பிழை அல்லது XPO உள் பிழை: மேல்நிலைத் திரட்டில் ஒன்றுக்கு மேற்பட்ட குழுக்கள் உள்ளன.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_AlreadyConnected" xml:space="preserve">
+    <value>அமர்வு ஏற்கனவே இணைக்கப்பட்டுள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SessionIsNull" xml:space="preserve">
+    <value>Session null ஆக உள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_SingleRowExpected" xml:space="preserve">
+    <value>'{0}' வழியாக ஒரே ஒரு வரிசை எதிர்பார்க்கப்படுகிறது, கிடைத்த வரிசைகள்: {1}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SortingIsNotSupportedForSelectManyOperation" xml:space="preserve">
+    <value>பலவற்றிலிருந்து பலவற்றுக்கான தொடர்புடைய தொகுப்புகளின் மீதான SelectMany செயல்பாட்டிற்கு வரிசைப்படுத்தல் ஆதரிக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_UnexpectedState" xml:space="preserve">
+    <value>குறிப்பிடப்பட்ட SessionState.{0} ஆதரிக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_TableNotFound" xml:space="preserve">
+    <value>அட்டவணை '{0}' கிடைக்கவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_AliasNotFound" xml:space="preserve">
+    <value>'{0}' என்ற மாற்றுப்பெயரைக் கொண்ட அட்டவணை காணப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_MethodX0ForX1IsNotSupported" xml:space="preserve">
+    <value>{1} என்பதற்கு '{0}' செயல்முறை ஆதரிக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheX0MethodIsNotSupported" xml:space="preserve">
+    <value>{0} செயல்முறை ஆதரிக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_SessionMixing" xml:space="preserve">
+    <value>'{0}' பொருள் வேறொரு அமர்வுக்குச் சொந்தமானது. தீர்வுக்கு https://docs.devexpress.com/eXpressAppFramework/403631/ என்பதைப் பார்க்கவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_ObjectCannotBePurged" xml:space="preserve">
+    <value>அடையாளம் = '{1}' கொண்ட '{0}' பொருளை நிரந்தரமாக அகற்ற முடியாது - அதைச் சுட்டும் பொருட்கள் உள்ளன.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_PropertyIsDuplicatedInIndexDeclaration" xml:space="preserve">
+    <value>'{1}{2}{3}' {4}-இன் சுட்டி அறிவிப்பில் '{0}' பண்பு மீண்டும் இடம்பெற்றுள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_PersistentAliasCircular" xml:space="preserve">
+    <value>'{0}' வகுப்பின் '{1}' பண்பிற்கு, பின்வரும் கோவையைப் பயன்படுத்தும் PersistentAlias பண்புக்கூறு இடப்பட்டுள்ளது: '{2}'. இந்தக் கோவை முடிவற்ற சுழற்சியை ஏற்படுத்துகிறது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_NonPersistentClassInTheAssociation" xml:space="preserve">
+    <value>'{2}' வகுப்பு நிலையாகச் சேமிக்கத்தக்கதல்ல என்பதால், '{0}.{1}' உறுப்பினருக்குத் தொடர்புப் பண்புக்கூறைப் பயன்படுத்த முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_AssociationAttributeOnlyForListOrReference" xml:space="preserve">
+    <value>'{1}.{2}' உறுப்பினருக்குத் தொடர்புப் பண்புக்கூறைப் பயன்படுத்த முடியாது. சுட்டு அல்லது பட்டியல் எதிர்பார்க்கப்படுகிறது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProvider_TheAutoIncrementedKeyWithX0TypeIsNotSupport" xml:space="preserve">
+    <value>‘{1}’-க்கு ‘{0}’ வகையைச் சேர்ந்த தானாக அதிகரிக்கும் திறவுகோல் ஆதரிக்கப்படவில்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionIsExpectedX0" xml:space="preserve">
+    <value>அழைப்புக் கோவை எதிர்பார்க்கப்படுகிறது: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionGenericReturnTypeX0" xml:space="preserve">
+    <value>அழைப்புக் கோவைக்கு வகை அளவுருக்களைக் கொண்ட திரும்பளிப்பு வகை இருக்க வேண்டும்: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionReturnTypeX0" xml:space="preserve">
+    <value>அழைப்புக் கோவைக்குத் திரும்பளிப்பு வகை இருக்க வேண்டும்: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_TheCommitOperationWasProhibitedByTheRules" xml:space="preserve">
+    <value>உறுதிப்படுத்தும் செயல்பாடு பாதுகாப்பு விதிகளால் தடைசெய்யப்பட்டுள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_CurrentPageShouldBeGreaterOrEqualZero" xml:space="preserve">
+    <value>CurrentPage பூஜ்ஜியத்தை விட அதிகமாக அல்லது அதற்குச் சமமாக இருக்க வேண்டும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_CurrentPageShouldBeLessThanPageCount" xml:space="preserve">
+    <value>CurrentPage, PageCount-ஐ விடக் குறைவாக இருக்க வேண்டும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CustomAggregate_DoesNotImplementInterface" xml:space="preserve">
+    <value>'{0}' தனிப்பயன் திரட்டல் சார்பு '{1}' இடைமுகத்தைச் செயலாக்கவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CustomAggregate_NotFound" xml:space="preserve">
+    <value>'{0}' தனிப்பயன் திரட்டல் சார்பு பதிவு செய்யப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_DataSetUncommitted" xml:space="preserve">
+    <value>'data' அளவுருவில் ஏற்கப்படாத மாற்றங்களைக் கொண்ட DataSet உள்ளது. DataSetDataStore வகுப்பின் புதிய நேர்வை உருவாக்குவதற்கு முன் DataSet.AcceptChanges முறையை அழைக்கவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ASE_CommandNotAllowedWithinMultiStatementTransaction" xml:space="preserve">
+    <value>பரிவர்த்தனைக்குள் தரவுத்தளக் கட்டமைப்பை உருவாக்குவதையோ மாற்றுவதையோ இந்தத் தரவுத்தளம் ஆதரிக்கவில்லை. இந்தச் செயல்பாட்டைச் செய்ய, பரிவர்த்தனைக்குள் கட்டமைப்பை மாற்றுவதை ஆதரிக்குமாறு தரவுத்தளத்தை உள்ளமைக்க வேண்டும் அல்லது கட்டமைப்பு புதுப்பிக்கப்படும்போது பரிவர்த்தனைகளை முடக்க வேண்டும். இதற்காக, ExecuteUpdateSchemaInTransaction = false என்ற புலத்தை அமைக்கவும் (தற்போதைய வழங்கி நிகழ்வுக்கு) அல்லது GlobalExecuteUpdateSchemaInTransaction = false என்ற புலத்தை அமைக்கவும் (வழங்கியின் அனைத்து நிகழ்வுகளுக்கும்).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheDeclaringTypeAssemblyNamePropertyIsEmpty" xml:space="preserve">
+    <value>DeclaringTypeAssemblyName பண்பு காலியாக உள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheDeclaringTypeNamePropertyIsEmpty" xml:space="preserve">
+    <value>DeclaringTypeName பண்பு காலியாக உள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ElemAtOperationIsNotSupportedWithoutSorting" xml:space="preserve">
+    <value>வரிசைப்படுத்தல் இல்லாமல் ElementAt செயல்பாடு ஆதரிக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_EnumeratorPositioning" xml:space="preserve">
+    <value>எனுமரேட்டர் தொகுப்பின் முதல் உறுப்புக்கு முன்பாக அல்லது கடைசி உறுப்புக்குப் பின்பாக உள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InitOperator_DeserializationProhibitedDueSecurityIssue" xml:space="preserve">
+    <value>பாதுகாப்பற்ற வகைகளைக் கொண்டிருப்பதால் கோவையை வரிசைநீக்கம் செய்ய முடியாது. பாதுகாப்பற்ற வகைகளை வரிசைநீக்கம் செய்வது தடைசெய்யப்பட்டுள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ExpressionX0IsNotSupportedInX1" xml:space="preserve">
+    <value>{1} இல் கோவை ஆதரிக்கப்படவில்லை: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ExpressionX0IsNotSupported" xml:space="preserve">
+    <value>கோவை ஆதரிக்கப்படவில்லை: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_FetchOnlyAttributeNotApplicable" xml:space="preserve">
+    <value>இலக்கு உறுப்பினர் நிலையாகச் சேமிக்கத்தக்கதல்ல, மாற்றுப்பெயரைக் கொண்டுள்ளது, பலவற்றிலிருந்து பலவற்றுக்கான உறவின் மாற்றுப்பெயரைக் கொண்டுள்ளது, விசையாக உள்ளது அல்லது உள்ளமைந்த கட்டமைப்பின் பகுதியாக உள்ளது என்பதால், {0}.{1}-க்கு FetchOnly பண்புக்கூறைப் பயன்படுத்த முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_FetchOnlyAttributeNotApplicableToReference" xml:space="preserve">
+    <value>இலக்கு உறுப்பினர் சுட்டு வகையைச் சேர்ந்தது என்பதால், {0}.{1}-க்கு FetchOnly பண்புக்கூறைப் பயன்படுத்த முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Filtering_TheIifFunctionOperatorRequiresThree" xml:space="preserve">
+    <value>'Iif' சார்புச் செயற்குறிக்கு மூன்று அல்லது அதற்கு மேற்பட்ட மதிப்புருக்கள் தேவை. மதிப்புருக்களின் எண்ணிக்கை ஒற்றைப்படையாக இருக்க வேண்டும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_GeneralPurposeCollectionInsteadOfRefCollection" xml:space="preserve">
+    <value>தொடர்புறவுத் தொகுப்புப் பண்பான '{0}.{1}'-இன் செல்லாத செயலாக்கம் கண்டறியப்பட்டுள்ளது. தொகுப்பை GetCollection முறை அல்லது XPCollection(Session session, object theOwner, XPMemberInfo refProperty) கட்டமைப்பி மூலம் உருவாக்க வேண்டும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheJoinWithManyTablesSimultaneouslyInASing" xml:space="preserve">
+    <value>ஒரே செயற்குறியில் பல அட்டவணைகளுடன் இணைப்புச் செயல்பாடு ஆதரிக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheLambdaExpressionWithSuchParametersIsNot" xml:space="preserve">
+    <value>இத்தகைய அளவுருக்களைக் கொண்ட லாம்ப்டா கோவை ஆதரிக்கப்படவில்லை: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_LengthsOfTheCollectionsAreDifferentInArgs" xml:space="preserve">
+    <value>மதிப்புருவில் உள்ள தொகுப்புகளின் நீளங்கள் வேறுபடுகின்றன.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Helpers_ResolveDataForCollection" xml:space="preserve">
+    <value>உறுப்பு ஒரு தொகுப்பு அல்ல.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Common_MethodOrOperationNotImplemented" xml:space="preserve">
+    <value>முறை அல்லது செயல்பாடு செயலாக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DirectSQL_WrongColumnCount" xml:space="preserve">
+    <value>முடிவுத் தொகுப்பு வரிசையிலும் இலக்கு வரிசையிலும் உள்ள நெடுவரிசைகளின் எண்ணிக்கைகள் பொருந்தவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongInitData" xml:space="preserve">
+    <value>மூல வரிசையிலும் இலக்கு அட்டவணை வரிசையிலும் உள்ள நெடுவரிசைகளின் எண்ணிக்கைகள் பொருந்தவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Helpers_CloningObjectModified" xml:space="preserve">
+    <value>சேமிக்கப்படாத மாற்றங்களைக் கொண்ட பொருளை நகலாக்க முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_PageSizeShouldBeGreaterThanZero" xml:space="preserve">
+    <value>PageSize பூஜ்ஜியத்தை விட அதிகமாக இருக்க வேண்டும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_InEditMode" xml:space="preserve">
+    <value>வரிசை ஏற்கனவே திருத்தப் பயன்முறையில் உள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SkipOperationIsNotSupportedWithoutSorting" xml:space="preserve">
+    <value>வரிசைப்படுத்தல் இல்லாமல் Skip செயல்பாடு ஆதரிக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PostgreSQL_CommandPoolNotSupported" xml:space="preserve">
+    <value>குறிப்பிடப்பட்ட CommandPoolBehavior.{0}-ஐ PosgreSQL {1} ஆதரிக்கவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_OperationNotAllowed" xml:space="preserve">
+    <value>குறிப்பிட்ட செயல்பாடு தடைசெய்யப்பட்டுள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Filtering_TheTypeNameArgumentOfTheX0FunctionIsNotFound" xml:space="preserve">
+    <value>'{0}' சார்பின் 'typeName' மதிப்புரு கண்டறியப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Generator_TheUseOfATopLevelSingleAggregateIsProhibit" xml:space="preserve">
+    <value>மேல்நிலை 'Single' திரட்டலைப் பயன்படுத்துவது தடைசெய்யப்பட்டுள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Generator_TheUseOfNestedSingleAggregatesIsProhibited" xml:space="preserve">
+    <value>உள்ளமைந்த  'Single' திரட்டல்களைப் பயன்படுத்துவது தடைசெய்யப்பட்டுள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_UseAssociationNameAsIntermediateTableNameMismatch" xml:space="preserve">
+    <value>'{1}.{2}' மற்றும் '{3}.{4}' இடையேயான '{0}' தொடர்பின் இரு பக்கங்களிலும் UseAssociationNameAsIntermediateTableName மதிப்பு ஒரே மாதிரியாக இருக்க வேண்டும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_ConverterOnKeyOrReference" xml:space="preserve">
+    <value>பொருளின் விசையை அல்லது மற்றொரு பொருளுக்கான சுட்டைக் குறிக்கும் '{0}.{1}' பண்பிற்கு ValueConverter பண்புக்கூறைப் பயன்படுத்த முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_WithDeletedOptionNotSupported" xml:space="preserve">
+    <value>XPQuery ஆனது DataLayer உடன் தொடக்கநிலைப்படுத்தப்பட்டதால் WithDeleted விருப்பம் ஆதரிக்கப்படவில்லை. WithDeleted விருப்பத்தைப் பயன்படுத்த, XPQuery(Session) அல்லது XPQuery(Session, Boolean) கட்டமைப்பியைப் பயன்படுத்தவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XpoDefault_CustomGuidGenerationHandlerCannotBeNull" xml:space="preserve">
+    <value>XpoDefault.CustomGuidGenerationHandler புலத்தின் மதிப்பு null ஆக உள்ளது. XpoDefault.GuidGenerationMode புலத்தை 'Custom' என அமைத்தால், இந்தப் புலத்திற்குத் தனிப்பயன் டெலிகேட்டை ஒதுக்க வேண்டும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_OperationCannotBePerformedBecauseNoSyncContext" xml:space="preserve">
+    <value>செயல்படுத்தும் தொடரிழைக்கு தற்போதைய ஒத்திசைவுச் சூழல் இல்லாததால், இந்தச் செயல்பாட்டைச் செய்ய முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PostgreSQL_LegacyGuidDetected" xml:space="preserve">
+    <value>இந்த விதிவிலக்கைத் தவிர்க்க, DevExpress.Xpo.DB.PostgreSqlConnectionProvider-இன் UseLegacyGuidSupport புலத்தை அல்லது நிலையான GlobalUseLegacyGuidSupport புலத்தை 'true' என அமைக்கவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_TopLevelAggregateNotSupported" xml:space="preserve">
+    <value>மேல்நிலைத் திரட்டல்களை நிபந்தனைகளில் பயன்படுத்த முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_ICommandChannel_TransferringRequestsIsProhibited" xml:space="preserve">
+    <value>பாதுகாப்பு இயந்திரத்திற்குள் ICommandChannel வழியாகக் கோரிக்கைகளை அனுப்புவது தடைசெய்யப்பட்டுள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_NullTransitionMemberInfo" xml:space="preserve">
+    <value>மாற்றத்திற்கான MemberInfo null ஆக உள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_SessionCtorAbsent" xml:space="preserve">
+    <value>{0} வகையில் அமர்வுக்குரிய கட்டமைப்பி இல்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_NoConstructor" xml:space="preserve">
+    <value>{0} வகையில் {1} அளவுருக்களைக் கொண்ட கட்டமைப்பி இல்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_TypeNotFound" xml:space="preserve">
+    <value>'{0}' வகை கண்டறியப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_InvalidCastOnAdd" xml:space="preserve">
+    <value>தொகுப்பில் உருப்படியைச் சேர்க்க முடியவில்லை. '{0}' பொருள் '{1}' வகையின் நிகழ்வு அல்ல.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_CustomProperties_ReferenceOrCollectionInSessionStore" xml:space="preserve">
+    <value>'{0}' வகுப்பு '{2}' இடைமுகத்தைச் செயல்படுத்தாததால், சுட்டு அல்லது தொகுப்பு வகையைச் சேர்ந்த '{1}' தனிப்பயன் உறுப்பினரை உருவாக்க முடியவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_UnexpectedToken" xml:space="preserve">
+    <value>{1} இடத்தில் எதிர்பாராத '{0}' டோக்கன். 'StartObject' எதிர்பார்க்கப்படுகிறது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_UniqueIndex" xml:space="preserve">
+    <value>'{0}' என்ற தனித்துவ இண்டெக்ஸ் மீறப்பட்டுள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="VistaDB_UpdatingSchemaIsForbiddenWhileExplicitTran" xml:space="preserve">
+    <value>வெளிப்படையான பரிவர்த்தனை திறந்திருக்கும்போது கட்டமைப்பைப் புதுப்பிப்பது தடைசெய்யப்பட்டுள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_DictConstructor" xml:space="preserve">
+    <value>Session(XPDictionary dictionary) கட்டமைப்பியைப் பயன்படுத்தும்போது, Session.Connect முறையை அழைப்பதற்கு முன் செல்லுபடியாகும் Session.ConnectionString ஒன்றை நீங்கள் கட்டாயமாகக் குறிப்பிட வேண்டும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_IsReadOnly" xml:space="preserve">
+    <value>எழுதுதல் ஆதரிக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Helpers_SameDictionaryExpected" xml:space="preserve">
+    <value>தவறான டிக்ஷனரி.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadError" xml:space="preserve">
+    <value>XML அகராதியை ஏற்றுவதில் பிழை: {0}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_DataTypeAttributeNotFound" xml:space="preserve">
+    <value>XML ஏற்றி: 'DataType' பண்புக்கூறைக் கண்டறிய முடியவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_NameAttributeExpected" xml:space="preserve">
+    <value>XML ஏற்றி: 'name' பண்புக்கூறு எதிர்பார்க்கப்படுகிறது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ReferAttributeExpected" xml:space="preserve">
+    <value>XML ஏற்றி: 'refer' பண்புக்கூறு எதிர்பார்க்கப்படுகிறது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XpathAttributeExpected" xml:space="preserve">
+    <value>XML ஏற்றி: 'xpath' பண்புக்கூறு எதிர்பார்க்கப்படுகிறது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_CantRestoreObjectFromXML" xml:space="preserve">
+    <value>XML ஏற்றி: பொருளைத் தொடராக்கப்பட்ட வடிவிலிருந்து மீட்டுருவாக்க முடியவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_NullPrimaryColumns" xml:space="preserve">
+    <value>XML ஏற்றி: '{0}' முதன்மை விசையைக் கண்டறிய முடியவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ReferNotFound" xml:space="preserve">
+    <value>XML ஏற்றி: சுட்டப்பட்டுள்ள '{0}'-ஐக் கண்டறிய முடியவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_CantGetColumnType" xml:space="preserve">
+    <value>XML ஏற்றி: நெடுவரிசை வகையைத் தீர்மானிக்க முடியவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ColumnNameIsNotSpecified" xml:space="preserve">
+    <value>XML ஏற்றி: நெடுவரிசைப் பெயர் குறிப்பிடப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidBaseAttributeValue" xml:space="preserve">
+    <value>XML ஏற்றி: தவறான 'base' பண்புக்கூறு மதிப்பு.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidValueAttributeValue" xml:space="preserve">
+    <value>XML ஏற்றி: தவறான 'value' பண்புக்கூறு மதிப்பு.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidColumnTypeDeclaration" xml:space="preserve">
+    <value>XML ஏற்றி: செல்லாத நெடுவரிசை வகைப் பெயர்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_InvalidTypeString" xml:space="preserve">
+    <value>XML ஏற்றி: செல்லாத வகைப் பெயர்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_choiceNodeNotFound" xml:space="preserve">
+    <value>XML ஏற்றி: 'choice' கணு காணப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ComplexTypeNodeNotFound" xml:space="preserve">
+    <value>XML ஏற்றி: 'complexType' கணு காணப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ElementNodeNotFound" xml:space="preserve">
+    <value>XML ஏற்றி: 'element' கணு காணப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_NotDataSetNode" xml:space="preserve">
+    <value>XML ஏற்றி: கணு தரவுத்தொகுப்பாகக் குறிக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_SchemaNodeNotFound" xml:space="preserve">
+    <value>XML ஏற்றி: 'schema' கணு காணப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSselectorNodeExpected" xml:space="preserve">
+    <value>XML ஏற்றி: 'xs:selector' கணு எதிர்பார்க்கப்படுகிறது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_InconsistentForeignKeyCount" xml:space="preserve">
+    <value>XML ஏற்றி: PKey மற்றும் FKey நெடுவரிசை எண்ணிக்கைகள் பொருந்தவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_TableNotDeclared" xml:space="preserve">
+    <value>XML ஏற்றி: '{0}' அட்டவணை அறிவிக்கப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_TableNameIsNotSpecified" xml:space="preserve">
+    <value>XML ஏற்றி: அட்டவணைப் பெயர் குறிப்பிடப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XpathAttributeWrongFormat" xml:space="preserve">
+    <value>XML ஏற்றி: 'xpath' பண்புக்கூறு மதிப்பின் வடிவம் தவறாக உள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XScomplexTypeExpected" xml:space="preserve">
+    <value>XML ஏற்றி: xs:complexType எதிர்பார்க்கப்படுகிறது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSlengthExpected" xml:space="preserve">
+    <value>XML ஏற்றி: xs:length எதிர்பார்க்கப்படுகிறது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSrestrictionExpected" xml:space="preserve">
+    <value>XML ஏற்றி: xs:restriction எதிர்பார்க்கப்படுகிறது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSsequenceExpected" xml:space="preserve">
+    <value>XML ஏற்றி: xs:sequence எதிர்பார்க்கப்படுகிறது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSsimpleTypeExpected" xml:space="preserve">
+    <value>XML ஏற்றி: xs:simpleType எதிர்பார்க்கப்படுகிறது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPWeakReference_SavedObjectExpected" xml:space="preserve">
+    <value>சேமிக்கப்பட்ட பொருட்களுக்கான பலவீனமான சுட்டுகளை மட்டுமே நீங்கள் பயன்படுத்தலாம்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_YouCannotApplyTheMapInheritanceParentTable" xml:space="preserve">
+    <value>நிலையாகச் சேமிக்கத்தக்க அடிப்படை வகுப்பு இல்லாத வகுப்பிற்கு ParentTable அளவுரு மதிப்புடன் MapInheritance பண்புக்கூறைப் பயன்படுத்த முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_CommandChannelDoesNotImplementICommandChannelAsync" xml:space="preserve">
+    <value>உங்கள் '{0}' கட்டளைச் சேனல் 'DevExpress.Xpo.Helpers.ICommandChannelAsync' இடைமுகத்தை ஆதரிக்கவில்லை. இந்த இடைமுகத்தைச் செயலாக்கவும் அல்லது இணக்கமான வேறொரு கட்டளைச் சேனலைப் பயன்படுத்தவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="WebApi_ICacheToCacheCommunicationCore_NotImplemented" xml:space="preserve">
+    <value>உங்கள் '{0}' இணைப்பு வழங்குநர் 'DevExpress.Xpo.DB.ICacheToCacheCommunicationCore' இடைமுகத்தை ஆதரிக்கவில்லை. அதை ஒரு 'DevExpress.Xpo.DB.DataCacheRoot' நிகழ்வுருவால் பொதியவும். மேலும் விவரங்களுக்கு, பின்வரும் உதவித் தலைப்பைப் பார்க்கவும்: https://docs.devexpress.com/XPO/402182.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_ConnectionProviderDoesNotImplementIDataStoreAsync" xml:space="preserve">
+    <value>உங்கள் '{0}' இணைப்பு வழங்கி 'DevExpress.Xpo.DB.IDataStoreAsync' இடைமுகத்தை ஆதரிக்கவில்லை. இந்த இடைமுகத்தைச் செயலாக்கவும் அல்லது இணக்கமான வேறொரு இணைப்பு வழங்கியைப் பயன்படுத்தவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_DataLayerDoesNotImplementIDataLayerAsync" xml:space="preserve">
+    <value>உங்கள் '{0}' தரவு அடுக்கு 'DevExpress.Xpo.IDataLayerAsync' இடைமுகத்தை ஆதரிக்கவில்லை. இந்த இடைமுகத்தைச் செயலாக்கவும் அல்லது இணக்கமான வேறொரு தரவு அடுக்கைப் பயன்படுத்தவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_ObjectLayerDoesNotImplementIObjectLayerAsync" xml:space="preserve">
+    <value>உங்கள் பொருள் அடுக்கு 'DevExpress.Xpo.IObjectLayerAsync' இடைமுகத்தை ஆதரிக்கவில்லை. இந்த இடைமுகத்தை '{0}' வகுப்பில் செயலாக்கவும் அல்லது இணக்கமான வேறொரு பொருள் அடுக்கைப் பயன்படுத்தவும்.</value>
+    <comment>AI</comment>
+  </data>
 </root>

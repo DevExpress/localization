@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="EditReportControllerV2.Edit" Caption="Editieren" />
+      <Action Id="ExecuteReportV2" Caption="Bericht ausführen" />
+      <Action Id="ShowReportDesignerV2" Caption="Berichtdesigner anzeigen" />
+    </Actions>
+  </ActionDesign>
+  <Localization>
+    <LocalizationGroup Name="Captions">
+      <LocalizationItem Name="AllFiles" Value="Alle Dateien" />
+      <LocalizationItem Name="ExportLayout" Value="Export Layout nach Datei…" />
+      <LocalizationItem Name="ImportLayout" Value="Import Layout von Datei…" />
+      <LocalizationItem Name="ReportDesignerError" Value="Fehler" />
+      <LocalizationItem Name="ReportDesignerWarning" Value="Warnung" />
+      <LocalizationItem Name="ReportFiles" Value="Berichtsdateien" />
+    </LocalizationGroup>
+  </Localization>
+  <Views>
+    <DetailView Id="NewReportWizardParameters_DetailView" Caption="Neuer Berichtsassitent">
+      <Items>
+        <StaticText Id="ReportText" Text="Um einen neuen Bericht zu erstellen, geben Sie bitte einen Namen in das Feld unten ein und wählen Sie den primären Datentyp des Bericht aus der Liste aus." />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="Static" Caption="Statik(11)">
+            <LayoutGroup Id="NewReportParams" Caption="Neue Report Parameter">
+              <LayoutGroup Id="SimpleEditors" Caption="Einfache Bearbeiter" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

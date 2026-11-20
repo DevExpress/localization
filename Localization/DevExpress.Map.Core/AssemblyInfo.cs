@@ -12,6 +12,10 @@ using DevExpress.Internal;
 
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
 
+
+
 [assembly: AssemblyProduct("DevExpress.Map.Core")]
+
 [assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
+
 [assembly: AssemblyCompany("Developer Express Inc.")]

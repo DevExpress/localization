@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
+  <!-- 
 		Microsoft ResX Schema
 
 		Version 1.3
@@ -58,44 +58,1163 @@
 			: using a System.ComponentModel.TypeConverter
 			: and then encoded with base64 encoding.
 	-->
-	
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>1.3</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Security_DeletingAnObjectWasProhibitedByTheRules" xml:space="preserve">
+    <value>Les regles de seguretat prohibeixen suprimir l'objecte '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_SavingAnObjectWasProhibitedByTheRulesOfVal" xml:space="preserve">
+    <value>Les regles de seguretat prohibeixen desar l'objecte '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_SavingAnObjectWasProhibitedByTheRulesWProp" xml:space="preserve">
+    <value>Les regles de seguretat prohibeixen desar la propietat '{0}.{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_MostProbablyYouAreTryingToInitiateAnObjectEx" xml:space="preserve">
+    <value> Molt probablement, esteu intentant iniciar una operació de càrrega d'objectes mentre l'operació anterior de càrrega d'objectes encara no ha finalitzat. Ajorneu l'operació fins que es desencadeni l'esdeveniment Session.ObjectsLoaded o IXPObject.OnLoaded (mentre Session.IsObjectsLoading sigui true). Una altra causa d'aquesta excepció és que esteu intentant treballar simultàniament amb la mateixa sessió des de fils diferents.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_MostProbablyYouAreTryingToInitiateAnObject" xml:space="preserve">
+    <value> Molt probablement, esteu intentant iniciar una operació de càrrega d'objectes mentre l'operació anterior de desament d'objectes encara no ha finalitzat. Ajorneu l'operació fins que es desencadeni l'esdeveniment Session.ObjectsSaved o IXPObject.OnSaved (mentre Session.IsObjectsSaving sigui true).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0OperatorAfterSkipOrTakeIsNotSupported" xml:space="preserve">
+    <value>No s'admet {0} després de Skip o Take.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SpecifiedJoinKeySelectorsNotCompatibleX0X1" xml:space="preserve">
+    <value>Els selectors de clau de combinació '{0}' i '{1}' no són compatibles.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_NotClassMember" xml:space="preserve">
+    <value>'{0}' no és un membre de la classe '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0OverGroupingIsNotSupported" xml:space="preserve">
+    <value>No s'admet {0} sobre una agrupació.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0WithSkipOrTakeOrGroupingIsNotSupported" xml:space="preserve">
+    <value>No s'admet {0} amb Skip, Take o agrupació.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0WithSoManyParametersIsNotSupported" xml:space="preserve">
+    <value>No s'admet {0} amb tants paràmetres.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_NotCollectionProperty" xml:space="preserve">
+    <value>{0}.{1} no és una propietat de col·lecció. Hauria d'estar marcada amb AssociationAttribute i ser d'un tipus derivat d'XPBaseCollection. Probablement utilitzeu GetCollection en una situació en què s'hauria d'utilitzar GetList.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NotCollection" xml:space="preserve">
+    <value>'{0}.{1}' no és una col·lecció.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XpoServerMode_NonPersistentIsNotSupported" xml:space="preserve">
+    <value>Una col·lecció en mode de servidor no pot utilitzar la classe no persistent '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_ReferencePropertyViaCollectionAccessor" xml:space="preserve">
+    <value>Intent d'assignar una propietat de referència mitjançant l'accessor de la col·lecció.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionXPQueryX0" xml:space="preserve">
+    <value>S'esperava un XPQuery com a primer argument de l'expressió de crida: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_PropertyTypeMismatch" xml:space="preserve">
+    <value>L'associació '{0}' entre les classes '{1}' i '{3}' no és vàlida. La classe '{1}' conté la propietat '{2}', que fa referència a la classe '{3}'. La classe '{3}' conté la propietat '{4}', que fa referència incorrectament a la classe '{5}'; s'espera que faci referència a la classe '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_MoreThenOneAssociatedMemberFound" xml:space="preserve">
+    <value>L'associació '{0}' és ambigua entre els membres '{2}' i '{3}' de la classe '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_PropertyTypeMismatch" xml:space="preserve">
+    <value>L'associació '{1}' entre les classes '{3}' i '{4}' no és vàlida. La classe '{3}' conté la propietat '{2}', que fa referència a la classe '{4}'. La classe '{4}' conté la propietat '{0}', que fa referència incorrectament a la classe '{5}', tot i que ha de fer referència a la classe '{3}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_AssociationCollectionWithDisabledLoading" xml:space="preserve">
+    <value>L'estat de la col·lecció d'associació és incorrecte: LoadingEnabled hauria de ser true.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationListExpected" xml:space="preserve">
+    <value>S'espera una llista o una col·lecció d'associació: '{0}.{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="View_AtLeastOneFetchPropertyShouldBeDefined" xml:space="preserve">
+    <value>Cal definir almenys una propietat per recuperar-la.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_AddRelation" xml:space="preserve">
+    <value>No es pot afegir una relació duplicada.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CannotAddObjectToObjectCache" xml:space="preserve">
+    <value>No es pot afegir l'objecte '{0}' amb la clau = '{1}' al mapa d'identitat dels objectes perquè ja s'hi ha afegit un altre objecte '{2}' amb la mateixa clau.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_NotLoadingMode" xml:space="preserve">
+    <value>No es pot assignar un valor a la columna d'increment automàtic '{0}' quan no s'està en mode de càrrega.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_InsertingDataIntoAutoincrementColumn" xml:space="preserve">
+    <value>No es pot assignar un valor a la columna d'increment automàtic '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XpoDefault_CannotAssignPropertyWhileAnotherIsNotNull" xml:space="preserve">
+    <value>No es pot assignar XpoDefault.{0} mentre XpoDefault.{1} estigui especificat.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_CannotPrepareQueryPlanX0" xml:space="preserve">
+    <value>No es pot crear un pla de consulta perquè els criteris '{0}' no són vàlids.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_CannotPrepareQueryPlan" xml:space="preserve">
+    <value>No es pot crear un pla de consulta.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CannotChangePropertyWhenSessionIsConnected" xml:space="preserve">
+    <value>No es pot canviar '{0}' quan la sessió està connectada.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadClassInfo_Dictionary" xml:space="preserve">
+    <value>No es pot canviar ObjectClassInfo. El seu diccionari no és igual al Dictionary actual.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadClassInfo_DataSourceDictionary" xml:space="preserve">
+    <value>No es pot canviar ObjectClassInfo. El seu diccionari no és igual al diccionari de DataSource.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadClassInfo_DataSource" xml:space="preserve">
+    <value>No es pot canviar ObjectClassInfo. DataSource té la seva pròpia ClassInfo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadObjectType_DataSource" xml:space="preserve">
+    <value>No es pot canviar ObjectType. DataSource té la seva pròpia ClassInfo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_CannotAssignProperty" xml:space="preserve">
+    <value>No es pot modificar la propietat '{0}' quan {1} no està en mode de disseny o d'inicialització.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TranSequenceCommit" xml:space="preserve">
+    <value>No es pot confirmar perquè no hi ha cap transacció activa.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DroneDataStore_CommitNotSupported" xml:space="preserve">
+    <value>No es poden confirmar els canvis perquè la connexió a la base de dades no està configurada (actualment s'utilitza el proveïdor de base de dades de tipus stub). Connecteu-vos al magatzem de dades tal com es descriu a https://docs.devexpress.com/XPO/2123/connect-to-a-data-store</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotConvertWindowsTimeZoneIdToIanaTimeZoneId" xml:space="preserve">
+    <value>No es pot convertir un identificador de zona horària de Windows en un identificador de zona horària d'IANA. Configureu el delegat ConnectionProviderSql.MapWindowsToIanaTimeZoneId perquè proporcioni la lògica de conversió.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SqlConnectionProvider_CannotCreateAColumnForTheX0FieldWithTheX1D" xml:space="preserve">
+    <value>No es pot crear una columna per al camp '{0}' amb el valor per defecte '{1}'. Especifiqueu un altre valor per defecte per a aquest camp</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProvider_UnableToFillRefType" xml:space="preserve">
+    <value>No es pot garantir l'esquema de la base de dades per al membre '{1}' del tipus '{0}'. Error: {2}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_CannotFindParentRelationForNode" xml:space="preserve">
+    <value>No es pot trobar una relació pare per al node '{0}'. Consulta mal formada o error intern de l'XPO.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_PathNotFound" xml:space="preserve">
+    <value>No es pot trobar el camí {0}-&gt;{1}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TypeNotFound" xml:space="preserve">
+    <value>No es pot trobar el tipus amb id = '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CannotLoadInvalidType" xml:space="preserve">
+    <value>No es pot carregar el tipus no vàlid '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Helpers_DifferentObjectsKeys" xml:space="preserve">
+    <value>No es poden fusionar els canvis de l'objecte amb una clau modificada.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ThreadSafeDataLayer_DictionaryModified" xml:space="preserve">
+    <value>No es pot modificar Dictionary perquè ThreadSafeDataLayer l'utilitza. ClassInfo modificada o creada: '{0}'. Per evitar aquesta excepció, seguiu aquestes recomanacions: https://www.devexpress.com/kb=T901732</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_CantPersistGenericType" xml:space="preserve">
+    <value>No es pot fer persistent un tipus genèric. Elimineu PersistentAttribute de la definició del tipus '{0}' i creeu, en lloc seu, un o més descendents persistents no genèrics.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PersistentAliasExpander_NonPersistentCriteria" xml:space="preserve">
+    <value>No es pot consultar un magatzem de dades amb el criteri "{0}", que utilitza una propietat no persistent '{1}'. Per obtenir més detalls i possibles solucions, consulteu l'article de la base de coneixements https://www.devexpress.com/kb=Q352044.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PersistentAliasExpander_NonPersistentCriteriaThisValueMember" xml:space="preserve">
+    <value>No es pot consultar un magatzem de dades amb el criteri "{0}", que utilitza una propietat no persistent '{1}'. Si utilitzàveu '{0}' com a ValueMember per a un control de consulta, utilitzeu un ValueMember buit com a alternativa.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="View_IsInLoading" xml:space="preserve">
+    <value>No es pot tornar a carregar la vista mentre carrega dades de manera asíncrona.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_CannotResolveClassInfo" xml:space="preserve">
+    <value>No es pot resoldre ClassInfo per al tipus '[{0}]{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_CannotResolvePropertyTypeComparer" xml:space="preserve">
+    <value>No es pot obtenir el comparador per a la propietat '{0}' de tipus '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TranSequenceRollback" xml:space="preserve">
+    <value>No es pot revertir perquè no hi ha cap transacció activa.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TranSequenceBegin" xml:space="preserve">
+    <value>No es pot iniciar més d'una transacció en una sessió.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_SameTableName" xml:space="preserve">
+    <value>Les classes {0} i {1} estan assignades a la mateixa taula.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_ClassesAreNotAssignable" xml:space="preserve">
+    <value>Les classes '{0}' i '{1}' no són mútuament assignables.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DataView_ReferenceMembersWithCompoundKeyAreNotSupported" xml:space="preserve">
+    <value>No s'admeten les classes amb membres de tipus estructura.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_DictionaryMixing" xml:space="preserve">
+    <value>ClassInfo '{0}' pertany a un altre diccionari.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerializableObjectLayer_OptimisticLockFieldNotExists" xml:space="preserve">
+    <value>La informació de classe '{0}' no té definit OptimisticLockField.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerializableObjectLayer_OptimisticLockFieldInDLNotExists" xml:space="preserve">
+    <value>La informació de classe '{0}' no té definit OptimisticLockFieldInDataLayer.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ObjectLayer_XPClassInfoNotFound" xml:space="preserve">
+    <value>No s'ha trobat la informació de classe '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DirectSQL_CollectionMembersAreNotSupported" xml:space="preserve">
+    <value>No s'admeten els membres de tipus col·lecció.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_AssociationListExpected" xml:space="preserve">
+    <value>S'espera una col·lecció o una llista d'associació.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_ColumnNotFound" xml:space="preserve">
+    <value>No s'ha trobat la columna '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_CantUpdateRelationColumn" xml:space="preserve">
+    <value>No es poden actualitzar les columnes amb relacions.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ComplexDataSelectionIsNotSupportedPerhapsY" xml:space="preserve">
+    <value>No s'admet la selecció complexa de dades. Potser utilitzeu una subconsulta complexa al selector.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_ConnectionPoolCannotBeUsed" xml:space="preserve">
+    <value>No es pot utilitzar una agrupació de connexions amb la capa de dades simple</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_ConnectionStringEmpty" xml:space="preserve">
+    <value>La cadena de connexió no pot estar buida quan s'utilitza un magatzem de dades que no és ni en memòria ni personalitzat</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_ConstraintConflict" xml:space="preserve">
+    <value>S'ha infringit una restricció a la taula '{0}' per a la clau externa de les columnes '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_DelayedPropertyContainerCannotBeAssigned" xml:space="preserve">
+    <value>No es pot assignar el contenidor de la propietat personalitzada diferida '{0}.{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CollectClassInfos_CouldNotLoadAssembly" xml:space="preserve">
+    <value>No s'han pogut recopilar els ClassInfos de l'assemblat '{0}'. ThreadSafeDataLayer pot llançar una InvalidOperationException quan s'utilitzen classes d'aquest assemblat. Consulteu InnerException per obtenir més detalls.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ImageValueConverter_NotPresent" xml:space="preserve">
+    <value>No s'ha pogut trobar la classe 'System.Drawing.ImageConverter' a l'assemblat 'System.Drawing.Common'. Utilitzeu System.Drawing.Common 5.0 o superior.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_CouldNotAssignPropertyValue" xml:space="preserve">
+    <value>No s'ha pogut assignar el valor de la propietat '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_CouldNotFindAppropriateConstructor" xml:space="preserve">
+    <value>No s'ha pogut trobar un constructor adequat per al tipus '{0}'. S'esperava un constructor sense paràmetres o un constructor que acceptés un objecte XPDictionary com a paràmetre.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_CouldNotResolvePropertyType" xml:space="preserve">
+    <value>No s'ha pogut resoldre el tipus de la propietat '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CrossThreadFailureDetected" xml:space="preserve">
+    <value>S'ha detectat una operació entre fils. '{0}' no és un objecte segur per a l'ús amb diversos fils; eviteu utilitzar-lo simultàniament des de fils diferents</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_CurrentExpressionWithX0IsNotSupported" xml:space="preserve">
+    <value>No s'admet l'expressió actual amb {0}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_CustomProperties_PersistentAndNonStorableType" xml:space="preserve">
+    <value>El membre personalitzat '{0}.{1}' de tipus '{2}' no pot ser persistent</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_WantNotDeleteFilteredAggregateCollection" xml:space="preserve">
+    <value>La supressió de l'objecte '{0}' amb la col·lecció agregada '{1}' carregada parcialment pot provocar objectes/registres orfes.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_SeveralClassesWithSameName" xml:space="preserve">
+    <value>El diccionari ja conté ClassInfo '{1}'. Causa possible: l'assemblat [{0}] s'ha carregat dues vegades.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_DuplicateJoinOperatorFound" xml:space="preserve">
+    <value>S'ha trobat un operador de combinació duplicat.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_DuplicateKeyProperty" xml:space="preserve">
+    <value>S'ha trobat una clau duplicada per al tipus '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_DuplicateMappingField" xml:space="preserve">
+    <value>Assignació duplicada a la columna '{0}' de la classe '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_EnteringTheX0StateFromTheX1StateIsProhibit" xml:space="preserve">
+    <value>No es permet passar de l'estat '{2}' a l'estat '{0}' a causa de l'estat '{1}' per a '{3}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_EntityTypesEmpty" xml:space="preserve">
+    <value>EntityTypes no pot tenir el valor null i ha de contenir com a mínim 1 element</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TypeFieldIsEmpty" xml:space="preserve">
+    <value>El camp '{0}' és nul (classe base '{1}').</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_GroupingWithACustomComparerIsNotSupported" xml:space="preserve">
+    <value>No s'admet l'agrupació amb un comparador personalitzat.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_NullInstance" xml:space="preserve">
+    <value>No es pot trobar cap implementador per a l'objecte virtual d'interfície '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_CachedExpressionIsIncompatible" xml:space="preserve">
+    <value>Expressió incompatible. Hauria d'estar generada pel compilador i contenir només arguments estàtics. Podeu utilitzar els paràmetres a1, a2 i a3 del mètode CachedExpression per passar arguments no estàtics.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_IncorrectDeclaringTypeX0InTheMethodCallQue" xml:space="preserve">
+    <value>El tipus declarant '{0}' de la crida al mètode és incorrecte. S'esperava el tipus 'System.Linq.Queryable' o 'System.Linq.Enumerable'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PersistentAliasExpander_ReferenceOrCollectionExpectedInTheMiddleOfThePath" xml:space="preserve">
+    <value>Membre '{0}' incorrecte en un camí. S'espera una propietat de referència o una associació de col·lecció.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_EmptyMemberInstance" xml:space="preserve">
+    <value>El membre InstanceType no conté cap valor. No es pot utilitzar GetInstanceObject amb un objecte que encara no s'ha inicialitzat correctament.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_InternalErrorAsyncActionIsAlreadyDisposed" xml:space="preserve">
+    <value>Error intern: una acció asíncrona ja s'ha alliberat. Pot ser degut a un problema a XPO. Poseu-vos en contacte amb l'equip d'assistència de DevExpress.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NullSessionProvider" xml:space="preserve">
+    <value>Error intern: No es pot accedir a la sessió.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_DifferentComplexSet" xml:space="preserve">
+    <value>Error intern: no es pot afegir una fila d'un altre conjunt complex.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongDictionaryIndex" xml:space="preserve">
+    <value>Error intern: dades de diccionari incorrectes a l'índex '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongCommitInfo" xml:space="preserve">
+    <value>Error intern: informació de confirmació mal formada.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_WrongIndexInfo" xml:space="preserve">
+    <value>Error intern: informació de l'índex mal formada.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongRollbackInfo" xml:space="preserve">
+    <value>Error intern: informació de reversió mal formada.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerOLHelpers_NestedParentMapIsNull" xml:space="preserve">
+    <value>Error intern: NestedParentMap i ParentNestedMap tenen el valor null.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InTransactionLoader_NotInSelectDataMode" xml:space="preserve">
+    <value>Error intern: No s'està en mode SelectData.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InTransactionLoader_ProcessReturnResultError" xml:space="preserve">
+    <value>Error intern: Operació no permesa en mode SelectData.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_DifferentColumnListLengths" xml:space="preserve">
+    <value>Error intern: el nombre de columnes de PKey i el de FKey no coincideixen.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MsSql_RootIsNotInsertStatement" xml:space="preserve">
+    <value>Error intern: Root no és un InsertStatement.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Loader_ReloadError" xml:space="preserve">
+    <value>Error intern: No s'admet '{0}.{1}', tal com s'ha especificat.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_CriteriaEvaluationBehaviorIsNotSupported" xml:space="preserve">
+    <value>Error intern: aquesta sobrecàrrega del constructor no admet el valor CriteriaEvaluationBehavior.{0} especificat.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_UnexpectedPersistentCriteriaEvaluationBehavior" xml:space="preserve">
+    <value>Error intern: no s'admet el PersistentCriteriaEvaluationBehavior.{0} especificat.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServerModeGridSource_SummaryItemTypeNotSupported" xml:space="preserve">
+    <value>Error intern: No s'admet el valor SummaryItemType.{0} especificat.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Loader_InternalErrorOrUnsupportedReferenceStructure" xml:space="preserve">
+    <value>Error intern de l'XPO o estructura de referències no admesa: Una clau composta no pot fer referència a un tipus que tingui classes derivades. Tipus d'objecte '{0}', tipus resolt '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_InternalXPOError" xml:space="preserve">
+    <value>Error intern de XPO.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_ODataType_Mismatch" xml:space="preserve">
+    <value>Anotació '@odata.type' no vàlida: '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CreateCollection_InvalidCastException" xml:space="preserve">
+    <value>Conversió no vàlida de '{0}' a '{1}' a la propietat '{2}.{3}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_WrongConnectionString" xml:space="preserve">
+    <value>S'ha especificat una cadena de connexió no vàlida: '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AmbiguousClassName" xml:space="preserve">
+    <value>No es pot resoldre ClassInfo per al nom de tipus ambigu '{0}' entre el tipus '{1}' i el tipus '{2}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_CanChangeProperties" xml:space="preserve">
+    <value>No es poden modificar les propietats de la font InstantFeedback quan ja l'utilitza una graella.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_CanChangeViewProperties" xml:space="preserve">
+    <value>No es poden modificar les propietats d'XPInstantFeedbackView quan ja l'utilitza una graella.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServerModeGridSource_GroupAndAddOrRemoveIsNotAllowed" xml:space="preserve">
+    <value>No es permet agrupar i afegir/suprimir elements alhora.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_NullJoinClassInfo" xml:space="preserve">
+    <value>JoinClassInfo és nul.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_EmptyJoinOperandId" xml:space="preserve">
+    <value>JoinOperandId és buit.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProvider_KeysAutogenerationNonSupportedTypeException" xml:space="preserve">
+    <value>La generació automàtica de claus no s'admet per al tipus de classe '{0}'. Només s'admet per als tipus de dades enter de 32 bits, enter de 64 bits i identificador únic global.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_KeyPropertyAbsent" xml:space="preserve">
+    <value>Falta la propietat clau per al tipus '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_LambdaExpressionIsExpectedX0" xml:space="preserve">
+    <value>S'esperava una expressió lambda: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_DoesNotSupportNestedJoinsWithLevel" xml:space="preserve">
+    <value>LinqToXpo no admet més de dues combinacions imbricades. Això no afecta el nombre total de combinacions de la consulta.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_MalformedAggregate" xml:space="preserve">
+    <value>Agregat mal format o error intern de l'XPO.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_NoAssociationListInAssociation" xml:space="preserve">
+    <value>Associació '{0}' mal formada entre '{1}.{2}' i '{3}.{4}'. S'espera una llista o una col·lecció en un dels extrems de l'associació.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_TwoAssociationListsInAssociation" xml:space="preserve">
+    <value>Associació '{0}' mal formada entre les llistes/col·leccions '{1}.{2}' i '{3}.{4}'. Utilitzeu l'atribut ManyToManyAlias o llistes/col·leccions de tipus XPCollection per a les relacions de molts a molts.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_NotFound" xml:space="preserve">
+    <value>Associació '{0}' mal formada. No es pot trobar el membre associat a '{1}.{2}' a la classe '{3}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_NotACollection" xml:space="preserve">
+    <value>Consulta mal formada o error intern de l'XPO: '{0}' no és una col·lecció.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotFindClassinfoType" xml:space="preserve">
+    <value>XML mal format: No es pot trobar el tipus de classe.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotFindConstructor" xml:space="preserve">
+    <value>XML mal format: No es pot trobar el constructor per al tipus '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotLoadMember" xml:space="preserve">
+    <value>XML mal format: No es pot carregar el membre [{0}]{1}.{2}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotResolveClassinfoInstanceType" xml:space="preserve">
+    <value>XML mal format: No es pot resoldre el tipus ClassInfo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorModelTagAbsent" xml:space="preserve">
+    <value>XML mal format: No s'ha trobat l'etiqueta &lt;Model&gt; o s'ha especificat un espai de noms incorrecte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorUnknownAttribute" xml:space="preserve">
+    <value>XML mal format: Atribut desconegut '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_SuppressSuspiciousMemberInheritanceCheckError" xml:space="preserve">
+    <value>El membre '{0}.{1}' i el seu atribut '{2}' s'ignoren. Ja hi ha un membre amb el mateix nom declarat a la classe base '{3}'. Per suprimir aquesta excepció, establiu DevExpress.Xpo.Metadata.ReflectionClassInfo.SuppressSuspiciousMemberInheritanceCheck a True.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ObjectLayer_MemberNotFound" xml:space="preserve">
+    <value>No s'ha trobat el membre '{0}.{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_PersistentOrThis" xml:space="preserve">
+    <value>El membre '{0}.{1}' hauria de ser persistent o retornar 'this'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NonPersistentKey" xml:space="preserve">
+    <value>S'ha trobat la clau no persistent '{0}.{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_PersistentReferenceFound" xml:space="preserve">
+    <value>S'executa una operació específica de no-persistència amb una classe persistent '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_NullDefaultValueNotAllowed" xml:space="preserve">
+    <value>No es permeten valors nuls com a valors per defecte per a la columna '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NullableAttributeNotApplicable" xml:space="preserve">
+    <value>L'atribut Nullable no es pot aplicar al membre {0} de la classe {1} perquè el membre no és persistent, té un àlies, té un àlies de molts a molts o és de tipus referència a un objecte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_WrongObjectType" xml:space="preserve">
+    <value>L'objecte {0}, creat amb ClassInfo {2}, retorna un ClassInfo {1} incorrecte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="NestedSession_NotCloneable" xml:space="preserve">
+    <value>La jerarquia d'objectes no es pot clonar perquè el membre '{0}.{1}' s'ha modificat durant l'operació.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerializableObjectLayer_OLDoesNotImplementISerializableObjectLayerEx" xml:space="preserve">
+    <value>La capa d'objectes no implementa ISerializableObjectLayerEx.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_ObjectModificationIsNotAllowed" xml:space="preserve">
+    <value>No es poden modificar els objectes mentre la sessió es troba en l'estat CommitChangesToDataLayerInner.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_DifferentObjectsWithSameKey" xml:space="preserve">
+    <value>S'han trobat objectes amb claus duplicades.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Generator_OneOfBinaryOperatorsOperandsIsNull" xml:space="preserve">
+    <value>Un dels operands de BinaryOperator és nul.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_EnumeratorObjectModifiedOrDeleted" xml:space="preserve">
+    <value>Un o més objectes de l'interval sol·licitat s'han modificat o suprimit. Cal actualitzar la llista de valors d'identitat.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_IncompatibleIdType" xml:space="preserve">
+    <value>El tipus '{0}' de l'identificador proporcionat és incompatible amb el tipus '{3}' de la clau '{1}.{2}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_CorrectPIinUOW" xml:space="preserve">
+    <value>Les interfícies persistents no s'admeten plenament en les sessions. Utilitzeu unitats de treball com a alternativa.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_ClassAttributeExclusive" xml:space="preserve">
+    <value>PersistentAttribute, NonPersistentAttribute i MapToAttribute s'exclouen mútuament. Només se'n pot aplicar un a la classe '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_MemberAttributeExclusive" xml:space="preserve">
+    <value>PersistentAttribute, NonPersistentAttribute i PersistentAliasAttribute s'exclouen mútuament. Només se'n pot aplicar un al membre '{0}.{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_NonPersistentReferenceFound" xml:space="preserve">
+    <value>S'executa una operació específica de persistència amb una classe no persistent '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_DifferentTypes" xml:space="preserve">
+    <value>Discrepància entre els tipus de les columnes de clau primària i de clau externa.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_RequiredAttributeMissing" xml:space="preserve">
+    <value>La propietat '{0}' no defineix l'atribut '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_PropertyMissing" xml:space="preserve">
+    <value>La propietat '{0}' no existeix dins del tipus '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_AssociationElementTypeMissing" xml:space="preserve">
+    <value>La propietat '{0}' no especifica la propietat 'ElementType' dins del seu atribut 'Association'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="View_PropertyNotFetched" xml:space="preserve">
+    <value>La propietat '{0}' no s'ha recuperat.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_DelayedPropertyDoesNotContainProperObject" xml:space="preserve">
+    <value>La propietat '{0}.{1}' no conté cap objecte XPDelayedProperty.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_IncorrectPathMemberNotExists" xml:space="preserve">
+    <value>El camí de la propietat '{1}' és incorrecte per al tipus '{0}' perquè el membre '{2}.{3}' no existeix.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_IncorrectPathNonPersistentMember" xml:space="preserve">
+    <value>El camí de la propietat '{1}' és incorrecte per al tipus '{0}' perquè el membre '{2}.{3}' no és un membre persistent.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_IncorrectPathNonReferenceMember" xml:space="preserve">
+    <value>El camí de la propietat '{1}' és incorrecte per al tipus '{0}' perquè el membre '{2}.{3}' no és un membre de referència.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_IncorrectPath" xml:space="preserve">
+    <value>El camí de la propietat '{1}' és incorrecte per al tipus '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_QueryWithAppliedTheSkipOrTheTakeOperations" xml:space="preserve">
+    <value>Una consulta amb les operacions Skip o Take aplicades no es pot utilitzar en una combinació.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_UseDataSetDataStoreOrCtor" xml:space="preserve">
+    <value>En lloc d'utilitzar .ctor amb DataSet, utilitzeu la classe DataSetDataStore o .ctor sense DataSet.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_RecurringObjectAdd" xml:space="preserve">
+    <value>Inserció reentrant.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_ReferenceTooComplex" xml:space="preserve">
+    <value>El membre de referència '{0}.{1}' és massa complex.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CannotReloadPurgedObject" xml:space="preserve">
+    <value>No es poden carregar els objectes sol·licitats perquè no són al magatzem de dades. Pot ser que aquests objectes ja s'hagin eliminat/suprimit definitivament. Si torneu a veure aquesta excepció amb els mateixos objectes a la llista, tingueu en compte que la integritat referencial del magatzem de dades pot estar compromesa. En aquest cas, poseu-vos en contacte amb l'administrador del sistema. Objectes sol·licitats: {0}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SequenceContainsMoreThanOneElement" xml:space="preserve">
+    <value>La seqüència conté més d'un element.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SequenceContainsNoMatchingElement" xml:space="preserve">
+    <value>La seqüència no conté cap element coincident.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServerModeGridSource_WrongTopLevelAggregate" xml:space="preserve">
+    <value>Error del servidor o error intern d'XPO: Més d'un grup en un agregat de nivell superior.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_AlreadyConnected" xml:space="preserve">
+    <value>La sessió ja està connectada.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SessionIsNull" xml:space="preserve">
+    <value>La sessió és nul·la.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_SingleRowExpected" xml:space="preserve">
+    <value>S'espera una sola fila mitjançant '{0}', files trobades: {1}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SortingIsNotSupportedForSelectManyOperation" xml:space="preserve">
+    <value>No s'admet l'ordenació per a l'operació SelectMany sobre col·leccions de molts a molts.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_UnexpectedState" xml:space="preserve">
+    <value>No s'admet el SessionState.{0} especificat.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_TableNotFound" xml:space="preserve">
+    <value>No s'ha trobat la taula '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_AliasNotFound" xml:space="preserve">
+    <value>No s'ha trobat la taula amb l'àlies '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_MethodX0ForX1IsNotSupported" xml:space="preserve">
+    <value>No s'admet el mètode '{0}' per a {1}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheX0MethodIsNotSupported" xml:space="preserve">
+    <value>No s'admet el mètode {0}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_SessionMixing" xml:space="preserve">
+    <value>L'objecte '{0}' pertany a una altra sessió. Consulteu https://docs.devexpress.com/eXpressAppFramework/403631/ per trobar una solució.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_ObjectCannotBePurged" xml:space="preserve">
+    <value>No es pot suprimir definitivament l'objecte '{0}' amb id = '{1}' - hi ha objectes que hi fan referència.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_PropertyIsDuplicatedInIndexDeclaration" xml:space="preserve">
+    <value>La propietat '{0}' està duplicada en la declaració d'índex de {4} '{1}{2}{3}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_PersistentAliasCircular" xml:space="preserve">
+    <value>La propietat '{1}' de la classe '{0}' està marcada amb l'atribut PersistentAlias, que utilitza l'expressió següent: '{2}'. Aquesta expressió provoca un cicle infinit.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_NonPersistentClassInTheAssociation" xml:space="preserve">
+    <value>L'atribut d'associació no es pot utilitzar per al membre '{0}.{1}' perquè la classe '{2}' no és persistent.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_AssociationAttributeOnlyForListOrReference" xml:space="preserve">
+    <value>L'atribut d'associació no es pot utilitzar per al membre '{1}.{2}'. S'espera una referència o una llista.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProvider_TheAutoIncrementedKeyWithX0TypeIsNotSupport" xml:space="preserve">
+    <value>La clau d'increment automàtic de tipus ‘{0}’ no s'admet per a ‘{1}’</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionIsExpectedX0" xml:space="preserve">
+    <value>S'esperava una expressió de crida: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionGenericReturnTypeX0" xml:space="preserve">
+    <value>L'expressió de crida hauria de tenir un tipus de retorn genèric: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionReturnTypeX0" xml:space="preserve">
+    <value>L'expressió de crida hauria de tenir un tipus de retorn: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_TheCommitOperationWasProhibitedByTheRules" xml:space="preserve">
+    <value>Les regles de seguretat prohibeixen l'operació de confirmació.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_CurrentPageShouldBeGreaterOrEqualZero" xml:space="preserve">
+    <value>CurrentPage hauria de ser superior o igual a zero.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_CurrentPageShouldBeLessThanPageCount" xml:space="preserve">
+    <value>CurrentPage hauria de ser inferior a PageCount.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CustomAggregate_DoesNotImplementInterface" xml:space="preserve">
+    <value>La funció d'agregació personalitzada '{0}' no implementa la interfície '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CustomAggregate_NotFound" xml:space="preserve">
+    <value>La funció d'agregació personalitzada '{0}' no està registrada.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_DataSetUncommitted" xml:space="preserve">
+    <value>El paràmetre 'data' conté un DataSet amb canvis pendents de confirmar. Crideu el mètode DataSet.AcceptChanges abans de crear una instància nova de la classe DataSetDataStore.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ASE_CommandNotAllowedWithinMultiStatementTransaction" xml:space="preserve">
+    <value>La base de dades no admet la creació ni la modificació de l'esquema dins d'una transacció. Per dur a terme aquesta operació, heu de configurar la base de dades perquè admeti la modificació de l'esquema dins d'una transacció, o desactivar les transaccions durant l'actualització de l'esquema. Per fer-ho, establiu el camp ExecuteUpdateSchemaInTransaction = false (per a la instància actual del proveïdor), o el camp  GlobalExecuteUpdateSchemaInTransaction = false (per a totes les instàncies del proveïdor).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheDeclaringTypeAssemblyNamePropertyIsEmpty" xml:space="preserve">
+    <value>La propietat DeclaringTypeAssemblyName és buida.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheDeclaringTypeNamePropertyIsEmpty" xml:space="preserve">
+    <value>La propietat DeclaringTypeName és buida.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ElemAtOperationIsNotSupportedWithoutSorting" xml:space="preserve">
+    <value>No s'admet l'operació ElementAt sense ordenació.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_EnumeratorPositioning" xml:space="preserve">
+    <value>L'enumerador està situat abans del primer element de la col·lecció o després de l'últim element.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InitOperator_DeserializationProhibitedDueSecurityIssue" xml:space="preserve">
+    <value>L'expressió no es pot desserialitzar perquè inclou tipus no segurs. La desserialització de tipus no segurs està prohibida.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ExpressionX0IsNotSupportedInX1" xml:space="preserve">
+    <value>No s'admet l'expressió en {1}: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ExpressionX0IsNotSupported" xml:space="preserve">
+    <value>No s'admet l'expressió: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_FetchOnlyAttributeNotApplicable" xml:space="preserve">
+    <value>L'atribut FetchOnly no es pot aplicar a {0}.{1} perquè el membre de destinació no és persistent, té un àlies, té un àlies de molts a molts, és una clau o forma part d'una estructura imbricada.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_FetchOnlyAttributeNotApplicableToReference" xml:space="preserve">
+    <value>L'atribut FetchOnly no es pot aplicar a {0}.{1} perquè el membre de destinació és de tipus referència.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Filtering_TheIifFunctionOperatorRequiresThree" xml:space="preserve">
+    <value>L'operador de funció 'Iif' requereix tres arguments o més. El nombre d'arguments ha de ser senar.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_GeneralPurposeCollectionInsteadOfRefCollection" xml:space="preserve">
+    <value>S'ha detectat una implementació no vàlida de la propietat de col·lecció associada '{0}.{1}'. La col·lecció s'hauria de crear mitjançant el mètode GetCollection o el constructor XPCollection(Session session, object theOwner, XPMemberInfo refProperty).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheJoinWithManyTablesSimultaneouslyInASing" xml:space="preserve">
+    <value>No s'admet l'operació de combinació amb diverses taules en un sol operador.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheLambdaExpressionWithSuchParametersIsNot" xml:space="preserve">
+    <value>No s'admet l'expressió lambda amb aquests paràmetres: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_LengthsOfTheCollectionsAreDifferentInArgs" xml:space="preserve">
+    <value>Les longituds de les col·leccions són diferents en l'argument.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Helpers_ResolveDataForCollection" xml:space="preserve">
+    <value>El membre no és una col·lecció.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Common_MethodOrOperationNotImplemented" xml:space="preserve">
+    <value>No s'ha implementat el mètode o l'operació.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DirectSQL_WrongColumnCount" xml:space="preserve">
+    <value>El nombre de columnes d'una fila del conjunt de resultats no coincideix amb el de la fila de destinació.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongInitData" xml:space="preserve">
+    <value>El nombre de columnes d'una fila d'origen no coincideix amb el de la fila de la taula de destinació.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Helpers_CloningObjectModified" xml:space="preserve">
+    <value>No es pot clonar l'objecte amb canvis sense desar.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_PageSizeShouldBeGreaterThanZero" xml:space="preserve">
+    <value>PageSize hauria de ser superior a zero.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_InEditMode" xml:space="preserve">
+    <value>La fila ja és en mode d'edició.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SkipOperationIsNotSupportedWithoutSorting" xml:space="preserve">
+    <value>No s'admet l'operació Skip sense ordenació.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PostgreSQL_CommandPoolNotSupported" xml:space="preserve">
+    <value>PosgreSQL {1} no admet el valor CommandPoolBehavior.{0} especificat.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_OperationNotAllowed" xml:space="preserve">
+    <value>L'operació especificada està prohibida.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Filtering_TheTypeNameArgumentOfTheX0FunctionIsNotFound" xml:space="preserve">
+    <value>No s'ha trobat l'argument 'typeName' de la funció '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Generator_TheUseOfATopLevelSingleAggregateIsProhibit" xml:space="preserve">
+    <value>L'ús d'un agregat 'Single' de nivell superior està prohibit.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Generator_TheUseOfNestedSingleAggregatesIsProhibited" xml:space="preserve">
+    <value>L'ús d'agregats 'Single' imbricats està prohibit.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_UseAssociationNameAsIntermediateTableNameMismatch" xml:space="preserve">
+    <value>El valor de UseAssociationNameAsIntermediateTableName ha de ser el mateix als dos extrems de l'associació '{0}' entre '{1}.{2}' i '{3}.{4}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_ConverterOnKeyOrReference" xml:space="preserve">
+    <value>L'atribut ValueConverter no es pot aplicar a la propietat '{0}.{1}', que representa una clau d'objecte o una referència a un altre objecte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_WithDeletedOptionNotSupported" xml:space="preserve">
+    <value>No s'admet l'opció WithDeleted perquè XPQuery s'ha inicialitzat amb DataLayer. Per utilitzar l'opció WithDeleted, feu servir el constructor XPQuery(Session) o XPQuery(Session, Boolean).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XpoDefault_CustomGuidGenerationHandlerCannotBeNull" xml:space="preserve">
+    <value>El valor del camp XpoDefault.CustomGuidGenerationHandler és null. Hauríeu d'assignar un delegat personalitzat a aquest camp si establiu el camp XpoDefault.GuidGenerationMode a 'Custom'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_OperationCannotBePerformedBecauseNoSyncContext" xml:space="preserve">
+    <value>Aquesta operació no es pot dur a terme perquè el fil d'execució no té cap context de sincronització actual.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PostgreSQL_LegacyGuidDetected" xml:space="preserve">
+    <value>Per evitar aquesta excepció, establiu el camp UseLegacyGuidSupport o el camp estàtic GlobalUseLegacyGuidSupport de DevExpress.Xpo.DB.PostgreSqlConnectionProvider a 'true'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_TopLevelAggregateNotSupported" xml:space="preserve">
+    <value>Els agregats de nivell superior no es poden utilitzar en condicions.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_ICommandChannel_TransferringRequestsIsProhibited" xml:space="preserve">
+    <value>Està prohibit transferir sol·licituds mitjançant ICommandChannel dins del motor de seguretat.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_NullTransitionMemberInfo" xml:space="preserve">
+    <value>El MemberInfo de transició és nul.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_SessionCtorAbsent" xml:space="preserve">
+    <value>El tipus {0} no té cap constructor específic de sessió.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_NoConstructor" xml:space="preserve">
+    <value>El tipus {0} no té cap constructor amb els paràmetres {1}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_TypeNotFound" xml:space="preserve">
+    <value>No s'ha trobat el tipus '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_InvalidCastOnAdd" xml:space="preserve">
+    <value>No es pot afegir l'element a la col·lecció. L'objecte '{0}' no és una instància del tipus '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_CustomProperties_ReferenceOrCollectionInSessionStore" xml:space="preserve">
+    <value>No es pot crear el membre personalitzat '{1}' de tipus referència o col·lecció perquè la classe '{0}' no implementa la interfície '{2}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_UnexpectedToken" xml:space="preserve">
+    <value>Símbol inesperat '{0}' a la posició {1}. S'esperava 'StartObject'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_UniqueIndex" xml:space="preserve">
+    <value>S'ha infringit l'índex únic '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="VistaDB_UpdatingSchemaIsForbiddenWhileExplicitTran" xml:space="preserve">
+    <value>No es permet actualitzar l'esquema mentre hi ha una transacció explícita oberta.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_DictConstructor" xml:space="preserve">
+    <value>Quan utilitzeu el constructor Session(XPDictionary dictionary), CAL que especifiqueu una Session.ConnectionString vàlida abans de cridar el mètode Session.Connect.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_IsReadOnly" xml:space="preserve">
+    <value>Escriptura no admesa.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Helpers_SameDictionaryExpected" xml:space="preserve">
+    <value>Diccionari incorrecte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadError" xml:space="preserve">
+    <value>Error de càrrega del diccionari XML: {0}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_DataTypeAttributeNotFound" xml:space="preserve">
+    <value>Carregador XML: No es pot trobar l'atribut 'DataType'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_NameAttributeExpected" xml:space="preserve">
+    <value>Carregador XML: S'espera l'atribut 'name'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ReferAttributeExpected" xml:space="preserve">
+    <value>Carregador XML: S'espera l'atribut 'refer'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XpathAttributeExpected" xml:space="preserve">
+    <value>Carregador XML: S'espera l'atribut 'xpath'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_CantRestoreObjectFromXML" xml:space="preserve">
+    <value>Carregador XML: No es pot deserialitzar l'objecte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_NullPrimaryColumns" xml:space="preserve">
+    <value>Carregador XML: No es pot trobar la clau primària '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ReferNotFound" xml:space="preserve">
+    <value>Carregador XML: No es pot trobar '{0}', al qual es fa referència.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_CantGetColumnType" xml:space="preserve">
+    <value>Carregador XML: No es pot resoldre el tipus de columna.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ColumnNameIsNotSpecified" xml:space="preserve">
+    <value>Carregador XML: No s'ha especificat el nom de la columna.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidBaseAttributeValue" xml:space="preserve">
+    <value>Carregador XML: Valor incorrecte de l'atribut 'base'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidValueAttributeValue" xml:space="preserve">
+    <value>Carregador XML: Valor incorrecte de l'atribut 'value'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidColumnTypeDeclaration" xml:space="preserve">
+    <value>Carregador XML: Nom de tipus de columna no vàlid.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_InvalidTypeString" xml:space="preserve">
+    <value>Carregador XML: nom de tipus no vàlid.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_choiceNodeNotFound" xml:space="preserve">
+    <value>Carregador XML: Node 'choice' no trobat.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ComplexTypeNodeNotFound" xml:space="preserve">
+    <value>Carregador XML: Node 'complexType' no trobat.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ElementNodeNotFound" xml:space="preserve">
+    <value>Carregador XML: Node 'element' no trobat.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_NotDataSetNode" xml:space="preserve">
+    <value>Carregador XML: El node no està marcat com a conjunt de dades.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_SchemaNodeNotFound" xml:space="preserve">
+    <value>Carregador XML: Node 'schema' no trobat.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSselectorNodeExpected" xml:space="preserve">
+    <value>Carregador XML: S'espera el node 'xs:selector'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_InconsistentForeignKeyCount" xml:space="preserve">
+    <value>Carregador XML: Discrepància en el nombre de columnes de PKey i FKey.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_TableNotDeclared" xml:space="preserve">
+    <value>Carregador XML: La taula '{0}' no està declarada.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_TableNameIsNotSpecified" xml:space="preserve">
+    <value>Carregador XML: No s'ha especificat el nom de la taula.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XpathAttributeWrongFormat" xml:space="preserve">
+    <value>Carregador XML: El format del valor de l'atribut 'xpath' és incorrecte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XScomplexTypeExpected" xml:space="preserve">
+    <value>Carregador XML: S'espera xs:complexType.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSlengthExpected" xml:space="preserve">
+    <value>Carregador XML: S'espera xs:length.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSrestrictionExpected" xml:space="preserve">
+    <value>Carregador XML: S'espera xs:restriction.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSsequenceExpected" xml:space="preserve">
+    <value>Carregador XML: S'espera xs:sequence.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSsimpleTypeExpected" xml:space="preserve">
+    <value>Carregador XML: S'espera xs:simpleType.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPWeakReference_SavedObjectExpected" xml:space="preserve">
+    <value>Només podeu utilitzar referències febles a objectes desats.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_YouCannotApplyTheMapInheritanceParentTable" xml:space="preserve">
+    <value>No podeu aplicar l'atribut MapInheritance amb el valor de paràmetre ParentTable a una classe que no té cap classe base persistent.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_CommandChannelDoesNotImplementICommandChannelAsync" xml:space="preserve">
+    <value>El vostre canal d'ordres '{0}' no admet la interfície 'DevExpress.Xpo.Helpers.ICommandChannelAsync'. Implementeu aquesta interfície o utilitzeu un altre canal d'ordres compatible.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="WebApi_ICacheToCacheCommunicationCore_NotImplemented" xml:space="preserve">
+    <value>El vostre proveïdor de connexió '{0}' no admet la interfície 'DevExpress.Xpo.DB.ICacheToCacheCommunicationCore'. Encapsuleu-lo en una instància de 'DevExpress.Xpo.DB.DataCacheRoot'. Per obtenir més informació, consulteu el tema d'ajuda següent: https://docs.devexpress.com/XPO/402182.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_ConnectionProviderDoesNotImplementIDataStoreAsync" xml:space="preserve">
+    <value>El vostre proveïdor de connexions '{0}' no admet la interfície 'DevExpress.Xpo.DB.IDataStoreAsync'. Implementeu aquesta interfície o utilitzeu un altre proveïdor de connexions compatible.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_DataLayerDoesNotImplementIDataLayerAsync" xml:space="preserve">
+    <value>La vostra capa de dades '{0}' no admet la interfície 'DevExpress.Xpo.IDataLayerAsync'. Implementeu aquesta interfície o utilitzeu una altra capa de dades compatible.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_ObjectLayerDoesNotImplementIObjectLayerAsync" xml:space="preserve">
+    <value>La vostra capa d'objectes no admet la interfície 'DevExpress.Xpo.IObjectLayerAsync'. Implementeu aquesta interfície a la classe '{0}' o utilitzeu una altra capa d'objectes compatible.</value>
+    <comment>AI</comment>
+  </data>
 </root>

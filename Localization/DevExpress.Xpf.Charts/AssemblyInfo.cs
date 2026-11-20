@@ -9,7 +9,12 @@ using DevExpress.Internal;
 [assembly:AssemblyCulture("")]
 [assembly:CLSCompliant(true)]		
 
+
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+
+
 [assembly: AssemblyProduct("DevExpress.Xpf.Charts")]
+
 [assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
-[assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]
+
+[assembly: AssemblyCompany("Developer Express Inc.")]

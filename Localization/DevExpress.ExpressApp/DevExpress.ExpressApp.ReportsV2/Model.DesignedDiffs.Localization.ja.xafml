@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ShowInReportV2" Caption="レポートに表示" ToolTip="選択されたレコードをレポートに表示" />
+      <Action Id="PreviewReportV2" Caption="プレビュー" />
+      <Action Id="ReportViewerDialogControllerV2_Close" Caption="閉じる" ShortCaption="閉じる" ToolTip="閉じる"/>
+      <Action Id="CopyPredefinedReport" Caption="定義済みレポートのコピー" Tooltip="定義済みレポートのコピー" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.ReportDataV2" Caption="レポート">
+      <OwnMembers>
+        <Member Name="DataTypeCaption" Caption="データ タイプ" />
+        <Member Name="IsInplaceReport" Caption="インプレース レポート" />
+        <Member Name="DisplayName" Caption="表示名" />
+        <Member Name="ParametersObjectType" Caption="パラメーターのオブジェクト タイプ" />
+        <Member Name="IsPredefined" Caption="定義済みである" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.EF.ReportDataV2" Caption="レポート">
+      <OwnMembers>
+        <Member Name="DataTypeCaption" Caption="データ タイプ" />
+        <Member Name="IsInplaceReport" Caption="インプレース レポート" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.ReportsV2.NewReportWizardParameters" Caption="新規 XAF レポート ウィザード パラメーター">
+      <OwnMembers>
+        <Member Name="DataType" Caption="データ タイプ" />
+        <Member Name="ReportType" Caption="レポート タイプ" />
+        <Member Name="DisplayName" Caption="表示名" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.ReportsV2.ReportType" Value="レポート タイプ">
+        <LocalizationItem Name="Label" Value="ラベル" />
+        <LocalizationItem Name="Standard" Value="標準" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems RelatedReportsGroupCaption="レポート">
+    <Items>
+      <Item Id="Reports" Caption="レポート">
+        <Items>
+          <Item Id="ReportsV2" Caption="レポート" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <ListView Id="DevExpress.Persistent.BaseImpl.XtraReportData_ListView" Caption="レポート" />
+  </Views>
+  <Localization>
+    <LocalizationGroup Name="Exceptions">
+      <LocalizationItem Name="ReportsDisplayNameIsEmptyErrorMessage" Value="&quot;表示名&quot;プロパティの空白またはデフォルトの値を持つレポートを保存しようとしています。レポートを保存する前に、このプロパティを定義してください。" />
+    </LocalizationGroup>
+  </Localization>
+</Application>

@@ -11,7 +11,11 @@ using DevExpress.Internal;
 [assembly:AssemblyCulture("")]		
 [assembly:CLSCompliant(true)]
 
+
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+
 [assembly: AssemblyProduct("DevExpress.Xpf.Controls")]
+
 [assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
+
 [assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]

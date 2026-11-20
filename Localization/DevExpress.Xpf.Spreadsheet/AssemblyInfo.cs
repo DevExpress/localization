@@ -13,6 +13,9 @@ using DevExpress.Internal;
 [assembly: AssemblyCulture("")]
 [assembly: CLSCompliant(true)]
 
+
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+
 [assembly: AssemblyProduct("DevExpress.Xpf.Spreadsheet")]
+
 [assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]

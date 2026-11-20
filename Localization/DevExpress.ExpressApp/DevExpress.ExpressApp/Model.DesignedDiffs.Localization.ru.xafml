@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application VersionFormat="Версия  {0}.{1}.{2}" ProtectedContentText="Скрытый текст">
+  <ActionDesign>
+    <Actions>
+      <Action Id="MergeAction" Caption="Объединить" ShortCaption="Объединить" ToolTip="Объединить" />
+      <Action Id="RefreshAction" Caption="Обновить" ShortCaption="Обновить" ToolTip="Обновить" />
+      <Action Id="CancelAction" Caption="Отменить" ShortCaption="Отменить" ToolTip="Отменить" />
+      <Action Id="CreateModelDifferences" Caption="Создать настройки модели" ToolTip="Инициализировать настройки модели для всех пользователей." />
+      <Action Id="CopyModelDifference" Caption="Копировать настройку модели" ToolTip="Копировать настройки модели от одного пользователя к другому. Выберете настройки модели, которые хотите скопировать, нажмите эту кнопку и выберете целевых пользователей в открывшемся окне. Изменения активируются после того, как пользователь перезапустит приложение." />
+      <Action Id="ExportModelDifferences" Caption="Экспортировать настройки модели" ToolTip="Экспортировать выбранные настройки модели в папку {0}." />
+      <Action Id="ImportSharedModelDifference" Caption="Импортировать общие настройки модели" ConfirmationMessage="Вы собираетесь перезаписать общие настройки модели из файла {0}. Операция не может быть отменена. Вы хотите продолжить?" ToolTip="Импортировать общие настройки модели из файла {0}, расположенного в папке приложения." />
+      <Action Id="ResetModelDifferences" Caption="Сбросить настройки модели" ToolTip="Сбросить выбранные настройки модели. Изменения активируются после того, как пользователь перезапустит приложение." ConfirmationMessage="Вы собираетесь сбросить выбранные настройки модели. Вы хотите продолжить?" />
+      <Action Id="ResetViewSettings" Caption="Сбросить настройки текущего представления" ToolTip="Сбросить все настройки для представления {0}." ConfirmationMessage="Вы собираетесь сбросить все настройки для представления {0}. Вы хотите продолжить?" />
+      
+      <Action Id="Cancel" Caption="Отменить" />
+      <Action Id="CreateDashboard" Caption="Создать панель" />
+      <Action Id="Delete" Caption="Удалить" ConfirmationMessage="Вы собираетесь удалить выбранную запись (записи). Вы хотите продолжить?" />
+      <Action Id="Delete Item" Caption="Удалить элемент" ConfirmationMessage="Выбранные элементы будут удалены. Продолжить?" />
+      <Action Id="Diagnostic Info" Caption="Диагностика" />
+      <Action Id="Diagnostic Info.Actions Info">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Actions Info" Caption="Информация о действиях" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="Diagnostic Info.View Info">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="View Info" Caption="Информация о представлении" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="DialogCancel" Caption="Отменить" />
+      <Action Id="DialogOK" Caption="ОК" />
+      <Action Id="DialogClose" Caption="Закрыть" ToolTip="Закрыть" ShortCaption="Закрыть" />
+      <Action Id="FullTextSearch" NullValuePrompt="Поисковый запрос..." Caption="Фильтровать по тексту" ToolTip="Фильтровать записи по тексту" ShortCaption="Поиск" />
+      <Action Id="HideItemsFromDashboard" Caption="Скрыть с панели" ToolTip="Скрыть выделенные элементы с панели" />
+      <Action Id="Link" Caption="Добавить" />
+      <Action Id="ListViewShowObject" Caption="Открыть" />
+      <Action Id="Logoff" Caption="Сменить пользователя" />
+      <Action Id="Logon" Caption="Вход в систему" />
+      <Action Id="NavigateBack" ToolTip="Вернуться к предыдущему представлению" Caption="Назад" />
+      <Action Id="NavigateForward" ToolTip="Перейти к следующему представлению" Caption="Вперед" />
+      <Action Id="New" Caption="Создать">
+        <DisableReasons>
+          <Reason Id="MasterObjectIsNew" Caption="Отредактированный объект является новым." />
+        </DisableReasons>
+      </Action>
+      <Action Id="NextObject" Caption="Следующий объект" />
+      <Action Id="OrganizeDashboard" Caption="Редактировать панель" />
+      <Action Id="DeleteDashboard" Caption="Удалить панель" />
+      <Action Id="PreviousObject" Caption="Предыдущий объект" />
+      <Action Id="Refresh" Caption="Обновить" />
+      <Action Id="Save" Caption="Сохранить" />
+      <Action Id="SaveAndClose" Caption="Сохранить и закрыть" />
+      <Action Id="SaveAndNew" Caption="Сохранить и создать новый" />
+      <Action Id="SetFilter" Caption="Фильтр" />
+      <Action Id="ShowItemsOnDashboard" Caption="Показать на панели" ToolTip="Показать выделенные элементы на панели" />
+      <Action Id="ShowNavigationItem" Caption="Навигация" />
+      <Action Id="Unlink" Caption="Убрать" ConfirmationMessage="Вы собираетесь убрать выбранную запись (записи). Продолжить?" />
+    </Actions>
+    <DisableReasons>
+      <Reason Id="ByContext_RequireMultipleObjects" Caption="Требуется выбрать хотя бы один объект" />
+      <Reason Id="ByContext_RequireSingleObject" Caption="Требуется выбрать единственный объект" />
+      <Reason Id="Security" Caption="Доступ запрещен" />
+      <Reason Id="AllowNew" Caption="Добавление не поддерживается текущим View" />
+      <Reason Id="UnsuitableType" Caption="Невозможно создать новый объект выбранного типа" />
+      <Reason Id="AllowAddToCollection" Caption="Добавление в коллекцию не разрешено (невозможно)" />
+      <Reason Id="CanCreate" Caption="Невозможно создать объект" />
+      <Reason Id="IsModifiedObject" Caption="Объект '{0}' не может быть отредактирован, пока объект '{1}' не будет сохранен." IsNewNode="True" />
+    </DisableReasons>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ModelDifferenceCopyParameters" Caption="Параметры копирования настроек модели">
+      <OwnMembers>
+        <Member Name="ObjectSpace" Caption="ObjectSpace" />
+        <Member Name="CopyBehavior" Caption="Действия при копировании" />
+        <Member Name="SourceModelDifference" Caption="Исходные настройки модели" />
+        <Member Name="SourceModelDifferenceUserName" Caption="Исходные настройки модели" />
+        <Member Name="TargetModelDifferences" Caption="Целевые настройки модели" />
+        <Member Name="ModelDifferenceType" Caption="Тип настроек модели" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Editors.CriteriaProvider" Caption="Поставщик критерия">
+      <OwnMembers>
+        <Member Name="FilteredObjectsType" Caption="Тип фильтруемых объектов" />
+        <Member Name="FilterString" Caption="Строка фильтра" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.AboutInfo" Caption="О продукте">
+      <OwnMembers>
+        <Member Name="Company" Caption="Компания" />
+        <Member Name="Copyright" Caption="Авторское право" />
+        <Member Name="Description" Caption="Описание" />
+        <Member Name="LogoImageName" Caption="Имя изображения с логотипом" />
+        <Member Name="ProductName" Caption="Наименование продукта" />
+        <Member Name="Version" Caption="Версия" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ActionContainerDashboardOrganizationItem" Caption="Контейнер действий">
+      <OwnMembers>
+        <Member Name="ActionContainer" Caption="Контейнер действий" />
+        <Member Name="ActionContainers" Caption="Контейнеры действий" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ActionContainerDescriptor" Caption="Описание контейнера действий">
+      <OwnMembers>
+        <Member Name="ActionContainerId" Caption="Идентификатор контейнера действий" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardCreationInfo" Caption="Мастер создания панели">
+      <OwnMembers>
+        <Member Name="DashboardName" Caption="Название панели" />
+        <Member Name="NavigationGroupName" Caption="Создать элемент навигации в" />
+        <Member Name="ViewItems" Caption="Элементы панели" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardOrganizationItem" Caption="Элемент панели">
+      <OwnMembers>
+        <Member Name="Id" Caption="Идентификатор" />
+        <Member Name="Item" Caption="Элемент" />
+        <Member Name="Visibility" Caption="Видимость" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardOrganizer" Caption="Редактор панели">
+      <OwnMembers>
+        <Member Name="ViewItems" Caption="Элементы представления" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardViewItemDescriptor" Caption="Дескриптор элемента панели">
+      <OwnMembers>
+        <Member Name="ModelView" Caption="Модель представления" />
+        <Member Name="ViewCaption" Caption="Название представления" />
+        <Member Name="ViewDescription" Caption="Описание представления" />
+        <Member Name="ViewId" Caption="Идентификатор представления" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DiagnosticInfoObject" Caption="Диагностическая информация">
+      <OwnMembers>
+        <Member Name="AsText" Caption="Как текст" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.StaticImageDashboardOrganizationItem" Caption="Статическое изображение">
+      <OwnMembers>
+        <Member Name="ImageName" Caption="Имя изображения" />
+        <Member Name="Preview" Caption="Предварительный просмотр" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.StaticTextDashboardOrganizationItem" Caption="Статический текст">
+      <OwnMembers>
+        <Member Name="Text" Caption="Текст" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ViewDashboardOrganizationItem" Caption="Представление">
+      <OwnMembers>
+        <Member Name="ActionsToolbarVisibility" Caption="Видимость панели инструментов" />
+        <Member Name="AvailableViews" Caption="Доступные представления" />
+        <Member Name="Criteria" Caption="Критерий" />
+        <Member Name="ObjectType" Caption="Тип объекта" />
+        <Member Name="ViewDescriptor" Caption="Представление" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Xpo.PersistentBase" Caption="Хранимый базовый объект" />
+    <Class Name="DevExpress.Xpo.XPBaseObject" Caption="XPBase объект" />
+    <Class Name="DevExpress.Xpo.XPCustomObject" Caption="XPCustom объект" />
+    <Class Name="DevExpress.Xpo.XPObject" Caption="XP объект">
+        <OwnMembers>
+            <Member Name="Oid" Caption="Идентификатор объекта" />
+        </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Xpo.XPObjectType" Caption="Тип XPObject">
+        <OwnMembers>
+            <Member Name="Oid" Caption="Идентификатор объекта" />
+        </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardName" Caption="Выберите панель(панели) для удаления">
+        <OwnMembers>
+            <Member Name="ID" Caption="Идентификатор" />
+            <Member Name="Name" Caption="Название панели" />
+        </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ProcessDataLockingInfoDialogObject" Caption="Информация о блокировке данных">
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Captions">
+      <LocalizationItem Name="DashboardView" Value="Панель" />
+      <LocalizationItem Name="DetailView" Value="Детальное представление" />
+      <LocalizationItem Name="DiagnosticChildWindowAddition" Value="(Дочернее окно)" />
+      <LocalizationItem Name="EditCriteria" Value="Редактирование критерия" />
+      <LocalizationItem Name="ListView" Value="Списочное представление" />
+      <LocalizationItem Name="View" Value="Представление" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="DashboardOrganizationItems">
+      <LocalizationItem Name="ActionContainer" Value="Контейнер действий" />
+      <LocalizationItem Name="StaticImage" Value="Изображение" />
+      <LocalizationItem Name="StaticText" Value="Текст" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="DialogButtons">
+      <LocalizationItem Name="Abort" Value="&amp;Прервать" />
+      <LocalizationItem Name="Add" Value="Добавить" />
+      <LocalizationItem Name="Apply" Value="Применить" />
+      <LocalizationItem Name="Back" Value="&lt; Назад" />
+      <LocalizationItem Name="Cancel" Value="&amp;Отменить" />
+      <LocalizationItem Name="Clear" Value="О&amp;чистить" />
+      <LocalizationItem Name="DialogClose" Value="Закрыть" />
+      <LocalizationItem Name="Close" Value="Закрыть" />
+      <LocalizationItem Name="Find" Value="Найти" />
+      <LocalizationItem Name="Ignore" Value="&amp;Игнорировать" />
+      <LocalizationItem Name="Next" Value="Далее &gt;" />
+      <LocalizationItem Name="No" Value="&amp;Нет" />
+      <LocalizationItem Name="OK" Value="&amp;ОК" />
+      <LocalizationItem Name="Remove" Value="Удалить" />
+      <LocalizationItem Name="Retry" Value="&amp;Повторить" />
+      <LocalizationItem Name="Yes" Value="&amp;Да" />
+      <LocalizationItem Name="Delete" Value="Удалить" />
+      <LocalizationItem Name="Edit" Value="Редактировать" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.ModelDifferenceCopyBehavior" Value="Действия при копировании">
+        <LocalizationItem Name="Merge" Value="Объединить" />
+        <LocalizationItem Name="Overwrite" Value="Перезаписать" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Editors.ViewItemVisibility" Value="Видимость элемента представления">
+        <LocalizationItem Name="Hide" Value="Скрыть" />
+        <LocalizationItem Name="Show" Value="Показать" />
+        <LocalizationItem Name="ShowEmptySpace" Value="Показать пустое пространство" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.SystemModule.DashboardItemVisibility" Value="Видимость элемента панели">
+        <LocalizationItem Name="Hidden" Value="Скрытый" />
+        <LocalizationItem Name="Visible" Value="Видимый" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Templates.ActionsToolbarVisibility" Value="Видимость панели инструментов">
+        <LocalizationItem Name="Default" Value="По умолчанию" />
+        <LocalizationItem Name="Hide" Value="Скрыть" />
+        <LocalizationItem Name="Show" Value="Показать" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Messages">
+      <LocalizationItem Name="User" Value="Пользователь: {0}" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Texts">
+      <LocalizationItem Name="Error" Value="Ошибка" />
+      <LocalizationItem Name="NullValueText" Value="Н/Д" />
+      <LocalizationItem Name="Warning" Value="Предупреждение" />
+      <LocalizationItem Name="SharedModelDifferenceName" Value="Общие настройки модели" />
+      <LocalizationItem Name="DefaultAspectText" Value="(Язык по умолчанию)" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="NotificationsPostponeTimesList" >
+      <LocalizationItem Name="None" Value="Нет" />
+      <LocalizationItem Name="AtStartTime" Value="0 минут" />
+      <LocalizationItem Name="FiveMinutes" Value="5 минут" />
+      <LocalizationItem Name="TenMinutes" Value="10 минут" />
+      <LocalizationItem Name="FifteenMinutes" Value="15 минут" />
+      <LocalizationItem Name="ThirtyMinutes" Value="30 минут" />
+      <LocalizationItem Name="OneHour" Value="1 час" />
+      <LocalizationItem Name="TwoHours" Value="2 часа" />
+      <LocalizationItem Name="ThreeHours" Value="3 часа" />
+      <LocalizationItem Name="FourHours" Value="4 часа" />
+      <LocalizationItem Name="FiveHours" Value="5 часов" />
+      <LocalizationItem Name="SixHours" Value="6 часов"  />
+      <LocalizationItem Name="SevenHours" Value="7 часов"  />
+      <LocalizationItem Name="EightHours" Value="8 часов" />
+      <LocalizationItem Name="NineHours" Value="9 часов" />
+      <LocalizationItem Name="TenHours" Value="10 часов" />
+      <LocalizationItem Name="ElevenHours" Value="11 часов" />
+      <LocalizationItem Name="HalfDay" Value="0.5 дня"  />
+      <LocalizationItem Name="OneDay" Value="1 день" />
+      <LocalizationItem Name="TwoDays" Value="2 дня" />
+      <LocalizationItem Name="ThreeDays" Value="3 дня" />
+      <LocalizationItem Name="FourDays" Value="4 дня"  />
+      <LocalizationItem Name="OneWeek" Value="1 неделю" />
+      <LocalizationItem Name="TwoWeeks" Value="2 недели" />
+    </LocalizationGroup>
+  </Localization>
+  <Views>
+    <DetailView Id="AboutInfo_DetailView" Caption="О программе">
+      <Items>
+        <StaticText Id="AboutText" Text="{0:ProductName}&lt;br&gt;{0:Version}&lt;br&gt; &lt;br&gt;{0:Copyright}&lt;br&gt; &lt;br&gt;{0:Description}" />
+      </Items>
+    </DetailView>
+    <DetailView Id="ProcessDataLockingInfoMergeDialog_DetailView" Caption="Предупреждение">
+      <Items>
+        <StaticText Id="Message" Text="Информация, которую вы пытаетесь сохранить, была изменена другим пользователем.&#xD;&#xA;Вы можете объединить изменения или обновить данные и отказаться от ваших изменений, либо отменить операцию сохранения." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ProcessDataLockingInfoRefreshDialog_DetailView" Caption="Предупреждение">
+      <Items>
+        <StaticText Id="Message" Text="Информация, которую вы пытаетесь сохранить, была изменена другим пользователем.&#xD;&#xA;Вы можете обновить данные и отказаться от ваших изменений, либо отменить операцию сохранения." />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>

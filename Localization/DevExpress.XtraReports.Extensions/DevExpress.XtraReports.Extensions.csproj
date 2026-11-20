@@ -1,233 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net462;net8.0-windows</TargetFrameworks>
+    <TargetFrameworks>net462;net10.0-windows</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
     <EnableWindowsTargeting>true</EnableWindowsTargeting>
-    <AssemblyName>DevExpress.XtraReports.v26.1.Extensions</AssemblyName>
+    <AssemblyName>DevExpress.XtraReports.v26.2.Extensions</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>true</DelaySign>
+    <AssemblyOriginatorKeyFile>..\DevExpress.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>DevExpress.XtraReports</RootNamespace>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <BaseAddress>285212672</BaseAddress>
     <IntermediateOutputPath>obj\$(Configuration)\$(TargetFramework)\</IntermediateOutputPath>
-    <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(TargetFramework)' == 'net462'">
     <OutputPath>..\DevExpress.Dll\Framework\</OutputPath>
-    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0-windows'">
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net10.0-windows'">
     <OutputPath>..\DevExpress.Dll\NETCore\</OutputPath>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="System.Resources.Extensions" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="..\AssemblyVersion.cs">
-      <Link>AssemblyVersion.cs</Link>
-    </Compile>
-    <Compile Include="AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Design\FavoritePropertyEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\ReportFilterStringEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\SplitCellsEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\XRSummaryExpressionEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserDesigner\XRDesignForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserDesigner\XRDesignToolBox.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserDesigner\XRDesignFormExBase.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserDesigner\XRDesignRibbonForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\BandCollectionEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\BordersEditor.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Design\BindingMapper\BindingMapperForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\CalculatedFieldCollectionEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\FormattingRuleSheetEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\ParameterBindingEditorContentControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Design\StyleSheetEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\TableOfContentsLevelCollectionEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\SubBandCollectionEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\ParameterCollectionEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\ParameterBindingCollectionEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\GroupFieldCollectionEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\NewParameterEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\FormattingRulesEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\GroupSortingSummaryEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\LookUpValuesEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Native\Templates\GalleryUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Native\Templates\ProgressUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Native\Templates\TemplateForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ReportGeneration\Wizard\Views\WizardEndPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ReportGeneration\Wizard\Views\WizardLayoutSettingsPage.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ReportGeneration\Wizard\Views\WizardPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ReportGeneration\Wizard\Views\WizardStartPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ReportGeneration\Wizard\Views\WizardViewOptions.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ReportGeneration\Wizard\Views\WizardViewOptionsGeneral.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ReportGeneration\Wizard\Views\WizardViewOptionsGrouping.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ReportGeneration\Wizard\Views\WizardViewOptionsStyles.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\AddGroupingLevelPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\ChooseReportColorSchemePageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\ConfigureReportPageSettingsPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\ChooseReportLayoutPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\ChooseReportStylePageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\ChooseReportTypePageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\ChooseSummaryOptionsPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\ConfigureCrossTabPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\CustomizeLabelPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\MultiQuerySelectFieldsPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\SelectColumnsPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\SelectLabelTypePageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\SetReportTitlePageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\MasterDetailChooseSummaryOptionsPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\MasterDetailSelectDataMembersPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\ChooseReportTemplatePageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\ConfigureReportTemplateQueryPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\MapReportTemplateFieldsPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\SelectReportTemplateDataMemberPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wizards\Views\SpecifyReportTemplateOptionsPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Design\ParameterEditor\ParameterEditorContentControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Design\ParameterEditor\ParameterEditorDynamicListSettingsControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Design\ParameterEditor\ParameterEditorRangeSettingsControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Design\ParameterEditor\ParameterEditorStaticLookUpValuesControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Design\ParameterEditor\ReportParameterCollectionEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\ParameterEditor\ReportParameterEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ReportGeneration\Views\" />
-  </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="Design\BandCollectionEditorForm.et.resx">
       <DependentUpon>BandCollectionEditorForm.cs</DependentUpon>
@@ -7914,5 +7707,1201 @@
     <EmbeddedResource Include="Design\BandCollectionEditorForm.ky.resx">
       <DependentUpon>BandCollectionEditorForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Design\CalculatedFieldCollectionEditorForm.es.resx">
+      <DependentUpon>CalculatedFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupFieldCollectionEditorForm.es.resx">
+      <DependentUpon>GroupFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingCollectionEditorForm.es.resx">
+      <DependentUpon>ParameterBindingCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterCollectionEditorForm.es.resx">
+      <DependentUpon>ParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.es.resx">
+      <DependentUpon>MasterDetailAddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailSelectDataMembersPageView.es.resx">
+      <DependentUpon>MasterDetailSelectDataMembersPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CalculatedFieldCollectionEditorForm.ru.resx">
+      <DependentUpon>CalculatedFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupFieldCollectionEditorForm.ru.resx">
+      <DependentUpon>GroupFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingCollectionEditorForm.ru.resx">
+      <DependentUpon>ParameterBindingCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterCollectionEditorForm.ru.resx">
+      <DependentUpon>ParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SubBandCollectionEditorForm.ru.resx">
+      <DependentUpon>SubBandCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.ru.resx">
+      <DependentUpon>MasterDetailAddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CalculatedFieldCollectionEditorForm.fr.resx">
+      <DependentUpon>CalculatedFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupFieldCollectionEditorForm.fr.resx">
+      <DependentUpon>GroupFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingCollectionEditorForm.fr.resx">
+      <DependentUpon>ParameterBindingCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterCollectionEditorForm.fr.resx">
+      <DependentUpon>ParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.fr.resx">
+      <DependentUpon>ParameterEditorStaticListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SubBandCollectionEditorForm.fr.resx">
+      <DependentUpon>SubBandCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CalculatedFieldCollectionEditorForm.it.resx">
+      <DependentUpon>CalculatedFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupFieldCollectionEditorForm.it.resx">
+      <DependentUpon>GroupFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingCollectionEditorForm.it.resx">
+      <DependentUpon>ParameterBindingCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterCollectionEditorForm.it.resx">
+      <DependentUpon>ParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.it.resx">
+      <DependentUpon>ParameterEditorStaticListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SubBandCollectionEditorForm.it.resx">
+      <DependentUpon>SubBandCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CalculatedFieldCollectionEditorForm.ko.resx">
+      <DependentUpon>CalculatedFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupFieldCollectionEditorForm.ko.resx">
+      <DependentUpon>GroupFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingCollectionEditorForm.ko.resx">
+      <DependentUpon>ParameterBindingCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingEditorContentControl.ko.resx">
+      <DependentUpon>ParameterBindingEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterCollectionEditorForm.ko.resx">
+      <DependentUpon>ParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.ko.resx">
+      <DependentUpon>ParameterEditorStaticListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SubBandCollectionEditorForm.ko.resx">
+      <DependentUpon>SubBandCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\TableOfContentsLevelCollectionEditorForm.ko.resx">
+      <DependentUpon>TableOfContentsLevelCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MapReportTemplateFieldsPageView.ko.resx">
+      <DependentUpon>MapReportTemplateFieldsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.ko.resx">
+      <DependentUpon>MasterDetailAddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailSelectDataMembersPageView.ko.resx">
+      <DependentUpon>MasterDetailSelectDataMembersPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SelectReportTemplateDataMemberPageView.ko.resx">
+      <DependentUpon>SelectReportTemplateDataMemberPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CalculatedFieldCollectionEditorForm.nl.resx">
+      <DependentUpon>CalculatedFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupFieldCollectionEditorForm.nl.resx">
+      <DependentUpon>GroupFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingCollectionEditorForm.nl.resx">
+      <DependentUpon>ParameterBindingCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingEditorContentControl.nl.resx">
+      <DependentUpon>ParameterBindingEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterCollectionEditorForm.nl.resx">
+      <DependentUpon>ParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.nl.resx">
+      <DependentUpon>ParameterEditorStaticListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SubBandCollectionEditorForm.nl.resx">
+      <DependentUpon>SubBandCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\TableOfContentsLevelCollectionEditorForm.nl.resx">
+      <DependentUpon>TableOfContentsLevelCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.nl.resx">
+      <DependentUpon>MasterDetailAddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailSelectDataMembersPageView.nl.resx">
+      <DependentUpon>MasterDetailSelectDataMembersPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CalculatedFieldCollectionEditorForm.pl.resx">
+      <DependentUpon>CalculatedFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupFieldCollectionEditorForm.pl.resx">
+      <DependentUpon>GroupFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingCollectionEditorForm.pl.resx">
+      <DependentUpon>ParameterBindingCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterCollectionEditorForm.pl.resx">
+      <DependentUpon>ParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.pl.resx">
+      <DependentUpon>ParameterEditorStaticListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SubBandCollectionEditorForm.pl.resx">
+      <DependentUpon>SubBandCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\TableOfContentsLevelCollectionEditorForm.pl.resx">
+      <DependentUpon>TableOfContentsLevelCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CalculatedFieldCollectionEditorForm.pt.resx">
+      <DependentUpon>CalculatedFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupFieldCollectionEditorForm.pt.resx">
+      <DependentUpon>GroupFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingCollectionEditorForm.pt.resx">
+      <DependentUpon>ParameterBindingCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterCollectionEditorForm.pt.resx">
+      <DependentUpon>ParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.pt.resx">
+      <DependentUpon>ParameterEditorStaticListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SubBandCollectionEditorForm.pt.resx">
+      <DependentUpon>SubBandCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignFormExBase.pt.resx">
+      <DependentUpon>XRDesignFormExBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.pt.resx">
+      <DependentUpon>MasterDetailAddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailSelectDataMembersPageView.pt.resx">
+      <DependentUpon>MasterDetailSelectDataMembersPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MultiQuerySelectFieldsPageView.pt.resx">
+      <DependentUpon>MultiQuerySelectFieldsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CalculatedFieldCollectionEditorForm.tr.resx">
+      <DependentUpon>CalculatedFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupFieldCollectionEditorForm.tr.resx">
+      <DependentUpon>GroupFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingCollectionEditorForm.tr.resx">
+      <DependentUpon>ParameterBindingCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterCollectionEditorForm.tr.resx">
+      <DependentUpon>ParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.tr.resx">
+      <DependentUpon>ParameterEditorStaticListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.tr.resx">
+      <DependentUpon>MasterDetailAddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailSelectDataMembersPageView.tr.resx">
+      <DependentUpon>MasterDetailSelectDataMembersPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CalculatedFieldCollectionEditorForm.zh-CN.resx">
+      <DependentUpon>CalculatedFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupFieldCollectionEditorForm.zh-CN.resx">
+      <DependentUpon>GroupFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingCollectionEditorForm.zh-CN.resx">
+      <DependentUpon>ParameterBindingCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingEditorContentControl.zh-CN.resx">
+      <DependentUpon>ParameterBindingEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterCollectionEditorForm.zh-CN.resx">
+      <DependentUpon>ParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.zh-CN.resx">
+      <DependentUpon>ParameterEditorStaticListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SubBandCollectionEditorForm.zh-CN.resx">
+      <DependentUpon>SubBandCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\TableOfContentsLevelCollectionEditorForm.zh-CN.resx">
+      <DependentUpon>TableOfContentsLevelCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignFormExBase.zh-CN.resx">
+      <DependentUpon>XRDesignFormExBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.zh-CN.resx">
+      <DependentUpon>MasterDetailAddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailSelectDataMembersPageView.zh-CN.resx">
+      <DependentUpon>MasterDetailSelectDataMembersPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MultiQuerySelectFieldsPageView.zh-CN.resx">
+      <DependentUpon>MultiQuerySelectFieldsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.he.resx">
+      <DependentUpon>ParameterEditorStaticListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignFormExBase.he.resx">
+      <DependentUpon>XRDesignFormExBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MapReportTemplateFieldsPageView.he.resx">
+      <DependentUpon>MapReportTemplateFieldsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.he.resx">
+      <DependentUpon>MasterDetailAddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailChooseSummaryOptionsPageView.he.resx">
+      <DependentUpon>MasterDetailChooseSummaryOptionsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailSelectDataMembersPageView.he.resx">
+      <DependentUpon>MasterDetailSelectDataMembersPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MultiQuerySelectFieldsPageView.he.resx">
+      <DependentUpon>MultiQuerySelectFieldsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SelectReportTemplateDataMemberPageView.he.resx">
+      <DependentUpon>SelectReportTemplateDataMemberPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CalculatedFieldCollectionEditorForm.pt-BR.resx">
+      <DependentUpon>CalculatedFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupFieldCollectionEditorForm.pt-BR.resx">
+      <DependentUpon>GroupFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingCollectionEditorForm.pt-BR.resx">
+      <DependentUpon>ParameterBindingCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingEditorContentControl.pt-BR.resx">
+      <DependentUpon>ParameterBindingEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterCollectionEditorForm.pt-BR.resx">
+      <DependentUpon>ParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.pt-BR.resx">
+      <DependentUpon>ParameterEditorStaticListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SubBandCollectionEditorForm.pt-BR.resx">
+      <DependentUpon>SubBandCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.ar.resx">
+      <DependentUpon>ParameterEditorStaticListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignFormExBase.ar.resx">
+      <DependentUpon>XRDesignFormExBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.ar.resx">
+      <DependentUpon>MasterDetailAddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailSelectDataMembersPageView.ar.resx">
+      <DependentUpon>MasterDetailSelectDataMembersPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MultiQuerySelectFieldsPageView.ar.resx">
+      <DependentUpon>MultiQuerySelectFieldsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CalculatedFieldCollectionEditorForm.ca.resx">
+      <DependentUpon>CalculatedFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupFieldCollectionEditorForm.ca.resx">
+      <DependentUpon>GroupFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingCollectionEditorForm.ca.resx">
+      <DependentUpon>ParameterBindingCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterCollectionEditorForm.ca.resx">
+      <DependentUpon>ParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.ca.resx">
+      <DependentUpon>ParameterEditorStaticListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SubBandCollectionEditorForm.ca.resx">
+      <DependentUpon>SubBandCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\TableOfContentsLevelCollectionEditorForm.ca.resx">
+      <DependentUpon>TableOfContentsLevelCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.ca.resx">
+      <DependentUpon>MasterDetailAddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailSelectDataMembersPageView.ca.resx">
+      <DependentUpon>MasterDetailSelectDataMembersPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MultiQuerySelectFieldsPageView.ca.resx">
+      <DependentUpon>MultiQuerySelectFieldsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CalculatedFieldCollectionEditorForm.de-CH.resx">
+      <DependentUpon>CalculatedFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupFieldCollectionEditorForm.de-CH.resx">
+      <DependentUpon>GroupFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingCollectionEditorForm.de-CH.resx">
+      <DependentUpon>ParameterBindingCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingEditorContentControl.de-CH.resx">
+      <DependentUpon>ParameterBindingEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterCollectionEditorForm.de-CH.resx">
+      <DependentUpon>ParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.de-CH.resx">
+      <DependentUpon>ParameterEditorStaticListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SubBandCollectionEditorForm.de-CH.resx">
+      <DependentUpon>SubBandCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\TableOfContentsLevelCollectionEditorForm.de-CH.resx">
+      <DependentUpon>TableOfContentsLevelCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MapReportTemplateFieldsPageView.de-CH.resx">
+      <DependentUpon>MapReportTemplateFieldsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.de-CH.resx">
+      <DependentUpon>MasterDetailAddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailSelectDataMembersPageView.de-CH.resx">
+      <DependentUpon>MasterDetailSelectDataMembersPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MultiQuerySelectFieldsPageView.de-CH.resx">
+      <DependentUpon>MultiQuerySelectFieldsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SelectReportTemplateDataMemberPageView.de-CH.resx">
+      <DependentUpon>SelectReportTemplateDataMemberPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CalculatedFieldCollectionEditorForm.zh-Hans.resx">
+      <DependentUpon>CalculatedFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupFieldCollectionEditorForm.zh-Hans.resx">
+      <DependentUpon>GroupFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingCollectionEditorForm.zh-Hans.resx">
+      <DependentUpon>ParameterBindingCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingEditorContentControl.zh-Hans.resx">
+      <DependentUpon>ParameterBindingEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterCollectionEditorForm.zh-Hans.resx">
+      <DependentUpon>ParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.zh-Hans.resx">
+      <DependentUpon>ParameterEditorStaticListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SubBandCollectionEditorForm.zh-Hans.resx">
+      <DependentUpon>SubBandCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.zh-Hans.resx">
+      <DependentUpon>MasterDetailAddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailSelectDataMembersPageView.zh-Hans.resx">
+      <DependentUpon>MasterDetailSelectDataMembersPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MultiQuerySelectFieldsPageView.zh-Hans.resx">
+      <DependentUpon>MultiQuerySelectFieldsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SelectReportTemplateDataMemberPageView.zh-Hans.resx">
+      <DependentUpon>SelectReportTemplateDataMemberPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CalculatedFieldCollectionEditorForm.cs.resx">
+      <DependentUpon>CalculatedFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupFieldCollectionEditorForm.cs.resx">
+      <DependentUpon>GroupFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingCollectionEditorForm.cs.resx">
+      <DependentUpon>ParameterBindingCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterCollectionEditorForm.cs.resx">
+      <DependentUpon>ParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.cs.resx">
+      <DependentUpon>ParameterEditorStaticListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SubBandCollectionEditorForm.cs.resx">
+      <DependentUpon>SubBandCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\TableOfContentsLevelCollectionEditorForm.cs.resx">
+      <DependentUpon>TableOfContentsLevelCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignFormExBase.cs.resx">
+      <DependentUpon>XRDesignFormExBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.cs.resx">
+      <DependentUpon>MasterDetailAddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailSelectDataMembersPageView.cs.resx">
+      <DependentUpon>MasterDetailSelectDataMembersPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\BandCollectionEditorForm.hi.resx">
+      <DependentUpon>BandCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\BordersEditor.hi.resx">
+      <DependentUpon>BordersEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CalculatedFieldCollectionEditorForm.hi.resx">
+      <DependentUpon>CalculatedFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\FormattingRulesEditorForm.hi.resx">
+      <DependentUpon>FormattingRulesEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\FormattingRuleSheetEditorForm.hi.resx">
+      <DependentUpon>FormattingRuleSheetEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupFieldCollectionEditorForm.hi.resx">
+      <DependentUpon>GroupFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupSortingSummaryEditorForm.hi.resx">
+      <DependentUpon>GroupSortingSummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingCollectionEditorForm.hi.resx">
+      <DependentUpon>ParameterBindingCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingEditorContentControl.hi.resx">
+      <DependentUpon>ParameterBindingEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterCollectionEditorForm.hi.resx">
+      <DependentUpon>ParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.hi.resx">
+      <DependentUpon>ParameterEditorStaticListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\StyleSheetEditorForm.hi.resx">
+      <DependentUpon>StyleSheetEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SubBandCollectionEditorForm.hi.resx">
+      <DependentUpon>SubBandCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\TableOfContentsLevelCollectionEditorForm.hi.resx">
+      <DependentUpon>TableOfContentsLevelCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Templates\GalleryUserControl.hi.resx">
+      <DependentUpon>GalleryUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Templates\ProgressUserControl.hi.resx">
+      <DependentUpon>ProgressUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Templates\TemplateForm.hi.resx">
+      <DependentUpon>TemplateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardEndPageView.hi.resx">
+      <DependentUpon>WizardEndPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardLayoutSettingsPage.hi.resx">
+      <DependentUpon>WizardLayoutSettingsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardPageView.hi.resx">
+      <DependentUpon>WizardPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardStartPageView.hi.resx">
+      <DependentUpon>WizardStartPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptions.hi.resx">
+      <DependentUpon>WizardViewOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsGeneral.hi.resx">
+      <DependentUpon>WizardViewOptionsGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsGrouping.hi.resx">
+      <DependentUpon>WizardViewOptionsGrouping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsStyles.hi.resx">
+      <DependentUpon>WizardViewOptionsStyles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignForm.hi.resx">
+      <DependentUpon>XRDesignForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignFormExBase.hi.resx">
+      <DependentUpon>XRDesignFormExBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignRibbonForm.hi.resx">
+      <DependentUpon>XRDesignRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Localization\LocalizationRes.hi.resx" />
+    <EmbeddedResource Include="Wizards\Views\AddGroupingLevelPageView.hi.resx">
+      <DependentUpon>AddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseReportLayoutPageView.hi.resx">
+      <DependentUpon>ChooseReportLayoutPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseReportStylePageView.hi.resx">
+      <DependentUpon>ChooseReportStylePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseReportTypePageView.hi.resx">
+      <DependentUpon>ChooseReportTypePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseSummaryOptionsPageView.hi.resx">
+      <DependentUpon>ChooseSummaryOptionsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ConfigureCrossTabPageView.hi.resx">
+      <DependentUpon>ConfigureCrossTabPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ConfigureReportTemplateQueryPageView.hi.resx">
+      <DependentUpon>ConfigureReportTemplateQueryPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\CustomizeLabelPageView.hi.resx">
+      <DependentUpon>CustomizeLabelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MapReportTemplateFieldsPageView.hi.resx">
+      <DependentUpon>MapReportTemplateFieldsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.hi.resx">
+      <DependentUpon>MasterDetailAddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailChooseSummaryOptionsPageView.hi.resx">
+      <DependentUpon>MasterDetailChooseSummaryOptionsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailSelectDataMembersPageView.hi.resx">
+      <DependentUpon>MasterDetailSelectDataMembersPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MultiQuerySelectFieldsPageView.hi.resx">
+      <DependentUpon>MultiQuerySelectFieldsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SelectColumnsPageView.hi.resx">
+      <DependentUpon>SelectColumnsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SelectLabelTypePageView.hi.resx">
+      <DependentUpon>SelectLabelTypePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SelectReportTemplateDataMemberPageView.hi.resx">
+      <DependentUpon>SelectReportTemplateDataMemberPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SetReportTitlePageView.hi.resx">
+      <DependentUpon>SetReportTitlePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SpecifyReportTemplateOptionsPageView.hi.resx">
+      <DependentUpon>SpecifyReportTemplateOptionsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CalculatedFieldCollectionEditorForm.ta.resx">
+      <DependentUpon>CalculatedFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupFieldCollectionEditorForm.ta.resx">
+      <DependentUpon>GroupFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingCollectionEditorForm.ta.resx">
+      <DependentUpon>ParameterBindingCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingEditorContentControl.ta.resx">
+      <DependentUpon>ParameterBindingEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterCollectionEditorForm.ta.resx">
+      <DependentUpon>ParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.ta.resx">
+      <DependentUpon>ParameterEditorStaticListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SubBandCollectionEditorForm.ta.resx">
+      <DependentUpon>SubBandCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\TableOfContentsLevelCollectionEditorForm.ta.resx">
+      <DependentUpon>TableOfContentsLevelCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignFormExBase.ta.resx">
+      <DependentUpon>XRDesignFormExBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MapReportTemplateFieldsPageView.ta.resx">
+      <DependentUpon>MapReportTemplateFieldsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.ta.resx">
+      <DependentUpon>MasterDetailAddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailSelectDataMembersPageView.ta.resx">
+      <DependentUpon>MasterDetailSelectDataMembersPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MultiQuerySelectFieldsPageView.ta.resx">
+      <DependentUpon>MultiQuerySelectFieldsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SelectReportTemplateDataMemberPageView.ta.resx">
+      <DependentUpon>SelectReportTemplateDataMemberPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CalculatedFieldCollectionEditorForm.sv.resx">
+      <DependentUpon>CalculatedFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupFieldCollectionEditorForm.sv.resx">
+      <DependentUpon>GroupFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingCollectionEditorForm.sv.resx">
+      <DependentUpon>ParameterBindingCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingEditorContentControl.sv.resx">
+      <DependentUpon>ParameterBindingEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterCollectionEditorForm.sv.resx">
+      <DependentUpon>ParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.sv.resx">
+      <DependentUpon>ParameterEditorStaticListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SubBandCollectionEditorForm.sv.resx">
+      <DependentUpon>SubBandCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\TableOfContentsLevelCollectionEditorForm.sv.resx">
+      <DependentUpon>TableOfContentsLevelCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.sv.resx">
+      <DependentUpon>MasterDetailAddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailSelectDataMembersPageView.sv.resx">
+      <DependentUpon>MasterDetailSelectDataMembersPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\BindingMapper\BindingMapperForm.es-MX.resx">
+      <DependentUpon>BindingMapperForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\BordersEditor.es-MX.resx">
+      <DependentUpon>BordersEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CalculatedFieldCollectionEditorForm.es-MX.resx">
+      <DependentUpon>CalculatedFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\FavoritePropertyEditorForm.es-MX.resx">
+      <DependentUpon>FavoritePropertyEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\FormattingRulesEditorForm.es-MX.resx">
+      <DependentUpon>FormattingRulesEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\FormattingRuleSheetEditorForm.es-MX.resx">
+      <DependentUpon>FormattingRuleSheetEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupFieldCollectionEditorForm.es-MX.resx">
+      <DependentUpon>GroupFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupSortingSummaryEditorForm.es-MX.resx">
+      <DependentUpon>GroupSortingSummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\LookUpValuesEditorForm.es-MX.resx">
+      <DependentUpon>LookUpValuesEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\NewParameterEditorForm.es-MX.resx">
+      <DependentUpon>NewParameterEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingCollectionEditorForm.es-MX.resx">
+      <DependentUpon>ParameterBindingCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingEditorContentControl.es-MX.resx">
+      <DependentUpon>ParameterBindingEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterCollectionEditorForm.es-MX.resx">
+      <DependentUpon>ParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorContentControl.es-MX.resx">
+      <DependentUpon>ParameterEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorDynamicListSettingsControl.es-MX.resx">
+      <DependentUpon>ParameterEditorDynamicListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorRangeSettingsControl.es-MX.resx">
+      <DependentUpon>ParameterEditorRangeSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.es-MX.resx">
+      <DependentUpon>ParameterEditorStaticListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticLookUpValuesControl.es-MX.resx">
+      <DependentUpon>ParameterEditorStaticLookUpValuesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ReportParameterCollectionEditorForm.es-MX.resx">
+      <DependentUpon>ReportParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ReportParameterEditorForm.es-MX.resx">
+      <DependentUpon>ReportParameterEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ReportFilterStringEditorForm.es-MX.resx">
+      <DependentUpon>ReportFilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SplitCellsEditorForm.es-MX.resx">
+      <DependentUpon>SplitCellsEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\StyleSheetEditorForm.es-MX.resx">
+      <DependentUpon>StyleSheetEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SubBandCollectionEditorForm.es-MX.resx">
+      <DependentUpon>SubBandCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\TableOfContentsLevelCollectionEditorForm.es-MX.resx">
+      <DependentUpon>TableOfContentsLevelCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\XRSummaryExpressionEditorForm.es-MX.resx">
+      <DependentUpon>XRSummaryExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Templates\GalleryUserControl.es-MX.resx">
+      <DependentUpon>GalleryUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Templates\ProgressUserControl.es-MX.resx">
+      <DependentUpon>ProgressUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Templates\TemplateForm.es-MX.resx">
+      <DependentUpon>TemplateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardEndPageView.es-MX.resx">
+      <DependentUpon>WizardEndPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardLayoutSettingsPage.es-MX.resx">
+      <DependentUpon>WizardLayoutSettingsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardPageView.es-MX.resx">
+      <DependentUpon>WizardPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardStartPageView.es-MX.resx">
+      <DependentUpon>WizardStartPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptions.es-MX.resx">
+      <DependentUpon>WizardViewOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsGeneral.es-MX.resx">
+      <DependentUpon>WizardViewOptionsGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsGrouping.es-MX.resx">
+      <DependentUpon>WizardViewOptionsGrouping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsStyles.es-MX.resx">
+      <DependentUpon>WizardViewOptionsStyles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignForm.es-MX.resx">
+      <DependentUpon>XRDesignForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignFormExBase.es-MX.resx">
+      <DependentUpon>XRDesignFormExBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignRibbonForm.es-MX.resx">
+      <DependentUpon>XRDesignRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Localization\LocalizationRes.es-MX.resx" />
+    <EmbeddedResource Include="Wizards\Views\AddGroupingLevelPageView.es-MX.resx">
+      <DependentUpon>AddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseReportLayoutPageView.es-MX.resx">
+      <DependentUpon>ChooseReportLayoutPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseReportStylePageView.es-MX.resx">
+      <DependentUpon>ChooseReportStylePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseReportTypePageView.es-MX.resx">
+      <DependentUpon>ChooseReportTypePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseSummaryOptionsPageView.es-MX.resx">
+      <DependentUpon>ChooseSummaryOptionsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ConfigureCrossTabPageView.es-MX.resx">
+      <DependentUpon>ConfigureCrossTabPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ConfigureReportTemplateQueryPageView.es-MX.resx">
+      <DependentUpon>ConfigureReportTemplateQueryPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\CustomizeLabelPageView.es-MX.resx">
+      <DependentUpon>CustomizeLabelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MapReportTemplateFieldsPageView.es-MX.resx">
+      <DependentUpon>MapReportTemplateFieldsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.es-MX.resx">
+      <DependentUpon>MasterDetailAddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailChooseSummaryOptionsPageView.es-MX.resx">
+      <DependentUpon>MasterDetailChooseSummaryOptionsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailSelectDataMembersPageView.es-MX.resx">
+      <DependentUpon>MasterDetailSelectDataMembersPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MultiQuerySelectFieldsPageView.es-MX.resx">
+      <DependentUpon>MultiQuerySelectFieldsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SelectColumnsPageView.es-MX.resx">
+      <DependentUpon>SelectColumnsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SelectLabelTypePageView.es-MX.resx">
+      <DependentUpon>SelectLabelTypePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SelectReportTemplateDataMemberPageView.es-MX.resx">
+      <DependentUpon>SelectReportTemplateDataMemberPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SetReportTitlePageView.es-MX.resx">
+      <DependentUpon>SetReportTitlePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SpecifyReportTemplateOptionsPageView.es-MX.resx">
+      <DependentUpon>SpecifyReportTemplateOptionsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\BindingMapper\BindingMapperForm.af.resx">
+      <DependentUpon>BindingMapperForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\BordersEditor.af.resx">
+      <DependentUpon>BordersEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CalculatedFieldCollectionEditorForm.af.resx">
+      <DependentUpon>CalculatedFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\FavoritePropertyEditorForm.af.resx">
+      <DependentUpon>FavoritePropertyEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\FormattingRulesEditorForm.af.resx">
+      <DependentUpon>FormattingRulesEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\FormattingRuleSheetEditorForm.af.resx">
+      <DependentUpon>FormattingRuleSheetEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupFieldCollectionEditorForm.af.resx">
+      <DependentUpon>GroupFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupSortingSummaryEditorForm.af.resx">
+      <DependentUpon>GroupSortingSummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\LookUpValuesEditorForm.af.resx">
+      <DependentUpon>LookUpValuesEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\NewParameterEditorForm.af.resx">
+      <DependentUpon>NewParameterEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingCollectionEditorForm.af.resx">
+      <DependentUpon>ParameterBindingCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingEditorContentControl.af.resx">
+      <DependentUpon>ParameterBindingEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterCollectionEditorForm.af.resx">
+      <DependentUpon>ParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorContentControl.af.resx">
+      <DependentUpon>ParameterEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorDynamicListSettingsControl.af.resx">
+      <DependentUpon>ParameterEditorDynamicListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorRangeSettingsControl.af.resx">
+      <DependentUpon>ParameterEditorRangeSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.af.resx">
+      <DependentUpon>ParameterEditorStaticListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticLookUpValuesControl.af.resx">
+      <DependentUpon>ParameterEditorStaticLookUpValuesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ReportParameterCollectionEditorForm.af.resx">
+      <DependentUpon>ReportParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ReportParameterEditorForm.af.resx">
+      <DependentUpon>ReportParameterEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ReportFilterStringEditorForm.af.resx">
+      <DependentUpon>ReportFilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SplitCellsEditorForm.af.resx">
+      <DependentUpon>SplitCellsEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\StyleSheetEditorForm.af.resx">
+      <DependentUpon>StyleSheetEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SubBandCollectionEditorForm.af.resx">
+      <DependentUpon>SubBandCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\TableOfContentsLevelCollectionEditorForm.af.resx">
+      <DependentUpon>TableOfContentsLevelCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\XRSummaryExpressionEditorForm.af.resx">
+      <DependentUpon>XRSummaryExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Templates\GalleryUserControl.af.resx">
+      <DependentUpon>GalleryUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Templates\ProgressUserControl.af.resx">
+      <DependentUpon>ProgressUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Templates\TemplateForm.af.resx">
+      <DependentUpon>TemplateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardEndPageView.af.resx">
+      <DependentUpon>WizardEndPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardLayoutSettingsPage.af.resx">
+      <DependentUpon>WizardLayoutSettingsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardPageView.af.resx">
+      <DependentUpon>WizardPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardStartPageView.af.resx">
+      <DependentUpon>WizardStartPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptions.af.resx">
+      <DependentUpon>WizardViewOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsGeneral.af.resx">
+      <DependentUpon>WizardViewOptionsGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsGrouping.af.resx">
+      <DependentUpon>WizardViewOptionsGrouping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsStyles.af.resx">
+      <DependentUpon>WizardViewOptionsStyles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignForm.af.resx">
+      <DependentUpon>XRDesignForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignFormExBase.af.resx">
+      <DependentUpon>XRDesignFormExBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignRibbonForm.af.resx">
+      <DependentUpon>XRDesignRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Localization\LocalizationRes.af.resx" />
+    <EmbeddedResource Include="Wizards\Views\AddGroupingLevelPageView.af.resx">
+      <DependentUpon>AddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseReportLayoutPageView.af.resx">
+      <DependentUpon>ChooseReportLayoutPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseReportStylePageView.af.resx">
+      <DependentUpon>ChooseReportStylePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseReportTypePageView.af.resx">
+      <DependentUpon>ChooseReportTypePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseSummaryOptionsPageView.af.resx">
+      <DependentUpon>ChooseSummaryOptionsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ConfigureCrossTabPageView.af.resx">
+      <DependentUpon>ConfigureCrossTabPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ConfigureReportTemplateQueryPageView.af.resx">
+      <DependentUpon>ConfigureReportTemplateQueryPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\CustomizeLabelPageView.af.resx">
+      <DependentUpon>CustomizeLabelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MapReportTemplateFieldsPageView.af.resx">
+      <DependentUpon>MapReportTemplateFieldsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.af.resx">
+      <DependentUpon>MasterDetailAddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailChooseSummaryOptionsPageView.af.resx">
+      <DependentUpon>MasterDetailChooseSummaryOptionsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailSelectDataMembersPageView.af.resx">
+      <DependentUpon>MasterDetailSelectDataMembersPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MultiQuerySelectFieldsPageView.af.resx">
+      <DependentUpon>MultiQuerySelectFieldsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SelectColumnsPageView.af.resx">
+      <DependentUpon>SelectColumnsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SelectLabelTypePageView.af.resx">
+      <DependentUpon>SelectLabelTypePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SelectReportTemplateDataMemberPageView.af.resx">
+      <DependentUpon>SelectReportTemplateDataMemberPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SetReportTitlePageView.af.resx">
+      <DependentUpon>SetReportTitlePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SpecifyReportTemplateOptionsPageView.af.resx">
+      <DependentUpon>SpecifyReportTemplateOptionsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\FavoritePropertyEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ReportFilterStringEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\SplitCellsEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\XRSummaryExpressionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDesigner\XRDesignForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDesigner\XRDesignToolBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserDesigner\XRDesignFormExBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDesigner\XRDesignRibbonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\BandCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\BordersEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\BindingMapper\BindingMapperForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\CalculatedFieldCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\FormattingRuleSheetEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterBindingEditorContentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\StyleSheetEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\TableOfContentsLevelCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\SubBandCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterBindingCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\GroupFieldCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\NewParameterEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\FormattingRulesEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\GroupSortingSummaryEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\LookUpValuesEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Native\Templates\GalleryUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Native\Templates\ProgressUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Native\Templates\TemplateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardEndPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardLayoutSettingsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardStartPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardViewOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardViewOptionsGeneral.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardViewOptionsGrouping.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardViewOptionsStyles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\AddGroupingLevelPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ChooseReportColorSchemePageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ConfigureReportPageSettingsPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ChooseReportLayoutPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ChooseReportStylePageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ChooseReportTypePageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ChooseSummaryOptionsPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ConfigureCrossTabPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\CustomizeLabelPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\MultiQuerySelectFieldsPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\SelectColumnsPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\SelectLabelTypePageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\SetReportTitlePageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\MasterDetailChooseSummaryOptionsPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\MasterDetailSelectDataMembersPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ChooseReportTemplatePageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ConfigureReportTemplateQueryPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\MapReportTemplateFieldsPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\SelectReportTemplateDataMemberPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\SpecifyReportTemplateOptionsPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterEditor\ParameterEditorContentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterEditor\ParameterEditorDynamicListSettingsControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterEditor\ParameterEditorRangeSettingsControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterEditor\ParameterEditorStaticLookUpValuesControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterEditor\ReportParameterCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterEditor\ReportParameterEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+	<ActionDesign>
+		<Actions>
+			<Action Id="EditReportControllerV2.Edit" Caption="Редактировать" />
+			<Action Id="ExecuteReportV2" Caption="Выполнить отчет" />
+                        <Action Id="ShowReportDesignerV2" Caption="Показать дизайнер отчетов" />
+		</Actions>
+	</ActionDesign>
+	<Localization>
+		<LocalizationGroup Name="Captions">
+			<LocalizationItem Name="AllFiles" Value="Все файлы" />
+			<LocalizationItem Name="ExportLayout" Value="Экспорт разметки в файл..." />
+			<LocalizationItem Name="ImportLayout" Value="Импорт разметки из файла..." />
+			<LocalizationItem Name="ReportDesignerError" Value="Ошибка" />
+			<LocalizationItem Name="ReportDesignerWarning" Value="Предупреждение" />
+			<LocalizationItem Name="ReportFiles" Value="Файлы отчета" />
+		</LocalizationGroup>
+		<LocalizationGroup Name="Messages">
+			<LocalizationItem Name="ReportWizardPageHeader" Value="Введите имя в поле ниже и выберите основной тип данных для отчета из списка." IsNewNode="True" />
+		</LocalizationGroup>
+	</Localization>
+	<Views>
+		<DetailView Id="NewReportWizardParameters_DetailView" Caption="Мастер нового отчета">
+				<Items>
+					<StaticText Id="ReportText" Text="Чтобы создать новый отчет, введите имя в поле ниже и выберите основной тип данных для отчета из списка." />
+				</Items>
+				<Layout>
+					<LayoutGroup Id="Main">
+						<LayoutGroup Id="Static" Caption="Статичный(11)">
+							<LayoutGroup Id="NewReportParams" Caption="Параметры нового отчета">
+								<LayoutGroup Id="SimpleEditors" Caption="Простые редакторы" />
+							</LayoutGroup>
+						</LayoutGroup>
+					</LayoutGroup>
+				</Layout>
+		</DetailView>		
+	</Views>
+</Application>

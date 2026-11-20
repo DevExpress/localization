@@ -1,36 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net462;net8.0</TargetFrameworks>
-    <EnableWindowsTargeting>true</EnableWindowsTargeting>
-    <AssemblyName>DevExpress.Data.v26.1</AssemblyName>
+    <TargetFrameworks>net462;net10.0</TargetFrameworks>
+    <AssemblyName>DevExpress.Data.v26.2</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>true</DelaySign>
+    <AssemblyOriginatorKeyFile>..\DevExpress.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>DevExpress.Data</RootNamespace>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\$(TargetFramework)\</IntermediateOutputPath>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(TargetFramework)' == 'net462'">
     <OutputPath>..\DevExpress.Dll\Framework\</OutputPath>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0'">
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net10.0'">
     <OutputPath>..\DevExpress.Dll\NETCore\</OutputPath>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Include="..\AssemblyVersion.cs">
-      <Link>AssemblyVersion.cs</Link>
-    </Compile>
-    <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.ja.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.ja.resx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="Db\Messages.th.resx" />
     <EmbeddedResource Include="DescriptionsRes.de.resx" />
@@ -598,5 +586,55 @@
     <EmbeddedResource Include="DescriptionsRes.uz-Cyrl-UZ.resx" />
     <EmbeddedResource Include="DescriptionsRes.uz-Latn-UZ.resx" />
     <EmbeddedResource Include="DescriptionsRes.ky.resx" />
+    <EmbeddedResource Include="DescriptionsRes.es.resx" />
+    <EmbeddedResource Include="DescriptionsRes.ru.resx" />
+    <EmbeddedResource Include="DescriptionsRes.fr.resx" />
+    <EmbeddedResource Include="DescriptionsRes.it.resx" />
+    <EmbeddedResource Include="DescriptionsRes.ko.resx" />
+    <EmbeddedResource Include="DescriptionsRes.nl.resx" />
+    <EmbeddedResource Include="DescriptionsRes.pl.resx" />
+    <EmbeddedResource Include="DescriptionsRes.pt.resx" />
+    <EmbeddedResource Include="DescriptionsRes.tr.resx" />
+    <EmbeddedResource Include="DescriptionsRes.zh-CN.resx" />
+    <EmbeddedResource Include="DescriptionsRes.he.resx" />
+    <EmbeddedResource Include="LocalizationRes.he.resx" />
+    <EmbeddedResource Include="DescriptionsRes.pt-BR.resx" />
+    <EmbeddedResource Include="DescriptionsRes.ar.resx" />
+    <EmbeddedResource Include="DescriptionsRes.ca.resx" />
+    <EmbeddedResource Include="DescriptionsRes.de-CH.resx" />
+    <EmbeddedResource Include="DescriptionsRes.zh-Hans.resx" />
+    <EmbeddedResource Include="DescriptionsRes.cs.resx" />
+    <EmbeddedResource Include="Db\Messages.hi.resx" />
+    <EmbeddedResource Include="DescriptionsRes.hi.resx" />
+    <EmbeddedResource Include="EndUserFiltering\LocalizationRes.hi.resx" />
+    <EmbeddedResource Include="EndUserFiltering\UIElements\LocalizationRes.hi.resx" />
+    <EmbeddedResource Include="LocalizationRes.hi.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.hi.resx" />
+    <EmbeddedResource Include="DescriptionsRes.ta.resx" />
+    <EmbeddedResource Include="LocalizationRes.ta.resx" />
+    <EmbeddedResource Include="DescriptionsRes.sv.resx" />
+    <EmbeddedResource Include="Db\Messages.es-MX.resx" />
+    <EmbeddedResource Include="EndUserFiltering\LocalizationRes.es-MX.resx" />
+    <EmbeddedResource Include="EndUserFiltering\UIElements\LocalizationRes.es-MX.resx" />
+    <EmbeddedResource Include="LocalizationRes.es-MX.resx" />
+    <EmbeddedResource Include="Printing\LocalizationRes.es-MX.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.es-MX.resx" />
+    <EmbeddedResource Include="Db\Messages.af.resx" />
+    <EmbeddedResource Include="EndUserFiltering\LocalizationRes.af.resx" />
+    <EmbeddedResource Include="EndUserFiltering\UIElements\LocalizationRes.af.resx" />
+    <EmbeddedResource Include="LocalizationRes.af.resx" />
+    <EmbeddedResource Include="Printing\LocalizationRes.af.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.af.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.ja.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.ja.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

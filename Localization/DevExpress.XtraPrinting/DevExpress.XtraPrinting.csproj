@@ -1,82 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net462;net8.0-windows</TargetFrameworks>
+    <TargetFrameworks>net462;net10.0-windows</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
     <EnableWindowsTargeting>true</EnableWindowsTargeting>
-    <AssemblyName>DevExpress.XtraPrinting.v26.1</AssemblyName>
+    <AssemblyName>DevExpress.XtraPrinting.v26.2</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>true</DelaySign>
+    <AssemblyOriginatorKeyFile>..\DevExpress.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>DevExpress.XtraPrinting</RootNamespace>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <BaseAddress>285212672</BaseAddress>
     <IntermediateOutputPath>obj\$(Configuration)\$(TargetFramework)\</IntermediateOutputPath>
-    <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(TargetFramework)' == 'net462'">
     <OutputPath>..\DevExpress.Dll\Framework\</OutputPath>
-    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0-windows'">
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net10.0-windows'">
     <OutputPath>..\DevExpress.Dll\NETCore\</OutputPath>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="System.Resources.Extensions" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="..\AssemblyVersion.cs">
-      <Link>AssemblyVersion.cs</Link>
-    </Compile>
-    <Compile Include="AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="CertificateSelector.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ComponentEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HeaderFooterForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Native\Lines\LinesForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Native\Navigation\GoToPageDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Preview\FindControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PasswordConfirmationForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PdfPasswordSecurityEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PdfSignatureEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Preview\PageSetupEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Preview\PrintEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Preview\ReportServerCredentialsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Preview\PageSetupUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="WatermarkEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-  </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="CertificateSelector.ar.resx">
       <DependentUpon>CertificateSelector.cs</DependentUpon>
@@ -2397,5 +2341,130 @@
     <EmbeddedResource Include="ComponentEditorForm.ky.resx">
       <DependentUpon>ComponentEditorForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.hi.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.es-MX.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.es-MX.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.es-MX.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.es-MX.resx">
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.es-MX.resx">
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.es-MX.resx">
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.es-MX.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.es-MX.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.es-MX.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.es-MX.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.es-MX.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.es-MX.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.af.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.af.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.af.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.af.resx">
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.af.resx">
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.af.resx">
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.af.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.af.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.af.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.af.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.af.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.af.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CertificateSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ComponentEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeaderFooterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Native\Lines\LinesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Native\Navigation\GoToPageDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\FindControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PasswordConfirmationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PdfPasswordSecurityEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PdfSignatureEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\PageSetupEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\PrintEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\ReportServerCredentialsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\PageSetupUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WatermarkEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
+  <!-- 
 		Microsoft ResX Schema
 
 		Version 1.3
@@ -58,44 +58,530 @@
 			: using a System.ComponentModel.TypeConverter
 			: and then encoded with base64 encoding.
 	-->
-	
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>1.3</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ExceptionDialogLabel" xml:space="preserve">
+    <value>பின்வரும் பிழை ஏற்பட்டது:</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsNotValidNamespacePrefixDescription" xml:space="preserve">
+    <value>'{0}' என்பது செல்லுபடியாகும் பெயர்வெளி முன்னொட்டு விவரக்குறிப்பு அல்ல</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DataLayerAlreadyExists" xml:space="preserve">
+    <value>தரவு அடுக்கு ஏற்கெனவே உள்ளது: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AnErrorHasOccurredWhileLoadingTheModel" xml:space="preserve">
+    <value>மாதிரியை ஏற்றும்போது பிழை ஏற்பட்டுள்ளது. மூலம்: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AnErrorHasOccurredWithContext" xml:space="preserve">
+    <value>பிழை ஏற்பட்டுள்ளது, சூழல்: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AnErrorHasOccurredWhileProcessingAShortcut" xml:space="preserve">
+    <value>குறுக்குவழியைச் செயலாக்கும்போது பிழை ஏற்படுகிறது: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AnUnsavedObjectCannotBeShown" xml:space="preserve">
+    <value>சேமிக்கப்படாத பொருளைக் காட்ட முடியாது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ApplicationIsNotStarted" xml:space="preserve">
+    <value>பயன்பாடு தொடங்கப்படவில்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AttributeShouldStartWithSymbol" xml:space="preserve">
+    <value>'{0}' பண்புக்கூறு '@' குறியுடன் தொடங்க வேண்டும்: '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AttributeModifyingFailed" xml:space="preserve">
+    <value>பண்புக்கூறை மாற்றுவது தோல்வியடைந்தது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ValidationCannotFindThePropertyWithinTheClass" xml:space="preserve">
+    <value>'{1}' பண்பைப் பயன்படுத்தும் '{0}' சரிபார்ப்பு விதியைச் சோதிக்க முடியவில்லை, ஏனெனில் இந்தப் பண்பு இலக்கு '{2}' வகுப்பில் இல்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotCreateAppropriateDetailItem" xml:space="preserve">
+    <value>'{0}'-க்குப் பொருத்தமான விவர உருப்படியை உருவாக்க முடியாது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotCreateAppropriatePropertyEditorForTheProperty" xml:space="preserve">
+    <value>'{0}.{1}' பண்புக்குப் பொருத்தமான பண்புத் திருத்தியை உருவாக்க முடியாது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotCreateTemplateByName" xml:space="preserve">
+    <value>பெயரின் அடிப்படையில் வார்ப்புருவை உருவாக்க முடியாது: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotFindDescendantOfXafApplicationClass" xml:space="preserve">
+    <value>உங்கள் பயன்பாட்டின் அமைப்புகளைக் கண்டறிய, பின்வரும் கோப்புறைகளில் XafApplication வகுப்பிலிருந்து பெறப்பட்ட வகுப்பைக் கண்டுபிடிக்க முடியவில்லை:
+{0}
+Windows Forms பயன்பாட்டிற்கு, இந்தக் கோப்புறைகள் உங்கள் பயன்பாட்டின் இயங்கக்கூடிய கோப்பைக் கொண்டிருக்க வேண்டும்.
+ASP.NET பயன்பாட்டிற்கு, இந்தக் கோப்புறைகள் உங்கள் WebApplication-இலிருந்து பெறப்பட்ட வகுப்பைக் கொண்ட அசெம்பிளியைக் கொண்டிருக்க வேண்டும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotFindThePropertyWithinTheClass" xml:space="preserve">
+    <value>'{1}' வகுப்பில் '{0}' பண்பைக் கண்டுபிடிக்க முடியாது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TemplateTypeInfoMissed" xml:space="preserve">
+    <value>'{0}' வகைக்கான TypeInfo-ஐக் கண்டறிய முடியவில்லை. உங்கள் வார்ப்புருவை ஓர் XAF தொகுதியில் வைக்க வேண்டும் அல்லது XafTypesInfo.Instance.FindTypeInfo(typeof({0})) முறையைப் பயன்படுத்தி அதை கைமுறையாகப் பதிவு செய்ய வேண்டும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotGenerateContent" xml:space="preserve">
+    <value>உள்ளடக்கத்தை உருவாக்க முடியாது: 'ClassName' பண்புக்கூறு காலியாக உள்ளது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotObtainTheEditingObject" xml:space="preserve">
+    <value>திருத்தப்படும் பொருளைப் பெற முடியாது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotProcessTheRequestedUrl" xml:space="preserve">
+    <value>கோரப்பட்ட URL-ஐச் செயலாக்க முடியாது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotProcessTheRequestedUrlActionItemWasNotFound" xml:space="preserve">
+    <value>கோரப்பட்ட URL-ஐச் செயலாக்க முடியாது, '{0}' செயல்பாட்டு உருப்படி கண்டறியப்படவில்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotReadDictionaryFromResource" xml:space="preserve">
+    <value>'{1}' அசெம்பிளியின் '{0}' வளத்திலிருந்து அகராதியைப் படிக்க முடியாது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ApplicationUpdaterDatabaseVersionIsNewer" xml:space="preserve">
+    <value>பயன்பாட்டை இயக்க முடியாது. தரவுத்தளப் பதிப்பு பயன்பாட்டுப் பதிப்பைவிடப் புதியது, ஆனால் புதிய பயன்பாட்டுப் பதிப்பைக் கொண்ட சேவையகம் கண்டறியப்படவில்லை. உள்ளமைவுக் கோப்பில் புதிய பயன்பாட்டுப் பதிப்புக்கான சரியான பாதை உள்ளதா என்பதைச் சரிபார்க்குமாறு நிர்வாகியிடம் கேட்கவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="GridControlIsAlreadyCreated" xml:space="preserve">
+    <value>EditMode பண்பை அமைக்க முடியாது. GridControl ஏற்கெனவே உருவாக்கப்பட்டுள்ளது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotSetEditValueAvailableValues" xml:space="preserve">
+    <value>'{0}' உரையின் அடிப்படையில் EditValue-ஐ அமைக்க முடியாது, கிடைக்கக்கூடிய மதிப்புகள்:\r\n{1}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotSetEditValueListIsEmpty" xml:space="preserve">
+    <value>'{0}' உரையின் அடிப்படையில் EditValue-ஐ அமைக்க முடியாது, பட்டியல் காலியாக உள்ளது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotShowViewUnknownContext" xml:space="preserve">
+    <value>காட்சியைக் காட்ட முடியாது, அறியப்படாத சூழல்: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotShowViewUnknownTarget" xml:space="preserve">
+    <value>காட்சியைக் காட்ட முடியாது, அறியப்படாத இலக்கு: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="RequiresCurrentObjectException" xml:space="preserve">
+    <value>நிபந்தனை மாறும் அளவுருக்களைப் பயன்படுத்துகிறது, ஆனால் தற்போதைய பொருள் குறிப்பிடப்படவில்லை என்பதால் CriteriaWrapper-ஐப் புதுப்பிக்க முடியாது. CriteriaWrapper-ஐப் புதுப்பிக்க, UpdateParametersValues(Object currentObject) முறையை அழைத்து, தற்போதைய பொருளை அளவுருவாக வழங்கவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotAddDuplicateProperty" xml:space="preserve">
+    <value>நகல் பண்புத் திருத்தியைச் சேர்க்க முடியாது: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotAddCollectionProperty" xml:space="preserve">
+    <value>'{0}' சேகரிப்பைச் சேர்க்க முடியாது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotAddToEmptySingleton" xml:space="preserve">
+    <value>Empty சிங்கிள்டனில் சேர்க்க முடியாது. சேகரிப்பின் புதிய இன்ஸ்டன்ஸை உருவாக்கவும்</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotCreateSchemaForAttribute" xml:space="preserve">
+    <value>பண்புக்கூறுக்கான திட்டவடிவத்தை மாற்ற முடியாது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotFindListViewWithId" xml:space="preserve">
+    <value>ID='{0}' கொண்ட பட்டியல் காட்சியைக் கண்டுபிடிக்க முடியாது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ClassDoesntImplementInterface" xml:space="preserve">
+    <value>'{0}' வகுப்பு '{1}' இடைமுகத்தைச் செயல்படுத்தவில்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="GridColumnExists" xml:space="preserve">
+    <value>அட்டவணையில் '{0}' நெடுவரிசை ஏற்கெனவே உள்ளது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="GridColumnDoesNotExist" xml:space="preserve">
+    <value>அட்டவணையில் '{0}' நெடுவரிசை இல்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConfigFileDoesNotExists" xml:space="preserve">
+    <value>'{0}' உள்ளமைவுக் கோப்பு இல்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DictionaryPathItemParsingFailed" xml:space="preserve">
+    <value>அகராதிப் பாதை உருப்படியைப் பாகுபடுத்துவது தோல்வியடைந்தது. '{0}' கோவையில் தொடரியல் பிழை உள்ளது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DictionaryPathParsingFailed" xml:space="preserve">
+    <value>அகராதிப் பாதையைப் பாகுபடுத்துவது தோல்வியடைந்தது. '{0}' கோவையில் தொடரியல் பிழை உள்ளது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DuplicateComponentIdentifier" xml:space="preserve">
+    <value>நகலான கூறு அடையாளங்காட்டி '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ErrorOccursWhileAddingTheCustomProperty" xml:space="preserve">
+    <value>'{1}' வகையில் '{2}' தனிப்பயன் பண்பை ('{0}' பண்பு வகை) சேர்க்கும்போது பிழை ஏற்படுகிறது: '{3}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IncompatibleParametersCombinationOnViewChanged" xml:space="preserve">
+    <value>இணக்கமற்ற அளவுருச் சேர்க்கை. PopupWindow, முதன்மைக் காட்சியின் அதே ObjectSpace-ஐக் கொண்டுள்ளது.  இருப்பினும், மேல்தோன்றும் சாளரத்தின் DialogController-இல் உள்ள SaveOnAccept பண்பு true என அமைக்கப்பட்டுள்ளது. அழைக்கப்பட்ட மேல்தோன்றும் சாளரத்திற்கு புதிய ObjectSpace-ஐப் பயன்படுத்தவும் அல்லது DialogController. SaveOnAccept பண்பை false என அமைக்கவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LayoutControlInvalidCount" xml:space="preserve">
+    <value>தவறான எண்ணிக்கை: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InfiniteRecursionDetected" xml:space="preserve">
+    <value>முடிவில்லா தற்சுழற்சி கண்டறியப்பட்டது: '{2}' காட்சி உருப்படியால் '{0}' காட்சி {1} முறை உருவாக்கப்பட்டது. இந்தக் காட்சி உருப்படி தளவமைப்பிலிருந்து அகற்றப்பட்டுள்ளது. இந்தப் பிழையைச் சரிசெய்ய, பின்வரும் அறிவுத்தளக் கட்டுரையில் உள்ள பொருத்தமான தீர்வைப் பயன்படுத்தவும்: https://www.devexpress.com/kb=B181657.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InvalidApplicationVersion" xml:space="preserve">
+    <value>'{0}' இடத்தில் செல்லுபடியாகாத பயன்பாட்டுப் பதிப்பு</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InvalidParametrizedActionValueType" xml:space="preserve">
+    <value>'{0}' அளவுருவாக்கப்பட்ட செயலுக்குச் செல்லுபடியாகாத மதிப்பு வகை ஒதுக்கப்பட்டுள்ளது. அதற்குப் பதிலாக முழு எண், சரம் அல்லது தேதி/நேரம் வகையை அமைக்கவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ItsImpossibleToFindPathForNode" xml:space="preserve">
+    <value>'{1}' கணுவிற்கான பாதை='{0}' என்பதைக் கண்டறிய முடியாது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ItsImpossibleToFindSourceNode" xml:space="preserve">
+    <value>SourceNode='{0}\\{1}' என்பதைக் கண்டறிய முடியாது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ListEditorShouldImplement" xml:space="preserve">
+    <value>ListEditor, IDXPopupMenuHolder இடைமுகத்தைச் செயலாக்க வேண்டும்</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ModulesHasAlreadyBeenLoaded" xml:space="preserve">
+    <value>தொகுதிகள் ஏற்கெனவே ஏற்றப்பட்டுள்ளன</value>
+    <comment>AI</comment>
+  </data>
+  <data name="NameAndValueCollectionsShouldHaveEqualLengths" xml:space="preserve">
+    <value>பெயர்களின் தொகுப்பும் மதிப்புகளின் தொகுப்பும் சம எண்ணிக்கையைக் கொண்டிருக்க வேண்டும்</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ObjectFormatterFormatStringIsInvalid" xml:space="preserve">
+    <value>குறிப்பிடப்பட்ட வடிவமைப்புச் சரம் செல்லுபடியாகாததால் பொருளை வடிவமைக்க முடியாது: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PageCanOnlyContainOneInstanceOfControl" xml:space="preserve">
+    <value>பக்கத்தில் '{0}' கட்டுப்பாட்டின் ஒரு நேர்வு மட்டுமே இருக்க முடியும்</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PermissionIsDenied" xml:space="preserve">
+    <value>அனுமதி மறுக்கப்பட்டுள்ளது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ProcessWasAborted" xml:space="preserve">
+    <value>செயல்பாடு நிறுத்தப்பட்டது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ResourceItemWithNameIsNotFound" xml:space="preserve">
+    <value>'{0}' என்ற பெயருடைய வள உருப்படி கண்டறியப்படவில்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="RuleSetClearingIsDenied" xml:space="preserve">
+    <value>RuleSet-ஐக் காலியாக்க அனுமதி மறுக்கப்பட்டுள்ளது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SourceAttributeExpressionShouldStartWith" xml:space="preserve">
+    <value>மூலப் பண்புக்கூறு கோவை '{0}' எனத் தொடங்க வேண்டும்: '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SourceAttributePathShouldConsistOf" xml:space="preserve">
+    <value>மூலப் பண்புக்கூறு பாதையில் ஒன்று அல்லது அதற்கு மேற்பட்ட கணுப் பெயர்களும் இறுதியில் பண்புக்கூறு பெயரும் இருக்க வேண்டும்; இவை '\\' குறியீட்டால் பிரிக்கப்பட்டிருக்க வேண்டும்: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SourceNodeExpressionShouldStartWith" xml:space="preserve">
+    <value>SourceNode கோவை '{0}' எனத் தொடங்க வேண்டும்: '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheAssemblyDoesntReferAssembly" xml:space="preserve">
+    <value>'{0}' அசெம்பிளி, {1} ({2}) அசெம்பிளிக்கான குறிப்பைக் கொண்டிருக்கவில்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheClassIsNotFoundInBOModel" xml:space="preserve">
+    <value>BOModel இல் '{0}' வகுப்பு காணப்படவில்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MethodShouldBeUsed" xml:space="preserve">
+    <value>'{0}' முறையைப் பயன்படுத்த வேண்டும்</value>
+    <comment>AI</comment>
+  </data>
+  <data name="NodeContainsDuplicatedChildNodes" xml:space="preserve">
+    <value>'{0}' கணுவில் திறவுகோல் பண்புக்கூறின் மதிப்பாக '{1}' கொண்ட இரண்டு துணைக் கணுக்கள் உள்ளன. \r\n  கணு1: '{2}'\r\n  கணு2: '{3}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="NodeWasNotFound" xml:space="preserve">
+    <value>'{0}' கணு கண்டறியப்படவில்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InvalidValueOfEnumProperty" xml:space="preserve">
+    <value>{0} பொருளின் {1} பண்பில் தவறான {2} மதிப்பு உள்ளது. {4} வணிக வகுப்பின் AfterConstruction முறையில், சரியான {3} பட்டியலாக்க மதிப்பைக் கொண்டு பண்பைத் தொடக்கநிலைப்படுத்தவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="NotRegisteredReadOnlyParameterException" xml:space="preserve">
+    <value>'{0}' படிக்க மட்டும் அனுமதிக்கப்பட்ட அளவுரு ParametersFactory-இல் பதிவு செய்யப்படவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TypeDoesNotContainTheMember" xml:space="preserve">
+    <value>'{0}' வகையில் '{1}' உறுப்பு இல்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheTypeIsNotDescendantOf" xml:space="preserve">
+    <value>'{0}' வகை '{1}' இலிருந்து பெறப்பட்ட வகை அல்ல</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TypeIsNotAEnum" xml:space="preserve">
+    <value>'{0}' வகை எண்ணுரு வகை அல்ல</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ValueCannotBeStoredIntoTheProperty" xml:space="preserve">
+    <value>'{0}' மதிப்பை '{1}' பண்பில் சேமிக்க முடியாது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConfigFileHasNoModuleNames" xml:space="preserve">
+    <value>'add\[@key="Modules"]' முனையில் தொகுதிப் பட்டியல் இருக்க வேண்டும், உள்ளமைவுக் கோப்பு '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ApplicationUpdaterAssemblyDoesNotExist" xml:space="preserve">
+    <value>'{0}' கோப்புறையில் '{1}' அசெம்பிளி இல்லாததால் பயன்பாட்டைப் புதுப்பிக்க முடியாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheAspectIsNotPresentInAspectsCollection" xml:space="preserve">
+    <value>'{0}' அம்சம் அம்சங்களின் தொகுப்பில் இல்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheClassNameAttributeIsEmpty" xml:space="preserve">
+    <value>குறிப்பிடப்பட்ட காட்சி முனையின் ClassName பண்புக்கூறு காலியாக உள்ளது:</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheClassNameAttributeRefersToADifferentType" xml:space="preserve">
+    <value>குறிப்பிடப்பட்ட காட்சி முனையின் ClassName பண்புக்கூறு வேறொரு வகையைக் குறிக்கிறது. \r\nகுறுக்குவழியின் பொருள் வகை: {0}\r\nகாட்சி முனையின் பொருள் வகை: {1}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheCreateApplicationModulesManagerReturnsNull" xml:space="preserve">
+    <value>CreateApplicationModulesManager முறை null ஐத் திருப்பித் தருகிறது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ParameterConflictsWithPropertyException" xml:space="preserve">
+    <value>நிபந்தனையில் உள்ள '{0}' படிக்க மட்டும் அனுமதிக்கப்பட்ட அளவுரு, '{1}' வகுப்பின் '{0}' பண்புடன் முரண்படுகிறது. படிக்க மட்டும் அனுமதிக்கப்பட்ட அளவுருவைக் குறிப்பிட, '@@{0}' தொடரியலைப் பயன்படுத்தவும். பண்பைக் குறிப்பிட, '@this.{0}' தொடரியலைப் பயன்படுத்தவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CompatibilityDatabaseIsOldError" xml:space="preserve">
+    <value>தரவுத்தளப் பதிப்பு பயன்பாட்டுப் பதிப்பைவிடப் பழையது. தரவுத்தளத்தைப் புதுப்பிக்க வேண்டும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CompatibilityApplicationIsOldError" xml:space="preserve">
+    <value>தரவுத்தளப் பதிப்பு பயன்பாட்டுப் பதிப்பைவிட உயர்ந்தது. பயன்பாட்டைப் புதுப்பிக்க வேண்டும். உங்கள் கணினி நிர்வாகியைத் தொடர்புகொள்ளவும் அல்லது புதிய பதிப்பைப் பதிவிறக்கவும்.\r\nகூடுதல் தகவல்: '{1}' தொகுதியின் உள்ளூர் பதிப்பு {0}, தரவுத்தளத்தில் உள்ள பதிப்பு {2}-ஐவிடக் குறைந்தது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheExpressionShouldConsistOf" xml:space="preserve">
+    <value>கோவை, ';' குறியால் பிரிக்கப்பட்ட தேடல் கோவையையும் மூலப் பண்புக்கூறின் பெயரையும் கொண்டிருக்க வேண்டும்: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheExpressionStringContainsANumberOfExpressions" xml:space="preserve">
+    <value>'expressionString' சரத்தில் {0} கோவைகள் உள்ளன</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PassedObjectBelongsToAnotherObjectSpace" xml:space="preserve">
+    <value>வழங்கப்பட்ட பொருள் வேறொரு ObjectSpace-ஐச் சேர்ந்தது. பொருட்கள் சேராத ObjectSpace வழியாக அவற்றைக் கையாளும்போது இந்தப் பிழை ஏற்படலாம். எடுத்துக்காட்டாக, XafApplication.CreateDetailView முறையைப் பயன்படுத்தும்போது, அந்த முறையில் அளவுருவாகப் பயன்படுத்தப்படும் ObjectSpace-இலிருந்து வேறுபட்ட ObjectSpace-இலிருந்து பெறப்பட்ட பொருளை வழங்கினால் இந்தப் பிழை ஏற்படலாம். இந்தப் பிழையைச் சரிசெய்ய, நீங்கள் கையாளும் அனைத்துப் பொருட்களும் ஒரே ObjectSpace-ஐச் சேர்ந்தவை என்பதை உறுதிப்படுத்த வேண்டும்.\r\nபெரும்பாலான சந்தர்ப்பங்களில், இந்தப் பிழையைத் தவிர்க்க, வழங்கப்பட்ட பொருளை இலக்கு ObjectSpace-இல் பெறுவதற்கு ObjectSpace.GetObject/GetObjectByKey முறைகளை அழைப்பது போதுமானது.\r\nஇது உதவவில்லை என்றால், https://supportcenter.devexpress.com/ என்ற முகவரியில் எங்கள் ஆதரவுக் குழுவைத் தொடர்புகொள்ளவும்</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AlreadyUsedObjectSpace" xml:space="preserve">
+    <value>இந்த ObjectSpace ஏற்கெனவே மற்றொரு மூலக் காட்சிக்கு ஒதுக்கப்பட்டுள்ளது: '{0}'. ஒரு மூலக் காட்சியால் ஏற்கெனவே பயன்படுத்தப்படும் ObjectSpace-ஐ மற்றொரு மூலக் காட்சிக்கு ஒதுக்க முயலும்போது மட்டுமே இந்தப் பிழை ஏற்படும். எடுத்துக்காட்டாக, ஒரு ViewController-இல் XafApplication.CreateDetailView/CreateListView முறைகளைப் பயன்படுத்தி, View.IsRoot பண்பு true ஆக இருக்கும்போது View.ObjectSpace பொருளை இந்த முறைகளுக்கு அளவுருவாக அனுப்பினால் இந்தப் பிழை ஏற்படலாம்.\r\nஇந்தப் பிழையைத் தவிர்க்க, XafApplication.CreateObjectSpace முறை மூலம் உருவாக்கப்பட்ட புதிய ObjectSpace இன்ஸ்டன்ஸை இந்த முறைகளுக்கு அனுப்பினால் போதும். அல்லது, இந்த முறைகளுக்குப் பொருத்தமான அளவுருவை அனுப்பி மூலக் காட்சிகள் அல்லாத காட்சிகளை உருவாக்கலாம்.\r\nஇது உதவவில்லை என்றால், https://supportcenter.devexpress.com/ என்ற முகவரியில் எங்கள் ஆதரவுக் குழுவைத் தொடர்புகொள்ளவும்</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ThePassedFileIsNotADllOrConfig" xml:space="preserve">
+    <value>வழங்கப்பட்ட '{0}' கோப்பு *.dll அல்லது *.config கோப்பு அல்ல</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IncorrectConfigFile" xml:space="preserve">
+    <value>வழங்கப்பட்ட '{0}' உள்ளமைவுக் கோப்பில் '&lt;add key="Modules"' கணு இல்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DuplicatedVisibleInDashboardsClassCaption" xml:space="preserve">
+    <value>'{0}' வகையும் '{1}' வகையும் ஒரே '{2}' தலைப்பைக் கொண்டுள்ளதால், அவற்றை Dashboards தொகுதியில் பயன்படுத்த முடியாது. VisibleInDashboards பண்புக்கூறு சேர்க்கப்பட்ட அனைத்து வகைகளும் தனித்துவமான தலைப்புகளைக் கொண்டிருக்க வேண்டும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheTypeAttributeCannotBeEmpty" xml:space="preserve">
+    <value>'Type' பண்புக்கூறு காலியாக இருக்கக்கூடாது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AutoCreateOptionIs" xml:space="preserve">
+    <value>updatingReadOnlyDataStore.AutoCreateOption-இன் மதிப்பு {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheValueWasLocked" xml:space="preserve">
+    <value>மதிப்பு பூட்டப்பட்டது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="WindowWasNotFound" xml:space="preserve">
+    <value>'{0}' அடையாளத்தைக் கொண்டு சாளரத்தைக் கண்டறிய முடியவில்லை. பதிவு செய்யப்பட்ட சாளரங்கள்: '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPDictionaryIsNull" xml:space="preserve">
+    <value>XPDictionary என்பது null ஆக உள்ளது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ThereIsAlreadyRegisteredCreatorForFormat" xml:space="preserve">
+    <value>'{0}' வடிவமைப்பிற்கு ஏற்கனவே ஒரு உருவாக்கி பதிவு செய்யப்பட்டுள்ளது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CustomizePopupWindowParamsEventArgsViewIsNull" xml:space="preserve">
+    <value>இந்தப் பிழையைத் தவிர்க்க, CustomizePopupWindowParams நிகழ்வைக் கையாளும்போது CustomizePopupWindowParamsEventArgs.View பண்புக்கு மதிப்பை ஒதுக்க வேண்டும். இதைச் செய்ய, XafApplication.CreateDetailView/CreateListView முறைகளைப் பயன்படுத்தி ஒரு காட்சியை உருவாக்கவும். இந்த வகுப்புகள் மற்றும் முறைகள் பற்றிய விரிவான தகவலுக்கு தயாரிப்பின் ஆவணங்களைப் பார்க்கவும். இது உதவவில்லை என்றால், https://supportcenter.devexpress.com/ என்ற முகவரியில் எங்கள் ஆதரவுக் குழுவைத் தொடர்புகொள்ளவும்</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToAssignDisabledActionItem" xml:space="preserve">
+    <value>முடக்கப்பட்ட உருப்படியை ஒதுக்க முடியவில்லை. செயல்: {0}. உருப்படி: {1}. முடக்கப்பட்டதற்கான காரணங்கள்: {2}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToAssignInvisibleActionItem" xml:space="preserve">
+    <value>காணப்படாத உருப்படியை ஒதுக்க முடியவில்லை. செயல்: {0}. உருப்படி: {1}. காணப்படாததற்கான காரணங்கள்: {2}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToCast" xml:space="preserve">
+    <value>'{0}' வகையைச் சேர்ந்த பொருளை '{1}' வகைக்கு மாற்ற முடியவில்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToChangeChildrenOfNodeDueItIsLocked" xml:space="preserve">
+    <value>'{0}' முனை பூட்டப்பட்டுள்ளதால் அதன் சேய் முனைகளை மாற்ற முடியவில்லை.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToChangeConnectionString" xml:space="preserve">
+    <value>இணைப்புச் சரத்தை மாற்ற முடியவில்லை. ஏற்கனவே இணைக்கப்பட்டுள்ளது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToChangeValueOfAttributeDueItIsLocked" xml:space="preserve">
+    <value>பூட்டப்பட்டுள்ளதால் '{0}' பண்புக்கூறின் மதிப்பை மாற்ற முடியவில்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ActionMethodShouldBeNonGeneric" xml:space="preserve">
+    <value>'{1}' வகுப்பின் '{0}' முறைக்கான செயல்பாட்டை உருவாக்க முடியவில்லை. செயல்பாட்டு முறை ஜெனரிக் அல்லாததாக இருக்க வேண்டும்</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ActionMethodShouldBeParameterless" xml:space="preserve">
+    <value>'{1}' வகுப்பின் '{0}' முறைக்கான செயல்பாட்டை உருவாக்க முடியவில்லை. செயல்பாட்டு முறை அளவுருக்கள் இல்லாததாக இருக்க வேண்டும்</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToCreateObjectSpace" xml:space="preserve">
+    <value>ObjectSpace ஐ உருவாக்க முடியவில்லை. dataLayer என்பது null ஆக உள்ளது அல்லது connectionString காலியாக உள்ளது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToCreateUpdatingReadonlySessionAutoCreateOption" xml:space="preserve">
+    <value>UpdatingReadOnlySession ஐ உருவாக்க முடியவில்லை. dataLayer.AutoCreateOption இன் மதிப்பு {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToCreateUpdateSessionDataLayerIsNull" xml:space="preserve">
+    <value>UpdatingSession ஐ உருவாக்க முடியவில்லை. dataLayer என்பது null ஆக உள்ளது அல்லது connectionString காலியாக உள்ளது</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToCreateUpdateSessionAutoCreateOption" xml:space="preserve">
+    <value>UpdatingSession ஐ உருவாக்க முடியவில்லை. dataLayer.AutoCreateOption இன் மதிப்பு {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToExecuteDisabledOrInactiveAction" xml:space="preserve">
+    <value>முடக்கப்பட்ட அல்லது செயலற்ற {2} செயலை இயக்க முடியவில்லை. முடக்கப்பட்டதற்கான காரணங்கள்: {0}, செயலற்றதற்கான காரணங்கள்: {1}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToFindADetailViewForType" xml:space="preserve">
+    <value>'{0}' பொருள் வகைக்கான விவரக் காட்சியைக் கண்டறிய முடியவில்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToFindAListViewForType" xml:space="preserve">
+    <value>'{0}' பொருள் வகைக்கான பட்டியல் காட்சியைக் கண்டறிய முடியவில்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToFindPropertyInType" xml:space="preserve">
+    <value>'{1}' வகையில் '{0}' பண்பைக் கண்டறிய முடியவில்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToFindType" xml:space="preserve">
+    <value>'{0}' வகையைக் கண்டறிய முடியவில்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToInitializeFileDataProperty" xml:space="preserve">
+    <value>{1} பொருளில் உள்ள {0} பண்பைத் தொடக்கநிலைப்படுத்த முடியவில்லை, ஏனெனில் இந்தப் பண்பு படிக்க மட்டும் உரியது, அல்லது {2} வகையில் இயல்புநிலை கட்டமைப்பி இல்லை, அல்லது அதை உருவாக்க உங்களுக்கு அனுமதிகள் இல்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CurrentObjectIsNotSet" xml:space="preserve">
+    <value>'{0}' பண்பை அமைக்க முடியவில்லை. தற்போதைய பொருள் அமைக்கப்படவில்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToSetReadOnlyProperty" xml:space="preserve">
+    <value>படிக்க மட்டும் உரிய '{0}' பண்பை அமைக்க முடியவில்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnknownException" xml:space="preserve">
+    <value>அறியப்படாத விதிவிலக்கு ஏற்படுகிறது. விதிவிலக்கின் விவரங்களைப் பெற முடியவில்லை</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnknownValue" xml:space="preserve">
+    <value>அறியப்படாத மதிப்பு: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnknownViewNodeName" xml:space="preserve">
+    <value>அறியப்படாத காட்சி முனையின் பெயர்: '{0}'\r\nஅனுமதிக்கப்பட்ட பெயர்கள்: '{1}', '{2}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ValidationMessageTemplateHasInvalidFormat" xml:space="preserve">
+    <value>சரிபார்ப்புச் செய்தி வார்ப்புருவின் வடிவமைப்பு செல்லாதது: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotAccessCollectionCollectionSourceIsBeingIntialized" xml:space="preserve">
+    <value>Collection Source தற்போது தொடக்கநிலையாக்கப்படுவதால் Collection பண்பை அணுக முடியாது. எடுத்துக்காட்டாக, ஒரு ViewController-இன் OnActivated முறையில் Collection பண்பை அணுக முயலும்போது இந்தப் பிழை ஏற்படலாம். இந்தப் பிழையைத் தவிர்க்க, Collection Source தொடக்கநிலையாக்கப்பட்ட பிறகு Collection பண்பை அணுக வேண்டும். இதைச் செய்வதற்கான சிறந்த வழி CollectionChanged நிகழ்வைக் கையாள்வதாகும். இந்த வகுப்புகள் மற்றும் முறைகள் பற்றிய விரிவான தகவலுக்கு தயாரிப்பின் ஆவணங்களைப் பார்க்கவும். இது உதவவில்லை என்றால், https://supportcenter.devexpress.com/ என்ற முகவரியில் எங்கள் ஆதரவுக் குழுவைத் தொடர்புகொள்ளவும்</value>
+    <comment>AI</comment>
+  </data>
+  <data name="YouCannotChangeCurrentAspect" xml:space="preserve">
+    <value>தற்போதைய அம்சத்தை நீங்கள் மாற்ற முடியாது. அது தற்போதைய தொடரிழையின் மொழி மற்றும் வட்டார அமைப்புகளைச் சார்ந்துள்ளது</value>
+    <comment>AI</comment>
+  </data>
 </root>

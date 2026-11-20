@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="EditReportControllerV2.Edit" Caption="Izmjena" />
+      <Action Id="ExecuteReportV2" Caption="Pokreni izvještaj" />
+      <Action Id="ShowReportDesignerV2" Caption="Prikaži dizajner izvještaja" />
+    </Actions>
+  </ActionDesign>
+  <Localization>
+    <LocalizationGroup Name="Captions">
+      <LocalizationItem Name="AllFiles" Value="Sve datoteke" />
+      <LocalizationItem Name="ExportLayout" Value="Izvezi raspored u datoteku..." />
+      <LocalizationItem Name="ImportLayout" Value="Uvezi raspored iz datoteke..." />
+      <LocalizationItem Name="ReportDesignerError" Value="Greška" />
+      <LocalizationItem Name="ReportDesignerWarning" Value="Upozorenje" />
+      <LocalizationItem Name="ReportFiles" Value="Datoteke izvještaja" />
+    </LocalizationGroup>
+  </Localization>
+  <Views>
+    <DetailView Id="NewReportWizardParameters_DetailView" Caption="Čarobnjak za novi izvještaj">
+      <Items>
+        <StaticText Id="ReportText" Text="Za kreiranje novog izvještaja, upišite naziv u polje isopd i odaberite s popisa primarni tip podataka za izvještaj." />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="Static" Caption="Statički(11)">
+            <LayoutGroup Id="NewReportParams" Caption="Novi parametri za izvještaj">
+              <LayoutGroup Id="SimpleEditors" Caption="Jednostavni uređivači" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

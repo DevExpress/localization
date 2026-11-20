@@ -99,53 +99,76 @@
   </resheader>
   <data name="ObjectToSaveWasChanged" xml:space="preserve">
     <value>您试图保存的对象是由其他用户更改。请刷新数据。</value>
+    <comment>Community:您尝试保存的对象已被其他用户修改。请刷新数据。</comment>
   </data>
   <data name="TheFollowingErrorOccurred" xml:space="preserve">
     <value>出现以下错误：</value>
+    <comment>Community:发生了以下错误：</comment>
   </data>
   <data name="UserFriendlyConnectionFailedException" xml:space="preserve">
     <value>与数据库的连接失败。请联系您的系统管理员。</value>
+    <comment>Community:连接数据库失败。请联系系统管理员。</comment>
   </data>
   <data name="FieldValueSizeExceedsMaxLength" xml:space="preserve">
     <value>此字段的值的长度不能超过 {0}</value>
+    <comment>Community:此字段值的长度不能超过 {0}</comment>
   </data>
   <data name="ObjectAccessPermissionCannotBeEmpty" xml:space="preserve">
     <value>的对象类型字段不能为空和至少一个 access 字段必须有值，没有任何的区别。</value>
+    <comment>Community:“对象类型”字段不能为空，且至少一个访问字段的值必须不是“无”。</comment>
   </data>
   <data name="ActionIsNotSingleChoiceAction" xml:space="preserve">
     <value>不能注册 '{0}' 行动 '{1}' 行动的容器中。'{0}' 行动不是 '{2}' 类型。</value>
+    <comment>Community:无法在操作容器“{1}”中注册操作“{0}”。操作“{0}”不属于“{2}”类型。</comment>
   </data>
   <data name="ApplicationUpdateError" xml:space="preserve">
     <value>更新已成功完成。但是，数据库的版本仍大于应用程序的版本。请联系您的系统管理员。</value>
+    <comment>Community:更新已成功完成。但是，数据库版本仍高于应用程序版本。请联系系统管理员。</comment>
   </data>
   <data name="CircularReference" xml:space="preserve">
     <value>不能完成此操作，因为它会导致循环引用。</value>
+    <comment>Community:无法完成此操作，因为它会导致循环引用。</comment>
   </data>
   <data name="CriteriaEditorsDataTypeIsNull" xml:space="preserve">
     <value>请指定您要为其构造一个标准的对象类型.</value>
+    <comment>Community:请指定要为其构建条件的对象类型。</comment>
   </data>
   <data name="LogonAttemptsAmountedToLimitWin" xml:space="preserve">
     <value>三次不成功的登录尝试，现在应用程序将会关闭之后。请考虑联系管理员对您的登录信息。</value>
+    <comment>Community:登录尝试已失败3次，应用程序现在将关闭。请考虑联系管理员，咨询您的登录信息。</comment>
   </data>
   <data name="MaskValidationErrorMessage" xml:space="preserve">
     <value>输入丢失的符号</value>
+    <comment>Community:输入缺少字符</comment>
   </data>
   <data name="RequestedObjectHasBeenDeleted" xml:space="preserve">
     <value>在只读模式下显示数据，因为它已被删除。</value>
+    <comment>Community:数据已被删除，因此以只读模式显示。</comment>
   </data>
   <data name="RequestedObjectIsNotFound" xml:space="preserve">
     <value>找不到请求的对象，因此无法处理。</value>
+    <comment>Community:未找到请求的对象，无法进行处理。</comment>
   </data>
   <data name="SimultaneousChangeDataMessage" xml:space="preserve">
     <value>警告： 在检测到相同的信息在不同的窗口视图的同时修改： \n{0} \n它将能够在一个窗口/视图只保存修改。</value>
+    <comment>Community:警告：检测到在不同窗口/视图中同时修改同一信息：\n
+{0}\n
+只能在一个窗口/视图中保存修改。</comment>
   </data>
   <data name="SimultaneousChangeDataMessageItem" xml:space="preserve">
     <value>-'{0}' 窗口/视图 ({1})，'{2}' 对象 ({3})</value>
+    <comment>Community: - 窗口/视图 '{0}' ({1})，对象 '{2}' ({3})</comment>
   </data>
   <data name="SystemExceptionMessageFormat" xml:space="preserve">
     <value>错误编号为 {0} 已 occurred.\r\nError 消息： {1}</value>
+    <comment>Community:发生了编号为 {0} 的错误。\r\n错误消息：{1}</comment>
   </data>
   <data name="UserFriendlySqlException" xml:space="preserve">
     <value>错误发生了连接到数据库。请联系您的系统管理员。</value>
+    <comment>Community:连接数据库时发生错误。请联系系统管理员。</comment>
+  </data>
+  <data name="AsyncOperationInProgress" xml:space="preserve">
+    <value>操作已中止。异步操作正在进行。</value>
+    <comment>AI</comment>
   </data>
 </root>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ShowInReportV2" Caption="Mostra nel Report" ToolTip="Mostra i record selezionati nel report." />
+      <Action Id="PreviewReportV2" Caption="Anteprima" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.ReportDataV2" >
+      <OwnMembers>
+        <Member Name="DataTypeCaption" Caption="Tipo Dati" />
+        <Member Name="IsInplaceReport" Caption="Report sul Posto" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.EF.ReportDataV2" >
+      <OwnMembers>
+        <Member Name="DataTypeCaption" Caption="Tipo Dati" />
+        <Member Name="IsInplaceReport" Caption="Report sul Posto" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.ReportsV2.NewReportWizardParameters" Caption="Parametri Procedura Guidata Nuovo Report">
+      <OwnMembers>
+        <Member Name="DataType" Caption="Tipo Dati" />
+        <Member Name="ReportType" Caption="Tipo Report" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.ReportsV2.ReportType">
+        <LocalizationItem Name="Label" Value="Etichetta" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+</Application>

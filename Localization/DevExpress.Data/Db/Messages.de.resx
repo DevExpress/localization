@@ -119,50 +119,66 @@
   </resheader>
   <data name="ConnectionProvider_TypeMappingMissing" xml:space="preserve">
     <value>Der Datenbankprovider kann den Typ '{0}' nicht verarbeiten, da er nicht auf die Typen der unterliegenden Datenbank abgeblidet ist. Bitte einen anderen Typ verwenden.</value>
+    <comment>Community:Der Datenbankanbieter kann den Typ '{0}' nicht verarbeiten, da er keinem der Typen der zugrunde liegenden Datenbank zugeordnet ist. Verwenden Sie bitte einen anderen Typ.</comment>
   </data>
   <data name="ConnectionProvider_UnableToCreateDBObject" xml:space="preserve">
     <value>Fehler beim Erstellen von: '{0}' '{1}'. Vorgänger: '{2}'. Fehler: {3}</value>
+    <comment>Community:'{0}' '{1}' kann nicht erstellt werden. Übergeordnetes: '{2}'. Fehler: {3}</comment>
   </data>
   <data name="ConnectionProvider_SqlExecutionError" xml:space="preserve">
     <value>Führe Sql '{0}' mit den Parametern '{1}' aus. Ausnahme: '{2}'</value>
+    <comment>Community:Ausführung von SQL '{0}' mit Parametern '{1}'; Ausnahme: '{2}'</comment>
   </data>
   <data name="ConnectionProvider_SchemaCorrectionNeeded" xml:space="preserve">
     <value>Das Schema muss aktualisiert werden. Bitte den Systemadministrator kontaktieren. Sql Text: {0}</value>
+    <comment>Community:Das Schema muss aktualisiert werden. Wenden Sie sich an Ihren Systemadministrator. SQL-Text: {0}</comment>
   </data>
   <data name="ConnectionProvider_TableNameTooLong" xml:space="preserve">
     <value>Fehler beim Erstellen der Datenbanktabelle '{0}'. Der Name der Tabelle ist zu lang (länger als 64 Zeichen).</value>
+    <comment>Community:Die Datenbanktabelle '{0}' kann nicht erstellt werden. Der Name der Tabelle ist zu lang (mehr als 64 Zeichen)</comment>
   </data>
   <data name="ConnectionProvider_ColumnNameTooLong" xml:space="preserve">
     <value>Fehler beim Erstellen der Tabellenspalte '{1}' der Tabelle '{0}'. Der Name der Spalte ist zu lang (länger als 64 Zeichen).</value>
+    <comment>Community:Die Tabellenspalte '{1}' der Tabelle '{0}' kann nicht erstellt werden. Der Name der Spalte ist zu lang (mehr als 64 Zeichen)</comment>
   </data>
   <data name="ConnectionProvider_AtLeastOneColumnExpected" xml:space="preserve">
     <value>Mindestens eine Spalte erwartet</value>
+    <comment>Approved</comment>
   </data>
   <data name="ConnectionProvider_Locking" xml:space="preserve">
     <value>Das Objekt kann nicht bestehend bleiben. Es wurde von einem anderen Programm modifiziert oder gelöscht (bereinigt).</value>
+    <comment>Community:Das Objekt kann nicht gespeichert werden. Es wurde von einer anderen Anwendung geändert oder gelöscht (entfernt).</comment>
   </data>
   <data name="ConnectionProvider_UnableToOpenDatabase" xml:space="preserve">
     <value>Fehler beim Öffnen der Datenbank. Verbindungszeichenfolge: '{0}'; Fehler: '{1}'</value>
+    <comment>Community:Die Datenbank kann nicht geöffnet werden. Verbindungszeichenfolge: '{0}'; Fehler: '{1}'</comment>
   </data>
   <data name="CommandChannelHelper_CannotDeserializeResponse" xml:space="preserve">
     <value>Die Vorgangsantwort '{0}' kann aufgrund von Einschränkungen der XmlSerializer-Implementierung unter der Mono-Laufzeit nicht deserialisiert werden. Wenn Sie kleine Datenmengen deserealisieren müssen, legen Sie die DevExpress.Xpo.Helpers.CommandChannelHelper.EnableMonoDeserializationFixForSmallAmountsOfData-Eigenschaft auf 'true' fest, und versuchen Sie es erneut.</value>
+    <comment>Community:Die Antwort auf die Operation '{0}' kann aufgrund von Einschränkungen der XmlSerializer-Implementierung unter der Mono-Laufzeit nicht deserialisiert werden. Wenn Sie kleine Datenmengen deserialisieren müssen, setzen Sie die Eigenschaft DevExpress.Xpo.Helpers.CommandChannelHelper.EnableMonoDeserializationFixForSmallAmountsOfData auf 'true' und versuchen Sie es erneut.</comment>
   </data>
   <data name="ConnectionProviderSql_ParameterValueSizeExceedsMaximumSize" xml:space="preserve">
     <value>Der Parameter '{1}' konnte nicht erstellt werden. SQL: {0}. Der Wert length ({2}) überschreitet die Parametergröße ({3}).</value>
+    <comment>Community:Der Parameter '{1}' konnte nicht erstellt werden. SQL: {0}. Die Länge des Werts ({2}) überschreitet die Parametergröße ({3}).</comment>
   </data>
   <data name="IsInstanceOfTypeFunction_ClassNotFound" xml:space="preserve">
     <value>Die Funktion '{0}' kann den angegebenen Typ '{1}' nicht finden.</value>
+    <comment>Community:Die Funktion '{0}' kann den angegebenen Typ nicht finden: '{1}'.</comment>
   </data>
   <data name="IsInstanceOfTypeFunction_ParametersMustBeConstants" xml:space="preserve">
     <value>Die Funktion '{0}' erwartet einen konstanten Wert als das Argument 'typeName'. Ein Ausdruck wird bereitgestellt.</value>
+    <comment>Community:Die Funktion '{0}' erwartet einen konstanten Wert als Argument 'typeName'. Ein Ausdruck wurde übergeben.</comment>
   </data>
   <data name="IsInstanceOfTypeFunction_InvalidArgument_TypeName" xml:space="preserve">
     <value>Die Funktion '{0}' erwartet einen Zeichenfolgenwert als das Argument 'typeName'. Es wird ein Wert vom Typ '{1}' angegeben.</value>
+    <comment>Community:Die Funktion '{0}' erwartet einen Zeichenfolgenwert als Argument 'typeName'. Ein Wert vom Typ '{1}' wurde übergeben.</comment>
   </data>
   <data name="IsExactTypeFunction_ShouldNotBeCalledExplicitly" xml:space="preserve">
     <value>Diese Methode sollte nicht explizit aufgerufen werden.</value>
+    <comment>Approved</comment>
   </data>
   <data name="IsInstanceOfTypeFunction_ShouldNotBeCalledExplicitly" xml:space="preserve">
     <value>Diese Methode sollte nicht explizit aufgerufen werden.</value>
+    <comment>Approved</comment>
   </data>
 </root>

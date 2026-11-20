@@ -60,45 +60,45 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string"/>
-              <xsd:attribute name="type" type="xsd:string"/>
-              <xsd:attribute name="mimetype" type="xsd:string"/>
-              <xsd:attribute ref="xml:space"/>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string"/>
-              <xsd:attribute name="name" type="xsd:string"/>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
-              <xsd:attribute ref="xml:space"/>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required"/>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -119,55 +119,78 @@
   </resheader>
   <data name="FieldValueSizeExceedsMaxLength" xml:space="preserve">
     <value>La longitud de este valor de campo no puede superar {0}</value>
+    <comment>Community:La longitud del valor de este campo no puede superar {0}</comment>
   </data>
   <data name="LogonAttemptsAmountedToLimitWin" xml:space="preserve">
     <value>Después de tres intentos fallidos de ingresar, la aplicación se cierra. Por favor, considere contactar a un administrador acerca de sus datos de acceso.</value>
+    <comment>Community:Tras tres intentos fallidos de inicio de sesión, la aplicación se cerrará ahora. Considere ponerse en contacto con un administrador para consultar sus datos de inicio de sesión.</comment>
   </data>
   <data name="ObjectAccessPermissionCannotBeEmpty" xml:space="preserve">
     <value>La 'Object Type' campo no debe estar vacío y al menos un campo de acceso debe tener un valor diferente de None.</value>
+    <comment>Community:El campo 'Tipo de objeto' no debe estar vacío y al menos un campo de acceso debe tener un valor distinto de Ninguno.</comment>
   </data>
   <data name="ObjectToSaveWasChanged" xml:space="preserve">
     <value>El objeto que está tratando de salvar fue cambiado por otro usuario. Por favor, volver a cargar los datos.</value>
+    <comment>Community:Otro usuario ha modificado el objeto que está intentando guardar. Actualice los datos.</comment>
   </data>
   <data name="RequestedObjectHasBeenDeleted" xml:space="preserve">
     <value>Los datos se muestran en modo de sólo lectura porque se ha eliminado.</value>
+    <comment>Community:Los datos se muestran en modo de solo lectura porque se han eliminado.</comment>
   </data>
   <data name="RequestedObjectIsNotFound" xml:space="preserve">
     <value>objeto solicitado no se encuentra y no puede ser procesado.</value>
+    <comment>Community:No se encuentra el objeto solicitado y no se puede procesar.</comment>
   </data>
   <data name="SimultaneousChangeDataMessage" xml:space="preserve">
     <value>Advertencia:Se detectan modificaciones simultáneas de la misma información en diferentes ventanas / puntos de vista :\n
 {0}\n 
 Es posible guardar las modificaciones en una sola ventana / vista .</value>
+    <comment>Community:Advertencia: se han detectado modificaciones simultáneas de la misma información en distintas ventanas/vistas:\n
+{0}\n
+Solo se podrán guardar las modificaciones en una ventana/vista.</comment>
   </data>
   <data name="SimultaneousChangeDataMessageItem" xml:space="preserve">
     <value>- '{0}' ventana / vista ({1}), '{2}' objeto ({3})</value>
+    <comment>Community: - ventana/vista '{0}' ({1}), objeto '{2}' ({3})</comment>
   </data>
   <data name="CircularReference" xml:space="preserve">
     <value>Esta operación no puede completarse, porque lleva a una referencia circular.</value>
+    <comment>Community:Esta operación no se puede completar porque genera una referencia circular.</comment>
   </data>
   <data name="SystemExceptionMessageFormat" xml:space="preserve">
     <value>Un error con el número de {0} se ha producido.\r\nMensaje de error: {1}</value>
+    <comment>Community:Se ha producido un error con el número {0}.\r\nMensaje de error: {1}</comment>
   </data>
   <data name="TheFollowingErrorOccurred" xml:space="preserve">
     <value>Ocurrió el siguiente error:</value>
+    <comment>Community:Se ha producido el siguiente error:</comment>
   </data>
   <data name="UserFriendlyConnectionFailedException" xml:space="preserve">
     <value>La conexión a la base de datos ha fallado. Póngase en contacto con el administrador del sistema.</value>
+    <comment>Approved</comment>
   </data>
   <data name="UserFriendlySqlException" xml:space="preserve">
     <value>Ha ocurrido un error de conexión a la base de datos. Póngase en contacto con el administrador del sistema.</value>
+    <comment>Community:Se ha producido un error al conectar con la base de datos. Póngase en contacto con el administrador del sistema.</comment>
   </data>
   <data name="MaskValidationErrorMessage" xml:space="preserve">
     <value>Entrada falta símbolos</value>
+    <comment>Community:Faltan caracteres en la entrada</comment>
   </data>
   <data name="ApplicationUpdateError" xml:space="preserve">
     <value>La actualización ha sido con éxito et. Sin embargo, la versión de base de datos es aún mayor que la versión de la aplicación. Póngase en contacto con el administrador del sistema.</value>
+    <comment>Community:La actualización se ha completado correctamente. Sin embargo, la versión de la base de datos sigue siendo superior a la versión de la aplicación. Póngase en contacto con el administrador del sistema.</comment>
   </data>
   <data name="CriteriaEditorsDataTypeIsNull" xml:space="preserve">
     <value>Por favor, especifique el tipo de objeto para el que desea construir un criterio.</value>
+    <comment>Community:Especifique el tipo de objeto para el que desea crear un criterio.</comment>
   </data>
   <data name="ActionIsNotSingleChoiceAction" xml:space="preserve">
     <value>No se puede registrar la '{0}' Acción en la '{1}' Contenedor de acción. La '{0}' La acción no es de la '{2}' Tipo.</value>
+    <comment>Community:No se puede registrar la acción '{0}' en el contenedor de acciones '{1}'. La acción '{0}' no es del tipo '{2}'.</comment>
+  </data>
+  <data name="AsyncOperationInProgress" xml:space="preserve">
+    <value>Operación abortada. Operación asincrónica en curso.</value>
+    <comment>AI</comment>
   </data>
 </root>

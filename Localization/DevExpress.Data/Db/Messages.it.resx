@@ -60,29 +60,66 @@
   </resheader>
   <data name="ConnectionProvider_UnableToCreateDBObject" xml:space="preserve">
     <value>Impossibile creare '{0}' '{1}'. Padre: '{2}'. Errore: '{3}'.</value>
+    <comment>Community:Impossibile creare '{0}' '{1}'. Padre: '{2}'. Errore: {3}</comment>
   </data>
   <data name="ConnectionProvider_AtLeastOneColumnExpected" xml:space="preserve">
     <value>Prevista almeno una colonna.</value>
+    <comment>Community:È prevista almeno una colonna</comment>
   </data>
   <data name="ConnectionProvider_UnableToOpenDatabase" xml:space="preserve">
     <value>Impossibile aprire il database. Stringa di connessione: '{0}'; Errore: '{1}'.</value>
+    <comment>Community:Impossibile aprire il database. Stringa di connessione: '{0}'; Errore: '{1}'</comment>
   </data>
   <data name="ConnectionProvider_TypeMappingMissing" xml:space="preserve">
     <value>Il provider di database non può elaborare il tipo di '{0}' perché non è mappato ad un tipo nel database sottostante. Si prega di utilizzare un altro tipo.</value>
+    <comment>Community:Il provider di database non può elaborare il tipo '{0}' perché non è mappato ai tipi del database sottostante. Utilizzare un altro tipo.</comment>
   </data>
   <data name="ConnectionProvider_Locking" xml:space="preserve">
     <value>L'oggetto non può essere salvato. E' stato modificato o eliminato da un'altra applicazione.</value>
+    <comment>Community:Impossibile salvare l'oggetto. È stato modificato o eliminato (cancellato definitivamente) da un'altra applicazione.</comment>
   </data>
   <data name="ConnectionProvider_SqlExecutionError" xml:space="preserve">
     <value>Eseguendo la query SQL '{0}' con parametri '{1}' si è verificata l'eccezione '{2}'.</value>
+    <comment>Community:Esecuzione di SQL '{0}' con parametri '{1}': eccezione '{2}'</comment>
   </data>
   <data name="ConnectionProvider_TableNameTooLong" xml:space="preserve">
     <value>Impossibile creare la tabella '{0}'. Il nome è troppo lungo (eccede i 64 caratteri).</value>
+    <comment>Community:Impossibile creare la tabella del database '{0}'. Il nome della tabella è troppo lungo (supera i 64 caratteri)</comment>
   </data>
   <data name="ConnectionProvider_SchemaCorrectionNeeded" xml:space="preserve">
     <value>Lo schema deve essere aggiornato. Contattare l'amministratore di sistema. Sql text: '{0}'.</value>
+    <comment>Community:Lo schema deve essere aggiornato. Contattare l'amministratore di sistema. Testo SQL: {0}</comment>
   </data>
   <data name="ConnectionProvider_ColumnNameTooLong" xml:space="preserve">
     <value>Impossibile creare la colonna '{1}' della tabella '{0}'. Il nome è troppo lungo (eccede i 64 caratteri).</value>
+    <comment>Community:Impossibile creare la colonna '{1}' della tabella '{0}'. Il nome della colonna è troppo lungo (supera i 64 caratteri)</comment>
+  </data>
+  <data name="IsExactTypeFunction_ShouldNotBeCalledExplicitly" xml:space="preserve">
+    <value>Questo metodo non dovrebbe essere chiamato esplicitamente.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_ShouldNotBeCalledExplicitly" xml:space="preserve">
+    <value>Questo metodo non dovrebbe essere chiamato esplicitamente.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CommandChannelHelper_CannotDeserializeResponse" xml:space="preserve">
+    <value>Impossibile deserializzare la risposta dell'operazione '{0}' a causa delle limitazioni dell'implementazione di XmlSerializer nell'ambiente di esecuzione Mono. Se è necessario deserializzare piccole quantità di dati, impostare la proprietà DevExpress.Xpo.Helpers.CommandChannelHelper.EnableMonoDeserializationFixForSmallAmountsOfData su 'true' e riprovare.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProviderSql_ParameterValueSizeExceedsMaximumSize" xml:space="preserve">
+    <value>Impossibile creare il parametro '{1}'. SQL: {0}. La lunghezza del valore ({2}) supera la dimensione del parametro ({3}).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_ClassNotFound" xml:space="preserve">
+    <value>La funzione '{0}' non riesce a trovare il tipo specificato: '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_ParametersMustBeConstants" xml:space="preserve">
+    <value>La funzione '{0}' prevede un valore costante come argomento 'typeName'. È stata fornita un'espressione.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_InvalidArgument_TypeName" xml:space="preserve">
+    <value>La funzione '{0}' prevede un valore di tipo stringa come argomento 'typeName'. È stato fornito un valore di tipo '{1}'.</value>
+    <comment>AI</comment>
   </data>
 </root>

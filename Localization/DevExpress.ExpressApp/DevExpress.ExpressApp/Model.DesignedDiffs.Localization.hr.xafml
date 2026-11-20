@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application VersionFormat="Verzija {0}.{1}.{2}" ProtectedContentText="Zaštićeni sadržaj">
+  <ActionDesign>
+    <Actions>
+      <Action Id="About Info" Caption="O programu ..." />
+      <Action Id="Cancel" Caption="Odustani" />
+      <Action Id="CreateDashboard" Caption="Kreiraj radnu ploču" />
+      <Action Id="Delete" Caption="Obriši" ConfirmationMessage="Sigurno želite obrisati odabrane zapise?" />
+      <Action Id="Delete Item" Caption="Obriši stavku" ConfirmationMessage="Sigurno želite obrisati odabrane stavke?" />
+      <Action Id="Diagnostic Info" Caption="Dijagnostika" />
+      <Action Id="Diagnostic Info.Actions Info">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Actions Info" Caption="Info o akcijama" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="Diagnostic Info.View Info">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="View Info" Caption="Podaci o pogledima" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="DialogCancel" Caption="Odustani" />
+      <Action Id="DialogOK" Caption="U redu" />
+      <Action Id="FullTextSearch" NullValuePrompt="Tekst za pretragu..." Caption="Filtriraj po tekstu" ToolTip="Filtriraj objekte po tekstu" ShortCaption="KRENI!" />
+      <Action Id="HideItemsFromDashboard" Caption="Ukloni s radne ploče" ToolTip="Ukloni odabrane stavke s radne ploče" />
+      <Action Id="Link" Caption="Spoji" />
+      <Action Id="ListViewShowObject" Caption="Otvori" />
+      <Action Id="Logoff" Caption="Odjava" />
+      <Action Id="Logon" Caption="Prijava" />
+      <Action Id="NavigateBack" ToolTip="Pomakni se na prethodni pogled" Caption="Prethodni" />
+      <Action Id="NavigateForward" ToolTip="Pomakni se na slijedeći pogled" Caption="Slijedeći" />
+      <Action Id="New" Caption="Novi">
+        <DisableReasons>
+          <Reason Id="MasterObjectIsNew" Caption="Objekt koji se mijenja je novi" />
+        </DisableReasons>
+      </Action>
+      <Action Id="NextObject" Caption="Slijedeći objekt" />
+      <Action Id="OrganizeDashboard" Caption="Presloži radnu ploču" />
+      <Action Id="PreviousObject" Caption="Prethodni objekt" />
+      <Action Id="Refresh" Caption="Osvježi" />
+      <Action Id="Save" Caption="Snimi" />
+      <Action Id="SaveAndClose" Caption="Snimi i zatvorti" />
+      <Action Id="SaveAndNew" Caption="Snimi i novi" />
+      <Action Id="ShowItemsOnDashboard" Caption="Prikaži na radnoj ploči" ToolTip="Prikaži odabrane stavke na radnoj ploči" />
+      <Action Id="ShowNavigationItem" Caption="Navigacija" />
+      <Action Id="Unlink" Caption="Otpoji" ConfirmationMessage="Sigurno želite otpojiti odabrane zapise?" />
+    </Actions>
+    <DisableReasons>
+      <Reason Id="ByContext_RequireMultipleObjects" Caption="Mora biti odabran barem jedan objekt" />
+      <Reason Id="ByContext_RequireSingleObject" Caption="Mora biti odabran samo jedan objekt" />
+      <Reason Id="Security" Caption="Dozvola odbijena" />
+    </DisableReasons>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Editors.CriteriaProvider" Caption="Pružatelj kriterija">
+      <OwnMembers>
+        <Member Name="FilteredObjectsType" Caption="Filtrirani Tipovi Objekata" />
+        <Member Name="FilterString" Caption="Filter Tekst" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.AboutInfo" Caption="O programu">
+      <OwnMembers>
+        <Member Name="Company" Caption="Tvrtka" />
+        <Member Name="Copyright" Caption="Sva prava pridržana" />
+        <Member Name="Description" Caption="Opis" />
+        <Member Name="LogoImageName" Caption="Naziv slike za logo" />
+        <Member Name="ProductName" Caption="Naziv Produkta" />
+        <Member Name="Version" Caption="Verzija" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ActionContainerDashboardOrganizationItem" Caption="Spremnik za Akcije">
+      <OwnMembers>
+        <Member Name="ActionContainer" Caption="Spremnik za Akcije" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ActionContainerDescriptor" Caption="Opis Spremnika za Akcije">
+      <OwnMembers>
+        <Member Name="ActionContainerId" Caption="Spremnik za Akcije Id" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardCreationInfo" Caption="Čarobnjak za kreiranje radne ploče">
+      <OwnMembers>
+        <Member Name="DashboardName" Caption="Naziv" />
+        <Member Name="DashboardOrganizer" Caption="Pogledi" />
+        <Member Name="NavigationGroupName" Caption="Kreiraj Stavku Navigacije u" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardOrganizationItem" Caption="Organizacijske stavke radne ploče">
+      <OwnMembers>
+        <Member Name="Item" Caption="Stavka" />
+        <Member Name="Visible" Caption="Vidljiv" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardOrganizer" Caption="Organizator radne ploče">
+      <OwnMembers>
+        <Member Name="ViewItems" Caption="Pogledi" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardViewItemDescriptor" Caption="Opisnik stavaka pogleda radne ploče">
+      <OwnMembers>
+        <Member Name="ViewCaption" Caption="Naslov Pogleda" />
+        <Member Name="ViewDescription" Caption="Opis Pogleda" />
+        <Member Name="ViewId" Caption="Pogled Id" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DiagnosticInfoObject">
+      <OwnMembers>
+        <Member Name="AsText" Caption="Kao Tekst" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.StaticImageDashboardOrganizationItem" Caption="Statička slika">
+      <OwnMembers>
+        <Member Name="ImageName" Caption="Naziv slike" />
+        <Member Name="Preview" Caption="Pregled" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.StaticTextDashboardOrganizationItem" Caption="Statički tekst">
+      <OwnMembers>
+        <Member Name="Text" Caption="Tekst" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ViewDashboardOrganizationItem" Caption="Pogled">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Kriterij" />
+        <Member Name="ObjectType" Caption="Tip objekta" />
+        <Member Name="ViewDescriptor" Caption="Pogled" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Updating.ModuleInfo" Caption="Podaci o modulu" />
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Captions">
+      <LocalizationItem Name="DiagnosticChildWindowAddition" Value="(Dijete Prozor)" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="DashboardOrganizationItems">
+      <LocalizationItem Name="StaticImage" Value="Slika" />
+      <LocalizationItem Name="StaticText" Value="Tekst" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="DialogButtons">
+      <LocalizationItem Name="Abort" Value="&amp;Prekini" />
+      <LocalizationItem Name="Add" Value="Dodaj" />
+      <LocalizationItem Name="Apply" Value="Primijeni" />
+      <LocalizationItem Name="Back" Value="&lt; Natrag" />
+      <LocalizationItem Name="Cancel" Value="&amp;Odustani" />
+      <LocalizationItem Name="Clear" Value="O&amp;čisti" />
+      <LocalizationItem Name="Close" Value="Zatvori" />
+      <LocalizationItem Name="Find" Value="Pronađi" />
+      <LocalizationItem Name="Ignore" Value="&amp;Ignoriraj" />
+      <LocalizationItem Name="Next" Value="Slijedeći &gt;" />
+      <LocalizationItem Name="No" Value="&amp;Ne" />
+      <LocalizationItem Name="OK" Value="&amp;U redu" />
+      <LocalizationItem Name="Remove" Value="Makni" />
+      <LocalizationItem Name="Retry" Value="&amp;Pokušaj ponovo" />
+      <LocalizationItem Name="Yes" Value="&amp;Da" />
+      <LocalizationItem Name="Edit" Value="Izmjena" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.SystemModule.DashboardItemVisibility" Value="Vidljivost stavaka radne ploče">
+        <LocalizationItem Name="Hidden" Value="Sakriven" />
+        <LocalizationItem Name="Visible" Value="Vidljiv" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Messages">
+      <LocalizationItem Name="User" Value="Korisnik: {0}" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Texts">
+      <LocalizationItem Name="Error" Value="Greška" />
+      <LocalizationItem Name="Warning" Value="Upozorenje" />
+    </LocalizationGroup>
+  </Localization>
+  <Views>
+    <DetailView Id="AboutInfo_DetailView" Caption="O programu" />
+  </Views>
+</Application>

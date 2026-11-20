@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ShowAllContexts" Caption="Vérifier" ToolTip="Vérifie les données pour les objets sélectionné(s)" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ContextValidationResult" Caption="Résultat de la vérification">
+      <OwnMembers>
+        <Member Name="BrokenRules" Caption="Règles non vérifiées" />
+        <Member Name="Context" Caption="Contexte" />
+        <Member Name="DisplayableValidationResultItems" Caption="Résultats de la vérification" />
+        <Member Name="State" Caption="État" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.DisplayableValidationResultItem" Caption="Détails de la vérification">
+      <OwnMembers>
+        <Member Name="ContextCaption" Caption="Contexte" />
+        <Member Name="ContextId" Caption="Id du contexte" />
+        <Member Name="ErrorMessage" Caption="Message d'erreur" />
+        <Member Name="Rule" Caption="Règle" />
+        <Member Name="RuleName" Caption="Nom de la règle" />
+        <Member Name="RuleProperties" Caption="Propriétés de la règle" />
+        <Member Name="State" Caption="État" />
+        <Member Name="TargetCaption" Caption="Cible" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ValidationResults" Caption="Résultats de la validation">
+      <OwnMembers>
+        <Member Name="DisplayableValidationResultItems" Caption="Résultats de la vérification" />
+        <Member Name="HighlightErrors" Caption="Montrer les erreurs" />
+        <Member Name="Results" Caption="Résultats" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleBaseProperties">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Modèle de message" />
+        <Member Name="InvertResult" Caption="Inverser le résultat" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Modèle de message Ignore les valeurs vides ou nulles" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="La cible du modèle de message ne vérifie pas le critère cible" />
+        <Member Name="Name" Caption="Nom" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Ignore les valeurs vides ou nulles" />
+        <Member Name="TargetContextIDs" Caption="Id des contextes cibles" />
+        <Member Name="TargetCriteria" Caption="Critère cible" />
+        <Member Name="TargetType" Caption="Type de la cible" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCollectionPropertyProperties">
+      <OwnMembers>
+        <Member Name="TargetCollectionOwnerType" Caption="Type auquel appartient la collection cible" />
+        <Member Name="TargetCollectionPropertyName" Caption="Nom de propriété de la collection cible" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCombinationOfPropertiesIsUniqueProperties">
+      <OwnMembers>
+        <Member Name="TargetProperties" Caption="Propriétés cibles" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCriteriaProperties">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Critère" />
+        <Member Name="UsedProperties" Caption="Propriétés utilisées" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleFromBoolPropertyProperties">
+      <OwnMembers>
+        <Member Name="UsedProperties" Caption="Propriétés utilisées" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleIsReferencedProperties">
+      <OwnMembers>
+        <Member Name="LooksFor" Caption="Recherche" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleObjectExistsProperties">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Critère" />
+        <Member Name="LooksFor" Caption="Recherche" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRulePropertyValueProperties">
+      <OwnMembers>
+        <Member Name="TargetPropertyName" Caption="Nom de la propriété cible" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRangeProperties">
+      <OwnMembers>
+        <Member Name="MaximumValue" Caption="Valeur maximum" />
+        <Member Name="MaximumValueExpression" Caption="Expression de la valeur maximum" />
+        <Member Name="MinimumValue" Caption="Valeur minimum" />
+        <Member Name="MinimumValueExpression" Caption="Expression de la valeur minimum" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRegularExpressionProperties">
+      <OwnMembers>
+        <Member Name="Pattern" Caption="Patron" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRequiredFieldProperties">
+      <OwnMembers>
+        <Member Name="SkipNullOrEmptyValues" Caption="Ignore les valeurs vides ou nulles" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleSearchObjectProperties">
+      <OwnMembers>
+        <Member Name="FoundObjectMessageFormat" Caption="Format de message objet trouvé" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Séparateur de messages objet trouvé" />
+        <Member Name="IncludeCurrentObject" Caption="Inclure l'objet actuel" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleStringComparisonProperties">
+      <OwnMembers>
+        <Member Name="IgnoreCase" Caption="Ignorer la casse" />
+        <Member Name="OperandValue" Caption="Valeur de l'opérande" />
+        <Member Name="OperatorType" Caption="Type de l'opérateur" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleSupportsCollectionAggregatesProperties">
+      <OwnMembers>
+        <Member Name="TargetCollectionAggregate" Caption="Aggregat de la collection sible" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleUniqueValueProperties">
+      <OwnMembers>
+        <Member Name="FoundObjectMessageFormat" Caption="Format de message objet trouvé" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleValueComparisonProperties">
+      <OwnMembers>
+        <Member Name="OperatorType" Caption="Type de l'opérateur" />
+        <Member Name="RightOperand" Caption="Opérande de droite" />
+        <Member Name="RightOperandExpression" Caption="Expréssion de l'opérande de droite" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleBaseProperties">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Modèle de message" />
+        <Member Name="InvertResult" Caption="Inverser le résultat" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Modèle de message Ignore les valeurs vides ou nulles" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="La cible du modèle de message ne vérifie pas le critère cible" />
+        <Member Name="Name" Caption="Nom" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Ignore les valeurs vides ou nulles" />
+        <Member Name="TargetCollectionOwnerType" Caption="Type auquel appartient la collection cible" />
+        <Member Name="TargetCollectionPropertyName" Caption="Nom de propriété de la collection cible" />
+        <Member Name="TargetContextIDs" Caption="Id des contextes cibles" />
+        <Member Name="TargetCriteria" Caption="Critère cible" />
+        <Member Name="TargetType" Caption="Type de la cible" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleCombinationOfPropertiesIsUniqueProperties">
+      <OwnMembers>
+        <Member Name="TargetProperties" Caption="Propriétés cibles" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleCriteriaProperties">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Critère" />
+        <Member Name="UsedProperties" Caption="Propriétés utilisées" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleFromBoolPropertyProperties">
+      <OwnMembers>
+        <Member Name="UsedProperties" Caption="Propriétés utilisées" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleIsReferencedProperties">
+      <OwnMembers>
+        <Member Name="LooksFor" Caption="Recherche" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleObjectExistsProperties">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Critère" />
+        <Member Name="LooksFor" Caption="Recherche" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RulePropertyValueProperties">
+      <OwnMembers>
+        <Member Name="TargetPropertyName" Caption="Nom de la propriété cible" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRangeProperties">
+      <OwnMembers>
+        <Member Name="MaximumValue" Caption="Valeur maximum" />
+        <Member Name="MaximumValueExpression" Caption="Expression de la valeur maximum" />
+        <Member Name="MinimumValue" Caption="Valeur minimum" />
+        <Member Name="MinimumValueExpression" Caption="Expression de la valeur minimum" />
+        <Member Name="TargetCollectionAggregate" Caption="Aggregat de la collection sible" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRegularExpressionProperties">
+      <OwnMembers>
+        <Member Name="Pattern" Caption="Patron" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSearchObjectProperties">
+      <OwnMembers>
+        <Member Name="FoundObjectMessageFormat" Caption="Format de message objet trouvé" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Séparateur de messages objet trouvé" />
+        <Member Name="IncludeCurrentObject" Caption="Inclure l'objet actuel" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResult" Caption="Résultats de la validation">
+      <OwnMembers>
+        <Member Name="Results" Caption="Résultats" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResultItem" Caption="Détails de la vérification">
+      <OwnMembers>
+        <Member Name="ContextId" Caption="Id du contexte" />
+        <Member Name="ErrorMessage" Caption="Message d'erreur" />
+        <Member Name="Rule" Caption="Règle" />
+        <Member Name="RuleName" Caption="Nom de la règle" />
+        <Member Name="State" Caption="État" />
+        <Member Name="Target" Caption="Cible" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleStringComparisonProperties">
+      <OwnMembers>
+        <Member Name="IgnoreCase" Caption="Ignorer la casse" />
+        <Member Name="OperandValue" Caption="Valeur de l'opérande" />
+        <Member Name="OperatorType" Caption="Type de l'opérateur" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleUniqueValueProperties">
+      <OwnMembers>
+        <Member Name="TargetPropertyName" Caption="Nom de la propriété cible" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleValueComparisonProperties">
+      <OwnMembers>
+        <Member Name="OperatorType" Caption="Type de l'opérateur" />
+        <Member Name="RightOperand" Caption="Opérande de droite" />
+        <Member Name="RightOperandExpression" Caption="Expréssion de l'opérande de droite" />
+        <Member Name="TargetCollectionAggregate" Caption="Aggregat de la collection sible" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.Data.Filtering.Aggregate" Value="Aggregat">
+        <LocalizationItem Name="Exists" Value="Existe" />
+        <LocalizationItem Name="Sum" Value="Σ" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Validation.AllContextsView.IsValid" Value="Valide">
+        <LocalizationItem Name="Valid" Value="Valide" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.StringComparisonType" Value="Type de comparaison des chaînes">
+        <LocalizationItem Name="Equals" Value="Égale" />
+        <LocalizationItem Name="NotEquals" Value="Différent" />
+        <LocalizationItem Name="StartsWith" Value="Commence par" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValidationState" Value="État de la vérification">
+        <LocalizationItem Name="Skipped" Value="Ignoré" />
+        <LocalizationItem Name="Valid" Value="Valide" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValueComparisonType" Value="Type de comparaison des valeurs">
+        <LocalizationItem Name="Equals" Value="Égale" />
+        <LocalizationItem Name="GreaterThan" Value="Plus grand que" />
+        <LocalizationItem Name="GreaterThanOrEqual" Value="Plus grand ou égal à" />
+        <LocalizationItem Name="LessThan" Value="Inférieur à" />
+        <LocalizationItem Name="LessThanOrEqual" Value="Inférieur ou égal à" />
+        <LocalizationItem Name="NotEquals" Value="Différent" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Xpo.PersistentCriteriaEvaluationBehavior" Value="Compoirtement d'évaluation du critère persistent">
+        <LocalizationItem Name="BeforeTransaction" Value="Avant la transaction" />
+        <LocalizationItem Name="InTransaction" Value="Dans la transaction" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <Validation>
+    <ErrorMessageTemplates>
+      <RuleBase MessageTemplateSkipNullOrEmptyValues="La règle &quot;{Id}&quot; n'a pas été vérifiée car les propriétés cibles n'ont pas été spécifiées." MessageTemplateTargetDoesNotSatisfyTargetCriteria="La règle &quot;{Id}&quot; n'a pas été vérifiée car l'objet ne répond pas aux critères de la règle." />
+      <RuleCollectionProperty MessageTemplateTargetDoesNotSatisfyCollectionCriteria="La règle &quot;{Id}&quot; n'a pas été vérifiée car la cible n'est pas un élément de la collection &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot; ." MessageTemplateCollectionValidationMessageSuffix="(Pour les éléments de la collection &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot;)." />
+      <RuleCombinationOfPropertiesIsUnique MessageTemplateCombinationOfPropertiesMustBeUnique="La combinaison des propriétés suivantes doit être unique unique : {FormattedTargetProperties}." MessageTemplateFoundObjects="Les objets suivants ont été trouvés : " />
+      <RuleCriteria MessageTemplateMustSatisfyCriteria="L'objet &quot;{TargetObject}&quot; doit répondre au critère suivant : &quot;{Criteria}&quot;." />
+      <RuleFromBoolProperty MessageTemplateMustBeTrue="&quot;{TargetPropertyName}&quot; doit être vrai." />
+      <RuleIsReferenced MessageTemplateMustBeReferenced="L'objet &quot;{TargetObject}&quot; doit être référencé." MessageTemplateFoundObjects="Les objets suivants ont été trouvés : " />
+      <RuleObjectExists MessageTemplateFoundObjects="Les objets suivants ont été trouvés : " MessageTemplateMustExist="Un objet répondant au critère &quot;{Criteria}&quot; doit exister." />
+      <RuleRange MessageTemplateMustBeInRange="&quot;{TargetPropertyName}&quot; doit être compris entre &quot;{MinimumValue}&quot; et &quot;{MaximumValue}&quot; inclus." />
+      <RuleRegularExpression MessageTemplateMustMatchPattern="&quot;{TargetPropertyName}&quot; doit correspondre à : &quot;{Pattern}&quot;." />
+      <RuleRequiredField MessageTemplateMustNotBeEmpty="&quot;{TargetPropertyName}&quot; ne doit pas être vide." />
+      <RuleSearchObject MessageTemplateFoundObjects="Les objets suivants ont été trouvés : " />
+      <RuleStringComparison MessageTemplateMustContain="&quot;{TargetPropertyName}&quot; doit contenir &quot;{OperandValue}&quot;." MessageTemplateMustBeginWith="&quot;{TargetPropertyName}&quot; doit commencer par &quot;{OperandValue}&quot;." MessageTemplateMustEndWith="&quot;{TargetPropertyName}&quot; doit se terminer par &quot;{OperandValue}&quot;." MessageTemplateMustBeEqual="&quot;{TargetPropertyName}&quot; doit être égal à  &quot;{OperandValue}&quot;." MessageTemplateMustNotBeEqual="&quot;{TargetPropertyName}&quot; doit être différent de &quot;{OperandValue}&quot;." />
+      <RuleUniqueValue MessageTemplateMustBeUnique="Il existe déjà un objet avec la même valeur pour &quot;{TargetPropertyName}&quot;. Les valeurs de &quot;{TargetPropertyName}&quot; doivent être uniques." />
+      <RuleValueComparison MessageTemplateMustBeEqualToOperand="&quot;{TargetPropertyName}&quot; doit être égal à  &quot;{RightOperand}&quot;." MessageTemplateMustBeGreaterThanOperand="&quot;{TargetPropertyName}&quot; doit être supérieur à  &quot;{RightOperand}&quot;." MessageTemplateMustBeGreaterThanOrEqualToOperand="&quot;{TargetPropertyName}&quot; doit être supérieur ou égal à &quot;{RightOperand}&quot;." MessageTemplateMustBeLessThanOperand="&quot;{TargetPropertyName}&quot; doit être inférieur à  &quot;{RightOperand}&quot;." MessageTemplateMustBeLessThanOrEqualToOperand="&quot;{TargetPropertyName}&quot; doit être inférieur ou égal à &quot;{RightOperand}&quot;." MessageTemplateMustNotBeEqualToOperand="&quot;{TargetPropertyName}&quot; doit être différent de &quot;{RightOperand}&quot;." />
+    </ErrorMessageTemplates>
+  </Validation>
+  <Views>
+    <DetailView Id="ContextValidationResult_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="DisplayableValidationResultItem_DetailView">
+      <Items>
+        <PropertyEditor Id="RuleProperties" Caption="Détails de la règle" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DisplayableValidationResultItem" Caption="Éléments de la vérification" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleBaseProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCollectionPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCombinationOfPropertiesIsUniqueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCriteriaProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleFromBoolPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleIsReferencedProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleObjectExistsProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRulePropertyValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRangeProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRegularExpressionProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRequiredFieldProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleSearchObjectProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleStringComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleSupportsCollectionAggregatesProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleUniqueValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleValueComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleBaseProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleCombinationOfPropertiesIsUniqueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleCriteriaProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleFromBoolPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleIsReferencedProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleObjectExistsProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RulePropertyValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRangeProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRegularExpressionProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRequiredFieldProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSearchObjectProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResult_ByTarget_Error_DetailView" Caption="Vérification échouée">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="Des problèmes ont été détectés durant la vérification. Consultez les informations ci-dessous pour savoir comment corriger les erreurs." />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal">
+          <LayoutGroup Id="Static" Caption="Statique" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResult_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResultItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResultItemAggregate_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleStringComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleUniqueValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleValueComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ValidationResults_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ValidationResults_Error_DetailView">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="Des problèmes ont été détectés durant la vérification. Consultez les informations ci-dessous pour savoir comment corriger les erreurs." />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal">
+          <LayoutGroup Id="Static" Caption="Statique" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ValidationResults_Passed_DetailView">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="Aucun problème détecté." />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal">
+          <LayoutGroup Id="Static" Caption="Statique" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

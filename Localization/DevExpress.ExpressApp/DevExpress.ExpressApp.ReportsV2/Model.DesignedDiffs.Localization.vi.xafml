@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ShowInReportV2" Caption="Hiển thị Báo cáo liên quan" ToolTip="Hiển thị các bản ghi được chọn trong một báo cáo" />
+      <Action Id="PreviewReportV2" Caption="Xem trước" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.ReportDataV2" Caption="Báo cáo">
+      <OwnMembers>
+        <Member Name="DataTypeCaption" Caption="Kiểu Dữ liệu" />
+        <Member Name="IsInplaceReport" Caption="Là Báo cáo liên quan" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.EF.ReportDataV2" Caption="Báo cáo">
+      <OwnMembers>
+        <Member Name="DataTypeCaption" Caption="Kiểu Dữ liệu" />
+        <Member Name="IsInplaceReport" Caption="Là Báo cáo liên quan" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.ReportsV2.NewReportWizardParameters" Caption="Thêm mới Tham số Báo cáo bằng Thuật sĩ">
+      <OwnMembers>
+        <Member Name="DataType" Caption="Kiểu Dữ liệu" />
+        <Member Name="ReportType" Caption="Kiểu Báo cáo" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.ReportsV2.ReportType">
+        <LocalizationItem Name="Label" Value="Nhãn" />
+        <LocalizationItem Name="Standard" Value="Tiêu chuẩn" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems RelatedReportsGroupCaption="Báo cáo">
+    <Items>
+      <Item Id="Reports">
+        <Items>
+          <Item Id="ReportsV2" Caption="Báo cáo" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <ListView Id="DevExpress.Persistent.BaseImpl.XtraReportData_ListView" Caption="Báo cáo" />
+  </Views>
+</Application>

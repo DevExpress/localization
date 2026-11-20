@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ChangePasswordByUser" Caption="Změnit heslo" />
+      <Action Id="MyDetails" Caption="Moje detaily" />
+      <Action Id="ResetPassword" Caption="Vynulovat heslo" ToolTip="Vytvořit nové heslo pro vybraného uživatele" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters" Caption="Ověřování standardních přihlašovacích parametrů">
+      <OwnMembers>
+        <Member Name="Password" Caption="Heslo" />
+        <Member Name="UserName" Caption="Uživatelské jméno" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordOnLogonParameters" Caption="Změnit heslo přihlašovacích parametrů">
+      <OwnMembers>
+        <Member Name="ConfirmPassword" Caption="Potvrdit heslo" />
+        <Member Name="NewPassword" Caption="Nové heslo" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordParameters" Caption="Změnit parametry hesla">
+      <OwnMembers>
+        <Member Name="OldPassword" Caption="Staré heslo" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.EditModelPermission" Caption="Povolení k editaci modelu">
+      <OwnMembers>
+        <Member Name="Modifier" Caption="Modifikátor" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ObjectAccessPermission" Caption="Povolení k přístupu do objektu">
+      <OwnMembers>
+        <Member Name="CreateAccess" Caption="Vytvořit přístup" />
+        <Member Name="DeleteAccess" Caption="Odstranit přístup" />
+        <Member Name="NavigateAccess" Caption="Navigovat k přístupu" />
+        <Member Name="ObjectType" Caption="Typ objektu" />
+        <Member Name="ReadAccess" Caption="Načíst přístup" />
+        <Member Name="WriteAccess" Caption="Zapsat přístup" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ResetPasswordParameters" Caption="Vynulovat parametry hesla">
+      <OwnMembers>
+        <Member Name="Password" Caption="Heslo" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ModelAccessModifier" Value="Modifikátor přístupového modelu">
+        <LocalizationItem Name="Allow" Value="Povolit" />
+        <LocalizationItem Name="Deny" Value="Zamítnout" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccess" Value="Přístup k objektu">
+        <LocalizationItem Name="AllAccess" Value="Všechny přístupy" />
+        <LocalizationItem Name="ChangeAccess" Value="Změnit přístup" />
+        <LocalizationItem Name="Create" Value="Vytvořit" />
+        <LocalizationItem Name="Delete" Value="Odstranit" />
+        <LocalizationItem Name="Navigate" Value="Navigovat" />
+        <LocalizationItem Name="NoAccess" Value="Žádný přístup" />
+        <LocalizationItem Name="Read" Value="Číst" />
+        <LocalizationItem Name="Write" Value="Psát" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccessModifier" Value="Modifikátor přístupu k objektu">
+        <LocalizationItem Name="Allow" Value="Povolit" />
+        <LocalizationItem Name="Deny" Value="Zamítnout" />
+        <LocalizationItem Name="None" Value="Žádný" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="MyDetails" Caption="Moje detaily" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView" Caption="Přihlásit">
+      <Items>
+        <StaticText Id="LogonText" Text="Vítejte! Níže zadejte Vaše uživatelské jméno a heslo. " />
+      </Items>
+    </DetailView>
+    <DetailView Id="ChangePasswordOnLogonParameters_DetailView" Caption="Změnit heslo při prvním přihlášení">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="Z bezpečnostních důvodů musíte nyní zadat svoje heslo. Zadejte Vaše nové heslo níže do dvou textových polí. Zadané heslo nesmí být již dříve použité." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ChangePasswordParameters_DetailView" Caption="Změnit heslo">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="Pro změnu hesla zadejte staré a nové heslo do textových polí níže." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ObjectAccessPermission_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ObjectAccessPermission" Caption="Povolení k přístupu do objektu" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ResetPasswordParameters_DetailView" Caption="Vynulovat heslo">
+      <Items>
+        <StaticText Id="ResetPasswordText" Text="Nastavením uživatelského hesla bude automaticky vytvořeno nové heslo pro uživatele. Současně bude zakázáno přihlášení uživatele se starým heslem. Jste si jisti, že chcete udělat?" />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>

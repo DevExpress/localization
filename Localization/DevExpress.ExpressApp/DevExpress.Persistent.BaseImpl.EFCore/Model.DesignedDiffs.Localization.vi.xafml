@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="Task.MarkCompleted" Caption="Đánh đấu Đã hoàn thành" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.Persistent.AuditTrail.BaseAuditedObjectWeakReference" Caption="Đối tượng được theo dõi vết cơ sở tham chiếu theo qui tắc">
+      <OwnMembers>
+        <Member Name="DisplayName" Caption="Tên hiển thị" />
+        <Member Name="GuidId" Caption="Mã Guid" />
+        <Member Name="IntId" Caption="Mã Int" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Address" Caption="Địa chỉ">
+      <OwnMembers>
+        <Member Name="City" Caption="Thành phố" />
+        <Member Name="Country" Caption="Quốc gia" />
+        <Member Name="FullAddress" Caption="Địa chỉ đầy đủ" />
+        <Member Name="StateProvince" Caption="Bang" />
+        <Member Name="Street" Caption="Đường phố" />
+        <Member Name="ZipPostal" Caption="Mã Bưu chính" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Analysis" Caption="Phân tích">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Biểu thức lọc" />
+        <Member Name="DataType" Caption="Kiểu Dữ liệu" />
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="Self" Caption="Tự" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.AuditDataItemPersistent" Caption="Mục dữ liệu lưu vết đối tượng Persistent">
+      <OwnMembers>
+        <Member Name="Description" Caption="Mô tả" />
+        <Member Name="ModifiedOn" Caption="Sửa lúc" />
+        <Member Name="NewValue" Caption="Giá trị Mới" />
+        <Member Name="OldValue" Caption="Giá trị Cũ" />
+        <Member Name="OperationType" Caption="Kiểu Hành động" />
+        <Member Name="PropertyName" Caption="Tên Thuộc tính" />
+        <Member Name="UserName" Caption="Tên Người dùng" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.AuditedObjectWeakReference" Caption="Đối tượng được lưu vết tham chiếu theo qui tắc">
+      <OwnMembers>
+        <Member Name="AuditDataItems" Caption="Các mục Dữ liệu Lưu vết" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.BaseObject" Caption="Đối tượng Cơ sở" />
+    <Class Name="DevExpress.Persistent.BaseImpl.BasicUser" Caption="Người dùng">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="Thay đổi Mật khẩu Khi Đăng nhập Lần đầu" />
+        <Member Name="FullName" Caption="Tên Đầy đủ" />
+        <Member Name="IsActive" Caption="Đang Hoạt động" />
+        <Member Name="IsAdministrator" Caption="Là Quản trị viên" />
+        <Member Name="UserName" Caption="Tên Người dùng" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Country" Caption="Quốc gia">
+      <OwnMembers>
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="PhoneCode" Caption="Mã Điện thoại" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Event" Caption="Sự kiện được lên lịch">
+      <OwnMembers>
+        <Member Name="AllDay" Caption="Tất cả Các ngày" />
+        <Member Name="Description" Caption="Mô tả" />
+        <Member Name="EndOn" Caption="Ngày/Giờ Kết thúc" />
+        <Member Name="Label" Caption="Nhãn" />
+        <Member Name="Location" Caption="Vị trí" />
+        <Member Name="RecurrenceInfoXml" Caption="Tái diễn" />
+        <Member Name="RecurrencePattern" Caption="Mẫu Tái diễn" />
+        <Member Name="Resources" Caption="Tài nguyên" />
+        <Member Name="StartOn" Caption="Ngày/Giờ Bắt đầu" />
+        <Member Name="Status" Caption="Trạng thái" />
+        <Member Name="Subject" Caption="Chủ đề" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.FileAttachmentBase" Caption="Tệp Đính kèm Cơ sở">
+      <OwnMembers>
+        <Member Name="File" Caption="Tệp" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.FileData" Caption="Dữ liệu Tệp">
+      <OwnMembers>
+        <Member Name="FileName" Caption="Tên tệp" />
+        <Member Name="Size" Caption="Kích cỡ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.HCategory">
+      <OwnMembers>
+        <Member Name="Children" Caption="Con" />
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="Parent" Caption="Cha" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Note" Caption="Ghi chú">
+      <OwnMembers>
+        <Member Name="Author" Caption="Tác giả" />
+        <Member Name="DateTime" Caption="Ngày Giờ" />
+        <Member Name="Text" Caption="Văn bản" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.OidGenerator" Caption="Oid Tự sinh" />
+    <Class Name="DevExpress.Persistent.BaseImpl.Organization" Caption="Tổ chức">
+      <OwnMembers>
+        <Member Name="Description" Caption="Mô tả" />
+        <Member Name="FullName" Caption="Tên Đầy đủ" />
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="Profile" Caption="Hồ sơ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Party" Caption="Đảng">
+      <OwnMembers>
+        <Member Name="Address1" Caption="Địa chỉ 1" />
+        <Member Name="Address2" Caption="Địa chỉ 2" />
+        <Member Name="DisplayName" Caption="Tên hiển thị" />
+        <Member Name="PhoneNumbers" Caption="Số Điện thoại" />
+        <Member Name="Photo" Caption="Ảnh" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PersistentPermission" Caption="Truy suất đối tượng Persistent">
+      <OwnMembers>
+        <Member Name="Permission" Caption="Quyền truy cập" />
+        <Member Name="Role" Caption="Vai trò" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Person" Caption="Người">
+      <OwnMembers>
+        <Member Name="Birthday" Caption="Ngày sinh" />
+        <Member Name="FirstName" Caption="Họ" />
+        <Member Name="FullName" Caption="Tên Đầy đủ" />
+        <Member Name="LastName" Caption="Tên" />
+        <Member Name="MiddleName" Caption="Đệm" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PhoneNumber" Caption="Số Điện thoại">
+      <OwnMembers>
+        <Member Name="Number" Caption="Số" />
+        <Member Name="Party" Caption="Đảng" />
+        <Member Name="PhoneType" Caption="Loại điện thoại" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PhoneType" Caption="Loại điện thoại">
+      <OwnMembers>
+        <Member Name="TypeName" Caption="Tên Kiểu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PropertyBag" Caption="Túi Thuộc tính" />
+    <Class Name="DevExpress.Persistent.BaseImpl.PropertyBagDescriptor" Caption="Mô tả Túi Thuộc tính">
+      <OwnMembers>
+        <Member Name="PropertyDescriptors" Caption="Các bộ mô tả thuộc tính" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PropertyDescriptor" Caption="Bộ mô tả thuộc tính">
+      <OwnMembers>
+        <Member Name="Code" Caption="Mã" />
+        <Member Name="Description" Caption="Mô tả" />
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="PropertyBags" Caption="Các túi thuộc tính" />
+        <Member Name="Type" Caption="Kiểu" />
+        <Member Name="ValueType" Caption="Kiểu Giá trị" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PropertyValue" Caption="Giá trị Thuộc tính" />
+    <Class Name="DevExpress.Persistent.BaseImpl.Resource" Caption="Tài nguyên">
+      <OwnMembers>
+        <Member Name="Caption" Caption="Tiêu đề" />
+        <Member Name="Color" Caption="Màu" />
+        <Member Name="Events" Caption="Sự kiện" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Role" Caption="Vai trò">
+      <OwnMembers>
+        <Member Name="Users" Caption="Người dùng" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.RoleBase" Caption="Vai trò Cơ sở">
+      <OwnMembers>
+        <Member Name="Name" Caption="Tên" />
+        <Member Name="PersistentPermissions" Caption="Quyền truy cập" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.ServerPrefix" Caption="Tiền tố của Tên máy chủ" />
+    <Class Name="DevExpress.Persistent.BaseImpl.SimpleUser" Caption="Người dùng">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="Thay đổi Mật khẩu Khi Đăng nhập Lần đầu" />
+        <Member Name="FullName" Caption="Tên Đẩy đủ" />
+        <Member Name="IsActive" Caption="Đang Hoạt động" />
+        <Member Name="IsAdministrator" Caption="Là Quản trị viên" />
+        <Member Name="UserName" Caption="Tên Người dùng" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.State" Caption="Trạng thái">
+      <OwnMembers>
+        <Member Name="LongName" Caption="Tên Dài" />
+        <Member Name="ShortName" Caption="Tên Ngắn" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Task" Caption="Nhiệm vụ">
+      <OwnMembers>
+        <Member Name="AssignedTo" Caption="Gán cho" />
+        <Member Name="DateCompleted" Caption="Ngày Hoàn thành" />
+        <Member Name="Description" Caption="Mô tả" />
+        <Member Name="DueDate" Caption="Ngày Đến hạn" />
+        <Member Name="PercentCompleted" Caption="Phần trăm hoàn thành" />
+        <Member Name="StartDate" Caption="Ngày Bắt đầu" />
+        <Member Name="Status" Caption="Trạng thái" />
+        <Member Name="Subject" Caption="Chủ đề" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.User" Caption="Người dùng">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="Thay đổi Mật khẩu Khi Đăng nhập Lần đầu" />
+        <Member Name="IsActive" Caption="Đang Hoạt động" />
+        <Member Name="Permissions" Caption="Quyền truy cập" />
+        <Member Name="Roles" Caption="Vai trò" />
+        <Member Name="UserName" Caption="Tên Người dùng" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Xpo.XPWeakReference" Caption="Tham chiếu XPWeak" />
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.Persistent.Base.General.TaskStatus" Value="Trạng thái Công việc">
+        <LocalizationItem Name="Completed" Value="Đã hoàn thành" />
+        <LocalizationItem Name="Deferred" Value="Đã hoãn lại" />
+        <LocalizationItem Name="InProgress" Value="Đang thực hiện" />
+        <LocalizationItem Name="NotStarted" Value="Chưa bắt đầu" />
+        <LocalizationItem Name="WaitingForSomeoneElse" Value="Đợi người" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Reports" Caption="Báo cáo" />
+    </Items>
+  </NavigationItems>
+  <Validation>
+    <Contexts>
+      <ValidationContext Id="Delete" Caption="" />
+      <ValidationContext Id="Save" Caption="" />
+    </Contexts>
+    <Rules>
+      <RuleFromBoolProperty Id="EventIntervalValid" CustomMessageTemplate="Ngày bắt đầu phải nhỏ hơn ngày kết thúc" />
+      <RuleRequiredField Id="FileAttachmentBaseRule" CustomMessageTemplate="Tệp phải được gán" />
+      <RuleFromBoolProperty Id="HCategoryCircularReferences" CustomMessageTemplate="Tham chiếu vòng tròn được phát hiện. Để sửa lỗi này, thiết lập thuộc tính Cha cho một giá trị khác." />
+      <RuleUniqueValue Id="PropertyDescriptor Code is unique" CustomMessageTemplate="Thuộc tính 'Code' phải có một giá trị duy nhất" Name="Mã PropertyDescriptor là duy nhất" />
+      <RuleRequiredField Id="PropertyDescriptor Code required" Name="Mã PropertyDescriptor là bắt buộc" />
+      <RuleCriteria Id="Role is not referenced" CustomMessageTemplate="Không thể xóa vai trò bởi vì các người dùng đang tham chiếu vào nó" Name="Vai trò không được tham chiếu" />
+      <RuleRequiredField Id="Role required" CustomMessageTemplate="Một người dùng đang hoạt động phải được gán ít nhất một vai trò" Name="Vai trò là bắt buộc" />
+      <RuleUniqueValue Id="User Name is unique" CustomMessageTemplate="Đăng nhập với Tên Người dùng nhập vào đã có trong hệ thống" Name="Tên Người dùng là duy nhất" />
+      <RuleRequiredField Id="User Name required" CustomMessageTemplate="Tên người dùng không được trống" Name="Tên Người dùng là bắt buộc" />
+    </Rules>
+  </Validation>
+  <Views>
+    <DetailView Id="BasicUser_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="BasicUser" Caption="Người dùng Cơ sở" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Organization_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Organization" Caption="Tổ chức" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="PropertyDescriptor_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="PropertyDescriptor" Caption="Mô tả Thuộc tính" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="SimpleUser_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="SimpleUser" Caption="Người dùng Đơn giản" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

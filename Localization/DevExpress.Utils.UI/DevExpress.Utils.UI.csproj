@@ -1,76 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net462;net8.0-windows</TargetFrameworks>
+    <TargetFrameworks>net462;net10.0-windows</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
     <EnableWindowsTargeting>true</EnableWindowsTargeting>
-    <AssemblyName>DevExpress.Utils.v26.1.UI</AssemblyName>
+    <AssemblyName>DevExpress.Utils.v26.2.UI</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>true</DelaySign>
+    <AssemblyOriginatorKeyFile>..\DevExpress.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>DevExpress.Utils.UI</RootNamespace>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <BaseAddress>285212672</BaseAddress>
-    <UseWindowsForms>true</UseWindowsForms>
     <IntermediateOutputPath>obj\$(Configuration)\$(TargetFramework)\</IntermediateOutputPath>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(TargetFramework)' == 'net462'">
     <OutputPath>..\DevExpress.Dll\Framework\</OutputPath>
-    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0-windows'">
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net10.0-windows'">
     <OutputPath>..\DevExpress.Dll\NETCore\</OutputPath>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="System.Resources.Extensions" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="..\AssemblyVersion.cs">
-      <Link>AssemblyVersion.cs</Link>
-    </Compile>
-    <Compile Include="AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="CollectionEditorContentControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CollectionEditorFormBase.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DXFontEditor\DXFontEditorControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DXFontEditor\DXFontEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DXImageEditor\DXImageEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FilterStringEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormatStringEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StringArrayEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SummaryEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SummaryEditorFormBase.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="XmlSchemaEditorControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="XmlSchemaEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-  </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="CollectionEditorContentControl.ar.resx">
       <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
@@ -1771,5 +1721,249 @@
     <EmbeddedResource Include="CollectionEditorContentControl.ky.resx">
       <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.es.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.es.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.ru.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.ru.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.fr.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.fr.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.it.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.it.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.ko.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.ko.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.nl.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.nl.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.pl.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.pl.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.pt.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.pt.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.tr.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.tr.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.zh-CN.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.zh-CN.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.he.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.he.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.pt-BR.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.pt-BR.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.ar.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.ar.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.ca.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.ca.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.de-CH.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.de-CH.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.zh-Hans.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.zh-Hans.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.cs.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.cs.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.hi.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.hi.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.hi.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.hi.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.hi.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.hi.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.ta.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.ta.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.sv.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.sv.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.es-MX.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.es-MX.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.es-MX.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.es-MX.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.es-MX.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.es-MX.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.es-MX.resx" />
+    <EmbeddedResource Include="StringArrayEditorForm.es-MX.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.es-MX.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.es-MX.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.es-MX.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.es-MX.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.af.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorControl.af.resx">
+      <DependentUpon>DXFontEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXFontEditor\DXFontEditorForm.af.resx">
+      <DependentUpon>DXFontEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXImageEditor\DXImageEditorForm.af.resx">
+      <DependentUpon>DXImageEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.af.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.af.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.af.resx" />
+    <EmbeddedResource Include="StringArrayEditorForm.af.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.af.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.af.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.af.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.af.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionEditorContentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CollectionEditorFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DXFontEditor\DXFontEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DXFontEditor\DXFontEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DXImageEditor\DXImageEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilterStringEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormatStringEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StringArrayEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SummaryEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SummaryEditorFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XmlSchemaEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XmlSchemaEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

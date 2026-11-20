@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application VersionFormat="Wersja {0}.{1}.{2}" ProtectedContentText="Zawartość chroniona">
+  <ActionDesign>
+    <Actions>
+      <Action Id="About Info" Caption="O programie…" />
+      <Action Id="Cancel" Caption="Anuluj" />
+      <Action Id="CreateDashboard" Caption="Stwórz tablicę widoków" />
+      <Action Id="Delete" Caption="Usuń" ConfirmationMessage="Masz zamiar usunąć wybrany rekord (y). Czy chcesz kontynuować?" />
+      <Action Id="Delete Item" Caption="Usuń element" ConfirmationMessage="Masz zamiar usunąć zaznaczony element(y). Czy chcesz kontynuować?" />
+      <Action Id="Diagnostic Info" Caption="Diagnostyka" />
+      <Action Id="Diagnostic Info.Actions Info">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Actions Info" Caption="Informacje o akcji" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="Diagnostic Info.View Info">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="View Info" Caption="Zobacz Informacje" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="DialogCancel" Caption="Anuluj" />
+      <Action Id="FullTextSearch" NullValuePrompt="Tekst wyszukiwania..." Caption="Filtr według tekstu" ToolTip="Filtrowanie obiektów tekstowych" ShortCaption="Znajdź!" />
+      <Action Id="HideItemsFromDashboard" Caption="Ukryj z tablicy widoków" ToolTip="Ukryj wybrany element(y) z tablicy widoków" />
+      <Action Id="Link" Caption="Połącz" />
+      <Action Id="ListViewShowObject" Caption="Otwórz" />
+      <Action Id="Logoff" Caption="Wyloguj" />
+      <Action Id="Logon" Caption="Zaloguj się" />
+      <Action Id="NavigateBack" ToolTip="Przejdź do poprzedniego widoku" Caption="Powrót" />
+      <Action Id="NavigateForward" ToolTip="Przejdź do następnego widoku" Caption="Do przodu" />
+      <Action Id="New" Caption="Nowy">
+        <DisableReasons>
+          <Reason Id="MasterObjectIsNew" Caption="Edytowany obiekt jest nowy." />
+        </DisableReasons>
+      </Action>
+      <Action Id="NextObject" Caption="Następny obiekt" />
+      <Action Id="OrganizeDashboard" Caption="Organizuj tablicę widoków" />
+      <Action Id="PreviousObject" Caption="Poprzedni obiekt" />
+      <Action Id="Refresh" Caption="Odśwież" />
+      <Action Id="Save" Caption="Zapisz" />
+      <Action Id="SaveAndClose" Caption="Zapisz i Zamknij" />
+      <Action Id="SaveAndNew" Caption="Zapisz i Nowy" />
+      <Action Id="SetFilter" Caption="Filtrowanie" />
+      <Action Id="ShowItemsOnDashboard" Caption="Pokaż na tablicy widoków" ToolTip="Pokaż wybrany element(y) na tablicy widoków" />
+      <Action Id="ShowNavigationItem" Caption="Nawigacja" />
+      <Action Id="Unlink" Caption="Rozłącz" ConfirmationMessage="Zamierzasz rozłączyć wybrany rekord (y). Czy chcesz kontynuować?" />
+    </Actions>
+    <DisableReasons>
+      <Reason Id="ByContext_RequireMultipleObjects" Caption="Wymaga co najmniej jednego zaznaczonego obiektu" />
+      <Reason Id="ByContext_RequireSingleObject" Caption="Wymaga pojedynczego zaznaczonego obiektu" />
+      <Reason Id="Security" Caption="Brak praw" />
+    </DisableReasons>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Editors.CriteriaProvider">
+      <OwnMembers>
+        <Member Name="FilteredObjectsType" Caption="Typ filtrowanych obiektów" />
+        <Member Name="FilterString" Caption="Ciąg znaków w filtrze" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.AboutInfo" Caption="O programie…">
+      <OwnMembers>
+        <Member Name="Company" Caption="Spółka" />
+        <Member Name="Copyright" Caption="Prawa autorskie" />
+        <Member Name="Description" Caption="Opis" />
+        <Member Name="LogoImageName" Caption="Nazwa obrazu logo" />
+        <Member Name="ProductName" Caption="Nazwa produktu" />
+        <Member Name="Version" Caption="Wersja" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ActionContainerDashboardOrganizationItem" Caption="Kontener akcji">
+      <OwnMembers>
+        <Member Name="ActionContainer" Caption="Kontener akcji" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ActionContainerDescriptor" Caption="Kontener akcji - deskryptor">
+      <OwnMembers>
+        <Member Name="ActionContainerId" Caption="Kontener akcji - id" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardCreationInfo" Caption="Kreator tworzenia tablicy widoków">
+      <OwnMembers>
+        <Member Name="DashboardName" Caption="Nazwa" />
+        <Member Name="DashboardOrganizer" Caption="Elementy widoku" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardOrganizationItem">
+      <OwnMembers>
+        <Member Name="Item" Caption="Element" />
+        <Member Name="Visible" Caption="Widoczny" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardOrganizer" Caption="Organizator tablicy widoków">
+      <OwnMembers>
+        <Member Name="ViewItems" Caption="Elementy widoku" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardViewItemDescriptor">
+      <OwnMembers>
+        <Member Name="ViewCaption" Caption="Tytuł widoku" />
+        <Member Name="ViewDescription" Caption="Opis widoku" />
+        <Member Name="ViewId" Caption="Id widoku" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DiagnosticInfoObject" Caption="Obiekt informacji diagnostycznej">
+      <OwnMembers>
+        <Member Name="AsText" Caption="Jako tekst" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.StaticImageDashboardOrganizationItem" Caption="Obraz statyczny">
+      <OwnMembers>
+        <Member Name="ImageName" Caption="Nazwa obrazu" />
+        <Member Name="Preview" Caption="Podgląd" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.StaticTextDashboardOrganizationItem" Caption="Tekst statyczny">
+      <OwnMembers>
+        <Member Name="Text" Caption="Tekst" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ViewDashboardOrganizationItem" Caption="Widok">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Kryteria" />
+        <Member Name="ObjectType" Caption="Typ obiektu" />
+        <Member Name="ViewDescriptor" Caption="Widok" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Updating.ModuleInfo" Caption="Informacje o module" />
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Captions">
+      <LocalizationItem Name="EditCriteria" Value="Edytuj kryteria" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="DashboardOrganizationItems">
+      <LocalizationItem Name="StaticImage" Value="Obraz" />
+      <LocalizationItem Name="StaticText" Value="Tekst" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="DialogButtons">
+      <LocalizationItem Name="Abort" Value="&amp;Przerwij" />
+      <LocalizationItem Name="Add" Value="Dodaj" />
+      <LocalizationItem Name="Apply" Value="Zastosuj" />
+      <LocalizationItem Name="Back" Value="&lt; Powrót" />
+      <LocalizationItem Name="Cancel" Value="&amp;Anuluj" />
+      <LocalizationItem Name="Clear" Value="&amp;Wyszyść" />
+      <LocalizationItem Name="Close" Value="Zamknij" />
+      <LocalizationItem Name="Find" Value="Szukaj" />
+      <LocalizationItem Name="Ignore" Value="&amp;Ignoruj" />
+      <LocalizationItem Name="Next" Value="Następny &gt;" />
+      <LocalizationItem Name="No" Value="&amp;Nie" />
+      <LocalizationItem Name="Remove" Value="Usuń" />
+      <LocalizationItem Name="Retry" Value="&amp;Ponów" />
+      <LocalizationItem Name="Yes" Value="&amp;Tak" />
+      <LocalizationItem Name="Edit" Value="Edytuj" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.SystemModule.DashboardItemVisibility" Value="Widoczność elementu tablicy widoków">
+        <LocalizationItem Name="Hidden" Value="Ukryty" />
+        <LocalizationItem Name="Visible" Value="Widoczny" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Messages">
+      <LocalizationItem Name="User" Value="Użytkownik: {0}" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Texts">
+      <LocalizationItem Name="Error" Value="Błąd" />
+      <LocalizationItem Name="Warning" Value="Ostrzeżenie" />
+    </LocalizationGroup>
+  </Localization>
+  <Views>
+    <DetailView Id="AboutInfo_DetailView" Caption="O programie…" />
+  </Views>
+</Application>

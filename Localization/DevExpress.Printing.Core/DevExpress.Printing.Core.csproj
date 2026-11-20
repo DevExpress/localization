@@ -1,31 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net462;net8.0</TargetFrameworks>
-    <EnableWindowsTargeting>true</EnableWindowsTargeting>
-    <AssemblyName>DevExpress.Printing.v26.1.Core</AssemblyName>
+    <TargetFrameworks>net462;net10.0</TargetFrameworks>
+    <AssemblyName>DevExpress.Printing.v26.2.Core</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>true</DelaySign>
+    <AssemblyOriginatorKeyFile>..\DevExpress.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>DevExpress.XtraPrinting</RootNamespace>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\$(TargetFramework)\</IntermediateOutputPath>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(TargetFramework)' == 'net462'">
     <OutputPath>..\DevExpress.Dll\Framework\</OutputPath>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0'">
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net10.0'">
     <OutputPath>..\DevExpress.Dll\NETCore\</OutputPath>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Include="..\AssemblyVersion.cs">
-      <Link>AssemblyVersion.cs</Link>
-    </Compile>
-    <Compile Include="AssemblyInfo.cs" />
-  </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="DescriptionsRes.de.resx" />
     <EmbeddedResource Include="ErrorStringId.de.resx" />
@@ -193,9 +186,55 @@
     <EmbeddedResource Include="DescriptionsRes.uz-Cyrl-UZ.resx" />
     <EmbeddedResource Include="DescriptionsRes.uz-Latn-UZ.resx" />
     <EmbeddedResource Include="DescriptionsRes.ky.resx" />
+    <EmbeddedResource Include="DescriptionsRes.es.resx" />
+    <EmbeddedResource Include="ErrorStringId.es.resx" />
+    <EmbeddedResource Include="DescriptionsRes.ru.resx" />
+    <EmbeddedResource Include="ErrorStringId.ru.resx" />
+    <EmbeddedResource Include="DescriptionsRes.fr.resx" />
+    <EmbeddedResource Include="ErrorStringId.fr.resx" />
+    <EmbeddedResource Include="DescriptionsRes.it.resx" />
+    <EmbeddedResource Include="ErrorStringId.it.resx" />
+    <EmbeddedResource Include="DescriptionsRes.ko.resx" />
+    <EmbeddedResource Include="ErrorStringId.ko.resx" />
+    <EmbeddedResource Include="DescriptionsRes.nl.resx" />
+    <EmbeddedResource Include="ErrorStringId.nl.resx" />
+    <EmbeddedResource Include="DescriptionsRes.pl.resx" />
+    <EmbeddedResource Include="ErrorStringId.pl.resx" />
+    <EmbeddedResource Include="DescriptionsRes.pt.resx" />
+    <EmbeddedResource Include="ErrorStringId.pt.resx" />
+    <EmbeddedResource Include="DescriptionsRes.tr.resx" />
+    <EmbeddedResource Include="ErrorStringId.tr.resx" />
+    <EmbeddedResource Include="DescriptionsRes.zh-CN.resx" />
+    <EmbeddedResource Include="ErrorStringId.zh-CN.resx" />
+    <EmbeddedResource Include="DescriptionsRes.he.resx" />
+    <EmbeddedResource Include="ErrorStringId.he.resx" />
+    <EmbeddedResource Include="DescriptionsRes.pt-BR.resx" />
+    <EmbeddedResource Include="ErrorStringId.pt-BR.resx" />
+    <EmbeddedResource Include="DescriptionsRes.ar.resx" />
+    <EmbeddedResource Include="ErrorStringId.ar.resx" />
+    <EmbeddedResource Include="DescriptionsRes.ca.resx" />
+    <EmbeddedResource Include="ErrorStringId.ca.resx" />
+    <EmbeddedResource Include="DescriptionsRes.de-CH.resx" />
+    <EmbeddedResource Include="ErrorStringId.de-CH.resx" />
+    <EmbeddedResource Include="DescriptionsRes.zh-Hans.resx" />
+    <EmbeddedResource Include="ErrorStringId.zh-Hans.resx" />
+    <EmbeddedResource Include="DescriptionsRes.cs.resx" />
+    <EmbeddedResource Include="ErrorStringId.cs.resx" />
+    <EmbeddedResource Include="DescriptionsRes.hi.resx" />
+    <EmbeddedResource Include="ErrorStringId.hi.resx" />
+    <EmbeddedResource Include="DescriptionsRes.ta.resx" />
+    <EmbeddedResource Include="ErrorStringId.ta.resx" />
+    <EmbeddedResource Include="DescriptionsRes.sv.resx" />
+    <EmbeddedResource Include="ErrorStringId.sv.resx" />
+    <EmbeddedResource Include="ErrorStringId.es-MX.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.es-MX.resx" />
+    <EmbeddedResource Include="ErrorStringId.af.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.af.resx" />
   </ItemGroup>
-
   <ItemGroup>
-    <Folder Include="Properties\" />
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
   </ItemGroup>
 </Project>

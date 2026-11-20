@@ -41,177 +41,235 @@
   </resheader>
   <data name="MetaData_IncorrectPath">
     <value>The '{1}' property path is incorrect for the '{0}' type</value>
+    <comment>Community:Cesta vlastnosti '{1}' je pro typ '{0}' nesprávná.</comment>
   </data>
   <data name="MetaData_IncorrectPathMemberNotExists">
     <value>The '{1}' property path is incorrect for the '{0}' type because the '{2}.{3}' member does not exist</value>
+    <comment>Community:Cesta vlastnosti '{1}' je pro typ '{0}' nesprávná, protože člen '{2}.{3}' neexistuje.</comment>
   </data>
   <data name="MetaData_IncorrectPathNonPersistentMember">
     <value>The '{1}' property path is incorrect for the '{0}' type because the '{2}.{3}' member is not a persistent member</value>
+    <comment>Community:Cesta vlastnosti '{1}' je pro typ '{0}' nesprávná, protože člen '{2}.{3}' není perzistentní.</comment>
   </data>
   <data name="MetaData_IncorrectPathNonReferenceMember">
     <value>The '{1}' property path is incorrect for the '{0}' type because the '{2}.{3}' member is an ordinal member while a reference to another object is expected</value>
+    <comment>Community:Cesta vlastnosti '{1}' je pro typ '{0}' nesprávná, protože člen '{2}.{3}' není referenční.</comment>
   </data>
   <data name="Session_TypeNotFound">
     <value>Could not find type with id = '{0}'</value>
+    <comment>Community:Nelze najít typ s id = '{0}'.</comment>
   </data>
   <data name="Session_TypeFieldIsEmpty">
     <value>'{0}' field is null (base class '{1}')</value>
+    <comment>Community:Pole '{0}' má hodnotu null (základní třída '{1}').</comment>
   </data>
   <data name="ConnectionProvider_UnableToFillRefType">
     <value>Could not ensure database schema for the '{1}' member of the '{0}' type. Error: {2}</value>
+    <comment>Community:Nelze zajistit schéma databáze pro člen „{1}“ typu „{0}“. Chyba: {2}.</comment>
   </data>
   <data name="MetaData_KeyPropertyAbsent">
     <value>Key Property for '{0}' type is absent</value>
+    <comment>Community:Vlastnost tvořící klíč typu '{0}' chybí.</comment>
   </data>
   <data name="MetaData_DuplicateKeyProperty">
     <value>Duplicate key found for type '{0}'</value>
+    <comment>Community:Pro typ '{0}' byl klíč definován vícekrát.</comment>
   </data>
   <data name="MetaData_XMLLoadError">
     <value>XML Dictionary load error: {0}</value>
+    <comment>Community:Chyba při načítání slovníku XML: {0}.</comment>
   </data>
   <data name="MetaData_XMLLoadErrorCannotFindClassinfoType">
     <value>Can't find classinfo type</value>
+    <comment>Community:Chybné XML: Nelze najít typ třídy.</comment>
   </data>
   <data name="MetaData_XMLLoadErrorCannotFindConstructor">
     <value>Can't find constructor</value>
+    <comment>Community:Chybné XML: Nelze najít konstruktor pro typ '{0}'.</comment>
   </data>
   <data name="MetaData_XMLLoadErrorModelTagAbsent">
     <value>Incorrect formed XML (The &lt;Model&gt; tag not found or incorrect namespace)</value>
+    <comment>Community:Chybné XML: Značka &lt;Model&gt; nebyla nalezena nebo byl zadán nesprávný názvový prostor.</comment>
   </data>
   <data name="MetaData_XMLLoadErrorCannotResolveClassinfoInstanceType">
     <value>Can't resolve Classinfo instance type</value>
+    <comment>Community:Chybné XML: Nelze určit typ ClassInfo.</comment>
   </data>
   <data name="MetaData_XMLLoadErrorCannotLoadMember">
     <value>Can't load member [{0}]{1}.{2}</value>
+    <comment>Community:Chybné XML: Nelze načíst člen [{0}]{1}.{2}.</comment>
   </data>
   <data name="MetaData_XMLLoadErrorUnknownAttribute">
     <value>Unknown attribute '{0}'</value>
+    <comment>Community:Chybné XML: Neznámý atribut '{0}'.</comment>
   </data>
   <data name="MetaData_PropertyTypeMismatch">
     <value>The '{0}' property type mismatch for the '{1}' association</value>
+    <comment>Community:Asociace '{1}' mezi třídami '{3}' a '{4}' je neplatná. Třída '{3}' obsahuje vlastnost '{2}', která odkazuje na třídu '{4}'. Třída '{4}' obsahuje vlastnost '{0}', která nesprávně odkazuje na třídu '{5}', ačkoli musí odkazovat na třídu '{3}'.</comment>
   </data>
   <data name="MetaData_PropertyMissing">
     <value>The '{0}' property doesn't exist within the '{1} type'</value>
+    <comment>Community:Vlastnost '{0}' v typu '{1}' neexistuje.</comment>
   </data>
   <data name="MetaData_AssociationElementTypeMissing">
     <value>The '{0}' property doesn't specify the 'ElementType' property within the 'Association' attribute</value>
+    <comment>Community:Vlastnost '{0}' ve svém atributu 'Association' neurčuje vlastnost 'ElementType'.</comment>
   </data>
   <data name="MetaData_RequiredAttributeMissing">
     <value>The '{0}' property doesn't define the '{1}' attribute</value>
+    <comment>Community:Vlastnost '{0}' nedefinuje atribut '{1}'.</comment>
   </data>
   <data name="MetaData_NonPersistentReferenceFound">
     <value>A reference to a non-persistent type '{0}' is found.</value>
+    <comment>Community:Operace specifická pro perzistentní třídy se provádí s neperzistentní třídou '{0}'</comment>
   </data>
   <data name="Session_ObjectCannotBePurged">
     <value>The '{0}' object with id = '{1}' cannot be purged. There are objects referred to it.</value>
+    <comment>Community:Objekt '{0}' s id = '{1}' nelze trvale odstranit - existují objekty, které na něj odkazují.</comment>
   </data>
   <data name="Session_WrongConnectionString">
     <value>Invalid connection string specified: '{0}'</value>
+    <comment>Community:Byl zadán neplatný připojovací řetězec: '{0}'.</comment>
   </data>
   <data name="Session_CannotReloadPurgedObject">
     <value>Cannot reload purged object</value>
+    <comment>Community:Požadované objekty nelze načíst, protože v úložišti dat nejsou přítomny. Tyto objekty již mohly být odstraněny/trvale odstraněny. Pokud se tato výjimka zobrazí znovu se stejnými objekty v seznamu, mějte na paměti, že referenční integrita vašeho úložiště dat může být narušena. V takovém případě se obraťte na správce systému. Požadované objekty: {0}.</comment>
   </data>
   <data name="Session_SessionMixing">
     <value>The '{0}' object belongs to a different session</value>
+    <comment>Community:Objekt '{0}' patří do jiné relace. Řešení naleznete na https://docs.devexpress.com/eXpressAppFramework/403631/.</comment>
   </data>
   <data name="Session_CannotAddObjectToObjectCache">
     <value>Cannot add the '{0}' object with id = '{1}' into the object cache. Reason: {2}</value>
+    <comment>Community:Objekt '{0}' s klíčem = '{1}' nelze přidat do mapy identit objektů, protože do ní již byl přidán jiný objekt '{2}' se stejným klíčem.</comment>
   </data>
   <data name="MetaData_SessionCtorAbsent">
     <value>The {0} type doesn't have a session specific constructor</value>
+    <comment>Community:Typ {0} nemá konstruktor specifický pro relaci.</comment>
   </data>
   <data name="Paging_PageSizeShouldBeGreaterThanZero">
     <value>The PageSize should be greater than zero</value>
+    <comment>Community:Hodnota PageSize by měla být větší než nula.</comment>
   </data>
   <data name="Paging_CurrentPageShouldBeGreaterOrEqualZero">
     <value>The CurrentPage should be greater or equal 0</value>
+    <comment>Community:Hodnota CurrentPage by měla být větší nebo rovna nule.</comment>
   </data>
   <data name="Paging_CurrentPageShouldBeLessThanPageCount">
     <value>The CurrentPage should be less than PageCount</value>
+    <comment>Community:Hodnota CurrentPage by měla být menší než PageCount.</comment>
   </data>
   <data name="Session_TranSequenceBegin">
     <value>Cannot start more transactions on this session</value>
+    <comment>Community:V relaci nelze zahájit více než jednu transakci.</comment>
   </data>
   <data name="Session_TranSequenceCommit">
     <value>No transaction is active</value>
+    <comment>Community:Nelze provést zápis, protože není aktivní žádná transakce.</comment>
   </data>
   <data name="Session_TranSequenceRollback">
     <value>No transaction is active</value>
+    <comment>Community:Nelze vrátit zpět, protože není aktivní žádná transakce.</comment>
   </data>
   <data name="Collections_InvalidCastOnAdd">
     <value>Unable to add item to collection. The '{0}' object is not an instance of the '{1}' type</value>
+    <comment>Community:Položku nelze přidat do kolekce. Objekt „{0}“ není instancí typu „{1}“.</comment>
   </data>
   <data name="Generator_OneOfBinaryOperatorsOperandsIsNull">
     <value>One of BinaryOperator's operands is null</value>
+    <comment>Community:Jeden z operandů operátoru BinaryOperator je nulový odkaz.</comment>
   </data>
   <data name="ConnectionProvider_KeysAutogenerationNonSupportedTypeException">
     <value>Keys autogeneration supported only for Int32 and Guid datatypes. Class Type: '{0}'</value>
+    <comment>Community:Automatické generování klíčů není podporováno pro typ třídy „{0}“. Je podporováno pouze pro datové typy 32bitové celé číslo, 64bitové celé číslo a globálně jedinečný identifikátor.</comment>
   </data>
   <data name="Session_CannotLoadInvalidType">
     <value>Can't load invalid Type '{0}'</value>
+    <comment>Community:Nelze načíst neplatný typ '{0}'.</comment>
   </data>
   <data name="Paging_EnumeratorPositioning">
     <value>The enumerator is positioned before the first element of the collection or after the last element</value>
+    <comment>Community:Enumerátor se nachází před prvním prvkem kolekce nebo za jejím posledním prvkem.</comment>
   </data>
   <data name="Paging_EnumeratorObjectModifiedOrDeleted">
     <value>One or more objects from the requested range has been modified or deleted. You need to refresh the identity values list</value>
+    <comment>Community:Jeden nebo více objektů z požadovaného rozsahu bylo změněno nebo odstraněno. Je třeba aktualizovat seznam hodnot identifikátorů.</comment>
   </data>
   <data name="Session_CannotChangePropertyWhenSessionIsConnected">
     <value>Cannot change {0} when session is connected</value>
+    <comment>Community:Pokud je relace připojena, nelze změnit '{0}'.</comment>
   </data>
   <data name="Session_DifferentObjectsWithSameKey">
     <value>Different objects with the same keys</value>
+    <comment>Community:Byly nalezeny objekty s duplicitními klíči.</comment>
   </data>
   <data name="MetaData_CannotResolveClassInfo">
     <value>Can't resolve ClassInfo for the type '[{0}]{1}'"</value>
+    <comment>Community:Nelze určit ClassInfo pro typ '[{0}]{1}'.</comment>
   </data>
   <data name="Session_IncompatibleIdType">
     <value>Passed id type '{0}' incompatible with '{1}.{2}' key type '{3}'</value>
+    <comment>Community:Typ předaného identifikátoru '{0}' není kompatibilní s typem '{3}' klíče '{1}.{2}'.</comment>
   </data>
   <data name="MetaData_ReferenceTooComplex">
     <value>Reference '{0}.{1}' is too complex</value>
+    <comment>Community:Referenční člen '{0}.{1}' je příliš složitý.</comment>
   </data>
   <data name="Metadata_SameTableName">
     <value>Class {0} maps to the same table as {1}</value>
+    <comment>Community:Třídy {0} a {1} jsou mapovány na stejnou tabulku.</comment>
   </data>
   <data name="Metadata_CustomProperties_PersistentAndNonStorableType">
-    <value>Custom member '{0}.{1}' of type '{2}' can't be persistent</value>
+    <value>Vlastní člen '{0}.{1}' typu '{2}' nemůže být perzistentní</value>
+    <comment>AI</comment>
   </data>
   <data name="Metadata_CustomProperties_ReferenceOrCollectionInSessionStore">
     <value>Unable to create custom member '{1}' of the reference or collection type because '{0}' class does not implement '{2}' interface</value>
+    <comment>Community:Nelze vytvořit vlastní člen '{1}' referenčního typu nebo typu kolekce, protože třída '{0}' neimplementuje rozhraní '{2}'.</comment>
   </data>
   <data name="XpoDefault_CannotAssignPropertyWhileAnotherIsNotNull">
     <value>Can't assign XpoDefault.{0} while XpoDefault.{1} is not null</value>
+    <comment>Community:Nelze přiřadit XpoDefault.{0}, pokud je XpoDefault.{1} zadáno.</comment>
   </data>
   <data name="ThreadSafeDataLayer_DictionaryModified">
     <value>Sorry, you can't modify dictionary while it's used by the ThreadSafeDataLayer. Please call the Session.CreateObjectTypeRecords method in your installation/admin application before using ThreadSafeDataLayer</value>
+    <comment>Community:Dictionary nelze změnit, protože jej používá ThreadSafeDataLayer. Změněné nebo vytvořené ClassInfo: '{0}'. Chcete-li se této výjimce vyhnout, postupujte podle těchto doporučení: https://www.devexpress.com/kb=T901732</comment>
   </data>
   <data name="Metadata_DictionaryMixing">
     <value>The '{0}' class info belongs to a different dictionary</value>
+    <comment>Community:ClassInfo '{0}' patří do jiného slovníku.</comment>
   </data>
   <data name="Metadata_CantPersistGenericType">
     <value>Can't persist generic type. Please remove PersistentAttribute from the '{0}' type definition and create a persistent non-generic descendant(s) instead</value>
+    <comment>Community:Obecný typ nelze učinit perzistentním. Odeberte PersistentAttribute z definice typu '{0}' a místo něj vytvořte jednoho nebo více perzistentních neobecných potomků.</comment>
   </data>
   <data name="PersistentAliasExpander_ReferenceOrCollectionExpectedInTheMiddleOfThePath">
     <value>Incorrect member '{0}' in a path. A reference property or collection association is expected</value>
+    <comment>Community:Nesprávný člen '{0}' v cestě. Očekává se referenční vlastnost nebo asociace kolekce.</comment>
   </data>
   <data name="XPWeakReference_SavedObjectExpected">
     <value>Saved object is expected</value>
+    <comment>Community:Slabé reference můžete používat pouze na uložené objekty.</comment>
   </data>
   <data name="PersistentAliasExpander_NonPersistentCriteria">
     <value>Cannot query a data store using the "{0}" criterion because it uses the '{1}' nonpersistent property</value>
+    <comment>Community:Datové úložiště nelze dotazovat pomocí kritéria "{0}", které používá neperzistentní vlastnost '{1}'. Další podrobnosti a možná řešení naleznete v článku znalostní báze na adrese https://www.devexpress.com/kb=Q352044.</comment>
   </data>
   <data name="View_PropertyNotFetched">
     <value>'{0}' property isn't fetched</value>
+    <comment>Community:Vlastnost '{0}' není načtena.</comment>
   </data>
   <data name="Session_AlreadyConnected">
     <value>Session is already connected</value>
+    <comment>Community:Relace je již připojena.</comment>
   </data>
   <data name="Session_AssociationCollectionWithDisabledLoading">
     <value>Association collection's state is broken (LoadingEnabled isn't true)</value>
+    <comment>Community:Stav kolekce přidružení je narušen: LoadingEnabled musí mít hodnotu true.</comment>
   </data>
   <data name="Metadata_SeveralClassesWithSameName">
     <value>Dictionary already contains class info '{1}'. Possible reason: the assembly '{0}' has been loaded twice.</value>
+    <comment>Community:Slovník již obsahuje ClassInfo '{1}'. Možná příčina: sestavení [{0}] bylo načteno dvakrát.</comment>
   </data>
   <data name="">
     <value></value>
@@ -224,71 +282,893 @@
   </data>
   <data name="InMemorySet_ColumnNotFound" xml:space="preserve">
     <value>Sloupec '{0}' nenalezen.</value>
+    <comment>Community:Sloupec '{0}' nebyl nalezen.</comment>
   </data>
   <data name="Session_UnexpectedState" xml:space="preserve">
     <value>Zadaný SessionState.{0} není podporován.</value>
+    <comment>Approved</comment>
   </data>
   <data name="CriteriaAnalizer_NullJoinClassInfo" xml:space="preserve">
     <value>JoinClassInfo je null.</value>
   </data>
   <data name="DataView_ReferenceMembersWithCompoundKeyAreNotSupported" xml:space="preserve">
     <value>Třídy s členy struktury nejsou podporovány.</value>
+    <comment>Community:Třídy se členy typu struktura nejsou podporovány.</comment>
   </data>
   <data name="DirectSQL_CollectionMembersAreNotSupported" xml:space="preserve">
     <value>Kolekce členů nejsou podporovány.</value>
+    <comment>Community:Členy typu kolekce nejsou podporovány.</comment>
   </data>
   <data name="Helpers_ResolveDataForCollection" xml:space="preserve">
     <value>Člen není kolekce.</value>
+    <comment>Approved</comment>
   </data>
   <data name="InMemory_IsReadOnly" xml:space="preserve">
     <value>Zápis není podporován.</value>
+    <comment>Approved</comment>
   </data>
   <data name="InMemoryFull_CannotPrepareQueryPlan" xml:space="preserve">
     <value>Nelze vytvořit plán dotazů.</value>
+    <comment>Community:Nelze vytvořit plán dotazu.</comment>
   </data>
   <data name="InMemoryFull_DifferentColumnListLengths" xml:space="preserve">
     <value>Vnitřní chyba: neshoda počtu sloupců PKey a FKey.</value>
+    <comment>Community:Interní chyba: Nesoulad počtu sloupců PKey a FKey.</comment>
   </data>
   <data name="InMemorySet_CantUpdateRelationColumn" xml:space="preserve">
     <value>Nelze aktualizovat sloupce s vztahy.</value>
+    <comment>Community:Sloupce s relacemi nelze aktualizovat.</comment>
   </data>
   <data name="InMemorySet_NullDefaultValueNotAllowed" xml:space="preserve">
     <value>Hodnoty null nejsou povoleny jako výchozí hodnoty pro sloupec {0}.</value>
+    <comment>Community:Hodnoty NULL nejsou povoleny jako výchozí hodnoty pro sloupec '{0}'.</comment>
   </data>
   <data name="InMemorySet_OperationNotAllowed" xml:space="preserve">
     <value>Zadaná operace je zakázána.</value>
+    <comment>Approved</comment>
   </data>
   <data name="InMemorySet_UniqueIndex" xml:space="preserve">
     <value>Porušení jedinečného indexu {0}.</value>
+    <comment>Community:Byl porušen jedinečný index '{0}'.</comment>
   </data>
   <data name="LinqToXpo_ExpressionX0IsNotSupported" xml:space="preserve">
     <value>Výraz není podporován: {0}</value>
+    <comment>Approved</comment>
   </data>
   <data name="LinqToXpo_ExpressionX0IsNotSupportedInX1" xml:space="preserve">
     <value>Výraz není podporován v {1}: {0}</value>
+    <comment>Approved</comment>
   </data>
   <data name="LinqToXpo_SequenceContainsMoreThanOneElement" xml:space="preserve">
     <value>Sekvence obsahuje více než jeden prvek.</value>
+    <comment>Approved</comment>
   </data>
   <data name="LinqToXpo_TheX0MethodIsNotSupported" xml:space="preserve">
     <value>Metoda {0} není podporována.</value>
+    <comment>Approved</comment>
   </data>
   <data name="Metadata_NotCollection" xml:space="preserve">
     <value>'{0}.{1}' není kolekce.</value>
+    <comment>Approved</comment>
   </data>
   <data name="Object_CorrectPIinUOW" xml:space="preserve">
     <value>Trvalé rozhraní nejsou plně podporovány v relacích. Místo toho použijte jednotky práce.</value>
+    <comment>Community:Perzistentní rozhraní nejsou v relacích plně podporována. Použijte místo toho jednotky práce.</comment>
   </data>
   <data name="SerOLHelpers_NestedParentMapIsNull" xml:space="preserve">
     <value>Vnitřní chyba: NestedParentMap a ParentNestedMap jsou null.</value>
+    <comment>Community:Interní chyba: NestedParentMap a ParentNestedMap mají hodnotu null.</comment>
   </data>
   <data name="InMemorySet_XMLException_InvalidColumnTypeDeclaration" xml:space="preserve">
     <value>XML zavaděč: neplatný typ název sloupce.</value>
+    <comment>Community:Načítač XML: Neplatný název typu sloupce.</comment>
   </data>
   <data name="InMemoryFull_TableNotFound" xml:space="preserve">
     <value>Tabulka '{0}' nebyla nalezena.</value>
+    <comment>Approved</comment>
   </data>
   <data name="InMemorySet_AliasNotFound" xml:space="preserve">
     <value>Tabulka s aliasem '{0}' nenalezena.</value>
+    <comment>Community:Tabulka s aliasem '{0}' nebyla nalezena.</comment>
+  </data>
+  <data name="Security_DeletingAnObjectWasProhibitedByTheRules" xml:space="preserve">
+    <value>Odstranění objektu '{0}' je zakázáno bezpečnostními pravidly.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_SavingAnObjectWasProhibitedByTheRulesOfVal" xml:space="preserve">
+    <value>Uložení objektu '{0}' je zakázáno bezpečnostními pravidly.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_SavingAnObjectWasProhibitedByTheRulesWProp" xml:space="preserve">
+    <value>Uložení vlastnosti '{0}.{1}' je zakázáno bezpečnostními pravidly.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_MostProbablyYouAreTryingToInitiateAnObjectEx" xml:space="preserve">
+    <value> Pravděpodobně se pokoušíte zahájit operaci načítání objektů, zatímco předchozí operace načítání objektů ještě není dokončena. Odložte svou operaci, dokud nebude vyvolána událost Session.ObjectsLoaded nebo IXPObject.OnLoaded (zatímco Session.IsObjectsLoading má hodnotu true). Další příčinou této výjimky je, že se pokoušíte pracovat současně se stejnou relací z různých vláken.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_MostProbablyYouAreTryingToInitiateAnObject" xml:space="preserve">
+    <value> Pravděpodobně se pokoušíte zahájit operaci načítání objektů, zatímco předchozí operace ukládání objektů ještě není dokončena. Odložte svou operaci, dokud nebude vyvolána událost Session.ObjectsSaved nebo IXPObject.OnSaved (zatímco Session.IsObjectsSaving má hodnotu true).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0OperatorAfterSkipOrTakeIsNotSupported" xml:space="preserve">
+    <value>{0} po Skip nebo Take není podporováno.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SpecifiedJoinKeySelectorsNotCompatibleX0X1" xml:space="preserve">
+    <value>Selektory klíčů propojení '{0}' a '{1}' nejsou kompatibilní.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_NotClassMember" xml:space="preserve">
+    <value>'{0}' není členem třídy '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0OverGroupingIsNotSupported" xml:space="preserve">
+    <value>{0} nad seskupenými výsledky není podporováno.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0WithSkipOrTakeOrGroupingIsNotSupported" xml:space="preserve">
+    <value>{0} v kombinaci se Skip nebo Take nebo seskupováním není podporováno.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0WithSoManyParametersIsNotSupported" xml:space="preserve">
+    <value>{0} s tolika parametry není podporováno.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_NotCollectionProperty" xml:space="preserve">
+    <value>{0}.{1} není vlastnost typu kolekce. Měla by být označena atributem AssociationAttribute a být typu odvozeného od XPBaseCollection. Pravděpodobně používáte GetCollection v situaci, kdy by se měla použít metoda GetList.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XpoServerMode_NonPersistentIsNotSupported" xml:space="preserve">
+    <value>Kolekce v serverovém režimu nemůže používat neperzistentní třídu '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_ReferencePropertyViaCollectionAccessor" xml:space="preserve">
+    <value>Pokus o nastavení referenční vlastnosti prostřednictvím přístupové metody kolekce.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionXPQueryX0" xml:space="preserve">
+    <value>Jako první argument výrazu volání se očekává XPQuery: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_PropertyTypeMismatch" xml:space="preserve">
+    <value>Asociace '{0}' mezi třídami '{1}' a '{3}' je neplatná. Třída '{1}' obsahuje vlastnost '{2}', která odkazuje na třídu '{3}'. Třída '{3}' obsahuje vlastnost '{4}', která nesprávně odkazuje na třídu '{5}'; očekává se, že bude odkazovat na třídu '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_MoreThenOneAssociatedMemberFound" xml:space="preserve">
+    <value>Asociace '{0}' je nejednoznačná mezi členy '{2}' a '{3}' třídy '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationListExpected" xml:space="preserve">
+    <value>Očekává se asociační seznam nebo kolekce: '{0}.{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="View_AtLeastOneFetchPropertyShouldBeDefined" xml:space="preserve">
+    <value>Pro načítání by měla být definována alespoň jedna vlastnost.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_AddRelation" xml:space="preserve">
+    <value>Nelze přidat duplikát relace.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_NotLoadingMode" xml:space="preserve">
+    <value>Mimo režim načítání nelze přiřadit hodnotu sloupci '{0}' s automatickým přírůstkem.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_InsertingDataIntoAutoincrementColumn" xml:space="preserve">
+    <value>Nelze přiřadit hodnotu sloupci '{0}' s automatickým přírůstkem.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_CannotPrepareQueryPlanX0" xml:space="preserve">
+    <value>Nelze vytvořit plán dotazu, protože kritéria '{0}' jsou neplatná.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadClassInfo_Dictionary" xml:space="preserve">
+    <value>ObjectClassInfo nelze změnit. Jeho slovník se neshoduje s aktuálním Dictionary.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadClassInfo_DataSourceDictionary" xml:space="preserve">
+    <value>ObjectClassInfo nelze změnit. Jeho slovník se neshoduje se slovníkem DataSource.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadClassInfo_DataSource" xml:space="preserve">
+    <value>ObjectClassInfo nelze změnit. DataSource má vlastní ClassInfo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadObjectType_DataSource" xml:space="preserve">
+    <value>ObjectType nelze změnit. DataSource má vlastní ClassInfo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_CannotAssignProperty" xml:space="preserve">
+    <value>Vlastnost „{0}“ nelze změnit, pokud {1} není v režimu návrhu nebo inicializace.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DroneDataStore_CommitNotSupported" xml:space="preserve">
+    <value>Změny nelze uložit, protože připojení k databázi není nakonfigurováno (aktuálně se používá zástupný poskytovatel databáze). Připojte se prosím k datovému úložišti podle popisu na https://docs.devexpress.com/XPO/2123/connect-to-a-data-store</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotConvertWindowsTimeZoneIdToIanaTimeZoneId" xml:space="preserve">
+    <value>Identifikátor časového pásma Windows nelze převést na identifikátor časového pásma IANA. Nastavte delegáta ConnectionProviderSql.MapWindowsToIanaTimeZoneId tak, aby poskytoval logiku převodu.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SqlConnectionProvider_CannotCreateAColumnForTheX0FieldWithTheX1D" xml:space="preserve">
+    <value>Nelze vytvořit sloupec pro pole '{0}' s výchozí hodnotou '{1}'. Zadejte prosím jinou výchozí hodnotu pro toto pole</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_CannotFindParentRelationForNode" xml:space="preserve">
+    <value>Nelze najít nadřazenou relaci pro uzel '{0}'. Chybný dotaz nebo interní chyba XPO.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_PathNotFound" xml:space="preserve">
+    <value>Nelze najít cestu {0}-&gt;{1}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Helpers_DifferentObjectsKeys" xml:space="preserve">
+    <value>Nelze sloučit změny objektu se změněným klíčem.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PersistentAliasExpander_NonPersistentCriteriaThisValueMember" xml:space="preserve">
+    <value>Datové úložiště nelze dotazovat pomocí kritéria "{0}", které používá neperzistentní vlastnost '{1}'. Pokud jste použili '{0}' jako ValueMember pro vyhledávací ovládací prvek, použijte místo něj prázdný ValueMember.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="View_IsInLoading" xml:space="preserve">
+    <value>Pohled nelze znovu načíst, dokud asynchronně načítá data.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_CannotResolvePropertyTypeComparer" xml:space="preserve">
+    <value>Nelze získat porovnávač pro vlastnost „{0}“ typu „{1}“.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_ClassesAreNotAssignable" xml:space="preserve">
+    <value>Třídy „{0}“ a „{1}“ nejsou vzájemně přiřaditelné.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerializableObjectLayer_OptimisticLockFieldNotExists" xml:space="preserve">
+    <value>V informacích o třídě '{0}' není definováno OptimisticLockField.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerializableObjectLayer_OptimisticLockFieldInDLNotExists" xml:space="preserve">
+    <value>V informacích o třídě '{0}' není definováno OptimisticLockFieldInDataLayer.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ObjectLayer_XPClassInfoNotFound" xml:space="preserve">
+    <value>Informace o třídě '{0}' nebyly nalezeny.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_AssociationListExpected" xml:space="preserve">
+    <value>Očekává se kolekce nebo seznam přidružení.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ComplexDataSelectionIsNotSupportedPerhapsY" xml:space="preserve">
+    <value>Složitý výběr dat není podporován. Možná v selektoru používáte složitý poddotaz.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_ConnectionPoolCannotBeUsed" xml:space="preserve">
+    <value>Fond připojení nelze použít s jednoduchou datovou vrstvou</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_ConnectionStringEmpty" xml:space="preserve">
+    <value>Připojovací řetězec nesmí být prázdný, pokud se používá datové úložiště, které není ani paměťové, ani vlastní</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_ConstraintConflict" xml:space="preserve">
+    <value>V tabulce '{0}' byla porušena omezující podmínka pro cizí klíč ve sloupcích '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_DelayedPropertyContainerCannotBeAssigned" xml:space="preserve">
+    <value>Kontejner odložené vlastní vlastnosti '{0}.{1}' nelze přiřadit.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CollectClassInfos_CouldNotLoadAssembly" xml:space="preserve">
+    <value>Nepodařilo se shromáždit informace o třídách ze sestavení „{0}“. ThreadSafeDataLayer může při použití tříd z tohoto sestavení vyvolat výjimku InvalidOperationException. Podrobnosti naleznete v InnerException.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ImageValueConverter_NotPresent" xml:space="preserve">
+    <value>V sestavení 'System.Drawing.Common' se nepodařilo najít třídu 'System.Drawing.ImageConverter'. Použijte System.Drawing.Common 5.0 nebo vyšší.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_CouldNotAssignPropertyValue" xml:space="preserve">
+    <value>Nepodařilo se přiřadit hodnotu vlastnosti '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_CouldNotFindAppropriateConstructor" xml:space="preserve">
+    <value>Nepodařilo se najít vhodný konstruktor pro typ '{0}'. Očekává se konstruktor bez parametrů nebo konstruktor přijímající objekt XPDictionary jako parametr.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_CouldNotResolvePropertyType" xml:space="preserve">
+    <value>Nepodařilo se určit typ vlastnosti '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CrossThreadFailureDetected" xml:space="preserve">
+    <value>Byla zjištěna operace napříč vlákny. '{0}' není objekt bezpečný pro přístup z více vláken, nepoužívejte jej prosím současně z různých vláken</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_CurrentExpressionWithX0IsNotSupported" xml:space="preserve">
+    <value>Aktuální výraz s {0} není podporován.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_WantNotDeleteFilteredAggregateCollection" xml:space="preserve">
+    <value>Odstranění objektu „{0}“ s částečně načtenou agregovanou kolekcí „{1}“ může způsobit vznik osiřelých objektů/záznamů.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_DuplicateJoinOperatorFound" xml:space="preserve">
+    <value>Byl nalezen duplicitní operátor propojení.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_DuplicateMappingField" xml:space="preserve">
+    <value>Duplicitní mapování na sloupec '{0}' ve třídě '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_EnteringTheX0StateFromTheX1StateIsProhibit" xml:space="preserve">
+    <value>Přechod ze stavu '{2}' do stavu '{0}' je pro '{3}' zakázán kvůli stavu '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_EntityTypesEmpty" xml:space="preserve">
+    <value>EntityTypes nesmí mít hodnotu null a musí obsahovat alespoň 1 položku</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_GroupingWithACustomComparerIsNotSupported" xml:space="preserve">
+    <value>Seskupování s vlastním porovnávačem není podporováno.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_NullInstance" xml:space="preserve">
+    <value>Pro virtuální objekt rozhraní '{0}' nelze najít implementující objekt.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_CachedExpressionIsIncompatible" xml:space="preserve">
+    <value>Nekompatibilní výraz. Měl by být vygenerován kompilátorem a obsahovat pouze statické argumenty. K předání nestatických argumentů můžete použít parametry a1, a2 a a3 metody CachedExpression.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_IncorrectDeclaringTypeX0InTheMethodCallQue" xml:space="preserve">
+    <value>Nesprávný deklarující typ '{0}' ve volání metody. Očekává se typ 'System.Linq.Queryable' nebo 'System.Linq.Enumerable'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_EmptyMemberInstance" xml:space="preserve">
+    <value>Člen InstanceType neobsahuje žádnou hodnotu. GetInstanceObject nelze použít s objektem, který dosud není správně inicializován.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_InternalErrorAsyncActionIsAlreadyDisposed" xml:space="preserve">
+    <value>Interní chyba: asynchronní akce již byla uvolněna. Příčinou může být problém v XPO. Obraťte se prosím na tým podpory DevExpress.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NullSessionProvider" xml:space="preserve">
+    <value>Interní chyba: Nelze přistupovat k relaci.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_DifferentComplexSet" xml:space="preserve">
+    <value>Interní chyba: Nelze přidat řádek z jiné složené sady.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongDictionaryIndex" xml:space="preserve">
+    <value>Interní chyba: Nesprávná data slovníku v indexu '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongCommitInfo" xml:space="preserve">
+    <value>Interní chyba: Chybně utvořené informace pro potvrzení změn.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_WrongIndexInfo" xml:space="preserve">
+    <value>Interní chyba: Chybné informace o indexu.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongRollbackInfo" xml:space="preserve">
+    <value>Interní chyba: Chybně utvořené informace pro vrácení změn.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InTransactionLoader_NotInSelectDataMode" xml:space="preserve">
+    <value>Interní chyba: Režim SelectData není aktivní.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InTransactionLoader_ProcessReturnResultError" xml:space="preserve">
+    <value>Interní chyba: Operace není v režimu SelectData povolena.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MsSql_RootIsNotInsertStatement" xml:space="preserve">
+    <value>Interní chyba: Root není typu InsertStatement.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Loader_ReloadError" xml:space="preserve">
+    <value>Interní chyba: Zadané '{0}.{1}' není podporováno.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_CriteriaEvaluationBehaviorIsNotSupported" xml:space="preserve">
+    <value>Interní chyba: zadaná hodnota CriteriaEvaluationBehavior.{0} není tímto přetíženým konstruktorem podporována.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_UnexpectedPersistentCriteriaEvaluationBehavior" xml:space="preserve">
+    <value>Interní chyba: Zadaný PersistentCriteriaEvaluationBehavior.{0} není podporován.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServerModeGridSource_SummaryItemTypeNotSupported" xml:space="preserve">
+    <value>Interní chyba: Zadaná hodnota SummaryItemType.{0} není podporována.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Loader_InternalErrorOrUnsupportedReferenceStructure" xml:space="preserve">
+    <value>Interní chyba XPO nebo nepodporovaná struktura referencí: Složený klíč nesmí odkazovat na typ, který má odvozené třídy. Typ objektu '{0}', zjištěný typ '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_InternalXPOError" xml:space="preserve">
+    <value>Interní chyba XPO.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_ODataType_Mismatch" xml:space="preserve">
+    <value>Neplatná anotace '@odata.type': '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CreateCollection_InvalidCastException" xml:space="preserve">
+    <value>Neplatné přetypování z „{0}“ na „{1}“ ve vlastnosti „{2}.{3}“.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AmbiguousClassName" xml:space="preserve">
+    <value>Nelze určit ClassInfo pro nejednoznačný název typu '{0}' mezi typy '{1}' a '{2}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_CanChangeProperties" xml:space="preserve">
+    <value>Vlastnosti zdroje InstantFeedback nelze měnit, pokud jej již používá tabulka.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_CanChangeViewProperties" xml:space="preserve">
+    <value>Vlastnosti XPInstantFeedbackView nelze měnit, pokud jej již používá tabulka.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServerModeGridSource_GroupAndAddOrRemoveIsNotAllowed" xml:space="preserve">
+    <value>Není dovoleno současně seskupovat a přidávat/odstraňovat položky.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_NullJoinClassInfo" xml:space="preserve">
+    <value>JoinClassInfo je nulový odkaz.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_EmptyJoinOperandId" xml:space="preserve">
+    <value>JoinOperandId je prázdný.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_LambdaExpressionIsExpectedX0" xml:space="preserve">
+    <value>Očekává se výraz lambda: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_DoesNotSupportNestedJoinsWithLevel" xml:space="preserve">
+    <value>LinqToXpo nepodporuje více než dvě vnořená propojení. Toto omezení nemá vliv na celkový počet propojení v dotazu.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_MalformedAggregate" xml:space="preserve">
+    <value>Chybná agregace nebo interní chyba XPO.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_NoAssociationListInAssociation" xml:space="preserve">
+    <value>Nesprávně vytvořená asociace '{0}' mezi '{1}.{2}' a '{3}.{4}'. Na jedné straně asociace se očekává seznam nebo kolekce.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_TwoAssociationListsInAssociation" xml:space="preserve">
+    <value>Nesprávně vytvořená asociace '{0}' mezi seznamy/kolekcemi '{1}.{2}' a '{3}.{4}'. Pro vztahy mnoho ku mnoha použijte atribut ManyToManyAlias nebo seznamy/kolekce typu XPCollection.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_NotFound" xml:space="preserve">
+    <value>Nesprávně vytvořená asociace '{0}'. Ve třídě '{3}' nelze najít přidružený člen pro '{1}.{2}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_NotACollection" xml:space="preserve">
+    <value>Chybný dotaz nebo interní chyba XPO: '{0}' není kolekce.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_SuppressSuspiciousMemberInheritanceCheckError" xml:space="preserve">
+    <value>Člen '{0}.{1}' a jeho atribut '{2}' jsou ignorovány. Člen se stejným názvem je již deklarován v základní třídě '{3}'. Chcete-li potlačit tuto výjimku, nastavte DevExpress.Xpo.Metadata.ReflectionClassInfo.SuppressSuspiciousMemberInheritanceCheck na True.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ObjectLayer_MemberNotFound" xml:space="preserve">
+    <value>Člen '{0}.{1}' nebyl nalezen.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_PersistentOrThis" xml:space="preserve">
+    <value>Člen '{0}.{1}' by měl být perzistentní nebo vracet 'this'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NonPersistentKey" xml:space="preserve">
+    <value>Nalezen neperzistentní klíč '{0}.{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_PersistentReferenceFound" xml:space="preserve">
+    <value>Operace specifická pro neperzistentní třídy se provádí s perzistentní třídou '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NullableAttributeNotApplicable" xml:space="preserve">
+    <value>Atribut Nullable nelze použít na člen {0} třídy {1}, protože člen není perzistentní, má alias, má alias pro vztah mnoho ku mnoha nebo je referenčního typu odkazujícího na objekt.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_WrongObjectType" xml:space="preserve">
+    <value>Objekt {0} vytvořený pomocí ClassInfo {2} vrací nesprávné ClassInfo {1}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="NestedSession_NotCloneable" xml:space="preserve">
+    <value>Hierarchii objektů nelze klonovat, protože člen '{0}.{1}' byl během operace změněn.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerializableObjectLayer_OLDoesNotImplementISerializableObjectLayerEx" xml:space="preserve">
+    <value>Objektová vrstva neimplementuje ISerializableObjectLayerEx.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_ObjectModificationIsNotAllowed" xml:space="preserve">
+    <value>Objekty nelze měnit, pokud je relace ve stavu CommitChangesToDataLayerInner.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_ClassAttributeExclusive" xml:space="preserve">
+    <value>PersistentAttribute, NonPersistentAttribute a MapToAttribute se vzájemně vylučují. Na třídu '{0}' lze použít pouze jeden z nich.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_MemberAttributeExclusive" xml:space="preserve">
+    <value>PersistentAttribute, NonPersistentAttribute a PersistentAliasAttribute se vzájemně vylučují. Na člen '{0}.{1}' lze použít pouze jeden z nich.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_DifferentTypes" xml:space="preserve">
+    <value>Neshoda datových typů sloupců primárního a cizího klíče.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_DelayedPropertyDoesNotContainProperObject" xml:space="preserve">
+    <value>Vlastnost '{0}.{1}' neobsahuje objekt XPDelayedProperty.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_QueryWithAppliedTheSkipOrTheTakeOperations" xml:space="preserve">
+    <value>Dotaz s použitými operacemi Skip nebo Take nelze použít pro propojení.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_UseDataSetDataStoreOrCtor" xml:space="preserve">
+    <value>Místo použití .ctor s DataSet použijte třídu DataSetDataStore nebo .ctor bez DataSet.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_RecurringObjectAdd" xml:space="preserve">
+    <value>Reentrantní přidání.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SequenceContainsNoMatchingElement" xml:space="preserve">
+    <value>Sekvence neobsahuje žádný odpovídající prvek.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServerModeGridSource_WrongTopLevelAggregate" xml:space="preserve">
+    <value>Chyba serveru nebo interní chyba XPO: Více než jedna skupina v agregátu nejvyšší úrovně.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SessionIsNull" xml:space="preserve">
+    <value>Session má hodnotu null.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_SingleRowExpected" xml:space="preserve">
+    <value>Prostřednictvím '{0}' se očekává jediný řádek, nalezeno řádků: {1}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SortingIsNotSupportedForSelectManyOperation" xml:space="preserve">
+    <value>Řazení není podporováno pro operaci SelectMany nad kolekcemi s relací M:N.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_MethodX0ForX1IsNotSupported" xml:space="preserve">
+    <value>Metoda '{0}' není podporována pro {1}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_PropertyIsDuplicatedInIndexDeclaration" xml:space="preserve">
+    <value>Vlastnost '{0}' je v deklaraci indexu pro '{1}{2}{3}' ({4}) uvedena duplicitně.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_PersistentAliasCircular" xml:space="preserve">
+    <value>Vlastnost '{1}' třídy '{0}' je označena atributem PersistentAlias, který používá následující výraz: '{2}'. Tento výraz způsobuje nekonečný cyklus.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_NonPersistentClassInTheAssociation" xml:space="preserve">
+    <value>Atribut asociace nelze použít pro člen '{0}.{1}', protože třída '{2}' není perzistentní.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_AssociationAttributeOnlyForListOrReference" xml:space="preserve">
+    <value>Atribut asociace nelze použít pro člen '{1}.{2}'. Očekává se odkaz nebo seznam.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProvider_TheAutoIncrementedKeyWithX0TypeIsNotSupport" xml:space="preserve">
+    <value>Klíč s automaticky zvyšovanou hodnotou typu „{0}“ není podporován pro „{1}“</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionIsExpectedX0" xml:space="preserve">
+    <value>Očekává se výraz volání: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionGenericReturnTypeX0" xml:space="preserve">
+    <value>Výraz volání by měl mít obecný návratový typ: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionReturnTypeX0" xml:space="preserve">
+    <value>Výraz volání by měl mít návratový typ: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_TheCommitOperationWasProhibitedByTheRules" xml:space="preserve">
+    <value>Operace zápisu je zakázána bezpečnostními pravidly.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CustomAggregate_DoesNotImplementInterface" xml:space="preserve">
+    <value>Vlastní agregační funkce „{0}“ neimplementuje rozhraní „{1}“.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CustomAggregate_NotFound" xml:space="preserve">
+    <value>Vlastní agregační funkce „{0}“ není zaregistrována.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_DataSetUncommitted" xml:space="preserve">
+    <value>Parametr 'data' obsahuje DataSet s nepotvrzenými změnami. Před vytvořením nové instance třídy DataSetDataStore zavolejte metodu DataSet.AcceptChanges.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ASE_CommandNotAllowedWithinMultiStatementTransaction" xml:space="preserve">
+    <value>Databáze nepodporuje vytváření ani úpravy schématu v rámci transakce. Chcete-li tuto operaci provést, musíte databázi nakonfigurovat tak, aby podporovala úpravy schématu v rámci transakce, nebo zakázat transakce po dobu aktualizace schématu. Za tímto účelem nastavte pole ExecuteUpdateSchemaInTransaction = false (pro aktuální instanci poskytovatele) nebo pole  GlobalExecuteUpdateSchemaInTransaction = false (pro všechny instance poskytovatele).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheDeclaringTypeAssemblyNamePropertyIsEmpty" xml:space="preserve">
+    <value>Vlastnost DeclaringTypeAssemblyName je prázdná.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheDeclaringTypeNamePropertyIsEmpty" xml:space="preserve">
+    <value>Vlastnost DeclaringTypeName je prázdná.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ElemAtOperationIsNotSupportedWithoutSorting" xml:space="preserve">
+    <value>Operace ElementAt není podporována bez řazení.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InitOperator_DeserializationProhibitedDueSecurityIssue" xml:space="preserve">
+    <value>Výraz nelze deserializovat, protože obsahuje nebezpečné typy. Deserializace nebezpečných typů je zakázána.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_FetchOnlyAttributeNotApplicable" xml:space="preserve">
+    <value>Atribut FetchOnly nelze použít na {0}.{1}, protože cílový člen není perzistentní, má alias, má alias pro vztah mnoho ku mnoha, je klíčem nebo je součástí vnořené struktury.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_FetchOnlyAttributeNotApplicableToReference" xml:space="preserve">
+    <value>Atribut FetchOnly nelze použít na {0}.{1}, protože cílový člen je referenčního typu.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Filtering_TheIifFunctionOperatorRequiresThree" xml:space="preserve">
+    <value>Operátor funkce „Iif“ vyžaduje tři nebo více argumentů. Počet argumentů musí být lichý.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_GeneralPurposeCollectionInsteadOfRefCollection" xml:space="preserve">
+    <value>Byla zjištěna neplatná implementace přidružené kolekční vlastnosti „{0}.{1}“. Kolekce by měla být vytvořena pomocí metody GetCollection nebo konstruktoru XPCollection(Session session, object theOwner, XPMemberInfo refProperty).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheJoinWithManyTablesSimultaneouslyInASing" xml:space="preserve">
+    <value>Operace propojení více tabulek v jediném operátoru není podporována.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheLambdaExpressionWithSuchParametersIsNot" xml:space="preserve">
+    <value>Výraz lambda s takovými parametry není podporován: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_LengthsOfTheCollectionsAreDifferentInArgs" xml:space="preserve">
+    <value>Délky kolekcí v argumentu se liší.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Common_MethodOrOperationNotImplemented" xml:space="preserve">
+    <value>Metoda nebo operace není implementována.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DirectSQL_WrongColumnCount" xml:space="preserve">
+    <value>Počet sloupců v řádku sady výsledků se neshoduje s počtem sloupců v cílovém řádku.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongInitData" xml:space="preserve">
+    <value>Počet sloupců ve zdrojovém řádku neodpovídá počtu sloupců v řádku cílové tabulky.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Helpers_CloningObjectModified" xml:space="preserve">
+    <value>Objekt s neuloženými změnami nelze klonovat.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_InEditMode" xml:space="preserve">
+    <value>Řádek je již v režimu úprav.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SkipOperationIsNotSupportedWithoutSorting" xml:space="preserve">
+    <value>Operace Skip není podporována bez řazení.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PostgreSQL_CommandPoolNotSupported" xml:space="preserve">
+    <value>Zadaná hodnota CommandPoolBehavior.{0} není podporována v PosgreSQL {1}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Filtering_TheTypeNameArgumentOfTheX0FunctionIsNotFound" xml:space="preserve">
+    <value>Argument „typeName“ funkce „{0}“ nebyl nalezen.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Generator_TheUseOfATopLevelSingleAggregateIsProhibit" xml:space="preserve">
+    <value>Použití agregace 'Single' na nejvyšší úrovni je zakázáno.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Generator_TheUseOfNestedSingleAggregatesIsProhibited" xml:space="preserve">
+    <value>Použití vnořených agregací  'Single' je zakázáno.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_UseAssociationNameAsIntermediateTableNameMismatch" xml:space="preserve">
+    <value>Hodnota UseAssociationNameAsIntermediateTableName musí být stejná na obou stranách asociace '{0}' mezi '{1}.{2}' a '{3}.{4}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_ConverterOnKeyOrReference" xml:space="preserve">
+    <value>Atribut ValueConverter nelze použít na vlastnost '{0}.{1}', která představuje klíč objektu nebo odkaz na jiný objekt.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_WithDeletedOptionNotSupported" xml:space="preserve">
+    <value>Možnost WithDeleted není podporována, protože XPQuery byl inicializován s DataLayer. Chcete-li použít možnost WithDeleted, použijte konstruktor XPQuery(Session) nebo XPQuery(Session, Boolean).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XpoDefault_CustomGuidGenerationHandlerCannotBeNull" xml:space="preserve">
+    <value>Hodnota pole XpoDefault.CustomGuidGenerationHandler je null. Tomuto poli byste měli přiřadit vlastního delegáta, pokud pole XpoDefault.GuidGenerationMode nastavíte na 'Custom'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_OperationCannotBePerformedBecauseNoSyncContext" xml:space="preserve">
+    <value>Tuto operaci nelze provést, protože vykonávající vlákno nemá aktuální synchronizační kontext.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PostgreSQL_LegacyGuidDetected" xml:space="preserve">
+    <value>Chcete-li se této výjimce vyhnout, nastavte pole UseLegacyGuidSupport nebo statické pole GlobalUseLegacyGuidSupport v DevExpress.Xpo.DB.PostgreSqlConnectionProvider na 'true'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_TopLevelAggregateNotSupported" xml:space="preserve">
+    <value>Agregace nejvyšší úrovně nelze použít v podmínkách.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_ICommandChannel_TransferringRequestsIsProhibited" xml:space="preserve">
+    <value>Přenos požadavků prostřednictvím ICommandChannel je v rámci bezpečnostního modulu zakázán.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_NullTransitionMemberInfo" xml:space="preserve">
+    <value>MemberInfo pro přechod je nulový odkaz.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_NoConstructor" xml:space="preserve">
+    <value>Typ {0} nemá konstruktor s parametry {1}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_TypeNotFound" xml:space="preserve">
+    <value>Typ '{0}' nebyl nalezen.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_UnexpectedToken" xml:space="preserve">
+    <value>Neočekávaný token '{0}' na pozici {1}. Očekává se 'StartObject'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="VistaDB_UpdatingSchemaIsForbiddenWhileExplicitTran" xml:space="preserve">
+    <value>Aktualizace schématu je zakázána, dokud je otevřena explicitní transakce.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_DictConstructor" xml:space="preserve">
+    <value>Při použití konstruktoru Session(XPDictionary dictionary) MUSÍTE před voláním metody Session.Connect zadat platný Session.ConnectionString.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Helpers_SameDictionaryExpected" xml:space="preserve">
+    <value>Nesprávný slovník.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_DataTypeAttributeNotFound" xml:space="preserve">
+    <value>Načítač XML: Atribut 'DataType' nelze nalézt.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_NameAttributeExpected" xml:space="preserve">
+    <value>Načítač XML: Je očekáván atribut 'name'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ReferAttributeExpected" xml:space="preserve">
+    <value>Načítač XML: Je očekáván atribut 'refer'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XpathAttributeExpected" xml:space="preserve">
+    <value>Načítač XML: Je očekáván atribut 'xpath'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_CantRestoreObjectFromXML" xml:space="preserve">
+    <value>Načítač XML: Nelze deserializovat objekt.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_NullPrimaryColumns" xml:space="preserve">
+    <value>Načítač XML: Nelze nalézt primární klíč '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ReferNotFound" xml:space="preserve">
+    <value>Načítač XML: Nelze nalézt '{0}', na který je odkazováno.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_CantGetColumnType" xml:space="preserve">
+    <value>Načítač XML: Nelze určit typ sloupce.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ColumnNameIsNotSpecified" xml:space="preserve">
+    <value>Načítač XML: Název sloupce není zadán.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidBaseAttributeValue" xml:space="preserve">
+    <value>Načítač XML: Nesprávná hodnota atributu 'base'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidValueAttributeValue" xml:space="preserve">
+    <value>Načítač XML: Nesprávná hodnota atributu 'value'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_InvalidTypeString" xml:space="preserve">
+    <value>Načítání XML: Neplatný název typu.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_choiceNodeNotFound" xml:space="preserve">
+    <value>Načítač XML: Uzel 'choice' nebyl nalezen.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ComplexTypeNodeNotFound" xml:space="preserve">
+    <value>Načítač XML: Uzel 'complexType' nebyl nalezen.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ElementNodeNotFound" xml:space="preserve">
+    <value>Načítač XML: Uzel 'element' nebyl nalezen.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_NotDataSetNode" xml:space="preserve">
+    <value>Načítač XML: Uzel není označen jako datová sada.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_SchemaNodeNotFound" xml:space="preserve">
+    <value>Načítač XML: Uzel 'schema' nebyl nalezen.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSselectorNodeExpected" xml:space="preserve">
+    <value>Načítač XML: Je očekáván uzel 'xs:selector'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_InconsistentForeignKeyCount" xml:space="preserve">
+    <value>Načítač XML: Nesoulad počtu sloupců PKey a FKey.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_TableNotDeclared" xml:space="preserve">
+    <value>Načítač XML: Tabulka '{0}' není deklarována.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_TableNameIsNotSpecified" xml:space="preserve">
+    <value>Načítač XML: Název tabulky není zadán.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XpathAttributeWrongFormat" xml:space="preserve">
+    <value>Načítač XML: Formát hodnoty atributu 'xpath' je nesprávný.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XScomplexTypeExpected" xml:space="preserve">
+    <value>Načítač XML: Je očekáván xs:complexType.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSlengthExpected" xml:space="preserve">
+    <value>Načítač XML: Je očekáván xs:length.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSrestrictionExpected" xml:space="preserve">
+    <value>Načítač XML: Je očekáván xs:restriction.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSsequenceExpected" xml:space="preserve">
+    <value>Načítač XML: Je očekáván xs:sequence.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSsimpleTypeExpected" xml:space="preserve">
+    <value>Načítač XML: Je očekáván xs:simpleType.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_YouCannotApplyTheMapInheritanceParentTable" xml:space="preserve">
+    <value>Atribut MapInheritance s hodnotou parametru ParentTable nelze použít na třídu, která nemá perzistentní základní třídu.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_CommandChannelDoesNotImplementICommandChannelAsync" xml:space="preserve">
+    <value>Váš kanál příkazů „{0}“ nepodporuje rozhraní „DevExpress.Xpo.Helpers.ICommandChannelAsync“. Implementujte prosím toto rozhraní nebo použijte jiný kompatibilní kanál příkazů.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="WebApi_ICacheToCacheCommunicationCore_NotImplemented" xml:space="preserve">
+    <value>Váš poskytovatel připojení '{0}' nepodporuje rozhraní 'DevExpress.Xpo.DB.ICacheToCacheCommunicationCore'. Obalte jej prosím instancí 'DevExpress.Xpo.DB.DataCacheRoot'. Další podrobnosti naleznete v následujícím tématu nápovědy: https://docs.devexpress.com/XPO/402182.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_ConnectionProviderDoesNotImplementIDataStoreAsync" xml:space="preserve">
+    <value>Váš poskytovatel připojení „{0}“ nepodporuje rozhraní „DevExpress.Xpo.DB.IDataStoreAsync“. Implementujte prosím toto rozhraní nebo použijte jiného kompatibilního poskytovatele připojení.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_DataLayerDoesNotImplementIDataLayerAsync" xml:space="preserve">
+    <value>Vaše datová vrstva „{0}“ nepodporuje rozhraní „DevExpress.Xpo.IDataLayerAsync“. Implementujte prosím toto rozhraní nebo použijte jinou kompatibilní datovou vrstvu.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_ObjectLayerDoesNotImplementIObjectLayerAsync" xml:space="preserve">
+    <value>Vaše objektová vrstva nepodporuje rozhraní „DevExpress.Xpo.IObjectLayerAsync“. Implementujte prosím toto rozhraní ve třídě „{0}“ nebo použijte jinou kompatibilní objektovou vrstvu.</value>
+    <comment>AI</comment>
   </data>
 </root>

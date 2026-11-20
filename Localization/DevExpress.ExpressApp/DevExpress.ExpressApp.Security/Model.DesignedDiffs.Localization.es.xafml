@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ChangePasswordByUser" Caption="Cambiar mi contraseña" />
+      <Action Id="MyDetails" Caption="Mis datos" />
+      <Action Id="ResetPassword" Caption="Perdí mi contraseña" ToolTip="Generar una nueva contraseña para el usuario seleccionado" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters" Caption="Los parámetros de autenticación de inicio de sesión estándar">
+      <OwnMembers>
+        <Member Name="Password" Caption="Contraseña" />
+        <Member Name="UserName" Caption="Nombre de usuario" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordOnLogonParameters" Caption="Cambio de contraseña en los parámetros de inicio de sesión">
+      <OwnMembers>
+        <Member Name="ConfirmPassword" Caption="Confirmar contraseña" />
+        <Member Name="NewPassword" Caption="Nueva Contraseña" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordParameters" Caption="Cambiar los parámetros de contraseña">
+      <OwnMembers>
+        <Member Name="OldPassword" Caption="Contraseña antigua" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.EditModelPermission" Caption="Edición de permisos de modelo">
+      <OwnMembers>
+        <Member Name="Modifier" Caption="Modificador" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ObjectAccessPermission" Caption="Objeto de permiso de acceso">
+      <OwnMembers>
+        <Member Name="CreateAccess" Caption="Crear acceso" />
+        <Member Name="DeleteAccess" Caption="Eliminar acceso" />
+        <Member Name="NavigateAccess" Caption="Acceso de Navegación" />
+        <Member Name="ObjectType" Caption="Tipo de objeto" />
+        <Member Name="ReadAccess" Caption="Acceso de lectura" />
+        <Member Name="WriteAccess" Caption="Acceso de escritura" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ResetPasswordParameters" Caption="Restablecer los parámetros de contraseña">
+      <OwnMembers>
+        <Member Name="Password" Caption="Contraseña" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ModelAccessModifier">
+        <LocalizationItem Name="Allow" Value="Permitir" />
+        <LocalizationItem Name="Deny" Value="Negar" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccess">
+        <LocalizationItem Name="Create" Value="Crear" />
+        <LocalizationItem Name="Delete" Value="Eliminar" />
+        <LocalizationItem Name="Navigate" Value="Navegar" />
+        <LocalizationItem Name="Read" Value="Leer" />
+        <LocalizationItem Name="Write" Value="Escribir" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccessModifier">
+        <LocalizationItem Name="Allow" Value="Permitir" />
+        <LocalizationItem Name="Deny" Value="Negar" />
+        <LocalizationItem Name="None" Value="Ninguno" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Exceptions">
+      <LocalizationGroup Name="UserVisibleExceptions">
+        <LocalizationGroup Name="Security">
+          <LocalizationItem Name="LastAdmin" Value="La '{0}' el usuario es administrador por última vez en el sistema. No se puede revocar los derechos administrativos." />
+          <LocalizationItem Name="LoginFailed" Value="Error de inicio para {0}. {1}" />
+          <LocalizationItem Name="NewPasswordIsEqualToOldPassword" Value="La nueva contraseña es igual a la contraseña antigua." />
+          <LocalizationItem Name="OldPasswordIsWrong" Value="contraseña no está mal." />
+          <LocalizationItem Name="PasswordsAreDifferent" Value="Las contraseñas son diferentes." />
+          <LocalizationItem Name="RetypeTheInformation" Value="Por favor, vuelva a escribir la información. Cartas en las contraseñas se deben escribir utilizando los caracteres correctos." />
+          <LocalizationItem Name="UserNameIsEmpty" Value="El nombre de usuario no debe estar vacío." />
+        </LocalizationGroup>
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="MyDetails" Caption="Mis datos" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView" Caption="Conectarse">
+      <Items>
+        <StaticText Id="LogonText" Text="Bienvenido! Por favor ingrese su nombre de usuario y contraseña a continuación." />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="RootGroup">
+            <LayoutGroup Id="EditorsGroup">
+              <LayoutGroup Id="Editors" Caption="Editores" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChangePasswordOnLogonParameters_DetailView" Caption="Cambiar la contraseña en el primer inicio de sesión">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="Por razones de seguridad, ahora se debe establecer su propia contraseña. Por favor, introduzca su nueva contraseña en los dos campos de texto que aparecen a continuación y asegúrese de no volver a utilizar una contraseña que ha usado antes." />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="Static" Caption="Estática" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChangePasswordParameters_DetailView" Caption="Cambiar contraseña">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="Para cambiar su contraseña, por favor, introduzca su contraseña anterior y la nueva en los campos de texto a continuación." />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="Static" Caption="Estática" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="EditModelPermission_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ObjectAccessPermission_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ObjectAccessPermission" Caption="Objeto de permiso de acceso" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ResetPasswordParameters_DetailView" Caption="Perdí mi contraseña">
+      <Items>
+        <StaticText Id="ResetPasswordText" Text="Marco la contraseña del usuario se creará una nueva contraseña para el usuario de forma automática, y al mismo tiempo desactivar entrada del usuario con la contraseña antigua. A continuación, debe transmitir la nueva contraseña para el usuario, para que él / ella puede seguir trabajando con la aplicación. ¿Estás seguro que quieres hacer esto?" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="Static" Caption="Estática" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

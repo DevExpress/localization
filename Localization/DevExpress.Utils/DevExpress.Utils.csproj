@@ -1,41 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net462;net8.0</TargetFrameworks>
-    <EnableWindowsTargeting>true</EnableWindowsTargeting>
-    <AssemblyName>DevExpress.Utils.v26.1</AssemblyName>
+    <TargetFrameworks>net462;net10.0</TargetFrameworks>
+    <AssemblyName>DevExpress.Utils.v26.2</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>true</DelaySign>
+    <AssemblyOriginatorKeyFile>..\DevExpress.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>DevExpress.Utils</RootNamespace>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\$(TargetFramework)\</IntermediateOutputPath>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(TargetFramework)' == 'net462'">
     <OutputPath>..\DevExpress.Dll\Framework\</OutputPath>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0'">
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net10.0'">
     <OutputPath>..\DevExpress.Dll\NETCore\</OutputPath>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Include="..\AssemblyVersion.cs">
-      <Link>AssemblyVersion.cs</Link>
-    </Compile>
-    <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\Resources.ja.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.ja.resx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="DragDropManager\LocalizationRes.de.resx" />
     <EmbeddedResource Include="DragDropManager\LocalizationRes.fi.resx" />
@@ -468,17 +451,45 @@
     <EmbeddedResource Include="LocalizationRes.uz-Cyrl-UZ.resx" />
     <EmbeddedResource Include="LocalizationRes.uz-Latn-UZ.resx" />
     <EmbeddedResource Include="LocalizationRes.ky.resx" />
+    <EmbeddedResource Include="DragDropManager\LocalizationRes.es.resx" />
+    <EmbeddedResource Include="DragDropManager\LocalizationRes.fr.resx" />
+    <EmbeddedResource Include="DragDropManager\LocalizationRes.ko.resx" />
+    <EmbeddedResource Include="DragDropManager\LocalizationRes.pl.resx" />
+    <EmbeddedResource Include="DragDropManager\LocalizationRes.pt.resx" />
+    <EmbeddedResource Include="DragDropManager\LocalizationRes.tr.resx" />
+    <EmbeddedResource Include="DragDropManager\LocalizationRes.zh-CN.resx" />
+    <EmbeddedResource Include="DragDropManager\LocalizationRes.he.resx" />
+    <EmbeddedResource Include="DragDropManager\LocalizationRes.ar.resx" />
+    <EmbeddedResource Include="DragDropManager\LocalizationRes.ca.resx" />
+    <EmbeddedResource Include="DragDropManager\LocalizationRes.de-CH.resx" />
+    <EmbeddedResource Include="DragDropManager\LocalizationRes.zh-Hans.resx" />
+    <EmbeddedResource Include="DragDropManager\LocalizationRes.cs.resx" />
+    <EmbeddedResource Include="DragDropManager\LocalizationRes.hi.resx" />
+    <EmbeddedResource Include="Properties\Resources.hi.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.hi.resx" />
+    <EmbeddedResource Include="DragDropManager\LocalizationRes.ta.resx" />
+    <EmbeddedResource Include="DragDropManager\LocalizationRes.sv.resx" />
+    <EmbeddedResource Include="DragDropManager\LocalizationRes.es-MX.resx" />
+    <EmbeddedResource Include="Properties\Resources.es-MX.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.es-MX.resx" />
+    <EmbeddedResource Include="DragDropManager\LocalizationRes.af.resx" />
+    <EmbeddedResource Include="Properties\Resources.af.resx" />
+    <EmbeddedResource Include="PropertyNamesRes.af.resx" />
   </ItemGroup>
-
   <ItemGroup>
-    <None Include="Resources\Expired.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Resources\Licensed.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Resources\TrialVersion.png" />
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.ja.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.ja.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

@@ -60,30 +60,67 @@
   </resheader>
   <data name="ConnectionProvider_UnableToCreateDBObject" xml:space="preserve">
     <value>Kan inte skapa '{0}' '{1}'. Förälder: '{2}'. Fel: {3}</value>
+    <comment>Community:Det går inte att skapa '{0}' '{1}'. Överordnad: '{2}'. Fel: {3}</comment>
   </data>
   <data name="ConnectionProvider_TypeMappingMissing" xml:space="preserve">
     <value>Databasen kan inte bearbeta '{0}' typen eftersom den inte är mappad till typerna av en underliggande databas. Vänligen använd en annan typ.
 </value>
+    <comment>Community:Databasprovidern kan inte bearbeta typen '{0}' eftersom den inte är mappad till den underliggande databasens typer. Använd en annan typ.</comment>
   </data>
   <data name="ConnectionProvider_ColumnNameTooLong" xml:space="preserve">
     <value>Det går inte att skapa tabellkolumn '{1}' i tabellen '{0}'. Namnet på kolumnen är för långt (överstiger mer än 64 tecken)</value>
+    <comment>Community:Det går inte att skapa tabellkolumnen '{1}' i tabellen '{0}'. Kolumnens namn är för långt (överstiger 64 tecken)</comment>
   </data>
   <data name="ConnectionProvider_SchemaCorrectionNeeded" xml:space="preserve">
     <value>Schemat måste uppdateras. Kontakta systemadministratorn. Sql text: {0}</value>
+    <comment>Community:Schemat måste uppdateras. Kontakta systemadministratören. SQL-text: {0}</comment>
   </data>
   <data name="ConnectionProvider_TableNameTooLong" xml:space="preserve">
     <value>Kunde inte skapa databastabell '{0}'. Namnet på tabellen är för långt (överstiger mer än 64 tecken)</value>
+    <comment>Community:Det går inte att skapa databastabellen '{0}'. Tabellens namn är för långt (överstiger 64 tecken)</comment>
   </data>
   <data name="ConnectionProvider_SqlExecutionError" xml:space="preserve">
     <value>Kör sql '{0}' med parametrarna '{1}' undantag '{2}'</value>
+    <comment>Community:Vid körning av SQL '{0}' med parametrarna '{1}', fel '{2}'</comment>
   </data>
   <data name="ConnectionProvider_UnableToOpenDatabase" xml:space="preserve">
     <value>Det går inte att öppna databasen. Anslutningssträng: '{0}', Fel:'{1}'</value>
+    <comment>Community:Det går inte att öppna databasen. Anslutningssträng: '{0}'; Fel: '{1}'</comment>
   </data>
   <data name="ConnectionProvider_AtLeastOneColumnExpected" xml:space="preserve">
     <value>Minst en kolumn förväntas</value>
+    <comment>Approved</comment>
   </data>
   <data name="ConnectionProvider_Locking" xml:space="preserve">
     <value>Kan inte spara objektet. Det har ändrats eller tagits bort (rensats) av ett annat program.</value>
+    <comment>Community:Objektet kan inte sparas. Det har ändrats eller tagits bort (rensats bort) av ett annat program.</comment>
+  </data>
+  <data name="IsExactTypeFunction_ShouldNotBeCalledExplicitly" xml:space="preserve">
+    <value>Den här metoden bör inte anropas explicit.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_ShouldNotBeCalledExplicitly" xml:space="preserve">
+    <value>Den här metoden bör inte anropas explicit.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CommandChannelHelper_CannotDeserializeResponse" xml:space="preserve">
+    <value>Svaret från åtgärden '{0}' kan inte deserialiseras på grund av begränsningar i implementeringen av XmlSerializer i Mono-körningsmiljön. Om du behöver deserialisera små datamängder, sätt egenskapen DevExpress.Xpo.Helpers.CommandChannelHelper.EnableMonoDeserializationFixForSmallAmountsOfData till 'true' och försök igen.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProviderSql_ParameterValueSizeExceedsMaximumSize" xml:space="preserve">
+    <value>Det gick inte att skapa parametern '{1}'. SQL: {0}. Värdets längd ({2}) överstiger parameterstorleken ({3}).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_ClassNotFound" xml:space="preserve">
+    <value>Funktionen '{0}' kan inte hitta den angivna typen: '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_ParametersMustBeConstants" xml:space="preserve">
+    <value>Funktionen '{0}' förväntar sig ett konstant värde som argumentet 'typeName'. Ett uttryck har angetts.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_InvalidArgument_TypeName" xml:space="preserve">
+    <value>Funktionen '{0}' förväntar sig ett strängvärde som argumentet 'typeName'. Ett värde av typen '{1}' har angetts.</value>
+    <comment>AI</comment>
   </data>
 </root>

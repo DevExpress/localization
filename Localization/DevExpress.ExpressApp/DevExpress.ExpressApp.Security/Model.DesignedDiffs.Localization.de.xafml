@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ChangePasswordByUser" Caption="Mein Passwort ändern" />
+      <Action Id="DeletePermissionDescriptor" Caption="Löschen" ConfirmationMessage="Sie sind dabei, das ausgewählte Element (e) zu löschen. Wollen Sie fortfahren?" />
+      <Action Id="Deny_TypePermissionMatrixItem" Caption="Verbieten">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Create" Caption="Erzeugen" />
+          <ChoiceActionItem Id="Delete" Caption="Löschen" />
+          <ChoiceActionItem Id="Deny All" Caption="Alles Verbieten" />
+          <ChoiceActionItem Id="Deny Modification" Caption="Änderung Verbieten" />
+          <ChoiceActionItem Id="Navigate" Caption="Navigieren" />
+          <ChoiceActionItem Id="Read" Caption="Lesen" />
+          <ChoiceActionItem Id="Write" Caption="Schreiben" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="Grant_TypePermissionMatrixItem" Caption="Erlauben">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Create" Caption="Erzeugen" />
+          <ChoiceActionItem Id="Delete" Caption="Löschen" />
+          <ChoiceActionItem Id="Full Access" Caption="Voller Zugriff" />
+          <ChoiceActionItem Id="Navigate" Caption="Navigieren" />
+          <ChoiceActionItem Id="Read" Caption="Lesen" />
+          <ChoiceActionItem Id="Read Only Access" Caption="Nur Lesezugriff" />
+          <ChoiceActionItem Id="Write" Caption="Schreiben" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="MyDetails" Caption="Meine Details" />
+      <Action Id="NewPermissionDescriptor" Caption="Neu" />
+      <Action Id="ResetPassword" Caption="Passwort Zurücksetzen" ToolTip="Das Password des ausgewählten Benutzers zurücksetzen" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Security.ClientServer.MemberListDetailViewObject">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Kriterien" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters" Caption="Anmeldung">
+      <OwnMembers>
+        <Member Name="Password" Caption="Passwort" />
+        <Member Name="UserName" Caption="Benutzername" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordOnLogonParameters" Caption="Parameter zur Änderung des Passworts bei der Anmeldung">
+      <OwnMembers>
+        <Member Name="ConfirmPassword" Caption="Neues Passwort Bestätigen" />
+        <Member Name="NewPassword" Caption="Neues Passwort" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordParameters" Caption="Parameter zur Änderung des Passwords">
+      <OwnMembers>
+        <Member Name="OldPassword" Caption="Altes Passwort" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.EditModelPermission" Caption="Berechtigung zum Editieren des Modells">
+      <OwnMembers>
+        <Member Name="Modifier" Caption="Modifikator" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.MemberOperationPermissionData" Caption="Daten zur Zugriffsberechtigung auf Felder">
+      <OwnMembers>
+        <Member Name="Members" Caption="Felder" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.MemberOperationPermissionDescriptor" Caption="Details zur Zugriffsberechtingung auf Felder">
+      <OwnMembers>
+        <Member Name="InheritedFrom" Caption="Geerbt Von" />
+        <Member Name="MemberName" Caption="Feldname" />
+        <Member Name="Read" Caption="Lesen" />
+        <Member Name="Write" Caption="Schreiben" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ModelOperationPermissionData" Caption="Daten zur Berechtigung für Modellbearbeitung">
+      <OwnMembers>
+        <Member Name="CanEditModel" Caption="Kann Modell Bearbeiten" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ObjectAccessPermission" Caption="Berechtigung zum Objektzugriff">
+      <OwnMembers>
+        <Member Name="CreateAccess" Caption="Erzeugen" />
+        <Member Name="DeleteAccess" Caption="Löschen" />
+        <Member Name="NavigateAccess" Caption="Navigieren" />
+        <Member Name="ObjectType" Caption="Objekttyp" />
+        <Member Name="ReadAccess" Caption="Lesen" />
+        <Member Name="WriteAccess" Caption="Schreiben" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ObjectOperationPermissionData" Caption="Daten zur Berechtigung für Objektoperationen">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Kriterien" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ObjectOperationPermissionDescriptor" Caption="Details zur Berechtigung für Objektoperationen">
+      <OwnMembers>
+        <Member Name="Caption" Caption="Beschriftung" />
+        <Member Name="Create" Caption="Erzeugen" />
+        <Member Name="Criteria" Caption="Kriterien" />
+        <Member Name="Delete" Caption="Löschen" />
+        <Member Name="InheritedFrom" Caption="Geerbt Von" />
+        <Member Name="Navigate" Caption="Navigieren" />
+        <Member Name="Read" Caption="Lesen" />
+        <Member Name="Write" Caption="Schreiben" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.PermissionData" Caption="Berechtigungsdaten">
+      <OwnMembers>
+        <Member Name="Permission" Caption="Berechtigung" />
+        <Member Name="PermissionsContainer" Caption="Berechtigungsablage" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.PermissionsContainer" Caption="Berechtigungsablage">
+      <OwnMembers>
+        <Member Name="PersistentPermissions" Caption="Gespeicherte Berechtigungen" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ResetPasswordParameters" Caption="Parameter für das Zurücksetzen des Passworts">
+      <OwnMembers>
+        <Member Name="Password" Caption="Passwort" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.SecurityRole" Caption="Sicherheitsrolle">
+      <OwnMembers>
+        <Member Name="CanEditModel" Caption="Kann Modell Bearbeiten" />
+        <Member Name="IsAdministrator" Caption="Ist Administrator" />
+        <Member Name="Permissions" Caption="Berechtigungen" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.SecuritySimpleUser" Caption="Benutzer">
+      <OwnMembers>
+        <Member Name="IsAdministrator" Caption="Ist Administrator" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.SecurityStrategyRole" Caption="Sicherheitsrolle">
+      <OwnMembers>
+        <Member Name="Users" Caption="Benutzer" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.SecurityUser" Caption="Benutzer" />
+    <Class Name="DevExpress.ExpressApp.Security.SecurityUserBase" Caption="Basisbenutzer">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="Passwort ändern bei der ersten Anmeldung" />
+        <Member Name="IsActive" Caption="Ist Aktiv" />
+        <Member Name="UserId" Caption="Benutzer-ID" />
+        <Member Name="UserName" Caption="Benutzername" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.SecurityUserWithRolesBase" Caption="Basisbenutzer mit Rollen">
+      <OwnMembers>
+        <Member Name="Roles" Caption="Rollen" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.TypeOperationPermissionData" Caption="Daten zur Berechtigung für Typoperationen">
+      <OwnMembers>
+        <Member Name="AllowCreate" Caption="Erzeugen" />
+        <Member Name="AllowDelete" Caption="Löschen" />
+        <Member Name="AllowNavigate" Caption="Navigieren" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.TypeOperationPermissionDescriptor" Caption="Details zur Berechtigung für Typoperationen">
+      <OwnMembers>
+        <Member Name="Category" Caption="Kategorie" />
+        <Member Name="Create" Caption="Erzeugen" />
+        <Member Name="Delete" Caption="Löschen" />
+        <Member Name="Navigate" Caption="Navigieren" />
+        <Member Name="Object" Caption="Objekt" />
+        <Member Name="ObjectType" Caption="Objekttyp" />
+        <Member Name="Read" Caption="Lesen" />
+        <Member Name="Write" Caption="Schreiben" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.TypePermissionData" Caption="Daten zur Zugriffsberechtigung für einen Typ">
+      <OwnMembers>
+        <Member Name="AllowRead" Caption="Lesen" />
+        <Member Name="AllowWrite" Caption="Schreiben" />
+        <Member Name="TargetType" Caption="Zieltyp" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.TypePermissionDetails" Caption="Details zur Zugriffsberechtigung für einen Typ">
+      <OwnMembers>
+        <Member Name="MemberPermissions" Caption="Feldberechtigungen" />
+        <Member Name="ObjectPermissions" Caption="Objektberechtigungen" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.PermissionMatrix.TypePermissionMatrixItem" Caption="Element der Berechtigungsmatrix für Typzugriffe">
+      <OwnMembers>
+        <Member Name="AllowCreate" Caption="Erzeugen" />
+        <Member Name="AllowDelete" Caption="Löschen" />
+        <Member Name="AllowNavigate" Caption="Navigieren" />
+        <Member Name="AllowRead" Caption="Lesen" />
+        <Member Name="AllowWrite" Caption="Schreiben" />
+        <Member Name="Category" Caption="Kategorie" />
+        <Member Name="Id" Caption="ID" />
+        <Member Name="MemberPermissions" Caption="Feldberechtigungen" />
+        <Member Name="Object" Caption="Objekt" />
+        <Member Name="ObjectPermissions" Caption="Objektberechtigungen" />
+        <Member Name="TargetType" Caption="Zieltyp" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemMemberPermissionsObject" Caption="Feldzugriffsobjekt">
+      <OwnMembers>
+        <Member Name="AllowRead" Caption="Lesen" />
+        <Member Name="AllowWrite" Caption="Schreiben" />
+        <Member Name="EffectiveRead" Caption="Lesen (effektiv)" />
+        <Member Name="EffectiveWrite" Caption="Schreiben (effektiv)" />
+        <Member Name="InheritedFrom" Caption="Geerbt Von" />
+        <Member Name="Members" Caption="Felder" />
+        <Member Name="Owner" Caption="Besitzer" />
+        <Member Name="Criteria" Caption="Kriterien" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemObjectPermissionsObject" Caption="Objekt für Objectzugriffe">
+      <OwnMembers>
+        <Member Name="AllowDelete" Caption="Löschen" />
+        <Member Name="AllowNavigate" Caption="Navigieren" />
+        <Member Name="AllowRead" Caption="Lesen" />
+        <Member Name="AllowWrite" Caption="Schreiben" />
+        <Member Name="Criteria" Caption="Kriterien" />
+        <Member Name="EffectiveDelete" Caption="Löschen (effektiv)" />
+        <Member Name="EffectiveNavigate" Caption="Navigieren (effektiv)" />
+        <Member Name="EffectiveRead" Caption="Lesen (effektiv)" />
+        <Member Name="EffectiveWrite" Caption="Schreiben (effektiv)" />
+        <Member Name="InheritedFrom" Caption="Geerbt Von" />
+        <Member Name="Owner" Caption="Besitzer" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole" Caption="Rolle">
+      <OwnMembers>
+        <Member Name="ParentRoles" Caption="Übergeordnete Rollen" />
+        <Member Name="ChildRoles" Caption="Untergeordnete Rollen" />
+        <Member Name="Users" Caption="Benutzer" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemRoleBase" Caption="Basisrolle">
+      <OwnMembers>
+        <Member Name="CanEditModel" Caption="Kann Modell Bearbeiten" />
+        <Member Name="IsAdministrative" Caption="Ist Administrator" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemTypePermissionObject" Caption="Typzugriffsobjekt">
+      <OwnMembers>
+        <Member Name="Owner" Caption="Besitzer" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemTypePermissionsObjectBase" Caption="Basis des Typzugriffsobjekts">
+      <OwnMembers>
+        <Member Name="AllowCreate" Caption="Erzeugen" />
+        <Member Name="AllowDelete" Caption="Löschen" />
+        <Member Name="AllowNavigate" Caption="Navigieren" />
+        <Member Name="AllowRead" Caption="Lesen" />
+        <Member Name="AllowWrite" Caption="Schreiben" />
+        <Member Name="MemberPermissions" Caption="Feldberechtigungen" />
+        <Member Name="ObjectPermissions" Caption="Objektberechtigungen" />
+        <Member Name="Object" Caption="Objekt" />
+        <Member Name="TargetType" Caption="Zieltyp" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemTypePermissionsObjectOwner" Caption="Besitzer eines Typzugriffsobjekts">
+      <OwnMembers>
+        <Member Name="TypePermissionMatrix" Caption="Matrix der Typzugriffsberechtigungen" />
+        <Member Name="TypePermissions" Caption="Typzugriffsberechtigungen" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemUser" Caption="Benutzer">
+      <OwnMembers>
+        <Member Name="Roles" Caption="Rollen" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemUserBase" Caption="Basisbenutzer">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="Passwort ändern bei der ersten Anmeldung" />
+        <Member Name="IsActive" Caption="Ist Aktiv" />
+        <Member Name="UserName" Caption="Benutzername" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyMemberPermissionsObject" Caption="Feldzugriffsobjekt">
+      <OwnMembers>
+        <Member Name="ReadState" Caption="Lesen" />
+        <Member Name="WriteState" Caption="Schreiben" />
+        <Member Name="Members" Caption="Felder" />
+        <Member Name="TypePermissionObject" Caption="Besitzer" />
+        <Member Name="Criteria" Caption="Kriterien" />
+      </OwnMembers>
+    </Class>
+	<Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyObjectPermissionsObject" Caption="Objekt für Objectzugriffe">
+      <OwnMembers>
+        <Member Name="DeleteState" Caption="Löschen" />
+        <Member Name="NavigateState" Caption="Navigieren" />
+        <Member Name="ReadState" Caption="Lesen" />
+        <Member Name="WriteState" Caption="Schreiben" />
+        <Member Name="Criteria" Caption="Kriterien" />
+        <Member Name="TypePermissionObject" Caption="Besitzer" />
+      </OwnMembers>
+    </Class>
+	<Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyRole" Caption="Rolle">
+      <OwnMembers>
+        <Member Name="Users" Caption="Benutzer" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyRoleBase" Caption="Basisrolle">
+      <OwnMembers>
+        <Member Name="CanEditModel" Caption="Kann Modell Bearbeiten" />
+        <Member Name="IsAdministrative" Caption="Ist Administrator" />
+        <Member Name="Name" Caption="Name" />
+		<Member Name="TypePermissions" Caption="Typzugriffsberechtigungen" />
+	  </OwnMembers>
+    </Class>
+	<Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject" Caption="Typzugriffsobjekt">
+      <OwnMembers>
+        <Member Name="Role" Caption="Besitzer" />
+		<Member Name="CreateState" Caption="Erzeugen" />
+        <Member Name="DeleteState" Caption="Löschen" />
+        <Member Name="NavigateState" Caption="Navigieren" />
+        <Member Name="ReadState" Caption="Lesen" />
+        <Member Name="WriteState" Caption="Schreiben" />
+        <Member Name="MemberPermissions" Caption="Feldberechtigungen" />
+        <Member Name="ObjectPermissions" Caption="Objektberechtigungen" />
+        <Member Name="TargetType" Caption="Zieltyp" />
+      </OwnMembers>
+    </Class>
+	<Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Benutzer">
+      <OwnMembers>
+        <Member Name="Roles" Caption="Rollen" />
+		<Member Name="ChangePasswordOnFirstLogon" Caption="Passwort ändern bei der ersten Anmeldung" />
+        <Member Name="IsActive" Caption="Ist Aktiv" />
+        <Member Name="UserName" Caption="Benutzername" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ModelAccessModifier" Value="Modifikator für Modellzugriff">
+        <LocalizationItem Name="Allow" Value="Erlauben" />
+        <LocalizationItem Name="Deny" Value="Verbieten" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccess" Value="Objektzugriff">
+        <LocalizationItem Name="AllAccess" Value="Vollzugriff" />
+        <LocalizationItem Name="ChangeAccess" Value="Ändern" />
+        <LocalizationItem Name="Create" Value="Erzeugen" />
+        <LocalizationItem Name="Delete" Value="Löschen" />
+        <LocalizationItem Name="Navigate" Value="Navigieren" />
+        <LocalizationItem Name="NoAccess" Value="Kein Zugriff" />
+        <LocalizationItem Name="Read" Value="Lesen" />
+        <LocalizationItem Name="Write" Value="Schreiben" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccessModifier" Value="Modifikator für Objektzugriff">
+        <LocalizationItem Name="Allow" Value="Erlauben" />
+        <LocalizationItem Name="Deny" Value="Verbieten" />
+        <LocalizationItem Name="None" Value="Kein Zugriff" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Exceptions">
+      <LocalizationItem Name="CanNotDeleteObject" Value="Sie können das Objekt '{0}' aufgrund von Sicherheitsbeschränkungen nicht löschen." />
+      <LocalizationItem Name="CanNotSaveObject" Value="Sie können das Objekt '{0}' aufgrund von Sicherheitsbeschränkungen nicht speichern." />
+      <LocalizationItem Name="UserHasNoRole" Value="Falsche Kontoeinstellungen: Ihrem Benutzer wurde keine Rolle zugewiesen. Bitte wenden Sie sich an Ihren Administrator." />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Messages">
+      <LocalizationItem Name="Create" Value="Erzeugen" />
+      <LocalizationItem Name="Delete" Value="Löschen" />
+      <LocalizationItem Name="IsGrantedFrom" Value="ist an ein Feld der Klasse '{0}' zugewiesen." />
+      <LocalizationItem Name="IsInheritedFrom" Value="wird von der Klasse '{0}' geerbt." />
+      <LocalizationItem Name="Navigate" Value="Navigieren" />
+      <LocalizationItem Name="Read" Value="Lesen" />
+      <LocalizationItem Name="Write" Value="Schreiben" />
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="MyDetails" Caption="Meine Details" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView" Caption="Anmeldung">
+      <Items>
+        <StaticText Id="LogonText" Text="Willkommen! Bitte geben Sie Ihren Benutzernamen und Ihr Passwort ein." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ChangePasswordOnLogonParameters_DetailView" Caption="Passwort ändern bei der ersten Anmeldung">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="Aus Sicherheitsgründen müssen Sie jetzt Ihr eigenes Passwort setzen. Bitte geben Sie Ihr neues Passwort in die beiden Textfelder unten ein, und stellen Sie sicher, dass Sie nicht ein Passwort verwenden, welches Sie bereits zuvor verwendet haben." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ChangePasswordParameters_DetailView" Caption="Passwort ändern">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="Um das Passwort zu ändern, geben Sie bitte Ihr altes und neues Passwort in die Textfelder unten ein." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ObjectAccessPermission_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ObjectAccessPermission" Caption="Berechtigung für den Objektzugriff" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ResetPasswordParameters_DetailView" Caption="Passwort zurücksetzen">
+      <Items>
+        <StaticText Id="ResetPasswordText" Text="Durch Zurücksetzen des Passworts wird automatisch ein neues Passwort erstellt, gleichzeitig wird die Anmeldung mit dem alten Passwort deaktiviert. Sie müssen das neue Passwort an die Benutzerin weiterleiten, so dass diese weiterhin mit der Applikation arbeiten kann. Sind Sie sicher, dass Sie fortfahren möchten?" />
+      </Items>
+    </DetailView>
+    <ListView Id="SecurityStrategyRole_LookupListView" Caption="Rolle" />
+    <ListView Id="SecurityUserBase_LookupListView" Caption="Benutzer" />
+    <ListView Id="SecurityUserWithRolesBase_LookupListView" Caption="Benutzer" />
+  </Views>
+</Application>

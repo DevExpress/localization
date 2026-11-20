@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application VersionFormat="Versione {0}.{1}.{2}" ProtectedContentText="Contenuto Protetto">
+  <ActionDesign>
+    <Actions>
+      <Action Id="About Info" Caption="Informazioni..." />
+      <Action Id="Cancel" Caption="Annulla" />
+      <Action Id="CreateDashboard" Caption="Crea Cruscotto" />
+      <Action Id="Delete" Caption="Elimina" ConfirmationMessage="Si stanno per eliminare i records selezionati. Si desidera procedere?" />
+      <Action Id="Diagnostic Info" Caption="Diagnostica" />
+      <Action Id="DialogCancel" Caption="Annulla" />
+      <Action Id="DialogOK" Caption="Ok" />
+      <Action Id="FullTextSearch" NullValuePrompt="Testo per la ricerca..." Caption="Filtra per Testo" ToolTip="Filtra i records in base al testo immesso." ShortCaption="VAI!" />
+      <Action Id="HideItemsFromDashboard" Caption="Nascondi dal Cruscotto" />
+      <Action Id="Link" Caption="Collega" />
+      <Action Id="ListViewShowObject" Caption="Apri" />
+      <Action Id="Logoff" Caption="Disconnetti" />
+      <Action Id="Logon" Caption="Accedi" />
+      <Action Id="NavigateBack" ToolTip="Naviga alla vista precedente" Caption="Indietro" />
+      <Action Id="NavigateForward" ToolTip="Naviga alla vista successiva" Caption="Avanti" />
+      <Action Id="New" Caption="Nuovo">
+        <DisableReasons>
+          <Reason Id="MasterObjectIsNew" Caption="Il record modificato è nuovo." />
+        </DisableReasons>
+      </Action>
+      <Action Id="NextObject" Caption="Record Successivo" />
+      <Action Id="OrganizeDashboard" Caption="Organizza Cruscotto" />
+      <Action Id="PreviousObject" Caption="Record Precedente" />
+      <Action Id="Refresh" Caption="Aggiorna" />
+      <Action Id="Save" Caption="Salva" />
+      <Action Id="SaveAndClose" Caption="Salva e Chiudi" />
+      <Action Id="SaveAndNew" Caption="Salva e Nuovo" />
+      <Action Id="SetFilter" Caption="Filtro" />
+      <Action Id="ShowItemsOnDashboard" Caption="Mostra nel Cruscotto" />
+      <Action Id="ShowNavigationItem" Caption="Navigazione" />
+      <Action Id="Unlink" Caption="Scollega" ConfirmationMessage="Si stanno per scollegare i records selezionati. Si desidera procedere?" />
+    </Actions>
+    <DisableReasons>
+      <Reason Id="ByContext_RequireMultipleObjects" Caption="E' necessario che sia selezionato almeno un record." />
+      <Reason Id="ByContext_RequireSingleObject" Caption="E' necessario che sia selezionato un solo record." />
+      <Reason Id="Security" Caption="Accesso Negato" />
+    </DisableReasons>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Editors.CriteriaProvider" Caption="Provider Criteri">
+      <OwnMembers>
+        <Member Name="FilteredObjectsType" Caption="Tipo Oggetti Filtrati" />
+        <Member Name="FilterString" Caption="Stringa Filtro" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.AboutInfo" Caption="Informazioni">
+      <OwnMembers>
+        <Member Name="Company" Caption="Azienda" />
+        <Member Name="Description" Caption="Descrizione" />
+        <Member Name="LogoImageName" Caption="Nome Immagine Logo" />
+        <Member Name="ProductName" Caption="Nome Prodotto" />
+        <Member Name="Version" Caption="Versione" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardCreationInfo" Caption="Creazione Guidata Cruscotto">
+      <OwnMembers>
+        <Member Name="DashboardName" Caption="Nome" />
+        <Member Name="DashboardOrganizer" Caption="Elementi Vista" />
+        <Member Name="NavigationGroupName" Caption="Crea un Elemento di Navigazione in" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardOrganizationItem" Caption="Elemento Organizzazione Cruscotto">
+      <OwnMembers>
+        <Member Name="Item" Caption="Elemento" />
+        <Member Name="Visible" Caption="Visibile" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardOrganizer" Caption="Progettazione Cruscotto">
+      <OwnMembers>
+        <Member Name="ViewItems" Caption="Elementi Vista" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardViewItemDescriptor" Caption="Descrittore Elemento Vista Cruscotto">
+      <OwnMembers>
+        <Member Name="ViewCaption" Caption="Didascalia Vista" />
+        <Member Name="ViewDescription" Caption="Descrizione Vista" />
+        <Member Name="ViewId" Caption="Id Vista" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DiagnosticInfoObject" Caption="Oggetto Informazioni Diagnostica">
+      <OwnMembers>
+        <Member Name="AsText" Caption="Come Testo" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.StaticImageDashboardOrganizationItem" Caption="Immagine Statica">
+      <OwnMembers>
+        <Member Name="ImageName" Caption="Nome Immagine" />
+        <Member Name="Preview" Caption="Anteprima" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.StaticTextDashboardOrganizationItem" Caption="Testo Statico">
+      <OwnMembers>
+        <Member Name="Text" Caption="Testo" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ViewDashboardOrganizationItem" Caption="Vista">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Criteri" />
+        <Member Name="ObjectType" Caption="Tipo Oggetto" />
+        <Member Name="ViewDescriptor" Caption="Vista" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Xpo.XPBaseObject" Caption="Oggetto XPBase" />
+    <Class Name="DevExpress.Xpo.XPCustomObject" Caption="Oggetto XPCustom" />
+    <Class Name="DevExpress.Xpo.XPObjectType" Caption="Tipo XPObject" />
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="DashboardOrganizationItems">
+      <LocalizationItem Name="StaticImage" Value="Immagine" />
+      <LocalizationItem Name="StaticText" Value="Testo" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="DialogButtons">
+      <LocalizationItem Name="Abort" Value="&amp;Termina" />
+      <LocalizationItem Name="Add" Value="Aggiungi" />
+      <LocalizationItem Name="Apply" Value="Applica" />
+      <LocalizationItem Name="Back" Value="&lt; Indietro" />
+      <LocalizationItem Name="Cancel" Value="&amp;Annulla" />
+      <LocalizationItem Name="Clear" Value="Pu&amp;lisci" />
+      <LocalizationItem Name="Close" Value="Chiudi" />
+      <LocalizationItem Name="Find" Value="Cerca" />
+      <LocalizationItem Name="Ignore" Value="&amp;Ignora" />
+      <LocalizationItem Name="Next" Value="Avanti &gt;" />
+      <LocalizationItem Name="OK" Value="&amp;Ok" />
+      <LocalizationItem Name="Remove" Value="Rimuovi" />
+      <LocalizationItem Name="Retry" Value="&amp;Riprova" />
+      <LocalizationItem Name="Yes" Value="&amp;Si" />
+      <LocalizationItem Name="Edit" Value="Modifica" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.SystemModule.DashboardItemVisibility">
+        <LocalizationItem Name="Hidden" Value="Nascosto" />
+        <LocalizationItem Name="Visible" Value="Visibile" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Messages">
+      <LocalizationItem Name="User" Value="Utente: {0}" />
+    </LocalizationGroup>
+  </Localization>
+</Application>

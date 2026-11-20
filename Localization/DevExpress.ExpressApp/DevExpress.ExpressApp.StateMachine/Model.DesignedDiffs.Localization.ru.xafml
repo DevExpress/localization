@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+	<ActionDesign>
+		<Actions>
+			<Action Id="ChangeStateAction" Caption="Изменить состояние" ToolTip="Изменить состояние текущего объекта" />
+		</Actions>
+	</ActionDesign>
+	<BOModel>
+		<Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCState">
+			<OwnMembers>
+				<Member Name="Appearances" Caption="Внешний вид" />
+				<Member Name="Caption" Caption="Наименование" />
+				<Member Name="Marker" Caption="Маркер" />
+				<Member Name="MarkerObject" Caption="Маркер" />
+				<Member Name="StateMachine" Caption="Конечный автомат" />
+				<Member Name="TargetObjectCriteria" Caption="Критерий целевого объекта" />
+				<Member Name="Transitions" Caption="Переходы" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCStateAppearance" Caption="Внешний вид IDCState">
+			<OwnMembers>
+				<Member Name="AppearanceItemType" Caption="Тип элемента внешнего вида" />
+				<Member Name="BackColor" Caption="Цвет фона" />
+				<Member Name="Context" Caption="Контекст" />
+				<Member Name="Criteria" Caption="Критерий" />
+				<Member Name="DeclaringType" Caption="Декларирующий тип" />
+				<Member Name="Enabled" Caption="Включен" />
+				<Member Name="FontColor" Caption="Цвет шрифта" />
+				<Member Name="FontStyle" Caption="Стиль шрифта" />
+				<Member Name="Method" Caption="Метод" />
+				<Member Name="Priority" Caption="Приоритет" />
+				<Member Name="State" Caption="Состояние" />
+				<Member Name="TargetItems" Caption="Целевые элементы" />
+				<Member Name="Visibility" Caption="Видимость" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCStateMachine" Caption="Конечный автомат">
+			<OwnMembers>
+				<Member Name="Active" Caption="Активность" />
+				<Member Name="ExpandActionsInDetailView" Caption="Показать действия в детальном представлении" />
+				<Member Name="Name" Caption="Имя" />
+				<Member Name="StartState" Caption="Начальное состояние" />
+				<Member Name="StatePropertyName" Caption="Имя свойства состояния" />
+				<Member Name="States" Caption="Состояния" />
+				<Member Name="TargetObjectType" Caption="Тип целевого объекта" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCTransition" Caption="Переходы">
+			<OwnMembers>
+				<Member Name="Caption" Caption="Наименование" />
+				<Member Name="SourceState" Caption="Исходное состояние" />
+				<Member Name="TargetState" Caption="Целевое состояние" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.ExpressApp.StateMachine.Utils.MarkerObject" Caption="Маркер">
+			<OwnMembers>
+				<Member Name="DisplayName" Caption="Отображаемое имя" />
+				<Member Name="Marker" Caption="Маркер" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.ExpressApp.StateMachine.Xpo.StateMachineObjectBase" Caption="Базовый объект конечного автомата" />
+		<Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoState" Caption="Состояние">
+			<OwnMembers>
+				<Member Name="Appearance" Caption="Внешний вид" />
+				<Member Name="Caption" Caption="Заголовок" />
+				<Member Name="Marker" Caption="Маркер" />
+				<Member Name="StateMachine" Caption="Машина состояний" />
+				<Member Name="TargetObjectCriteria" Caption="Критерий целевого объекта" />
+				<Member Name="Transitions" Caption="Переходы" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoStateAppearance" Caption="Внешний вид">
+			<OwnMembers>
+				<Member Name="AppearanceItemType" Caption="Тип элемента внешнего вида" />
+				<Member Name="BackColor" Caption="Цвет фона" />
+				<Member Name="Context" Caption="Контекст" />
+				<Member Name="Enabled" Caption="Включен" />
+				<Member Name="FontColor" Caption="Цвет шрифта" />
+				<Member Name="FontStyle" Caption="Стиль шрифта" />
+				<Member Name="Priority" Caption="Приоритет" />
+				<Member Name="TargetItems" Caption="Целевые элементы" />
+				<Member Name="Visibility" Caption="Видимость" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoStateMachine" Caption="Конечный автомат">
+			<OwnMembers>
+				<Member Name="Active" Caption="Активность" />
+				<Member Name="ExpandActionsInDetailView" Caption="Показать действия в детальном представлении" />
+				<Member Name="Name" Caption="Имя" />
+				<Member Name="StartState" Caption="Начальное состояние" />
+				<Member Name="StatePropertyName" Caption="Имя свойства состояния" />
+				<Member Name="States" Caption="Состояния" />
+				<Member Name="TargetObjectType" Caption="Тип целевого объекта" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoTransition" Caption="Переход">
+			<OwnMembers>
+				<Member Name="Caption" Caption="Наименование" />
+				<Member Name="Index" Caption="Индекс" />
+				<Member Name="SaveAndCloseView" Caption="Сохранить и закрыть представление" />
+				<Member Name="SourceState" Caption="Исходное состояние" />
+				<Member Name="TargetState" Caption="Целевое состояние" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.ExpressApp.Utils.StringObject" Caption="Строковый объект">
+			<OwnMembers>
+				<Member Name="Name" Caption="Имя" />
+			</OwnMembers>
+		</Class>
+	</BOModel>
+	<Localization>
+		<LocalizationGroup Name="Enums">
+			<LocalizationGroup Name="DevExpress.ExpressApp.Editors.ViewItemVisibility" Value="Видимость элемента представления">
+				<LocalizationItem Name="Hide" Value="Скрывать" />
+				<LocalizationItem Name="Show" Value="Показать" />
+				<LocalizationItem Name="ShowEmptySpace" Value="Оставить пустое место" />
+			</LocalizationGroup>
+			<LocalizationGroup Name="System.Drawing.FontStyle" Value="Стиль шрифта">
+				<LocalizationItem Name="Bold" Value="Полужирный" />
+				<LocalizationItem Name="Italic" Value="Курсив" />
+				<LocalizationItem Name="Regular" Value="Обычный" />
+				<LocalizationItem Name="Strikeout" Value="Зачеркнутый" />
+				<LocalizationItem Name="Underline" Value="Подчеркнутый" />
+			</LocalizationGroup>
+		</LocalizationGroup>
+		<LocalizationGroup Name="StateMachine" IsNewNode="True">
+			<LocalizationItem Name="TransitionValidationMessage" Value="Чтобы перейти к '{StateCaption}' состоянию, '{TargetObject}' должен соответствовать критерию: {Criteria}" IsNewNode="True" />
+		</LocalizationGroup>
+	</Localization>
+	<NavigationItems>
+		<Items>
+			<Item Id="State Machine" Caption="Конечный автомат" />
+		</Items>
+	</NavigationItems>
+	<Validation>
+		<Rules>
+			<RuleIsReferenced Id="StateIsReferencedDc" MessageTemplateMustBeReferenced="Если вы хотите удалить это состояние, убедитесь что оно не используется как “целевое состояние” ни в одном переходе." />
+			<RuleIsReferenced Id="StateIsReferencedXpo" MessageTemplateMustBeReferenced="Если вы хотите удалить это состояние, убедитесь что оно не используется как “целевое состояние” ни в одном переходе." />
+		</Rules>
+	</Validation>
+	<Views>
+		<DetailView Id="IDCStateAppearance_DetailView">
+			<Layout>
+				<LayoutGroup Id="Main">
+					<LayoutGroup Id="SimpleEditors">
+						<LayoutGroup Id="IDCStateAppearance" Caption="Внешний вид состояния" />
+					</LayoutGroup>
+				</LayoutGroup>
+			</Layout>
+		</DetailView>
+		<DetailView Id="IDCStateMachine_DetailView">
+			<Layout>
+				<LayoutGroup Id="Main">
+					<LayoutGroup Id="SimpleEditors">
+						<LayoutGroup Id="IDCStateMachine" Caption="Конечный автомат" />
+					</LayoutGroup>
+				</LayoutGroup>
+			</Layout>
+		</DetailView>
+	</Views>
+</Application>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="EditReportControllerV2.Edit" Caption="Sửa" />
+      <Action Id="ExecuteReportV2" Caption="Mở Báo cáo" />
+      <Action Id="ShowReportDesignerV2" Caption="Hiển thị Trình thiết kế Báo cáo" />
+    </Actions>
+  </ActionDesign>
+  <Localization>
+    <LocalizationGroup Name="Captions">
+      <LocalizationItem Name="AllFiles" Value="Tất cả các tệp" />
+      <LocalizationItem Name="ExportLayout" Value="Xuất giao diện sang tệp…" />
+      <LocalizationItem Name="ImportLayout" Value="Nhận giao diện từ tệp..." />
+      <LocalizationItem Name="ReportDesignerError" Value="Lỗi" />
+      <LocalizationItem Name="ReportDesignerWarning" Value="Cảnh báo" />
+      <LocalizationItem Name="ReportFiles" Value="Các tệp Báo cáo" />
+    </LocalizationGroup>
+  </Localization>
+  <Views>
+    <DetailView Id="NewReportWizardParameters_DetailView" Caption="Tạo mới Báo cáo bằng Thuật sĩ">
+      <Items>
+        <StaticText Id="ReportText" Text="Để tạo mới một báo cáo, vui lòng nhập tên vào trường dưới đây và chọn kiểu dữ liệu chính của báo cáo từ danh sách." />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="Static" Caption="Tĩnh(11)">
+            <LayoutGroup Id="NewReportParams" Caption="Tạo mới Tham số Báo cáo">
+              <LayoutGroup Id="SimpleEditors" Caption="Trình soạn thảo Đơn" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

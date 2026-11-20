@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ChangePasswordByUser" Caption="パスワードの変更" />
+      <Action Id="DeletePermissionDescriptor" Caption="削除" ConfirmationMessage="選択されたアイテムを削除しようとしています。続行しますか？" />
+      <Action Id="Deny_TypePermissionMatrixItem" Caption="拒否">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Create" Caption="作成" />
+          <ChoiceActionItem Id="Delete" Caption="削除" />
+          <ChoiceActionItem Id="Deny All" Caption="すべて拒否" />
+          <ChoiceActionItem Id="Deny Modification" Caption="変更を拒否" />
+          <ChoiceActionItem Id="Navigate" Caption="ナビゲート" />
+          <ChoiceActionItem Id="Read" Caption="読み取り" />
+          <ChoiceActionItem Id="Write" Caption="書き込み" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="Grant_TypePermissionMatrixItem" Caption="許可">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Create" Caption="作成" />
+          <ChoiceActionItem Id="Delete" Caption="削除" />
+          <ChoiceActionItem Id="Full Access" Caption="フル アクセス" />
+          <ChoiceActionItem Id="Navigate" Caption="ナビゲート" />
+          <ChoiceActionItem Id="Read" Caption="読み取り" />
+          <ChoiceActionItem Id="Read Only Access" Caption="読み取り専用アクセス" />
+          <ChoiceActionItem Id="Write" Caption="書き込み" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="MyDetails" Caption="ユーザー情報" />
+      <Action Id="NewPermissionDescriptor" Caption="新規" />
+      <Action Id="ResetPassword" Caption="パスワードのリセット" ToolTip="選択されたユーザーに新しいパスワードを生成します。" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Security.ClientServer.MemberListDetailViewObject">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="基準" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters" Caption="標準認証のログオン パラメーター">
+      <OwnMembers>
+        <Member Name="Password" Caption="パスワード" />
+        <Member Name="UserName" Caption="ユーザー名" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordOnLogonParameters" Caption="ログオン パラメーターでパスワードを変更">
+      <OwnMembers>
+        <Member Name="ConfirmPassword" Caption="パスワードの確認" />
+        <Member Name="NewPassword" Caption="新しいパスワード" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordParameters" Caption="パスワード パラメーターを変更">
+      <OwnMembers>
+        <Member Name="OldPassword" Caption="古いパスワード" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.EditModelPermission" Caption="モデルの許可の編集">
+      <OwnMembers>
+        <Member Name="Modifier" Caption="修飾子" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.MemberOperationPermissionData" Caption="メンバー操作の権限">
+      <OwnMembers>
+        <Member Name="Members" Caption="メンバー" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.MemberOperationPermissionDescriptor" Caption="メンバー操作の権限記述子">
+      <OwnMembers>
+        <Member Name="Id" Caption="ID" />
+        <Member Name="InheritedFrom" Caption="継承元" />
+        <Member Name="MemberName" Caption="メンバー名" />
+        <Member Name="Read" Caption="読み取り" />
+        <Member Name="Write" Caption="書き込み" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ModelOperationPermissionData" Caption="モデル操作の権限">
+      <OwnMembers>
+        <Member Name="CanEditModel" Caption="モデルの編集が可能" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ObjectAccessPermission" Caption="オブジェクト アクセス許可">
+      <OwnMembers>
+        <Member Name="Contexts" Caption="コンテキスト" />
+        <Member Name="CreateAccess" Caption="アクセス許可の作成" />
+        <Member Name="DeleteAccess" Caption="アクセスを削除" />
+        <Member Name="NavigateAccess" Caption="ナビゲート アクセス" />
+        <Member Name="ObjectType" Caption="オブジェクト タイプ" />
+        <Member Name="ReadAccess" Caption="読み取りアクセス権" />
+        <Member Name="WriteAccess" Caption="書き込みアクセス権" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ObjectOperationPermissionData" Caption="オブジェクト操作の権限">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="基準" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ObjectOperationPermissionDescriptor" Caption="オブジェクト操作の権限記述子">
+      <OwnMembers>
+        <Member Name="Caption" Caption="キャプション" />
+        <Member Name="Create" Caption="作成" />
+        <Member Name="Criteria" Caption="基準" />
+        <Member Name="Delete" Caption="削除" />
+        <Member Name="Id" Caption="ID" />
+        <Member Name="InheritedFrom" Caption="継承元" />
+        <Member Name="Navigate" Caption="ナビゲート" />
+        <Member Name="Read" Caption="読み取り" />
+        <Member Name="Write" Caption="書き込み" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.PermissionData" Caption="権限データ">
+      <OwnMembers>
+        <Member Name="Permission" Caption="権限" />
+        <Member Name="PermissionsContainer" Caption="権限コンテナ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.PermissionsContainer" Caption="権限コンテナ">
+      <OwnMembers>
+        <Member Name="PersistentPermissions" Caption="永続的権限" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ResetPasswordParameters" Caption="パスワード パラメーターのリセット">
+      <OwnMembers>
+        <Member Name="Password" Caption="パスワード" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.SecurityRole" Caption="ロール">
+      <OwnMembers>
+        <Member Name="CanEditModel" Caption="モデルの編集が可能" />
+        <Member Name="Permissions" Caption="権限" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.SecuritySimpleUser" Caption="ユーザー">
+      <OwnMembers>
+        <Member Name="IsAdministrator" Caption="管理者" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.SecurityStrategyRole" Caption="セキュリティ戦略ロール">
+      <OwnMembers>
+        <Member Name="Name" Caption="名前" />
+        <Member Name="Users" Caption="ユーザー" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.SecurityUser" Caption="ユーザー" />
+    <Class Name="DevExpress.ExpressApp.Security.SecurityUserBase" Caption="セキュリティ ユーザー ベース">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="最初のログオンでパスワードを変更" />
+        <Member Name="IsActive" Caption="有効" />
+        <Member Name="UserId" Caption="ユーザー ID" />
+        <Member Name="UserName" Caption="ユーザー名" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.SecurityUserWithRolesBase" Caption="ロール ベースを持つセキュリティ ユーザー">
+      <OwnMembers>
+        <Member Name="Roles" Caption="ロール" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.PermissionMatrix.TypePermissionMatrixItem" Caption="権限タイプ マトリックスの アイテム">
+      <OwnMembers>
+        <Member Name="Category" Caption="カテゴリー" />
+        <Member Name="AllowCreate" Caption="作成" />
+        <Member Name="AllowDelete" Caption="削除" />
+        <Member Name="Id" Caption="ID" />
+        <Member Name="MemberPermissions" Caption="メンバー権限" />
+        <Member Name="AllowNavigate" Caption="ナビゲート" />
+        <Member Name="Object" Caption="オブジェクト" />
+        <Member Name="ObjectPermissions" Caption="オブジェクト権限" />
+        <Member Name="AllowRead" Caption="読み取り" />
+        <Member Name="TargetType" Caption="ターゲット タイプ" />
+        <Member Name="AllowWrite" Caption="書き込み" /> 
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemMemberPermissionsObject" Caption="メンバー操作の権限">
+      <OwnMembers>
+        <Member Name="AllowRead" Caption="読み取りを許可" />
+        <Member Name="AllowWrite" Caption="書き込みを許可" />
+        <Member Name="EffectiveRead" Caption="読み取り" />
+        <Member Name="EffectiveWrite" Caption="書き込み" />
+        <Member Name="InheritedFrom" Caption="継承元" />
+        <Member Name="Members" Caption="メンバー" />
+        <Member Name="Owner" Caption="所有者" />
+        <Member Name="Criteria" Caption="基準" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemObjectPermissionsObject" Caption="オブジェクト操作の権限">
+      <OwnMembers>
+        <Member Name="AllowDelete" Caption="削除を許可" />
+        <Member Name="AllowNavigate" Caption="ナビゲートを許可" />
+        <Member Name="AllowRead" Caption="読み取りを許可" />
+        <Member Name="AllowWrite" Caption="書き込みを許可" />
+        <Member Name="Criteria" Caption="基準" />
+        <Member Name="EffectiveDelete" Caption="削除" />
+        <Member Name="EffectiveNavigate" Caption="ナビゲート" />
+        <Member Name="EffectiveRead" Caption="読み取り" />
+        <Member Name="EffectiveWrite" Caption="書き込み" />
+        <Member Name="InheritedFrom" Caption="継承元" />
+        <Member Name="Owner" Caption="所有者" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole" Caption="ロール">
+      <OwnMembers>
+        <Member Name="ChildRoles" Caption="子ロール" />
+        <Member Name="Users" Caption="ユーザー" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemRoleBase" Caption="ベース ロール">
+      <OwnMembers>
+        <Member Name="CanEditModel" Caption="モデル編集の許可" />
+        <Member Name="IsAdministrative" Caption="管理者権限" />
+        <Member Name="Name" Caption="名前" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemTypePermissionObject" Caption="タイプ操作権限">
+      <OwnMembers>
+        <Member Name="Owner" Caption="所有者" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemTypePermissionsObjectBase" Caption="タイプ操作権限のベース">
+      <OwnMembers>
+        <Member Name="AllowCreate" Caption="作成" />
+        <Member Name="AllowDelete" Caption="削除" />
+        <Member Name="AllowNavigate" Caption="ナビゲート" />
+        <Member Name="AllowRead" Caption="読み取り" />
+        <Member Name="AllowWrite" Caption="書き込み" />
+        <Member Name="MemberPermissions" Caption="メンバー権限" />
+        <Member Name="Object" Caption="オブジェクト" />
+        <Member Name="ObjectPermissions" Caption="オブジェクト権限" />
+        <Member Name="TargetType" Caption="ターゲット タイプ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemTypePermissionsObjectOwner" Caption="タイプ操作権限の所有者">
+      <OwnMembers>
+        <Member Name="TypePermissionMatrix" Caption="データ アクセス権限" />
+        <Member Name="TypePermissions" Caption="タイプ権限" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemUser" Caption="ユーザー">
+      <OwnMembers>
+        <Member Name="Roles" Caption="ロール" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.TypeOperationPermissionData" Caption="タイプ操作の権限">
+      <OwnMembers>
+        <Member Name="AllowCreate" Caption="作成を許可" />
+        <Member Name="AllowDelete" Caption="削除を許可" />
+        <Member Name="AllowNavigate" Caption="ナビゲートを許可" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.TypeOperationPermissionDescriptor" Caption="タイプ操作の権限記述子">
+      <OwnMembers>
+        <Member Name="Category" Caption="カテゴリ" />
+        <Member Name="Create" Caption="作成" />
+        <Member Name="Delete" Caption="削除" />
+        <Member Name="Navigate" Caption="ナビゲート" />
+        <Member Name="Object" Caption="オブジェクト" />
+        <Member Name="ObjectType" Caption="オブジェクト タイプ" />
+        <Member Name="Parent" Caption="親" />
+        <Member Name="Read" Caption="読み取り" />
+        <Member Name="Write" Caption="書き込み" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.TypePermissionData" Caption="タイプ権限データ">
+      <OwnMembers>
+        <Member Name="AllowRead" Caption="読み取りを許可" />
+        <Member Name="AllowWrite" Caption="書き込みを許可" />
+        <Member Name="TargetType" Caption="ターゲット タイプ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.TypePermissionDetails" Caption="タイプ権限の詳細">
+      <OwnMembers>
+        <Member Name="MemberPermissions" Caption="メンバー権限" />
+        <Member Name="ObjectPermissions" Caption="オブジェクト権限" />
+      </OwnMembers>
+    </Class>
+	<Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyMemberPermissionsObject" Caption="メンバー操作の権限">
+      <OwnMembers>
+        <Member Name="ReadState" Caption="読み取りを許可" />
+        <Member Name="WriteState" Caption="書き込みを許可" />
+        <Member Name="Members" Caption="メンバー" />
+        <Member Name="TypePermissionObject" Caption="所有者" />
+        <Member Name="Criteria" Caption="基準" />
+      </OwnMembers>
+    </Class>
+	<Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyObjectPermissionsObject" Caption="オブジェクト操作の権限">
+      <OwnMembers>
+        <Member Name="DeleteState" Caption="削除を許可" />
+        <Member Name="NavigateState" Caption="ナビゲートを許可" />
+        <Member Name="ReadState" Caption="読み取りを許可" />
+        <Member Name="WriteState" Caption="書き込みを許可" />
+        <Member Name="Criteria" Caption="基準" />
+        <Member Name="TypePermissionObject" Caption="所有者" />
+      </OwnMembers>
+    </Class>
+	<Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyRole" Caption="ロール">
+      <OwnMembers>
+        <Member Name="Users" Caption="ユーザー" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyRoleBase" Caption="ベース ロール">
+      <OwnMembers>
+        <Member Name="CanEditModel" Caption="モデル編集の許可" />
+        <Member Name="IsAdministrative" Caption="管理者権限" />
+        <Member Name="Name" Caption="名前" />
+		<Member Name="TypePermissions" Caption="タイプ権限" />
+		<Member Name="PermissionPolicy" Caption="アクセス許可ポリシー" />
+      </OwnMembers>
+    </Class>
+	<Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject" Caption="タイプ操作権限">
+      <OwnMembers>
+        <Member Name="Role" Caption="所有者" />
+		<Member Name="CreateState" Caption="作成" />
+        <Member Name="DeleteState" Caption="削除" />
+        <Member Name="NavigateState" Caption="ナビゲート" />
+        <Member Name="ReadState" Caption="読み取り" />
+        <Member Name="WriteState" Caption="書き込み" />
+        <Member Name="MemberPermissions" Caption="メンバー権限" />
+        <Member Name="ObjectPermissions" Caption="オブジェクト権限" />
+        <Member Name="TargetType" Caption="ターゲット タイプ" />
+      </OwnMembers>
+    </Class>
+	<Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="ユーザー">
+      <OwnMembers>
+        <Member Name="Roles" Caption="ロール" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ModelAccessModifier" Value="モデル アクセス修飾子">
+        <LocalizationItem Name="Allow" Value="許可" />
+        <LocalizationItem Name="Deny" Value="拒否" />
+      </LocalizationGroup>
+	  <LocalizationGroup Name="DevExpress.Persistent.Base.SecurityPermissionState" Value="セキュリティのアクセス許可の状態">
+        <LocalizationItem Name="Allow" Value="許可" />
+        <LocalizationItem Name="Deny" Value="拒否" />
+      </LocalizationGroup>
+	  <LocalizationGroup Name="DevExpress.Persistent.Base.SecurityPermissionPolicy" Value="アクセス許可ポリシー">
+        <LocalizationItem Name="DenyAllByDefault" Value="デフォルトですべてを拒否" />
+        <LocalizationItem Name="AllowAllByDefault" Value="デフォルトですべてを許可" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccess" Value="オブジェクト アクセス">
+        <LocalizationItem Name="Create" Value="作成" />
+        <LocalizationItem Name="Delete" Value="削除" />
+        <LocalizationItem Name="Navigate" Value="ナビゲート" />
+        <LocalizationItem Name="Read" Value="読み取り" />
+        <LocalizationItem Name="Write" Value="書き込み" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccessModifier" Value="オブジェクト アクセス修飾子">
+        <LocalizationItem Name="Allow" Value="許可" />
+        <LocalizationItem Name="Deny" Value="拒否" />
+        <LocalizationItem Name="None" Value="なし" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Exceptions">
+      <LocalizationItem Name="CanNotDeleteObject" Value="セキュリティ制限のため、'{0}' オブジェクトを削除できません。" />
+      <LocalizationItem Name="CanNotSaveObject" Value="セキュリティ制限のため、'{0}' オブジェクトを保存できません。" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Messages">
+      <LocalizationItem Name="Create" Value="作成" />
+      <LocalizationItem Name="Delete" Value="削除" />
+      <LocalizationItem Name="IsGrantedFrom" Value="は '{0}' クラスのメンバーに許可されています。" />
+      <LocalizationItem Name="IsInheritedFrom" Value="は '{0}' クラスより継承されています。" />
+      <LocalizationItem Name="Navigate" Value="ナビゲート" />
+      <LocalizationItem Name="Read" Value="読み込み" />
+      <LocalizationItem Name="Write" Value="書き込み" />
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="MyDetails" Caption="ユーザー情報" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView" Caption="ログオン">
+      <Items>
+        <StaticText Id="LogonText" Text="ようこそ！ユーザー名とパスワードを入力してください。" />
+      </Items>
+    </DetailView>
+    <DetailView Id="ChangePasswordOnLogonParameters_DetailView" Caption="初回ログオン時にパスワードを変更">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="セキュリティ上の理由により、パスワードを設定する必要があります。以下の2つの入力フィールドで新しいパスワードを入力してください。以前使用したパスワードは使用しないでください。" />
+      </Items>
+    </DetailView>
+    <DetailView Id="ChangePasswordParameters_DetailView" Caption="パスワードの変更">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="パスワードを変更するには、下のテキスト フィールドに古いパスワードと新しいパスワードを入力してください。" />
+      </Items>
+    </DetailView>
+    <DetailView Id="ObjectAccessPermission_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ObjectAccessPermission" Caption="オブジェクト アクセス許可" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ResetPasswordParameters_DetailView" Caption="パスワードのリセット">
+      <Items>
+        <StaticText Id="ResetPasswordText" Text="ユーザーのパスワードを設定すると、自動的に新しいパスワードが作成され、同時に古いパスワードを無効にします。ユーザーが作業を継続できるよう、新しいパスワードを知らせる必要があります。パスワードを設定してもよろしいですか？" />
+      </Items>
+    </DetailView>
+    <ListView Id="SecurityStrategyRole_LookupListView" Caption="ロール" />
+    <ListView Id="SecurityUserBase_LookupListView" Caption="ユーザー" />
+    <ListView Id="SecurityUserWithRolesBase_LookupListView" Caption="ユーザー" />
+  </Views>
+</Application>

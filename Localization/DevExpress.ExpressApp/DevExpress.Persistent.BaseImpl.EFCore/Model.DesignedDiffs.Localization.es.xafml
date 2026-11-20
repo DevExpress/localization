@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.Analysis" Caption="Análisis">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Criterios" />
+        <Member Name="DataType" Caption="Tipo de datos" />
+        <Member Name="Name" Caption="Nombre" />
+        <Member Name="Self" Caption="Auto" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.BaseObject" Caption="Objecto base" />
+    <Class Name="DevExpress.Persistent.BaseImpl.FileAttachmentBase" Caption="Archivo Base de datos adjuntos">
+      <OwnMembers>
+        <Member Name="File" Caption="Archivo" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.FileData" Caption="Archivo de datos">
+      <OwnMembers>
+        <Member Name="FileName" Caption="Nombre del archivo" />
+        <Member Name="Size" Caption="Tamaño" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default" Caption="Predeterminado" />
+      <Item Id="Reports" Caption="Informes" />
+    </Items>
+  </NavigationItems>
+  <Validation>
+    <Rules>
+      <RuleRequiredField Id="FileAttachmentBaseRule" CustomMessageTemplate="El archivo debe ser asignado" />
+      <RuleFromBoolProperty Id="HCategoryCircularReferences" CustomMessageTemplate="refrerence circular detectado. Para corregir este error, establezca la propiedad Parent a otro valor." />
+    </Rules>
+  </Validation>
+  <Views>
+    <DetailView Id="Analysis_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Analysis" Caption="Análisis" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FileAttachmentBase_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="FileData_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principales" />
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

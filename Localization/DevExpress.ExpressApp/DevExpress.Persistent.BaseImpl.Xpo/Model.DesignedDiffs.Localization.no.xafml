@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="Task.MarkCompleted" Caption="Merk som ferdig" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.Persistent.AuditTrail.BaseAuditedObjectWeakReference" Caption="Base overvåket objekt svak referanse">
+      <OwnMembers>
+        <Member Name="DisplayName" Caption="Visningsnavn" />
+        <Member Name="GuidId" Caption="Guid id" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Address" Caption="Adresse">
+      <OwnMembers>
+        <Member Name="City" Caption="By" />
+        <Member Name="Country" Caption="Land" />
+        <Member Name="FullAddress" Caption="Fullstendig adresse" />
+        <Member Name="StateProvince" Caption="Stat/provins" />
+        <Member Name="Street" Caption="Gate" />
+        <Member Name="ZipPostal" Caption="Postnummer" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Analysis" Caption="Analyse">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Vilkår" />
+        <Member Name="DataType" Caption="Datatype" />
+        <Member Name="Name" Caption="Navn" />
+        <Member Name="Self" Caption="Selv" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.AuditDataItemPersistent" Caption="Overvåk data element vedvarende">
+      <OwnMembers>
+        <Member Name="Description" Caption="Beskrivelse" />
+        <Member Name="ModifiedOn" Caption="Endret" />
+        <Member Name="NewValue" Caption="Ny verdi" />
+        <Member Name="OldValue" Caption="Gammel verdi" />
+        <Member Name="OperationType" Caption="Operasjonstype" />
+        <Member Name="PropertyName" Caption="Egenskapsnavn" />
+        <Member Name="UserName" Caption="Brukernavn" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.AuditedObjectWeakReference" Caption="Revidert objekt svak referanse">
+      <OwnMembers>
+        <Member Name="AuditDataItems" Caption="Overvåk data elementer" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.BaseObject" Caption="Base-objekt" />
+    <Class Name="DevExpress.Persistent.BaseImpl.BasicUser" Caption="Bruker">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="Endre passord ved første pålogging" />
+        <Member Name="FullName" Caption="Fullt navn" />
+        <Member Name="IsActive" Caption="Er aktiv" />
+        <Member Name="IsAdministrator" Caption="Er administrator" />
+        <Member Name="UserName" Caption="Brukernavn" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Country" Caption="Land">
+      <OwnMembers>
+        <Member Name="Name" Caption="Navn" />
+        <Member Name="PhoneCode" Caption="Telefon-kode" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Event" Caption="Oppgaveplanlegging hendelse">
+      <OwnMembers>
+        <Member Name="AllDay" Caption="Hele dagen" />
+        <Member Name="Description" Caption="Beskrivelse" />
+        <Member Name="EndOn" Caption="Slutten dato/klokkeslett" />
+        <Member Name="Label" Caption="Etikett" />
+        <Member Name="Location" Caption="Lokasjon" />
+        <Member Name="RecurrenceInfoXml" Caption="Regelmessighet" />
+        <Member Name="RecurrencePattern" Caption="Mønster for regelmessighet" />
+        <Member Name="Resources" Caption="Ressurser" />
+        <Member Name="StartOn" Caption="Start dato/klokkeslett" />
+        <Member Name="Subject" Caption="Emne" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.FileAttachmentBase" Caption="Fil-vedlegg base">
+      <OwnMembers>
+        <Member Name="File" Caption="Fil" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.FileData" Caption="Fildata">
+      <OwnMembers>
+        <Member Name="FileName" Caption="Filnavn" />
+        <Member Name="Size" Caption="Størrelse" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.HCategory">
+      <OwnMembers>
+        <Member Name="Children" Caption="Barn" />
+        <Member Name="Name" Caption="navn" />
+        <Member Name="Parent" Caption="Overordnede" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Note" Caption="Notat">
+      <OwnMembers>
+        <Member Name="Author" Caption="Forfatter" />
+        <Member Name="DateTime" Caption="Dato klokkeslett" />
+        <Member Name="Text" Caption="Tekst" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.OidGenerator" Caption="Oid-generator" />
+    <Class Name="DevExpress.Persistent.BaseImpl.Organization" Caption="Organisasjon">
+      <OwnMembers>
+        <Member Name="Description" Caption="Beskrivelse" />
+        <Member Name="Email" Caption="E-post" />
+        <Member Name="FullName" Caption="Fullt navn" />
+        <Member Name="Name" Caption="navn" />
+        <Member Name="Profile" Caption="Profil" />
+        <Member Name="WebSite" Caption="Web-område" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Party" Caption="Parti">
+      <OwnMembers>
+        <Member Name="Address1" Caption="Adresse 1" />
+        <Member Name="Address2" Caption="Adresse 2" />
+        <Member Name="DisplayName" Caption="Visningsnavn" />
+        <Member Name="PhoneNumbers" Caption="Telefonnummer" />
+        <Member Name="Photo" Caption="Foto" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PersistentPermission" Caption="Vedvarende tillatelse">
+      <OwnMembers>
+        <Member Name="Permission" Caption="Rettigheter" />
+        <Member Name="Role" Caption="Rolle" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Person">
+      <OwnMembers>
+        <Member Name="Birthday" Caption="Fødselsdag" />
+        <Member Name="Email" Caption="E-post" />
+        <Member Name="FirstName" Caption="Fornavn" />
+        <Member Name="FullName" Caption="Fullt navn" />
+        <Member Name="LastName" Caption="Etternavn" />
+        <Member Name="MiddleName" Caption="Mellomnavn" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PhoneNumber" Caption="Telefonnummer">
+      <OwnMembers>
+        <Member Name="Number" Caption="Nummer" />
+        <Member Name="Party" Caption="Parti" />
+        <Member Name="PhoneType" Caption="Telefon-type" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PhoneType" Caption="Telefon-type">
+      <OwnMembers>
+        <Member Name="TypeName" Caption="Typenavn" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PropertyBag" Caption="Egenskap beholder" />
+    <Class Name="DevExpress.Persistent.BaseImpl.PropertyBagDescriptor" Caption="Egenskap beholder beskrivelse">
+      <OwnMembers>
+        <Member Name="PropertyDescriptors" Caption="Egenskap beskrivelse" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PropertyDescriptor" Caption="Egenskap beskrivelse">
+      <OwnMembers>
+        <Member Name="Code" Caption="Kode" />
+        <Member Name="Description" Caption="Beskrivelse" />
+        <Member Name="Name" Caption="Navn" />
+        <Member Name="PropertyBags" Caption="Egenskap beholder" />
+        <Member Name="ValueType" Caption="Verditype" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PropertyValue" Caption="Egenskap-verdi" />
+    <Class Name="DevExpress.Persistent.BaseImpl.Resource" Caption="Ressurs">
+      <OwnMembers>
+        <Member Name="Caption" Caption="Tittel" />
+        <Member Name="Color" Caption="Farge" />
+        <Member Name="Events" Caption="Hendelser" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Role" Caption="Rolle">
+      <OwnMembers>
+        <Member Name="Users" Caption="Brukere" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.RoleBase" Caption="Rolle Base">
+      <OwnMembers>
+        <Member Name="Name" Caption="Navn" />
+        <Member Name="PersistentPermissions" Caption="Tillatelser" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.ServerPrefix" Caption="Server-prefiks" />
+    <Class Name="DevExpress.Persistent.BaseImpl.SimpleUser" Caption="Bruker">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="Endre passord ved første pålogging" />
+        <Member Name="FullName" Caption="Fullt navn" />
+        <Member Name="IsActive" Caption="Er aktiv" />
+        <Member Name="IsAdministrator" Caption="Er administrator" />
+        <Member Name="UserName" Caption="Brukernavn" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.State" Caption="Tilstand">
+      <OwnMembers>
+        <Member Name="LongName" Caption="Langt navn" />
+        <Member Name="ShortName" Caption="Kortnavn" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Task" Caption="Aktivitet">
+      <OwnMembers>
+        <Member Name="AssignedTo" Caption="Tilordnet til" />
+        <Member Name="DateCompleted" Caption="Dato fullført" />
+        <Member Name="Description" Caption="Beskrivelse" />
+        <Member Name="DueDate" Caption="Forfallsdato" />
+        <Member Name="PercentCompleted" Caption="Prosent fullført" />
+        <Member Name="StartDate" Caption="Startdato" />
+        <Member Name="Subject" Caption="Emne" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.User" Caption="Bruker">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="Endre passord ved første pålogging" />
+        <Member Name="IsActive" Caption="Er aktiv" />
+        <Member Name="Permissions" Caption="Tillatelser" />
+        <Member Name="Roles" Caption="Roller" />
+        <Member Name="UserName" Caption="Brukernavn" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Xpo.XPWeakReference" Caption="Referanse for XPWeak" />
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.Persistent.Base.General.TaskStatus">
+        <LocalizationItem Name="Completed" Value="Fullført" />
+        <LocalizationItem Name="Deferred" Value="Utsatt" />
+        <LocalizationItem Name="InProgress" Value="Pågår" />
+        <LocalizationItem Name="NotStarted" Value="Ikke startet" />
+        <LocalizationItem Name="WaitingForSomeoneElse" Value="Venter på noen andre" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <Validation>
+    <Contexts>
+      <ValidationContext Id="Delete" Caption="" />
+    </Contexts>
+    <Rules>
+      <RuleFromBoolProperty Id="EventIntervalValid" CustomMessageTemplate="Startdatoen må være mindre enn sluttdatoen" />
+      <RuleRequiredField Id="FileAttachmentBaseRule" CustomMessageTemplate="Filen skal tilordnes" />
+      <RuleFromBoolProperty Id="HCategoryCircularReferences" CustomMessageTemplate="Sirkulær refreranse oppdaget. Hvis du vil rette denne feilen, kan du tildele parent-attributten en annen verdi." />
+      <RuleUniqueValue Id="PropertyDescriptor Code is unique" CustomMessageTemplate="Egenskapen Kode må ha en unik verdi" Name="PropertyDescriptor kode er unik" FoundObjectMessagesSeparator="," />
+      <RuleRequiredField Id="PropertyDescriptor Code required" Name="PropertyDescriptor-kode kreves" />
+      <RuleCriteria Id="Role is not referenced" CustomMessageTemplate="Kan ikke slette rollen fordi det er brukere som refererer til den" Name="Rolle er ikke refererert til" />
+      <RuleRequiredField Id="Role required" CustomMessageTemplate="En aktiv bruker må ha minst én rolle tilordnet" Name="Rolle kreves" />
+      <RuleUniqueValue Id="User Name is unique" CustomMessageTemplate="Brukernavn som er angitt er allerede registrert i systemet" Name="Brukernavn er unikt" FoundObjectMessagesSeparator="," />
+      <RuleRequiredField Id="User Name required" CustomMessageTemplate="Brukernavnet kan ikke være tomt" Name="Brukernavn påkrevd" />
+    </Rules>
+  </Validation>
+  <Views>
+    <DetailView Id="BasicUser_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="BasicUser" Caption="Standard bruker" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="PropertyDescriptor_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="PropertyDescriptor" Caption="Egenskap beskrivelse" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="SimpleUser_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="SimpleUser" Caption="Enkel bruker" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

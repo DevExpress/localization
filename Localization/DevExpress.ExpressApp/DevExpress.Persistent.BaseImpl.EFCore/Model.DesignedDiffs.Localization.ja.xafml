@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="DevExpress.Persistent.AuditTrail.BaseAuditedObjectWeakReference" Caption="監査オブジェクトの弱い参照のベース オブジェクト">
+      <OwnMembers>
+        <Member Name="DisplayName" Caption="表示名" />
+        <Member Name="GuidId" Caption="GUID ID" />
+        <Member Name="IntId" Caption="Int ID" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Address" Caption="住所">
+      <OwnMembers>
+        <Member Name="City" Caption="市" />
+        <Member Name="Country" Caption="国" />
+        <Member Name="FullAddress" Caption="完全な住所" />
+        <Member Name="StateProvince" Caption="都道府県" />
+        <Member Name="Street" Caption="番地" />
+        <Member Name="ZipPostal" Caption="郵便番号" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Analysis" Caption="分析">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="基準" />
+        <Member Name="DataType" Caption="データ タイプ" />
+        <Member Name="Name" Caption="名前" />
+        <Member Name="Self" Caption="自己" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.AuditDataItemPersistent" Caption="永続監査データ アイテム">
+      <OwnMembers>
+        <Member Name="Description" Caption="説明" />
+        <Member Name="ModifiedOn" Caption="変更日" />
+        <Member Name="NewValue" Caption="新しい値" />
+        <Member Name="OldValue" Caption="古い値" />
+        <Member Name="OperationType" Caption="操作タイプ" />
+        <Member Name="PropertyName" Caption="プロパティ名" />
+        <Member Name="UserName" Caption="ユーザー名" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.AuditedObjectWeakReference" Caption="監査オブジェクトの弱い参照">
+      <OwnMembers>
+        <Member Name="AuditDataItems" Caption="監査データ アイテム" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.BaseObject" Caption="ベース オブジェクト" />
+    <Class Name="DevExpress.Persistent.BaseImpl.BasicUser" Caption="ユーザー">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="初回ログオン時にパスワードを変更" />
+        <Member Name="FullName" Caption="氏名" />
+        <Member Name="IsActive" Caption="有効" />
+        <Member Name="IsAdministrator" Caption="管理者権限" />
+        <Member Name="UserName" Caption="ユーザー名" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Country" Caption="国">
+      <OwnMembers>
+        <Member Name="Name" Caption="名前" />
+        <Member Name="PhoneCode" Caption="市外局番" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Event" Caption="スケジューラ イベント">
+      <OwnMembers>
+        <Member Name="AllDay" Caption="終日" />
+        <Member Name="Description" Caption="説明" />
+        <Member Name="EndOn" Caption="終了日付 / 時刻" />
+        <Member Name="Label" Caption="ラベル" />
+        <Member Name="Location" Caption="場所" />
+        <Member Name="RecurrenceInfoXml" Caption="定期的な予定" />
+        <Member Name="RecurrencePattern" Caption="定期的なパターン" />
+        <Member Name="Resources" Caption="リソース" />
+        <Member Name="StartOn" Caption="開始日付 / 時刻" />
+        <Member Name="Status" Caption="ステータス" />
+        <Member Name="Subject" Caption="件名" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.FileAttachmentBase" Caption="添付ファイル ベース">
+      <OwnMembers>
+        <Member Name="File" Caption="ファイル" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.FileData" Caption="ファイル データ">
+      <OwnMembers>
+        <Member Name="FileName" Caption="ファイル名" />
+        <Member Name="Size" Caption="サイズ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.HCategory">
+      <OwnMembers>
+        <Member Name="Children" Caption="子" />
+        <Member Name="Name" Caption="名前" />
+        <Member Name="Parent" Caption="親" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Note" Caption="注釈">
+      <OwnMembers>
+        <Member Name="Author" Caption="作成者" />
+        <Member Name="DateTime" Caption="日付 / 時刻" />
+        <Member Name="Text" Caption="テキスト" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.OidGenerator" Caption="OID ジェネレーター" />
+    <Class Name="DevExpress.Persistent.BaseImpl.Organization" Caption="企業・団体">
+      <OwnMembers>
+        <Member Name="Description" Caption="説明" />
+        <Member Name="Email" Caption="電子メール" />
+        <Member Name="FullName" Caption="氏名" />
+        <Member Name="Name" Caption="名前" />
+        <Member Name="Profile" Caption="プロファイル" />
+        <Member Name="WebSite" Caption="Web サイト" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Party" Caption="当事者">
+      <OwnMembers>
+        <Member Name="Address1" Caption="住所 1" />
+        <Member Name="Address2" Caption="住所 2" />
+        <Member Name="DisplayName" Caption="表示名" />
+        <Member Name="PhoneNumbers" Caption="電話番号" />
+        <Member Name="Photo" Caption="写真" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PersistentPermission" Caption="永続アクセス許可">
+      <OwnMembers>
+        <Member Name="Permission" Caption="アクセス許可" />
+        <Member Name="Role" Caption="ロール" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Person" Caption="人">
+      <OwnMembers>
+        <Member Name="Birthday" Caption="誕生日" />
+        <Member Name="Email" Caption="電子メール" />
+        <Member Name="FirstName" Caption="名" />
+        <Member Name="FullName" Caption="氏名" />
+        <Member Name="LastName" Caption="姓" />
+        <Member Name="MiddleName" Caption="ミドルネーム" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PhoneNumber" Caption="電話番号">
+      <OwnMembers>
+        <Member Name="Number" Caption="番号" />
+        <Member Name="Party" Caption="当事者" />
+        <Member Name="PhoneType" Caption="電話タイプ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PhoneType" Caption="電話タイプ">
+      <OwnMembers>
+        <Member Name="TypeName" Caption="タイプ名" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PropertyBag" Caption="プロパティ バッグ" />
+    <Class Name="DevExpress.Persistent.BaseImpl.PropertyBagDescriptor" Caption="プロパティ バッグ記述子">
+      <OwnMembers>
+        <Member Name="PropertyDescriptors" Caption="プロパティ記述子" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PropertyDescriptor" Caption="プロパティ記述子">
+      <OwnMembers>
+        <Member Name="Code" Caption="コード" />
+        <Member Name="Description" Caption="説明" />
+        <Member Name="Name" Caption="名前" />
+        <Member Name="PropertyBags" Caption="プロパティ バッグ" />
+        <Member Name="Type" Caption="タイプ" />
+        <Member Name="ValueType" Caption="値のタイプ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PropertyValue" Caption="プロパティ値" />
+    <Class Name="DevExpress.Persistent.BaseImpl.Resource" Caption="リソース">
+      <OwnMembers>
+        <Member Name="Caption" Caption="キャプション" />
+        <Member Name="Color" Caption="色" />
+        <Member Name="Events" Caption="イベント" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Role" Caption="ロール">
+      <OwnMembers>
+        <Member Name="Users" Caption="ユーザー" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.RoleBase" Caption="ロール ベース">
+      <OwnMembers>
+        <Member Name="Name" Caption="名前" />
+        <Member Name="PersistentPermissions" Caption="権限" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.ServerPrefix" Caption="サーバー プレフィックス" />
+    <Class Name="DevExpress.Persistent.BaseImpl.SimpleUser" Caption="ユーザー">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="初回ログオン時にパスワードを変更" />
+        <Member Name="FullName" Caption="氏名" />
+        <Member Name="IsActive" Caption="有効" />
+        <Member Name="IsAdministrator" Caption="管理者権限" />
+        <Member Name="UserName" Caption="ユーザー名" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.State" Caption="状態">
+      <OwnMembers>
+        <Member Name="LongName" Caption="長い名前" />
+        <Member Name="ShortName" Caption="略称" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Task" Caption="タスク">
+      <OwnMembers>
+        <Member Name="AssignedTo" Caption="割り当て先" />
+        <Member Name="DateCompleted" Caption="完了日" />
+        <Member Name="Description" Caption="説明" />
+        <Member Name="DueDate" Caption="期日" />
+        <Member Name="PercentCompleted" Caption="達成率" />
+        <Member Name="StartDate" Caption="開始日" />
+        <Member Name="Status" Caption="ステータス" />
+        <Member Name="Subject" Caption="件名" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.User" Caption="ユーザー">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="初回ログオン時にパスワードを変更" />
+        <Member Name="IsActive" Caption="有効" />
+        <Member Name="Permissions" Caption="権限" />
+        <Member Name="Roles" Caption="ロール" />
+        <Member Name="UserName" Caption="ユーザー名" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Xpo.XPWeakReference" Caption="XPWeak 参照" />
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.Persistent.Base.General.TaskStatus" Value="タスクのステータス">
+        <LocalizationItem Name="Completed" Value="完了" />
+        <LocalizationItem Name="Deferred" Value="延期" />
+        <LocalizationItem Name="InProgress" Value="処理中" />
+        <LocalizationItem Name="NotStarted" Value="未開始" />
+        <LocalizationItem Name="WaitingForSomeoneElse" Value="別のユーザーを待っています。" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Reports" Caption="レポート" />
+    </Items>
+  </NavigationItems>
+  <Validation>
+    <Rules>
+      <RuleFromBoolProperty Id="EventIntervalValid" CustomMessageTemplate="開始日は終了日より前でなければなりません。" />
+      <RuleRequiredField Id="FileAttachmentBaseRule" CustomMessageTemplate="ファイルを割り当てる必要があります。" />
+      <RuleFromBoolProperty Id="HCategoryCircularReferences" CustomMessageTemplate="循環参照が検出されました。このエラーを修正するには、親プロパティを別の値に設定してください。" />
+      <RuleUniqueValue Id="PropertyDescriptor Code is unique" CustomMessageTemplate="Code' プロパティは一意の値を持つ必要があります。" Name="PropertyDescriptor コードは一意です。" />
+      <RuleRequiredField Id="PropertyDescriptor Code required" Name="PropertyDescriptor コードが必要です。" />
+      <RuleCriteria Id="Role is not referenced" CustomMessageTemplate="ロールが複数のユーザーから参照されているため、ロールを削除できません。" Name="ロールが参照されていない" MessageTemplateMustSatisfyCriteria="&quot;{TargetObject}&quot; オブジェクトは次の基準を満たす必要があります: &quot;{Criteria}&quot;" />
+      <RuleRequiredField Id="Role required" CustomMessageTemplate="アクティブ ユーザーに1つ以上のロールを割り当てる必要があります。" Name="ロールが必要" />
+      <RuleUniqueValue Id="User Name is unique" CustomMessageTemplate="入力したログインの UserName は既にシステムに登録されています。" Name="ユーザー名は一意でなければなりません。" />
+      <RuleRequiredField Id="User Name required" CustomMessageTemplate="ユーザー名を空にできません。" Name="ユーザー名は必要です。" />
+    </Rules>
+  </Validation>
+  <Views>
+    <DetailView Id="BasicUser_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="BasicUser" Caption="基本ユーザー" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Organization_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Organization" Caption="企業・団体" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="PropertyDescriptor_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="PropertyDescriptor" Caption="プロパティ記述子" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="SimpleUser_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="SimpleUser" Caption="シンプル ユーザー" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

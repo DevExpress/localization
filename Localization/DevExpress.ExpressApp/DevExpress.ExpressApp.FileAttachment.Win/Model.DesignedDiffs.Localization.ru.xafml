@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+	<ActionDesign>
+		<Actions>
+			<Action Id="AddFromFile" Caption="Добавить из файла..." ToolTip="Открыть диалоговое окно для выбора добавляемого файла" />
+			<Action Id="Open" Caption="Открыть..." ToolTip="Открыть данные во внешнем приложении" />
+			<Action Id="SaveTo" Caption="Сохранить как..." ToolTip="Открыть диалоговое окно для выбора файла, в который будут сохранены данные" />
+		</Actions>
+		<DisableReasons>
+			<Reason Id="AttachmentAssigned" Caption="Пустые вложения" />
+		</DisableReasons>
+	</ActionDesign>
+	<Localization>
+		<LocalizationGroup Name="FileAttachments">
+			<LocalizationItem Name="Editor_Clear" Value="Очистить" />
+			<LocalizationItem Name="Editor_Open" Value="Открыть" />
+			<LocalizationItem Name="Editor_Save" Value="Сохранить как..." />
+			<LocalizationItem Name="OverwritePrompt" Value="Файл '{0}' уже существует. Хотите заменить его?" />
+			<LocalizationItem Name="OverwritePromptCaption" Value="Сохранить как..." />
+			<LocalizationItem Name="WordAll" Value="Все" />
+			<LocalizationItem Name="WordFiles" Value="файлы" />
+		</LocalizationGroup>
+	</Localization>
+</Application>

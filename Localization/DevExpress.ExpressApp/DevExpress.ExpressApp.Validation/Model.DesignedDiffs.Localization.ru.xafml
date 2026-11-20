@@ -1,0 +1,732 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ShowAllContexts" Caption="Контроль" ToolTip="Проверить выбранные объекты во всех имеющихся контекстах" />
+      <Action Id="Diagnostic Info.Rules Info">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Rules Info" Caption="Информация о правилах" />
+        </ChoiceActionItems>
+      </Action>
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ContextValidationResult" Caption="Результат проверки контекста">
+      <OwnMembers>
+        <Member Name="Id" Caption="Идентификатор" />
+        <Member Name="BrokenRules" Caption="Нарушенные правила" />
+        <Member Name="Context" Caption="Контекст" />
+        <Member Name="DisplayableValidationResultItems" Caption="Отображаемые элементы результата контроля" />
+        <Member Name="State" Caption="Состояние" />
+        <Member Name="ContextValidationOutcome" Caption="Состояние" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.DisplayableValidationResultItem" Caption="Подробная информация о проверке">
+      <OwnMembers>
+        <Member Name="ContextCaption" Caption="Имя контекста" />
+        <Member Name="ContextId" Caption="Идентификатор контекста" />
+        <Member Name="ErrorMessage" Caption="Сообщение об ошибке" />
+        <Member Name="Rule" Caption="Правило" />
+        <Member Name="RuleName" Caption="Имя правила" />
+        <Member Name="RuleProperties" Caption="Свойства правила" />
+        <Member Name="State" Caption="Состояние" />
+        <Member Name="TargetCaption" Caption="Цель" />
+        <Member Name="Outcome" Caption="Результат" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ValidationResults" Caption="Результаты контроля">
+      <OwnMembers>
+        <Member Name="DisplayableValidationResultItems" Caption="Отображаемые элементы результата контроля" />
+        <Member Name="HighlightErrors" Caption="Выделять ошибки" />
+        <Member Name="Results" Caption="Результаты" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleBaseProperties" Caption="Базовые свойства правила">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Шаблон сообщения" />
+        <Member Name="Id" Caption="Идентификатор" />
+        <Member Name="InvertResult" Caption="Инвертировать результат" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Шаблон сообщения о Пропуске неопределенных и пустых значений" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Шаблон сообщения о несоответствии цели критерию" />
+        <Member Name="Name" Caption="Имя" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Пропускать неопределенные и пустые значения" />
+        <Member Name="TargetContextIDs" Caption="Идентификаторы целевых контекстов" />
+        <Member Name="TargetCriteria" Caption="Целевой критерий" />
+        <Member Name="TargetType" Caption="Целевой тип" />
+        <Member Name="ResultType" Caption="Тип результата" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCollectionPropertyProperties" Caption="Параметры свойства коллекции IRule">
+      <OwnMembers>
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Шаблон суффикса сообщения о проверки коллекции" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Шаблон сообщения о несоответствии цели критерию коллекции" />
+        <Member Name="TargetCollectionOwnerType" Caption="Тип владельца целевой коллекции" />
+        <Member Name="TargetCollectionPropertyName" Caption="Имя свойства целевой коллекции" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCombinationOfPropertiesIsUniqueProperties" Caption="Свойства правила проверяющего уникальность комбинации свойств">
+      <OwnMembers>
+        <Member Name="MessageTemplateCombinationOfPropertiesMustBeUnique" Caption="Шаблон сообщения об уникальности комбинации свойств" />
+        <Member Name="TargetProperties" Caption="Целевые свойства" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCriteriaProperties" Caption="Свойства правила основанного на критерии">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Критерий" />
+        <Member Name="MessageTemplateMustSatisfyCriteria" Caption="Шаблон сообщения о соответствии критерию" />
+        <Member Name="UsedProperties" Caption="Используемые свойства" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleFromBoolPropertyProperties" Caption="Свойства правила проверяющего логическое значение">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeTrue" Caption="Шаблон сообщения о том что логическое значение должно быть истинным" />
+        <Member Name="UsedProperties" Caption="Использованные свойства" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleIsReferencedProperties" Caption="Свойства правила проверяющего ссылочное свойство">
+      <OwnMembers>
+        <Member Name="LooksFor" Caption="Смотреть для" />
+        <Member Name="MessageTemplateMustBeReferenced" Caption="Шаблон сообщения о том что свойство должно быть ссылочным" />
+        <Member Name="ReferencePropertyName" Caption="Имя ссылочного свойства" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleObjectExistsProperties" Caption="Свойства правила проверяющего существование объекта">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Критерий" />
+        <Member Name="LooksFor" Caption="Смотреть для" />
+        <Member Name="MessageTemplateMustExist" Caption="Шаблон сообщения о существовании объекта" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRulePropertyValueProperties" Caption="Свойства правила проверяющего значение свойства">
+      <OwnMembers>
+        <Member Name="TargetPropertyName" Caption="Имя проверяемого свойства" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRangeProperties" Caption="Свойства правила проверяющего диапазон">
+      <OwnMembers>
+        <Member Name="MaximumValue" Caption="Максимальное значение" />
+        <Member Name="MaximumValueExpression" Caption="Выражение для максимального значения" />
+        <Member Name="MessageTemplateMustBeInRange" Caption="Шаблон сообщения о соответствии диапазону" />
+        <Member Name="MinimumValue" Caption="Минимальное значение" />
+        <Member Name="MinimumValueExpression" Caption="Выражение для минимального значения" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRegularExpressionProperties" Caption="Свойства правила основанного на регулярном выражении">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustMatchPattern" Caption="Шаблон сообщения о соответствии регулярному выражению" />
+        <Member Name="Pattern" Caption="Регулярное выражение" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRequiredFieldProperties" Caption="Правило требующее наличия значения у поля">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustNotBeEmpty" Caption="Шаблон сообщения о наличии значения" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Пропускать неопределенные и пустые значения" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleSearchObjectProperties" Caption="Свойства правила поиска">
+      <OwnMembers>
+        <Member Name="CriteriaEvaluationBehavior" Caption="Поведение при вычислении критерия" />
+        <Member Name="FoundObjectMessageFormat" Caption="Формат сообщения о найденных объектах" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Разделитель сообщений о найденных объектах" />
+        <Member Name="IncludeCurrentObject" Caption="Включить текущий объект" />
+        <Member Name="MessageTemplateFoundObjects" Caption="Шаблон сообщения о найденных объектах" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleStringComparisonProperties" Caption="Свойства правила для равнения строк">
+      <OwnMembers>
+        <Member Name="IgnoreCase" Caption="Игнорировать" />
+        <Member Name="MessageTemplateMustBeEqual" Caption="Шаблон сообщения. Должен быть равен" />
+        <Member Name="MessageTemplateMustBeginWith" Caption="Шаблон сообщения. Должен начинаться с" />
+        <Member Name="MessageTemplateMustContain" Caption="Шаблон сообщения. Должен содержать" />
+        <Member Name="MessageTemplateMustEndWith" Caption="Шаблон сообщения. Должен заканчиваться" />
+        <Member Name="MessageTemplateMustNotBeEqual" Caption="Шаблон сообщения. Не должен быть равен" />
+        <Member Name="OperandValue" Caption="Значение операнда" />
+        <Member Name="OperatorType" Caption="Тип оператора" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleSupportsCollectionAggregatesProperties" Caption="Свойства правила проверяющего поддержку агрегированных коллекций">
+      <OwnMembers>
+        <Member Name="TargetCollectionAggregate" Caption="Целевая агрегированная коллекция" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleUniqueValueProperties" Caption="Свойства правила проверяющего уникальность значения">
+      <OwnMembers>
+        <Member Name="FoundObjectMessageFormat" Caption="Формат сообщения о найденных объектах" />
+        <Member Name="MessageTemplateMustBeUnique" Caption="Шаблон сообщения об уникальности" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleValueComparisonProperties" Caption="Свойства правила сравнивающего значения">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeEqualToOperand" Caption="Шаблон сообщения о равенстве операнду" />
+        <Member Name="MessageTemplateMustBeGreaterThanOperand" Caption="Шаблон сообщения том что значение должно быть больше операнда" />
+        <Member Name="MessageTemplateMustBeGreaterThanOrEqualToOperand" Caption="Шаблон сообщения том что значение должно быть больше или равно операнду" />
+        <Member Name="MessageTemplateMustBeLessThanOperand" Caption="Шаблон сообщения том что значение должно быть меньше, операнда" />
+        <Member Name="MessageTemplateMustBeLessThanOrEqualToOperand" Caption="Шаблон сообщения том что значение должно быть меньше или равно операнду" />
+        <Member Name="MessageTemplateMustNotBeEqualToOperand" Caption="Шаблон сообщения том что значение должно быть равно операнду" />
+        <Member Name="OperatorType" Caption="Тип оператора" />
+        <Member Name="RightOperand" Caption="Правый операнд" />
+        <Member Name="RightOperandExpression" Caption="Выражение для вычисления правого операнда" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleBaseProperties" Caption="Базовые свойства правила">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Шаблон сообщения" />
+        <Member Name="Id" Caption="Идентификатор" />
+        <Member Name="InvertResult" Caption="Инвертировать результат" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Шаблон суффикса сообщения о проверке коллекции" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Шаблон сообщения о пропуске пустых и неопределенных значений" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Шаблон сообщения о несоответствии цели критерию коллекции" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Шаблон сообщения о несоответствии цели критерию" />
+        <Member Name="Name" Caption="Имя" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Пропускать неопределенные и пустые значения" />
+        <Member Name="TargetCollectionOwnerType" Caption="Тип владельца целевой коллекции" />
+        <Member Name="TargetCollectionPropertyName" Caption="Имя свойства целевой коллекции" />
+        <Member Name="TargetContextIDs" Caption="Идентификаторы целевого контекста" />
+        <Member Name="TargetCriteria" Caption="Целевой критерий" />
+        <Member Name="TargetType" Caption="Целевой тип" />
+        <Member Name="ResultType" Caption="Тип результата" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleCombinationOfPropertiesIsUniqueProperties" Caption="Правило требующее уникальности комбинации свойств">
+      <OwnMembers>
+        <Member Name="MessageTemplateCombinationOfPropertiesMustBeUnique" Caption="Шаблон сообщения об уникальности комбинации свойств" />
+        <Member Name="TargetProperties" Caption="Целевые свойства" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleCriteriaProperties" Caption="Свойства правила основанного на критерии">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Критерий" />
+        <Member Name="MessageTemplateMustSatisfyCriteria" Caption="Шаблон сообщения о соответствии критерию" />
+        <Member Name="UsedProperties" Caption="Используемые свойства" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleFromBoolPropertyProperties" Caption="Правило проверяющее логическое значение">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeTrue" Caption="Шаблон сообщения о проверке логического значения" />
+        <Member Name="UsedProperties" Caption="Использованные свойства" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleIsReferencedProperties" Caption="Свойства правила проверяющего ссылочное свойство">
+      <OwnMembers>
+        <Member Name="LooksFor" Caption="Смотреть для" />
+        <Member Name="MessageTemplateMustBeReferenced" Caption="Шаблон сообщения о том что свойство должно быть ссылочным" />
+        <Member Name="ReferencePropertyName" Caption="Имя ссылочного свойства" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleObjectExistsProperties" Caption="Правило проверяющее существование объекта">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Критерий" />
+        <Member Name="LooksFor" Caption="Смотреть для" />
+        <Member Name="MessageTemplateMustExist" Caption="Шаблон сообщения о существовании объекта" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RulePropertyValueProperties" Caption="Правило проверяющее значение свойства">
+      <OwnMembers>
+        <Member Name="TargetPropertyName" Caption="Имя целевого свойства" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRangeProperties" Caption="Свойства правила проверяющее диапазон">
+      <OwnMembers>
+        <Member Name="MaximumValue" Caption="Максимальное значение" />
+        <Member Name="MaximumValueExpression" Caption="Выражение для максимального значения" />
+        <Member Name="MessageTemplateMustBeInRange" Caption="Шаблон сообщения о соответствии диапазону" />
+        <Member Name="MinimumValue" Caption="Минимальное значение" />
+        <Member Name="MinimumValueExpression" Caption="Минимальное значение выражения" />
+        <Member Name="TargetCollectionAggregate" Caption="Сводное значение целевой коллекции" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRegularExpressionProperties" Caption="Свойства правила проверяющее соответствие регулярному выражению">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustMatchPattern" Caption="Шаблон сообщения о соответствии регулярному выражению" />
+        <Member Name="Pattern" Caption="Регулярное выражение" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRequiredFieldProperties" Caption="Правило проверяющее обязательное для заполнения поле">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustNotBeEmpty" Caption="Шаблон сообщения о том что значение должно быть задано" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSearchObjectProperties" Caption="Свойства правила поиска объекта">
+      <OwnMembers>
+        <Member Name="CriteriaEvaluationBehavior" Caption="Поведение при вычислении критерия" />
+        <Member Name="FoundObjectMessageFormat" Caption="Формат сообщения о найденных объектах" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Разделитель сообщений о найденных объектах" />
+        <Member Name="IncludeCurrentObject" Caption="Включить текущий объект" />
+        <Member Name="MessageTemplateFoundObjects" Caption="Шаблон сообщения о найденных объектах" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResult" Caption="Результаты проверки">
+      <OwnMembers>
+        <Member Name="Results" Caption="Результаты" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResultItem" Caption="Подробная информация о проверке">
+      <OwnMembers>
+        <Member Name="ContextId" Caption="Идентификатор контекста" />
+        <Member Name="ErrorMessage" Caption="Сообщение об ошибке" />
+        <Member Name="Rule" Caption="Правило" />
+        <Member Name="RuleName" Caption="Имя правила" />
+        <Member Name="State" Caption="Состояние" />
+        <Member Name="Target" Caption="Цель" />
+        <Member Name="DisplayObjectName" Caption="Объект" />
+        <Member Name="ValidationOutcome" Caption="Результат проверки" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResultItemAggregate" Caption="Сводные данные результатов проверки набора правил">
+      <OwnMembers>
+        <Member Name="AggregatedResults" Caption="Сводка результатов" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleStringComparisonProperties" Caption="Свойства правила сравнивающего строки">
+      <OwnMembers>
+        <Member Name="IgnoreCase" Caption="Игнорировать регистр" />
+        <Member Name="MessageTemplateMustBeEqual" Caption="Шаблон сообщения о равенстве строке" />
+        <Member Name="MessageTemplateMustBeginWith" Caption="Шаблон сообщения о начале строки" />
+        <Member Name="MessageTemplateMustContain" Caption="Шаблон сообщения о содержании строки" />
+        <Member Name="MessageTemplateMustEndWith" Caption="Шаблон сообщения о конце строки" />
+        <Member Name="MessageTemplateMustNotBeEqual" Caption="Шаблон сообщения о неравенстве строке" />
+        <Member Name="OperandValue" Caption="Значение операнда" />
+        <Member Name="OperatorType" Caption="Тип оператора" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleUniqueValueProperties" Caption="Свойства правила проверяющего уникальность значения">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeUnique" Caption="Шаблон сообщения об уникальности" />
+        <Member Name="TargetPropertyName" Caption="Имя целевого свойства" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleValueComparisonProperties" Caption="Свойства правила сравнивающего значения">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeEqualToOperand" Caption="Шаблон сообщения о равенстве операнду" />
+        <Member Name="MessageTemplateMustBeGreaterThanOperand" Caption="Шаблон сообщения том что значение должно быть больше операнда" />
+        <Member Name="MessageTemplateMustBeGreaterThanOrEqualToOperand" Caption="Шаблон сообщения о том что значение должно быть больше или равно операнду" />
+        <Member Name="MessageTemplateMustBeLessThanOperand" Caption="Шаблон сообщения о том что значение должно быть меньше операнда" />
+        <Member Name="MessageTemplateMustBeLessThanOrEqualToOperand" Caption="Шаблон сообщения о том что значение должно быть меньше или равно операнду" />
+        <Member Name="MessageTemplateMustNotBeEqualToOperand" Caption="Шаблон сообщения о том что значение не должно быть равно операнду" />
+        <Member Name="OperatorType" Caption="Тип оператора" />
+        <Member Name="RightOperand" Caption="Правый операнд" />
+        <Member Name="RightOperandExpression" Caption="Выражение для вычисления правого операнда" />
+        <Member Name="TargetCollectionAggregate" Caption="Сводное значение целевой коллекции" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.Data.Filtering.Aggregate" Value="Сводное значение">
+        <LocalizationItem Name="Avg" Value="Среднее значение" />
+        <LocalizationItem Name="Count" Value="Количество" />
+        <LocalizationItem Name="Custom" Value="Пользовательский" />
+        <LocalizationItem Name="Exists" Value="Существование" />
+        <LocalizationItem Name="Max" Value="Максимум" />
+        <LocalizationItem Name="Min" Value="Минимум" />
+        <LocalizationItem Name="Sum" Value="Сумма" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Validation.AllContextsView.IsValid" Value="Валидность">
+        <LocalizationItem Name="Invalid" Value="Недействительный" />
+        <LocalizationItem Name="Valid" Value="Действительный" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.StringComparisonType" Value="Тип сравнения строк">
+        <LocalizationItem Name="Contains" Value="Содержит" />
+        <LocalizationItem Name="EndsWith" Value="Заканчивается на" />
+        <LocalizationItem Name="Equals" Value="Равно" />
+        <LocalizationItem Name="NotEquals" Value="Не равно" />
+        <LocalizationItem Name="StartsWith" Value="Начинается с" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValidationState" Value="Состояние проверки">
+        <LocalizationItem Name="Invalid" Value="Недействительный" />
+        <LocalizationItem Name="Skipped" Value="Пропущенный" />
+        <LocalizationItem Name="Valid" Value="Действительный" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValueComparisonType" Value="Тип сравнения значений">
+        <LocalizationItem Name="Equals" Value="Равно" />
+        <LocalizationItem Name="GreaterThan" Value="Больше" />
+        <LocalizationItem Name="GreaterThanOrEqual" Value="Больше или равно" />
+        <LocalizationItem Name="LessThan" Value="Меньше" />
+        <LocalizationItem Name="LessThanOrEqual" Value="Меньше или равно" />
+        <LocalizationItem Name="NotEquals" Value="Не равно" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Xpo.PersistentCriteriaEvaluationBehavior" Value="Поведение вычисления хранимого критерия">
+        <LocalizationItem Name="BeforeTransaction" Value="Перед транзакцией" />
+        <LocalizationItem Name="InTransaction" Value="В транзакции" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.CriteriaEvaluationBehavior" Value="Поведение вычисления хранимого критерия">
+        <LocalizationItem Name="BeforeTransaction" Value="Перед транзакцией" />
+        <LocalizationItem Name="InTransaction" Value="В транзакции" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValidationOutcome" Value="Результат проверки">
+        <LocalizationItem Name="Error" Value="Ошибка" />
+        <LocalizationItem Name="Information" Value="Информация" />
+        <LocalizationItem Name="Warning" Value="Предупреждение" />
+        <LocalizationItem Name="Skipped" Value="Пропущенный" />
+        <LocalizationItem Name="Valid" Value="Действительный" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValidationResultType" Value="Тип результата проверки">
+        <LocalizationItem Name="Error" Value="Ошибка" />
+        <LocalizationItem Name="Information" Value="Информация" />
+        <LocalizationItem Name="Warning" Value="Предупреждение" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <Validation>
+    <Contexts>
+      <ValidationContext Id="Accept" Caption="Принять" />
+      <ValidationContext Id="Delete" Caption="Удалить" />
+      <ValidationContext Id="Save" Caption="Сохранение" />
+    </Contexts>
+    <ErrorMessageTemplates>
+      <RuleBase MessageTemplateSkipNullOrEmptyValues="Правило “{Id}” не было проверено, так как не указаны целевые свойства." MessageTemplateTargetDoesNotSatisfyTargetCriteria="Правило “{Id}” не была проверено, так как целевой объект не соответствует критерию правила." />
+      <RuleCollectionProperty MessageTemplateTargetDoesNotSatisfyCollectionCriteria="Правило “{Id}” не было проверено, так как цель не является элементом коллекции &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot;." MessageTemplateCollectionValidationMessageSuffix="(Для элементов коллекции &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot;)." />
+      <RuleCombinationOfPropertiesIsUnique MessageTemplateCombinationOfPropertiesMustBeUnique="Комбинация из следующих свойств должна быть уникальной: {FormattedTargetProperties}." MessageTemplateFoundObjects="Найдены следующие объекты:" />
+      <RuleCriteria MessageTemplateMustSatisfyCriteria="Объект &quot;{TargetObject}&quot; должен удовлетворять следующему критерию: &quot;{Criteria}&quot;." />
+      <RuleFromBoolProperty MessageTemplateMustBeTrue="Значение &quot;{TargetPropertyName}&quot; должно быть истинным." />
+      <RuleIsReferenced MessageTemplateMustBeReferenced="Объект &quot;{TargetObject}&quot; должен быть ссылочным." MessageTemplateFoundObjects="Найдены следующие объекты:" />
+      <RuleObjectExists MessageTemplateMustExist="Должны существовать объекты, удовлетворяющие критерию &quot;{Criteria}&quot;." MessageTemplateFoundObjects="Найдены следующие объекты:" />
+      <RuleRange MessageTemplateMustBeInRange="Значение &quot;{TargetPropertyName}&quot; должно быть в пределах диапазона от &quot;{MinimumValue}&quot; до &quot;{MaximumValue}&quot;,  включая границы." />
+      <RuleRegularExpression MessageTemplateMustMatchPattern="Значение &quot;{TargetPropertyName}&quot; должно соответствовать следующему регулярному выражению: &quot;{Pattern}&quot;." />
+      <RuleRequiredField MessageTemplateMustNotBeEmpty="Значение &quot;{TargetPropertyName}&quot; не должно быть пустым." />
+      <RuleSearchObject MessageTemplateFoundObjects="Найдены следующие объекты:" />
+      <RuleStringComparison MessageTemplateMustContain="Значение &quot;{TargetPropertyName}&quot; должно содержать &quot;{OperandValue}&quot;." MessageTemplateMustBeginWith="Значение &quot;{TargetPropertyName}&quot; должно начинаться с &quot;{OperandValue}&quot;." MessageTemplateMustEndWith="Значение &quot;{TargetPropertyName}&quot; должно заканчиваться на &quot;{OperandValue}&quot;." MessageTemplateMustBeEqual="Значение &quot;{TargetPropertyName}&quot; должно быть равно &quot;{OperandValue}&quot;." MessageTemplateMustNotBeEqual="Значение &quot;{TargetPropertyName}&quot; не должно быть равно &quot;{OperandValue}&quot;." />
+      <RuleUniqueValue MessageTemplateMustBeUnique="Существует объект с тем же значением &quot;{TargetPropertyName}&quot;. Значение &quot;{TargetPropertyName}&quot; должно быть уникальным." />
+      <RuleValueComparison MessageTemplateMustBeEqualToOperand="Значение &quot;{TargetPropertyName}&quot; должно быть равно &quot;{RightOperand}&quot;." MessageTemplateMustBeGreaterThanOperand="Значение &quot;{TargetPropertyName}&quot; должно быть больше &quot;{RightOperand}&quot;." MessageTemplateMustBeGreaterThanOrEqualToOperand="Значение &quot;{TargetPropertyName}&quot; должно быть больше или равно &quot;{RightOperand}&quot;." MessageTemplateMustBeLessThanOperand="Значение &quot;{TargetPropertyName}&quot; должно быть меньше &quot;{RightOperand}&quot;." MessageTemplateMustBeLessThanOrEqualToOperand="Значение &quot;{TargetPropertyName}&quot; должно быть меньше или равно &quot;{RightOperand}&quot;." MessageTemplateMustNotBeEqualToOperand="Значение &quot;{TargetPropertyName}&quot; не должно быть равно  &quot;{RightOperand}&quot;." />
+    </ErrorMessageTemplates>
+  </Validation>
+  <Views>
+    <DetailView Id="DisplayableValidationResultItem_DetailView">
+      <Items>
+        <PropertyEditor Id="RuleProperties" Caption="Информация о правиле" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DisplayableValidationResultItem" Caption="Элемент отображаемого результата проверки" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleBaseProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="Базовые свойства правила" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCollectionPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="Базовые свойства правила" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCombinationOfPropertiesIsUniqueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="Свойства правила для поиска объекта" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="Базовые свойства правила" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCriteriaProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="Базовые свойства правила" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleFromBoolPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="Базовые свойства правила" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleIsReferencedProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="Свойства правила для поиска объекта" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="Базовые свойства правила" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleObjectExistsProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="Свойства правила для поиска объекта" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="Базовые свойства правила" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRulePropertyValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="Базовые свойства правила" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRangeProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleRangeProperties" Caption="Свойства правила проверяющего диапазон" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="Базовые свойства правила" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRegularExpressionProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="Базовые свойства правила" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRequiredFieldProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="Базовые свойства правила" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleSearchObjectProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="Свойства правила для поиска объекта" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="Базовые свойства правила" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleStringComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleStringComparisonProperties" Caption="Свойства правила для сравнения строк" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="Базовые свойства правила" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleSupportsCollectionAggregatesProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="Базовые свойства правила" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleUniqueValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="Базовые свойства правила" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleValueComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleValueComparisonProperties" Caption="Свойства правила для сравнения значений" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="Базовые свойства правила" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleBaseProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Базовые свойства правил" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleCombinationOfPropertiesIsUniqueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Свойства правила для поиска объекта" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Базовые свойства правил" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleCriteriaProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Базовые свойства правил" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleFromBoolPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Базовые свойства правил" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleIsReferencedProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Свойства правила для поиска объекта" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Базовые свойства правил" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleObjectExistsProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Свойства правила для поиска объекта" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Базовые свойства правил" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RulePropertyValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Базовые свойства правил" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRangeProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleRangeProperties" Caption="Свойства правила для проверки диапазона" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Базовые свойства правил" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRegularExpressionProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Базовые свойства правил" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRequiredFieldProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Базовые свойства правил" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSearchObjectProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Свойства правила для поиска объекта" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Базовые свойства правил" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResult_ByTarget_Error_DetailView" Caption="Ошибки при контроле данных">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="При контроле данных обнаружены проблемы. Ниже приведена информация об ошибках и способах их исправления." />
+      </Items>
+    </DetailView>
+    <ListView Id="RuleSetValidationResultItem_ByTarget_ListView">
+      <Columns>
+        <ColumnInfo Id="ContextCaption" Caption="Контекст" />
+        <ColumnInfo Id="ContextId" Caption="Идентификатор контекста" />
+        <ColumnInfo Id="ErrorMessage" Caption="Описание" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleSetValidationResultItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSetValidationResultItem" Caption="Элемент результата проверки набора правил" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResultItemAggregate_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSetValidationResultItem" Caption="Элемент результата проверки набора правил" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleStringComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleStringComparisonProperties" Caption="Свойства правила для сравнения строк" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Базовые свойства правил" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleUniqueValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Свойства правила для поиска объекта" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Базовые свойства правил" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleValueComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleValueComparisonProperties" Caption="Свойства правила для сравнения значений" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Базовые свойства правил" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ValidationResults_Error_DetailView">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="При контроле данных обнаружены проблемы. Ниже приведена информация об ошибках и способах их исправления." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ValidationResults_Passed_DetailView">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="Проблем не обнаружено." />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>

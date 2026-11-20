@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ChangePasswordByUser" Caption="Endre mitt passord" />
+      <Action Id="MyDetails" Caption="Mine detaljer" />
+      <Action Id="ResetPassword" Caption="Tilbakestill passord" ToolTip="Generer et nytt passord for den valgte brukeren" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters" Caption="Godkjenning standard pålogging parametere">
+      <OwnMembers>
+        <Member Name="Password" Caption="Passord" />
+        <Member Name="UserName" Caption="Brukernavn" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordOnLogonParameters" Caption="Endre passord på påloggings-parametere">
+      <OwnMembers>
+        <Member Name="ConfirmPassword" Caption="Bekreft passord" />
+        <Member Name="NewPassword" Caption="Nytt passord" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordParameters" Caption="Endre passord-parametere">
+      <OwnMembers>
+        <Member Name="OldPassword" Caption="Gammelt passord" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.EditModelPermission" Caption="Redigere Model rettigheter" />
+    <Class Name="DevExpress.ExpressApp.Security.ObjectAccessPermission" Caption="Objektets rettigheter">
+      <OwnMembers>
+        <Member Name="CreateAccess" Caption="Opprett rettighet" />
+        <Member Name="DeleteAccess" Caption="Slett rettighet" />
+        <Member Name="NavigateAccess" Caption="Naviger rettighet" />
+        <Member Name="ObjectType" Caption="Objekt-type" />
+        <Member Name="ReadAccess" Caption="Leserettighet" />
+        <Member Name="WriteAccess" Caption="Skriverettighet" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ResetPasswordParameters" Caption="Tilbakestill passord parametre">
+      <OwnMembers>
+        <Member Name="Password" Caption="Passord" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ModelAccessModifier">
+        <LocalizationItem Name="Allow" Value="Tillat" />
+        <LocalizationItem Name="Deny" Value="Nekt" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccess">
+        <LocalizationItem Name="AllAccess" Value="Alle rettigheter" />
+        <LocalizationItem Name="ChangeAccess" Value="Endre rettighet" />
+        <LocalizationItem Name="Create" Value="Opprett" />
+        <LocalizationItem Name="Delete" Value="Slett" />
+        <LocalizationItem Name="Navigate" Value="Navigere" />
+        <LocalizationItem Name="NoAccess" Value="Ingen rettighet" />
+        <LocalizationItem Name="Read" Value="Lese" />
+        <LocalizationItem Name="Write" Value="Skrive" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccessModifier">
+        <LocalizationItem Name="Allow" Value="Tillat" />
+        <LocalizationItem Name="Deny" Value="Nekt" />
+        <LocalizationItem Name="None" Value="Ingen" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="System.Security.Permissions.PermissionState">
+        <LocalizationItem Name="None" Value="Ingen" />
+        <LocalizationItem Name="Unrestricted" Value="Ubegrenset" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Exceptions">
+      <LocalizationGroup Name="UserVisibleExceptions">
+        <LocalizationGroup Name="Security">
+          <LocalizationItem Name="LastAdmin" Value="Brukeren '{0}' er siste administrator i systemet. Kan ikke oppheve administrative rettigheter." />
+          <LocalizationItem Name="LoginFailed" Value="Pålogging mislyktes for {0}. {1}" />
+          <LocalizationItem Name="NewPasswordIsEqualToOldPassword" Value="Nytt passord er likt gammelt passord." />
+          <LocalizationItem Name="OldPasswordIsWrong" Value="Gammelt passord er feil." />
+          <LocalizationItem Name="PasswordsAreDifferent" Value="Passord er forskjellige." />
+          <LocalizationItem Name="RetypeTheInformation" Value="Skriv inn informasjonen på nytt. Husk å skille mellom små og store bokstaver i passord." />
+          <LocalizationItem Name="UserNameIsEmpty" Value="Brukernavn kan ikke være tomt." />
+        </LocalizationGroup>
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="MyDetails" Caption="Mine detaljer" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView" Caption="Logg på">
+      <Items>
+        <StaticText Id="LogonText" Text="Velkommen! Vennligst skriv inn ditt brukernavn og passord nedenfor." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ChangePasswordOnLogonParameters_DetailView" Caption="Endre passordet ved første pålogging">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="Av sikkerhetsgrunner må du nå angi ditt eget passord. Skriv inn det nye passordet i de to tekstfeltene nedenfor, og forsikre deg om at du ikke bruker et passord du har brukt tidligere." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ChangePasswordParameters_DetailView" Caption="Endre passord">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="For å endre ditt passord, Vennligst skriv inn det gamle og nye passordet i tekstfeltene nedenfor." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ObjectAccessPermission_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ObjectAccessPermission" Caption="Objektets rettigheter" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ResetPasswordParameters_DetailView" Caption="Tilbakestill passord">
+      <Items>
+        <StaticText Id="ResetPasswordText" Text="Ved å angi brukerens passord vil det automatisk bli oppretter et nytt passord for brukeren, og samtidig deaktivere brukerpålogging med det gamle passordet. Du må deretter sende på det nye passordet til brukeren, slik at han/hun kan fortsette å arbeide med programmet. Er du sikker på at du vil gjøre dette?" />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>

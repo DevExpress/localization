@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="DevExpress.Persistent.AuditTrail.BaseAuditedObjectWeakReference">
+      <OwnMembers>
+        <Member Name="DisplayName" Caption="Zobrazené jméno " />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Address" Caption="Adresa">
+      <OwnMembers>
+        <Member Name="City" Caption="Město" />
+        <Member Name="Country" Caption="Země" />
+        <Member Name="FullAddress" Caption="Celá adresa" />
+        <Member Name="StateProvince" Caption="Stav správní jednotky" />
+        <Member Name="Street" Caption="Ulice" />
+        <Member Name="ZipPostal" Caption="PSČ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Analysis">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Kritéria" />
+        <Member Name="DataType" Caption="Typ dat" />
+        <Member Name="Name" Caption="Jméno" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.AuditDataItemPersistent">
+      <OwnMembers>
+        <Member Name="Description" Caption="Popis" />
+        <Member Name="NewValue" Caption="Nová hodnota" />
+        <Member Name="OldValue" Caption="Stará hodnota" />
+        <Member Name="OperationType" Caption="Typ operace" />
+        <Member Name="PropertyName" Caption="Jméno vlastnosti" />
+        <Member Name="UserName" Caption="Uživatelské jméno" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.AuditedObjectWeakReference">
+      <OwnMembers>
+        <Member Name="AuditDataItems" Caption="Položky auditu dat" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.BaseObject" Caption="Základní objekt" />
+    <Class Name="DevExpress.Persistent.BaseImpl.BasicUser" Caption="Uživatel">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="Změnit heslo při prvním přihlášení" />
+        <Member Name="FullName" Caption="Celé jméno" />
+        <Member Name="IsActive" Caption="Je aktivní" />
+        <Member Name="IsAdministrator" Caption="Je administrátor" />
+        <Member Name="UserName" Caption="Uživatelské jméno" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Country" Caption="Země">
+      <OwnMembers>
+        <Member Name="Name" Caption="Jméno" />
+        <Member Name="PhoneCode" Caption="Směrové číslo" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Event" Caption="Naplánovaná událost">
+      <OwnMembers>
+        <Member Name="AllDay" Caption="Celý den" />
+        <Member Name="Description" Caption="Popis" />
+        <Member Name="EndOn" Caption="Koncové datum/čas" />
+        <Member Name="Label" Caption="Popisek" />
+        <Member Name="Location" Caption="Umístění" />
+        <Member Name="RecurrenceInfoXml" Caption="Opakování" />
+        <Member Name="RecurrencePattern" Caption="Vzor opakování" />
+        <Member Name="Resources" Caption="Zdroje" />
+        <Member Name="StartOn" Caption="Počáteční datum/čas" />
+        <Member Name="Status" Caption="Stav" />
+        <Member Name="Subject" Caption="Předmět" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.FileAttachmentBase" Caption="Příloha souboru">
+      <OwnMembers>
+        <Member Name="File" Caption="Soubor" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.FileData" Caption="Data souboru">
+      <OwnMembers>
+        <Member Name="FileName" Caption="Název souboru" />
+        <Member Name="Size" Caption="Velikost" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.HCategory" Caption="Hkategorie">
+      <OwnMembers>
+        <Member Name="Children" Caption="Děti" />
+        <Member Name="Name" Caption="Jméno" />
+        <Member Name="Parent" Caption="Rodiče" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Note" Caption="Poznámka">
+      <OwnMembers>
+        <Member Name="Author" Caption="Autor" />
+        <Member Name="DateTime" Caption="Datum a čas" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.OidGenerator" Caption="Oid generátor" />
+    <Class Name="DevExpress.Persistent.BaseImpl.Organization" Caption="Organizace">
+      <OwnMembers>
+        <Member Name="Description" Caption="Popis" />
+        <Member Name="FullName" Caption="Celé jméno" />
+        <Member Name="Name" Caption="Jméno" />
+        <Member Name="Profile" Caption="Profil" />
+        <Member Name="WebSite" Caption="Webová stránka" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Party" Caption="Strana">
+      <OwnMembers>
+        <Member Name="Address1" Caption="Adresa 1" />
+        <Member Name="Address2" Caption="Adresa 2" />
+        <Member Name="DisplayName" Caption="Zobrazené jméno " />
+        <Member Name="PhoneNumbers" Caption="Čísla telefonu" />
+        <Member Name="Photo" Caption="Fotografie" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PersistentPermission" Caption="Trvalé povolení">
+      <OwnMembers>
+        <Member Name="Permission" Caption="Povolení" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Person" Caption="Osoba">
+      <OwnMembers>
+        <Member Name="Birthday" Caption="Narození" />
+        <Member Name="FirstName" Caption="Jméno" />
+        <Member Name="FullName" Caption="Celé jméno" />
+        <Member Name="LastName" Caption="Příjmení" />
+        <Member Name="MiddleName" Caption="Druhé jméno" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PhoneNumber" Caption="Číslo ">
+      <OwnMembers>
+        <Member Name="Number" Caption="Číslo " />
+        <Member Name="Party" Caption="Strana" />
+        <Member Name="PhoneType" Caption="Typ telefonu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PhoneType" Caption="Typ telefonu">
+      <OwnMembers>
+        <Member Name="TypeName" Caption="Název typu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PropertyBag" Caption="Balík vlastností" />
+    <Class Name="DevExpress.Persistent.BaseImpl.PropertyBagDescriptor" Caption="Deskriptor balíku vlastností">
+      <OwnMembers>
+        <Member Name="PropertyDescriptors" Caption="Deskriptory vlastnosti" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PropertyDescriptor" Caption="Deskriptor vlastnosti">
+      <OwnMembers>
+        <Member Name="Code" Caption="Kód" />
+        <Member Name="Description" Caption="0" />
+        <Member Name="Name" Caption="Jméno" />
+        <Member Name="PropertyBags" Caption="Balíky vlastností" />
+        <Member Name="Type" Caption="Typ" />
+        <Member Name="ValueType" Caption="Typ hodnoty" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PropertyValue" Caption="Typ vlastnosti" />
+    <Class Name="DevExpress.Persistent.BaseImpl.Resource" Caption="Zdroj">
+      <OwnMembers>
+        <Member Name="Caption" Caption="Titulek" />
+        <Member Name="Color" Caption="Barva" />
+        <Member Name="Events" Caption="Události" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Role">
+      <OwnMembers>
+        <Member Name="Users" Caption="Uživatelé" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.RoleBase" Caption="Základní role">
+      <OwnMembers>
+        <Member Name="Name" Caption="Jméno" />
+        <Member Name="PersistentPermissions" Caption="Povolení" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.ServerPrefix" Caption="Prefix serveru" />
+    <Class Name="DevExpress.Persistent.BaseImpl.SimpleUser" Caption="Uživatel">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="Změnit heslo při prvním přihlášení" />
+        <Member Name="FullName" Caption="Celé jméno" />
+        <Member Name="IsActive" Caption="Je aktivní" />
+        <Member Name="IsAdministrator" Caption="Je administrátor" />
+        <Member Name="UserName" Caption="Uživatelské jméno" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.State" Caption="Stav">
+      <OwnMembers>
+        <Member Name="LongName" Caption="Dlouhý název" />
+        <Member Name="ShortName" Caption="Zkrácený název" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Task" Caption="Úkol">
+      <OwnMembers>
+        <Member Name="AssignedTo" Caption="Přiřadit k " />
+        <Member Name="DateCompleted" Caption="Datum dokončeno" />
+        <Member Name="Description" Caption="Popis" />
+        <Member Name="DueDate" Caption="Datum splatnosti" />
+        <Member Name="PercentCompleted" Caption="Procento dokončení" />
+        <Member Name="StartDate" Caption="Počáteční datum" />
+        <Member Name="Status" Caption="Stav" />
+        <Member Name="Subject" Caption="Předmět" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.User" Caption="Uživatel">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="Změnit heslo při prvním přihlášení" />
+        <Member Name="IsActive" Caption="Je aktivní" />
+        <Member Name="Permissions" Caption="Povolení" />
+        <Member Name="Roles" Caption="Role" />
+        <Member Name="UserName" Caption="Uživatelské jméno" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Xpo.XPWeakReference" Caption="XPWeak odkaz" />
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.Persistent.Base.General.TaskStatus" Value="Stav úkolu">
+        <LocalizationItem Name="Completed" Value="Dokončeno" />
+        <LocalizationItem Name="Deferred" Value="Odložený" />
+        <LocalizationItem Name="InProgress" Value="Probíhá" />
+        <LocalizationItem Name="NotStarted" Value="Nezahájeno" />
+        <LocalizationItem Name="WaitingForSomeoneElse" Value="Systém čeká na někoho jiného" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Reports" Caption="Sestavy" />
+    </Items>
+  </NavigationItems>
+  <Validation>
+    <Rules>
+      <RuleFromBoolProperty Id="EventIntervalValid" CustomMessageTemplate="Počáteční datum musí být menší než koncové datum" />
+      <RuleFromBoolProperty Id="HCategoryCircularReferences" CustomMessageTemplate="Byl detekován cyklický odkaz.  Na opravu této chyby je nutné nastavit parent vlastnost na jinou hodnotu. " />
+      <RuleUniqueValue Id="PropertyDescriptor Code is unique" CustomMessageTemplate="Kód vlastnosti musí mít jedinečnou hodnotu" Name="Kód vlastnosti deskriptoru je jedinečný" />
+      <RuleRequiredField Id="PropertyDescriptor Code required" Name="Je požadován kód deskriptoru vlastnosti" />
+      <RuleCriteria Id="Role is not referenced" CustomMessageTemplate="Není možné roli zrušit, protože se na ni uživatelé odkazují." Name="Role není odkaz" MessageTemplateMustSatisfyCriteria="&quot;{TargetObject}&quot; objekt musí vyhovovat těmto kritériím: &quot;{Criteria}&quot;." />
+      <RuleRequiredField Id="Role required" CustomMessageTemplate="Aktivní uživatel musí mít přiřazenou nejméně jednu roli. " Name="Požadovaná role" />
+      <RuleUniqueValue Id="User Name is unique" CustomMessageTemplate="Přihlášení tímto uživatelským jménem již bylo v systému registrováno" Name="Uživatelské jméno je unikátní." />
+      <RuleRequiredField Id="User Name required" CustomMessageTemplate="Uživatelské jméno nesmí být prázdné." Name="Uživatelské jméno je požadováno." />
+    </Rules>
+  </Validation>
+  <Views>
+    <DetailView Id="BasicUser_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="BasicUser" Caption="Základní uživatel" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Organization_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Organization" Caption="Organizace" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="PropertyDescriptor_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="PropertyDescriptor" Caption="Deskriptor vlastnosti" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="SimpleUser_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="SimpleUser" Caption="Jednoduchý uživatel" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

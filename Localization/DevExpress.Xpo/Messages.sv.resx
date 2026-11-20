@@ -99,5 +99,1122 @@
   </resheader>
   <data name="Helpers_ResolveDataForCollection" xml:space="preserve">
     <value>Är inte en samling.</value>
+    <comment>Community:Medlemmen är inte en samling.</comment>
+  </data>
+  <data name="Security_DeletingAnObjectWasProhibitedByTheRules" xml:space="preserve">
+    <value>Borttagning av objektet '{0}' är förbjuden enligt säkerhetsreglerna.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_SavingAnObjectWasProhibitedByTheRulesOfVal" xml:space="preserve">
+    <value>Sparande av objektet '{0}' är förbjudet enligt säkerhetsreglerna.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_SavingAnObjectWasProhibitedByTheRulesWProp" xml:space="preserve">
+    <value>Sparande av egenskapen '{0}.{1}' är förbjudet enligt säkerhetsreglerna.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_MostProbablyYouAreTryingToInitiateAnObjectEx" xml:space="preserve">
+    <value> Troligtvis försöker du starta en objektinläsning medan den föregående objektinläsningen ännu inte är slutförd. Vänta med operationen tills händelsen Session.ObjectsLoaded eller IXPObject.OnLoaded utlöses (medan Session.IsObjectsLoading är true). En annan orsak till detta undantag är att du försöker arbeta samtidigt med samma session från olika trådar.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_MostProbablyYouAreTryingToInitiateAnObject" xml:space="preserve">
+    <value> Troligtvis försöker du starta en objektinläsning medan den föregående objektsparningen ännu inte är slutförd. Vänta med operationen tills händelsen Session.ObjectsSaved eller IXPObject.OnSaved utlöses (medan Session.IsObjectsSaving är true).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0OperatorAfterSkipOrTakeIsNotSupported" xml:space="preserve">
+    <value>{0} efter Skip eller Take stöds inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SpecifiedJoinKeySelectorsNotCompatibleX0X1" xml:space="preserve">
+    <value>Kopplingsnyckelselektorerna '{0}' och '{1}' är inte kompatibla.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_NotClassMember" xml:space="preserve">
+    <value>'{0}' är inte en medlem i klassen '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0OverGroupingIsNotSupported" xml:space="preserve">
+    <value>{0} på grupperade resultat stöds inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0WithSkipOrTakeOrGroupingIsNotSupported" xml:space="preserve">
+    <value>{0} med Skip eller Take eller gruppering stöds inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0WithSoManyParametersIsNotSupported" xml:space="preserve">
+    <value>{0} med så många parametrar stöds inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_NotCollectionProperty" xml:space="preserve">
+    <value>{0}.{1} är inte en samlingsegenskap. Den bör vara märkt med AssociationAttribute och vara av en typ som ärver från XPBaseCollection. Du använder förmodligen GetCollection där GetList bör användas.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NotCollection" xml:space="preserve">
+    <value>'{0}.{1}' är inte en samling.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XpoServerMode_NonPersistentIsNotSupported" xml:space="preserve">
+    <value>En samling i serverläge kan inte använda den icke-persistenta klassen '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_ReferencePropertyViaCollectionAccessor" xml:space="preserve">
+    <value>Ett försök att tilldela en referensegenskap via samlingsaccessorn.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionXPQueryX0" xml:space="preserve">
+    <value>En XPQuery förväntas som första argument till anropsuttrycket: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_PropertyTypeMismatch" xml:space="preserve">
+    <value>Associationen '{0}' mellan klasserna '{1}' och '{3}' är ogiltig. Klassen '{1}' innehåller egenskapen '{2}' som refererar till klassen '{3}'. Klassen '{3}' innehåller egenskapen '{4}', som felaktigt refererar till klassen '{5}'; den förväntas referera till klassen '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_MoreThenOneAssociatedMemberFound" xml:space="preserve">
+    <value>Associationen '{0}' är tvetydig mellan medlemmarna '{2}' och '{3}' i klassen '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_PropertyTypeMismatch" xml:space="preserve">
+    <value>Associationen '{1}' mellan klasserna '{3}' och '{4}' är ogiltig. Klassen '{3}' innehåller egenskapen '{2}' som refererar till klassen '{4}'. Klassen '{4}' innehåller egenskapen '{0}' som felaktigt refererar till klassen '{5}', trots att den måste referera till klassen '{3}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_AssociationCollectionWithDisabledLoading" xml:space="preserve">
+    <value>Associationssamlingens tillstånd är felaktigt: LoadingEnabled bör vara true.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationListExpected" xml:space="preserve">
+    <value>En associationslista eller samling förväntas: '{0}.{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="View_AtLeastOneFetchPropertyShouldBeDefined" xml:space="preserve">
+    <value>Minst en egenskap bör vara definierad för hämtning.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_AddRelation" xml:space="preserve">
+    <value>Det går inte att lägga till en dubblett av en relation.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CannotAddObjectToObjectCache" xml:space="preserve">
+    <value>Objektet '{0}' med nyckeln = '{1}' kan inte läggas till i objektidentitetskartan eftersom ett annat objekt '{2}' med samma nyckel redan har lagts till där.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_NotLoadingMode" xml:space="preserve">
+    <value>Det går inte att tilldela ett värde till kolumnen '{0}' med automatisk ökning när inläsningsläget inte är aktivt.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_InsertingDataIntoAutoincrementColumn" xml:space="preserve">
+    <value>Det går inte att tilldela ett värde till kolumnen '{0}' med automatisk ökning.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XpoDefault_CannotAssignPropertyWhileAnotherIsNotNull" xml:space="preserve">
+    <value>Det går inte att ange XpoDefault.{0} när XpoDefault.{1} har angetts.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_CannotPrepareQueryPlanX0" xml:space="preserve">
+    <value>Det går inte att skapa en frågeplan eftersom kriterierna '{0}' inte är giltiga.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_CannotPrepareQueryPlan" xml:space="preserve">
+    <value>Det går inte att skapa en frågeplan.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CannotChangePropertyWhenSessionIsConnected" xml:space="preserve">
+    <value>'{0}' kan inte ändras när sessionen är ansluten.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadClassInfo_Dictionary" xml:space="preserve">
+    <value>ObjectClassInfo kan inte ändras. Dess dictionary är inte samma som aktuellt Dictionary.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadClassInfo_DataSourceDictionary" xml:space="preserve">
+    <value>ObjectClassInfo kan inte ändras. Dess dictionary är inte samma som DataSource-dictionaryn.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadClassInfo_DataSource" xml:space="preserve">
+    <value>ObjectClassInfo kan inte ändras. DataSource har egen ClassInfo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadObjectType_DataSource" xml:space="preserve">
+    <value>ObjectType kan inte ändras. DataSource har egen ClassInfo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_CannotAssignProperty" xml:space="preserve">
+    <value>Det går inte att ändra egenskapen '{0}' när {1} inte är i design- eller initialiseringsläge.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TranSequenceCommit" xml:space="preserve">
+    <value>Det går inte att bekräfta eftersom ingen transaktion är aktiv.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DroneDataStore_CommitNotSupported" xml:space="preserve">
+    <value>Det går inte att spara ändringarna eftersom databasanslutningen inte är konfigurerad (en stubprovider för databasen används för närvarande). Anslut till datalagret enligt beskrivningen på https://docs.devexpress.com/XPO/2123/connect-to-a-data-store</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotConvertWindowsTimeZoneIdToIanaTimeZoneId" xml:space="preserve">
+    <value>Det går inte att konvertera ett tidszons-ID för Windows till ett tidszons-ID för IANA. Ange delegaten ConnectionProviderSql.MapWindowsToIanaTimeZoneId för att tillhandahålla konverteringslogiken.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SqlConnectionProvider_CannotCreateAColumnForTheX0FieldWithTheX1D" xml:space="preserve">
+    <value>Det går inte att skapa en kolumn för fältet '{0}' med standardvärdet '{1}'. Ange ett annat standardvärde för detta fält</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProvider_UnableToFillRefType" xml:space="preserve">
+    <value>Det går inte att säkerställa databasschemat för medlemmen '{1}' av typen '{0}'. Fel: {2}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_CannotFindParentRelationForNode" xml:space="preserve">
+    <value>Det går inte att hitta en överordnad relation för noden '{0}'. Felaktigt utformad fråga eller internt XPO-fel.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_PathNotFound" xml:space="preserve">
+    <value>Det går inte att hitta vägen {0}-&gt;{1}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TypeNotFound" xml:space="preserve">
+    <value>Typen med id = '{0}' kan inte hittas.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CannotLoadInvalidType" xml:space="preserve">
+    <value>Typen '{0}' kan inte läsas in eftersom den inte är giltig.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Helpers_DifferentObjectsKeys" xml:space="preserve">
+    <value>Det går inte att slå samman ändringar för objektet med en ändrad nyckel.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ThreadSafeDataLayer_DictionaryModified" xml:space="preserve">
+    <value>Dictionary kan inte ändras eftersom ThreadSafeDataLayer använder det. Ändrad eller skapad ClassInfo: '{0}'. Följ dessa rekommendationer för att undvika detta undantag: https://www.devexpress.com/kb=T901732</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_CantPersistGenericType" xml:space="preserve">
+    <value>En generisk typ kan inte vara persistent. Ta bort PersistentAttribute från definitionen av typen '{0}' och skapa en eller flera persistenta, icke-generiska underklasser i stället.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PersistentAliasExpander_NonPersistentCriteria" xml:space="preserve">
+    <value>Det går inte att fråga ett datalager med kriteriet "{0}", som använder en icke-persistent egenskap '{1}'. Mer information och möjliga lösningar finns i kunskapsbasartikeln på https://www.devexpress.com/kb=Q352044.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PersistentAliasExpander_NonPersistentCriteriaThisValueMember" xml:space="preserve">
+    <value>Det går inte att fråga ett datalager med kriteriet "{0}", som använder en icke-persistent egenskap '{1}'. Om du använde '{0}' som ValueMember för en uppslagskontroll, använd ett tomt ValueMember i stället.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="View_IsInLoading" xml:space="preserve">
+    <value>Vyn kan inte läsas in på nytt medan den läser in data asynkront.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_CannotResolveClassInfo" xml:space="preserve">
+    <value>Kan inte fastställa ClassInfo för typen '[{0}]{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_CannotResolvePropertyTypeComparer" xml:space="preserve">
+    <value>Det går inte att hitta en jämförare för egenskapen '{0}' av typen '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TranSequenceRollback" xml:space="preserve">
+    <value>Det går inte att återställa eftersom ingen transaktion är aktiv.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TranSequenceBegin" xml:space="preserve">
+    <value>Det går inte att starta mer än en transaktion i en session.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_SameTableName" xml:space="preserve">
+    <value>Klasserna {0} och {1} är mappade till samma tabell.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_ClassesAreNotAssignable" xml:space="preserve">
+    <value>Klasserna '{0}' och '{1}' är inte ömsesidigt tilldelningskompatibla.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DataView_ReferenceMembersWithCompoundKeyAreNotSupported" xml:space="preserve">
+    <value>Klasser med medlemmar av strukturtyp stöds inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_DictionaryMixing" xml:space="preserve">
+    <value>ClassInfo '{0}' tillhör ett annat register.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerializableObjectLayer_OptimisticLockFieldNotExists" xml:space="preserve">
+    <value>ClassInfo '{0}' har inget OptimisticLockField definierat.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerializableObjectLayer_OptimisticLockFieldInDLNotExists" xml:space="preserve">
+    <value>ClassInfo '{0}' har inget OptimisticLockFieldInDataLayer definierat.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ObjectLayer_XPClassInfoNotFound" xml:space="preserve">
+    <value>ClassInfo '{0}' hittades inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DirectSQL_CollectionMembersAreNotSupported" xml:space="preserve">
+    <value>Medlemmar av samlingstyp stöds inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_AssociationListExpected" xml:space="preserve">
+    <value>En samling eller associationslista förväntas.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_ColumnNotFound" xml:space="preserve">
+    <value>Kolumnen '{0}' hittades inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_CantUpdateRelationColumn" xml:space="preserve">
+    <value>Kolumner med relationer kan inte uppdateras.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ComplexDataSelectionIsNotSupportedPerhapsY" xml:space="preserve">
+    <value>Komplext dataurval stöds inte. Du kanske använder en komplex underfråga i selektorn.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_ConnectionPoolCannotBeUsed" xml:space="preserve">
+    <value>Anslutningspoolen kan inte användas med Simple Data Layer</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_ConnectionStringEmpty" xml:space="preserve">
+    <value>Anslutningssträngen får inte vara tom när ett datalager som varken är minnesbaserat eller anpassat används</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_ConstraintConflict" xml:space="preserve">
+    <value>En begränsning överträds i tabellen '{0}' för sekundärnyckeln i kolumnerna '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_DelayedPropertyContainerCannotBeAssigned" xml:space="preserve">
+    <value>Behållaren för den fördröjda anpassade egenskapen '{0}.{1}' kan inte tilldelas.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CollectClassInfos_CouldNotLoadAssembly" xml:space="preserve">
+    <value>Det gick inte att samla in ClassInfos från assemblyn '{0}'. ThreadSafeDataLayer kan utlösa InvalidOperationException när klasser från den här assemblyn används. Se InnerException för mer information.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ImageValueConverter_NotPresent" xml:space="preserve">
+    <value>Det gick inte att hitta klassen 'System.Drawing.ImageConverter' i sammansättningen 'System.Drawing.Common'. Använd System.Drawing.Common 5.0 eller senare.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_CouldNotAssignPropertyValue" xml:space="preserve">
+    <value>Kunde inte tilldela egenskapsvärdet för '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_CouldNotFindAppropriateConstructor" xml:space="preserve">
+    <value>Kunde inte hitta en lämplig konstruktor för typen '{0}'. En parameterlös konstruktor eller en konstruktor som tar ett XPDictionary-objekt som parameter förväntades.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_CouldNotResolvePropertyType" xml:space="preserve">
+    <value>Kunde inte fastställa datatypen för egenskapen '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CrossThreadFailureDetected" xml:space="preserve">
+    <value>En operation över trådgränser har upptäckts. '{0}' är inte ett trådsäkert objekt. Undvik att använda det samtidigt från olika trådar</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_CurrentExpressionWithX0IsNotSupported" xml:space="preserve">
+    <value>Det aktuella uttrycket med {0} stöds inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_CustomProperties_PersistentAndNonStorableType" xml:space="preserve">
+    <value>Den anpassade medlemmen '{0}.{1}' av typen '{2}' kan inte vara persistent</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_WantNotDeleteFilteredAggregateCollection" xml:space="preserve">
+    <value>Om objektet '{0}' med den delvis inlästa aggregerade samlingen '{1}' tas bort kan det leda till föräldralösa objekt/poster.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_SeveralClassesWithSameName" xml:space="preserve">
+    <value>Registret innehåller redan ClassInfo '{1}'. Möjlig orsak: assemblyn [{0}] har lästs in två gånger.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_DuplicateJoinOperatorFound" xml:space="preserve">
+    <value>En duplicerad kopplingsoperator hittades.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_DuplicateKeyProperty" xml:space="preserve">
+    <value>Flera nycklar hittades för typen '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_DuplicateMappingField" xml:space="preserve">
+    <value>Dubbel mappning till kolumnen '{0}' i klassen '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_EnteringTheX0StateFromTheX1StateIsProhibit" xml:space="preserve">
+    <value>Övergång från tillståndet '{2}' till tillståndet '{0}' är förbjuden på grund av tillståndet '{1}' för '{3}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_EntityTypesEmpty" xml:space="preserve">
+    <value>EntityTypes får inte vara null och måste innehålla minst 1 element</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TypeFieldIsEmpty" xml:space="preserve">
+    <value>Fältet '{0}' har nullvärde (grundklass '{1}').</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_GroupingWithACustomComparerIsNotSupported" xml:space="preserve">
+    <value>Gruppering med en anpassad jämförare stöds inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_NullInstance" xml:space="preserve">
+    <value>Ingen implementerare kan hittas för gränssnittets virtuella objekt '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_CachedExpressionIsIncompatible" xml:space="preserve">
+    <value>Inkompatibelt uttryck. Det ska vara kompilatorgenererat och endast innehålla statiska argument. Du kan använda parametrarna a1, a2 och a3 i metoden CachedExpression för att skicka icke-statiska argument.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_IncorrectDeclaringTypeX0InTheMethodCallQue" xml:space="preserve">
+    <value>Felaktig deklarerande typ '{0}' i metodanropet. Typen 'System.Linq.Queryable' eller 'System.Linq.Enumerable' förväntas.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PersistentAliasExpander_ReferenceOrCollectionExpectedInTheMiddleOfThePath" xml:space="preserve">
+    <value>Felaktig medlem '{0}' i en sökväg. En referensegenskap eller samlingsassociation förväntas.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_EmptyMemberInstance" xml:space="preserve">
+    <value>Medlemmen InstanceType innehåller inget värde. Det går inte att använda GetInstanceObject med ett objekt som ännu inte har initierats korrekt.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_InternalErrorAsyncActionIsAlreadyDisposed" xml:space="preserve">
+    <value>Internt fel: en asynkron åtgärd har redan frigjorts. Detta kan bero på ett problem i XPO. Kontakta DevExpress supportteam.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NullSessionProvider" xml:space="preserve">
+    <value>Internt fel: Det går inte att komma åt sessionen.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_DifferentComplexSet" xml:space="preserve">
+    <value>Internt fel: Det går inte att lägga till en rad från en annan sammansatt mängd.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongDictionaryIndex" xml:space="preserve">
+    <value>Internt fel: Felaktiga data i nyckel/värde-tabellen i indexet '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongCommitInfo" xml:space="preserve">
+    <value>Internt fel: Felaktigt utformad bekräftelseinformation.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_WrongIndexInfo" xml:space="preserve">
+    <value>Internt fel: Felaktigt utformad indexinformation.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongRollbackInfo" xml:space="preserve">
+    <value>Internt fel: Felaktigt utformad återställningsinformation.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerOLHelpers_NestedParentMapIsNull" xml:space="preserve">
+    <value>Internt fel: NestedParentMap och ParentNestedMap är null.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InTransactionLoader_NotInSelectDataMode" xml:space="preserve">
+    <value>Internt fel: Inte i SelectData-läge.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InTransactionLoader_ProcessReturnResultError" xml:space="preserve">
+    <value>Internt fel: Åtgärden är inte tillåten i SelectData-läge.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_DifferentColumnListLengths" xml:space="preserve">
+    <value>Internt fel: Antalet kolumner för PKey och FKey stämmer inte överens.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MsSql_RootIsNotInsertStatement" xml:space="preserve">
+    <value>Internt fel: Root är inte en InsertStatement.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Loader_ReloadError" xml:space="preserve">
+    <value>Internt fel: Det angivna '{0}.{1}' stöds inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_CriteriaEvaluationBehaviorIsNotSupported" xml:space="preserve">
+    <value>Internt fel: angivet CriteriaEvaluationBehavior.{0} stöds inte av den här överlagrade konstruktorn.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_UnexpectedPersistentCriteriaEvaluationBehavior" xml:space="preserve">
+    <value>Internt fel: Angivet PersistentCriteriaEvaluationBehavior.{0} stöds inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServerModeGridSource_SummaryItemTypeNotSupported" xml:space="preserve">
+    <value>Internt fel: Det angivna SummaryItemType.{0} stöds inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Loader_InternalErrorOrUnsupportedReferenceStructure" xml:space="preserve">
+    <value>Internt XPO-fel eller referensstruktur som inte stöds: En sammansatt nyckel får inte referera till en typ som har härledda klasser. Objekttyp '{0}', fastställd typ '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_InternalXPOError" xml:space="preserve">
+    <value>Internt XPO-fel.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_ODataType_Mismatch" xml:space="preserve">
+    <value>Ej giltig '@odata.type'-annotering: '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CreateCollection_InvalidCastException" xml:space="preserve">
+    <value>Ej giltig typkonvertering från '{0}' till '{1}' i egenskapen '{2}.{3}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_WrongConnectionString" xml:space="preserve">
+    <value>En ej giltig anslutningssträng har angetts: '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AmbiguousClassName" xml:space="preserve">
+    <value>Det går inte att fastställa ClassInfo för det tvetydiga typnamnet '{0}' mellan typen '{1}' och typen '{2}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_CanChangeProperties" xml:space="preserve">
+    <value>Det går inte att ändra egenskaperna för InstantFeedback-källan när den redan används av en tabellkontroll.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_CanChangeViewProperties" xml:space="preserve">
+    <value>Det går inte att ändra egenskaperna för XPInstantFeedbackView när den redan används av en tabellkontroll.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServerModeGridSource_GroupAndAddOrRemoveIsNotAllowed" xml:space="preserve">
+    <value>Det är inte tillåtet att samtidigt gruppera och lägga till/ta bort objekt.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_NullJoinClassInfo" xml:space="preserve">
+    <value>JoinClassInfo är null.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_EmptyJoinOperandId" xml:space="preserve">
+    <value>JoinOperandId är tomt.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProvider_KeysAutogenerationNonSupportedTypeException" xml:space="preserve">
+    <value>Automatisk nyckelgenerering stöds inte för klasstypen '{0}'. Den stöds endast för datatyperna 32-bitars heltal, 64-bitars heltal och globalt unik identifierare.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_KeyPropertyAbsent" xml:space="preserve">
+    <value>Nyckelegenskapen för typen '{0}' saknas.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_LambdaExpressionIsExpectedX0" xml:space="preserve">
+    <value>Ett lambdauttryck förväntas: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_DoesNotSupportNestedJoinsWithLevel" xml:space="preserve">
+    <value>LinqToXpo stöder inte fler än två nästlade kopplingar. Detta påverkar inte det totala antalet kopplingar i frågan.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_MalformedAggregate" xml:space="preserve">
+    <value>Felaktigt utformat aggregat eller internt XPO-fel.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_NoAssociationListInAssociation" xml:space="preserve">
+    <value>Felaktigt utformad association '{0}' mellan '{1}.{2}' och '{3}.{4}'. En lista eller samling förväntas på ena sidan av associationen.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_TwoAssociationListsInAssociation" xml:space="preserve">
+    <value>Felaktigt utformad association '{0}' mellan listorna/samlingarna '{1}.{2}' och '{3}.{4}'. Använd attributet ManyToManyAlias eller listor/samlingar av typen XPCollection för många-till-många-relationer.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_NotFound" xml:space="preserve">
+    <value>Felaktigt utformad association '{0}'. Det går inte att hitta den associerade medlemmen för '{1}.{2}' i klassen '{3}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_NotACollection" xml:space="preserve">
+    <value>Felaktigt utformad fråga eller internt XPO-fel: '{0}' är inte en samling.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotFindClassinfoType" xml:space="preserve">
+    <value>Felaktigt utformad XML: Kan inte hitta klasstypen.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotFindConstructor" xml:space="preserve">
+    <value>Felaktigt utformad XML: Kan inte hitta en konstruktor för typen '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotLoadMember" xml:space="preserve">
+    <value>Felaktigt utformad XML: Kan inte läsa in medlemmen [{0}]{1}.{2}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotResolveClassinfoInstanceType" xml:space="preserve">
+    <value>Felaktigt utformad XML: Kan inte fastställa ClassInfo-typen.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorModelTagAbsent" xml:space="preserve">
+    <value>Felaktigt utformad XML: Taggen &lt;Model&gt; hittades inte eller en felaktig namnrymd angavs.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorUnknownAttribute" xml:space="preserve">
+    <value>Felaktigt utformad XML: Okänt attribut '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_SuppressSuspiciousMemberInheritanceCheckError" xml:space="preserve">
+    <value>Medlemmen '{0}.{1}' och dess attribut '{2}' ignoreras. En medlem med samma namn är redan deklarerad i basklassen '{3}'. Sätt DevExpress.Xpo.Metadata.ReflectionClassInfo.SuppressSuspiciousMemberInheritanceCheck till True för att undertrycka detta undantag.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ObjectLayer_MemberNotFound" xml:space="preserve">
+    <value>Medlemmen '{0}.{1}' hittades inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_PersistentOrThis" xml:space="preserve">
+    <value>Medlemmen '{0}.{1}' bör vara persistent eller returnera 'this'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NonPersistentKey" xml:space="preserve">
+    <value>En icke-persistent nyckel '{0}.{1}' hittades.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_PersistentReferenceFound" xml:space="preserve">
+    <value>En operation specifik för icke-persistens utförs med en persistent klass '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_NullDefaultValueNotAllowed" xml:space="preserve">
+    <value>Nullvärden är inte tillåtna som standardvärden för kolumnen '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NullableAttributeNotApplicable" xml:space="preserve">
+    <value>Attributet Nullable kan inte tillämpas på medlemmen {0} i klassen {1} eftersom medlemmen inte är persistent, har ett alias, har ett många-till-många-alias eller är av referenstyp till ett objekt.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_WrongObjectType" xml:space="preserve">
+    <value>Objektet {0}, som skapades med ClassInfo {2}, returnerar felaktig ClassInfo {1}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="NestedSession_NotCloneable" xml:space="preserve">
+    <value>Objekthierarkin kan inte klonas eftersom medlemmen '{0}.{1}' ändrades under åtgärden.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerializableObjectLayer_OLDoesNotImplementISerializableObjectLayerEx" xml:space="preserve">
+    <value>Objektnivån implementerar inte ISerializableObjectLayerEx.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_ObjectModificationIsNotAllowed" xml:space="preserve">
+    <value>Objekt kan inte ändras medan sessionen är i tillståndet CommitChangesToDataLayerInner.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_DifferentObjectsWithSameKey" xml:space="preserve">
+    <value>Objekt med dubblettnycklar hittades.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Generator_OneOfBinaryOperatorsOperandsIsNull" xml:space="preserve">
+    <value>En av operanderna i BinaryOperator är null.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_EnumeratorObjectModifiedOrDeleted" xml:space="preserve">
+    <value>Ett eller flera objekt i det begärda intervallet har ändrats eller tagits bort. Du måste uppdatera listan med identitetsvärden.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_IncompatibleIdType" xml:space="preserve">
+    <value>Den angivna id-typen '{0}' är inte kompatibel med typen '{3}' för nyckeln '{1}.{2}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_CorrectPIinUOW" xml:space="preserve">
+    <value>Persistenta gränssnitt stöds inte fullt ut i sessioner. Använd arbetsenheter i stället.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_ClassAttributeExclusive" xml:space="preserve">
+    <value>PersistentAttribute, NonPersistentAttribute och MapToAttribute utesluter varandra. Endast ett av dem kan tillämpas på klassen '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_MemberAttributeExclusive" xml:space="preserve">
+    <value>PersistentAttribute, NonPersistentAttribute och PersistentAliasAttribute utesluter varandra. Endast ett av dem kan tillämpas på medlemmen '{0}.{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_NonPersistentReferenceFound" xml:space="preserve">
+    <value>En persistensspecifik operation utförs med en icke-persistent klass '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_DifferentTypes" xml:space="preserve">
+    <value>Typfel mellan primärnyckelkolumnen och sekundärnyckelkolumnen.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_RequiredAttributeMissing" xml:space="preserve">
+    <value>Egenskapen '{0}' definierar inte attributet '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_PropertyMissing" xml:space="preserve">
+    <value>Egenskapen '{0}' finns inte i typen '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_AssociationElementTypeMissing" xml:space="preserve">
+    <value>Egenskapen '{0}' anger inte egenskapen 'ElementType' i sitt 'Association'-attribut.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="View_PropertyNotFetched" xml:space="preserve">
+    <value>Egenskapen '{0}' har inte hämtats.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_DelayedPropertyDoesNotContainProperObject" xml:space="preserve">
+    <value>Egenskapen '{0}.{1}' innehåller inget XPDelayedProperty-objekt.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_IncorrectPathMemberNotExists" xml:space="preserve">
+    <value>Egenskapssökvägen '{1}' är felaktig för typen '{0}' eftersom medlemmen '{2}.{3}' inte finns.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_IncorrectPathNonPersistentMember" xml:space="preserve">
+    <value>Egenskapssökvägen '{1}' är felaktig för typen '{0}' eftersom medlemmen '{2}.{3}' inte är en persistent medlem.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_IncorrectPathNonReferenceMember" xml:space="preserve">
+    <value>Egenskapssökvägen '{1}' är felaktig för typen '{0}' eftersom medlemmen '{2}.{3}' inte är en referensmedlem.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_IncorrectPath" xml:space="preserve">
+    <value>Egenskapssökvägen '{1}' är felaktig för typen '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_QueryWithAppliedTheSkipOrTheTakeOperations" xml:space="preserve">
+    <value>En fråga där operationerna Skip eller Take har tillämpats kan inte användas för koppling.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_UseDataSetDataStoreOrCtor" xml:space="preserve">
+    <value>Använd klassen DataSetDataStore eller .ctor utan DataSet i stället för .ctor med DataSet.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_RecurringObjectAdd" xml:space="preserve">
+    <value>Återinträde vid tillägg.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_ReferenceTooComplex" xml:space="preserve">
+    <value>Referensmedlemmen '{0}.{1}' är för komplex.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CannotReloadPurgedObject" xml:space="preserve">
+    <value>De begärda objekten kan inte läsas in eftersom de saknas i datalagringen. Dessa objekt kan redan ha tagits bort/raderats permanent. Om du ser detta undantag igen med samma objekt i listan, observera att datalagringens referensintegritet kan vara bruten. Kontakta i så fall systemadministratören. Begärda objekt: {0}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SequenceContainsMoreThanOneElement" xml:space="preserve">
+    <value>Sekvensen innehåller fler än ett element.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SequenceContainsNoMatchingElement" xml:space="preserve">
+    <value>Sekvensen innehåller inget matchande element.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServerModeGridSource_WrongTopLevelAggregate" xml:space="preserve">
+    <value>Serverfel eller internt XPO-fel: Fler än en grupp i ett aggregat på översta nivån.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_AlreadyConnected" xml:space="preserve">
+    <value>Sessionen är redan ansluten.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SessionIsNull" xml:space="preserve">
+    <value>Session är null.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_SingleRowExpected" xml:space="preserve">
+    <value>En enda rad förväntas via '{0}', antal hittade rader: {1}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SortingIsNotSupportedForSelectManyOperation" xml:space="preserve">
+    <value>Sortering stöds inte för operationen SelectMany på många-till-många-samlingar.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_UnexpectedState" xml:space="preserve">
+    <value>Angivet SessionState.{0} stöds inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_TableNotFound" xml:space="preserve">
+    <value>Tabellen '{0}' hittades inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_AliasNotFound" xml:space="preserve">
+    <value>Tabellen med alias '{0}' hittades inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_MethodX0ForX1IsNotSupported" xml:space="preserve">
+    <value>Metoden '{0}' stöds inte för {1}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheX0MethodIsNotSupported" xml:space="preserve">
+    <value>Metoden {0} stöds inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_SessionMixing" xml:space="preserve">
+    <value>Objektet '{0}' tillhör en annan session. Se https://docs.devexpress.com/eXpressAppFramework/403631/ för en lösning.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_ObjectCannotBePurged" xml:space="preserve">
+    <value>Objektet '{0}' med id = '{1}' kan inte raderas permanent - det finns objekt som refererar till det.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_PropertyIsDuplicatedInIndexDeclaration" xml:space="preserve">
+    <value>Egenskapen '{0}' förekommer flera gånger i indexdeklarationen för '{1}{2}{3}' ({4}).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_PersistentAliasCircular" xml:space="preserve">
+    <value>Egenskapen '{1}' i klassen '{0}' är markerad med attributet PersistentAlias som använder följande uttryck: '{2}'. Uttrycket orsakar en oändlig cykel.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_NonPersistentClassInTheAssociation" xml:space="preserve">
+    <value>Associationsattributet kan inte användas för medlemmen '{0}.{1}' eftersom klassen '{2}' inte är persistent.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_AssociationAttributeOnlyForListOrReference" xml:space="preserve">
+    <value>Associationsattributet kan inte användas för medlemmen '{1}.{2}'. En referens eller lista förväntas.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProvider_TheAutoIncrementedKeyWithX0TypeIsNotSupport" xml:space="preserve">
+    <value>En automatiskt inkrementerad nyckel av typen ‘{0}’ stöds inte för ‘{1}’</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionIsExpectedX0" xml:space="preserve">
+    <value>Ett anropsuttryck förväntas: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionGenericReturnTypeX0" xml:space="preserve">
+    <value>Anropsuttrycket bör ha en generisk returtyp: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionReturnTypeX0" xml:space="preserve">
+    <value>Anropsuttrycket bör ha en returtyp: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_TheCommitOperationWasProhibitedByTheRules" xml:space="preserve">
+    <value>Commit-operationen är förbjuden enligt säkerhetsreglerna.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_CurrentPageShouldBeGreaterOrEqualZero" xml:space="preserve">
+    <value>CurrentPage bör vara större än eller lika med noll.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_CurrentPageShouldBeLessThanPageCount" xml:space="preserve">
+    <value>CurrentPage bör vara mindre än PageCount.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CustomAggregate_DoesNotImplementInterface" xml:space="preserve">
+    <value>Den anpassade aggregatfunktionen '{0}' implementerar inte gränssnittet '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CustomAggregate_NotFound" xml:space="preserve">
+    <value>Den anpassade aggregatfunktionen '{0}' är inte registrerad.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_DataSetUncommitted" xml:space="preserve">
+    <value>Parametern 'data' innehåller ett DataSet med ändringar som ännu inte har accepterats. Anropa metoden DataSet.AcceptChanges innan du skapar en ny instans av klassen DataSetDataStore.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ASE_CommandNotAllowedWithinMultiStatementTransaction" xml:space="preserve">
+    <value>Databasen stöder inte att schemat skapas eller ändras inom en transaktion. För att utföra den här åtgärden måste du konfigurera databasen så att schemaändringar inom en transaktion stöds, eller inaktivera transaktioner när schemat uppdateras. Gör detta genom att sätta fältet ExecuteUpdateSchemaInTransaction = false (för den aktuella providerinstansen) eller fältet GlobalExecuteUpdateSchemaInTransaction = false (för alla instanser av providern).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheDeclaringTypeAssemblyNamePropertyIsEmpty" xml:space="preserve">
+    <value>Egenskapen DeclaringTypeAssemblyName är tom.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheDeclaringTypeNamePropertyIsEmpty" xml:space="preserve">
+    <value>Egenskapen DeclaringTypeName är tom.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ElemAtOperationIsNotSupportedWithoutSorting" xml:space="preserve">
+    <value>Operationen ElementAt stöds inte utan sortering.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_EnumeratorPositioning" xml:space="preserve">
+    <value>Enumeratorn är placerad före samlingens första element eller efter det sista elementet.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InitOperator_DeserializationProhibitedDueSecurityIssue" xml:space="preserve">
+    <value>Uttrycket kan inte deserialiseras eftersom det innehåller osäkra typer. Deserialisering av osäkra typer är förbjuden.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ExpressionX0IsNotSupportedInX1" xml:space="preserve">
+    <value>Uttrycket stöds inte i {1}: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ExpressionX0IsNotSupported" xml:space="preserve">
+    <value>Uttrycket stöds inte: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_FetchOnlyAttributeNotApplicable" xml:space="preserve">
+    <value>Attributet FetchOnly kan inte tillämpas på {0}.{1} eftersom målmedlemmen inte är persistent, har ett alias, har ett många-till-många-alias, är en nyckel eller ingår i en nästlad struktur.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_FetchOnlyAttributeNotApplicableToReference" xml:space="preserve">
+    <value>Attributet FetchOnly kan inte tillämpas på {0}.{1} eftersom målmedlemmen är av referenstyp.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Filtering_TheIifFunctionOperatorRequiresThree" xml:space="preserve">
+    <value>Funktionsoperatorn 'Iif' kräver tre eller fler argument. Antalet argument måste vara udda.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_GeneralPurposeCollectionInsteadOfRefCollection" xml:space="preserve">
+    <value>En ogiltig implementering av den associerade samlingsegenskapen '{0}.{1}' har upptäckts. Samlingen bör skapas via metoden GetCollection eller konstruktorn XPCollection(Session session, object theOwner, XPMemberInfo refProperty).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheJoinWithManyTablesSimultaneouslyInASing" xml:space="preserve">
+    <value>Kopplingsoperationen med flera tabeller i en enda operator stöds inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheLambdaExpressionWithSuchParametersIsNot" xml:space="preserve">
+    <value>Lambdauttrycket med sådana parametrar stöds inte: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_LengthsOfTheCollectionsAreDifferentInArgs" xml:space="preserve">
+    <value>Samlingarna i argumentet har olika längder.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Common_MethodOrOperationNotImplemented" xml:space="preserve">
+    <value>Metoden eller åtgärden är inte implementerad.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DirectSQL_WrongColumnCount" xml:space="preserve">
+    <value>Antalet kolumner i en rad i resultatmängden stämmer inte överens med antalet i målraden.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongInitData" xml:space="preserve">
+    <value>Antalet kolumner i källraden och måltabellens rad stämmer inte överens.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Helpers_CloningObjectModified" xml:space="preserve">
+    <value>Objektet med osparade ändringar kan inte klonas.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_PageSizeShouldBeGreaterThanZero" xml:space="preserve">
+    <value>PageSize bör vara större än noll.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_InEditMode" xml:space="preserve">
+    <value>Raden är redan i redigeringsläge.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SkipOperationIsNotSupportedWithoutSorting" xml:space="preserve">
+    <value>Operationen Skip stöds inte utan sortering.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PostgreSQL_CommandPoolNotSupported" xml:space="preserve">
+    <value>Det angivna CommandPoolBehavior.{0} stöds inte av PosgreSQL {1}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_OperationNotAllowed" xml:space="preserve">
+    <value>Den angivna åtgärden är inte tillåten.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Filtering_TheTypeNameArgumentOfTheX0FunctionIsNotFound" xml:space="preserve">
+    <value>Argumentet 'typeName' för funktionen '{0}' hittades inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Generator_TheUseOfATopLevelSingleAggregateIsProhibit" xml:space="preserve">
+    <value>Det är inte tillåtet att använda en 'Single'-mängdfunktion på översta nivån.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Generator_TheUseOfNestedSingleAggregatesIsProhibited" xml:space="preserve">
+    <value>Det är inte tillåtet att använda kapslade 'Single'-mängdfunktioner.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_UseAssociationNameAsIntermediateTableNameMismatch" xml:space="preserve">
+    <value>Värdet för UseAssociationNameAsIntermediateTableName måste vara detsamma på båda sidor av associationen '{0}' mellan '{1}.{2}' och '{3}.{4}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_ConverterOnKeyOrReference" xml:space="preserve">
+    <value>Attributet ValueConverter kan inte tillämpas på egenskapen '{0}.{1}' som representerar en objektnyckel eller en referens till ett annat objekt.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_WithDeletedOptionNotSupported" xml:space="preserve">
+    <value>Alternativet WithDeleted stöds inte eftersom XPQuery initierades med DataLayer. För att använda alternativet WithDeleted, använd konstruktorn XPQuery(Session) eller XPQuery(Session, Boolean).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XpoDefault_CustomGuidGenerationHandlerCannotBeNull" xml:space="preserve">
+    <value>Värdet i fältet XpoDefault.CustomGuidGenerationHandler är null. Du bör tilldela det här fältet en anpassad delegat om du ställer in fältet XpoDefault.GuidGenerationMode på 'Custom'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_OperationCannotBePerformedBecauseNoSyncContext" xml:space="preserve">
+    <value>Den här åtgärden kan inte utföras eftersom körningstråden saknar en aktuell synkroniseringskontext.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PostgreSQL_LegacyGuidDetected" xml:space="preserve">
+    <value>För att undvika detta undantag, sätt fältet UseLegacyGuidSupport eller det statiska fältet GlobalUseLegacyGuidSupport i DevExpress.Xpo.DB.PostgreSqlConnectionProvider till 'true'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_TopLevelAggregateNotSupported" xml:space="preserve">
+    <value>Aggregat på toppnivå kan inte användas i villkor.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_ICommandChannel_TransferringRequestsIsProhibited" xml:space="preserve">
+    <value>Överföring av begäranden via ICommandChannel är förbjuden inom säkerhetsmotorn.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_NullTransitionMemberInfo" xml:space="preserve">
+    <value>MemberInfo för övergång är null.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_SessionCtorAbsent" xml:space="preserve">
+    <value>Typen {0} har ingen sessionsspecifik konstruktor.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_NoConstructor" xml:space="preserve">
+    <value>Typen {0} har ingen konstruktor med parametrarna {1}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_TypeNotFound" xml:space="preserve">
+    <value>Typen '{0}' hittades inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_InvalidCastOnAdd" xml:space="preserve">
+    <value>Det går inte att lägga till objektet i samlingen. Objektet '{0}' är inte en instans av typen '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_CustomProperties_ReferenceOrCollectionInSessionStore" xml:space="preserve">
+    <value>Det går inte att skapa den anpassade medlemmen '{1}' av referens- eller samlingstyp eftersom klassen '{0}' inte implementerar gränssnittet '{2}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_UnexpectedToken" xml:space="preserve">
+    <value>Oväntad token '{0}' vid position {1}. 'StartObject' förväntas.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_UniqueIndex" xml:space="preserve">
+    <value>Brott mot det unika indexet '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="VistaDB_UpdatingSchemaIsForbiddenWhileExplicitTran" xml:space="preserve">
+    <value>Uppdatering av schemat är förbjuden medan en explicit transaktion är öppen.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_DictConstructor" xml:space="preserve">
+    <value>När du använder konstruktorn Session(XPDictionary dictionary) MÅSTE du ange en giltig Session.ConnectionString innan du anropar metoden Session.Connect.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_IsReadOnly" xml:space="preserve">
+    <value>Skrivning stöds inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Helpers_SameDictionaryExpected" xml:space="preserve">
+    <value>Fel dictionary.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadError" xml:space="preserve">
+    <value>Fel vid inläsning av XML-katalogen: {0}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_DataTypeAttributeNotFound" xml:space="preserve">
+    <value>XML-inläsare: Attributet 'DataType' kan inte hittas.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_NameAttributeExpected" xml:space="preserve">
+    <value>XML-inläsare: Attributet 'name' förväntas.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ReferAttributeExpected" xml:space="preserve">
+    <value>XML-inläsare: Attributet 'refer' förväntas.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XpathAttributeExpected" xml:space="preserve">
+    <value>XML-inläsare: Attributet 'xpath' förväntas.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_CantRestoreObjectFromXML" xml:space="preserve">
+    <value>XML-inläsare: Kan inte deserialisera objektet.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_NullPrimaryColumns" xml:space="preserve">
+    <value>XML-inläsare: Kan inte hitta primärnyckeln '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ReferNotFound" xml:space="preserve">
+    <value>XML-inläsare: Kan inte hitta det som refereras till med '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_CantGetColumnType" xml:space="preserve">
+    <value>XML-inläsare: Kan inte fastställa kolumntypen.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ColumnNameIsNotSpecified" xml:space="preserve">
+    <value>XML-inläsare: Kolumnnamnet är inte angivet.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidBaseAttributeValue" xml:space="preserve">
+    <value>XML-inläsare: Felaktigt värde för attributet 'base'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidValueAttributeValue" xml:space="preserve">
+    <value>XML-inläsare: Felaktigt värde för attributet 'value'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidColumnTypeDeclaration" xml:space="preserve">
+    <value>XML-inläsare: Ej giltigt namn på kolumntyp.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_InvalidTypeString" xml:space="preserve">
+    <value>XML-inläsare: Ogiltigt typnamn.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_choiceNodeNotFound" xml:space="preserve">
+    <value>XML-inläsare: Noden 'choice' hittades inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ComplexTypeNodeNotFound" xml:space="preserve">
+    <value>XML-inläsare: Noden 'complexType' hittades inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ElementNodeNotFound" xml:space="preserve">
+    <value>XML-inläsare: Noden 'element' hittades inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_NotDataSetNode" xml:space="preserve">
+    <value>XML-inläsare: Noden är inte markerad som ett dataset.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_SchemaNodeNotFound" xml:space="preserve">
+    <value>XML-inläsare: Noden 'schema' hittades inte.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSselectorNodeExpected" xml:space="preserve">
+    <value>XML-inläsare: Noden 'xs:selector' förväntas.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_InconsistentForeignKeyCount" xml:space="preserve">
+    <value>XML-inläsare: Olika antal kolumner för PKey och FKey.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_TableNotDeclared" xml:space="preserve">
+    <value>XML-inläsare: Tabellen '{0}' är inte deklarerad.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_TableNameIsNotSpecified" xml:space="preserve">
+    <value>XML-inläsare: Tabellnamnet är inte angivet.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XpathAttributeWrongFormat" xml:space="preserve">
+    <value>XML-inläsare: Formatet på värdet för attributet 'xpath' är felaktigt.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XScomplexTypeExpected" xml:space="preserve">
+    <value>XML-inläsare: xs:complexType förväntas.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSlengthExpected" xml:space="preserve">
+    <value>XML-inläsare: xs:length förväntas.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSrestrictionExpected" xml:space="preserve">
+    <value>XML-inläsare: xs:restriction förväntas.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSsequenceExpected" xml:space="preserve">
+    <value>XML-inläsare: xs:sequence förväntas.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSsimpleTypeExpected" xml:space="preserve">
+    <value>XML-inläsare: xs:simpleType förväntas.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPWeakReference_SavedObjectExpected" xml:space="preserve">
+    <value>Du kan endast använda svaga referenser till sparade objekt.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_YouCannotApplyTheMapInheritanceParentTable" xml:space="preserve">
+    <value>Du kan inte tillämpa attributet MapInheritance med parametervärdet ParentTable på en klass som saknar en persistent basklass.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_CommandChannelDoesNotImplementICommandChannelAsync" xml:space="preserve">
+    <value>Din kommandokanal '{0}' stöder inte gränssnittet 'DevExpress.Xpo.Helpers.ICommandChannelAsync'. Implementera det här gränssnittet eller använd en annan kompatibel kommandokanal.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="WebApi_ICacheToCacheCommunicationCore_NotImplemented" xml:space="preserve">
+    <value>Din anslutningsprovider '{0}' stöder inte gränssnittet 'DevExpress.Xpo.DB.ICacheToCacheCommunicationCore'. Kapsla in den i en instans av 'DevExpress.Xpo.DB.DataCacheRoot'. Mer information finns i följande hjälpavsnitt: https://docs.devexpress.com/XPO/402182.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_ConnectionProviderDoesNotImplementIDataStoreAsync" xml:space="preserve">
+    <value>Din anslutningsprovider '{0}' stöder inte gränssnittet 'DevExpress.Xpo.DB.IDataStoreAsync'. Implementera det här gränssnittet eller använd en annan kompatibel anslutningsprovider.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_DataLayerDoesNotImplementIDataLayerAsync" xml:space="preserve">
+    <value>Ditt datalager '{0}' stöder inte gränssnittet 'DevExpress.Xpo.IDataLayerAsync'. Implementera det här gränssnittet eller använd ett annat kompatibelt datalager.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_ObjectLayerDoesNotImplementIObjectLayerAsync" xml:space="preserve">
+    <value>Ditt objektlager stöder inte gränssnittet 'DevExpress.Xpo.IObjectLayerAsync'. Implementera det här gränssnittet i klassen '{0}' eller använd ett annat kompatibelt objektlager.</value>
+    <comment>AI</comment>
   </data>
 </root>

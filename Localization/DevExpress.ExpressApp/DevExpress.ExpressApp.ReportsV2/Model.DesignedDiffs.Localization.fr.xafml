@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ShowInReportV2" Caption="Imprimer" ToolTip="Affiche les enregistrements sélectionnés dans le tableau de bord" />
+      <Action Id="PreviewReportV2" Caption="Aperçu" />
+      <Action Id="ReportViewerDialogControllerV2_Close" Caption="Fermer" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.ReportDataV2" Caption="État">
+      <OwnMembers>
+        <Member Name="DataTypeCaption" Caption="Type de données" />
+        <Member Name="IsInplaceReport" Caption="Impression depuis l'élément" />
+        <Member Name="DisplayName" Caption="Nom affiché" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.EF.ReportDataV2" Caption="État">
+      <OwnMembers>
+        <Member Name="DataTypeCaption" Caption="Type de données" />
+        <Member Name="IsInplaceReport" Caption="Impression depuis l'élément" />
+        <Member Name="DisplayName" Caption="Nom affiché" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.ReportsV2.NewReportWizardParameters" Caption="Nouvel état">
+      <OwnMembers>
+        <Member Name="DataType" Caption="Type de données" />
+        <Member Name="ReportType" Caption="Type de l'état" />
+        <Member Name="DisplayName" Caption="Nom affiché" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.ReportsV2.PredefinedReportDataContainer">
+      <OwnMembers>
+        <Member Name="IsInplaceReport" Caption="Impression depuis l'élément" />
+        <Member Name="DataType" Caption="Type de données" />
+        <Member Name="DisplayName" Caption="Nom affiché" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.ReportsV2.ReportType" Value="Type de l'état" >
+        <LocalizationItem Name="Label" Value="Libellé" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems RelatedReportsGroupCaption="États">
+    <Items>
+      <Item Id="Reports" Caption="États">
+        <Items>
+          <Item Id="ReportsV2" Caption="États" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <DetailView Id="NewReportWizardParameters_DetailView">
+      <Items>
+        <PropertyEditor Id="DisplayName" Caption="Nom affiché" />
+      </Items>
+    </DetailView>
+    <DetailView Id="PredefinedReportDataContainer_DetailView">
+      <Items>
+        <PropertyEditor Id="DataType" Caption="Type de données" />
+        <PropertyEditor Id="IsInplaceReport" Caption="Impression depuis l'élément" />
+        <PropertyEditor Id="DisplayName" Caption="Nom affiché" />
+      </Items>
+    </DetailView>
+    <DetailView Id="ReportDataV2_DetailView">
+      <Items>
+        <PropertyEditor Id="DisplayName" Caption="Nom affiché" />
+      </Items>
+    </DetailView>
+    <ListView Id="DevExpress.Persistent.BaseImpl.XtraReportData_ListView" Caption="États" />
+    <ListView Id="NewReportWizardParameters_ListView">
+      <Columns>
+        <ColumnInfo Id="DisplayName" Caption="Nom affiché" />
+      </Columns>
+    </ListView>
+    <ListView Id="PredefinedReportDataContainer_ListView">
+      <Columns>
+        <ColumnInfo Id="DataType" Caption ="Type de données" />
+        <ColumnInfo Id="IsInplaceReport" Caption ="Impression depuis l'élément" />
+        <ColumnInfo Id="DisplayName" Caption="Nom affiché" />
+      </Columns>
+    </ListView>
+    <ListView Id="PredefinedReportDataContainer_LookupListView">
+      <Columns>
+        <ColumnInfo Id="DisplayName" Caption="Nom affiché" />
+      </Columns>
+    </ListView>
+    <ListView Id="ReportDataV2_ListView">
+      <Columns>
+        <ColumnInfo Id="DisplayName" Caption="Nom affiché" />
+      </Columns>
+    </ListView>
+    <ListView Id="ReportDataV2_LookupListView">
+      <Columns>
+        <ColumnInfo Id="DisplayName" Caption="Nom affiché" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

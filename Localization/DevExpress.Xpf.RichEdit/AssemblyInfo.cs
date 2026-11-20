@@ -13,6 +13,9 @@ using DevExpress.Internal;
 [assembly:AssemblyCulture("")]		
 [assembly:CLSCompliant(true)]		
 
+
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+
 [assembly: AssemblyProduct("DevExpress.Xpf.RichEdit")]
+
 [assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]

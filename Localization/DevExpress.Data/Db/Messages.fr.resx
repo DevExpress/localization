@@ -7,27 +7,20 @@
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1">
-                </xsd:element>
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2">
-                </xsd:element>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string">
-              </xsd:attribute>
-              <xsd:attribute name="type" type="xsd:string">
-              </xsd:attribute>
-              <xsd:attribute name="mimetype" type="xsd:string">
-              </xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1">
-                </xsd:element>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required">
-              </xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -48,32 +41,66 @@
   </resheader>
   <data name="ConnectionProvider_TypeMappingMissing">
     <value>Le fournisseur de la base de données ne peut pas traiter le type '{0}' parce qu'il ne correspond à aucun type d'une base de données sous-jacente. Veuillez utiliser un autre type.</value>
+    <comment>Community:Le fournisseur de base de données ne peut pas traiter le type '{0}', car il n'est pas associé aux types de la base de données sous-jacente. Veuillez utiliser un autre type.</comment>
   </data>
   <data name="ConnectionProvider_UnableToCreateDBObject">
     <value>Impossible de créer '{0}' '{1}'. Parent : '{2}'. Erreur : {3}</value>
+    <comment>Approved</comment>
   </data>
   <data name="ConnectionProvider_SqlExecutionError">
     <value>Exécution de SQL '{0}' avec les paramètres '{1}' exception '{2}'</value>
+    <comment>Community:Exécution du SQL '{0}' avec les paramètres '{1}' ; exception '{2}'</comment>
   </data>
   <data name="ConnectionProvider_SchemaCorrectionNeeded">
     <value>Le schéma doit être mis à jour. Contactez votre administrateur système. Texte SQL : {0}</value>
+    <comment>Approved</comment>
   </data>
   <data name="ConnectionProvider_TableNameTooLong">
     <value>Impossible de créer la table de base de données '{0}'. Le nom de la table est trop long (dépasse 64 caractères).</value>
+    <comment>Community:Impossible de créer la table de base de données '{0}'. Le nom de la table est trop long (plus de 64 caractères)</comment>
   </data>
   <data name="ConnectionProvider_ColumnNameTooLong">
     <value>Impossible de créer la colonne '{1}' de la table '{0}'. Le nom de la colonne est trop long (dépasse 64 caractères).</value>
+    <comment>Community:Impossible de créer la colonne '{1}' de la table '{0}'. Le nom de la colonne est trop long (plus de 64 caractères)</comment>
   </data>
   <data name="ConnectionProvider_AtLeastOneColumnExpected">
     <value>Au moins une colonne attendue</value>
+    <comment>Approved</comment>
   </data>
   <data name="ConnectionProvider_Locking">
     <value>Il est impossible de faire persister l'objet. Il a été modifié ou supprimé (purgé) par une autre application.</value>
+    <comment>Community:Impossible d'enregistrer l'objet. Il a été modifié ou supprimé (purgé) par une autre application.</comment>
   </data>
   <data name="ConnectionProvider_UnableToOpenDatabase">
     <value>Impossible d'ouvrir la base de données. Chaîne de connexion : '{0}'; Erreur : '{1}'</value>
+    <comment>Community:Impossible d'ouvrir la base de données. Chaîne de connexion : '{0}' ; Erreur : '{1}'</comment>
   </data>
   <data name="CommandChannelHelper_CannotDeserializeResponse" xml:space="preserve">
     <value>Ne peut pas désérialiser la réponse d’opération « {0} » en raison des limitations de la mise en œuvre de XmlSerializer sous le runtime Mono. Si vous avez besoin de désérialiser de petites quantités de données, définir la propriété DevExpress.Xpo.Helpers.CommandChannelHelper.EnableMonoDeserializationFixForSmallAmountsOfData à « true » et à recommencer.</value>
+    <comment>Community:Impossible de désérialiser la réponse de l'opération '{0}' en raison des limitations de l'implémentation de XmlSerializer dans l'environnement d'exécution Mono. Si vous devez désérialiser de petites quantités de données, définissez la propriété DevExpress.Xpo.Helpers.CommandChannelHelper.EnableMonoDeserializationFixForSmallAmountsOfData sur 'true' et réessayez.</comment>
+  </data>
+  <data name="IsExactTypeFunction_ShouldNotBeCalledExplicitly" xml:space="preserve">
+    <value>Cette méthode ne doit pas être appelée explicitement.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_ShouldNotBeCalledExplicitly" xml:space="preserve">
+    <value>Cette méthode ne doit pas être appelée explicitement.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProviderSql_ParameterValueSizeExceedsMaximumSize" xml:space="preserve">
+    <value>Impossible de créer le paramètre '{1}'. SQL : {0}. La longueur de la valeur ({2}) dépasse la taille du paramètre ({3}).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_ClassNotFound" xml:space="preserve">
+    <value>La fonction '{0}' ne peut pas trouver le type spécifié : '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_ParametersMustBeConstants" xml:space="preserve">
+    <value>La fonction '{0}' attend une valeur constante pour l'argument 'typeName'. Une expression est fournie.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_InvalidArgument_TypeName" xml:space="preserve">
+    <value>La fonction '{0}' attend une valeur de type chaîne pour l'argument 'typeName'. Une valeur de type '{1}' est fournie.</value>
+    <comment>AI</comment>
   </data>
 </root>

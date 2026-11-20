@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ChangeStateAction" Caption="Zmień stan" ToolTip="Zmień stan dla obecnego obiektu" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCState">
+      <OwnMembers>
+        <Member Name="Appearances" Caption="Występy" />
+        <Member Name="Caption" Caption="Podpis" />
+        <Member Name="Marker" Caption="Znacznik" />
+        <Member Name="MarkerObject" Caption="Oznacz obiekt" />
+        <Member Name="StateMachine" Caption="Stan maszyny" />
+        <Member Name="TargetObjectCriteria" Caption="Kryteria obiektu docelowego" />
+        <Member Name="Transitions" Caption="Przejścia" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCStateAppearance" Caption="Stan wyglądu IDC">
+      <OwnMembers>
+        <Member Name="AppearanceItemType" Caption="Wygląd elementów typu" />
+        <Member Name="BackColor" Caption="Kolor tła" />
+        <Member Name="Context" Caption="Kontekst" />
+        <Member Name="Criteria" Caption="Kryteria" />
+        <Member Name="DeclaringType" Caption="Zadeklarowany typ" />
+        <Member Name="Enabled" Caption="Aktywny" />
+        <Member Name="FontColor" Caption="Kolor czcionki" />
+        <Member Name="FontStyle" Caption="Styl czcionki" />
+        <Member Name="Method" Caption="Metoda" />
+        <Member Name="Priority" Caption="Priorytet" />
+        <Member Name="State" Caption="Stan" />
+        <Member Name="TargetItems" Caption="Elementy docelowe" />
+        <Member Name="Visibility" Caption="Widoczność" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCStateMachine" Caption="Stan maszyny IDC">
+      <OwnMembers>
+        <Member Name="Active" Caption="Aktywny" />
+        <Member Name="ExpandActionsInDetailView" Caption="Rozszeżone akcje w widoku szczegółów" />
+        <Member Name="Name" Caption="Nazwa" />
+        <Member Name="StartState" Caption="Rozpocznij stan" />
+        <Member Name="StatePropertyName" Caption="Nazwa priorytetu stanu" />
+        <Member Name="States" Caption="Stany" />
+        <Member Name="TargetObjectType" Caption="Typ obiektu docelowego" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCTransition" Caption="Przejście IDC">
+      <OwnMembers>
+        <Member Name="Caption" Caption="Podpis" />
+        <Member Name="SourceState" Caption="Stan źródłowy" />
+        <Member Name="TargetState" Caption="Stan docelowy" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Utils.MarkerObject" Caption="Znacznik obiektu">
+      <OwnMembers>
+        <Member Name="DisplayName" Caption="Wyświetl nazwę" />
+        <Member Name="Marker" Caption="Znacznik" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.StateMachineObjectBase" Caption="Model podstawowego stanu obiektu" />
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoState" Caption="Stan">
+      <OwnMembers>
+        <Member Name="Appearance" Caption="Wygląd" />
+        <Member Name="Caption" Caption="Podpis" />
+        <Member Name="Marker" Caption="Znacznik" />
+        <Member Name="StateMachine" Caption="Stan maszyny" />
+        <Member Name="TargetObjectCriteria" Caption="Kryteria obiektu docelowego" />
+        <Member Name="Transitions" Caption="Przejścia" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoStateAppearance" Caption="Wygląd">
+      <OwnMembers>
+        <Member Name="AppearanceItemType" Caption="Wyglądt typu elementów" />
+        <Member Name="BackColor" Caption="Kolor tła" />
+        <Member Name="Context" Caption="Kontekst" />
+        <Member Name="Enabled" Caption="Aktywny" />
+        <Member Name="FontColor" Caption="Kolor czcionki" />
+        <Member Name="FontStyle" Caption="Styl czcionki" />
+        <Member Name="Priority" Caption="Priorytet" />
+        <Member Name="TargetItems" Caption="Elementy docelowe" />
+        <Member Name="Visibility" Caption="Widoczność" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoStateMachine" Caption="Stan maszyny">
+      <OwnMembers>
+        <Member Name="Active" Caption="Aktywny" />
+        <Member Name="ExpandActionsInDetailView" Caption="Rozszeż akcje w widoku szczegółów" />
+        <Member Name="Name" Caption="Nazwa" />
+        <Member Name="StartState" Caption="Rozpocznij stan" />
+        <Member Name="StatePropertyName" Caption="Nazwa właściowości stanu" />
+        <Member Name="States" Caption="Stany" />
+        <Member Name="TargetObjectType" Caption="Docelowy typ obiektu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoTransition" Caption="Przejście">
+      <OwnMembers>
+        <Member Name="Caption" Caption="Podpis" />
+        <Member Name="Index" Caption="Indeks" />
+        <Member Name="SaveAndCloseView" Caption="Zapisz i zamknij widok" />
+        <Member Name="SourceState" Caption="Stan źródłowy" />
+        <Member Name="TargetState" Caption="Stan docelowy" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Utils.StringObject" Caption="Obiekt łańcucha znaków">
+      <OwnMembers>
+        <Member Name="Name" Caption="Nazwa" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Editors.ViewItemVisibility" Value="Podgląd widoczności obiektów">
+        <LocalizationItem Name="Hide" Value="Ukryj" />
+        <LocalizationItem Name="Show" Value="Pokaż" />
+        <LocalizationItem Name="ShowEmptySpace" Value="Pokaż pustą przestrzeń" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="System.Drawing.FontStyle" Value="Styl czcionki">
+        <LocalizationItem Name="Bold" Value="Pogrubiony" />
+        <LocalizationItem Name="Italic" Value="Pochyły" />
+        <LocalizationItem Name="Regular" Value="Normalny" />
+        <LocalizationItem Name="Strikeout" Value="Przekreślenie" />
+        <LocalizationItem Name="Underline" Value="Podkreślać" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="State Machine" Caption="Maszyna stanów" />
+    </Items>
+  </NavigationItems>
+  <Validation>
+    <Rules>
+      <RuleIsReferenced Id="StateIsReferencedDc" MessageTemplateMustBeReferenced="Jeśli chcesz usunąć ten stan, należy upewnić się, że nie jest wymieniony w każdym przejściu, jak StanDocelowy." />
+      <RuleIsReferenced Id="StateIsReferencedXpo" MessageTemplateMustBeReferenced="Jeśli chcesz usunąć ten stan, należy upewnić się, że nie jest wymieniony w każdym przejściu, jak StanDocelowy." />
+    </Rules>
+  </Validation>
+  <Views>
+    <DetailView Id="IDCStateAppearance_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IDCStateAppearance" Caption="Wygląd stanu IDC" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IDCStateMachine_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IDCStateMachine" Caption="Stan maszyny IDC" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

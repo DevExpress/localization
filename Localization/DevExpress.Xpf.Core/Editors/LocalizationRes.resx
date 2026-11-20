@@ -512,6 +512,10 @@ Returns a UTC offset as a TimeSpan constructed from the specified Hours and Minu
     <value>SwitchOffset(DateTimeOffset, Offset)
 Returns a DateTimeOffset value that is changed from the stored time zone offset to a specified new time zone offset.</value>
   </data>
+  <data name="EditorStringId.ExpressionEditor_ToDateTimeOffset_Description" xml:space="preserve">
+    <value>ToDateTimeOffset(Value, Offset)
+Translate a DateTime value to DateTimeOffset. Specify original date and time as Value. Specify Offset as a whole number (in minutes) or a string (such as '+04:00'). To preserve the point in time when changing the offset or time zone, use SwitchOffset() or ConvertToTimeZone().</value>
+  </data>
   <data name="EditorStringId.ExpressionEditor_ConvertToTimeZone_Description" xml:space="preserve">
     <value>ConvertToTimeZone(DateTimeOffset, String)
 Converts a DateTimeOffset value to the corresponding value in the specified time zone.</value>
@@ -2677,5 +2681,26 @@ Returns a TimeOnly value constructed from the specified Hour, Minute, Second, an
   </data>
   <data name="EditorStringId.EditorButtonDefaultHelpText" xml:space="preserve">
     <value>Default</value>
+  </data>
+  <data name="EditorStringId.Accordion_PaneToggleButton" xml:space="preserve">
+    <value>Navigation</value>
+  </data>
+  <data name="EditorStringId.Accordion_BadgeNew" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="EditorStringId.Accordion_BadgeAttention" xml:space="preserve">
+    <value>Attention</value>
+  </data>
+  <data name="EditorStringId.Accordion_BadgeInformational" xml:space="preserve">
+    <value>Informational</value>
+  </data>
+  <data name="EditorStringId.Accordion_BadgeSuccess" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="EditorStringId.Accordion_BadgeCaution" xml:space="preserve">
+    <value>Caution</value>
+  </data>
+  <data name="EditorStringId.Accordion_BadgeCritical" xml:space="preserve">
+    <value>Critical</value>
   </data>
 </root>

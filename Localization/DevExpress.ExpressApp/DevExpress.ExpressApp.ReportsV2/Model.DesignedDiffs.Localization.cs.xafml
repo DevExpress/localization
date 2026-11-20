@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ShowInReportV2" Caption="Ukázat v sestavě" ToolTip="Ukázat vybrané záznamy v sestavě" />
+      <Action Id="PreviewReportV2" Caption="Náhled" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.ReportDataV2" Caption="Sestava">
+      <OwnMembers>
+        <Member Name="DataTypeCaption" Caption="Typ dat" />
+        <Member Name="IsInplaceReport" Caption="Je na místě v sestavě" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.EF.ReportDataV2" Caption="Sestava">
+      <OwnMembers>
+        <Member Name="DataTypeCaption" Caption="Typ dat" />
+        <Member Name="IsInplaceReport" Caption="Je na místě v sestavě" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.ReportsV2.NewReportWizardParameters" Caption="Parametry průvodce nové Xaf sestavy">
+      <OwnMembers>
+        <Member Name="DataType" Caption="Typ dat" />
+        <Member Name="ReportType" Caption="Typ sestavy" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.ReportsV2.ReportType">
+        <LocalizationItem Name="Label" Value="Popisek" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems RelatedReportsGroupCaption="Sestavy">
+    <Items>
+      <Item Id="Reports">
+        <Items>
+          <Item Id="ReportsV2" Caption="Sestavy" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <ListView Id="DevExpress.Persistent.BaseImpl.XtraReportData_ListView" Caption="Sestavy" />
+  </Views>
+</Application>

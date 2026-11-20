@@ -99,5 +99,1122 @@
   </resheader>
   <data name="Collections_WantNotDeleteFilteredAggregateCollection" xml:space="preserve">
     <value>Assigning 기준 집계 컬렉션에 일반적으로 데이터베이스에서 고아 레코드를 만든다. 분명 ' {1}.기준 ' 재산 소유자를 삭제 하기 전에 개체 '{0}'.</value>
+    <comment>Community:부분적으로 로드된 소유 컬렉션 '{1}'이 있는 '{0}' 개체를 삭제하면 고아 개체/레코드가 발생할 수 있습니다.</comment>
+  </data>
+  <data name="Security_DeletingAnObjectWasProhibitedByTheRules" xml:space="preserve">
+    <value>보안 규칙에 따라 '{0}' 개체의 삭제가 금지되어 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_SavingAnObjectWasProhibitedByTheRulesOfVal" xml:space="preserve">
+    <value>보안 규칙에 따라 '{0}' 개체의 저장이 금지되어 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_SavingAnObjectWasProhibitedByTheRulesWProp" xml:space="preserve">
+    <value>보안 규칙에 따라 '{0}.{1}' 속성의 저장이 금지되어 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_MostProbablyYouAreTryingToInitiateAnObjectEx" xml:space="preserve">
+    <value> 이전 객체 로드 작업이 아직 완료되지 않은 상태에서 객체 로드 작업을 시작하려는 것으로 보입니다. Session.ObjectsLoaded 또는 IXPObject.OnLoaded 이벤트가 발생할 때까지 작업을 미루십시오(Session.IsObjectsLoading이 true인 동안). 이 예외의 또 다른 원인은 서로 다른 스레드에서 동일한 세션으로 동시에 작업하려는 것입니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_MostProbablyYouAreTryingToInitiateAnObject" xml:space="preserve">
+    <value> 이전 객체 저장 작업이 아직 완료되지 않은 상태에서 객체 로드 작업을 시작하려는 것으로 보입니다. Session.ObjectsSaved 또는 IXPObject.OnSaved 이벤트가 발생할 때까지 작업을 미루십시오(Session.IsObjectsSaving이 true인 동안).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0OperatorAfterSkipOrTakeIsNotSupported" xml:space="preserve">
+    <value>Skip 또는 Take 이후에는 {0}이 지원되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SpecifiedJoinKeySelectorsNotCompatibleX0X1" xml:space="preserve">
+    <value>조인 키 선택기 '{0}' 및 '{1}'은 서로 호환되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_NotClassMember" xml:space="preserve">
+    <value>'{0}'은(는) 클래스 '{1}'의 멤버가 아닙니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0OverGroupingIsNotSupported" xml:space="preserve">
+    <value>그룹화된 결과에 대한 {0}은 지원되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0WithSkipOrTakeOrGroupingIsNotSupported" xml:space="preserve">
+    <value>Skip, Take 또는 그룹화와 함께 사용하는 {0}은 지원되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0WithSoManyParametersIsNotSupported" xml:space="preserve">
+    <value>이와 같은 수의 매개 변수를 사용하는 {0}은 지원되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_NotCollectionProperty" xml:space="preserve">
+    <value>{0}.{1}은 컬렉션 속성이 아닙니다. AssociationAttribute로 표시되어 있어야 하며 XPBaseCollection의 파생 형식이어야 합니다. GetList를 사용해야 하는 상황에서 GetCollection을 사용하고 있을 수 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NotCollection" xml:space="preserve">
+    <value>'{0}.{1}'은(는) 컬렉션이 아닙니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XpoServerMode_NonPersistentIsNotSupported" xml:space="preserve">
+    <value>서버 모드 컬렉션은 비영속 클래스 '{0}'을 사용할 수 없습니다</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_ReferencePropertyViaCollectionAccessor" xml:space="preserve">
+    <value>컬렉션 접근자를 통해 참조 속성을 설정하려는 시도입니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionXPQueryX0" xml:space="preserve">
+    <value>호출 식의 첫 번째 인수로 XPQuery가 필요합니다: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_PropertyTypeMismatch" xml:space="preserve">
+    <value>클래스 '{1}'과(와) '{3}' 사이의 연결 '{0}'이(가) 유효하지 않습니다. 클래스 '{1}'에는 클래스 '{3}'을(를) 참조하는 속성 '{2}'이(가) 있습니다. 클래스 '{3}'에는 속성 '{4}'이(가) 있지만, 이 속성은 클래스 '{5}'을(를) 잘못 참조합니다. 클래스 '{1}'을(를) 참조해야 합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_MoreThenOneAssociatedMemberFound" xml:space="preserve">
+    <value>클래스 '{1}'의 멤버 '{2}'과(와) '{3}' 사이에서 연결 '{0}'이(가) 모호합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_PropertyTypeMismatch" xml:space="preserve">
+    <value>'{3}' 클래스와 '{4}' 클래스 간의 연결 '{1}'이(가) 유효하지 않습니다. '{3}' 클래스에는 '{4}' 클래스를 참조하는 '{2}' 속성이 있습니다. '{4}' 클래스에는 '{0}' 속성이 있으며, 이 속성은 '{3}' 클래스를 참조해야 하지만 잘못된 대상인 '{5}' 클래스를 참조합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_AssociationCollectionWithDisabledLoading" xml:space="preserve">
+    <value>연결 컬렉션의 상태가 잘못되었습니다: LoadingEnabled가 true여야 합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationListExpected" xml:space="preserve">
+    <value>연결 목록 또는 컬렉션이어야 합니다: '{0}.{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="View_AtLeastOneFetchPropertyShouldBeDefined" xml:space="preserve">
+    <value>가져오기에 사용할 속성을 하나 이상 정의해야 합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_AddRelation" xml:space="preserve">
+    <value>중복 관계를 추가할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CannotAddObjectToObjectCache" xml:space="preserve">
+    <value>동일한 키를 가진 다른 객체 '{2}'이(가) 이미 객체 식별 맵에 추가되어 있으므로 키 = '{1}'인 객체 '{0}'을(를) 객체 식별 맵에 추가할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_NotLoadingMode" xml:space="preserve">
+    <value>로드 모드가 아닐 때는 자동 증가 열 '{0}'에 값을 대입할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_InsertingDataIntoAutoincrementColumn" xml:space="preserve">
+    <value>자동 증가 열 '{0}'에 값을 대입할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XpoDefault_CannotAssignPropertyWhileAnotherIsNotNull" xml:space="preserve">
+    <value>XpoDefault.{1}이 지정되어 있는 동안에는 XpoDefault.{0}에 대입할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_CannotPrepareQueryPlanX0" xml:space="preserve">
+    <value>'{0}' 조건이 유효하지 않아 쿼리 계획을 만들 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_CannotPrepareQueryPlan" xml:space="preserve">
+    <value>쿼리 계획을 만들 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CannotChangePropertyWhenSessionIsConnected" xml:space="preserve">
+    <value>세션이 연결되어 있을 때는 '{0}'을(를) 변경할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadClassInfo_Dictionary" xml:space="preserve">
+    <value>ObjectClassInfo를 변경할 수 없습니다. 해당 딕셔너리가 현재 Dictionary와 일치하지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadClassInfo_DataSourceDictionary" xml:space="preserve">
+    <value>ObjectClassInfo를 변경할 수 없습니다. 해당 딕셔너리가 DataSource의 딕셔너리와 일치하지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadClassInfo_DataSource" xml:space="preserve">
+    <value>ObjectClassInfo를 변경할 수 없습니다. DataSource에는 자체 ClassInfo가 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadObjectType_DataSource" xml:space="preserve">
+    <value>ObjectType을 변경할 수 없습니다. DataSource에는 자체 ClassInfo가 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_CannotAssignProperty" xml:space="preserve">
+    <value>{1}이 디자인 또는 초기화 모드가 아니면 '{0}' 속성을 변경할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TranSequenceCommit" xml:space="preserve">
+    <value>활성 트랜잭션이 없으므로 커밋할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DroneDataStore_CommitNotSupported" xml:space="preserve">
+    <value>데이터베이스 연결이 구성되지 않아 변경 내용을 커밋할 수 없습니다(현재 스텁 데이터베이스 공급자가 사용되고 있습니다). https://docs.devexpress.com/XPO/2123/connect-to-a-data-store 에 설명된 대로 데이터 저장소에 연결하십시오</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotConvertWindowsTimeZoneIdToIanaTimeZoneId" xml:space="preserve">
+    <value>Windows 표준 시간대 ID를 IANA 표준 시간대 ID로 변환할 수 없습니다. 변환 논리를 제공하도록 ConnectionProviderSql.MapWindowsToIanaTimeZoneId 대리자를 설정하십시오.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SqlConnectionProvider_CannotCreateAColumnForTheX0FieldWithTheX1D" xml:space="preserve">
+    <value>기본값이 '{1}'인 필드 '{0}'의 열을 만들 수 없습니다. 이 필드에 다른 기본값을 지정하십시오</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProvider_UnableToFillRefType" xml:space="preserve">
+    <value>'{0}' 형식의 멤버 '{1}'에 대한 데이터베이스 스키마를 확보할 수 없습니다. 오류: {2}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_CannotFindParentRelationForNode" xml:space="preserve">
+    <value>노드 '{0}'의 부모 관계를 찾을 수 없습니다. 잘못된 형식의 쿼리 또는 XPO 내부 오류.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_PathNotFound" xml:space="preserve">
+    <value>{0}-&gt;{1} 경로를 찾을 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TypeNotFound" xml:space="preserve">
+    <value>ID = '{0}'인 형식을 찾을 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CannotLoadInvalidType" xml:space="preserve">
+    <value>유효하지 않은 형식 '{0}'을(를) 로드할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Helpers_DifferentObjectsKeys" xml:space="preserve">
+    <value>키가 수정된 객체의 변경 사항은 병합할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ThreadSafeDataLayer_DictionaryModified" xml:space="preserve">
+    <value>ThreadSafeDataLayer에서 사용 중이므로 Dictionary를 수정할 수 없습니다. 수정되거나 생성된 ClassInfo: '{0}'. 이 예외를 방지하려면 다음 권장 사항을 따르십시오: https://www.devexpress.com/kb=T901732</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_CantPersistGenericType" xml:space="preserve">
+    <value>제네릭 형식은 영속화할 수 없습니다. 형식 '{0}'의 정의에서 PersistentAttribute를 제거하고 대신 영속적인 비제네릭 파생 클래스를 하나 이상 만드십시오.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PersistentAliasExpander_NonPersistentCriteria" xml:space="preserve">
+    <value>비영속 속성 '{1}'을 사용하는 조건 "{0}"으로는 데이터 저장소를 쿼리할 수 없습니다. 자세한 내용과 가능한 해결 방법은 https://www.devexpress.com/kb=Q352044 기술 자료 문서를 참조하십시오.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PersistentAliasExpander_NonPersistentCriteriaThisValueMember" xml:space="preserve">
+    <value>비영속 속성 '{1}'을 사용하는 조건 "{0}"으로는 데이터 저장소를 쿼리할 수 없습니다. 조회 컨트롤의 ValueMember로 '{0}'을 사용하고 있다면 대신 빈 ValueMember를 사용하십시오.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="View_IsInLoading" xml:space="preserve">
+    <value>뷰에서 데이터를 비동기적으로 로드하는 동안에는 뷰를 다시 로드할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_CannotResolveClassInfo" xml:space="preserve">
+    <value>'[{0}]{1}' 형식의 ClassInfo를 확인할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_CannotResolvePropertyTypeComparer" xml:space="preserve">
+    <value>형식이 '{1}'인 '{0}' 속성의 비교자를 찾을 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TranSequenceRollback" xml:space="preserve">
+    <value>활성 트랜잭션이 없으므로 롤백할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TranSequenceBegin" xml:space="preserve">
+    <value>한 세션에서 둘 이상의 트랜잭션을 시작할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_SameTableName" xml:space="preserve">
+    <value>클래스 {0}과(와) {1}이(가) 같은 테이블에 매핑되어 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_ClassesAreNotAssignable" xml:space="preserve">
+    <value>'{0}' 클래스와 '{1}' 클래스는 서로 할당할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DataView_ReferenceMembersWithCompoundKeyAreNotSupported" xml:space="preserve">
+    <value>구조체 멤버가 있는 클래스는 지원되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_DictionaryMixing" xml:space="preserve">
+    <value>ClassInfo '{0}'은(는) 다른 딕셔너리에 속합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerializableObjectLayer_OptimisticLockFieldNotExists" xml:space="preserve">
+    <value>ClassInfo '{0}'에 OptimisticLockField가 정의되어 있지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerializableObjectLayer_OptimisticLockFieldInDLNotExists" xml:space="preserve">
+    <value>ClassInfo '{0}'에 OptimisticLockFieldInDataLayer가 정의되어 있지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ObjectLayer_XPClassInfoNotFound" xml:space="preserve">
+    <value>ClassInfo '{0}'을 찾을 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DirectSQL_CollectionMembersAreNotSupported" xml:space="preserve">
+    <value>컬렉션 멤버는 지원되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_AssociationListExpected" xml:space="preserve">
+    <value>컬렉션 또는 연결 목록이 필요합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_ColumnNotFound" xml:space="preserve">
+    <value>'{0}' 열을 찾을 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_CantUpdateRelationColumn" xml:space="preserve">
+    <value>관계가 있는 열은 업데이트할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ComplexDataSelectionIsNotSupportedPerhapsY" xml:space="preserve">
+    <value>복잡한 데이터 선택은 지원되지 않습니다. 선택기에서 복잡한 하위 쿼리를 사용하고 있을 수 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_ConnectionPoolCannotBeUsed" xml:space="preserve">
+    <value>단순 데이터 레이어에서는 연결 풀을 사용할 수 없습니다</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_ConnectionStringEmpty" xml:space="preserve">
+    <value>메모리 내 데이터 저장소도 사용자 지정 데이터 저장소도 아닌 데이터 저장소를 사용할 때는 연결 문자열이 비어 있으면 안 됩니다</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_ConstraintConflict" xml:space="preserve">
+    <value>'{0}' 테이블의 '{1}' 열에 대한 외래 키 제약 조건이 위반되었습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_DelayedPropertyContainerCannotBeAssigned" xml:space="preserve">
+    <value>지연 사용자 지정 속성 '{0}.{1}'의 컨테이너는 할당할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CollectClassInfos_CouldNotLoadAssembly" xml:space="preserve">
+    <value>어셈블리 '{0}'에서 ClassInfos를 수집할 수 없습니다. 이 어셈블리의 클래스를 사용할 때 ThreadSafeDataLayer에서 InvalidOperationException이 발생할 수 있습니다. 자세한 내용은 InnerException을 참조하십시오.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ImageValueConverter_NotPresent" xml:space="preserve">
+    <value>'System.Drawing.Common' 어셈블리에서 'System.Drawing.ImageConverter' 클래스를 찾을 수 없습니다. System.Drawing.Common 5.0 이상을 사용하십시오.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_CouldNotAssignPropertyValue" xml:space="preserve">
+    <value>'{0}'의 속성 값을 할당할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_CouldNotFindAppropriateConstructor" xml:space="preserve">
+    <value>'{0}' 형식에 적합한 생성자를 찾을 수 없습니다. 매개 변수가 없는 생성자 또는 XPDictionary 개체를 매개 변수로 받는 생성자가 필요합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_CouldNotResolvePropertyType" xml:space="preserve">
+    <value>'{0}'의 속성 형식을 확인할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CrossThreadFailureDetected" xml:space="preserve">
+    <value>스레드 간 작업이 감지되었습니다. '{0}'은(는) 스레드로부터 안전한 객체가 아니므로 서로 다른 스레드에서 동시에 사용하지 마십시오</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_CurrentExpressionWithX0IsNotSupported" xml:space="preserve">
+    <value>{0}을 포함하는 현재 식은 지원되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_CustomProperties_PersistentAndNonStorableType" xml:space="preserve">
+    <value>형식이 '{2}'인 사용자 지정 멤버 '{0}.{1}'은(는) 영속적일 수 없습니다</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_SeveralClassesWithSameName" xml:space="preserve">
+    <value>딕셔너리에 이미 ClassInfo '{1}'이(가) 있습니다. 가능한 원인: 어셈블리 [{0}]이(가) 두 번 로드되었습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_DuplicateJoinOperatorFound" xml:space="preserve">
+    <value>중복된 조인 연산자가 발견되었습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_DuplicateKeyProperty" xml:space="preserve">
+    <value>'{0}' 형식에서 중복 키가 발견되었습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_DuplicateMappingField" xml:space="preserve">
+    <value>클래스 '{1}'에서 열 '{0}'에 대한 중복 매핑.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_EnteringTheX0StateFromTheX1StateIsProhibit" xml:space="preserve">
+    <value>'{3}'의 상태 '{1}' 때문에 상태 '{2}'에서 상태 '{0}'(으)로 전환하는 것이 금지됩니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_EntityTypesEmpty" xml:space="preserve">
+    <value>EntityTypes는 null이 아니어야 하며 항목을 최소 1개 포함해야 합니다</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TypeFieldIsEmpty" xml:space="preserve">
+    <value>필드 '{0}'이(가) Null입니다(기본 클래스 '{1}').</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_GroupingWithACustomComparerIsNotSupported" xml:space="preserve">
+    <value>사용자 지정 비교자를 사용하는 그룹화는 지원되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_NullInstance" xml:space="preserve">
+    <value>인터페이스 가상 개체 '{0}'의 구현체를 찾을 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_CachedExpressionIsIncompatible" xml:space="preserve">
+    <value>호환되지 않는 식입니다. 컴파일러에서 생성된 식이어야 하며 정적 인수만 포함해야 합니다. 정적이 아닌 인수를 전달하려면 CachedExpression 메서드의 a1, a2 및 a3 매개 변수를 사용할 수 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_IncorrectDeclaringTypeX0InTheMethodCallQue" xml:space="preserve">
+    <value>메서드 호출에서 메서드를 선언한 형식 '{0}'이 올바르지 않습니다. 'System.Linq.Queryable' 또는 'System.Linq.Enumerable' 형식이 필요합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PersistentAliasExpander_ReferenceOrCollectionExpectedInTheMiddleOfThePath" xml:space="preserve">
+    <value>경로의 멤버 '{0}'이 올바르지 않습니다. 참조 속성 또는 컬렉션 연결이 필요합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_EmptyMemberInstance" xml:space="preserve">
+    <value>InstanceType 멤버에 값이 없습니다. 아직 제대로 초기화되지 않은 개체에는 GetInstanceObject를 사용할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_InternalErrorAsyncActionIsAlreadyDisposed" xml:space="preserve">
+    <value>내부 오류: 비동기 작업이 이미 해제되었습니다. XPO의 문제로 인해 발생했을 수 있습니다. DevExpress 지원 팀에 문의하십시오.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NullSessionProvider" xml:space="preserve">
+    <value>내부 오류: 세션에 액세스할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_DifferentComplexSet" xml:space="preserve">
+    <value>내부 오류: 다른 복합 집합의 행을 추가할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongDictionaryIndex" xml:space="preserve">
+    <value>내부 오류: 인덱스 '{0}'의 잘못된 딕셔너리 데이터.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongCommitInfo" xml:space="preserve">
+    <value>내부 오류: 형식이 잘못된 커밋 정보.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_WrongIndexInfo" xml:space="preserve">
+    <value>내부 오류: 잘못된 형식의 인덱스 정보.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongRollbackInfo" xml:space="preserve">
+    <value>내부 오류: 형식이 잘못된 롤백 정보.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerOLHelpers_NestedParentMapIsNull" xml:space="preserve">
+    <value>내부 오류: NestedParentMap과 ParentNestedMap이 null입니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InTransactionLoader_NotInSelectDataMode" xml:space="preserve">
+    <value>내부 오류: SelectData 모드가 아닙니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InTransactionLoader_ProcessReturnResultError" xml:space="preserve">
+    <value>내부 오류: SelectData 모드에서는 작업이 허용되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_DifferentColumnListLengths" xml:space="preserve">
+    <value>내부 오류: PKey와 FKey의 열 수 불일치.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MsSql_RootIsNotInsertStatement" xml:space="preserve">
+    <value>내부 오류: Root가 InsertStatement가 아닙니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Loader_ReloadError" xml:space="preserve">
+    <value>내부 오류: 지정된 '{0}.{1}'은(는) 지원되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_CriteriaEvaluationBehaviorIsNotSupported" xml:space="preserve">
+    <value>내부 오류: 지정된 CriteriaEvaluationBehavior.{0}은 이 오버로드된 생성자에서 지원되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_UnexpectedPersistentCriteriaEvaluationBehavior" xml:space="preserve">
+    <value>내부 오류: 지정된 PersistentCriteriaEvaluationBehavior.{0}은(는) 지원되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServerModeGridSource_SummaryItemTypeNotSupported" xml:space="preserve">
+    <value>내부 오류: 지정된 SummaryItemType.{0}은 지원되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Loader_InternalErrorOrUnsupportedReferenceStructure" xml:space="preserve">
+    <value>내부 XPO 오류 또는 지원되지 않는 참조 구조: 복합 키는 파생 클래스가 있는 형식을 참조할 수 없습니다. 개체 형식 '{0}', 확인된 형식 '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_InternalXPOError" xml:space="preserve">
+    <value>XPO 내부 오류.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_ODataType_Mismatch" xml:space="preserve">
+    <value>유효하지 않은 '@odata.type' 주석: '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CreateCollection_InvalidCastException" xml:space="preserve">
+    <value>'{2}.{3}' 속성에서 '{0}'에서 '{1}'로의 유효하지 않은 캐스트.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_WrongConnectionString" xml:space="preserve">
+    <value>유효하지 않은 연결 문자열이 지정되었습니다: '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AmbiguousClassName" xml:space="preserve">
+    <value>형식 '{1}'과(와) 형식 '{2}' 사이에서 형식 이름 '{0}'이(가) 모호하여 ClassInfo를 확인할 수 없습니다</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_CanChangeProperties" xml:space="preserve">
+    <value>InstantFeedback 소스가 이미 그리드에서 사용 중이면 해당 소스의 속성을 변경할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_CanChangeViewProperties" xml:space="preserve">
+    <value>XPInstantFeedbackView가 이미 그리드에서 사용 중이면 해당 뷰의 속성을 변경할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServerModeGridSource_GroupAndAddOrRemoveIsNotAllowed" xml:space="preserve">
+    <value>그룹화와 항목 추가/제거를 동시에 수행할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_NullJoinClassInfo" xml:space="preserve">
+    <value>JoinClassInfo가 null입니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_EmptyJoinOperandId" xml:space="preserve">
+    <value>JoinOperandId가 비어 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProvider_KeysAutogenerationNonSupportedTypeException" xml:space="preserve">
+    <value>'{0}' 클래스 형식에서는 키 자동 생성이 지원되지 않습니다. 32비트 정수, 64비트 정수 및 전역 고유 식별자 데이터 형식에서만 지원됩니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_KeyPropertyAbsent" xml:space="preserve">
+    <value>'{0}' 형식에 키 속성이 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_LambdaExpressionIsExpectedX0" xml:space="preserve">
+    <value>람다 식이 필요합니다: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_DoesNotSupportNestedJoinsWithLevel" xml:space="preserve">
+    <value>LinqToXpo는 두 개를 초과하는 중첩 조인을 지원하지 않습니다. 이 제한은 쿼리의 전체 조인 수에는 영향을 주지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_MalformedAggregate" xml:space="preserve">
+    <value>잘못된 형식의 집계 또는 XPO 내부 오류.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_NoAssociationListInAssociation" xml:space="preserve">
+    <value>'{1}.{2}'과(와) '{3}.{4}' 사이의 연결 '{0}'이(가) 잘못 구성되었습니다. 연결의 한쪽은 목록 또는 컬렉션이어야 합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_TwoAssociationListsInAssociation" xml:space="preserve">
+    <value>목록/컬렉션 '{1}.{2}'과(와) '{3}.{4}' 사이의 연결 '{0}'이(가) 잘못 구성되었습니다. 다대다 관계에는 ManyToManyAlias 특성 또는 XPCollection 형식의 목록/컬렉션을 사용하십시오.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_NotFound" xml:space="preserve">
+    <value>연결 '{0}'이(가) 잘못 구성되었습니다. 클래스 '{3}'에서 '{1}.{2}'에 연결된 멤버를 찾을 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_NotACollection" xml:space="preserve">
+    <value>잘못된 형식의 쿼리 또는 XPO 내부 오류: '{0}'은 컬렉션이 아닙니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotFindClassinfoType" xml:space="preserve">
+    <value>잘못된 형식의 XML: 클래스 형식을 찾을 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotFindConstructor" xml:space="preserve">
+    <value>잘못된 형식의 XML: '{0}' 형식의 생성자를 찾을 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotLoadMember" xml:space="preserve">
+    <value>잘못된 형식의 XML: [{0}]{1}.{2} 멤버를 로드할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotResolveClassinfoInstanceType" xml:space="preserve">
+    <value>잘못된 형식의 XML: ClassInfo 형식을 확인할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorModelTagAbsent" xml:space="preserve">
+    <value>잘못된 형식의 XML: &lt;Model&gt; 태그를 찾을 수 없거나 잘못된 네임스페이스가 지정되었습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorUnknownAttribute" xml:space="preserve">
+    <value>잘못된 형식의 XML: 알 수 없는 특성 '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_SuppressSuspiciousMemberInheritanceCheckError" xml:space="preserve">
+    <value>멤버 '{0}.{1}'과(와) 해당 특성 '{2}'은(는) 무시됩니다. 이름이 같은 멤버가 기본 클래스 '{3}'에 이미 선언되어 있습니다. 이 예외를 억제하려면 DevExpress.Xpo.Metadata.ReflectionClassInfo.SuppressSuspiciousMemberInheritanceCheck를 True로 설정하십시오.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ObjectLayer_MemberNotFound" xml:space="preserve">
+    <value>멤버 '{0}.{1}'을 찾을 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_PersistentOrThis" xml:space="preserve">
+    <value>멤버 '{0}.{1}'은 영속적이거나 'this'를 반환해야 합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NonPersistentKey" xml:space="preserve">
+    <value>영속적이지 않은 키 '{0}.{1}'이(가) 발견되었습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_PersistentReferenceFound" xml:space="preserve">
+    <value>영속 클래스 '{0}'을(를) 사용하여 비영속 전용 작업이 수행됩니다</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_NullDefaultValueNotAllowed" xml:space="preserve">
+    <value>'{0}' 열의 기본값으로 NULL 값을 사용할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NullableAttributeNotApplicable" xml:space="preserve">
+    <value>멤버가 영속적이지 않거나, 별칭이 지정되어 있거나, 다대다 별칭이 지정되어 있거나, 객체 참조 형식이므로 클래스 {1}의 멤버 {0}에 Nullable 특성을 적용할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_WrongObjectType" xml:space="preserve">
+    <value>ClassInfo {2}을(를) 사용하여 생성된 객체 {0}이(가) 잘못된 ClassInfo {1}을(를) 반환합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="NestedSession_NotCloneable" xml:space="preserve">
+    <value>작업 중에 멤버 '{0}.{1}'이(가) 변경되어 객체 계층 구조를 복제할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerializableObjectLayer_OLDoesNotImplementISerializableObjectLayerEx" xml:space="preserve">
+    <value>개체 레이어가 ISerializableObjectLayerEx를 구현하지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_ObjectModificationIsNotAllowed" xml:space="preserve">
+    <value>세션이 CommitChangesToDataLayerInner 상태인 동안에는 객체를 수정할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_DifferentObjectsWithSameKey" xml:space="preserve">
+    <value>중복 키를 가진 객체가 발견되었습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Generator_OneOfBinaryOperatorsOperandsIsNull" xml:space="preserve">
+    <value>BinaryOperator의 피연산자 중 하나가 null입니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_EnumeratorObjectModifiedOrDeleted" xml:space="preserve">
+    <value>요청한 범위의 개체가 하나 이상 수정되거나 삭제되었습니다. 식별 값 목록을 새로 고쳐야 합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_IncompatibleIdType" xml:space="preserve">
+    <value>전달된 ID 형식 '{0}'은(는) 키 '{1}.{2}'의 형식 '{3}'과(와) 호환되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_CorrectPIinUOW" xml:space="preserve">
+    <value>세션에서는 영속 인터페이스가 완전히 지원되지 않습니다. 대신 작업 단위를 사용하십시오.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_ClassAttributeExclusive" xml:space="preserve">
+    <value>PersistentAttribute, NonPersistentAttribute 및 MapToAttribute는 상호 배타적입니다. 클래스 '{0}'에는 이 중 하나만 적용할 수 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_MemberAttributeExclusive" xml:space="preserve">
+    <value>PersistentAttribute, NonPersistentAttribute 및 PersistentAliasAttribute는 상호 배타적입니다. 멤버 '{0}.{1}'에는 이 중 하나만 적용할 수 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_NonPersistentReferenceFound" xml:space="preserve">
+    <value>비영속 클래스 '{0}'을(를) 사용하여 영속 전용 작업이 수행됩니다</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_DifferentTypes" xml:space="preserve">
+    <value>기본 키와 외래 키 열 형식 불일치.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_RequiredAttributeMissing" xml:space="preserve">
+    <value>'{0}' 속성에 '{1}' 특성이 정의되어 있지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_PropertyMissing" xml:space="preserve">
+    <value>'{1}' 형식에 '{0}' 속성이 존재하지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_AssociationElementTypeMissing" xml:space="preserve">
+    <value>'{0}' 속성의 'Association' 특성에 'ElementType' 속성이 지정되어 있지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="View_PropertyNotFetched" xml:space="preserve">
+    <value>속성 '{0}'을(를) 가져오지 않았습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_DelayedPropertyDoesNotContainProperObject" xml:space="preserve">
+    <value>속성 '{0}.{1}'에 XPDelayedProperty 개체가 포함되어 있지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_IncorrectPathMemberNotExists" xml:space="preserve">
+    <value>'{2}.{3}' 멤버가 존재하지 않으므로 '{0}' 형식의 속성 경로 '{1}'이(가) 올바르지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_IncorrectPathNonPersistentMember" xml:space="preserve">
+    <value>'{2}.{3}' 멤버가 영속 멤버가 아니므로 '{0}' 형식의 속성 경로 '{1}'이(가) 올바르지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_IncorrectPathNonReferenceMember" xml:space="preserve">
+    <value>'{2}.{3}' 멤버가 참조 멤버가 아니므로 '{0}' 형식의 속성 경로 '{1}'이(가) 올바르지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_IncorrectPath" xml:space="preserve">
+    <value>'{0}' 형식의 속성 경로 '{1}'이(가) 올바르지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_QueryWithAppliedTheSkipOrTheTakeOperations" xml:space="preserve">
+    <value>Skip 또는 Take 연산이 적용된 쿼리는 조인에 사용할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_UseDataSetDataStoreOrCtor" xml:space="preserve">
+    <value>DataSet을 사용하는 .ctor 대신 DataSetDataStore 클래스 또는 DataSet을 사용하지 않는 .ctor를 사용하십시오.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_RecurringObjectAdd" xml:space="preserve">
+    <value>재진입 추가.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_ReferenceTooComplex" xml:space="preserve">
+    <value>참조 멤버 '{0}.{1}'이(가) 너무 복잡합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CannotReloadPurgedObject" xml:space="preserve">
+    <value>요청한 객체가 데이터 저장소에 없으므로 로드할 수 없습니다. 이러한 객체는 이미 삭제/영구 삭제되었을 수 있습니다. 목록에 동일한 객체가 있는 상태에서 이 예외가 다시 발생하면 데이터 저장소의 참조 무결성이 손상되었을 수 있다는 점에 유의하십시오. 이 경우 시스템 관리자에게 문의하십시오. 요청한 객체: {0}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SequenceContainsMoreThanOneElement" xml:space="preserve">
+    <value>시퀀스에 요소가 두 개 이상 포함되어 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SequenceContainsNoMatchingElement" xml:space="preserve">
+    <value>시퀀스에 일치하는 요소가 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServerModeGridSource_WrongTopLevelAggregate" xml:space="preserve">
+    <value>서버 또는 XPO 내부 오류: 최상위 집계에 그룹이 두 개 이상 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_AlreadyConnected" xml:space="preserve">
+    <value>세션이 이미 연결되어 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SessionIsNull" xml:space="preserve">
+    <value>Session이 null입니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_SingleRowExpected" xml:space="preserve">
+    <value>'{0}'을(를) 통해 단일 행이 예상됩니다. 발견된 행 수: {1}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SortingIsNotSupportedForSelectManyOperation" xml:space="preserve">
+    <value>다 대 다 컬렉션에 대한 SelectMany 연산에서는 정렬이 지원되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_UnexpectedState" xml:space="preserve">
+    <value>지정된 SessionState.{0}은(는) 지원되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_TableNotFound" xml:space="preserve">
+    <value>테이블 '{0}'을 찾을 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_AliasNotFound" xml:space="preserve">
+    <value>별칭이 '{0}'인 테이블을 찾을 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_MethodX0ForX1IsNotSupported" xml:space="preserve">
+    <value>{1}에서는 '{0}' 메서드가 지원되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheX0MethodIsNotSupported" xml:space="preserve">
+    <value>{0} 메서드는 지원되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_SessionMixing" xml:space="preserve">
+    <value>객체 '{0}'은(는) 다른 세션에 속합니다. 해결 방법은 https://docs.devexpress.com/eXpressAppFramework/403631/를 참조하십시오.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_ObjectCannotBePurged" xml:space="preserve">
+    <value>ID = '{1}'인 객체 '{0}'을(를) 영구 삭제할 수 없습니다 - 이 객체를 참조하는 객체가 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_PropertyIsDuplicatedInIndexDeclaration" xml:space="preserve">
+    <value>'{1}{2}{3}' {4}의 인덱스 선언에 '{0}' 속성이 중복되어 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_PersistentAliasCircular" xml:space="preserve">
+    <value>클래스 '{0}'의 속성 '{1}'에는 다음 식을 사용하는 PersistentAlias 특성이 지정되어 있습니다: '{2}'. 이 식은 무한 순환을 일으킵니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_NonPersistentClassInTheAssociation" xml:space="preserve">
+    <value>클래스 '{2}'이(가) 영속적이지 않으므로 멤버 '{0}.{1}'에 연결 특성을 사용할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_AssociationAttributeOnlyForListOrReference" xml:space="preserve">
+    <value>멤버 '{1}.{2}'에 연결 특성을 사용할 수 없습니다. 참조 또는 목록이어야 합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProvider_TheAutoIncrementedKeyWithX0TypeIsNotSupport" xml:space="preserve">
+    <value>‘{1}’에서는 형식이 ‘{0}’인 자동 증가 키가 지원되지 않습니다</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionIsExpectedX0" xml:space="preserve">
+    <value>호출 식이 필요합니다: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionGenericReturnTypeX0" xml:space="preserve">
+    <value>호출 식에는 제네릭 반환 형식이 있어야 합니다: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionReturnTypeX0" xml:space="preserve">
+    <value>호출 식에는 반환 형식이 있어야 합니다: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_TheCommitOperationWasProhibitedByTheRules" xml:space="preserve">
+    <value>보안 규칙에 따라 커밋 작업이 금지되어 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_CurrentPageShouldBeGreaterOrEqualZero" xml:space="preserve">
+    <value>CurrentPage는 0 이상이어야 합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_CurrentPageShouldBeLessThanPageCount" xml:space="preserve">
+    <value>CurrentPage는 PageCount보다 작아야 합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CustomAggregate_DoesNotImplementInterface" xml:space="preserve">
+    <value>사용자 지정 집계 함수 '{0}'이 '{1}' 인터페이스를 구현하지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CustomAggregate_NotFound" xml:space="preserve">
+    <value>사용자 지정 집계 함수 '{0}'이 등록되지 않았습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_DataSetUncommitted" xml:space="preserve">
+    <value>'data' 매개 변수에 커밋되지 않은 변경 사항이 있는 DataSet이 포함되어 있습니다. DataSetDataStore 클래스의 새 인스턴스를 만들기 전에 DataSet.AcceptChanges 메서드를 호출하십시오.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ASE_CommandNotAllowedWithinMultiStatementTransaction" xml:space="preserve">
+    <value>데이터베이스에서 트랜잭션 내 스키마 생성 또는 수정을 지원하지 않습니다. 이 작업을 수행하려면 트랜잭션 내 스키마 수정을 지원하도록 데이터베이스를 구성하거나 스키마를 업데이트할 때 트랜잭션을 비활성화해야 합니다. 이렇게 하려면 현재 공급자 인스턴스의 경우 ExecuteUpdateSchemaInTransaction = false로, 공급자의 모든 인스턴스의 경우 GlobalExecuteUpdateSchemaInTransaction = false로 필드를 설정하십시오.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheDeclaringTypeAssemblyNamePropertyIsEmpty" xml:space="preserve">
+    <value>DeclaringTypeAssemblyName 속성이 비어 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheDeclaringTypeNamePropertyIsEmpty" xml:space="preserve">
+    <value>DeclaringTypeName 속성이 비어 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ElemAtOperationIsNotSupportedWithoutSorting" xml:space="preserve">
+    <value>정렬 없이는 ElementAt 연산이 지원되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_EnumeratorPositioning" xml:space="preserve">
+    <value>열거자가 컬렉션의 첫 번째 요소 앞이나 마지막 요소 뒤에 위치해 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InitOperator_DeserializationProhibitedDueSecurityIssue" xml:space="preserve">
+    <value>식에 안전하지 않은 형식이 포함되어 있어 역직렬화할 수 없습니다. 안전하지 않은 형식의 역직렬화는 금지되어 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ExpressionX0IsNotSupportedInX1" xml:space="preserve">
+    <value>{1}에서 지원되지 않는 식입니다: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ExpressionX0IsNotSupported" xml:space="preserve">
+    <value>지원되지 않는 식입니다: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_FetchOnlyAttributeNotApplicable" xml:space="preserve">
+    <value>대상 멤버가 영속적이지 않거나, 별칭이 지정되어 있거나, 다대다 별칭이 지정되어 있거나, 키이거나, 중첩 구조체의 일부이므로 {0}.{1}에 FetchOnly 특성을 적용할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_FetchOnlyAttributeNotApplicableToReference" xml:space="preserve">
+    <value>대상 멤버가 참조 형식이므로 {0}.{1}에 FetchOnly 특성을 적용할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Filtering_TheIifFunctionOperatorRequiresThree" xml:space="preserve">
+    <value>'Iif' 함수 연산자에는 인수가 세 개 이상 필요합니다. 인수의 개수는 홀수여야 합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_GeneralPurposeCollectionInsteadOfRefCollection" xml:space="preserve">
+    <value>연관 컬렉션 속성 '{0}.{1}'의 잘못된 구현이 감지되었습니다. 컬렉션은 GetCollection 메서드 또는 XPCollection(Session session, object theOwner, XPMemberInfo refProperty) 생성자를 통해 생성해야 합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheJoinWithManyTablesSimultaneouslyInASing" xml:space="preserve">
+    <value>단일 연산자에서 여러 테이블을 조인하는 연산은 지원되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheLambdaExpressionWithSuchParametersIsNot" xml:space="preserve">
+    <value>이러한 매개 변수를 사용하는 람다 식은 지원되지 않습니다: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_LengthsOfTheCollectionsAreDifferentInArgs" xml:space="preserve">
+    <value>인수에 있는 컬렉션의 길이가 서로 다릅니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Helpers_ResolveDataForCollection" xml:space="preserve">
+    <value>멤버가 컬렉션이 아닙니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Common_MethodOrOperationNotImplemented" xml:space="preserve">
+    <value>메서드 또는 작업이 구현되지 않았습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DirectSQL_WrongColumnCount" xml:space="preserve">
+    <value>결과 집합 행과 대상 행의 열 수가 일치하지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongInitData" xml:space="preserve">
+    <value>원본 행과 대상 테이블 행의 열 수가 일치하지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Helpers_CloningObjectModified" xml:space="preserve">
+    <value>저장되지 않은 변경 사항이 있는 객체는 복제할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_PageSizeShouldBeGreaterThanZero" xml:space="preserve">
+    <value>PageSize는 0보다 커야 합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_InEditMode" xml:space="preserve">
+    <value>행이 이미 편집 모드에 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SkipOperationIsNotSupportedWithoutSorting" xml:space="preserve">
+    <value>정렬 없이는 Skip 연산이 지원되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PostgreSQL_CommandPoolNotSupported" xml:space="preserve">
+    <value>지정된 CommandPoolBehavior.{0}은 PosgreSQL {1}에서 지원되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_OperationNotAllowed" xml:space="preserve">
+    <value>지정된 작업은 금지되어 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Filtering_TheTypeNameArgumentOfTheX0FunctionIsNotFound" xml:space="preserve">
+    <value>'{0}' 함수의 'typeName' 인수를 찾을 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Generator_TheUseOfATopLevelSingleAggregateIsProhibit" xml:space="preserve">
+    <value>최상위 'Single' 집계의 사용이 금지됩니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Generator_TheUseOfNestedSingleAggregatesIsProhibited" xml:space="preserve">
+    <value>중첩된  'Single' 집계의 사용이 금지됩니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_UseAssociationNameAsIntermediateTableNameMismatch" xml:space="preserve">
+    <value>'{1}.{2}'과(와) '{3}.{4}' 사이의 연결 '{0}' 양쪽에서 UseAssociationNameAsIntermediateTableName 값이 같아야 합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_ConverterOnKeyOrReference" xml:space="preserve">
+    <value>객체 키 또는 다른 객체에 대한 참조를 나타내는 속성 '{0}.{1}'에는 ValueConverter 특성을 적용할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_WithDeletedOptionNotSupported" xml:space="preserve">
+    <value>XPQuery가 DataLayer로 초기화되었으므로 WithDeleted 옵션은 지원되지 않습니다. WithDeleted 옵션을 사용하려면 XPQuery(Session) 또는 XPQuery(Session, Boolean) 생성자를 사용하십시오.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XpoDefault_CustomGuidGenerationHandlerCannotBeNull" xml:space="preserve">
+    <value>XpoDefault.CustomGuidGenerationHandler 필드의 값이 null입니다. XpoDefault.GuidGenerationMode 필드를 'Custom'으로 설정한 경우 이 필드에 사용자 지정 대리자를 대입해야 합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_OperationCannotBePerformedBecauseNoSyncContext" xml:space="preserve">
+    <value>실행 스레드에 현재 동기화 컨텍스트가 없으므로 이 작업을 수행할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PostgreSQL_LegacyGuidDetected" xml:space="preserve">
+    <value>이 예외를 방지하려면 DevExpress.Xpo.DB.PostgreSqlConnectionProvider의 UseLegacyGuidSupport 필드 또는 정적 GlobalUseLegacyGuidSupport 필드를 'true'로 설정하십시오.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_TopLevelAggregateNotSupported" xml:space="preserve">
+    <value>조건에서 최상위 집계를 사용할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_ICommandChannel_TransferringRequestsIsProhibited" xml:space="preserve">
+    <value>보안 엔진 내에서는 ICommandChannel을 통한 요청 전송이 금지되어 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_NullTransitionMemberInfo" xml:space="preserve">
+    <value>전환 MemberInfo가 null입니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_SessionCtorAbsent" xml:space="preserve">
+    <value>{0} 형식에 세션 전용 생성자가 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_NoConstructor" xml:space="preserve">
+    <value>{0} 형식에 매개 변수 {1}을 받는 생성자가 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_TypeNotFound" xml:space="preserve">
+    <value>형식 '{0}'을(를) 찾을 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_InvalidCastOnAdd" xml:space="preserve">
+    <value>컬렉션에 항목을 추가할 수 없습니다. 개체 '{0}'은 '{1}' 형식의 인스턴스가 아닙니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_CustomProperties_ReferenceOrCollectionInSessionStore" xml:space="preserve">
+    <value>클래스 '{0}'이(가) 인터페이스 '{2}'을(를) 구현하지 않으므로 참조 또는 컬렉션 형식의 사용자 지정 멤버 '{1}'을(를) 만들 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_UnexpectedToken" xml:space="preserve">
+    <value>위치 {1}에 예기치 않은 토큰 '{0}'이 있습니다. 'StartObject'가 필요합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_UniqueIndex" xml:space="preserve">
+    <value>고유 인덱스 '{0}'이 위반되었습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="VistaDB_UpdatingSchemaIsForbiddenWhileExplicitTran" xml:space="preserve">
+    <value>명시적 트랜잭션이 열려 있는 동안에는 스키마 업데이트가 금지됩니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_DictConstructor" xml:space="preserve">
+    <value>Session(XPDictionary dictionary) 생성자를 사용하는 경우 Session.Connect 메서드를 호출하기 전에 반드시 유효한 Session.ConnectionString을 지정해야 합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_IsReadOnly" xml:space="preserve">
+    <value>쓰기가 지원되지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Helpers_SameDictionaryExpected" xml:space="preserve">
+    <value>잘못된 딕셔너리.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadError" xml:space="preserve">
+    <value>XML 사전 로드 오류: {0}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_DataTypeAttributeNotFound" xml:space="preserve">
+    <value>XML 로더: 'DataType' 특성을 찾을 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_NameAttributeExpected" xml:space="preserve">
+    <value>XML 로더: 'name' 특성이 필요합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ReferAttributeExpected" xml:space="preserve">
+    <value>XML 로더: 'refer' 특성이 필요합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XpathAttributeExpected" xml:space="preserve">
+    <value>XML 로더: 'xpath' 특성이 필요합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_CantRestoreObjectFromXML" xml:space="preserve">
+    <value>XML 로더: 개체를 역직렬화할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_NullPrimaryColumns" xml:space="preserve">
+    <value>XML 로더: 기본 키 '{0}'을(를) 찾을 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ReferNotFound" xml:space="preserve">
+    <value>XML 로더: 참조되는 '{0}'을(를) 찾을 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_CantGetColumnType" xml:space="preserve">
+    <value>XML 로더: 열 형식을 확인할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ColumnNameIsNotSpecified" xml:space="preserve">
+    <value>XML 로더: 열 이름이 지정되지 않았습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidBaseAttributeValue" xml:space="preserve">
+    <value>XML 로더: 'base' 특성 값이 잘못되었습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidValueAttributeValue" xml:space="preserve">
+    <value>XML 로더: 'value' 특성 값이 잘못되었습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidColumnTypeDeclaration" xml:space="preserve">
+    <value>XML 로더: 열 형식 이름이 유효하지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_InvalidTypeString" xml:space="preserve">
+    <value>XML 로더: 유효하지 않은 형식 이름.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_choiceNodeNotFound" xml:space="preserve">
+    <value>XML 로더: 'choice' 노드를 찾을 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ComplexTypeNodeNotFound" xml:space="preserve">
+    <value>XML 로더: 'complexType' 노드를 찾을 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ElementNodeNotFound" xml:space="preserve">
+    <value>XML 로더: 'element' 노드를 찾을 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_NotDataSetNode" xml:space="preserve">
+    <value>XML 로더: 노드가 데이터 세트로 표시되지 않았습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_SchemaNodeNotFound" xml:space="preserve">
+    <value>XML 로더: 'schema' 노드를 찾을 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSselectorNodeExpected" xml:space="preserve">
+    <value>XML 로더: 'xs:selector' 노드가 필요합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_InconsistentForeignKeyCount" xml:space="preserve">
+    <value>XML 로더: PKey와 FKey의 열 개수가 일치하지 않습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_TableNotDeclared" xml:space="preserve">
+    <value>XML 로더: 테이블 '{0}'이(가) 선언되지 않았습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_TableNameIsNotSpecified" xml:space="preserve">
+    <value>XML 로더: 테이블 이름이 지정되지 않았습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XpathAttributeWrongFormat" xml:space="preserve">
+    <value>XML 로더: 'xpath' 특성 값의 형식이 잘못되었습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XScomplexTypeExpected" xml:space="preserve">
+    <value>XML 로더: xs:complexType이 필요합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSlengthExpected" xml:space="preserve">
+    <value>XML 로더: xs:length가 필요합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSrestrictionExpected" xml:space="preserve">
+    <value>XML 로더: xs:restriction이 필요합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSsequenceExpected" xml:space="preserve">
+    <value>XML 로더: xs:sequence가 필요합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSsimpleTypeExpected" xml:space="preserve">
+    <value>XML 로더: xs:simpleType이 필요합니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPWeakReference_SavedObjectExpected" xml:space="preserve">
+    <value>저장된 객체에 대한 약한 참조만 사용할 수 있습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_YouCannotApplyTheMapInheritanceParentTable" xml:space="preserve">
+    <value>영속적인 상위 클래스가 없는 클래스에는 매개 변수 값이 ParentTable인 MapInheritance 특성을 적용할 수 없습니다.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_CommandChannelDoesNotImplementICommandChannelAsync" xml:space="preserve">
+    <value>'{0}' 명령 채널이 'DevExpress.Xpo.Helpers.ICommandChannelAsync' 인터페이스를 지원하지 않습니다. 이 인터페이스를 구현하거나 호환되는 다른 명령 채널을 사용하십시오.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="WebApi_ICacheToCacheCommunicationCore_NotImplemented" xml:space="preserve">
+    <value>사용 중인 '{0}' 연결 공급자는 'DevExpress.Xpo.DB.ICacheToCacheCommunicationCore' 인터페이스를 지원하지 않습니다. 'DevExpress.Xpo.DB.DataCacheRoot' 인스턴스로 감싸십시오. 자세한 내용은 다음 도움말 항목을 참조하십시오: https://docs.devexpress.com/XPO/402182.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_ConnectionProviderDoesNotImplementIDataStoreAsync" xml:space="preserve">
+    <value>'{0}' 연결 공급자가 'DevExpress.Xpo.DB.IDataStoreAsync' 인터페이스를 지원하지 않습니다. 이 인터페이스를 구현하거나 호환되는 다른 연결 공급자를 사용하십시오.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_DataLayerDoesNotImplementIDataLayerAsync" xml:space="preserve">
+    <value>'{0}' 데이터 계층이 'DevExpress.Xpo.IDataLayerAsync' 인터페이스를 지원하지 않습니다. 이 인터페이스를 구현하거나 호환되는 다른 데이터 계층을 사용하십시오.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_ObjectLayerDoesNotImplementIObjectLayerAsync" xml:space="preserve">
+    <value>개체 계층이 'DevExpress.Xpo.IObjectLayerAsync' 인터페이스를 지원하지 않습니다. '{0}' 클래스에 이 인터페이스를 구현하거나 호환되는 다른 개체 계층을 사용하십시오.</value>
+    <comment>AI</comment>
   </data>
 </root>

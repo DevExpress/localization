@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ChangePasswordByUser" Caption="Alterar Minha Senha" />
+      <Action Id="MyDetails" Caption="Meus Detalhes" />
+      <Action Id="ResetPassword" Caption="Redefinir Senha" ToolTip="Gerar uma nova senha para o usuário selecionado" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters" Caption="Parâmetros de Logon do método de Autenticação Padrão">
+      <OwnMembers>
+        <Member Name="Password" Caption="Senha" />
+        <Member Name="UserName" Caption="Nome do Usuário" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordOnLogonParameters" Caption="Parâmetros para Alterar Senha no primeiro Logon">
+      <OwnMembers>
+        <Member Name="ConfirmPassword" Caption="Confirma a Senha" />
+        <Member Name="NewPassword" Caption="Nova Senha" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordParameters" Caption="Parâmetros para Alterar Senha">
+      <OwnMembers>
+        <Member Name="OldPassword" Caption="Senha anterior" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.EditModelPermission" Caption="Editar Permissões do Modelo">
+      <OwnMembers>
+        <Member Name="Modifier" Caption="Modificador" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ObjectAccessPermission" Caption="Permissões do Objeto Acesso">
+      <OwnMembers>
+        <Member Name="CreateAccess" Caption="Criar Acesso" />
+        <Member Name="DeleteAccess" Caption="Excluir Acesso" />
+        <Member Name="NavigateAccess" Caption="Acesso a Navegação" />
+        <Member Name="ObjectType" Caption="Tipo de Objeto" />
+        <Member Name="ReadAccess" Caption="Acesso Leitura" />
+        <Member Name="WriteAccess" Caption="Acesso Gravação" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ResetPasswordParameters" Caption="Parâmetros para Redefinir Senha">
+      <OwnMembers>
+        <Member Name="Password" Caption="Senha" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ModelAccessModifier" Value="Modificador do Acesso ao Modelo">
+        <LocalizationItem Name="Allow" Value="Permitir" />
+        <LocalizationItem Name="Deny" Value="Negar" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccess" Value="Objeto Acesso">
+        <LocalizationItem Name="AllAccess" Value="AcessoCompleto" />
+        <LocalizationItem Name="ChangeAccess" Value="AlterarAcesso" />
+        <LocalizationItem Name="Create" Value="Criar" />
+        <LocalizationItem Name="Delete" Value="Excluir" />
+        <LocalizationItem Name="Navigate" Value="Navegar" />
+        <LocalizationItem Name="NoAccess" Value="SemAcesso" />
+        <LocalizationItem Name="Read" Value="Leitura" />
+        <LocalizationItem Name="Write" Value="Gravar" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccessModifier" Value="Modificador do Objeto Acesso">
+        <LocalizationItem Name="Allow" Value="Permitir" />
+        <LocalizationItem Name="Deny" Value="Negar" />
+        <LocalizationItem Name="None" Value="Nenhum" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="MyDetails" Caption="Meus Detalhes" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView" Caption="Fazer Log In">
+      <Items>
+        <StaticText Id="LogonText" Text="Bem-vindo! Digite seu nome de usuário e senha abaixo." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ChangePasswordOnLogonParameters_DetailView" Caption="Alterar Senha no primeiro Logon">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="Por razões de segurança, você deve definir a sua própria senha agora. Por favor, digite a nova senha nos dois campos de texto abaixo, e procure não reutilizar uma senha que você usou antes." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ChangePasswordParameters_DetailView" Caption="Alterar Senha">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="Para alterar sua senha, digite a senha antiga e a nova nos campos de texto abaixo." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ObjectAccessPermission_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ObjectAccessPermission" Caption="Permissões do Objeto Acesso" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ResetPasswordParameters_DetailView" Caption="Redefinir Senha">
+      <Items>
+        <StaticText Id="ResetPasswordText" Text="Definir a senha do usuário criará uma nova senha automaticamente e, ao mesmo tempo, desabilitará o login do usuário com a senha antiga. Você deve, então, passar a nova senha para o usuário, para que ele possa continuar a trabalhar com o sistema. Tem certeza de que quer fazer isso?" />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>

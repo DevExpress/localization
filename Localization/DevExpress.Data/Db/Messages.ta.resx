@@ -119,29 +119,66 @@
   </resheader>
   <data name="ConnectionProvider_TypeMappingMissing" xml:space="preserve">
     <value>'{0}'  வகையைத் தரவுத்தள வழங்குநர் செயல்படுத்த இயலவில்லை ஏனெனில் இது உட்படுத்தப்பட்டத் தரவுத்தளங்களோடு பொருத்தப்படவில்லை. மற்றொரு வகையை உபயோகி.</value>
+    <comment>Community:'{0}' வகை அடிப்படையாக உள்ள தரவுத்தளத்தின் வகைகளுடன் பொருத்தப்படாததால், தரவுத்தள வழங்கியால் அதைச் செயலாக்க முடியவில்லை. வேறொரு வகையைப் பயன்படுத்தவும்.</comment>
   </data>
   <data name="ConnectionProvider_UnableToCreateDBObject" xml:space="preserve">
     <value>'{0}' '{1}' உருவாக்க இயலாது. ஆதாரம்: '{2}'.பிழை: {3}</value>
+    <comment>Community:'{0}' '{1}'-ஐ உருவாக்க முடியவில்லை. மேல்நிலை: '{2}'. பிழை: {3}</comment>
   </data>
   <data name="ConnectionProvider_SqlExecutionError" xml:space="preserve">
     <value>'{0}' எக்ஸ்கியூஎல்  '{1}'  அளபுரு விதிவிலக்கு '{2}' உடனான செயல்படுத்தம்   </value>
+    <comment>Community:'{1}' அளவுருக்களுடன் SQL '{0}'-ஐச் செயல்படுத்தும்போது ஏற்பட்ட விதிவிலக்கு '{2}'</comment>
   </data>
   <data name="ConnectionProvider_SchemaCorrectionNeeded" xml:space="preserve">
     <value>திட்டமுறை நிகழ்நிலைப்படுத்தப்பட வேண்டியுள்ளது. உங்கள் கணினி நிர்வாகியைத் தொடர்பு கொள்ளவும். எஸ்க்யூஎல் பனுவல்: {0}</value>
+    <comment>Community:கட்டமைப்பைப் புதுப்பிக்க வேண்டும். உங்கள் கணினி நிர்வாகியைத் தொடர்புகொள்ளவும். SQL உரை: {0}</comment>
   </data>
   <data name="ConnectionProvider_TableNameTooLong" xml:space="preserve">
     <value> '{0}' தரவுத்தள அட்டவணையை உருவாக்க இயலாது. அட்டவணையின் பெயர் மிக நீளமாக உள்ளது (64 உருக்களைத் தாண்டி)</value>
+    <comment>Community:'{0}' தரவுத்தள அட்டவணையை உருவாக்க முடியவில்லை. அட்டவணையின் பெயர் மிக நீளமாக உள்ளது (64 எழுத்துக்குறிகளை மீறுகிறது)</comment>
   </data>
   <data name="ConnectionProvider_ColumnNameTooLong" xml:space="preserve">
     <value>அட்டவணை '{0}' இன் அட்டவணை நெடுவரிசை '{1}' -ஐ உருவாக்க இயலாது. நெடுவரிசையின் பெயர் மிக நீளமாக உள்ளது (64 உருக்களைத் தாண்டி)</value>
+    <comment>Community:'{0}' அட்டவணையின் '{1}' நெடுவரிசையை உருவாக்க முடியவில்லை. நெடுவரிசையின் பெயர் மிக நீளமாக உள்ளது (64 எழுத்துக்குறிகளை மீறுகிறது)</comment>
   </data>
   <data name="ConnectionProvider_AtLeastOneColumnExpected" xml:space="preserve">
     <value>குறைந்தபட்சம் ஒரு நெடுவரிசை எதிர்பார்க்கப்படுகின்றது.</value>
+    <comment>Community:குறைந்தது ஒரு நெடுவரிசையாவது எதிர்பார்க்கப்படுகிறது</comment>
   </data>
   <data name="ConnectionProvider_Locking" xml:space="preserve">
     <value>பொருளை வைத்திருக்க இயலவில்லை. அது மற்றொரு பயன்பாட்டினால் மாற்றியமைக்க அல்லது அழிக்கப்பட்டிருக்கலாம்(ஃபர்ஜிடு) .</value>
+    <comment>Community:பொருளைச் சேமிக்க முடியவில்லை. அது வேறொரு பயன்பாட்டால் மாற்றப்பட்டது அல்லது நீக்கப்பட்டது (முற்றிலும் அகற்றப்பட்டது).</comment>
   </data>
   <data name="ConnectionProvider_UnableToOpenDatabase" xml:space="preserve">
     <value>தரவுத்தளத்தைத் திறக்க இயலாது. இணைப்பு எழுத்துத்தொடர்: '{0}'; பிழை: '{1}'</value>
+    <comment>Community:தரவுத்தளத்தைத் திறக்க முடியவில்லை. இணைப்புச் சரம்: '{0}'; பிழை: '{1}'</comment>
+  </data>
+  <data name="IsExactTypeFunction_ShouldNotBeCalledExplicitly" xml:space="preserve">
+    <value>இந்த முறையை நேரடியாக அழைக்கக் கூடாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_ShouldNotBeCalledExplicitly" xml:space="preserve">
+    <value>இந்த முறையை நேரடியாக அழைக்கக் கூடாது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CommandChannelHelper_CannotDeserializeResponse" xml:space="preserve">
+    <value>Mono இயக்கச்சூழலில் XmlSerializer செயலாக்கத்தின் வரம்புகள் காரணமாக '{0}' செயல்பாட்டின் பதிலை வரிசையாக்கத்திலிருந்து மீட்டமைக்க முடியவில்லை. சிறிய அளவிலான தரவை வரிசையாக்கத்திலிருந்து மீட்டமைக்க வேண்டுமெனில், DevExpress.Xpo.Helpers.CommandChannelHelper.EnableMonoDeserializationFixForSmallAmountsOfData பண்பை 'true' என அமைத்து மீண்டும் முயற்சிக்கவும்.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProviderSql_ParameterValueSizeExceedsMaximumSize" xml:space="preserve">
+    <value>'{1}' அளவுருவை உருவாக்க முடியவில்லை. SQL: {0}. மதிப்பின் நீளம் ({2}), அளவுருவின் அளவை ({3}) மீறுகிறது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_ClassNotFound" xml:space="preserve">
+    <value>'{0}' சார்பு குறிப்பிடப்பட்ட வகையைக் கண்டறிய முடியவில்லை: '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_ParametersMustBeConstants" xml:space="preserve">
+    <value>'{0}' சார்பு, 'typeName' மதிப்புருவாக ஒரு மாறிலி மதிப்பை எதிர்பார்க்கிறது. ஒரு கோவை வழங்கப்பட்டுள்ளது.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_InvalidArgument_TypeName" xml:space="preserve">
+    <value>'{0}' சார்பு, 'typeName' மதிப்புருவாக ஒரு சர மதிப்பை எதிர்பார்க்கிறது. '{1}' வகையைச் சேர்ந்த மதிப்பு வழங்கப்பட்டுள்ளது.</value>
+    <comment>AI</comment>
   </data>
 </root>

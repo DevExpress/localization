@@ -9,11 +9,13 @@ using DevExpress.Internal;
 [assembly:AssemblyTitle("DevExpress.Xpf.Docking")]
 [assembly:AssemblyDescription("DXDocking")]
 [assembly:AssemblyConfiguration("")]
-[assembly:AssemblyCompany(AssemblyInfo.AssemblyCompany)]
+[assembly:AssemblyCompany("Developer Express Inc.")]
 [assembly:AssemblyProduct("DevExpress.Xpf.Docking")]
 [assembly:AssemblyTrademark("DXDocking")]
 [assembly:AssemblyCulture("")]		
 [assembly:CLSCompliant(true)]		
 
+
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+
 [assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]

@@ -119,32 +119,69 @@
   </resheader>
   <data name="ConnectionProvider_UnableToCreateDBObject" xml:space="preserve">
     <value>无法创建 '{0}' '{1}' 父节点:{2} 错误:{3}</value>
+    <comment>Community:无法创建 '{0}' '{1}'。父级：'{2}'。错误：{3}</comment>
   </data>
   <data name="ConnectionProvider_SchemaCorrectionNeeded" xml:space="preserve">
     <value>数据架构需要更新，请联系系统管理源，sql文本：{0}</value>
+    <comment>Community:需要更新结构。请联系系统管理员。SQL 文本：{0}</comment>
   </data>
   <data name="ConnectionProvider_Locking" xml:space="preserve">
     <value>当前对象可能被删除或者修改</value>
+    <comment>Community:无法保存该对象。该对象已被其他应用程序修改或删除（清除）。</comment>
   </data>
   <data name="ConnectionProvider_SqlExecutionError" xml:space="preserve">
     <value>执行Sql '{0}' 使用参数'{1}' 例外 '{2}'</value>
+    <comment>Community:使用参数 '{1}' 执行 SQL '{0}' 时发生异常 '{2}'</comment>
   </data>
   <data name="ConnectionProvider_TypeMappingMissing" xml:space="preserve">
     <value>数据库提供程序不能处理{0}类型，因为其没有映射到一个underlayed数据库，请使用其他类型</value>
+    <comment>Community:数据库提供程序无法处理 '{0}' 类型，因为该类型未映射到底层数据库的类型。请使用其他类型。</comment>
   </data>
   <data name="ConnectionProvider_UnableToOpenDatabase" xml:space="preserve">
     <value>无法打开数据库。连接字符串：“{0}”;错误：'{1}“
 </value>
+    <comment>Community:无法打开数据库。连接字符串：'{0}'；错误：'{1}'</comment>
   </data>
   <data name="ConnectionProvider_TableNameTooLong" xml:space="preserve">
     <value>无法创建数据库表'{0}“。表的名称过长（超过64个字符）
 </value>
+    <comment>Community:无法创建数据库表 '{0}'。表名过长（超过 64 个字符）</comment>
   </data>
   <data name="ConnectionProvider_ColumnNameTooLong" xml:space="preserve">
     <value>无法创建表列“{1}'表'{0}”。列的名称过长（超过64个字符）
 </value>
+    <comment>Community:无法创建表 '{0}' 中的列 '{1}'。列名过长（超过 64 个字符）</comment>
   </data>
   <data name="ConnectionProvider_AtLeastOneColumnExpected" xml:space="preserve">
     <value>至少需要一列</value>
+    <comment>Community:应至少包含一列</comment>
+  </data>
+  <data name="IsExactTypeFunction_ShouldNotBeCalledExplicitly" xml:space="preserve">
+    <value>不应显式调用此方法。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_ShouldNotBeCalledExplicitly" xml:space="preserve">
+    <value>不应显式调用此方法。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CommandChannelHelper_CannotDeserializeResponse" xml:space="preserve">
+    <value>由于 Mono 运行时下的 XmlSerializer 实现存在限制，无法反序列化 '{0}' 操作的响应。如果需要反序列化少量数据，请将 DevExpress.Xpo.Helpers.CommandChannelHelper.EnableMonoDeserializationFixForSmallAmountsOfData 属性设置为 'true'，然后重试。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProviderSql_ParameterValueSizeExceedsMaximumSize" xml:space="preserve">
+    <value>无法创建参数 '{1}'。SQL：{0}。值的长度（{2}）超过参数大小（{3}）。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_ClassNotFound" xml:space="preserve">
+    <value>函数 '{0}' 找不到指定的类型：'{1}'。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_ParametersMustBeConstants" xml:space="preserve">
+    <value>函数 '{0}' 要求 'typeName' 自变量的值为常数。提供的是表达式。</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_InvalidArgument_TypeName" xml:space="preserve">
+    <value>函数 '{0}' 要求 'typeName' 自变量的值为字符串。提供的值的类型为 '{1}'。</value>
+    <comment>AI</comment>
   </data>
 </root>

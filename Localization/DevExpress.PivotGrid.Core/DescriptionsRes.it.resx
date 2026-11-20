@@ -119,41 +119,590 @@
   </resheader>
   <data name="DevExpress.XtraPivotGrid.PivotGridOptionsData.DrillDownMaxRowCount.Description" xml:space="preserve">
     <value>Ottiene o imposta il numero massimo di righe restituite durante l'ottenimento dei dati sottostanti.</value>
+    <comment>Community:Ottiene o imposta il numero massimo di righe restituite quando si recuperano i dati sottostanti.</comment>
   </data>
   <data name="DevExpress.XtraPivotGrid.PivotGridOptionsData.OptimizeSummaryTypeCalculation.Description" xml:space="preserve">
     <value>Ottiene o imposta se utilizzare la conversione del tipo decimale durante il calcolo dei dati in determinati tipi di aggregazione.</value>
+    <comment>Community:Ottiene o imposta se viene utilizzata la conversione al tipo numerico decimale durante il calcolo dei dati con determinati tipi di aggregazione.</comment>
   </data>
   <data name="DevExpress.XtraPivotGrid.PivotGridFieldOptions.OLAPFilterUsingWhereClause.Description" xml:space="preserve">
     <value>Ottiene o imposta se utilizzare la clausola WHERE o subselect in una query MDX, quando si filtrano i campi di filtro in modalità OLAP.</value>
+    <comment>Community:Ottiene o imposta se utilizzare la clausola WHERE o subselect in una query MDX durante il filtraggio in base ai campi filtro in modalità OLAP.</comment>
   </data>
   <data name="DevExpress.XtraPivotGrid.PivotGridFieldOptions.OLAPUseNonEmpty.Description" xml:space="preserve">
     <value>Ottiene o imposta se la funzione NonEmpty deve essere utilizzata nelle query MDX per la misura corrente.</value>
+    <comment>Approved</comment>
   </data>
   <data name="DevExpress.XtraPivotGrid.PivotGridFieldOptions.ShowGroupIntervalName.Description" xml:space="preserve">
     <value>Ottiene o imposta se visualizzare il nome di un intervallo di gruppo nell'intestazione del campo.</value>
+    <comment>Community:Ottiene o imposta se visualizzare il nome di un intervallo di raggruppamento nell'intestazione del campo.</comment>
   </data>
   <data name="DevExpress.XtraPivotGrid.PivotGridFieldOptions.ShowSummaryTypeName.Description" xml:space="preserve">
     <value>Ottiene o imposta se il tipo di riepilogo viene visualizzato all'interno dell'intestazione del campo dati.</value>
+    <comment>Community:Ottiene o imposta se il tipo di aggregazione viene visualizzato nell'intestazione del campo dati.</comment>
   </data>
   <data name="DevExpress.XtraPivotGrid.PivotGridFieldOptions.ShowValues.Description" xml:space="preserve">
     <value>Ottiene o imposta se le celle di dati corrispondenti al campo dati corrente sono visibili.</value>
+    <comment>Community:Ottiene o imposta se le celle dati corrispondenti al campo dati corrente sono visibili.</comment>
   </data>
   <data name="DevExpress.XtraPivotGrid.PivotGridFieldSortBySummaryInfo.CustomTotalSummaryType.Description" xml:space="preserve">
     <value>Ottiene o imposta il tipo di riepilogo della colonna/riga del totale personalizzato, in base al quale vengono ordinati i valori dei campi correnti.</value>
+    <comment>Community:Ottiene o imposta il tipo di aggregazione della colonna/riga del totale personalizzato in base alla quale vengono ordinati i valori del campo corrente.</comment>
   </data>
   <data name="DevExpress.XtraPivotGrid.PivotGridFieldSortBySummaryInfo.SummaryType.Description" xml:space="preserve">
     <value>Ottiene o imposta il tipo di funzione di riepilogo utilizzato per calcolare i valori di riepilogo che definiscono l'ordine in cui sono disposti i valori del campo colonna corrente (campo riga).</value>
+    <comment>Community:Ottiene o imposta il tipo di funzione di aggregazione utilizzata per calcolare i valori aggregati che definiscono l'ordine in cui sono disposti i valori del campo di colonna (campo di riga) corrente.</comment>
   </data>
   <data name="DevExpress.XtraPivotGrid.PivotGridFieldSortCondition.OLAPUniqueMemberName.Description" xml:space="preserve">
     <value>Ottiene o imposta il nome univoco del membro OLAP corrispondente.</value>
+    <comment>Approved</comment>
   </data>
   <data name="DevExpress.XtraPivotGrid.PivotGridFieldSortCondition.Value.Description" xml:space="preserve">
     <value>Ottiene o imposta il valore del campo rappresentato dalla condizione.</value>
+    <comment>Approved</comment>
   </data>
   <data name="DevExpress.XtraPivotGrid.PivotGridOptionsData.AllowCrossGroupVariation.Description" xml:space="preserve">
     <value>Ottiene o imposta se le variazioni di riepilogo e i totali parziali vengono calcolati in modo indipendente all'interno di singoli gruppi o in tutta la griglia pivot.</value>
+    <comment>Community:Ottiene o imposta se le differenze dei riepiloghi e i totali progressivi vengono calcolati indipendentemente all'interno dei singoli gruppi o nell'intera griglia pivot.</comment>
   </data>
   <data name="DevExpress.XtraPivotGrid.PivotGridOptionsData.DataFieldUnboundExpressionMode.Description" xml:space="preserve">
     <value>Ottiene o imposta se le espressioni non associate per i campi dati della griglia pivot vengono calcolate in base ai record dell'origine dati o ai valori di riepilogo.</value>
+    <comment>Community:Ottiene o imposta se le espressioni non associate dei campi dati della griglia pivot vengono calcolate in base ai record dell'origine dati o ai valori di riepilogo.</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.Options.Description" xml:space="preserve">
+    <value>Contiene le opzioni del campo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.PivotGrid.Printing.PrintAppearanceObject.WordWrap.Description" xml:space="preserve">
+    <value>Specifica se il testo deve andare a capo o meno.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.CalculateHiddenSummaries.Description" xml:space="preserve">
+    <value>Consente di calcolare i valori di riepilogo per i campi dati nascosti.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldSortBySummaryInfo.Conditions.Description" xml:space="preserve">
+    <value>Contiene le condizioni che identificano la colonna o la riga i cui valori vengono ordinati.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.SortBySummaryInfo.Description" xml:space="preserve">
+    <value>Contiene le impostazioni utilizzate per ordinare i valori del campo colonna o del campo riga corrente in base ai valori di riepilogo nelle righe/colonne.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.AutoPopulatedProperties.Description" xml:space="preserve">
+    <value>Ottiene o imposta una raccolta di proprietà dei membri OLAP.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.BaseFilter.Criteria.Description" xml:space="preserve">
+    <value>Ottiene o imposta i criteri di filtro applicati ai dati visualizzati nel Pivot Grid.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.KPIGraphic.Description" xml:space="preserve">
+    <value>Ottiene o imposta un insieme di elementi grafici utilizzato per indicare i valori KPI.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.UnboundExpression.Description" xml:space="preserve">
+    <value>Ottiene o imposta un'espressione utilizzata per calcolare il valore del campo non associato.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.OLAPExpression.Description" xml:space="preserve">
+    <value>Ottiene o imposta un'espressione utilizzata per calcolare i valori del campo non associato corrente in OLAP.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.DataBinding.Description" xml:space="preserve">
+    <value>Ottiene o imposta un oggetto che specifica i dati di origine del campo della griglia pivot.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.SummaryDisplayType.Description" xml:space="preserve">
+    <value>Ottiene o imposta la modalità di rappresentazione in una cella di un valore di riepilogo calcolato per il campo dati corrente.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.SortMode.Description" xml:space="preserve">
+    <value>Ottiene o imposta la modalità di ordinamento dei dati del campo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.TopValueType.Description" xml:space="preserve">
+    <value>Ottiene o imposta la modalità di determinazione del numero dei primi valori.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.UnboundExpressionMode.Description" xml:space="preserve">
+    <value>Ottiene o imposta la modalità di calcolo dell'espressione non associata del campo dati specificato.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.GroupInterval.Description" xml:space="preserve">
+    <value>Ottiene o imposta la modalità di raggruppamento dei valori del campo colonna o del campo riga corrente.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.TopValueCount.Description" xml:space="preserve">
+    <value>Ottiene o imposta il numero assoluto o relativo di valori del campo da visualizzare per il campo colonna o il campo riga corrente.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsDataField.Area.Description" xml:space="preserve">
+    <value>Ottiene o imposta l'area in cui vengono visualizzate le intestazioni dei campi dati.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.Area.Description" xml:space="preserve">
+    <value>Ottiene o imposta l'area in cui viene visualizzato il campo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.AllowedAreas.Description" xml:space="preserve">
+    <value>Ottiene o imposta le aree in cui è possibile posizionare il campo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.PivotGrid.Printing.PrintAppearanceObject.BorderWidth.Description" xml:space="preserve">
+    <value>Ottiene o imposta lo spessore del bordo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.ColumnTotalsLocation.Description" xml:space="preserve">
+    <value>Ottiene o imposta la posizione dei totali di colonna.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridCustomTotalBase.Tag.Description" xml:space="preserve">
+    <value>Ottiene o imposta i dati associati al totale personalizzato.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.Tag.Description" xml:space="preserve">
+    <value>Ottiene o imposta i dati associati al campo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsPrint.RowFieldValueSeparator.Description" xml:space="preserve">
+    <value>Ottiene o imposta la distanza tra i valori dei campi riga quando viene stampata la griglia pivot.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsPrint.ColumnFieldValueSeparator.Description" xml:space="preserve">
+    <value>Ottiene o imposta la distanza tra i valori dei campi colonna quando viene stampata la griglia pivot.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsData.DataProcessingEngine.Description" xml:space="preserve">
+    <value>Ottiene o imposta il motore utilizzato per elaborare i dati (aggregazione, riepilogo, ecc.) nella griglia pivot.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.ExpandedInFieldsGroup.Description" xml:space="preserve">
+    <value>Ottiene o imposta lo stato di espansione del campo corrente se appartiene a un gruppo di campi.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldSortBySummaryInfo.FieldName.Description" xml:space="preserve">
+    <value>Ottiene o imposta il nome del campo i cui valori aggregati definiscono l'ordine in cui sono disposti i valori del campo di colonna o di riga corrente.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldSortCondition.Field.Description" xml:space="preserve">
+    <value>Ottiene o imposta il campo a cui corrisponde la condizione.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldSortBySummaryInfo.Field.Description" xml:space="preserve">
+    <value>Ottiene o imposta il campo i cui valori aggregati definiscono l'ordine in cui sono disposti i valori del campo di colonna o di riga corrente.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.UnboundType.Description" xml:space="preserve">
+    <value>Ottiene o imposta il tipo di dati e la modalità di associazione del campo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.Caption.Description" xml:space="preserve">
+    <value>Ottiene o imposta l'etichetta visualizzata del campo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.AreaIndex.Description" xml:space="preserve">
+    <value>Ottiene o imposta l'indice del campo rispetto agli altri campi visualizzati nella stessa area.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.SortOrder.Description" xml:space="preserve">
+    <value>Ottiene o imposta l'ordine di ordinamento del campo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldOptions.GroupFilterMode.Description" xml:space="preserve">
+    <value>Ottiene o imposta la modalità di filtro utilizzata per il gruppo a cui appartiene il campo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsPrint.ColumnHeaderPaddingBottom.Description" xml:space="preserve">
+    <value>Ottiene o imposta lo spazio tra l'area delle intestazioni di colonna e l'area dei dati.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsDataField.ColumnValueLineCount.Description" xml:space="preserve">
+    <value>Ottiene o imposta l'altezza delle intestazioni dei campi dati, in righe di testo. Questa proprietà ha effetto quando sono presenti due o più campi dati e le relative intestazioni vengono visualizzate nell'area delle intestazioni di colonna.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsDataField.RowValueLineCount.Description" xml:space="preserve">
+    <value>Ottiene o imposta l'altezza delle intestazioni dei campi dati, in righe di testo. Questa proprietà ha effetto quando sono presenti due o più campi dati e le relative intestazioni vengono visualizzate nell'area delle intestazioni di riga.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.GroupIntervalNumericRange.Description" xml:space="preserve">
+    <value>Ottiene o imposta l'ampiezza degli intervalli utilizzati per raggruppare i valori.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.MinWidth.Description" xml:space="preserve">
+    <value>Ottiene o imposta la larghezza minima consentita delle colonne corrispondenti al campo corrente.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.UnboundFieldName.Description" xml:space="preserve">
+    <value>Ottiene o imposta il nome di una colonna in un'origine dati di riepilogo che corrisponde al campo non associato corrente.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.FieldName.Description" xml:space="preserve">
+    <value>Ottiene o imposta il nome del campo del database assegnato all'oggetto PivotGridFieldBase corrente.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.DisplayFolder.Description" xml:space="preserve">
+    <value>Ottiene o imposta il nome della cartella che contiene il campo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.SortByAttribute.Description" xml:space="preserve">
+    <value>Ottiene o imposta il nome della proprietà del membro OLAP in base alla quale vengono ordinati i dati della griglia pivot.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsDataField.AreaIndex.Description" xml:space="preserve">
+    <value>Ottiene o imposta la posizione delle intestazioni dei campi dati.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsDataField.FieldNaming.Description" xml:space="preserve">
+    <value>Ottiene o imposta la regola per assegnare i nomi alle colonne corrispondenti ai campi dati quando si crea un'origine dati tramite i metodi CreateSummaryDataSource.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsDataField.Caption.Description" xml:space="preserve">
+    <value>Ottiene o imposta il testo visualizzato nell'intestazione dei dati.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.GrandTotalText.Description" xml:space="preserve">
+    <value>Ottiene o imposta il testo visualizzato nell'intestazione del totale complessivo corrispondente al campo corrente.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.RowTotalsLocation.Description" xml:space="preserve">
+    <value>Ottiene o imposta la posizione dei totali e dei totali complessivi.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.RowTreeOffset.Description" xml:space="preserve">
+    <value>Ottiene o imposta l'offset della struttura ad albero.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridCustomTotalBase.SummaryType.Description" xml:space="preserve">
+    <value>Ottiene o imposta il tipo di funzione di riepilogo utilizzata per calcolare il totale personalizzato corrente.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.SummaryType.Description" xml:space="preserve">
+    <value>Ottiene o imposta il tipo di funzione di riepilogo applicata al campo dati corrente.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsPrint.FilterSeparatorBarPadding.Description" xml:space="preserve">
+    <value>Ottiene o imposta la distanza verticale tra le intestazioni dei campi filtro e la parte principale della griglia pivot stampata.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.Width.Description" xml:space="preserve">
+    <value>Ottiene o imposta la larghezza delle colonne che corrispondono al campo corrente.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsDataField.RowHeaderWidth.Description" xml:space="preserve">
+    <value>Ottiene o imposta la larghezza delle intestazioni dei campi dati quando vengono visualizzate come intestazioni di riga.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.RowTreeWidth.Description" xml:space="preserve">
+    <value>Ottiene o imposta la larghezza dei valori dei campi riga più interni.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldOptions.AllowFilter.Description" xml:space="preserve">
+    <value>Ottiene o imposta se un utente finale può applicare un filtro al campo corrente.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldOptions.AllowRunTimeSummaryChange.Description" xml:space="preserve">
+    <value>Ottiene o imposta se un utente finale può modificare il tipo di aggregazione del campo dati.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldOptions.AllowSort.Description" xml:space="preserve">
+    <value>Ottiene o imposta se un utente finale può modificare l'ordine di ordinamento corrente del campo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldOptions.AllowDrag.Description" xml:space="preserve">
+    <value>Ottiene o imposta se un utente finale può trascinare l'intestazione del campo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldOptions.AllowExpand.Description" xml:space="preserve">
+    <value>Ottiene o imposta se un utente finale può espandere/comprimere le righe o le colonne corrispondenti al campo corrente.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.ShowTotalsForSingleValues.Description" xml:space="preserve">
+    <value>Ottiene o imposta un valore che indica se i subtotali automatici sono visualizzati per i valori di campo che contengono un solo valore di campo annidato.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsPrint.PrintColumnHeaders.Description" xml:space="preserve">
+    <value>Ottiene o imposta se le intestazioni dei campi colonna vengono stampate.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsPrint.PrintColumnFieldValues.Description" xml:space="preserve">
+    <value>Ottiene o imposta se i valori dei campi colonna vengono stampati.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.ShowColumnHeaders.Description" xml:space="preserve">
+    <value>Ottiene o imposta un valore che indica se le intestazioni di colonna sono visualizzate.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.ShowCustomTotalsForSingleValues.Description" xml:space="preserve">
+    <value>Ottiene o imposta un valore che indica se i totali personalizzati sono visualizzati per i valori di campo che contengono un solo valore di campo annidato.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldOptions.ShowCustomTotals.Description" xml:space="preserve">
+    <value>Ottiene o imposta se i totali personalizzati corrispondenti al campo di colonna o di riga corrente sono visibili.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsPrint.PrintDataHeaders.Description" xml:space="preserve">
+    <value>Ottiene o imposta se le intestazioni dei campi dati vengono stampate.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.ShowDataHeaders.Description" xml:space="preserve">
+    <value>Ottiene o imposta un valore che indica se le intestazioni dei dati sono visualizzate.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsData.CaseSensitive.Description" xml:space="preserve">
+    <value>Ottiene o imposta se i dati vengono raggruppati distinguendo tra maiuscole e minuscole.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldOptions.AllowDragInCustomizationForm.Description" xml:space="preserve">
+    <value>Ottiene o imposta se gli utenti finali possono trascinare le intestazioni dei campi tra le aree della finestra di personalizzazione.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldOptions.AllowFilterBySummary.Description" xml:space="preserve">
+    <value>Ottiene o imposta se gli utenti finali possono filtrare i dati della griglia pivot in base ai valori aggregati calcolati per il campo dati corrente.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldOptions.AllowSortBySummary.Description" xml:space="preserve">
+    <value>Ottiene o imposta se gli utenti finali possono ordinare i valori del campo di riga/colonna corrente in base ai valori aggregati di altre colonne/righe.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsData.AutoExpandGroups.Description" xml:space="preserve">
+    <value>Ottiene o imposta se i valori dei campi sono espansi o compressi per impostazione predefinita.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.ShowNewValues.Description" xml:space="preserve">
+    <value>Ottiene o imposta se devono essere visualizzati i valori del campo aggiunti all'origine dati dopo la configurazione del filtro del campo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsPrint.PrintFilterHeaders.Description" xml:space="preserve">
+    <value>Ottiene o imposta se le intestazioni dei campi filtro vengono stampate.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.ShowFilterHeaders.Description" xml:space="preserve">
+    <value>Ottiene o imposta un valore che indica se le intestazioni dei filtri sono visualizzate.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.ShowGrandTotalsForSingleValues.Description" xml:space="preserve">
+    <value>Ottiene o imposta un valore che indica se i totali complessivi sono visualizzati quando il controllo elenca un solo valore di un campo colonna esterno o di un campo riga esterno lungo il bordo sinistro o superiore.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldOptions.ShowGrandTotal.Description" xml:space="preserve">
+    <value>Ottiene o imposta se i totali complessivi corrispondenti al campo dati corrente sono visibili.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.GroupFieldsInCustomizationWindow.Description" xml:space="preserve">
+    <value>Ottiene o imposta un valore che indica se i campi nascosti sono raggruppati nel modulo di personalizzazione.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.ShowHorzLines.Description" xml:space="preserve">
+    <value>Ottiene o imposta un valore che indica se le linee orizzontali della griglia sono visualizzate.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsPrint.PrintHorzLines.Description" xml:space="preserve">
+    <value>Ottiene o imposta se le linee orizzontali della griglia vengono stampate.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldOptions.OLAPFilterByUniqueName.Description" xml:space="preserve">
+    <value>Ottiene o imposta se PivotGridControl deve tenere conto dei valori dei membri OLAP o dei nomi univoci durante il filtraggio dei dati in modalità OLAP.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsPrint.PrintRowHeaders.Description" xml:space="preserve">
+    <value>Ottiene o imposta se le intestazioni dei campi riga vengono stampate.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsPrint.PrintRowFieldValues.Description" xml:space="preserve">
+    <value>Ottiene o imposta se i valori dei campi riga vengono stampati.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.ShowRowHeaders.Description" xml:space="preserve">
+    <value>Ottiene o imposta un valore che indica se le intestazioni di riga sono visualizzate.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.RunningTotal.Description" xml:space="preserve">
+    <value>Ottiene o imposta se vengono calcolati i totali progressivi per i valori nell'area dati corrispondenti al campo colonna o al campo riga corrente.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.TopValueShowOthers.Description" xml:space="preserve">
+    <value>Ottiene o imposta se l'elemento “Altri” viene visualizzato nella griglia pivot quando è attivata la funzionalità Primi X valori.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsData.DirectDataAccessInClientMode.Description" xml:space="preserve">
+    <value>Ottiene o imposta se il motore di calcolo evita la creazione di un archivio temporaneo per i dati di origine.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldOptions.ShowInExpressionEditor.Description" xml:space="preserve">
+    <value>Ottiene o imposta se il campo corrente è disponibile nell'elenco campi dell'editor di espressioni.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.Visible.Description" xml:space="preserve">
+    <value>Ottiene o imposta la visibilità del campo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldOptions.ShowInCustomizationForm.Description" xml:space="preserve">
+    <value>Ottiene o imposta se l'intestazione del campo viene visualizzata nella finestra di personalizzazione quando il campo è nascosto.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldOptions.HideEmptyVariationItems.Description" xml:space="preserve">
+    <value>Ottiene o imposta se deve essere nascosta la prima colonna/riga (vuota) che visualizza i dati di variazione per il campo dati corrente.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.ShowColumnGrandTotalHeader.Description" xml:space="preserve">
+    <value>Ottiene o imposta un valore che indica se l'intestazione della colonna Totale complessivo è visibile quando sono presenti due o più campi dati.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.ShowRowGrandTotalHeader.Description" xml:space="preserve">
+    <value>Ottiene o imposta un valore che indica se l'intestazione della riga Totale complessivo è visibile quando sono presenti due o più campi dati.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.ShowFilterSeparatorBar.Description" xml:space="preserve">
+    <value>Ottiene o imposta un valore che indica se la linea orizzontale che separa l'area delle intestazioni dei filtri dall'area dei dati e dall'area delle intestazioni di colonna è visualizzata.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsPrint.MergeColumnFieldValues.Description" xml:space="preserve">
+    <value>Ottiene o imposta se i valori dei campi colonna esterni vengono uniti quando viene stampata una griglia pivot.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsPrint.MergeRowFieldValues.Description" xml:space="preserve">
+    <value>Ottiene o imposta se i valori dei campi riga esterni vengono uniti quando viene stampata una griglia pivot.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsData.RetrieveNestedFields.Description" xml:space="preserve">
+    <value>Ottiene o imposta se vengono aggiunti i campi annidati quando si recuperano i campi dall'origine dati associata.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.BaseFilter.Enabled.Description" xml:space="preserve">
+    <value>Ottiene o imposta se applicare i criteri di filtro specificati tramite BaseFilter.Criteria o BaseFilter.CriteriaString.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.ShowColumnTotals.Description" xml:space="preserve">
+    <value>Ottiene o imposta un valore che indica se visualizzare i subtotali automatici di colonna.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.ShowColumnGrandTotals.Description" xml:space="preserve">
+    <value>Ottiene o imposta un valore che indica se visualizzare i totali complessivi di colonna.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.ShowRowTotals.Description" xml:space="preserve">
+    <value>Ottiene o imposta un valore che indica se visualizzare i subtotali automatici di riga.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.ShowRowGrandTotals.Description" xml:space="preserve">
+    <value>Ottiene o imposta un valore che indica se visualizzare i totali complessivi di riga.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.TotalsVisibility.Description" xml:space="preserve">
+    <value>Ottiene o imposta se visualizzare i subtotali del campo corrente quando si trova nell'area delle intestazioni di colonna o nell'area delle intestazioni di riga e, in caso affermativo, se sono automatici o personalizzati.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsPrint.PrintColumnAreaOnEveryPage.Description" xml:space="preserve">
+    <value>Ottiene o imposta se l'area delle colonne viene stampata su ogni pagina.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsPrint.PrintRowAreaOnEveryPage.Description" xml:space="preserve">
+    <value>Ottiene o imposta se l'area delle righe viene stampata su ogni pagina.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsData.FilterByVisibleFieldsOnly.Description" xml:space="preserve">
+    <value>Ottiene o imposta se vengono considerate solo le condizioni di filtro dei campi filtro visibili.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.UseNativeFormat.Description" xml:space="preserve">
+    <value>Ottiene o imposta se utilizzare il formato dati del campo corrente quando il controllo Pivot Grid viene esportato nei formati XLS/XLSX.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.TopValueMode.Description" xml:space="preserve">
+    <value>Ottiene o imposta se i primi n valori di un campo dati specificato vengono calcolati in base a tutti i record dell'origine dati o nell'ambito della categoria padre.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldOptions.ShowTotals.Description" xml:space="preserve">
+    <value>Ottiene o imposta se i totali corrispondenti al campo dati corrente sono visibili.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsPrint.PrintUnusedFilterFields.Description" xml:space="preserve">
+    <value>Ottiene o imposta se i campi filtro non utilizzati vengono stampati/esportati.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.ShowVertLines.Description" xml:space="preserve">
+    <value>Ottiene o imposta un valore che indica se le linee verticali della griglia sono visualizzate.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsPrint.PrintVertLines.Description" xml:space="preserve">
+    <value>Ottiene o imposta se le linee verticali della griglia vengono stampate.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.EmptyCellText.Description" xml:space="preserve">
+    <value>Ottiene il testo visualizzato in una cella vuota.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.EmptyValueText.Description" xml:space="preserve">
+    <value>Ottiene il testo utilizzato per l'intestazione di un valore di campo vuoto.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.PivotGrid.Printing.PrintAppearanceObject.TextVerticalAlignment.Description" xml:space="preserve">
+    <value>Ottiene l'allineamento verticale del testo dell'oggetto che definisce l'aspetto.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.ColumnValueLineCount.Description" xml:space="preserve">
+    <value>Se il campo corrente è visualizzato nell'area delle intestazioni di colonna, questa proprietà ottiene o imposta l'altezza dei valori del campo, espressa in righe di testo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.RowValueLineCount.Description" xml:space="preserve">
+    <value>Se il campo corrente è visualizzato nell'area delle intestazioni di riga, questa proprietà ottiene o imposta l'altezza dei valori del campo, espressa in righe di testo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.CellFormat.Description" xml:space="preserve">
+    <value>Fornisce accesso alle impostazioni di formattazione applicate alle celle.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.ValueFormat.Description" xml:space="preserve">
+    <value>Fornisce accesso alle impostazioni di formattazione applicate ai valori del campo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.GrandTotalCellFormat.Description" xml:space="preserve">
+    <value>Fornisce accesso alle impostazioni di formattazione applicate ai valori dei totali complessivi.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.TotalValueFormat.Description" xml:space="preserve">
+    <value>Fornisce accesso alle impostazioni di formattazione applicate all'intestazione del subtotale.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.TotalCellFormat.Description" xml:space="preserve">
+    <value>Fornisce accesso alle impostazioni di formattazione applicate alle celle dei subtotali.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridCustomTotalBase.CellFormat.Description" xml:space="preserve">
+    <value>Fornisce le impostazioni utilizzate per formattare i valori del totale personalizzato.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridCustomTotalBase.Format.Description" xml:space="preserve">
+    <value>Fornisce le impostazioni utilizzate per formattare il testo nelle intestazioni del totale personalizzato.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.PivotGrid.Printing.PrintAppearanceObject.BackColor.Description" xml:space="preserve">
+    <value>Specifica il colore di sfondo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.PivotGrid.Printing.PrintAppearanceObject.BorderColor.Description" xml:space="preserve">
+    <value>Specifica il colore del bordo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.PivotGrid.Printing.PrintAppearanceObject.Font.Description" xml:space="preserve">
+    <value>Specifica il tipo di carattere utilizzato per visualizzare il testo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.PivotGrid.Printing.PrintAppearanceObject.ForeColor.Description" xml:space="preserve">
+    <value>Specifica il colore di primo piano.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.PivotGrid.Printing.PrintAppearanceObject.TextHorizontalAlignment.Description" xml:space="preserve">
+    <value>Specifica l'allineamento orizzontale del testo dell'oggetto che definisce l'aspetto.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridFieldBase.OLAPDimensionCaption.Description" xml:space="preserve">
+    <value>Specifica l'etichetta della dimensione OLAP visualizzata nell'elenco dei campi della finestra di personalizzazione.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DevExpress.XtraPivotGrid.PivotGridOptionsData.DateTimeOffsetProcessingMode.Description" xml:space="preserve">
+    <value>Ottiene o imposta la modalità utilizzata per elaborare i valori di data e ora con scostamento rispetto a UTC.</value>
+    <comment>AI</comment>
   </data>
 </root>

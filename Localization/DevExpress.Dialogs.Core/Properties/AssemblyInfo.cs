@@ -13,4 +13,5 @@ using DevExpress.Internal;
 
 [assembly: ComVisible(false)]
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+
 [assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]

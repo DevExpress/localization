@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application ProtectedContentText="Geschützter Inhalt">
+  <ActionDesign>
+    <Actions>
+      <Action Id="MergeAction" Caption="Zusammenführen" ShortCaption="Zusammenführen" ToolTip="Zusammenführen" />
+      <Action Id="CancelAction" Caption="Abbrechen" ToolTip="Abbrechen" ShortCaption="Abbrechen" />
+      <Action Id="RefreshAction" Caption="Aktualisieren" ToolTip="Aktualisieren" ShortCaption="Aktualisieren" />
+      <Action Id="CreateModelDifferences" Caption="Modelldifferenzen erzeugen" ToolTip="Initialisiert Einstellungen (Modeldifferenzen) für alle Benutzer." />
+      <Action Id="CopyModelDifference" Caption="Modelldifferenz kopieren" ToolTip="Kopiert Einstellungen (Modelldifferenzen) von einem Benutzer zu einem anderen. Wählen Sie die Quelleinstellungen (Modelldifferenzen) aus, klicken Sie diesen Schalter und wählen Sie Ziele in dem Dialog aus. Änderungen werden aktiviert, wenn ein Benutzer die Anwendung neu startet." />
+      <Action Id="ExportModelDifferences" Caption="Modelldifferenzen exportieren" ToolTip="Exportiert ausgewählte Einstellungen (Modeldifferenzen) in den Ordner {0}." />
+      <Action Id="ImportSharedModelDifference" Caption="Gemeinsame Modelldifferenzen importieren" ConfirmationMessage="Gemeinsame Einstellungen (Modelldifferenzen) werden mit dem Inhalt der Datei {0} überschrieben. Dies kann nicht rückgängig gemacht werden. Möchten Sie fortfahren?" ToolTip="Importiert gemeinsame Einstellungen (Modelldifferenzen) aus der Datei {0} im Anwendungsverzeichnis." />      
+      <Action Id="ResetModelDifferences" Caption="Modelldifferenzen zurücksetzen" ToolTip="Setzt ausgewählte Einstellungen (Modelldifferenzen) zurück. Änderungen werden angewandt, wenn ein Benutzer die Anwendung neu startet." ConfirmationMessage="Ausgewählte Einstellungen (Modelldifferenzen) werden zurückgesetzt. Möchten Sie fortfahren?" />
+      <Action Id="ResetViewSettings" Caption="Ansichtseinstellungen zurücksetzen" ToolTip="Setzt alle Einstellungen für die Ansicht '{0}' zurück." ConfirmationMessage="Alle Einstellungen für die Ansicht '{0}' werden zurückgesetzt. Möchten Sie fortfahren?" />
+      
+      <Action Id="About Info" Caption="Über..." />
+      <Action Id="Cancel" Caption="Abbrechen" />
+      <Action Id="CreateDashboard" Caption="Erzeuge Übersicht" />
+      <Action Id="Delete" Caption="Löschen" ConfirmationMessage="Sie sind im Begriff die selektierten Datensätze zu löschen. Möchten Sie fortfahren?" />
+      <Action Id="Delete Item" Caption="Datensatz löschen" ConfirmationMessage="Sie sind im Begriff die selektierten Datensätze zu löschen. Möchten Sie fortsetzen?" />
+      <Action Id="Diagnostic Info" Caption="Diagnose" />
+      <Action Id="Diagnostic Info.Actions Info">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Actions Info" Caption="Aktions Info" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="Diagnostic Info.View Info">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="View Info" Caption="Ansicht Info" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="DialogCancel" Caption="Abbrechen" />
+      <Action Id="DialogClose" Caption="Schließen" ToolTip="Schließen" ShortCaption="Schließen"/>
+      <Action Id="FullTextSearch" NullValuePrompt="Suchtext..." Caption="Filtern nach Text" ToolTip="Datensätze filtern nach Text" ShortCaption="Ausführen!" />
+      <Action Id="HideItemsFromDashboard" Caption="Aus Übersicht ausblenden" ToolTip="Ausgewählten Artikel aus Übersicht ausblenden" />
+      <Action Id="Link" Caption="Verbinden" />
+      <Action Id="ListViewShowObject" Caption="Öffnen" />
+      <Action Id="Logoff" Caption="Abmelden" />
+      <Action Id="Logon" Caption="Anmelden" />
+      <Action Id="NavigateBack" ToolTip="Navigieren zur vorherigen Ansicht" Caption="Zurück" />
+      <Action Id="NavigateForward" ToolTip="Navigieren zur nächsten Ansicht" Caption="Vorwärts" />
+      <Action Id="New" Caption="Neu">
+        <DisableReasons>
+          <Reason Id="MasterObjectIsNew" Caption="Der editierte Datensatz ist neu." />
+        </DisableReasons>
+      </Action>
+      <Action Id="NextObject" Caption="Nächster Datensatz" />
+      <Action Id="OrganizeDashboard" Caption="Organisiere Übersicht" />
+      <Action Id="DeleteDashboard" Caption="Dashboard löschen" />
+      <Action Id="PreviousObject" Caption="Vorheriger Datensatz" />
+      <Action Id="Refresh" Caption="Aktualisieren" />
+      <Action Id="Save" Caption="Speichern" />
+      <Action Id="SaveAndClose" Caption="Speichern und Schließen" />
+      <Action Id="SaveAndNew" Caption="Speichern und Neu" />
+      <Action Id="SetFilter" Caption="Filtern" />
+      <Action Id="ShowItemsOnDashboard" Caption="Zeige in Übersicht" ToolTip="Zeige ausgewählten Artikel in Übersicht" />
+      <Action Id="Unlink" Caption="Trennen" ConfirmationMessage="Sie sind im Begriff die selektierten Datensätze zu trennen. Möchten Sie fortfahren?" />
+    </Actions>
+    <DisableReasons>
+      <Reason Id="ByContext_RequireMultipleObjects" Caption="Benötigt mindestens einen selektierten Datensatz" />
+      <Reason Id="ByContext_RequireSingleObject" Caption="Benötigt einen einzelnen selektierten Datensatz" />
+      <Reason Id="Security" Caption="Berechtigung verweigert" />
+    </DisableReasons>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ModelDifferenceCopyParameters" Caption="Modelldifferenzen kopieren">
+      <OwnMembers>
+        <Member Name="ObjectSpace" Caption="ObjectSpace" />
+        <Member Name="CopyBehavior" Caption="Kopierverhalten" />
+        <Member Name="SourceModelDifference" Caption="Zu kopierende Modelldifferenz" />
+        <Member Name="TargetModelDifferences" Caption="Ziele für die Kopie" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Editors.CriteriaProvider" Caption="Kriteriumanbieter">
+      <OwnMembers>
+        <Member Name="FilteredObjectsType" Caption="Gefilterter Datensatztyp" />
+        <Member Name="FilterString" Caption="Filtertext" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.AboutInfo" Caption="Info über">
+      <OwnMembers>
+        <Member Name="Company" Caption="Firma" />
+        <Member Name="Copyright" Caption="Urheberrecht" />
+        <Member Name="Description" Caption="Beschreibung" />
+        <Member Name="LogoImageName" Caption="Logo Bildname" />
+        <Member Name="ProductName" Caption="Produktname" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ActionContainerDashboardOrganizationItem" Caption="Aktion Container">
+      <OwnMembers>
+        <Member Name="ActionContainer" Caption="Aktion Container" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ActionContainerDescriptor" Caption="Aktion Container Beschreiber">
+      <OwnMembers>
+        <Member Name="ActionContainerId" Caption="Aktion Container Id" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardCreationInfo" Caption="Übersicht Erstellungs Assistent">
+      <OwnMembers>
+        <Member Name="DashboardOrganizer" Caption="Ansicht Artikel" />
+        <Member Name="NavigationGroupName" Caption="Ziel Navigationsgruppe " />
+        <Member Name="ViewItems" Caption="Ansichtselemente" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardOrganizationItem" Caption="Übersicht Organisation Artikel">
+      <OwnMembers>
+        <Member Name="Item" Caption="Artikel" />
+        <Member Name="Visible" Caption="Sichtbar" />
+        <Member Name="Visibility" Caption="Sichtbarkeit" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardOrganizer" Caption="Übersicht Organisieren">
+      <OwnMembers>
+        <Member Name="ViewItems" Caption="Ansicht Artikel" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardViewItemDescriptor" Caption="Übersicht Ansicht Artikel Beschreiber">
+      <OwnMembers>
+        <Member Name="ViewCaption" Caption="Ansicht Beschriftung" />
+        <Member Name="ViewDescription" Caption="Ansicht Beschreibung" />
+        <Member Name="ViewId" Caption="Ansicht Id" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DiagnosticInfoObject" Caption="Diagnose Info Datensatz">
+      <OwnMembers>
+        <Member Name="AsText" Caption="Als Text" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.StaticImageDashboardOrganizationItem" Caption="Statisches Bild">
+      <OwnMembers>
+        <Member Name="ImageName" Caption="Bild Name" />
+        <Member Name="Preview" Caption="Vorschau" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.StaticTextDashboardOrganizationItem" Caption="Statischer Text" />
+    <Class Name="DevExpress.ExpressApp.SystemModule.ViewDashboardOrganizationItem" Caption="Ansicht">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Kriterien" />
+        <Member Name="ObjectType" Caption="Objekt Typ" />
+        <Member Name="ViewDescriptor" Caption="Ansicht" />
+        <Member Name="ActionsToolbarVisibility" Caption="Aktionen Toolbar Sichtbarkeit" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Updating.ModuleInfo" Caption="Modul Info" />
+    <Class Name="DevExpress.Xpo.PersistentBase" Caption="Beständige Basis" />
+    <Class Name="DevExpress.Xpo.XPBaseObject" Caption="XPBasis Objekt" />
+    <Class Name="DevExpress.Xpo.XPCustomObject" Caption="XPBenutzerdefiniertes Objekt" />
+    <Class Name="DevExpress.Xpo.XPObject" Caption="XPObjekt" />
+    <Class Name="DevExpress.Xpo.XPObjectType" Caption="XPObjekt Typ" />
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardName" Caption="Wählen Sie Dashboards zum löschen aus" />
+    <Class Name="DevExpress.ExpressApp.SystemModule.ProcessDataLockingInfoDialogObject" Caption="Warnung"/>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Captions">
+      <LocalizationItem Name="DiagnosticChildWindowAddition" Value="(Unterfenster)" />
+      <LocalizationItem Name="DashboardView" Value="DashboardAnsicht" />
+      <LocalizationItem Name="DetailView" Value="DetailAnsicht" />
+      <LocalizationItem Name="EditCriteria" Value="Kriterien bearbeiten" />
+      <LocalizationItem Name="ListView" Value="ListenAnsicht" />
+      <LocalizationItem Name="View" Value="Ansicht" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="DashboardOrganizationItems">
+      <LocalizationItem Name="ActionContainer" Value="AktionContainer" />
+      <LocalizationItem Name="StaticImage" Value="Bild  " />
+    </LocalizationGroup>
+    <LocalizationGroup Name="DialogButtons">
+      <LocalizationItem Name="Abort" Value="&amp;Abbrechen" />
+      <LocalizationItem Name="Add" Value="Hinzufügen" />
+      <LocalizationItem Name="Apply" Value="Anwenden" />
+      <LocalizationItem Name="Back" Value="&lt; Zurück" />
+      <LocalizationItem Name="Cancel" Value="&amp;Abbrechen" />
+      <LocalizationItem Name="Clear" Value="L&amp;eeren" />
+      <LocalizationItem Name="Close" Value="Schließen" />
+      <LocalizationItem Name="Find" Value="Suche" />
+      <LocalizationItem Name="Ignore" Value="&amp;Ignorieren" />
+      <LocalizationItem Name="Next" Value="Vorwärts &gt;" />
+      <LocalizationItem Name="No" Value="&amp;Nein" />
+      <LocalizationItem Name="OK" Value="&amp;OK" />
+      <LocalizationItem Name="Remove" Value="Entfernen" />
+      <LocalizationItem Name="Retry" Value="&amp;Wiederholen" />
+      <LocalizationItem Name="Yes" Value="&amp;Ja" />
+      <LocalizationItem Name="Delete" Value="Löschen" />
+      <LocalizationItem Name="Edit" Value="Editieren" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.ModelDifferenceCopyBehavior" Value="Kopierverhalten">
+        <LocalizationItem Name="Merge" Value="Zusammenführen" />
+        <LocalizationItem Name="Overwrite" Value="Überschreiben" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Editors.ViewItemVisibility" Value="Sichtbarkeit des Ansichtselements">
+        <LocalizationItem Name="Hide" Value="Verstecken" />
+        <LocalizationItem Name="Show" Value="Anzeigen" />
+        <LocalizationItem Name="ShowEmptySpace" Value="Leeren Bereich anzeigen" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Templates.ActionsToolbarVisibility" Value="Sichtbarkeit der Toolbar 'Aktionen'">
+        <LocalizationItem Name="Default" Value="Standard" />
+        <LocalizationItem Name="Hide" Value="Verstecken" />
+        <LocalizationItem Name="Show" Value="Anzeigen" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.SystemModule.DashboardItemVisibility" Value="Sichtbare Übersicht Artikel">
+        <LocalizationItem Name="Hidden" Value="Versteckt" />
+        <LocalizationItem Name="Visible" Value="Sichtbar" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Messages">
+      <LocalizationItem Name="User" Value="Benutzer: {0}" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Texts">
+      <LocalizationItem Name="Error" Value="Fehler" />
+      <LocalizationItem Name="NullValueText" Value="k.A." />
+      <LocalizationItem Name="Warning" Value="Warnung" />
+      <LocalizationItem Name="SharedModelDifferenceName" Value="Gemeinsame Modelldifferenz" />
+      <LocalizationItem Name="DefaultAspectText" Value="(Standardsprache)" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="NotificationsPostponeTimesList" >
+      <LocalizationItem Name="None" Value="Keine" />
+      <LocalizationItem Name="AtStartTime" Value="0 Minuten" />
+      <LocalizationItem Name="FiveMinutes" Value="5 Minuten" />
+      <LocalizationItem Name="TenMinutes" Value="10 Minuten" />
+      <LocalizationItem Name="FifteenMinutes" Value="15 Minuten" />
+      <LocalizationItem Name="ThirtyMinutes" Value="30 Minuten" />
+      <LocalizationItem Name="OneHour" Value="1 Stunde" />
+      <LocalizationItem Name="TwoHours" Value="2 Stunden" />
+      <LocalizationItem Name="ThreeHours" Value="3 Stunden" />
+      <LocalizationItem Name="FourHours" Value="4 Stunden" />
+      <LocalizationItem Name="FiveHours" Value="5 Stunden" />
+      <LocalizationItem Name="SixHours" Value="6 Stunden"  />
+      <LocalizationItem Name="SevenHours" Value="7 Stunden"  />
+      <LocalizationItem Name="EightHours" Value="8 Stunden" />
+      <LocalizationItem Name="NineHours" Value="9 Stunden" />
+      <LocalizationItem Name="TenHours" Value="10 Stunden" />
+      <LocalizationItem Name="ElevenHours" Value="11 Stunden" />
+      <LocalizationItem Name="HalfDay" Value="0,5 Tage"  />
+      <LocalizationItem Name="OneDay" Value="1 Tag" />
+      <LocalizationItem Name="TwoDays" Value="2 Tage" />
+      <LocalizationItem Name="ThreeDays" Value="3 Tage" />
+      <LocalizationItem Name="FourDays" Value="4 Tage"  />
+      <LocalizationItem Name="OneWeek" Value="1 Woche" />
+      <LocalizationItem Name="TwoWeeks" Value="2 Wochen" />
+    </LocalizationGroup>
+  </Localization>
+  <Views>
+    <DetailView Id="AboutInfo_DetailView" Caption="Über" />
+    <DetailView Id="ProcessDataLockingInfoMergeDialog_DetailView" Caption="Warnung">
+      <Items>
+        <StaticText Id="Message" Text="Die Daten, die Sie speichern möchten, sind von einem anderen Benutzer geändert worden. Sie können entweder die Änderungen zusammenführen, Ihre Änderungen verwerfen und die Daten lokal aktualisieren oder die Speicheroperation abbrechen." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ProcessDataLockingInfoRefreshDialog_DetailView" Caption="Warnung">
+      <Items>
+        <StaticText Id="Message" Text="Die Daten, die Sie speichern möchten, sind von einem anderen Benutzer geändert worden. Sie können entweder Ihre Änderungen verwerfen und die Daten lokal aktualisieren oder die Speicheroperation abbrechen." />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>

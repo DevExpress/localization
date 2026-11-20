@@ -1,32 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net462;net8.0</TargetFrameworks>
-    <EnableWindowsTargeting>true</EnableWindowsTargeting>
-    <AssemblyName>DevExpress.Spreadsheet.v26.1.Core</AssemblyName>
+    <TargetFrameworks>net462;net10.0</TargetFrameworks>
+    <AssemblyName>DevExpress.Spreadsheet.v26.2.Core</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>true</DelaySign>
+    <AssemblyOriginatorKeyFile>..\DevExpress.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>DevExpress.XtraSpreadsheet</RootNamespace>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\$(TargetFramework)\</IntermediateOutputPath>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(TargetFramework)' == 'net462'">
     <OutputPath>..\DevExpress.Dll\Framework\</OutputPath>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0'">
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net10.0'">
     <OutputPath>..\DevExpress.Dll\NETCore\</OutputPath>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Include="..\AssemblyVersion.cs">
-      <Link>AssemblyVersion.cs</Link>
-    </Compile>
-    <Compile Include="AssemblyInfo.cs" />
-    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
-  </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="LocalizationCellErrorNamesRes.ar.resx" />
     <EmbeddedResource Include="LocalizationCellErrorNamesRes.bg.resx" />
@@ -314,9 +306,36 @@
     <EmbeddedResource Include="LocalizationCellErrorNamesRes.uz-Cyrl-UZ.resx" />
     <EmbeddedResource Include="LocalizationCellErrorNamesRes.uz-Latn-UZ.resx" />
     <EmbeddedResource Include="LocalizationCellErrorNamesRes.ky.resx" />
+    <EmbeddedResource Include="LocalizationFunctionArgumentsDescriptionsRes.zh-CN.resx" />
+    <EmbeddedResource Include="LocalizationFunctionArgumentsNamesRes.zh-CN.resx" />
+    <EmbeddedResource Include="LocalizationFunctionDescriptionsRes.zh-CN.resx" />
+    <EmbeddedResource Include="LocalizationFunctionArgumentsDescriptionsRes.ca.resx" />
+    <EmbeddedResource Include="LocalizationFunctionArgumentsNamesRes.ca.resx" />
+    <EmbeddedResource Include="LocalizationFunctionDescriptionsRes.ca.resx" />
+    <EmbeddedResource Include="LocalizationFunctionArgumentsDescriptionsRes.de-CH.resx" />
+    <EmbeddedResource Include="LocalizationFunctionArgumentsNamesRes.de-CH.resx" />
+    <EmbeddedResource Include="LocalizationFunctionDescriptionsRes.de-CH.resx" />
+    <EmbeddedResource Include="LocalizationCellErrorNamesRes.hi.resx" />
+    <EmbeddedResource Include="LocalizationFunctionNamesRes.hi.resx" />
+    <EmbeddedResource Include="LocalizationRes.hi.resx" />
+    <EmbeddedResource Include="LocalizationFunctionArgumentsDescriptionsRes.ta.resx" />
+    <EmbeddedResource Include="LocalizationFunctionArgumentsNamesRes.ta.resx" />
+    <EmbeddedResource Include="LocalizationFunctionDescriptionsRes.ta.resx" />
+    <EmbeddedResource Include="LocalizationFunctionArgumentsDescriptionsRes.es-MX.resx" />
+    <EmbeddedResource Include="LocalizationFunctionArgumentsNamesRes.es-MX.resx" />
+    <EmbeddedResource Include="LocalizationFunctionDescriptionsRes.es-MX.resx" />
+    <EmbeddedResource Include="LocalizationFunctionNamesRes.es-MX.resx" />
+    <EmbeddedResource Include="LocalizationRes.es-MX.resx" />
+    <EmbeddedResource Include="LocalizationFunctionArgumentsDescriptionsRes.af.resx" />
+    <EmbeddedResource Include="LocalizationFunctionArgumentsNamesRes.af.resx" />
+    <EmbeddedResource Include="LocalizationFunctionDescriptionsRes.af.resx" />
+    <EmbeddedResource Include="LocalizationFunctionNamesRes.af.resx" />
+    <EmbeddedResource Include="LocalizationRes.af.resx" />
   </ItemGroup>
-
   <ItemGroup>
-    <Folder Include="Properties\" />
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
   </ItemGroup>
 </Project>

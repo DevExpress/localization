@@ -1,0 +1,939 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ShowAllContexts" Caption="Valider" ToolTip="Valider merkede objekter i alle sammenhenger" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ContextValidationResult" Caption="Resultat kontekst validering">
+      <OwnMembers>
+		<Member Name="Id" Caption="ID" />
+        <Member Name="BrokenRules" Caption="Brutte regler" />
+        <Member Name="Context" Caption="Kontekst" />
+        <Member Name="DisplayableValidationResultItems" Caption="Visbare valideringselementer" />
+        <Member Name="State" Caption="Tilstand" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.DisplayableValidationResultItem" Caption="Valideringsdetaljer">
+      <OwnMembers>
+        <Member Name="ContextCaption" Caption="Kontekst-tittel" />
+        <Member Name="ContextId" Caption="Kontekst id" />
+        <Member Name="ErrorMessage" Caption="Feilmelding" />
+        <Member Name="Rule" Caption="Regel" />
+        <Member Name="RuleName" Caption="Navn på regel" />
+        <Member Name="RuleProperties" Caption="Regel-egenskaper" />
+        <Member Name="State" Caption="Tilstand" />
+        <Member Name="TargetCaption" Caption="Mål" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ValidationResults" Caption="Valideringsresultat">
+      <OwnMembers>
+        <Member Name="DisplayableValidationResultItems" Caption="Visbare valideringselementer" />
+        <Member Name="HighlightErrors" Caption="Markere feil" />
+        <Member Name="Results" Caption="Resultater" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleBaseProperties" Caption="IRule Base egenskaper">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Egendefinert meldingsmal" />
+        <Member Name="Id" Caption="ID" />
+        <Member Name="InvertResult" Caption="Inverter resultatet" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Meldingsmal Hopp over null eller tomme verdier" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Meldingsmal Mål tilfresstiller ikke mål-vilkårene" />
+        <Member Name="Name" Caption="navn" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Hopp over null eller tomme verdier" />
+        <Member Name="TargetContextIDs" Caption="Målets kontekst id'er" />
+        <Member Name="TargetCriteria" Caption="Mål-vilkår" />
+        <Member Name="TargetType" Caption="Mål-type" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCollectionPropertyProperties" Caption="Egenskaper for IRule samlings-egenskaper">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Egendefinert meldingsmal" />
+        <Member Name="Id" Caption="ID" />
+        <Member Name="InvertResult" Caption="Inverter resultatet" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Meldingen mal Collection validering Message suffiks" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Meldingsmal Hopp over null eller tomme verdier" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Meldingsmal Mål tilfredsstiller ikke samligsvilkår" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Meldingsmal Mål tilfresstiller ikke mål kriteriene" />
+        <Member Name="Name" Caption="navn" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Hopp over null eller tomme verdier" />
+        <Member Name="TargetCollectionOwnerType" Caption="Mål samling eier type" />
+        <Member Name="TargetCollectionPropertyName" Caption="Egenskapsnavn for mål-samling" />
+        <Member Name="TargetContextIDs" Caption="Målets kontekst id'er" />
+        <Member Name="TargetCriteria" Caption="Mål-vilkår" />
+        <Member Name="TargetType" Caption="Mål-type" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCombinationOfPropertiesIsUniqueProperties" Caption="IRule kombinasjon av egenskaper er unike egenskaper">
+      <OwnMembers>
+        <Member Name="CriteriaEvaluationBehavior" Caption="Vilkår evaluering virkemåte" />
+        <Member Name="CustomMessageTemplate" Caption="Egendefinert meldingsmal" />
+        <Member Name="FoundObjectMessageFormat" Caption="Funnet Object-meldingsformat" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Funnet objekt meldinger skilletegn" />
+        <Member Name="Id" Caption="ID" />
+        <Member Name="IncludeCurrentObject" Caption="Ta med gjeldende objekt" />
+        <Member Name="InvertResult" Caption="Inverter resultatet" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Meldingen mal Collection validering Message suffiks" />
+        <Member Name="MessageTemplateCombinationOfPropertiesMustBeUnique" Caption="Meldingen mal kombinasjon av egenskaper må være unik" />
+        <Member Name="MessageTemplateFoundObjects" Caption="Meldingen mal funnet objekter" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Meldingsmal Hopp over null eller tomme verdier" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Meldingsmal Mål tilfredsstiller ikke samligsvilkår" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Meldingsmal Mål tilfresstiller ikke mål kriteriene" />
+        <Member Name="Name" Caption="navn" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Hopp over null eller tomme verdier" />
+        <Member Name="TargetCollectionOwnerType" Caption="Mål samling eier type" />
+        <Member Name="TargetCollectionPropertyName" Caption="Egenskapsnavn for mål-samling" />
+        <Member Name="TargetContextIDs" Caption="Målets kontekst id'er" />
+        <Member Name="TargetCriteria" Caption="Mål-vilkår" />
+        <Member Name="TargetProperties" Caption="Egenskaper for mål" />
+        <Member Name="TargetType" Caption="Mål-type" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCriteriaProperties" Caption="IRule vilkår egenskaper">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Vilkår" />
+        <Member Name="CustomMessageTemplate" Caption="Egendefinert meldingsmal" />
+        <Member Name="Id" Caption="ID" />
+        <Member Name="InvertResult" Caption="Inverter resultatet" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Meldingen mal Collection validering Message suffiks" />
+        <Member Name="MessageTemplateMustSatisfyCriteria" Caption="Mal for meldingen må tilfredsstille vilkår" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Meldingsmal Hopp over null eller tomme verdier" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Meldingsmal Mål tilfredsstiller ikke samligsvilkår" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Meldingsmal Mål tilfresstiller ikke mål kriteriene" />
+        <Member Name="Name" Caption="navn" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Hopp over null eller tomme verdier" />
+        <Member Name="TargetCollectionOwnerType" Caption="Mål samling eier type" />
+        <Member Name="TargetCollectionPropertyName" Caption="Egenskapsnavn for mål-samling" />
+        <Member Name="TargetContextIDs" Caption="Målets kontekst id'er" />
+        <Member Name="TargetCriteria" Caption="Mål-vilkår" />
+        <Member Name="TargetType" Caption="Mål-type" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleFromBoolPropertyProperties" Caption="IRule fra Bool Property egenskaper">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Egendefinert meldingsmal" />
+        <Member Name="Id" Caption="ID" />
+        <Member Name="InvertResult" Caption="Inverter resultatet" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Meldingen mal Collection validering Message suffiks" />
+        <Member Name="MessageTemplateMustBeTrue" Caption="Mal for meldingen må være True" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Meldingsmal Hopp over null eller tomme verdier" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Meldingsmal Mål tilfredsstiller ikke samligsvilkår" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Meldingsmal Mål tilfresstiller ikke mål kriteriene" />
+        <Member Name="Name" Caption="navn" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Hopp over null eller tomme verdier" />
+        <Member Name="TargetCollectionOwnerType" Caption="Mål samling eier type" />
+        <Member Name="TargetCollectionPropertyName" Caption="Egenskapsnavn for mål-samling" />
+        <Member Name="TargetContextIDs" Caption="Målets kontekst id'er" />
+        <Member Name="TargetCriteria" Caption="Mål-vilkår" />
+        <Member Name="TargetPropertyName" Caption="Egenskapsnavn for mål" />
+        <Member Name="TargetType" Caption="Mål-type" />
+        <Member Name="UsedProperties" Caption="Brukte egenskaper" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleIsReferencedProperties" Caption="IRule er referansen egenskaper">
+      <OwnMembers>
+        <Member Name="CriteriaEvaluationBehavior" Caption="Vilkår evaluering virkemåte" />
+        <Member Name="CustomMessageTemplate" Caption="Egendefinert meldingsmal" />
+        <Member Name="FoundObjectMessageFormat" Caption="Funnet Object-meldingsformat" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Funnet objekt meldinger skilletegn" />
+        <Member Name="Id" Caption="ID" />
+        <Member Name="IncludeCurrentObject" Caption="Ta med gjeldende objekt" />
+        <Member Name="InvertResult" Caption="Inverter resultatet" />
+        <Member Name="LooksFor" Caption="Ser for" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Meldingen mal Collection validering Message suffiks" />
+        <Member Name="MessageTemplateFoundObjects" Caption="Meldingen mal funnet objekter" />
+        <Member Name="MessageTemplateMustBeReferenced" Caption="Mal for meldingen må være referert" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Meldingsmal Hopp over null eller tomme verdier" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Meldingsmal Mål tilfredsstiller ikke samligsvilkår" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Meldingsmal Mål tilfresstiller ikke mål kriteriene" />
+        <Member Name="Name" Caption="navn" />
+        <Member Name="ReferencePropertyName" Caption="Egenskapsnavn for referanse" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Hopp over null eller tomme verdier" />
+        <Member Name="TargetCollectionOwnerType" Caption="Mål samling eier type" />
+        <Member Name="TargetCollectionPropertyName" Caption="Egenskapsnavn for mål-samling" />
+        <Member Name="TargetContextIDs" Caption="Målets kontekst id'er" />
+        <Member Name="TargetCriteria" Caption="Mål-vilkår" />
+        <Member Name="TargetType" Caption="Mål-type" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleObjectExistsProperties" Caption="IRule-objektet finnes egenskaper">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Vilkår" />
+        <Member Name="CriteriaEvaluationBehavior" Caption="Vilkår evaluering virkemåte" />
+        <Member Name="CustomMessageTemplate" Caption="Egendefinert meldingsmal" />
+        <Member Name="FoundObjectMessageFormat" Caption="Funnet Object-meldingsformat" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Funnet objekt meldinger skilletegn" />
+        <Member Name="Id" Caption="ID" />
+        <Member Name="IncludeCurrentObject" Caption="Ta med gjeldende objekt" />
+        <Member Name="InvertResult" Caption="Inverter resultatet" />
+        <Member Name="LooksFor" Caption="Ser for" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Meldingen mal Collection validering Message suffiks" />
+        <Member Name="MessageTemplateFoundObjects" Caption="Meldingen mal funnet objekter" />
+        <Member Name="MessageTemplateMustExist" Caption="Mal for meldingen må finnes" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Meldingsmal Hopp over null eller tomme verdier" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Meldingsmal Mål tilfredsstiller ikke samligsvilkår" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Meldingsmal Mål tilfresstiller ikke mål kriteriene" />
+        <Member Name="Name" Caption="navn" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Hopp over null eller tomme verdier" />
+        <Member Name="TargetCollectionOwnerType" Caption="Mål samling eier type" />
+        <Member Name="TargetCollectionPropertyName" Caption="Egenskapsnavn for mål-samling" />
+        <Member Name="TargetContextIDs" Caption="Målets kontekst id'er" />
+        <Member Name="TargetCriteria" Caption="Mål-vilkår" />
+        <Member Name="TargetType" Caption="Mål-type" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRulePropertyValueProperties" Caption="Egenskaper for IRule-egenskapen">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Egendefinert meldingsmal" />
+        <Member Name="InvertResult" Caption="Inverter resultatet" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Meldingsmal Samling valideringsmelding ending" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Meldingsmal Hopp over null eller tomme verdier" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Meldingsmal Mål tilfredsstiller ikke samligsvilkår" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Meldingsmal Mål tilfresstiller ikke mål kriteriene" />
+        <Member Name="Name" Caption="Navn" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Hopp over null eller tomme verdier" />
+        <Member Name="TargetCollectionOwnerType" Caption="Mål samling eier type" />
+        <Member Name="TargetCollectionPropertyName" Caption="Egenskapsnavn for mål-samling" />
+        <Member Name="TargetContextIDs" Caption="Målets kontekst id'er" />
+        <Member Name="TargetCriteria" Caption="Mål-vilkår" />
+        <Member Name="TargetPropertyName" Caption="Egenskapsnavn for mål" />
+        <Member Name="TargetType" Caption="Mål-type" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRangeProperties" Caption="Egenskaper for dataområde for IRule">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Egendefinert meldingsmal" />
+        <Member Name="Id" Caption="ID" />
+        <Member Name="InvertResult" Caption="Inverter resultatet" />
+        <Member Name="MaximumValue" Caption="Maksimal verdi" />
+        <Member Name="MaximumValueExpression" Caption="Maksimal verdi-uttrykk" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Meldingsmal samling av valideringsmeldinger endinger" />
+        <Member Name="MessageTemplateMustBeInRange" Caption="Mal for meldingen må være i området" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Meldingsmal Hopp over null eller tomme verdier" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Meldingsmal Mål tilfredsstiller ikke samligsvilkår" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Meldingsmal Mål tilfresstiller ikke mål kriteriene" />
+        <Member Name="MinimumValue" Caption="Laveste verdi" />
+        <Member Name="MinimumValueExpression" Caption="Laveste verdi-uttrykk" />
+        <Member Name="Name" Caption="navn" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Hopp over null eller tomme verdier" />
+        <Member Name="TargetCollectionAggregate" Caption="Mål sammlingsaggregat" />
+        <Member Name="TargetCollectionOwnerType" Caption="Målsamlings eier type" />
+        <Member Name="TargetCollectionPropertyName" Caption="Egenskapsnavn for mål-samling" />
+        <Member Name="TargetContextIDs" Caption="Målets kontekst id'er" />
+        <Member Name="TargetCriteria" Caption="Mål-vilkår" />
+        <Member Name="TargetPropertyName" Caption="Egenskapsnavn for mål" />
+        <Member Name="TargetType" Caption="Mål-type" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRegularExpressionProperties" Caption="IRule Regular Expression egenskaper">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Egendefinert meldingsmal" />
+        <Member Name="Id" Caption="ID" />
+        <Member Name="InvertResult" Caption="Inverter resultatet" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Meldingen mal Collection validering Message suffiks" />
+        <Member Name="MessageTemplateMustMatchPattern" Caption="Meldingsmal for må tilordne mønster" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Meldingsmal Hopp over null eller tomme verdier" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Meldingsmal Mål tilfredsstiller ikke samligsvilkår" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Meldingsmal Mål tilfresstiller ikke mål kriteriene" />
+        <Member Name="Name" Caption="navn" />
+        <Member Name="Pattern" Caption="Mønster" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Hopp over null eller tomme verdier" />
+        <Member Name="TargetCollectionOwnerType" Caption="Målsamling eier type" />
+        <Member Name="TargetCollectionPropertyName" Caption="Egenskapsnavn for mål-samling" />
+        <Member Name="TargetContextIDs" Caption="Målets kontekst id'er" />
+        <Member Name="TargetCriteria" Caption="Mål-vilkår" />
+        <Member Name="TargetPropertyName" Caption="Egenskapsnavn for mål" />
+        <Member Name="TargetType" Caption="Mål-type" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRequiredFieldProperties" Caption="IRule obligatoriske feltegenskaper">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Egendefinert meldingsmal" />
+        <Member Name="Id" Caption="ID" />
+        <Member Name="InvertResult" Caption="Inverter resultatet" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Meldingen mal Collection validering Message suffiks" />
+        <Member Name="MessageTemplateMustNotBeEmpty" Caption="Mal for meldingen må ikke være tomt" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Meldingsmal Hopp over null eller tomme verdier" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Meldingsmal Mål tilfredsstiller ikke samligsvilkår" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Meldingsmal Mål tilfresstiller ikke mål kriteriene" />
+        <Member Name="Name" Caption="navn" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Hopp over null eller tomme verdier" />
+        <Member Name="TargetCollectionOwnerType" Caption="Mål samling eier type" />
+        <Member Name="TargetCollectionPropertyName" Caption="Egenskapsnavn for mål-samling" />
+        <Member Name="TargetContextIDs" Caption="Målets kontekst id'er" />
+        <Member Name="TargetCriteria" Caption="Mål-vilkår" />
+        <Member Name="TargetPropertyName" Caption="Egenskapsnavn for mål" />
+        <Member Name="TargetType" Caption="Mål-type" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleSearchObjectProperties" Caption="IRule søk objektegenskaper">
+      <OwnMembers>
+        <Member Name="CriteriaEvaluationBehavior" Caption="Vilkår evaluering virkemåte" />
+        <Member Name="CustomMessageTemplate" Caption="Egendefinert meldingsmal" />
+        <Member Name="FoundObjectMessageFormat" Caption="Funnet Object-meldingsformat" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Funnet objekt meldinger skilletegn" />
+        <Member Name="Id" Caption="ID" />
+        <Member Name="IncludeCurrentObject" Caption="Ta med gjeldende objekt" />
+        <Member Name="InvertResult" Caption="Inverter resultatet" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Meldingen mal Collection validering Message suffiks" />
+        <Member Name="MessageTemplateFoundObjects" Caption="Meldingen mal funnet objekter" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Meldingsmal Hopp over null eller tomme verdier" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Meldingsmal Mål tilfredsstiller ikke samligsvilkår" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Meldingsmal Mål tilfresstiller ikke mål kriteriene" />
+        <Member Name="Name" Caption="navn" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Hopp over null eller tomme verdier" />
+        <Member Name="TargetCollectionOwnerType" Caption="Mål samling eier type" />
+        <Member Name="TargetCollectionPropertyName" Caption="Egenskapsnavn for mål-samling" />
+        <Member Name="TargetContextIDs" Caption="Målets kontekst id'er" />
+        <Member Name="TargetCriteria" Caption="Mål-vilkår" />
+        <Member Name="TargetType" Caption="Mål-type" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleStringComparisonProperties" Caption="Egenskaper for IRule-streng-sammenligning">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Egendefinert meldingsmal" />
+        <Member Name="Id" Caption="ID" />
+        <Member Name="IgnoreCase" Caption="Ignorer små/store bokstaver" />
+        <Member Name="InvertResult" Caption="Inverter resultatet" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Meldingen mal Collection validering Message suffiks" />
+        <Member Name="MessageTemplateMustBeEqual" Caption="Meldingsmal Må være lik" />
+        <Member Name="MessageTemplateMustBeginWith" Caption="Meldingsmal Må starte med" />
+        <Member Name="MessageTemplateMustContain" Caption="Meldingsmal Må inneholde" />
+        <Member Name="MessageTemplateMustEndWith" Caption="Meldingsmal Må ende med" />
+        <Member Name="MessageTemplateMustNotBeEqual" Caption="Meldingsmal Må ikke være lik" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Meldingsmal Hopp over null eller tomme verdier" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Meldingsmal Mål tilfredsstiller ikke samligsvilkår" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Meldingsmal Mål tilfresstiller ikke mål kriteriene" />
+        <Member Name="Name" Caption="navn" />
+        <Member Name="OperandValue" Caption="Operand verdi" />
+        <Member Name="OperatorType" Caption="Skriv inn operatoren" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Hopp over null eller tomme verdier" />
+        <Member Name="TargetCollectionOwnerType" Caption="Mål samling eier type" />
+        <Member Name="TargetCollectionPropertyName" Caption="Egenskapsnavn for mål-samling" />
+        <Member Name="TargetContextIDs" Caption="Målets kontekst id'er" />
+        <Member Name="TargetCriteria" Caption="Mål-vilkår" />
+        <Member Name="TargetPropertyName" Caption="Egenskapsnavn for mål" />
+        <Member Name="TargetType" Caption="Mål-type" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleSupportsCollectionAggregatesProperties">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Egendefinert meldingsmal" />
+        <Member Name="Id" Caption="ID" />
+        <Member Name="InvertResult" Caption="Inverter resultatet" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Meldingen mal Collection validering Message suffiks" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Meldingsmal Hopp over null eller tomme verdier" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Meldingsmal Mål tilfredsstiller ikke samligsvilkår" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Meldingsmal Mål tilfresstiller ikke mål kriteriene" />
+        <Member Name="Name" Caption="navn" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Hopp over null eller tomme verdier" />
+        <Member Name="TargetCollectionAggregate" Caption="Målet Collection mengde" />
+        <Member Name="TargetCollectionOwnerType" Caption="Mål samling eier type" />
+        <Member Name="TargetCollectionPropertyName" Caption="Egenskapsnavn for mål-samling" />
+        <Member Name="TargetContextIDs" Caption="Målets kontekst id'er" />
+        <Member Name="TargetCriteria" Caption="Mål-vilkår" />
+        <Member Name="TargetPropertyName" Caption="Egenskapsnavn for mål" />
+        <Member Name="TargetType" Caption="Mål-type" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleUniqueValueProperties" Caption="IRule unike verdier egenskaper">
+      <OwnMembers>
+        <Member Name="CriteriaEvaluationBehavior" Caption="Vilkår evaluering virkemåte" />
+        <Member Name="CustomMessageTemplate" Caption="Egendefinert meldingsmal" />
+        <Member Name="FoundObjectMessageFormat" Caption="Funnet Object-meldingsformat" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Funnet objekt meldinger skilletegn" />
+        <Member Name="Id" Caption="ID" />
+        <Member Name="IncludeCurrentObject" Caption="Ta med gjeldende objekt" />
+        <Member Name="InvertResult" Caption="Inverter resultatet" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Meldingen mal Collection validering Message suffiks" />
+        <Member Name="MessageTemplateFoundObjects" Caption="Meldingen mal funnet objekter" />
+        <Member Name="MessageTemplateMustBeUnique" Caption="Meldingsmal må være unik" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Meldingsmal Hopp over null eller tomme verdier" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Meldingsmal Mål tilfredsstiller ikke samligsvilkår" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Meldingsmal Mål tilfresstiller ikke mål kriteriene" />
+        <Member Name="Name" Caption="navn" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Hopp over null eller tomme verdier" />
+        <Member Name="TargetCollectionOwnerType" Caption="Mål samling eier type" />
+        <Member Name="TargetCollectionPropertyName" Caption="Egenskapsnavn for mål-samling" />
+        <Member Name="TargetContextIDs" Caption="Målets kontekst id'er" />
+        <Member Name="TargetCriteria" Caption="Mål-vilkår" />
+        <Member Name="TargetPropertyName" Caption="Egenskapsnavn for mål" />
+        <Member Name="TargetType" Caption="Mål-type" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleValueComparisonProperties" Caption="IRule egenskaper for sammenligning">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Egendefinert meldingsmal" />
+        <Member Name="Id" Caption="ID" />
+        <Member Name="InvertResult" Caption="Inverter resultatet" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Meldingen mal Collection validering Message suffiks" />
+        <Member Name="MessageTemplateMustBeEqualToOperand" Caption="Meldingsmal Må være lik med operand" />
+        <Member Name="MessageTemplateMustBeGreaterThanOperand" Caption="Meldingsmal Må være større enn operand" />
+        <Member Name="MessageTemplateMustBeGreaterThanOrEqualToOperand" Caption="Mal for meldingen må være større enn or equal to operand" />
+        <Member Name="MessageTemplateMustBeLessThanOperand" Caption="Meldingsmal må være mindre enn operand" />
+        <Member Name="MessageTemplateMustBeLessThanOrEqualToOperand" Caption="Meldingsmal må være mindre enn eller lik til operand" />
+        <Member Name="MessageTemplateMustNotBeEqualToOperand" Caption="Meldingsmal må ikke være lik operand" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Meldingsmal Hopp over null eller tomme verdier" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Meldingsmal Mål tilfredsstiller ikke samligsvilkår" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Meldingsmal Mål tilfresstiller ikke mål kriteriene" />
+        <Member Name="Name" Caption="navn" />
+        <Member Name="OperatorType" Caption="Skriv inn operatoren" />
+        <Member Name="RightOperand" Caption="Høyre operand" />
+        <Member Name="RightOperandExpression" Caption="Høyre operand uttrykk" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Hopp over null eller tomme verdier" />
+        <Member Name="TargetCollectionAggregate" Caption="Målet Collection mengde" />
+        <Member Name="TargetCollectionOwnerType" Caption="Mål samling eier type" />
+        <Member Name="TargetCollectionPropertyName" Caption="Egenskapsnavn for mål-samling" />
+        <Member Name="TargetContextIDs" Caption="Målets kontekst id'er" />
+        <Member Name="TargetCriteria" Caption="Mål-vilkår" />
+        <Member Name="TargetPropertyName" Caption="Egenskapsnavn for mål" />
+        <Member Name="TargetType" Caption="Mål-type" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleBaseProperties" Caption="Regel base egenskaper">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Egendefinert meldingsmal" />
+        <Member Name="Id" Caption="ID" />
+        <Member Name="InvertResult" Caption="Inverter resultatet" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Meldingen mal Collection validering Message suffiks" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Meldingsmal Hopp over null eller tomme verdier" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Meldingsmal Mål tilfredsstiller ikke samligsvilkår" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Meldingsmal Mål tilfresstiller ikke mål kriteriene" />
+        <Member Name="Name" Caption="navn" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Hopp over null eller tomme verdier" />
+        <Member Name="TargetCollectionOwnerType" Caption="Mål samling eier type" />
+        <Member Name="TargetCollectionPropertyName" Caption="Egenskapsnavn for mål-samling" />
+        <Member Name="TargetContextIDs" Caption="Målets kontekst id'er" />
+        <Member Name="TargetCriteria" Caption="Mål-vilkår" />
+        <Member Name="TargetType" Caption="Mål-type" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleCombinationOfPropertiesIsUniqueProperties" Caption="Regel kombinasjon av egenskaper er unike egenskaper">
+      <OwnMembers>
+        <Member Name="MessageTemplateCombinationOfPropertiesMustBeUnique" Caption="Meldingsmal kombinasjon av egenskaper må være unik" />
+        <Member Name="TargetProperties" Caption="Egenskaper for mål" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleCriteriaProperties" Caption="Regelvilkår egenskaper">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Vilkår" />
+        <Member Name="MessageTemplateMustSatisfyCriteria" Caption="Mal for meldingen må tilfredsstille vilkår" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleFromBoolPropertyProperties" Caption="Regel fra logisk attributt egenskaper">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeTrue" Caption="Mal for meldingen må være True" />
+        <Member Name="UsedProperties" Caption="Brukte egenskaper" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleIsReferencedProperties" Caption="Regelen er referert egenskaper">
+      <OwnMembers>
+        <Member Name="LooksFor" Caption="Ser for" />
+        <Member Name="MessageTemplateMustBeReferenced" Caption="Mal for meldingen må være referert" />
+        <Member Name="ReferencePropertyName" Caption="Egenskapsnavn for referanse" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleObjectExistsProperties" Caption="Regel-objektet finnes egenskaper">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Vilkår" />
+        <Member Name="LooksFor" Caption="Ser for" />
+        <Member Name="MessageTemplateMustExist" Caption="Mal for meldingen må finnes" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RulePropertyValueProperties" Caption="Regel-attributt verdi egenskaper">
+      <OwnMembers>
+        <Member Name="TargetPropertyName" Caption="Egenskapsnavn for mål" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRangeProperties" Caption="Regel område egenskaper">
+      <OwnMembers>
+        <Member Name="MaximumValue" Caption="Maksimal verdi" />
+        <Member Name="MaximumValueExpression" Caption="Maksimal verdi-uttrykk" />
+        <Member Name="MessageTemplateMustBeInRange" Caption="Mal for meldingen må være i området" />
+        <Member Name="MinimumValue" Caption="Laveste verdi" />
+        <Member Name="MinimumValueExpression" Caption="Laveste verdi-uttrykk" />
+        <Member Name="TargetCollectionAggregate" Caption="Målet Collection mengde" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRegularExpressionProperties" Caption="Regel egenskaper for vanlige uttrykk">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustMatchPattern" Caption="Meldingsmal for må tilordne mønster" />
+        <Member Name="Pattern" Caption="Mønster" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRequiredFieldProperties" Caption="Regel obligatoriske felt egenskaper">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustNotBeEmpty" Caption="Mal for meldingen må ikke være tomt" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSearchObjectProperties" Caption="Regel søk objekt egenskaper">
+      <OwnMembers>
+        <Member Name="CriteriaEvaluationBehavior" Caption="Vilkår evaluering virkemåte" />
+        <Member Name="FoundObjectMessageFormat" Caption="Funnet Object-meldingsformat" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Funnet objekt meldinger skilletegn" />
+        <Member Name="IncludeCurrentObject" Caption="Ta med gjeldende objekt" />
+        <Member Name="MessageTemplateFoundObjects" Caption="Meldingen mal funnet objekter" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResult" Caption="Godkjenne resultater">
+      <OwnMembers>
+        <Member Name="Results" Caption="Resultater" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResultItem" Caption="Valideringsdetaljer">
+      <OwnMembers>
+        <Member Name="ContextId" Caption="Kontekst id" />
+        <Member Name="ErrorMessage" Caption="Feilmelding" />
+        <Member Name="Rule" Caption="Regel" />
+        <Member Name="RuleName" Caption="Navn på regel" />
+        <Member Name="State" Caption="Tilstand" />
+        <Member Name="Target" Caption="Mål" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResultItemAggregate" Caption="Regel sett validering resultat element mengde">
+      <OwnMembers>
+        <Member Name="AggregatedResults" Caption="Samlede resultater" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleStringComparisonProperties" Caption="Regel tekst sammenligning egenskaper">
+      <OwnMembers>
+        <Member Name="IgnoreCase" Caption="Ignorer små/store bokstaver" />
+        <Member Name="MessageTemplateMustBeEqual" Caption="Meldingsmal Må være lik" />
+        <Member Name="MessageTemplateMustBeginWith" Caption="Meldingsmal  Må starte med" />
+        <Member Name="MessageTemplateMustContain" Caption="Meldingsmal Må inneholde" />
+        <Member Name="MessageTemplateMustEndWith" Caption="Meldingsmal n må ende med" />
+        <Member Name="MessageTemplateMustNotBeEqual" Caption="Meldingsmal Må ikke være lik" />
+        <Member Name="OperandValue" Caption="Operand verdi" />
+        <Member Name="OperatorType" Caption="Skriv inn operatoren" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleUniqueValueProperties" Caption="Regel unik verdi egenskaper">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeUnique" Caption="Meldingsmal må være unik" />
+        <Member Name="TargetPropertyName" Caption="Egenskapsnavn for mål" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleValueComparisonProperties" Caption="Regel egenskaper for sammenligning">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeEqualToOperand" Caption="Meldingsmal Må være lik med operand" />
+        <Member Name="MessageTemplateMustBeGreaterThanOperand" Caption="Meldingsmal Må være større enn operand" />
+        <Member Name="MessageTemplateMustBeGreaterThanOrEqualToOperand" Caption="Mal for meldingen må være større enn or equal to operand" />
+        <Member Name="MessageTemplateMustBeLessThanOperand" Caption="Meldingsmal må være mindre enn operand" />
+        <Member Name="MessageTemplateMustBeLessThanOrEqualToOperand" Caption="Meldingsmal må være mindre enn eller lik til operand" />
+        <Member Name="MessageTemplateMustNotBeEqualToOperand" Caption="Meldingsmal må ikke være lik operand" />
+        <Member Name="OperatorType" Caption="Skriv inn operatoren" />
+        <Member Name="RightOperand" Caption="Høyre operand" />
+        <Member Name="RightOperandExpression" Caption="Høyre operand uttrykk" />
+        <Member Name="TargetCollectionAggregate" Caption="Målet Collection mengde" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.Data.Filtering.Aggregate">
+        <LocalizationItem Name="Avg" Value="Gjennomsnitt" />
+        <LocalizationItem Name="Count" Value="Antall" />
+        <LocalizationItem Name="Exists" Value="Finnes" />
+        <LocalizationItem Name="Max" Value="Maks" />
+        <LocalizationItem Name="Min" Value="Minimum" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Validation.AllContextsView.IsValid">
+        <LocalizationItem Name="Invalid" Value="Ugyldig" />
+        <LocalizationItem Name="Valid" Value="Gyldig" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.StringComparisonType">
+        <LocalizationItem Name="Contains" Value="Inneholder" />
+        <LocalizationItem Name="EndsWith" Value="Ender med" />
+        <LocalizationItem Name="Equals" Value="Er lik" />
+        <LocalizationItem Name="NotEquals" Value="Ikke lik" />
+        <LocalizationItem Name="StartsWith" Value="Starter med" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValidationState">
+        <LocalizationItem Name="Invalid" Value="Ugyldig" />
+        <LocalizationItem Name="Skipped" Value="Hoppet over" />
+        <LocalizationItem Name="Valid" Value="Gyldig" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValueComparisonType">
+        <LocalizationItem Name="Equals" Value="Er lik" />
+        <LocalizationItem Name="GreaterThan" Value="Større enn" />
+        <LocalizationItem Name="GreaterThanOrEqual" Value="Større enn eller lik" />
+        <LocalizationItem Name="LessThan" Value="Mindre enn" />
+        <LocalizationItem Name="LessThanOrEqual" Value="Mindre enn eller lik" />
+        <LocalizationItem Name="NotEquals" Value="Ikke lik" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Xpo.PersistentCriteriaEvaluationBehavior">
+        <LocalizationItem Name="BeforeTransaction" Value="Før transaksjon" />
+        <LocalizationItem Name="InTransaction" Value="I transaksjon" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Exceptions">
+      <LocalizationGroup Name="UserVisibleExceptions">
+        <LocalizationGroup Name="Validation">
+          <LocalizationItem Name="ActionErrorMessageHeaderFormat" Value="Problemer ble oppdaget under datavalidering. Les informasjonen nedenfor for å forstå hva problemene er og hvordan du kan rette dem." />
+          <LocalizationItem Name="AllContextsErrorMessageHeader" Value="Problemer ble oppdaget under datavalidering. Les informasjonen nedenfor for å forstå hva problemene er og hvordan du kan rette dem." />
+          <LocalizationItem Name="DeleteErrorMessageHeader" Value="Problemer ble oppdaget under datavalidering. Les informasjonen nedenfor for å forstå hva problemene er og hvordan du kan rette dem." />
+          <LocalizationItem Name="SaveErrorMessageHeader" Value="Problemer ble oppdaget under datavalidering. Les informasjonen nedenfor for å forstå hva problemene er og hvordan du kan rette dem." />
+          <LocalizationItem Name="ValidationSucceededMessageHeader" Value="Ingen problemer ble oppdaget." />
+        </LocalizationGroup>
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <Validation>
+    <Contexts>
+      <ValidationContext Id="Save" Caption="Lagre" />
+    </Contexts>
+    <ErrorMessageTemplates>
+      <RuleBase MessageTemplateSkipNullOrEmptyValues="&quot;{Id}&quot;-regelen ble ikke sjekket fordi mål-egenskaper ikke er angitt." MessageTemplateTargetDoesNotSatisfyTargetCriteria="&quot;{Id}&quot;-regelen ble ikke sjekket fordi målobjektet ikke oppfyller regelens mål vilkår." />
+      <RuleCollectionProperty MessageTemplateTargetDoesNotSatisfyCollectionCriteria="&quot;{Id}&quot;-regelen ble ikke sjekket fordi målet ikke er et element i &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot; samlingen." MessageTemplateCollectionValidationMessageSuffix="(For &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot; element-samlingen)." />
+      <RuleCombinationOfPropertiesIsUnique MessageTemplateCombinationOfPropertiesMustBeUnique="Kombinasjonen av de følgende egenskapene må være unike: {FormattedTargetProperties}." MessageTemplateFoundObjects="The following objects are found:" />
+      <RuleCriteria MessageTemplateMustSatisfyCriteria="&quot;{TargetObject}&quot;-objektet må oppfylle følgende kriterier: &quot;{Criteria}&quot;." />
+      <RuleFromBoolProperty MessageTemplateMustBeTrue="&quot;{TargetPropertyName}&quot; må være satt til sann." />
+      <RuleIsReferenced MessageTemplateMustBeReferenced="&quot;{TargetObject}&quot;-objektet må refereres til." MessageTemplateFoundObjects="The following objects are found:" />
+      <RuleObjectExists MessageTemplateMustExist="Objekter som oppfyller kriteriene for &quot;{Criteria}&quot; må finnes." MessageTemplateFoundObjects="The following objects are found:" />
+      <RuleRange MessageTemplateMustBeInRange="&quot;{TargetPropertyName}&quot; må være innenfor &quot;{MinimumValue}&quot; og &quot;{MaximumValue}&quot; området, grenser er inkludert." />
+      <RuleRegularExpression MessageTemplateMustMatchPattern="&quot; {TargetPropertyName}&quot; må samsvare med det følgende mønsteret: &quot;{Pattern}&quot;." />
+      <RuleRequiredField MessageTemplateMustNotBeEmpty="&quot;{TargetPropertyName}&quot; kan ikke være tomt." />
+      <RuleSearchObject MessageTemplateFoundObjects="The following objects are found:" />
+      <RuleStringComparison MessageTemplateMustContain="&quot;{TargetPropertyName}&quot; må inneholde &quot;{OperandValue}&quot;." MessageTemplateMustBeginWith="&quot;{TargetPropertyName}&quot; må starte med &quot;{OperandValue}&quot;." MessageTemplateMustEndWith="&quot;{TargetPropertyName}&quot; må slutte med &quot;{OperandValue}&quot;." MessageTemplateMustBeEqual="&quot;{TargetPropertyName}&quot; må være lik &quot;{OperandValue}&quot;." MessageTemplateMustNotBeEqual="&quot;{TargetPropertyName}&quot; kan ikke være lik &quot;{OperandValue}&quot;." />
+      <RuleUniqueValue MessageTemplateMustBeUnique="Det finnes et objekt med den samme verdien som er angitt for &quot;{TargetPropertyName}&quot;. &quot;{TargetPropertyName}&quot; verdier må være unike." />
+      <RuleValueComparison MessageTemplateMustBeEqualToOperand="&quot;{TargetPropertyName}&quot; må være lik &quot;{RightOperand}&quot;." MessageTemplateMustBeGreaterThanOperand="&quot;{TargetPropertyName}&quot; må være større enn &quot;{RightOperand}&quot;." MessageTemplateMustBeGreaterThanOrEqualToOperand="&quot;{TargetPropertyName}&quot; må være større enn eller lik &quot;{RightOperand}&quot;." MessageTemplateMustBeLessThanOperand="&quot;{TargetPropertyName}&quot; må være mindre enn &quot;{RightOperand}&quot;." MessageTemplateMustBeLessThanOrEqualToOperand="&quot;{TargetPropertyName}&quot; må være mindre enn eller lik &quot;{RightOperand}&quot;." MessageTemplateMustNotBeEqualToOperand="&quot; {TargetPropertyName}&quot; kan ikke være lik &quot;{RightOperand}&quot;." />
+    </ErrorMessageTemplates>
+  </Validation>
+  <Views>
+    <DetailView Id="DisplayableValidationResultItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DisplayableValidationResultItem" Caption="Visbar validering resultat element" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleBaseProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCollectionPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCombinationOfPropertiesIsUniqueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="IRule søk objektegenskaper" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCriteriaProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleFromBoolPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleIsReferencedProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="IRule søk objektegenskaper" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleObjectExistsProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="IRule søk objektegenskaper" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRulePropertyValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRangeProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleRangeProperties" Caption="Egenskaper for dataområde for IRule" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRegularExpressionProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRequiredFieldProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleSearchObjectProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="IRule søk objektegenskaper" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleStringComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleStringComparisonProperties" Caption="Egenskaper for IRule-streng-sammenligning" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleSupportsCollectionAggregatesProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleUniqueValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleValueComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleValueComparisonProperties" Caption="IRule egenskaper for sammenligning" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IRule Base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleBaseProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Regel base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleCombinationOfPropertiesIsUniqueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Regel søk objekt egenskaper" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Regel base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleCriteriaProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Regel base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleFromBoolPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Regel base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleIsReferencedProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Regel søk objekt egenskaper" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Regel base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleObjectExistsProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Regel søk objekt egenskaper" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Regel base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RulePropertyValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Regel base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRangeProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleRangeProperties" Caption="Regel område egenskaper" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Regel base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRegularExpressionProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Regel base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRequiredFieldProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Regel base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSearchObjectProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Regel søk objekt egenskaper" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Regel base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResult_ByTarget_Error_DetailView" Caption="Validering feil">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="Problemer ble oppdaget under datavalidering. Les informasjonen nedenfor for å forstå hva problemene er og hvordan du kan rette dem." />
+      </Items>
+    </DetailView>
+    <ListView Id="RuleSetValidationResultItem_ByTarget_ListView">
+      <Columns>
+        <ColumnInfo Id="ContextCaption" Caption="Kontekst" />
+        <ColumnInfo Id="ErrorMessage" Caption="Beskrivelse" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleSetValidationResultItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSetValidationResultItem" Caption="Regel sett validering resultat element" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResultItemAggregate_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSetValidationResultItem" Caption="Regel sett validering resultat element" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleStringComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleStringComparisonProperties" Caption="Regel tekst sammenligning egenskaper" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Regel base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleUniqueValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Regel søk objekt egenskaper" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Regel base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleValueComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleValueComparisonProperties" Caption="Regel egenskaper for sammenligning" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Regel base egenskaper" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ValidationResults_Error_DetailView">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="Problemer ble oppdaget under datavalidering. Les informasjonen nedenfor for å forstå hva problemene er og hvordan du kan rette dem." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ValidationResults_Passed_DetailView">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="Ingen problemer ble oppdaget." />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>

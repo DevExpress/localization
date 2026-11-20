@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="EditReportControllerV2.Edit" Caption="Upravit" />
+      <Action Id="ExecuteReportV2" Caption="Provést sestavu" />
+      <Action Id="ShowReportDesignerV2" Caption="Zobrazit sestavu návrháře" />
+    </Actions>
+  </ActionDesign>
+  <Localization>
+    <LocalizationGroup Name="Captions">
+      <LocalizationItem Name="AllFiles" Value="Všechny soubory" />
+      <LocalizationItem Name="ExportLayout" Value="Exportovat layout do souboru..." />
+      <LocalizationItem Name="ImportLayout" Value="Importovat layout ze souboru..." />
+      <LocalizationItem Name="ReportDesignerError" Value="Chyba" />
+      <LocalizationItem Name="ReportDesignerWarning" Value="Varování" />
+      <LocalizationItem Name="ReportFiles" Value="Soubory sestavy" />
+    </LocalizationGroup>
+  </Localization>
+  <Views>
+    <DetailView Id="NewReportWizardParameters_DetailView" Caption="Průvodce nové sestavy">
+      <Items>
+        <StaticText Id="ReportText" Text="Pro vytvoření nové sestavy zadejte název do pole níže a vyberte primární typ dat ze seznamu." />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="Static" Caption="Statický (11)">
+            <LayoutGroup Id="NewReportParams" Caption="Parametry nové sestavy" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

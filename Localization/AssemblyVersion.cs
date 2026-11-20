@@ -9,14 +9,14 @@ namespace DevExpress.Internal {
     public const string AssemblyCopyright = "Copyright © 2000-2026 Developer Express Inc."; // don't touch!!!!!
     public const string AssemblyCompany = "Developer Express Inc.";
 
-    public const int VersionId = 261;
-    public const int VersionIdMinor = 26101;
-    public const string VersionShort = "26.1";
+    public const int VersionId = 262;
+    public const int VersionIdMinor = 26201;
+    public const string VersionShort = "26.2";
     public const string Version = VersionShort + ".0.0";
 
     public const string FileVersion = Version;
-    public const string MarketingVersion = "v2026 vol 1";
-    public const string VirtDirSuffix = "_v26_1";
+    public const string MarketingVersion = "v2026 vol 2";
+    public const string VirtDirSuffix = "_v26_2";
 
     public const string PublicKeyToken = "79868b8147b5eae4";
     public const string PublicKey = "0024000004800000940000000602000000240000525341310004000001000100dd3415ad127e2479d518586804419e99231acd687f889e897fb021bec3d90d53781811bb9d569e032d00362413298930c553dfd43a24e699c6a3d4922824f3c987fc01524b94059de1ccfbef1ff6aedc86055d56c4c3c92c550c84a1410b0c0e891e8f2f0fa193e1532f25727ae634055808129b901bdc24cb517e95fb8815b5";
@@ -129,6 +129,8 @@ namespace DevExpress.Internal {
     public const string SRAssemblyDemoData = "DevExpress.DemoData" + VSuffix;
     public const string SRAssemblyPrintingCore = "DevExpress.Printing" + VSuffix + ".Core";
     public const string SRAssemblyPrintingCoreFull = "DevExpress.Printing" + VSuffix + ".Core" + FullAssemblyVersionExtension;
+    public const string SRAssemblyPrintingRemote = "DevExpress.Printing" + VSuffix + ".Remote";
+    public const string SRAssemblyPrintingRemoteFull = "DevExpress.Printing" + VSuffix + ".Remote" + FullAssemblyVersionExtension;
     public const string SRAssemblyRichEditCore = "DevExpress.RichEdit" + VSuffix + ".Core";
     public const string SRAssemblyRichEditCoreFull = SRAssemblyRichEditCore + FullAssemblyVersionExtension;
     public const string SRAssemblyRichEditCoreTests = SRAssemblyRichEditCore + TestsSuffix;
@@ -142,10 +144,10 @@ namespace DevExpress.Internal {
     public const string SRAssemblySchedulerCoreDesktop = "DevExpress.XtraScheduler" + VSuffix + ".Core.Desktop";
     public const string SRAssemblyPrintingDesign = "DevExpress.XtraPrinting" + VSuffixDesign;
     public const string SRAssemblyPrintingDesignFull = "DevExpress.XtraPrinting" + VSuffixDesign + FullAssemblyVersionExtension;
-    public const string SRAssemblyRichEditLayoutEngine = "DevExpress.RichEdit.LayoutEngine" + VSuffix;
-    public const string SRAssemblyRichEditLayoutEngineTests = SRAssemblyRichEditLayoutEngine + TestsSuffix;
 	public const string SRAssemblyBarcode = "DevExpress.Docs.Barcode" + VSuffix;
     public const string SRAssemblyBarcodeTests = "DevExpress.Docs.Barcode" + TestsSuffix;
+	public const string SRAssemblyOcr = "DevExpress.Docs.Ocr" + VSuffix;
+    public const string SRAssemblyOcrTests = "DevExpress.Docs.Ocr" + TestsSuffix;
     public const string SRAssemblyDocsCore = "DevExpress.Docs.Core" + VSuffix;
     public const string SRAssemblyDocsCoreTests = "DevExpress.Docs.Core" + TestsSuffix;
     public const string SRAssemblyDocsPdf = "DevExpress.Docs.Pdf" + VSuffix;
@@ -157,7 +159,9 @@ namespace DevExpress.Internal {
     public const string SRAssemblyDocsWordTests = "DevExpress.Docs.Word" + TestsSuffix;
 
     public const string SRAssemblyDevExtremeAspNetCore = "DevExtreme.AspNet.Core";
+    public const string SRAssemblyDevExtremeAspNetCoreTests = "DevExtreme.AspNet.NetCore" + TestsSuffix;
     public const string SRAssemblyDevExtremeAspNetMvc = "DevExtreme.AspNet.Mvc";
+    public const string SRAssemblyDevExtremeAspNetMvcTests = SRAssemblyDevExtremeAspNetMvc + TestsSuffix;
     public const string SRAssemblyDevExtremeAspNetMvcProjectWizard = "DevExtreme.AspNet.Mvc.ProjectWizard";
     public const string SRAssemblyDevExtremeAspNetMvcProjectWizardTests = "DevExtreme.AspNet.Mvc.ProjectWizard" + VSuffix + TestsSuffix;
 #endif
@@ -318,7 +322,7 @@ namespace DevExpress.Internal {
         SRAssemblyReportsDesignTool = "DevExpress.XtraReports" + VSuffix + ".Design.Tool",
         SRAssemblyReportsExtensionsFull = SRAssemblyReportsExtensions + FullAssemblyVersionExtension,
         SRAssemblyReportsExtensionsTests = "DevExpress.XtraReports.Extensions.Tests",
-        SRAssemblyReportsNReportTest = "NReportTest" + VSuffix,
+        SRAssemblyReportsNReportTest = "NReportTest",
         SRAssemblyReportServerDesigner = "DevExpress.ReportDesigner" + VSuffix + ".Core",
         SRAssemblyReportServerWeb = "DevExpress.ReportServer" + VSuffix + ".Web",
         SRAssemblyReportServerWebTest = "DevExpress.ReportServer" + VSuffix + ".Web.Tests",
@@ -503,6 +507,10 @@ namespace DevExpress.Internal {
         SRAssemblyAIIntegrationWinFormsSemanticSearch = "DevExpress.AIIntegration.WinForms.SemanticSearch" + VSuffix,
         SRAssemblyAIIntegrationWinFormsSemanticSearchFull = SRAssemblyAIIntegrationWinFormsSemanticSearch + FullAssemblyVersionExtension,
         SRAssemblyAIIntegrationEvaluationWinFormsTests = "DevExpress.AIIntegration.Evaluation.WinForms.Tests" + VSuffix,
+        SRAssemblyAIIntegrationWinFormsCommon = "DevExpress.AIIntegration.WinForms.Common" + VSuffix,
+        SRAssemblyAIIntegrationWinFormsCommonFull = SRAssemblyAIIntegrationWinFormsCommon + FullAssemblyVersionExtension,
+        SRAssemblyAIIntegrationWinFormsPrinting = "DevExpress.AIIntegration.WinForms.Printing" + VSuffix,
+        SRAssemblyAIIntegrationWinFormsPrintingFull = SRAssemblyAIIntegrationWinFormsPrinting + FullAssemblyVersionExtension,
         SRAssemblyAIIntegrationWpf = "DevExpress.AIIntegration.Wpf" + VSuffix,
         SRAssemblyAIIntegrationWpfChat = "DevExpress.AIIntegration.Wpf.Chat" + VSuffix,
 
@@ -510,11 +518,18 @@ namespace DevExpress.Internal {
         SRAssemblyAIIntegrationDocs = "DevExpress.AIIntegration.Docs" + VSuffix,
         SRAssemblyAIIntegrationDocsFull = SRAssemblyAIIntegrationDocs + FullAssemblyVersionExtension,
 
+        SRAssemblyAIIntegrationWpfCommon = "DevExpress.AIIntegration.Wpf.Common" + VSuffix,
+        SRAssemblyAIIntegrationWpfCommonFull = SRAssemblyAIIntegrationWpfCommon + FullAssemblyVersionExtension,
+        SRAssemblyAIIntegrationWpfPrinting = "DevExpress.AIIntegration.Wpf.Printing" + VSuffix,
+        SRAssemblyAIIntegrationWpfPrintingFull = SRAssemblyAIIntegrationWpfPrinting + FullAssemblyVersionExtension,
         SRAssemblyAIIntegrationWpfReporting = "DevExpress.AIIntegration.Wpf.Reporting" + VSuffix,
         SRAssemblyAIIntegrationWpfReportingFull = SRAssemblyAIIntegrationWpfReporting + FullAssemblyVersionExtension,
 
         SRAssemblyAIIntegrationWinFormsTests = "DevExpress.AIIntegration.WinForms.Tests" + VSuffix,
         SRAssemblyAIIntegrationWinFormsTestsFull = SRAssemblyAIIntegrationWinFormsTests + FullAssemblyVersionExtension,
+
+        SRAssemblyAIIntegrationWpfTests = "DevExpress.AIIntegration.Wpf.Tests" + VSuffix,
+        SRAssemblyAIIntegrationWpfTestsFull = SRAssemblyAIIntegrationWpfTests + FullAssemblyVersionExtension,
 
         SRAssemblyAIIntegrationGeneration = "DevExpress.AIIntegration.Generation" + VSuffix,
         SRAssemblyAIIntegrationGenerationFull = SRAssemblyAIIntegrationGeneration + FullAssemblyVersionExtension,
@@ -601,6 +616,8 @@ namespace DevExpress.Internal {
         DXLinkTrialASPNETCore = "https://go.devexpress.com/Licensing_Installer_Watermark_ASPNETCore.aspx",
         DXLinkTrialDashboards = "https://go.devexpress.com/Licensing_Installer_Watermark_Dashboards.aspx",
         DXLinkTrialDevExtreme = "https://go.devexpress.com/Licensing_Installer_Watermark_DevExtreme.aspx",
+        DXLinkTrialDevExtremeAspNetCore = "https://go.devexpress.com/Licensing_Installer_Watermark_DevExtremeAspNetCore.aspx",
+        DXLinkTrialDevExtremeAspNetMvc = "https://go.devexpress.com/Licensing_Installer_Watermark_DevExtremeAspNetMvc.aspx",
         DXLinkTrialReporting = "https://go.devexpress.com/Licensing_Installer_Watermark_Reporting.aspx",
         DXLinkTrialOffice = "https://go.devexpress.com/Licensing_Installer_Watermark_Office.aspx",
         DXLinkTrialBlazor = "https://go.devexpress.com/Licensing_Installer_Watermark_Blazor.aspx",
@@ -609,6 +626,8 @@ namespace DevExpress.Internal {
 
         DXLinkLicensingDocASP = "https://www.devexpress.com/go/Licensing_Documentation_AspNetClassic.aspx",
         DXLinkLicensingDocASPNETCore = "https://www.devexpress.com/go/Licensing_Documentation_AspNetCore.aspx",
+        DXLinkLicensingDocDevExtremeAspNetCore = "https://go.devexpress.com/Licensing_Documentation_DevExtremeAspNetCore.aspx",
+        DXLinkLicensingDocDevExtremeAspNetMvc = "https://go.devexpress.com/Licensing_Documentation_DevExtremeAspNetMvc.aspx",
         DXLinkLicensingDocXAF = "https://www.devexpress.com/go/Licensing_Documentation_XAF.aspx",
         DXLinkLicensingDocBlazor = "https://www.devexpress.com/go/Licensing_Documentation_Blazor.aspx",
         DXLinkLicensingDocOffice = "https://www.devexpress.com/go/Licensing_Documentation_Office.aspx",
@@ -620,7 +639,6 @@ namespace DevExpress.Internal {
         DXLinkEmailInfo = "mailto:" + DXEmailInfo;
 
     public const string
-        VisualStudio2019InteropAssembly = "DevExpress.VisualStudioInterop.VS2019" + VSuffix + FullAssemblyVersionExtension,
         VisualStudio2022InteropAssembly = "DevExpress.VisualStudioInterop.VS2022" + VSuffix + FullAssemblyVersionExtension;
 #endif
 }

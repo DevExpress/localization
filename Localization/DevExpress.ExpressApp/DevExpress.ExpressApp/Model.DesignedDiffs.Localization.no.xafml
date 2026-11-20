@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application VersionFormat="Versjon {0}.{1}.{2}" ProtectedContentText="Beskyttet innhold">
+  <ActionDesign>
+    <Actions>
+      <Action Id="About Info" Caption="Om..." />
+      <Action Id="Cancel" Caption="Avbryt" />
+      <Action Id="CreateDashboard" Caption="Opprett instrumentbord" />
+      <Action Id="Delete" Caption="Slett" ConfirmationMessage="Du skal til å slette den valgte posten(e). Vil du fortsette?" />
+      <Action Id="Diagnostic Info" Caption="Diagnose" />
+      <Action Id="DialogCancel" Caption="Avbryt" />
+      <Action Id="DialogOK" Caption="Ok" />
+      <Action Id="FullTextSearch" NullValuePrompt="Tekst søke..." Caption="Filtrere etter tekst" ToolTip="Filtrere objekter etter tekst" ShortCaption="GÅ!" />
+      <Action Id="HideItemsFromDashboard" Caption="Skjul fra instrumentbordet" />
+      <Action Id="Link" Caption="Kobling" />
+      <Action Id="ListViewShowObject" Caption="Åpne" />
+      <Action Id="Logoff" Caption="Logg av" />
+      <Action Id="Logon" Caption="Logg på" />
+      <Action Id="NavigateBack" ToolTip="Gå til forrige visning" Caption="Tilbake" />
+      <Action Id="NavigateForward" ToolTip="Gå til neste visning" Caption="Fremover" />
+      <Action Id="New" Caption="Ny">
+        <DisableReasons>
+          <Reason Id="MasterObjectIsNew" Caption="Det redigerte objektet er nytt." />
+        </DisableReasons>
+      </Action>
+      <Action Id="NextObject" Caption="Neste objekt" />
+      <Action Id="OrganizeDashboard" Caption="Organiser instrumentbordet" />
+      <Action Id="PreviousObject" Caption="Forrige objekt" />
+      <Action Id="Refresh" Caption="Oppfrisk" />
+      <Action Id="Save" Caption="Lagre" />
+      <Action Id="SaveAndClose" Caption="Lagre og lukk" />
+      <Action Id="SaveAndNew" Caption="Lagre og ny" />
+      <Action Id="SetFilter" Caption="Filtrere" />
+      <Action Id="ShowItemsOnDashboard" Caption="Vis på instrumentbordet" />
+      <Action Id="ShowNavigationItem" Caption="Navigasjon" />
+      <Action Id="Unlink" Caption="Koble fra" ConfirmationMessage="Du prøver å koble fra den valgte posten(e). Vil du fortsette?" />
+    </Actions>
+    <DisableReasons>
+      <Reason Id="ByContext_RequireMultipleObjects" Caption="Krever at minst ett objekt er valgt" />
+      <Reason Id="ByContext_RequireSingleObject" Caption="Krever at et enkelt objekt er valgt" />
+      <Reason Id="Security" Caption="Ingen tilgang" />
+    </DisableReasons>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Editors.CriteriaProvider" Caption="Vilkår-leverandør">
+      <OwnMembers>
+        <Member Name="FilteredObjectsType" Caption="Typen til filtrerte objekter" />
+        <Member Name="FilterString" Caption="Filtertekst" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.AboutInfo" Caption="Om info">
+      <OwnMembers>
+        <Member Name="Company" Caption="Selskap" />
+        <Member Name="Copyright" Caption="Opphavsrett" />
+        <Member Name="Description" Caption="Beskrivelse" />
+        <Member Name="LogoImageName" Caption="Logonavn" />
+        <Member Name="ProductName" Caption="Produktnavn" />
+        <Member Name="Version" Caption="Versjon" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardCreationInfo" Caption="Veileder for oppretting av instrumentbord">
+      <OwnMembers>
+        <Member Name="DashboardName" Caption="Navn" />
+        <Member Name="DashboardOrganizer" Caption="Vis elementer" />
+        <Member Name="NavigationGroupName" Caption="Opprett ett navigasjonselement i" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardOrganizationItem" Caption="Organiser instrumentbordet">
+      <OwnMembers>
+        <Member Name="Item" Caption="Element" />
+        <Member Name="Visible" Caption="Synlig" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardOrganizer" Caption="Organiser instrumentbordet" />
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardViewItemDescriptor" Caption="Instrumentbord vis element beskrivelser">
+      <OwnMembers>
+        <Member Name="ViewId" Caption="Visningsid" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DiagnosticInfoObject" Caption="Diagnostisk informasjon-objekt">
+      <OwnMembers>
+        <Member Name="AsText" Caption="Som tekst" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.StaticImageDashboardOrganizationItem" Caption="Statisk bilde">
+      <OwnMembers>
+        <Member Name="ImageName" Caption="Navn på bildet" />
+        <Member Name="Preview" Caption="Forhåndsvisning" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.StaticTextDashboardOrganizationItem" Caption="Statisk tekst">
+      <OwnMembers>
+        <Member Name="Text" Caption="Tekst" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ViewDashboardOrganizationItem" Caption="Visning">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Vilkår" />
+        <Member Name="ObjectType" Caption="Objekt-type" />
+        <Member Name="ViewDescriptor" Caption="Visning" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Xpo.PersistentBase" Caption="Vedvarende Base" />
+    <Class Name="DevExpress.Xpo.XPBaseObject" Caption="XPBase-objekt" />
+    <Class Name="DevExpress.Xpo.XPCustomObject" Caption="XPCustom-objekt" />
+    <Class Name="DevExpress.Xpo.XPObjectType" Caption="XPObject type">
+      <OwnMembers>
+        <Member Name="Oid" Caption="OID" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="DialogButtons">
+      <LocalizationItem Name="Abort" Value="&amp;Avbryt" />
+      <LocalizationItem Name="Add" Value="Legg til" />
+      <LocalizationItem Name="Back" Value="&lt; Tilbake" />
+      <LocalizationItem Name="Cancel" Value="&amp;Avbryt" />
+      <LocalizationItem Name="Clear" Value="B&amp;lank ut" />
+      <LocalizationItem Name="Close" Value="Lukk" />
+      <LocalizationItem Name="Find" Value="Finn" />
+      <LocalizationItem Name="Ignore" Value="&amp;Ignorer" />
+      <LocalizationItem Name="Next" Value="Neste &gt;" />
+      <LocalizationItem Name="No" Value="&amp;Nei" />
+      <LocalizationItem Name="OK" Value="&amp;Ok" />
+      <LocalizationItem Name="Remove" Value="Fjern" />
+      <LocalizationItem Name="Retry" Value="P&amp;røv igjen" />
+      <LocalizationItem Name="Yes" Value="&amp;Ja" />
+      <LocalizationItem Name="Edit" Value="Rediger" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.SystemModule.DashboardItemVisibility">
+        <LocalizationItem Name="Hidden" Value="Skjult" />
+        <LocalizationItem Name="Visible" Value="Synlig" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Exceptions">
+      <LocalizationGroup Name="SystemExceptions">
+        <LocalizationItem Name="ActionMethodShouldBeNonGeneric" Value="Kan ikke opprette handling for metoden {0} i klassen {1}. Handlingsmetoden skal være ikke-generisk" />
+        <LocalizationItem Name="ActionMethodShouldBeParameterless" Value="Kan ikke opprette handling for metoden {0} i klassen {1}. Handlingsmetoden skal være uten parametre" />
+        <LocalizationItem Name="AlreadyUsedObjectSpace" Value="ObjectSpace er allerede tilordnet til en annen rot-visning: {0}. Denne feilen oppstår bare når du prøver å tilordne et ObjectSpace som allerede er i bruk av en annen rot-visning. Du kan for eksempel få denne feilmeldingen når du bruker metodene XafApplication.CreateDetailView/CreateListView i en ViewController og sender View.ObjectSpace-objektet som en parameter til disse metodene når attributten View.IsRoot er true.\r\nFor å unngå denne feilen er det tilstrekkelig å sende inn en ny ObjectSpace-forekomst som er opprettet via metoden XafApplication.CreateObjectSpace i disse metodene eller opprette ikke-rot visninger ved å sende en tilsvarende parameter til disse metodene.\r\nHvis dette ikke hjelper, kan du kontakte vår support-gruppe på https://supportcenter.devexpress.com/" />
+        <LocalizationItem Name="AnErrorHasOccurredWhileLoadingTheModel" Value="Det oppstod en feil under lasting av modellen. Kilde: {0}" />
+        <LocalizationItem Name="AnErrorHasOccurredWhileProcessingAShortcut" Value="Det oppstår en feil under prosessering av en snarvei: {0}" />
+        <LocalizationItem Name="AnErrorHasOccurredWithContext" Value="En feil har oppstått, kontekst: {0}" />
+        <LocalizationItem Name="AnUnsavedObjectCannotBeShown" Value="Et ulagret objekt kan ikke vises" />
+        <LocalizationItem Name="ApplicationIsNotStarted" Value="Programmet er ikke startet" />
+        <LocalizationItem Name="ApplicationUpdaterAssemblyDoesNotExist" Value="Programmet kan ikke oppdateres fordi assembly'et {1} ikke finnes i mappen {0}." />
+        <LocalizationItem Name="ApplicationUpdaterDatabaseVersionIsNewer" Value="Kan ikke kjøre programmet. Database-versjonen er nyere enn program-versjonen, men serveren med den nye program-versjonen finnes ikke. Be administratoren om å kontrollere at konfigurasjonfilen inneholder en riktig bane til den nye versjonen av programmet." />
+        <LocalizationItem Name="AttributeModifyingFailed" Value="Endring attributtet mislyktes" />
+        <LocalizationItem Name="AttributeShouldStartWithSymbol" Value="Attributtet {0} må begynne med '@'-symbolet: {1}" />
+        <LocalizationItem Name="AutoCreateOptionIs" Value="UpdatingReadOnlyDataStore.AutoCreateOption er {0}" />
+        <LocalizationItem Name="CannotAccessCollectionCollectionSourceIsBeingIntialized" Value="Du kan ikke tilgang til egenskapen Collection fordi Collection Source initialiseres nå. Denne feilen kan for eksempel oppstå når du prøver å få tilgang til egenskapen Collection i OnActivated-metoden for et ViewController. For å unngå denne feilen er det nødvendig å tilgang til Collection-egenskapen på et senere tidspunkt, når Collection-kilde allerede er initialisert. Den beste måten å gjøre dette er å håndtere event'et CollectionChanged. Se produktdokumentasjonen for mer detaljert informasjon om disse klassene og metodene. Hvis dette ikke hjelper, kan du kontakte vår support-gruppe på https://supportcenter.devexpress.com/" />
+        <LocalizationItem Name="CannotAddCollectionProperty" Value="Kan ikke legge til collection {0}" />
+        <LocalizationItem Name="CannotAddDuplicateProperty" Value="Kan ikke legge til duplikat property editor: {0}" />
+        <LocalizationItem Name="CannotAddToEmptySingleton" Value="Kan ikke legge til tom singleton. Opprett ny forekomst av collection" />
+        <LocalizationItem Name="CannotCreateAppropriateDetailItem" Value="Kan ikke opprette riktig detalj-element for {0}'" />
+        <LocalizationItem Name="CannotCreateAppropriatePropertyEditorForTheProperty" Value="Kan ikke opprette riktig property editor for ' {0}.{1}' property" />
+        <LocalizationItem Name="CannotCreateSchemaForAttribute" Value="Kan ikke endre skjemaet for attributt" />
+        <LocalizationItem Name="CannotCreateTemplateByName" Value="Kan ikke opprette malen ved navn: {0}" />
+        <LocalizationItem Name="CannotFindListViewWithId" Value="Finner ikke ListView med ID = {0}" />
+        <LocalizationItem Name="CannotFindThePropertyWithinTheClass" Value="Finner ikke egenskapen {0} i klassen {1}" />
+        <LocalizationItem Name="CannotGenerateContent" Value="Kan ikke generere innhold: ClassName-attributtet er tomt" />
+        <LocalizationItem Name="CannotObtainTheEditingObject" Value="Kan ikke hente det redigerte objektet" />
+        <LocalizationItem Name="CannotProcessTheRequestedUrl" Value="Kan ikke behandle den forespurte url" />
+        <LocalizationItem Name="CannotProcessTheRequestedUrlActionItemWasNotFound" Value="Kan ikke behandle den forespurte url, action item {0} ble ikke funnet" />
+        <LocalizationItem Name="CannotReadDictionaryFromResource" Value="Kan ikke lese ordliste fra ressursen {0} i assembly'et {1}" />
+        <LocalizationItem Name="CannotSetEditValueAvailableValues" Value="Kan ikke angi EditValue '{0}' text, tilgjengelige verdier: \r\n {1}" />
+        <LocalizationItem Name="CannotSetEditValueListIsEmpty" Value="Kan ikke angi EditValue med teksten '{0}', liste er tom" />
+        <LocalizationItem Name="CannotShowViewUnknownContext" Value="Kan ikke vise visningen, ukjent kontekst: {0}" />
+        <LocalizationItem Name="CannotShowViewUnknownTarget" Value="Kan ikke vise visningen, ukjent mål: {0}" />
+        <LocalizationItem Name="ClassDoesntImplementInterface" Value="Klassen {0} implementerer ikke grensesnittet {1}" />
+        <LocalizationItem Name="CompatibilityApplicationIsOldError" Value="Database-versjon er høyere enn program-versjon. Programmet må oppdateres. Kontakt systemansvarlig eller laste ned en ny version.\r\nEkstra informasjon: den lokale versjonen {0} av modulen {1} er lavere enn versjonen {2} i databasen." />
+        <LocalizationItem Name="CompatibilityDatabaseIsOldError" Value="Databasen er en eldre versjon enn programmet. Databasen må oppdateres." />
+        <LocalizationItem Name="ConfigFileDoesNotExists" Value="Config-filen {0} finnes ikke" />
+        <LocalizationItem Name="ConfigFileHasNoModuleNames" Value="'add\[@key=\&quot;Modules\ ]' noden bør inneholde modul-liste, config-filen {0}" />
+        <LocalizationItem Name="CurrentObjectIsNotSet" Value="Kan ikke angi egenskapen {0}. Gjeldende objekt er ikke angitt" />
+        <LocalizationItem Name="CustomizePopupWindowParamsEventArgsViewIsNull" Value="Hvis du vil unngå denne feilen er det nødvendig å tilordne egenskapen CustomizePopupWindowParamsEventArgs.View ved håndtering av hendelsen CustomizePopupWindowParams. Hvis du vil gjøre dette, kan du opprette en visning ved hjelp av XafApplication.CreateDetailView/CreateListView-metoder. Se produktdokumentasjonen for mer detaljert informasjon om disse klasser og metoder. Hvis dette ikke hjelper, kan du kontakte vår support-gruppe på https://supportcenter.devexpress.com/" />
+        <LocalizationItem Name="DataLayerAlreadyExists" Value="Det finnes allerede en dataLayer: {0}" />
+        <LocalizationItem Name="DictionaryPathItemParsingFailed" Value="Dictionary path element parsing mislyktes. Det er en syntaksfeil i uttrykket {0}" />
+        <LocalizationItem Name="DictionaryPathParsingFailed" Value="Dictionary path parsing mislyktes. Det er en syntaksfeil i uttrykket {0}" />
+        <LocalizationItem Name="DuplicateComponentIdentifier" Value="Duplikat komponent Id {0}" />
+        <LocalizationItem Name="ErrorOccursWhileAddingTheCustomProperty" Value="Det oppstår feil mens du legger til {2} egendefinerte egenskapen ({0} egenskapstypen) til typen {1}: {3}" />
+        <LocalizationItem Name="ExceptionDialogLabel" Value="Følgende feil oppstod:" />
+        <LocalizationItem Name="GridColumnDoesNotExist" Value="Kolonnen {0} finnes ikke i grid" />
+        <LocalizationItem Name="GridColumnExists" Value="Kolonnen {0} finnes allerede i grid" />
+        <LocalizationItem Name="GridControlIsAlreadyCreated" Value="Kan ikke angi EditMode-egenskapen. GridControl er allerede blitt opprettet" />
+        <LocalizationItem Name="IncompatibleParametersCombinationOnViewChanged" Value="Inkompatible parametre kombinasjon. PopupWindow har samme ObjectSpace som main View.  Men SaveOnAccept-egenskapen for popup-vinduets DialogController er satt til true. Bruk en ny ObjectSpace for det aktiverte popup-vinduet, eller sett DialogController. SaveOnAccept-egenskapen til false." />
+        <LocalizationItem Name="IncorrectConfigFile" Value="Konfigurasjonsfilen {0} inneholder ikke  ' &lt; add key = \ &quot; Modules\&quot;' noden" />
+        <LocalizationItem Name="InfiniteRecursionDetected" Value="Uendelig rekursjon oppdaget: \&quot;{0}\&quot; detaljvisning ble opprettet {1} ganger" />
+        <LocalizationItem Name="InvalidApplicationVersion" Value="Ugyldig programversjon {0}" />
+        <LocalizationItem Name="InvalidParametrizedActionValueType" Value="Ugyldig verdi-type er tilordnet den parametriske handlingen {0}. Angi typen Int, String eller DateTime i stedet." />
+        <LocalizationItem Name="InvalidValueOfEnumProperty" Value="{0}-objektets egenskap {1} har feil verdi for {2}. Initialisere egenskapen med en riktig {3} opplistingsverdi i businessklassen {4} sin AfterConstruction-metode." />
+        <LocalizationItem Name="IsNotValidNamespacePrefixDescription" Value="{0}' er ikke gyldig namespace prefix beskrivelse" />
+        <LocalizationItem Name="ItsImpossibleToFindPathForNode" Value="Det er umulig å finne path = '{0}' for noden '{1}'" />
+        <LocalizationItem Name="ItsImpossibleToFindSourceNode" Value="Det er umulig å finne SourceNode ='{0}\\{1}'" />
+        <LocalizationItem Name="LayoutControlInvalidCount" Value="Feil antall: '{0}'" />
+        <LocalizationItem Name="ListEditorShouldImplement" Value="ListEditor må implementere IDXPopupMenuHolder interface" />
+        <LocalizationItem Name="MethodShouldBeUsed" Value="Metoden '{0}' skal brukes" />
+        <LocalizationItem Name="ModulesHasAlreadyBeenLoaded" Value="Moduler er allerede lastet" />
+        <LocalizationItem Name="NameAndValueCollectionsShouldHaveEqualLengths" Value="Names and values collections skal ha like lengder" />
+        <LocalizationItem Name="NodeContainsDuplicatedChildNodes" Value="Noden '{0}' inneholder to underordnede noder med verdien {1} i key-attributtet. \r\n Node1: '{2}' \r\n Node2: '{3}'" />
+        <LocalizationItem Name="NodeWasNotFound" Value="Noden '{0}' ble ikke funnet" />
+        <LocalizationItem Name="NotRegisteredReadOnlyParameterException" Value="Den skrivebeskyttede parametren '{0}'  er ikke registrert i ParametersFactory." />
+        <LocalizationItem Name="ObjectFormatterFormatStringIsInvalid" Value="Objektet kan ikke formateres fordi den angitte formatstrengen er ugyldig: {0}" />
+        <LocalizationItem Name="PageCanOnlyContainOneInstanceOfControl" Value="Side kan bare inneholde én forekomst av '{0}' controll" />
+        <LocalizationItem Name="ParameterConflictsWithPropertyException" Value="Vilkåret inneholder den skrivebeskyttede parameteren '{0}' som er i konflikt med egenskapen '{0}' i klassen '{1}'. Hvis du vil referere til den skrivebeskyttede parameteren, bruker den '@@{0}' syntaks. Hvis du vil referere til egenskapen, bruker du '@this.{0}' syntaks." />
+        <LocalizationItem Name="PassedObjectBelongsToAnotherObjectSpace" Value="Objektet som er brukt, tilhører en annen ObjectSpace. Denne feilen kan oppstå når du manipulerer objekter via en ObjectSpace som ikke hører til disse objektene. Du kan for eksempel få denne feilmeldingen når du bruker metoden XafApplication.CreateDetailView i tilfelle du gir inn et objekt som ble hentet fra en annen ObjectSpace enn ObjectSpace som er brukt som en parameter i denne metoden. Hvis du vil rette denne feilen, bør du kontrollere at alle objekter du manipulere tilhører en ObjectSpace.\r\nI de fleste tilfeller, for å unngå denne feilen, er det tilstrekkelig å kalle ObjectSpace.GetObject/GetObjectByKey-metoder for å få et sendt objekt i mål-ObjectSpace.\r\nHvis dette ikke hjelper, kan du kontakte vår support-gruppe på https://supportcenter.devexpress.com/" />
+        <LocalizationItem Name="PermissionIsDenied" Value="Ingen tilgang" />
+        <LocalizationItem Name="ProcessWasAborted" Value="Prosessen ble avbrutt" />
+        <LocalizationItem Name="RequiresCurrentObjectException" Value="Kan ikke oppdatere CriteriaWrapper fordi vilkåret bruker dynamiske parametre, men gjeldende objektet er ikke angitt. For å oppdatere CriteriaWrapper, kall UpdateParametersValues(Object currentObject)-metoden og send inn det gjeldende objektet som parameter." />
+        <LocalizationItem Name="ResourceItemWithNameIsNotFound" Value="Ressurs-element med navnet {0} finnes ikke" />
+        <LocalizationItem Name="RuleSetClearingIsDenied" Value="RuleSet clearing nektes" />
+        <LocalizationItem Name="SourceAttributeExpressionShouldStartWith" Value="Kilde-attributt uttrykk bør begynne med '{0}': '{1}'" />
+        <LocalizationItem Name="SourceAttributePathShouldConsistOf" Value="Kilde attributt bane bør bestå av ett eller flere navn på node og siste attributtnavn, som er avgrenset av ' \\' symbol: '{0}'" />
+        <LocalizationItem Name="SourceNodeExpressionShouldStartWith" Value="SourceNode uttrykket bør begynne med '{0}': '{1}'" />
+        <LocalizationItem Name="TheAspectIsNotPresentInAspectsCollection" Value="Aspektet '{0}' finnes ikke i collection av aspekter" />
+        <LocalizationItem Name="TheAssemblyDoesntReferAssembly" Value="Assembly '{0}' refererer ikke assembly {1} ({2})" />
+        <LocalizationItem Name="TheClassIsNotFoundInBOModel" Value="Klassen '{0}' finnes ikke i BOModel" />
+        <LocalizationItem Name="TheClassNameAttributeIsEmpty" Value="ClassName-attributtet for den refererte view-noden er tom:" />
+        <LocalizationItem Name="TheClassNameAttributeRefersToADifferentType" Value="ClassName-attributtet for den refererte view-noden refererer til en annen type. \r\nSnarvei objekt-type: {0} \r\nView-node objekt-type: {1}" />
+        <LocalizationItem Name="TheCreateApplicationModulesManagerReturnsNull" Value="Metoden CreateApplicationModulesManager returnerer null" />
+        <LocalizationItem Name="TheExpressionShouldConsistOf" Value="Uttrykket bør bestå av søk uttrykk og kilde attributt navn som er adskilt med ';' symbol: '{0}'" />
+        <LocalizationItem Name="TheExpressionStringContainsANumberOfExpressions" Value="'ExpressionString'-strengen inneholder {0} uttrykk" />
+        <LocalizationItem Name="ThePassedFileIsNotADllOrConfig" Value="Filen {0} er ikke en *.dll eller *.config fil" />
+        <LocalizationItem Name="ThereIsAlreadyRegisteredCreatorForFormat" Value="Det er allerede registrert en creator for formatet '{0}'" />
+        <LocalizationItem Name="TheSourceNodeCannotAddressToSeveralNodes" Value="SourceNode ='{0} \\ {1}' kan adressere til flere '{1}' noder (mer enn én)" />
+        <LocalizationItem Name="TheTypeAttributeCannotBeEmpty" Value="'Type'-attributtet kan ikke være tomt" />
+        <LocalizationItem Name="TheTypeIsNotDescendantOf" Value="typen '{0}' er ikke avledet av '{1}'" />
+        <LocalizationItem Name="TheValueWasLocked" Value="Verdien var låst" />
+        <LocalizationItem Name="TypeDoesNotContainTheMember" Value="Typen '{0}' inneholder ikke medlemmet '{1}'" />
+        <LocalizationItem Name="TypeIsNotAEnum" Value="Typen '{0}' er ikke en enum-type" />
+        <LocalizationItem Name="UnableToAssignDisabledActionItem" Value="Kan ikke tilordne et deaktivert element. Handling: '{0}'. element: '{1}'. Deaktiver grunner: '{2}'" />
+        <LocalizationItem Name="UnableToAssignInvisibleActionItem" Value="Kan ikke tilordne et usynlig element. Handling: {0}. Element: {1}. Usynlige grunner: {2}" />
+        <LocalizationItem Name="UnableToCast" Value="Kan ikke omgjøre objekt av typen '{0}' til typen '{1}'" />
+        <LocalizationItem Name="UnableToChangeChildrenOfNodeDueItIsLocked" Value="Kan ikke endre barn av {0}-node på grunn av det er låst." />
+        <LocalizationItem Name="UnableToChangeConnectionString" Value="Kan ikke endre tilkoblingsstrengen. Allerede tilkoblet" />
+        <LocalizationItem Name="UnableToChangeValueOfAttributeDueItIsLocked" Value="Kan ikke endre verdien til {0}-attributtet på grunn av det er låst" />
+        <LocalizationItem Name="UnableToCreateObjectSpace" Value="Kan ikke opprette ObjectSpace. Et dataLayer er null eller connectionString er tom" />
+        <LocalizationItem Name="UnableToCreateUpdateSessionAutoCreateOption" Value="Kan ikke opprette UpdatingSession. DataLayer.AutoCreateOption er {0}" />
+        <LocalizationItem Name="UnableToCreateUpdateSessionDataLayerIsNull" Value="Kan ikke opprette UpdatingSession. En dataLayer er null eller connectionString er tom" />
+        <LocalizationItem Name="UnableToCreateUpdatingReadonlySessionAutoCreateOption" Value="Kan ikke opprette UpdatingReadOnlySession. DataLayer.AutoCreateOption er {0}" />
+        <LocalizationItem Name="UnableToExecuteDisabledOrInactiveAction" Value="Kan ikke utføre deaktivert eller inaktiv handling {2}. Deaktive grunner: {0}, inaktive grunner: {1}" />
+        <LocalizationItem Name="UnableToFindADetailViewForType" Value="Finner ikke en detaljvisning for objekttypen '{0}'" />
+        <LocalizationItem Name="UnableToFindAListViewForType" Value="Finner ikke en listevisning for objekttypen '{0}'" />
+        <LocalizationItem Name="UnableToFindPropertyInType" Value="Finner ikke egenskapen '{0}' i typen '{1}'" />
+        <LocalizationItem Name="UnableToFindType" Value="Finner ikke typen '{0}'" />
+        <LocalizationItem Name="UnableToInitializeFileDataProperty" Value="Kan ikke initialisere egenskapen {0} i {1}-objektet fordi denne egenskapen er skrivebeskyttet, eller typen {2} har ikke en standardkonstruktør eller du har ikke tillatelse til å opprette det" />
+        <LocalizationItem Name="UnableToSetReadOnlyProperty" Value="Kan ikke angi egenskapen ReadOnly '{0}'" />
+        <LocalizationItem Name="UnknownException" Value="Ukjent unntak oppstår. Kan ikke hente unntaksdetaljer" />
+        <LocalizationItem Name="UnknownValue" Value="Ukjent verdi: '{0}'" />
+        <LocalizationItem Name="UnknownViewNodeName" Value="Ukjent visning node navn: '{0}'\r\nTillatte navn: '{1}', '{2}'" />
+        <LocalizationItem Name="ValidationCannotFindThePropertyWithinTheClass" Value="Kan ikke kontrollere '{0}'-valideringsregelen som bruker egenskapen '{1}' fordi denne egenskapen ikke finnes i målklassen '{2}'" />
+        <LocalizationItem Name="ValidationMessageTemplateHasInvalidFormat" Value="Valideringsmelding mal har et ugyldig format: '{0}'" />
+        <LocalizationItem Name="ValueCannotBeStoredIntoTheProperty" Value="Verdien '{0}' kan ikke lagres i egenskapen '{1}'" />
+        <LocalizationItem Name="WindowWasNotFound" Value="Vinduet ble ikke funnet med id '{0}'. Registrerte vindu: '{1}'" />
+        <LocalizationItem Name="XPDictionaryIsNull" Value="XPDictionary er null" />
+        <LocalizationItem Name="YouCannotChangeCurrentAspect" Value="Du kan ikke endre det gjeldende aspektet. Det avhenger av kulturen i gjeldende tråd" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="UserVisibleExceptions">
+        <LocalizationItem Name="ActionIsNotSingleChoiceAction" Value="Kan ikke registrere '{0}' handling i '{1}' handling container. '{0}' Handling er ikke av '{2}' type." />
+        <LocalizationItem Name="ApplicationUpdateError" Value="Oppdateringen var velllykket. Databaseversjon er imidlertid fortsatt større enn program-versjonen. Kontakt systemansvarlig." />
+        <LocalizationItem Name="CircularReference" Value="Denne operasjonen kan ikke fullføres fordi den fører til en sirkulær referanse." />
+        <LocalizationItem Name="CriteriaEditorsDataTypeIsNull" Value="Angi objekttypen du vil lage et kriterium for." />
+        <LocalizationItem Name="FieldValueSizeExceedsMaxLength" Value="Lengden på verdien i dette feltet kan ikke overskride {0}" />
+        <LocalizationItem Name="LogonAttemptsAmountedToLimitWin" Value="Etter tre mislykkede påloggingsforsøk vil programmet nå bli lukket. Du bør vurdere å kontakte en administrator om dine påloggingsdetaljer." />
+        <LocalizationItem Name="MaskValidationErrorMessage" Value="Inndata mangler symbol" />
+        <LocalizationItem Name="MessageWarningTitle" Value="Advarsel" />
+        <LocalizationItem Name="ObjectAccessPermissionCannotBeEmpty" Value="'Object Type'-feltet kan ikke være tomt, og må minst et tilgangsfelt må ha en verdi som er forskjellig fra blank." />
+        <LocalizationItem Name="ObjectToSaveWasChanged" Value="Objektet du prøver å lagre ble endret av en annen bruker. Du må oppdatere data." />
+        <LocalizationItem Name="RequestedObjectHasBeenDeleted" Value="Data vises i skrivebeskyttet modus fordi det har blitt slettet." />
+        <LocalizationItem Name="RequestedObjectIsNotFound" Value="Det angitte objektet finnes ikke og kan ikke behandles." />
+        <LocalizationItem Name="SimultaneousChangeDataMessage" Value="Advarsel: samtidige endringer av den samme informasjonen i forskjellige vinduer/visninger er oppdaget: \n{0}\nDet vil være mulig å lagre endringer i bare et vindu/visning." />
+        <LocalizationItem Name="SimultaneousChangeDataMessageItem" Value="- '{0}' vindu/visning ({1}), '{2}' objekt ({3})" />
+        <LocalizationItem Name="SystemExceptionMessageFormat" Value="En feil med nummer {0} har inntruffet.\r\nFeilmelding: {1}" />
+        <LocalizationItem Name="TheFollowingErrorOccurred" Value="Følgende feil oppstod:" />
+        <LocalizationItem Name="UserFriendlyConnectionFailedException" Value="Tilkoblingen til databasen mislyktes. Kontakt systemansvarlig." />
+        <LocalizationItem Name="UserFriendlySqlException" Value="Det oppstod en feil under tilkobling til databasen. Kontakt systemansvarlig." />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Messages">
+      <LocalizationItem Name="User" Value="Bruker: {0}" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Texts">
+      <LocalizationItem Name="NullValueText" Value="I/T" />
+    </LocalizationGroup>
+  </Localization>
+  <Views>
+    <DetailView Id="AboutInfo_DetailView" Caption="Om" />
+  </Views>
+</Application>

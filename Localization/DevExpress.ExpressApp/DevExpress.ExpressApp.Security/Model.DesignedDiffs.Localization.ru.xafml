@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ChangePasswordByUser" Caption="Изменить мой пароль" />
+      <Action Id="DeletePermissionDescriptor" Caption="Удалить" ConfirmationMessage="Выбранные записи будут удалены. Продолжить?" />
+      <Action Id="Deny_TypePermissionMatrixItem" Caption="Запретить">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Create" Caption="Создание" />
+          <ChoiceActionItem Id="Delete" Caption="Удаление" />
+          <ChoiceActionItem Id="Deny All" Caption="Полный доступ" />
+          <ChoiceActionItem Id="Deny Modification" Caption="Переход" />
+          <ChoiceActionItem Id="Navigate" Caption="Чтение" />
+          <ChoiceActionItem Id="Read" Caption="Чтение и переход" />
+          <ChoiceActionItem Id="Write" Caption="Запись" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="Grant_TypePermissionMatrixItem" Caption="Разрешить">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Create" Caption="Создание" />
+          <ChoiceActionItem Id="Delete" Caption="Удаление" />
+          <ChoiceActionItem Id="Full Access" Caption="Полный доступ" />
+          <ChoiceActionItem Id="Navigate" Caption="Переход" />
+          <ChoiceActionItem Id="Read" Caption="Чтение" />
+          <ChoiceActionItem Id="Read Only Access" Caption="Чтение и переход" />
+          <ChoiceActionItem Id="Write" Caption="Запись" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="MyDetails" Caption="Мои данные" />
+      <Action Id="NewPermissionDescriptor" Caption="Создать" />
+      <Action Id="ResetPassword" Caption="Сброс пароля" ToolTip="Генерировать новый пароль для выбранного пользователя" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Security.ClientServer.MemberListDetailViewObject" Caption="Список свойств">
+      <OwnMembers>
+        <Member Name="AllItems" Caption="Все свойства" />
+        <Member Name="ReadAllowed" Caption="Чтение разрешено" />
+        <Member Name="WriteAllowed" Caption="Запись разрешена" />
+        <Member Name="Criteria" Caption="Критерий" />
+        <Member Name="MemberPermission" Caption="Разрешение на свойство" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ClientServer.MemberMatrixItem" Caption="Права на свойство">
+    <OwnMembers>
+      <Member Name="MemberName" Caption="Имя свойства" />
+      <Member Name="IsAllowed" Caption="Разрешено" />
+    </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters" Caption="Стандартные параметры входа">
+      <OwnMembers>
+        <Member Name="Password" Caption="Пароль" />
+        <Member Name="UserName" Caption="Имя пользователя" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordOnLogonParameters" Caption="Параметры для изменения пароля при входе">
+      <OwnMembers>
+        <Member Name="ConfirmPassword" Caption="Подтверждение пароля" />
+        <Member Name="NewPassword" Caption="Новый пароль" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordParameters" Caption="Параметры для изменения пароля">
+      <OwnMembers>
+        <Member Name="OldPassword" Caption="Старый пароль" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.EditModelPermission" Caption="Право редактировать модель">
+      <OwnMembers>
+        <Member Name="Modifier" Caption="Модификатор" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.MemberOperationPermissionData" Caption="Права на доступ к свойствам">
+      <OwnMembers>
+        <Member Name="Members" Caption="Свойства" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.MemberOperationPermissionDescriptor" Caption="Дескриптор прав на доступ к свойствам">
+      <OwnMembers>
+        <Member Name="Id" Caption="Идентификатор" />
+        <Member Name="InheritedFrom" Caption="Наследуется от" />
+        <Member Name="MemberName" Caption="Имя свойства" />
+        <Member Name="Read" Caption="Чтение" />
+        <Member Name="Write" Caption="Запись" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ModelOperationPermissionData" Caption="Права доступа к модели">
+      <OwnMembers>
+        <Member Name="CanEditModel" Caption="Разрешить редактировать модель" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ObjectAccessPermission" Caption="Право доступа к объектам">
+      <OwnMembers>
+        <Member Name="CreateAccess" Caption="Право создания" />
+        <Member Name="DeleteAccess" Caption="Право удаления" />
+        <Member Name="NavigateAccess" Caption="Право на переход" />
+        <Member Name="ObjectType" Caption="Тип объекта" />
+        <Member Name="ReadAccess" Caption="Право чтения" />
+        <Member Name="WriteAccess" Caption="Право записи" />
+        <Member Name="AccessItemList" Caption="Права доступа" />
+        <Member Name="IsEmpty" Caption="Пустой" />
+        <Member Name="Contexts" Caption="Контексты" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ObjectOperationPermissionData" Caption="Права доступа к объектам">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Критерий" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ObjectOperationPermissionDescriptor" Caption="Дескриптор прав на доступ к объектам">
+      <OwnMembers>
+        <Member Name="Id" Caption="Идентификатор" />
+        <Member Name="Caption" Caption="Наименование" />
+        <Member Name="Create" Caption="Создание" />
+        <Member Name="Criteria" Caption="Критерий" />
+        <Member Name="Delete" Caption="Удаление" />
+        <Member Name="InheritedFrom" Caption="Наследуется от" />
+        <Member Name="Navigate" Caption="Переход" />
+        <Member Name="Read" Caption="Чтение" />
+        <Member Name="Write" Caption="Запись" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.PermissionData" Caption="Данные прав">
+      <OwnMembers>
+        <Member Name="Permission" Caption="Право доступа" />
+        <Member Name="PermissionsContainer" Caption="Контейнер прав" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.PermissionsContainer" Caption="Контейнер прав">
+      <OwnMembers>
+        <Member Name="PersistentPermissions" Caption="Хранимые права" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ResetPasswordParameters" Caption="Параметры для сброса пароля">
+      <OwnMembers>
+        <Member Name="Password" Caption="Пароль" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.SecurityRole" Caption="Роль">
+      <OwnMembers>
+        <Member Name="CanEditModel" Caption="Разрешить редактировать модель" />
+        <Member Name="IsAdministrator" Caption="Административная" />
+        <Member Name="Permissions" Caption="Права доступа" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.SecuritySimpleUser" Caption="Пользователь">
+      <OwnMembers>
+        <Member Name="IsAdministrator" Caption="Является администратором" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.SecurityStrategyRole" Caption="Роль стратегии безопасности">
+      <OwnMembers>
+        <Member Name="Name" Caption="Название" />
+        <Member Name="Users" Caption="Пользователи" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.SecurityUser" Caption="Пользователь" />
+    <Class Name="DevExpress.ExpressApp.Security.SecurityUserBase" Caption="Пользователь">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="Сменить пароль при первом входе" />
+        <Member Name="IsActive" Caption="Активен" />
+        <Member Name="UserId" Caption="Идентификатор пользователя" />
+        <Member Name="UserName" Caption="Имя пользователя" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.SecurityUserWithRolesBase" Caption="Пользователь с ролями">
+      <OwnMembers>
+        <Member Name="Roles" Caption="Роли" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.PermissionMatrix.TypePermissionMatrixItem" Caption="Разрешение на тип">
+      <OwnMembers>
+        <Member Name="AllowCreate" Caption="Создание" />
+        <Member Name="AllowDelete" Caption="Удаление" />
+        <Member Name="AllowNavigate" Caption="Переход" />
+        <Member Name="AllowRead" Caption="Чтение" />
+        <Member Name="AllowWrite" Caption="Запись" />
+        <Member Name="Category" Caption="Категория" />
+        <Member Name="Id" Caption="Идентификатор" />
+        <Member Name="MemberPermissions" Caption="Разрешения на поля" />
+        <Member Name="Object" Caption="Объект" />
+        <Member Name="ObjectPermissions" Caption="Разрешения на объекты" />
+        <Member Name="TargetType" Caption="Тип" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemMemberPermissionsObject" Caption="Разрешения на поля">
+      <OwnMembers>
+        <Member Name="AllowRead" Caption="Разрешить чтение" />
+        <Member Name="AllowWrite" Caption="Разрешить запись" />
+        <Member Name="EffectiveRead" Caption="Чтение" />
+        <Member Name="EffectiveWrite" Caption="Запись" />
+        <Member Name="InheritedFrom" Caption="Унаследованы от" />
+        <Member Name="Members" Caption="Поля" />
+        <Member Name="Owner" Caption="Владелец" />
+        <Member Name="Criteria" Caption="Критерий" />
+      </OwnMembers>
+    </Class>
+	<Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemObjectPermissionsObject" Caption="Разрешения на объекты">
+      <OwnMembers>
+        <Member Name="AllowDelete" Caption="Разрешить удаление" />
+        <Member Name="AllowNavigate" Caption="Разрешить переход" />
+        <Member Name="AllowRead" Caption="Разрешить чтение" />
+        <Member Name="AllowWrite" Caption="Разрешить запись" />
+        <Member Name="Criteria" Caption="Критерий" />
+        <Member Name="EffectiveDelete" Caption="Удаление" />
+        <Member Name="EffectiveNavigate" Caption="Переход" />
+        <Member Name="EffectiveRead" Caption="Чтение" />
+        <Member Name="EffectiveWrite" Caption="Запись" />
+        <Member Name="InheritedFrom" Caption="Унаследованы от" />
+        <Member Name="Owner" Caption="Владелец" />
+      </OwnMembers>
+    </Class>
+	<Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole" Caption="Роль">
+      <OwnMembers>
+        <Member Name="ParentRoles" Caption="Используется в ролях" />
+        <Member Name="ChildRoles" Caption="Используемые роли" />
+        <Member Name="Users" Caption="Пользователи" />
+      </OwnMembers>
+    </Class>
+	<Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemRoleBase" Caption="Базовая роль">
+      <OwnMembers>
+        <Member Name="CanEditModel" Caption="Разрешить редактировать модель" />
+        <Member Name="IsAdministrative" Caption="Административная" />
+        <Member Name="Name" Caption="Имя" />
+      </OwnMembers>
+    </Class>
+	<Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemTypePermissionObject" Caption="Разрешения на тип">
+      <OwnMembers>
+        <Member Name="Owner" Caption="Владелец" />
+      </OwnMembers>
+    </Class>
+	<Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemTypePermissionsObjectBase" Caption="Основные разрешения на тип">
+      <OwnMembers>
+        <Member Name="AllowCreate" Caption="Создание" />
+        <Member Name="AllowDelete" Caption="Удаление" />
+        <Member Name="AllowNavigate" Caption="Навигация" />
+        <Member Name="AllowRead" Caption="Чтение" />
+        <Member Name="AllowWrite" Caption="Запись" />
+        <Member Name="MemberPermissions" Caption="Разрешения на поля" />
+        <Member Name="ObjectPermissions" Caption="Разрешения на объекты" />
+        <Member Name="Object" Caption="Объект" />
+        <Member Name="TargetType" Caption="Тип" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemTypePermissionsObjectOwner" Caption="Владелец разрешений на тип">
+      <OwnMembers>
+        <Member Name="TypePermissionMatrix" Caption="Права доступа к данным" />
+        <Member Name="TypePermissions" Caption="Разрешения на тип" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.TypeOperationPermissionData" Caption="Право доступа к типу">
+      <OwnMembers>
+        <Member Name="AllowCreate" Caption="Разрешить создавать" />
+        <Member Name="AllowDelete" Caption="Разрешить удалять" />
+        <Member Name="AllowNavigate" Caption="Разрешить переход" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.TypeOperationPermissionDescriptor" Caption="Дескриптор прав на доступ к типу">
+      <OwnMembers>
+        <Member Name="Category" Caption="Категория" />
+        <Member Name="Create" Caption="Создание" />
+        <Member Name="Delete" Caption="Удаление" />
+        <Member Name="Navigate" Caption="Переход" />
+        <Member Name="Object" Caption="Объект" />
+        <Member Name="ObjectType" Caption="Тип объекта" />
+        <Member Name="Parent" Caption="Предок" />
+        <Member Name="Read" Caption="Чтение" />
+        <Member Name="Write" Caption="Запись" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.TypePermissionData" Caption="Данные доступа к типу">
+      <OwnMembers>
+        <Member Name="AllowRead" Caption="Разрешить чтение" />
+        <Member Name="AllowWrite" Caption="Разрешить запись" />
+        <Member Name="TargetType" Caption="Целевой тип" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.TypePermissionDetails" Caption="Детали доступа к типу">
+      <OwnMembers>
+        <Member Name="MemberPermissions" Caption="Права на свойства" />
+        <Member Name="ObjectPermissions" Caption="Права на объекты" />
+      </OwnMembers>
+    </Class>
+	<Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemUser" Caption="Пользователь" >
+	  <OwnMembers>
+	    <Member Name="Roles" Caption="Роли" />
+	  </OwnMembers>
+	</Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemUserBase" Caption="Базовый пользователь">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="Сменить пароль при первом входе" />
+        <Member Name="IsActive" Caption="Активен" />
+        <Member Name="UserName" Caption="Имя пользователя" />
+      </OwnMembers>
+    </Class>
+	<Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyMemberPermissionsObject" Caption="Разрешения на поля">
+      <OwnMembers>
+        <Member Name="ReadState" Caption="Чтение" />
+        <Member Name="WriteState" Caption="Запись" />
+        <Member Name="Members" Caption="Поля" />
+        <Member Name="TypePermissionObject" Caption="Владелец" />
+        <Member Name="Criteria" Caption="Критерий" />
+      </OwnMembers>
+    </Class>
+	<Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyObjectPermissionsObject" Caption="Разрешения на объекты">
+      <OwnMembers>
+        <Member Name="DeleteState" Caption="Удаление" />
+        <Member Name="NavigateState" Caption="Навигация" />
+        <Member Name="ReadState" Caption="Чтение" />
+        <Member Name="WriteState" Caption="Запись" />
+        <Member Name="Criteria" Caption="Критерий" />
+        <Member Name="TypePermissionObject" Caption="Владелец" />
+      </OwnMembers>
+    </Class>
+	<Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyRole" Caption="Роль">
+      <OwnMembers>
+        <Member Name="Users" Caption="Пользователи" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyRoleBase" Caption="Базовая роль">
+      <OwnMembers>
+        <Member Name="CanEditModel" Caption="Разрешить редактировать модель" />
+        <Member Name="IsAdministrative" Caption="Административная" />
+        <Member Name="Name" Caption="Имя" />
+		<Member Name="TypePermissions" Caption="Разрешения на тип" />
+		<Member Name="PermissionPolicy" Caption="Политика безопасности" />
+      </OwnMembers>
+    </Class>
+	<Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyTypePermissionObject" Caption="Разрешения на тип">
+      <OwnMembers>
+        <Member Name="Role" Caption="Владелец" />
+		<Member Name="CreateState" Caption="Создание" />
+        <Member Name="DeleteState" Caption="Удаление" />
+        <Member Name="NavigateState" Caption="Навигация" />
+        <Member Name="ReadState" Caption="Чтение" />
+        <Member Name="WriteState" Caption="Запись" />
+        <Member Name="MemberPermissions" Caption="Разрешения на поля" />
+        <Member Name="ObjectPermissions" Caption="Разрешения на объекты" />
+        <Member Name="TargetType" Caption="Тип" />
+      </OwnMembers>
+    </Class>
+	<Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Пользователь">
+      <OwnMembers>
+        <Member Name="Roles" Caption="Роли" />
+		<Member Name="ChangePasswordOnFirstLogon" Caption="Сменить пароль при первом входе" />
+        <Member Name="IsActive" Caption="Активен" />
+        <Member Name="UserName" Caption="Имя пользователя" />
+      </OwnMembers>
+    </Class>
+	<Class Name="DevExpress.ExpressApp.Security.IModelNavigationItemPath" Caption="Путь элемента навигации модели">
+      <OwnMembers>
+        <Member Name="ItemPath" Caption="Путь элемента" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ModelAccessModifier" Value="Модификатор доступа к модели">
+        <LocalizationItem Name="Allow" Value="Разрешить" />
+        <LocalizationItem Name="Deny" Value="Запретить" />
+      </LocalizationGroup>
+	  <LocalizationGroup Name="DevExpress.Persistent.Base.SecurityPermissionState" Value="Состояние доступа">
+        <LocalizationItem Name="Allow" Value="Разрешить" />
+        <LocalizationItem Name="Deny" Value="Запретить" />
+      </LocalizationGroup>
+	  <LocalizationGroup Name="DevExpress.Persistent.Base.SecurityPermissionPolicy" Value="Политика безопасности">
+        <LocalizationItem Name="DenyAllByDefault" Value="По умолчанию все запрещено" />
+		<LocalizationItem Name="ReadOnlyAllByDefault" Value="По умолчанию все разрешено только для чтения" />
+		<LocalizationItem Name="AllowAllByDefault" Value="По умолчанию все разрешено" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccess" Value="Доступ к объекту">
+        <LocalizationItem Name="AllAccess" Value="Все права доступа" />
+        <LocalizationItem Name="ChangeAccess" Value="Изменение" />
+        <LocalizationItem Name="Create" Value="Создание" />
+        <LocalizationItem Name="Delete" Value="Удаление" />
+        <LocalizationItem Name="Navigate" Value="Переход" />
+        <LocalizationItem Name="NoAccess" Value="Нет доступа" />
+        <LocalizationItem Name="Read" Value="Чтение" />
+        <LocalizationItem Name="Write" Value="Запись" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccessModifier" Value="Модификатор доступа к объекту">
+        <LocalizationItem Name="Allow" Value="Разрешить" />
+        <LocalizationItem Name="Deny" Value="Запретить" />
+        <LocalizationItem Name="None" Value="Пусто" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Security">
+      <LocalizationItem Name="AllBusinessClasses" Value="Все бизнес классы." />
+      <LocalizationItem Name="AllPersistentBusinessClasses" Value="Все хранимые бизнес классы." />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Exceptions">
+      <LocalizationGroup Name="UserVisibleExceptions">
+        <LocalizationGroup Name="Security">
+          <LocalizationItem Name="AllBusinessClasses" Value="Все бизнес классы." />
+          <LocalizationItem Name="AllPersistentBusinessClasses" Value="Все хранимые бизнес классы." />
+        </LocalizationGroup>
+      </LocalizationGroup>
+      <LocalizationItem Name="CanNotDeleteObject" Value="Вы не можете удалить объект {0} из-за ограничений безопасности." />
+      <LocalizationItem Name="CanNotSaveObject" Value="Вы не можете сохранить объект {0} из-за ограничений безопасности." />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Messages">
+      <LocalizationItem Name="Create" Value="Создание" />
+      <LocalizationItem Name="Delete" Value="Удаление" />
+      <LocalizationItem Name="IsGrantedFrom" Value=" разрешено для члена класса '{0}'." />
+      <LocalizationItem Name="IsInheritedFrom" Value=" унаследовано от класса '{0}'. " />
+      <LocalizationItem Name="Navigate" Value="Переход" />
+      <LocalizationItem Name="Read" Value="Чтение" />
+      <LocalizationItem Name="Write" Value="Запись" />
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="MyDetails" Caption="Мои данные" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView" Caption="Вход в систему">
+      <Items>
+        <StaticText Id="LogonText" Text="Добро пожаловать! Пожалуйста, введите имя пользователя и пароль." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ChangePasswordOnLogonParameters_DetailView" Caption="Сменить пароль при первом входе в систему">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="По соображениям безопасности, вы должны установить собственный пароль. Пожалуйста, введите новый пароль в двух текстовых полях ниже. Не используйте старый пароль повторно." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ChangePasswordParameters_DetailView" Caption="Изменение пароля">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="Чтобы изменить пароль, введите ваш старый и новый пароли в текстовых полях ниже." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ResetPasswordParameters_DetailView" Caption="Сброс пароля">
+      <Items>
+        <StaticText Id="ResetPasswordText" Text="При установка пароля пользователя будет создан новый пароль, а старый пароль будет отключен. Вы будете должны сообщить новый пароль пользователю чтобы он смог продолжить работать с приложением. Вы уверены, что хотите это сделать?" />
+      </Items>
+    </DetailView>
+	<DetailView Id="SecuritySystemUser_DetailView" Caption="Пользователь" >
+	  <Items>
+	    <Item Id="Roles" Caption="Роли" />
+	  </Items>
+	</DetailView>
+	<DetailView Id="IModelNavigationItemPath_DetailView" Caption="Путь элемента навигации модели" >
+	  <Items>
+	    <Item Id="ItemPath" Caption="Путь элемента" />
+	  </Items>
+	</DetailView>
+	<ListView Id="IModelNavigationItemPath_ListView" Caption="Путь элемента навигации модели" >
+	  <Columns>
+	    <ColumnInfo Id="ItemPath" Caption="Путь элемента" />
+	  </Columns>
+	</ListView>
+	<ListView Id="IModelNavigationItemPath_LookupListView" Caption="Путь элемента навигации модели" >
+	  <Columns>
+	    <ColumnInfo Id="ItemPath" Caption="Путь элемента" />
+	  </Columns>
+	</ListView>
+
+    <ListView Id="SecurityStrategyRole_LookupListView" Caption="Роль" />
+    <ListView Id="SecurityUserBase_LookupListView" Caption="Пользователь" />
+    <ListView Id="SecurityUserWithRolesBase_LookupListView" Caption="Пользователь" />
+	<ListView Id="SecuritySystemRole_Users_ListView" Caption="Пользователь" />
+	<ListView Id="SecuritySystemUser_ListView" Caption="Пользователь" /> 
+	<ListView Id="SecuritySystemUser_LookupListView" Caption="Пользователь" /> 
+  </Views>
+</Application>

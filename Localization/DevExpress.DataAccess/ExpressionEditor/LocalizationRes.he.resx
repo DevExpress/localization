@@ -69,13 +69,1319 @@
   <data name="ExpressionEditorStringId.Function_Cos" xml:space="preserve">
     <value>Cos(Value)
 מחזירה את הקוסינוס של זווית מוגדרת ברדיאנים.</value>
+    <comment>Community:Cos(Value)
+
+מחזירה את הקוסינוס של הזווית המוגדרת ברדיאנים.</comment>
   </data>
   <data name="ExpressionEditorStringId.Function_Cosh" xml:space="preserve">
     <value>Cosh(Value)
 מחזירה את הקוסינוס ההיפרבולי של זווית מוגדרת ברדיאנים.</value>
+    <comment>Community:Cosh(Value)
+
+מחזירה את הקוסינוס ההיפרבולי של הזווית המוגדרת ברדיאנים.</comment>
   </data>
   <data name="ExpressionEditorStringId.Function_CountAggregate" xml:space="preserve">
     <value>Count()
 מחזירה את מספר האובייקטים באוסף.</value>
+    <comment>Community:Count()
+
+מחזירה את מספר האובייקטים באוסף.</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Operator_Between" xml:space="preserve">
+    <value>Between (,)
+מציין טווח לבדיקה. מחזיר אמת אם ערך גדול מהאופרנד הראשון או שווה לו, וקטן מהאופרנד השני או שווה לו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Operator_Like" xml:space="preserve">
+    <value>משווה מחרוזת לתבנית. אם ערך המחרוזת תואם לתבנית, התוצאה היא אמת. אם המחרוזת אינה תואמת לתבנית, התוצאה היא שקר. אם גם המחרוזת וגם התבנית הן מחרוזות ריקות, התוצאה היא אמת.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Operator_Divide" xml:space="preserve">
+    <value>מחלק את האופרנד הראשון באופרנד השני.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Operator_Minus" xml:space="preserve">
+    <value>מחשב את ההפרש בין שני מספרים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Operator_Greater" xml:space="preserve">
+    <value>אופרטור "גדול מ". משמש להשוואת ביטויים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Operator_GreaterOrEqual" xml:space="preserve">
+    <value>אופרטור "גדול או שווה ל". משמש להשוואת ביטויים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Operator_In" xml:space="preserve">
+    <value>In (,,,)
+בודק אם ערך נכלל ברשימה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Operator_Less" xml:space="preserve">
+    <value>אופרטור "קטן מ". משמש להשוואת ביטויים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Operator_LessOrEqual" xml:space="preserve">
+    <value>אופרטור "קטן או שווה ל". משמש להשוואת ביטויים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Operator_Multiply" xml:space="preserve">
+    <value>מחשב את מכפלת הערכים של שני ביטויים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Operator_And" xml:space="preserve">
+    <value>מבצע פעולת "גם" לוגית על שני ביטויים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Operator_Or" xml:space="preserve">
+    <value>מבצע פעולת 'או' לוגית על שני ביטויים לוגיים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Operator_Not" xml:space="preserve">
+    <value>מבצע שלילה לוגית של ביטוי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Constant_Null" xml:space="preserve">
+    <value>מייצג הפניה חסרת אובייקט, שאינה מפנה לאובייקט כלשהו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Constant_False" xml:space="preserve">
+    <value>מייצג את הערך הבוליאני שקר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Constant_True" xml:space="preserve">
+    <value>מייצג את הערך הבוליאני אמת.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Operator_Modulo" xml:space="preserve">
+    <value>מחזיר את השארית (מודולו) המתקבלת מחלוקת ביטוי מספרי אחד בביטוי מספרי אחר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Operator_Equal" xml:space="preserve">
+    <value>מחזיר אמת אם לשני האופרנדים יש אותו ערך; אחרת, מחזיר שקר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Operator_NotEqual" xml:space="preserve">
+    <value>מחזיר אמת אם לאופרנדים אין אותו ערך; אחרת, מחזיר שקר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Abs" xml:space="preserve">
+    <value>Abs(Value)
+
+מחזירה את הערך המוחלט והחיובי של הביטוי המספרי הנתון.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Acos" xml:space="preserve">
+    <value>Acos(Value)
+
+מחזירה את הארק קוסינוס של מספר (הזווית ברדיאנים שהקוסינוס שלה הוא הביטוי הנתון בנקודה צפה).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_AddDays" xml:space="preserve">
+    <value>AddDays(Date, DaysCount)
+
+מחזירה ערך תאריך בהפרש של מספר הימים שצוין מערך התאריך והשעה או מערך השעה בלבד שצוין.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_AddHours" xml:space="preserve">
+    <value>AddHours(Time, HoursCount)
+
+מחזירה ערך שעה בהפרש של מספר השעות שצוין מערך התאריך והשעה או מערך השעה בלבד שצוין.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_AddMilliSeconds" xml:space="preserve">
+    <value>AddMilliSeconds(Time, MilliSecondsCount)
+
+מחזירה ערך שעה בהפרש של מספר אלפיות השנייה שצוין מערך התאריך והשעה או מערך השעה בלבד שצוין. פונקציה זו אינה נתמכת במקורות Entity Framework Core במצב שרת.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_AddMinutes" xml:space="preserve">
+    <value>AddMinutes(Time, MinutesCount)
+
+מחזירה ערך שעה בהפרש של מספר הדקות שצוין מערך התאריך והשעה או מערך השעה בלבד שצוין.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_AddMonths" xml:space="preserve">
+    <value>AddMonths(Date, MonthsCount)
+
+מחזירה ערך תאריך בהפרש של מספר החודשים שצוין מערך התאריך והשעה או מערך השעה בלבד שצוין.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Operator_Plus" xml:space="preserve">
+    <value>מוסיף את הערך של ביטוי מספרי אחד לערך של ביטוי מספרי אחר, או משרשר שתי מחרוזות</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_AddSeconds" xml:space="preserve">
+    <value>AddSeconds(Time, SecondsCount)
+
+מחזירה ערך שעה בהפרש של מספר השניות שצוין מערך התאריך והשעה או מערך השעה בלבד שצוין. פונקציה זו אינה נתמכת במקורות Entity Framework Core במצב שרת.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_AddTicks" xml:space="preserve">
+    <value>AddTicks(DateTime, AddTicks)
+
+מחזירה ערך תאריך ושעה בהפרש של TicksCount פעימות זמן מערך התאריך והשעה שצוין.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_AddTimeSpan" xml:space="preserve">
+    <value>AddTimeSpan(DateTime, TimeSpan)
+
+מחזירה ערך תאריך ושעה בהפרש של משך הזמן הנתון מערך התאריך והשעה שצוין.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_AddYears" xml:space="preserve">
+    <value>AddYears(Date, YearsCount)
+
+מחזירה ערך תאריך בהפרש של מספר השנים שצוין מערך התאריך והשעה או מערך השעה בלבד שצוין.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_AfterMidday" xml:space="preserve">
+    <value>AfterMidday(Time)
+
+מחזירה אמת אם השעה שצוינה בערך התאריך והשעה או בערך השעה בלבד היא אחרי 12:00 בצהריים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Ascii" xml:space="preserve">
+    <value>Ascii(String)
+
+מחזירה את ערך קוד ה־ASCII של התו השמאלי ביותר בביטוי תווים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Asin" xml:space="preserve">
+    <value>Asin(Value)
+
+מחזירה את הארק סינוס של מספר (הזווית ברדיאנים שהסינוס שלה הוא הביטוי הנתון בנקודה צפה).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Atn" xml:space="preserve">
+    <value>Atn(Value)
+
+מחזירה את הארק טנגנס של מספר (הזווית ברדיאנים שהטנגנס שלה הוא הביטוי הנתון בנקודה צפה).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Atn2" xml:space="preserve">
+    <value>Atn2(Value1, Value2)
+
+מחזירה ברדיאנים את הזווית שהטנגנס שלה הוא המנה של שני המספרים שצוינו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_AvgAggregate" xml:space="preserve">
+    <value>Avg()
+
+מחשבת את ממוצע הערכים באוסף.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_BeforeMidday" xml:space="preserve">
+    <value>BeforeMidday(Time)
+
+מחזירה אמת אם השעה שצוינה בערך התאריך והשעה או בערך השעה בלבד היא לפני 12:00 בצהריים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_BigMul" xml:space="preserve">
+    <value>BigMul(Value1, Value2)
+
+מחזירה מספר שלם של 64 סיביות המכיל את המכפלה המלאה של שני המספרים שצוינו, שכל אחד מהם הוא בן 32 סיביות.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Ceiling" xml:space="preserve">
+    <value>Ceiling(Value)
+
+מחזירה את המספר השלם הקטן ביותר שגדול מהביטוי המספרי הנתון או שווה לו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Char" xml:space="preserve">
+    <value>Char(Number)
+
+ממירה את המספר השלם שצוין, המייצג קוד ASCII, לתו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_CharIndex" xml:space="preserve">
+    <value>CharIndex(String1, String2)
+
+מחזירה את מיקום ההתחלה של String1 בתוך String2, בחיפוש ממיקום התו אפס ועד סוף המחרוזת.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_CharIndex_3" xml:space="preserve">
+    <value>CharIndex(String1, String2, StartLocation)
+
+מחזירה את מיקום ההתחלה של String1 בתוך String2, בחיפוש ממיקום התו StartLocation ועד סוף המחרוזת.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Operator_BitwiseOr" xml:space="preserve">
+    <value>משווה כל סיבית באופרנד הראשון שלו לסיבית המתאימה באופרנד השני שלו. אם שתי הסיביות הן 0, סיבית התוצאה המתאימה היא 0. אחרת, סיבית התוצאה המתאימה היא 1.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Operator_BitwiseAnd" xml:space="preserve">
+    <value>משווה כל סיבית באופרנד הראשון שלו לסיבית המתאימה באופרנד השני שלו. אם שתי הסיביות הן 1, סיבית התוצאה המתאימה היא 1. אחרת, סיבית התוצאה המתאימה היא 0.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Operator_BitwiseXor" xml:space="preserve">
+    <value>משווה כל סיבית באופרנד הראשון שלו לסיבית המתאימה באופרנד השני שלו. אם שתי הסיביות שוות, סיבית התוצאה המתאימה היא 0. אחרת, סיבית התוצאה המתאימה היא 1.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Concat" xml:space="preserve">
+    <value>Concat(String1, ... ,StringN)
+
+מחזירה ערך מחרוזת המכיל את שרשור המחרוזת הנוכחית עם כל מחרוזת נוספת.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Contains" xml:space="preserve">
+    <value>Contains(String, SubString)
+
+מחזירה אמת אם SubString מופיעה בתוך String; אחרת, מוחזר שקר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_ConvertToTimeZone" xml:space="preserve">
+    <value>ConvertToTimeZone(DateTimeOffset, String)
+
+ממירה ערך תאריך ושעה עם היסט לערך המקביל באזור הזמן שצוין.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_CreateTable" xml:space="preserve">
+    <value>CreateTable(Parameter1, ..., ParameterN)
+
+מכינה טבלה מערכיהם של כמה פרמטרים מרובי ערכים שצוינו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_DateDiffDay" xml:space="preserve">
+    <value>DateDiffDay(StartDate, EndDate)
+
+ההפרש בימים בין שני ערכי התאריך והשעה או התאריך בלבד שצוינו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_DateDiffHour" xml:space="preserve">
+    <value>DateDiffHour(StartTime, EndTime)
+
+ההפרש בשעות בין שני ערכי התאריך והשעה או השעה בלבד שצוינו. הדקות אינן נלקחות בחשבון.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_DateDiffMilliSecond" xml:space="preserve">
+    <value>DateDiffMilliSecond(StartTime, EndTime)
+
+מחזירה את מספר גבולות אלפית השנייה שבין שני ערכי תאריך ושעה או שעה בלבד שאינם יכולים להיות ללא ערך.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_DateDiffMinute" xml:space="preserve">
+    <value>DateDiffMinute(StartTime, EndTime)
+
+מחזירה את מספר גבולות הדקה שבין שני ערכי תאריך ושעה או שעה בלבד שאינם יכולים להיות ללא ערך.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_DateDiffMonth" xml:space="preserve">
+    <value>DateDiffMonth(StartDate, EndDate)
+
+מחזירה את מספר גבולות החודש שבין שני ערכי תאריך ושעה או תאריך בלבד שאינם יכולים להיות ללא ערך.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_DateDiffSecond" xml:space="preserve">
+    <value>DateDiffSecond(StartTime, EndTime)
+
+מחזירה את מספר גבולות השנייה שבין שני ערכי תאריך ושעה או שעה בלבד שאינם יכולים להיות ללא ערך.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_DateDiffTick" xml:space="preserve">
+    <value>DateDiffTick(StartDate, EndDate)
+
+מחזירה את מספר גבולות פעימת השעון שבין שני תאריכים שאינם יכולים להיות ללא ערך.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_DateDiffYear" xml:space="preserve">
+    <value>DateDiffYear(StartDate, EndDate)
+
+מחזירה את מספר גבולות השנה שבין שני ערכי תאריך ושעה או תאריך בלבד שאינם יכולים להיות ללא ערך.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_DateOnlyFromParts" xml:space="preserve">
+    <value>DateOnlyFromParts(Year, Month, Day)
+
+מחזירה ערך תאריך בלבד שנבנה מהשנה, מהחודש ומהיום שצוינו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_DateTimeFromParts3" xml:space="preserve">
+    <value>DateTimeFromParts(Year, Month, Day)
+
+מחזירה ערך תאריך שנבנה מהשנה, מהחודש ומהיום שצוינו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_DateTimeFromParts4" xml:space="preserve">
+    <value>DateTimeFromParts(Year, Month, Day, Hour)
+
+מחזירה ערך תאריך שנבנה מהשנה, מהחודש, מהיום ומהשעה שצוינו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_DateTimeFromParts5" xml:space="preserve">
+    <value>DateTimeFromParts(Year, Month, Day, Hour, Minute)
+
+מחזירה ערך תאריך שנבנה מהשנה, מהחודש, מהיום, מהשעה ומהדקה שצוינו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_DateTimeFromParts6" xml:space="preserve">
+    <value>DateTimeFromParts(Year, Month, Day, Hour, Minute, Second)
+
+מחזירה ערך תאריך שנבנה מהשנה, מהחודש, מהיום, מהשעה, מהדקה ומהשנייה שצוינו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_DateTimeOffsetFromParts8" xml:space="preserve">
+    <value>DateTimeOffsetFromParts(Year, Month, Day, Hour, Minute, Second, Millisecond, Offset)
+
+מחזירה ערך תאריך ושעה עם היסט שנבנה מהשנה, מהחודש, מהיום, מהשעה, מהדקה, מהשנייה, מאלפית השנייה ומההיסט שצוינו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_DateTimeOffsetFromParts7" xml:space="preserve">
+    <value>DateTimeOffsetFromParts(Year, Month, Day, Hour, Minute, Second, Offset)
+
+מחזירה ערך תאריך ושעה עם היסט שנבנה מהשנה, מהחודש, מהיום, מהשעה, מהדקה, מהשנייה ומההיסט שצוינו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_EndsWith" xml:space="preserve">
+    <value>EndsWith(String, EndString)
+
+מחזירה אמת אם סוף המחרוזת String תואם למחרוזת EndString; אחרת, מוחזר שקר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_ExistsAggregate" xml:space="preserve">
+    <value>Exists()
+
+קובעת אם האובייקט קיים באוסף.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Exp" xml:space="preserve">
+    <value>Exp(Value)
+
+מחזירה את הערך המעריכי של הביטוי הנתון בנקודה צפה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Floor" xml:space="preserve">
+    <value>Floor(Value)
+
+מחזירה את המספר השלם הגדול ביותר שקטן מהביטוי המספרי הנתון או שווה לו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_FormatString" xml:space="preserve">
+    <value>FormatString(Format, Value1, ... , ValueN)
+
+מחזירה את המחרוזת שצוינה עם ערכי שדות מעוצבים.
+פונקציה זו יכולה לקבל כל מספר של ארגומנטים.
+
+דוגמה:
+
+FormatString('{0} - {1:c}', [Column1], [Column2])</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_GetDate" xml:space="preserve">
+    <value>GetDate(Date)
+
+מחלצת תאריך מערך התאריך והשעה או התאריך בלבד שהוגדר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_GetDay" xml:space="preserve">
+    <value>GetDay(Date)
+
+מחלצת יום מערך התאריך והשעה או התאריך בלבד שהוגדר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_GetDayOfWeek" xml:space="preserve">
+    <value>GetDayOfWeek(Date)
+
+מחלצת יום בשבוע מערך התאריך והשעה או התאריך בלבד שהוגדר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_GetDayOfYear" xml:space="preserve">
+    <value>GetDayOfYear(Date)
+
+מחלצת יום בשנה מערך התאריך והשעה או התאריך בלבד שהוגדר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_GetHour" xml:space="preserve">
+    <value>GetHour(Time)
+
+מחלצת שעה מערך התאריך והשעה או השעה בלבד שהוגדר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_GetMilliSecond" xml:space="preserve">
+    <value>GetMilliSecond(Time)
+
+מחלצת אלפיות שנייה מערך התאריך והשעה או השעה בלבד שהוגדר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_GetMinute" xml:space="preserve">
+    <value>GetMinute(Time)
+
+מחלצת דקות מערך התאריך והשעה או השעה בלבד שהוגדר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_GetMonth" xml:space="preserve">
+    <value>GetMonth(Date)
+
+מחלצת חודש מערך התאריך והשעה או התאריך בלבד שהוגדר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_GetOffset" xml:space="preserve">
+    <value>GetOffset(DateTimeOffset)
+
+מחלצת את היסט UTC בדקות מערך התאריך והשעה עם ההיסט או מהמחרוזת שהוגדרו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_GetOffsetTimeSpan" xml:space="preserve">
+    <value>GetOffsetTimeSpan(DateTimeOffset)
+
+מחלצת את היסט UTC כמשך זמן מערך התאריך והשעה עם ההיסט או מהמחרוזת שהוגדרו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_GetOffsetTimeSpan2" xml:space="preserve">
+    <value>GetOffsetTimeSpan(Hours, Minutes)
+
+מחזירה היסט UTC כמשך זמן שנבנה מהשעות ומהדקות שצוינו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_GetSecond" xml:space="preserve">
+    <value>GetSecond(Time)
+
+מחלצת שניות מערך התאריך והשעה או השעה בלבד שהוגדר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_GetTime" xml:space="preserve">
+    <value>GetTime(Date)
+
+מחלצת שעה מערך התאריך והשעה או השעה בלבד שהוגדר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_GetTimeOfDay" xml:space="preserve">
+    <value>GetTimeOfDay(DateTime)
+
+מחלצת את שעת היום מערך התאריך והשעה שהוגדר, בפעימות שעון.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_GetYear" xml:space="preserve">
+    <value>GetYear(Date)
+
+מחלצת שנה מערך התאריך והשעה או התאריך בלבד שהוגדר</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Iif" xml:space="preserve">
+    <value>Iif(FirstClause, FirstClauseTrueValue, ..., LastClause, LastClauseTrueValue, FalseValue)
+
+מחזירה את הערך שהוגדר לתנאי הלוגי הראשון שערכו אמת, או את הערך האחרון אם אף אחד מהתנאים האלה אינו אמת.
+
+פונקציה זו יכולה לקבל כל מספר של ארגומנטים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_InDateRange" xml:space="preserve">
+    <value>InDateRange(Date, FromDate, ToDate)
+
+מחזירה אמת אם התאריך שצוין נמצא בטווח שבין הארגומנטים FromDate ו-ToDate.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_InRange" xml:space="preserve">
+    <value>InRange(Value, FromValue, ToValue)
+
+מחזירה אמת אם הערך שצוין נמצא בטווח שבין הארגומנטים FromValue ו-ToValue.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_InTimeRange" xml:space="preserve">
+    <value>InTimeRange(Time, FromTime, ToTime)
+
+מחזירה אמת אם השעה שצוינה נמצאת בטווח שבין הארגומנטים FromTime ו-ToTime, כולל מקרים שבהם הטווח חוצה את חצות.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Exception_InvalidDateTimeLiteral" xml:space="preserve">
+    <value>ערך ליטרל תאריך/שעה לא תקין: "{0}".</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Exception_InvalidGuidLiteral" xml:space="preserve">
+    <value>ערך ליטרל של מזהה ייחודי כללי לא תקין: "{0}".</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Exception_InvalidCharacter" xml:space="preserve">
+    <value>תו קלט לא תקין: "{0}".</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Exception_InvalidNumericLiteral" xml:space="preserve">
+    <value>ערך ליטרל מספרי לא תקין: "{0}".</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsAfternoon" xml:space="preserve">
+    <value>IsAfternoon(שעה)
+
+מחזירה אמת אם השעה שצוינה בערך תאריך ושעה או שעה בלבד היא בין 12:00 ל-18:00.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsApril" xml:space="preserve">
+    <value>IsApril(תאריך)
+
+מחזירה אמת אם ערך התאריך והשעה או התאריך בלבד שצוין חל באפריל.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsAugust" xml:space="preserve">
+    <value>IsAugust(תאריך)
+
+מחזירה אמת אם ערך התאריך והשעה או התאריך בלבד שצוין חל באוגוסט.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsDecember" xml:space="preserve">
+    <value>IsDecember(תאריך)
+
+מחזירה אמת אם ערך התאריך והשעה או התאריך בלבד שצוין חל בדצמבר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsEvening" xml:space="preserve">
+    <value>IsEvening(שעה)
+
+מחזירה אמת אם השעה שצוינה בערך תאריך ושעה או שעה בלבד היא בין 18:00 ל-21:00.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsFebruary" xml:space="preserve">
+    <value>IsFebruary(תאריך)
+
+מחזירה אמת אם ערך התאריך והשעה או התאריך בלבד שצוין חל בפברואר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsFreeTime" xml:space="preserve">
+    <value>IsFreeTime(שעה)
+
+מחזירה אמת אם השעה שצוינה בערך תאריך ושעה או שעה בלבד חלה בשעות הפנאי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsJanuary" xml:space="preserve">
+    <value>IsJanuary(תאריך)
+
+מחזירה אמת אם ערך התאריך והשעה או התאריך בלבד שצוין חל בינואר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsJuly" xml:space="preserve">
+    <value>IsJuly(תאריך)
+
+מחזירה אמת אם ערך התאריך והשעה או התאריך בלבד שצוין חל ביולי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsJune" xml:space="preserve">
+    <value>IsJune(תאריך)
+
+מחזירה אמת אם ערך התאריך והשעה או התאריך בלבד שצוין חל ביוני.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsLastHour" xml:space="preserve">
+    <value>IsLastHour(שעה)
+
+מחזירה אמת אם השעה שצוינה בערך תאריך ושעה או שעה בלבד חלה בשעה הקודמת.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsLastMonth" xml:space="preserve">
+    <value>IsLastMonth(תאריך)
+
+מחזירה אמת אם ערך התאריך והשעה או התאריך בלבד שצוין חל בחודש הקודם.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsLastYear" xml:space="preserve">
+    <value>IsLastYear(תאריך)
+
+מחזירה אמת אם ערך התאריך והשעה או התאריך בלבד שצוין חל בשנה הקודמת.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsLunchTime" xml:space="preserve">
+    <value>IsLunchTime(שעה)
+
+מחזירה אמת אם השעה שצוינה בערך תאריך ושעה או שעה בלבד חלה בזמן ארוחת הצהריים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsMarch" xml:space="preserve">
+    <value>IsMarch(תאריך)
+
+מחזירה אמת אם ערך התאריך והשעה או התאריך בלבד שצוין חל במרץ.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsMay" xml:space="preserve">
+    <value>IsMay(תאריך)
+
+מחזירה אמת אם ערך התאריך והשעה או התאריך בלבד שצוין חל במאי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsMorning" xml:space="preserve">
+    <value>IsMorning(שעה)
+
+מחזירה אמת אם השעה שצוינה בערך תאריך ושעה או שעה בלבד היא בין 06:00 ל-12:00.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsNextHour" xml:space="preserve">
+    <value>IsNextHour(שעה)
+
+מחזירה אמת אם השעה שצוינה בערך תאריך ושעה או שעה בלבד חלה בשעה הבאה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsNextMonth" xml:space="preserve">
+    <value>IsNextMonth(תאריך)
+
+מחזירה אמת אם ערך התאריך והשעה או התאריך בלבד שצוין חל בחודש הבא.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsNextYear" xml:space="preserve">
+    <value>IsNextYear(תאריך)
+
+מחזירה אמת אם ערך התאריך והשעה או התאריך בלבד שצוין חל בשנה הבאה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsNight" xml:space="preserve">
+    <value>IsNight(שעה)
+
+מחזירה אמת אם השעה שצוינה בערך תאריך ושעה או שעה בלבד היא בין 21:00 ל-09:00.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsNovember" xml:space="preserve">
+    <value>IsNovember(תאריך)
+
+מחזירה אמת אם ערך התאריך והשעה או התאריך בלבד שצוין חל בנובמבר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsNull" xml:space="preserve">
+    <value>IsNull(ערך)
+
+מחזירה אמת אם הערך שצוין הוא NULL.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsNull_2" xml:space="preserve">
+    <value>IsNull(ערך1, ערך2)
+
+מחזירה את האופרנד השני אם האופרנד הראשון הוא null; אחרת מוחזר האופרנד הראשון.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsNullOrEmpty" xml:space="preserve">
+    <value>IsNullOrEmpty(מחרוזת)
+
+מחזירה אמת אם אובייקט המחרוזת שצוין הוא NULL או מחרוזת ריקה; אחרת מוחזר שקר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsOctober" xml:space="preserve">
+    <value>IsOctober(תאריך)
+
+מחזירה אמת אם ערך התאריך והשעה או התאריך בלבד שצוין חל באוקטובר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsSameDay" xml:space="preserve">
+    <value>IsSameDay(תאריך, תאריך)
+
+מחזירה אמת אם ערכי התאריך והשעה או התאריך בלבד שצוינו חלים באותו יום.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsSameHour" xml:space="preserve">
+    <value>IsSameHour(שעה)
+
+מחזירה אמת אם השעה שצוינה בערך תאריך ושעה או שעה בלבד חלה באותה שעה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsSameTime" xml:space="preserve">
+    <value>IsSameTime(שעה)
+
+מחזירה אמת אם השעה שצוינה בערך תאריך ושעה או שעה בלבד היא אותה שעה ביום (שעה ודקה).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsSeptember" xml:space="preserve">
+    <value>IsSeptember(תאריך)
+
+מחזירה אמת אם ערך התאריך והשעה או התאריך בלבד שצוין חל בספטמבר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsThisHour" xml:space="preserve">
+    <value>IsThisHour(שעה)
+
+מחזירה אמת אם השעה שצוינה בערך תאריך ושעה או שעה בלבד חלה בשעה הנוכחית.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsThisMonth" xml:space="preserve">
+    <value>IsThisMonth(תאריך)
+
+מחזירה אמת אם ערך התאריך והשעה או התאריך בלבד שצוין חל בחודש הנוכחי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsThisWeek" xml:space="preserve">
+    <value>IsThisWeek(תאריך)
+
+מחזירה אמת אם ערך התאריך והשעה או התאריך בלבד שצוין חל בשבוע הנוכחי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsThisYear" xml:space="preserve">
+    <value>IsThisYear(תאריך)
+
+מחזירה אמת אם ערך התאריך והשעה או התאריך בלבד שצוין חל בשנה הנוכחית.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsWorkTime" xml:space="preserve">
+    <value>IsWorkTime(שעה)
+
+מחזירה אמת אם השעה שצוינה בערך תאריך ושעה או שעה בלבד חלה בשעות העבודה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_IsYearToDate" xml:space="preserve">
+    <value>IsYearToDate(תאריך)
+
+מחזירה אמת אם ערך התאריך והשעה או התאריך בלבד שצוין חל בתקופה שמתחילת השנה ועד התאריך הנוכחי (מהיום הראשון של השנה הנוכחית ועד התאריך הנוכחי).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Join" xml:space="preserve">
+    <value>Join(אוסף)
+
+משרשרת את איברי האוסף שצוין ומוסיפה פסיק בין כל שני איברים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Join_2" xml:space="preserve">
+    <value>Join(אוסף, מפריד)
+
+משרשרת את איברי האוסף שצוין באמצעות המפריד שצוין בין כל שני איברים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Len" xml:space="preserve">
+    <value>Len(ערך)
+
+מחזירה מספר שלם המכיל את מספר התווים במחרוזת או את המספר הנומינלי של הבתים הדרושים לאחסון משתנה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeDayAfterTomorrow" xml:space="preserve">
+    <value>LocalDateTimeDayAfterTomorrow()
+
+מחזירה ערך תאריך ושעה התואם למחרתיים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeLastMonth" xml:space="preserve">
+    <value>LocalDateTimeLastMonth()
+
+מחזירה תאריך התואם ליום הראשון של החודש הקודם.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeLastWeek" xml:space="preserve">
+    <value>LocalDateTimeLastWeek()
+
+מחזירה ערך תאריך ושעה התואם ליום הראשון של השבוע הקודם.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeLastYear" xml:space="preserve">
+    <value>LocalDateTimeLastYear()
+
+מחזירה ערך תאריך ושעה התואם ליום הראשון של השנה הקודמת.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeNextMonth" xml:space="preserve">
+    <value>LocalDateTimeNextMonth()
+
+מחזירה ערך תאריך ושעה התואם ליום הראשון של החודש הבא.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeNextWeek" xml:space="preserve">
+    <value>LocalDateTimeNextWeek()
+
+מחזירה ערך תאריך ושעה התואם ליום הראשון של השבוע הבא.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeNextYear" xml:space="preserve">
+    <value>LocalDateTimeNextYear()
+
+מחזירה ערך תאריך ושעה התואם ליום הראשון של השנה הבאה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeNow" xml:space="preserve">
+    <value>LocalDateTimeNow()
+
+מחזירה ערך תאריך ושעה התואם לרגע הנוכחי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetDayAfterTomorrow" xml:space="preserve">
+    <value>LocalDateTimeOffsetDayAfterTomorrow()
+
+מחזירה ערך תאריך ושעה עם היסט של אזור זמן, התואם למחרתיים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetLastMonth" xml:space="preserve">
+    <value>LocalDateTimeOffsetLastMonth()
+
+מחזירה ערך תאריך ושעה עם היסט של אזור זמן, התואם ליום הראשון של החודש הקודם.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetLastWeek" xml:space="preserve">
+    <value>LocalDateTimeOffsetLastWeek()
+
+מחזירה ערך תאריך ושעה עם היסט של אזור זמן, התואם ליום הראשון של השבוע הקודם.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetLastYear" xml:space="preserve">
+    <value>LocalDateTimeOffsetLastYear()
+
+מחזירה ערך תאריך ושעה עם היסט של אזור זמן, התואם ליום הראשון של השנה הקודמת.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetNextMonth" xml:space="preserve">
+    <value>LocalDateTimeOffsetNextMonth()
+
+מחזירה ערך תאריך ושעה עם היסט של אזור זמן, התואם ליום הראשון של החודש הבא.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetNextWeek" xml:space="preserve">
+    <value>LocalDateTimeOffsetNextWeek()
+
+מחזירה ערך תאריך ושעה עם היסט של אזור זמן, התואם ליום הראשון של השבוע הבא.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetNextYear" xml:space="preserve">
+    <value>LocalDateTimeOffsetNextYear()
+
+מחזירה ערך תאריך ושעה עם היסט של אזור זמן, התואם ליום הראשון של השנה הבאה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetNow" xml:space="preserve">
+    <value>LocalDateTimeOffsetNow()
+
+מחזירה ערך תאריך ושעה עם היסט של אזור זמן, התואם לרגע הנוכחי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetThisMonth" xml:space="preserve">
+    <value>LocalDateTimeOffsetThisMonth()
+
+מחזירה ערך תאריך ושעה עם היסט של אזור זמן, התואם ליום הראשון של החודש הנוכחי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetThisWeek" xml:space="preserve">
+    <value>LocalDateTimeOffsetThisWeek()
+
+מחזירה ערך תאריך ושעה עם היסט של אזור זמן, התואם ליום הראשון של השבוע הנוכחי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetThisYear" xml:space="preserve">
+    <value>LocalDateTimeOffsetThisYear()
+
+מחזירה ערך תאריך ושעה עם היסט של אזור זמן, התואם ליום הראשון של השנה הנוכחית.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetToday" xml:space="preserve">
+    <value>LocalDateTimeOffsetToday()
+
+מחזירה ערך תאריך ושעה עם היסט של אזור זמן, התואם להיום.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetTomorrow" xml:space="preserve">
+    <value>LocalDateTimeOffsetTomorrow()
+
+מחזירה ערך תאריך ושעה עם היסט של אזור זמן, התואם למחר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetTwoMonthsAway" xml:space="preserve">
+    <value>LocalDateTimeOffsetTwoMonthsAway()
+
+מחזירה ערך תאריך ושעה עם היסט של אזור זמן, התואם ליום הראשון של החודש שאחרי החודש הבא.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetTwoWeeksAway" xml:space="preserve">
+    <value>LocalDateTimeOffsetTwoWeeksAway()
+
+מחזירה ערך תאריך ושעה עם היסט של אזור זמן, התואם ליום הראשון של השבוע שאחרי השבוע הבא.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetTwoYearsAway" xml:space="preserve">
+    <value>LocalDateTimeOffsetTwoYearsAway()
+
+מחזירה ערך תאריך ושעה עם היסט של אזור זמן, התואם ליום הראשון של השנה שאחרי השנה הבאה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetYearBeforeToday" xml:space="preserve">
+    <value>LocalDateTimeOffsetYearBeforeToday()
+
+מחזירה ערך תאריך ושעה עם היסט של אזור זמן, התואם ליום שהיה לפני שנה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeOffsetYesterday" xml:space="preserve">
+    <value>LocalDateTimeOffsetYesterday()
+
+מחזירה ערך תאריך ושעה עם היסט של אזור זמן, התואם לאתמול.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeThisMonth" xml:space="preserve">
+    <value>LocalDateTimeThisMonth()
+
+מחזירה ערך תאריך ושעה התואם ליום הראשון של החודש הנוכחי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeThisWeek" xml:space="preserve">
+    <value>LocalDateTimeThisWeek()
+
+מחזירה ערך תאריך ושעה התואם ליום הראשון של השבוע הנוכחי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeThisYear" xml:space="preserve">
+    <value>LocalDateTimeThisYear()
+
+מחזירה ערך תאריך ושעה התואם ליום הראשון של השנה הנוכחית.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeToday" xml:space="preserve">
+    <value>LocalDateTimeToday()
+
+מחזירה ערך תאריך ושעה התואם להיום.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeTomorrow" xml:space="preserve">
+    <value>LocalDateTimeTomorrow()
+
+מחזירה ערך תאריך ושעה התואם למחר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeTwoMonthsAway" xml:space="preserve">
+    <value>LocalDateTimeTwoMonthsAway()
+
+מחזירה ערך תאריך ושעה התואם ליום הראשון של החודש שאחרי החודש הבא.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeTwoWeeksAway" xml:space="preserve">
+    <value>LocalDateTimeTwoWeeksAway()
+
+מחזירה ערך תאריך ושעה התואם ליום הראשון של השבוע שאחרי השבוע הבא.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeTwoYearsAway" xml:space="preserve">
+    <value>LocalDateTimeTwoYearsAway()
+
+מחזירה ערך תאריך ושעה התואם ליום הראשון של השנה שאחרי השנה הבאה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeYearBeforeToday" xml:space="preserve">
+    <value>LocalDateTimeYearBeforeToday()
+
+מחזירה ערך תאריך ושעה התואם ליום שהיה לפני שנה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_LocalDateTimeYesterday" xml:space="preserve">
+    <value>LocalDateTimeYesterday()
+
+מחזירה ערך תאריך ושעה התואם לאתמול.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Log" xml:space="preserve">
+    <value>Log(Value)
+
+מחזירה את הלוגריתם הטבעי של מספר נתון.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Log_2" xml:space="preserve">
+    <value>Log(Value, Base)
+
+מחזירה את הלוגריתם של מספר נתון Value בבסיס נתון Base.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Log10" xml:space="preserve">
+    <value>Log10(Value)
+
+מחזירה את הלוגריתם בבסיס 10 של מספר נתון Value.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Lower" xml:space="preserve">
+    <value>Lower(String)
+
+מחזירה את המחרוזת באותיות קטנות.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Exception_MalformedComment" xml:space="preserve">
+    <value>הערה במבנה שגוי: חסר סימן הסגירה "{0}".</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Exception_MalformedDateTimeOrUserTypeLiteral" xml:space="preserve">
+    <value>ליטרל תאריך/שעה או ליטרל מטיפוס מוגדר על ידי המשתמש במבנה שגוי: חסר סימן הסגירה "{0}".</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Exception_MalformedGuidLiteral" xml:space="preserve">
+    <value>ליטרל של מזהה ייחודי כללי במבנה שגוי: חסר סימן הסגירה "{0}".</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Exception_MalformedProperty" xml:space="preserve">
+    <value>שם מאפיין במבנה שגוי: חסר סימן הסגירה "{0}".</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Exception_MalformedStringLiteral" xml:space="preserve">
+    <value>ליטרל מחרוזת במבנה שגוי: חסר סימן הסגירה "{0}".</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_MaxAggregate" xml:space="preserve">
+    <value>Max()
+
+מחזירה את הערך הגדול ביותר של הביטוי באוסף.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Max" xml:space="preserve">
+    <value>Max(Value1, Value2)
+
+מחזירה את הערך הגדול ביותר מבין הערכים שצוינו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_MinAggregate" xml:space="preserve">
+    <value>Min()
+
+מחזירה את הערך הקטן ביותר של הביטוי באוסף.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Min" xml:space="preserve">
+    <value>Min(Value1, Value2)
+
+מחזירה את הערך הקטן ביותר מבין הערכים שצוינו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_NewLine" xml:space="preserve">
+    <value>NewLine()
+
+מחזירה את מחרוזת מעבר השורה המוגדרת עבור סביבה זו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Now" xml:space="preserve">
+    <value>Now()
+
+מחזירה את התאריך והשעה הנוכחיים של המערכת.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_OutOfTimeRange" xml:space="preserve">
+    <value>OutOfTimeRange(Time, FromTime, ToTime)
+
+מחזירה אמת אם השעה שצוינה נמצאת מחוץ לטווח שבין הארגומנטים FromTime ו-ToTime, לרבות מקרים שבהם הטווח חוצה את חצות.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_PadLeft" xml:space="preserve">
+    <value>PadLeft(String, Length)
+
+מיישרת לשמאל את התווים במחרוזת String שהוגדרה, וממלאת את צדה השמאלי בתווי רווח עד לאורך הכולל שצוין ב-Length.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_PadLeft_3" xml:space="preserve">
+    <value>PadLeft(String, Length, Char)
+
+מיישרת לשמאל את התווים במחרוזת String שהוגדרה, וממלאת את צדה השמאלי בתו שצוין ב-Char עד לאורך הכולל שצוין ב-Length.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_PadRight" xml:space="preserve">
+    <value>PadRight(String, Length)
+
+מיישרת לימין את התווים במחרוזת String שהוגדרה, וממלאת את צדה הימני בתווי רווח עד לאורך הכולל שצוין ב-Length.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_PadRight_3" xml:space="preserve">
+    <value>PadRight(String, Length, Char)
+
+מיישרת לימין את התווים במחרוזת String שהוגדרה, וממלאת את צדה הימני בתו שצוין ב-Char עד לאורך הכולל שצוין ב-Length.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Power" xml:space="preserve">
+    <value>Power()
+
+מחזירה את המספר שצוין ב-Value, כשהוא מועלה לחזקה שצוינה ב-Power.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Remove" xml:space="preserve">
+    <value>Remove(String, StartPosition)
+
+מוחקת את כל התווים מהמחרוזת String שצוינה, החל מהמיקום שצוין ב-StartPosition.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Remove_3" xml:space="preserve">
+    <value>Remove(String, StartPosition, Length)
+
+מוחקת מהמחרוזת String שצוינה את מספר התווים שצוין ב-Length, החל מהמיקום שצוין ב-StartPosition.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Replace" xml:space="preserve">
+    <value>Replace(String, SubString2, String3)
+
+מחזירה עותק של String1, שבו SubString2 הוחלפה ב-String3.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Insert" xml:space="preserve">
+    <value>Replace(String1, StartPosition, String2)
+
+מכניסה את המחרוזת String2 לתוך המחרוזת String1 במיקום שצוין באמצעות StartPositon.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Reverse" xml:space="preserve">
+    <value>Reverse(String)
+
+הופכת את סדר הרכיבים במחרוזת String.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Rnd" xml:space="preserve">
+    <value>Rnd()
+
+מחזירה מספר אקראי הקטן מ-1, אך גדול מאפס או שווה לו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Round" xml:space="preserve">
+    <value>Round(Value)
+
+מעגלת את הערך הנתון Value למספר השלם הקרוב ביותר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Round_2" xml:space="preserve">
+    <value>Round(Value, Precision)
+
+מעגלת את הערך הנתון Value למספר השלם הקרוב ביותר, או לרמת הדיוק שצוינה ב-Precision.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Sign" xml:space="preserve">
+    <value>Sign(Value)
+
+מחזירה את הסימן החיובי (+1), האפס (0) או הסימן השלילי (-1) של הערך הנתון Value.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Sin" xml:space="preserve">
+    <value>Sin(Value)
+
+מחזירה את הסינוס של הזווית המוגדרת ברדיאנים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_SingleAggregate" xml:space="preserve">
+    <value>Single()
+
+מחזירה אובייקט אחד מתוך האוסף.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Sinh" xml:space="preserve">
+    <value>Sinh(Value)
+
+מחזירה את הסינוס ההיפרבולי של הזווית המוגדרת ברדיאנים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Sqr" xml:space="preserve">
+    <value>Sqr(Value)
+
+מחזירה את השורש הריבועי של המספר הנתון Value.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_StartsWith" xml:space="preserve">
+    <value>StartsWith(String, StartString)
+
+מחזירה אמת אם תחילת המחרוזת String תואמת ל-StartString; אחרת, מוחזר שקר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Substring" xml:space="preserve">
+    <value>Substring(String, StartPosition)
+
+מחלצת תת-מחרוזת מתוך String. תת-המחרוזת מתחילה במיקום StartPosition.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Substring_3" xml:space="preserve">
+    <value>Substring(String, StartPosition, Length)
+
+מחלצת תת-מחרוזת מתוך String. תת-המחרוזת מתחילה במיקום StartPosition ואורכה הוא האורך שצוין ב-Length.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_SumAggregate" xml:space="preserve">
+    <value>Sum()
+
+מחזירה את הסכום של כל ערכי הביטוי באוסף.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_SwitchOffset" xml:space="preserve">
+    <value>SwitchOffset(DateTimeOffset, Offset)
+
+מחזירה ערך תאריך ושעה עם היסט אזור זמן, שבו היסט אזור הזמן השמור הוחלף בהיסט אזור זמן חדש שצוין.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Exception_SyntaxError" xml:space="preserve">
+    <value>שגיאת תחביר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Tan" xml:space="preserve">
+    <value>Tan(Value)
+
+מחזירה את הטנגנס של הזווית המוגדרת ברדיאנים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Tanh" xml:space="preserve">
+    <value>Tanh(Value)
+
+מחזירה את הטנגנס ההיפרבולי של הזווית המוגדרת ברדיאנים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_TimeOnlyFromParts" xml:space="preserve">
+    <value>TimeOnlyFromParts(Hour, Minute)
+
+מחזירה ערך זמן ללא תאריך שנוצר מהשעה (Hour) ומהדקה (Minute) שצוינו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_TimeOnlyFromParts1" xml:space="preserve">
+    <value>TimeOnlyFromParts(Hour, Minute, Second)
+
+מחזירה ערך זמן ללא תאריך שנוצר מהשעה (Hour), מהדקה (Minute) ומהשנייה (Second) שצוינו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_TimeOnlyFromParts2" xml:space="preserve">
+    <value>TimeOnlyFromParts(Hour, Minute, Second, Millisecond)
+
+מחזירה ערך זמן ללא תאריך שנוצר מהשעה (Hour), מהדקה (Minute), מהשנייה (Second) ומאלפית השנייה (Millisecond) שצוינו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_ToDateTime" xml:space="preserve">
+    <value>ToDateTime(Value)
+
+ממירה את Value לערך תאריך ושעה שקול.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Today" xml:space="preserve">
+    <value>Today()
+
+מחזירה את התאריך הנוכחי. ללא תלות בשעה בפועל, פונקציה זו מחזירה את התאריך הנוכחי בשעה חצות.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_ToDecimal" xml:space="preserve">
+    <value>ToDecimal(Value)
+
+ממירה את Value למספר עשרוני שקול.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_ToDouble" xml:space="preserve">
+    <value>ToDouble(Value)
+
+ממירה את Value למספר שקול בנקודה צפה של 64 סיביות בדיוק כפול.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_ToFloat" xml:space="preserve">
+    <value>ToFloat(Value)
+
+ממירה את Value למספר שקול בנקודה צפה של 32 סיביות בדיוק יחיד.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_ToInt" xml:space="preserve">
+    <value>ToInt(Value)
+
+ממירה את Value למספר שלם שקול בן 32 סיביות עם סימן.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_ToLong" xml:space="preserve">
+    <value>ToLong(Value)
+
+ממירה את Value למספר שלם שקול בן 64 סיביות עם סימן.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_ToStr" xml:space="preserve">
+    <value>ToStr(Value)
+
+מחזירה ייצוג של אובייקט כמחרוזת.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Trim" xml:space="preserve">
+    <value>Trim(String)
+
+מסירה את כל תווי הרווח בתחילת String ובסופו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_Upper" xml:space="preserve">
+    <value>Upper(String)
+
+מחזירה את String באותיות רישיות.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_UtcNow" xml:space="preserve">
+    <value>UtcNow()
+
+מחזירה את התאריך והשעה הנוכחיים של המערכת, לפי זמן אוניברסלי מתואם (UTC).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Exception_WrongArgumentsCount" xml:space="preserve">
+    <value>מספר ארגומנטים שגוי עבור הפונקציה "{0}(...)".</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ExpressionEditorStringId.Function_ToDateTimeOffset" xml:space="preserve">
+    <value>ToDateTimeOffset(Value, Offset)
+
+המר ערך תאריך ושעה לתאריך ושעה עם היסט זמן. ציין את התאריך והשעה המקוריים כ-Value. ציין את Offset כמספר שלם (בדקות) או כמחרוזת (כגון '+04:00'). כדי לשמר את נקודת הזמן בעת שינוי ההיסט או אזור הזמן, השתמש ב-SwitchOffset() או ב-ConvertToTimeZone().</value>
+    <comment>AI</comment>
   </data>
 </root>

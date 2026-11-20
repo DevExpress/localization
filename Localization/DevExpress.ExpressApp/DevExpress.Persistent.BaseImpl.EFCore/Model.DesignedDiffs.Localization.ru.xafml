@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+	<ActionDesign>
+		<Actions>
+			<Action Id="Task.MarkCompleted" Caption="Завершить" />
+		</Actions>
+	</ActionDesign>
+	<BOModel>
+		<Class Name="DevExpress.Persistent.AuditTrail.BaseAuditedObjectWeakReference" Caption="Базовая ссылка на объект аудита">
+			<OwnMembers>
+				<Member Name="DisplayName" Caption="Отображаемое имя" />
+				<Member Name="GuidId" Caption="GUID идентификатор" />
+				<Member Name="IntId" Caption="Целочисленный идентификатор" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.Address" Caption="Адрес">
+			<OwnMembers>
+				<Member Name="City" Caption="Город" />
+				<Member Name="Country" Caption="Страна" />
+				<Member Name="FullAddress" Caption="Полный адрес" />
+				<Member Name="StateProvince" Caption="Область/Штат" />
+				<Member Name="Street" Caption="Улица" />
+				<Member Name="ZipPostal" Caption="Почтовый индекс" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.Analysis" Caption="Анализ">
+			<OwnMembers>
+				<Member Name="Criteria" Caption="Критерий" />
+				<Member Name="DataType" Caption="Тип данных" />
+				<Member Name="Name" Caption="Имя" />
+				<Member Name="Self" Caption="Сущность" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.AuditDataItemPersistent" Caption="Хранимый элемент аудита">
+			<OwnMembers>
+				<Member Name="Description" Caption="Описание" />
+				<Member Name="ModifiedOn" Caption="Дата и время изменения" />
+				<Member Name="NewValue" Caption="Новое значение" />
+				<Member Name="OldValue" Caption="Старое значение" />
+				<Member Name="OperationType" Caption="Тип операции" />
+				<Member Name="PropertyName" Caption="Название свойства" />
+				<Member Name="UserName" Caption="Имя пользователя" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.AuditedObjectWeakReference" Caption="Слабая ссылка на объект аудита">
+			<OwnMembers>
+				<Member Name="AuditDataItems" Caption="Элементы аудита" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.BaseObject" Caption="Базовый объект" />
+		<Class Name="DevExpress.Persistent.BaseImpl.BasicUser" Caption="Пользователь">
+			<OwnMembers>
+				<Member Name="ChangePasswordOnFirstLogon" Caption="Изменить пароль при первом входе в систему" />
+				<Member Name="FullName" Caption="Полное имя" />
+				<Member Name="IsActive" Caption="Активен" />
+				<Member Name="IsAdministrator" Caption="Является администратором" />
+				<Member Name="UserName" Caption="Имя пользователя" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.Country" Caption="Страна">
+			<OwnMembers>
+				<Member Name="Name" Caption="Имя" />
+				<Member Name="PhoneCode" Caption="Телефонный код" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.Event" Caption="Событие планировщика">
+			<OwnMembers>
+				<Member Name="AllDay" Caption="Весь день" />
+				<Member Name="Description" Caption="Описание" />
+				<Member Name="EndOn" Caption="Дата/Время окончания" />
+				<Member Name="Label" Caption="Метка" />
+				<Member Name="Location" Caption="Расположение" />
+				<Member Name="RecurrenceInfoXml" Caption="Повторение" />
+				<Member Name="RecurrencePattern" Caption="Шаблон повторения" />
+				<Member Name="Resources" Caption="Ресурсы" />
+				<Member Name="StartOn" Caption="Дата/Время начала" />
+				<Member Name="Status" Caption="Статус" />
+				<Member Name="Subject" Caption="Тема" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.FileAttachmentBase" Caption="Базовое файловое вложение">
+			<OwnMembers>
+				<Member Name="File" Caption="Файл" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.FileData" Caption="Данные файла">
+			<OwnMembers>
+				<Member Name="FileName" Caption="Имя файла" />
+				<Member Name="Size" Caption="Размер" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.HCategory" Caption="Иерархическая категория">
+			<OwnMembers>
+				<Member Name="Children" Caption="Потомки" />
+				<Member Name="Name" Caption="Имя" />
+				<Member Name="Parent" Caption="Предок" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.Note" Caption="Заметка">
+			<OwnMembers>
+				<Member Name="Author" Caption="Автор" />
+				<Member Name="DateTime" Caption="Дата и время" />
+				<Member Name="Text" Caption="Текст" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.OidGenerator" Caption="Генератор идентификаторов объектов" />
+		<Class Name="DevExpress.Persistent.BaseImpl.Organization" Caption="Организация">
+			<OwnMembers>
+				<Member Name="Description" Caption="Описание" />
+				<Member Name="Email" Caption="E-Mail" />
+				<Member Name="FullName" Caption="Полное имя" />
+				<Member Name="Name" Caption="Наименование" />
+				<Member Name="Profile" Caption="Профиль" />
+				<Member Name="WebSite" Caption="Веб-сайт" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.Party" Caption="Субъект">
+			<OwnMembers>
+				<Member Name="Address1" Caption="Адрес 1" />
+				<Member Name="Address2" Caption="Адрес 2" />
+				<Member Name="DisplayName" Caption="Отображаемое имя" />
+				<Member Name="PhoneNumbers" Caption="Телефонные номера" />
+				<Member Name="Photo" Caption="Фото" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.PersistentPermission" Caption="Сохраняемое разрешение">
+			<OwnMembers>
+				<Member Name="Permission" Caption="Разрешение" />
+				<Member Name="Role" Caption="Роль" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.Person" Caption="Персона">
+			<OwnMembers>
+				<Member Name="Birthday" Caption="День рождения" />
+				<Member Name="Email" Caption="E-Mail" />
+				<Member Name="FirstName" Caption="Имя" />
+				<Member Name="FullName" Caption="Полное имя" />
+				<Member Name="LastName" Caption="Фамилия" />
+				<Member Name="MiddleName" Caption="Отчество" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.PhoneNumber" Caption="Телефонный номер">
+			<OwnMembers>
+				<Member Name="Number" Caption="Номер" />
+				<Member Name="Party" Caption="Субъект" />
+				<Member Name="PhoneType" Caption="Тип телефона" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.PhoneType" Caption="Тип телефона">
+			<OwnMembers>
+				<Member Name="TypeName" Caption="Имя типа" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.PropertyBag" Caption="Набор свойств" />
+		<Class Name="DevExpress.Persistent.BaseImpl.PropertyBagDescriptor" Caption="Описание набора свойств">
+			<OwnMembers>
+				<Member Name="PropertyDescriptors" Caption="Описания свойств" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.PropertyDescriptor" Caption="Описание свойства">
+			<OwnMembers>
+				<Member Name="Code" Caption="Код" />
+				<Member Name="Description" Caption="Описание" />
+				<Member Name="Name" Caption="Имя" />
+				<Member Name="PropertyBags" Caption="Наборы свойств" />
+				<Member Name="Type" Caption="Тип" />
+				<Member Name="ValueType" Caption="Тип значения" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.PropertyValue" Caption="Значение свойства" />
+		<Class Name="DevExpress.Persistent.BaseImpl.Resource" Caption="Ресурс">
+			<OwnMembers>
+				<Member Name="Caption" Caption="Название" />
+				<Member Name="Color" Caption="Цвет" />
+				<Member Name="Events" Caption="События" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.Role" Caption="Роль">
+			<OwnMembers>
+				<Member Name="Users" Caption="Пользователи" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.RoleBase" Caption="Базовая роль">
+			<OwnMembers>
+				<Member Name="Name" Caption="Название" />
+				<Member Name="PersistentPermissions" Caption="Разрешения" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.ServerPrefix" Caption="Префикс сервера" />
+		<Class Name="DevExpress.Persistent.BaseImpl.SimpleUser" Caption="Пользователь">
+			<OwnMembers>
+				<Member Name="ChangePasswordOnFirstLogon" Caption="Изменить пароль при первом входе в систему" />
+				<Member Name="FullName" Caption="Полное имя" />
+				<Member Name="IsActive" Caption="Активен" />
+				<Member Name="IsAdministrator" Caption="Является администратором" />
+				<Member Name="UserName" Caption="Имя пользователя" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.State" Caption="Область/Штат">
+			<OwnMembers>
+				<Member Name="LongName" Caption="Полное название" />
+				<Member Name="ShortName" Caption="Короткое название" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.Task" Caption="Задача">
+			<OwnMembers>
+				<Member Name="AssignedTo" Caption="Исполнитель" />
+				<Member Name="DateCompleted" Caption="Дата завершения" />
+				<Member Name="Description" Caption="Описание" />
+				<Member Name="DueDate" Caption="Дата окончания" />
+				<Member Name="PercentCompleted" Caption="Процент выполнения" />
+				<Member Name="StartDate" Caption="Дата начала" />
+				<Member Name="Status" Caption="Статус" />
+				<Member Name="Subject" Caption="Тема" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Persistent.BaseImpl.User" Caption="Пользователь">
+			<OwnMembers>
+				<Member Name="ChangePasswordOnFirstLogon" Caption="Изменить пароль при первом входе в систему" />
+				<Member Name="IsActive" Caption="Активен" />
+				<Member Name="Permissions" Caption="Права доступа" />
+				<Member Name="Roles" Caption="Роли" />
+				<Member Name="UserName" Caption="Имя пользователя" />
+			</OwnMembers>
+		</Class>
+		<Class Name="DevExpress.Xpo.XPWeakReference" Caption="Слабая ссылка" />
+	</BOModel>
+	<Localization>
+		<LocalizationGroup Name="Enums">
+			<LocalizationGroup Name="DevExpress.Persistent.Base.General.TaskStatus" Value="Статус задачи">
+				<LocalizationItem Name="Completed" Value="Завершена" />
+				<LocalizationItem Name="Deferred" Value="Задержана" />
+				<LocalizationItem Name="InProgress" Value="В процессе выполнения" />
+				<LocalizationItem Name="NotStarted" Value="Не начата" />
+				<LocalizationItem Name="WaitingForSomeoneElse" Value="В ожидании" />
+			</LocalizationGroup>
+		</LocalizationGroup>
+	</Localization>
+	<Validation>
+		<Rules>
+			<RuleFromBoolProperty Id="EventIntervalValid" CustomMessageTemplate="Дата начала должна быть меньше, чем дата окончания" Name="Интервал событий корректен" />
+			<RuleRequiredField Id="FileAttachmentBaseRule" CustomMessageTemplate="Файл должен быть присоединен" Name="Базовое правило файлового вложения" />
+			<RuleFromBoolProperty Id="HCategoryCircularReferences" CustomMessageTemplate="Обнаружена циклическая ссылка. Чтобы исправить эту ошибку, задайте другое значение свойству 'Предок'." Name="Циклические ссылки иерархических категорий" />
+			<RuleUniqueValue Id="PropertyDescriptor Code is unique" CustomMessageTemplate="Значение 'Код' должно быть уникальным" Name="Код описания свойства уникален" FoundObjectMessagesSeparator="," />
+			<RuleRequiredField Id="PropertyDescriptor Code required" Name="Требуется код описания свойства" />
+			<RuleCriteria Id="Role is not referenced" CustomMessageTemplate="Нельзя удалить роль, так как есть пользователи которым она отведена" Name="Нет ссылки на роль" MessageTemplateMustSatisfyCriteria="Объект &quot;{TargetObject}&quot; должен удовлетворять следующему критерию: &quot;{Criteria}&quot;." />
+			<RuleRequiredField Id="Role required" CustomMessageTemplate="Активный пользователь должен иметь как минимум одну отведенную ему роль" Name="Требуется задать роль" />
+			<RuleUniqueValue Id="User Name is unique" CustomMessageTemplate="Пользователь с введенным именем уже зарегистрирован в системе" Name="Имя пользователя является уникальным" FoundObjectMessagesSeparator="," />
+			<RuleRequiredField Id="User Name required" CustomMessageTemplate="Имя пользователя не должно быть пустым" Name="Требуется задать имя пользователя" />
+		</Rules>
+	</Validation>
+	<Views>
+		<DetailView Id="BasicUser_DetailView">
+			<Layout>
+				<LayoutGroup Id="Main">
+					<LayoutGroup Id="SimpleEditors">
+						<LayoutGroup Id="BasicUser" Caption="Базовый пользователь" />
+					</LayoutGroup>
+				</LayoutGroup>
+			</Layout>
+		</DetailView>
+		<DetailView Id="Organization_DetailView">
+			<Layout>
+				<LayoutGroup Id="Main">
+					<LayoutGroup Id="SimpleEditors">
+						<LayoutGroup Id="Organization" Caption="Организация" />
+					</LayoutGroup>
+				</LayoutGroup>
+			</Layout>
+		</DetailView>
+		<DetailView Id="PropertyDescriptor_DetailView">
+			<Layout>
+				<LayoutGroup Id="Main">
+					<LayoutGroup Id="SimpleEditors">
+						<LayoutGroup Id="PropertyDescriptor" Caption="Дескриптор свойства" />
+					</LayoutGroup>
+				</LayoutGroup>
+			</Layout>
+		</DetailView>
+		<DetailView Id="SimpleUser_DetailView">
+			<Layout>
+				<LayoutGroup Id="Main">
+					<LayoutGroup Id="SimpleEditors">
+						<LayoutGroup Id="SimpleUser" Caption="Простой пользователь" />
+					</LayoutGroup>
+				</LayoutGroup>
+			</Layout>
+		</DetailView>
+		<DetailView Id="Event_DetailView">
+			<Layout>
+				<LayoutGroup Id="Main">
+					<LayoutGroup Id="SimpleEditors">
+						<LayoutGroup Id="Event" Caption="Событие" />
+					</LayoutGroup>
+				</LayoutGroup>
+			</Layout>
+		</DetailView>
+	</Views>
+</Application>

@@ -1,64 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
     <EnableWindowsTargeting>true</EnableWindowsTargeting>
-    <AssemblyName>DevExpress.ExpressApp.Win.v26.1</AssemblyName>
+    <AssemblyName>DevExpress.ExpressApp.Win.v26.2</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>true</DelaySign>
+    <AssemblyOriginatorKeyFile>..\..\DevExpress.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>DevExpress.ExpressApp.Win</RootNamespace>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <OutputPath>..\..\DevExpress.Dll\NETCore\</OutputPath>
-    <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="System.Resources.Extensions" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="..\..\AssemblyVersion.cs">
-      <Link>AssemblyVersion.cs</Link>
-    </Compile>
-    <Compile Include="Core\ModelEditor\AspectManagementForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Core\ModelEditor\NewAspectForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Templates\Bars\DetailFormV2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Templates\Bars\LightStyleMainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Templates\Bars\MainFormV2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Templates\Bars\NestedFrameTemplateV2.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Templates\LookupControlTemplate.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Templates\PopupForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Templates\Ribbon\DetailRibbonFormV2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Templates\Ribbon\LightStyleMainRibbonForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Templates\Ribbon\MainRibbonFormV2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Templates\Ribbon\OutlookStyleMainRibbonForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-  </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="ModuleLocalizationResources.ar.resx" />
     <EmbeddedResource Include="ModuleLocalizationResources.bg.resx" />
@@ -2046,9 +2002,6 @@
     <EmbeddedResource Include="ModuleLocalizationResources.uz-Cyrl-UZ.resx" />
     <EmbeddedResource Include="ModuleLocalizationResources.uz-Latn-UZ.resx" />
     <EmbeddedResource Include="ModuleLocalizationResources.ky.resx" />
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="Templates\LookupControlTemplate.it.resx">
       <SubType>Designer</SubType>
       <DependentUpon>LookupControlTemplate.cs</DependentUpon>
@@ -2089,22 +2042,13 @@
       <SubType>Designer</SubType>
       <DependentUpon>PopupForm.cs</DependentUpon>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="Templates\PopupForm.de.resx">
       <SubType>Designer</SubType>
       <DependentUpon>PopupForm.cs</DependentUpon>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.ru.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="Templates\LookupControlTemplate.de.resx">
       <SubType>Designer</SubType>
       <DependentUpon>LookupControlTemplate.cs</DependentUpon>
@@ -2121,21 +2065,12 @@
       <SubType>Designer</SubType>
       <DependentUpon>LookupControlTemplate.cs</DependentUpon>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.ja.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.de.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.hr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -2155,9 +2090,6 @@
       <SubType>Designer</SubType>
       <DependentUpon>PopupForm.cs</DependentUpon>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.pt-BR.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -2169,9 +2101,6 @@
       <SubType>Designer</SubType>
       <DependentUpon>PopupForm.cs</DependentUpon>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.pl.resx" />
     <EmbeddedResource Include="Templates\LookupControlTemplate.pl.resx">
       <DependentUpon>LookupControlTemplate.cs</DependentUpon>
@@ -2179,13 +2108,7 @@
     <EmbeddedResource Include="Templates\PopupForm.pl.resx">
       <DependentUpon>PopupForm.cs</DependentUpon>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.sr-Latn-BA.resx" />
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="Core\ModelEditor\AspectManagementForm.et.resx">
       <DependentUpon>AspectManagementForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -2291,5 +2214,111 @@
     <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.hi.resx">
       <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.es-MX.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.es-MX.resx" />
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.es-MX.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.es-MX.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.es-MX.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.es-MX.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.es-MX.resx">
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.es-MX.resx">
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.es-MX.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.es-MX.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.es-MX.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.es-MX.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LargeStringEditFindFormLocalizationResources.af.resx" />
+    <EmbeddedResource Include="Resources\MaskModelEditorControlLocalizationResources.af.resx" />
+    <EmbeddedResource Include="Templates\Bars\DetailFormV2.af.resx">
+      <DependentUpon>DetailFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\LightStyleMainForm.af.resx">
+      <DependentUpon>LightStyleMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\MainFormV2.af.resx">
+      <DependentUpon>MainFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Bars\NestedFrameTemplateV2.af.resx">
+      <DependentUpon>NestedFrameTemplateV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\LookupControlTemplate.af.resx">
+      <DependentUpon>LookupControlTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\PopupForm.af.resx">
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\DetailRibbonFormV2.af.resx">
+      <DependentUpon>DetailRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\LightStyleMainRibbonForm.af.resx">
+      <DependentUpon>LightStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\MainRibbonFormV2.af.resx">
+      <DependentUpon>MainRibbonFormV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Ribbon\OutlookStyleMainRibbonForm.af.resx">
+      <DependentUpon>OutlookStyleMainRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="Core\ModelEditor\AspectManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\ModelEditor\NewAspectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Templates\Bars\DetailFormV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Templates\Bars\LightStyleMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Templates\Bars\MainFormV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Templates\Bars\NestedFrameTemplateV2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Templates\LookupControlTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Templates\PopupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Templates\Ribbon\DetailRibbonFormV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Templates\Ribbon\LightStyleMainRibbonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Templates\Ribbon\MainRibbonFormV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Templates\Ribbon\OutlookStyleMainRibbonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

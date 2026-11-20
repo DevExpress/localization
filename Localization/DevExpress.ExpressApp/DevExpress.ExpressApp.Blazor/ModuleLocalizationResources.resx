@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
@@ -157,9 +157,6 @@
   <data name="Non-calculated\Localization\Messages\ErrorPage\ApplicationError\Value" xml:space="preserve">
     <value>Application Error.</value>
   </data>
-  <data name="Non-calculated\Localization\Messages\ErrorPage\Continue\Value" xml:space="preserve">
-    <value>Continue</value>
-  </data>
   <data name="Non-calculated\Localization\Messages\ErrorPage\CopyDetails\Value" xml:space="preserve">
     <value>Copy Details</value>
   </data>
@@ -178,11 +175,11 @@
   <data name="Non-calculated\Localization\Messages\FileSizeLimit\Value" xml:space="preserve">
     <value>File size must be less than {0} MB</value>
   </data>
+  <data name="Non-calculated\Localization\Messages\MaxTabLimit\Value" xml:space="preserve">
+    <value>You have reached the maximum number of open tabs ({0}). Close unused tabs to open a new tab. If another form requests a new tab based on your input, you may lose unsaved changes in that form.</value>
+  </data>
   <data name="Non-calculated\Localization\Messages\ModifiedObjectWarning\Value" xml:space="preserve">
     <value>You must save pending changes before editing this record.</value>
-  </data>
-  <data name="Non-calculated\Localization\Messages\MaxTabLimit\Value" xml:space="preserve">
-    <value>You have reached the maximum number of open tabs ({0}). Close unused tabs to open a new one.</value>
   </data>
   <data name="Non-calculated\Localization\Messages\PageIsNotFound\Value" xml:space="preserve">
     <value>The requested page is not found.</value>
@@ -285,6 +282,9 @@
   </data>
   <data name="Non-calculated\Localization\VisualComponents\GridContextMenu\MenuGroupPanelShow\Value" xml:space="preserve">
     <value>Show Group By Box</value>
+  </data>
+  <data name="Non-calculated\Localization\VisualComponents\GridContextMenu\MenuGroupSummary\Value" xml:space="preserve">
+    <value>Group Summary</value>
   </data>
   <data name="Non-calculated\Localization\VisualComponents\Header\HideNavigationPane\Value" xml:space="preserve">
     <value>Hide Navigation Pane</value>
@@ -394,33 +394,6 @@
   <data name="Non-calculated\Localization\VisualComponents\LayoutEditor\ContextMenu\UngroupTabbedGroup\Value" xml:space="preserve">
     <value>Ungroup Tabbed Group</value>
   </data>
-  <data name="Non-calculated\Localization\VisualComponents\LayoutEditor\PivotGridContextMenu\ClearFilter\Value" xml:space="preserve">
-    <value>Clear Filter</value>
-  </data>
-  <data name="Non-calculated\Localization\VisualComponents\LayoutEditor\PivotGridContextMenu\CollapseAllColumns\Value" xml:space="preserve">
-    <value>Collapse All Columns</value>
-  </data>
-  <data name="Non-calculated\Localization\VisualComponents\LayoutEditor\PivotGridContextMenu\CollapseAllGroups\Value" xml:space="preserve">
-    <value>Collapse All Groups</value>
-  </data>
-  <data name="Non-calculated\Localization\VisualComponents\LayoutEditor\PivotGridContextMenu\CollapseAllRows\Value" xml:space="preserve">
-    <value>Collapse All Rows</value>
-  </data>
-  <data name="Non-calculated\Localization\VisualComponents\LayoutEditor\PivotGridContextMenu\ExpandAllColumns\Value" xml:space="preserve">
-    <value>Expand All Columns</value>
-  </data>
-  <data name="Non-calculated\Localization\VisualComponents\LayoutEditor\PivotGridContextMenu\ExpandAllGroups\Value" xml:space="preserve">
-    <value>Expand All Groups</value>
-  </data>
-  <data name="Non-calculated\Localization\VisualComponents\LayoutEditor\PivotGridContextMenu\ExpandAllRows\Value" xml:space="preserve">
-    <value>Expand All Rows</value>
-  </data>
-  <data name="Non-calculated\Localization\VisualComponents\LayoutEditor\PivotGridContextMenu\ReloadData\Value" xml:space="preserve">
-    <value>Reload Data</value>
-  </data>
-  <data name="Non-calculated\Localization\VisualComponents\LayoutEditor\PivotGridContextMenu\ShowFieldList\Value" xml:space="preserve">
-    <value>Show Field List</value>
-  </data>
   <data name="Non-calculated\Localization\VisualComponents\LayoutEditor\SizeWarning\Description\Value" xml:space="preserve">
     <value>The layout editor can only be used on screens wider than 786px.</value>
   </data>
@@ -447,6 +420,33 @@
   </data>
   <data name="Non-calculated\Localization\VisualComponents\ObjectModel\SearchPrompt\Value" xml:space="preserve">
     <value>Text to search...</value>
+  </data>
+  <data name="Non-calculated\Localization\VisualComponents\PivotGridContextMenu\ClearFilter\Value" xml:space="preserve">
+    <value>Clear Filter</value>
+  </data>
+  <data name="Non-calculated\Localization\VisualComponents\PivotGridContextMenu\CollapseAllColumns\Value" xml:space="preserve">
+    <value>Collapse All Columns</value>
+  </data>
+  <data name="Non-calculated\Localization\VisualComponents\PivotGridContextMenu\CollapseAllGroups\Value" xml:space="preserve">
+    <value>Collapse All Groups</value>
+  </data>
+  <data name="Non-calculated\Localization\VisualComponents\PivotGridContextMenu\CollapseAllRows\Value" xml:space="preserve">
+    <value>Collapse All Rows</value>
+  </data>
+  <data name="Non-calculated\Localization\VisualComponents\PivotGridContextMenu\ExpandAllColumns\Value" xml:space="preserve">
+    <value>Expand All Columns</value>
+  </data>
+  <data name="Non-calculated\Localization\VisualComponents\PivotGridContextMenu\ExpandAllGroups\Value" xml:space="preserve">
+    <value>Expand All Groups</value>
+  </data>
+  <data name="Non-calculated\Localization\VisualComponents\PivotGridContextMenu\ExpandAllRows\Value" xml:space="preserve">
+    <value>Expand All Rows</value>
+  </data>
+  <data name="Non-calculated\Localization\VisualComponents\PivotGridContextMenu\ReloadData\Value" xml:space="preserve">
+    <value>Reload Data</value>
+  </data>
+  <data name="Non-calculated\Localization\VisualComponents\PivotGridContextMenu\ShowFieldList\Value" xml:space="preserve">
+    <value>Show Field List</value>
   </data>
   <data name="Non-calculated\Localization\VisualComponents\TabbedMDI\CloseTab\Value" xml:space="preserve">
     <value>Close</value>

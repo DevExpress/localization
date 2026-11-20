@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ShowInReportV2" Caption="Anzeigen in Bericht" ToolTip="Selektierte Datensätze anzeigen in Bericht" />
+      <Action Id="CopyPredefinedReport" Caption="Kopiere vordefinierten Bericht" />
+      <Action Id="PreviewReportV2" Caption="Vorschau" />
+      <Action Id="ReportViewerDialogControllerV2_Close" Caption="Schließen" ShortCaption="Schließen" ToolTip="Schließen"/>
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.ReportDataV2" Caption="Bericht">
+      <OwnMembers>
+        <Member Name="DataTypeCaption" Caption="Datentyp" />
+        <Member Name="IsInplaceReport" Caption="Eingebetteter Bericht" />
+        <Member Name="DisplayName" Caption="AnzeigeName" />
+        <Member Name="ParametersObjectType" Caption="Parameter Datentyp" />
+        <Member Name="IsPredefined" Caption="Schreibgeschützt" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.EF.ReportDataV2" Caption="Bericht">
+      <OwnMembers>
+        <Member Name="DataTypeCaption" Caption="Datentyp" />
+        <Member Name="IsInplaceReport" Caption="Eingebetteter Bericht" />
+        <Member Name="DisplayName" Caption="AnzeigeName" />
+        <Member Name="ParametersObjectType" Caption="Parameter Datentyp" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.ReportsV2.NewReportWizardParameters" Caption="Parameter neuer Xaf Berichtassistent">
+      <OwnMembers>
+        <Member Name="DataType" Caption="Datentyp" />
+        <Member Name="ReportType" Caption="Berichtstyp" />
+        <Member Name="DisplayName" Caption="AnzeigeName" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.ReportsV2.PredefinedReportDataContainer">
+      <OwnMembers>
+        <Member Name="IsInplaceReport" Caption="Eingebetteter Bericht" />
+        <Member Name="ParametersObjectType" Caption="Parameter Datentyp" />
+        <Member Name="DataType" Caption="Datentyp" />
+        <Member Name="DisplayName" Caption="AnzeigeName" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.ReportsV2.ReportType" Value="Report Typ">
+        <LocalizationItem Name="Label" Value="Etikett" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems RelatedReportsGroupCaption="Reporte">
+    <Items>
+      <Item Id="Reports" Caption="Reporte" >
+        <Items>
+          <Item Id="ReportsV2" Caption="Berichte" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <ListView Id="DevExpress.Persistent.BaseImpl.XtraReportData_ListView" Caption="Berichte" />
+    <ListView Id="PredefinedReportDataContainer_ListView">
+      <Columns>
+        <ColumnInfo Id="DataType" Caption ="Datentyp" />
+        <ColumnInfo Id="ParametersObjectType" Caption ="Parameter Datentyp" />
+        <ColumnInfo Id="IsInplaceReport" Caption ="Eingebetteter Bericht" />
+      </Columns>
+    </ListView>
+    <ListView Id="ReportDataV2_ListView">
+      <Columns>
+        <ColumnInfo Id="ParametersObjectType" Caption ="Parameter Datentyp" />
+        <ColumnInfo Id="IsPredefined" Caption="Schreibgeschützt" />
+      </Columns>
+    </ListView>
+    <DetailView Id="PredefinedReportDataContainer_DetailView">
+      <Items>
+        <PropertyEditor Id="DataType" Caption ="Datentyp" />
+        <PropertyEditor Id="ParametersObjectType" Caption ="Parameter Datentyp" />
+        <PropertyEditor Id="IsInplaceReport" Caption ="Eingebetteter Bericht" />
+      </Items>
+    </DetailView>
+    <DetailView Id="ReportDataV2_DetailView">
+      <Items>
+        <PropertyEditor Id="ParametersObjectType" Caption ="Parameter Datentyp" />
+        <PropertyEditor Id="IsPredefined" Caption="Schreibgeschützt" />
+      </Items>
+    </DetailView>
+  </Views>
+  <Localization>
+    <LocalizationGroup Name="Exceptions">
+      <LocalizationItem Name="ReportsDisplayNameIsEmptyErrorMessage" Value="Der Bericht, den Sie zu speichern versuchen, verwendet einen leeren oder vorgegebenen Wert für die Eigenschaft 'AnzeigeName'. Bitte weisen Sie diese Eigenschaft zu, bevor Sie den Bericht speichern." />
+    </LocalizationGroup>
+  </Localization>
+</Application>

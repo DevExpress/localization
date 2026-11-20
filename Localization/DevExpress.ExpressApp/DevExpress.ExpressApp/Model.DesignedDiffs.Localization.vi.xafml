@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application VersionFormat="Phiên bản {0}.{1}.{2}" ProtectedContentText="Nội dung được bảo vệ">
+  <ActionDesign>
+    <Actions>
+      <Action Id="About Info" Caption="Thông tin về..." />
+      <Action Id="Cancel" Caption="Hủy" />
+      <Action Id="CreateDashboard" Caption="Tạo Bảng tin" />
+      <Action Id="Delete" Caption="Xóa" ConfirmationMessage="Bạn sắp xóa (các) mục được chọn. Bạn có muốn tiếp tục?" />
+      <Action Id="Delete Item" Caption="Xóa mục" ConfirmationMessage="Bạn sắp xóa (các) mục được chọn. Bạn có muốn tiếp tục?" />
+      <Action Id="Diagnostic Info" Caption="Chuẩn đoán" />
+      <Action Id="DialogCancel" Caption="Hủy" />
+      <Action Id="DialogOK" Caption="Nhận" />
+      <Action Id="FullTextSearch" NullValuePrompt="Các văn bản để tìm kiếm..." Caption="Lọc theo Văn bản" ToolTip="Lọc Đối tượng bằng Văn bản" ShortCaption="Tìm" />
+      <Action Id="HideItemsFromDashboard" Caption="Ẩn từ bảng tin" ToolTip="Ẩn (các) mục được chọn từ bảng tin" />
+      <Action Id="Link" Caption="Liên kết" />
+      <Action Id="ListViewShowObject" Caption="Mở" />
+      <Action Id="Logoff" Caption="Đăng xuất" />
+      <Action Id="Logon" Caption="Đăng nhập" />
+      <Action Id="NavigateBack" ToolTip="Điều hướng đến view trước đó" Caption="Sau" />
+      <Action Id="NavigateForward" ToolTip="Điều hướng đến view tiếp theo" Caption="Trước" />
+      <Action Id="New" Caption="Mới">
+        <DisableReasons>
+          <Reason Id="MasterObjectIsNew" Caption="Đối tượng được sửa là mới." />
+        </DisableReasons>
+      </Action>
+      <Action Id="NextObject" Caption="Tiếp" />
+      <Action Id="OrganizeDashboard" Caption="Tổ chức Bảng tin" />
+      <Action Id="PreviousObject" Caption="Trước" />
+      <Action Id="Refresh" Caption="Làm mới" />
+      <Action Id="Save" Caption="Ghi" />
+      <Action Id="SaveAndClose" Caption="Ghi và Đóng" />
+      <Action Id="SaveAndNew" Caption="Ghi và Mới" />
+      <Action Id="SetFilter" Caption="Lọc" />
+      <Action Id="ShowItemsOnDashboard" Caption="Hiển thị trên bảng tin" ToolTip="Hiển thị (các) mục được chọn trên bảng tin" />
+      <Action Id="ShowNavigationItem" Caption="Điều hướng" />
+      <Action Id="Unlink" Caption="Bỏ liên kết" ConfirmationMessage="Bạn sắp bỏ liên kết (các) bản ghi được chọn. Bạn có muốn tiếp tục?" />
+    </Actions>
+    <DisableReasons>
+      <Reason Id="ByContext_RequireMultipleObjects" Caption="Yêu cầu ít nhất một đối tượng được chọn" />
+      <Reason Id="ByContext_RequireSingleObject" Caption="Yêu cầu một đối tượng đơn được chọn" />
+      <Reason Id="Security" Caption="Quyền bị từ chối" />
+    </DisableReasons>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Editors.CriteriaProvider">
+      <OwnMembers>
+        <Member Name="FilteredObjectsType" Caption="Kiểu các đối tượng được lọc" />
+        <Member Name="FilterString" Caption="Chuỗi Lọc" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.AboutInfo" Caption="Thông tin về">
+      <OwnMembers>
+        <Member Name="Company" Caption="Công ty" />
+        <Member Name="Copyright" Caption="Bản quyền" />
+        <Member Name="Description" Caption="Mô tả" />
+        <Member Name="LogoImageName" Caption="Tên ảnh Logo" />
+        <Member Name="ProductName" Caption="Tên Sản phẩm" />
+        <Member Name="Version" Caption="Phiên bản" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardCreationInfo" Caption="Thuật sĩ tạo Bảng tin">
+      <OwnMembers>
+        <Member Name="DashboardName" Caption="Tên" />
+        <Member Name="DashboardOrganizer" Caption="Các mục View" />
+        <Member Name="NavigationGroupName" Caption="Tạo một mục điều hướng trong" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardOrganizationItem" Caption="Mục tổ chức Bảng tin">
+      <OwnMembers>
+        <Member Name="Item" Caption="Mục" />
+        <Member Name="Visible" Caption="Hiển thị" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardOrganizer" Caption="Bố trí Bảng tin">
+      <OwnMembers>
+        <Member Name="ViewItems" Caption="Các mục View" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardViewItemDescriptor" Caption="Mô tả mục hiển thị trên bảng tin">
+      <OwnMembers>
+        <Member Name="ViewCaption" Caption="Tiêu đề View" />
+        <Member Name="ViewDescription" Caption="Mô tả View" />
+        <Member Name="ViewId" Caption="Id của View" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DiagnosticInfoObject" Caption="Chuẩn đoán Thông tin Đối tượng">
+      <OwnMembers>
+        <Member Name="AsText" Caption="Như Văn bản" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.StaticImageDashboardOrganizationItem" Caption="Ảnh tĩnh">
+      <OwnMembers>
+        <Member Name="ImageName" Caption="Tên ảnh" />
+        <Member Name="Preview" Caption="Xem trước" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.StaticTextDashboardOrganizationItem" Caption="Văn bản tĩnh">
+      <OwnMembers>
+        <Member Name="Text" Caption="Văn bản" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ViewDashboardOrganizationItem" Caption="Hiển thị">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Biểu thức lọc (tìm kiếm)" />
+        <Member Name="ObjectType" Caption="Kiểu đối tượng" />
+        <Member Name="ViewDescriptor" Caption="Hiển thị" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="DialogButtons">
+      <LocalizationItem Name="Abort" Value="&amp;Bỏ dở" />
+      <LocalizationItem Name="Add" Value="Thêm" />
+      <LocalizationItem Name="Apply" Value="Áp dụng" />
+      <LocalizationItem Name="Back" Value="&lt; Trước" />
+      <LocalizationItem Name="Cancel" Value="&amp;Hủy" />
+      <LocalizationItem Name="Clear" Value="Xóa trắng" />
+      <LocalizationItem Name="Close" Value="Đóng" />
+      <LocalizationItem Name="Find" Value="Tìm" />
+      <LocalizationItem Name="Ignore" Value="&amp;Bỏ qua" />
+      <LocalizationItem Name="Next" Value="Tiếp &gt;" />
+      <LocalizationItem Name="No" Value="&amp;Không" />
+      <LocalizationItem Name="OK" Value="&amp;Nhận" />
+      <LocalizationItem Name="Remove" Value="Loại bỏ" />
+      <LocalizationItem Name="Retry" Value="&amp;Gắng lại" />
+      <LocalizationItem Name="Yes" Value="&amp;Có" />
+      <LocalizationItem Name="Edit" Value="Sửa" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.SystemModule.DashboardItemVisibility" Value="Mục bảng tin có thể hiển thị">
+        <LocalizationItem Name="Hidden" Value="Ẩn" />
+        <LocalizationItem Name="Visible" Value="Hiện" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Messages">
+      <LocalizationItem Name="User" Value="Người dùng: {0}" />
+    </LocalizationGroup>
+  </Localization>
+  <Views>
+    <DetailView Id="AboutInfo_DetailView" Caption="Thông tin về" />
+  </Views>
+</Application>

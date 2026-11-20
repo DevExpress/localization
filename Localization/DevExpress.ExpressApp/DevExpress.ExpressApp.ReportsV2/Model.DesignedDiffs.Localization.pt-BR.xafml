@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ShowInReportV2" Caption="Mostrar em Relatório" ToolTip="Mostrar os registros selecionados num relatório" />
+      <Action Id="PreviewReportV2" Caption="Visualizar" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.ReportDataV2" Caption="Relatório">
+      <OwnMembers>
+        <Member Name="DataTypeCaption" Caption="Tipo de Dado" />
+        <Member Name="IsInplaceReport" Caption="É Relatório Embutido" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.EF.ReportDataV2" Caption="Relatório">
+      <OwnMembers>
+        <Member Name="DataTypeCaption" Caption="Tipo de Dado" />
+        <Member Name="IsInplaceReport" Caption="É Relatório Embutido" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.ReportsV2.NewReportWizardParameters" Caption="Parâmetros para Assistente de Novo Relatório">
+      <OwnMembers>
+        <Member Name="DataType" Caption="Tipo de Dado" />
+        <Member Name="ReportType" Caption="Tipo do Relatório" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.ReportsV2.ReportType">
+        <LocalizationItem Name="Label" Value="Rótulo" />
+        <LocalizationItem Name="Standard" Value="Padrão" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Reports">
+        <Items>
+          <Item Id="ReportsV2" Caption="Relatórios" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <ListView Id="DevExpress.Persistent.BaseImpl.XtraReportData_ListView" Caption="Relatórios" />
+  </Views>
+</Application>

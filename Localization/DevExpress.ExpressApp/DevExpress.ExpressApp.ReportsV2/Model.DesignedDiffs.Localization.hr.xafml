@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ShowInReportV2" Caption="Prikaži u izvještaju" ToolTip="Prikaži odabrane zapise u izvještaju" />
+      <Action Id="PreviewReportV2" Caption="Pregled" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.ReportDataV2" Caption="Izvještaj">
+      <OwnMembers>
+        <Member Name="DataTypeCaption" Caption="Tip podataka" />
+        <Member Name="IsInplaceReport" Caption="Inplace Izvještaj" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.EF.ReportDataV2" Caption="Izvještaj">
+      <OwnMembers>
+        <Member Name="DataTypeCaption" Caption="Tip podataka" />
+        <Member Name="IsInplaceReport" Caption="Inplace Izvještaj" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.ReportsV2.NewReportWizardParameters" Caption="Novi parametri Xaf čarobnjaka za izvještaje ">
+      <OwnMembers>
+        <Member Name="DataType" Caption="Tip podataka" />
+        <Member Name="ReportType" Caption="Tip izvještaja" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.ReportsV2.ReportType">
+        <LocalizationItem Name="Label" Value="Oznaka" />
+        <LocalizationItem Name="Standard" Value="Standardni" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Reports">
+        <Items>
+          <Item Id="ReportsV2" Caption="Izvještaji" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <ListView Id="DevExpress.Persistent.BaseImpl.XtraReportData_ListView" Caption="Izvještaji" />
+  </Views>
+</Application>

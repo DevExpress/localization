@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ChangeStateAction" Caption="Změnit stav" ToolTip="Změnit stav aktuálního objektu" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCState">
+      <OwnMembers>
+        <Member Name="Appearances" Caption="Vzhled" />
+        <Member Name="Caption" Caption="Titulek" />
+        <Member Name="Marker" Caption="Značka" />
+        <Member Name="MarkerObject" Caption="Značka objektu" />
+        <Member Name="StateMachine" Caption="Stav počítače" />
+        <Member Name="TargetObjectCriteria" Caption="Kritéria cílového objektu" />
+        <Member Name="Transitions" Caption="Přechody" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCStateAppearance" Caption="IDCStav vzhledu">
+      <OwnMembers>
+        <Member Name="AppearanceItemType" Caption="Typ vzhledu" />
+        <Member Name="BackColor" Caption="Barva pozadí" />
+        <Member Name="Context" Caption="Kontext" />
+        <Member Name="Criteria" Caption="Kritéria" />
+        <Member Name="DeclaringType" Caption="Typ vyjádření" />
+        <Member Name="Enabled" Caption="Povoleno" />
+        <Member Name="FontColor" Caption="Barva písma" />
+        <Member Name="FontStyle" Caption="Styl písma" />
+        <Member Name="Method" Caption="Metoda" />
+        <Member Name="State" Caption="Stav " />
+        <Member Name="TargetItems" Caption="Položky cíle" />
+        <Member Name="Visibility" Caption="Viditelnost" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCStateMachine" Caption="IDCStav počítače">
+      <OwnMembers>
+        <Member Name="Active" Caption="Aktivní " />
+        <Member Name="ExpandActionsInDetailView" Caption="Rozbalit akce v detailním náhledu" />
+        <Member Name="Name" Caption="Jméno" />
+        <Member Name="StartState" Caption="Stav na začátku" />
+        <Member Name="StatePropertyName" Caption="Název vlastnosti stavu" />
+        <Member Name="States" Caption="Stavy" />
+        <Member Name="TargetObjectType" Caption="Typ cílového objektu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCTransition" Caption="IDCPřechod">
+      <OwnMembers>
+        <Member Name="Caption" Caption="Titulek" />
+        <Member Name="SourceState" Caption="Stav zdroje" />
+        <Member Name="TargetState" Caption="Cílový zdroj" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Utils.MarkerObject" Caption="Značka objektu">
+      <OwnMembers>
+        <Member Name="DisplayName" Caption="Zobrazit název" />
+        <Member Name="Marker" Caption="Značka" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.StateMachineObjectBase" Caption="Objekt stavu počítače" />
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoState" Caption="Stav">
+      <OwnMembers>
+        <Member Name="Appearance" Caption="Vlastnost" />
+        <Member Name="Caption" Caption="Titulek" />
+        <Member Name="Marker" Caption="Značka" />
+        <Member Name="StateMachine" Caption="Stav počítače" />
+        <Member Name="TargetObjectCriteria" Caption="Kritéria cílového objektu" />
+        <Member Name="Transitions" Caption="Přechody" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoStateAppearance" Caption="Vlastnost">
+      <OwnMembers>
+        <Member Name="AppearanceItemType" Caption="Typ vzhledu" />
+        <Member Name="BackColor" Caption="Barva pozadí" />
+        <Member Name="Context" Caption="Kontext" />
+        <Member Name="Enabled" Caption="Povoleno" />
+        <Member Name="FontColor" Caption="Barva písma" />
+        <Member Name="FontStyle" Caption="Styl písma" />
+        <Member Name="Priority" Caption="Priorita" />
+        <Member Name="TargetItems" Caption="Položky cíle" />
+        <Member Name="Visibility" Caption="Viditelnost" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoStateMachine" Caption="Stav počítače">
+      <OwnMembers>
+        <Member Name="Active" Caption="Aktivní " />
+        <Member Name="ExpandActionsInDetailView" Caption="Rozbalit akce v detailním náhledu" />
+        <Member Name="Name" Caption="Jméno" />
+        <Member Name="StartState" Caption="Stav na začátku" />
+        <Member Name="StatePropertyName" Caption="Název vlastnosti stavu" />
+        <Member Name="States" Caption="Stavy" />
+        <Member Name="TargetObjectType" Caption="Typ cílového objektu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoTransition" Caption="Přechod">
+      <OwnMembers>
+        <Member Name="Caption" Caption="Titulek" />
+        <Member Name="SourceState" Caption="Stav zdroje" />
+        <Member Name="TargetState" Caption="Cílový zdroj" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Editors.ViewItemVisibility" Value="Zobrazit viditelné položky">
+        <LocalizationItem Name="Hide" Value="Skrýt" />
+        <LocalizationItem Name="Show" Value="Ukázat" />
+        <LocalizationItem Name="ShowEmptySpace" Value="Ukázat prázdnou mezeru" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="System.Drawing.FontStyle" Value="Typ písma">
+        <LocalizationItem Name="Strikeout" Value="Přeškrtnutý" />
+        <LocalizationItem Name="Underline" Value="Podtržené" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <Validation>
+    <Rules>
+      <RuleIsReferenced Id="StateIsReferencedDc" MessageTemplateMustBeReferenced="Pokud chcet vymazat tento stav, přesvědčte se, že se neodkazuje na žádný přechod jako cílový stav." />
+      <RuleIsReferenced Id="StateIsReferencedXpo" MessageTemplateMustBeReferenced="Pokud chcet vymazat tento stav, přesvědčte se, že se neodkazuje na žádný přechod jako cílový stav." />
+    </Rules>
+  </Validation>
+  <Views>
+    <DetailView Id="IDCStateAppearance_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IDCStateAppearance" Caption="IDCStav vzhledu" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IDCStateMachine_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IDCStateMachine" Caption="IDCStav počítače" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

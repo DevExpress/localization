@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
+  <!-- 
 		Microsoft ResX Schema
 
 		Version 1.3
@@ -58,44 +58,530 @@
 			: using a System.ComponentModel.TypeConverter
 			: and then encoded with base64 encoding.
 	-->
-	
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>1.3</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ExceptionDialogLabel" xml:space="preserve">
+    <value>אירעה השגיאה הבאה:</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsNotValidNamespacePrefixDescription" xml:space="preserve">
+    <value>'{0}' אינו הגדרה תקינה של קידומת מרחב שמות</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DataLayerAlreadyExists" xml:space="preserve">
+    <value>שכבת נתונים כבר קיימת: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AnErrorHasOccurredWhileLoadingTheModel" xml:space="preserve">
+    <value>אירעה שגיאה בעת טעינת המודל. מקור: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AnErrorHasOccurredWithContext" xml:space="preserve">
+    <value>אירעה שגיאה, הקשר: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AnErrorHasOccurredWhileProcessingAShortcut" xml:space="preserve">
+    <value>מתרחשת שגיאה בעת עיבוד קיצור דרך: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AnUnsavedObjectCannotBeShown" xml:space="preserve">
+    <value>לא ניתן להציג אובייקט שלא נשמר</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ApplicationIsNotStarted" xml:space="preserve">
+    <value>היישום לא הופעל</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AttributeShouldStartWithSymbol" xml:space="preserve">
+    <value>התכונה '{0}' חייבת להתחיל בסימן '@': '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AttributeModifyingFailed" xml:space="preserve">
+    <value>שינוי התכונה נכשל</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ValidationCannotFindThePropertyWithinTheClass" xml:space="preserve">
+    <value>לא ניתן לבדוק את כלל האימות '{0}' המשתמש במאפיין '{1}', מכיוון שמאפיין זה אינו קיים במחלקת היעד '{2}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotCreateAppropriateDetailItem" xml:space="preserve">
+    <value>לא ניתן ליצור פריט פירוט מתאים עבור '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotCreateAppropriatePropertyEditorForTheProperty" xml:space="preserve">
+    <value>לא ניתן ליצור עורך מאפיינים מתאים עבור המאפיין '{0}.{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotCreateTemplateByName" xml:space="preserve">
+    <value>לא ניתן ליצור תבנית לפי שם: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotFindDescendantOfXafApplicationClass" xml:space="preserve">
+    <value>לא ניתן למצוא מחלקה הנגזרת מהמחלקה XafApplication כדי לזהות את הגדרות היישום שלך בתיקייה או בתיקיות הבאות:
+{0}
+עבור יישום Windows Forms, תיקייה זו או תיקיות אלה חייבות להכיל את קובץ ההפעלה של היישום שלך.
+עבור יישום ASP.NET, תיקייה זו או תיקיות אלה חייבות להכיל את ההרכבה המכילה את המחלקה שלך הנגזרת מ־WebApplication.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotFindThePropertyWithinTheClass" xml:space="preserve">
+    <value>לא ניתן לאתר את המאפיין '{0}' במחלקה '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TemplateTypeInfoMissed" xml:space="preserve">
+    <value>לא ניתן למצוא TypeInfo עבור הטיפוס '{0}'. עליך למקם את התבנית שלך במודול XAF, או לרשום אותה ידנית באמצעות השיטה XafTypesInfo.Instance.FindTypeInfo(typeof({0})).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotGenerateContent" xml:space="preserve">
+    <value>לא ניתן ליצור תוכן: התכונה 'ClassName' ריקה</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotObtainTheEditingObject" xml:space="preserve">
+    <value>לא ניתן לקבל את האובייקט שבעריכה</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotProcessTheRequestedUrl" xml:space="preserve">
+    <value>לא ניתן לעבד את מאתר המשאבים האחיד המבוקש</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotProcessTheRequestedUrlActionItemWasNotFound" xml:space="preserve">
+    <value>לא ניתן לעבד את מאתר המשאבים האחיד המבוקש, פריט הפעולה '{0}' לא נמצא</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotReadDictionaryFromResource" xml:space="preserve">
+    <value>לא ניתן לקרוא מילון מהמשאב '{1}' של ההרכבה '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ApplicationUpdaterDatabaseVersionIsNewer" xml:space="preserve">
+    <value>לא ניתן להפעיל את היישום. גרסת מסד הנתונים חדשה יותר מגרסת היישום, אך השרת שבו נמצאת גרסת היישום החדשה לא נמצא. בקש ממנהל המערכת לבדוק שקובץ התצורה מכיל נתיב נכון לגרסת היישום החדשה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="GridControlIsAlreadyCreated" xml:space="preserve">
+    <value>לא ניתן להגדיר את המאפיין EditMode. הפקד GridControl כבר נוצר</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotSetEditValueAvailableValues" xml:space="preserve">
+    <value>לא ניתן להגדיר את EditValue לפי הטקסט '{0}', ערכים זמינים:\r\n{1}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotSetEditValueListIsEmpty" xml:space="preserve">
+    <value>לא ניתן להגדיר את EditValue לפי הטקסט '{0}', הרשימה ריקה</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotShowViewUnknownContext" xml:space="preserve">
+    <value>לא ניתן להציג תצוגה, הקשר לא ידוע: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotShowViewUnknownTarget" xml:space="preserve">
+    <value>לא ניתן להציג תצוגה, יעד לא ידוע: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="RequiresCurrentObjectException" xml:space="preserve">
+    <value>לא ניתן לעדכן את CriteriaWrapper משום שהקריטריון משתמש בפרמטרים דינמיים, אך האובייקט הנוכחי לא צוין. כדי לעדכן את CriteriaWrapper, קרא לשיטה UpdateParametersValues(Object currentObject) והעבר את האובייקט הנוכחי כפרמטר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotAddDuplicateProperty" xml:space="preserve">
+    <value>לא ניתן להוסיף עורך מאפיינים כפול: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotAddCollectionProperty" xml:space="preserve">
+    <value>לא ניתן להוסיף את האוסף '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotAddToEmptySingleton" xml:space="preserve">
+    <value>לא ניתן להוסיף למופע היחיד Empty. צור מופע חדש של האוסף</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotCreateSchemaForAttribute" xml:space="preserve">
+    <value>לא ניתן לשנות את הסכימה עבור התכונה</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotFindListViewWithId" xml:space="preserve">
+    <value>לא ניתן לאתר תצוגת רשימה עם ID='{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ClassDoesntImplementInterface" xml:space="preserve">
+    <value>המחלקה '{0}' אינה מממשת את הממשק '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="GridColumnExists" xml:space="preserve">
+    <value>העמודה '{0}' כבר קיימת בטבלה</value>
+    <comment>AI</comment>
+  </data>
+  <data name="GridColumnDoesNotExist" xml:space="preserve">
+    <value>העמודה '{0}' אינה קיימת בטבלה</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConfigFileDoesNotExists" xml:space="preserve">
+    <value>קובץ התצורה '{0}' אינו קיים</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DictionaryPathItemParsingFailed" xml:space="preserve">
+    <value>הניתוח התחבירי של פריט בנתיב המילון נכשל. קיימת שגיאת תחביר בביטוי '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DictionaryPathParsingFailed" xml:space="preserve">
+    <value>הניתוח התחבירי של נתיב המילון נכשל. קיימת שגיאת תחביר בביטוי '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DuplicateComponentIdentifier" xml:space="preserve">
+    <value>מזהה רכיב כפול '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ErrorOccursWhileAddingTheCustomProperty" xml:space="preserve">
+    <value>אירעה שגיאה בעת הוספת המאפיין המותאם אישית '{2}' (מאפיין מטיפוס '{0}') לטיפוס '{1}': '{3}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IncompatibleParametersCombinationOnViewChanged" xml:space="preserve">
+    <value>שילוב פרמטרים לא תואם. ל-PopupWindow ולתצוגה הראשית יש אותו ObjectSpace.  עם זאת, המאפיין SaveOnAccept של ה-DialogController של החלון המוקפץ מוגדר לערך true. השתמש ב-ObjectSpace חדש עבור החלון המוקפץ שנפתח, או הגדר את המאפיין DialogController. SaveOnAccept לערך false.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LayoutControlInvalidCount" xml:space="preserve">
+    <value>כמות שגויה: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InfiniteRecursionDetected" xml:space="preserve">
+    <value>זוהתה רקורסיה אינסופית: התצוגה '{0}' נוצרה {1} פעמים בגלל פריט התצוגה '{2}'. פריט תצוגה זה הוסר מהפריסה. כדי לטפל בשגיאה זו, השתמש בפתרון מתאים מתוך המאמר הבא במאגר הידע: https://www.devexpress.com/kb=B181657.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InvalidApplicationVersion" xml:space="preserve">
+    <value>גרסת יישום לא תקינה ב-'{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InvalidParametrizedActionValueType" xml:space="preserve">
+    <value>לפעולה עם פרמטר '{0}' הוקצה טיפוס ערך לא תקין. הגדר במקום זאת טיפוס מספר שלם, מחרוזת או תאריך/שעה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ItsImpossibleToFindPathForNode" xml:space="preserve">
+    <value>לא ניתן לאתר נתיב='{0}' עבור הצומת '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ItsImpossibleToFindSourceNode" xml:space="preserve">
+    <value>לא ניתן לאתר SourceNode='{0}\\{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ListEditorShouldImplement" xml:space="preserve">
+    <value>ListEditor צריך לממש את הממשק IDXPopupMenuHolder</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ModulesHasAlreadyBeenLoaded" xml:space="preserve">
+    <value>המודולים כבר נטענו</value>
+    <comment>AI</comment>
+  </data>
+  <data name="NameAndValueCollectionsShouldHaveEqualLengths" xml:space="preserve">
+    <value>אוסף השמות ואוסף הערכים צריכים להיות באותו אורך</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ObjectFormatterFormatStringIsInvalid" xml:space="preserve">
+    <value>לא ניתן לעצב את האובייקט משום שמחרוזת התבנית שצוינה אינה תקינה: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PageCanOnlyContainOneInstanceOfControl" xml:space="preserve">
+    <value>דף יכול להכיל מופע אחד בלבד של הפקד '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PermissionIsDenied" xml:space="preserve">
+    <value>ההרשאה נדחתה</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ProcessWasAborted" xml:space="preserve">
+    <value>התהליך הופסק</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ResourceItemWithNameIsNotFound" xml:space="preserve">
+    <value>פריט משאב בשם '{0}' לא נמצא</value>
+    <comment>AI</comment>
+  </data>
+  <data name="RuleSetClearingIsDenied" xml:space="preserve">
+    <value>ריקון RuleSet אינו מורשה</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SourceAttributeExpressionShouldStartWith" xml:space="preserve">
+    <value>ביטוי מאפיין המקור צריך להתחיל ב-'{0}': '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SourceAttributePathShouldConsistOf" xml:space="preserve">
+    <value>נתיב מאפיין המקור צריך להיות מורכב משם צומת אחד או יותר, ובסופו שם מאפיין, המופרדים באמצעות הסימן '\\': '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SourceNodeExpressionShouldStartWith" xml:space="preserve">
+    <value>ביטוי SourceNode צריך להתחיל ב-'{0}': '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheAssemblyDoesntReferAssembly" xml:space="preserve">
+    <value>ההרכבה '{0}' אינה מפנה להרכבה {1} ({2})</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheClassIsNotFoundInBOModel" xml:space="preserve">
+    <value>המחלקה '{0}' לא נמצאה ב-BOModel</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MethodShouldBeUsed" xml:space="preserve">
+    <value>יש להשתמש בשיטה '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="NodeContainsDuplicatedChildNodes" xml:space="preserve">
+    <value>הצומת '{0}' מכיל שני צומתי צאצא עם הערך '{1}' במאפיין המפתח. \r\n  צומת1: '{2}'\r\n  צומת2: '{3}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="NodeWasNotFound" xml:space="preserve">
+    <value>הצומת '{0}' לא נמצא</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InvalidValueOfEnumProperty" xml:space="preserve">
+    <value>למאפיין {1} של האובייקט {0} יש ערך שגוי: {2}. אתחל את המאפיין בערך תקין של טיפוס המנייה {3} בשיטה AfterConstruction של המחלקה העסקית {4}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="NotRegisteredReadOnlyParameterException" xml:space="preserve">
+    <value>הפרמטר לקריאה בלבד '{0}' אינו רשום ב-ParametersFactory.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TypeDoesNotContainTheMember" xml:space="preserve">
+    <value>הסוג '{0}' אינו מכיל את האיבר '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheTypeIsNotDescendantOf" xml:space="preserve">
+    <value>הסוג '{0}' אינו נגזר מ-'{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TypeIsNotAEnum" xml:space="preserve">
+    <value>הסוג '{0}' אינו סוג נתונים מפורט</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ValueCannotBeStoredIntoTheProperty" xml:space="preserve">
+    <value>לא ניתן לאחסן את הערך '{0}' במאפיין '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConfigFileHasNoModuleNames" xml:space="preserve">
+    <value>הצומת 'add\[@key="Modules"]' חייב להכיל רשימת מודולים בקובץ התצורה '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ApplicationUpdaterAssemblyDoesNotExist" xml:space="preserve">
+    <value>לא ניתן לעדכן את היישום משום שההרכבה '{1}' אינה קיימת בתיקייה '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheAspectIsNotPresentInAspectsCollection" xml:space="preserve">
+    <value>ההיבט '{0}' אינו נמצא באוסף ההיבטים</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheClassNameAttributeIsEmpty" xml:space="preserve">
+    <value>התכונה ClassName של צומת התצוגה שאליו מפנים ריקה:</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheClassNameAttributeRefersToADifferentType" xml:space="preserve">
+    <value>התכונה ClassName של צומת התצוגה שאליו מפנים מתייחסת לסוג אחר. \r\nסוג האובייקט של קיצור הדרך: {0}\r\nסוג האובייקט של צומת התצוגה: {1}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheCreateApplicationModulesManagerReturnsNull" xml:space="preserve">
+    <value>השיטה CreateApplicationModulesManager מחזירה הפניה חסרת אובייקט</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ParameterConflictsWithPropertyException" xml:space="preserve">
+    <value>הקריטריון מכיל את הפרמטר לקריאה בלבד '{0}', שמתנגש עם המאפיין '{0}' של המחלקה '{1}'. כדי להפנות לפרמטר לקריאה בלבד, השתמש בתחביר '@@{0}'. כדי להפנות למאפיין, השתמש בתחביר '@this.{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CompatibilityDatabaseIsOldError" xml:space="preserve">
+    <value>גרסת מסד הנתונים ישנה יותר מגרסת היישום. יש לעדכן את מסד הנתונים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CompatibilityApplicationIsOldError" xml:space="preserve">
+    <value>גרסת מסד הנתונים גבוהה מגרסת היישום. יש לעדכן את היישום. פנה למנהל המערכת שלך או הורד גרסה חדשה.\r\nמידע נוסף: הגרסה המקומית {0} של המודול '{1}' נמוכה מהגרסה {2} שבמסד הנתונים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheExpressionShouldConsistOf" xml:space="preserve">
+    <value>הביטוי צריך להיות מורכב מביטוי החיפוש ומשם תכונת המקור, המופרדים בסימן ';': '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheExpressionStringContainsANumberOfExpressions" xml:space="preserve">
+    <value>המחרוזת 'expressionString' מכילה {0} ביטויים</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PassedObjectBelongsToAnotherObjectSpace" xml:space="preserve">
+    <value>האובייקט שהועבר שייך ל-ObjectSpace אחר. שגיאה זו עשויה להתרחש כאשר אתה מבצע פעולות על האובייקטים שלך באמצעות ObjectSpace שאובייקטים אלה אינם שייכים אליו. לדוגמה, שגיאה זו עשויה להופיע בעת שימוש בשיטה XafApplication.CreateDetailView, אם העברת אובייקט שהתקבל מ-ObjectSpace שונה מזה המשמש כפרמטר בשיטה זו. כדי לתקן שגיאה זו, עליך לוודא שכל האובייקטים שאתה מבצע עליהם פעולות שייכים ל-ObjectSpace אחד.\r\nברוב המקרים, כדי להימנע משגיאה זו, די לקרוא לשיטות ObjectSpace.GetObject/GetObjectByKey כדי לקבל את האובייקט שהועבר ב-ObjectSpace היעד.\r\nאם פעולה זו אינה עוזרת, פנה לצוות התמיכה שלנו בכתובת https://supportcenter.devexpress.com/</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AlreadyUsedObjectSpace" xml:space="preserve">
+    <value>ה־ObjectSpace כבר הוקצה לתצוגת שורש אחרת: '{0}'. שגיאה זו מתרחשת רק כשמנסים להקצות ObjectSpace שכבר נמצא בשימוש של תצוגת שורש לתצוגת שורש אחרת. לדוגמה, שגיאה זו עשויה להופיע בעת שימוש במתודות XafApplication.CreateDetailView/CreateListView בתוך ViewController והעברת האובייקט View.ObjectSpace כפרמטר למתודות אלה כאשר ערך המאפיין View.IsRoot הוא true.\r\nכדי למנוע שגיאה זו, די להעביר למתודות אלה מופע חדש של ObjectSpace שנוצר באמצעות המתודה XafApplication.CreateObjectSpace, או ליצור תצוגות שאינן תצוגות שורש באמצעות העברת פרמטר מתאים למתודות אלה.\r\nאם הדבר אינו עוזר, פנה לצוות התמיכה שלנו בכתובת https://supportcenter.devexpress.com/</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ThePassedFileIsNotADllOrConfig" xml:space="preserve">
+    <value>הקובץ '{0}' שסופק אינו קובץ *.dll או *.config</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IncorrectConfigFile" xml:space="preserve">
+    <value>קובץ התצורה שסופק, '{0}', אינו מכיל את הצומת '&lt;add key="Modules"'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DuplicatedVisibleInDashboardsClassCaption" xml:space="preserve">
+    <value>לטיפוס '{0}' ולטיפוס '{1}' יש אותה כותרת, '{2}', ולכן לא ניתן להשתמש בהם במודול לוחות המחוונים. לכל הטיפוסים המסומנים בתכונה VisibleInDashboards חייבות להיות כותרות ייחודיות.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheTypeAttributeCannotBeEmpty" xml:space="preserve">
+    <value>התכונה 'Type' אינה יכולה להיות ריקה</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AutoCreateOptionIs" xml:space="preserve">
+    <value>הערך של updatingReadOnlyDataStore.AutoCreateOption הוא {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheValueWasLocked" xml:space="preserve">
+    <value>הערך ננעל</value>
+    <comment>AI</comment>
+  </data>
+  <data name="WindowWasNotFound" xml:space="preserve">
+    <value>החלון לא נמצא לפי המזהה '{0}'. חלונות רשומים: '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPDictionaryIsNull" xml:space="preserve">
+    <value>ההפניה XPDictionary חסרת אובייקט</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ThereIsAlreadyRegisteredCreatorForFormat" xml:space="preserve">
+    <value>כבר רשום יוצר עבור הפורמט '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CustomizePopupWindowParamsEventArgsViewIsNull" xml:space="preserve">
+    <value>כדי למנוע שגיאה זו, יש להקצות ערך למאפיין CustomizePopupWindowParamsEventArgs.View בעת הטיפול באירוע CustomizePopupWindowParams. לשם כך, צור תצוגה באמצעות המתודות XafApplication.CreateDetailView/CreateListView. למידע מפורט יותר על המחלקות והמתודות האלה, עיין בתיעוד המוצר. אם הדבר אינו עוזר, פנה לצוות התמיכה שלנו בכתובת https://supportcenter.devexpress.com/</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToAssignDisabledActionItem" xml:space="preserve">
+    <value>לא ניתן להקצות פריט מושבת. פעולה: {0}. פריט: {1}. סיבות להשבתה: {2}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToAssignInvisibleActionItem" xml:space="preserve">
+    <value>לא ניתן להקצות פריט מוסתר. פעולה: {0}. פריט: {1}. סיבות להסתרה: {2}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToCast" xml:space="preserve">
+    <value>לא ניתן לבצע כפייה של אובייקט מסוג '{0}' לסוג '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToChangeChildrenOfNodeDueItIsLocked" xml:space="preserve">
+    <value>לא ניתן לשנות את הצאצאים של הצומת '{0}' מכיוון שהוא נעול.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToChangeConnectionString" xml:space="preserve">
+    <value>לא ניתן לשנות את מחרוזת החיבור. כבר מחובר</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToChangeValueOfAttributeDueItIsLocked" xml:space="preserve">
+    <value>לא ניתן לשנות את ערך התכונה '{0}' מכיוון שהוא נעול</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ActionMethodShouldBeNonGeneric" xml:space="preserve">
+    <value>לא ניתן ליצור פעולה עבור המתודה {0} של המחלקה {1}. מתודת הפעולה חייבת להיות לא גנרית</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ActionMethodShouldBeParameterless" xml:space="preserve">
+    <value>לא ניתן ליצור פעולה עבור המתודה {0} של המחלקה {1}. מתודת הפעולה חייבת להיות ללא פרמטרים</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToCreateObjectSpace" xml:space="preserve">
+    <value>לא ניתן ליצור ObjectSpace. ההפניה dataLayer חסרת אובייקט או connectionString ריקה</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToCreateUpdatingReadonlySessionAutoCreateOption" xml:space="preserve">
+    <value>לא ניתן ליצור UpdatingReadOnlySession. הערך של dataLayer.AutoCreateOption הוא {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToCreateUpdateSessionDataLayerIsNull" xml:space="preserve">
+    <value>לא ניתן ליצור UpdatingSession. ההפניה dataLayer חסרת אובייקט או connectionString ריקה</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToCreateUpdateSessionAutoCreateOption" xml:space="preserve">
+    <value>לא ניתן ליצור UpdatingSession. הערך של dataLayer.AutoCreateOption הוא {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToExecuteDisabledOrInactiveAction" xml:space="preserve">
+    <value>לא ניתן לבצע את הפעולה {2} כשהיא מושבתת או לא פעילה. סיבות להשבתה: {0}, סיבות לאי-פעילות: {1}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToFindADetailViewForType" xml:space="preserve">
+    <value>לא ניתן למצוא תצוגת פרטים עבור סוג האובייקט '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToFindAListViewForType" xml:space="preserve">
+    <value>לא ניתן למצוא תצוגת רשימה עבור סוג האובייקט '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToFindPropertyInType" xml:space="preserve">
+    <value>לא ניתן למצוא את המאפיין '{0}' בסוג '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToFindType" xml:space="preserve">
+    <value>לא ניתן למצוא את הסוג '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToInitializeFileDataProperty" xml:space="preserve">
+    <value>לא ניתן לאתחל את המאפיין {0} באובייקט {1}, מכיוון שמאפיין זה הוא לקריאה בלבד, או שלסוג {2} אין בנאי ברירת מחדל, או שאין לך הרשאות ליצור אותו</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CurrentObjectIsNotSet" xml:space="preserve">
+    <value>לא ניתן להגדיר את המאפיין '{0}'. האובייקט הנוכחי לא הוגדר</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToSetReadOnlyProperty" xml:space="preserve">
+    <value>לא ניתן להגדיר את המאפיין '{0}' המיועד לקריאה בלבד</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnknownException" xml:space="preserve">
+    <value>מתרחשת חריגה לא ידועה. לא ניתן לאחזר את פרטי החריגה</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnknownValue" xml:space="preserve">
+    <value>ערך לא ידוע: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnknownViewNodeName" xml:space="preserve">
+    <value>שם צומת תצוגה לא ידוע: '{0}'\r\nשמות מותרים: '{1}', '{2}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ValidationMessageTemplateHasInvalidFormat" xml:space="preserve">
+    <value>הפורמט של תבנית הודעת האימות אינו תקין: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotAccessCollectionCollectionSourceIsBeingIntialized" xml:space="preserve">
+    <value>לא ניתן לגשת למאפיין Collection משום שמקור האוסף נמצא כעת בתהליך אתחול. שגיאה זו עשויה להתרחש, לדוגמה, כשמנסים לגשת למאפיין Collection במתודה OnActivated של ViewController. כדי למנוע שגיאה זו, יש לגשת למאפיין Collection במועד מאוחר יותר, לאחר שמקור האוסף כבר אותחל. הדרך הטובה ביותר לעשות זאת היא לטפל באירוע CollectionChanged. למידע מפורט יותר על המחלקות והמתודות האלה, עיין בתיעוד המוצר. אם הדבר אינו עוזר, פנה לצוות התמיכה שלנו בכתובת https://supportcenter.devexpress.com/</value>
+    <comment>AI</comment>
+  </data>
+  <data name="YouCannotChangeCurrentAspect" xml:space="preserve">
+    <value>לא ניתן לשנות את ההיבט הנוכחי. הוא תלוי בהגדרות האזור של הליך המשנה הנוכחי</value>
+    <comment>AI</comment>
+  </data>
 </root>

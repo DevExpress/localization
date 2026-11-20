@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="EditReportControllerV2.Edit" Caption="Rediger" />
+      <Action Id="ExecuteReportV2" Caption="Kjør rapport" />
+      <Action Id="ShowReportDesignerV2" Caption="Vis rapport designer" />
+    </Actions>
+  </ActionDesign>
+  <Localization>
+    <LocalizationGroup Name="Captions">
+      <LocalizationItem Name="ReportDesignerError" Value="Feil" />
+      <LocalizationItem Name="ReportDesignerWarning" Value="Advarsel" />
+    </LocalizationGroup>
+  </Localization>
+  <Views>
+    <DetailView Id="NewReportWizardParameters_DetailView" Caption="Ny rapport veiviser">
+      <Items>
+        <StaticText Id="ReportText" Text="Hvis du vil opprette en ny rapport, skriver du inn et navn i feltet nedenfor og velger primær datatype for rapporten fra listen." />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="Static">
+            <LayoutGroup Id="NewReportParams" Caption="Nye rapport parametre">
+              <LayoutGroup Id="SimpleEditors" Caption="Enkel tekstbehandler" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

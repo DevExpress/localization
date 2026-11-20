@@ -119,371 +119,495 @@
   </resheader>
   <data name="ActionMethodShouldBeNonGeneric" xml:space="preserve">
     <value>Nie można utworzyć akcji dla metody {0} klasy {1}. Metoda powinna być non-generic</value>
+    <comment>Community:Nie można utworzyć akcji dla metody {0} klasy {1}. Metoda akcji nie powinna być generyczna</comment>
   </data>
   <data name="ActionMethodShouldBeParameterless" xml:space="preserve">
     <value>Nie można utworzyć akcji dla metody {0} klasy {1}. Metoda nie powinna mieć parametrów</value>
+    <comment>Community:Nie można utworzyć akcji dla metody {0} klasy {1}. Metoda akcji nie powinna mieć parametrów</comment>
   </data>
   <data name="AlreadyUsedObjectSpace" xml:space="preserve">
-    <value>The ObjectSpace has already been assigned to another root view: '{0}'. This error occurs only when you try to assign an ObjectSpace that is already used by a root View to another root view. For instance, you may receive this error when using the XafApplication.CreateDetailView/CreateListView methods in a ViewController and passing the View.ObjectSpace object as a parameter to these methods when the View.IsRoot property is true.\r\nTo avoid this error it's sufficient to pass a new ObjectSpace instance created via the XafApplication.CreateObjectSpace method in these methods, or create non-root Views by passing a corresponding parameter to these methods.\r\nIf this doesn't help, please contact our Support Team at https://supportcenter.devexpress.com/</value>
+    <value>Obiekt ObjectSpace został już przypisany do innego widoku głównego: '{0}'. Ten błąd występuje tylko przy próbie przypisania obiektu ObjectSpace używanego już przez widok główny do innego widoku głównego. Na przykład błąd ten może wystąpić podczas używania metod XafApplication.CreateDetailView/CreateListView w kontrolerze ViewController i przekazywania obiektu View.ObjectSpace jako parametru do tych metod, gdy właściwość View.IsRoot ma wartość true.\r\nAby uniknąć tego błędu, wystarczy przekazać do tych metod nową instancję obiektu ObjectSpace utworzoną za pomocą metody XafApplication.CreateObjectSpace lub utworzyć widoki inne niż główne, przekazując do tych metod odpowiedni parametr.\r\nJeśli to nie pomoże, prosimy o kontakt z naszym zespołem pomocy technicznej pod adresem https://supportcenter.devexpress.com/</value>
+    <comment>AI</comment>
   </data>
   <data name="AnErrorHasOccurredWhileLoadingTheModel" xml:space="preserve">
     <value>Wystąpił błąd podczas ładowania modelu. Źródło: '{0} '</value>
+    <comment>Community:Wystąpił błąd podczas wczytywania modelu. Źródło: '{0}'</comment>
   </data>
   <data name="AnErrorHasOccurredWhileProcessingAShortcut" xml:space="preserve">
     <value>Wystąpił błąd podczas przetwarzania skrótu: {0}</value>
+    <comment>Community:Występuje błąd podczas przetwarzania skrótu: {0}</comment>
   </data>
   <data name="AnErrorHasOccurredWithContext" xml:space="preserve">
     <value>Wystąpił błąd, kontekst: {0}</value>
+    <comment>Approved</comment>
   </data>
   <data name="AnUnsavedObjectCannotBeShown" xml:space="preserve">
     <value>Niezapisany obiekt nie może być pokazany</value>
+    <comment>Community:Nie można wyświetlić niezapisanego obiektu</comment>
   </data>
   <data name="ApplicationIsNotStarted" xml:space="preserve">
     <value>Aplikacja nie jest uruchomiona</value>
+    <comment>Community:Aplikacja nie została uruchomiona</comment>
   </data>
   <data name="ApplicationUpdaterAssemblyDoesNotExist" xml:space="preserve">
-    <value>The application cannot be updated because the '{1}' assembly doesn't exist in the '{0}' folder.</value>
+    <value>Nie można zaktualizować aplikacji, ponieważ zestaw '{1}' nie istnieje w folderze '{0}'.</value>
+    <comment>AI</comment>
   </data>
   <data name="ApplicationUpdaterDatabaseVersionIsNewer" xml:space="preserve">
     <value>Nie można uruchomić aplikacji. Wersja bazy danych jest nowsza niż wersja aplikacji, a serwer z nową wersją aplikacji nie został znaleziony. Poproś administratora o sprawdzenie, czy plik konfiguracyjny zawiera poprawną ścieżkę do nowej wersji aplikacji.</value>
+    <comment>Community:Nie można uruchomić aplikacji. Wersja bazy danych jest nowsza niż wersja aplikacji, ale nie znaleziono serwera z nową wersją aplikacji. Należy poprosić administratora o sprawdzenie, czy plik konfiguracyjny zawiera poprawną ścieżkę do nowej wersji aplikacji.</comment>
   </data>
   <data name="AttributeModifyingFailed" xml:space="preserve">
     <value>Modyfikacja atrybutu zakończyła się niepowodzeniem</value>
+    <comment>Community:Modyfikacja atrybutu nie powiodła się</comment>
   </data>
   <data name="AttributeShouldStartWithSymbol" xml:space="preserve">
-    <value>Attribute '{0}' should start with the '@' symbol: '{1}'</value>
+    <value>Atrybut '{0}' powinien zaczynać się od symbolu '@': '{1}'</value>
+    <comment>AI</comment>
   </data>
   <data name="AutoCreateOptionIs" xml:space="preserve">
-    <value>The updatingReadOnlyDataStore.AutoCreateOption is {0}</value>
+    <value>Wartość updatingReadOnlyDataStore.AutoCreateOption to {0}</value>
+    <comment>AI</comment>
   </data>
   <data name="CannotAccessCollectionCollectionSourceIsBeingIntialized" xml:space="preserve">
-    <value>You cannot access the Collection property because the Collection Source is being initialized now. This error may occur, for example, when you try to access the Collection property in the OnActivated method of a ViewController. To avoid this error it's necessary to access the Collection property at a later time, when the Collection Source is already initialized. The best way to do this is to handle the CollectionChanged event. Please refer to the product's documentation for more detailed information on these classes and methods. If this doesn't help, please contact our Support Team at https://supportcenter.devexpress.com/</value>
+    <value>Nie można uzyskać dostępu do właściwości Collection, ponieważ źródło kolekcji jest właśnie inicjalizowane. Ten błąd może wystąpić na przykład podczas próby uzyskania dostępu do właściwości Collection w metodzie OnActivated kontrolera ViewController. Aby uniknąć tego błędu, należy uzyskać dostęp do właściwości Collection później, gdy źródło kolekcji będzie już zainicjalizowane. Najlepszym sposobem jest obsłużenie zdarzenia CollectionChanged. Bardziej szczegółowe informacje o tych klasach i metodach można znaleźć w dokumentacji produktu. Jeśli to nie pomoże, prosimy o kontakt z naszym zespołem pomocy technicznej pod adresem https://supportcenter.devexpress.com/</value>
+    <comment>AI</comment>
   </data>
   <data name="CannotAddCollectionProperty" xml:space="preserve">
     <value>Nie można dodać kolekcji '{0}'</value>
+    <comment>Approved</comment>
   </data>
   <data name="CannotAddDuplicateProperty" xml:space="preserve">
-    <value>Can't add duplicate property editor: '{0}'</value>
+    <value>Nie można dodać duplikatu edytora właściwości: '{0}'</value>
+    <comment>AI</comment>
   </data>
   <data name="CannotAddToEmptySingleton" xml:space="preserve">
     <value>Nie można dodać pustego singletonu. Stwórz nową instancję kolekcji</value>
+    <comment>Community:Nie można dodawać do singletonu Empty. Należy utworzyć nową instancję kolekcji</comment>
   </data>
   <data name="CannotCreateAppropriateDetailItem" xml:space="preserve">
-    <value>Cannot create appropriate detail item for the '{0}'</value>
+    <value>Nie można utworzyć odpowiedniego elementu szczegółów dla '{0}'</value>
+    <comment>AI</comment>
   </data>
   <data name="CannotCreateAppropriatePropertyEditorForTheProperty" xml:space="preserve">
-    <value>Cannot create appropriate property editor for the '{0}.{1}' property</value>
+    <value>Nie można utworzyć odpowiedniego edytora właściwości dla właściwości '{0}.{1}'</value>
+    <comment>AI</comment>
   </data>
   <data name="CannotCreateSchemaForAttribute" xml:space="preserve">
     <value>Nie można zmienić schematu dla atrybutu</value>
+    <comment>Community:Nie można zmienić schematu atrybutu</comment>
   </data>
   <data name="CannotCreateTemplateByName" xml:space="preserve">
     <value>Nie można utworzyć szablonu o nazwie: '{0}'</value>
+    <comment>Community:Nie można utworzyć szablonu na podstawie nazwy: '{0}'</comment>
   </data>
   <data name="CannotFindDescendantOfXafApplicationClass" xml:space="preserve">
-    <value>Cannot find a descendant of the XafApplication class to detect settings of your application in the following folder(s):
+    <value>Nie można znaleźć klasy pochodnej klasy XafApplication w celu wykrycia ustawień aplikacji w następujących folderach:
 {0}
-For a Windows Forms application, this folder(s) must contain your application executable file.
-For an ASP.NET application, this folder(s) must contain the assembly continaing your WebApplication descendant.</value>
+W przypadku aplikacji Windows Forms foldery te muszą zawierać plik wykonywalny aplikacji.
+W przypadku aplikacji ASP.NET foldery te muszą zawierać zestaw zawierający klasę pochodną klasy WebApplication.</value>
+    <comment>AI</comment>
   </data>
   <data name="CannotFindListViewWithId" xml:space="preserve">
     <value>Nie można odnaleźć widoku listy o ID='{0}'</value>
+    <comment>Community:Nie można zlokalizować widoku listy o ID='{0}'</comment>
   </data>
   <data name="CannotFindTheMemberWithinTheClass" xml:space="preserve">
     <value>Cannot find the '{0}' member within the '{1}' class</value>
   </data>
   <data name="CannotFindThePropertyWithinTheClass" xml:space="preserve">
     <value>Nie można znaleźć właściwości '{0}' w klasie '{1}'</value>
+    <comment>Community:Nie można zlokalizować właściwości '{0}' w klasie '{1}'</comment>
   </data>
   <data name="CannotGenerateContent" xml:space="preserve">
     <value>Nie można wygenerować zawartości: atrybut 'ClassName' jest pusty</value>
+    <comment>Approved</comment>
   </data>
   <data name="CannotObtainTheEditingObject" xml:space="preserve">
     <value>Nie można uzyskać dostępu do edytowanego obiektu</value>
+    <comment>Community:Nie można pobrać edytowanego obiektu</comment>
   </data>
   <data name="CannotProcessTheRequestedUrl" xml:space="preserve">
     <value>Nie można przetworzyć żądany adres URL</value>
+    <comment>Community:Nie można przetworzyć żądanego adresu URL</comment>
   </data>
   <data name="CannotProcessTheRequestedUrlActionItemWasNotFound" xml:space="preserve">
     <value>Nie można przetworzyć żądany adres URL, akcja '{0}' nie została znaleziona</value>
+    <comment>Community:Nie można przetworzyć żądanego adresu URL, nie znaleziono elementu akcji '{0}'</comment>
   </data>
   <data name="CannotReadDictionaryFromResource" xml:space="preserve">
-    <value>Cannot read dictionary from '{0}' resource of the '{1}' assembly</value>
+    <value>Nie można odczytać słownika z zasobu '{0}' zestawu '{1}'</value>
+    <comment>AI</comment>
   </data>
   <data name="CannotSetEditValueAvailableValues" xml:space="preserve">
-    <value>Cannot set EditValue by the '{0}' text, available values:\r\n{1}</value>
+    <value>Nie można ustawić EditValue na podstawie tekstu '{0}', dostępne wartości:\r\n{1}</value>
+    <comment>AI</comment>
   </data>
   <data name="CannotSetEditValueListIsEmpty" xml:space="preserve">
-    <value>Cannot set EditValue by the '{0}' text, list is empty</value>
+    <value>Nie można ustawić EditValue na podstawie tekstu '{0}', lista jest pusta</value>
+    <comment>AI</comment>
   </data>
   <data name="CannotShowViewUnknownContext" xml:space="preserve">
     <value>Nie można pokazać widoku, o nieznanym kontekście: '{0}'</value>
+    <comment>Community:Nie można wyświetlić widoku, nieznany kontekst: '{0}'</comment>
   </data>
   <data name="CannotShowViewUnknownTarget" xml:space="preserve">
     <value>Nie można pokazać widoku, o nieznanym celu '{0}'</value>
+    <comment>Community:Nie można wyświetlić widoku, nieznany cel: '{0}'</comment>
   </data>
   <data name="ClassDoesntImplementInterface" xml:space="preserve">
     <value>Klasa '{0}' nie implementuje interfejsu '{1}'</value>
+    <comment>Approved</comment>
   </data>
   <data name="CompatibilityApplicationIsOldError" xml:space="preserve">
     <value>Wersja bazy danych jest większa niż wersja aplikacji. Aplikacja musi zostać zaktualizowana. Proszę skontaktować się z administratorem systemu lub pobrać nową wersję \r\nDodatkowe informacje:. Lokalna wersja {0} modułu '{1}' jest mniejsza od wersji {2} w bazie danych.</value>
+    <comment>Community:Wersja bazy danych jest wyższa niż wersja aplikacji. Aplikacja wymaga aktualizacji. Należy skontaktować się z administratorem systemu lub pobrać nową wersję.\r\nDodatkowe informacje: lokalna wersja {0} modułu '{1}' jest niższa niż wersja {2} w bazie danych.</comment>
   </data>
   <data name="CompatibilityDatabaseIsOldError" xml:space="preserve">
     <value>Wersja bazy danych jest większa niż wersja aplikacji. Aplikacja musi zostać zaktualizowana.</value>
+    <comment>Community:Wersja bazy danych jest starsza niż wersja aplikacji. Baza danych wymaga aktualizacji.</comment>
   </data>
   <data name="ConfigFileDoesNotExists" xml:space="preserve">
     <value>Plik Config '{0}' nie istnieje</value>
+    <comment>Community:Plik konfiguracyjny '{0}' nie istnieje</comment>
   </data>
   <data name="ConfigFileHasNoModuleNames" xml:space="preserve">
     <value>Węzeł 'add\[@key="Modules"]' powinien zawierać listę modułów, plik config '{0}'</value>
+    <comment>Community:Węzeł 'add\[@key="Modules"]' powinien zawierać listę modułów, plik konfiguracyjny '{0}'</comment>
   </data>
   <data name="CurrentObjectIsNotSet" xml:space="preserve">
     <value>Nie można ustawić właściwości '{0}'. Obecny obiekt nie jest ustawiony</value>
+    <comment>Community:Nie można ustawić właściwości '{0}'. Bieżący obiekt nie został ustawiony</comment>
   </data>
   <data name="CustomizePopupWindowParamsEventArgsViewIsNull" xml:space="preserve">
-    <value>To avoid this error it's necessary to assign the CustomizePopupWindowParamsEventArgs.View property when handling the CustomizePopupWindowParams event. To accomplish this, create a View using the XafApplication.CreateDetailView/CreateListView methods. Please refer to the product's documentation for more detailed information on these classes and methods. If this doesn't help, please contact our Support Team at https://supportcenter.devexpress.com/</value>
+    <value>Aby uniknąć tego błędu, należy przypisać wartość do właściwości CustomizePopupWindowParamsEventArgs.View podczas obsługi zdarzenia CustomizePopupWindowParams. W tym celu należy utworzyć widok za pomocą metod XafApplication.CreateDetailView/CreateListView. Bardziej szczegółowe informacje o tych klasach i metodach można znaleźć w dokumentacji produktu. Jeśli to nie pomoże, prosimy o kontakt z naszym zespołem pomocy technicznej pod adresem https://supportcenter.devexpress.com/</value>
+    <comment>AI</comment>
   </data>
   <data name="DataLayerAlreadyExists" xml:space="preserve">
     <value>DataLayer już istnieje: '{0}'</value>
+    <comment>Community:Warstwa danych już istnieje: '{0}'</comment>
   </data>
   <data name="DictionaryPathItemParsingFailed" xml:space="preserve">
-    <value>Dictionary path item parsing failed. There is a syntax error in expression '{0}'</value>
+    <value>Nie udało się przeanalizować elementu ścieżki słownika. Wyrażenie '{0}' zawiera błąd składni</value>
+    <comment>AI</comment>
   </data>
   <data name="DictionaryPathParsingFailed" xml:space="preserve">
-    <value>Dictionary path parsing failed. There is a syntax error in expression '{0}'</value>
+    <value>Nie udało się przeanalizować ścieżki słownika. Wyrażenie '{0}' zawiera błąd składni</value>
+    <comment>AI</comment>
   </data>
   <data name="DuplicateComponentIdentifier" xml:space="preserve">
-    <value>Duplicate Component Identifier '{0}'</value>
+    <value>Duplikat identyfikatora komponentu '{0}'</value>
+    <comment>AI</comment>
   </data>
   <data name="ErrorOccursWhileAddingTheCustomProperty" xml:space="preserve">
-    <value>Error occurs while adding the '{2}' custom property ('{0}' property type) to the '{1}' type: '{3}'</value>
+    <value>Wystąpił błąd podczas dodawania właściwości niestandardowej '{2}' (typ właściwości: '{0}') do typu '{1}': '{3}'</value>
+    <comment>AI</comment>
   </data>
   <data name="ExceptionDialogLabel" xml:space="preserve">
     <value>Wystąpił następujący błąd:</value>
+    <comment>Approved</comment>
   </data>
   <data name="GridColumnDoesNotExist" xml:space="preserve">
     <value>Kolumna '{0}' nie istnieje w tabeli</value>
+    <comment>Approved</comment>
   </data>
   <data name="GridColumnExists" xml:space="preserve">
     <value>Kolumna '{0}' już istnieje w tabeli</value>
+    <comment>Approved</comment>
   </data>
   <data name="GridControlIsAlreadyCreated" xml:space="preserve">
-    <value>Cannot set EditMode property. GridControl has been created already</value>
+    <value>Nie można ustawić właściwości EditMode. GridControl został już utworzony</value>
+    <comment>AI</comment>
   </data>
   <data name="IncompatibleParametersCombinationOnViewChanged" xml:space="preserve">
-    <value>Incompatible parameters combination. The PopupWindow has the same ObjectSpace as the main View.  However, the SaveOnAccept property of the Popup Window's DialogController is set to true. Use a new ObjectSpace for the invoked Popup Window or set the DialogController. SaveOnAccept property to false.</value>
+    <value>Niezgodna kombinacja parametrów. Okno podręczne korzysta z tego samego ObjectSpace co główny widok.  Jednak właściwość SaveOnAccept kontrolera DialogController okna podręcznego jest ustawiona na true. Należy użyć nowego ObjectSpace dla wywoływanego okna podręcznego lub ustawić właściwość DialogController.SaveOnAccept na false.</value>
+    <comment>AI</comment>
   </data>
   <data name="IncorrectConfigFile" xml:space="preserve">
-    <value>The passed config file '{0}' doesn't contain the '&lt;add key="Modules"' node</value>
+    <value>Przekazany plik konfiguracyjny '{0}' nie zawiera węzła '&lt;add key="Modules"'</value>
+    <comment>AI</comment>
   </data>
   <data name="InfiniteRecursionDetected" xml:space="preserve">
     <value>Infinite recursion detected: the '{0}' detail view was created {1} times</value>
+    <comment>Community:Wykryto nieskończoną rekursję: widok '{0}' został utworzony {1} razy z powodu elementu widoku '{2}'. Ten element widoku został usunięty z układu. Aby rozwiązać ten problem, należy zastosować odpowiednie rozwiązanie z następującego artykułu bazy wiedzy: https://www.devexpress.com/kb=B181657.</comment>
   </data>
   <data name="InvalidApplicationVersion" xml:space="preserve">
     <value>Nieprawidłowa wersja aplikacji '{0}'</value>
+    <comment>Community:Nieprawidłowa wersja aplikacji w lokalizacji '{0}'</comment>
   </data>
   <data name="InvalidParametrizedActionValueType" xml:space="preserve">
-    <value>Invalid value type is assigned to the '{0}' parametrized action. Set the Int, String or DateTime type instead.</value>
+    <value>Do akcji parametryzowanej '{0}' przypisano nieprawidłowy typ wartości. Należy zamiast niego ustawić typ: liczba całkowita, ciąg znaków lub data/godzina.</value>
+    <comment>AI</comment>
   </data>
   <data name="InvalidValueOfEnumProperty" xml:space="preserve">
-    <value>The {0} object's {1} property has an incorrect value of {2}. Initialize the property with a correct {3} enumeration value in the {4} business class' AfterConstruction method.</value>
+    <value>Właściwość {1} obiektu {0} ma nieprawidłową wartość {2}. Należy zainicjować tę właściwość poprawną wartością wyliczenia {3} w metodzie AfterConstruction klasy biznesowej {4}.</value>
+    <comment>AI</comment>
   </data>
   <data name="IsNotValidNamespacePrefixDescription" xml:space="preserve">
     <value>{0}' nie jest poprawnym prefiksem przestrzeni nazw</value>
+    <comment>Community:'{0}' nie jest prawidłową specyfikacją prefiksu przestrzeni nazw</comment>
   </data>
   <data name="ItsImpossibleToFindPathForNode" xml:space="preserve">
-    <value>It's imposible to find path='{0}' for node '{1}'</value>
+    <value>Nie można zlokalizować ścieżki='{0}' dla węzła '{1}'</value>
+    <comment>AI</comment>
   </data>
   <data name="ItsImpossibleToFindSourceNode" xml:space="preserve">
-    <value>It's imposible to find SourceNode='{0}\\{1}'</value>
+    <value>Nie można zlokalizować SourceNode='{0}\\{1}'</value>
+    <comment>AI</comment>
   </data>
   <data name="LayoutControlInvalidCount" xml:space="preserve">
     <value>Nieprawidłowa Ilość: '{0}'</value>
+    <comment>Community:Nieprawidłowa liczba: '{0}'</comment>
   </data>
   <data name="ListEditorShouldImplement" xml:space="preserve">
-    <value>ListEditor should implement IDXPopupMenuHolder interface</value>
+    <value>ListEditor powinien implementować interfejs IDXPopupMenuHolder</value>
+    <comment>AI</comment>
   </data>
   <data name="MethodShouldBeUsed" xml:space="preserve">
-    <value>The '{0}' method should be used</value>
+    <value>Należy użyć metody '{0}'</value>
+    <comment>AI</comment>
   </data>
   <data name="ModulesHasAlreadyBeenLoaded" xml:space="preserve">
     <value>Moduły zostały już załadowane</value>
+    <comment>Approved</comment>
   </data>
   <data name="NameAndValueCollectionsShouldHaveEqualLengths" xml:space="preserve">
-    <value>Names and values collections should have equal lengths</value>
+    <value>Kolekcje nazw i wartości powinny mieć taką samą liczbę elementów</value>
+    <comment>AI</comment>
   </data>
   <data name="NodeContainsDuplicatedChildNodes" xml:space="preserve">
-    <value>The '{0}' node contains two child nodes with the '{1}' value in the key attribute. \r\n  Node1: '{2}'\r\n  Node2: '{3}'</value>
+    <value>Węzeł '{0}' zawiera dwa węzły podrzędne z wartością '{1}' w atrybucie klucza. \r\n  Węzeł1: '{2}'\r\n  Węzeł2: '{3}'</value>
+    <comment>AI</comment>
   </data>
   <data name="NodeWasNotFound" xml:space="preserve">
     <value>Węzeł '{0}' nie został znaleziony</value>
+    <comment>Community:Nie znaleziono węzła '{0}'</comment>
   </data>
   <data name="NotRegisteredReadOnlyParameterException" xml:space="preserve">
-    <value>The '{0}' read-only parameter is not registered in the ParametersFactory.</value>
+    <value>Parametr tylko do odczytu '{0}' nie jest zarejestrowany w ParametersFactory.</value>
+    <comment>AI</comment>
   </data>
   <data name="ObjectFormatterFormatStringIsInvalid" xml:space="preserve">
-    <value>Object cannot be formatted because the specified format string is invalid: '{0}'</value>
+    <value>Nie można sformatować obiektu, ponieważ podany ciąg formatu jest nieprawidłowy: '{0}'</value>
+    <comment>AI</comment>
   </data>
   <data name="PageCanOnlyContainOneInstanceOfControl" xml:space="preserve">
-    <value>Page can only contain one instance of '{0}' control</value>
+    <value>Strona może zawierać tylko jedną instancję kontrolki '{0}'</value>
+    <comment>AI</comment>
   </data>
   <data name="ParameterConflictsWithPropertyException" xml:space="preserve">
-    <value>The criterion contains the '{0}' read-only parameter which conflicts with the '{0}' property of the '{1}' class. To refer to the read-only parameter, use the '@@{0}' syntax. To refer to the property, use the '@this.{0}' syntax.</value>
+    <value>Kryterium zawiera parametr tylko do odczytu '{0}', który koliduje z właściwością '{0}' klasy '{1}'. Aby odwołać się do parametru tylko do odczytu, należy użyć składni '@@{0}'. Aby odwołać się do właściwości, należy użyć składni '@this.{0}'.</value>
+    <comment>AI</comment>
   </data>
   <data name="PassedObjectBelongsToAnotherObjectSpace" xml:space="preserve">
-    <value>The object that has been passed belongs to another ObjectSpace. This error may occur when you manipulate your objects via an ObjectSpace which these objects do not belong to. For instance, you may receive this error when using the XafApplication.CreateDetailView method in case you passed an object that was obtained from a different ObjectSpace than the ObjectSpace used as a parameter in this method. To correct this error, you should ensure that all the objects you manipulate belong to one ObjectSpace.\r\nIn most cases, to avoid this error it's sufficient to call the ObjectSpace.GetObject/GetObjectByKey methods to get a passed object in the target ObjectSpace.\r\nIf this doesn't help, please contact our Support Team at https://supportcenter.devexpress.com/</value>
+    <value>Przekazany obiekt należy do innego ObjectSpace. Ten błąd może wystąpić podczas wykonywania operacji na obiektach za pośrednictwem ObjectSpace, do którego te obiekty nie należą. Na przykład błąd ten może wystąpić podczas korzystania z metody XafApplication.CreateDetailView, jeśli przekazano obiekt uzyskany z innego ObjectSpace niż ObjectSpace użyty jako parametr tej metody. Aby naprawić ten błąd, należy upewnić się, że wszystkie obiekty, na których wykonywane są operacje, należą do jednego ObjectSpace.\r\nW większości przypadków, aby uniknąć tego błędu, wystarczy wywołać metody ObjectSpace.GetObject/GetObjectByKey w celu uzyskania przekazanego obiektu w docelowym ObjectSpace.\r\nJeśli to nie pomoże, należy skontaktować się z naszym zespołem pomocy technicznej pod adresem https://supportcenter.devexpress.com/</value>
+    <comment>AI</comment>
   </data>
   <data name="PermissionIsDenied" xml:space="preserve">
-    <value>Permission is denied</value>
+    <value>Odmowa dostępu</value>
+    <comment>AI</comment>
   </data>
   <data name="ProcessWasAborted" xml:space="preserve">
     <value>Proces został przerwany</value>
+    <comment>Community:Operacja została przerwana</comment>
   </data>
   <data name="RequiresCurrentObjectException" xml:space="preserve">
-    <value>Cannot update the CriteriaWrapper because the criterion uses dynamic parameters, but the current object isn't specified. To update the CriteriaWrapper, call the UpdateParametersValues(Object currentObject) method and pass the current object as the parameter.</value>
+    <value>Nie można zaktualizować CriteriaWrapper, ponieważ kryterium używa parametrów dynamicznych, ale nie określono bieżącego obiektu. Aby zaktualizować CriteriaWrapper, należy wywołać metodę UpdateParametersValues(Object currentObject) i przekazać bieżący obiekt jako parametr.</value>
+    <comment>AI</comment>
   </data>
   <data name="ResourceItemWithNameIsNotFound" xml:space="preserve">
     <value>Podany zasób o nazwie '{0}' nie został znaleziony</value>
+    <comment>Community:Nie znaleziono elementu zasobu o nazwie '{0}'</comment>
   </data>
   <data name="RuleSetClearingIsDenied" xml:space="preserve">
-    <value>RuleSet clearing is denied</value>
+    <value>Czyszczenie RuleSet jest niedozwolone</value>
+    <comment>AI</comment>
   </data>
   <data name="SourceAttributeExpressionShouldStartWith" xml:space="preserve">
-    <value>Source attribute expression should start with '{0}': '{1}'</value>
+    <value>Wyrażenie atrybutu źródłowego powinno zaczynać się od '{0}': '{1}'</value>
+    <comment>AI</comment>
   </data>
   <data name="SourceAttributePathShouldConsistOf" xml:space="preserve">
-    <value>Source attribute path should consist of one or more node name and at last attribute name, which are delimited by the '\\' symbol: '{0}'</value>
+    <value>Ścieżka atrybutu źródłowego powinna składać się z co najmniej jednej nazwy węzła oraz nazwy atrybutu na końcu, oddzielonych symbolem '\\': '{0}'</value>
+    <comment>AI</comment>
   </data>
   <data name="SourceNodeExpressionShouldStartWith" xml:space="preserve">
-    <value>SourceNode expression should start with '{0}': '{1}'</value>
+    <value>Wyrażenie SourceNode powinno zaczynać się od '{0}': '{1}'</value>
+    <comment>AI</comment>
   </data>
   <data name="TemplateTypeInfoMissed" xml:space="preserve">
-    <value>Cannot find TypeInfo for type '{0}'. You should put your template in an XAF module, or manually register it using the XafTypesInfo.Instance.FindTypeInfo(typeof({0})) method.</value>
+    <value>Nie można znaleźć TypeInfo dla typu '{0}'. Należy umieścić szablon w module XAF lub zarejestrować go ręcznie za pomocą metody XafTypesInfo.Instance.FindTypeInfo(typeof({0})).</value>
+    <comment>AI</comment>
   </data>
   <data name="TheAspectIsNotPresentInAspectsCollection" xml:space="preserve">
-    <value>The aspect '{0}' is not present in the aspects collection</value>
+    <value>Aspekt '{0}' nie występuje w kolekcji aspektów</value>
+    <comment>AI</comment>
   </data>
   <data name="TheAssemblyDoesntReferAssembly" xml:space="preserve">
-    <value>The '{0}' assembly doesn't refer assembly {1} ({2})</value>
+    <value>Zestaw '{0}' nie odwołuje się do zestawu {1} ({2})</value>
+    <comment>AI</comment>
   </data>
   <data name="TheClassIsNotFoundInBOModel" xml:space="preserve">
-    <value>The '{0}' class is not found in the BOModel</value>
+    <value>Nie znaleziono klasy '{0}' w BOModel</value>
+    <comment>AI</comment>
   </data>
   <data name="TheClassNameAttributeIsEmpty" xml:space="preserve">
-    <value>The ClassName attribute of the referenced view node is empty:</value>
+    <value>Atrybut ClassName wskazanego węzła widoku jest pusty:</value>
+    <comment>AI</comment>
   </data>
   <data name="TheClassNameAttributeRefersToADifferentType" xml:space="preserve">
-    <value>The ClassName attribute of the referenced view node refers to a different type. \r\nShortcut object type: {0}\r\nView node object type: {1}</value>
+    <value>Atrybut ClassName wskazanego węzła widoku odwołuje się do innego typu. \r\nTyp obiektu skrótu: {0}\r\nTyp obiektu węzła widoku: {1}</value>
+    <comment>AI</comment>
   </data>
   <data name="TheCreateApplicationModulesManagerReturnsNull" xml:space="preserve">
-    <value>The CreateApplicationModulesManager method returns null</value>
+    <value>Metoda CreateApplicationModulesManager zwraca wartość null</value>
+    <comment>AI</comment>
   </data>
   <data name="TheExpressionShouldConsistOf" xml:space="preserve">
-    <value>The expression should consist of the search expression and source attribute name which are delimited by ';' symbol: '{0}'</value>
+    <value>Wyrażenie powinno składać się z wyrażenia wyszukiwania i nazwy atrybutu źródłowego rozdzielonych znakiem ';': '{0}'</value>
+    <comment>AI</comment>
   </data>
   <data name="TheExpressionStringContainsANumberOfExpressions" xml:space="preserve">
-    <value>The 'expressionString' string contains {0} expressions</value>
+    <value>Ciąg znaków 'expressionString' zawiera następującą liczbę wyrażeń: {0}</value>
+    <comment>AI</comment>
   </data>
   <data name="ThePassedFileIsNotADllOrConfig" xml:space="preserve">
-    <value>The passed '{0}' file is not a *.dll or *.config file</value>
+    <value>Przekazany plik '{0}' nie jest plikiem *.dll ani *.config</value>
+    <comment>AI</comment>
   </data>
   <data name="ThereIsAlreadyRegisteredCreatorForFormat" xml:space="preserve">
-    <value>There is already a creator registered for the format '{0}'</value>
+    <value>Dla formatu '{0}' jest już zarejestrowany twórca</value>
+    <comment>AI</comment>
   </data>
   <data name="TheTypeAttributeCannotBeEmpty" xml:space="preserve">
-    <value>The 'Type' attribute cannot be empty</value>
+    <value>Atrybut 'Type' nie może być pusty</value>
+    <comment>AI</comment>
   </data>
   <data name="TheTypeIsNotDescendantOf" xml:space="preserve">
-    <value>the '{0}' type is not descendant of '{1}'</value>
+    <value>typ '{0}' nie jest typem pochodnym od '{1}'</value>
+    <comment>AI</comment>
   </data>
   <data name="TheValueWasLocked" xml:space="preserve">
     <value>Wartość została zablokowana</value>
+    <comment>Approved</comment>
   </data>
   <data name="TypeDoesNotContainTheMember" xml:space="preserve">
-    <value>The '{0}' type doesn't contain the '{1}' member</value>
+    <value>Typ '{0}' nie zawiera składowej '{1}'</value>
+    <comment>AI</comment>
   </data>
   <data name="TypeIsNotAEnum" xml:space="preserve">
-    <value>The '{0}' type isn't a enum type</value>
+    <value>Typ '{0}' nie jest typem wyliczanym</value>
+    <comment>AI</comment>
   </data>
   <data name="UnableToAssignDisabledActionItem" xml:space="preserve">
-    <value>Unable to assign a disabled item. Action: {0}. Item: {1}. Disable reasons: {2}</value>
+    <value>Nie można przypisać wyłączonego elementu. Akcja: {0}. Element: {1}. Przyczyny wyłączenia: {2}</value>
+    <comment>AI</comment>
   </data>
   <data name="UnableToAssignInvisibleActionItem" xml:space="preserve">
-    <value>Unable to assign an invisible item. Action: {0}. Item: {1}. Invisible reasons: {2}</value>
+    <value>Nie można przypisać niewidocznego elementu. Akcja: {0}. Element: {1}. Przyczyny niewidoczności: {2}</value>
+    <comment>AI</comment>
   </data>
   <data name="UnableToCast" xml:space="preserve">
-    <value>Unable to cast object of type '{0}' to type '{1}'</value>
+    <value>Nie można rzutować obiektu typu '{0}' na typ '{1}'</value>
+    <comment>AI</comment>
   </data>
   <data name="UnableToChangeChildrenOfNodeDueItIsLocked" xml:space="preserve">
-    <value>Unable to change children of '{0}' node due it is locked.</value>
+    <value>Nie można zmienić węzłów podrzędnych węzła '{0}', ponieważ jest on zablokowany.</value>
+    <comment>AI</comment>
   </data>
   <data name="UnableToChangeConnectionString" xml:space="preserve">
-    <value>Unable to change connection string. Already connected</value>
+    <value>Nie można zmienić parametrów połączenia. Połączenie zostało już nawiązane</value>
+    <comment>AI</comment>
   </data>
   <data name="UnableToChangeValueOfAttributeDueItIsLocked" xml:space="preserve">
-    <value>Unable to change value of '{0}' attribute due it is locked</value>
+    <value>Nie można zmienić wartości atrybutu '{0}' z powodu blokady</value>
+    <comment>AI</comment>
   </data>
   <data name="UnableToCreateObjectSpace" xml:space="preserve">
-    <value>Unable to create ObjectSpace. A dataLayer is null or connectionString is empty</value>
+    <value>Nie można utworzyć ObjectSpace. Referencja dataLayer jest pusta lub connectionString jest pusty</value>
+    <comment>AI</comment>
   </data>
   <data name="UnableToCreateUpdateSessionAutoCreateOption" xml:space="preserve">
-    <value>Unable to create UpdatingSession. The dataLayer.AutoCreateOption is {0}</value>
+    <value>Nie można utworzyć UpdatingSession. dataLayer.AutoCreateOption ma wartość {0}</value>
+    <comment>AI</comment>
   </data>
   <data name="UnableToCreateUpdateSessionDataLayerIsNull" xml:space="preserve">
-    <value>Unable to create UpdatingSession. A dataLayer is null or connectionString is empty</value>
+    <value>Nie można utworzyć UpdatingSession. Referencja dataLayer jest pusta lub connectionString jest pusty</value>
+    <comment>AI</comment>
   </data>
   <data name="UnableToCreateUpdatingReadonlySessionAutoCreateOption" xml:space="preserve">
-    <value>Unable to create UpdatingReadOnlySession. The dataLayer.AutoCreateOption is {0}</value>
+    <value>Nie można utworzyć UpdatingReadOnlySession. dataLayer.AutoCreateOption ma wartość {0}</value>
+    <comment>AI</comment>
   </data>
   <data name="UnableToExecuteDisabledOrInactiveAction" xml:space="preserve">
-    <value>Unable to execute disabled or inactive action {2}. Disable reasons: {0}, inactive reasons: {1}</value>
+    <value>Nie można wykonać wyłączonej lub nieaktywnej akcji {2}. Przyczyny wyłączenia: {0}, przyczyny nieaktywności: {1}</value>
+    <comment>AI</comment>
   </data>
   <data name="UnableToFindADetailViewForType" xml:space="preserve">
-    <value>Unable to find a detail view for the '{0}' object type</value>
+    <value>Nie można znaleźć widoku szczegółów dla obiektu typu '{0}'</value>
+    <comment>AI</comment>
   </data>
   <data name="UnableToFindAListViewForType" xml:space="preserve">
-    <value>Unable to find a list view for the '{0}' object type</value>
+    <value>Nie można znaleźć widoku listy dla obiektu typu '{0}'</value>
+    <comment>AI</comment>
   </data>
   <data name="UnableToFindPropertyInType" xml:space="preserve">
-    <value>Unable to find property '{0}' in type '{1}'</value>
+    <value>Nie można znaleźć właściwości '{0}' w typie '{1}'</value>
+    <comment>AI</comment>
   </data>
   <data name="UnableToFindType" xml:space="preserve">
-    <value>Unable to find type '{0}'</value>
+    <value>Nie można znaleźć typu '{0}'</value>
+    <comment>AI</comment>
   </data>
   <data name="UnableToInitializeFileDataProperty" xml:space="preserve">
-    <value>Unable to initialize the {0} property in the {1} object, because this property is readonly, or the {2} type doesn't have a default constructor, or you don't have permissions to create it</value>
+    <value>Nie można zainicjować właściwości {0} w obiekcie {1}, ponieważ ta właściwość jest tylko do odczytu, typ {2} nie ma konstruktora domyślnego lub brak uprawnień do jego utworzenia</value>
+    <comment>AI</comment>
   </data>
   <data name="UnableToSetReadOnlyProperty" xml:space="preserve">
     <value>Niemożna ustawić własności tylko do odczytu '{0}'</value>
+    <comment>Community:Nie można ustawić właściwości '{0}' przeznaczonej tylko do odczytu</comment>
   </data>
   <data name="UnknownException" xml:space="preserve">
     <value>Nieznany wyjątek. Nie można pobrać szczegółów wyjątku</value>
+    <comment>Community:Wystąpił nieznany wyjątek. Nie można pobrać szczegółów wyjątku</comment>
   </data>
   <data name="UnknownValue" xml:space="preserve">
     <value>Nieznana wartość: '{0}'</value>
+    <comment>Approved</comment>
   </data>
   <data name="UnknownViewNodeName" xml:space="preserve">
-    <value>Unknown view node name: '{0}'\r\nAllowed names: '{1}', '{2}'</value>
+    <value>Nieznana nazwa węzła widoku: '{0}'\r\nDozwolone nazwy: '{1}', '{2}'</value>
+    <comment>AI</comment>
   </data>
   <data name="ValidationCannotFindTheAssociatedMemberInTargetClassForCollectionProperty" xml:space="preserve">
     <value>The {0} collection property of the {1} class does not have an associated member in the target object class {2}</value>
   </data>
   <data name="ValidationCannotFindThePropertyWithinTheClass" xml:space="preserve">
-    <value>Cannot check the '{0}' validation rule that is using the '{1}' property because this property doesn't exist in the target '{2}' class</value>
+    <value>Nie można sprawdzić reguły poprawności '{0}' korzystającej z właściwości '{1}', ponieważ ta właściwość nie istnieje w klasie docelowej '{2}'</value>
+    <comment>AI</comment>
   </data>
   <data name="ValidationMessageTemplateHasInvalidFormat" xml:space="preserve">
     <value>Szablon wiadomości walidacji ma nieprawidłowy format: '{0}'</value>
+    <comment>Community:Szablon komunikatu sprawdzania poprawności ma nieprawidłowy format: '{0}'</comment>
   </data>
   <data name="ValueCannotBeStoredIntoTheProperty" xml:space="preserve">
-    <value>The '{0}' value cannot be stored into the '{1}' property</value>
+    <value>Nie można zapisać wartości '{0}' we właściwości '{1}'</value>
+    <comment>AI</comment>
   </data>
   <data name="WindowWasNotFound" xml:space="preserve">
-    <value>The window was not found by id '{0}'. Registered windows: '{1}'</value>
+    <value>Nie znaleziono okna o identyfikatorze '{0}'. Zarejestrowane okna: '{1}'</value>
+    <comment>AI</comment>
   </data>
   <data name="XPDictionaryIsNull" xml:space="preserve">
-    <value>The XPDictionary is null</value>
+    <value>XPDictionary ma wartość null</value>
+    <comment>AI</comment>
   </data>
   <data name="YouCannotChangeCurrentAspect" xml:space="preserve">
-    <value>You cannot change the current aspect. It depends on the culture of the current thread</value>
+    <value>Nie można zmienić bieżącego aspektu. Zależy on od ustawień regionalnych bieżącego wątku</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DuplicatedVisibleInDashboardsClassCaption" xml:space="preserve">
+    <value>Typ '{0}' i typ '{1}' mają tę samą etykietę '{2}', dlatego nie można ich używać w module pulpitów nawigacyjnych. Wszystkie typy oznaczone atrybutem VisibleInDashboards muszą mieć unikatowe etykiety.</value>
+    <comment>AI</comment>
   </data>
 </root>

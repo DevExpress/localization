@@ -1,52 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net462</TargetFramework>
-    <EnableWindowsTargeting>true</EnableWindowsTargeting>
-    <AssemblyName>DevExpress.ReportServer.v26.1.Localization</AssemblyName>
+    <AssemblyName>DevExpress.ReportServer.v26.2.Localization</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>true</DelaySign>
+    <AssemblyOriginatorKeyFile>..\DevExpress.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>DevExpress.ReportServer.Localization</RootNamespace>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\$(TargetFramework)\</IntermediateOutputPath>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(TargetFramework)' == 'net462'">
     <OutputPath>..\DevExpress.Dll\Framework\</OutputPath>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0'">
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net10.0'">
     <OutputPath>..\DevExpress.Dll\NETCore\</OutputPath>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Include="..\AssemblyVersion.cs">
-      <Link>AssemblyVersion.cs</Link>
-    </Compile>
-    <Compile Include="AdminPanel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AdminPanel.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Backend.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Backend.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Designers.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Designers.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Login.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Login.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ResourceManagerExtensions.cs" />
-  </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="AdminPanel.ar.resx" />
     <EmbeddedResource Include="AdminPanel.bg.resx" />
@@ -225,8 +197,57 @@
     <EmbeddedResource Include="AdminPanel.uz-Cyrl-UZ.resx" />
     <EmbeddedResource Include="AdminPanel.uz-Latn-UZ.resx" />
     <EmbeddedResource Include="AdminPanel.ky.resx" />
+    <EmbeddedResource Include="Backend.es.resx" />
+    <EmbeddedResource Include="Backend.ko.resx" />
+    <EmbeddedResource Include="Backend.pl.resx" />
+    <EmbeddedResource Include="Backend.pt.resx" />
+    <EmbeddedResource Include="Backend.zh-CN.resx" />
+    <EmbeddedResource Include="Backend.he.resx" />
+    <EmbeddedResource Include="Login.he.resx" />
+    <EmbeddedResource Include="Backend.ar.resx" />
+    <EmbeddedResource Include="Backend.ca.resx" />
+    <EmbeddedResource Include="Backend.de-CH.resx" />
+    <EmbeddedResource Include="Backend.zh-Hans.resx" />
+    <EmbeddedResource Include="Backend.cs.resx" />
+    <EmbeddedResource Include="Backend.hi.resx" />
+    <EmbeddedResource Include="Login.hi.resx" />
+    <EmbeddedResource Include="Backend.ta.resx" />
+    <EmbeddedResource Include="Login.ta.resx" />
+    <EmbeddedResource Include="Backend.sv.resx" />
+    <EmbeddedResource Include="Backend.es-MX.resx" />
+    <EmbeddedResource Include="Designers.es-MX.resx" />
+    <EmbeddedResource Include="Login.es-MX.resx" />
+    <EmbeddedResource Include="Backend.af.resx" />
+    <EmbeddedResource Include="Designers.af.resx" />
+    <EmbeddedResource Include="Login.af.resx" />
   </ItemGroup>
-
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AdminPanel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdminPanel.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Backend.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Backend.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Designers.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Designers.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceManagerExtensions.cs" />
+  </ItemGroup>
   <Import Project="$(SolutionDir)dxSign.targets" Condition="'$(RS_FILE_VERSION)' != ''" />
   <Target Name="AfterGenerateSatelliteAssemblies" AfterTargets="GenerateSatelliteAssemblies" Condition="'$(RS_FILE_VERSION)' != ''">
     <dxStrongName File="%(IntermediateSatelliteAssembliesWithTargetPath.FullPath)" Tool="$(dxSignTool)" Condition=" '$(DelaySign)' == 'true' " />
@@ -234,5 +255,4 @@
   <Target Name="SignLocalizationAssembly" AfterTargets="Build" Condition="'$(RS_FILE_VERSION)' != '' AND '$(TargetFramework)' != ''">
     <dxStrongName File="$(TargetPath)" Tool="$(dxSignTool)" Condition=" '$(DelaySign)' == 'true' " />
   </Target>
-
 </Project>

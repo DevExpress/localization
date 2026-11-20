@@ -6,7 +6,7 @@ using DevExpress.Internal;
 [assembly: AssemblyTitle("DevExpress.XtraScheduler.Reporting ")]
 [assembly: AssemblyDescription("XtraScheduler Reporting")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]
+[assembly: AssemblyCompany("Developer Express Inc.")]
 [assembly: AssemblyProduct("DevExpress.XtraScheduler.Reporting")]
 [assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
 [assembly: AssemblyTrademark("")]
@@ -14,3 +14,4 @@ using DevExpress.Internal;
 [assembly: CLSCompliant(true)]
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
 [assembly: AssemblyFileVersion(AssemblyInfo.SatelliteContractVersion)] 
+

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="EditReportControllerV2.Edit" Caption="Editer" />
+      <Action Id="ShowReportDesignerV2" Caption="Afficher le concepteur d'état" />
+    </Actions>
+  </ActionDesign>
+  <Localization>
+    <LocalizationGroup Name="Captions">
+      <LocalizationItem Name="AllFiles" Value="Tous les fichiers" />
+      <LocalizationItem Name="ExportLayout" Value="Exporter la mise en page dans un fichier ..." />
+      <LocalizationItem Name="ImportLayout" Value="Importer la mise en page depuis un fichier ..." />
+      <LocalizationItem Name="ReportDesignerError" Value="Erreur" />
+      <LocalizationItem Name="ReportDesignerWarning" Value="Attention" />
+      <LocalizationItem Name="ReportFiles" Value="Fichiers d'état" />
+    </LocalizationGroup>
+  </Localization>
+  <Views>
+    <DetailView Id="NewReportWizardParameters_DetailView" Caption="Nouvel état">
+      <Items>
+        <StaticText Id="ReportText" Text="Pour créer un nouvel état, veuillez entrer un nom dans le champ ci-dessous et choisir le type de données principal de l'état dans la liste." />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal">
+          <LayoutGroup Id="Static">
+            <LayoutGroup Id="NewReportParams" Caption="Nouvel état" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

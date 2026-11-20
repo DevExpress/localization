@@ -11,6 +11,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCulture("")]
 [assembly: CLSCompliant(true)]
 
+
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
+
 [assembly: AssemblyProduct("DevExpress.Xpf.Scheduling")]
+
 [assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]

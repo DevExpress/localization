@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ChangePasswordByUser" Caption="Modifier mon mot de passe" />
+      <Action Id="DeletePermissionDescriptor" Caption="Supprimer" ConfirmationMessage="Vous êtes sur le point de supprimer le(s) élément(s) sélectionné(s). Voulez-vous continuer ?" />
+      <Action Id="Deny" Caption="Refuser">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Delete" Caption="Supprimer" />
+          <ChoiceActionItem Id="Deny All" Caption="Refuser tous" />
+          <ChoiceActionItem Id="Deny Modification" Caption="Refuser modification" />
+          <ChoiceActionItem Id="Navigate" Caption="Naviguer" />
+          <ChoiceActionItem Id="Read" Caption="Lecture" />
+          <ChoiceActionItem Id="Write" Caption="Écriture" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="Grant" Caption="Accorder">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Delete" Caption="Supprimer" />
+          <ChoiceActionItem Id="Full Access" Caption="Accès complet" />
+          <ChoiceActionItem Id="Navigate" Caption="Naviguer" />
+          <ChoiceActionItem Id="Read" Caption="Lecture" />
+          <ChoiceActionItem Id="Read Only Access" Caption="Accès en lecture seule" />
+          <ChoiceActionItem Id="Write" Caption="Écriture" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="MyDetails" Caption="Mes détails" />
+      <Action Id="NewPermissionDescriptor" Caption="Nouveau" />
+      <Action Id="ResetPassword" Caption="Réinitialiser le mot de passe" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters">
+      <OwnMembers>
+        <Member Name="Password" Caption="Mot de passe" />
+        <Member Name="UserName" Caption="Nom d'utilisateur" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordOnLogonParameters" Caption="Modification du mot de passe">
+      <OwnMembers>
+        <Member Name="ConfirmPassword" Caption="Confirmez le mot de passe" />
+        <Member Name="NewPassword" Caption="Nouveau mot de passe" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordParameters" Caption="Modification du mot de passe">
+      <OwnMembers>
+        <Member Name="OldPassword" Caption="Ancien mot de passe" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.EditModelPermission" Caption="Permission d'édition du modèle" />
+    <Class Name="DevExpress.ExpressApp.Security.ObjectAccessPermission" Caption="Droit d'accès à l'objet">
+      <OwnMembers>
+        <Member Name="DeleteAccess" Caption="Droit Suppression" />
+        <Member Name="NavigateAccess" Caption="Droit Navigation" />
+        <Member Name="ObjectType" Caption="Type de l'objet" />
+        <Member Name="ReadAccess" Caption="Accès en lecture" />
+        <Member Name="WriteAccess" Caption="Accès en écriture" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ResetPasswordParameters" Caption="Réinitialisation du mot de passe">
+      <OwnMembers>
+        <Member Name="Password" Caption="Mot de passe" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ModelAccessModifier" Value="Droit modification du modèle">
+        <LocalizationItem Name="Allow" Value="Autorisé" />
+        <LocalizationItem Name="Deny" Value="Refuser" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccess" Value="Accès à l'objet">
+        <LocalizationItem Name="ChangeAccess" Value="Modification" />
+        <LocalizationItem Name="Delete" Value="Supprimer" />
+        <LocalizationItem Name="Navigate" Value="Naviguer" />
+        <LocalizationItem Name="NoAccess" Value="AucunAccès" />
+        <LocalizationItem Name="Read" Value="Lecture" />
+        <LocalizationItem Name="Write" Value="Écriture" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccessModifier" Value="Modificateur d'accès à l'objet">
+        <LocalizationItem Name="Allow" Value="Autorisé" />
+        <LocalizationItem Name="Deny" Value="Refuser" />
+        <LocalizationItem Name="None" Value="Aucun" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Exceptions">
+      <LocalizationItem Name="CanNotDeleteObject" Value="Vous ne pouvez pas supprimer l'objet  '{0}' en raison des restrictions de sécurité." />
+      <LocalizationItem Name="CanNotSaveObject" Value="Vous ne pouvez pas sauver l'objet  '{0}' en raison des restrictions de sécurité." />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Messages">
+      <LocalizationItem Name="Delete" Value="Supprimer" />
+      <LocalizationItem Name="IsGrantedFrom" Value="est accordé au membre de la classe '{0}'." />
+      <LocalizationItem Name="IsInheritedFrom" Value="est hérité de la classe '{0}'. " />
+      <LocalizationItem Name="Navigate" Value="Naviguer" />
+      <LocalizationItem Name="Read" Value="Lecture" />
+      <LocalizationItem Name="Write" Value="Écriture" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Namespaces">
+      <LocalizationItem Name="DevExpress.ExpressApp.Security" Value="Sécurité" />
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="MyDetails" Caption="Mes détails" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView" Caption="Connexion">
+      <Items>
+        <StaticText Id="LogonText" Text="Bienvenue! Veuillez saisir vos nom d'utilisateur et mots de passe ci-dessous." />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal">
+          <LayoutGroup Id="RootGroup">
+            <LayoutGroup Id="EditorsGroup">
+              <LayoutGroup Id="Editors" Caption="Editeurs" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChangePasswordOnLogonParameters_DetailView" Caption="Modifier le mot de passe lors de la prochaine connexion">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="Pour des raisons de sécurité, vous devez définir votre mot de passe. Veuillez entrer votre mot de passe dans les 2 champs ci-dessous. Ne réutilisez pas un ancien mot de passe." />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal">
+          <LayoutGroup Id="Static" Caption="Statique" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChangePasswordParameters_DetailView" Caption="Modifier le mot de passe">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="Pour modifier votre mot de passe, veuillez entrer votre ancien puis votre nouveau mot de passe dans les champs ci-dessous." />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal">
+          <LayoutGroup Id="Static" Caption="Statique" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="EditModelPermission_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ObjectAccessPermission_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ObjectAccessPermission" Caption="Droit d'accès à l'objet" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ResetPasswordParameters_DetailView" Caption="Réinitialiser le mot de passe">
+      <Items>
+        <StaticText Id="ResetPasswordText" Text="La définition du mot de passe de l'utilisateur va créer un nouveau mot de passe automatiquement. Vous devrez communiquer le nouveau mot de passe à l'utilisateur pour qu'il puisse continuer à utiliser l'application. Voulez-vous continuer ?" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Principal">
+          <LayoutGroup Id="Static" Caption="Statique" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

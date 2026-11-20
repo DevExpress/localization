@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ChangeStateAction" Caption="状態を変更" ToolTip="現在のオブジェクトの状態を変更" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCState">
+      <OwnMembers>
+        <Member Name="Appearances" Caption="外観" />
+        <Member Name="Caption" Caption="キャプション" />
+        <Member Name="MarkerObject" Caption="マーカー オブジェクト" />
+        <Member Name="StateMachine" Caption="状態機械" />
+        <Member Name="TargetObjectCriteria" Caption="ターゲット オブジェクト基準" />
+        <Member Name="Transitions" Caption="遷移" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCStateAppearance" Caption="IDCState 外見">
+      <OwnMembers>
+        <Member Name="AppearanceItemType" Caption="外観 アイテム タイプ" />
+        <Member Name="BackColor" Caption="背景色" />
+        <Member Name="Context" Caption="コンテキスト" />
+        <Member Name="DeclaringType" Caption="宣言タイプ" />
+        <Member Name="Enabled" Caption="有効" />
+        <Member Name="FontColor" Caption="フォントの色" />
+        <Member Name="FontStyle" Caption="フォント スタイル" />
+        <Member Name="Method" Caption="メソッド" />
+        <Member Name="Priority" Caption="優先度" />
+        <Member Name="State" Caption="状態" />
+        <Member Name="TargetItems" Caption="ターゲット アイテム" />
+        <Member Name="Visibility" Caption="可視性" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCStateMachine" Caption="IDCState マシン">
+      <OwnMembers>
+        <Member Name="Active" Caption="アクティブ" />
+        <Member Name="ExpandActionsInDetailView" Caption="詳細ビューで操作を展開" />
+        <Member Name="Name" Caption="名前" />
+        <Member Name="StartState" Caption="開始状態" />
+        <Member Name="StatePropertyName" Caption="状態プロパティ名" />
+        <Member Name="States" Caption="状態" />
+        <Member Name="TargetObjectType" Caption="ターゲット オブジェクト タイプ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Dc.IDCTransition">
+      <OwnMembers>
+        <Member Name="Caption" Caption="キャプション" />
+        <Member Name="SourceState" Caption="ソースの状態" />
+        <Member Name="TargetState" Caption="ターゲットの状態" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Utils.MarkerObject" Caption="マーカー オブジェクト">
+      <OwnMembers>
+        <Member Name="DisplayName" Caption="表示名" />
+        <Member Name="Marker" Caption="マーカー" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.StateMachineObjectBase" Caption="状態機械オブジェクト ベース" />
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoState" Caption="状態">
+      <OwnMembers>
+        <Member Name="Appearance" Caption="外観" />
+        <Member Name="Caption" Caption="キャプション" />
+        <Member Name="Marker" Caption="マーカー" />
+        <Member Name="StateMachine" Caption="状態機械" />
+        <Member Name="TargetObjectCriteria" Caption="ターゲット オブジェクト基準" />
+        <Member Name="Transitions" Caption="遷移" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoStateAppearance" Caption="外観">
+      <OwnMembers>
+        <Member Name="AppearanceItemType" Caption="外観 アイテム タイプ" />
+        <Member Name="BackColor" Caption="背景色" />
+        <Member Name="Context" Caption="コンテキスト" />
+        <Member Name="Enabled" Caption="有効" />
+        <Member Name="FontColor" Caption="フォントの色" />
+        <Member Name="FontStyle" Caption="フォント スタイル" />
+        <Member Name="Priority" Caption="優先度" />
+        <Member Name="TargetItems" Caption="ターゲット アイテム" />
+        <Member Name="Visibility" Caption="可視性" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoStateMachine" Caption="状態機械">
+      <OwnMembers>
+        <Member Name="Active" Caption="アクティブ" />
+        <Member Name="ExpandActionsInDetailView" Caption="詳細ビューで操作を展開" />
+        <Member Name="Name" Caption="名前" />
+        <Member Name="StartState" Caption="開始状態" />
+        <Member Name="StatePropertyName" Caption="状態プロパティ名" />
+        <Member Name="States" Caption="状態" />
+        <Member Name="TargetObjectType" Caption="ターゲット オブジェクト タイプ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoTransition" Caption="遷移">
+      <OwnMembers>
+        <Member Name="Caption" Caption="キャプション" />
+        <Member Name="Index" Caption="インデックス" />
+        <Member Name="SaveAndCloseView" Caption="ビューを保存して閉じる" />
+        <Member Name="SourceState" Caption="ソースの状態" />
+        <Member Name="TargetState" Caption="ターゲットの状態" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Utils.StringObject" Caption="文字列オブジェクト">
+      <OwnMembers>
+        <Member Name="Name" Caption="名前" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Editors.ViewItemVisibility" Value="ビュー アイテムの表示">
+        <LocalizationItem Name="Hide" Value="非表示" />
+        <LocalizationItem Name="Show" Value="表示" />
+        <LocalizationItem Name="ShowEmptySpace" Value="空スペースを表示" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="System.Drawing.FontStyle" Value="フォント スタイル">
+        <LocalizationItem Name="Bold" Value="太字" />
+        <LocalizationItem Name="Italic" Value="斜体" />
+        <LocalizationItem Name="Regular" Value="標準" />
+        <LocalizationItem Name="Strikeout" Value="取り消し線" />
+        <LocalizationItem Name="Underline" Value="下線" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="StateMachine">
+      <LocalizationItem Name="TransitionValidationMessage" Value="{StateCaption}' 状態に入るには、'{TargetObject}' は次のmust satisfy the following criteria: {Criteria}" />
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="State Machine" Caption="状態機械" />
+    </Items>
+  </NavigationItems>
+  <Validation>
+    <Rules>
+      <RuleIsReferenced Id="StateIsReferencedDc" MessageTemplateMustBeReferenced="この State を削除するには、TargetState として Transition で参照されていないことを確認してください。" />
+      <RuleIsReferenced Id="StateIsReferencedXpo" MessageTemplateMustBeReferenced="この State を削除するには、TargetState として Transition で参照されていないことを確認してください。" />
+    </Rules>
+  </Validation>
+  <Views>
+    <DetailView Id="IDCStateAppearance_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IDCStateAppearance" Caption="IDCState 外見" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IDCStateMachine_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IDCStateMachine" Caption="IDCState マシン" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

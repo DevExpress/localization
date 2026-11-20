@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
+  <!-- 
 		Microsoft ResX Schema
 
 		Version 1.3
@@ -58,44 +58,530 @@
 			: using a System.ComponentModel.TypeConverter
 			: and then encoded with base64 encoding.
 	-->
-	
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>1.3</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ExceptionDialogLabel" xml:space="preserve">
+    <value>S'ha produït l'error següent:</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsNotValidNamespacePrefixDescription" xml:space="preserve">
+    <value>'{0}' no és una especificació vàlida de prefix d'espai de noms</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DataLayerAlreadyExists" xml:space="preserve">
+    <value>Ja existeix una capa de dades: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AnErrorHasOccurredWhileLoadingTheModel" xml:space="preserve">
+    <value>S'ha produït un error en carregar el model. Origen: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AnErrorHasOccurredWithContext" xml:space="preserve">
+    <value>S'ha produït un error, context: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AnErrorHasOccurredWhileProcessingAShortcut" xml:space="preserve">
+    <value>Es produeix un error en processar una drecera: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AnUnsavedObjectCannotBeShown" xml:space="preserve">
+    <value>No es pot mostrar un objecte no desat</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ApplicationIsNotStarted" xml:space="preserve">
+    <value>L'aplicació no s'ha iniciat</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AttributeShouldStartWithSymbol" xml:space="preserve">
+    <value>L'atribut '{0}' ha de començar amb el símbol '@': '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AttributeModifyingFailed" xml:space="preserve">
+    <value>Ha fallat la modificació de l'atribut</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ValidationCannotFindThePropertyWithinTheClass" xml:space="preserve">
+    <value>No es pot comprovar la regla de validació '{0}', que utilitza la propietat '{1}', perquè aquesta propietat no existeix a la classe de destinació '{2}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotCreateAppropriateDetailItem" xml:space="preserve">
+    <value>No es pot crear un element de detall adequat per a '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotCreateAppropriatePropertyEditorForTheProperty" xml:space="preserve">
+    <value>No es pot crear un editor de propietats adequat per a la propietat '{0}.{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotCreateTemplateByName" xml:space="preserve">
+    <value>No es pot crear la plantilla pel nom: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotFindDescendantOfXafApplicationClass" xml:space="preserve">
+    <value>No es pot trobar cap classe derivada de XafApplication per detectar la configuració de la vostra aplicació a les carpetes següents:
+{0}
+En el cas d'una aplicació Windows Forms, aquestes carpetes han de contenir el fitxer executable de la vostra aplicació.
+En el cas d'una aplicació ASP.NET, aquestes carpetes han de contenir l'assemblat que conté la vostra classe derivada de WebApplication.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotFindThePropertyWithinTheClass" xml:space="preserve">
+    <value>No es pot trobar la propietat '{0}' dins de la classe '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TemplateTypeInfoMissed" xml:space="preserve">
+    <value>No es pot trobar TypeInfo per al tipus '{0}'. Hauríeu de posar la plantilla en un mòdul XAF o registrar-la manualment mitjançant el mètode XafTypesInfo.Instance.FindTypeInfo(typeof({0})).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotGenerateContent" xml:space="preserve">
+    <value>No es pot generar el contingut: l'atribut 'ClassName' és buit</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotObtainTheEditingObject" xml:space="preserve">
+    <value>No es pot obtenir l'objecte que s'està editant</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotProcessTheRequestedUrl" xml:space="preserve">
+    <value>No es pot processar l'URL sol·licitat</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotProcessTheRequestedUrlActionItemWasNotFound" xml:space="preserve">
+    <value>No es pot processar l'URL sol·licitat, no s'ha trobat l'element d'acció '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotReadDictionaryFromResource" xml:space="preserve">
+    <value>No es pot llegir el diccionari del recurs '{0}' de l'assemblat '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ApplicationUpdaterDatabaseVersionIsNewer" xml:space="preserve">
+    <value>No es pot executar l'aplicació. La versió de la base de dades és més nova que la versió de l'aplicació, però no es troba el servidor amb la nova versió de l'aplicació. Demaneu a l'administrador que comprovi que el fitxer de configuració conté un camí correcte a la nova versió de l'aplicació.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="GridControlIsAlreadyCreated" xml:space="preserve">
+    <value>No es pot establir la propietat EditMode. GridControl ja s'ha creat</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotSetEditValueAvailableValues" xml:space="preserve">
+    <value>No es pot establir EditValue a partir del text '{0}', valors disponibles:\r\n{1}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotSetEditValueListIsEmpty" xml:space="preserve">
+    <value>No es pot establir EditValue a partir del text '{0}', la llista és buida</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotShowViewUnknownContext" xml:space="preserve">
+    <value>No es pot mostrar la vista, context desconegut: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotShowViewUnknownTarget" xml:space="preserve">
+    <value>No es pot mostrar la vista, destinació desconeguda: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="RequiresCurrentObjectException" xml:space="preserve">
+    <value>No es pot actualitzar CriteriaWrapper perquè el criteri utilitza paràmetres dinàmics, però no s'ha especificat l'objecte actual. Per actualitzar CriteriaWrapper, crideu el mètode UpdateParametersValues(Object currentObject) i passeu-hi l'objecte actual com a paràmetre.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotAddDuplicateProperty" xml:space="preserve">
+    <value>No es pot afegir un editor de propietats duplicat: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotAddCollectionProperty" xml:space="preserve">
+    <value>No es pot afegir la col·lecció '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotAddToEmptySingleton" xml:space="preserve">
+    <value>No es pot afegir res a la instància única Empty. Creeu una nova instància de la col·lecció</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotCreateSchemaForAttribute" xml:space="preserve">
+    <value>No es pot canviar l'esquema de l'atribut</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotFindListViewWithId" xml:space="preserve">
+    <value>No es pot trobar cap ListView amb ID='{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ClassDoesntImplementInterface" xml:space="preserve">
+    <value>La classe '{0}' no implementa la interfície '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="GridColumnExists" xml:space="preserve">
+    <value>La columna '{0}' ja existeix a la graella</value>
+    <comment>AI</comment>
+  </data>
+  <data name="GridColumnDoesNotExist" xml:space="preserve">
+    <value>La columna '{0}' no existeix a la graella</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConfigFileDoesNotExists" xml:space="preserve">
+    <value>El fitxer de configuració '{0}' no existeix</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DictionaryPathItemParsingFailed" xml:space="preserve">
+    <value>Ha fallat l'anàlisi d'un element del camí del diccionari. Hi ha un error de sintaxi a l'expressió '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DictionaryPathParsingFailed" xml:space="preserve">
+    <value>Ha fallat l'anàlisi del camí del diccionari. Hi ha un error de sintaxi a l'expressió '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DuplicateComponentIdentifier" xml:space="preserve">
+    <value>Identificador de component duplicat: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ErrorOccursWhileAddingTheCustomProperty" xml:space="preserve">
+    <value>Es produeix un error en afegir la propietat personalitzada '{2}' (de tipus '{0}') al tipus '{1}': '{3}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IncompatibleParametersCombinationOnViewChanged" xml:space="preserve">
+    <value>Combinació de paràmetres incompatible. La finestra emergent té el mateix ObjectSpace que la vista principal.  Tanmateix, la propietat SaveOnAccept del DialogController de la finestra emergent està establerta a true. Utilitzeu un ObjectSpace nou per a la finestra emergent invocada o establiu la propietat SaveOnAccept de DialogController a false.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LayoutControlInvalidCount" xml:space="preserve">
+    <value>Quantitat incorrecta: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InfiniteRecursionDetected" xml:space="preserve">
+    <value>S'ha detectat una recursió infinita: la vista '{0}' s'ha creat {1} vegades a causa de l'element de vista '{2}'. Aquest element de vista s'ha eliminat de la disposició. Per resoldre aquest error, utilitzeu una solució adequada de l'article següent de la base de coneixement: https://www.devexpress.com/kb=B181657.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InvalidApplicationVersion" xml:space="preserve">
+    <value>Versió de l'aplicació no vàlida a '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InvalidParametrizedActionValueType" xml:space="preserve">
+    <value>S'ha assignat un tipus de valor no vàlid a l'acció parametritzada '{0}'. Establiu-hi el tipus enter, cadena o data/hora.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ItsImpossibleToFindPathForNode" xml:space="preserve">
+    <value>No es pot trobar el camí='{0}' per al node '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ItsImpossibleToFindSourceNode" xml:space="preserve">
+    <value>No es pot trobar SourceNode='{0}\\{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ListEditorShouldImplement" xml:space="preserve">
+    <value>ListEditor hauria d'implementar la interfície IDXPopupMenuHolder</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ModulesHasAlreadyBeenLoaded" xml:space="preserve">
+    <value>Els mòduls ja s'han carregat</value>
+    <comment>AI</comment>
+  </data>
+  <data name="NameAndValueCollectionsShouldHaveEqualLengths" xml:space="preserve">
+    <value>Les col·leccions de noms i de valors haurien de tenir la mateixa longitud</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ObjectFormatterFormatStringIsInvalid" xml:space="preserve">
+    <value>No es pot donar format a l'objecte perquè la cadena de format especificada no és vàlida: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PageCanOnlyContainOneInstanceOfControl" xml:space="preserve">
+    <value>La pàgina només pot contenir una instància del control '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PermissionIsDenied" xml:space="preserve">
+    <value>Permís denegat</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ProcessWasAborted" xml:space="preserve">
+    <value>El procés s'ha interromput</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ResourceItemWithNameIsNotFound" xml:space="preserve">
+    <value>No s'ha trobat l'element de recurs amb el nom '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="RuleSetClearingIsDenied" xml:space="preserve">
+    <value>No es permet buidar RuleSet</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SourceAttributeExpressionShouldStartWith" xml:space="preserve">
+    <value>L'expressió de l'atribut d'origen hauria de començar per '{0}': '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SourceAttributePathShouldConsistOf" xml:space="preserve">
+    <value>El camí de l'atribut d'origen hauria de constar d'un o més noms de node i, al final, d'un nom d'atribut, delimitats pel símbol '\\': '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SourceNodeExpressionShouldStartWith" xml:space="preserve">
+    <value>L'expressió de SourceNode hauria de començar per '{0}': '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheAssemblyDoesntReferAssembly" xml:space="preserve">
+    <value>L'assemblatge '{0}' no fa referència a l'assemblatge {1} ({2})</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheClassIsNotFoundInBOModel" xml:space="preserve">
+    <value>No s'ha trobat la classe '{0}' al BOModel</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MethodShouldBeUsed" xml:space="preserve">
+    <value>S'hauria d'utilitzar el mètode '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="NodeContainsDuplicatedChildNodes" xml:space="preserve">
+    <value>El node '{0}' conté dos nodes fills amb el valor '{1}' a l'atribut clau. \r\n  Node1: '{2}'\r\n  Node2: '{3}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="NodeWasNotFound" xml:space="preserve">
+    <value>No s'ha trobat el node '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InvalidValueOfEnumProperty" xml:space="preserve">
+    <value>La propietat {1} de l'objecte {0} té un valor incorrecte: {2}. Inicialitzeu la propietat amb un valor correcte de l'enumeració {3} al mètode AfterConstruction de la classe de negoci {4}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="NotRegisteredReadOnlyParameterException" xml:space="preserve">
+    <value>El paràmetre només de lectura '{0}' no està registrat a ParametersFactory.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TypeDoesNotContainTheMember" xml:space="preserve">
+    <value>El tipus '{0}' no conté el membre '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheTypeIsNotDescendantOf" xml:space="preserve">
+    <value>el tipus '{0}' no deriva de '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TypeIsNotAEnum" xml:space="preserve">
+    <value>El tipus '{0}' no és un tipus enumerat</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ValueCannotBeStoredIntoTheProperty" xml:space="preserve">
+    <value>El valor '{0}' no es pot emmagatzemar a la propietat '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConfigFileHasNoModuleNames" xml:space="preserve">
+    <value>El node 'add\[@key="Modules"]' ha de contenir una llista de mòduls, fitxer de configuració '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ApplicationUpdaterAssemblyDoesNotExist" xml:space="preserve">
+    <value>L'aplicació no es pot actualitzar perquè l'assemblat '{1}' no existeix a la carpeta '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheAspectIsNotPresentInAspectsCollection" xml:space="preserve">
+    <value>L'aspecte '{0}' no és present a la col·lecció d'aspectes</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheClassNameAttributeIsEmpty" xml:space="preserve">
+    <value>L'atribut ClassName del node de vista referenciat és buit:</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheClassNameAttributeRefersToADifferentType" xml:space="preserve">
+    <value>L'atribut ClassName del node de vista referenciat fa referència a un tipus diferent. \r\nTipus d'objecte de la drecera: {0}\r\nTipus d'objecte del node de vista: {1}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheCreateApplicationModulesManagerReturnsNull" xml:space="preserve">
+    <value>El mètode CreateApplicationModulesManager retorna null</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ParameterConflictsWithPropertyException" xml:space="preserve">
+    <value>El criteri conté el paràmetre només de lectura '{0}', que entra en conflicte amb la propietat '{0}' de la classe '{1}'. Per fer referència al paràmetre només de lectura, utilitzeu la sintaxi '@@{0}'. Per fer referència a la propietat, utilitzeu la sintaxi '@this.{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CompatibilityDatabaseIsOldError" xml:space="preserve">
+    <value>La base de dades té una versió més antiga que l'aplicació. Cal actualitzar la base de dades.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CompatibilityApplicationIsOldError" xml:space="preserve">
+    <value>La versió de la base de dades és superior a la versió de l'aplicació. Cal actualitzar l'aplicació. Contacteu amb l'administrador del sistema o baixeu una nova versió.\r\nInformació addicional: la versió local {0} del mòdul '{1}' és inferior a la versió {2} de la base de dades.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheExpressionShouldConsistOf" xml:space="preserve">
+    <value>L'expressió ha de constar de l'expressió de cerca i del nom de l'atribut d'origen, separats pel símbol ';': '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheExpressionStringContainsANumberOfExpressions" xml:space="preserve">
+    <value>La cadena 'expressionString' conté {0} expressions</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PassedObjectBelongsToAnotherObjectSpace" xml:space="preserve">
+    <value>L'objecte que s'ha passat pertany a un altre ObjectSpace. Aquest error es pot produir quan manipuleu els objectes mitjançant un ObjectSpace al qual aquests objectes no pertanyen. Per exemple, podeu rebre aquest error quan utilitzeu el mètode XafApplication.CreateDetailView si heu passat un objecte obtingut d'un ObjectSpace diferent del que s'utilitza com a paràmetre en aquest mètode. Per corregir aquest error, heu d'assegurar-vos que tots els objectes que manipuleu pertanyen a un mateix ObjectSpace.\r\nEn la majoria dels casos, per evitar aquest error n'hi ha prou amb cridar els mètodes ObjectSpace.GetObject/GetObjectByKey per obtenir l'objecte passat a l'ObjectSpace de destinació.\r\nSi això no ajuda, poseu-vos en contacte amb el nostre equip de suport a https://supportcenter.devexpress.com/</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AlreadyUsedObjectSpace" xml:space="preserve">
+    <value>L'ObjectSpace ja s'ha assignat a una altra vista arrel: '{0}'. Aquest error només es produeix quan intenteu assignar a una altra vista arrel un ObjectSpace que ja utilitza una vista arrel. Per exemple, podeu rebre aquest error quan utilitzeu els mètodes XafApplication.CreateDetailView/CreateListView en un ViewController i passeu l'objecte View.ObjectSpace com a paràmetre a aquests mètodes quan la propietat View.IsRoot és true.\r\nPer evitar aquest error, n'hi ha prou de passar a aquests mètodes una nova instància d'ObjectSpace creada amb el mètode XafApplication.CreateObjectSpace, o de crear vistes que no siguin arrel passant el paràmetre corresponent a aquests mètodes.\r\nSi això no ajuda, contacteu amb el nostre equip de suport a https://supportcenter.devexpress.com/</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ThePassedFileIsNotADllOrConfig" xml:space="preserve">
+    <value>El fitxer proporcionat '{0}' no és un fitxer *.dll ni *.config</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IncorrectConfigFile" xml:space="preserve">
+    <value>El fitxer de configuració proporcionat '{0}' no conté el node '&lt;add key="Modules"'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DuplicatedVisibleInDashboardsClassCaption" xml:space="preserve">
+    <value>El tipus '{0}' i el tipus '{1}' tenen la mateixa etiqueta, '{2}', i per tant no es poden utilitzar al mòdul de quadres de comandament. Tots els tipus amb l'atribut VisibleInDashboards han de tenir etiquetes úniques.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheTypeAttributeCannotBeEmpty" xml:space="preserve">
+    <value>L'atribut 'Type' no pot ser buit</value>
+    <comment>AI</comment>
+  </data>
+  <data name="AutoCreateOptionIs" xml:space="preserve">
+    <value>El valor de updatingReadOnlyDataStore.AutoCreateOption és {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="TheValueWasLocked" xml:space="preserve">
+    <value>El valor s'ha bloquejat</value>
+    <comment>AI</comment>
+  </data>
+  <data name="WindowWasNotFound" xml:space="preserve">
+    <value>No s'ha trobat la finestra amb l'identificador '{0}'. Finestres registrades: '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPDictionaryIsNull" xml:space="preserve">
+    <value>XPDictionary és null</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ThereIsAlreadyRegisteredCreatorForFormat" xml:space="preserve">
+    <value>Ja hi ha un creador registrat per al format '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CustomizePopupWindowParamsEventArgsViewIsNull" xml:space="preserve">
+    <value>Per evitar aquest error, cal assignar la propietat CustomizePopupWindowParamsEventArgs.View quan es gestiona l'esdeveniment CustomizePopupWindowParams. Per fer-ho, creeu una vista amb els mètodes XafApplication.CreateDetailView/CreateListView. Consulteu la documentació del producte per obtenir informació més detallada sobre aquestes classes i aquests mètodes. Si això no ajuda, contacteu amb el nostre equip de suport a https://supportcenter.devexpress.com/</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToAssignDisabledActionItem" xml:space="preserve">
+    <value>No es pot assignar un element deshabilitat. Acció: {0}. Element: {1}. Motius de deshabilitació: {2}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToAssignInvisibleActionItem" xml:space="preserve">
+    <value>No es pot assignar un element invisible. Acció: {0}. Element: {1}. Motius d'invisibilitat: {2}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToCast" xml:space="preserve">
+    <value>No es pot convertir l'objecte de tipus '{0}' al tipus '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToChangeChildrenOfNodeDueItIsLocked" xml:space="preserve">
+    <value>No es poden modificar els fills del node '{0}' perquè està bloquejat.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToChangeConnectionString" xml:space="preserve">
+    <value>No es pot modificar la cadena de connexió. Ja hi ha una connexió establerta</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToChangeValueOfAttributeDueItIsLocked" xml:space="preserve">
+    <value>No es pot modificar el valor de l'atribut '{0}' perquè està bloquejat</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ActionMethodShouldBeNonGeneric" xml:space="preserve">
+    <value>No es pot crear una acció per al mètode {0} de la classe {1}. El mètode d'acció no ha de ser genèric</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ActionMethodShouldBeParameterless" xml:space="preserve">
+    <value>No es pot crear una acció per al mètode {0} de la classe {1}. El mètode d'acció no ha de tenir paràmetres</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToCreateObjectSpace" xml:space="preserve">
+    <value>No es pot crear ObjectSpace. dataLayer és null o connectionString és buida</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToCreateUpdatingReadonlySessionAutoCreateOption" xml:space="preserve">
+    <value>No es pot crear UpdatingReadOnlySession. El valor de dataLayer.AutoCreateOption és {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToCreateUpdateSessionDataLayerIsNull" xml:space="preserve">
+    <value>No es pot crear UpdatingSession. dataLayer és null o connectionString és buida</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToCreateUpdateSessionAutoCreateOption" xml:space="preserve">
+    <value>No es pot crear UpdatingSession. El valor de dataLayer.AutoCreateOption és {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToExecuteDisabledOrInactiveAction" xml:space="preserve">
+    <value>No es pot executar l'acció {2} deshabilitada o inactiva. Motius de deshabilitació: {0}, motius d'inactivitat: {1}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToFindADetailViewForType" xml:space="preserve">
+    <value>No es pot trobar una vista de detall per al tipus d'objecte '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToFindAListViewForType" xml:space="preserve">
+    <value>No es pot trobar una vista de llista per al tipus d'objecte '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToFindPropertyInType" xml:space="preserve">
+    <value>No es pot trobar la propietat '{0}' al tipus '{1}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToFindType" xml:space="preserve">
+    <value>No es pot trobar el tipus '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToInitializeFileDataProperty" xml:space="preserve">
+    <value>No es pot inicialitzar la propietat {0} de l'objecte {1} perquè aquesta propietat és només de lectura, o el tipus {2} no té un constructor per defecte, o no teniu permisos per crear-lo</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CurrentObjectIsNotSet" xml:space="preserve">
+    <value>No es pot establir la propietat '{0}'. L'objecte actual no està establert</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnableToSetReadOnlyProperty" xml:space="preserve">
+    <value>No es pot establir la propietat de només lectura '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnknownException" xml:space="preserve">
+    <value>S'ha produït una excepció desconeguda. No es poden recuperar els detalls de l'excepció</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnknownValue" xml:space="preserve">
+    <value>Valor desconegut: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="UnknownViewNodeName" xml:space="preserve">
+    <value>Nom de node de vista desconegut: '{0}'\r\nNoms permesos: '{1}', '{2}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ValidationMessageTemplateHasInvalidFormat" xml:space="preserve">
+    <value>La plantilla del missatge de validació té un format no vàlid: '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotAccessCollectionCollectionSourceIsBeingIntialized" xml:space="preserve">
+    <value>No podeu accedir a la propietat Collection perquè l'origen de la col·lecció s'està inicialitzant. Aquest error es pot produir, per exemple, quan intenteu accedir a la propietat Collection en el mètode OnActivated d'un ViewController. Per evitar aquest error, cal accedir a la propietat Collection més endavant, quan l'origen de la col·lecció ja estigui inicialitzat. La millor manera de fer-ho és gestionar l'esdeveniment CollectionChanged. Consulteu la documentació del producte per obtenir informació més detallada sobre aquestes classes i aquests mètodes. Si això no ajuda, contacteu amb el nostre equip de suport a https://supportcenter.devexpress.com/</value>
+    <comment>AI</comment>
+  </data>
+  <data name="YouCannotChangeCurrentAspect" xml:space="preserve">
+    <value>No podeu canviar l'aspecte actual. Depèn de la configuració regional del fil actual</value>
+    <comment>AI</comment>
+  </data>
 </root>

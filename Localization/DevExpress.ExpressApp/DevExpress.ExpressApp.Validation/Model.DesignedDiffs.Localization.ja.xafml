@@ -1,0 +1,704 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="Diagnostic Info.Rules Info">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Rules Info" Caption="ルール情報" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="ShowAllContexts" Caption="検証" ToolTip="すべてのコンテキストで選択オブジェクトを検証" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ContextValidationResult" Caption="コンテキスト検証の結果">
+      <OwnMembers>
+        <Member Name="Id" Caption="ID" />
+        <Member Name="BrokenRules" Caption="無効なルール" />
+        <Member Name="Context" Caption="コンテキスト" />
+        <Member Name="DisplayableValidationResultItems" Caption="表示可能な検証結果アイテム" />
+        <Member Name="State" Caption="状態" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.DisplayableValidationResultItem" Caption="検証の詳細">
+      <OwnMembers>
+        <Member Name="ContextCaption" Caption="コンテキスト キャプション" />
+        <Member Name="ContextId" Caption="コンテキスト ID" />
+        <Member Name="ErrorMessage" Caption="エラー メッセージ" />
+        <Member Name="Rule" Caption="ルール" />
+        <Member Name="RuleName" Caption="ルール名" />
+        <Member Name="RuleProperties" Caption="ルール プロパティ" />
+        <Member Name="State" Caption="状態" />
+        <Member Name="TargetCaption" Caption="ターゲット" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ValidationResults" Caption="検証結果">
+      <OwnMembers>
+        <Member Name="DisplayableValidationResultItems" Caption="表示可能な検証結果アイテム" />
+        <Member Name="HighlightErrors" Caption="エラーをハイライト" />
+        <Member Name="Results" Caption="結果" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleBaseProperties" Caption="ルール　ベース　プロパティ">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="カスタム メッセージ テンプレート" />
+        <Member Name="Id" Caption="ID" />
+        <Member Name="InvertResult" Caption="結果を反転" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="メッセージ テンプレート：Null または 空の値をスキップ" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="メッセージ テンプレート：ターゲットはターゲット基準を満たしていません。" />
+        <Member Name="Name" Caption="名前" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Null または 空の値をスキップ" />
+        <Member Name="TargetContextIDs" Caption="ターゲット コンテキスト ID" />
+        <Member Name="TargetCriteria" Caption="ターゲット基準" />
+        <Member Name="TargetType" Caption="ターゲット タイプ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCollectionPropertyProperties" Caption="ルール　コレクション プロパティ　プロパティ">
+      <OwnMembers>
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="メッセージ テンプレート：コレクションの検証メッセージ サフィックス" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="メッセージ テンプレート：ターゲットはコレクション 基準を満たしていません。" />
+        <Member Name="TargetCollectionOwnerType" Caption="ターゲット コレクション オーナー タイプ" />
+        <Member Name="TargetCollectionPropertyName" Caption="ターゲット コレクション プロパティ名" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCombinationOfPropertiesIsUniqueProperties" Caption="ルール　プロパティの組み合わせは一意　プロパティ">
+      <OwnMembers>
+        <Member Name="MessageTemplateCombinationOfPropertiesMustBeUnique" Caption="メッセージ テンプレート：プロパティの組み合わせは一意でなければなりません。" />
+        <Member Name="TargetProperties" Caption="ターゲット プロパティ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCriteriaProperties" Caption="ルール　基準　プロパティ">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="基準" />
+        <Member Name="MessageTemplateMustSatisfyCriteria" Caption="メッセージ テンプレート：基準を満たす必要があります。" />
+        <Member Name="UsedProperties" Caption="使用されたプロパティ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleFromBoolPropertyProperties" Caption="ルール ブールプロパティから　ルール">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeTrue" Caption="メッセージ テンプレート：True でなければなりません。" />
+        <Member Name="UsedProperties" Caption="使用されたプロパティ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleIsReferencedProperties" Caption="ルール　が参照されている　プロパティ">
+      <OwnMembers>
+        <Member Name="LooksFor" Caption="検索対象" />
+        <Member Name="MessageTemplateMustBeReferenced" Caption="メッセージ テンプレート：参照しなければなりません。" />
+        <Member Name="ReferencePropertyName" Caption="参照プロパティ名" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleObjectExistsProperties" Caption="ルール　オブジェクトが存在する　プロパティ">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="基準" />
+        <Member Name="LooksFor" Caption="検索対象" />
+        <Member Name="MessageTemplateMustExist" Caption="メッセージ テンプレート：存在しなければなりません。" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRulePropertyValueProperties" Caption="ルール　プロパティ値　プロパティ">
+      <OwnMembers>
+        <Member Name="TargetPropertyName" Caption="ターゲット プロパティ名" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRangeProperties" Caption="ルール　範囲　プロパティ">
+      <OwnMembers>
+        <Member Name="MaximumValue" Caption="最大値" />
+        <Member Name="MaximumValueExpression" Caption="最大値の式" />
+        <Member Name="MessageTemplateMustBeInRange" Caption="メッセージ テンプレート：範囲内でなければなりません。" />
+        <Member Name="MinimumValue" Caption="最小値" />
+        <Member Name="MinimumValueExpression" Caption="最小値の式" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRegularExpressionProperties" Caption="ルール　正規表現　プロパティ">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustMatchPattern" Caption="メッセージ テンプレート：パターンと一致しなければなりません。" />
+        <Member Name="Pattern" Caption="パターン" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRequiredFieldProperties" Caption="ルール　必須フィールド　プロパティ">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustNotBeEmpty" Caption="メッセージ テンプレート：空にできません。" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Null または 空の値をスキップ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleSearchObjectProperties" Caption="ルール　検索オブジェクト　プロパティ">
+      <OwnMembers>
+        <Member Name="CriteriaEvaluationBehavior" Caption="基準評価のビヘイビア" />
+        <Member Name="FoundObjectMessageFormat" Caption="オブジェクト メッセージ形式が見つかりました。" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="オブジェクト メッセージ セパレーターが見つかりました。" />
+        <Member Name="IncludeCurrentObject" Caption="現在のオブジェクトを含む" />
+        <Member Name="MessageTemplateFoundObjects" Caption="メッセージ テンプレート：オブジェクトが見つかりました。" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleStringComparisonProperties" Caption="ルール　文字列比較　プロパティ">
+      <OwnMembers>
+        <Member Name="IgnoreCase" Caption="大文字と小文字を区別しない" />
+        <Member Name="MessageTemplateMustBeEqual" Caption="メッセージ テンプレート：等しくなければなりません。" />
+        <Member Name="MessageTemplateMustBeginWith" Caption="メッセージ テンプレート：～で始まらなければなりません。" />
+        <Member Name="MessageTemplateMustContain" Caption="メッセージ テンプレート：～を含まなければなりません。" />
+        <Member Name="MessageTemplateMustEndWith" Caption="メッセージ テンプレート：～で終わらなければなりません。" />
+        <Member Name="MessageTemplateMustNotBeEqual" Caption="メッセージ テンプレート：同等にできません。" />
+        <Member Name="OperandValue" Caption="オペランド値" />
+        <Member Name="OperatorType" Caption="演算子タイプ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleSupportsCollectionAggregatesProperties" Caption="ルール　コレクション集計をサポート　プロパティ">
+      <OwnMembers>
+        <Member Name="TargetCollectionAggregate" Caption="ターゲット コレクション集計" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleUniqueValueProperties" Caption="ルール　一意の値　プロパティ">
+      <OwnMembers>
+        <Member Name="FoundObjectMessageFormat" Caption="オブジェクト メッセージ形式が見つかりました。" />
+        <Member Name="MessageTemplateMustBeUnique" Caption="メッセージ テンプレート：一意でなければなりません。" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleValueComparisonProperties" Caption="ルール　値比較　プロパティ">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeEqualToOperand" Caption="メッセージ テンプレート：オペランドに等しくなければなりません。" />
+        <Member Name="MessageTemplateMustBeGreaterThanOperand" Caption="メッセージ テンプレート：オペランドより大きくなければなりません。" />
+        <Member Name="MessageTemplateMustBeGreaterThanOrEqualToOperand" Caption="メッセージ テンプレート：オペランド以上でなければなりません。" />
+        <Member Name="MessageTemplateMustBeLessThanOperand" Caption="メッセージ テンプレート：オペランドより小さくなければなりません。" />
+        <Member Name="MessageTemplateMustBeLessThanOrEqualToOperand" Caption="メッセージ テンプレート：オペランド以下でなければなりません。" />
+        <Member Name="MessageTemplateMustNotBeEqualToOperand" Caption="メッセージ テンプレート：オペランドと同等にできません。" />
+        <Member Name="OperatorType" Caption="演算子タイプ" />
+        <Member Name="RightOperand" Caption="右側のオペランド" />
+        <Member Name="RightOperandExpression" Caption="右側のオペランド式" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleBaseProperties" Caption="ルール ベース プロパティ">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="カスタム メッセージ テンプレート" />
+        <Member Name="Id" Caption="ID" />
+        <Member Name="InvertResult" Caption="結果を反転" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="メッセージ テンプレート：コレクションの検証メッセージ サフィックス" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="メッセージ テンプレート：Null または 空の値をスキップ" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="メッセージ テンプレート：ターゲットはコレクション 基準を満たしていません。" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="メッセージ テンプレート：ターゲットはターゲット基準を満たしていません。" />
+        <Member Name="Name" Caption="名前" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Null または 空の値をスキップ" />
+        <Member Name="TargetCollectionOwnerType" Caption="ターゲット コレクション オーナー タイプ" />
+        <Member Name="TargetCollectionPropertyName" Caption="ターゲット コレクション プロパティ名" />
+        <Member Name="TargetContextIDs" Caption="ターゲット コンテキスト ID" />
+        <Member Name="TargetCriteria" Caption="ターゲット基準" />
+        <Member Name="TargetType" Caption="ターゲット タイプ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleCombinationOfPropertiesIsUniqueProperties" Caption="ルール　プロパティの組み合わせは一意　プロパティ">
+      <OwnMembers>
+        <Member Name="MessageTemplateCombinationOfPropertiesMustBeUnique" Caption="メッセージ テンプレート：プロパティの組み合わせは一意でなければなりません。" />
+        <Member Name="TargetProperties" Caption="ターゲット プロパティ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleCriteriaProperties" Caption="ルール　基準　プロパティ">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="基準" />
+        <Member Name="MessageTemplateMustSatisfyCriteria" Caption="メッセージ テンプレート：基準を満たす必要があります。" />
+        <Member Name="UsedProperties" Caption="使用されたプロパティ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleFromBoolPropertyProperties" Caption="ルール　ブール プロパティから　プロパティ">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeTrue" Caption="メッセージ テンプレート：True でなければなりません。" />
+        <Member Name="UsedProperties" Caption="使用されたプロパティ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleIsReferencedProperties" Caption="ルール　が参照されている　プロパティ">
+      <OwnMembers>
+        <Member Name="LooksFor" Caption="検索対象" />
+        <Member Name="MessageTemplateMustBeReferenced" Caption="メッセージ テンプレート：参照しなければなりません。" />
+        <Member Name="ReferencePropertyName" Caption="参照プロパティ名" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleObjectExistsProperties" Caption="ルール　オブジェクトが存在する　プロパティ">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="基準" />
+        <Member Name="LooksFor" Caption="検索対象" />
+        <Member Name="MessageTemplateMustExist" Caption="メッセージ テンプレート：存在しなければなりません。" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RulePropertyValueProperties" Caption="ルール　プロパティ値　プロパティ">
+      <OwnMembers>
+        <Member Name="TargetPropertyName" Caption="ターゲット プロパティ名" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRangeProperties" Caption="ルール　範囲　プロパティ">
+      <OwnMembers>
+        <Member Name="MaximumValue" Caption="最大値" />
+        <Member Name="MaximumValueExpression" Caption="最大値の式" />
+        <Member Name="MessageTemplateMustBeInRange" Caption="メッセージ テンプレート：範囲内でなければなりません。" />
+        <Member Name="MinimumValue" Caption="最小値" />
+        <Member Name="MinimumValueExpression" Caption="最小値の式" />
+        <Member Name="TargetCollectionAggregate" Caption="ターゲット コレクション集計" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRegularExpressionProperties" Caption="ルール　通常の式　プロパティ">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustMatchPattern" Caption="メッセージ テンプレート：パターンと一致しなければなりません。" />
+        <Member Name="Pattern" Caption="パターン" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRequiredFieldProperties" Caption="ルール　必須フィールド　プロパティ">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustNotBeEmpty" Caption="メッセージ テンプレート：空にできません。" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSearchObjectProperties" Caption="ルール　検索オブジェクト　プロパティ">
+      <OwnMembers>
+        <Member Name="CriteriaEvaluationBehavior" Caption="基準評価のビヘイビア" />
+        <Member Name="FoundObjectMessageFormat" Caption="オブジェクト メッセージ形式が見つかりました。" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="オブジェクト メッセージ セパレーターが見つかりました。" />
+        <Member Name="IncludeCurrentObject" Caption="現在のオブジェクトを含む" />
+        <Member Name="MessageTemplateFoundObjects" Caption="メッセージ テンプレート：オブジェクトが見つかりました。" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResult" Caption="検証結果">
+      <OwnMembers>
+        <Member Name="Results" Caption="結果" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResultItem" Caption="検証の詳細">
+      <OwnMembers>
+        <Member Name="ContextId" Caption="コンテキスト ID" />
+        <Member Name="ErrorMessage" Caption="エラー メッセージ" />
+        <Member Name="Rule" Caption="ルール" />
+        <Member Name="RuleName" Caption="ルール名" />
+        <Member Name="State" Caption="状態" />
+        <Member Name="Target" Caption="ターゲット" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResultItemAggregate" Caption="ルール セット 検証結果アイテムの集計">
+      <OwnMembers>
+        <Member Name="AggregatedResults" Caption="集計結果" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleStringComparisonProperties" Caption="ルール　文字列比較　プロパティ">
+      <OwnMembers>
+        <Member Name="IgnoreCase" Caption="大文字と小文字を区別しない" />
+        <Member Name="MessageTemplateMustBeEqual" Caption="メッセージ テンプレート：等しくなければなりません。" />
+        <Member Name="MessageTemplateMustBeginWith" Caption="メッセージ テンプレート：～で始まらなければなりません。" />
+        <Member Name="MessageTemplateMustContain" Caption="メッセージ テンプレート：～を含まなければなりません。" />
+        <Member Name="MessageTemplateMustEndWith" Caption="メッセージ テンプレート：～で終わらなければなりません。" />
+        <Member Name="MessageTemplateMustNotBeEqual" Caption="メッセージ テンプレート：同等にできません。" />
+        <Member Name="OperandValue" Caption="オペランド値" />
+        <Member Name="OperatorType" Caption="演算子タイプ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleUniqueValueProperties" Caption="ルール　一意の値　プロパティ">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeUnique" Caption="メッセージ テンプレート：一意でなければなりません。" />
+        <Member Name="TargetPropertyName" Caption="ターゲット プロパティ名" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleValueComparisonProperties" Caption="ルール　値比較　プロパティ">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeEqualToOperand" Caption="メッセージ テンプレート：オペランドに等しくなければなりません。" />
+        <Member Name="MessageTemplateMustBeGreaterThanOperand" Caption="メッセージ テンプレート：オペランドより大きくなければなりません。" />
+        <Member Name="MessageTemplateMustBeGreaterThanOrEqualToOperand" Caption="メッセージ テンプレート：オペランド以上でなければなりません。" />
+        <Member Name="MessageTemplateMustBeLessThanOperand" Caption="メッセージ テンプレート：オペランドより小さくなければなりません。" />
+        <Member Name="MessageTemplateMustBeLessThanOrEqualToOperand" Caption="メッセージ テンプレート：オペランド以下でなければなりません。" />
+        <Member Name="MessageTemplateMustNotBeEqualToOperand" Caption="メッセージ テンプレート：オペランドと同等にできません。" />
+        <Member Name="OperatorType" Caption="演算子タイプ" />
+        <Member Name="RightOperand" Caption="右側のオペランド" />
+        <Member Name="RightOperandExpression" Caption="右側のオペランド式" />
+        <Member Name="TargetCollectionAggregate" Caption="ターゲット コレクション集計" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.Data.Filtering.Aggregate" Value="集計">
+        <LocalizationItem Name="Count" Value="総数" />
+        <LocalizationItem Name="Exists" Value="が存在する" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Validation.AllContextsView.IsValid" Value="有効">
+        <LocalizationItem Name="Invalid" Value="無効" />
+        <LocalizationItem Name="Valid" Value="有効" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.StringComparisonType" Value="文字列比較タイプ">
+        <LocalizationItem Name="Contains" Value="含む" />
+        <LocalizationItem Name="EndsWith" Value="で終わる" />
+        <LocalizationItem Name="Equals" Value="と等しい" />
+        <LocalizationItem Name="NotEquals" Value="等しくない" />
+        <LocalizationItem Name="StartsWith" Value="で始まる" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValidationState" Value="検証状態">
+        <LocalizationItem Name="Invalid" Value="無効" />
+        <LocalizationItem Name="Skipped" Value="スキップ" />
+        <LocalizationItem Name="Valid" Value="有効" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValueComparisonType" Value="値比較のタイプ">
+        <LocalizationItem Name="Equals" Value="と等しい" />
+        <LocalizationItem Name="GreaterThan" Value="より大きい" />
+        <LocalizationItem Name="GreaterThanOrEqual" Value="以上" />
+        <LocalizationItem Name="LessThan" Value="未満" />
+        <LocalizationItem Name="LessThanOrEqual" Value="以下" />
+        <LocalizationItem Name="NotEquals" Value="等しくない" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Xpo.PersistentCriteriaEvaluationBehavior" Value="永続的評価基準のビヘイビア">
+        <LocalizationItem Name="BeforeTransaction" Value="トランザクションの前" />
+        <LocalizationItem Name="InTransaction" Value="トランザクション中に" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <Validation>
+    <Contexts>
+      <ValidationContext Id="Accept" Caption="承諾" />
+      <ValidationContext Id="Delete" Caption="削除" />
+      <ValidationContext Id="Save" Caption="保存" />
+    </Contexts>
+    <ErrorMessageTemplates>
+      <RuleBase MessageTemplateSkipNullOrEmptyValues="ターゲット プロパティが指定されていないため &quot;{Id}&quot; ルールがチェックされませんでした。" MessageTemplateTargetDoesNotSatisfyTargetCriteria="ターゲット オブジェクトはルールのターゲット基準を満たしていないため &quot;{Id}&quot; ルールがチェックされませんでした。" />
+      <RuleCollectionProperty MessageTemplateTargetDoesNotSatisfyCollectionCriteria="ターゲットは &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot; コレクションの要素ではないため &quot;{Id}&quot; ルールがチェックされませんでした。" MessageTemplateCollectionValidationMessageSuffix="(&quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot; コレクション要素のため)." />
+      <RuleCombinationOfPropertiesIsUnique MessageTemplateCombinationOfPropertiesMustBeUnique="次のプロパティの組み合わせは一意でなければなりません: {FormattedTargetProperties}." MessageTemplateFoundObjects="次のオブジェクトが見つかりました:" />
+      <RuleCriteria MessageTemplateMustSatisfyCriteria="&quot;{TargetObject}&quot; オブジェクトは次の基準を満たさなければなりません: &quot;{Criteria}&quot;" />
+      <RuleFromBoolProperty MessageTemplateMustBeTrue="&quot;{TargetPropertyName}&quot; は True に設定されていなければなりません。" />
+      <RuleIsReferenced MessageTemplateMustBeReferenced="&quot;{TargetObject}&quot; オブジェクトを参照しなければなりません。" MessageTemplateFoundObjects="次のオブジェクトが見つかりました:" />
+      <RuleObjectExists MessageTemplateFoundObjects="次のオブジェクトが見つかりました:" MessageTemplateMustExist="&quot;{Criteria}&quot; 基準を満たすオブジェクトが存在しなければなりません。" />
+      <RuleRange MessageTemplateMustBeInRange="&quot;{TargetPropertyName}&quot; は &quot;{MinimumValue}&quot; と &quot;{MaximumValue}&quot; の境界値を含む範囲内でなければなりません。" />
+      <RuleRegularExpression MessageTemplateMustMatchPattern="&quot;{TargetPropertyName}&quot; は次のパターンに一致しなければなりません: &quot;{Pattern}&quot;" />
+      <RuleRequiredField MessageTemplateMustNotBeEmpty="&quot;{TargetPropertyName}&quot; を空にできません。" />
+      <RuleSearchObject MessageTemplateFoundObjects="次のオブジェクトが見つかりました:" />
+      <RuleStringComparison MessageTemplateMustContain="&quot;{TargetPropertyName}&quot; は &quot;{OperandValue}&quot; を含む必要があります。" MessageTemplateMustBeginWith="&quot;{TargetPropertyName}&quot; は &quot;{OperandValue}&quot; で始まる必要があります。" MessageTemplateMustEndWith="&quot;{TargetPropertyName}&quot; は &quot;{OperandValue}&quot; で終わる必要があります。" MessageTemplateMustBeEqual="&quot;{TargetPropertyName}&quot; は &quot;{OperandValue}&quot; に等しくなければなりません。" MessageTemplateMustNotBeEqual="&quot;{TargetPropertyName}&quot; と &quot;{OperandValue}&quot; を等しくすることはできません。" />
+      <RuleUniqueValue MessageTemplateMustBeUnique="&quot;{TargetPropertyName}&quot; と同じ値を指定しているオブジェクトが存在します。&quot;{TargetPropertyName}&quot; の値は一意でなければなりません。" />
+      <RuleValueComparison MessageTemplateMustBeEqualToOperand="&quot;{TargetPropertyName}&quot; は &quot;{RightOperand}&quot; に等しくなければなりません。" MessageTemplateMustBeGreaterThanOperand="&quot;{TargetPropertyName}&quot; は &quot;{RightOperand}&quot; より大きくなければなりません。" MessageTemplateMustBeGreaterThanOrEqualToOperand="&quot;{TargetPropertyName}&quot; は &quot;{RightOperand}&quot; 以上でなければなりません。" MessageTemplateMustBeLessThanOperand="&quot;{TargetPropertyName}&quot; は &quot;{RightOperand}&quot; 未満でなければなりません。" MessageTemplateMustBeLessThanOrEqualToOperand="&quot;{TargetPropertyName}&quot; は &quot;{RightOperand}&quot; 以上でなければなりません。" MessageTemplateMustNotBeEqualToOperand="&quot;{TargetPropertyName}&quot; と &quot;{RightOperand}&quot; を等しくすることはできません。" />
+    </ErrorMessageTemplates>
+  </Validation>
+  <Views>
+    <DetailView Id="DisplayableValidationResultItem_DetailView">
+      <Items>
+        <PropertyEditor Id="RuleProperties" Caption="ルール　詳細" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DisplayableValidationResultItem" Caption="表示可能な検証結果アイテム" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleBaseProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="ルール　ベース　プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCollectionPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="ルール　ベース　プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCombinationOfPropertiesIsUniqueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="ルール　検索オブジェクト　プロパティ" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="ルール　ベース　プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCriteriaProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="ルール　ベース　プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleFromBoolPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="ルール　ベース　プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleIsReferencedProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="ルール　検索オブジェクト　プロパティ" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="ルール　ベース　プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleObjectExistsProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="ルール　検索オブジェクト　プロパティ" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="ルール　ベース　プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRulePropertyValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="ルール　ベース　プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRangeProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleRangeProperties" Caption="ルール　範囲　プロパティ" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="ルール　ベース　プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRegularExpressionProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="ルール　ベース　プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRequiredFieldProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="ルール　ベース　プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleSearchObjectProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="ルール　検索オブジェクト　プロパティ" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="ルール　ベース　プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleStringComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleStringComparisonProperties" Caption="ルール　文字列比較　プロパティ" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="ルール　ベース　プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleSupportsCollectionAggregatesProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="ルール　ベース　プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleUniqueValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="ルール　ベース　プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleValueComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleValueComparisonProperties" Caption="ルール　値比較　プロパティ" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="ルール　ベース　プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleBaseProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="ルール ベース プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleCombinationOfPropertiesIsUniqueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="ルール　検索オブジェクト　プロパティ" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="ルール ベース プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleCriteriaProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="ルール ベース プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleFromBoolPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="ルール ベース プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleIsReferencedProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="ルール　検索オブジェクト　プロパティ" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="ルール ベース プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleObjectExistsProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="ルール　検索オブジェクト　プロパティ" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="ルール ベース プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RulePropertyValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="ルール ベース プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRangeProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleRangeProperties" Caption="ルール　範囲　プロパティ" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="ルール ベース プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRegularExpressionProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="ルール ベース プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRequiredFieldProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="ルール ベース プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSearchObjectProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="ルール　検索オブジェクト　プロパティ" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="ルール ベース プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResult_ByTarget_Error_DetailView" Caption="検証エラー">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="データ検証の際に問題が検出されました。問題の詳細と修正方法については、下記情報を参照してください。" />
+      </Items>
+    </DetailView>
+    <ListView Id="RuleSetValidationResultItem_ByTarget_ListView">
+      <Columns>
+        <ColumnInfo Id="ContextCaption" Caption="コンテキスト" />
+        <ColumnInfo Id="ErrorMessage" Caption="説明" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleSetValidationResultItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSetValidationResultItem" Caption="ルール セット 検証結果アイテム" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResultItemAggregate_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSetValidationResultItem" Caption="ルール セット 検証結果アイテム" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleStringComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleStringComparisonProperties" Caption="ルール　文字列比較　プロパティ" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="ルール ベース プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleUniqueValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="ルール　検索オブジェクト　プロパティ" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="ルール ベース プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleValueComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleValueComparisonProperties" Caption="ルール　値比較　プロパティ" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="ルール ベース プロパティ" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ValidationResults_Error_DetailView">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="データ検証の際に問題が検出されました。問題の詳細と修正方法については、下記情報を参照してください。" />
+      </Items>
+    </DetailView>
+    <DetailView Id="ValidationResults_Passed_DetailView">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="問題は検出されませんでした。" />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>

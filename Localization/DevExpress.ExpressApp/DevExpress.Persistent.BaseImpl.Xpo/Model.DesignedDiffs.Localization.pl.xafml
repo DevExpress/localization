@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="DevExpress.Persistent.AuditTrail.BaseAuditedObjectWeakReference">
+      <OwnMembers>
+        <Member Name="DisplayName" Caption="Wyświetlana nazwa" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Address" Caption="Adres">
+      <OwnMembers>
+        <Member Name="City" Caption="Miasto" />
+        <Member Name="Country" Caption="Kraj" />
+        <Member Name="FullAddress" Caption="Pełny adres" />
+        <Member Name="StateProvince" Caption="Województwo" />
+        <Member Name="Street" Caption="Ulica" />
+        <Member Name="ZipPostal" Caption="Kod pocztowy" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Analysis" Caption="Analiza">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Kryteria" />
+        <Member Name="DataType" Caption="Typ danych" />
+        <Member Name="Name" Caption="Nazwa" />
+        <Member Name="Self" Caption="Własna" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.AuditDataItemPersistent">
+      <OwnMembers>
+        <Member Name="Description" Caption="Opis" />
+        <Member Name="NewValue" Caption="Nowa wartość" />
+        <Member Name="OldValue" Caption="Stara wartość" />
+        <Member Name="UserName" Caption="Nazwa użytkownika" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.BasicUser" Caption="Użytkownik">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="Zmień hasło przy pierwszym logowaniu" />
+        <Member Name="FullName" Caption="Pełne imię i nazwisko" />
+        <Member Name="IsActive" Caption="Jest aktywny" />
+        <Member Name="IsAdministrator" Caption="Jest Administratorem" />
+        <Member Name="UserName" Caption="Nazwa użytkownika" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Country" Caption="Kraj">
+      <OwnMembers>
+        <Member Name="Name" Caption="Nazwa" />
+        <Member Name="PhoneCode" Caption="Numer telefonu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Event" Caption="Harmonogram wydarzeń">
+      <OwnMembers>
+        <Member Name="AllDay" Caption="Cały dzień" />
+        <Member Name="Description" Caption="Opis" />
+        <Member Name="EndOn" Caption="Data zakończenia / czas" />
+        <Member Name="Label" Caption="Etykieta" />
+        <Member Name="Location" Caption="Lokalizacja" />
+        <Member Name="RecurrenceInfoXml" Caption="Powtarzalność" />
+        <Member Name="RecurrencePattern" Caption="Wzorzec cyklu" />
+        <Member Name="Resources" Caption="Zasoby" />
+        <Member Name="StartOn" Caption="Data rozpoczęcia / czas" />
+        <Member Name="Subject" Caption="Temat" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.FileAttachmentBase">
+      <OwnMembers>
+        <Member Name="File" Caption="Plik" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.FileData" Caption="Dane pliku">
+      <OwnMembers>
+        <Member Name="FileName" Caption="Nazwa pliku" />
+        <Member Name="Size" Caption="Rozmiar" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.HCategory">
+      <OwnMembers>
+        <Member Name="Name" Caption="Nazwa" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Note">
+      <OwnMembers>
+        <Member Name="Author" Caption="Autor" />
+        <Member Name="DateTime" Caption="Data Godzina" />
+        <Member Name="Text" Caption="Tekst" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Organization" Caption="Organizacja">
+      <OwnMembers>
+        <Member Name="Description" Caption="Opis" />
+        <Member Name="Email" Caption="E-mail" />
+        <Member Name="FullName" Caption="Pełne imię i nazwisko" />
+        <Member Name="Name" Caption="Nazwa" />
+        <Member Name="Profile" Caption="Profil" />
+        <Member Name="WebSite" Caption="Strona internetowa" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Party" Caption="Dział">
+      <OwnMembers>
+        <Member Name="Address1" Caption="Adres 1" />
+        <Member Name="Address2" Caption="Adres 2" />
+        <Member Name="DisplayName" Caption="Wyświetlana nazwa" />
+        <Member Name="PhoneNumbers" Caption="Numery telefonów" />
+        <Member Name="Photo" Caption="Zdjęcie" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PersistentPermission">
+      <OwnMembers>
+        <Member Name="Permission" Caption="Pozwolenie" />
+        <Member Name="Role" Caption="Rola" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Person" Caption="Osoba">
+      <OwnMembers>
+        <Member Name="Birthday" Caption="Urodziny" />
+        <Member Name="Email" Caption="E-mail" />
+        <Member Name="FirstName" Caption="Imię" />
+        <Member Name="FullName" Caption="Pełne imię i nazwisko" />
+        <Member Name="LastName" Caption="Nazwisko" />
+        <Member Name="MiddleName" Caption="Drugie imię" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PhoneNumber" Caption="Numer telefonu">
+      <OwnMembers>
+        <Member Name="Number" Caption="Numer" />
+        <Member Name="Party" Caption="Dział" />
+        <Member Name="PhoneType" Caption="Typ telefonu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.PhoneType" Caption="Typ telefonu" />
+    <Class Name="DevExpress.Persistent.BaseImpl.PropertyDescriptor">
+      <OwnMembers>
+        <Member Name="Code" Caption="Kod" />
+        <Member Name="Description" Caption="Opis" />
+        <Member Name="Name" Caption="Nazwa" />
+        <Member Name="Type" Caption="Typ" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Resource" Caption="Zasób">
+      <OwnMembers>
+        <Member Name="Caption" Caption="Podpis" />
+        <Member Name="Color" Caption="Kolor" />
+        <Member Name="Events" Caption="Wydarzenia" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Role" Caption="Rola">
+      <OwnMembers>
+        <Member Name="Users" Caption="Użytkownicy" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.RoleBase">
+      <OwnMembers>
+        <Member Name="Name" Caption="Nazwa" />
+        <Member Name="PersistentPermissions" Caption="Uprawnienia" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.SimpleUser" Caption="Użytkownik">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="Zmień hasło przy pierwszym logowaniu" />
+        <Member Name="FullName" Caption="Pełne imię i nazwisko" />
+        <Member Name="IsActive" Caption="Jest aktywny" />
+        <Member Name="IsAdministrator" Caption="Jest Administratorem" />
+        <Member Name="UserName" Caption="Nazwa użytkownika" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.State" Caption="Stan">
+      <OwnMembers>
+        <Member Name="LongName" Caption="Długa nazwa" />
+        <Member Name="ShortName" Caption="Krótka nazwa" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Task" Caption="Zadanie">
+      <OwnMembers>
+        <Member Name="AssignedTo" Caption="Przypisany do" />
+        <Member Name="DateCompleted" Caption="Data wypełnienia" />
+        <Member Name="Description" Caption="Opis" />
+        <Member Name="PercentCompleted" Caption="Procent ukończenia" />
+        <Member Name="StartDate" Caption="Data rozpoczęcia" />
+        <Member Name="Subject" Caption="Temat" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.User" Caption="Użytkownik">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="Zmień hasło przy pierwszym logowaniu" />
+        <Member Name="IsActive" Caption="Jest aktywny" />
+        <Member Name="Permissions" Caption="Uprawnienia" />
+        <Member Name="Roles" Caption="Role" />
+        <Member Name="UserName" Caption="Nazwa użytkownika" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.Persistent.Base.General.TaskStatus" Value="Stan zadania">
+        <LocalizationItem Name="Completed" Value="Zakończony" />
+        <LocalizationItem Name="Deferred" Value="Odroczony" />
+        <LocalizationItem Name="InProgress" Value="W toku" />
+        <LocalizationItem Name="NotStarted" Value="Nie rozpoczęto" />
+        <LocalizationItem Name="WaitingForSomeoneElse" Value="Czeka na kogoś innego" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Reports" Caption="Raporty" />
+    </Items>
+  </NavigationItems>
+  <Validation>
+    <Rules>
+      <RuleFromBoolProperty Id="EventIntervalValid" CustomMessageTemplate="Data rozpoczęcia musi być mniejsza od daty zakończenia" />
+      <RuleRequiredField Id="FileAttachmentBaseRule" CustomMessageTemplate="Plik powinien być przypisany" />
+      <RuleFromBoolProperty Id="HCategoryCircularReferences" CustomMessageTemplate="Wykryto odwołanie cykliczne. Żeby poprawić ten błąd, ustaw wartość nadrzędną na inną wartość." />
+      <RuleCriteria Id="Role is not referenced" CustomMessageTemplate="Nie można usunąć roli ponieważ istnieją użytkownicy do niej przypisani" Name="Rola nie jest powiązana" MessageTemplateMustSatisfyCriteria="Obiekt &quot;{TargetObject}&quot; musi spełniać następujące kryteria: &quot;{Criteria}&quot;." />
+      <RuleRequiredField Id="Role required" CustomMessageTemplate="Aktywny użytkownik musi posiadać przynajmniej jedną przypisaną rolę" Name="Rola wymagana" />
+      <RuleUniqueValue Id="User Name is unique" CustomMessageTemplate="Podany login jest już zarejestrowany w systemie" Name="Nazwa użytkownika jest unikalna" />
+      <RuleRequiredField Id="User Name required" CustomMessageTemplate="Nazwa użytkownika nie może być pusta" Name="Nazwa użytkownika jest wymagana" />
+    </Rules>
+  </Validation>
+  <Views>
+    <DetailView Id="Organization_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Organization" Caption="Organizacja" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

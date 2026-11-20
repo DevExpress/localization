@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ChangePasswordByUser" Caption="Zmień hasło" />
+      <Action Id="DeletePermissionDescriptor" Caption="Usuwanie" ConfirmationMessage="Masz zamiar usunąć zaznaczony element (y). Czy chcesz kontynuować?" />
+      <Action Id="Deny" Caption="Odmowa">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Create" Caption="Tworzenie" />
+          <ChoiceActionItem Id="Delete" Caption="Usuwanie" />
+          <ChoiceActionItem Id="Deny All" Caption="Odmowa wszystkiego" />
+          <ChoiceActionItem Id="Deny Modification" Caption="Odmowa modyfikacji" />
+          <ChoiceActionItem Id="Navigate" Caption="Nawigacja" />
+          <ChoiceActionItem Id="Read" Caption="Odczyt" />
+          <ChoiceActionItem Id="Write" Caption="Zapis" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="Grant" Caption="Przyznaj">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Create" Caption="Tworzenie" />
+          <ChoiceActionItem Id="Delete" Caption="Usuwanie" />
+          <ChoiceActionItem Id="Full Access" Caption="Pełny dostęp" />
+          <ChoiceActionItem Id="Navigate" Caption="Nawigacja" />
+          <ChoiceActionItem Id="Read" Caption="Odczyt" />
+          <ChoiceActionItem Id="Read Only Access" Caption="Tylko do odczytu" />
+          <ChoiceActionItem Id="Write" Caption="Zapis" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="MyDetails" Caption="Mój profil" />
+      <Action Id="NewPermissionDescriptor" Caption="Nowy" />
+      <Action Id="ResetPassword" Caption="Resetuj hasło" ToolTip="Generuj nowe hasło dla wybranego użytkownika" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters" Caption="Parametry logowania autentykacji standardowej">
+      <OwnMembers>
+        <Member Name="Password" Caption="Hasło" />
+        <Member Name="UserName" Caption="Nazwa użytkownika" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordOnLogonParameters" Caption="Parametry zmiany hasła przy logowaniu">
+      <OwnMembers>
+        <Member Name="ConfirmPassword" Caption="Potwierdź hasło" />
+        <Member Name="NewPassword" Caption="Nowe hasło" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordParameters" Caption="Parametry zmiany hasła">
+      <OwnMembers>
+        <Member Name="OldPassword" Caption="Stare hasło" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.EditModelPermission" Caption="Uprawnienie Edytowania modelu aplikacji" />
+    <Class Name="DevExpress.ExpressApp.Security.MemberOperationPermissionDescriptor">
+      <OwnMembers>
+        <Member Name="InheritedFrom" Caption="Odziedziczony" />
+        <Member Name="Read" Caption="Odczyt" />
+        <Member Name="Write" Caption="Zapis" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ModelOperationPermissionData">
+      <OwnMembers>
+        <Member Name="CanEditModel" Caption="Może edytować model aplikacji" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ObjectAccessPermission">
+      <OwnMembers>
+        <Member Name="CreateAccess" Caption="Prawo tworzenia" />
+        <Member Name="DeleteAccess" Caption="Prawo usuwania" />
+        <Member Name="NavigateAccess" Caption="Prawo nawigacji" />
+        <Member Name="ReadAccess" Caption="Prawo odczytu" />
+        <Member Name="WriteAccess" Caption="Prawo zapisu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ObjectOperationPermissionData">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Kryteria" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ObjectOperationPermissionDescriptor">
+      <OwnMembers>
+        <Member Name="Caption" Caption="Tytuł" />
+        <Member Name="Create" Caption="Tworzenie" />
+        <Member Name="Criteria" Caption="Kryteria" />
+        <Member Name="Delete" Caption="Usuwanie" />
+        <Member Name="InheritedFrom" Caption="Odziedziczony" />
+        <Member Name="Navigate" Caption="Nawigacja" />
+        <Member Name="Read" Caption="Odczyt" />
+        <Member Name="Write" Caption="Zapis" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.PermissionData">
+      <OwnMembers>
+        <Member Name="Permission" Caption="Uprawnienie" />
+        <Member Name="PermissionsContainer" Caption="Kontener uprawnień" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.PermissionsContainer" Caption="Kontener uprawnień">
+      <OwnMembers>
+        <Member Name="PersistentPermissions" Caption="Trwałe uprawnienia" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ResetPasswordParameters" Caption="Parametry resetowania hasła">
+      <OwnMembers>
+        <Member Name="Password" Caption="Hasło" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.SecurityRole" Caption="Rola">
+      <OwnMembers>
+        <Member Name="CanEditModel" Caption="Może edytować model aplikacji" />
+        <Member Name="Permissions" Caption="Uprawnienia" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.SecuritySimpleUser" Caption="Użytkownik">
+      <OwnMembers>
+        <Member Name="IsAdministrator" Caption="Jest administratorem" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.SecurityStrategyRole">
+      <OwnMembers>
+        <Member Name="Name" Caption="Imię" />
+        <Member Name="Users" Caption="Użytkownicy" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.SecurityUser" Caption="Użytkownik" />
+    <Class Name="DevExpress.ExpressApp.Security.SecurityUserBase">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="Zmień hasło przy pierwszym logowaniu" />
+        <Member Name="IsActive" Caption="Jest aktywny" />
+        <Member Name="UserId" Caption="Id użytkownika" />
+        <Member Name="UserName" Caption="Nazwa użytkownika" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.SecurityUserWithRolesBase">
+      <OwnMembers>
+        <Member Name="Roles" Caption="Role" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.TypeOperationPermissionData">
+      <OwnMembers>
+        <Member Name="AllowCreate" Caption="Dopuść tworzenie" />
+        <Member Name="AllowDelete" Caption="Dopuść kasowanie" />
+        <Member Name="AllowNavigate" Caption="Dopuść nawigację" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.TypeOperationPermissionDescriptor">
+      <OwnMembers>
+        <Member Name="Category" Caption="Kategoria" />
+        <Member Name="Create" Caption="Tworzenie" />
+        <Member Name="Delete" Caption="Usuwanie" />
+        <Member Name="Navigate" Caption="Nawigacja" />
+        <Member Name="Object" Caption="Obiekt" />
+        <Member Name="ObjectType" Caption="Typ obiektu" />
+        <Member Name="Read" Caption="Odczyt" />
+        <Member Name="Write" Caption="Zapis" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.TypePermissionData">
+      <OwnMembers>
+        <Member Name="AllowRead" Caption="Dopuść odczyt" />
+        <Member Name="AllowWrite" Caption="Dopuść zapis" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ModelAccessModifier">
+        <LocalizationItem Name="Allow" Value="Pozwolenie" />
+        <LocalizationItem Name="Deny" Value="Odmowa" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccess" Value="Dostęp do obiektu">
+        <LocalizationItem Name="AllAccess" Value="Pełny dostęp" />
+        <LocalizationItem Name="ChangeAccess" Value="Zmień dostęp" />
+        <LocalizationItem Name="Create" Value="Tworzenie" />
+        <LocalizationItem Name="Delete" Value="Usuwanie" />
+        <LocalizationItem Name="Navigate" Value="Nawigacja" />
+        <LocalizationItem Name="NoAccess" Value="Brak dostępu" />
+        <LocalizationItem Name="Read" Value="Odczyt" />
+        <LocalizationItem Name="Write" Value="Zapis" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccessModifier">
+        <LocalizationItem Name="Allow" Value="Pozwolenie" />
+        <LocalizationItem Name="Deny" Value="Odmowa" />
+        <LocalizationItem Name="None" Value="Nic" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Exceptions">
+      <LocalizationItem Name="CanNotDeleteObject" Value="Nie możesz usunąć '{0}' z powodu braku uprawnień." />
+      <LocalizationItem Name="CanNotSaveObject" Value="Nie możesz zapisać '{0}' z powodu braku uprawnień." />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Messages">
+      <LocalizationItem Name="Create" Value="Tworzenie" />
+      <LocalizationItem Name="Delete" Value="Usuwanie" />
+      <LocalizationItem Name="IsGrantedFrom" Value="jest nadane od członka klasy '{0}'." />
+      <LocalizationItem Name="IsInheritedFrom" Value="jest dziedziczona z klasy '{0}'." />
+      <LocalizationItem Name="Navigate" Value="Nawigacja" />
+      <LocalizationItem Name="Read" Value="Odczyt" />
+      <LocalizationItem Name="Write" Value="Zapis" />
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="MyDetails" Caption="Mój profil" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView" Caption="Zaloguj">
+      <Items>
+        <StaticText Id="LogonText" Text="Witamy! Proszę wprowadzić swoją nazwę użytkownika i hasło." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ChangePasswordOnLogonParameters_DetailView" Caption="Zmień hasło przy pierwszym zalogowaniu">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="Ze względów bezpieczeństwa, należy teraz ustawić własne hasło. Wpisz nowe hasło w obu polach tekstowych poniżej." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ChangePasswordParameters_DetailView" Caption="Zmień hasło">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="Aby zmienić hasło, wpisz stare i nowe hasło w polach tekstowych poniżej." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ResetPasswordParameters_DetailView" Caption="Resetuj hasło">
+      <Items>
+        <StaticText Id="ResetPasswordText" Text="Ustawianie hasła użytkownika spowoduje automatyczne utworzenie nowego hasła dla użytkownika i jednocześne wyłączenie starego hasła. Następnie należy przekazać nowe hasło użytkownikowi, tak aby on/ona mogli kontynuować pracę z aplikacją. Czy jesteś pewien, że chcesz to zrobić?" />
+      </Items>
+    </DetailView>
+    <ListView Id="SecurityStrategyRole_LookupListView" Caption="Rola" />
+    <ListView Id="SecurityUserBase_LookupListView" Caption="Użytkownik" />
+    <ListView Id="SecurityUserWithRolesBase_LookupListView" Caption="Użytkownik" />
+  </Views>
+</Application>

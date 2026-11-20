@@ -1,298 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net462;net8.0-windows</TargetFrameworks>
+    <TargetFrameworks>net462;net10.0-windows</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
     <EnableWindowsTargeting>true</EnableWindowsTargeting>
-    <AssemblyName>DevExpress.Dashboard.v26.1.Win</AssemblyName>
+    <AssemblyName>DevExpress.Dashboard.v26.2.Win</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>true</DelaySign>
+    <AssemblyOriginatorKeyFile>..\DevExpress.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>DevExpress.DashboardWin</RootNamespace>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <UseWindowsForms>true</UseWindowsForms>
     <IntermediateOutputPath>obj\$(Configuration)\$(TargetFramework)\</IntermediateOutputPath>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(TargetFramework)' == 'net462'">
     <OutputPath>..\DevExpress.Dll\Framework\</OutputPath>
-    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0-windows'">
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net10.0-windows'">
     <OutputPath>..\DevExpress.Dll\NETCore\</OutputPath>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="System.Resources.Extensions" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="..\AssemblyVersion.cs">
-      <Link>AssemblyVersion.cs</Link>
-    </Compile>
-    <Compile Include="DashboardDesigner\DashboardDesigner.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DashboardRecentItems\RecentDashboardsControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DataSourceBrowser\DataFieldsBrowser\CheckedDataFieldsBrowser.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DataSourceBrowser\DataFieldsBrowser\DataFieldsBrowser.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DataSourceBrowser\DataSourceBrowser.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DataSourceBrowser\DataSourceSelector\DataSourceSelector.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DataSourceWizard\Native\OlapConnectionParametersControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DataSourceWizard\UI\ChooseExtractFieldsPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DataSourceWizard\UI\ConfigureExtractDataSourcePageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DataSourceWizard\UI\ConfigureOlapParametersPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DataSourceWizard\UI\ConfigureXmlSchemaPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DataSourceWizard\Native\DataSourceWizardErrorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DataSourceWizard\UI\CreateExtractDataSourcePageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DataSourceWizard\UI\EditExtractDataSourcePageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DataSourceWizard\UI\ExtractCreationProgressForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DataSourceWizard\UI\ExtractParametersPageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DataSourceWizard\UI\StoreExtractFilePageView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\BubbleColorOptionsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\CalculationForm\CustomCalculationOptionsGroup.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\CalculationForm\CustomizeCalculationForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\CalculationForm\DifferenceOptionsGroup.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\CalculationForm\MovingCalculationOptionsGroup.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\CalculationForm\NoneCalculationOptionsGroup.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\CalculationForm\PercentOfTotalOptionsGroup.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\CalculationForm\RankOptionsGroup.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\CalculationForm\RunningTotalOptionsGroup.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\CalculationForm\SpecificWindowDefinitionForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\CardDashboardItem\CardOptionsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\ChartDashboardItem\ChartSeriesOptionsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\ChoroplethMapOptionsForm\ChoroplethMapOptionsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\DeltaOptionsControl\DeltaOptionsControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\GaugeOptionsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\GridDashboardItem\GridDeltaColumnControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\GridDashboardItem\GridDimensionColumnControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\GridDashboardItem\GridHyperlinkColumnControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\GridDashboardItem\GridMeasureColumnControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\GridDashboardItem\GridOptionsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\GridDashboardItem\GridSparklineColumnControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\GridDashboardItem\ValueBarControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\ChoroplethMapOptionsForm\DeltaMapOptionsControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\ChoroplethMapOptionsForm\ValueMapOptionsControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\ImageOptionsForm\ImageOptionsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\MapAttributeForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\MapAttributePreviewForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\NumericFormatForm\FormatForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\NumericFormatForm\NumericFormatForm.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\RangeFilterDashboardItem\Controls\CustomDateTimePeriodControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\RangeFilterDashboardItem\Controls\DateTimePeriodLimitControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\RangeFilterDashboardItem\Controls\RelativeDateTimePeriodControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\RangeFilterDashboardItem\DateTimePeriodForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\RangeFilterDashboardItem\EditDateTimePeriodsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\RangeFilterSeriesTypeForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\SparklineOptionsControl\SparklineOptionsControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\TopNValuesForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Filtering\DashboardFilterForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Filtering\FilterCriteriaEditorControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Filtering\FilterForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Filtering\OlapFilterForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\ChartDashboardItem\AxisXSettingsControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\ChartDashboardItem\AxisXSettingsForm.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\ChartDashboardItem\AxisYSettingsControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\ChartDashboardItem\AxisYSettingsForm.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\ChartDashboardItem\ScatterChartPointLabelOptionsForm.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\ColorSchemeEditor\NewColorRecordDialog.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\ColorSchemeEditor\NewColorTableDialog.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\ConditionalFormatting\Controls\FormatRuleCustomStyleForm.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\ConditionalFormatting\FormatRuleControlManager.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Forms\ConditionalFormatting\FormatRuleFormBase.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\CurrencyCultureControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\DashboardCurrencyCultureForm.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\DashboardForm.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\DashboardOkCancelForm.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\DashboardRenameForm.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\DashboardTitleForm.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\EditNamesForm.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\ColorSchemeEditor\EditColorSchemeForm.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Export\OptionsForm.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Export\OptionsForm.Designer.cs">
-      <DependentUpon>OptionsForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\GridColumnWidthForm.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\MapDashboardItem\ChoroplethMapTitleForm.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\MapDashboardItem\MapTitleForm.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Parameters\ParameterStringArrayEditorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Parameters\ParameterValueForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\RangeFilterDashboardItem\CustomDateTimePeriodForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\TabContainerDashboardItem\ReorderTabsForm.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\TextBoxDashboardItem\TextEditForm.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DragArea\Forms\RenameDataItemForm.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="DashboardDesigner\DashboardDesigner.ar.resx">
       <DependentUpon>DashboardDesigner.cs</DependentUpon>
@@ -10698,5 +10426,1235 @@
     <EmbeddedResource Include="LocalizationRes.uz-Cyrl-UZ.resx" />
     <EmbeddedResource Include="LocalizationRes.uz-Latn-UZ.resx" />
     <EmbeddedResource Include="LocalizationRes.ky.resx" />
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\FormatForm.de.resx">
+      <DependentUpon>FormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ConfigureXmlSchemaPageView.es.resx">
+      <DependentUpon>ConfigureXmlSchemaPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\EditExtractDataSourcePageView.es.resx">
+      <DependentUpon>EditExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\FormatForm.es.resx">
+      <DependentUpon>FormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ConfigureXmlSchemaPageView.fr.resx">
+      <DependentUpon>ConfigureXmlSchemaPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\FormatForm.fr.resx">
+      <DependentUpon>FormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ConfigureXmlSchemaPageView.it.resx">
+      <DependentUpon>ConfigureXmlSchemaPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\FormatForm.it.resx">
+      <DependentUpon>FormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ConfigureXmlSchemaPageView.ko.resx">
+      <DependentUpon>ConfigureXmlSchemaPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\EditExtractDataSourcePageView.ko.resx">
+      <DependentUpon>EditExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\CustomCalculationOptionsGroup.ko.resx">
+      <DependentUpon>CustomCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\DifferenceOptionsGroup.ko.resx">
+      <DependentUpon>DifferenceOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\MovingCalculationOptionsGroup.ko.resx">
+      <DependentUpon>MovingCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\NoneCalculationOptionsGroup.ko.resx">
+      <DependentUpon>NoneCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\PercentOfTotalOptionsGroup.ko.resx">
+      <DependentUpon>PercentOfTotalOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\RankOptionsGroup.ko.resx">
+      <DependentUpon>RankOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\RunningTotalOptionsGroup.ko.resx">
+      <DependentUpon>RunningTotalOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridHyperlinkColumnControl.ko.resx">
+      <DependentUpon>GridHyperlinkColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\FormatForm.ko.resx">
+      <DependentUpon>FormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RangeFilterDashboardItem\Controls\CustomDateTimePeriodControl.ko.resx">
+      <DependentUpon>CustomDateTimePeriodControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parameters\ParameterStringArrayEditorForm.ko.resx">
+      <DependentUpon>ParameterStringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\FormatForm.nl.resx">
+      <DependentUpon>FormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ConfigureXmlSchemaPageView.pl.resx">
+      <DependentUpon>ConfigureXmlSchemaPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\EditExtractDataSourcePageView.pl.resx">
+      <DependentUpon>EditExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\FormatForm.pl.resx">
+      <DependentUpon>FormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ConfigureXmlSchemaPageView.pt.resx">
+      <DependentUpon>ConfigureXmlSchemaPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\FormatForm.pt.resx">
+      <DependentUpon>FormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parameters\ParameterStringArrayEditorForm.pt.resx">
+      <DependentUpon>ParameterStringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ConfigureXmlSchemaPageView.tr.resx">
+      <DependentUpon>ConfigureXmlSchemaPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\EditExtractDataSourcePageView.tr.resx">
+      <DependentUpon>EditExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\FormatForm.tr.resx">
+      <DependentUpon>FormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ConfigureXmlSchemaPageView.zh-CN.resx">
+      <DependentUpon>ConfigureXmlSchemaPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\CreateExtractDataSourcePageView.zh-CN.resx">
+      <DependentUpon>CreateExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\EditExtractDataSourcePageView.zh-CN.resx">
+      <DependentUpon>EditExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\CustomCalculationOptionsGroup.zh-CN.resx">
+      <DependentUpon>CustomCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\DifferenceOptionsGroup.zh-CN.resx">
+      <DependentUpon>DifferenceOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\MovingCalculationOptionsGroup.zh-CN.resx">
+      <DependentUpon>MovingCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\NoneCalculationOptionsGroup.zh-CN.resx">
+      <DependentUpon>NoneCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\PercentOfTotalOptionsGroup.zh-CN.resx">
+      <DependentUpon>PercentOfTotalOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\RankOptionsGroup.zh-CN.resx">
+      <DependentUpon>RankOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\RunningTotalOptionsGroup.zh-CN.resx">
+      <DependentUpon>RunningTotalOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridHyperlinkColumnControl.zh-CN.resx">
+      <DependentUpon>GridHyperlinkColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\FormatForm.zh-CN.resx">
+      <DependentUpon>FormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RangeFilterDashboardItem\Controls\CustomDateTimePeriodControl.zh-CN.resx">
+      <DependentUpon>CustomDateTimePeriodControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\Native\OlapConnectionParametersControl.he.resx">
+      <DependentUpon>OlapConnectionParametersControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ConfigureXmlSchemaPageView.he.resx">
+      <DependentUpon>ConfigureXmlSchemaPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\CreateExtractDataSourcePageView.he.resx">
+      <DependentUpon>CreateExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\EditExtractDataSourcePageView.he.resx">
+      <DependentUpon>EditExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\CustomCalculationOptionsGroup.he.resx">
+      <DependentUpon>CustomCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\DifferenceOptionsGroup.he.resx">
+      <DependentUpon>DifferenceOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\MovingCalculationOptionsGroup.he.resx">
+      <DependentUpon>MovingCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\NoneCalculationOptionsGroup.he.resx">
+      <DependentUpon>NoneCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\PercentOfTotalOptionsGroup.he.resx">
+      <DependentUpon>PercentOfTotalOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\RankOptionsGroup.he.resx">
+      <DependentUpon>RankOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\RunningTotalOptionsGroup.he.resx">
+      <DependentUpon>RunningTotalOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\ChoroplethMapOptionsForm\DeltaMapOptionsControl.he.resx">
+      <DependentUpon>DeltaMapOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridHyperlinkColumnControl.he.resx">
+      <DependentUpon>GridHyperlinkColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridMeasureColumnControl.he.resx">
+      <DependentUpon>GridMeasureColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridSparklineColumnControl.he.resx">
+      <DependentUpon>GridSparklineColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\FormatForm.he.resx">
+      <DependentUpon>FormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RangeFilterDashboardItem\Controls\CustomDateTimePeriodControl.he.resx">
+      <DependentUpon>CustomDateTimePeriodControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\SparklineOptionsControl\SparklineOptionsControl.he.resx">
+      <DependentUpon>SparklineOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parameters\ParameterStringArrayEditorForm.he.resx">
+      <DependentUpon>ParameterStringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\CreateExtractDataSourcePageView.pt-BR.resx">
+      <DependentUpon>CreateExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\EditExtractDataSourcePageView.pt-BR.resx">
+      <DependentUpon>EditExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\FormatForm.pt-BR.resx">
+      <DependentUpon>FormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ConfigureXmlSchemaPageView.ar.resx">
+      <DependentUpon>ConfigureXmlSchemaPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\FormatForm.ar.resx">
+      <DependentUpon>FormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ConfigureXmlSchemaPageView.ca.resx">
+      <DependentUpon>ConfigureXmlSchemaPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\FormatForm.ca.resx">
+      <DependentUpon>FormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parameters\ParameterStringArrayEditorForm.ca.resx">
+      <DependentUpon>ParameterStringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\Native\OlapConnectionParametersControl.de-CH.resx">
+      <DependentUpon>OlapConnectionParametersControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ConfigureXmlSchemaPageView.de-CH.resx">
+      <DependentUpon>ConfigureXmlSchemaPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\CreateExtractDataSourcePageView.de-CH.resx">
+      <DependentUpon>CreateExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\EditExtractDataSourcePageView.de-CH.resx">
+      <DependentUpon>EditExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\CustomCalculationOptionsGroup.de-CH.resx">
+      <DependentUpon>CustomCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\DifferenceOptionsGroup.de-CH.resx">
+      <DependentUpon>DifferenceOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\MovingCalculationOptionsGroup.de-CH.resx">
+      <DependentUpon>MovingCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\NoneCalculationOptionsGroup.de-CH.resx">
+      <DependentUpon>NoneCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\PercentOfTotalOptionsGroup.de-CH.resx">
+      <DependentUpon>PercentOfTotalOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\RankOptionsGroup.de-CH.resx">
+      <DependentUpon>RankOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\RunningTotalOptionsGroup.de-CH.resx">
+      <DependentUpon>RunningTotalOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\ChoroplethMapOptionsForm\DeltaMapOptionsControl.de-CH.resx">
+      <DependentUpon>DeltaMapOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridHyperlinkColumnControl.de-CH.resx">
+      <DependentUpon>GridHyperlinkColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridMeasureColumnControl.de-CH.resx">
+      <DependentUpon>GridMeasureColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridSparklineColumnControl.de-CH.resx">
+      <DependentUpon>GridSparklineColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\FormatForm.de-CH.resx">
+      <DependentUpon>FormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RangeFilterDashboardItem\Controls\CustomDateTimePeriodControl.de-CH.resx">
+      <DependentUpon>CustomDateTimePeriodControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\SparklineOptionsControl\SparklineOptionsControl.de-CH.resx">
+      <DependentUpon>SparklineOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parameters\ParameterStringArrayEditorForm.de-CH.resx">
+      <DependentUpon>ParameterStringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ConfigureXmlSchemaPageView.zh-Hans.resx">
+      <DependentUpon>ConfigureXmlSchemaPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\EditExtractDataSourcePageView.zh-Hans.resx">
+      <DependentUpon>EditExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\CustomCalculationOptionsGroup.zh-Hans.resx">
+      <DependentUpon>CustomCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\DifferenceOptionsGroup.zh-Hans.resx">
+      <DependentUpon>DifferenceOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\MovingCalculationOptionsGroup.zh-Hans.resx">
+      <DependentUpon>MovingCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\NoneCalculationOptionsGroup.zh-Hans.resx">
+      <DependentUpon>NoneCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\PercentOfTotalOptionsGroup.zh-Hans.resx">
+      <DependentUpon>PercentOfTotalOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridHyperlinkColumnControl.zh-Hans.resx">
+      <DependentUpon>GridHyperlinkColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\FormatForm.zh-Hans.resx">
+      <DependentUpon>FormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ConfigureXmlSchemaPageView.cs.resx">
+      <DependentUpon>ConfigureXmlSchemaPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\EditExtractDataSourcePageView.cs.resx">
+      <DependentUpon>EditExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\FormatForm.cs.resx">
+      <DependentUpon>FormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parameters\ParameterStringArrayEditorForm.cs.resx">
+      <DependentUpon>ParameterStringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardRecentItems\RecentDashboardsControl.hi.resx">
+      <DependentUpon>RecentDashboardsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceBrowser\DataFieldsBrowser\DataFieldsBrowser.hi.resx">
+      <DependentUpon>DataFieldsBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceBrowser\DataSourceSelector\DataSourceSelector.hi.resx">
+      <DependentUpon>DataSourceSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\Native\DataSourceWizardErrorForm.hi.resx">
+      <DependentUpon>DataSourceWizardErrorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\Native\OlapConnectionParametersControl.hi.resx">
+      <DependentUpon>OlapConnectionParametersControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ConfigureExtractDataSourcePageView.hi.resx">
+      <DependentUpon>ConfigureExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ConfigureXmlSchemaPageView.hi.resx">
+      <DependentUpon>ConfigureXmlSchemaPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\CreateExtractDataSourcePageView.hi.resx">
+      <DependentUpon>CreateExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\EditExtractDataSourcePageView.hi.resx">
+      <DependentUpon>EditExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ExtractParametersPageView.hi.resx">
+      <DependentUpon>ExtractParametersPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\CustomCalculationOptionsGroup.hi.resx">
+      <DependentUpon>CustomCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\DifferenceOptionsGroup.hi.resx">
+      <DependentUpon>DifferenceOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\MovingCalculationOptionsGroup.hi.resx">
+      <DependentUpon>MovingCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\NoneCalculationOptionsGroup.hi.resx">
+      <DependentUpon>NoneCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\PercentOfTotalOptionsGroup.hi.resx">
+      <DependentUpon>PercentOfTotalOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\RankOptionsGroup.hi.resx">
+      <DependentUpon>RankOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\RunningTotalOptionsGroup.hi.resx">
+      <DependentUpon>RunningTotalOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\ChoroplethMapOptionsForm\DeltaMapOptionsControl.hi.resx">
+      <DependentUpon>DeltaMapOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\ChoroplethMapOptionsForm\ValueMapOptionsControl.hi.resx">
+      <DependentUpon>ValueMapOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\DeltaOptionsControl\DeltaOptionsControl.hi.resx">
+      <DependentUpon>DeltaOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridDeltaColumnControl.hi.resx">
+      <DependentUpon>GridDeltaColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridDimensionColumnControl.hi.resx">
+      <DependentUpon>GridDimensionColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridHyperlinkColumnControl.hi.resx">
+      <DependentUpon>GridHyperlinkColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridMeasureColumnControl.hi.resx">
+      <DependentUpon>GridMeasureColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridSparklineColumnControl.hi.resx">
+      <DependentUpon>GridSparklineColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\ValueBarControl.hi.resx">
+      <DependentUpon>ValueBarControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\MapAttributePreviewForm.hi.resx">
+      <DependentUpon>MapAttributePreviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\FormatForm.hi.resx">
+      <DependentUpon>FormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RangeFilterDashboardItem\Controls\CustomDateTimePeriodControl.hi.resx">
+      <DependentUpon>CustomDateTimePeriodControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RangeFilterDashboardItem\Controls\DateTimePeriodLimitControl.hi.resx">
+      <DependentUpon>DateTimePeriodLimitControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RangeFilterDashboardItem\Controls\RelativeDateTimePeriodControl.hi.resx">
+      <DependentUpon>RelativeDateTimePeriodControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RangeFilterDashboardItem\EditDateTimePeriodsForm.hi.resx">
+      <DependentUpon>EditDateTimePeriodsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\SparklineOptionsControl\SparklineOptionsControl.hi.resx">
+      <DependentUpon>SparklineOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChartDashboardItem\AxisXSettingsControl.hi.resx">
+      <DependentUpon>AxisXSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChartDashboardItem\AxisYSettingsControl.hi.resx">
+      <DependentUpon>AxisYSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormatting\FormatRuleControlManager.hi.resx">
+      <DependentUpon>FormatRuleControlManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CurrencyCultureControl.hi.resx">
+      <DependentUpon>CurrencyCultureControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Export\OptionsForm.hi.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parameters\ParameterStringArrayEditorForm.hi.resx">
+      <DependentUpon>ParameterStringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parameters\ParameterValueForm.hi.resx">
+      <DependentUpon>ParameterValueForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\Native\OlapConnectionParametersControl.ta.resx">
+      <DependentUpon>OlapConnectionParametersControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ConfigureXmlSchemaPageView.ta.resx">
+      <DependentUpon>ConfigureXmlSchemaPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\CreateExtractDataSourcePageView.ta.resx">
+      <DependentUpon>CreateExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\EditExtractDataSourcePageView.ta.resx">
+      <DependentUpon>EditExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\CustomCalculationOptionsGroup.ta.resx">
+      <DependentUpon>CustomCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\DifferenceOptionsGroup.ta.resx">
+      <DependentUpon>DifferenceOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\MovingCalculationOptionsGroup.ta.resx">
+      <DependentUpon>MovingCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\NoneCalculationOptionsGroup.ta.resx">
+      <DependentUpon>NoneCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\PercentOfTotalOptionsGroup.ta.resx">
+      <DependentUpon>PercentOfTotalOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\RankOptionsGroup.ta.resx">
+      <DependentUpon>RankOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\RunningTotalOptionsGroup.ta.resx">
+      <DependentUpon>RunningTotalOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\ChoroplethMapOptionsForm\DeltaMapOptionsControl.ta.resx">
+      <DependentUpon>DeltaMapOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridHyperlinkColumnControl.ta.resx">
+      <DependentUpon>GridHyperlinkColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridMeasureColumnControl.ta.resx">
+      <DependentUpon>GridMeasureColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridSparklineColumnControl.ta.resx">
+      <DependentUpon>GridSparklineColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\FormatForm.ta.resx">
+      <DependentUpon>FormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RangeFilterDashboardItem\Controls\CustomDateTimePeriodControl.ta.resx">
+      <DependentUpon>CustomDateTimePeriodControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RangeFilterDashboardItem\Controls\RelativeDateTimePeriodControl.ta.resx">
+      <DependentUpon>RelativeDateTimePeriodControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\SparklineOptionsControl\SparklineOptionsControl.ta.resx">
+      <DependentUpon>SparklineOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChartDashboardItem\AxisXSettingsControl.ta.resx">
+      <DependentUpon>AxisXSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parameters\ParameterStringArrayEditorForm.ta.resx">
+      <DependentUpon>ParameterStringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ConfigureXmlSchemaPageView.sv.resx">
+      <DependentUpon>ConfigureXmlSchemaPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\EditExtractDataSourcePageView.sv.resx">
+      <DependentUpon>EditExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\FormatForm.sv.resx">
+      <DependentUpon>FormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardRecentItems\RecentDashboardsControl.es-MX.resx">
+      <DependentUpon>RecentDashboardsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceBrowser\DataFieldsBrowser\DataFieldsBrowser.es-MX.resx">
+      <DependentUpon>DataFieldsBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceBrowser\DataSourceSelector\DataSourceSelector.es-MX.resx">
+      <DependentUpon>DataSourceSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\Native\DataSourceWizardErrorForm.es-MX.resx">
+      <DependentUpon>DataSourceWizardErrorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\Native\OlapConnectionParametersControl.es-MX.resx">
+      <DependentUpon>OlapConnectionParametersControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ConfigureExtractDataSourcePageView.es-MX.resx">
+      <DependentUpon>ConfigureExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ConfigureXmlSchemaPageView.es-MX.resx">
+      <DependentUpon>ConfigureXmlSchemaPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\CreateExtractDataSourcePageView.es-MX.resx">
+      <DependentUpon>CreateExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\EditExtractDataSourcePageView.es-MX.resx">
+      <DependentUpon>EditExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ExtractCreationProgressForm.es-MX.resx">
+      <DependentUpon>ExtractCreationProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ExtractParametersPageView.es-MX.resx">
+      <DependentUpon>ExtractParametersPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\BubbleColorOptionsForm.es-MX.resx">
+      <DependentUpon>BubbleColorOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\CustomCalculationOptionsGroup.es-MX.resx">
+      <DependentUpon>CustomCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\CustomizeCalculationForm.es-MX.resx">
+      <DependentUpon>CustomizeCalculationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\DifferenceOptionsGroup.es-MX.resx">
+      <DependentUpon>DifferenceOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\MovingCalculationOptionsGroup.es-MX.resx">
+      <DependentUpon>MovingCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\NoneCalculationOptionsGroup.es-MX.resx">
+      <DependentUpon>NoneCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\PercentOfTotalOptionsGroup.es-MX.resx">
+      <DependentUpon>PercentOfTotalOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\RankOptionsGroup.es-MX.resx">
+      <DependentUpon>RankOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\RunningTotalOptionsGroup.es-MX.resx">
+      <DependentUpon>RunningTotalOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\SpecificWindowDefinitionForm.es-MX.resx">
+      <DependentUpon>SpecificWindowDefinitionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CardDashboardItem\CardOptionsForm.es-MX.resx">
+      <DependentUpon>CardOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\ChartDashboardItem\ChartSeriesOptionsForm.es-MX.resx">
+      <DependentUpon>ChartSeriesOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\ChoroplethMapOptionsForm\ChoroplethMapOptionsForm.es-MX.resx">
+      <DependentUpon>ChoroplethMapOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\ChoroplethMapOptionsForm\DeltaMapOptionsControl.es-MX.resx">
+      <DependentUpon>DeltaMapOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\ChoroplethMapOptionsForm\ValueMapOptionsControl.es-MX.resx">
+      <DependentUpon>ValueMapOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\DeltaOptionsControl\DeltaOptionsControl.es-MX.resx">
+      <DependentUpon>DeltaOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GaugeOptionsForm.es-MX.resx">
+      <DependentUpon>GaugeOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridDeltaColumnControl.es-MX.resx">
+      <DependentUpon>GridDeltaColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridDimensionColumnControl.es-MX.resx">
+      <DependentUpon>GridDimensionColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridHyperlinkColumnControl.es-MX.resx">
+      <DependentUpon>GridHyperlinkColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridMeasureColumnControl.es-MX.resx">
+      <DependentUpon>GridMeasureColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridOptionsForm.es-MX.resx">
+      <DependentUpon>GridOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridSparklineColumnControl.es-MX.resx">
+      <DependentUpon>GridSparklineColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\ValueBarControl.es-MX.resx">
+      <DependentUpon>ValueBarControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\ImageOptionsForm\ImageOptionsForm.es-MX.resx">
+      <DependentUpon>ImageOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\MapAttributeForm.es-MX.resx">
+      <DependentUpon>MapAttributeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\MapAttributePreviewForm.es-MX.resx">
+      <DependentUpon>MapAttributePreviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\FormatForm.es-MX.resx">
+      <DependentUpon>FormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\NumericFormatForm.es-MX.resx">
+      <DependentUpon>NumericFormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RangeFilterDashboardItem\Controls\CustomDateTimePeriodControl.es-MX.resx">
+      <DependentUpon>CustomDateTimePeriodControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RangeFilterDashboardItem\Controls\DateTimePeriodLimitControl.es-MX.resx">
+      <DependentUpon>DateTimePeriodLimitControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RangeFilterDashboardItem\Controls\RelativeDateTimePeriodControl.es-MX.resx">
+      <DependentUpon>RelativeDateTimePeriodControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RangeFilterDashboardItem\DateTimePeriodForm.es-MX.resx">
+      <DependentUpon>DateTimePeriodForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RangeFilterDashboardItem\EditDateTimePeriodsForm.es-MX.resx">
+      <DependentUpon>EditDateTimePeriodsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RangeFilterSeriesTypeForm.es-MX.resx">
+      <DependentUpon>RangeFilterSeriesTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RenameDataItemForm.es-MX.resx">
+      <DependentUpon>RenameDataItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\SparklineOptionsControl\SparklineOptionsControl.es-MX.resx">
+      <DependentUpon>SparklineOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\TopNValuesForm.es-MX.resx">
+      <DependentUpon>TopNValuesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtering\FilterForm.es-MX.resx">
+      <DependentUpon>FilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtering\OlapFilterForm.es-MX.resx">
+      <DependentUpon>OlapFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChartDashboardItem\AxisXSettingsControl.es-MX.resx">
+      <DependentUpon>AxisXSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChartDashboardItem\AxisXSettingsForm.es-MX.resx">
+      <DependentUpon>AxisXSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChartDashboardItem\AxisYSettingsControl.es-MX.resx">
+      <DependentUpon>AxisYSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChartDashboardItem\AxisYSettingsForm.es-MX.resx">
+      <DependentUpon>AxisYSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChartDashboardItem\ScatterChartPointLabelOptionsForm.es-MX.resx">
+      <DependentUpon>ScatterChartPointLabelOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ColorSchemeEditor\EditColorSchemeForm.es-MX.resx">
+      <DependentUpon>EditColorSchemeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ColorSchemeEditor\NewColorRecordDialog.es-MX.resx">
+      <DependentUpon>NewColorRecordDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ColorSchemeEditor\NewColorTableDialog.es-MX.resx">
+      <DependentUpon>NewColorTableDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormatting\Controls\FormatRuleCustomStyleForm.es-MX.resx">
+      <DependentUpon>FormatRuleCustomStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormatting\FormatRuleControlManager.es-MX.resx">
+      <DependentUpon>FormatRuleControlManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormatting\FormatRuleFormBase.es-MX.resx">
+      <DependentUpon>FormatRuleFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CurrencyCultureControl.es-MX.resx">
+      <DependentUpon>CurrencyCultureControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DashboardCurrencyCultureForm.es-MX.resx">
+      <DependentUpon>DashboardCurrencyCultureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DashboardOkCancelForm.es-MX.resx">
+      <DependentUpon>DashboardOkCancelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DashboardRenameForm.es-MX.resx">
+      <DependentUpon>DashboardRenameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DashboardTitleForm.es-MX.resx">
+      <DependentUpon>DashboardTitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditNamesForm.es-MX.resx">
+      <DependentUpon>EditNamesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Export\OptionsForm.es-MX.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GridColumnWidthForm.es-MX.resx">
+      <DependentUpon>GridColumnWidthForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapDashboardItem\ChoroplethMapTitleForm.es-MX.resx">
+      <DependentUpon>ChoroplethMapTitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapDashboardItem\MapTitleForm.es-MX.resx">
+      <DependentUpon>MapTitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parameters\ParameterStringArrayEditorForm.es-MX.resx">
+      <DependentUpon>ParameterStringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parameters\ParameterValueForm.es-MX.resx">
+      <DependentUpon>ParameterValueForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RangeFilterDashboardItem\CustomDateTimePeriodForm.es-MX.resx">
+      <DependentUpon>CustomDateTimePeriodForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TabContainerDashboardItem\ReorderTabsForm.es-MX.resx">
+      <DependentUpon>ReorderTabsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TextBoxDashboardItem\TextEditForm.es-MX.resx">
+      <DependentUpon>TextEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardRecentItems\RecentDashboardsControl.af.resx">
+      <DependentUpon>RecentDashboardsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceBrowser\DataFieldsBrowser\DataFieldsBrowser.af.resx">
+      <DependentUpon>DataFieldsBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceBrowser\DataSourceSelector\DataSourceSelector.af.resx">
+      <DependentUpon>DataSourceSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\Native\DataSourceWizardErrorForm.af.resx">
+      <DependentUpon>DataSourceWizardErrorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\Native\OlapConnectionParametersControl.af.resx">
+      <DependentUpon>OlapConnectionParametersControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ConfigureExtractDataSourcePageView.af.resx">
+      <DependentUpon>ConfigureExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ConfigureXmlSchemaPageView.af.resx">
+      <DependentUpon>ConfigureXmlSchemaPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\CreateExtractDataSourcePageView.af.resx">
+      <DependentUpon>CreateExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\EditExtractDataSourcePageView.af.resx">
+      <DependentUpon>EditExtractDataSourcePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ExtractCreationProgressForm.af.resx">
+      <DependentUpon>ExtractCreationProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSourceWizard\UI\ExtractParametersPageView.af.resx">
+      <DependentUpon>ExtractParametersPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\BubbleColorOptionsForm.af.resx">
+      <DependentUpon>BubbleColorOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\CustomCalculationOptionsGroup.af.resx">
+      <DependentUpon>CustomCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\CustomizeCalculationForm.af.resx">
+      <DependentUpon>CustomizeCalculationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\DifferenceOptionsGroup.af.resx">
+      <DependentUpon>DifferenceOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\MovingCalculationOptionsGroup.af.resx">
+      <DependentUpon>MovingCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\NoneCalculationOptionsGroup.af.resx">
+      <DependentUpon>NoneCalculationOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\PercentOfTotalOptionsGroup.af.resx">
+      <DependentUpon>PercentOfTotalOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\RankOptionsGroup.af.resx">
+      <DependentUpon>RankOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\RunningTotalOptionsGroup.af.resx">
+      <DependentUpon>RunningTotalOptionsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CalculationForm\SpecificWindowDefinitionForm.af.resx">
+      <DependentUpon>SpecificWindowDefinitionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\CardDashboardItem\CardOptionsForm.af.resx">
+      <DependentUpon>CardOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\ChartDashboardItem\ChartSeriesOptionsForm.af.resx">
+      <DependentUpon>ChartSeriesOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\ChoroplethMapOptionsForm\ChoroplethMapOptionsForm.af.resx">
+      <DependentUpon>ChoroplethMapOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\ChoroplethMapOptionsForm\DeltaMapOptionsControl.af.resx">
+      <DependentUpon>DeltaMapOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\ChoroplethMapOptionsForm\ValueMapOptionsControl.af.resx">
+      <DependentUpon>ValueMapOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\DeltaOptionsControl\DeltaOptionsControl.af.resx">
+      <DependentUpon>DeltaOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GaugeOptionsForm.af.resx">
+      <DependentUpon>GaugeOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridDeltaColumnControl.af.resx">
+      <DependentUpon>GridDeltaColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridDimensionColumnControl.af.resx">
+      <DependentUpon>GridDimensionColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridHyperlinkColumnControl.af.resx">
+      <DependentUpon>GridHyperlinkColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridMeasureColumnControl.af.resx">
+      <DependentUpon>GridMeasureColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridOptionsForm.af.resx">
+      <DependentUpon>GridOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\GridSparklineColumnControl.af.resx">
+      <DependentUpon>GridSparklineColumnControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\GridDashboardItem\ValueBarControl.af.resx">
+      <DependentUpon>ValueBarControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\ImageOptionsForm\ImageOptionsForm.af.resx">
+      <DependentUpon>ImageOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\MapAttributeForm.af.resx">
+      <DependentUpon>MapAttributeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\MapAttributePreviewForm.af.resx">
+      <DependentUpon>MapAttributePreviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\FormatForm.af.resx">
+      <DependentUpon>FormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\NumericFormatForm\NumericFormatForm.af.resx">
+      <DependentUpon>NumericFormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RangeFilterDashboardItem\Controls\CustomDateTimePeriodControl.af.resx">
+      <DependentUpon>CustomDateTimePeriodControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RangeFilterDashboardItem\Controls\DateTimePeriodLimitControl.af.resx">
+      <DependentUpon>DateTimePeriodLimitControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RangeFilterDashboardItem\Controls\RelativeDateTimePeriodControl.af.resx">
+      <DependentUpon>RelativeDateTimePeriodControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RangeFilterDashboardItem\DateTimePeriodForm.af.resx">
+      <DependentUpon>DateTimePeriodForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RangeFilterDashboardItem\EditDateTimePeriodsForm.af.resx">
+      <DependentUpon>EditDateTimePeriodsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RangeFilterSeriesTypeForm.af.resx">
+      <DependentUpon>RangeFilterSeriesTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\RenameDataItemForm.af.resx">
+      <DependentUpon>RenameDataItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\SparklineOptionsControl\SparklineOptionsControl.af.resx">
+      <DependentUpon>SparklineOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragArea\Forms\TopNValuesForm.af.resx">
+      <DependentUpon>TopNValuesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtering\FilterForm.af.resx">
+      <DependentUpon>FilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filtering\OlapFilterForm.af.resx">
+      <DependentUpon>OlapFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChartDashboardItem\AxisXSettingsControl.af.resx">
+      <DependentUpon>AxisXSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChartDashboardItem\AxisXSettingsForm.af.resx">
+      <DependentUpon>AxisXSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChartDashboardItem\AxisYSettingsControl.af.resx">
+      <DependentUpon>AxisYSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChartDashboardItem\AxisYSettingsForm.af.resx">
+      <DependentUpon>AxisYSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChartDashboardItem\ScatterChartPointLabelOptionsForm.af.resx">
+      <DependentUpon>ScatterChartPointLabelOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ColorSchemeEditor\EditColorSchemeForm.af.resx">
+      <DependentUpon>EditColorSchemeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ColorSchemeEditor\NewColorRecordDialog.af.resx">
+      <DependentUpon>NewColorRecordDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ColorSchemeEditor\NewColorTableDialog.af.resx">
+      <DependentUpon>NewColorTableDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormatting\Controls\FormatRuleCustomStyleForm.af.resx">
+      <DependentUpon>FormatRuleCustomStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormatting\FormatRuleControlManager.af.resx">
+      <DependentUpon>FormatRuleControlManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionalFormatting\FormatRuleFormBase.af.resx">
+      <DependentUpon>FormatRuleFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CurrencyCultureControl.af.resx">
+      <DependentUpon>CurrencyCultureControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DashboardCurrencyCultureForm.af.resx">
+      <DependentUpon>DashboardCurrencyCultureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DashboardOkCancelForm.af.resx">
+      <DependentUpon>DashboardOkCancelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DashboardRenameForm.af.resx">
+      <DependentUpon>DashboardRenameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DashboardTitleForm.af.resx">
+      <DependentUpon>DashboardTitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditNamesForm.af.resx">
+      <DependentUpon>EditNamesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Export\OptionsForm.af.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GridColumnWidthForm.af.resx">
+      <DependentUpon>GridColumnWidthForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapDashboardItem\ChoroplethMapTitleForm.af.resx">
+      <DependentUpon>ChoroplethMapTitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapDashboardItem\MapTitleForm.af.resx">
+      <DependentUpon>MapTitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parameters\ParameterStringArrayEditorForm.af.resx">
+      <DependentUpon>ParameterStringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Parameters\ParameterValueForm.af.resx">
+      <DependentUpon>ParameterValueForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RangeFilterDashboardItem\CustomDateTimePeriodForm.af.resx">
+      <DependentUpon>CustomDateTimePeriodForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TabContainerDashboardItem\ReorderTabsForm.af.resx">
+      <DependentUpon>ReorderTabsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TextBoxDashboardItem\TextEditForm.af.resx">
+      <DependentUpon>TextEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="DashboardDesigner\DashboardDesigner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardRecentItems\RecentDashboardsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataSourceBrowser\DataFieldsBrowser\CheckedDataFieldsBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataSourceBrowser\DataFieldsBrowser\DataFieldsBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataSourceBrowser\DataSourceBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataSourceBrowser\DataSourceSelector\DataSourceSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataSourceWizard\Native\OlapConnectionParametersControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataSourceWizard\UI\ChooseExtractFieldsPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataSourceWizard\UI\ConfigureExtractDataSourcePageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataSourceWizard\UI\ConfigureOlapParametersPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataSourceWizard\UI\ConfigureXmlSchemaPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataSourceWizard\Native\DataSourceWizardErrorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSourceWizard\UI\CreateExtractDataSourcePageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataSourceWizard\UI\EditExtractDataSourcePageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataSourceWizard\UI\ExtractCreationProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSourceWizard\UI\ExtractParametersPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataSourceWizard\UI\StoreExtractFilePageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\BubbleColorOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\CalculationForm\CustomCalculationOptionsGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\CalculationForm\CustomizeCalculationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\CalculationForm\DifferenceOptionsGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\CalculationForm\MovingCalculationOptionsGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\CalculationForm\NoneCalculationOptionsGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\CalculationForm\PercentOfTotalOptionsGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\CalculationForm\RankOptionsGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\CalculationForm\RunningTotalOptionsGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\CalculationForm\SpecificWindowDefinitionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\CardDashboardItem\CardOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\ChartDashboardItem\ChartSeriesOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\ChoroplethMapOptionsForm\ChoroplethMapOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\DeltaOptionsControl\DeltaOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\GaugeOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\GridDashboardItem\GridDeltaColumnControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\GridDashboardItem\GridDimensionColumnControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\GridDashboardItem\GridHyperlinkColumnControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\GridDashboardItem\GridMeasureColumnControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\GridDashboardItem\GridOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\GridDashboardItem\GridSparklineColumnControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\GridDashboardItem\ValueBarControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\ChoroplethMapOptionsForm\DeltaMapOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\ChoroplethMapOptionsForm\ValueMapOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\ImageOptionsForm\ImageOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\MapAttributeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\MapAttributePreviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\NumericFormatForm\FormatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\NumericFormatForm\NumericFormatForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\RangeFilterDashboardItem\Controls\CustomDateTimePeriodControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\RangeFilterDashboardItem\Controls\DateTimePeriodLimitControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\RangeFilterDashboardItem\Controls\RelativeDateTimePeriodControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\RangeFilterDashboardItem\DateTimePeriodForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\RangeFilterDashboardItem\EditDateTimePeriodsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\RangeFilterSeriesTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\SparklineOptionsControl\SparklineOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\TopNValuesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtering\DashboardFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtering\FilterCriteriaEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Filtering\FilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filtering\OlapFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChartDashboardItem\AxisXSettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ChartDashboardItem\AxisXSettingsForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ChartDashboardItem\AxisYSettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ChartDashboardItem\AxisYSettingsForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ChartDashboardItem\ScatterChartPointLabelOptionsForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ColorSchemeEditor\NewColorRecordDialog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ColorSchemeEditor\NewColorTableDialog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ConditionalFormatting\Controls\FormatRuleCustomStyleForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ConditionalFormatting\FormatRuleControlManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ConditionalFormatting\FormatRuleFormBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CurrencyCultureControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DashboardCurrencyCultureForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DashboardForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DashboardOkCancelForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DashboardRenameForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DashboardTitleForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\EditNamesForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ColorSchemeEditor\EditColorSchemeForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Export\OptionsForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Export\OptionsForm.Designer.cs">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GridColumnWidthForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MapDashboardItem\ChoroplethMapTitleForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\MapDashboardItem\MapTitleForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Parameters\ParameterStringArrayEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Parameters\ParameterValueForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RangeFilterDashboardItem\CustomDateTimePeriodForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TabContainerDashboardItem\ReorderTabsForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\TextBoxDashboardItem\TextEditForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragArea\Forms\RenameDataItemForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,236 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net472;net10.0-windows</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <AssemblyName>DevExpress.AIIntegration.WinForms.Printing.v26.2</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>true</DelaySign>
+    <AssemblyOriginatorKeyFile>..\DevExpress.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <RootNamespace>DevExpress.AIIntegration.WinForms</RootNamespace>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\$(TargetFramework)\</IntermediateOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net472'">
+    <OutputPath>..\DevExpress.Dll\Framework\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net10.0-windows'">
+    <OutputPath>..\DevExpress.Dll\NETCore\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="DocumentAIOperationForm.de.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.af.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.ar.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.az.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.bg.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.bs.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.ca.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.cs.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.cy.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.da.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.el.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.en-GB.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.es.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.es-MX.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.et.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.fa.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.fi.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.fr.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.he.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.hi.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.hr.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.hu.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.hy.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.id.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.is.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.it.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.ja.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.ka.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.kk.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.ko.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.ky.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.lt.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.lv.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.mk.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.mn-MN.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.ms.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.nb-NO.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.nl.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.no.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.pl.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.pt.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.ro.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.ru.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.sk.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.sl.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.sq.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.sr-Latn-ME.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.sv.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.ta.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.th.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.tr.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.uk.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.ur.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.uz-Cyrl-UZ.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.uz-Latn-UZ.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.vi.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.de-CH.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.pt-BR.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.sr-Cyrl-RS.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.sr-Latn-BA.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.sr-Latn-RS.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.zh-CN.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.zh-Hans.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.zh-Hant.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAIOperationForm.zh-TW.resx">
+      <DependentUpon>DocumentAIOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="DocumentAIOperationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
+  <!-- 
 		Microsoft ResX Schema
 
 		Version 1.3
@@ -58,44 +58,1163 @@
 			: using a System.ComponentModel.TypeConverter
 			: and then encoded with base64 encoding.
 	-->
-	
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>1.3</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Security_DeletingAnObjectWasProhibitedByTheRules" xml:space="preserve">
+    <value>מחיקת האובייקט '{0}' אסורה לפי כללי האבטחה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_SavingAnObjectWasProhibitedByTheRulesOfVal" xml:space="preserve">
+    <value>שמירת האובייקט '{0}' אסורה לפי כללי האבטחה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_SavingAnObjectWasProhibitedByTheRulesWProp" xml:space="preserve">
+    <value>שמירת המאפיין '{0}.{1}' אסורה לפי כללי האבטחה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_MostProbablyYouAreTryingToInitiateAnObjectEx" xml:space="preserve">
+    <value> סביר מאוד שאתה מנסה להתחיל פעולת טעינת אובייקטים בזמן שפעולת טעינת האובייקטים הקודמת טרם הושלמה. דחה את הפעולה עד להפעלת האירוע Session.ObjectsLoaded או IXPObject.OnLoaded (כאשר הערך של Session.IsObjectsLoading הוא true). סיבה נוספת לחריגה זו היא שאתה מנסה לעבוד בו-זמנית עם אותה הפעלה מהליכי משנה שונים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_MostProbablyYouAreTryingToInitiateAnObject" xml:space="preserve">
+    <value> סביר מאוד שאתה מנסה להתחיל פעולת טעינת אובייקטים בזמן שפעולת שמירת האובייקטים הקודמת טרם הושלמה. דחה את הפעולה עד להפעלת האירוע Session.ObjectsSaved או IXPObject.OnSaved (כאשר הערך של Session.IsObjectsSaving הוא true).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0OperatorAfterSkipOrTakeIsNotSupported" xml:space="preserve">
+    <value>אין תמיכה ב-{0} לאחר Skip או Take.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SpecifiedJoinKeySelectorsNotCompatibleX0X1" xml:space="preserve">
+    <value>בוררי מפתחות הצירוף '{0}' ו-'{1}' אינם תואמים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_NotClassMember" xml:space="preserve">
+    <value>'{0}' אינו חבר במחלקה '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0OverGroupingIsNotSupported" xml:space="preserve">
+    <value>אין תמיכה ב-{0} על קיבוץ.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0WithSkipOrTakeOrGroupingIsNotSupported" xml:space="preserve">
+    <value>אין תמיכה ב-{0} עם Skip או Take או קיבוץ.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_X0WithSoManyParametersIsNotSupported" xml:space="preserve">
+    <value>אין תמיכה ב-{0} עם פרמטרים רבים כל כך.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_NotCollectionProperty" xml:space="preserve">
+    <value>{0}.{1} אינו מאפיין אוסף. יש לסמן אותו באמצעות AssociationAttribute, ועליו להיות מסוג הנגזר מ-XPBaseCollection. כנראה נעשה שימוש ב-GetCollection במצב שבו יש להשתמש ב-GetList.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NotCollection" xml:space="preserve">
+    <value>'{0}.{1}' אינו אוסף.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XpoServerMode_NonPersistentIsNotSupported" xml:space="preserve">
+    <value>אוסף במצב שרת אינו יכול להשתמש במחלקה שאינה נשמרת '{0}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_ReferencePropertyViaCollectionAccessor" xml:space="preserve">
+    <value>ניסיון להגדיר מאפיין הפניה באמצעות רכיב הגישה לאוסף.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionXPQueryX0" xml:space="preserve">
+    <value>נדרש XPQuery כארגומנט הראשון של ביטוי הקריאה: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_PropertyTypeMismatch" xml:space="preserve">
+    <value>הקשר '{0}' בין המחלקות '{1}' ו־'{3}' אינו תקין. המחלקה '{1}' מכילה את המאפיין '{2}', המפנה למחלקה '{3}'. המחלקה '{3}' מכילה את המאפיין '{4}', המפנה באופן שגוי למחלקה '{5}'; הוא אמור להפנות למחלקה '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_MoreThenOneAssociatedMemberFound" xml:space="preserve">
+    <value>הקשר '{0}' דו־משמעי בין האיברים '{2}' ו־'{3}' של המחלקה '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_PropertyTypeMismatch" xml:space="preserve">
+    <value>הקשר '{1}' בין המחלקות '{3}' ו-'{4}' אינו תקין. המחלקה '{3}' מכילה את המאפיין '{2}' שמפנה למחלקה '{4}'. המחלקה '{4}' מכילה את המאפיין '{0}' שמפנה באופן שגוי למחלקה '{5}', אף שעליו להפנות למחלקה '{3}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_AssociationCollectionWithDisabledLoading" xml:space="preserve">
+    <value>מצב אוסף השיוכים אינו תקין: הערך של LoadingEnabled צריך להיות true.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationListExpected" xml:space="preserve">
+    <value>נדרשת רשימת קשר או אוסף: '{0}.{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="View_AtLeastOneFetchPropertyShouldBeDefined" xml:space="preserve">
+    <value>יש להגדיר לפחות מאפיין אחד לשליפה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_AddRelation" xml:space="preserve">
+    <value>לא ניתן להוסיף קשר גומלין כפול.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CannotAddObjectToObjectCache" xml:space="preserve">
+    <value>לא ניתן להוסיף את האובייקט '{0}' עם המפתח = '{1}' למפת זהויות האובייקטים, משום שאובייקט אחר '{2}' עם אותו מפתח כבר נוסף אליה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_NotLoadingMode" xml:space="preserve">
+    <value>לא ניתן להקצות ערך לעמודת מספור אוטומטי '{0}' כשלא נמצאים במצב טעינה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_InsertingDataIntoAutoincrementColumn" xml:space="preserve">
+    <value>לא ניתן להקצות ערך לעמודת מספור אוטומטי '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XpoDefault_CannotAssignPropertyWhileAnotherIsNotNull" xml:space="preserve">
+    <value>לא ניתן להגדיר את XpoDefault.{0} כאשר XpoDefault.{1} מוגדר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_CannotPrepareQueryPlanX0" xml:space="preserve">
+    <value>לא ניתן לבנות תוכנית שאילתות משום שהקריטריונים '{0}' אינם תקינים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_CannotPrepareQueryPlan" xml:space="preserve">
+    <value>לא ניתן לבנות תוכנית שאילתות.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CannotChangePropertyWhenSessionIsConnected" xml:space="preserve">
+    <value>לא ניתן לשנות את '{0}' כאשר ההפעלה מחוברת.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadClassInfo_Dictionary" xml:space="preserve">
+    <value>לא ניתן לשנות את ObjectClassInfo. המילון שלו אינו זהה ל-Dictionary הנוכחי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadClassInfo_DataSourceDictionary" xml:space="preserve">
+    <value>לא ניתן לשנות את ObjectClassInfo. המילון שלו אינו זהה למילון של DataSource.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadClassInfo_DataSource" xml:space="preserve">
+    <value>לא ניתן לשנות את ObjectClassInfo. ל-DataSource יש ClassInfo משלו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPBindingSource_BadObjectType_DataSource" xml:space="preserve">
+    <value>לא ניתן לשנות את ObjectType. ל-DataSource יש ClassInfo משלו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_CannotAssignProperty" xml:space="preserve">
+    <value>לא ניתן לשנות את המאפיין '{0}' כאשר {1} אינו במצב עיצוב או אתחול.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TranSequenceCommit" xml:space="preserve">
+    <value>לא ניתן לבצע קיבוע משום שאין טרנזקציה פעילה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DroneDataStore_CommitNotSupported" xml:space="preserve">
+    <value>לא ניתן לשמור את השינויים מכיוון שהחיבור למסד הנתונים אינו מוגדר (כרגע נעשה שימוש בספק מסד נתונים מדומה). התחבר למאגר הנתונים כמתואר בכתובת https://docs.devexpress.com/XPO/2123/connect-to-a-data-store</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CannotConvertWindowsTimeZoneIdToIanaTimeZoneId" xml:space="preserve">
+    <value>לא ניתן להמיר מזהה אזור זמן של Windows למזהה אזור זמן של IANA. הגדר את הנציג ConnectionProviderSql.MapWindowsToIanaTimeZoneId כדי לספק את לוגיקת ההמרה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SqlConnectionProvider_CannotCreateAColumnForTheX0FieldWithTheX1D" xml:space="preserve">
+    <value>לא ניתן ליצור עמודה עבור השדה '{0}' עם ערך ברירת המחדל '{1}'. אנא ציין ערך ברירת מחדל אחר עבור שדה זה</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProvider_UnableToFillRefType" xml:space="preserve">
+    <value>לא ניתן להבטיח את סכימת מסד הנתונים עבור האיבר '{1}' מהסוג '{0}'. שגיאה: {2}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_CannotFindParentRelationForNode" xml:space="preserve">
+    <value>לא ניתן למצוא קשר אב עבור הצומת '{0}'. שאילתה לא תקינה או שגיאה פנימית ב-XPO.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_PathNotFound" xml:space="preserve">
+    <value>החיפוש אחר הנתיב {0}-&gt;{1} נכשל.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TypeNotFound" xml:space="preserve">
+    <value>לא ניתן למצוא סוג עם המזהה = '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CannotLoadInvalidType" xml:space="preserve">
+    <value>לא ניתן לטעון את הסוג הלא תקין '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Helpers_DifferentObjectsKeys" xml:space="preserve">
+    <value>לא ניתן למזג שינויים עבור האובייקט שהמפתח שלו השתנה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ThreadSafeDataLayer_DictionaryModified" xml:space="preserve">
+    <value>לא ניתן לשנות את Dictionary משום ש-ThreadSafeDataLayer משתמש בו. ClassInfo ששונה או נוצר: '{0}'. כדי להימנע מחריגה זו, פעל לפי ההמלצות הבאות: https://www.devexpress.com/kb=T901732</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_CantPersistGenericType" xml:space="preserve">
+    <value>לא ניתן לשמור סוג כללי במסד הנתונים. הסר את PersistentAttribute מהגדרת הסוג '{0}' וצור במקומו מחלקות נגזרות לא כלליות הניתנות לשמירה במסד הנתונים (אחת או יותר).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PersistentAliasExpander_NonPersistentCriteria" xml:space="preserve">
+    <value>לא ניתן לבצע שאילתה במאגר נתונים באמצעות הקריטריון "{0}", המשתמש במאפיין שאינו מתמיד '{1}'. לפרטים נוספים ולפתרונות אפשריים, עיין במאמר מאגר הידע בכתובת https://www.devexpress.com/kb=Q352044.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PersistentAliasExpander_NonPersistentCriteriaThisValueMember" xml:space="preserve">
+    <value>לא ניתן לבצע שאילתה במאגר נתונים באמצעות הקריטריון "{0}", המשתמש במאפיין שאינו מתמיד '{1}'. אם השתמשת ב-'{0}' בתור ValueMember עבור בדיקת מידע, השתמש במקום זאת ב-ValueMember ריק.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="View_IsInLoading" xml:space="preserve">
+    <value>לא ניתן לטעון מחדש את התצוגה בזמן שהיא טוענת נתונים באופן אסינכרוני.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_CannotResolveClassInfo" xml:space="preserve">
+    <value>לא ניתן לזהות את ClassInfo עבור הטיפוס '[{0}]{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_CannotResolvePropertyTypeComparer" xml:space="preserve">
+    <value>לא ניתן לאתר משווה עבור המאפיין '{0}' מהסוג '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TranSequenceRollback" xml:space="preserve">
+    <value>לא ניתן לחזור למצב קודם משום שאין טרנזקציה פעילה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TranSequenceBegin" xml:space="preserve">
+    <value>לא ניתן להתחיל יותר מטרנזקציה אחת בהפעלה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_SameTableName" xml:space="preserve">
+    <value>המחלקות {0} ו־{1} ממופות לאותה טבלה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_ClassesAreNotAssignable" xml:space="preserve">
+    <value>המחלקות '{0}' ו-'{1}' אינן ניתנות להשמה זו לזו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DataView_ReferenceMembersWithCompoundKeyAreNotSupported" xml:space="preserve">
+    <value>מחלקות עם איברים מסוג מבנה אינן נתמכות.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_DictionaryMixing" xml:space="preserve">
+    <value>ClassInfo '{0}' שייך למילון אחר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerializableObjectLayer_OptimisticLockFieldNotExists" xml:space="preserve">
+    <value>במידע המחלקה '{0}' לא מוגדר OptimisticLockField.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerializableObjectLayer_OptimisticLockFieldInDLNotExists" xml:space="preserve">
+    <value>במידע המחלקה '{0}' לא מוגדר OptimisticLockFieldInDataLayer.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ObjectLayer_XPClassInfoNotFound" xml:space="preserve">
+    <value>מידע המחלקה '{0}' לא נמצא.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DirectSQL_CollectionMembersAreNotSupported" xml:space="preserve">
+    <value>איברים מסוג אוסף אינם נתמכים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_AssociationListExpected" xml:space="preserve">
+    <value>נדרש אוסף או רשימת שיוכים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_ColumnNotFound" xml:space="preserve">
+    <value>לא נמצאה עמודה בשם '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_CantUpdateRelationColumn" xml:space="preserve">
+    <value>לא ניתן לעדכן עמודות עם קשרי גומלין.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ComplexDataSelectionIsNotSupportedPerhapsY" xml:space="preserve">
+    <value>בחירת נתונים מורכבת אינה נתמכת. ייתכן שנעשה שימוש בשאילתת משנה מורכבת בבורר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_ConnectionPoolCannotBeUsed" xml:space="preserve">
+    <value>לא ניתן להשתמש במאגר חיבורים עם שכבת הנתונים הפשוטה</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_ConnectionStringEmpty" xml:space="preserve">
+    <value>מחרוזת החיבור אינה יכולה להיות ריקה כאשר נעשה שימוש במאגר נתונים שאינו בזיכרון ואינו מותאם אישית</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_ConstraintConflict" xml:space="preserve">
+    <value>הופר אילוץ בטבלה '{0}' עבור מפתח זר בעמודות '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_DelayedPropertyContainerCannotBeAssigned" xml:space="preserve">
+    <value>לא ניתן לבצע השמה למכל של המאפיין המותאם אישית המושהה '{0}.{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CollectClassInfos_CouldNotLoadAssembly" xml:space="preserve">
+    <value>לא ניתן היה לאסוף ClassInfos מההרכבה '{0}'. ThreadSafeDataLayer עשוי לזרוק InvalidOperationException בעת שימוש במחלקות מהרכבה זו. עיין ב-InnerException לקבלת פרטים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ImageValueConverter_NotPresent" xml:space="preserve">
+    <value>לא ניתן היה למצוא את המחלקה 'System.Drawing.ImageConverter' בהרכבה 'System.Drawing.Common'. השתמש ב-System.Drawing.Common בגרסה 5.0 ומעלה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_CouldNotAssignPropertyValue" xml:space="preserve">
+    <value>לא ניתן היה להקצות ערך למאפיין '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_CouldNotFindAppropriateConstructor" xml:space="preserve">
+    <value>לא ניתן היה למצוא בנאי מתאים לסוג '{0}'. נדרש בנאי ללא פרמטרים או בנאי המקבל אובייקט XPDictionary כפרמטר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_CouldNotResolvePropertyType" xml:space="preserve">
+    <value>לא ניתן היה לזהות את סוג המאפיין '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CrossThreadFailureDetected" xml:space="preserve">
+    <value>זוהתה פעולה בין הליכי משנה. '{0}' אינו אובייקט בטוח להליכי משנה, אנא הימנע משימוש בו בו-זמנית מהליכי משנה שונים</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_CurrentExpressionWithX0IsNotSupported" xml:space="preserve">
+    <value>הביטוי הנוכחי עם {0} אינו נתמך.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_CustomProperties_PersistentAndNonStorableType" xml:space="preserve">
+    <value>האיבר המותאם אישית '{0}.{1}' מסוג '{2}' אינו ניתן לשמירה במסד הנתונים</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_WantNotDeleteFilteredAggregateCollection" xml:space="preserve">
+    <value>מחיקת האובייקט '{0}' עם האוסף שבבעלותו '{1}', שנטען באופן חלקי, עלולה ליצור אובייקטים יתומים/רשומות יתומות.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_SeveralClassesWithSameName" xml:space="preserve">
+    <value>המילון כבר מכיל את ClassInfo '{1}'. סיבה אפשרית: המכלול [{0}] נטען פעמיים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_DuplicateJoinOperatorFound" xml:space="preserve">
+    <value>נמצא אופרטור צירוף כפול.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_DuplicateKeyProperty" xml:space="preserve">
+    <value>נמצא מפתח כפול עבור הטיפוס '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_DuplicateMappingField" xml:space="preserve">
+    <value>מיפוי כפול לעמודה '{0}' במחלקה '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_EnteringTheX0StateFromTheX1StateIsProhibit" xml:space="preserve">
+    <value>המעבר למצב '{0}' ממצב '{2}' אסור בשל מצב '{1}' עבור '{3}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_EntityTypesEmpty" xml:space="preserve">
+    <value>הערך של EntityTypes חייב להיות שונה מ-null ולהכיל לפחות פריט אחד</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_TypeFieldIsEmpty" xml:space="preserve">
+    <value>השדה '{0}' הוא Null (מחלקת בסיס '{1}').</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_GroupingWithACustomComparerIsNotSupported" xml:space="preserve">
+    <value>קיבוץ עם משווה מותאם אישית אינו נתמך.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_NullInstance" xml:space="preserve">
+    <value>לא ניתן למצוא מממש עבור האובייקט הווירטואלי של הממשק '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_CachedExpressionIsIncompatible" xml:space="preserve">
+    <value>ביטוי לא תואם. עליו להיווצר על ידי המהדר ולהכיל ארגומנטים סטטיים בלבד. ניתן להשתמש בפרמטרים a1, a2 ו-a3 של השיטה CachedExpression כדי להעביר ארגומנטים לא סטטיים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_IncorrectDeclaringTypeX0InTheMethodCallQue" xml:space="preserve">
+    <value>הסוג המצהיר '{0}' בקריאה לשיטה אינו נכון. נדרש הסוג 'System.Linq.Queryable' או 'System.Linq.Enumerable'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PersistentAliasExpander_ReferenceOrCollectionExpectedInTheMiddleOfThePath" xml:space="preserve">
+    <value>האיבר '{0}' בנתיב שגוי. נדרש מאפיין הפניה או קשר לאוסף.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_EmptyMemberInstance" xml:space="preserve">
+    <value>האיבר InstanceType אינו מכיל ערך כלשהו. לא ניתן להשתמש ב-GetInstanceObject עם אובייקט שטרם אותחל כראוי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_InternalErrorAsyncActionIsAlreadyDisposed" xml:space="preserve">
+    <value>שגיאה פנימית: פעולה אסינכרונית כבר שוחררה. ייתכן שהדבר נגרם עקב בעיה ב-XPO. פנה לצוות התמיכה של DevExpress.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NullSessionProvider" xml:space="preserve">
+    <value>שגיאה פנימית: לא ניתן לגשת להפעלה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_DifferentComplexSet" xml:space="preserve">
+    <value>שגיאה פנימית: לא ניתן להוסיף שורה מאוסף מורכב אחר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongDictionaryIndex" xml:space="preserve">
+    <value>שגיאה פנימית: נתוני מילון שגויים באינדקס '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongCommitInfo" xml:space="preserve">
+    <value>שגיאה פנימית: מידע פגום על החלת שינויים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_WrongIndexInfo" xml:space="preserve">
+    <value>שגיאה פנימית: מידע לא תקין על האינדקס.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongRollbackInfo" xml:space="preserve">
+    <value>שגיאה פנימית: מידע פגום על ביטול שינויים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerOLHelpers_NestedParentMapIsNull" xml:space="preserve">
+    <value>שגיאה פנימית: NestedParentMap ו-ParentNestedMap הם null.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InTransactionLoader_NotInSelectDataMode" xml:space="preserve">
+    <value>שגיאה פנימית: לא במצב SelectData.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InTransactionLoader_ProcessReturnResultError" xml:space="preserve">
+    <value>שגיאה פנימית: הפעולה אינה מותרת במצב SelectData.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_DifferentColumnListLengths" xml:space="preserve">
+    <value>שגיאה פנימית: אי-התאמה במספר העמודות של PKey ושל FKey.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MsSql_RootIsNotInsertStatement" xml:space="preserve">
+    <value>שגיאה פנימית: Root אינו InsertStatement.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Loader_ReloadError" xml:space="preserve">
+    <value>שגיאה פנימית: '{0}.{1}' שצוין אינו נתמך.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_CriteriaEvaluationBehaviorIsNotSupported" xml:space="preserve">
+    <value>שגיאה פנימית: הערך שצוין, CriteriaEvaluationBehavior.{0}, אינו נתמך בהעמסת יתר זו של הבנאי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_UnexpectedPersistentCriteriaEvaluationBehavior" xml:space="preserve">
+    <value>שגיאה פנימית: PersistentCriteriaEvaluationBehavior.{0} שצוין אינו נתמך.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServerModeGridSource_SummaryItemTypeNotSupported" xml:space="preserve">
+    <value>שגיאה פנימית: הערך שצוין, SummaryItemType.{0}, אינו נתמך.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Loader_InternalErrorOrUnsupportedReferenceStructure" xml:space="preserve">
+    <value>שגיאה פנימית ב-XPO או מבנה הפניות שאינו נתמך: מפתח מורכב אינו יכול להפנות לטיפוס שיש לו מחלקות נגזרות. טיפוס האובייקט '{0}', הטיפוס שזוהה '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_InternalXPOError" xml:space="preserve">
+    <value>שגיאה פנימית ב-XPO.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_ODataType_Mismatch" xml:space="preserve">
+    <value>אנוטציה '@odata.type' לא תקינה: '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CreateCollection_InvalidCastException" xml:space="preserve">
+    <value>כפייה לא תקינה מ-'{0}' ל-'{1}' במאפיין '{2}.{3}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_WrongConnectionString" xml:space="preserve">
+    <value>צוינה מחרוזת חיבור לא תקינה: '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AmbiguousClassName" xml:space="preserve">
+    <value>לא ניתן לזהות את ClassInfo עבור שם הסוג הדו־משמעי '{0}' בין הסוג '{1}' לסוג '{2}'</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_CanChangeProperties" xml:space="preserve">
+    <value>לא ניתן לשנות את מאפייני מקור InstantFeedback כאשר הוא כבר נמצא בשימוש של טבלה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_CanChangeViewProperties" xml:space="preserve">
+    <value>לא ניתן לשנות את מאפייני XPInstantFeedbackView כאשר הוא כבר נמצא בשימוש של טבלה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServerModeGridSource_GroupAndAddOrRemoveIsNotAllowed" xml:space="preserve">
+    <value>לא ניתן לקבץ פריטים ולהוסיף/להסיר פריטים בו-זמנית.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_NullJoinClassInfo" xml:space="preserve">
+    <value>JoinClassInfo חסר אובייקט.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_EmptyJoinOperandId" xml:space="preserve">
+    <value>JoinOperandId ריק.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProvider_KeysAutogenerationNonSupportedTypeException" xml:space="preserve">
+    <value>יצירה אוטומטית של מפתחות אינה נתמכת עבור סוג המחלקה '{0}'. היא נתמכת רק עבור סוגי הנתונים מספר שלם של 32 סיביות, מספר שלם של 64 סיביות ומזהה ייחודי גלובלי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_KeyPropertyAbsent" xml:space="preserve">
+    <value>מאפיין המפתח עבור הטיפוס '{0}' חסר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_LambdaExpressionIsExpectedX0" xml:space="preserve">
+    <value>נדרש ביטוי למבדה: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_DoesNotSupportNestedJoinsWithLevel" xml:space="preserve">
+    <value>LinqToXpo אינו תומך ביותר משני צירופים מקוננים. מגבלה זו אינה משפיעה על מספר הצירופים הכולל בשאילתה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_MalformedAggregate" xml:space="preserve">
+    <value>צבירה לא תקינה או שגיאה פנימית ב-XPO.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_NoAssociationListInAssociation" xml:space="preserve">
+    <value>הקשר '{0}' בין '{1}.{2}' ל־'{3}.{4}' אינו תקין. נדרשת רשימה או אוסף באחד מצדי הקשר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_TwoAssociationListsInAssociation" xml:space="preserve">
+    <value>הקשר '{0}' בין הרשימות/האוספים '{1}.{2}' ו־'{3}.{4}' אינו תקין. השתמש בתכונה ManyToManyAlias או ברשימות/אוספים מסוג XPCollection עבור קשרי רבים־לרבים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_NotFound" xml:space="preserve">
+    <value>הקשר '{0}' אינו תקין. לא ניתן למצוא במחלקה '{3}' את האיבר המקושר ל־'{1}.{2}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_NotACollection" xml:space="preserve">
+    <value>שאילתה לא תקינה או שגיאה פנימית ב-XPO: '{0}' אינו אוסף.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotFindClassinfoType" xml:space="preserve">
+    <value>XML פגום: לא ניתן למצוא את טיפוס המחלקה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotFindConstructor" xml:space="preserve">
+    <value>XML פגום: לא ניתן למצוא בנאי עבור הטיפוס '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotLoadMember" xml:space="preserve">
+    <value>XML פגום: לא ניתן לטעון את החבר [{0}]{1}.{2}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorCannotResolveClassinfoInstanceType" xml:space="preserve">
+    <value>XML פגום: לא ניתן לזהות את טיפוס ClassInfo.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorModelTagAbsent" xml:space="preserve">
+    <value>XML פגום: התג &lt;Model&gt; לא נמצא או שצוין מרחב שמות שגוי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadErrorUnknownAttribute" xml:space="preserve">
+    <value>XML פגום: תכונה לא ידועה '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_SuppressSuspiciousMemberInheritanceCheckError" xml:space="preserve">
+    <value>המערכת מתעלמת מהאיבר '{0}.{1}' ומהתכונה שלו '{2}'. איבר בעל אותו שם כבר הוצהר במחלקת הבסיס '{3}'. כדי למנוע חריגה זו, הגדר את DevExpress.Xpo.Metadata.ReflectionClassInfo.SuppressSuspiciousMemberInheritanceCheck לערך True.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ObjectLayer_MemberNotFound" xml:space="preserve">
+    <value>האיבר '{0}.{1}' לא נמצא.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_PersistentOrThis" xml:space="preserve">
+    <value>האיבר '{0}.{1}' חייב להיות מתמיד או להחזיר 'this'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NonPersistentKey" xml:space="preserve">
+    <value>נמצא מפתח '{0}.{1}' שאינו ניתן לשמירה במסד הנתונים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_PersistentReferenceFound" xml:space="preserve">
+    <value>פעולה ייעודית למחלקות שאינן מיועדות לשמירה במסד הנתונים מבוצעת עם המחלקה '{0}', המיועדת לשמירה במסד הנתונים</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_NullDefaultValueNotAllowed" xml:space="preserve">
+    <value>לא ניתן להשתמש בערכי Null כערכי ברירת מחדל לעמודה '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_NullableAttributeNotApplicable" xml:space="preserve">
+    <value>לא ניתן להחיל את התכונה Nullable על האיבר {0} של המחלקה {1}, משום שהאיבר אינו ניתן לשמירה במסד הנתונים, מוגדר באמצעות כינוי, מוגדר באמצעות כינוי רבים־לרבים או מסוג הפניה לאובייקט.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_WrongObjectType" xml:space="preserve">
+    <value>האובייקט {0}, שנוצר באמצעות ClassInfo {2}, מחזיר ClassInfo שגוי {1}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="NestedSession_NotCloneable" xml:space="preserve">
+    <value>לא ניתן לשכפל את היררכיית האובייקטים משום שהאיבר '{0}.{1}' שונה במהלך הפעולה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="SerializableObjectLayer_OLDoesNotImplementISerializableObjectLayerEx" xml:space="preserve">
+    <value>שכבת האובייקטים אינה מממשת את ISerializableObjectLayerEx.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_ObjectModificationIsNotAllowed" xml:space="preserve">
+    <value>לא ניתן לשנות אובייקטים כאשר ההפעלה נמצאת במצב CommitChangesToDataLayerInner.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_DifferentObjectsWithSameKey" xml:space="preserve">
+    <value>נמצאו אובייקטים עם מפתחות כפולים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Generator_OneOfBinaryOperatorsOperandsIsNull" xml:space="preserve">
+    <value>אחד מהאופרנדים של BinaryOperator הוא הפניה חסרת אובייקט.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_EnumeratorObjectModifiedOrDeleted" xml:space="preserve">
+    <value>אובייקט אחד או יותר מהטווח המבוקש שונו או נמחקו. עליך לרענן את רשימת ערכי הזיהוי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_IncompatibleIdType" xml:space="preserve">
+    <value>סוג המזהה שהועבר, '{0}', אינו תואם לסוג '{3}' של המפתח '{1}.{2}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_CorrectPIinUOW" xml:space="preserve">
+    <value>ממשקים מתמידים אינם נתמכים באופן מלא בסשנים. השתמש ביחידות עבודה במקום זאת.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_ClassAttributeExclusive" xml:space="preserve">
+    <value>PersistentAttribute, NonPersistentAttribute ו־MapToAttribute אינם ניתנים לשימוש יחד. ניתן להחיל רק אחד מהם על המחלקה '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_MemberAttributeExclusive" xml:space="preserve">
+    <value>PersistentAttribute, NonPersistentAttribute ו־PersistentAliasAttribute אינם ניתנים לשימוש יחד. ניתן להחיל רק אחד מהם על האיבר '{0}.{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_NonPersistentReferenceFound" xml:space="preserve">
+    <value>פעולה ייעודית למחלקות המיועדות לשמירה במסד הנתונים מבוצעת עם המחלקה '{0}', שאינה מיועדת לשמירה במסד הנתונים</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_DifferentTypes" xml:space="preserve">
+    <value>אי-התאמה בין סוגי העמודות של המפתח הראשי והמפתח הזר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_RequiredAttributeMissing" xml:space="preserve">
+    <value>המאפיין '{0}' אינו מגדיר את התכונה '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_PropertyMissing" xml:space="preserve">
+    <value>המאפיין '{0}' אינו קיים בטיפוס '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_AssociationElementTypeMissing" xml:space="preserve">
+    <value>המאפיין '{0}' אינו מציין את המאפיין 'ElementType' בתכונה 'Association' שלו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="View_PropertyNotFetched" xml:space="preserve">
+    <value>המאפיין '{0}' לא נשלף.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Object_DelayedPropertyDoesNotContainProperObject" xml:space="preserve">
+    <value>המאפיין '{0}.{1}' אינו מכיל אובייקט מסוג XPDelayedProperty.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_IncorrectPathMemberNotExists" xml:space="preserve">
+    <value>נתיב המאפיין '{1}' אינו תקין עבור הטיפוס '{0}' משום שהחבר '{2}.{3}' אינו קיים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_IncorrectPathNonPersistentMember" xml:space="preserve">
+    <value>נתיב המאפיין '{1}' אינו תקין עבור הטיפוס '{0}' משום שהחבר '{2}.{3}' אינו חבר המיועד לשמירה במסד הנתונים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_IncorrectPathNonReferenceMember" xml:space="preserve">
+    <value>נתיב המאפיין '{1}' אינו תקין עבור הטיפוס '{0}' משום שהחבר '{2}.{3}' אינו חבר הפניה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_IncorrectPath" xml:space="preserve">
+    <value>נתיב המאפיין '{1}' אינו תקין עבור הטיפוס '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_QueryWithAppliedTheSkipOrTheTakeOperations" xml:space="preserve">
+    <value>לא ניתן להשתמש לצירוף בשאילתה שהוחלו עליה הפעולות Skip או Take.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_UseDataSetDataStoreOrCtor" xml:space="preserve">
+    <value>במקום להשתמש ב-.ctor עם DataSet, השתמש במחלקה DataSetDataStore או ב-.ctor ללא DataSet.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_RecurringObjectAdd" xml:space="preserve">
+    <value>הוספה בכניסה חוזרת.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_ReferenceTooComplex" xml:space="preserve">
+    <value>חבר ההפניה '{0}.{1}' מורכב מדי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_CannotReloadPurgedObject" xml:space="preserve">
+    <value>לא ניתן לטעון את האובייקטים המבוקשים, משום שהם אינם קיימים במאגר הנתונים. ייתכן שאובייקטים אלה כבר נמחקו/הוסרו לצמיתות. אם חריגה זו מופיעה שוב עם אותם אובייקטים ברשימה, שים לב שייתכן ששלמות הקשרים במאגר הנתונים שלך נפגעה. במקרה זה, פנה למנהל המערכת שלך. האובייקטים המבוקשים: {0}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SequenceContainsMoreThanOneElement" xml:space="preserve">
+    <value>הרצף מכיל יותר מאיבר אחד.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SequenceContainsNoMatchingElement" xml:space="preserve">
+    <value>הרצף אינו מכיל איבר תואם.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServerModeGridSource_WrongTopLevelAggregate" xml:space="preserve">
+    <value>שגיאת שרת או שגיאה פנימית ב-XPO: יותר מקבוצה אחת בצבירה ברמה העליונה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_AlreadyConnected" xml:space="preserve">
+    <value>ההפעלה כבר מחוברת.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SessionIsNull" xml:space="preserve">
+    <value>Session הוא null.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_SingleRowExpected" xml:space="preserve">
+    <value>צפויה שורה אחת באמצעות '{0}', מספר השורות שנמצאו: {1}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SortingIsNotSupportedForSelectManyOperation" xml:space="preserve">
+    <value>מיון אינו נתמך עבור הפעולה SelectMany על אוספים של רבים לרבים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_UnexpectedState" xml:space="preserve">
+    <value>SessionState.{0} שצוין אינו נתמך.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemoryFull_TableNotFound" xml:space="preserve">
+    <value>הטבלה '{0}' לא נמצאה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_AliasNotFound" xml:space="preserve">
+    <value>לא נמצאה טבלה עם הכינוי '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_MethodX0ForX1IsNotSupported" xml:space="preserve">
+    <value>השיטה '{0}' אינה נתמכת עבור {1}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheX0MethodIsNotSupported" xml:space="preserve">
+    <value>השיטה {0} אינה נתמכת.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_SessionMixing" xml:space="preserve">
+    <value>האובייקט '{0}' שייך להפעלה אחרת. לפתרון, עיין בכתובת https://docs.devexpress.com/eXpressAppFramework/403631/.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_ObjectCannotBePurged" xml:space="preserve">
+    <value>לא ניתן להסיר לצמיתות את האובייקט '{0}' עם המזהה = '{1}' - קיימים אובייקטים המפנים אליו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_PropertyIsDuplicatedInIndexDeclaration" xml:space="preserve">
+    <value>המאפיין '{0}' מופיע פעמיים בהצהרת האינדקס של {4} '{1}{2}{3}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_PersistentAliasCircular" xml:space="preserve">
+    <value>המאפיין '{1}' של המחלקה '{0}' מסומן בתכונה PersistentAlias, המשתמשת בביטוי הבא: '{2}'. ביטוי זה גורם למעגל אינסופי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_NonPersistentClassInTheAssociation" xml:space="preserve">
+    <value>לא ניתן להשתמש בתכונת הקשר עבור האיבר '{0}.{1}' משום שהמחלקה '{2}' אינה ניתנת לשמירה במסד הנתונים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_AssociationAttributeOnlyForListOrReference" xml:space="preserve">
+    <value>לא ניתן להשתמש בתכונת הקשר עבור האיבר '{1}.{2}'. נדרשת הפניה או רשימה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProvider_TheAutoIncrementedKeyWithX0TypeIsNotSupport" xml:space="preserve">
+    <value>מפתח הגדל אוטומטית מהסוג ‘{0}’ אינו נתמך עבור ‘{1}’</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionIsExpectedX0" xml:space="preserve">
+    <value>נדרש ביטוי קריאה: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionGenericReturnTypeX0" xml:space="preserve">
+    <value>לביטוי הקריאה צריך להיות סוג החזרה כללי: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheCallExpressionReturnTypeX0" xml:space="preserve">
+    <value>לביטוי הקריאה צריך להיות סוג החזרה: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_TheCommitOperationWasProhibitedByTheRules" xml:space="preserve">
+    <value>פעולת הקיבוע אסורה לפי כללי האבטחה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_CurrentPageShouldBeGreaterOrEqualZero" xml:space="preserve">
+    <value>הערך של CurrentPage חייב להיות גדול מאפס או שווה לו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_CurrentPageShouldBeLessThanPageCount" xml:space="preserve">
+    <value>הערך של CurrentPage חייב להיות קטן מ-PageCount.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CustomAggregate_DoesNotImplementInterface" xml:space="preserve">
+    <value>פונקציית הצבירה המותאמת אישית '{0}' אינה מממשת את הממשק '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CustomAggregate_NotFound" xml:space="preserve">
+    <value>פונקציית הצבירה המותאמת אישית '{0}' אינה רשומה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_DataSetUncommitted" xml:space="preserve">
+    <value>הפרמטר 'data' מכיל DataSet עם שינויים שלא אושרו. קרא למתודה DataSet.AcceptChanges לפני יצירת מופע חדש של המחלקה DataSetDataStore.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ASE_CommandNotAllowedWithinMultiStatementTransaction" xml:space="preserve">
+    <value>מסד הנתונים אינו תומך ביצירה או בשינוי של הסכימה במסגרת טרנזקציה. כדי לבצע פעולה זו, יש להגדיר את מסד הנתונים כך שיתמוך בשינוי הסכימה במסגרת טרנזקציה, או להשבית טרנזקציות בזמן עדכון הסכימה. לשם כך, הגדר את השדה ExecuteUpdateSchemaInTransaction = false (עבור מופע הספק הנוכחי), או את השדה GlobalExecuteUpdateSchemaInTransaction = false (עבור כל מופעי הספק).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheDeclaringTypeAssemblyNamePropertyIsEmpty" xml:space="preserve">
+    <value>המאפיין DeclaringTypeAssemblyName ריק.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheDeclaringTypeNamePropertyIsEmpty" xml:space="preserve">
+    <value>המאפיין DeclaringTypeName ריק.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ElemAtOperationIsNotSupportedWithoutSorting" xml:space="preserve">
+    <value>הפעולה ElementAt אינה נתמכת ללא מיון.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_EnumeratorPositioning" xml:space="preserve">
+    <value>המונה ממוקם לפני האיבר הראשון באוסף או אחרי האיבר האחרון.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InitOperator_DeserializationProhibitedDueSecurityIssue" xml:space="preserve">
+    <value>לא ניתן לבצע דה-סריאליזציה של הביטוי משום שהוא כולל סוגים לא בטוחים. דה-סריאליזציה של סוגים לא בטוחים אסורה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ExpressionX0IsNotSupportedInX1" xml:space="preserve">
+    <value>הביטוי אינו נתמך ב-{1}: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_ExpressionX0IsNotSupported" xml:space="preserve">
+    <value>הביטוי אינו נתמך: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_FetchOnlyAttributeNotApplicable" xml:space="preserve">
+    <value>לא ניתן להחיל את תכונת רכיב התיכנות FetchOnly על {0}.{1}, משום שאיבר היעד אינו ניתן לשמירה במסד הנתונים, מוגדר באמצעות כינוי, מוגדר באמצעות כינוי רבים־לרבים, הוא מפתח או חלק ממבנה מקונן.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_FetchOnlyAttributeNotApplicableToReference" xml:space="preserve">
+    <value>לא ניתן להחיל את תכונת רכיב התיכנות FetchOnly על {0}.{1}, משום שאיבר היעד הוא מסוג הפניה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Filtering_TheIifFunctionOperatorRequiresThree" xml:space="preserve">
+    <value>אופרטור הפונקציה 'Iif' דורש שלושה ארגומנטים או יותר. מספר הארגומנטים חייב להיות אי-זוגי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_GeneralPurposeCollectionInsteadOfRefCollection" xml:space="preserve">
+    <value>זוהה מימוש לא תקין של מאפיין האוסף המשויך '{0}.{1}'. יש ליצור את האוסף באמצעות המתודה GetCollection או הבנאי XPCollection(Session session, object theOwner, XPMemberInfo refProperty).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheJoinWithManyTablesSimultaneouslyInASing" xml:space="preserve">
+    <value>פעולת הצירוף עם כמה טבלאות באופרטור יחיד אינה נתמכת.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_TheLambdaExpressionWithSuchParametersIsNot" xml:space="preserve">
+    <value>ביטוי הלמבדה עם פרמטרים כאלה אינו נתמך: {0}</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_LengthsOfTheCollectionsAreDifferentInArgs" xml:space="preserve">
+    <value>אורכי האוספים בארגומנט שונים זה מזה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Helpers_ResolveDataForCollection" xml:space="preserve">
+    <value>האיבר אינו אוסף.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Common_MethodOrOperationNotImplemented" xml:space="preserve">
+    <value>המתודה או הפעולה אינה ממומשת.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="DirectSQL_WrongColumnCount" xml:space="preserve">
+    <value>מספר העמודות בשורה מתוך ערכת התוצאות אינו תואם למספר העמודות בשורת היעד.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_WrongInitData" xml:space="preserve">
+    <value>מספר העמודות בשורת המקור אינו תואם למספר העמודות בשורת טבלת היעד.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Helpers_CloningObjectModified" xml:space="preserve">
+    <value>לא ניתן לשכפל את האובייקט עם השינויים שלא נשמרו.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Paging_PageSizeShouldBeGreaterThanZero" xml:space="preserve">
+    <value>הערך של PageSize חייב להיות גדול מאפס.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_InEditMode" xml:space="preserve">
+    <value>השורה כבר במצב עריכה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_SkipOperationIsNotSupportedWithoutSorting" xml:space="preserve">
+    <value>הפעולה Skip אינה נתמכת ללא מיון.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PostgreSQL_CommandPoolNotSupported" xml:space="preserve">
+    <value>הערך שצוין, CommandPoolBehavior.{0}, אינו נתמך על ידי PosgreSQL {1}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_OperationNotAllowed" xml:space="preserve">
+    <value>הפעולה שצוינה אסורה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Filtering_TheTypeNameArgumentOfTheX0FunctionIsNotFound" xml:space="preserve">
+    <value>הארגומנט 'typeName' של הפונקציה '{0}' לא נמצא.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Generator_TheUseOfATopLevelSingleAggregateIsProhibit" xml:space="preserve">
+    <value>השימוש בפעולת צבירה מסוג 'Single' ברמה העליונה אסור.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Generator_TheUseOfNestedSingleAggregatesIsProhibited" xml:space="preserve">
+    <value>השימוש בפעולות צבירה מקוננות מסוג  'Single' אסור.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_AssociationInvalid_UseAssociationNameAsIntermediateTableNameMismatch" xml:space="preserve">
+    <value>הערך של UseAssociationNameAsIntermediateTableName חייב להיות זהה בשני צדי הקשר '{0}' בין '{1}.{2}' ל־'{3}.{4}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_ConverterOnKeyOrReference" xml:space="preserve">
+    <value>לא ניתן להחיל את התכונה ValueConverter על המאפיין '{0}.{1}', המייצג מפתח אובייקט או הפניה לאובייקט אחר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="LinqToXpo_WithDeletedOptionNotSupported" xml:space="preserve">
+    <value>האפשרות WithDeleted אינה נתמכת משום ש-XPQuery אותחל עם DataLayer. כדי להשתמש באפשרות WithDeleted, השתמש בבנאי XPQuery(Session) או XPQuery(Session, Boolean).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XpoDefault_CustomGuidGenerationHandlerCannotBeNull" xml:space="preserve">
+    <value>ערך השדה XpoDefault.CustomGuidGenerationHandler הוא null. עליך להקצות לשדה זה דלגט מותאם אישית אם השדה XpoDefault.GuidGenerationMode מוגדר כ-'Custom'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_OperationCannotBePerformedBecauseNoSyncContext" xml:space="preserve">
+    <value>לא ניתן לבצע פעולה זו, מכיוון שלתהליכון הביצוע אין הקשר סנכרון נוכחי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="PostgreSQL_LegacyGuidDetected" xml:space="preserve">
+    <value>כדי להימנע מחריגה זו, הגדר את השדה UseLegacyGuidSupport או את השדה הסטטי GlobalUseLegacyGuidSupport של DevExpress.Xpo.DB.PostgreSqlConnectionProvider לערך 'true'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_TopLevelAggregateNotSupported" xml:space="preserve">
+    <value>לא ניתן להשתמש בצבירות ברמה העליונה בתנאים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Security_ICommandChannel_TransferringRequestsIsProhibited" xml:space="preserve">
+    <value>העברת בקשות באמצעות ICommandChannel אסורה בתוך מנגנון האבטחה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CriteriaAnalyzer_NullTransitionMemberInfo" xml:space="preserve">
+    <value>MemberInfo של המעבר חסר אובייקט.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_SessionCtorAbsent" xml:space="preserve">
+    <value>לטיפוס {0} אין בנאי ייעודי לסשן.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ServiceCollectionExtensions_NoConstructor" xml:space="preserve">
+    <value>לטיפוס {0} אין בנאי עם הפרמטרים {1}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_TypeNotFound" xml:space="preserve">
+    <value>הסוג '{0}' לא נמצא.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Collections_InvalidCastOnAdd" xml:space="preserve">
+    <value>לא ניתן להוסיף פריט לאוסף. האובייקט '{0}' אינו מופע מהסוג '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_CustomProperties_ReferenceOrCollectionInSessionStore" xml:space="preserve">
+    <value>לא ניתן ליצור את האיבר המותאם אישית '{1}' מסוג הפניה או אוסף משום שהמחלקה '{0}' אינה מממשת את הממשק '{2}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="JsonConverter_UnexpectedToken" xml:space="preserve">
+    <value>אסימון לא צפוי '{0}' במיקום {1}. נדרש 'StartObject'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_UniqueIndex" xml:space="preserve">
+    <value>האינדקס הייחודי '{0}' הופר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="VistaDB_UpdatingSchemaIsForbiddenWhileExplicitTran" xml:space="preserve">
+    <value>אסור לעדכן את הסכימה בזמן שטרנזקציה מפורשת פתוחה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Session_DictConstructor" xml:space="preserve">
+    <value>בעת שימוש בבנאי Session(XPDictionary dictionary), חובה לציין ערך תקין עבור Session.ConnectionString לפני הקריאה למתודה Session.Connect.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemory_IsReadOnly" xml:space="preserve">
+    <value>כתיבה אינה נתמכת.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Helpers_SameDictionaryExpected" xml:space="preserve">
+    <value>מילון שגוי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="MetaData_XMLLoadError" xml:space="preserve">
+    <value>שגיאה בטעינת מילון XML: {0}.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_DataTypeAttributeNotFound" xml:space="preserve">
+    <value>טוען XML: לא ניתן למצוא את התכונה 'DataType'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_NameAttributeExpected" xml:space="preserve">
+    <value>טוען XML: צפויה התכונה 'name'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ReferAttributeExpected" xml:space="preserve">
+    <value>טוען XML: צפויה התכונה 'refer'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XpathAttributeExpected" xml:space="preserve">
+    <value>טוען XML: צפויה התכונה 'xpath'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_CantRestoreObjectFromXML" xml:space="preserve">
+    <value>טוען XML: לא ניתן לבצע דה-סריאליזציה של אובייקט.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_NullPrimaryColumns" xml:space="preserve">
+    <value>טוען XML: לא ניתן לאתר את המפתח הראשי '{0}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ReferNotFound" xml:space="preserve">
+    <value>טוען XML: לא ניתן לאתר את '{0}' שאליו מפנים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_CantGetColumnType" xml:space="preserve">
+    <value>טוען XML: לא ניתן לזהות את סוג העמודה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ColumnNameIsNotSpecified" xml:space="preserve">
+    <value>טוען XML: שם העמודה לא צוין.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidBaseAttributeValue" xml:space="preserve">
+    <value>טוען XML: ערך התכונה 'base' שגוי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidValueAttributeValue" xml:space="preserve">
+    <value>טוען XML: ערך התכונה 'value' שגוי.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_InvalidColumnTypeDeclaration" xml:space="preserve">
+    <value>טוען XML: שם סוג העמודה לא תקין.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_InvalidTypeString" xml:space="preserve">
+    <value>טוען XML: שם סוג לא תקין.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_choiceNodeNotFound" xml:space="preserve">
+    <value>טוען XML: הצומת 'choice' לא נמצא.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ComplexTypeNodeNotFound" xml:space="preserve">
+    <value>טוען XML: הצומת 'complexType' לא נמצא.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_ElementNodeNotFound" xml:space="preserve">
+    <value>טוען XML: הצומת 'element' לא נמצא.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_NotDataSetNode" xml:space="preserve">
+    <value>טוען XML: הצומת אינו מסומן כערכת נתונים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_SchemaNodeNotFound" xml:space="preserve">
+    <value>טוען XML: הצומת 'schema' לא נמצא.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSselectorNodeExpected" xml:space="preserve">
+    <value>טוען XML: צפוי הצומת 'xs:selector'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_InconsistentForeignKeyCount" xml:space="preserve">
+    <value>טוען XML: אי-התאמה בין מספר העמודות של PKey ושל FKey.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_TableNotDeclared" xml:space="preserve">
+    <value>טוען XML: הטבלה '{0}' לא הוצהרה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_TableNameIsNotSpecified" xml:space="preserve">
+    <value>טוען XML: שם הטבלה לא צוין.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XpathAttributeWrongFormat" xml:space="preserve">
+    <value>טוען XML: תבנית ערך התכונה 'xpath' שגויה.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XScomplexTypeExpected" xml:space="preserve">
+    <value>טוען XML: צפוי xs:complexType.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSlengthExpected" xml:space="preserve">
+    <value>טוען XML: צפוי xs:length.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSrestrictionExpected" xml:space="preserve">
+    <value>טוען XML: צפוי xs:restriction.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSsequenceExpected" xml:space="preserve">
+    <value>טוען XML: צפוי xs:sequence.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="InMemorySet_XMLException_XSsimpleTypeExpected" xml:space="preserve">
+    <value>טוען XML: צפוי xs:simpleType.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="XPWeakReference_SavedObjectExpected" xml:space="preserve">
+    <value>ניתן להשתמש בהפניות חלשות לאובייקטים שנשמרו בלבד.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Metadata_YouCannotApplyTheMapInheritanceParentTable" xml:space="preserve">
+    <value>לא ניתן להחיל את התכונה MapInheritance עם ערך הפרמטר ParentTable על מחלקה שאין לה מחלקת בסיס הניתנת לשמירה במסד הנתונים.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_CommandChannelDoesNotImplementICommandChannelAsync" xml:space="preserve">
+    <value>ערוץ הפקודות שלך '{0}' אינו תומך בממשק 'DevExpress.Xpo.Helpers.ICommandChannelAsync'. יש לממש ממשק זה או להשתמש בערוץ פקודות תואם אחר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="WebApi_ICacheToCacheCommunicationCore_NotImplemented" xml:space="preserve">
+    <value>ספק החיבור שלך, '{0}', אינו תומך בממשק 'DevExpress.Xpo.DB.ICacheToCacheCommunicationCore'. אנא עטוף אותו במופע של 'DevExpress.Xpo.DB.DataCacheRoot'. לפרטים נוספים, עיין בנושא העזרה הבא: https://docs.devexpress.com/XPO/402182.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_ConnectionProviderDoesNotImplementIDataStoreAsync" xml:space="preserve">
+    <value>ספק החיבור שלך '{0}' אינו תומך בממשק 'DevExpress.Xpo.DB.IDataStoreAsync'. יש לממש ממשק זה או להשתמש בספק חיבור תואם אחר.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_DataLayerDoesNotImplementIDataLayerAsync" xml:space="preserve">
+    <value>שכבת הנתונים שלך '{0}' אינה תומכת בממשק 'DevExpress.Xpo.IDataLayerAsync'. יש לממש ממשק זה או להשתמש בשכבת נתונים תואמת אחרת.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="Async_ObjectLayerDoesNotImplementIObjectLayerAsync" xml:space="preserve">
+    <value>שכבת האובייקטים שלך אינה תומכת בממשק 'DevExpress.Xpo.IObjectLayerAsync'. יש לממש ממשק זה במחלקה '{0}' או להשתמש בשכבת אובייקטים תואמת אחרת.</value>
+    <comment>AI</comment>
+  </data>
 </root>

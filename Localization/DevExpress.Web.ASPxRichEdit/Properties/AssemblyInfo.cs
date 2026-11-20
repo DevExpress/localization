@@ -8,5 +8,7 @@ using DevExpress.Internal;
 [assembly: ComVisible(false)]
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
 [assembly: AssemblyProduct("DevExpress.Web.ASPxRichEdit")]
+
 [assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
+
 [assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]

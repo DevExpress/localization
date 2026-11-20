@@ -1,0 +1,689 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ShowAllContexts" Caption="Ověřit" ToolTip="Ověřit vybrané objekty ve všech aktuálních kontextech" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ContextValidationResult" Caption="Výsledek ověřování kontextu">
+      <OwnMembers>
+        <Member Name="BrokenRules" Caption="Neplatná pravidla" />
+        <Member Name="Context" Caption="Kontext " />
+        <Member Name="DisplayableValidationResultItems" Caption="Zobrazené položky výsledku ověřování" />
+        <Member Name="State" Caption="Stav" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.DisplayableValidationResultItem" Caption="Detaily ověření">
+      <OwnMembers>
+        <Member Name="ContextCaption" Caption="Kontext titulku" />
+        <Member Name="ContextId" Caption="Kontext Id" />
+        <Member Name="ErrorMessage" Caption="Chybová zpráva" />
+        <Member Name="Rule" Caption="Pravidlo" />
+        <Member Name="RuleName" Caption="Název pravidla" />
+        <Member Name="RuleProperties" Caption="Vlastnosti pravidla" />
+        <Member Name="State" Caption="Stav" />
+        <Member Name="TargetCaption" Caption="Cíl" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ValidationResults" Caption="Výsledky ověřování">
+      <OwnMembers>
+        <Member Name="DisplayableValidationResultItems" Caption="Zobrazené položky výsledku ověřování" />
+        <Member Name="HighlightErrors" Caption="Vyznačené chyby" />
+        <Member Name="Results" Caption="Výsledky" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleBaseProperties" Caption="IPravidlo základních vlastností">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Šablona vlastní zprávy" />
+        <Member Name="InvertResult" Caption="Invertovat výsledek" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Zpráva šablony ignorovat Null nebo prázdné hodnoty" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Zpráva šablony cíl nevyhovuje cílovým kritériím " />
+        <Member Name="Name" Caption="Jméno" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Ignorovat Null nebo prázdné hodnoty" />
+        <Member Name="TargetContextIDs" Caption="Cílový kontext IDs" />
+        <Member Name="TargetCriteria" Caption="Kritéria cíle" />
+        <Member Name="TargetType" Caption="Typ cíle" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCollectionPropertyProperties">
+      <OwnMembers>
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Zpráva šablony ověření kolekce je příponou zprávy" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Zpráva šablony cíl nevyhovuje kritériím kolekce" />
+        <Member Name="TargetCollectionOwnerType" Caption="Vlastník typu cílové kolekce" />
+        <Member Name="TargetCollectionPropertyName" Caption="Název vlastnosti cílové kolekce" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCombinationOfPropertiesIsUniqueProperties" Caption="Ipravidlo kombinace vlastností je jedinečnou vlastností">
+      <OwnMembers>
+        <Member Name="MessageTemplateCombinationOfPropertiesMustBeUnique" Caption="Zpráva šablony kombinace vlastností musí být unikátní" />
+        <Member Name="TargetProperties" Caption="Vlastnosti cíle" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCriteriaProperties" Caption="IPravidlo vlastností kritéria">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Kritéria" />
+        <Member Name="MessageTemplateMustSatisfyCriteria" Caption="Zpráva šablony musí vyhovovat kritériím " />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleFromBoolPropertyProperties" Caption="Ipravidlo logické vlastnosti vlastností">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeTrue" Caption="Zpráva šablony musí být pravdivá" />
+        <Member Name="UsedProperties" Caption="Použité vlastnosti" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleIsReferencedProperties" Caption="Ipravidlo je referenční vlastnost">
+      <OwnMembers>
+        <Member Name="LooksFor" Caption="Hledat" />
+        <Member Name="MessageTemplateMustBeReferenced" Caption="Zpráva šablony musí být odkaz" />
+        <Member Name="ReferencePropertyName" Caption="Název vlastnosti odkazu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleObjectExistsProperties" Caption="Ipravidlo objektu pro existující vlastnosti ">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Kritéria" />
+        <Member Name="LooksFor" Caption="Hledat" />
+        <Member Name="MessageTemplateMustExist" Caption="Zpráva šablony musí existovat" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRulePropertyValueProperties" Caption="IPravidlo vlastnosti pro hodnotu vlastností">
+      <OwnMembers>
+        <Member Name="TargetPropertyName" Caption="Název cílové vlastnosti" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRangeProperties" Caption="Ipravidlo pro rozsah vlastností">
+      <OwnMembers>
+        <Member Name="MaximumValue" Caption="Maximální hodnota " />
+        <Member Name="MaximumValueExpression" Caption="Výraz maximální hodnoty" />
+        <Member Name="MessageTemplateMustBeInRange" Caption="Šablona zprávy musí být v rozsahu" />
+        <Member Name="MinimumValue" Caption="Minimální hodnota" />
+        <Member Name="MinimumValueExpression" Caption="Výraz minimální hodnoty" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRegularExpressionProperties">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustMatchPattern" Caption="Zpráva šablony musí být shodná se vzorem" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRequiredFieldProperties" Caption="Ipravidlo požadující vlastnosti pole">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustNotBeEmpty" Caption="Zpráva šablony nesmí být prázdná" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Ignorovat Null nebo prázdné hodnoty" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleSearchObjectProperties" Caption="IPravidlo hledání vlastností objektu">
+      <OwnMembers>
+        <Member Name="CriteriaEvaluationBehavior" Caption="Vyhodnocení chování kritéria" />
+        <Member Name="FoundObjectMessageFormat" Caption="Nalezený objekt je formátem zprávy" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Nalezený objekt je separátor zpráv" />
+        <Member Name="IncludeCurrentObject" Caption="Vložit aktuální objekt" />
+        <Member Name="MessageTemplateFoundObjects" Caption="Zpráva šablony nalezla objekty " />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleStringComparisonProperties" Caption="Ipravidlo pro řetězec srovnání vlastností">
+      <OwnMembers>
+        <Member Name="IgnoreCase" Caption="Ignorovat případ" />
+        <Member Name="MessageTemplateMustBeEqual" Caption="Šablona zprávy musí být shodná s " />
+        <Member Name="MessageTemplateMustBeginWith" Caption="Šablona zprávy musí začínat " />
+        <Member Name="MessageTemplateMustContain" Caption="Šablona zprávy musí obsahovat" />
+        <Member Name="MessageTemplateMustEndWith" Caption="Šablona zprávy musí končit " />
+        <Member Name="MessageTemplateMustNotBeEqual" Caption="Šablona zprávy nesmí být shodná s " />
+        <Member Name="OperandValue" Caption="Hodnota operandu" />
+        <Member Name="OperatorType" Caption="Typ operátora" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleSupportsCollectionAggregatesProperties" Caption="Ipravidlo podporující agregované vlastnosti kolekce">
+      <OwnMembers>
+        <Member Name="TargetCollectionAggregate" Caption="Agregace cíle kolekce" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleUniqueValueProperties" Caption="Ipravidlo pro jedinečnou hodnotu vlastností">
+      <OwnMembers>
+        <Member Name="FoundObjectMessageFormat" Caption="Nalezený objekt je formátem zprávy" />
+        <Member Name="MessageTemplateMustBeUnique" Caption="Zpráva šablony musí být jedinečná " />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleValueComparisonProperties" Caption="Ipravidlo pro porovnání hodnoty vlastností">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeEqualToOperand" Caption="Zpráva šablony musí být rovna operandu" />
+        <Member Name="MessageTemplateMustBeGreaterThanOperand" Caption="Zpráva šablony musí být větší než operand" />
+        <Member Name="MessageTemplateMustBeGreaterThanOrEqualToOperand" Caption="Zpráva šablony musí být větší nebo rovna operandu" />
+        <Member Name="MessageTemplateMustBeLessThanOperand" Caption="Zpráva šablony musí být menší než operand" />
+        <Member Name="MessageTemplateMustBeLessThanOrEqualToOperand" Caption="Zpráva šablony musí být menší nebo rovna operandu" />
+        <Member Name="MessageTemplateMustNotBeEqualToOperand" Caption="Zpráva šablony nesmí být rovna operandu" />
+        <Member Name="OperatorType" Caption="Typ operátora" />
+        <Member Name="RightOperand" Caption="Pravý operand" />
+        <Member Name="RightOperandExpression" Caption="Výraz pro pravý operand" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleBaseProperties" Caption="Pravidlo základních vlastností">
+      <OwnMembers>
+        <Member Name="CustomMessageTemplate" Caption="Šablona vlastní zprávy" />
+        <Member Name="InvertResult" Caption="Invertovat výsledek" />
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Zpráva šablony ověření kolekce je příponou zprávy" />
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="Zpráva šablony ignorovat Null nebo prázdné hodnoty" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="Zpráva šablony cíl nevyhovuje kritériím kolekce" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Zpráva šablony cíl nevyhovuje cílovým kritériím " />
+        <Member Name="Name" Caption="Jméno" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Ignorovat Null nebo prázdné hodnoty" />
+        <Member Name="TargetCollectionOwnerType" Caption="Vlastník typu cílové kolekce" />
+        <Member Name="TargetCollectionPropertyName" Caption="Název vlastnosti cílové kolekce" />
+        <Member Name="TargetContextIDs" Caption="Cílový kontext IDs" />
+        <Member Name="TargetCriteria" Caption="Kritéria cíle" />
+        <Member Name="TargetType" Caption="Typ cíle" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleCombinationOfPropertiesIsUniqueProperties" Caption="Pravidlo pro kombinaci vlastností jsou jedinečné vlastnosti">
+      <OwnMembers>
+        <Member Name="MessageTemplateCombinationOfPropertiesMustBeUnique" Caption="Zpráva šablony kombinace vlastností musí být unikátní" />
+        <Member Name="TargetProperties" Caption="Vlastnosti cíle" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleCriteriaProperties" Caption="Pravidlo vlastností kritéria">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Kritéria" />
+        <Member Name="MessageTemplateMustSatisfyCriteria" Caption="Zpráva šablony musí vyhovovat kritériím " />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleFromBoolPropertyProperties" Caption="Ipravidlo logické vlastnosti vlastností">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeTrue" Caption="Zpráva šablony musí být pravdivá" />
+        <Member Name="UsedProperties" Caption="Použité vlastnosti" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleIsReferencedProperties" Caption="Pravidlo je referenční vlastnost">
+      <OwnMembers>
+        <Member Name="LooksFor" Caption="Hledat" />
+        <Member Name="MessageTemplateMustBeReferenced" Caption="Zpráva šablony musí být odkaz" />
+        <Member Name="ReferencePropertyName" Caption="Název vlastnosti odkazu" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleObjectExistsProperties" Caption="Pravidlo objektu pro existující vlastnosti ">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Kritéria" />
+        <Member Name="LooksFor" Caption="Hledat" />
+        <Member Name="MessageTemplateMustExist" Caption="Zpráva šablony musí existovat" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RulePropertyValueProperties" Caption="Pravidlo vlastnosti pro hodnotu vlastností">
+      <OwnMembers>
+        <Member Name="TargetPropertyName" Caption="Název cílové vlastnosti" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRangeProperties" Caption="Pravidlo pro rozsah vlastností">
+      <OwnMembers>
+        <Member Name="MaximumValue" Caption="Maximální hodnota " />
+        <Member Name="MaximumValueExpression" Caption="Výraz maximální hodnoty" />
+        <Member Name="MessageTemplateMustBeInRange" Caption="Výraz maximální hodnoty" />
+        <Member Name="MinimumValue" Caption="Minimální hodnota" />
+        <Member Name="MinimumValueExpression" Caption="Výraz minimální hodnoty" />
+        <Member Name="TargetCollectionAggregate" Caption="Agregace cíle kolekce" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRegularExpressionProperties" Caption="Pravidlo pro regulární výraz vlastností">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustMatchPattern" Caption="Zpráva šablony musí být shodná se vzorem" />
+        <Member Name="Pattern" Caption="Vzor" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleRequiredFieldProperties" Caption="Pravidlo požadující vlastnosti pole">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustNotBeEmpty" Caption="Zpráva šablony nesmí být prázdná" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSearchObjectProperties" Caption="Pravidlo pro hledání vlastností objektu">
+      <OwnMembers>
+        <Member Name="CriteriaEvaluationBehavior" Caption="Vyhodnocení chování kritéria" />
+        <Member Name="FoundObjectMessageFormat" Caption="Nalezený objekt je formátem zprávy" />
+        <Member Name="FoundObjectMessagesSeparator" Caption="Nalezený objekt je separátor zpráv" />
+        <Member Name="IncludeCurrentObject" Caption="Vložit aktuální objekt" />
+        <Member Name="MessageTemplateFoundObjects" Caption="Zpráva šablony nalezla objekty " />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResult" Caption="Výsledky ověřování">
+      <OwnMembers>
+        <Member Name="Results" Caption="Výsledky" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResultItem" Caption="Detaily ověřování">
+      <OwnMembers>
+        <Member Name="ContextId" Caption="Kontext Id" />
+        <Member Name="ErrorMessage" Caption="Chybová zpráva" />
+        <Member Name="Rule" Caption="Pravidlo" />
+        <Member Name="RuleName" Caption="Název pravidla" />
+        <Member Name="State" Caption="Stav" />
+        <Member Name="Target" Caption="Cíl" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResultItemAggregate" Caption="Pravidlo nastavující ověřené výsledky agregace">
+      <OwnMembers>
+        <Member Name="AggregatedResults" Caption="Agregační výsledky" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleStringComparisonProperties" Caption="Pravidlo pro řetězec srovnání vlastností">
+      <OwnMembers>
+        <Member Name="IgnoreCase" Caption="Ignorovat případ" />
+        <Member Name="MessageTemplateMustBeEqual" Caption="Šablona zprávy musí být shodná s " />
+        <Member Name="MessageTemplateMustBeginWith" Caption="Šablona zprávy musí začínat " />
+        <Member Name="MessageTemplateMustContain" Caption="Šablona zprávy musí obsahovat" />
+        <Member Name="MessageTemplateMustEndWith" Caption="Šablona zprávy musí končit " />
+        <Member Name="MessageTemplateMustNotBeEqual" Caption="Šablona zprávy nesmí být shodná s " />
+        <Member Name="OperandValue" Caption="Hodnota operandu" />
+        <Member Name="OperatorType" Caption="Typ operátora" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleUniqueValueProperties" Caption="Pravidlo pro jedinečnou hodnotu vlastností">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeUnique" Caption="Zpráva šablony musí být jedinečná " />
+        <Member Name="TargetPropertyName" Caption="Název cílové vlastnosti" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleValueComparisonProperties" Caption="Pravidlo pro porovnání hodnoty vlastností">
+      <OwnMembers>
+        <Member Name="MessageTemplateMustBeEqualToOperand" Caption="Zpráva šablony musí být rovna operandu" />
+        <Member Name="MessageTemplateMustBeGreaterThanOperand" Caption="Zpráva šablony musí být větší než operand" />
+        <Member Name="MessageTemplateMustBeGreaterThanOrEqualToOperand" Caption="Zpráva šablony musí být větší nebo rovna operandu" />
+        <Member Name="MessageTemplateMustBeLessThanOperand" Caption="Zpráva šablony musí být menší než operand" />
+        <Member Name="MessageTemplateMustBeLessThanOrEqualToOperand" Caption="Zpráva šablony musí být menší nebo rovna operandu" />
+        <Member Name="MessageTemplateMustNotBeEqualToOperand" Caption="Zpráva šablony nesmí být rovna operandu" />
+        <Member Name="OperatorType" Caption="Výraz pro pravý operand" />
+        <Member Name="RightOperand" Caption="Pravý operand" />
+        <Member Name="RightOperandExpression" Caption="Výraz pro pravý operand" />
+        <Member Name="TargetCollectionAggregate" Caption="Agregace cíle kolekce" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.Data.Filtering.Aggregate" Value="Agregace">
+        <LocalizationItem Name="Count" Value="Počet" />
+        <LocalizationItem Name="Exists" Value="Existuje" />
+        <LocalizationItem Name="Sum" Value="Sumace" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Validation.AllContextsView.IsValid" Value="je platný">
+        <LocalizationItem Name="Invalid" Value="Neplatný" />
+        <LocalizationItem Name="Valid" Value="Platný" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.StringComparisonType" Value="Řetězec porovnání typu">
+        <LocalizationItem Name="Contains" Value="Obsahuje" />
+        <LocalizationItem Name="EndsWith" Value="Končí" />
+        <LocalizationItem Name="Equals" Value="Je roven" />
+        <LocalizationItem Name="NotEquals" Value="Není roven" />
+        <LocalizationItem Name="StartsWith" Value="Začíná" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValidationState" Value="Stav ověření">
+        <LocalizationItem Name="Invalid" Value="Neplatný" />
+        <LocalizationItem Name="Skipped" Value="Přeskočit" />
+        <LocalizationItem Name="Valid" Value="Platný" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValueComparisonType" Value="Hodnota srovnání typu">
+        <LocalizationItem Name="Equals" Value="Je roven" />
+        <LocalizationItem Name="GreaterThan" Value="Větší než" />
+        <LocalizationItem Name="GreaterThanOrEqual" Value="Větší než nebo roven" />
+        <LocalizationItem Name="LessThan" Value="Menší než" />
+        <LocalizationItem Name="LessThanOrEqual" Value="Menší než nebo roven" />
+        <LocalizationItem Name="NotEquals" Value="Není roven" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Xpo.PersistentCriteriaEvaluationBehavior" Value="Vyhodnocení chování uloženého kritéria">
+        <LocalizationItem Name="BeforeTransaction" Value="Před transakcí" />
+        <LocalizationItem Name="InTransaction" Value="V transakci" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <Validation>
+    <ErrorMessageTemplates>
+      <RuleBase MessageTemplateSkipNullOrEmptyValues="Pravidlo &quot;{Id}&quot; nebylo zkontrolované, protože vlastnosti cíle nejsou specifikované." />
+      <RuleCollectionProperty MessageTemplateTargetDoesNotSatisfyCollectionCriteria="&quot;{Id}&quot; pravidlo nebylo zkontrolováno, protože cíl není prvkem této kolekce &quot;{TargetCollectionOwnerType}.{TargetCollectionPropertyName}&quot; collection." />
+      <RuleCombinationOfPropertiesIsUnique MessageTemplateCombinationOfPropertiesMustBeUnique="Kombinace následujících vlastností musí být jedinečná: {FormattedTargetProperties}." MessageTemplateFoundObjects="Byly nalezeny následující objekty:" />
+      <RuleCriteria MessageTemplateMustSatisfyCriteria="Objekt &quot;{TargetObject}&quot;musí vyhovovat následujícím kritériím: &quot;{Criteria}&quot;." />
+      <RuleFromBoolProperty MessageTemplateMustBeTrue="{TargetPropertyName} must be set to true." />
+      <RuleIsReferenced MessageTemplateMustBeReferenced="&quot;{TargetObject}&quot; objekt musí být odkaz." MessageTemplateFoundObjects="Byly nalezeny následující objekty: " />
+      <RuleObjectExists MessageTemplateFoundObjects="Byly nalezeny následující objekty: " />
+      <RuleRange MessageTemplateMustBeInRange="{TargetPropertyName} musí být v rozsahu mezi &quot;{MinimumValue}&quot; a &quot;{MaximumValue}&quot;, včetně krajních hodnot." />
+      <RuleRegularExpression MessageTemplateMustMatchPattern="{TargetPropertyName} musí odpovídat následujícímu vzoru: &quot;{Pattern}&quot;." />
+      <RuleRequiredField MessageTemplateMustNotBeEmpty="{TargetPropertyName} must not be empty." />
+      <RuleSearchObject MessageTemplateFoundObjects="Byly nalezeny následující objekty: " />
+      <RuleStringComparison MessageTemplateMustContain="{TargetPropertyName} must contain &quot;{OperandValue}&quot;." MessageTemplateMustBeginWith="{TargetPropertyName} must begin with &quot;{OperandValue}&quot;." MessageTemplateMustEndWith="{TargetPropertyName} must end with &quot;{OperandValue}&quot;." MessageTemplateMustBeEqual="{TargetPropertyName} must be equal to &quot;{OperandValue}&quot;." MessageTemplateMustNotBeEqual="{TargetPropertyName} must not be equal to &quot;{OperandValue}&quot;." />
+      <RuleValueComparison MessageTemplateMustBeEqualToOperand="{TargetPropertyName} must be equal to &quot;{RightOperand}&quot;." MessageTemplateMustBeGreaterThanOperand="{TargetPropertyName} must be greater than &quot;{RightOperand}&quot;." MessageTemplateMustBeGreaterThanOrEqualToOperand="{TargetPropertyName} must be greater than or equal to &quot;{RightOperand}&quot;." MessageTemplateMustBeLessThanOperand="{TargetPropertyName} must be less than &quot;{RightOperand}&quot;." MessageTemplateMustBeLessThanOrEqualToOperand="{TargetPropertyName} must be less than or equal to &quot;{RightOperand}&quot;." MessageTemplateMustNotBeEqualToOperand="{TargetPropertyName} must not be equal to &quot;{RightOperand}&quot;." />
+    </ErrorMessageTemplates>
+  </Validation>
+  <Views>
+    <DetailView Id="DisplayableValidationResultItem_DetailView">
+      <Items>
+        <PropertyEditor Id="RuleProperties" Caption="Detaily pravidla" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DisplayableValidationResultItem" Caption="Zobrazené položky výsledku ověřování" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleBaseProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IPravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCollectionPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IPravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCombinationOfPropertiesIsUniqueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="IPravidlo pro hledání vlastností objektu" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IPravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleCriteriaProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IPravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleFromBoolPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IPravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleIsReferencedProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="IPravidlo pro hledání vlastností objektu" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IPravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleObjectExistsProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="IPravidlo pro hledání vlastností objektu" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IPravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRulePropertyValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IPravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRangeProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleRangeProperties" Caption="Ipravidlo pro rozsah vlastností" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IPravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRegularExpressionProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IPravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleRequiredFieldProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IPravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleSearchObjectProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleSearchObjectProperties" Caption="IPravidlo pro hledání vlastností objektu" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IPravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleStringComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleStringComparisonProperties" Caption="Ipravidlo pro řetězec srovnání vlastností" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IPravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleSupportsCollectionAggregatesProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IPravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleUniqueValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IPravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="IRuleValueComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="IRuleValueComparisonProperties" Caption="Ipravidlo pro porovnání hodnoty vlastností" />
+            <LayoutGroup Id="IRuleBaseProperties" Caption="IPravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleBaseProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Pravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleCombinationOfPropertiesIsUniqueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Pravidlo pro hledání vlastností objektu" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Pravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleCriteriaProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Pravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleFromBoolPropertyProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Pravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleIsReferencedProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Pravidlo pro hledání vlastností objektu" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Pravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleObjectExistsProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Pravidlo pro hledání vlastností objektu" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Pravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RulePropertyValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Pravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRangeProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleRangeProperties" Caption="Pravidlo pro rozsah vlastností" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Pravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRegularExpressionProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Pravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleRequiredFieldProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleBaseProperties" Caption="Pravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSearchObjectProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Pravidlo pro hledání vlastností objektu" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Pravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResult_ByTarget_Error_DetailView" Caption="Chyba ověřování">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="Při ověřování dat se vyskytly problémy. Níže si přečtěte informace o jaké problémy se jedná a jak je odstranit." />
+      </Items>
+    </DetailView>
+    <ListView Id="RuleSetValidationResultItem_ByTarget_ListView">
+      <Columns>
+        <ColumnInfo Id="ContextCaption" Caption="Kontext" />
+        <ColumnInfo Id="ContextId" Caption="KontextId" />
+        <ColumnInfo Id="ErrorMessage" Caption="Popis" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RuleSetValidationResultItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSetValidationResultItem" Caption="Pravidlo nastavující ověření výsledku" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleSetValidationResultItemAggregate_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSetValidationResultItem" Caption="Pravidlo nastavující ověření výsledku" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleStringComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleStringComparisonProperties" Caption="Pravidlo pro řetězec srovnání vlastností" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Pravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleUniqueValueProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleSearchObjectProperties" Caption="Pravidlo pro hledání vlastností objektu" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Pravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuleValueComparisonProperties_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RuleValueComparisonProperties" Caption="Pravidlo pro porovnání hodnoty vlastností" />
+            <LayoutGroup Id="RuleBaseProperties" Caption="Pravidlo základních vlastností" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ValidationResults_Error_DetailView">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="Při ověřování dat se vyskytly problémy. Níže si přečtěte informace o jaké problémy se jedná a jak je odstranit." />
+      </Items>
+    </DetailView>
+    <DetailView Id="ValidationResults_Passed_DetailView">
+      <Items>
+        <StaticText Id="ValidationResultsText" Text="Žádné problémy nebyly nalezeny. " />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>

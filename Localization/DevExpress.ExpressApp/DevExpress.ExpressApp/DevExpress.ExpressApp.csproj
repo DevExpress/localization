@@ -1,22 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <AssemblyName>DevExpress.ExpressApp.v26.1</AssemblyName>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>DevExpress.ExpressApp.v26.2</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>true</DelaySign>
+    <AssemblyOriginatorKeyFile>..\..\DevExpress.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>DevExpress.ExpressApp</RootNamespace>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <OutputPath>..\..\DevExpress.Dll\NETCore\</OutputPath>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Include="..\..\AssemblyVersion.cs">
-      <Link>Localization\AssemblyVersion.cs</Link>
-    </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="Localization\ApplicationStatusMesssages.et.resx" />
     <EmbeddedResource Include="Localization\SystemExceptions.et.resx" />
@@ -443,36 +439,24 @@
     <EmbeddedResource Include="ModuleLocalizationResources.uz-Cyrl-UZ.resx" />
     <EmbeddedResource Include="ModuleLocalizationResources.uz-Latn-UZ.resx" />
     <EmbeddedResource Include="ModuleLocalizationResources.ky.resx" />
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="Localization\UserVisibleExceptions.es.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Localization\SystemExceptions.es.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="Localization\UserVisibleExceptions.vi.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Localization\SystemExceptions.vi.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="Localization\SystemExceptions.de.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Localization\UserVisibleExceptions.de.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="Localization\SystemExceptions.cs.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -485,29 +469,17 @@
     <EmbeddedResource Include="Localization\UserVisibleExceptions.hr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="Localization\SystemExceptions.pt-BR.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Localization\UserVisibleExceptions.pt-BR.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="Localization\SystemExceptions.de-CH.resx" />
     <EmbeddedResource Include="Localization\UserVisibleExceptions.de-CH.resx" />
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="Localization\SystemExceptions.fr.resx" />
     <EmbeddedResource Include="Localization\SystemExceptions.sr-Latn-BA.resx" />
     <EmbeddedResource Include="Localization\UserVisibleExceptions.fr.resx" />
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="Localization\ApplicationStatusMesssages.hi.resx" />
     <EmbeddedResource Include="Localization\ApplicationStatusMesssages.th.resx" />
     <EmbeddedResource Include="Localization\SystemExceptions.hi.resx" />
@@ -515,5 +487,17 @@
     <EmbeddedResource Include="Localization\UserVisibleExceptions.hi.resx" />
     <EmbeddedResource Include="Localization\UserVisibleExceptions.sr-Latn-BA.resx" />
     <EmbeddedResource Include="Localization\UserVisibleExceptions.th.resx" />
+    <EmbeddedResource Include="Localization\ApplicationStatusMesssages.es-MX.resx" />
+    <EmbeddedResource Include="Localization\SystemExceptions.es-MX.resx" />
+    <EmbeddedResource Include="Localization\UserVisibleExceptions.es-MX.resx" />
+    <EmbeddedResource Include="Localization\ApplicationStatusMesssages.af.resx" />
+    <EmbeddedResource Include="Localization\SystemExceptions.af.resx" />
+    <EmbeddedResource Include="Localization\UserVisibleExceptions.af.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\AssemblyVersion.cs">
+      <Link>Localization\AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
 </Project>

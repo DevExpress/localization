@@ -62,8 +62,12 @@
     <value>Nur das Schema der Datenquelle wird von dem angegebenen Objekt abgerufen, ohne dass die tatsächlichen Daten in das Dashboard eingespeist werden, bis sie veröffentlicht werden.
 
 Um die tatsächlichen Daten manuell abzurufen, erstellen Sie im Code eine Instanz eines Datenquellenobjekts und weisen es der Eigenschaft DashboardObjectDataSource.DataSource zu oder behandeln das Ereignis Dashboard.DataLoading, um Daten zur Laufzeit bereitzustellen.</value>
+    <comment>Community:Vom angegebenen Objekt wird nur das Datenquellenschema abgerufen, ohne dem Dashboard vor dessen Veröffentlichung die eigentlichen Daten bereitzustellen.
+
+Um die eigentlichen Daten manuell abzurufen, erstellen Sie im Code eine Instanz des Datenquellenobjekts und weisen Sie diese der Eigenschaft DashboardObjectDataSource.DataSource zu oder behandeln Sie das Ereignis Dashboard.DataLoading, um Daten zur Laufzeit bereitzustellen.</comment>
   </data>
   <data name="noteLabel.Text" xml:space="preserve">
     <value>Nachdem Sie ein DataSchema bereitgestellt haben, müssen Sie den DashboardObjectDataSource.DataMember-Wert im Auflistungs-Editor für Datenquellen angeben. Andernfalls erkennt der Field Browser keine Datenfelder.</value>
+    <comment>Community:Nachdem Sie ein DataSchema bereitgestellt haben, müssen Sie den Wert von DashboardObjectDataSource.DataMember im Sammlungseditor für Datenquellen angeben. Andernfalls erkennt der Feldbrowser keine Datenfelder.</comment>
   </data>
 </root>

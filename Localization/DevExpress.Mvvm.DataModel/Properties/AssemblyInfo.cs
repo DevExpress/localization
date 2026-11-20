@@ -13,4 +13,5 @@ using DevExpress.Internal;
 [assembly: Guid("0724ecd5-a3df-486e-93ba-9fa5dbc1befe")]
 [assembly: AssemblyVersion(AssemblyInfo.SatelliteContractVersion)]
 [assembly: AssemblyCopyright(AssemblyInfo.AssemblyCopyright)]
+
 [assembly: AssemblyCompany(AssemblyInfo.AssemblyCompany)]

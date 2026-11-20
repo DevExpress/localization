@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application VersionFormat="Verze {0}.{1}.{2}" ProtectedContentText="Chráněný obsah">
+  <ActionDesign>
+    <Actions>
+      <Action Id="About Info" Caption="O aplikaci" />
+      <Action Id="Cancel" Caption="Zrušit" />
+      <Action Id="CreateDashboard" Caption="Vytvořit řídící panel" />
+      <Action Id="Delete" Caption="Odstranit" ConfirmationMessage="Chystáte se smazat tyto vybrané záznamy. Chcete pokračovat?" />
+      <Action Id="Delete Item" Caption="Odstranit položku" ConfirmationMessage="Chystáte se smazat tyto vybrané položky. Chcete pokračovat?" />
+      <Action Id="Diagnostic Info" Caption="Diagnostika" />
+      <Action Id="DialogCancel" Caption="Zrušit" />
+      <Action Id="FullTextSearch" NullValuePrompt="Hledat text..." Caption="Filtr podle textu" ToolTip="Filtr objektů podle textu" ShortCaption="Hledat" />
+      <Action Id="HideItemsFromDashboard" Caption="Skrýt v řídícím panelu" ToolTip="Skrýt vybrané položky v řídícím panelu" />
+      <Action Id="Link" Caption="Odkaz" />
+      <Action Id="ListViewShowObject" Caption="Otevřít" />
+      <Action Id="Logoff" Caption="Odhlásit" />
+      <Action Id="Logon" Caption="Přihlásit" />
+      <Action Id="NavigateBack" ToolTip="Přejít na předchozí náhled" Caption="Zpět" />
+      <Action Id="NavigateForward" ToolTip="Přejít na další náhled" Caption="Dopředu" />
+      <Action Id="New" Caption="Nový">
+        <DisableReasons>
+          <Reason Id="MasterObjectIsNew" Caption="Modifikovaný objekt je nový." />
+        </DisableReasons>
+      </Action>
+      <Action Id="NextObject" Caption="Další objekt" />
+      <Action Id="OrganizeDashboard" Caption="Uspořádat řídící panel" />
+      <Action Id="PreviousObject" Caption="Předchozí objekt" />
+      <Action Id="Refresh" Caption="Aktualizovat" />
+      <Action Id="Save" Caption="Uložit" />
+      <Action Id="SaveAndClose" Caption="Uložit &amp; Zavřít" />
+      <Action Id="SaveAndNew" Caption="Uložit &amp; Nový" />
+      <Action Id="SetFilter" Caption="Filtr" />
+      <Action Id="ShowItemsOnDashboard" Caption="Zobrazit v řídícím panelu" ToolTip="Zobrazit vybrané položky v řídícím panelu" />
+      <Action Id="ShowNavigationItem" Caption="Navigace" />
+      <Action Id="Unlink" Caption="Zrušit odkaz" ConfirmationMessage="Chystáte se zrušit odkaz vybraných záznamů. Chcete pokračovat?" />
+    </Actions>
+    <DisableReasons>
+      <Reason Id="ByContext_RequireMultipleObjects" Caption="Je požadován nejméně jeden vybraný objekt" />
+      <Reason Id="ByContext_RequireSingleObject" Caption="Je požadován jeden vybraný objekt" />
+      <Reason Id="Security" Caption="Přístup zamítnut" />
+    </DisableReasons>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Editors.CriteriaProvider" Caption="Poskytovatel kritérií">
+      <OwnMembers>
+        <Member Name="FilteredObjectsType" Caption="Typ filtrovaných objektů" />
+        <Member Name="FilterString" Caption="Řetězec filtru" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.AboutInfo" Caption="Informace o programu">
+      <OwnMembers>
+        <Member Name="Company" Caption="Společnost" />
+        <Member Name="Description" Caption="Popis" />
+        <Member Name="LogoImageName" Caption="Název obrázku loga" />
+        <Member Name="ProductName" Caption="Název produktu" />
+        <Member Name="Version" Caption="Verze" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ActionContainerDashboardOrganizationItem" Caption="Kontejner akce">
+      <OwnMembers>
+        <Member Name="ActionContainer" Caption="Kontejner akce" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.ActionContainerDescriptor" Caption="Deskriptor kontejneru akce">
+      <OwnMembers>
+        <Member Name="ActionContainerId" Caption="Kontejner akce Id" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardCreationInfo" Caption="Průvodce vzniku řídícího panelu">
+      <OwnMembers>
+        <Member Name="DashboardName" Caption="Jmén" />
+        <Member Name="DashboardOrganizer" Caption="Zobrazení položek" />
+        <Member Name="NavigationGroupName" Caption="Vytvořit navigační položku v " />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardOrganizationItem" Caption="Řídící panel organizační položky">
+      <OwnMembers>
+        <Member Name="Item" Caption="Položka" />
+        <Member Name="Visible" Caption="Viditelný" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardOrganizer" Caption="Organizátor řídícího panelu">
+      <OwnMembers>
+        <Member Name="ViewItems" Caption="Zobrazení položek" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardViewItemDescriptor" Caption="Deskriptor zobrazení položek řídícího panelu">
+      <OwnMembers>
+        <Member Name="ViewCaption" Caption="Zobrazení titulku" />
+        <Member Name="ViewDescription" Caption="Zobrazení popisu" />
+        <Member Name="ViewId" Caption="Zobrazení Id" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DiagnosticInfoObject" Caption="Informace o diagnostice objektu">
+      <OwnMembers>
+        <Member Name="AsText" Caption="Jako text" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.StaticImageDashboardOrganizationItem" Caption="Statický obrázek ">
+      <OwnMembers>
+        <Member Name="ImageName" Caption="Název obrázku" />
+        <Member Name="Preview" Caption="Náhled" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.StaticTextDashboardOrganizationItem" Caption="Statický text" />
+    <Class Name="DevExpress.ExpressApp.SystemModule.ViewDashboardOrganizationItem" Caption="Zobrazit">
+      <OwnMembers>
+        <Member Name="Criteria" Caption="Kritéria" />
+        <Member Name="ObjectType" Caption="Typ objektu" />
+        <Member Name="ViewDescriptor" Caption="Zobrazit" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Updating.ModuleInfo" Caption="Informace o modulu" />
+    <Class Name="DevExpress.Xpo.PersistentBase" Caption="Datová základna" />
+    <Class Name="DevExpress.Xpo.XPBaseObject" Caption="XPZákladní objekt" />
+    <Class Name="DevExpress.Xpo.XPCustomObject" Caption="XPCustom Objekt" />
+    <Class Name="DevExpress.Xpo.XPObject" Caption="XPObjekt" />
+    <Class Name="DevExpress.Xpo.XPObjectType" Caption="Typ XPObjektu" />
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="DashboardOrganizationItems">
+      <LocalizationItem Name="ActionContainer" Value="Kontejner akce" />
+      <LocalizationItem Name="StaticImage" Value="Obrázek" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="DialogButtons">
+      <LocalizationItem Name="Abort" Value="&amp;Zrušit" />
+      <LocalizationItem Name="Add" Value="Přidat" />
+      <LocalizationItem Name="Apply" Value="Použít" />
+      <LocalizationItem Name="Back" Value="&lt; Zpět" />
+      <LocalizationItem Name="Cancel" Value="&amp;Zrušit" />
+      <LocalizationItem Name="Clear" Value="Vy&amp;mazat" />
+      <LocalizationItem Name="Close" Value="Zavřít" />
+      <LocalizationItem Name="Find" Value="Vyhledat" />
+      <LocalizationItem Name="Ignore" Value="&amp;Ignorovat" />
+      <LocalizationItem Name="Next" Value="Další &gt;" />
+      <LocalizationItem Name="No" Value="&amp;Ne" />
+      <LocalizationItem Name="Remove" Value="Zrušit" />
+      <LocalizationItem Name="Retry" Value="&amp;Opakovat" />
+      <LocalizationItem Name="Yes" Value="&amp;Ano" />
+      <LocalizationItem Name="Edit" Value="Upravit" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.SystemModule.DashboardItemVisibility" Value="Viditelnost položky řídícího panelu">
+        <LocalizationItem Name="Hidden" Value="Skrytý" />
+        <LocalizationItem Name="Visible" Value="Viditelný" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Messages">
+      <LocalizationItem Name="User" Value="Uživatel: {0}" />
+    </LocalizationGroup>
+  </Localization>
+  <Views>
+    <DetailView Id="AboutInfo_DetailView" Caption="O aplikaci" />
+  </Views>
+</Application>

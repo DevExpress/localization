@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Notifications.NotificationsObject" ObjectCaptionFormat="Напоминаний: {0:NotificationsCount}">
+      <OwnMembers>
+        <Member Name="NotificationsState" Caption="Тип напоминаний" />
+        <Member Name="Notifications" Caption="Напоминания" />
+        <Member Name="Postpone" Caption="Отложить на" />
+        <Member Name="ShowNotificationsWindow" Caption="Показыывать окно с напоминаниями" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Notifications.CommonNotificationItem" Caption="Напоминание">
+      <OwnMembers>
+        <Member Name="NotificationSource" Caption="Событие" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.Notifications.PostponeTime" Caption="Промежуток времени">
+      <OwnMembers>
+        <Member Name="ID" Caption="Идентификатор"/>
+        <Member Name="RemindInText" Caption="Промежуток времени" />
+        <Member Name="RemindIn" Caption="Промежуток времени" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Notifications.Notification" Caption="Напоминание">
+      <OwnMembers>
+        <Member Name="ID" Caption="Идентификатор"/>
+        <Member Name="Subject" Caption="Сообщение" />
+        <Member Name="AlarmTime" Caption="Время срабатывания" />
+        <Member Name="State" Caption="Состояние" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <ActionDesign>
+    <Actions>
+      <Action Id="RefreshNotifications" Caption="Обновить" ShortCaption="Обновить" ToolTip="Обновить" />
+      <Action Id="Snooze" Caption="Отложить" ShortCaption="Отложить" ToolTip="Отложить" />
+      <Action Id="Dismiss" Caption="Отменить" ShortCaption="Отменить" ToolTip="Отменить" />
+      <Action Id="DismissAll" Caption="Отменить все" ShortCaption="Отменить все" ToolTip="Отменить все" />
+      <Action Id="ShowNotificationsAction" Caption="Показать напоминания" />
+    </Actions>
+  </ActionDesign>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Notifications.NotificationItemState" Value="Состояние напоминания">
+        <LocalizationItem Name="Active" Value="Активнное" />
+        <LocalizationItem Name="Postponed" Value="Отложенное" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Notifications.NotificationsType" Value="Тип напоминаний">
+        <LocalizationItem Name="Active" Value="Активные" />
+        <LocalizationItem Name="All" Value="Все" />
+        <LocalizationItem Name="Postponed" Value="Отложенные" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Notifications">
+      <LocalizationItem Name="ShowNotificationsActionEnabledTooltip" Value="Показать напоминания" />
+      <LocalizationItem Name="ShowNotificationsActionDisabledTooltip" Value="Нет напоминаний" />
+      <LocalizationItem Name="NotificationViewCaption" Value="Напоминаний" />
+    </LocalizationGroup>
+  </Localization>
+  <Views>
+    <DetailView Id="NotificationsObject_DetailView">
+      <Items>
+        <PropertyEditor Id="Postpone" Caption="Отложить на" />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>

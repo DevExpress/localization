@@ -60,29 +60,66 @@
   </resheader>
   <data name="ConnectionProvider_TypeMappingMissing" xml:space="preserve">
     <value>Sterownik bazy danych nie może obsłużyć danych typu '{0}' ponieważ nie są one zmapowane na żaden z typów w bazie danych. Proszę skorzystać z innego typu danych.</value>
+    <comment>Community:Dostawca bazy danych nie może przetworzyć typu '{0}', ponieważ nie jest on mapowany na typy używane w bazie danych. Proszę użyć innego typu.</comment>
   </data>
   <data name="ConnectionProvider_UnableToCreateDBObject" xml:space="preserve">
     <value>Nie można utworzyć '{0}' '{1}'. Obiekt nadrzędny: '{2}'. Błąd: {3}</value>
+    <comment>Community:Nie można utworzyć '{0}' '{1}'. Nadrzędny: '{2}'. Błąd: {3}</comment>
   </data>
   <data name="ConnectionProvider_SqlExecutionError" xml:space="preserve">
     <value>Podczas wykonywania Sql: '{0}' z parametrami '{1}' nastąpił wyjątek '{2}'</value>
+    <comment>Community:Podczas wykonywania SQL '{0}' z parametrami '{1}' wystąpił wyjątek '{2}'</comment>
   </data>
   <data name="ConnectionProvider_SchemaCorrectionNeeded" xml:space="preserve">
     <value>Schemat musi zostać zaktualizowany. Skontaktuj się z administratorem systemu. Wiadomość Sql: {0}</value>
+    <comment>Community:Schemat wymaga aktualizacji. Proszę skontaktować się z administratorem systemu. Tekst SQL: {0}</comment>
   </data>
   <data name="ConnectionProvider_TableNameTooLong" xml:space="preserve">
     <value>Nie można utworzyć tabeli '{0}'. Nazwa tabeli jest zbyt długa (przekracza 64 znaki)</value>
+    <comment>Community:Nie można utworzyć tabeli bazy danych '{0}'. Nazwa tabeli jest zbyt długa (przekracza 64 znaki)</comment>
   </data>
   <data name="ConnectionProvider_ColumnNameTooLong" xml:space="preserve">
     <value>Nie można utworzyć kolumny '{1}' w tabeli '{0}'. Nazwa kolumy jest zbyt długa (przekracza 64 znaki)</value>
+    <comment>Community:Nie można utworzyć kolumny '{1}' w tabeli '{0}'. Nazwa kolumny jest zbyt długa (przekracza 64 znaki)</comment>
   </data>
   <data name="ConnectionProvider_AtLeastOneColumnExpected" xml:space="preserve">
     <value>Oczekiwana przynajmniej jedna kolumna</value>
+    <comment>Community:Oczekiwano co najmniej jednej kolumny</comment>
   </data>
   <data name="ConnectionProvider_Locking" xml:space="preserve">
     <value>Nie można zapisać obiektu. Został on zmodyfikowany lub skasowany przez inną aplikację.</value>
+    <comment>Community:Nie można zapisać obiektu. Został on zmodyfikowany lub usunięty (wymazany) przez inną aplikację.</comment>
   </data>
   <data name="ConnectionProvider_UnableToOpenDatabase" xml:space="preserve">
     <value>Nie można otworzyć bazy danych. Dane połączenia: '{0}'; Błąd: '{1}'</value>
+    <comment>Community:Nie można otworzyć bazy danych. Parametry połączenia: '{0}'; Błąd: '{1}'</comment>
+  </data>
+  <data name="IsExactTypeFunction_ShouldNotBeCalledExplicitly" xml:space="preserve">
+    <value>Tej metody nie należy wywoływać jawnie.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_ShouldNotBeCalledExplicitly" xml:space="preserve">
+    <value>Tej metody nie należy wywoływać jawnie.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="CommandChannelHelper_CannotDeserializeResponse" xml:space="preserve">
+    <value>Nie można zdeserializować odpowiedzi operacji '{0}' z powodu ograniczeń implementacji XmlSerializer w środowisku uruchomieniowym Mono. Jeśli konieczna jest deserializacja niewielkich ilości danych, należy ustawić właściwość DevExpress.Xpo.Helpers.CommandChannelHelper.EnableMonoDeserializationFixForSmallAmountsOfData na 'true' i ponowić próbę.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="ConnectionProviderSql_ParameterValueSizeExceedsMaximumSize" xml:space="preserve">
+    <value>Nie można utworzyć parametru '{1}'. SQL: {0}. Długość wartości ({2}) przekracza rozmiar parametru ({3}).</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_ClassNotFound" xml:space="preserve">
+    <value>Funkcja '{0}' nie może znaleźć określonego typu: '{1}'.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_ParametersMustBeConstants" xml:space="preserve">
+    <value>Funkcja '{0}' oczekuje stałej wartości jako argumentu 'typeName'. Podano wyrażenie.</value>
+    <comment>AI</comment>
+  </data>
+  <data name="IsInstanceOfTypeFunction_InvalidArgument_TypeName" xml:space="preserve">
+    <value>Funkcja '{0}' oczekuje wartości będącej ciągiem znaków jako argumentu 'typeName'. Podano wartość typu '{1}'.</value>
+    <comment>AI</comment>
   </data>
 </root>

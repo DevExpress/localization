@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ChangePasswordByUser" Caption="Promijeni moju lozinku" />
+      <Action Id="MyDetails" Caption="Moji detalji" />
+      <Action Id="ResetPassword" Caption="Resetiraj lozinku" ToolTip="Generiraj novu lozinku za odabranog korisnika" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters" Caption="Autenfitikacijski standardni parametri za prijavu">
+      <OwnMembers>
+        <Member Name="Password" Caption="Lozinka" />
+        <Member Name="UserName" Caption="Korisničko ime" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordOnLogonParameters" Caption="Promijeni lozinku na parametrima za prijavu">
+      <OwnMembers>
+        <Member Name="ConfirmPassword" Caption="Potvrdi lozinku" />
+        <Member Name="NewPassword" Caption="Nova lozinka" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ChangePasswordParameters" Caption="Promijeni parametre lozinke">
+      <OwnMembers>
+        <Member Name="OldPassword" Caption="Stara lozinka" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.EditModelPermission" Caption="Promijeni dozvole modela">
+      <OwnMembers>
+        <Member Name="Modifier" Caption="Modifikator" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ObjectAccessPermission" Caption="Pristupne dozvole objekta">
+      <OwnMembers>
+        <Member Name="CreateAccess" Caption="Pravo kreiranja" />
+        <Member Name="DeleteAccess" Caption="Pravo brisanja" />
+        <Member Name="NavigateAccess" Caption="Pravo navigacije" />
+        <Member Name="ObjectType" Caption="Tip objekta" />
+        <Member Name="ReadAccess" Caption="Pravo čitanja" />
+        <Member Name="WriteAccess" Caption="Pravo pisanja" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.ResetPasswordParameters" Caption="Resetiraj parametre lozinke">
+      <OwnMembers>
+        <Member Name="Password" Caption="Lozinka" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ModelAccessModifier">
+        <LocalizationItem Name="Allow" Value="Dopusti" />
+        <LocalizationItem Name="Deny" Value="Zabrani" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccess" Value="Pristup objektu">
+        <LocalizationItem Name="AllAccess" Value="Puni pristup" />
+        <LocalizationItem Name="Create" Value="Kreiraj" />
+        <LocalizationItem Name="Delete" Value="Obriši" />
+        <LocalizationItem Name="Navigate" Value="Navigiraj" />
+        <LocalizationItem Name="NoAccess" Value="Bez pristupa" />
+        <LocalizationItem Name="Read" Value="Čitaj" />
+        <LocalizationItem Name="Write" Value="Piši" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Security.ObjectAccessModifier" Value="Izmjene pristupa objektima">
+        <LocalizationItem Name="Allow" Value="Dopusti" />
+        <LocalizationItem Name="Deny" Value="Zabrani" />
+        <LocalizationItem Name="None" Value="Ni jedan" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="MyDetails" Caption="Moji detalji" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <DetailView Id="AuthenticationStandardLogonParameters_DetailView" Caption="Prijava">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Glavni" />
+      </Layout>
+    </DetailView>
+    <DetailView Id="ChangePasswordOnLogonParameters_DetailView" Caption="Promijeni lozinku kod prve prijave">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="Zbog sigurnosnih razloga, morate upisati vlastitu lozinku. Upišite svoju novu lozinku u dva tekst polja ispod i pripazite da ne upišete lozinku koju ste već koristili prije. " />
+      </Items>
+    </DetailView>
+    <DetailView Id="ChangePasswordParameters_DetailView" Caption="Promijeni lozinku">
+      <Items>
+        <StaticText Id="ChangePasswordText" Text="Za promjenu lozinke, upišite staru i novu lozinku u tekst polja ispod. " />
+      </Items>
+    </DetailView>
+    <DetailView Id="ObjectAccessPermission_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ObjectAccessPermission" Caption="Dozvole pristupa objektu" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ResetPasswordParameters_DetailView" Caption="Resetiraj lozinku">
+      <Items>
+        <StaticText Id="ResetPasswordText" Text="Postavljanje lozinke korisniku će automatski kreirati novu lozinku za tog korisnika i istovremeno onemogućiti prijavu korisnika sa starom lozinkom. Novu lozinku morate poslati korisniku kako bi mogao nastaviti rad u aplikaciji. Sigurno želite postaviti lozinku?" />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>
